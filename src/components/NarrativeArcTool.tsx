@@ -460,7 +460,7 @@ export default function NarrativeArcTool() {
               whiteSpace: "nowrap",
             }}
           >
-            {isLoading ? "Analyzing..." : "Analyze"}
+            {isLoading ? "Searching..." : "Go"}
           </button>
         </div>
       </div>
@@ -532,7 +532,8 @@ export default function NarrativeArcTool() {
                     labels: {
                       padding: 20,
                       usePointStyle: true,
-                      pointStyleWidth: 10,
+                      pointStyle: "rectRounded",
+                      pointStyleWidth: 16,
                       font: { size: 13, weight: 600 },
                     },
                   },

@@ -41,7 +41,7 @@ export async function getVolumesWithBooks(): Promise<Volume[]> {
     if (!volumeMap.has(row.volume_id)) {
       volumeMap.set(row.volume_id, {
         id: row.volume_id,
-        name: displayVolumeName(row.volume_name),
+        name: displayName(row.volume_name),
         abbrev: row.abbrev,
         displayOrder: row.vol_order,
         books: [],
@@ -49,9 +49,9 @@ export async function getVolumesWithBooks(): Promise<Volume[]> {
     }
     volumeMap.get(row.volume_id)!.books.push({
       id: row.book_id,
-      name: row.book_name,
+      name: displayName(row.book_name),
       volumeId: row.volume_id,
-      volumeName: displayVolumeName(row.volume_name),
+      volumeName: displayName(row.volume_name),
       volumeAbbrev: row.abbrev,
       displayOrder: row.display_order,
       chapterCount: row.chapter_count,
@@ -62,8 +62,8 @@ export async function getVolumesWithBooks(): Promise<Volume[]> {
   );
 }
 
-// Normalize volume names for display (e.g., "Doctrine and Covenants" → "D&C")
-function displayVolumeName(name: string): string {
+// Normalize names for display (e.g., "Doctrine and Covenants" → "D&C")
+function displayName(name: string): string {
   if (name === "Doctrine and Covenants") return "D&C";
   return name;
 }
@@ -191,8 +191,8 @@ export async function getWordFrequency(
       totalVerses += c.verseCount;
       results.push({
         bookId: book.id,
-        bookName: book.name,
-        volumeName: displayVolumeName(book.volume_name),
+        bookName: displayName(book.name),
+        volumeName: displayName(book.volume_name),
         volumeAbbrev: book.abbrev,
         displayOrder: book.display_order,
         count: c.count,
@@ -235,8 +235,8 @@ export async function getBookStats(): Promise<BookStat[]> {
 
   return rows.map((r) => ({
     bookId: r.book_id,
-    bookName: r.book_name,
-    volumeName: displayVolumeName(r.volume_name),
+    bookName: displayName(r.book_name),
+    volumeName: displayName(r.volume_name),
     volumeAbbrev: r.volume_abbrev,
     displayOrder: r.display_order,
     wordCount: r.word_count,
@@ -267,7 +267,7 @@ export async function getMatchingVerses(
     `SELECT name FROM books WHERE id = ?`,
     [bookId]
   );
-  const bookName = bookRows[0]?.name || "Unknown";
+  const bookName = displayName(bookRows[0]?.name || "Unknown");
 
   // Fetch all verses from this book
   const verses = execToObjects<{ chapter: number; verse: number; text: string }>(
