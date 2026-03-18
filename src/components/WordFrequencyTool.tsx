@@ -65,6 +65,19 @@ export default function WordFrequencyTool() {
   const inputRef = useRef<HTMLInputElement>(null);
   const isMobile = useIsMobile();
 
+  // Chart visibility toggles — all on by default
+  const [visiblePanels, setVisiblePanels] = useState<Set<string>>(
+    new Set(["share", "counts", "breakdowns", "top10", "arc", "table"])
+  );
+  const togglePanel = (key: string) => {
+    setVisiblePanels((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  };
+
   // Load volumes on mount
   useEffect(() => {
     fetch("/api/books")
@@ -469,6 +482,72 @@ export default function WordFrequencyTool() {
             ))}
           </div>
 
+          {/* Chart visibility toggles */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "6px",
+              marginBottom: "20px",
+              flexWrap: "wrap",
+            }}
+          >
+            <span
+              style={{
+                fontSize: "0.68rem",
+                fontWeight: 600,
+                textTransform: "uppercase",
+                letterSpacing: "0.12em",
+                color: "var(--text-muted)",
+                marginRight: "8px",
+                whiteSpace: "nowrap",
+              }}
+            >
+              Show
+            </span>
+            {[
+              { key: "share", label: "Share Chart" },
+              { key: "counts", label: "Counts" },
+              { key: "breakdowns", label: "Breakdowns" },
+              { key: "top10", label: "Top Books" },
+              { key: "arc", label: "Narrative Arc" },
+              { key: "table", label: "Data Table" },
+            ].map((panel) => {
+              const isOn = visiblePanels.has(panel.key);
+              return (
+                <button
+                  key={panel.key}
+                  type="button"
+                  onClick={() => togglePanel(panel.key)}
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "5px",
+                    padding: "5px 12px",
+                    borderRadius: "100px",
+                    border: isOn
+                      ? "1px solid rgba(16, 185, 129, 0.3)"
+                      : "1px solid var(--border)",
+                    background: isOn
+                      ? "rgba(16, 185, 129, 0.1)"
+                      : "transparent",
+                    color: isOn ? "var(--emerald)" : "var(--text-muted)",
+                    fontSize: "0.78rem",
+                    fontWeight: 500,
+                    fontFamily: "inherit",
+                    cursor: "pointer",
+                    transition: "all 0.15s ease",
+                  }}
+                >
+                  <span style={{ fontSize: "0.7rem" }}>
+                    {isOn ? "✓" : ""}
+                  </span>
+                  {panel.label}
+                </button>
+              );
+            })}
+          </div>
+
           {/* Matched words breakdown (partial search only) */}
           {results.matchedWords && results.matchedWords.length > 1 && (
             <DashboardCard
@@ -522,6 +601,7 @@ export default function WordFrequencyTool() {
           {/* Dashboard grid */}
           <div className="dashboard-grid">
             {/* Doughnut chart */}
+            {visiblePanels.has("share") && (
             <DashboardCard
               title="Share by collection"
               description={`Proportion of all ${results.totalCount.toLocaleString()} occurrences`}
@@ -573,8 +653,10 @@ export default function WordFrequencyTool() {
                 />
               </div>
             </DashboardCard>
+            )}
 
             {/* Horizontal bar by collection */}
+            {visiblePanels.has("counts") && (
             <DashboardCard
               title="Raw counts by collection"
               description="Total occurrences per volume"
@@ -628,9 +710,10 @@ export default function WordFrequencyTool() {
                 />
               </div>
             </DashboardCard>
+            )}
 
             {/* Per-volume book breakdowns */}
-            {volumeAgg
+            {visiblePanels.has("breakdowns") && volumeAgg
               .filter((v) => v.count > 0)
               .map((v) => {
                 const volumeBooks = results.results.filter(
@@ -673,7 +756,7 @@ export default function WordFrequencyTool() {
               })}
 
             {/* Top 10 books */}
-            {results.results.length > 0 && (
+            {visiblePanels.has("top10") && results.results.length > 0 && (
               <DashboardCard
                 title={`Top ${Math.min(10, results.results.length)} books — all scripture`}
                 description="Ranked by raw count"
@@ -745,7 +828,7 @@ export default function WordFrequencyTool() {
             )}
 
             {/* Narrative arc — Book of Mormon */}
-            {results.results.some((r) => r.volumeAbbrev === "BoM") && (
+            {visiblePanels.has("arc") && results.results.some((r) => r.volumeAbbrev === "BoM") && (
               <DashboardCard
                 title="Book of Mormon narrative arc"
                 description={`Frequency of "${results.word}" by book in narrative order`}
@@ -836,6 +919,7 @@ export default function WordFrequencyTool() {
             )}
 
             {/* Summary table */}
+            {visiblePanels.has("table") && (
             <DashboardCard
               title="Summary statistics"
               description="All books with occurrences"
@@ -870,6 +954,7 @@ export default function WordFrequencyTool() {
                 }}
               />
             </DashboardCard>
+            )}
           </div>
         </>
       )}
