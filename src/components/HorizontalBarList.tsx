@@ -33,6 +33,13 @@ export default function HorizontalBarList({
         return (
           <div
             key={i}
+            style={{
+              display: "grid",
+              gridTemplateColumns: onBarClick ? "100px 1fr 28px" : "100px 1fr",
+              alignItems: "center",
+              gap: "10px",
+              fontSize: "0.85rem",
+            }}
             className="bar-list-row-v2"
           >
             {/* Book name label */}
@@ -44,7 +51,6 @@ export default function HorizontalBarList({
                 whiteSpace: "nowrap",
                 overflow: "hidden",
                 textOverflow: "ellipsis",
-                fontSize: "inherit",
               }}
               title={item.label}
             >
@@ -58,12 +64,9 @@ export default function HorizontalBarList({
                 background: "rgba(139, 92, 246, 0.08)",
                 borderRadius: "8px",
                 position: "relative",
-                cursor: isClickable ? "pointer" : "default",
                 display: "flex",
                 alignItems: "center",
               }}
-              onClick={() => isClickable && onBarClick(item)}
-              title={isClickable ? `View verses in ${item.label}` : undefined}
             >
               {/* Colored fill */}
               <div
@@ -80,42 +83,66 @@ export default function HorizontalBarList({
                 }}
               />
 
-              {/* Number + icon overlay — positioned at right end of bar or right of track */}
-              <div
-                style={{
-                  position: "absolute",
-                  right: pct > 20 ? undefined : "8px",
-                  left: pct > 20 ? `calc(${pct}% - 8px)` : undefined,
-                  transform: pct > 20 ? "translateX(-100%)" : undefined,
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "4px",
-                  height: "100%",
-                  paddingRight: pct > 20 ? "0" : "0",
-                }}
-              >
+              {/* Number inside the bar */}
+              {item.value > 0 && (
                 <span
                   style={{
+                    position: "absolute",
+                    right: pct > 20 ? undefined : "8px",
+                    left: pct > 20 ? `calc(${pct}% - 8px)` : undefined,
+                    transform: pct > 20 ? "translateX(-100%)" : undefined,
                     fontWeight: 700,
                     fontSize: "0.78rem",
                     fontVariantNumeric: "tabular-nums",
                     color: pct > 20 ? "#fff" : "var(--text-secondary)",
+                    lineHeight: "30px",
                   }}
                 >
-                  {item.value > 0 ? item.value : ""}
+                  {item.value}
                 </span>
-                {isClickable && (
-                  <span
-                    style={{
-                      fontSize: "0.65rem",
-                      opacity: 0.6,
-                    }}
-                  >
-                    📖
-                  </span>
-                )}
-              </div>
+              )}
             </div>
+
+            {/* Open icon — outside the bar, to the right */}
+            {onBarClick && (
+              <button
+                type="button"
+                onClick={() => isClickable && onBarClick(item)}
+                disabled={!isClickable}
+                style={{
+                  background: "none",
+                  border: "none",
+                  cursor: isClickable ? "pointer" : "default",
+                  padding: "0",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  width: "28px",
+                  height: "28px",
+                  opacity: isClickable ? 0.4 : 0.15,
+                  transition: "opacity 0.15s",
+                  flexShrink: 0,
+                }}
+                onMouseEnter={(e) => isClickable && (e.currentTarget.style.opacity = "1")}
+                onMouseLeave={(e) => isClickable && (e.currentTarget.style.opacity = "0.4")}
+                title={isClickable ? `View verses in ${item.label}` : undefined}
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--text-secondary)"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </button>
+            )}
           </div>
         );
       })}
