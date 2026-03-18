@@ -164,344 +164,109 @@ export default function NarrativeArcTool() {
         </p>
       </div>
 
-      {/* Two-column search panel */}
+      {/* Search panel */}
       <div className="search-panel">
+        {/* Search input + Add + Go */}
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns: "1fr auto",
-            gap: "24px",
+            display: "flex",
+            background: "var(--zinc-900)",
+            border: "1px solid var(--border-accent)",
+            borderRadius: "14px",
+            overflow: "hidden",
+            marginBottom: "12px",
           }}
-          className="arc-search-grid"
         >
-          {/* Left column: search + terms + Go */}
-          <div>
-            {/* Term input + add button */}
-            <div
-              style={{
-                display: "flex",
-                background: "var(--zinc-900)",
-                border: "1px solid var(--border-accent)",
-                borderRadius: "14px",
-                overflow: "hidden",
-                marginBottom: "12px",
-              }}
-            >
-              <div
-                style={{
-                  position: "relative",
-                  flex: 1,
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="var(--text-muted)"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  style={{
-                    position: "absolute",
-                    left: "16px",
-                    pointerEvents: "none",
-                  }}
-                >
-                  <circle cx="11" cy="11" r="8" />
-                  <path d="m21 21-4.3-4.3" />
-                </svg>
-                <input
-                  ref={inputRef}
-                  type="text"
-                  value={currentTerm}
-                  onChange={(e) => setCurrentTerm(e.target.value)}
-                  onKeyDown={handleKeyDown}
-                  placeholder={
-                    terms.length >= 6
-                      ? "Maximum 6 terms"
-                      : "Add a search term..."
-                  }
-                  disabled={terms.length >= 6}
-                  style={{
-                    width: "100%",
-                    padding: "14px 16px 14px 46px",
-                    background: "transparent",
-                    border: "none",
-                    color: "var(--text)",
-                    fontSize: "0.95rem",
-                    fontFamily: "inherit",
-                    outline: "none",
-                  }}
-                />
-              </div>
-              <button
-                onClick={addTerm}
-                disabled={!currentTerm.trim() || terms.length >= 6}
-                style={{
-                  padding: "14px 24px",
-                  background:
-                    !currentTerm.trim() || terms.length >= 6
-                      ? "var(--zinc-800)"
-                      : "linear-gradient(135deg, #8b5cf6, #a78bfa)",
-                  color:
-                    !currentTerm.trim() || terms.length >= 6
-                      ? "var(--text-muted)"
-                      : "#fff",
-                  border: "none",
-                  borderLeft: "1px solid var(--border)",
-                  fontSize: "0.88rem",
-                  fontWeight: 600,
-                  cursor:
-                    !currentTerm.trim() || terms.length >= 6
-                      ? "not-allowed"
-                      : "pointer",
-                  fontFamily: "inherit",
-                  transition: "background 0.2s",
-                  whiteSpace: "nowrap",
-                }}
-              >
-                + Add
-              </button>
-            </div>
-
-            {/* Term chips */}
-            {terms.length > 0 && (
-              <div
-                style={{
-                  display: "flex",
-                  gap: "8px",
-                  flexWrap: "wrap",
-                  marginBottom: "12px",
-                }}
-              >
-                {terms.map((term, i) => (
-                  <span
-                    key={term}
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "8px",
-                      padding: "6px 14px",
-                      borderRadius: "8px",
-                      background: TERM_COLORS[i % TERM_COLORS.length],
-                      color: "#fff",
-                      fontSize: "0.82rem",
-                      fontWeight: 600,
-                    }}
-                  >
-                    {term}
-                    <button
-                      type="button"
-                      onClick={() => removeTerm(term)}
-                      style={{
-                        background: "rgba(255,255,255,0.2)",
-                        border: "none",
-                        borderRadius: "50%",
-                        width: "18px",
-                        height: "18px",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        cursor: "pointer",
-                        color: "#fff",
-                        fontSize: "0.7rem",
-                        fontWeight: 700,
-                        lineHeight: 1,
-                        padding: 0,
-                      }}
-                    >
-                      ✕
-                    </button>
-                  </span>
-                ))}
-              </div>
-            )}
-
-            {/* Go button */}
-            <button
-              onClick={handleAnalyze}
-              disabled={terms.length === 0 || isLoading}
-              style={{
-                padding: "10px 32px",
-                background:
-                  terms.length === 0 || isLoading
-                    ? "var(--zinc-800)"
-                    : "linear-gradient(135deg, #8b5cf6, #a78bfa)",
-                color:
-                  terms.length === 0 || isLoading
-                    ? "var(--text-muted)"
-                    : "#fff",
-                border: "none",
-                borderRadius: "8px",
-                fontSize: "0.88rem",
-                fontWeight: 600,
-                cursor:
-                  terms.length === 0 || isLoading ? "not-allowed" : "pointer",
-                fontFamily: "inherit",
-                transition: "background 0.2s",
-              }}
-            >
-              {isLoading ? "Searching..." : "Go"}
-            </button>
+          <div style={{ position: "relative", flex: 1, display: "flex", alignItems: "center" }}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ position: "absolute", left: "16px", pointerEvents: "none" }}>
+              <circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" />
+            </svg>
+            <input
+              ref={inputRef}
+              type="text"
+              value={currentTerm}
+              onChange={(e) => setCurrentTerm(e.target.value)}
+              onKeyDown={handleKeyDown}
+              placeholder={terms.length >= 6 ? "Maximum 6 terms" : "Add a search term..."}
+              disabled={terms.length >= 6}
+              style={{ width: "100%", padding: "14px 16px 14px 46px", background: "transparent", border: "none", color: "var(--text)", fontSize: "0.95rem", fontFamily: "inherit", outline: "none" }}
+            />
           </div>
-
-          {/* Right column: volumes + options */}
-          <div
+          <button
+            onClick={addTerm}
+            disabled={!currentTerm.trim() || terms.length >= 6}
             style={{
-              minWidth: "180px",
-              display: "flex",
-              flexDirection: "column",
-              gap: "16px",
+              padding: "14px 20px",
+              background: !currentTerm.trim() || terms.length >= 6 ? "var(--zinc-800)" : "rgba(139,92,246,0.15)",
+              color: !currentTerm.trim() || terms.length >= 6 ? "var(--text-muted)" : "#a78bfa",
+              border: "none", borderLeft: "1px solid var(--border)",
+              fontSize: "0.88rem", fontWeight: 600, cursor: !currentTerm.trim() || terms.length >= 6 ? "not-allowed" : "pointer",
+              fontFamily: "inherit", transition: "background 0.2s", whiteSpace: "nowrap",
             }}
           >
-            {/* Volumes — color-coded checkboxes */}
-            <div>
-              <span
-                style={{
-                  fontSize: "0.68rem",
-                  fontWeight: 600,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.12em",
-                  color: "var(--text-muted)",
-                  display: "block",
-                  marginBottom: "8px",
-                }}
-              >
-                Volumes
-              </span>
-              <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
-                {volumes.map((v) => {
-                  const isActive = selectedVolumeIds.has(v.id);
-                  const color = VOLUME_COLORS[v.abbrev];
-                  return (
-                    <label
-                      key={v.id}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "8px",
-                        cursor: "pointer",
-                        fontSize: "0.82rem",
-                        fontWeight: isActive ? 600 : 400,
-                        color: isActive ? "var(--text)" : "var(--text-secondary)",
-                        transition: "color 0.15s",
-                      }}
-                    >
-                      <span
-                        onClick={(e) => { e.preventDefault(); toggleVolume(v.id); }}
-                        style={{
-                          width: "16px",
-                          height: "16px",
-                          borderRadius: "4px",
-                          border: isActive ? `2px solid ${color}` : "2px solid rgba(255,255,255,0.2)",
-                          background: isActive ? color : "transparent",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          transition: "all 0.15s",
-                          flexShrink: 0,
-                        }}
-                      >
-                        {isActive && (
-                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                            <path d="M2 5L4 7L8 3" stroke={getContrastText(color)} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                          </svg>
-                        )}
-                      </span>
-                      {v.name}
-                    </label>
-                  );
-                })}
-              </div>
-            </div>
+            + Add
+          </button>
+          <button
+            onClick={handleAnalyze}
+            disabled={terms.length === 0 || isLoading}
+            style={{
+              padding: "14px 28px",
+              background: terms.length === 0 || isLoading ? "var(--zinc-800)" : "linear-gradient(135deg, #8b5cf6, #a78bfa)",
+              color: terms.length === 0 || isLoading ? "var(--text-muted)" : "#fff",
+              border: "none", borderLeft: "1px solid var(--border)",
+              fontSize: "0.88rem", fontWeight: 600, cursor: terms.length === 0 || isLoading ? "not-allowed" : "pointer",
+              fontFamily: "inherit", transition: "background 0.2s", whiteSpace: "nowrap",
+            }}
+          >
+            {isLoading ? "..." : "Go"}
+          </button>
+        </div>
 
-            {/* Options */}
-            <div>
-              <span
-                style={{
-                  fontSize: "0.68rem",
-                  fontWeight: 600,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.12em",
-                  color: "var(--text-muted)",
-                  display: "block",
-                  marginBottom: "8px",
-                }}
-              >
-                Options
+        {/* Term chips */}
+        {terms.length > 0 && (
+          <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginBottom: "12px" }}>
+            {terms.map((term, i) => (
+              <span key={term} style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "5px 12px", borderRadius: "8px", background: TERM_COLORS[i % TERM_COLORS.length], color: "#fff", fontSize: "0.82rem", fontWeight: 600 }}>
+                {term}
+                <button type="button" onClick={() => removeTerm(term)} style={{ background: "rgba(255,255,255,0.2)", border: "none", borderRadius: "50%", width: "18px", height: "18px", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", color: "#fff", fontSize: "0.7rem", fontWeight: 700, lineHeight: 1, padding: 0 }}>✕</button>
               </span>
-              <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
-                <label
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    cursor: "pointer",
-                    fontSize: "0.82rem",
-                    color: caseInsensitive ? "var(--text)" : "var(--text-secondary)",
-                  }}
-                >
-                  <span
-                    onClick={(e) => { e.preventDefault(); setCaseInsensitive(!caseInsensitive); }}
-                    style={{
-                      width: "16px",
-                      height: "16px",
-                      borderRadius: "4px",
-                      border: caseInsensitive ? "2px solid #8b5cf6" : "2px solid rgba(255,255,255,0.2)",
-                      background: caseInsensitive ? "#8b5cf6" : "transparent",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      transition: "all 0.15s",
-                      flexShrink: 0,
-                    }}
-                  >
-                    {caseInsensitive && (
-                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                        <path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    )}
+            ))}
+          </div>
+        )}
+
+        {/* Volumes + Options — single compact row */}
+        <div style={{ display: "flex", alignItems: "center", gap: "16px", flexWrap: "wrap" }}>
+          <span style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)" }}>Volumes</span>
+          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+            {volumes.map((v) => {
+              const isActive = selectedVolumeIds.has(v.id);
+              const color = VOLUME_COLORS[v.abbrev];
+              return (
+                <label key={v.id} style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", fontWeight: isActive ? 600 : 400, color: isActive ? "var(--text)" : "var(--text-secondary)", transition: "color 0.15s", whiteSpace: "nowrap" }}>
+                  <span onClick={(e) => { e.preventDefault(); toggleVolume(v.id); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: isActive ? `2px solid ${color}` : "2px solid rgba(255,255,255,0.2)", background: isActive ? color : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                    {isActive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke={getContrastText(color)} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
                   </span>
-                  Case-insensitive
+                  {v.name}
                 </label>
-                <label
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    cursor: "pointer",
-                    fontSize: "0.82rem",
-                    color: wholeWord ? "var(--text)" : "var(--text-secondary)",
-                  }}
-                >
-                  <span
-                    onClick={(e) => { e.preventDefault(); setWholeWord(!wholeWord); }}
-                    style={{
-                      width: "16px",
-                      height: "16px",
-                      borderRadius: "4px",
-                      border: wholeWord ? "2px solid #8b5cf6" : "2px solid rgba(255,255,255,0.2)",
-                      background: wholeWord ? "#8b5cf6" : "transparent",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      transition: "all 0.15s",
-                      flexShrink: 0,
-                    }}
-                  >
-                    {wholeWord && (
-                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                        <path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    )}
-                  </span>
-                  Whole word
-                </label>
-              </div>
-            </div>
+              );
+            })}
+          </div>
+
+          <span style={{ width: "1px", height: "16px", background: "rgba(255,255,255,0.1)" }} />
+
+          <div style={{ display: "flex", gap: "10px" }}>
+            <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: caseInsensitive ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
+              <span onClick={(e) => { e.preventDefault(); setCaseInsensitive(!caseInsensitive); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: caseInsensitive ? "2px solid #8b5cf6" : "2px solid rgba(255,255,255,0.2)", background: caseInsensitive ? "#8b5cf6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                {caseInsensitive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+              </span>
+              Case-insensitive
+            </label>
+            <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: wholeWord ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
+              <span onClick={(e) => { e.preventDefault(); setWholeWord(!wholeWord); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: wholeWord ? "2px solid #8b5cf6" : "2px solid rgba(255,255,255,0.2)", background: wholeWord ? "#8b5cf6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                {wholeWord && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+              </span>
+              Exact match
+            </label>
           </div>
         </div>
       </div>
@@ -746,14 +511,6 @@ export default function NarrativeArcTool() {
         </div>
       )}
 
-      {/* Responsive styles */}
-      <style jsx>{`
-        @media (max-width: 640px) {
-          .arc-search-grid {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      `}</style>
     </div>
   );
 }

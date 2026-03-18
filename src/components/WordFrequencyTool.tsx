@@ -317,7 +317,7 @@ export default function WordFrequencyTool() {
               </div>
               <div>
                 <code style={{ color: "var(--accent)", background: "var(--accent-soft)", padding: "2px 6px", borderRadius: "4px", fontSize: "0.8rem" }}>tim</code>
-                {" "}+ <span style={{ color: "var(--emerald)" }}>Whole word OFF</span> — Find all words containing &quot;tim&quot; (time, Timothy, etc.)
+                {" "}+ <span style={{ color: "var(--emerald)" }}>Exact match OFF</span> — Find all words containing &quot;tim&quot; (time, Timothy, etc.)
               </div>
               <div style={{ borderTop: "1px solid var(--border)", paddingTop: "8px", marginTop: "4px" }}>
                 <strong style={{ color: "var(--text)" }}>Options:</strong>
@@ -326,7 +326,7 @@ export default function WordFrequencyTool() {
                 <span style={{ color: "var(--accent)" }}>Case-insensitive</span> — &quot;jesus&quot; matches &quot;Jesus&quot; and &quot;JESUS&quot;
               </div>
               <div>
-                <span style={{ color: "var(--accent)" }}>Whole word</span> — Only matches the exact word, not words containing it. Turn off for partial/substring matching.
+                <span style={{ color: "var(--accent)" }}>Exact match</span> — Only matches the exact word, not words containing it. Turn off for partial/substring matching.
               </div>
               <div>
                 <span style={{ color: "var(--emerald)" }}>Show toggles</span> — After searching, use the green toggles to show/hide chart sections
@@ -539,7 +539,7 @@ export default function WordFrequencyTool() {
                 <span style={{ fontSize: "0.7rem" }}>
                   {wholeWord ? "✓" : ""}
                 </span>
-                Whole word
+                Exact match
               </button>
             </>
           );
@@ -612,7 +612,7 @@ export default function WordFrequencyTool() {
                       Options
                     </span>
                     <span style={{ color: "var(--text-secondary)", fontWeight: 500 }}>
-                      {[caseInsensitive && "Case-insensitive", wholeWord && "Whole word"].filter(Boolean).join(", ") || "None"}
+                      {[caseInsensitive && "Case-insensitive", wholeWord && "Exact match"].filter(Boolean).join(", ") || "None"}
                     </span>
                   </span>
                   <span
