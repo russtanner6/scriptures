@@ -26,7 +26,6 @@ export default function DashboardCard({
         borderRadius: "10px",
         padding: "28px",
         transition: "border-color 0.2s, box-shadow 0.2s",
-        overflow: "hidden",
         backdropFilter: "blur(20px)",
         WebkitBackdropFilter: "blur(20px)",
       }}

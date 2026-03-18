@@ -85,7 +85,9 @@ export default function WordFrequencyTool() {
     });
   };
 
-  // Load volumes on mount
+  const initialSearchDone = useRef(false);
+
+  // Load volumes on mount + check URL for deep link
   useEffect(() => {
     fetch("/api/books")
       .then((r) => r.json())
@@ -94,6 +96,18 @@ export default function WordFrequencyTool() {
         setSelectedVolumeIds(
           new Set(data.volumes.map((v: Volume) => v.id))
         );
+
+        // Check URL params for deep link
+        if (!initialSearchDone.current) {
+          const urlParams = new URLSearchParams(window.location.search);
+          const urlWord = urlParams.get("word");
+          if (urlWord) {
+            initialSearchDone.current = true;
+            setWord(urlWord);
+            if (urlParams.get("ci") === "false") setCaseInsensitive(false);
+            if (urlParams.get("ww") === "false") setWholeWord(false);
+          }
+        }
       });
   }, []);
 
@@ -115,10 +129,24 @@ export default function WordFrequencyTool() {
       const res = await fetch(`/api/word-frequency?${params}`);
       const data = await res.json();
       setResults(data);
+
+      // Update URL for deep linking (without page reload)
+      const urlParams = new URLSearchParams();
+      urlParams.set("word", word.trim());
+      if (!caseInsensitive) urlParams.set("ci", "false");
+      if (!wholeWord) urlParams.set("ww", "false");
+      window.history.replaceState({}, "", `?${urlParams.toString()}`);
     } finally {
       setIsLoading(false);
     }
   }, [word, caseInsensitive, wholeWord, selectedVolumeIds, volumes.length]);
+
+  // Auto-search if word was set from URL params
+  useEffect(() => {
+    if (initialSearchDone.current && word && volumes.length > 0 && !results) {
+      handleSearch();
+    }
+  }, [word, volumes.length, handleSearch, results]);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") handleSearch();
