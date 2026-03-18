@@ -41,12 +41,13 @@ const TERM_COLORS = [
 interface TermResult {
   term: string;
   color: string;
-  data: { bookName: string; count: number }[];
+  // data per volume: volumeId → book data
+  volumeData: Map<number, { bookName: string; count: number }[]>;
 }
 
 export default function NarrativeArcTool() {
   const [volumes, setVolumes] = useState<Volume[]>([]);
-  const [selectedVolumeId, setSelectedVolumeId] = useState<number | null>(null);
+  const [selectedVolumeIds, setSelectedVolumeIds] = useState<Set<number>>(new Set());
   const [terms, setTerms] = useState<string[]>([]);
   const [currentTerm, setCurrentTerm] = useState("");
   const [caseInsensitive, setCaseInsensitive] = useState(true);
@@ -55,17 +56,28 @@ export default function NarrativeArcTool() {
   const [isLoading, setIsLoading] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Load volumes on mount
+  // Load volumes on mount — select all by default
   useEffect(() => {
     fetch("/api/books")
       .then((r) => r.json())
       .then((data) => {
         setVolumes(data.volumes);
-        // Default to Book of Mormon
-        const bom = data.volumes.find((v: Volume) => v.abbrev === "BoM");
-        if (bom) setSelectedVolumeId(bom.id);
+        setSelectedVolumeIds(new Set(data.volumes.map((v: Volume) => v.id)));
       });
   }, []);
+
+  const toggleVolume = (id: number) => {
+    setSelectedVolumeIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) {
+        if (next.size > 1) next.delete(id); // keep at least one
+      } else {
+        next.add(id);
+      }
+      return next;
+    });
+    setResults([]);
+  };
 
   const addTerm = () => {
     const t = currentTerm.trim();
@@ -87,37 +99,42 @@ export default function NarrativeArcTool() {
     }
   };
 
-  const selectedVolume = volumes.find((v) => v.id === selectedVolumeId);
+  const selectedVolumes = volumes.filter((v) => selectedVolumeIds.has(v.id));
 
   const handleAnalyze = useCallback(async () => {
-    if (terms.length === 0 || !selectedVolume) return;
+    if (terms.length === 0 || selectedVolumes.length === 0) return;
     setIsLoading(true);
     try {
       const newResults: TermResult[] = [];
 
       for (let i = 0; i < terms.length; i++) {
         const term = terms[i];
-        const params = new URLSearchParams({
-          word: term,
-          caseInsensitive: String(caseInsensitive),
-          wholeWord: String(wholeWord),
-          volumeIds: String(selectedVolumeId),
-        });
-        const res = await fetch(`/api/word-frequency?${params}`);
-        const data = await res.json();
+        const volumeData = new Map<number, { bookName: string; count: number }[]>();
 
-        // Map results to book order within the selected volume
-        const bookData = selectedVolume.books.map((b) => {
-          const result = data.results.find(
-            (r: { bookId: number }) => r.bookId === b.id
-          );
-          return { bookName: b.name, count: result?.count || 0 };
-        });
+        for (const vol of selectedVolumes) {
+          const params = new URLSearchParams({
+            word: term,
+            caseInsensitive: String(caseInsensitive),
+            wholeWord: String(wholeWord),
+            volumeIds: String(vol.id),
+          });
+          const res = await fetch(`/api/word-frequency?${params}`);
+          const data = await res.json();
+
+          const bookData = vol.books.map((b) => {
+            const result = data.results.find(
+              (r: { bookId: number }) => r.bookId === b.id
+            );
+            return { bookName: b.name, count: result?.count || 0 };
+          });
+
+          volumeData.set(vol.id, bookData);
+        }
 
         newResults.push({
           term,
           color: TERM_COLORS[i % TERM_COLORS.length],
-          data: bookData,
+          volumeData,
         });
       }
 
@@ -125,7 +142,7 @@ export default function NarrativeArcTool() {
     } finally {
       setIsLoading(false);
     }
-  }, [terms, selectedVolume, selectedVolumeId, caseInsensitive, wholeWord]);
+  }, [terms, selectedVolumes, caseInsensitive, wholeWord]);
 
   return (
     <div>
@@ -142,552 +159,566 @@ export default function NarrativeArcTool() {
           Narrative Arc Explorer
         </h2>
         <p style={{ color: "var(--text-secondary)", fontSize: "0.92rem" }}>
-          Overlay multiple search terms on a single chart to see how themes flow
-          through the books in narrative order.
+          Compare up to 6 search terms across multiple volumes to see how themes
+          flow through the scriptures in narrative order.
         </p>
       </div>
 
-      {/* Search panel */}
+      {/* Two-column search panel */}
       <div className="search-panel">
-        {/* Term input + add button */}
         <div
           style={{
-            display: "flex",
-            background: "var(--zinc-900)",
-            border: "1px solid var(--border-accent)",
-            borderRadius: "14px",
-            overflow: "hidden",
-            marginBottom: "16px",
+            display: "grid",
+            gridTemplateColumns: "1fr auto",
+            gap: "24px",
           }}
+          className="arc-search-grid"
         >
-          <div
-            style={{
-              position: "relative",
-              flex: 1,
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="var(--text-muted)"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+          {/* Left column: search + terms + Go */}
+          <div>
+            {/* Term input + add button */}
+            <div
               style={{
-                position: "absolute",
-                left: "16px",
-                pointerEvents: "none",
+                display: "flex",
+                background: "var(--zinc-900)",
+                border: "1px solid var(--border-accent)",
+                borderRadius: "14px",
+                overflow: "hidden",
+                marginBottom: "12px",
               }}
             >
-              <circle cx="11" cy="11" r="8" />
-              <path d="m21 21-4.3-4.3" />
-            </svg>
-            <input
-              ref={inputRef}
-              type="text"
-              value={currentTerm}
-              onChange={(e) => setCurrentTerm(e.target.value)}
-              onKeyDown={handleKeyDown}
-              placeholder={
-                terms.length >= 6
-                  ? "Maximum 6 terms"
-                  : "Add a search term..."
-              }
-              disabled={terms.length >= 6}
-              style={{
-                width: "100%",
-                padding: "14px 16px 14px 46px",
-                background: "transparent",
-                border: "none",
-                color: "var(--text)",
-                fontSize: "0.95rem",
-                fontFamily: "inherit",
-                outline: "none",
-              }}
-            />
-          </div>
-          <button
-            onClick={addTerm}
-            disabled={!currentTerm.trim() || terms.length >= 6}
-            style={{
-              padding: "14px 24px",
-              background:
-                !currentTerm.trim() || terms.length >= 6
-                  ? "var(--zinc-800)"
-                  : "linear-gradient(135deg, #8b5cf6, #a78bfa)",
-              color:
-                !currentTerm.trim() || terms.length >= 6
-                  ? "var(--text-muted)"
-                  : "#fff",
-              border: "none",
-              borderLeft: "1px solid var(--border)",
-              fontSize: "0.88rem",
-              fontWeight: 600,
-              cursor:
-                !currentTerm.trim() || terms.length >= 6
-                  ? "not-allowed"
-                  : "pointer",
-              fontFamily: "inherit",
-              transition: "background 0.2s",
-              whiteSpace: "nowrap",
-            }}
-          >
-            + Add
-          </button>
-        </div>
-
-        {/* Term chips */}
-        {terms.length > 0 && (
-          <div
-            style={{
-              display: "flex",
-              gap: "8px",
-              flexWrap: "wrap",
-              marginBottom: "16px",
-            }}
-          >
-            {terms.map((term, i) => (
-              <span
-                key={term}
+              <div
                 style={{
-                  display: "inline-flex",
+                  position: "relative",
+                  flex: 1,
+                  display: "flex",
                   alignItems: "center",
-                  gap: "8px",
-                  padding: "6px 14px",
-                  borderRadius: "8px",
-                  background: TERM_COLORS[i % TERM_COLORS.length],
-                  color: "#fff",
-                  fontSize: "0.82rem",
-                  fontWeight: 600,
                 }}
               >
-                <span
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--text-muted)"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   style={{
-                    width: "8px",
-                    height: "8px",
-                    borderRadius: "50%",
-                    background: "#fff",
-                    opacity: 0.5,
+                    position: "absolute",
+                    left: "16px",
+                    pointerEvents: "none",
+                  }}
+                >
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="m21 21-4.3-4.3" />
+                </svg>
+                <input
+                  ref={inputRef}
+                  type="text"
+                  value={currentTerm}
+                  onChange={(e) => setCurrentTerm(e.target.value)}
+                  onKeyDown={handleKeyDown}
+                  placeholder={
+                    terms.length >= 6
+                      ? "Maximum 6 terms"
+                      : "Add a search term..."
+                  }
+                  disabled={terms.length >= 6}
+                  style={{
+                    width: "100%",
+                    padding: "14px 16px 14px 46px",
+                    background: "transparent",
+                    border: "none",
+                    color: "var(--text)",
+                    fontSize: "0.95rem",
+                    fontFamily: "inherit",
+                    outline: "none",
                   }}
                 />
-                {term}
-                <button
-                  type="button"
-                  onClick={() => removeTerm(term)}
+              </div>
+              <button
+                onClick={addTerm}
+                disabled={!currentTerm.trim() || terms.length >= 6}
+                style={{
+                  padding: "14px 24px",
+                  background:
+                    !currentTerm.trim() || terms.length >= 6
+                      ? "var(--zinc-800)"
+                      : "linear-gradient(135deg, #8b5cf6, #a78bfa)",
+                  color:
+                    !currentTerm.trim() || terms.length >= 6
+                      ? "var(--text-muted)"
+                      : "#fff",
+                  border: "none",
+                  borderLeft: "1px solid var(--border)",
+                  fontSize: "0.88rem",
+                  fontWeight: 600,
+                  cursor:
+                    !currentTerm.trim() || terms.length >= 6
+                      ? "not-allowed"
+                      : "pointer",
+                  fontFamily: "inherit",
+                  transition: "background 0.2s",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                + Add
+              </button>
+            </div>
+
+            {/* Term chips */}
+            {terms.length > 0 && (
+              <div
+                style={{
+                  display: "flex",
+                  gap: "8px",
+                  flexWrap: "wrap",
+                  marginBottom: "12px",
+                }}
+              >
+                {terms.map((term, i) => (
+                  <span
+                    key={term}
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "8px",
+                      padding: "6px 14px",
+                      borderRadius: "8px",
+                      background: TERM_COLORS[i % TERM_COLORS.length],
+                      color: "#fff",
+                      fontSize: "0.82rem",
+                      fontWeight: 600,
+                    }}
+                  >
+                    {term}
+                    <button
+                      type="button"
+                      onClick={() => removeTerm(term)}
+                      style={{
+                        background: "rgba(255,255,255,0.2)",
+                        border: "none",
+                        borderRadius: "50%",
+                        width: "18px",
+                        height: "18px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        cursor: "pointer",
+                        color: "#fff",
+                        fontSize: "0.7rem",
+                        fontWeight: 700,
+                        lineHeight: 1,
+                        padding: 0,
+                      }}
+                    >
+                      ✕
+                    </button>
+                  </span>
+                ))}
+              </div>
+            )}
+
+            {/* Go button */}
+            <button
+              onClick={handleAnalyze}
+              disabled={terms.length === 0 || isLoading}
+              style={{
+                padding: "10px 32px",
+                background:
+                  terms.length === 0 || isLoading
+                    ? "var(--zinc-800)"
+                    : "linear-gradient(135deg, #8b5cf6, #a78bfa)",
+                color:
+                  terms.length === 0 || isLoading
+                    ? "var(--text-muted)"
+                    : "#fff",
+                border: "none",
+                borderRadius: "8px",
+                fontSize: "0.88rem",
+                fontWeight: 600,
+                cursor:
+                  terms.length === 0 || isLoading ? "not-allowed" : "pointer",
+                fontFamily: "inherit",
+                transition: "background 0.2s",
+              }}
+            >
+              {isLoading ? "Searching..." : "Go"}
+            </button>
+          </div>
+
+          {/* Right column: volumes + options */}
+          <div
+            style={{
+              minWidth: "180px",
+              display: "flex",
+              flexDirection: "column",
+              gap: "16px",
+            }}
+          >
+            {/* Volumes — color-coded checkboxes */}
+            <div>
+              <span
+                style={{
+                  fontSize: "0.68rem",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.12em",
+                  color: "var(--text-muted)",
+                  display: "block",
+                  marginBottom: "8px",
+                }}
+              >
+                Volumes
+              </span>
+              <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+                {volumes.map((v) => {
+                  const isActive = selectedVolumeIds.has(v.id);
+                  const color = VOLUME_COLORS[v.abbrev];
+                  return (
+                    <label
+                      key={v.id}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "8px",
+                        cursor: "pointer",
+                        fontSize: "0.82rem",
+                        fontWeight: isActive ? 600 : 400,
+                        color: isActive ? "var(--text)" : "var(--text-secondary)",
+                        transition: "color 0.15s",
+                      }}
+                    >
+                      <span
+                        onClick={(e) => { e.preventDefault(); toggleVolume(v.id); }}
+                        style={{
+                          width: "16px",
+                          height: "16px",
+                          borderRadius: "4px",
+                          border: isActive ? `2px solid ${color}` : "2px solid rgba(255,255,255,0.2)",
+                          background: isActive ? color : "transparent",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          transition: "all 0.15s",
+                          flexShrink: 0,
+                        }}
+                      >
+                        {isActive && (
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                            <path d="M2 5L4 7L8 3" stroke={getContrastText(color)} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                          </svg>
+                        )}
+                      </span>
+                      {v.name}
+                    </label>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Options */}
+            <div>
+              <span
+                style={{
+                  fontSize: "0.68rem",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.12em",
+                  color: "var(--text-muted)",
+                  display: "block",
+                  marginBottom: "8px",
+                }}
+              >
+                Options
+              </span>
+              <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+                <label
                   style={{
-                    background: "rgba(255,255,255,0.2)",
-                    border: "none",
-                    borderRadius: "50%",
-                    width: "18px",
-                    height: "18px",
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "center",
+                    gap: "8px",
                     cursor: "pointer",
-                    color: "#fff",
-                    fontSize: "0.7rem",
-                    fontWeight: 700,
-                    lineHeight: 1,
-                    padding: 0,
+                    fontSize: "0.82rem",
+                    color: caseInsensitive ? "var(--text)" : "var(--text-secondary)",
                   }}
                 >
-                  ✕
-                </button>
-              </span>
-            ))}
-          </div>
-        )}
-
-        {/* Volume selector — single select */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "6px",
-            marginBottom: "16px",
-          }}
-        >
-          <span
-            style={{
-              fontSize: "0.68rem",
-              fontWeight: 600,
-              textTransform: "uppercase",
-              letterSpacing: "0.12em",
-              color: "var(--text-muted)",
-              marginRight: "8px",
-              whiteSpace: "nowrap",
-            }}
-          >
-            Volume
-          </span>
-          <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
-            {volumes.map((v) => {
-              const isActive = v.id === selectedVolumeId;
-              const color = VOLUME_COLORS[v.abbrev];
-              return (
-                <button
-                  key={v.id}
-                  type="button"
-                  onClick={() => { setSelectedVolumeId(v.id); setResults([]); }}
+                  <span
+                    onClick={(e) => { e.preventDefault(); setCaseInsensitive(!caseInsensitive); }}
+                    style={{
+                      width: "16px",
+                      height: "16px",
+                      borderRadius: "4px",
+                      border: caseInsensitive ? "2px solid #8b5cf6" : "2px solid rgba(255,255,255,0.2)",
+                      background: caseInsensitive ? "#8b5cf6" : "transparent",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      transition: "all 0.15s",
+                      flexShrink: 0,
+                    }}
+                  >
+                    {caseInsensitive && (
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    )}
+                  </span>
+                  Case-insensitive
+                </label>
+                <label
                   style={{
-                    display: "inline-flex",
+                    display: "flex",
                     alignItems: "center",
-                    gap: "7px",
-                    padding: "7px 14px",
-                    borderRadius: "8px",
-                    border: isActive
-                      ? `1px solid ${color}`
-                      : "1px solid rgba(255,255,255,0.08)",
-                    background: isActive ? color : "rgba(255,255,255,0.06)",
-                    color: isActive ? getContrastText(color) : "var(--text-secondary)",
-                    fontSize: "0.8rem",
-                    fontWeight: isActive ? 600 : 500,
-                    fontFamily: "inherit",
+                    gap: "8px",
                     cursor: "pointer",
-                    transition: "all 0.15s ease",
+                    fontSize: "0.82rem",
+                    color: wholeWord ? "var(--text)" : "var(--text-secondary)",
                   }}
                 >
-                  {v.name}
-                </button>
-              );
-            })}
+                  <span
+                    onClick={(e) => { e.preventDefault(); setWholeWord(!wholeWord); }}
+                    style={{
+                      width: "16px",
+                      height: "16px",
+                      borderRadius: "4px",
+                      border: wholeWord ? "2px solid #8b5cf6" : "2px solid rgba(255,255,255,0.2)",
+                      background: wholeWord ? "#8b5cf6" : "transparent",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      transition: "all 0.15s",
+                      flexShrink: 0,
+                    }}
+                  >
+                    {wholeWord && (
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    )}
+                  </span>
+                  Whole word
+                </label>
+              </div>
+            </div>
           </div>
-        </div>
-
-        {/* Options + Analyze */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "6px",
-            flexWrap: "wrap",
-            paddingTop: "12px",
-            borderTop: "1px solid var(--border)",
-          }}
-        >
-          <span
-            style={{
-              fontSize: "0.68rem",
-              fontWeight: 600,
-              textTransform: "uppercase",
-              letterSpacing: "0.12em",
-              color: "var(--text-muted)",
-              marginRight: "8px",
-            }}
-          >
-            Options
-          </span>
-          <button
-            type="button"
-            onClick={() => setCaseInsensitive(!caseInsensitive)}
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              padding: "5px 12px",
-              borderRadius: "8px",
-              border: caseInsensitive
-                ? "1px solid #8b5cf6"
-                : "1px solid var(--border)",
-              background: caseInsensitive ? "#8b5cf6" : "transparent",
-              color: caseInsensitive ? "#fff" : "var(--text-muted)",
-              fontSize: "0.78rem",
-              fontWeight: 500,
-              fontFamily: "inherit",
-              cursor: "pointer",
-              transition: "all 0.15s ease",
-            }}
-          >
-            <span style={{ fontSize: "0.7rem" }}>
-              {caseInsensitive ? "✓" : ""}
-            </span>
-            Case-insensitive
-          </button>
-          <button
-            type="button"
-            onClick={() => setWholeWord(!wholeWord)}
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              padding: "5px 12px",
-              borderRadius: "8px",
-              border: wholeWord
-                ? "1px solid #8b5cf6"
-                : "1px solid var(--border)",
-              background: wholeWord ? "#8b5cf6" : "transparent",
-              color: wholeWord ? "#fff" : "var(--text-muted)",
-              fontSize: "0.78rem",
-              fontWeight: 500,
-              fontFamily: "inherit",
-              cursor: "pointer",
-              transition: "all 0.15s ease",
-            }}
-          >
-            <span style={{ fontSize: "0.7rem" }}>
-              {wholeWord ? "✓" : ""}
-            </span>
-            Whole word
-          </button>
-
-          <div style={{ flex: 1 }} />
-
-          <button
-            onClick={handleAnalyze}
-            disabled={terms.length === 0 || isLoading}
-            style={{
-              padding: "8px 28px",
-              background:
-                terms.length === 0 || isLoading
-                  ? "var(--zinc-800)"
-                  : "linear-gradient(135deg, #8b5cf6, #a78bfa)",
-              color:
-                terms.length === 0 || isLoading
-                  ? "var(--text-muted)"
-                  : "#fff",
-              border: "none",
-              borderRadius: "8px",
-              fontSize: "0.88rem",
-              fontWeight: 600,
-              cursor:
-                terms.length === 0 || isLoading ? "not-allowed" : "pointer",
-              fontFamily: "inherit",
-              transition: "background 0.2s",
-              whiteSpace: "nowrap",
-            }}
-          >
-            {isLoading ? "Searching..." : "Go"}
-          </button>
         </div>
       </div>
 
-      {/* Chart */}
-      {results.length > 0 && selectedVolume && (
-        <div
-          style={{
-            background: "var(--surface)",
-            border: "1px solid var(--border)",
-            borderRadius: "10px",
-            padding: "28px",
-            backdropFilter: "blur(20px)",
-            WebkitBackdropFilter: "blur(20px)",
-          }}
-        >
-          <h3
-            style={{
-              fontSize: "0.88rem",
-              fontWeight: 700,
-              textTransform: "uppercase",
-              letterSpacing: "0.1em",
-              color: "var(--text)",
-              marginBottom: "4px",
-            }}
-          >
-            {selectedVolume.name} — Narrative Arc
-          </h3>
-          <p
-            style={{
-              fontSize: "0.85rem",
-              color: "var(--text-secondary)",
-              marginBottom: "24px",
-            }}
-          >
-            Word frequency by book in narrative order
-          </p>
+      {/* Charts — one per selected volume */}
+      {results.length > 0 &&
+        selectedVolumes.map((vol) => {
+          const volResults = results.filter((r) => r.volumeData.has(vol.id));
+          if (volResults.length === 0) return null;
+          const color = VOLUME_COLORS[vol.abbrev];
 
-          <div style={{ position: "relative", height: "420px" }}>
-            <Line
-              data={{
-                labels: selectedVolume.books.map((b) => b.name),
-                datasets: results.map((r) => ({
-                  label: r.term,
-                  data: r.data.map((d) => d.count),
-                  fill: true,
-                  backgroundColor: `${r.color}12`,
-                  borderColor: r.color,
-                  borderWidth: 2.5,
-                  pointBackgroundColor: r.color,
-                  pointBorderColor: r.color,
-                  pointBorderWidth: 1,
-                  pointRadius: 4,
-                  pointHoverRadius: 7,
-                  tension: 0.35,
-                })),
-              }}
-              options={{
-                responsive: true,
-                maintainAspectRatio: false,
-                ...({ clip: false } as Record<string, unknown>),
-                interaction: {
-                  mode: "index",
-                  intersect: false,
-                },
-                plugins: {
-                  legend: {
-                    position: "top",
-                    labels: {
-                      padding: 20,
-                      usePointStyle: true,
-                      pointStyle: "rectRounded",
-                      pointStyleWidth: 16,
-                      font: { size: 13, weight: 600 },
-                    },
-                  },
-                  tooltip: {
-                    callbacks: {
-                      label: (ctx) =>
-                        ` ${ctx.dataset.label}: ${ctx.raw} occurrences`,
-                    },
-                  },
-                  datalabels: {
-                    display: (ctx) => (ctx.dataset.data as number[])[ctx.dataIndex] > 0,
-                    anchor: "end",
-                    align: "top",
-                    offset: 4,
-                    color: "#fafafa",
-                    font: { weight: 700, size: 10 },
-                    formatter: (value: number) => value.toLocaleString(),
-                  },
-                },
-                layout: { padding: { top: 40 } },
-                scales: {
-                  y: {
-                    grid: { color: "rgba(255,255,255,0.06)" },
-                    ticks: { font: { weight: 600 } },
-                    beginAtZero: true,
-                  },
-                  x: {
-                    grid: { display: false },
-                    ticks: {
-                      maxRotation: 45,
-                      font: { size: 11, weight: 500 },
-                    },
-                  },
-                },
-              }}
-            />
-          </div>
-
-          {/* Summary table */}
-          <div style={{ marginTop: "24px", overflowX: "auto" }}>
-            <table
+          return (
+            <div
+              key={vol.id}
               style={{
-                width: "100%",
-                borderCollapse: "collapse",
-                fontSize: "0.85rem",
-                minWidth: "300px",
+                background: "var(--surface)",
+                border: "1px solid var(--border)",
+                borderRadius: "10px",
+                padding: "28px",
+                marginTop: "20px",
+                backdropFilter: "blur(20px)",
+                WebkitBackdropFilter: "blur(20px)",
               }}
             >
-              <thead>
-                <tr>
-                  <th
-                    style={{
-                      textAlign: "left",
-                      padding: "8px 12px",
-                      fontSize: "0.72rem",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.1em",
-                      color: "var(--text-secondary)",
-                      fontWeight: 600,
-                      borderBottom: "1px solid var(--border)",
-                    }}
-                  >
-                    Term
-                  </th>
-                  <th
-                    style={{
-                      textAlign: "right",
-                      padding: "8px 12px",
-                      fontSize: "0.72rem",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.1em",
-                      color: "var(--text-secondary)",
-                      fontWeight: 600,
-                      borderBottom: "1px solid var(--border)",
-                    }}
-                  >
-                    Total
-                  </th>
-                  <th
-                    style={{
-                      textAlign: "left",
-                      padding: "8px 12px",
-                      fontSize: "0.72rem",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.1em",
-                      color: "var(--text-secondary)",
-                      fontWeight: 600,
-                      borderBottom: "1px solid var(--border)",
-                    }}
-                  >
-                    Peak Book
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {results.map((r) => {
-                  const total = r.data.reduce((s, d) => s + d.count, 0);
-                  const peak = r.data.reduce(
-                    (best, d) => (d.count > best.count ? d : best),
-                    r.data[0]
-                  );
-                  return (
-                    <tr key={r.term}>
-                      <td
-                        style={{
-                          padding: "8px 12px",
-                          borderBottom: "1px solid rgba(255,255,255,0.06)",
-                          display: "flex",
-                          alignItems: "center",
-                          gap: "8px",
-                        }}
-                      >
-                        <span
+              <h3
+                style={{
+                  fontSize: "0.88rem",
+                  fontWeight: 700,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.1em",
+                  color: "var(--text)",
+                  marginBottom: "4px",
+                }}
+              >
+                <span style={{ color }}>{vol.name}</span> — Narrative Arc
+              </h3>
+              <p
+                style={{
+                  fontSize: "0.85rem",
+                  color: "var(--text-secondary)",
+                  marginBottom: "24px",
+                }}
+              >
+                Word frequency by book in narrative order
+              </p>
+
+              <div style={{ position: "relative", height: "420px" }}>
+                <Line
+                  data={{
+                    labels: vol.books.map((b) => b.name),
+                    datasets: volResults.map((r) => {
+                      const data = r.volumeData.get(vol.id) || [];
+                      return {
+                        label: r.term,
+                        data: data.map((d) => d.count),
+                        fill: true,
+                        backgroundColor: `${r.color}12`,
+                        borderColor: r.color,
+                        borderWidth: 2.5,
+                        pointBackgroundColor: r.color,
+                        pointBorderColor: r.color,
+                        pointBorderWidth: 1,
+                        pointRadius: 4,
+                        pointHoverRadius: 7,
+                        tension: 0.35,
+                      };
+                    }),
+                  }}
+                  options={{
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    ...({ clip: false } as Record<string, unknown>),
+                    interaction: {
+                      mode: "index",
+                      intersect: false,
+                    },
+                    plugins: {
+                      legend: {
+                        position: "top",
+                        labels: {
+                          padding: 24,
+                          usePointStyle: true,
+                          pointStyle: "rectRounded",
+                          pointStyleWidth: 16,
+                          font: { size: 13, weight: 600 },
+                        },
+                      },
+                      tooltip: {
+                        callbacks: {
+                          label: (ctx) =>
+                            ` ${ctx.dataset.label}: ${ctx.raw} occurrences`,
+                        },
+                      },
+                      datalabels: {
+                        display: (ctx) => (ctx.dataset.data as number[])[ctx.dataIndex] > 0,
+                        anchor: "end",
+                        align: "top",
+                        offset: 4,
+                        color: "#fafafa",
+                        font: { weight: 700, size: 10 },
+                        formatter: (value: number) => value.toLocaleString(),
+                      },
+                    },
+                    layout: { padding: { top: 40 } },
+                    scales: {
+                      y: {
+                        grid: { color: "rgba(255,255,255,0.06)" },
+                        ticks: { font: { weight: 600 } },
+                        beginAtZero: true,
+                      },
+                      x: {
+                        grid: { display: false },
+                        ticks: {
+                          maxRotation: 45,
+                          font: { size: 11, weight: 500 },
+                        },
+                      },
+                    },
+                  }}
+                />
+              </div>
+
+              {/* Summary table for this volume */}
+              <div style={{ marginTop: "24px", overflowX: "auto" }}>
+                <table
+                  style={{
+                    width: "100%",
+                    borderCollapse: "collapse",
+                    fontSize: "0.85rem",
+                    minWidth: "300px",
+                  }}
+                >
+                  <thead>
+                    <tr>
+                      {["Term", "Total", "Peak Book"].map((heading, idx) => (
+                        <th
+                          key={heading}
                           style={{
-                            width: "10px",
-                            height: "10px",
-                            borderRadius: "50%",
-                            background: r.color,
-                            flexShrink: 0,
+                            textAlign: idx === 1 ? "right" : "left",
+                            padding: "8px 12px",
+                            fontSize: "0.85rem",
+                            textTransform: "uppercase",
+                            letterSpacing: "0.1em",
+                            color: "var(--text)",
+                            fontWeight: 700,
+                            borderBottom: "1px solid var(--border)",
                           }}
-                        />
-                        <span style={{ fontWeight: 600, color: "var(--text)" }}>
-                          {r.term}
-                        </span>
-                      </td>
-                      <td
-                        style={{
-                          padding: "8px 12px",
-                          textAlign: "right",
-                          fontWeight: 700,
-                          fontVariantNumeric: "tabular-nums",
-                          color: "var(--text)",
-                          borderBottom: "1px solid rgba(255,255,255,0.06)",
-                        }}
-                      >
-                        {total.toLocaleString()}
-                      </td>
-                      <td
-                        style={{
-                          padding: "8px 12px",
-                          color: "var(--text-secondary)",
-                          borderBottom: "1px solid rgba(255,255,255,0.06)",
-                        }}
-                      >
-                        {peak.bookName} ({peak.count})
-                      </td>
+                        >
+                          {heading}
+                        </th>
+                      ))}
                     </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      )}
+                  </thead>
+                  <tbody>
+                    {volResults.map((r) => {
+                      const data = r.volumeData.get(vol.id) || [];
+                      const total = data.reduce((s, d) => s + d.count, 0);
+                      const peak = data.reduce(
+                        (best, d) => (d.count > best.count ? d : best),
+                        data[0]
+                      );
+                      return (
+                        <tr key={r.term}>
+                          <td
+                            style={{
+                              padding: "8px 12px",
+                              borderBottom: "1px solid rgba(255,255,255,0.06)",
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "8px",
+                            }}
+                          >
+                            <span
+                              style={{
+                                width: "10px",
+                                height: "3px",
+                                borderRadius: "2px",
+                                background: r.color,
+                                flexShrink: 0,
+                              }}
+                            />
+                            <span style={{ fontWeight: 600, color: "var(--text)" }}>
+                              {r.term}
+                            </span>
+                          </td>
+                          <td
+                            style={{
+                              padding: "8px 12px",
+                              textAlign: "right",
+                              fontWeight: 700,
+                              fontVariantNumeric: "tabular-nums",
+                              color: "var(--text)",
+                              borderBottom: "1px solid rgba(255,255,255,0.06)",
+                            }}
+                          >
+                            {total.toLocaleString()}
+                          </td>
+                          <td
+                            style={{
+                              padding: "8px 12px",
+                              color: "rgba(255,255,255,0.75)",
+                              borderBottom: "1px solid rgba(255,255,255,0.06)",
+                            }}
+                          >
+                            {peak && peak.count > 0
+                              ? `${peak.bookName} (${peak.count})`
+                              : "—"}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          );
+        })}
 
       {/* Empty state */}
       {results.length === 0 && !isLoading && (
@@ -700,7 +731,7 @@ export default function NarrativeArcTool() {
         >
           <div style={{ fontSize: "3rem", marginBottom: "16px" }}>📈</div>
           <div style={{ fontSize: "1.1rem", fontWeight: 500 }}>
-            Add search terms above and click Go
+            Add search terms and click Go
           </div>
           <div
             style={{
@@ -710,10 +741,19 @@ export default function NarrativeArcTool() {
             }}
           >
             Try comparing &quot;faith&quot;, &quot;repentance&quot;, and
-            &quot;grace&quot; across the Book of Mormon
+            &quot;grace&quot; across all volumes
           </div>
         </div>
       )}
+
+      {/* Responsive styles */}
+      <style jsx>{`
+        @media (max-width: 640px) {
+          .arc-search-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }
