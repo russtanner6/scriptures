@@ -197,8 +197,8 @@ export default function NarrativeArcTool() {
             disabled={!currentTerm.trim() || terms.length >= 6}
             style={{
               padding: "14px 20px",
-              background: !currentTerm.trim() || terms.length >= 6 ? "var(--zinc-800)" : "rgba(139,92,246,0.15)",
-              color: !currentTerm.trim() || terms.length >= 6 ? "var(--text-muted)" : "#a78bfa",
+              background: !currentTerm.trim() || terms.length >= 6 ? "var(--zinc-800)" : "rgba(59,130,246,0.15)",
+              color: !currentTerm.trim() || terms.length >= 6 ? "var(--text-muted)" : "#60A5FA",
               border: "none", borderLeft: "1px solid var(--border)",
               fontSize: "0.88rem", fontWeight: 600, cursor: !currentTerm.trim() || terms.length >= 6 ? "not-allowed" : "pointer",
               fontFamily: "inherit", transition: "background 0.2s", whiteSpace: "nowrap",
@@ -211,7 +211,7 @@ export default function NarrativeArcTool() {
             disabled={terms.length === 0 || isLoading}
             style={{
               padding: "14px 28px",
-              background: terms.length === 0 || isLoading ? "var(--zinc-800)" : "linear-gradient(135deg, #8b5cf6, #a78bfa)",
+              background: terms.length === 0 || isLoading ? "var(--zinc-800)" : "#3B82F6",
               color: terms.length === 0 || isLoading ? "var(--text-muted)" : "#fff",
               border: "none", borderLeft: "1px solid var(--border)",
               fontSize: "0.88rem", fontWeight: 600, cursor: terms.length === 0 || isLoading ? "not-allowed" : "pointer",
@@ -256,13 +256,13 @@ export default function NarrativeArcTool() {
 
           <div style={{ display: "flex", gap: "10px" }}>
             <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: caseInsensitive ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
-              <span onClick={(e) => { e.preventDefault(); setCaseInsensitive(!caseInsensitive); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: caseInsensitive ? "2px solid #8b5cf6" : "2px solid rgba(255,255,255,0.2)", background: caseInsensitive ? "#8b5cf6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+              <span onClick={(e) => { e.preventDefault(); setCaseInsensitive(!caseInsensitive); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: caseInsensitive ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: caseInsensitive ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
                 {caseInsensitive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
               </span>
               Case-insensitive
             </label>
             <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: wholeWord ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
-              <span onClick={(e) => { e.preventDefault(); setWholeWord(!wholeWord); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: wholeWord ? "2px solid #8b5cf6" : "2px solid rgba(255,255,255,0.2)", background: wholeWord ? "#8b5cf6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+              <span onClick={(e) => { e.preventDefault(); setWholeWord(!wholeWord); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: wholeWord ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: wholeWord ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
                 {wholeWord && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
               </span>
               Exact match

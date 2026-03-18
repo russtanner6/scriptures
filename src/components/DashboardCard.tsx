@@ -42,7 +42,7 @@ export default function DashboardCard({
     >
       <h2
         style={{
-          fontSize: "0.88rem",
+          fontSize: "1.05rem",
           fontWeight: 700,
           textTransform: "uppercase",
           letterSpacing: "0.1em",
