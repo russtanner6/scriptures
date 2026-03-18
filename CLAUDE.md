@@ -85,6 +85,11 @@ scripts/                       # build-db.ts, book-order.ts
 - **Volume selectors:** Compact color-coded checkboxes (14px), inline horizontal row. Multi-select enabled.
 - **Search panels:** Go button inside the search bar. Volumes + options on a single compact row below.
 - **"Exact match"** (not "Whole word") for the whole-word toggle label.
+- **Every data point is a doorway to scripture.** Bar charts have clickable icons. Narrative arc points should be clickable to open verse modal. Modules should tell users data is clickable (e.g., "Click any point to read verses").
+- **Export:** All chart modules have an EXPORT button (top right) → modal with PNG/JPG/PDF options. Uses `ExportChartModal` component.
+- **Links:** Blue (`var(--accent)` = `#3B82F6`), underlined, for in-page/module navigation.
+- **Legend spacing:** Use `legendMarginPlugin` to add 28px below Chart.js legends (prevents overlap with data labels).
+- **Single-book volumes (D&C):** Plot by section/chapter instead of book. Sparse x-axis labels (every 10th). Smaller point radius. Tooltip shows "Section N".
 - **Chart legends:** Use `pointStyle: "rectRounded"` (not circles/ovals). Adequate spacing from chart top.
 - **Nav menu:** Slides in from the RIGHT side of the screen.
 - **DashboardCard:** Supports `headerExtra` prop for inline links/actions next to the description.
@@ -106,12 +111,27 @@ scripts/                       # build-db.ts, book-order.ts
 
 ## Pages
 1. **Word Search** (`/`) — Single-word frequency search with bar charts, narrative arc section, data table, stat cards. Has "Compare multiple terms →" link in narrative arc header.
-2. **Narrative Arc** (`/narrative-arc`) — Multi-term comparison tool. Up to 6 terms overlaid on line charts. Multi-volume support with stacked charts.
-3. **Future:** Home landing page with tool links.
+2. **Narrative Arc** (`/narrative-arc`) — Multi-term comparison (up to 6). Multi-volume with stacked charts. D&C plots by section. Sticky jump-to nav. Deep linking (`?terms=faith,grace`). Export per chart.
+3. **Future:** Home landing page with tool links. Clickable chart points → verse modal on narrative arc.
+
+## Key Components
+- **ExportChartModal / ExportButton** — Reusable chart export (PNG/JPG/PDF via jsPDF). Solid dark background modal.
+- **legendMarginPlugin** — Chart.js plugin adding 28px below legend. Apply to all Line charts.
+- **DashboardCard** — Section wrapper with `headerExtra` prop for inline links/actions.
+- **useIsMobile(768)** — Hook for responsive layout. Defined in WordFrequencyTool and NarrativeArcTool.
+
+## API Routes
+- `/api/books` — All volumes with books
+- `/api/word-frequency` — Word frequency by book (supports volumeIds, bookIds filters)
+- `/api/word-frequency-by-chapter` — Word frequency by chapter/section for a single book (used for D&C)
+- `/api/verses` — Fetch matching verses for a book
+- `/api/book-stats` — Word/verse counts per book
 
 ## Key Patterns
 - `displayName()` in queries.ts normalizes all volume and book names (D&C fix)
 - Volume data comes from SQLite via sql.js (client-side)
 - API routes in `src/app/api/` wrap the query functions
-- Charts use Chart.js with datalabels plugin
+- Charts use Chart.js with datalabels plugin + legendMarginPlugin
 - Results clear when volume selection changes
+- Deep linking: URL params updated on search, read on mount
+- Single-book volume detection: `vol.books.length === 1` triggers chapter-level plotting
