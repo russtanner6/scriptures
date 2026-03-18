@@ -416,12 +416,12 @@ export default function HeatmapTool() {
                   </div>
 
                   {/* View toggle */}
-                  <div style={{ display: "flex", alignItems: "center", gap: "4px", marginTop: "8px", marginBottom: "12px" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "8px", marginBottom: "12px" }}>
                     <button type="button" onClick={() => { if (getViewMode(abbrev) !== "heatmap") toggleViewMode(abbrev); }}
                       style={{
                         display: "inline-flex", alignItems: "center", gap: "6px",
-                        padding: "6px 14px", borderRadius: "8px 0 0 8px",
-                        border: "1px solid rgba(255,255,255,0.1)",
+                        padding: "6px 14px", borderRadius: "8px",
+                        border: "none",
                         background: getViewMode(abbrev) === "heatmap" ? "rgba(255,255,255,0.12)" : "transparent",
                         color: getViewMode(abbrev) === "heatmap" ? "var(--text)" : "var(--text-muted)",
                         fontSize: "0.78rem", fontWeight: getViewMode(abbrev) === "heatmap" ? 600 : 400,
@@ -435,8 +435,8 @@ export default function HeatmapTool() {
                     <button type="button" onClick={() => { if (getViewMode(abbrev) !== "arc") toggleViewMode(abbrev); }}
                       style={{
                         display: "inline-flex", alignItems: "center", gap: "6px",
-                        padding: "6px 14px", borderRadius: "0 8px 8px 0",
-                        border: "1px solid rgba(255,255,255,0.1)", borderLeft: "none",
+                        padding: "6px 14px", borderRadius: "8px",
+                        border: "none",
                         background: getViewMode(abbrev) === "arc" ? "rgba(255,255,255,0.12)" : "transparent",
                         color: getViewMode(abbrev) === "arc" ? "var(--text)" : "var(--text-muted)",
                         fontSize: "0.78rem", fontWeight: getViewMode(abbrev) === "arc" ? 600 : 400,
