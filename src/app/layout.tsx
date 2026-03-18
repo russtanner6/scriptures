@@ -10,6 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Scripture Explorer",
   description: "Interactive analysis dashboards for the LDS Standard Works",
+  themeColor: "#0a0a1a",
 };
 
 export default function RootLayout({

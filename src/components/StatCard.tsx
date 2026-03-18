@@ -18,17 +18,21 @@ export default function StatCard({
       style={{
         background: "var(--surface)",
         border: "1px solid var(--border)",
-        borderRadius: "16px",
+        borderRadius: "20px",
         padding: "24px 20px",
-        transition: "border-color 0.2s, background 0.2s",
+        transition: "border-color 0.2s, background 0.2s, box-shadow 0.2s",
+        backdropFilter: "blur(20px)",
+        WebkitBackdropFilter: "blur(20px)",
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.borderColor = "var(--border-accent)";
         e.currentTarget.style.background = "var(--surface-hover)";
+        e.currentTarget.style.boxShadow = "0 0 24px rgba(139, 92, 246, 0.06)";
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.borderColor = "var(--border)";
         e.currentTarget.style.background = "var(--surface)";
+        e.currentTarget.style.boxShadow = "none";
       }}
     >
       <div

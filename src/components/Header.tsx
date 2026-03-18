@@ -1,6 +1,13 @@
 export default function Header() {
   return (
     <div className="header-wrapper">
+      {/* Hamburger menu — placeholder for future navigation */}
+      <button className="hamburger-btn" type="button" title="Menu">
+        <span className="hamburger-line" style={{ width: "14px" }} />
+        <span className="hamburger-line" style={{ width: "22px" }} />
+        <span className="hamburger-line" style={{ width: "18px" }} />
+      </button>
+
       <div className="header-eyebrow">
         <span
           style={{

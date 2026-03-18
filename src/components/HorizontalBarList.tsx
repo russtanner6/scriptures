@@ -43,9 +43,9 @@ export default function HorizontalBarList({
             </div>
             <div
               style={{
-                height: "20px",
-                background: "var(--zinc-900)",
-                borderRadius: "6px",
+                height: "22px",
+                background: "rgba(139, 92, 246, 0.08)",
+                borderRadius: "8px",
                 overflow: "hidden",
               }}
             >

@@ -1,16 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #09090b;
-  --surface: rgba(255, 255, 255, 0.03);
-  --surface-hover: rgba(255, 255, 255, 0.05);
-  --border: rgba(255, 255, 255, 0.06);
-  --border-accent: rgba(255, 255, 255, 0.1);
+  /* ===== PURPLE/NAVY PREMIUM PALETTE ===== */
+  --bg: #0a0a1a;
+  --bg-gradient: linear-gradient(145deg, #0a0a1a 0%, #1a0a2e 40%, #0d1117 100%);
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-hover: rgba(255, 255, 255, 0.07);
+  --border: rgba(139, 92, 246, 0.12);
+  --border-accent: rgba(139, 92, 246, 0.25);
   --text: #fafafa;
-  --text-secondary: #a1a1aa;
-  --text-muted: #71717a;
-  --accent: #3b82f6;
-  --accent-soft: rgba(59, 130, 246, 0.1);
+  --text-secondary: #b0a8c0;
+  --text-muted: #6b6280;
+  --accent: #8b5cf6;
+  --accent-soft: rgba(139, 92, 246, 0.12);
   --emerald: #10b981;
   --emerald-soft: rgba(16, 185, 129, 0.1);
   --violet: #8b5cf6;
@@ -21,8 +23,8 @@
   --rose-soft: rgba(244, 63, 94, 0.1);
   --cyan: #06b6d4;
   --cyan-soft: rgba(6, 182, 212, 0.1);
-  --zinc-800: #27272a;
-  --zinc-900: #18181b;
+  --zinc-800: #1e1a2e;
+  --zinc-900: #12101e;
 }
 
 * {
@@ -32,7 +34,8 @@
 }
 
 body {
-  background: var(--bg);
+  background: var(--bg-gradient);
+  background-attachment: fixed;
   color: var(--text);
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.6;
@@ -45,22 +48,29 @@ body {
 body::before {
   content: "";
   position: fixed;
-  top: -40%;
+  top: -30%;
   left: 50%;
   transform: translateX(-50%);
-  width: 800px;
-  height: 600px;
+  width: 900px;
+  height: 700px;
   background: radial-gradient(
     ellipse,
-    rgba(59, 130, 246, 0.06) 0%,
+    rgba(139, 92, 246, 0.08) 0%,
+    rgba(139, 92, 246, 0.02) 40%,
     transparent 70%
   );
   pointer-events: none;
   z-index: 0;
 }
 
+/* Glass-morphism utility */
+.glass {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
 /* ============================================
-   RESPONSIVE / MOBILE STYLES
+   LAYOUT & COMPONENTS
    ============================================ */
 
 /* Page container */
@@ -74,14 +84,15 @@ body::before {
 
 /* Header */
 .header-wrapper {
-  padding: 56px 0 40px;
+  padding: 40px 0 36px;
   border-bottom: 1px solid var(--border);
   margin-bottom: 32px;
   text-align: center;
+  position: relative;
 }
 
 .header-eyebrow {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -101,6 +112,10 @@ body::before {
   text-transform: uppercase;
   line-height: 1.1;
   margin-bottom: 12px;
+  background: linear-gradient(135deg, #ffffff 0%, #c4b5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .header-subtitle {
@@ -108,6 +123,39 @@ body::before {
   font-size: 1.05rem;
   font-weight: 400;
   line-height: 1.5;
+}
+
+/* Hamburger menu icon */
+.hamburger-btn {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.hamburger-btn:hover {
+  border-color: var(--border);
+  background: var(--surface);
+}
+
+.hamburger-line {
+  height: 2px;
+  background: var(--text-secondary);
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.hamburger-btn:hover .hamburger-line {
+  background: var(--text);
 }
 
 /* Stat cards grid */
@@ -133,11 +181,13 @@ body::before {
 .search-panel {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: 20px;
   padding: 28px;
   margin-bottom: 32px;
   max-width: 100%;
   overflow: hidden;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 /* HorizontalBarList responsive grid */
@@ -201,9 +251,13 @@ body::before {
     font-size: 0.92rem;
   }
 
+  .hamburger-btn {
+    padding: 8px;
+  }
+
   .search-panel {
     padding: 16px;
-    border-radius: 12px;
+    border-radius: 14px;
     margin-bottom: 20px;
   }
 
@@ -289,7 +343,7 @@ body::before {
 
   .dashboard-card {
     padding: 16px !important;
-    border-radius: 12px !important;
+    border-radius: 14px !important;
   }
 
   .bar-list-row {

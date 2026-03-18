@@ -34,7 +34,7 @@ ChartJS.register(
 );
 
 // Chart.js global defaults for dark theme
-ChartJS.defaults.color = "#a1a1aa";
+ChartJS.defaults.color = "#b0a8c0";
 ChartJS.defaults.font.family = "'Inter', sans-serif";
 ChartJS.defaults.font.size = 13;
 ChartJS.defaults.font.weight = 500;
@@ -154,7 +154,7 @@ export default function WordFrequencyTool() {
             display: "flex",
             background: "var(--zinc-900)",
             border: "1px solid var(--border-accent)",
-            borderRadius: "12px",
+            borderRadius: "14px",
             overflow: "hidden",
             marginBottom: "20px",
           }}
@@ -201,7 +201,7 @@ export default function WordFrequencyTool() {
               background:
                 !word.trim() || isLoading
                   ? "var(--zinc-800)"
-                  : "linear-gradient(135deg, #3b82f6, #60a5fa)",
+                  : "linear-gradient(135deg, #8b5cf6, #a78bfa)",
               color:
                 !word.trim() || isLoading
                   ? "var(--text-muted)"
@@ -476,10 +476,10 @@ export default function WordFrequencyTool() {
                   padding: "5px 12px",
                   borderRadius: "100px",
                   border: caseInsensitive
-                    ? "1px solid #3b82f6"
+                    ? "1px solid #8b5cf6"
                     : "1px solid var(--border)",
                   background: caseInsensitive
-                    ? "#3b82f6"
+                    ? "#8b5cf6"
                     : "transparent",
                   color: caseInsensitive
                     ? "#fff"
@@ -506,10 +506,10 @@ export default function WordFrequencyTool() {
                   padding: "5px 12px",
                   borderRadius: "100px",
                   border: wholeWord
-                    ? "1px solid #3b82f6"
+                    ? "1px solid #8b5cf6"
                     : "1px solid var(--border)",
                   background: wholeWord
-                    ? "#3b82f6"
+                    ? "#8b5cf6"
                     : "transparent",
                   color: wholeWord
                     ? "#fff"
@@ -797,7 +797,7 @@ export default function WordFrequencyTool() {
                               ? VOLUME_COLORS[v.abbrev]
                               : "#3f3f46"
                         ),
-                        borderColor: "#09090b",
+                        borderColor: "#0a0a1a",
                         borderWidth: 3,
                         hoverOffset: 6,
                       },
@@ -876,7 +876,7 @@ export default function WordFrequencyTool() {
                     },
                     scales: {
                       x: {
-                        grid: { color: "rgba(255,255,255,0.04)" },
+                        grid: { color: "rgba(139,92,246,0.06)" },
                         ticks: { font: { weight: 600 } },
                       },
                       y: {
@@ -989,7 +989,7 @@ export default function WordFrequencyTool() {
                       },
                       scales: {
                         x: {
-                          grid: { color: "rgba(255,255,255,0.04)" },
+                          grid: { color: "rgba(139,92,246,0.06)" },
                           ticks: { font: { weight: 600 } },
                         },
                         y: {
@@ -1076,7 +1076,7 @@ export default function WordFrequencyTool() {
                           scales: {
                             y: {
                               grid: {
-                                color: "rgba(255,255,255,0.04)",
+                                color: "rgba(139,92,246,0.06)",
                               },
                               ticks: { font: { weight: 600 } },
                             },
