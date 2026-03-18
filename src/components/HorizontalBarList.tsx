@@ -85,20 +85,20 @@ export default function HorizontalBarList({
                 }}
               />
 
-              {/* Number — inside bar if big enough, otherwise just outside */}
+              {/* Number — outside bar unless bar is nearly full (>95%) */}
               {item.value > 0 && (
                 <span
                   style={{
                     position: "absolute",
-                    left: pct > 18
-                      ? `calc(${pct}% - 10px)`
-                      : `calc(${pct}% + 10px)`,
-                    transform: pct > 18 ? "translateX(-100%)" : undefined,
+                    left: pct > 95
+                      ? `calc(${pct}% - 14px)`
+                      : `calc(${pct}% + 8px)`,
+                    transform: pct > 95 ? "translateX(-100%)" : undefined,
                     fontWeight: 700,
                     fontSize: "0.78rem",
                     fontVariantNumeric: "tabular-nums",
-                    color: pct > 18 ? getContrastText(barColor) : "#fafafa",
-                    textShadow: pct > 18 && getContrastText(barColor) === "#fff" ? "0 1px 3px rgba(0,0,0,0.4)" : "none",
+                    color: pct > 95 ? getContrastText(barColor) : "#fafafa",
+                    textShadow: pct > 95 && getContrastText(barColor) === "#fff" ? "0 1px 3px rgba(0,0,0,0.4)" : "none",
                     lineHeight: "30px",
                   }}
                 >
