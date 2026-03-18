@@ -31,6 +31,18 @@ ChartJS.register(
 ChartJS.defaults.plugins.datalabels = { display: false } as never;
 ChartJS.defaults.font.family = "'Inter', -apple-system, BlinkMacSystemFont, sans-serif";
 
+// Plugin to add space below the legend (Chart.js doesn't support this natively)
+const legendMarginPlugin = {
+  id: "legendMargin",
+  beforeInit(chart: any) {
+    const origFit = chart.legend.fit;
+    chart.legend.fit = function fit() {
+      origFit.call(this);
+      this.height += 28; // extra pixels below legend
+    };
+  },
+};
+
 const TERM_COLORS = [
   "#f59e0b", // amber
   "#3b82f6", // blue
@@ -385,6 +397,7 @@ export default function NarrativeArcTool() {
               <div style={{ position: "relative", height: "540px", marginTop: "8px" }}>
                 <Line
                   ref={thisChartRef}
+                  plugins={[legendMarginPlugin]}
                   data={{
                     labels: vol.books.map((b) => b.name),
                     datasets: volResults.map((r) => {
@@ -443,7 +456,7 @@ export default function NarrativeArcTool() {
                         formatter: (value: number) => value.toLocaleString(),
                       },
                     },
-                    layout: { padding: { top: 44 } },
+                    layout: { padding: { top: 20 } },
                     scales: {
                       y: {
                         grid: { color: "rgba(255,255,255,0.06)" },
