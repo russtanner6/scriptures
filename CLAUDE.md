@@ -46,10 +46,13 @@ src/
 │   ├── page.tsx      # Main search/explore page (WordFrequencyTool)
 │   ├── layout.tsx    # Root layout
 │   ├── narrative-arc/ # Dedicated multi-term narrative arc comparison
-│   └── api/          # API routes (books, word-frequency, verses, book-stats)
+│   ├── heatmap/       # Theme heatmap with heatmap/arc toggle per volume
+│   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, book-stats)
 ├── components/
 │   ├── WordFrequencyTool.tsx  # Main search interface (42KB)
 │   ├── NarrativeArcTool.tsx   # Multi-term narrative arc comparison
+│   ├── HeatmapTool.tsx        # Theme heatmap with arc toggle per volume
+│   ├── ExportHtmlModal.tsx    # HTML-to-image export (html2canvas)
 │   ├── DashboardCard.tsx      # Collapsible section wrapper (supports headerExtra)
 │   ├── DataTable.tsx          # Sortable results table
 │   ├── StatCard.tsx           # Stat pills
@@ -92,7 +95,9 @@ scripts/                       # build-db.ts, book-order.ts
 - **Export:** All chart modules have an EXPORT button (top right) → modal with PNG/JPG/PDF options. Uses `ExportChartModal` component.
 - **Links:** Blue (`var(--accent)` = `#3B82F6`), underlined, for in-page/module navigation.
 - **Legend spacing:** Use `legendMarginPlugin` to add 28px below Chart.js legends (prevents overlap with data labels).
-- **Jump-to navigation:** Any page with multiple modules/sections MUST have a sticky jump-to nav bar that stays at the top on scroll. Uses color-coded pills matching the volume colors.
+- **Jump-to navigation:** Any page with multiple modules/sections MUST have a sticky jump-to nav bar that stays at the top on scroll. Uses color-coded pills matching the volume colors. No dark background behind it.
+- **Search bar glow:** All search bars use `search-bar-glow` CSS class — subtle blue border pulse, 2.5s delay after page load, runs once.
+- **View toggles:** Heatmap modules have heatmap/arc toggle buttons (separate rounded pills, no borders, flame + curve icons). Smooth fade transition (0.3s) between views.
 - **Single-book volumes (D&C):** Plot by section/chapter instead of book. Sparse x-axis labels (every 10th). Smaller point radius. Tooltip shows "Section N".
 - **Audience:** Built for the full LDS canon, but not all users are LDS. Volume visibility settings (future) will let users permanently hide volumes they don't want (e.g., hide BoM/D&C/PoGP for Bible-only users). See `docs/ROADMAP.md` for details.
 - **Chart legends:** Use `pointStyle: "rectRounded"` (not circles/ovals). Adequate spacing from chart top.
@@ -115,20 +120,24 @@ scripts/                       # build-db.ts, book-order.ts
 - Accent: purple (#8b5cf6) for interactive elements
 
 ## Pages
-1. **Word Search** (`/`) — Single-word frequency search with bar charts, narrative arc section, data table, stat cards. Has "Compare multiple terms →" link in narrative arc header.
+1. **Word Search** (`/`) — Single-word frequency search with bar charts, narrative arc section, data table, stat cards. Has "Compare multiple terms →" link in narrative arc header. Sticky jump-to nav.
 2. **Narrative Arc** (`/narrative-arc`) — Multi-term comparison (up to 6). Multi-volume with stacked charts. D&C plots by section. Sticky jump-to nav. Deep linking (`?terms=faith,grace`). Export per chart.
-3. **Future:** Home landing page with tool links. Clickable chart points → verse modal on narrative arc.
+3. **Theme Heatmap** (`/heatmap`) — Single-word heatmap across all volumes. Each volume module has heatmap/arc view toggle (flame icon / curve icon, smooth fade transition). Color-coded cells by volume. Per-volume color scale legends (centered, under heading). Descriptive subtitle with reference count. Export per module. "Compare multiple keywords →" link to narrative arc with term prepopulated. Sticky jump-to nav. Deep linking (`?word=faith`).
+4. **Future:** Home landing page with tool links. Clickable chart points → verse modal. Scripture reader with right-side slider panel.
 
 ## Key Components
-- **ExportChartModal / ExportButton** — Reusable chart export (PNG/JPG/PDF via jsPDF). Solid dark background modal.
-- **legendMarginPlugin** — Chart.js plugin adding 28px below legend. Apply to all Line charts.
+- **ExportChartModal / ExportButton** — Reusable Chart.js export (PNG/JPG/PDF via jsPDF). Solid dark background modal.
+- **ExportHtmlModal** — Reusable HTML-to-image export (uses html2canvas). For non-chart modules like heatmaps.
+- **legendMarginPlugin** — Chart.js plugin adding space below legend. Apply to all Line charts.
 - **DashboardCard** — Section wrapper with `headerExtra` prop for inline links/actions.
-- **useIsMobile(768)** — Hook for responsive layout. Defined in WordFrequencyTool and NarrativeArcTool.
+- **useIsMobile(768)** — Hook for responsive layout. Defined in WordFrequencyTool, NarrativeArcTool, HeatmapTool.
+- **search-bar-glow** — CSS class for search bar border glow animation (2.5s delay, runs once on load).
 
 ## API Routes
 - `/api/books` — All volumes with books
 - `/api/word-frequency` — Word frequency by book (supports volumeIds, bookIds filters)
 - `/api/word-frequency-by-chapter` — Word frequency by chapter/section for a single book (used for D&C)
+- `/api/heatmap` — Word frequency by book+chapter for all volumes (used for heatmap grid)
 - `/api/verses` — Fetch matching verses for a book
 - `/api/book-stats` — Word/verse counts per book
 
