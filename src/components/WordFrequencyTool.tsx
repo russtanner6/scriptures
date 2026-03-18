@@ -14,6 +14,7 @@ import {
   Legend,
 } from "chart.js";
 import { Bar, Doughnut, Line } from "react-chartjs-2";
+import ChartDataLabels from "chartjs-plugin-datalabels";
 import type { Volume, WordFrequencyResponse } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import StatCard from "./StatCard";
@@ -30,7 +31,8 @@ ChartJS.register(
   ArcElement,
   Filler,
   Tooltip,
-  Legend
+  Legend,
+  ChartDataLabels
 );
 
 // Chart.js global defaults for dark theme
@@ -38,6 +40,8 @@ ChartJS.defaults.color = "#b0a8c0";
 ChartJS.defaults.font.family = "'Inter', sans-serif";
 ChartJS.defaults.font.size = 13;
 ChartJS.defaults.font.weight = 500;
+// Disable datalabels globally — enable per-chart
+ChartJS.defaults.plugins.datalabels = { display: false } as never;
 
 // Hook to detect mobile viewport
 function useIsMobile(breakpoint = 768) {
@@ -848,6 +852,16 @@ export default function WordFrequencyTool() {
                         : v.name
                     ),
                     datasets: [
+                      // Track/trough (behind the colored bars)
+                      {
+                        data: volumeAgg.map(() => Math.max(...volumeAgg.map(v => v.count), 1)),
+                        backgroundColor: "rgba(139, 92, 246, 0.08)",
+                        borderRadius: 8,
+                        borderSkipped: false,
+                        barPercentage: 0.6,
+                        categoryPercentage: 0.8,
+                      },
+                      // Actual data bars
                       {
                         data: volumeAgg.map((v) => v.count),
                         backgroundColor: volumeAgg.map(
@@ -867,18 +881,35 @@ export default function WordFrequencyTool() {
                     responsive: true,
                     maintainAspectRatio: false,
                     indexAxis: "y",
+                    ...({ grouped: false } as Record<string, unknown>),
                     plugins: {
                       legend: { display: false },
                       tooltip: {
+                        filter: (item) => item.datasetIndex === 1,
                         callbacks: {
                           label: (ctx) => ` ${ctx.raw} occurrences`,
                         },
                       },
+                      datalabels: {
+                        display: (ctx) => ctx.datasetIndex === 1,
+                        anchor: "end",
+                        align: (ctx) => {
+                          const max = Math.max(...(ctx.dataset.data as number[]));
+                          const val = (ctx.dataset.data as number[])[ctx.dataIndex];
+                          return val / max > 0.3 ? "start" : "end";
+                        },
+                        color: (ctx) => {
+                          const max = Math.max(...(ctx.dataset.data as number[]));
+                          const val = (ctx.dataset.data as number[])[ctx.dataIndex];
+                          return val / max > 0.3 ? "#fff" : "#b0a8c0";
+                        },
+                        font: { weight: 700, size: 12 },
+                        formatter: (value: number) => value.toLocaleString(),
+                      },
                     },
                     scales: {
                       x: {
-                        grid: { color: "rgba(139,92,246,0.06)" },
-                        ticks: { font: { weight: 600 } },
+                        display: false,
                       },
                       y: {
                         grid: { display: false },
@@ -948,6 +979,20 @@ export default function WordFrequencyTool() {
                         .sort((a, b) => b.count - a.count)
                         .map((r) => r.bookName),
                       datasets: [
+                        // Track/trough
+                        {
+                          data: (() => {
+                            const sorted = results.results.slice().sort((a, b) => b.count - a.count).slice(0, 10);
+                            const maxVal = Math.max(...sorted.map(r => r.count), 1);
+                            return sorted.map(() => maxVal);
+                          })(),
+                          backgroundColor: "rgba(139, 92, 246, 0.08)",
+                          borderRadius: 6,
+                          borderSkipped: false,
+                          barPercentage: 0.6,
+                          categoryPercentage: 0.8,
+                        },
+                        // Data bars
                         {
                           data: results.results
                             .slice()
@@ -974,9 +1019,11 @@ export default function WordFrequencyTool() {
                       responsive: true,
                       maintainAspectRatio: false,
                       indexAxis: "y",
+                      ...({ grouped: false } as Record<string, unknown>),
                       plugins: {
                         legend: { display: false },
                         tooltip: {
+                          filter: (item) => item.datasetIndex === 1,
                           callbacks: {
                             label: (ctx) => {
                               const sorted = results.results
@@ -988,11 +1035,26 @@ export default function WordFrequencyTool() {
                             },
                           },
                         },
+                        datalabels: {
+                          display: (ctx) => ctx.datasetIndex === 1,
+                          anchor: "end",
+                          align: (ctx) => {
+                            const max = Math.max(...(ctx.dataset.data as number[]));
+                            const val = (ctx.dataset.data as number[])[ctx.dataIndex];
+                            return val / max > 0.3 ? "start" : "end";
+                          },
+                          color: (ctx) => {
+                            const max = Math.max(...(ctx.dataset.data as number[]));
+                            const val = (ctx.dataset.data as number[])[ctx.dataIndex];
+                            return val / max > 0.3 ? "#fff" : "#b0a8c0";
+                          },
+                          font: { weight: 700, size: 11 },
+                          formatter: (value: number) => value.toLocaleString(),
+                        },
                       },
                       scales: {
                         x: {
-                          grid: { color: "rgba(139,92,246,0.06)" },
-                          ticks: { font: { weight: 600 } },
+                          display: false,
                         },
                         y: {
                           grid: { display: false },
