@@ -260,7 +260,7 @@ export default function WordFrequencyTool() {
               letterSpacing: "0.02em",
             }}
           >
-            {isLoading ? (isMobile ? "..." : "Analyzing...") : (isMobile ? "Go" : "Analyze")}
+            {isLoading ? (isMobile ? "..." : "Searching...") : "Go"}
           </button>
           {/* Help link — next to Analyze button */}
           <button

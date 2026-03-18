@@ -700,7 +700,7 @@ export default function NarrativeArcTool() {
         >
           <div style={{ fontSize: "3rem", marginBottom: "16px" }}>📈</div>
           <div style={{ fontSize: "1.1rem", fontWeight: 500 }}>
-            Add search terms above and click Analyze
+            Add search terms above and click Go
           </div>
           <div
             style={{
