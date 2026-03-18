@@ -70,10 +70,14 @@ This is the foundation that connects everything. When a user clicks any data poi
 - Clean reading layout, chapter navigation, search term highlighting
 - The panel's "Read in context →" links point here
 
-### Word Cloud
-- Could be added to the existing word frequency page as a visualization option
-- Shows most-used words in a selected book, chapter, or volume
-- Visual and shareable — good for social media / presentations
+### ✅ DONE: Word Cloud (`/wordcloud`)
+- Interactive tag cloud visualization per book/chapter
+- Volume → Book → optional Chapter selection
+- Word size proportional to frequency, volume-colored
+- Click any word to search it across all volumes
+- Adjustable word count (20–120), stopword filtering
+- Deep linking (`?bookId=X&chapter=Y`)
+- Hover tooltips with occurrence counts
 
 ---
 

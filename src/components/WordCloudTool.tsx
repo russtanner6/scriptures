@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useMemo } from "react";
+import { useSearchParams } from "next/navigation";
 import type { Volume } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 
@@ -43,6 +44,7 @@ function seededShuffle<T>(arr: T[], seed: number): T[] {
 
 export default function WordCloudTool() {
   const isMobile = useIsMobile();
+  const searchParams = useSearchParams();
   const [volumes, setVolumes] = useState<Volume[]>([]);
   const [selectedVolume, setSelectedVolume] = useState<string | null>(null);
   const [selectedBookId, setSelectedBookId] = useState<number | null>(null);
@@ -52,11 +54,30 @@ export default function WordCloudTool() {
   const [hoveredWord, setHoveredWord] = useState<string | null>(null);
   const [wordLimit, setWordLimit] = useState(60);
 
-  // Load volumes
+  // Load volumes + handle deep link
   useEffect(() => {
     fetch("/api/books")
       .then((r) => r.json())
-      .then((d) => setVolumes(d.volumes));
+      .then((d) => {
+        const vols = d.volumes;
+        setVolumes(vols);
+        // Deep link: ?bookId=X or ?bookId=X&chapter=Y
+        const urlBookId = searchParams.get("bookId");
+        const urlChapter = searchParams.get("chapter");
+        if (urlBookId) {
+          const bid = Number(urlBookId);
+          for (const vol of vols) {
+            const book = vol.books.find((b: { id: number }) => b.id === bid);
+            if (book) {
+              setSelectedVolume(vol.abbrev);
+              setSelectedBookId(bid);
+              if (urlChapter) setSelectedChapter(Number(urlChapter));
+              break;
+            }
+          }
+        }
+      });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Get selected volume and book info
@@ -81,9 +102,16 @@ export default function WordCloudTool() {
     }
   }, [selectedBookId, selectedChapter, wordLimit]);
 
-  // Auto-fetch when selection changes
+  // Auto-fetch when selection changes + update URL
   useEffect(() => {
-    if (selectedBookId) fetchCloud();
+    if (selectedBookId) {
+      fetchCloud();
+      const url = new URL(window.location.href);
+      url.searchParams.set("bookId", String(selectedBookId));
+      if (selectedChapter) url.searchParams.set("chapter", String(selectedChapter));
+      else url.searchParams.delete("chapter");
+      window.history.replaceState({}, "", url.toString());
+    }
   }, [selectedBookId, selectedChapter, fetchCloud]);
 
   // Volume color for the selected book

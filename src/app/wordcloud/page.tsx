@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import Header from "@/components/Header";
 import WordCloudTool from "@/components/WordCloudTool";
 
@@ -12,7 +13,9 @@ export default function WordCloudPage() {
   return (
     <div className="page-container">
       <Header />
-      <WordCloudTool />
+      <Suspense fallback={<div style={{ padding: "40px", textAlign: "center", color: "var(--text-muted)" }}>Loading...</div>}>
+        <WordCloudTool />
+      </Suspense>
     </div>
   );
 }

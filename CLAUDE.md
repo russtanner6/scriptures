@@ -47,8 +47,9 @@ src/
 │   ├── layout.tsx    # Root layout
 │   ├── narrative-arc/ # Dedicated multi-term narrative arc comparison
 │   ├── heatmap/       # Theme heatmap with heatmap/arc toggle per volume
+│   ├── wordcloud/     # Word cloud visualization per book/chapter
 │   ├── read/          # Scripture reader (volume → book → chapter)
-│   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats)
+│   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats, word-cloud)
 ├── components/
 │   ├── WordFrequencyTool.tsx  # Main search interface (42KB)
 │   ├── NarrativeArcTool.tsx   # Multi-term narrative arc comparison
@@ -58,7 +59,8 @@ src/
 │   ├── DataTable.tsx          # Sortable results table
 │   ├── StatCard.tsx           # Stat pills
 │   ├── ScripturePanel.tsx     # Right-side slider panel for verse viewing
-│   ├── ScriptureReader.tsx    # Full scripture reader with light/dark mode
+│   ├── ScriptureReader.tsx    # Full scripture reader with light/dark mode, keyboard nav, progress bar
+│   ├── WordCloudTool.tsx      # Interactive word cloud per book/chapter
 │   ├── HorizontalBarList.tsx  # Bar chart component
 │   ├── Header.tsx             # Site header + hamburger menu
 │   └── NavMenu.tsx            # Slide-in nav (from RIGHT side)
@@ -125,8 +127,9 @@ scripts/                       # build-db.ts, book-order.ts
 1. **Word Search** (`/`) — Single-word frequency search with bar charts, narrative arc section, data table, stat cards. Has "Compare multiple terms →" link in narrative arc header. Sticky jump-to nav.
 2. **Narrative Arc** (`/narrative-arc`) — Multi-term comparison (up to 6). Multi-volume with stacked charts. D&C plots by section. Sticky jump-to nav. Deep linking (`?terms=faith,grace`). Export per chart.
 3. **Theme Heatmap** (`/heatmap`) — Single-word heatmap across all volumes. Each volume module has heatmap/arc view toggle (flame icon / curve icon, smooth fade transition). Color-coded cells by volume. Per-volume color scale legends (centered, under heading). Descriptive subtitle with reference count. Export per module. "Compare multiple keywords →" link to narrative arc with term prepopulated. Sticky jump-to nav. Deep linking (`?word=faith`). Hovering a colored cell shows tooltip above cell (not bottom of page). Clicking a cell opens ScripturePanel with chapter-specific verses. Arc view points also clickable.
-4. **Scripture Reader** (`/read`) — Volume picker → Book list → Chapter reading view. Light/dark mode toggle (localStorage). Prev/next chapter nav with cross-book support. Verse numbers link to churchofjesuschrist.org. Deep linking (`?bookId=X&chapter=Y&highlight=word`). Full-screen overlay reading view.
-5. **Future:** Home landing page with tool links.
+4. **Word Cloud** (`/wordcloud`) — Interactive tag cloud visualization. Select volume → book → optional chapter. Word sizes proportional to frequency. Click any word to search across all volumes. Deep linking (`?bookId=X&chapter=Y`). Adjustable word count slider (20-120). Volume-colored words with hover tooltips showing counts. Stopword filtering.
+5. **Scripture Reader** (`/read`) — Volume picker → Book list → Chapter reading view. Light/dark mode toggle (localStorage). Font size control (3 sizes). Prev/next chapter nav with cross-book support. Keyboard navigation (← → arrows). Reading progress bar. Volume context in header. Verse numbers link to churchofjesuschrist.org. End-of-chapter nav buttons with book names. Deep linking (`?bookId=X&chapter=Y&highlight=word`). URL updates as you navigate. Full-screen overlay reading view.
+6. **Future:** Home landing page with tool links.
 
 ## Key Components
 - **ScripturePanel** — Right-side slider panel that shows matching verses when clicking any data point (bar chart, narrative arc point, heatmap cell). Dark theme, slide-in animation, Escape/backdrop to dismiss. Full-width on mobile. Props include optional `chapter` (for heatmap cells) and `volumeColor` (for accent theming). Replaces the old VerseModal.
@@ -134,7 +137,8 @@ scripts/                       # build-db.ts, book-order.ts
 - **ExportHtmlModal** — Reusable HTML-to-image export (uses html2canvas). For non-chart modules like heatmaps.
 - **legendMarginPlugin** — Chart.js plugin adding space below legend. Apply to all Line charts.
 - **DashboardCard** — Section wrapper with `headerExtra` prop for inline links/actions.
-- **useIsMobile(768)** — Hook for responsive layout. Defined in WordFrequencyTool, NarrativeArcTool, HeatmapTool.
+- **WordCloudTool** — Interactive word cloud with volume/book/chapter selection. Click words to search. Deep linking support.
+- **useIsMobile(768)** — Hook for responsive layout. Defined in WordFrequencyTool, NarrativeArcTool, HeatmapTool, WordCloudTool.
 - **search-bar-glow** — CSS class for search bar border glow animation (2.5s delay, runs once on load).
 
 ## API Routes
@@ -142,6 +146,7 @@ scripts/                       # build-db.ts, book-order.ts
 - `/api/word-frequency` — Word frequency by book (supports volumeIds, bookIds filters)
 - `/api/word-frequency-by-chapter` — Word frequency by chapter/section for a single book (used for D&C)
 - `/api/heatmap` — Word frequency by book+chapter for all volumes (used for heatmap grid)
+- `/api/word-cloud` — Top N most frequent words in a book (with optional chapter filter), stopword-filtered
 - `/api/verses` — Fetch matching verses for a book (supports optional `chapter` filter)
 - `/api/chapter` — Fetch all verses for a book+chapter (for scripture reader, no search filter)
 - `/api/book-stats` — Word/verse counts per book
