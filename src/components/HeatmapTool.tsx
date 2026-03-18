@@ -447,6 +447,20 @@ export default function HeatmapTool() {
                       </svg>
                       Narrative Arc
                     </button>
+                    {word && (
+                      <a
+                        href={`/narrative-arc?terms=${encodeURIComponent(word.trim())}`}
+                        style={{
+                          marginLeft: "12px", fontSize: "0.75rem", fontWeight: 500,
+                          color: "var(--accent)", textDecoration: "underline",
+                          textUnderlineOffset: "3px", opacity: 0.85, transition: "opacity 0.15s",
+                        }}
+                        onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
+                        onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.85"; }}
+                      >
+                        Compare multiple keywords →
+                      </a>
+                    )}
                   </div>
 
                   {/* Heatmap view */}
