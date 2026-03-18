@@ -119,48 +119,56 @@ export default function WordFrequencyTool() {
     <div>
       {/* Search Controls */}
       <div className="search-panel">
-        {/* Row 1: Search input + button */}
-        <div style={{ display: "flex", gap: "10px", alignItems: "flex-end", marginBottom: "16px" }}>
-          <div style={{ flex: "1 1 200px", maxWidth: "360px" }}>
-            <label
-              style={{
-                display: "block",
-                fontSize: "0.72rem",
-                fontWeight: 600,
-                textTransform: "uppercase",
-                letterSpacing: "0.1em",
-                color: "var(--text-secondary)",
-                marginBottom: "6px",
-              }}
+        {/* Search bar with integrated button */}
+        <div
+          style={{
+            display: "flex",
+            background: "var(--zinc-900)",
+            border: "1px solid var(--border-accent)",
+            borderRadius: "12px",
+            overflow: "hidden",
+            marginBottom: "20px",
+          }}
+        >
+          <div style={{ position: "relative", flex: 1, display: "flex", alignItems: "center" }}>
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="var(--text-muted)"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              style={{ position: "absolute", left: "16px", pointerEvents: "none" }}
             >
-              Word or phrase
-            </label>
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
             <input
               ref={inputRef}
               type="text"
               value={word}
               onChange={(e) => setWord(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder='e.g. "Jesus", "faith"'
+              placeholder='Search a word or phrase...'
               style={{
                 width: "100%",
-                padding: "9px 14px",
-                background: "var(--zinc-900)",
-                border: "1px solid var(--border-accent)",
-                borderRadius: "8px",
+                padding: "14px 16px 14px 46px",
+                background: "transparent",
+                border: "none",
                 color: "var(--text)",
-                fontSize: "0.92rem",
+                fontSize: "0.95rem",
                 fontFamily: "inherit",
                 outline: "none",
               }}
             />
           </div>
-
           <button
             onClick={handleSearch}
             disabled={!word.trim() || isLoading}
             style={{
-              padding: "9px 28px",
+              padding: "14px 32px",
               background:
                 !word.trim() || isLoading
                   ? "var(--zinc-800)"
@@ -170,7 +178,7 @@ export default function WordFrequencyTool() {
                   ? "var(--text-muted)"
                   : "#fff",
               border: "none",
-              borderRadius: "8px",
+              borderLeft: "1px solid var(--border)",
               fontSize: "0.88rem",
               fontWeight: 600,
               cursor:
@@ -178,107 +186,154 @@ export default function WordFrequencyTool() {
               fontFamily: "inherit",
               transition: "background 0.2s",
               whiteSpace: "nowrap",
+              letterSpacing: "0.02em",
             }}
           >
-            {isLoading ? "Searching..." : "Analyze"}
+            {isLoading ? "Analyzing..." : "Analyze"}
           </button>
         </div>
 
-        {/* Row 2: Volume checkboxes + options — always visible */}
+        {/* Volumes section */}
+        <div style={{ marginBottom: "16px" }}>
+          <div
+            style={{
+              fontSize: "0.68rem",
+              fontWeight: 600,
+              textTransform: "uppercase",
+              letterSpacing: "0.12em",
+              color: "var(--text-muted)",
+              marginBottom: "10px",
+            }}
+          >
+            Volumes
+          </div>
+          <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+            {volumes.map((v) => {
+              const isActive = selectedVolumeIds.has(v.id);
+              const color = VOLUME_COLORS[v.abbrev];
+              return (
+                <button
+                  key={v.id}
+                  type="button"
+                  onClick={() => toggleVolume(v.id)}
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "7px",
+                    padding: "7px 14px",
+                    borderRadius: "100px",
+                    border: isActive
+                      ? `1px solid ${color}50`
+                      : "1px solid var(--border)",
+                    background: isActive ? `${color}15` : "transparent",
+                    color: isActive ? color : "var(--text-muted)",
+                    fontSize: "0.8rem",
+                    fontWeight: isActive ? 600 : 500,
+                    fontFamily: "inherit",
+                    cursor: "pointer",
+                    transition: "all 0.15s ease",
+                    letterSpacing: "0.01em",
+                  }}
+                >
+                  <span
+                    style={{
+                      width: "7px",
+                      height: "7px",
+                      borderRadius: "50%",
+                      background: color,
+                      opacity: isActive ? 1 : 0.3,
+                      transition: "opacity 0.15s",
+                    }}
+                  />
+                  {v.abbrev === "D&C" ? "D&C" : v.name}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Options section */}
         <div
           style={{
             display: "flex",
             alignItems: "center",
-            gap: "20px",
-            flexWrap: "wrap",
+            gap: "6px",
+            paddingTop: "12px",
+            borderTop: "1px solid var(--border)",
           }}
         >
-          {/* Volume checkboxes */}
-          <div style={{ display: "flex", alignItems: "center", gap: "14px", flexWrap: "wrap" }}>
-            {volumes.map((v) => (
-              <label
-                key={v.id}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "5px",
-                  cursor: "pointer",
-                  fontSize: "0.82rem",
-                  color: selectedVolumeIds.has(v.id)
-                    ? "var(--text)"
-                    : "var(--text-muted)",
-                  transition: "color 0.15s",
-                }}
-              >
-                <input
-                  type="checkbox"
-                  checked={selectedVolumeIds.has(v.id)}
-                  onChange={() => toggleVolume(v.id)}
-                  style={{ accentColor: VOLUME_COLORS[v.abbrev] }}
-                />
-                <span
-                  style={{
-                    width: "6px",
-                    height: "6px",
-                    borderRadius: "50%",
-                    background: VOLUME_COLORS[v.abbrev],
-                    opacity: selectedVolumeIds.has(v.id) ? 1 : 0.4,
-                    transition: "opacity 0.15s",
-                  }}
-                />
-                {v.abbrev === "D&C" ? "D&C" : v.name}
-              </label>
-            ))}
-          </div>
-
-          {/* Divider */}
-          <div
+          <span
             style={{
-              width: "1px",
-              height: "20px",
-              background: "var(--border-accent)",
+              fontSize: "0.68rem",
+              fontWeight: 600,
+              textTransform: "uppercase",
+              letterSpacing: "0.12em",
+              color: "var(--text-muted)",
+              marginRight: "8px",
             }}
-          />
-
-          {/* Search options */}
-          <div style={{ display: "flex", alignItems: "center", gap: "14px", flexWrap: "wrap" }}>
-            <label
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "5px",
-                fontSize: "0.82rem",
-                color: "var(--text-secondary)",
-                cursor: "pointer",
-              }}
-            >
-              <input
-                type="checkbox"
-                checked={caseInsensitive}
-                onChange={(e) => setCaseInsensitive(e.target.checked)}
-                style={{ accentColor: "var(--accent)" }}
-              />
-              Case-insensitive
-            </label>
-            <label
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "5px",
-                fontSize: "0.82rem",
-                color: "var(--text-secondary)",
-                cursor: "pointer",
-              }}
-            >
-              <input
-                type="checkbox"
-                checked={wholeWord}
-                onChange={(e) => setWholeWord(e.target.checked)}
-                style={{ accentColor: "var(--accent)" }}
-              />
-              Whole word
-            </label>
-          </div>
+          >
+            Options
+          </span>
+          <button
+            type="button"
+            onClick={() => setCaseInsensitive(!caseInsensitive)}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "6px",
+              padding: "5px 12px",
+              borderRadius: "100px",
+              border: caseInsensitive
+                ? "1px solid rgba(59, 130, 246, 0.3)"
+                : "1px solid var(--border)",
+              background: caseInsensitive
+                ? "rgba(59, 130, 246, 0.1)"
+                : "transparent",
+              color: caseInsensitive
+                ? "var(--accent)"
+                : "var(--text-muted)",
+              fontSize: "0.78rem",
+              fontWeight: 500,
+              fontFamily: "inherit",
+              cursor: "pointer",
+              transition: "all 0.15s ease",
+            }}
+          >
+            <span style={{ fontSize: "0.7rem" }}>
+              {caseInsensitive ? "✓" : ""}
+            </span>
+            Case-insensitive
+          </button>
+          <button
+            type="button"
+            onClick={() => setWholeWord(!wholeWord)}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "6px",
+              padding: "5px 12px",
+              borderRadius: "100px",
+              border: wholeWord
+                ? "1px solid rgba(59, 130, 246, 0.3)"
+                : "1px solid var(--border)",
+              background: wholeWord
+                ? "rgba(59, 130, 246, 0.1)"
+                : "transparent",
+              color: wholeWord
+                ? "var(--accent)"
+                : "var(--text-muted)",
+              fontSize: "0.78rem",
+              fontWeight: 500,
+              fontFamily: "inherit",
+              cursor: "pointer",
+              transition: "all 0.15s ease",
+            }}
+          >
+            <span style={{ fontSize: "0.7rem" }}>
+              {wholeWord ? "✓" : ""}
+            </span>
+            Whole word
+          </button>
         </div>
       </div>
 
