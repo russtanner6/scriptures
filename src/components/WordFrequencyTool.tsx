@@ -370,7 +370,7 @@ export default function WordFrequencyTool() {
                   borderRadius: "8px",
                   border: isActive
                     ? `1px solid ${color}`
-                    : "1px solid rgba(255,255,255,0.15)",
+                    : "1px solid rgba(255,255,255,0.08)",
                   background: isActive ? color : "rgba(255,255,255,0.06)",
                   color: isActive ? getContrastText(color) : "var(--text-secondary)",
                   fontSize: "0.8rem",
@@ -716,9 +716,9 @@ export default function WordFrequencyTool() {
               Jump to
             </span>
             {[
+              { key: "section-arc", label: "Narrative Arc" },
               { key: "section-breakdowns", label: "Breakdowns" },
               { key: "section-top10", label: "Top Books" },
-              { key: "section-arc", label: "Narrative Arc" },
               { key: "section-table", label: "Data Table" },
             ].map((panel) => (
               <button
@@ -734,7 +734,7 @@ export default function WordFrequencyTool() {
                   gap: "5px",
                   padding: "5px 12px",
                   borderRadius: "8px",
-                  border: "1px solid rgba(255,255,255,0.15)",
+                  border: "1px solid rgba(255,255,255,0.08)",
                   background: "rgba(255,255,255,0.06)",
                   color: "var(--text-secondary)",
                   fontSize: "0.78rem",
@@ -896,7 +896,7 @@ export default function WordFrequencyTool() {
             {visiblePanels.has("top10") && results.results.length > 0 && (
               <div id="section-top10" className="full-width">
               <DashboardCard
-                title={`Top ${Math.min(10, results.results.length)} books — all scripture`}
+                title={`Top ${Math.min(10, results.results.length)} books (all volumes)`}
                 description="Ranked by raw count"
               >
                 <HorizontalBarList

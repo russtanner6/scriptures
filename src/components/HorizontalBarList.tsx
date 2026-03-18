@@ -48,7 +48,7 @@ export default function HorizontalBarList({
             <div
               style={{
                 textAlign: "right",
-                color: "var(--text-secondary)",
+                color: "var(--text)",
                 fontWeight: 500,
                 whiteSpace: "nowrap",
                 overflow: "hidden",
@@ -92,7 +92,7 @@ export default function HorizontalBarList({
                     position: "absolute",
                     left: pct > 95
                       ? `calc(${pct}% - 14px)`
-                      : `calc(${pct}% + 8px)`,
+                      : `calc(${Math.max(pct, 6)}% + 12px)`,
                     transform: pct > 95 ? "translateX(-100%)" : undefined,
                     fontWeight: 700,
                     fontSize: "0.78rem",

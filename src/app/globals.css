@@ -6,8 +6,8 @@
   --bg-gradient: linear-gradient(145deg, #0f0f12 0%, #131318 40%, #0f0f12 100%);
   --surface: rgba(255, 255, 255, 0.035);
   --surface-hover: rgba(255, 255, 255, 0.06);
-  --border: rgba(255, 255, 255, 0.07);
-  --border-accent: rgba(255, 255, 255, 0.14);
+  --border: rgba(255, 255, 255, 0.05);
+  --border-accent: rgba(255, 255, 255, 0.10);
   --text: #f0f0f0;
   --text-secondary: #9ca3af;
   --text-muted: #6b7280;
@@ -170,15 +170,17 @@ body::before {
 
 /* Dashboard grid */
 .dashboard-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 16px;
   padding-bottom: 80px;
 }
 
-.dashboard-grid .full-width {
-  grid-column: 1 / -1;
-}
+/* Section ordering — arc first */
+#section-arc { order: 1; }
+#section-breakdowns { order: 2; }
+#section-top10 { order: 3; }
+#section-table { order: 4; }
 
 /* Search panel */
 .search-panel {

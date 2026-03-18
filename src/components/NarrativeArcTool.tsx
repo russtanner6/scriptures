@@ -341,7 +341,7 @@ export default function NarrativeArcTool() {
                     borderRadius: "8px",
                     border: isActive
                       ? `1px solid ${color}`
-                      : "1px solid rgba(255,255,255,0.15)",
+                      : "1px solid rgba(255,255,255,0.08)",
                     background: isActive ? color : "rgba(255,255,255,0.06)",
                     color: isActive ? getContrastText(color) : "var(--text-secondary)",
                     fontSize: "0.8rem",
