@@ -11,6 +11,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Line } from "react-chartjs-2";
 import type { Volume } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
@@ -22,8 +23,11 @@ ChartJS.register(
   PointElement,
   Filler,
   Tooltip,
-  Legend
+  Legend,
+  ChartDataLabels
 );
+
+ChartJS.defaults.plugins.datalabels = { display: false } as never;
 
 const TERM_COLORS = [
   "#f59e0b", // amber
@@ -546,8 +550,17 @@ export default function NarrativeArcTool() {
                         ` ${ctx.dataset.label}: ${ctx.raw} occurrences`,
                     },
                   },
+                  datalabels: {
+                    display: (ctx) => (ctx.dataset.data as number[])[ctx.dataIndex] > 0,
+                    anchor: "end",
+                    align: "top",
+                    offset: 4,
+                    color: "#fafafa",
+                    font: { weight: 700, size: 10 },
+                    formatter: (value: number) => value.toLocaleString(),
+                  },
                 },
-                layout: { padding: { top: 10 } },
+                layout: { padding: { top: 28 } },
                 scales: {
                   y: {
                     grid: { color: "rgba(139,92,246,0.06)" },

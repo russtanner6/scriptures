@@ -11,6 +11,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Line } from "react-chartjs-2";
 import type { Volume, WordFrequencyResponse } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
@@ -28,11 +29,14 @@ ChartJS.register(
   PointElement,
   Filler,
   Tooltip,
-  Legend
+  Legend,
+  ChartDataLabels
 );
 
 // Chart.js global defaults for dark theme
 ChartJS.defaults.color = "#b0a8c0";
+// Disable datalabels by default — enable per-chart
+ChartJS.defaults.plugins.datalabels = { display: false } as never;
 ChartJS.defaults.font.family = "'Inter', sans-serif";
 ChartJS.defaults.font.size = 13;
 ChartJS.defaults.font.weight = 500;
@@ -1012,8 +1016,17 @@ export default function WordFrequencyTool() {
                                 ` ${ctx.raw} occurrences`,
                             },
                           },
+                          datalabels: {
+                            display: (ctx) => (ctx.dataset.data as number[])[ctx.dataIndex] > 0,
+                            anchor: "end",
+                            align: "top",
+                            offset: 4,
+                            color: "#fafafa",
+                            font: { weight: 700, size: 11 },
+                            formatter: (value: number) => value.toLocaleString(),
+                          },
                         },
-                        layout: { padding: { top: 12 } },
+                        layout: { padding: { top: 28 } },
                         scales: {
                           y: {
                             grid: {
