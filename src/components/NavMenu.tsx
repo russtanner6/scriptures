@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const NAV_ITEMS = [
   { href: "/", label: "Word Frequency", icon: "🔍" },
   { href: "/narrative-arc", label: "Narrative Arc", icon: "📈" },
+  { href: "/heatmap", label: "Theme Heatmap", icon: "🔥" },
 ];
 
 export default function NavMenu({

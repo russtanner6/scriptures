@@ -522,7 +522,7 @@ export default function NarrativeArcTool() {
                                 return "";
                               }
                             : undefined,
-                          autoSkip: !isSingleBook,
+                          autoSkip: false,
                         },
                       },
                     },

@@ -248,6 +248,79 @@ export async function getBookStats(): Promise<BookStat[]> {
 }
 
 /**
+ * Get word frequency by book AND chapter for an entire volume (or all volumes).
+ * Used for heatmap visualization.
+ */
+export async function getHeatmapData(
+  word: string,
+  options: { caseInsensitive?: boolean; wholeWord?: boolean; volumeIds?: number[] } = {}
+): Promise<{ bookId: number; bookName: string; volumeAbbrev: string; chapter: number; count: number }[]> {
+  const db = await getDb();
+  const { caseInsensitive = true, wholeWord = true, volumeIds } = options;
+
+  const conditions: string[] = [];
+  const params: (string | number)[] = [];
+  if (volumeIds && volumeIds.length > 0) {
+    conditions.push(`v.id IN (${volumeIds.map(() => "?").join(",")})`);
+    params.push(...volumeIds);
+  }
+  const whereClause = conditions.length > 0 ? `WHERE ${conditions.join(" AND ")}` : "";
+
+  const verses = execToObjects<{ book_id: number; chapter: number; text: string }>(
+    db,
+    `SELECT vs.book_id, vs.chapter, vs.text
+     FROM verses vs
+     JOIN books b ON b.id = vs.book_id
+     JOIN volumes v ON v.id = b.volume_id
+     ${whereClause}
+     ORDER BY b.display_order, vs.chapter`,
+    params
+  );
+
+  const isPhrase = /^".*"$/.test(word) || /^'.*'$/.test(word);
+  const searchTerm = isPhrase ? word.slice(1, -1) : word;
+  const escaped = escapeRegex(searchTerm);
+  const pattern = isPhrase ? escaped : wholeWord ? `\\b${escaped}\\b` : escaped;
+  const flags = caseInsensitive ? "gi" : "g";
+  const regex = new RegExp(pattern, flags);
+
+  // Count per book+chapter
+  const counts = new Map<string, number>();
+  for (const verse of verses) {
+    const matches = verse.text.match(regex);
+    if (matches) {
+      const key = `${verse.book_id}-${verse.chapter}`;
+      counts.set(key, (counts.get(key) || 0) + matches.length);
+    }
+  }
+
+  // Get book metadata
+  const bookMeta = execToObjects<{ id: number; name: string; abbrev: string; chapter_count: number; display_order: number }>(
+    db,
+    `SELECT b.id, b.name, v.abbrev, b.chapter_count, b.display_order
+     FROM books b JOIN volumes v ON v.id = b.volume_id
+     ${whereClause}
+     ORDER BY b.display_order`,
+    params
+  );
+
+  const results: { bookId: number; bookName: string; volumeAbbrev: string; chapter: number; count: number }[] = [];
+  for (const book of bookMeta) {
+    for (let ch = 1; ch <= book.chapter_count; ch++) {
+      const key = `${book.id}-${ch}`;
+      results.push({
+        bookId: book.id,
+        bookName: displayName(book.name),
+        volumeAbbrev: book.abbrev,
+        chapter: ch,
+        count: counts.get(key) || 0,
+      });
+    }
+  }
+  return results;
+}
+
+/**
  * Get word frequency by chapter/section for a single book.
  * Used for volumes like D&C where there's only one "book" with many sections.
  */

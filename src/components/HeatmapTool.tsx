@@ -1,0 +1,343 @@
+"use client";
+
+import { useState, useEffect, useRef } from "react";
+import type { Volume } from "@/lib/types";
+import { VOLUME_COLORS, getContrastText } from "@/lib/constants";
+
+function useIsMobile(breakpoint = 768) {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < breakpoint);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, [breakpoint]);
+  return isMobile;
+}
+
+interface HeatmapCell {
+  bookId: number;
+  bookName: string;
+  volumeAbbrev: string;
+  chapter: number;
+  count: number;
+}
+
+export default function HeatmapTool() {
+  const isMobile = useIsMobile();
+  const [volumes, setVolumes] = useState<Volume[]>([]);
+  const [selectedVolumeIds, setSelectedVolumeIds] = useState<Set<number>>(new Set());
+  const [word, setWord] = useState("");
+  const [caseInsensitive, setCaseInsensitive] = useState(true);
+  const [wholeWord, setWholeWord] = useState(true);
+  const [results, setResults] = useState<HeatmapCell[]>([]);
+  const [maxCount, setMaxCount] = useState(0);
+  const [isLoading, setIsLoading] = useState(false);
+  const [hoveredCell, setHoveredCell] = useState<HeatmapCell | null>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const initialSearchDone = useRef(false);
+
+  useEffect(() => {
+    fetch("/api/books")
+      .then((r) => r.json())
+      .then((data) => {
+        setVolumes(data.volumes);
+        setSelectedVolumeIds(new Set(data.volumes.map((v: Volume) => v.id)));
+
+        // Deep link
+        if (!initialSearchDone.current) {
+          const urlParams = new URLSearchParams(window.location.search);
+          const urlWord = urlParams.get("word");
+          if (urlWord) {
+            initialSearchDone.current = true;
+            setWord(urlWord);
+            if (urlParams.get("ci") === "false") setCaseInsensitive(false);
+            if (urlParams.get("em") === "false") setWholeWord(false);
+          }
+        }
+      });
+  }, []);
+
+  const toggleVolume = (id: number) => {
+    setSelectedVolumeIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) { if (next.size > 1) next.delete(id); }
+      else { next.add(id); }
+      return next;
+    });
+  };
+
+  const handleSearch = async () => {
+    if (!word.trim()) return;
+    setIsLoading(true);
+    try {
+      const params = new URLSearchParams({
+        word: word.trim(),
+        caseInsensitive: String(caseInsensitive),
+        wholeWord: String(wholeWord),
+      });
+      if (selectedVolumeIds.size < volumes.length) {
+        params.set("volumeIds", Array.from(selectedVolumeIds).join(","));
+      }
+      const res = await fetch(`/api/heatmap?${params}`);
+      const data = await res.json();
+      setResults(data.results);
+      setMaxCount(Math.max(...data.results.map((r: HeatmapCell) => r.count), 1));
+
+      // Update URL
+      const urlParams = new URLSearchParams();
+      urlParams.set("word", word.trim());
+      if (!caseInsensitive) urlParams.set("ci", "false");
+      if (!wholeWord) urlParams.set("em", "false");
+      window.history.replaceState({}, "", `?${urlParams.toString()}`);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // Auto-search from URL
+  useEffect(() => {
+    if (initialSearchDone.current && word && volumes.length > 0 && results.length === 0) {
+      handleSearch();
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [word, volumes.length]);
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter") { e.preventDefault(); handleSearch(); }
+  };
+
+  // Group results by book
+  const bookGroups = results.reduce<Map<number, { bookName: string; volumeAbbrev: string; chapters: HeatmapCell[] }>>(
+    (acc, cell) => {
+      if (!acc.has(cell.bookId)) {
+        acc.set(cell.bookId, { bookName: cell.bookName, volumeAbbrev: cell.volumeAbbrev, chapters: [] });
+      }
+      acc.get(cell.bookId)!.chapters.push(cell);
+      return acc;
+    },
+    new Map()
+  );
+
+  // Get cell color based on count intensity
+  const getCellColor = (count: number, volumeAbbrev: string): string => {
+    if (count === 0) return "rgba(255,255,255,0.03)";
+    const intensity = Math.min(count / maxCount, 1);
+    const baseColor = VOLUME_COLORS[volumeAbbrev] || "#3B82F6";
+    // Parse hex to rgb
+    const hex = baseColor.replace("#", "");
+    const r = parseInt(hex.substring(0, 2), 16);
+    const g = parseInt(hex.substring(2, 4), 16);
+    const b = parseInt(hex.substring(4, 6), 16);
+    const alpha = 0.15 + intensity * 0.85;
+    return `rgba(${r},${g},${b},${alpha})`;
+  };
+
+  return (
+    <div>
+      {/* Header */}
+      <div style={{ marginBottom: "24px" }}>
+        <h2 style={{ fontSize: "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px" }}>
+          Theme Heatmap
+        </h2>
+        <p style={{ color: "var(--text-secondary)", fontSize: isMobile ? "0.85rem" : "0.92rem" }}>
+          See how a word or phrase is distributed across every chapter of scripture.
+          Brighter cells = higher frequency. Click any cell to read the verses.
+        </p>
+      </div>
+
+      {/* Search panel */}
+      <div className="search-panel">
+        {/* Search bar with Go */}
+        <div style={{ display: "flex", background: "var(--zinc-900)", border: "1px solid var(--border-accent)", borderRadius: "14px", overflow: "hidden", marginBottom: "12px" }}>
+          <div style={{ position: "relative", flex: 1, display: "flex", alignItems: "center" }}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ position: "absolute", left: "16px", pointerEvents: "none" }}>
+              <circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" />
+            </svg>
+            <input
+              ref={inputRef}
+              type="text"
+              value={word}
+              onChange={(e) => setWord(e.target.value)}
+              onKeyDown={handleKeyDown}
+              placeholder={isMobile ? "Search..." : "Enter a word or phrase..."}
+              style={{ width: "100%", padding: "14px 16px 14px 46px", background: "transparent", border: "none", color: "var(--text)", fontSize: "0.95rem", fontFamily: "inherit", outline: "none" }}
+            />
+          </div>
+          <button
+            onClick={handleSearch}
+            disabled={!word.trim() || isLoading}
+            style={{
+              padding: "14px 28px",
+              background: !word.trim() || isLoading ? "var(--zinc-800)" : "#3B82F6",
+              color: !word.trim() || isLoading ? "var(--text-muted)" : "#fff",
+              border: "none", borderLeft: "1px solid var(--border)",
+              fontSize: "0.88rem", fontWeight: 600, cursor: !word.trim() || isLoading ? "not-allowed" : "pointer",
+              fontFamily: "inherit", transition: "background 0.2s", whiteSpace: "nowrap",
+            }}
+          >
+            {isLoading ? (isMobile ? "..." : "Searching...") : "Go"}
+          </button>
+        </div>
+
+        {/* Volumes + Options row */}
+        <div style={{ display: "flex", alignItems: isMobile ? "flex-start" : "center", gap: isMobile ? "10px" : "16px", flexWrap: "wrap", flexDirection: isMobile ? "column" : "row" }}>
+          <span style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)" }}>Volumes</span>
+          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+            {volumes.map((v) => {
+              const isActive = selectedVolumeIds.has(v.id);
+              const color = VOLUME_COLORS[v.abbrev];
+              return (
+                <label key={v.id} style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", fontWeight: isActive ? 600 : 400, color: isActive ? "var(--text)" : "var(--text-secondary)", transition: "color 0.15s", whiteSpace: "nowrap" }}>
+                  <span onClick={(e) => { e.preventDefault(); toggleVolume(v.id); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: isActive ? `2px solid ${color}` : "2px solid rgba(255,255,255,0.2)", background: isActive ? color : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                    {isActive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke={getContrastText(color)} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+                  </span>
+                  {v.name}
+                </label>
+              );
+            })}
+          </div>
+          <span style={{ width: "1px", height: "16px", background: "rgba(255,255,255,0.1)" }} />
+          <div style={{ display: "flex", gap: "10px" }}>
+            <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: caseInsensitive ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
+              <span onClick={(e) => { e.preventDefault(); setCaseInsensitive(!caseInsensitive); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: caseInsensitive ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: caseInsensitive ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                {caseInsensitive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+              </span>
+              Case-insensitive
+            </label>
+            <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: wholeWord ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
+              <span onClick={(e) => { e.preventDefault(); setWholeWord(!wholeWord); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: wholeWord ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: wholeWord ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                {wholeWord && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+              </span>
+              Exact match
+            </label>
+          </div>
+        </div>
+      </div>
+
+      {/* Hover tooltip */}
+      {hoveredCell && hoveredCell.count > 0 && (
+        <div style={{
+          position: "fixed", bottom: "20px", left: "50%", transform: "translateX(-50%)",
+          background: "#1a1a2e", border: "1px solid var(--border)", borderRadius: "10px",
+          padding: "10px 16px", zIndex: 100, fontSize: "0.85rem", color: "var(--text)",
+          boxShadow: "0 8px 32px rgba(0,0,0,0.4)", whiteSpace: "nowrap",
+        }}>
+          <strong>{hoveredCell.bookName} {hoveredCell.chapter}</strong>
+          <span style={{ color: "var(--text-secondary)", marginLeft: "8px" }}>
+            {hoveredCell.count} {hoveredCell.count === 1 ? "occurrence" : "occurrences"}
+          </span>
+        </div>
+      )}
+
+      {/* Heatmap grid */}
+      {results.length > 0 && (
+        <div style={{ marginTop: "20px" }}>
+          {/* Total stats */}
+          <div style={{ marginBottom: "16px", fontSize: "0.85rem", color: "var(--text-secondary)" }}>
+            <strong style={{ color: "var(--text)" }}>&quot;{word}&quot;</strong> found in{" "}
+            <strong style={{ color: "var(--text)" }}>{results.filter(r => r.count > 0).length.toLocaleString()}</strong> of{" "}
+            <strong style={{ color: "var(--text)" }}>{results.length.toLocaleString()}</strong> chapters
+          </div>
+
+          {Array.from(bookGroups.entries()).map(([bookId, group]) => {
+            const volColor = VOLUME_COLORS[group.volumeAbbrev] || "#3B82F6";
+            const bookTotal = group.chapters.reduce((s, c) => s + c.count, 0);
+            if (bookTotal === 0 && bookGroups.size > 10) return null; // Hide empty books if many
+
+            return (
+              <div key={bookId} style={{ marginBottom: "6px", display: "flex", alignItems: "center", gap: "8px" }}>
+                {/* Book name */}
+                <div style={{
+                  width: isMobile ? "60px" : "140px",
+                  flexShrink: 0,
+                  fontSize: isMobile ? "0.65rem" : "0.75rem",
+                  fontWeight: bookTotal > 0 ? 600 : 400,
+                  color: bookTotal > 0 ? "var(--text)" : "var(--text-muted)",
+                  textAlign: "right",
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                  whiteSpace: "nowrap",
+                }}>
+                  {group.bookName}
+                </div>
+
+                {/* Chapter cells */}
+                <div style={{ display: "flex", gap: "1px", flex: 1, flexWrap: "nowrap", overflow: "hidden" }}>
+                  {group.chapters.map((cell) => (
+                    <div
+                      key={cell.chapter}
+                      onMouseEnter={() => setHoveredCell(cell)}
+                      onMouseLeave={() => setHoveredCell(null)}
+                      style={{
+                        flex: "1 1 0",
+                        minWidth: isMobile ? "2px" : "4px",
+                        maxWidth: isMobile ? "8px" : "14px",
+                        height: isMobile ? "14px" : "20px",
+                        borderRadius: "2px",
+                        background: getCellColor(cell.count, cell.volumeAbbrev),
+                        cursor: cell.count > 0 ? "pointer" : "default",
+                        transition: "transform 0.1s",
+                      }}
+                      title={`${cell.bookName} ${cell.chapter}: ${cell.count}`}
+                    />
+                  ))}
+                </div>
+
+                {/* Book total */}
+                <div style={{
+                  width: "36px",
+                  flexShrink: 0,
+                  fontSize: "0.7rem",
+                  fontWeight: 700,
+                  fontVariantNumeric: "tabular-nums",
+                  color: bookTotal > 0 ? volColor : "var(--text-muted)",
+                  textAlign: "right",
+                }}>
+                  {bookTotal > 0 ? bookTotal : ""}
+                </div>
+              </div>
+            );
+          })}
+
+          {/* Color scale legend */}
+          <div style={{ marginTop: "20px", display: "flex", alignItems: "center", gap: "8px", fontSize: "0.75rem", color: "var(--text-muted)" }}>
+            <span>Less</span>
+            <div style={{ display: "flex", gap: "2px" }}>
+              {[0, 0.2, 0.4, 0.6, 0.8, 1].map((intensity) => (
+                <div
+                  key={intensity}
+                  style={{
+                    width: "16px",
+                    height: "16px",
+                    borderRadius: "3px",
+                    background: intensity === 0
+                      ? "rgba(255,255,255,0.03)"
+                      : `rgba(59,130,246,${0.15 + intensity * 0.85})`,
+                  }}
+                />
+              ))}
+            </div>
+            <span>More</span>
+            <span style={{ marginLeft: "12px", fontSize: "0.7rem" }}>
+              Max: {maxCount} in a single chapter
+            </span>
+          </div>
+        </div>
+      )}
+
+      {/* Empty state */}
+      {results.length === 0 && !isLoading && (
+        <div style={{ textAlign: "center", padding: "80px 20px", color: "var(--text-muted)" }}>
+          <div style={{ fontSize: "3rem", marginBottom: "16px" }}>🔥</div>
+          <div style={{ fontSize: "1.1rem", fontWeight: 500 }}>
+            Search for a word to see its heatmap
+          </div>
+          <div style={{ fontSize: "0.88rem", marginTop: "8px", color: "var(--text-muted)" }}>
+            Try &quot;faith&quot;, &quot;covenant&quot;, or &quot;repent&quot;
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
