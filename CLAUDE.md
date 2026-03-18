@@ -90,6 +90,14 @@ scripts/                       # build-db.ts, book-order.ts
 - **DashboardCard:** Supports `headerExtra` prop for inline links/actions next to the description.
 - **Data table headings:** 0.85rem, bold (700), bright (`var(--text)`). Body text: 75% white opacity.
 
+### Mobile Responsiveness
+- **ALL changes must work on mobile.** Test at 375px width minimum.
+- Use `useIsMobile(768)` hook for conditional rendering (defined in WordFrequencyTool, duplicated in NarrativeArcTool).
+- Charts: 350px height on mobile (vs 540px desktop), 90° x-axis label rotation, smaller fonts.
+- Search panels: volumes/options stack vertically on mobile, shorter placeholders.
+- Sticky jump-to nav works on mobile (stays at top on scroll).
+- Chart legend: `legendMarginPlugin` adds 28px below legend (prevents overlap with data labels).
+
 ### Dark Theme
 - Background: dark grey palette (not pure black)
 - Text: white hierarchy (--text, --text-secondary, --text-muted)

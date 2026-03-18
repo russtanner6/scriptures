@@ -52,6 +52,17 @@ const TERM_COLORS = [
   "#a78bfa", // light violet
 ];
 
+function useIsMobile(breakpoint = 768) {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < breakpoint);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, [breakpoint]);
+  return isMobile;
+}
+
 interface TermResult {
   term: string;
   color: string;
@@ -60,6 +71,7 @@ interface TermResult {
 }
 
 export default function NarrativeArcTool() {
+  const isMobile = useIsMobile();
   const [volumes, setVolumes] = useState<Volume[]>([]);
   const [selectedVolumeIds, setSelectedVolumeIds] = useState<Set<number>>(new Set());
   const [terms, setTerms] = useState<string[]>([]);
@@ -203,7 +215,7 @@ export default function NarrativeArcTool() {
         >
           Narrative Arc Explorer
         </h2>
-        <p style={{ color: "var(--text-secondary)", fontSize: "0.92rem" }}>
+        <p style={{ color: "var(--text-secondary)", fontSize: isMobile ? "0.85rem" : "0.92rem" }}>
           Compare up to 6 search terms across multiple volumes to see how themes
           flow through the scriptures in narrative order.
         </p>
@@ -232,7 +244,7 @@ export default function NarrativeArcTool() {
               value={currentTerm}
               onChange={(e) => setCurrentTerm(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder={terms.length >= 6 ? "Maximum 6 terms" : "Add a search term..."}
+              placeholder={terms.length >= 6 ? "Maximum 6 terms" : isMobile ? "Add term..." : "Add a search term..."}
               disabled={terms.length >= 6}
               style={{ width: "100%", padding: "14px 16px 14px 46px", background: "transparent", border: "none", color: "var(--text)", fontSize: "0.95rem", fontFamily: "inherit", outline: "none" }}
             />
@@ -263,7 +275,7 @@ export default function NarrativeArcTool() {
               fontFamily: "inherit", transition: "background 0.2s", whiteSpace: "nowrap",
             }}
           >
-            {isLoading ? "..." : "Go"}
+            {isLoading ? (isMobile ? "..." : "Searching...") : "Go"}
           </button>
         </div>
 
@@ -279,8 +291,8 @@ export default function NarrativeArcTool() {
           </div>
         )}
 
-        {/* Volumes + Options — single compact row */}
-        <div style={{ display: "flex", alignItems: "center", gap: "16px", flexWrap: "wrap" }}>
+        {/* Volumes + Options */}
+        <div style={{ display: "flex", alignItems: isMobile ? "flex-start" : "center", gap: isMobile ? "10px" : "16px", flexWrap: "wrap", flexDirection: isMobile ? "column" : "row" }}>
           <span style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)" }}>Volumes</span>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
             {volumes.map((v) => {
@@ -394,7 +406,7 @@ export default function NarrativeArcTool() {
                 <ExportButton onClick={() => setExportVolumeId(vol.id)} />
               </div>
 
-              <div style={{ position: "relative", height: "540px", marginTop: "8px" }}>
+              <div style={{ position: "relative", height: isMobile ? "350px" : "540px", marginTop: "8px" }}>
                 <Line
                   ref={thisChartRef}
                   plugins={[legendMarginPlugin]}
@@ -466,8 +478,8 @@ export default function NarrativeArcTool() {
                       x: {
                         grid: { display: false },
                         ticks: {
-                          maxRotation: 45,
-                          font: { size: 11, weight: 500 },
+                          maxRotation: isMobile ? 90 : 45,
+                          font: { size: isMobile ? 9 : 11, weight: 500 },
                         },
                       },
                     },
