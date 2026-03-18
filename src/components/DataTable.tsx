@@ -38,11 +38,11 @@ export default function DataTable({
                 style={{
                   textAlign: col.align || "left",
                   padding: "10px 14px",
-                  fontSize: "0.72rem",
+                  fontSize: "0.85rem",
                   textTransform: "uppercase",
                   letterSpacing: "0.1em",
-                  color: "var(--text-secondary)",
-                  fontWeight: 600,
+                  color: "var(--text)",
+                  fontWeight: 700,
                   borderBottom: "1px solid var(--border)",
                   whiteSpace: "nowrap",
                 }}
@@ -61,7 +61,7 @@ export default function DataTable({
                   style={{
                     padding: "10px 14px",
                     borderBottom: "1px solid rgba(255,255,255,0.03)",
-                    color: col.mono ? "var(--text)" : "var(--text-secondary)",
+                    color: col.mono ? "var(--text)" : "rgba(255,255,255,0.75)",
                     fontWeight: col.mono ? 600 : 400,
                     fontVariantNumeric: col.mono ? "tabular-nums" : undefined,
                     textAlign: col.align || "left",

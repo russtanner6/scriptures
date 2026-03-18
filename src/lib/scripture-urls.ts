@@ -89,7 +89,8 @@ const BOOK_URL_MAP: Record<string, { volume: string; slug: string }> = {
   "Ether": { volume: "bofm", slug: "ether" },
   "Moroni": { volume: "bofm", slug: "moro" },
 
-  // Doctrine and Covenants
+  // D&C
+  "D&C": { volume: "dc-testament", slug: "dc" },
   "Doctrine and Covenants": { volume: "dc-testament", slug: "dc" },
 
   // Pearl of Great Price

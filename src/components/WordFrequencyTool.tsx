@@ -364,7 +364,7 @@ export default function WordFrequencyTool() {
                   letterSpacing: "0.01em",
                 }}
               >
-                {v.abbrev === "D&C" ? "D&C" : v.name}
+                {v.name}
               </button>
             );
           });
@@ -661,7 +661,7 @@ export default function WordFrequencyTool() {
             {volumeAgg.map((v) => (
               <StatCard
                 key={v.id}
-                label={v.abbrev === "D&C" ? "D&C" : v.name}
+                label={v.name}
                 value={v.count}
                 subtitle={
                   results.totalCount > 0
@@ -854,7 +854,7 @@ export default function WordFrequencyTool() {
                               transition: "all 0.15s ease",
                             }}
                           >
-                            {v.abbrev === "D&C" ? "D&C" : v.name}
+                            {v.name}
                           </button>
                         );
                       })}
@@ -956,7 +956,7 @@ export default function WordFrequencyTool() {
                               transition: "all 0.15s ease",
                             }}
                           >
-                            {v.abbrev === "D&C" ? "D&C" : v.name}
+                            {v.name}
                           </button>
                         );
                       })}

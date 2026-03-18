@@ -351,7 +351,7 @@ export default function NarrativeArcTool() {
                     transition: "all 0.15s ease",
                   }}
                 >
-                  {v.abbrev === "D&C" ? "D&C" : v.name}
+                  {v.name}
                 </button>
               );
             })}

@@ -41,7 +41,7 @@ export async function getVolumesWithBooks(): Promise<Volume[]> {
     if (!volumeMap.has(row.volume_id)) {
       volumeMap.set(row.volume_id, {
         id: row.volume_id,
-        name: row.volume_name,
+        name: displayVolumeName(row.volume_name),
         abbrev: row.abbrev,
         displayOrder: row.vol_order,
         books: [],
@@ -51,7 +51,7 @@ export async function getVolumesWithBooks(): Promise<Volume[]> {
       id: row.book_id,
       name: row.book_name,
       volumeId: row.volume_id,
-      volumeName: row.volume_name,
+      volumeName: displayVolumeName(row.volume_name),
       volumeAbbrev: row.abbrev,
       displayOrder: row.display_order,
       chapterCount: row.chapter_count,
@@ -60,6 +60,12 @@ export async function getVolumesWithBooks(): Promise<Volume[]> {
   return Array.from(volumeMap.values()).sort(
     (a, b) => a.displayOrder - b.displayOrder
   );
+}
+
+// Normalize volume names for display (e.g., "Doctrine and Covenants" → "D&C")
+function displayVolumeName(name: string): string {
+  if (name === "Doctrine and Covenants") return "D&C";
+  return name;
 }
 
 function escapeRegex(str: string): string {
@@ -186,7 +192,7 @@ export async function getWordFrequency(
       results.push({
         bookId: book.id,
         bookName: book.name,
-        volumeName: book.volume_name,
+        volumeName: displayVolumeName(book.volume_name),
         volumeAbbrev: book.abbrev,
         displayOrder: book.display_order,
         count: c.count,
@@ -230,7 +236,7 @@ export async function getBookStats(): Promise<BookStat[]> {
   return rows.map((r) => ({
     bookId: r.book_id,
     bookName: r.book_name,
-    volumeName: r.volume_name,
+    volumeName: displayVolumeName(r.volume_name),
     volumeAbbrev: r.volume_abbrev,
     displayOrder: r.display_order,
     wordCount: r.word_count,
