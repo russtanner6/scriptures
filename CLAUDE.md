@@ -21,6 +21,9 @@ A Next.js web app for searching and exploring scriptures with interactive visual
 
 **Update documentation BEFORE committing.**
 
+## Roadmap
+See `docs/ROADMAP.md` for the full product roadmap — feature tiers, monetization, architecture evolution, and priority order.
+
 ## Tech Stack
 - **Next.js 16** (App Router)
 - **React 19 + TypeScript**
