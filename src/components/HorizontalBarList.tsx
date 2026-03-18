@@ -68,17 +68,17 @@ export default function HorizontalBarList({
                 alignItems: "center",
               }}
             >
-              {/* Colored fill */}
+              {/* Colored fill — inset inside the trough */}
               <div
                 style={{
                   position: "absolute",
-                  top: 0,
-                  left: 0,
-                  height: "100%",
-                  width: `${pct}%`,
-                  minWidth: pct > 0 ? "16px" : "0",
+                  top: "4px",
+                  left: "4px",
+                  height: "calc(100% - 8px)",
+                  width: `calc(${pct}% - 4px)`,
+                  minWidth: pct > 0 ? "14px" : "0",
                   background: gradient,
-                  borderRadius: "8px",
+                  borderRadius: "5px",
                   transition: "width 0.6s cubic-bezier(0.22, 1, 0.36, 1)",
                 }}
               />
