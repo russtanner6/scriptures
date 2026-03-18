@@ -26,6 +26,32 @@
 - Volume color is passed through to the panel for accent theming (color bar + highlight color)
 - Heatmap tooltip repositioned above cell using `getBoundingClientRect()` for better UX
 
+---
+
+## 2026-03-18 (cont.) — Scripture Reader
+
+### What was done
+- **Built full Scripture Reader** (`/read` page) with `ScriptureReader.tsx` component:
+  - 3-level navigation: Volume picker → Book list → Chapter reading view
+  - Light/dark reading mode toggle (sun/moon button, persisted in localStorage)
+  - Full-screen overlay reading view that breaks out of the page container
+  - Prev/next chapter navigation with cross-book support (seamlessly moves between books)
+  - Verse numbers clickable to open on churchofjesuschrist.org
+  - Deep linking via `?bookId=X&chapter=Y&highlight=word`
+  - Chapter selector dropdown in sticky top bar
+  - Volume-colored accent for chapter labels
+- **New API route** `/api/chapter` — fetches all verses for a bookId + chapter (no search filter)
+- **New query functions** — `getChapterVerses()` and `getBookIdBySlug()` in queries.ts
+- **"Read in context →" link** added to ScripturePanel — deep-links to `/read` with bookId, chapter, and highlight params
+- **"Read Scriptures" nav link** added to NavMenu (📖 icon)
+
+### Status
+- Build compiles clean
+- Volume picker verified working (screenshot confirmed)
+- Needs end-to-end verification: book list, chapter reading, light mode, nav, mobile
+
 ### Known issues / next steps
-- The "Read in context" link is planned for when the full scripture reader (`/read`) is built
+- Need to verify full reader flow end-to-end (book picking, chapter reading, prev/next, light mode, mobile)
 - Export button not yet on word frequency page chart modules (existing TODO from roadmap)
+- D&C shows "1 book" on volume picker — could show "138 sections" instead for clarity
+- Could add chapter grid view (click chapter number directly) instead of always starting at ch 1

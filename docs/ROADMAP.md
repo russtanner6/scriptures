@@ -64,7 +64,7 @@ This is the foundation that connects everything. When a user clicks any data poi
    - Bar charts: refactor existing verse modal to use ScripturePanel
 4. Add "Click any point to read verses" hint text to module descriptions
 
-### LATER: Full Scripture Reader (`/read`)
+### ✅ DONE: Full Scripture Reader (`/read`)
 - After the panel works, build the full reader page
 - URL structure: `/read/ot/genesis/1`, `/read/dc/76`, etc.
 - Clean reading layout, chapter navigation, search term highlighting
