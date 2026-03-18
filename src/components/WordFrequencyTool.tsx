@@ -49,7 +49,6 @@ export default function WordFrequencyTool() {
   const [wholeWord, setWholeWord] = useState(true);
   const [results, setResults] = useState<WordFrequencyResponse | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [volumeSelectOpen, setVolumeSelectOpen] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
   // Load volumes on mount
@@ -120,9 +119,9 @@ export default function WordFrequencyTool() {
     <div>
       {/* Search Controls */}
       <div className="search-panel">
-        <div className="search-row">
-          {/* Word input */}
-          <div style={{ flex: "1 1 300px" }}>
+        {/* Row 1: Search input + button */}
+        <div style={{ display: "flex", gap: "10px", alignItems: "flex-end", marginBottom: "16px" }}>
+          <div style={{ flex: "1 1 200px", maxWidth: "360px" }}>
             <label
               style={{
                 display: "block",
@@ -131,7 +130,7 @@ export default function WordFrequencyTool() {
                 textTransform: "uppercase",
                 letterSpacing: "0.1em",
                 color: "var(--text-secondary)",
-                marginBottom: "8px",
+                marginBottom: "6px",
               }}
             >
               Word or phrase
@@ -142,130 +141,112 @@ export default function WordFrequencyTool() {
               value={word}
               onChange={(e) => setWord(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder='e.g. "Jesus", "faith", "repent"'
+              placeholder='e.g. "Jesus", "faith"'
               style={{
                 width: "100%",
-                padding: "12px 16px",
+                padding: "9px 14px",
                 background: "var(--zinc-900)",
                 border: "1px solid var(--border-accent)",
-                borderRadius: "10px",
+                borderRadius: "8px",
                 color: "var(--text)",
-                fontSize: "1rem",
+                fontSize: "0.92rem",
                 fontFamily: "inherit",
                 outline: "none",
               }}
             />
           </div>
 
-          {/* Volume selector */}
-          <div className="volume-selector" style={{ position: "relative", flex: "0 0 auto" }}>
-            <label
-              style={{
-                display: "block",
-                fontSize: "0.72rem",
-                fontWeight: 600,
-                textTransform: "uppercase",
-                letterSpacing: "0.1em",
-                color: "var(--text-secondary)",
-                marginBottom: "8px",
-              }}
-            >
-              Volumes
-            </label>
-            <button
-              type="button"
-              onClick={() => setVolumeSelectOpen(!volumeSelectOpen)}
-              style={{
-                padding: "12px 16px",
-                background: "var(--zinc-900)",
-                border: "1px solid var(--border-accent)",
-                borderRadius: "10px",
-                color: "var(--text)",
-                fontSize: "0.92rem",
-                fontFamily: "inherit",
-                cursor: "pointer",
-                minWidth: "180px",
-                textAlign: "left",
-                width: "100%",
-              }}
-            >
-              {selectedVolumeIds.size === volumes.length
-                ? "All volumes"
-                : `${selectedVolumeIds.size} selected`}{" "}
-              ▾
-            </button>
-            {volumeSelectOpen && (
-              <div
-                style={{
-                  position: "absolute",
-                  top: "100%",
-                  left: 0,
-                  right: 0,
-                  marginTop: "4px",
-                  background: "var(--zinc-900)",
-                  border: "1px solid var(--border-accent)",
-                  borderRadius: "10px",
-                  padding: "8px",
-                  zIndex: 10,
-                  minWidth: "220px",
-                }}
-              >
-                {volumes.map((v) => (
-                  <label
-                    key={v.id}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "8px",
-                      padding: "8px 10px",
-                      cursor: "pointer",
-                      fontSize: "0.88rem",
-                      color: "var(--text-secondary)",
-                      borderRadius: "6px",
-                    }}
-                    onMouseEnter={(e) =>
-                      (e.currentTarget.style.background =
-                        "var(--surface-hover)")
-                    }
-                    onMouseLeave={(e) =>
-                      (e.currentTarget.style.background = "transparent")
-                    }
-                  >
-                    <input
-                      type="checkbox"
-                      checked={selectedVolumeIds.has(v.id)}
-                      onChange={() => toggleVolume(v.id)}
-                      style={{ accentColor: VOLUME_COLORS[v.abbrev] }}
-                    />
-                    <span
-                      style={{
-                        width: "6px",
-                        height: "6px",
-                        borderRadius: "50%",
-                        background: VOLUME_COLORS[v.abbrev],
-                      }}
-                    />
-                    {v.name}
-                  </label>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* Toggles */}
-          <div
+          <button
+            onClick={handleSearch}
+            disabled={!word.trim() || isLoading}
             style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-              flex: "0 0 auto",
+              padding: "9px 28px",
+              background:
+                !word.trim() || isLoading
+                  ? "var(--zinc-800)"
+                  : "var(--accent)",
+              color:
+                !word.trim() || isLoading
+                  ? "var(--text-muted)"
+                  : "#fff",
+              border: "none",
+              borderRadius: "8px",
+              fontSize: "0.88rem",
+              fontWeight: 600,
+              cursor:
+                !word.trim() || isLoading ? "not-allowed" : "pointer",
+              fontFamily: "inherit",
+              transition: "background 0.2s",
+              whiteSpace: "nowrap",
             }}
           >
+            {isLoading ? "Searching..." : "Analyze"}
+          </button>
+        </div>
+
+        {/* Row 2: Volume checkboxes + options — always visible */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "20px",
+            flexWrap: "wrap",
+          }}
+        >
+          {/* Volume checkboxes */}
+          <div style={{ display: "flex", alignItems: "center", gap: "14px", flexWrap: "wrap" }}>
+            {volumes.map((v) => (
+              <label
+                key={v.id}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "5px",
+                  cursor: "pointer",
+                  fontSize: "0.82rem",
+                  color: selectedVolumeIds.has(v.id)
+                    ? "var(--text)"
+                    : "var(--text-muted)",
+                  transition: "color 0.15s",
+                }}
+              >
+                <input
+                  type="checkbox"
+                  checked={selectedVolumeIds.has(v.id)}
+                  onChange={() => toggleVolume(v.id)}
+                  style={{ accentColor: VOLUME_COLORS[v.abbrev] }}
+                />
+                <span
+                  style={{
+                    width: "6px",
+                    height: "6px",
+                    borderRadius: "50%",
+                    background: VOLUME_COLORS[v.abbrev],
+                    opacity: selectedVolumeIds.has(v.id) ? 1 : 0.4,
+                    transition: "opacity 0.15s",
+                  }}
+                />
+                {v.abbrev === "D&C" ? "D&C" : v.name}
+              </label>
+            ))}
+          </div>
+
+          {/* Divider */}
+          <div
+            style={{
+              width: "1px",
+              height: "20px",
+              background: "var(--border-accent)",
+            }}
+          />
+
+          {/* Search options */}
+          <div style={{ display: "flex", alignItems: "center", gap: "14px", flexWrap: "wrap" }}>
             <label
               style={{
                 display: "flex",
                 alignItems: "center",
-                gap: "6px",
+                gap: "5px",
                 fontSize: "0.82rem",
                 color: "var(--text-secondary)",
                 cursor: "pointer",
@@ -283,7 +264,7 @@ export default function WordFrequencyTool() {
               style={{
                 display: "flex",
                 alignItems: "center",
-                gap: "6px",
+                gap: "5px",
                 fontSize: "0.82rem",
                 color: "var(--text-secondary)",
                 cursor: "pointer",
@@ -295,51 +276,11 @@ export default function WordFrequencyTool() {
                 onChange={(e) => setWholeWord(e.target.checked)}
                 style={{ accentColor: "var(--accent)" }}
               />
-              Whole word match
+              Whole word
             </label>
           </div>
-
-          {/* Search button */}
-          <button
-            onClick={handleSearch}
-            disabled={!word.trim() || isLoading}
-            style={{
-              padding: "12px 32px",
-              background:
-                !word.trim() || isLoading
-                  ? "var(--zinc-800)"
-                  : "var(--accent)",
-              color:
-                !word.trim() || isLoading
-                  ? "var(--text-muted)"
-                  : "#fff",
-              border: "none",
-              borderRadius: "10px",
-              fontSize: "0.92rem",
-              fontWeight: 600,
-              cursor:
-                !word.trim() || isLoading ? "not-allowed" : "pointer",
-              fontFamily: "inherit",
-              transition: "background 0.2s",
-              width: "100%",
-            }}
-          >
-            {isLoading ? "Searching..." : "Analyze"}
-          </button>
         </div>
       </div>
-
-      {/* Close dropdown when clicking outside */}
-      {volumeSelectOpen && (
-        <div
-          style={{
-            position: "fixed",
-            inset: 0,
-            zIndex: 5,
-          }}
-          onClick={() => setVolumeSelectOpen(false)}
-        />
-      )}
 
       {/* Results */}
       {results && (
