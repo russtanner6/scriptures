@@ -243,7 +243,7 @@ export default function WordFrequencyTool() {
               background:
                 !word.trim() || isLoading
                   ? "var(--zinc-800)"
-                  : "linear-gradient(135deg, #8b5cf6, #a78bfa)",
+                  : "linear-gradient(135deg, #3b82f6, #60a5fa)",
               color:
                 !word.trim() || isLoading
                   ? "var(--text-muted)"
@@ -262,47 +262,30 @@ export default function WordFrequencyTool() {
           >
             {isLoading ? (isMobile ? "..." : "Analyzing...") : (isMobile ? "Go" : "Analyze")}
           </button>
-        </div>
-
-        {/* Help link — sits below the search bar, not inside it */}
-        <div style={{ marginBottom: "16px", display: "flex", alignItems: "center", gap: "6px" }}>
+          {/* Help link — next to Analyze button */}
           <button
             type="button"
             onClick={() => setShowHelp(!showHelp)}
             style={{
               display: "inline-flex",
               alignItems: "center",
-              gap: "6px",
-              padding: "0",
+              justifyContent: "center",
+              width: "36px",
+              height: "100%",
               background: "none",
               border: "none",
-              color: showHelp ? "var(--accent)" : "var(--text-muted)",
-              fontSize: "0.78rem",
-              fontWeight: 500,
+              borderLeft: "1px solid var(--border)",
+              color: showHelp ? "#3b82f6" : "var(--text-muted)",
+              fontSize: "0.82rem",
+              fontWeight: 700,
               fontFamily: "inherit",
               cursor: "pointer",
               transition: "color 0.15s",
+              flexShrink: 0,
             }}
+            title="Search tips"
           >
-            <span
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "18px",
-                height: "18px",
-                borderRadius: "50%",
-                background: showHelp ? "var(--accent)" : "var(--text-muted)",
-                color: "#fff",
-                fontSize: "0.68rem",
-                fontWeight: 700,
-                lineHeight: 1,
-                flexShrink: 0,
-              }}
-            >
-              ?
-            </span>
-            {showHelp ? "Hide search tips" : "Search tips & syntax"}
+            ?
           </button>
         </div>
 
@@ -508,10 +491,10 @@ export default function WordFrequencyTool() {
                   padding: "5px 12px",
                   borderRadius: "8px",
                   border: caseInsensitive
-                    ? "1px solid #8b5cf6"
+                    ? "1px solid #3b82f6"
                     : "1px solid var(--border)",
                   background: caseInsensitive
-                    ? "#8b5cf6"
+                    ? "#3b82f6"
                     : "transparent",
                   color: caseInsensitive
                     ? "#fff"
@@ -538,10 +521,10 @@ export default function WordFrequencyTool() {
                   padding: "5px 12px",
                   borderRadius: "8px",
                   border: wholeWord
-                    ? "1px solid #8b5cf6"
+                    ? "1px solid #3b82f6"
                     : "1px solid var(--border)",
                   background: wholeWord
-                    ? "#8b5cf6"
+                    ? "#3b82f6"
                     : "transparent",
                   color: wholeWord
                     ? "#fff"
@@ -850,7 +833,7 @@ export default function WordFrequencyTool() {
                     <div style={{ display: "flex", gap: "6px", marginBottom: "20px", flexWrap: "wrap" }}>
                       {breakdownVolumes.map((v) => {
                         const isActive = v.id === activeId;
-                        const tabColor = VOLUME_COLORS[v.abbrev] || "#8b5cf6";
+                        const tabColor = VOLUME_COLORS[v.abbrev] || "#3b82f6";
                         return (
                           <button
                             key={v.id}
@@ -905,7 +888,7 @@ export default function WordFrequencyTool() {
                     .map((r) => ({
                       label: r.bookName,
                       value: r.count,
-                      color: VOLUME_COLORS[r.volumeAbbrev] || "#8b5cf6",
+                      color: VOLUME_COLORS[r.volumeAbbrev] || "#3b82f6",
                       id: r.bookId,
                     }))}
                   onBarClick={(item: BarItem) =>
@@ -933,7 +916,7 @@ export default function WordFrequencyTool() {
               const activeVol = volumes.find((v) => v.id === activeTabId);
               if (!activeVol) return null;
 
-              const color = VOLUME_COLORS[arcVolumes.find((v) => v.id === activeTabId)?.abbrev || ""] || "#8b5cf6";
+              const color = VOLUME_COLORS[arcVolumes.find((v) => v.id === activeTabId)?.abbrev || ""] || "#3b82f6";
               const arcData = activeVol.books.map((b) => {
                 const r = results.results.find((r) => r.bookId === b.id);
                 return { name: b.name, count: r?.count || 0 };
@@ -952,7 +935,7 @@ export default function WordFrequencyTool() {
                     <div style={{ display: "flex", gap: "6px", marginBottom: "20px", flexWrap: "wrap" }}>
                       {arcVolumes.map((v) => {
                         const isActive = v.id === activeTabId;
-                        const tabColor = VOLUME_COLORS[v.abbrev] || "#8b5cf6";
+                        const tabColor = VOLUME_COLORS[v.abbrev] || "#3b82f6";
                         return (
                           <button
                             key={v.id}
