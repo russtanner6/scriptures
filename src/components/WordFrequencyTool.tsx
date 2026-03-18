@@ -182,7 +182,7 @@ export default function WordFrequencyTool() {
             onClick={handleSearch}
             disabled={!word.trim() || isLoading}
             style={{
-              padding: "14px 32px",
+              padding: "14px 20px",
               background:
                 !word.trim() || isLoading
                   ? "var(--zinc-800)"
@@ -203,7 +203,7 @@ export default function WordFrequencyTool() {
               letterSpacing: "0.02em",
             }}
           >
-            {isLoading ? "Analyzing..." : "Analyze"}
+            {isLoading ? (isMobile ? "..." : "Analyzing...") : (isMobile ? "Go" : "Analyze")}
           </button>
         </div>
 
