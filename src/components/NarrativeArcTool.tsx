@@ -332,7 +332,7 @@ export default function NarrativeArcTool() {
                 <button
                   key={v.id}
                   type="button"
-                  onClick={() => setSelectedVolumeId(v.id)}
+                  onClick={() => { setSelectedVolumeId(v.id); setResults([]); }}
                   style={{
                     display: "inline-flex",
                     alignItems: "center",
