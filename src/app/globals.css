@@ -186,7 +186,7 @@ body::before {
 .search-panel {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 28px;
   margin-bottom: 32px;
   max-width: 100%;
@@ -267,7 +267,7 @@ body::before {
 
   .search-panel {
     padding: 16px;
-    border-radius: 14px;
+    border-radius: 10px;
     margin-bottom: 20px;
   }
 
@@ -359,7 +359,7 @@ body::before {
 
   .dashboard-card {
     padding: 16px !important;
-    border-radius: 14px !important;
+    border-radius: 10px !important;
   }
 
   .bar-list-row {

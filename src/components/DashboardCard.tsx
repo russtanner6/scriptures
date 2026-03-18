@@ -23,7 +23,7 @@ export default function DashboardCard({
       style={{
         background: "var(--surface)",
         border: "1px solid var(--border)",
-        borderRadius: "20px",
+        borderRadius: "10px",
         padding: "28px",
         transition: "border-color 0.2s, box-shadow 0.2s",
         overflow: "hidden",

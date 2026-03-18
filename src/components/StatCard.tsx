@@ -18,7 +18,7 @@ export default function StatCard({
       style={{
         background: "var(--surface)",
         border: "1px solid var(--border)",
-        borderRadius: "20px",
+        borderRadius: "10px",
         padding: "24px 20px",
         transition: "border-color 0.2s, background 0.2s, box-shadow 0.2s",
         backdropFilter: "blur(20px)",

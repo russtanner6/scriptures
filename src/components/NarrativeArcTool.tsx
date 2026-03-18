@@ -476,7 +476,7 @@ export default function NarrativeArcTool() {
           style={{
             background: "var(--surface)",
             border: "1px solid var(--border)",
-            borderRadius: "20px",
+            borderRadius: "10px",
             padding: "28px",
             backdropFilter: "blur(20px)",
             WebkitBackdropFilter: "blur(20px)",

@@ -121,17 +121,17 @@ export default function HorizontalBarList({
                   justifyContent: "center",
                   width: "28px",
                   height: "28px",
-                  opacity: isClickable ? 0.4 : 0.15,
+                  opacity: isClickable ? 0.6 : 0.15,
                   transition: "opacity 0.15s",
                   flexShrink: 0,
                 }}
                 onMouseEnter={(e) => isClickable && (e.currentTarget.style.opacity = "1")}
-                onMouseLeave={(e) => isClickable && (e.currentTarget.style.opacity = "0.4")}
+                onMouseLeave={(e) => isClickable && (e.currentTarget.style.opacity = "0.6")}
                 title={isClickable ? `View verses in ${item.label}` : undefined}
               >
                 <svg
-                  width="14"
-                  height="14"
+                  width="16"
+                  height="16"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="var(--text-secondary)"

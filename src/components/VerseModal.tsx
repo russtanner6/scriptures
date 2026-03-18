@@ -98,7 +98,7 @@ export default function VerseModal({
           backdropFilter: "blur(24px)",
           WebkitBackdropFilter: "blur(24px)",
           border: "1px solid var(--border-accent)",
-          borderRadius: "20px",
+          borderRadius: "10px",
           zIndex: 201,
           display: "flex",
           flexDirection: "column",
