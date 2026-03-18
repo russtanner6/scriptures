@@ -28,9 +28,14 @@ export default function HorizontalBarList({
         const gradient = gradientEnd
           ? `linear-gradient(90deg, ${barColor}, ${gradientEnd})`
           : barColor;
+        const isClickable = onBarClick && item.value > 0;
 
         return (
-          <div key={i} className="bar-list-row">
+          <div
+            key={i}
+            className="bar-list-row-v2"
+          >
+            {/* Book name label */}
             <div
               style={{
                 textAlign: "right",
@@ -39,24 +44,33 @@ export default function HorizontalBarList({
                 whiteSpace: "nowrap",
                 overflow: "hidden",
                 textOverflow: "ellipsis",
+                fontSize: "inherit",
               }}
               title={item.label}
             >
               {item.label}
             </div>
+
+            {/* Bar track with fill and number inside */}
             <div
               style={{
-                height: "22px",
+                height: "30px",
                 background: "rgba(139, 92, 246, 0.08)",
                 borderRadius: "8px",
-                cursor: onBarClick && item.value > 0 ? "pointer" : "default",
                 position: "relative",
+                cursor: isClickable ? "pointer" : "default",
+                display: "flex",
+                alignItems: "center",
               }}
-              onClick={() => onBarClick && item.value > 0 && onBarClick(item)}
-              title={onBarClick && item.value > 0 ? `View verses in ${item.label}` : undefined}
+              onClick={() => isClickable && onBarClick(item)}
+              title={isClickable ? `View verses in ${item.label}` : undefined}
             >
+              {/* Colored fill */}
               <div
                 style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
                   height: "100%",
                   width: `${pct}%`,
                   minWidth: pct > 0 ? "16px" : "0",
@@ -65,50 +79,42 @@ export default function HorizontalBarList({
                   transition: "width 0.6s cubic-bezier(0.22, 1, 0.36, 1)",
                 }}
               />
-            </div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "4px",
-                justifyContent: "flex-end",
-              }}
-            >
-              <span
+
+              {/* Number + icon overlay — positioned at right end of bar or right of track */}
+              <div
                 style={{
-                  fontWeight: 600,
-                  fontVariantNumeric: "tabular-nums",
-                  color: "var(--text-secondary)",
-                  textAlign: "right",
+                  position: "absolute",
+                  right: pct > 20 ? undefined : "8px",
+                  left: pct > 20 ? `calc(${pct}% - 8px)` : undefined,
+                  transform: pct > 20 ? "translateX(-100%)" : undefined,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "4px",
+                  height: "100%",
+                  paddingRight: pct > 20 ? "0" : "0",
                 }}
               >
-                {item.value}
-              </span>
-              {onBarClick && item.value > 0 && (
-                <button
-                  type="button"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    onBarClick(item);
-                  }}
+                <span
                   style={{
-                    background: "none",
-                    border: "none",
-                    cursor: "pointer",
-                    color: "var(--text-muted)",
-                    fontSize: "0.7rem",
-                    padding: "2px",
-                    lineHeight: 1,
-                    opacity: 0.5,
-                    transition: "opacity 0.15s",
+                    fontWeight: 700,
+                    fontSize: "0.78rem",
+                    fontVariantNumeric: "tabular-nums",
+                    color: pct > 20 ? "#fff" : "var(--text-secondary)",
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
-                  onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.5")}
-                  title={`View verses in ${item.label}`}
                 >
-                  📖
-                </button>
-              )}
+                  {item.value > 0 ? item.value : ""}
+                </span>
+                {isClickable && (
+                  <span
+                    style={{
+                      fontSize: "0.65rem",
+                      opacity: 0.6,
+                    }}
+                  >
+                    📖
+                  </span>
+                )}
+              </div>
             </div>
           </div>
         );

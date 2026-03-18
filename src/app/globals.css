@@ -204,6 +204,14 @@ body::before {
   font-size: 0.88rem;
 }
 
+.bar-list-row-v2 {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+}
+
 /* DataTable scroll wrapper */
 .table-scroll-wrapper {
   overflow-x: auto;
@@ -317,6 +325,12 @@ body::before {
     gap: 6px;
     font-size: 0.8rem;
   }
+
+  .bar-list-row-v2 {
+    grid-template-columns: 80px 1fr;
+    gap: 6px;
+    font-size: 0.78rem;
+  }
 }
 
 /* ===== SMALL MOBILE (≤ 480px) ===== */
@@ -355,5 +369,11 @@ body::before {
     grid-template-columns: 64px 1fr 30px;
     gap: 4px;
     font-size: 0.75rem;
+  }
+
+  .bar-list-row-v2 {
+    grid-template-columns: 64px 1fr;
+    gap: 4px;
+    font-size: 0.72rem;
   }
 }
