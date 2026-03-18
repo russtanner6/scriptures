@@ -46,7 +46,7 @@ export default function StatCard({
           letterSpacing: "0.1em",
           textTransform: "uppercase",
           padding: "4px 10px",
-          borderRadius: "100px",
+          borderRadius: "8px",
           marginBottom: "14px",
           background: softColor,
           color: color,
