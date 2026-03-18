@@ -220,27 +220,47 @@ export default function WordFrequencyTool() {
           >
             {isLoading ? (isMobile ? "..." : "Analyzing...") : (isMobile ? "Go" : "Analyze")}
           </button>
-          {/* Help button */}
+        </div>
+
+        {/* Help link — sits below the search bar, not inside it */}
+        <div style={{ marginBottom: "16px", display: "flex", alignItems: "center", gap: "6px" }}>
           <button
             type="button"
             onClick={() => setShowHelp(!showHelp)}
             style={{
-              padding: "10px 14px",
-              background: showHelp ? "rgba(59, 130, 246, 0.1)" : "transparent",
-              border: showHelp ? "1px solid rgba(59, 130, 246, 0.3)" : "1px solid var(--border)",
-              borderRadius: "12px",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "6px",
+              padding: "0",
+              background: "none",
+              border: "none",
               color: showHelp ? "var(--accent)" : "var(--text-muted)",
-              fontSize: "0.92rem",
-              fontWeight: 700,
+              fontSize: "0.78rem",
+              fontWeight: 500,
               fontFamily: "inherit",
               cursor: "pointer",
-              transition: "all 0.15s ease",
-              lineHeight: 1,
-              flexShrink: 0,
+              transition: "color 0.15s",
             }}
-            title="Search help"
           >
-            ?
+            <span
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "18px",
+                height: "18px",
+                borderRadius: "50%",
+                background: showHelp ? "var(--accent)" : "var(--text-muted)",
+                color: "#fff",
+                fontSize: "0.68rem",
+                fontWeight: 700,
+                lineHeight: 1,
+                flexShrink: 0,
+              }}
+            >
+              ?
+            </span>
+            {showHelp ? "Hide search tips" : "Search tips & syntax"}
           </button>
         </div>
 
@@ -307,10 +327,10 @@ export default function WordFrequencyTool() {
                   padding: "7px 14px",
                   borderRadius: "100px",
                   border: isActive
-                    ? `1px solid ${color}50`
+                    ? `1px solid ${color}`
                     : "1px solid var(--border)",
-                  background: isActive ? `${color}15` : "transparent",
-                  color: isActive ? color : "var(--text-muted)",
+                  background: isActive ? color : "transparent",
+                  color: isActive ? "#fff" : "var(--text-muted)",
                   fontSize: "0.8rem",
                   fontWeight: isActive ? 600 : 500,
                   fontFamily: "inherit",
@@ -456,13 +476,13 @@ export default function WordFrequencyTool() {
                   padding: "5px 12px",
                   borderRadius: "100px",
                   border: caseInsensitive
-                    ? "1px solid rgba(59, 130, 246, 0.3)"
+                    ? "1px solid #3b82f6"
                     : "1px solid var(--border)",
                   background: caseInsensitive
-                    ? "rgba(59, 130, 246, 0.1)"
+                    ? "#3b82f6"
                     : "transparent",
                   color: caseInsensitive
-                    ? "var(--accent)"
+                    ? "#fff"
                     : "var(--text-muted)",
                   fontSize: "0.78rem",
                   fontWeight: 500,
@@ -486,13 +506,13 @@ export default function WordFrequencyTool() {
                   padding: "5px 12px",
                   borderRadius: "100px",
                   border: wholeWord
-                    ? "1px solid rgba(59, 130, 246, 0.3)"
+                    ? "1px solid #3b82f6"
                     : "1px solid var(--border)",
                   background: wholeWord
-                    ? "rgba(59, 130, 246, 0.1)"
+                    ? "#3b82f6"
                     : "transparent",
                   color: wholeWord
-                    ? "var(--accent)"
+                    ? "#fff"
                     : "var(--text-muted)",
                   fontSize: "0.78rem",
                   fontWeight: 500,
@@ -684,12 +704,12 @@ export default function WordFrequencyTool() {
                     padding: "5px 12px",
                     borderRadius: "100px",
                     border: isOn
-                      ? "1px solid rgba(16, 185, 129, 0.3)"
+                      ? "1px solid #10b981"
                       : "1px solid var(--border)",
                     background: isOn
-                      ? "rgba(16, 185, 129, 0.1)"
+                      ? "#10b981"
                       : "transparent",
-                    color: isOn ? "var(--emerald)" : "var(--text-muted)",
+                    color: isOn ? "#fff" : "var(--text-muted)",
                     fontSize: "0.78rem",
                     fontWeight: 500,
                     fontFamily: "inherit",
