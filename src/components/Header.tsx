@@ -8,32 +8,21 @@ export default function Header() {
 
   return (
     <div className="header-wrapper">
-      {/* Hamburger menu */}
+      {/* Hamburger menu — right side */}
       <button
         className="hamburger-btn"
         type="button"
         title="Menu"
         onClick={() => setMenuOpen(true)}
+        style={{ left: "auto", right: 0 }}
       >
-        <span className="hamburger-line" style={{ width: "14px" }} />
+        <span className="hamburger-line" style={{ width: "14px", marginLeft: "auto" }} />
         <span className="hamburger-line" style={{ width: "22px" }} />
-        <span className="hamburger-line" style={{ width: "18px" }} />
+        <span className="hamburger-line" style={{ width: "18px", marginLeft: "auto" }} />
       </button>
 
       <NavMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
 
-      <div className="header-eyebrow">
-        <span
-          style={{
-            display: "inline-block",
-            width: "18px",
-            height: "2px",
-            background: "var(--accent)",
-            borderRadius: "1px",
-          }}
-        />
-        Scripture Analysis Dashboard
-      </div>
       <h1 className="header-title">Scripture Explorer</h1>
       <div className="header-subtitle">
         Search and analyze word frequencies across the LDS Standard Works.{" "}
