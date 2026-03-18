@@ -5,11 +5,13 @@ export default function StatCard({
   value,
   subtitle,
   color,
+  onLabelClick,
 }: {
   label: string;
   value: string | number;
   subtitle: string;
   color: string;
+  onLabelClick?: () => void;
 }) {
   const softColor = `${color}1a`;
 
@@ -35,8 +37,10 @@ export default function StatCard({
         e.currentTarget.style.boxShadow = "none";
       }}
     >
-      <div
+      <button
+        type="button"
         className="stat-card-label"
+        onClick={onLabelClick}
         style={{
           display: "inline-flex",
           alignItems: "center",
@@ -50,18 +54,14 @@ export default function StatCard({
           marginBottom: "14px",
           background: softColor,
           color: color,
+          border: "none",
+          cursor: onLabelClick ? "pointer" : "default",
+          fontFamily: "inherit",
+          transition: "opacity 0.15s",
         }}
       >
-        <span
-          style={{
-            width: "6px",
-            height: "6px",
-            borderRadius: "50%",
-            background: color,
-          }}
-        />
         {label}
-      </div>
+      </button>
       <div
         className="stat-card-value"
         style={{

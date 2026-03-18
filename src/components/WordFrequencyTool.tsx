@@ -679,6 +679,14 @@ export default function WordFrequencyTool() {
                     : "0% of total"
                 }
                 color={VOLUME_COLORS[v.abbrev] || "var(--text-muted)"}
+                onLabelClick={() => {
+                  // Toggle: if all selected, solo this volume. If already solo, select all.
+                  if (selectedVolumeIds.size === 1 && selectedVolumeIds.has(v.id)) {
+                    setSelectedVolumeIds(new Set(volumes.map((vol) => vol.id)));
+                  } else {
+                    setSelectedVolumeIds(new Set([v.id]));
+                  }
+                }}
               />
             ))}
           </div>
