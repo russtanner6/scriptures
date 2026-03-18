@@ -3,6 +3,8 @@
 import { useState, useEffect, useRef } from "react";
 import type { Volume } from "@/lib/types";
 import { VOLUME_COLORS, getContrastText } from "@/lib/constants";
+import { ExportButton } from "./ExportChartModal";
+import ExportHtmlModal from "./ExportHtmlModal";
 
 function useIsMobile(breakpoint = 768) {
   const [isMobile, setIsMobile] = useState(false);
@@ -34,6 +36,7 @@ export default function HeatmapTool() {
   const [maxCount, setMaxCount] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [hoveredCell, setHoveredCell] = useState<HeatmapCell | null>(null);
+  const [exportAbbrev, setExportAbbrev] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const initialSearchDone = useRef(false);
 
@@ -301,7 +304,7 @@ export default function HeatmapTool() {
           const g = parseInt(hex.substring(2, 4), 16);
           const b = parseInt(hex.substring(4, 6), 16);
           return (
-            <div style={{ marginTop: "0", display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", fontSize: "0.72rem", color: "var(--text-muted)" }}>
+            <div style={{ marginTop: "6px", marginBottom: "6px", display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", fontSize: "0.72rem", color: "var(--text-muted)" }}>
               <span>Less</span>
               <div style={{ display: "flex", gap: "2px" }}>
                 {[0, 0.2, 0.4, 0.6, 0.8, 1].map((intensity) => (
@@ -327,7 +330,7 @@ export default function HeatmapTool() {
 
             {/* Jump-to navigation */}
             {sortedVolumes.length > 1 && (
-              <div style={{ position: "sticky", top: 0, zIndex: 50, background: "var(--bg)", paddingTop: "8px", paddingBottom: "8px", display: "flex", alignItems: "center", gap: "6px", flexWrap: "wrap", marginBottom: "8px" }}>
+              <div style={{ position: "sticky", top: 0, zIndex: 50, paddingTop: "8px", paddingBottom: "8px", display: "flex", alignItems: "center", gap: "6px", flexWrap: "wrap", marginBottom: "8px" }}>
                 <span style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)", marginRight: "4px" }}>Jump to</span>
                 {sortedVolumes.map(([abbrev, vg]) => {
                   const volColor = VOLUME_COLORS[abbrev];
@@ -354,13 +357,16 @@ export default function HeatmapTool() {
                   padding: isMobile ? "16px" : "24px", marginBottom: "16px",
                   backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)",
                 }}>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "8px" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
                     <h3 style={{ fontSize: "1.05rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text)", margin: 0 }}>
                       <span style={{ color: volColor }}>{vg.volumeName}</span>
                     </h3>
-                    <span style={{ fontSize: "0.78rem", color: "var(--text-secondary)", fontWeight: 600, fontVariantNumeric: "tabular-nums" }}>
-                      {volTotal.toLocaleString()} total
-                    </span>
+                    <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                      <span style={{ fontSize: "0.78rem", color: "var(--text-secondary)", fontWeight: 600, fontVariantNumeric: "tabular-nums" }}>
+                        {volTotal.toLocaleString()} total
+                      </span>
+                      <ExportButton onClick={() => setExportAbbrev(abbrev)} />
+                    </div>
                   </div>
 
                   {renderColorScale(abbrev)}
@@ -386,6 +392,15 @@ export default function HeatmapTool() {
             Try &quot;faith&quot;, &quot;covenant&quot;, or &quot;repent&quot;
           </div>
         </div>
+      )}
+      {/* Export modal */}
+      {exportAbbrev !== null && (
+        <ExportHtmlModal
+          isOpen={true}
+          onClose={() => setExportAbbrev(null)}
+          elementId={`heatmap-${exportAbbrev}`}
+          title={volumes.find(v => v.abbrev === exportAbbrev)?.name || exportAbbrev}
+        />
       )}
     </div>
   );
