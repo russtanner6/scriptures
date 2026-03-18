@@ -186,7 +186,7 @@ export default function WordFrequencyTool() {
               background:
                 !word.trim() || isLoading
                   ? "var(--zinc-800)"
-                  : "var(--accent)",
+                  : "linear-gradient(135deg, #3b82f6, #60a5fa)",
               color:
                 !word.trim() || isLoading
                   ? "var(--text-muted)"
