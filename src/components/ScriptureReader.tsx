@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import type { Volume } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
@@ -23,38 +23,18 @@ function useIsMobile(breakpoint = 768) {
   return isMobile;
 }
 
-// Slugify book name for URLs
-function toSlug(name: string): string {
-  return name.toLowerCase().replace(/\s+/g, "-").replace(/[—]/g, "-");
-}
-
-// Volume abbreviation to URL slug
-const VOL_SLUGS: Record<string, string> = {
-  OT: "ot",
-  NT: "nt",
-  BoM: "bom",
-  "D&C": "dc",
-  PoGP: "pogp",
-};
-
-const VOL_SLUG_REVERSE: Record<string, string> = {
-  ot: "OT",
-  nt: "NT",
-  bom: "BoM",
-  dc: "D&C",
-  pogp: "PoGP",
-};
-
 export default function ScriptureReader() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const isMobile = useIsMobile();
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const [volumes, setVolumes] = useState<Volume[]>([]);
   const [lightMode, setLightMode] = useState(false);
+  const [fontSize, setFontSize] = useState(1); // 0=small, 1=medium, 2=large
 
   // Navigation state
-  const [selectedVolume, setSelectedVolume] = useState<string | null>(null); // volume abbrev
+  const [selectedVolume, setSelectedVolume] = useState<string | null>(null);
   const [selectedBookId, setSelectedBookId] = useState<number | null>(null);
   const [selectedBookName, setSelectedBookName] = useState<string | null>(null);
   const [selectedChapter, setSelectedChapter] = useState<number | null>(null);
@@ -64,14 +44,39 @@ export default function ScriptureReader() {
   const [verses, setVerses] = useState<ReaderVerse[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
+  // Reading progress
+  const [scrollProgress, setScrollProgress] = useState(0);
+
   // Search term highlight (when arriving from ScripturePanel)
   const highlightWord = searchParams.get("highlight") || null;
 
-  // Load light mode preference
+  // Font size map
+  const fontSizes = [
+    { body: isMobile ? "0.92rem" : "0.95rem", label: "A" },
+    { body: isMobile ? "1rem" : "1.05rem", label: "A" },
+    { body: isMobile ? "1.1rem" : "1.18rem", label: "A" },
+  ];
+
+  // Load preferences from localStorage
   useEffect(() => {
-    const saved = localStorage.getItem("reader-light-mode");
-    if (saved === "true") setLightMode(true);
+    const savedLight = localStorage.getItem("reader-light-mode");
+    if (savedLight === "true") setLightMode(true);
+    const savedFont = localStorage.getItem("reader-font-size");
+    if (savedFont) setFontSize(Number(savedFont));
   }, []);
+
+  // Track scroll progress in reading view
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (!container || selectedChapter === null) return;
+    const handleScroll = () => {
+      const { scrollTop, scrollHeight, clientHeight } = container;
+      const progress = scrollHeight <= clientHeight ? 1 : scrollTop / (scrollHeight - clientHeight);
+      setScrollProgress(Math.min(1, Math.max(0, progress)));
+    };
+    container.addEventListener("scroll", handleScroll, { passive: true });
+    return () => container.removeEventListener("scroll", handleScroll);
+  }, [selectedChapter, verses]);
 
   // Load volumes + handle deep link
   useEffect(() => {
@@ -87,18 +92,15 @@ export default function ScriptureReader() {
         if (urlBookId && urlChapter) {
           const bid = Number(urlBookId);
           let ch = Number(urlChapter);
-          // Find the book in volumes to get volume abbrev
           for (const vol of vols) {
             const book = vol.books.find((b) => b.id === bid);
             if (book) {
-              // Clamp chapter to valid range
               ch = Math.max(1, Math.min(ch, book.chapterCount));
               setSelectedVolume(vol.abbrev);
               setSelectedBookId(bid);
               setSelectedBookName(book.name);
               setSelectedChapter(ch);
               setChapterCount(book.chapterCount);
-              // Fetch the chapter
               const params = new URLSearchParams({ bookId: String(bid), chapter: String(ch) });
               fetch(`/api/chapter?${params}`)
                 .then((r) => r.json())
@@ -114,6 +116,7 @@ export default function ScriptureReader() {
   // Fetch chapter verses
   const loadChapter = useCallback(async (bookId: number, chapter: number) => {
     setIsLoading(true);
+    setScrollProgress(0);
     try {
       const params = new URLSearchParams({
         bookId: String(bookId),
@@ -129,7 +132,7 @@ export default function ScriptureReader() {
     }
   }, []);
 
-  // Navigate to a chapter
+  // Navigate to a chapter + update URL
   const goToChapter = useCallback(
     (volAbbrev: string, bookId: number, bookName: string, chapter: number, bookChapterCount: number) => {
       setSelectedVolume(volAbbrev);
@@ -138,9 +141,15 @@ export default function ScriptureReader() {
       setSelectedChapter(chapter);
       setChapterCount(bookChapterCount);
       loadChapter(bookId, chapter);
-      window.scrollTo(0, 0);
+      // Update URL for bookmarking/sharing (without full navigation)
+      const url = `/read?bookId=${bookId}&chapter=${chapter}${highlightWord ? `&highlight=${encodeURIComponent(highlightWord)}` : ""}`;
+      window.history.replaceState({}, "", url);
+      // Scroll to top of reading container
+      if (scrollContainerRef.current) {
+        scrollContainerRef.current.scrollTo(0, 0);
+      }
     },
-    [loadChapter]
+    [loadChapter, highlightWord]
   );
 
   const toggleLightMode = () => {
@@ -151,38 +160,61 @@ export default function ScriptureReader() {
     });
   };
 
+  const cycleFontSize = () => {
+    setFontSize((prev) => {
+      const next = (prev + 1) % 3;
+      localStorage.setItem("reader-font-size", String(next));
+      return next;
+    });
+  };
+
+  // Get prev/next book info for better nav labels
+  const getAdjacentBookInfo = useCallback(() => {
+    if (!selectedVolume || !selectedBookId) return { prev: null, next: null };
+    const vol = volumes.find((v) => v.abbrev === selectedVolume);
+    if (!vol) return { prev: null, next: null };
+    const bookIdx = vol.books.findIndex((b) => b.id === selectedBookId);
+    return {
+      prev: bookIdx > 0 ? vol.books[bookIdx - 1] : null,
+      next: bookIdx < vol.books.length - 1 ? vol.books[bookIdx + 1] : null,
+    };
+  }, [selectedVolume, selectedBookId, volumes]);
+
   // Navigate to prev/next chapter
-  const goToPrevChapter = () => {
+  const goToPrevChapter = useCallback(() => {
     if (!selectedBookId || !selectedChapter || !selectedVolume) return;
     if (selectedChapter > 1) {
       goToChapter(selectedVolume, selectedBookId, selectedBookName || "", selectedChapter - 1, chapterCount);
     } else {
-      // Go to previous book's last chapter
-      const vol = volumes.find((v) => v.abbrev === selectedVolume);
-      if (!vol) return;
-      const bookIdx = vol.books.findIndex((b) => b.id === selectedBookId);
-      if (bookIdx > 0) {
-        const prevBook = vol.books[bookIdx - 1];
-        goToChapter(selectedVolume, prevBook.id, prevBook.name, prevBook.chapterCount, prevBook.chapterCount);
+      const { prev } = getAdjacentBookInfo();
+      if (prev) {
+        goToChapter(selectedVolume, prev.id, prev.name, prev.chapterCount, prev.chapterCount);
       }
     }
-  };
+  }, [selectedBookId, selectedChapter, selectedVolume, selectedBookName, chapterCount, goToChapter, getAdjacentBookInfo]);
 
-  const goToNextChapter = () => {
+  const goToNextChapter = useCallback(() => {
     if (!selectedBookId || !selectedChapter || !selectedVolume) return;
     if (selectedChapter < chapterCount) {
       goToChapter(selectedVolume, selectedBookId, selectedBookName || "", selectedChapter + 1, chapterCount);
     } else {
-      // Go to next book's first chapter
-      const vol = volumes.find((v) => v.abbrev === selectedVolume);
-      if (!vol) return;
-      const bookIdx = vol.books.findIndex((b) => b.id === selectedBookId);
-      if (bookIdx < vol.books.length - 1) {
-        const nextBook = vol.books[bookIdx + 1];
-        goToChapter(selectedVolume, nextBook.id, nextBook.name, 1, nextBook.chapterCount);
+      const { next } = getAdjacentBookInfo();
+      if (next) {
+        goToChapter(selectedVolume, next.id, next.name, 1, next.chapterCount);
       }
     }
-  };
+  }, [selectedBookId, selectedChapter, selectedVolume, selectedBookName, chapterCount, goToChapter, getAdjacentBookInfo]);
+
+  // Keyboard navigation
+  useEffect(() => {
+    if (selectedChapter === null) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "ArrowLeft") { e.preventDefault(); goToPrevChapter(); }
+      if (e.key === "ArrowRight") { e.preventDefault(); goToNextChapter(); }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedChapter, goToPrevChapter, goToNextChapter]);
 
   // Highlight search term in verse text
   const renderVerseText = (text: string) => {
@@ -209,7 +241,7 @@ export default function ScriptureReader() {
     );
   };
 
-  // Color theme styles
+  // Color theme
   const theme = lightMode
     ? {
         bg: "#faf9f6",
@@ -218,7 +250,7 @@ export default function ScriptureReader() {
         textMuted: "#888",
         surface: "rgba(0, 0, 0, 0.03)",
         border: "rgba(0, 0, 0, 0.08)",
-        verseNum: "#999",
+        verseNum: "#aaa",
         verseText: "#2a2a2a",
       }
     : {
@@ -238,9 +270,21 @@ export default function ScriptureReader() {
     const vol = volumes.find((v) => v.abbrev === selectedVolume);
     const isDC = selectedVolume === "D&C";
     const chapterLabel = isDC ? `Section ${selectedChapter}` : `Chapter ${selectedChapter}`;
+    const { prev: prevBook, next: nextBook } = getAdjacentBookInfo();
+    const isFirstChapterOfVolume = selectedChapter === 1 && (!prevBook);
+    const isLastChapterOfVolume = selectedChapter === chapterCount && (!nextBook);
+
+    // Bottom nav labels
+    const prevLabel = selectedChapter > 1
+      ? (isDC ? `Sec ${selectedChapter - 1}` : `Ch ${selectedChapter - 1}`)
+      : prevBook ? prevBook.name : null;
+    const nextLabel = selectedChapter < chapterCount
+      ? (isDC ? `Sec ${selectedChapter + 1}` : `Ch ${selectedChapter + 1}`)
+      : nextBook ? nextBook.name : null;
 
     return (
       <div
+        ref={scrollContainerRef}
         style={{
           position: "fixed",
           inset: 0,
@@ -250,6 +294,20 @@ export default function ScriptureReader() {
           transition: "background 0.3s ease, color 0.3s ease",
         }}
       >
+        {/* Reading progress bar */}
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            height: "2px",
+            width: `${scrollProgress * 100}%`,
+            background: volColor,
+            zIndex: 100,
+            transition: "width 0.1s linear",
+          }}
+        />
+
         {/* Top bar */}
         <div
           style={{
@@ -267,11 +325,12 @@ export default function ScriptureReader() {
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: "12px", minWidth: 0 }}>
-            {/* Back button */}
             <button
               onClick={() => {
                 setSelectedChapter(null);
                 setVerses([]);
+                // Reset URL
+                window.history.replaceState({}, "", "/read");
               }}
               style={{
                 background: "none",
@@ -282,6 +341,7 @@ export default function ScriptureReader() {
                 padding: "4px 8px",
                 fontFamily: "inherit",
               }}
+              title="Back to book list"
             >
               ←
             </button>
@@ -300,7 +360,7 @@ export default function ScriptureReader() {
               </div>
               <div
                 style={{
-                  fontSize: "0.72rem",
+                  fontSize: "0.68rem",
                   fontWeight: 600,
                   textTransform: "uppercase",
                   letterSpacing: "0.1em",
@@ -312,7 +372,31 @@ export default function ScriptureReader() {
             </div>
           </div>
 
-          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "6px" : "8px" }}>
+            {/* Font size toggle */}
+            <button
+              onClick={cycleFontSize}
+              title="Change font size"
+              style={{
+                background: lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.06)",
+                border: `1px solid ${theme.border}`,
+                borderRadius: "8px",
+                width: "36px",
+                height: "36px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                cursor: "pointer",
+                fontSize: fontSize === 0 ? "0.7rem" : fontSize === 1 ? "0.85rem" : "1rem",
+                fontWeight: 700,
+                color: theme.textSecondary,
+                fontFamily: "inherit",
+                transition: "all 0.15s",
+              }}
+            >
+              {fontSizes[fontSize].label}
+            </button>
+
             {/* Light/dark toggle */}
             <button
               onClick={toggleLightMode}
@@ -367,16 +451,30 @@ export default function ScriptureReader() {
           style={{
             maxWidth: "680px",
             margin: "0 auto",
-            padding: isMobile ? "24px 20px 80px" : "40px 32px 100px",
+            padding: isMobile ? "24px 20px 100px" : "40px 32px 120px",
           }}
         >
+          {/* Volume context */}
+          <div
+            style={{
+              fontSize: "0.72rem",
+              fontWeight: 600,
+              textTransform: "uppercase",
+              letterSpacing: "0.15em",
+              color: theme.textMuted,
+              marginBottom: "6px",
+            }}
+          >
+            {vol?.name}
+          </div>
+
           {/* Chapter heading */}
           <h2
             style={{
               fontSize: isMobile ? "1.5rem" : "1.8rem",
               fontWeight: 700,
               color: theme.text,
-              marginBottom: "8px",
+              marginBottom: "4px",
               letterSpacing: "-0.01em",
             }}
           >
@@ -420,18 +518,22 @@ export default function ScriptureReader() {
                       marginRight: "6px",
                       verticalAlign: "super",
                       cursor: externalUrl ? "pointer" : "default",
+                      transition: "color 0.15s",
                     }}
                     title={externalUrl ? "Open on churchofjesuschrist.org" : undefined}
                     onClick={() => {
                       if (externalUrl) window.open(externalUrl, "_blank");
                     }}
+                    onMouseEnter={(e) => { if (externalUrl) e.currentTarget.style.color = volColor; }}
+                    onMouseLeave={(e) => { if (externalUrl) e.currentTarget.style.color = theme.verseNum; }}
                   >
                     {v.verse}
                   </span>
                   <span
                     style={{
-                      fontSize: isMobile ? "1rem" : "1.05rem",
+                      fontSize: fontSizes[fontSize].body,
                       color: theme.verseText,
+                      transition: "font-size 0.2s ease",
                     }}
                   >
                     {renderVerseText(v.text)}
@@ -439,6 +541,70 @@ export default function ScriptureReader() {
                 </div>
               );
             })}
+
+          {/* End of chapter - next/prev hint */}
+          {!isLoading && verses.length > 0 && (
+            <div
+              style={{
+                marginTop: "48px",
+                paddingTop: "24px",
+                borderTop: `1px solid ${theme.border}`,
+                display: "flex",
+                justifyContent: "center",
+                gap: "24px",
+                flexWrap: "wrap",
+              }}
+            >
+              {!isFirstChapterOfVolume && (
+                <button
+                  onClick={goToPrevChapter}
+                  style={{
+                    background: "none",
+                    border: `1px solid ${theme.border}`,
+                    borderRadius: "8px",
+                    padding: "10px 20px",
+                    color: theme.textSecondary,
+                    fontSize: "0.85rem",
+                    fontFamily: "inherit",
+                    cursor: "pointer",
+                    transition: "all 0.15s",
+                  }}
+                  onMouseEnter={(e) => { e.currentTarget.style.borderColor = volColor; e.currentTarget.style.color = theme.text; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.borderColor = theme.border; e.currentTarget.style.color = theme.textSecondary; }}
+                >
+                  ← {prevLabel}
+                </button>
+              )}
+              {!isLastChapterOfVolume && (
+                <button
+                  onClick={goToNextChapter}
+                  style={{
+                    background: `${volColor}15`,
+                    border: `1px solid ${volColor}40`,
+                    borderRadius: "8px",
+                    padding: "10px 20px",
+                    color: volColor,
+                    fontSize: "0.85rem",
+                    fontWeight: 600,
+                    fontFamily: "inherit",
+                    cursor: "pointer",
+                    transition: "all 0.15s",
+                  }}
+                  onMouseEnter={(e) => { e.currentTarget.style.background = `${volColor}25`; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.background = `${volColor}15`; }}
+                >
+                  {nextLabel} →
+                </button>
+              )}
+            </div>
+          )}
+
+          {/* Keyboard hint (desktop only) */}
+          {!isMobile && !isLoading && verses.length > 0 && (
+            <div style={{ textAlign: "center", marginTop: "16px", fontSize: "0.72rem", color: theme.textMuted }}>
+              Use ← → arrow keys to navigate chapters
+            </div>
+          )}
         </div>
 
         {/* Bottom nav */}
@@ -452,7 +618,7 @@ export default function ScriptureReader() {
             backdropFilter: "blur(12px)",
             WebkitBackdropFilter: "blur(12px)",
             borderTop: `1px solid ${theme.border}`,
-            padding: "10px 24px",
+            padding: isMobile ? "8px 16px" : "10px 24px",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
@@ -461,52 +627,49 @@ export default function ScriptureReader() {
         >
           <button
             onClick={goToPrevChapter}
-            disabled={!vol || (selectedChapter === 1 && vol.books[0]?.id === selectedBookId)}
+            disabled={isFirstChapterOfVolume}
             style={{
               background: "none",
               border: "none",
               color: theme.textSecondary,
-              cursor: "pointer",
-              fontSize: "0.88rem",
+              cursor: isFirstChapterOfVolume ? "default" : "pointer",
+              fontSize: "0.85rem",
               fontWeight: 600,
               fontFamily: "inherit",
-              padding: "8px 16px",
-              opacity: !vol || (selectedChapter === 1 && vol.books[0]?.id === selectedBookId) ? 0.3 : 1,
+              padding: "8px 12px",
+              opacity: isFirstChapterOfVolume ? 0.3 : 1,
+              minWidth: "80px",
+              textAlign: "left",
             }}
           >
             ← Prev
           </button>
-          <span
-            style={{
-              fontSize: "0.78rem",
-              color: theme.textMuted,
-              fontWeight: 500,
-            }}
-          >
-            {selectedChapter} / {chapterCount}
-          </span>
+          <div style={{ textAlign: "center" }}>
+            <div
+              style={{
+                fontSize: "0.75rem",
+                color: theme.textMuted,
+                fontWeight: 500,
+              }}
+            >
+              {isDC ? "Section" : "Chapter"} {selectedChapter} of {chapterCount}
+            </div>
+          </div>
           <button
             onClick={goToNextChapter}
-            disabled={
-              !vol ||
-              (selectedChapter === chapterCount &&
-                vol.books[vol.books.length - 1]?.id === selectedBookId)
-            }
+            disabled={isLastChapterOfVolume}
             style={{
               background: "none",
               border: "none",
               color: theme.textSecondary,
-              cursor: "pointer",
-              fontSize: "0.88rem",
+              cursor: isLastChapterOfVolume ? "default" : "pointer",
+              fontSize: "0.85rem",
               fontWeight: 600,
               fontFamily: "inherit",
-              padding: "8px 16px",
-              opacity:
-                !vol ||
-                (selectedChapter === chapterCount &&
-                  vol.books[vol.books.length - 1]?.id === selectedBookId)
-                  ? 0.3
-                  : 1,
+              padding: "8px 12px",
+              opacity: isLastChapterOfVolume ? 0.3 : 1,
+              minWidth: "80px",
+              textAlign: "right",
             }}
           >
             Next →
