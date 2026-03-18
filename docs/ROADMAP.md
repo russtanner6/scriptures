@@ -3,6 +3,20 @@
 ## Vision
 Scripture Explorer is a scripture research tool first, but could evolve into a full-blown scripture study platform with user accounts, full scripture reading, and premium features.
 
+## Audience
+Built to house the **full LDS canon** (OT, NT, Book of Mormon, D&C, Pearl of Great Price), but **not all users will be LDS**. The tool should be welcoming and useful to anyone studying the Bible.
+
+### Volume Visibility Settings
+- Users should be able to **permanently hide volumes** they don't want to see (e.g., a non-LDS user hides BoM, D&C, PoGP and only sees OT + NT).
+- This is a **global user preference**, not a per-search toggle. When a volume is hidden:
+  - It doesn't appear in volume selectors on any page
+  - It's excluded from all searches, charts, heatmaps, and results
+  - It doesn't show in the scripture reader (future)
+- Before user accounts exist: store preference in `localStorage`
+- After user accounts: store in Firebase user profile
+- Default: all volumes visible
+- Settings accessible from a gear icon or settings page
+
 ## Current State (Live)
 - **Word Frequency Search** (`/`) — single word/phrase search with bar charts, narrative arc, data table, stat cards
 - **Narrative Arc Explorer** (`/narrative-arc`) — multi-term comparison across volumes, stacked charts, D&C section-level, export, deep linking
