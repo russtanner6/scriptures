@@ -24,16 +24,51 @@ Built to house the **full LDS canon** (OT, NT, Book of Mormon, D&C, Pearl of Gre
 
 ---
 
-## Tier 1 — Immediate (Current Session / Next Session)
+## Tier 1 — Immediate (Next Session)
 
-### Clickable Chart Points → Verse Reader
-- Narrative arc data points open verse modal when clicked
-- Bar chart icons already work (existing)
-- Every data visualization = doorway to scripture
-- Modules should tell users data is clickable
+### ✅ DONE: Export on Narrative Arc + Heatmap
+- ExportButton + ExportChartModal on narrative arc charts
+- ExportButton + ExportHtmlModal on heatmap modules
+- Still needed: ExportButton on word frequency page chart modules
 
-### Export on All Charts
-- Add ExportButton to word frequency page chart modules (narrative arc already has it)
+### ✅ DONE: Heatmap Page with Arc Toggle
+- Theme Heatmap page with per-volume modules
+- Heatmap/Narrative Arc view toggle per module
+- "Compare multiple keywords →" link to narrative arc page with term prepopulated
+
+### NEXT: Scripture Panel (Right-Side Slider)
+This is the foundation that connects everything. When a user clicks any data point:
+1. A **right-side slider panel** slides in from the right edge of the screen
+2. Shows all **matching verses** from that book/chapter with the search term **highlighted**
+3. Panel has a "Read in context →" link that deep-links to the full scripture reader page
+4. Panel can be dismissed by clicking outside or pressing X
+
+**What triggers the panel:**
+- Clicking a **narrative arc data point** → shows verses from that book (or section for D&C)
+- Clicking a **heatmap cell** → shows verses from that specific chapter
+- Clicking a **bar chart row** icon → already opens verse modal (refactor to use the panel instead)
+- All modules should have a subtle note: "Click any point to read verses"
+
+**Implementation plan:**
+1. Create `ScripturePanel.tsx` — slide-in panel component
+   - Takes: bookId, chapter (optional), searchWord, onClose
+   - Fetches matching verses via `/api/verses`
+   - Highlights search term in verse text using `<mark>` tags
+   - Shows book name, chapter:verse references
+   - "Read in context →" link (points to future `/read/...` page)
+   - Responsive: full-width overlay on mobile, right-side panel on desktop
+2. Add panel state to each page (which book/chapter is open)
+3. Wire click handlers:
+   - Narrative arc: Chart.js `onClick` event → get clicked point's book/section
+   - Heatmap: cell `onClick` → already has bookId + chapter
+   - Bar charts: refactor existing verse modal to use ScripturePanel
+4. Add "Click any point to read verses" hint text to module descriptions
+
+### LATER: Full Scripture Reader (`/read`)
+- After the panel works, build the full reader page
+- URL structure: `/read/ot/genesis/1`, `/read/dc/76`, etc.
+- Clean reading layout, chapter navigation, search term highlighting
+- The panel's "Read in context →" links point here
 
 ### Word Cloud
 - Could be added to the existing word frequency page as a visualization option
