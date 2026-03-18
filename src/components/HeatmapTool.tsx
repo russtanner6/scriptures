@@ -230,101 +230,148 @@ export default function HeatmapTool() {
         </div>
       )}
 
-      {/* Heatmap grid */}
-      {results.length > 0 && (
-        <div style={{ marginTop: "20px" }}>
-          {/* Total stats */}
-          <div style={{ marginBottom: "16px", fontSize: "0.85rem", color: "var(--text-secondary)" }}>
-            <strong style={{ color: "var(--text)" }}>&quot;{word}&quot;</strong> found in{" "}
-            <strong style={{ color: "var(--text)" }}>{results.filter(r => r.count > 0).length.toLocaleString()}</strong> of{" "}
-            <strong style={{ color: "var(--text)" }}>{results.length.toLocaleString()}</strong> chapters
-          </div>
+      {/* Results */}
+      {results.length > 0 && (() => {
+        // Group by volume
+        const volumeGroups = new Map<string, { volumeName: string; abbrev: string; books: Map<number, { bookName: string; volumeAbbrev: string; chapters: HeatmapCell[] }> }>();
+        for (const cell of results) {
+          const vol = volumes.find(v => v.books.some(b => b.id === cell.bookId));
+          const volKey = vol?.abbrev || cell.volumeAbbrev;
+          const volName = vol?.name || cell.volumeAbbrev;
+          if (!volumeGroups.has(volKey)) {
+            volumeGroups.set(volKey, { volumeName: volName, abbrev: volKey, books: new Map() });
+          }
+          const vg = volumeGroups.get(volKey)!;
+          if (!vg.books.has(cell.bookId)) {
+            vg.books.set(cell.bookId, { bookName: cell.bookName, volumeAbbrev: cell.volumeAbbrev, chapters: [] });
+          }
+          vg.books.get(cell.bookId)!.chapters.push(cell);
+        }
 
-          {Array.from(bookGroups.entries()).map(([bookId, group]) => {
-            const volColor = VOLUME_COLORS[group.volumeAbbrev] || "#3B82F6";
-            const bookTotal = group.chapters.reduce((s, c) => s + c.count, 0);
-            if (bookTotal === 0 && bookGroups.size > 10) return null; // Hide empty books if many
+        const volumeOrder = ["OT", "NT", "BoM", "D&C", "PoGP"];
+        const sortedVolumes = Array.from(volumeGroups.entries()).sort(
+          (a, b) => volumeOrder.indexOf(a[0]) - volumeOrder.indexOf(b[0])
+        );
 
-            return (
-              <div key={bookId} style={{ marginBottom: "6px", display: "flex", alignItems: "center", gap: "8px" }}>
-                {/* Book name */}
-                <div style={{
-                  width: isMobile ? "60px" : "140px",
-                  flexShrink: 0,
-                  fontSize: isMobile ? "0.65rem" : "0.75rem",
-                  fontWeight: bookTotal > 0 ? 600 : 400,
-                  color: bookTotal > 0 ? "var(--text)" : "var(--text-muted)",
-                  textAlign: "right",
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                  whiteSpace: "nowrap",
-                }}>
-                  {group.bookName}
-                </div>
+        const renderBookRow = (bookId: number, group: { bookName: string; volumeAbbrev: string; chapters: HeatmapCell[] }) => {
+          const volColor = VOLUME_COLORS[group.volumeAbbrev] || "#3B82F6";
+          const bookTotal = group.chapters.reduce((s, c) => s + c.count, 0);
 
-                {/* Chapter cells */}
-                <div style={{ display: "flex", gap: "1px", flex: 1, flexWrap: "nowrap", overflow: "hidden" }}>
-                  {group.chapters.map((cell) => (
-                    <div
-                      key={cell.chapter}
-                      onMouseEnter={() => setHoveredCell(cell)}
-                      onMouseLeave={() => setHoveredCell(null)}
-                      style={{
-                        flex: "1 1 0",
-                        minWidth: isMobile ? "2px" : "4px",
-                        maxWidth: isMobile ? "8px" : "14px",
-                        height: isMobile ? "14px" : "20px",
-                        borderRadius: "2px",
-                        background: getCellColor(cell.count, cell.volumeAbbrev),
-                        cursor: cell.count > 0 ? "pointer" : "default",
-                        transition: "transform 0.1s",
-                      }}
-                      title={`${cell.bookName} ${cell.chapter}: ${cell.count}`}
-                    />
-                  ))}
-                </div>
-
-                {/* Book total */}
-                <div style={{
-                  width: "36px",
-                  flexShrink: 0,
-                  fontSize: "0.7rem",
-                  fontWeight: 700,
-                  fontVariantNumeric: "tabular-nums",
-                  color: bookTotal > 0 ? volColor : "var(--text-muted)",
-                  textAlign: "right",
-                }}>
-                  {bookTotal > 0 ? bookTotal : ""}
-                </div>
+          return (
+            <div key={bookId} style={{ marginBottom: "4px", display: "flex", alignItems: "center", gap: "8px" }}>
+              <div style={{
+                width: isMobile ? "60px" : "140px", flexShrink: 0,
+                fontSize: isMobile ? "0.65rem" : "0.75rem",
+                fontWeight: bookTotal > 0 ? 600 : 400,
+                color: bookTotal > 0 ? "var(--text)" : "var(--text-muted)",
+                textAlign: "right", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
+              }}>
+                {group.bookName}
               </div>
-            );
-          })}
-
-          {/* Color scale legend */}
-          <div style={{ marginTop: "20px", display: "flex", alignItems: "center", gap: "8px", fontSize: "0.75rem", color: "var(--text-muted)" }}>
-            <span>Less</span>
-            <div style={{ display: "flex", gap: "2px" }}>
-              {[0, 0.2, 0.4, 0.6, 0.8, 1].map((intensity) => (
-                <div
-                  key={intensity}
-                  style={{
-                    width: "16px",
-                    height: "16px",
-                    borderRadius: "3px",
-                    background: intensity === 0
-                      ? "rgba(255,255,255,0.03)"
-                      : `rgba(59,130,246,${0.15 + intensity * 0.85})`,
-                  }}
-                />
-              ))}
+              <div style={{ display: "flex", gap: "1px", flex: 1, flexWrap: "nowrap", overflow: "hidden" }}>
+                {group.chapters.map((cell) => (
+                  <div
+                    key={cell.chapter}
+                    onMouseEnter={() => setHoveredCell(cell)}
+                    onMouseLeave={() => setHoveredCell(null)}
+                    style={{
+                      flex: "1 1 0", minWidth: isMobile ? "2px" : "4px", maxWidth: isMobile ? "8px" : "14px",
+                      height: isMobile ? "14px" : "20px", borderRadius: "2px",
+                      background: getCellColor(cell.count, cell.volumeAbbrev),
+                      cursor: cell.count > 0 ? "pointer" : "default",
+                    }}
+                    title={`${cell.bookName} ${cell.chapter}: ${cell.count}`}
+                  />
+                ))}
+              </div>
+              <div style={{
+                width: "36px", flexShrink: 0, fontSize: "0.7rem", fontWeight: 700,
+                fontVariantNumeric: "tabular-nums", color: bookTotal > 0 ? volColor : "var(--text-muted)", textAlign: "right",
+              }}>
+                {bookTotal > 0 ? bookTotal : ""}
+              </div>
             </div>
-            <span>More</span>
-            <span style={{ marginLeft: "12px", fontSize: "0.7rem" }}>
-              Max: {maxCount} in a single chapter
-            </span>
+          );
+        };
+
+        const renderColorScale = (abbrev: string) => {
+          const baseColor = VOLUME_COLORS[abbrev] || "#3B82F6";
+          const hex = baseColor.replace("#", "");
+          const r = parseInt(hex.substring(0, 2), 16);
+          const g = parseInt(hex.substring(2, 4), 16);
+          const b = parseInt(hex.substring(4, 6), 16);
+          return (
+            <div style={{ marginTop: "12px", display: "flex", alignItems: "center", gap: "6px", fontSize: "0.72rem", color: "var(--text-muted)" }}>
+              <span>Less</span>
+              <div style={{ display: "flex", gap: "2px" }}>
+                {[0, 0.2, 0.4, 0.6, 0.8, 1].map((intensity) => (
+                  <div key={intensity} style={{
+                    width: "14px", height: "14px", borderRadius: "3px",
+                    background: intensity === 0 ? "rgba(255,255,255,0.03)" : `rgba(${r},${g},${b},${0.15 + intensity * 0.85})`,
+                  }} />
+                ))}
+              </div>
+              <span>More</span>
+            </div>
+          );
+        };
+
+        return (
+          <div style={{ marginTop: "20px" }}>
+            {/* Total stats */}
+            <div style={{ marginBottom: "12px", fontSize: "0.85rem", color: "var(--text-secondary)" }}>
+              <strong style={{ color: "var(--text)" }}>&quot;{word}&quot;</strong> found in{" "}
+              <strong style={{ color: "var(--text)" }}>{results.filter(r => r.count > 0).length.toLocaleString()}</strong> of{" "}
+              <strong style={{ color: "var(--text)" }}>{results.length.toLocaleString()}</strong> chapters
+            </div>
+
+            {/* Jump-to navigation */}
+            {sortedVolumes.length > 1 && (
+              <div style={{ position: "sticky", top: 0, zIndex: 50, background: "var(--bg)", paddingTop: "8px", paddingBottom: "8px", display: "flex", alignItems: "center", gap: "6px", flexWrap: "wrap", marginBottom: "8px" }}>
+                <span style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)", marginRight: "4px" }}>Jump to</span>
+                {sortedVolumes.map(([abbrev, vg]) => {
+                  const volColor = VOLUME_COLORS[abbrev];
+                  return (
+                    <button key={abbrev} type="button"
+                      onClick={() => { const el = document.getElementById(`heatmap-${abbrev}`); if (el) el.scrollIntoView({ behavior: "smooth", block: "start" }); }}
+                      style={{ display: "inline-flex", alignItems: "center", gap: "5px", padding: "5px 12px", borderRadius: "8px", border: "1px solid rgba(255,255,255,0.08)", background: "rgba(255,255,255,0.06)", color: "var(--text-secondary)", fontSize: "0.78rem", fontWeight: 500, fontFamily: "inherit", cursor: "pointer", transition: "all 0.15s" }}>
+                      <span style={{ width: "8px", height: "8px", borderRadius: "2px", background: volColor, flexShrink: 0 }} />
+                      {vg.volumeName}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+
+            {/* Volume modules */}
+            {sortedVolumes.map(([abbrev, vg]) => {
+              const volColor = VOLUME_COLORS[abbrev];
+              const volTotal = Array.from(vg.books.values()).reduce((s, b) => s + b.chapters.reduce((s2, c) => s2 + c.count, 0), 0);
+
+              return (
+                <div key={abbrev} id={`heatmap-${abbrev}`} style={{
+                  background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "10px",
+                  padding: isMobile ? "16px" : "24px", marginBottom: "16px",
+                  backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)",
+                }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "16px" }}>
+                    <h3 style={{ fontSize: "1.05rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text)", margin: 0 }}>
+                      <span style={{ color: volColor }}>{vg.volumeName}</span>
+                    </h3>
+                    <span style={{ fontSize: "0.78rem", color: "var(--text-secondary)", fontWeight: 600, fontVariantNumeric: "tabular-nums" }}>
+                      {volTotal.toLocaleString()} total
+                    </span>
+                  </div>
+
+                  {Array.from(vg.books.entries()).map(([bookId, group]) => renderBookRow(bookId, group))}
+
+                  {renderColorScale(abbrev)}
+                </div>
+              );
+            })}
           </div>
-        </div>
-      )}
+        );
+      })()}
 
       {/* Empty state */}
       {results.length === 0 && !isLoading && (
