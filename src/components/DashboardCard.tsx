@@ -9,6 +9,7 @@ export default function DashboardCard({
   fullWidth = false,
   tag,
   tagColor,
+  headerExtra,
 }: {
   title: string;
   description?: string;
@@ -16,6 +17,7 @@ export default function DashboardCard({
   fullWidth?: boolean;
   tag?: string;
   tagColor?: string;
+  headerExtra?: ReactNode;
 }) {
   return (
     <div
@@ -71,17 +73,30 @@ export default function DashboardCard({
           </span>
         )}
       </h2>
-      {description && (
+      {(description || headerExtra) && (
         <div
           style={{
-            fontSize: "0.92rem",
-            color: "var(--text-secondary)",
+            display: "flex",
+            alignItems: "baseline",
+            justifyContent: "space-between",
+            gap: "12px",
             marginBottom: "24px",
-            fontWeight: 400,
-            lineHeight: 1.5,
+            flexWrap: "wrap",
           }}
         >
-          {description}
+          {description && (
+            <span
+              style={{
+                fontSize: "0.92rem",
+                color: "var(--text-secondary)",
+                fontWeight: 400,
+                lineHeight: 1.5,
+              }}
+            >
+              {description}
+            </span>
+          )}
+          {headerExtra}
         </div>
       )}
       {children}

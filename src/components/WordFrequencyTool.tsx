@@ -929,6 +929,24 @@ export default function WordFrequencyTool() {
                   title="Narrative arc"
                   description={`Frequency of "${results.word}" by book in narrative order`}
                   fullWidth
+                  headerExtra={
+                    <a
+                      href="/narrative-arc"
+                      style={{
+                        fontSize: "0.78rem",
+                        fontWeight: 600,
+                        color: "var(--accent)",
+                        textDecoration: "none",
+                        whiteSpace: "nowrap",
+                        opacity: 0.85,
+                        transition: "opacity 0.15s",
+                      }}
+                      onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
+                      onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.85"; }}
+                    >
+                      Compare multiple terms →
+                    </a>
+                  }
                 >
                   {/* Volume tabs */}
                   {arcVolumes.length > 1 && (
