@@ -247,6 +247,48 @@ export async function getBookStats(): Promise<BookStat[]> {
   }));
 }
 
+/**
+ * Get word frequency by chapter/section for a single book.
+ * Used for volumes like D&C where there's only one "book" with many sections.
+ */
+export async function getWordFrequencyByChapter(
+  word: string,
+  bookId: number,
+  chapterCount: number,
+  options: { caseInsensitive?: boolean; wholeWord?: boolean } = {}
+): Promise<{ chapter: number; count: number }[]> {
+  const db = await getDb();
+  const { caseInsensitive = true, wholeWord = true } = options;
+
+  const verses = execToObjects<{ chapter: number; text: string }>(
+    db,
+    `SELECT chapter, text FROM verses WHERE book_id = ? ORDER BY chapter`,
+    [bookId]
+  );
+
+  const isPhrase = /^".*"$/.test(word) || /^'.*'$/.test(word);
+  const searchTerm = isPhrase ? word.slice(1, -1) : word;
+  const escaped = escapeRegex(searchTerm);
+  const pattern = isPhrase ? escaped : wholeWord ? `\\b${escaped}\\b` : escaped;
+  const flags = caseInsensitive ? "gi" : "g";
+  const regex = new RegExp(pattern, flags);
+
+  const counts = new Map<number, number>();
+  for (const verse of verses) {
+    const matches = verse.text.match(regex);
+    if (matches) {
+      counts.set(verse.chapter, (counts.get(verse.chapter) || 0) + matches.length);
+    }
+  }
+
+  // Return all chapters (1 to chapterCount), 0 for chapters with no matches
+  const result: { chapter: number; count: number }[] = [];
+  for (let ch = 1; ch <= chapterCount; ch++) {
+    result.push({ chapter: ch, count: counts.get(ch) || 0 });
+  }
+  return result;
+}
+
 export interface VerseMatch {
   chapter: number;
   verse: number;

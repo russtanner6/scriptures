@@ -66,8 +66,8 @@ function useIsMobile(breakpoint = 768) {
 interface TermResult {
   term: string;
   color: string;
-  // data per volume: volumeId → book data
-  volumeData: Map<number, { bookName: string; count: number }[]>;
+  // data per volume: volumeId → book OR chapter data
+  volumeData: Map<number, { label: string; count: number }[]>;
 }
 
 export default function NarrativeArcTool() {
@@ -152,26 +152,48 @@ export default function NarrativeArcTool() {
 
       for (let i = 0; i < terms.length; i++) {
         const term = terms[i];
-        const volumeData = new Map<number, { bookName: string; count: number }[]>();
+        const volumeData = new Map<number, { label: string; count: number }[]>();
 
         for (const vol of selectedVolumes) {
-          const params = new URLSearchParams({
-            word: term,
-            caseInsensitive: String(caseInsensitive),
-            wholeWord: String(wholeWord),
-            volumeIds: String(vol.id),
-          });
-          const res = await fetch(`/api/word-frequency?${params}`);
-          const data = await res.json();
+          const isSingleBook = vol.books.length === 1;
 
-          const bookData = vol.books.map((b) => {
-            const result = data.results.find(
-              (r: { bookId: number }) => r.bookId === b.id
-            );
-            return { bookName: b.name, count: result?.count || 0 };
-          });
+          if (isSingleBook) {
+            // Single-book volume (e.g., D&C) — plot by chapter/section
+            const book = vol.books[0];
+            const params = new URLSearchParams({
+              word: term,
+              bookId: String(book.id),
+              chapterCount: String(book.chapterCount),
+              caseInsensitive: String(caseInsensitive),
+              wholeWord: String(wholeWord),
+            });
+            const res = await fetch(`/api/word-frequency-by-chapter?${params}`);
+            const data = await res.json();
 
-          volumeData.set(vol.id, bookData);
+            const chapterData = (data.results as { chapter: number; count: number }[]).map((r) => ({
+              label: `Section ${r.chapter}`,
+              count: r.count,
+            }));
+            volumeData.set(vol.id, chapterData);
+          } else {
+            // Multi-book volume — plot by book (normal)
+            const params = new URLSearchParams({
+              word: term,
+              caseInsensitive: String(caseInsensitive),
+              wholeWord: String(wholeWord),
+              volumeIds: String(vol.id),
+            });
+            const res = await fetch(`/api/word-frequency?${params}`);
+            const data = await res.json();
+
+            const bookData = vol.books.map((b) => {
+              const result = data.results.find(
+                (r: { bookId: number }) => r.bookId === b.id
+              );
+              return { label: b.name, count: result?.count || 0 };
+            });
+            volumeData.set(vol.id, bookData);
+          }
         }
 
         newResults.push({
@@ -400,18 +422,26 @@ export default function NarrativeArcTool() {
                     <span style={{ color }}>{vol.name}</span>
                   </h3>
                   <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "0" }}>
-                    Word frequency by book in narrative order
+                    {vol.books.length === 1
+                      ? `Word frequency by section across ${vol.name}`
+                      : "Word frequency by book in narrative order"}
                   </p>
                 </div>
                 <ExportButton onClick={() => setExportVolumeId(vol.id)} />
               </div>
 
+              {(() => {
+                const isSingleBook = vol.books.length === 1;
+                const firstTermData = volResults[0]?.volumeData.get(vol.id) || [];
+                const allLabels = firstTermData.map((d) => d.label);
+
+                return (
               <div style={{ position: "relative", height: isMobile ? "350px" : "540px", marginTop: "8px" }}>
                 <Line
                   ref={thisChartRef}
                   plugins={[legendMarginPlugin]}
                   data={{
-                    labels: vol.books.map((b) => b.name),
+                    labels: allLabels,
                     datasets: volResults.map((r) => {
                       const data = r.volumeData.get(vol.id) || [];
                       return {
@@ -420,12 +450,12 @@ export default function NarrativeArcTool() {
                         fill: true,
                         backgroundColor: `${r.color}12`,
                         borderColor: r.color,
-                        borderWidth: 2.5,
+                        borderWidth: isSingleBook ? 2 : 2.5,
                         pointBackgroundColor: r.color,
                         pointBorderColor: r.color,
                         pointBorderWidth: 1,
-                        pointRadius: 4,
-                        pointHoverRadius: 7,
+                        pointRadius: isSingleBook ? 2 : 4,
+                        pointHoverRadius: isSingleBook ? 5 : 7,
                         tension: 0.35,
                       };
                     }),
@@ -454,6 +484,10 @@ export default function NarrativeArcTool() {
                       },
                       tooltip: {
                         callbacks: {
+                          title: (items) => {
+                            const label = items[0]?.label || "";
+                            return label;
+                          },
                           label: (ctx) =>
                             ` ${ctx.dataset.label}: ${ctx.raw} occurrences`,
                         },
@@ -478,14 +512,25 @@ export default function NarrativeArcTool() {
                       x: {
                         grid: { display: false },
                         ticks: {
-                          maxRotation: isMobile ? 90 : 45,
-                          font: { size: isMobile ? 9 : 11, weight: 500 },
+                          maxRotation: isSingleBook ? 0 : (isMobile ? 90 : 45),
+                          font: { size: isSingleBook ? 9 : (isMobile ? 9 : 11), weight: 500 },
+                          // For single-book volumes with many sections, show every 10th label
+                          callback: isSingleBook
+                            ? function(this: any, _val: any, index: number) {
+                                const sectionNum = index + 1;
+                                if (sectionNum === 1 || sectionNum % 10 === 0) return sectionNum.toString();
+                                return "";
+                              }
+                            : undefined,
+                          autoSkip: !isSingleBook,
                         },
                       },
                     },
                   }}
                 />
               </div>
+                );
+              })()}
 
               {/* Summary table for this volume */}
               <div style={{ marginTop: "24px", overflowX: "auto" }}>
@@ -570,7 +615,7 @@ export default function NarrativeArcTool() {
                             }}
                           >
                             {peak && peak.count > 0
-                              ? `${peak.bookName} (${peak.count})`
+                              ? `${peak.label} (${peak.count})`
                               : "—"}
                           </td>
                         </tr>
