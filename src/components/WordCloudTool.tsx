@@ -84,32 +84,43 @@ export default function WordCloudTool() {
   const selectedVol = volumes.find((v) => v.abbrev === selectedVolume);
   const selectedBook = selectedVol?.books.find((b) => b.id === selectedBookId);
 
-  // Fetch word cloud data
+  // Fetch word cloud data (supports both book-level and volume-level)
   const fetchCloud = useCallback(async () => {
-    if (!selectedBookId) return;
+    if (!selectedBookId && !selectedVol) return;
     setIsLoading(true);
     try {
-      const params = new URLSearchParams({
-        bookId: String(selectedBookId),
-        limit: String(wordLimit),
-      });
-      if (selectedChapter) params.set("chapter", String(selectedChapter));
+      const params = new URLSearchParams({ limit: String(wordLimit) });
+      if (selectedBookId === -1 && selectedVol) {
+        // Volume-level cloud
+        params.set("volumeId", String(selectedVol.id));
+      } else if (selectedBookId && selectedBookId > 0) {
+        params.set("bookId", String(selectedBookId));
+        if (selectedChapter) params.set("chapter", String(selectedChapter));
+      } else {
+        setIsLoading(false);
+        return;
+      }
       const res = await fetch(`/api/word-cloud?${params}`);
       const d = await res.json();
       setData(d);
     } finally {
       setIsLoading(false);
     }
-  }, [selectedBookId, selectedChapter, wordLimit]);
+  }, [selectedBookId, selectedChapter, wordLimit, selectedVol]);
 
   // Auto-fetch when selection changes + update URL
   useEffect(() => {
     if (selectedBookId) {
       fetchCloud();
       const url = new URL(window.location.href);
-      url.searchParams.set("bookId", String(selectedBookId));
-      if (selectedChapter) url.searchParams.set("chapter", String(selectedChapter));
-      else url.searchParams.delete("chapter");
+      if (selectedBookId === -1) {
+        url.searchParams.delete("bookId");
+        url.searchParams.delete("chapter");
+      } else {
+        url.searchParams.set("bookId", String(selectedBookId));
+        if (selectedChapter) url.searchParams.set("chapter", String(selectedChapter));
+        else url.searchParams.delete("chapter");
+      }
       window.history.replaceState({}, "", url.toString());
     }
   }, [selectedBookId, selectedChapter, fetchCloud]);
@@ -249,6 +260,7 @@ export default function WordCloudTool() {
               }}
             >
               <option value="">Select a book...</option>
+              <option value={-1}>★ Entire {selectedVol.name}</option>
               {selectedVol.books.map((book) => (
                 <option key={book.id} value={book.id}>
                   {book.name} ({book.chapterCount} {selectedVolume === "D&C" ? "sec" : "ch"})
@@ -259,7 +271,7 @@ export default function WordCloudTool() {
         )}
 
         {/* Chapter selector (optional) */}
-        {selectedBook && selectedBook.chapterCount > 1 && (
+        {selectedBook && selectedBookId !== -1 && selectedBook.chapterCount > 1 && (
           <div style={{ marginBottom: "16px" }}>
             <div
               style={{

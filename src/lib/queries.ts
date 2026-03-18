@@ -596,3 +596,73 @@ export async function getWordCloudData(
 
   return { bookName, volumeAbbrev, chapterLabel, totalWords, words };
 }
+
+export async function getVolumeWordCloudData(
+  volumeId: number,
+  limit: number = 80
+): Promise<{
+  bookName: string;
+  volumeAbbrev: string;
+  chapterLabel: string;
+  totalWords: number;
+  words: WordCloudItem[];
+}> {
+  const db = await getDb();
+
+  // Get volume info
+  const volRows = execToObjects<{ name: string; abbrev: string }>(
+    db,
+    `SELECT name, abbrev FROM volumes WHERE id = ?`,
+    [volumeId]
+  );
+  if (volRows.length === 0) {
+    return { bookName: "", volumeAbbrev: "", chapterLabel: "", totalWords: 0, words: [] };
+  }
+
+  const volumeName = displayName(volRows[0].name);
+  const volumeAbbrev = volRows[0].abbrev;
+
+  // Fetch all verse text for this volume
+  const verseRows = execToObjects<{ text: string }>(
+    db,
+    `SELECT v.text FROM verses v
+     JOIN books b ON v.book_id = b.id
+     WHERE b.volume_id = ?`,
+    [volumeId]
+  );
+
+  // Tokenize and count (same logic as book-level)
+  const wordCounts = new Map<string, number>();
+  let totalWords = 0;
+
+  for (const row of verseRows) {
+    const text = row.text;
+    const words = text.toLowerCase().replace(/[^a-z'-]/g, " ").split(/\s+/).filter(w => w.length > 2);
+    for (const w of words) {
+      const clean = w.replace(/^['-]+|['-]+$/g, "");
+      if (clean.length < 3 || STOP_WORDS.has(clean)) continue;
+      totalWords++;
+      wordCounts.set(clean, (wordCounts.get(clean) || 0) + 1);
+    }
+  }
+
+  const sorted = Array.from(wordCounts.entries())
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, limit);
+
+  const maxCount = sorted.length > 0 ? sorted[0][1] : 1;
+
+  const cloudWords: WordCloudItem[] = sorted.map(([word, count]) => ({
+    word,
+    count,
+    weight: count / maxCount,
+  }));
+
+  return {
+    bookName: volumeName,
+    volumeAbbrev,
+    chapterLabel: "Entire Volume",
+    totalWords,
+    words: cloudWords,
+  };
+}
