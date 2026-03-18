@@ -1,10 +1,37 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, createRef } from "react";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  LineElement,
+  PointElement,
+  Filler,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import ChartDataLabels from "chartjs-plugin-datalabels";
+import { Line } from "react-chartjs-2";
 import type { Volume } from "@/lib/types";
 import { VOLUME_COLORS, getContrastText } from "@/lib/constants";
 import { ExportButton } from "./ExportChartModal";
+import ExportChartModal from "./ExportChartModal";
 import ExportHtmlModal from "./ExportHtmlModal";
+
+ChartJS.register(CategoryScale, LinearScale, LineElement, PointElement, Filler, Tooltip, Legend, ChartDataLabels);
+
+// Plugin to add space below legend
+const legendMarginPlugin = {
+  id: "legendMarginHeatmap",
+  beforeInit(chart: any) {
+    const origFit = chart.legend.fit;
+    chart.legend.fit = function fit() {
+      origFit.call(this);
+      this.height += 20;
+    };
+  },
+};
 
 function useIsMobile(breakpoint = 768) {
   const [isMobile, setIsMobile] = useState(false);
@@ -37,6 +64,19 @@ export default function HeatmapTool() {
   const [isLoading, setIsLoading] = useState(false);
   const [hoveredCell, setHoveredCell] = useState<HeatmapCell | null>(null);
   const [exportAbbrev, setExportAbbrev] = useState<string | null>(null);
+  const [exportChartAbbrev, setExportChartAbbrev] = useState<string | null>(null);
+  // Per-volume view mode: "heatmap" or "arc"
+  const [viewModes, setViewModes] = useState<Map<string, "heatmap" | "arc">>(new Map());
+  const chartRefs = useRef<Map<string, React.RefObject<any>>>(new Map());
+
+  const getViewMode = (abbrev: string) => viewModes.get(abbrev) || "heatmap";
+  const toggleViewMode = (abbrev: string) => {
+    setViewModes(prev => {
+      const next = new Map(prev);
+      next.set(abbrev, next.get(abbrev) === "arc" ? "heatmap" : "arc");
+      return next;
+    });
+  };
   const inputRef = useRef<HTMLInputElement>(null);
   const initialSearchDone = useRef(false);
 
@@ -369,14 +409,142 @@ export default function HeatmapTool() {
                         }
                       </p>
                     </div>
-                    <ExportButton onClick={() => setExportAbbrev(abbrev)} />
+                    <ExportButton onClick={() => {
+                      if (getViewMode(abbrev) === "arc") setExportChartAbbrev(abbrev);
+                      else setExportAbbrev(abbrev);
+                    }} />
                   </div>
 
-                  {renderColorScale(abbrev)}
-
-                  <div style={{ marginTop: "12px" }}>
-                    {Array.from(vg.books.entries()).map(([bookId, group]) => renderBookRow(bookId, group))}
+                  {/* View toggle */}
+                  <div style={{ display: "flex", alignItems: "center", gap: "4px", marginTop: "8px", marginBottom: "12px" }}>
+                    <button type="button" onClick={() => { if (getViewMode(abbrev) !== "heatmap") toggleViewMode(abbrev); }}
+                      style={{
+                        display: "inline-flex", alignItems: "center", gap: "6px",
+                        padding: "6px 14px", borderRadius: "8px 0 0 8px",
+                        border: "1px solid rgba(255,255,255,0.1)",
+                        background: getViewMode(abbrev) === "heatmap" ? "rgba(255,255,255,0.12)" : "transparent",
+                        color: getViewMode(abbrev) === "heatmap" ? "var(--text)" : "var(--text-muted)",
+                        fontSize: "0.78rem", fontWeight: getViewMode(abbrev) === "heatmap" ? 600 : 400,
+                        fontFamily: "inherit", cursor: "pointer", transition: "all 0.15s",
+                      }}>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <rect x="3" y="3" width="7" height="7" /><rect x="14" y="3" width="7" height="7" /><rect x="3" y="14" width="7" height="7" /><rect x="14" y="14" width="7" height="7" />
+                      </svg>
+                      Heatmap
+                    </button>
+                    <button type="button" onClick={() => { if (getViewMode(abbrev) !== "arc") toggleViewMode(abbrev); }}
+                      style={{
+                        display: "inline-flex", alignItems: "center", gap: "6px",
+                        padding: "6px 14px", borderRadius: "0 8px 8px 0",
+                        border: "1px solid rgba(255,255,255,0.1)", borderLeft: "none",
+                        background: getViewMode(abbrev) === "arc" ? "rgba(255,255,255,0.12)" : "transparent",
+                        color: getViewMode(abbrev) === "arc" ? "var(--text)" : "var(--text-muted)",
+                        fontSize: "0.78rem", fontWeight: getViewMode(abbrev) === "arc" ? 600 : 400,
+                        fontFamily: "inherit", cursor: "pointer", transition: "all 0.15s",
+                      }}>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                      </svg>
+                      Narrative Arc
+                    </button>
                   </div>
+
+                  {/* Heatmap view */}
+                  {getViewMode(abbrev) === "heatmap" && (
+                    <>
+                      {renderColorScale(abbrev)}
+                      <div style={{ marginTop: "12px" }}>
+                        {Array.from(vg.books.entries()).map(([bookId, group]) => renderBookRow(bookId, group))}
+                      </div>
+                    </>
+                  )}
+
+                  {/* Arc view */}
+                  {getViewMode(abbrev) === "arc" && (() => {
+                    if (!chartRefs.current.has(abbrev)) chartRefs.current.set(abbrev, createRef());
+                    const thisChartRef = chartRefs.current.get(abbrev)!;
+                    const books = Array.from(vg.books.values());
+                    const labels = books.flatMap(b => b.chapters.map(c => b.bookName === "D&C" ? `Sec ${c.chapter}` : (books.length === 1 ? `${c.chapter}` : b.bookName)));
+                    const data = books.flatMap(b => b.chapters.map(c => c.count));
+                    const isSingleBook = books.length === 1;
+
+                    // For multi-book volumes, aggregate by book instead of chapter
+                    const arcLabels = isSingleBook
+                      ? books[0].chapters.map(c => `Section ${c.chapter}`)
+                      : books.map(b => b.bookName);
+                    const arcData = isSingleBook
+                      ? books[0].chapters.map(c => c.count)
+                      : books.map(b => b.chapters.reduce((s, c) => s + c.count, 0));
+
+                    return (
+                      <div style={{ position: "relative", height: isMobile ? "350px" : "480px", marginTop: "8px" }}>
+                        <Line
+                          ref={thisChartRef}
+                          plugins={[legendMarginPlugin]}
+                          data={{
+                            labels: arcLabels,
+                            datasets: [{
+                              label: word,
+                              data: arcData,
+                              fill: true,
+                              backgroundColor: `${volColor}18`,
+                              borderColor: volColor,
+                              borderWidth: isSingleBook ? 2 : 2.5,
+                              pointBackgroundColor: volColor,
+                              pointBorderColor: volColor,
+                              pointBorderWidth: 1,
+                              pointRadius: isSingleBook ? 2 : 4,
+                              pointHoverRadius: isSingleBook ? 5 : 7,
+                              tension: 0.35,
+                            }],
+                          }}
+                          options={{
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            ...({ clip: false } as Record<string, unknown>),
+                            interaction: { mode: "index", intersect: false },
+                            plugins: {
+                              legend: {
+                                position: "top",
+                                labels: {
+                                  padding: 20, usePointStyle: true, pointStyle: "rectRounded", pointStyleWidth: 16,
+                                  font: { size: 13, weight: 600, family: "'Inter', sans-serif" }, color: "#e0e0e0", boxHeight: 8,
+                                },
+                              },
+                              tooltip: {
+                                callbacks: { label: (ctx) => ` ${ctx.raw} occurrences` },
+                              },
+                              datalabels: {
+                                display: (ctx) => (ctx.dataset.data as number[])[ctx.dataIndex] > 0,
+                                anchor: "end", align: "top", offset: 4,
+                                color: "#fafafa", font: { weight: 700, size: 10 },
+                                formatter: (value: number) => value.toLocaleString(),
+                              },
+                            },
+                            layout: { padding: { top: 20 } },
+                            scales: {
+                              y: { grid: { color: "rgba(255,255,255,0.06)" }, ticks: { font: { weight: 600 } }, beginAtZero: true },
+                              x: {
+                                grid: { display: false },
+                                ticks: {
+                                  maxRotation: isSingleBook ? 0 : (isMobile ? 90 : 45),
+                                  font: { size: isSingleBook ? 9 : (isMobile ? 9 : 11), weight: 500 },
+                                  callback: isSingleBook
+                                    ? function(this: any, _val: any, index: number) {
+                                        const num = index + 1;
+                                        if (num === 1 || num % 10 === 0) return num.toString();
+                                        return "";
+                                      }
+                                    : undefined,
+                                  autoSkip: false,
+                                },
+                              },
+                            },
+                          }}
+                        />
+                      </div>
+                    );
+                  })()}
                 </div>
               );
             })}
@@ -396,13 +564,23 @@ export default function HeatmapTool() {
           </div>
         </div>
       )}
-      {/* Export modal */}
+      {/* Export modal — heatmap (HTML capture) */}
       {exportAbbrev !== null && (
         <ExportHtmlModal
           isOpen={true}
           onClose={() => setExportAbbrev(null)}
           elementId={`heatmap-${exportAbbrev}`}
           title={volumes.find(v => v.abbrev === exportAbbrev)?.name || exportAbbrev}
+        />
+      )}
+
+      {/* Export modal — arc (Chart.js capture) */}
+      {exportChartAbbrev !== null && (
+        <ExportChartModal
+          isOpen={true}
+          onClose={() => setExportChartAbbrev(null)}
+          chartRef={chartRefs.current.get(exportChartAbbrev) || { current: null }}
+          title={volumes.find(v => v.abbrev === exportChartAbbrev)?.name || exportChartAbbrev}
         />
       )}
     </div>
