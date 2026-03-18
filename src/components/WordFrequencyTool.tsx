@@ -547,7 +547,8 @@ export default function WordFrequencyTool() {
                               : "#3f3f46"
                         ),
                         borderRadius: 8,
-                        barThickness: 32,
+                        barPercentage: 0.6,
+                        categoryPercentage: 0.8,
                       },
                     ],
                   }}
@@ -651,7 +652,8 @@ export default function WordFrequencyTool() {
                                 "#3f3f46"
                             ),
                           borderRadius: 6,
-                          barThickness: 24,
+                          barPercentage: 0.6,
+                          categoryPercentage: 0.8,
                         },
                       ],
                     }}
