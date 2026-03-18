@@ -313,7 +313,7 @@ export default function NarrativeArcTool() {
                 Word frequency by book in narrative order
               </p>
 
-              <div style={{ position: "relative", height: "420px" }}>
+              <div style={{ position: "relative", height: "500px" }}>
                 <Line
                   data={{
                     labels: vol.books.map((b) => b.name),
@@ -370,7 +370,7 @@ export default function NarrativeArcTool() {
                         formatter: (value: number) => value.toLocaleString(),
                       },
                     },
-                    layout: { padding: { top: 40 } },
+                    layout: { padding: { top: 50 } },
                     scales: {
                       y: {
                         grid: { color: "rgba(255,255,255,0.06)" },
