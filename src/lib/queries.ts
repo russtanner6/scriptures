@@ -492,3 +492,107 @@ export async function getMatchingVerses(
 
   return { bookName, verses: matching };
 }
+
+// Common English stop words to exclude from word cloud
+const STOP_WORDS = new Set([
+  "the", "and", "of", "to", "in", "a", "that", "it", "is", "was", "for",
+  "i", "he", "his", "with", "they", "be", "not", "them", "their", "shall",
+  "him", "but", "all", "which", "had", "were", "upon", "my", "this", "have",
+  "from", "or", "one", "by", "as", "ye", "me", "do", "did", "are", "we",
+  "there", "her", "she", "been", "an", "who", "so", "if", "will", "no",
+  "on", "thee", "thy", "thou", "at", "out", "up", "said", "when", "what",
+  "into", "am", "than", "also", "after", "before", "even", "may", "about",
+  "over", "own", "those", "these", "its", "has", "us", "our", "man", "men",
+  "now", "then", "came", "come", "went", "go", "say", "should", "would",
+  "could", "how", "can", "let", "more", "other", "some", "any", "much",
+  "many", "being", "because", "through", "hath", "unto", "doth", "against",
+  "therefore", "again", "whom", "might", "made", "make", "down", "two",
+  "you", "your", "yea", "behold", "pass", "among", "every", "thus", "according",
+  "saith", "day", "days", "things", "great", "wherefore", "exceedingly",
+]);
+
+export interface WordCloudItem {
+  word: string;
+  count: number;
+  weight: number; // 0-1 normalized
+}
+
+export async function getWordCloudData(
+  bookId: number,
+  chapter?: number,
+  limit: number = 80
+): Promise<{
+  bookName: string;
+  volumeAbbrev: string;
+  chapterLabel: string;
+  totalWords: number;
+  words: WordCloudItem[];
+}> {
+  const db = await getDb();
+
+  // Get book info
+  const bookRows = execToObjects<{ name: string; volume_id: number; chapter_count: number }>(
+    db,
+    `SELECT b.name, b.volume_id, b.chapter_count FROM books b WHERE b.id = ?`,
+    [bookId]
+  );
+  if (bookRows.length === 0) {
+    return { bookName: "", volumeAbbrev: "", chapterLabel: "", totalWords: 0, words: [] };
+  }
+
+  const volRows = execToObjects<{ abbrev: string }>(
+    db,
+    `SELECT abbrev FROM volumes WHERE id = ?`,
+    [bookRows[0].volume_id]
+  );
+
+  const bookName = displayName(bookRows[0].name);
+  const volumeAbbrev = volRows[0]?.abbrev || "";
+  const isDC = volumeAbbrev === "D&C";
+
+  // Fetch verses
+  let sql = `SELECT text FROM verses WHERE book_id = ?`;
+  const params: (string | number)[] = [bookId];
+  if (chapter != null) {
+    sql += ` AND chapter = ?`;
+    params.push(chapter);
+  }
+
+  const verseRows = execToObjects<{ text: string }>(db, sql, params);
+
+  // Tokenize and count
+  const wordCounts = new Map<string, number>();
+  let totalWords = 0;
+
+  for (const row of verseRows) {
+    const text = row.text;
+    // Split on non-word characters, lowercase, filter
+    const words = text.toLowerCase().replace(/[^a-z'-]/g, " ").split(/\s+/).filter(w => w.length > 2);
+    for (const w of words) {
+      // Strip leading/trailing punctuation
+      const clean = w.replace(/^['-]+|['-]+$/g, "");
+      if (clean.length < 3 || STOP_WORDS.has(clean)) continue;
+      totalWords++;
+      wordCounts.set(clean, (wordCounts.get(clean) || 0) + 1);
+    }
+  }
+
+  // Sort by count, take top N
+  const sorted = Array.from(wordCounts.entries())
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, limit);
+
+  const maxCount = sorted.length > 0 ? sorted[0][1] : 1;
+
+  const words: WordCloudItem[] = sorted.map(([word, count]) => ({
+    word,
+    count,
+    weight: count / maxCount,
+  }));
+
+  const chapterLabel = chapter
+    ? (isDC ? `Section ${chapter}` : `Chapter ${chapter}`)
+    : `All ${isDC ? "Sections" : "Chapters"}`;
+
+  return { bookName, volumeAbbrev, chapterLabel, totalWords, words };
+}
