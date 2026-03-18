@@ -75,7 +75,7 @@ export default function HorizontalBarList({
                   top: "4px",
                   left: "4px",
                   height: "calc(100% - 8px)",
-                  width: `calc(${pct}% - 4px)`,
+                  width: `calc(${pct}% - 8px)`,
                   minWidth: pct > 0 ? "14px" : "0",
                   background: gradient,
                   borderRadius: "5px",
