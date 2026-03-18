@@ -26,6 +26,11 @@ export interface FrequencyResult {
   verseCount: number;
 }
 
+export interface MatchedWord {
+  word: string;
+  count: number;
+}
+
 export interface WordFrequencyResponse {
   word: string;
   caseInsensitive: boolean;
@@ -33,6 +38,7 @@ export interface WordFrequencyResponse {
   totalCount: number;
   totalVerses: number;
   results: FrequencyResult[];
+  matchedWords: MatchedWord[];
 }
 
 export interface BooksResponse {

@@ -469,6 +469,56 @@ export default function WordFrequencyTool() {
             ))}
           </div>
 
+          {/* Matched words breakdown (partial search only) */}
+          {results.matchedWords && results.matchedWords.length > 1 && (
+            <DashboardCard
+              title={`Words containing "${results.word}"`}
+              tag={`${results.matchedWords.length} words`}
+              tagColor="var(--accent)"
+              description={`All distinct words matching your partial search, sorted by frequency`}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: "6px",
+                  maxHeight: "280px",
+                  overflowY: "auto",
+                }}
+              >
+                {results.matchedWords.map((mw) => (
+                  <span
+                    key={mw.word}
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "6px",
+                      padding: "5px 12px",
+                      borderRadius: "100px",
+                      background: "var(--accent-soft)",
+                      border: "1px solid rgba(59, 130, 246, 0.15)",
+                      fontSize: "0.8rem",
+                      color: "var(--text)",
+                      fontWeight: 500,
+                    }}
+                  >
+                    {mw.word}
+                    <span
+                      style={{
+                        fontSize: "0.72rem",
+                        fontWeight: 700,
+                        color: "var(--accent)",
+                        fontVariantNumeric: "tabular-nums",
+                      }}
+                    >
+                      {mw.count.toLocaleString()}
+                    </span>
+                  </span>
+                ))}
+              </div>
+            </DashboardCard>
+          )}
+
           {/* Dashboard grid */}
           <div className="dashboard-grid">
             {/* Doughnut chart */}

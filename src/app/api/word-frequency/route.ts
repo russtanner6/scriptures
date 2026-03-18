@@ -22,7 +22,7 @@ export async function GET(request: NextRequest) {
     ? bookIdsStr.split(",").map(Number).filter(Boolean)
     : undefined;
 
-  const { totalCount, totalVerses, results } = await getWordFrequency(word.trim(), {
+  const { totalCount, totalVerses, results, matchedWords } = await getWordFrequency(word.trim(), {
     caseInsensitive,
     wholeWord,
     volumeIds,
@@ -36,5 +36,6 @@ export async function GET(request: NextRequest) {
     totalCount,
     totalVerses,
     results,
+    matchedWords,
   });
 }

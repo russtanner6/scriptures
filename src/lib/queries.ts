@@ -74,7 +74,7 @@ export async function getWordFrequency(
     volumeIds?: number[];
     bookIds?: number[];
   } = {}
-): Promise<{ totalCount: number; totalVerses: number; results: FrequencyResult[] }> {
+): Promise<{ totalCount: number; totalVerses: number; results: FrequencyResult[]; matchedWords: { word: string; count: number }[] }> {
   const db = await getDb();
   const { caseInsensitive = true, wholeWord = true, volumeIds, bookIds } = options;
 
@@ -110,8 +110,16 @@ export async function getWordFrequency(
   const flags = caseInsensitive ? "gi" : "g";
   const regex = new RegExp(pattern, flags);
 
-  // Count matches per book
+  // For partial matches, also capture the full word containing the match
+  // so we can show a breakdown of which words matched
+  const wordCapture = !wholeWord
+    ? new RegExp(`\\b\\w*${escaped}\\w*\\b`, caseInsensitive ? "gi" : "g")
+    : null;
+
+  // Count matches per book + collect matched words
   const counts = new Map<number, { count: number; verseCount: number }>();
+  const matchedWordsMap = new Map<string, number>();
+
   for (const verse of verses) {
     const matches = verse.text.match(regex);
     if (matches) {
@@ -122,13 +130,24 @@ export async function getWordFrequency(
       entry.count += matches.length;
       entry.verseCount += 1;
       counts.set(verse.book_id, entry);
+
+      // Collect distinct matched words for partial search
+      if (wordCapture) {
+        const wordMatches = verse.text.match(wordCapture);
+        if (wordMatches) {
+          for (const w of wordMatches) {
+            const normalized = caseInsensitive ? w.toLowerCase() : w;
+            matchedWordsMap.set(normalized, (matchedWordsMap.get(normalized) || 0) + 1);
+          }
+        }
+      }
     }
   }
 
   // Get book metadata for books with results
   const bookIds_all = Array.from(counts.keys());
   if (bookIds_all.length === 0) {
-    return { totalCount: 0, totalVerses: 0, results: [] };
+    return { totalCount: 0, totalVerses: 0, results: [], matchedWords: [] };
   }
 
   const bookMeta = execToObjects<{
@@ -168,7 +187,12 @@ export async function getWordFrequency(
     }
   }
 
-  return { totalCount, totalVerses, results };
+  // Build sorted matched words list
+  const matchedWords = Array.from(matchedWordsMap.entries())
+    .map(([word, count]) => ({ word, count }))
+    .sort((a, b) => b.count - a.count);
+
+  return { totalCount, totalVerses, results, matchedWords };
 }
 
 export async function getBookStats(): Promise<BookStat[]> {
