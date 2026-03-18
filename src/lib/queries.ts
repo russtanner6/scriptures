@@ -240,3 +240,52 @@ export async function getBookStats(): Promise<BookStat[]> {
     avgWordLength: r.avg_word_length,
   }));
 }
+
+export interface VerseMatch {
+  chapter: number;
+  verse: number;
+  text: string;
+}
+
+export async function getMatchingVerses(
+  word: string,
+  bookId: number,
+  options: { caseInsensitive?: boolean; wholeWord?: boolean } = {}
+): Promise<{ bookName: string; verses: VerseMatch[] }> {
+  const db = await getDb();
+  const { caseInsensitive = true, wholeWord = true } = options;
+
+  // Get book name
+  const bookRows = execToObjects<{ name: string }>(
+    db,
+    `SELECT name FROM books WHERE id = ?`,
+    [bookId]
+  );
+  const bookName = bookRows[0]?.name || "Unknown";
+
+  // Fetch all verses from this book
+  const verses = execToObjects<{ chapter: number; verse: number; text: string }>(
+    db,
+    `SELECT chapter, verse, text FROM verses WHERE book_id = ? ORDER BY chapter, verse`,
+    [bookId]
+  );
+
+  // Detect phrase search
+  const isPhrase = /^".*"$/.test(word) || /^'.*'$/.test(word);
+  const searchTerm = isPhrase ? word.slice(1, -1) : word;
+
+  // Build regex
+  const escaped = escapeRegex(searchTerm);
+  const pattern = isPhrase
+    ? escaped
+    : wholeWord
+      ? `\\b${escaped}\\b`
+      : escaped;
+  const flags = caseInsensitive ? "gi" : "g";
+  const regex = new RegExp(pattern, flags);
+
+  // Filter verses that match
+  const matching = verses.filter((v) => regex.test(v.text));
+
+  return { bookName, verses: matching };
+}

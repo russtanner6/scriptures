@@ -8,19 +8,20 @@ import {
   BarElement,
   LineElement,
   PointElement,
-  ArcElement,
   Filler,
   Tooltip,
   Legend,
 } from "chart.js";
-import { Bar, Doughnut, Line } from "react-chartjs-2";
+import { Bar, Line } from "react-chartjs-2";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import type { Volume, WordFrequencyResponse } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import StatCard from "./StatCard";
 import DashboardCard from "./DashboardCard";
 import HorizontalBarList from "./HorizontalBarList";
+import type { BarItem } from "./HorizontalBarList";
 import DataTable from "./DataTable";
+import VerseModal from "./VerseModal";
 
 ChartJS.register(
   CategoryScale,
@@ -28,7 +29,6 @@ ChartJS.register(
   BarElement,
   LineElement,
   PointElement,
-  ArcElement,
   Filler,
   Tooltip,
   Legend,
@@ -42,6 +42,9 @@ ChartJS.defaults.font.size = 13;
 ChartJS.defaults.font.weight = 500;
 // Disable datalabels globally — enable per-chart
 ChartJS.defaults.plugins.datalabels = { display: false } as never;
+// Disable re-animations on state changes (prevents all charts from
+// re-animating when unrelated UI elements like tabs are clicked)
+ChartJS.defaults.animation = false as never;
 
 // Hook to detect mobile viewport
 function useIsMobile(breakpoint = 768) {
@@ -73,8 +76,10 @@ export default function WordFrequencyTool() {
 
   // Chart visibility toggles — all on by default
   const [arcVolumeTab, setArcVolumeTab] = useState<number | null>(null);
+  const [breakdownTab, setBreakdownTab] = useState<number | null>(null);
+  const [verseModal, setVerseModal] = useState<{ bookId: number; bookName: string } | null>(null);
   const [visiblePanels, setVisiblePanels] = useState<Set<string>>(
-    new Set(["share", "counts", "breakdowns", "top10", "arc", "table"])
+    new Set(["counts", "breakdowns", "top10", "arc", "table"])
   );
   const togglePanel = (key: string) => {
     setVisiblePanels((prev) => {
@@ -689,7 +694,6 @@ export default function WordFrequencyTool() {
               Show
             </span>
             {[
-              { key: "share", label: "Share Chart" },
               { key: "counts", label: "Counts" },
               { key: "breakdowns", label: "Breakdowns" },
               { key: "top10", label: "Top Books" },
@@ -783,62 +787,6 @@ export default function WordFrequencyTool() {
 
           {/* Dashboard grid */}
           <div className="dashboard-grid">
-            {/* Doughnut chart */}
-            {visiblePanels.has("share") && (
-            <DashboardCard
-              title="Share by collection"
-              description={`Proportion of all ${results.totalCount.toLocaleString()} occurrences`}
-            >
-              <div className="chart-container">
-                <Doughnut
-                  data={{
-                    labels: volumeAgg.map((v) => v.name),
-                    datasets: [
-                      {
-                        data: volumeAgg.map((v) => v.count),
-                        backgroundColor: volumeAgg.map(
-                          (v) =>
-                            v.count > 0
-                              ? VOLUME_COLORS[v.abbrev]
-                              : "#3f3f46"
-                        ),
-                        borderColor: "#0a0a1a",
-                        borderWidth: 3,
-                        hoverOffset: 6,
-                      },
-                    ],
-                  }}
-                  options={{
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    cutout: "68%",
-                    plugins: {
-                      legend: {
-                        position: isMobile ? "bottom" : "right",
-                        labels: {
-                          padding: 16,
-                          usePointStyle: true,
-                          pointStyleWidth: 8,
-                          font: { size: 13, weight: 500 },
-                        },
-                      },
-                      tooltip: {
-                        callbacks: {
-                          label: (ctx) =>
-                            ` ${ctx.label}: ${ctx.raw}  (${(
-                              ((ctx.raw as number) / results.totalCount) *
-                              100
-                            ).toFixed(1)}%)`,
-                        },
-                      },
-                      datalabels: { display: false },
-                    },
-                  }}
-                />
-              </div>
-            </DashboardCard>
-            )}
-
             {/* Horizontal bar by collection */}
             {visiblePanels.has("counts") && (
             <DashboardCard
@@ -926,46 +874,91 @@ export default function WordFrequencyTool() {
             </DashboardCard>
             )}
 
-            {/* Per-volume book breakdowns */}
-            {visiblePanels.has("breakdowns") && volumeAgg
-              .filter((v) => v.count > 0)
-              .map((v) => {
-                const volumeBooks = results.results.filter(
-                  (r) => r.volumeAbbrev === v.abbrev
-                );
-                const allBooksInVolume =
-                  volumes
-                    .find((vol) => vol.id === v.id)
-                    ?.books.map((b) => {
-                      const result = volumeBooks.find(
-                        (r) => r.bookId === b.id
-                      );
-                      return {
-                        label: b.name,
-                        value: result?.count || 0,
-                      };
-                    }) || [];
+            {/* Per-volume book breakdowns — tabbed */}
+            {visiblePanels.has("breakdowns") && (() => {
+              const breakdownVolumes = volumeAgg.filter((v) => v.count > 0);
+              if (breakdownVolumes.length === 0) return null;
 
-                return (
-                  <DashboardCard
-                    key={v.id}
-                    title={`${v.name} breakdown`}
-                    description={`Occurrences by book within ${v.name}`}
-                  >
-                    <HorizontalBarList
-                      items={allBooksInVolume}
-                      color={VOLUME_COLORS[v.abbrev]}
-                      gradientEnd={
-                        v.abbrev === "BoM"
-                          ? "#fbbf24"
-                          : v.abbrev === "NT"
-                            ? "#60a5fa"
-                            : undefined
-                      }
-                    />
-                  </DashboardCard>
-                );
-              })}
+              const activeId = breakdownVolumes.some((v) => v.id === breakdownTab)
+                ? breakdownTab
+                : breakdownVolumes[0].id;
+
+              const activeV = breakdownVolumes.find((v) => v.id === activeId);
+              if (!activeV) return null;
+
+              const volumeBooks = results.results.filter(
+                (r) => r.volumeAbbrev === activeV.abbrev
+              );
+              const allBooksInVolume =
+                volumes
+                  .find((vol) => vol.id === activeId)
+                  ?.books.map((b) => {
+                    const result = volumeBooks.find(
+                      (r) => r.bookId === b.id
+                    );
+                    return {
+                      label: b.name,
+                      value: result?.count || 0,
+                      id: b.id,
+                    };
+                  }) || [];
+
+              return (
+                <DashboardCard
+                  title="Volume breakdown"
+                  description={`Occurrences by book — click a bar to read verses`}
+                  fullWidth
+                >
+                  {/* Volume tabs */}
+                  {breakdownVolumes.length > 1 && (
+                    <div style={{ display: "flex", gap: "6px", marginBottom: "20px", flexWrap: "wrap" }}>
+                      {breakdownVolumes.map((v) => {
+                        const isActive = v.id === activeId;
+                        const tabColor = VOLUME_COLORS[v.abbrev] || "#8b5cf6";
+                        return (
+                          <button
+                            key={v.id}
+                            type="button"
+                            onClick={() => setBreakdownTab(v.id)}
+                            style={{
+                              padding: "6px 16px",
+                              borderRadius: "100px",
+                              border: isActive
+                                ? `1px solid ${tabColor}`
+                                : "1px solid var(--border)",
+                              background: isActive ? tabColor : "transparent",
+                              color: isActive ? "#fff" : "var(--text-muted)",
+                              fontSize: "0.78rem",
+                              fontWeight: isActive ? 600 : 500,
+                              fontFamily: "inherit",
+                              cursor: "pointer",
+                              transition: "all 0.15s ease",
+                            }}
+                          >
+                            {v.abbrev === "D&C" ? "D&C" : v.name}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
+
+                  <HorizontalBarList
+                    items={allBooksInVolume}
+                    color={VOLUME_COLORS[activeV.abbrev]}
+                    gradientEnd={
+                      activeV.abbrev === "BoM"
+                        ? "#fbbf24"
+                        : activeV.abbrev === "NT"
+                          ? "#60a5fa"
+                          : undefined
+                    }
+                    onBarClick={(item: BarItem) =>
+                      item.id && setVerseModal({ bookId: item.id, bookName: item.label })
+                    }
+                  />
+                </DashboardCard>
+              );
+            })()}
 
             {/* Top 10 books */}
             {visiblePanels.has("top10") && results.results.length > 0 && (
@@ -1297,6 +1290,18 @@ export default function WordFrequencyTool() {
             Try a different word or adjust your search settings
           </div>
         </div>
+      )}
+
+      {/* Verse modal */}
+      {verseModal && results && (
+        <VerseModal
+          word={results.word}
+          bookId={verseModal.bookId}
+          bookName={verseModal.bookName}
+          caseInsensitive={results.caseInsensitive}
+          wholeWord={results.wholeWord}
+          onClose={() => setVerseModal(null)}
+        />
       )}
     </div>
   );
