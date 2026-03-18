@@ -1,12 +1,26 @@
+"use client";
+
+import { useState } from "react";
+import NavMenu from "./NavMenu";
+
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="header-wrapper">
-      {/* Hamburger menu — placeholder for future navigation */}
-      <button className="hamburger-btn" type="button" title="Menu">
+      {/* Hamburger menu */}
+      <button
+        className="hamburger-btn"
+        type="button"
+        title="Menu"
+        onClick={() => setMenuOpen(true)}
+      >
         <span className="hamburger-line" style={{ width: "14px" }} />
         <span className="hamburger-line" style={{ width: "22px" }} />
         <span className="hamburger-line" style={{ width: "18px" }} />
       </button>
+
+      <NavMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
 
       <div className="header-eyebrow">
         <span

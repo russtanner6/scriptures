@@ -830,6 +830,7 @@ export default function WordFrequencyTool() {
                             ).toFixed(1)}%)`,
                         },
                       },
+                      datalabels: { display: false },
                     },
                   }}
                 />
@@ -907,6 +908,7 @@ export default function WordFrequencyTool() {
                         formatter: (value: number) => value.toLocaleString(),
                       },
                     },
+                    layout: { padding: { right: 50 } },
                     scales: {
                       x: {
                         display: false,
@@ -946,8 +948,6 @@ export default function WordFrequencyTool() {
                   <DashboardCard
                     key={v.id}
                     title={`${v.name} breakdown`}
-                    tag={String(v.count)}
-                    tagColor={VOLUME_COLORS[v.abbrev]}
                     description={`Occurrences by book within ${v.name}`}
                   >
                     <HorizontalBarList
@@ -1052,6 +1052,7 @@ export default function WordFrequencyTool() {
                           formatter: (value: number) => value.toLocaleString(),
                         },
                       },
+                      layout: { padding: { right: 50 } },
                       scales: {
                         x: {
                           display: false,
@@ -1136,7 +1137,9 @@ export default function WordFrequencyTool() {
                                   ` ${ctx.raw} occurrences`,
                               },
                             },
+                            datalabels: { display: false },
                           },
+                          layout: { padding: { top: 12 } },
                           scales: {
                             y: {
                               grid: {
