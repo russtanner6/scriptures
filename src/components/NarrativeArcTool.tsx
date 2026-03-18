@@ -546,7 +546,6 @@ export default function NarrativeArcTool() {
                         ` ${ctx.dataset.label}: ${ctx.raw} occurrences`,
                     },
                   },
-                  datalabels: { display: false },
                 },
                 layout: { padding: { top: 10 } },
                 scales: {

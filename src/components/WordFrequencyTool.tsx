@@ -5,15 +5,13 @@ import {
   Chart as ChartJS,
   CategoryScale,
   LinearScale,
-  BarElement,
   LineElement,
   PointElement,
   Filler,
   Tooltip,
   Legend,
 } from "chart.js";
-import { Bar, Line } from "react-chartjs-2";
-import ChartDataLabels from "chartjs-plugin-datalabels";
+import { Line } from "react-chartjs-2";
 import type { Volume, WordFrequencyResponse } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import StatCard from "./StatCard";
@@ -26,13 +24,11 @@ import VerseModal from "./VerseModal";
 ChartJS.register(
   CategoryScale,
   LinearScale,
-  BarElement,
   LineElement,
   PointElement,
   Filler,
   Tooltip,
-  Legend,
-  ChartDataLabels
+  Legend
 );
 
 // Chart.js global defaults for dark theme
@@ -40,11 +36,6 @@ ChartJS.defaults.color = "#b0a8c0";
 ChartJS.defaults.font.family = "'Inter', sans-serif";
 ChartJS.defaults.font.size = 13;
 ChartJS.defaults.font.weight = 500;
-// Disable datalabels globally — enable per-chart
-ChartJS.defaults.plugins.datalabels = { display: false } as never;
-// Disable re-animations on state changes (prevents all charts from
-// re-animating when unrelated UI elements like tabs are clicked)
-ChartJS.defaults.animation = false as never;
 
 // Hook to detect mobile viewport
 function useIsMobile(breakpoint = 768) {
@@ -787,92 +778,19 @@ export default function WordFrequencyTool() {
 
           {/* Dashboard grid */}
           <div className="dashboard-grid">
-            {/* Horizontal bar by collection */}
+            {/* Raw counts by collection */}
             {visiblePanels.has("counts") && (
             <DashboardCard
               title="Raw counts by collection"
               description="Total occurrences per volume"
             >
-              <div className="chart-container">
-                <Bar
-                  data={{
-                    labels: volumeAgg.map((v) =>
-                      v.name.length > 18
-                        ? v.abbrev
-                        : v.name
-                    ),
-                    datasets: [
-                      // Track/trough (behind the colored bars)
-                      {
-                        data: volumeAgg.map(() => Math.max(...volumeAgg.map(v => v.count), 1)),
-                        backgroundColor: "rgba(139, 92, 246, 0.08)",
-                        borderRadius: 6,
-                        borderSkipped: false,
-                        barPercentage: 0.7,
-                        categoryPercentage: 0.7,
-                        maxBarThickness: 30,
-                      },
-                      // Actual data bars
-                      {
-                        data: volumeAgg.map((v) => v.count),
-                        backgroundColor: volumeAgg.map(
-                          (v) =>
-                            v.count > 0
-                              ? VOLUME_COLORS[v.abbrev]
-                              : "#3f3f46"
-                        ),
-                        borderRadius: 6,
-                        borderSkipped: false,
-                        barPercentage: 0.7,
-                        categoryPercentage: 0.7,
-                        maxBarThickness: 30,
-                      },
-                    ],
-                  }}
-                  options={{
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    indexAxis: "y",
-                    ...({ grouped: false } as Record<string, unknown>),
-                    plugins: {
-                      legend: { display: false },
-                      tooltip: {
-                        filter: (item) => item.datasetIndex === 1,
-                        callbacks: {
-                          label: (ctx) => ` ${ctx.raw} occurrences`,
-                        },
-                      },
-                      datalabels: {
-                        display: (ctx) => ctx.datasetIndex === 1 && (ctx.dataset.data as number[])[ctx.dataIndex] > 0,
-                        anchor: "end",
-                        align: (ctx) => {
-                          const max = Math.max(...(ctx.dataset.data as number[]));
-                          const val = (ctx.dataset.data as number[])[ctx.dataIndex];
-                          return val / max > 0.2 ? "left" : "right";
-                        },
-                        offset: 6,
-                        color: (ctx) => {
-                          const max = Math.max(...(ctx.dataset.data as number[]));
-                          const val = (ctx.dataset.data as number[])[ctx.dataIndex];
-                          return val / max > 0.2 ? "#fff" : "#b0a8c0";
-                        },
-                        font: { weight: 700, size: 12 },
-                        formatter: (value: number) => value.toLocaleString(),
-                      },
-                    },
-                    layout: { padding: { right: 50 } },
-                    scales: {
-                      x: {
-                        display: false,
-                      },
-                      y: {
-                        grid: { display: false },
-                        ticks: { font: { weight: 500 } },
-                      },
-                    },
-                  }}
-                />
-              </div>
+              <HorizontalBarList
+                items={volumeAgg.map((v) => ({
+                  label: v.name,
+                  value: v.count,
+                  color: VOLUME_COLORS[v.abbrev],
+                }))}
+              />
             </DashboardCard>
             )}
 
@@ -968,107 +886,21 @@ export default function WordFrequencyTool() {
                 title={`Top ${Math.min(10, results.results.length)} books — all scripture`}
                 description="Ranked by raw count"
               >
-                <div style={{ position: "relative", height: "450px" }}>
-                  <Bar
-                    data={{
-                      labels: results.results
-                        .slice(0, 10)
-                        .sort((a, b) => b.count - a.count)
-                        .map((r) => r.bookName),
-                      datasets: [
-                        // Track/trough
-                        {
-                          data: (() => {
-                            const sorted = results.results.slice().sort((a, b) => b.count - a.count).slice(0, 10);
-                            const maxVal = Math.max(...sorted.map(r => r.count), 1);
-                            return sorted.map(() => maxVal);
-                          })(),
-                          backgroundColor: "rgba(139, 92, 246, 0.08)",
-                          borderRadius: 6,
-                          borderSkipped: false,
-                          barPercentage: 0.7,
-                          categoryPercentage: 0.7,
-                        },
-                        // Data bars
-                        {
-                          data: results.results
-                            .slice()
-                            .sort((a, b) => b.count - a.count)
-                            .slice(0, 10)
-                            .map((r) => r.count),
-                          backgroundColor: results.results
-                            .slice()
-                            .sort((a, b) => b.count - a.count)
-                            .slice(0, 10)
-                            .map(
-                              (r) =>
-                                VOLUME_COLORS[r.volumeAbbrev] ||
-                                "#3f3f46"
-                            ),
-                          borderRadius: 6,
-                          borderSkipped: false,
-                          barPercentage: 0.7,
-                          categoryPercentage: 0.7,
-                        },
-                      ],
-                    }}
-                    options={{
-                      responsive: true,
-                      maintainAspectRatio: false,
-                      indexAxis: "y",
-                      ...({ grouped: false } as Record<string, unknown>),
-                      plugins: {
-                        legend: { display: false },
-                        tooltip: {
-                          filter: (item) => item.datasetIndex === 1,
-                          callbacks: {
-                            label: (ctx) => {
-                              const sorted = results.results
-                                .slice()
-                                .sort((a, b) => b.count - a.count)
-                                .slice(0, 10);
-                              const item = sorted[ctx.dataIndex];
-                              return ` ${item.bookName} (${item.volumeAbbrev}): ${ctx.raw}`;
-                            },
-                          },
-                        },
-                        datalabels: {
-                          display: (ctx) => ctx.datasetIndex === 1 && (ctx.dataset.data as number[])[ctx.dataIndex] > 0,
-                          anchor: (ctx) => {
-                            const max = Math.max(...(ctx.dataset.data as number[]));
-                            const val = (ctx.dataset.data as number[])[ctx.dataIndex];
-                            return val / max > 0.25 ? "center" : "end";
-                          },
-                          align: (ctx) => {
-                            const max = Math.max(...(ctx.dataset.data as number[]));
-                            const val = (ctx.dataset.data as number[])[ctx.dataIndex];
-                            return val / max > 0.25 ? "center" : "right";
-                          },
-                          offset: 8,
-                          color: (ctx) => {
-                            const max = Math.max(...(ctx.dataset.data as number[]));
-                            const val = (ctx.dataset.data as number[])[ctx.dataIndex];
-                            return val / max > 0.25 ? "#fff" : "#b0a8c0";
-                          },
-                          font: { weight: 700, size: 11 },
-                          formatter: (value: number) => value.toLocaleString(),
-                        },
-                      },
-                      layout: { padding: { right: 50 } },
-                      scales: {
-                        x: {
-                          display: false,
-                        },
-                        y: {
-                          grid: { display: false },
-                          ticks: {
-                            font: { size: 13, weight: 500 },
-                          },
-                        },
-                      },
-                    }}
-                  />
-                </div>
+                <HorizontalBarList
+                  items={results.results
+                    .slice()
+                    .sort((a, b) => b.count - a.count)
+                    .slice(0, 10)
+                    .map((r) => ({
+                      label: r.bookName,
+                      value: r.count,
+                      color: VOLUME_COLORS[r.volumeAbbrev] || "#8b5cf6",
+                      id: r.bookId,
+                    }))}
+                  onBarClick={(item: BarItem) =>
+                    item.id && setVerseModal({ bookId: item.id, bookName: item.label })
+                  }
+                />
               </DashboardCard>
             )}
 
@@ -1180,7 +1012,6 @@ export default function WordFrequencyTool() {
                                 ` ${ctx.raw} occurrences`,
                             },
                           },
-                          datalabels: { display: false },
                         },
                         layout: { padding: { top: 12 } },
                         scales: {
