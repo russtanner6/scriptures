@@ -75,7 +75,7 @@ export default function WordFrequencyTool() {
   const [breakdownTab, setBreakdownTab] = useState<number | null>(null);
   const [verseModal, setVerseModal] = useState<{ bookId: number; bookName: string } | null>(null);
   const [visiblePanels, setVisiblePanels] = useState<Set<string>>(
-    new Set(["counts", "breakdowns", "top10", "arc", "table"])
+    new Set(["breakdowns", "top10", "arc", "table"])
   );
   const togglePanel = (key: string) => {
     setVisiblePanels((prev) => {
@@ -716,7 +716,6 @@ export default function WordFrequencyTool() {
               Show
             </span>
             {[
-              { key: "counts", label: "Counts" },
               { key: "breakdowns", label: "Breakdowns" },
               { key: "top10", label: "Top Books" },
               { key: "arc", label: "Narrative Arc" },
@@ -819,22 +818,6 @@ export default function WordFrequencyTool() {
 
           {/* Dashboard grid */}
           <div className="dashboard-grid">
-            {/* Raw counts by collection */}
-            {visiblePanels.has("counts") && (
-            <DashboardCard
-              title="Raw counts by collection"
-              description="Total occurrences per volume"
-            >
-              <HorizontalBarList
-                items={volumeAgg.map((v) => ({
-                  label: v.name,
-                  value: v.count,
-                  color: VOLUME_COLORS[v.abbrev],
-                }))}
-              />
-            </DashboardCard>
-            )}
-
             {/* Per-volume book breakdowns — tabbed */}
             {visiblePanels.has("breakdowns") && (() => {
               const breakdownVolumes = volumeAgg.filter((v) => v.count > 0);
