@@ -858,10 +858,10 @@ export default function WordFrequencyTool() {
                       {
                         data: volumeAgg.map(() => Math.max(...volumeAgg.map(v => v.count), 1)),
                         backgroundColor: "rgba(139, 92, 246, 0.08)",
-                        borderRadius: 8,
+                        borderRadius: 6,
                         borderSkipped: false,
-                        barPercentage: 0.6,
-                        categoryPercentage: 0.8,
+                        barPercentage: 0.7,
+                        categoryPercentage: 0.7,
                       },
                       // Actual data bars
                       {
@@ -872,10 +872,10 @@ export default function WordFrequencyTool() {
                               ? VOLUME_COLORS[v.abbrev]
                               : "#3f3f46"
                         ),
-                        borderRadius: 8,
+                        borderRadius: 6,
                         borderSkipped: false,
-                        barPercentage: 0.6,
-                        categoryPercentage: 0.8,
+                        barPercentage: 0.7,
+                        categoryPercentage: 0.7,
                       },
                     ],
                   }}
@@ -894,21 +894,17 @@ export default function WordFrequencyTool() {
                       },
                       datalabels: {
                         display: (ctx) => ctx.datasetIndex === 1 && (ctx.dataset.data as number[])[ctx.dataIndex] > 0,
-                        anchor: (ctx) => {
-                          const max = Math.max(...(ctx.dataset.data as number[]));
-                          const val = (ctx.dataset.data as number[])[ctx.dataIndex];
-                          return val / max > 0.25 ? "center" : "end";
-                        },
+                        anchor: "end",
                         align: (ctx) => {
                           const max = Math.max(...(ctx.dataset.data as number[]));
                           const val = (ctx.dataset.data as number[])[ctx.dataIndex];
-                          return val / max > 0.25 ? "center" : "right";
+                          return val / max > 0.2 ? "left" : "right";
                         },
-                        offset: 8,
+                        offset: 6,
                         color: (ctx) => {
                           const max = Math.max(...(ctx.dataset.data as number[]));
                           const val = (ctx.dataset.data as number[])[ctx.dataIndex];
-                          return val / max > 0.25 ? "#fff" : "#b0a8c0";
+                          return val / max > 0.2 ? "#fff" : "#b0a8c0";
                         },
                         font: { weight: 700, size: 12 },
                         formatter: (value: number) => value.toLocaleString(),
@@ -995,8 +991,8 @@ export default function WordFrequencyTool() {
                           backgroundColor: "rgba(139, 92, 246, 0.08)",
                           borderRadius: 6,
                           borderSkipped: false,
-                          barPercentage: 0.6,
-                          categoryPercentage: 0.8,
+                          barPercentage: 0.7,
+                          categoryPercentage: 0.7,
                         },
                         // Data bars
                         {
@@ -1016,8 +1012,8 @@ export default function WordFrequencyTool() {
                             ),
                           borderRadius: 6,
                           borderSkipped: false,
-                          barPercentage: 0.6,
-                          categoryPercentage: 0.8,
+                          barPercentage: 0.7,
+                          categoryPercentage: 0.7,
                         },
                       ],
                     }}
