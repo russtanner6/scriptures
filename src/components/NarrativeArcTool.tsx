@@ -354,7 +354,7 @@ export default function NarrativeArcTool() {
                 <ExportButton onClick={() => setExportVolumeId(vol.id)} />
               </div>
 
-              <div style={{ position: "relative", height: "500px", marginTop: "20px" }}>
+              <div style={{ position: "relative", height: "500px", marginTop: "8px" }}>
                 <Line
                   ref={thisChartRef}
                   data={{
@@ -387,9 +387,9 @@ export default function NarrativeArcTool() {
                     },
                     plugins: {
                       legend: {
-                        position: "top",
+                        position: "bottom",
                         labels: {
-                          padding: 24,
+                          padding: 20,
                           usePointStyle: true,
                           pointStyle: "rectRounded",
                           pointStyleWidth: 16,
@@ -412,7 +412,7 @@ export default function NarrativeArcTool() {
                         formatter: (value: number) => value.toLocaleString(),
                       },
                     },
-                    layout: { padding: { top: 50 } },
+                    layout: { padding: { top: 28 } },
                     scales: {
                       y: {
                         grid: { color: "rgba(255,255,255,0.06)" },
