@@ -194,19 +194,27 @@ export default function WordFrequencyTool() {
         </div>
 
         {/* Volumes section */}
-        <div style={{ marginBottom: "16px" }}>
-          <div
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "6px",
+            marginBottom: "16px",
+          }}
+        >
+          <span
             style={{
               fontSize: "0.68rem",
               fontWeight: 600,
               textTransform: "uppercase",
               letterSpacing: "0.12em",
               color: "var(--text-muted)",
-              marginBottom: "10px",
+              marginRight: "8px",
+              whiteSpace: "nowrap",
             }}
           >
             Volumes
-          </div>
+          </span>
           <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
             {volumes.map((v) => {
               const isActive = selectedVolumeIds.has(v.id);
@@ -252,7 +260,7 @@ export default function WordFrequencyTool() {
           </div>
         </div>
 
-        {/* Options section */}
+        {/* Options section -- same inline layout as Volumes */}
         <div
           style={{
             display: "flex",
