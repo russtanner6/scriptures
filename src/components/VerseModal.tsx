@@ -142,16 +142,16 @@ export default function VerseModal({
           <button
             onClick={onClose}
             style={{
-              background: "var(--surface)",
-              border: "1px solid var(--border)",
-              borderRadius: "10px",
+              background: "rgba(255,255,255,0.1)",
+              border: "1px solid rgba(255,255,255,0.2)",
+              borderRadius: "8px",
               width: "36px",
               height: "36px",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               cursor: "pointer",
-              color: "var(--text-muted)",
+              color: "#fff",
               fontSize: "1.1rem",
               fontFamily: "inherit",
               transition: "all 0.15s",
