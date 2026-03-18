@@ -29,7 +29,7 @@ export default function StatCard({
       onMouseEnter={(e) => {
         e.currentTarget.style.borderColor = "var(--border-accent)";
         e.currentTarget.style.background = "var(--surface-hover)";
-        e.currentTarget.style.boxShadow = "0 0 24px rgba(139, 92, 246, 0.06)";
+        e.currentTarget.style.boxShadow = "0 0 24px rgba(255, 255, 255, 0.03)";
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.borderColor = "var(--border)";

@@ -555,7 +555,7 @@ export default function NarrativeArcTool() {
                 layout: { padding: { top: 40 } },
                 scales: {
                   y: {
-                    grid: { color: "rgba(139,92,246,0.06)" },
+                    grid: { color: "rgba(255,255,255,0.06)" },
                     ticks: { font: { weight: 600 } },
                     beginAtZero: true,
                   },
@@ -639,7 +639,7 @@ export default function NarrativeArcTool() {
                       <td
                         style={{
                           padding: "8px 12px",
-                          borderBottom: "1px solid rgba(139,92,246,0.06)",
+                          borderBottom: "1px solid rgba(255,255,255,0.06)",
                           display: "flex",
                           alignItems: "center",
                           gap: "8px",
@@ -665,7 +665,7 @@ export default function NarrativeArcTool() {
                           fontWeight: 700,
                           fontVariantNumeric: "tabular-nums",
                           color: "var(--text)",
-                          borderBottom: "1px solid rgba(139,92,246,0.06)",
+                          borderBottom: "1px solid rgba(255,255,255,0.06)",
                         }}
                       >
                         {total.toLocaleString()}
@@ -674,7 +674,7 @@ export default function NarrativeArcTool() {
                         style={{
                           padding: "8px 12px",
                           color: "var(--text-secondary)",
-                          borderBottom: "1px solid rgba(139,92,246,0.06)",
+                          borderBottom: "1px solid rgba(255,255,255,0.06)",
                         }}
                       >
                         {peak.bookName} ({peak.count})

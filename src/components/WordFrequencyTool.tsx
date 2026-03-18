@@ -34,7 +34,7 @@ ChartJS.register(
 );
 
 // Chart.js global defaults for dark theme
-ChartJS.defaults.color = "#b0a8c0";
+ChartJS.defaults.color = "#9ca3af";
 // Disable datalabels by default — enable per-chart
 ChartJS.defaults.plugins.datalabels = { display: false } as never;
 ChartJS.defaults.font.family = "'Inter', sans-serif";
@@ -783,7 +783,7 @@ export default function WordFrequencyTool() {
                       padding: "5px 12px",
                       borderRadius: "8px",
                       background: "var(--accent-soft)",
-                      border: "1px solid rgba(139, 92, 246, 0.2)",
+                      border: "1px solid rgba(255, 255, 255, 0.1)",
                       fontSize: "0.8rem",
                       color: "var(--text)",
                       fontWeight: 500,
@@ -1042,7 +1042,7 @@ export default function WordFrequencyTool() {
                         scales: {
                           y: {
                             grid: {
-                              color: "rgba(139,92,246,0.06)",
+                              color: "rgba(255,255,255,0.06)",
                             },
                             ticks: { font: { weight: 600 } },
                             beginAtZero: true,

@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  /* ===== PURPLE/NAVY PREMIUM PALETTE ===== */
-  --bg: #0a0a1a;
-  --bg-gradient: linear-gradient(145deg, #0a0a1a 0%, #1a0a2e 40%, #0d1117 100%);
-  --surface: rgba(255, 255, 255, 0.04);
-  --surface-hover: rgba(255, 255, 255, 0.07);
-  --border: rgba(139, 92, 246, 0.12);
-  --border-accent: rgba(139, 92, 246, 0.25);
-  --text: #fafafa;
-  --text-secondary: #b0a8c0;
-  --text-muted: #6b6280;
+  /* ===== DARK GREY PALETTE ===== */
+  --bg: #0f0f12;
+  --bg-gradient: linear-gradient(145deg, #0f0f12 0%, #131318 40%, #0f0f12 100%);
+  --surface: rgba(255, 255, 255, 0.035);
+  --surface-hover: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.07);
+  --border-accent: rgba(255, 255, 255, 0.14);
+  --text: #f0f0f0;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
   --accent: #8b5cf6;
   --accent-soft: rgba(139, 92, 246, 0.12);
   --emerald: #10b981;
@@ -23,8 +23,8 @@
   --rose-soft: rgba(244, 63, 94, 0.1);
   --cyan: #06b6d4;
   --cyan-soft: rgba(6, 182, 212, 0.1);
-  --zinc-800: #1e1a2e;
-  --zinc-900: #12101e;
+  --zinc-800: #1f2028;
+  --zinc-900: #16171e;
 }
 
 * {
@@ -60,8 +60,7 @@ body::before {
   height: 700px;
   background: radial-gradient(
     ellipse,
-    rgba(139, 92, 246, 0.08) 0%,
-    rgba(139, 92, 246, 0.02) 40%,
+    rgba(255, 255, 255, 0.02) 0%,
     transparent 70%
   );
   pointer-events: none;
@@ -116,7 +115,7 @@ body::before {
   text-transform: uppercase;
   line-height: 1.1;
   margin-bottom: 12px;
-  background: linear-gradient(135deg, #ffffff 0%, #c4b5fd 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #9ca3af 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

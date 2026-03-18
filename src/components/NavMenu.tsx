@@ -43,7 +43,7 @@ export default function NavMenu({
           left: 0,
           bottom: 0,
           width: "280px",
-          background: "rgba(18, 16, 30, 0.95)",
+          background: "rgba(18, 18, 24, 0.97)",
           backdropFilter: "blur(24px)",
           WebkitBackdropFilter: "blur(24px)",
           borderRight: "1px solid var(--border)",
@@ -105,10 +105,10 @@ export default function NavMenu({
                   fontWeight: isActive ? 600 : 500,
                   color: isActive ? "#fff" : "var(--text-secondary)",
                   background: isActive
-                    ? "linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(139, 92, 246, 0.1))"
+                    ? "rgba(255, 255, 255, 0.08)"
                     : "transparent",
                   border: isActive
-                    ? "1px solid rgba(139, 92, 246, 0.25)"
+                    ? "1px solid rgba(255, 255, 255, 0.14)"
                     : "1px solid transparent",
                   transition: "all 0.15s ease",
                 }}

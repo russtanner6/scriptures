@@ -31,7 +31,7 @@ export default function DashboardCard({
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.borderColor = "var(--border-accent)";
-        e.currentTarget.style.boxShadow = "0 0 24px rgba(139, 92, 246, 0.06)";
+        e.currentTarget.style.boxShadow = "0 0 24px rgba(255, 255, 255, 0.03)";
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.borderColor = "var(--border)";
