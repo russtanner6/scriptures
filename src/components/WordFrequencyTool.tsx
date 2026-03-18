@@ -897,13 +897,6 @@ export default function WordFrequencyTool() {
                   <HorizontalBarList
                     items={allBooksInVolume}
                     color={VOLUME_COLORS[activeV.abbrev]}
-                    gradientEnd={
-                      activeV.abbrev === "BoM"
-                        ? "#fbbf24"
-                        : activeV.abbrev === "NT"
-                          ? "#60a5fa"
-                          : undefined
-                    }
                     onBarClick={(item: BarItem) =>
                       item.id && setVerseModal({ bookId: item.id, bookName: item.label })
                     }
