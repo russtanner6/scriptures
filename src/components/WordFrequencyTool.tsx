@@ -571,7 +571,6 @@ export default function WordFrequencyTool() {
                   alignItems: "center",
                   gap: "6px",
                   paddingTop: "12px",
-                  borderTop: "1px solid var(--border)",
                 }}
               >
                 <span
@@ -595,7 +594,6 @@ export default function WordFrequencyTool() {
                 style={{
                   display: "none",
                   paddingTop: "12px",
-                  borderTop: "1px solid var(--border)",
                 }}
               >
                 <button
