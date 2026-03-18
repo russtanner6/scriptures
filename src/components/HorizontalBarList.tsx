@@ -61,7 +61,7 @@ export default function HorizontalBarList({
             <div
               style={{
                 height: "30px",
-                background: "rgba(139, 92, 246, 0.08)",
+                background: "rgba(0, 0, 0, 0.25)",
                 borderRadius: "8px",
                 position: "relative",
                 display: "flex",

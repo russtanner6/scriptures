@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { getVerseUrl } from "@/lib/scripture-urls";
 
 interface Verse {
   chapter: number;
@@ -193,20 +194,54 @@ export default function VerseModal({
                       : "none",
                 }}
               >
-                <div
-                  style={{
-                    fontSize: "0.72rem",
-                    fontWeight: 700,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.1em",
-                    color: "var(--accent)",
-                    marginBottom: "6px",
-                  }}
-                >
-                  {v.chapter > 0
+                {(() => {
+                  const url = getVerseUrl(bookName, v.chapter, v.verse);
+                  const label = v.chapter > 0
                     ? `Chapter ${v.chapter} : Verse ${v.verse}`
-                    : `Verse ${v.verse}`}
-                </div>
+                    : `Verse ${v.verse}`;
+                  return url ? (
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "6px",
+                        fontSize: "0.72rem",
+                        fontWeight: 700,
+                        textTransform: "uppercase",
+                        letterSpacing: "0.1em",
+                        color: "var(--accent)",
+                        marginBottom: "6px",
+                        textDecoration: "none",
+                        transition: "color 0.15s",
+                      }}
+                      onMouseEnter={(e) => (e.currentTarget.style.color = "#a78bfa")}
+                      onMouseLeave={(e) => (e.currentTarget.style.color = "var(--accent)")}
+                    >
+                      {label}
+                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                      </svg>
+                    </a>
+                  ) : (
+                    <div
+                      style={{
+                        fontSize: "0.72rem",
+                        fontWeight: 700,
+                        textTransform: "uppercase",
+                        letterSpacing: "0.1em",
+                        color: "var(--accent)",
+                        marginBottom: "6px",
+                      }}
+                    >
+                      {label}
+                    </div>
+                  );
+                })()}
                 <div
                   style={{
                     fontSize: "0.9rem",
