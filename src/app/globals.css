@@ -33,6 +33,11 @@
   box-sizing: border-box;
 }
 
+html {
+  background: var(--bg);
+  overflow-x: hidden;
+}
+
 body {
   background: var(--bg-gradient);
   background-attachment: fixed;

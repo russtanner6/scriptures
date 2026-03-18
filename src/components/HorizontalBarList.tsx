@@ -46,15 +46,15 @@ export default function HorizontalBarList({
                 height: "22px",
                 background: "rgba(139, 92, 246, 0.08)",
                 borderRadius: "8px",
-                overflow: "hidden",
               }}
             >
               <div
                 style={{
                   height: "100%",
                   width: `${pct}%`,
+                  minWidth: pct > 0 ? "16px" : "0",
                   background: gradient,
-                  borderRadius: "inherit",
+                  borderRadius: "8px",
                   transition: "width 0.6s cubic-bezier(0.22, 1, 0.36, 1)",
                 }}
               />
