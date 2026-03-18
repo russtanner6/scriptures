@@ -1047,7 +1047,7 @@ export default function WordFrequencyTool() {
                             formatter: (value: number) => value.toLocaleString(),
                           },
                         },
-                        layout: { padding: { top: 28 } },
+                        layout: { padding: { top: 40 } },
                         scales: {
                           y: {
                             grid: {

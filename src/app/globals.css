@@ -227,11 +227,13 @@ body::before {
 .chart-container {
   position: relative;
   height: 320px;
+  overflow: visible;
 }
 
 .chart-container-tall {
   position: relative;
   height: 380px;
+  overflow: visible;
 }
 
 /* ===== TABLET (≤ 1024px) ===== */

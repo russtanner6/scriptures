@@ -560,7 +560,7 @@ export default function NarrativeArcTool() {
                     formatter: (value: number) => value.toLocaleString(),
                   },
                 },
-                layout: { padding: { top: 28 } },
+                layout: { padding: { top: 40 } },
                 scales: {
                   y: {
                     grid: { color: "rgba(139,92,246,0.06)" },
