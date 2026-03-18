@@ -197,8 +197,8 @@ export default function VerseModal({
                 {(() => {
                   const url = getVerseUrl(bookName, v.chapter, v.verse);
                   const label = v.chapter > 0
-                    ? `Chapter ${v.chapter} : Verse ${v.verse}`
-                    : `Verse ${v.verse}`;
+                    ? `${bookName} ${v.chapter}:${v.verse}`
+                    : `${bookName} ${v.verse}`;
                   return url ? (
                     <a
                       href={url}
