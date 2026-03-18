@@ -208,12 +208,12 @@ export default function VerseModal({
                         display: "inline-flex",
                         alignItems: "center",
                         gap: "6px",
-                        fontSize: "0.72rem",
+                        fontSize: "0.82rem",
                         fontWeight: 700,
                         textTransform: "uppercase",
-                        letterSpacing: "0.1em",
+                        letterSpacing: "0.08em",
                         color: "var(--accent)",
-                        marginBottom: "6px",
+                        marginBottom: "8px",
                         textDecoration: "none",
                         transition: "color 0.15s",
                       }}
@@ -230,12 +230,12 @@ export default function VerseModal({
                   ) : (
                     <div
                       style={{
-                        fontSize: "0.72rem",
+                        fontSize: "0.82rem",
                         fontWeight: 700,
                         textTransform: "uppercase",
-                        letterSpacing: "0.1em",
+                        letterSpacing: "0.08em",
                         color: "var(--accent)",
-                        marginBottom: "6px",
+                        marginBottom: "8px",
                       }}
                     >
                       {label}
@@ -244,9 +244,9 @@ export default function VerseModal({
                 })()}
                 <div
                   style={{
-                    fontSize: "0.9rem",
-                    color: "var(--text-secondary)",
-                    lineHeight: 1.7,
+                    fontSize: "0.95rem",
+                    color: "#d4d0e0",
+                    lineHeight: 1.8,
                   }}
                 >
                   {highlightWord(v.text)}
