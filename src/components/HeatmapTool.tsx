@@ -301,7 +301,7 @@ export default function HeatmapTool() {
           const g = parseInt(hex.substring(2, 4), 16);
           const b = parseInt(hex.substring(4, 6), 16);
           return (
-            <div style={{ marginTop: "12px", display: "flex", alignItems: "center", gap: "6px", fontSize: "0.72rem", color: "var(--text-muted)" }}>
+            <div style={{ marginTop: "0", display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", fontSize: "0.72rem", color: "var(--text-muted)" }}>
               <span>Less</span>
               <div style={{ display: "flex", gap: "2px" }}>
                 {[0, 0.2, 0.4, 0.6, 0.8, 1].map((intensity) => (
@@ -354,7 +354,7 @@ export default function HeatmapTool() {
                   padding: isMobile ? "16px" : "24px", marginBottom: "16px",
                   backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)",
                 }}>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "16px" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "8px" }}>
                     <h3 style={{ fontSize: "1.05rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text)", margin: 0 }}>
                       <span style={{ color: volColor }}>{vg.volumeName}</span>
                     </h3>
@@ -363,9 +363,11 @@ export default function HeatmapTool() {
                     </span>
                   </div>
 
-                  {Array.from(vg.books.entries()).map(([bookId, group]) => renderBookRow(bookId, group))}
-
                   {renderColorScale(abbrev)}
+
+                  <div style={{ marginTop: "12px" }}>
+                    {Array.from(vg.books.entries()).map(([bookId, group]) => renderBookRow(bookId, group))}
+                  </div>
                 </div>
               );
             })}
