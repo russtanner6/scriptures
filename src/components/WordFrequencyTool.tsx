@@ -67,6 +67,7 @@ export default function WordFrequencyTool() {
   const [optionsExpanded, setOptionsExpanded] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+  const pendingSearch = useRef(false);
   const isMobile = useIsMobile();
 
   // Chart visibility toggles — all on by default
@@ -147,6 +148,14 @@ export default function WordFrequencyTool() {
       handleSearch();
     }
   }, [word, volumes.length, handleSearch, results]);
+
+  // Auto-search when a matched word pill is clicked
+  useEffect(() => {
+    if (pendingSearch.current && word) {
+      pendingSearch.current = false;
+      handleSearch();
+    }
+  }, [word, handleSearch]);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") handleSearch();
@@ -679,14 +688,6 @@ export default function WordFrequencyTool() {
                     : "0% of total"
                 }
                 color={VOLUME_COLORS[v.abbrev] || "var(--text-muted)"}
-                onLabelClick={() => {
-                  // Toggle: if all selected, solo this volume. If already solo, select all.
-                  if (selectedVolumeIds.size === 1 && selectedVolumeIds.has(v.id)) {
-                    setSelectedVolumeIds(new Set(volumes.map((vol) => vol.id)));
-                  } else {
-                    setSelectedVolumeIds(new Set([v.id]));
-                  }
-                }}
               />
             ))}
           </div>
@@ -774,8 +775,15 @@ export default function WordFrequencyTool() {
                 }}
               >
                 {results.matchedWords.map((mw) => (
-                  <span
+                  <button
                     key={mw.word}
+                    type="button"
+                    onClick={() => {
+                      setWord(mw.word);
+                      setWholeWord(true);
+                      pendingSearch.current = true;
+                    }}
+                    title={`Search for "${mw.word}"`}
                     style={{
                       display: "inline-flex",
                       alignItems: "center",
@@ -783,10 +791,13 @@ export default function WordFrequencyTool() {
                       padding: "5px 12px",
                       borderRadius: "8px",
                       background: "var(--accent-soft)",
-                      border: "1px solid rgba(59, 130, 246, 0.15)",
+                      border: "1px solid rgba(139, 92, 246, 0.2)",
                       fontSize: "0.8rem",
                       color: "var(--text)",
                       fontWeight: 500,
+                      cursor: "pointer",
+                      fontFamily: "inherit",
+                      transition: "all 0.15s",
                     }}
                   >
                     {mw.word}
@@ -800,7 +811,7 @@ export default function WordFrequencyTool() {
                     >
                       {mw.count.toLocaleString()}
                     </span>
-                  </span>
+                  </button>
                 ))}
               </div>
             </DashboardCard>
