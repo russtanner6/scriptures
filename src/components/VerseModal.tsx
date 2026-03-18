@@ -57,8 +57,8 @@ export default function VerseModal({
         <mark
           key={i}
           style={{
-            background: "rgba(139, 92, 246, 0.3)",
-            color: "#fff",
+            background: "rgba(139, 92, 246, 0.2)",
+            color: "#222",
             padding: "1px 3px",
             borderRadius: "3px",
           }}
@@ -95,10 +95,8 @@ export default function VerseModal({
           transform: "translate(-50%, -50%)",
           width: "min(90vw, 680px)",
           maxHeight: "80vh",
-          background: "rgba(18, 16, 30, 0.97)",
-          backdropFilter: "blur(24px)",
-          WebkitBackdropFilter: "blur(24px)",
-          border: "1px solid var(--border-accent)",
+          background: "#f5f5f5",
+          border: "1px solid rgba(0,0,0,0.1)",
           borderRadius: "10px",
           zIndex: 201,
           display: "flex",
@@ -110,7 +108,7 @@ export default function VerseModal({
         <div
           style={{
             padding: "20px 24px",
-            borderBottom: "1px solid var(--border)",
+            borderBottom: "1px solid rgba(0,0,0,0.08)",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "flex-start",
@@ -122,7 +120,7 @@ export default function VerseModal({
               style={{
                 fontSize: "1.1rem",
                 fontWeight: 700,
-                color: "var(--text)",
+                color: "#222",
                 marginBottom: "4px",
               }}
             >
@@ -131,7 +129,7 @@ export default function VerseModal({
             <p
               style={{
                 fontSize: "0.82rem",
-                color: "var(--text-secondary)",
+                color: "#666",
               }}
             >
               {isLoading
@@ -142,8 +140,8 @@ export default function VerseModal({
           <button
             onClick={onClose}
             style={{
-              background: "rgba(255,255,255,0.1)",
-              border: "1px solid rgba(255,255,255,0.2)",
+              background: "rgba(0,0,0,0.06)",
+              border: "1px solid rgba(0,0,0,0.1)",
               borderRadius: "8px",
               width: "36px",
               height: "36px",
@@ -151,7 +149,7 @@ export default function VerseModal({
               alignItems: "center",
               justifyContent: "center",
               cursor: "pointer",
-              color: "#fff",
+              color: "#333",
               fontSize: "1.1rem",
               fontFamily: "inherit",
               transition: "all 0.15s",
@@ -192,7 +190,7 @@ export default function VerseModal({
                   padding: "14px 0",
                   borderBottom:
                     i < verses.length - 1
-                      ? "1px solid var(--border)"
+                      ? "1px solid rgba(0,0,0,0.08)"
                       : "none",
                 }}
               >
@@ -247,7 +245,7 @@ export default function VerseModal({
                 <div
                   style={{
                     fontSize: "0.95rem",
-                    color: "#d4d0e0",
+                    color: "#222",
                     lineHeight: 1.8,
                   }}
                 >
