@@ -192,6 +192,7 @@ export default function WordFrequencyTool() {
       <div className="search-panel">
         {/* Search bar with integrated button */}
         <div
+          className="search-bar-glow"
           style={{
             display: "flex",
             background: "var(--zinc-900)",
@@ -673,7 +674,7 @@ export default function WordFrequencyTool() {
             ))}
           </div>
 
-          {/* Chart visibility toggles */}
+          {/* Chart visibility toggles — sticky jump-to nav */}
           <div
             style={{
               display: "flex",
@@ -681,6 +682,11 @@ export default function WordFrequencyTool() {
               gap: "6px",
               marginBottom: "20px",
               flexWrap: "wrap",
+              position: "sticky",
+              top: 0,
+              zIndex: 50,
+              paddingTop: "8px",
+              paddingBottom: "8px",
             }}
           >
             <span

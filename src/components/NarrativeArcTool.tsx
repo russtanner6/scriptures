@@ -247,6 +247,7 @@ export default function NarrativeArcTool() {
       <div className="search-panel">
         {/* Search input + Add + Go */}
         <div
+          className="search-bar-glow"
           style={{
             display: "flex",
             background: "var(--zinc-900)",

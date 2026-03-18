@@ -192,7 +192,7 @@ export default function HeatmapTool() {
       {/* Search panel */}
       <div className="search-panel">
         {/* Search bar with Go */}
-        <div style={{ display: "flex", background: "var(--zinc-900)", border: "1px solid var(--border-accent)", borderRadius: "14px", overflow: "hidden", marginBottom: "12px" }}>
+        <div className="search-bar-glow" style={{ display: "flex", background: "var(--zinc-900)", border: "1px solid var(--border-accent)", borderRadius: "14px", overflow: "hidden", marginBottom: "12px" }}>
           <div style={{ position: "relative", flex: 1, display: "flex", alignItems: "center" }}>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ position: "absolute", left: "16px", pointerEvents: "none" }}>
               <circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" />
