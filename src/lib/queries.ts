@@ -371,10 +371,10 @@ export interface VerseMatch {
 export async function getMatchingVerses(
   word: string,
   bookId: number,
-  options: { caseInsensitive?: boolean; wholeWord?: boolean } = {}
+  options: { caseInsensitive?: boolean; wholeWord?: boolean; chapter?: number } = {}
 ): Promise<{ bookName: string; verses: VerseMatch[] }> {
   const db = await getDb();
-  const { caseInsensitive = true, wholeWord = true } = options;
+  const { caseInsensitive = true, wholeWord = true, chapter } = options;
 
   // Get book name
   const bookRows = execToObjects<{ name: string }>(
@@ -384,11 +384,15 @@ export async function getMatchingVerses(
   );
   const bookName = displayName(bookRows[0]?.name || "Unknown");
 
-  // Fetch all verses from this book
+  // Fetch verses from this book (optionally filtered by chapter)
+  const sql = chapter != null
+    ? `SELECT chapter, verse, text FROM verses WHERE book_id = ? AND chapter = ? ORDER BY chapter, verse`
+    : `SELECT chapter, verse, text FROM verses WHERE book_id = ? ORDER BY chapter, verse`;
+  const params: (string | number)[] = chapter != null ? [bookId, chapter] : [bookId];
   const verses = execToObjects<{ chapter: number; verse: number; text: string }>(
     db,
-    `SELECT chapter, verse, text FROM verses WHERE book_id = ? ORDER BY chapter, verse`,
-    [bookId]
+    sql,
+    params
   );
 
   // Detect phrase search

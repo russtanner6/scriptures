@@ -14,8 +14,9 @@ import {
 } from "chart.js";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Line } from "react-chartjs-2";
-import type { Volume } from "@/lib/types";
+import type { Volume, ScripturePanelState } from "@/lib/types";
 import { VOLUME_COLORS, getContrastText } from "@/lib/constants";
+import ScripturePanel from "./ScripturePanel";
 
 ChartJS.register(
   CategoryScale,
@@ -63,11 +64,18 @@ function useIsMobile(breakpoint = 768) {
   return isMobile;
 }
 
+interface TermDataPoint {
+  label: string;
+  count: number;
+  bookId: number;
+  chapter?: number; // for single-book volumes (D&C sections)
+}
+
 interface TermResult {
   term: string;
   color: string;
   // data per volume: volumeId → book OR chapter data
-  volumeData: Map<number, { label: string; count: number }[]>;
+  volumeData: Map<number, TermDataPoint[]>;
 }
 
 export default function NarrativeArcTool() {
@@ -84,6 +92,8 @@ export default function NarrativeArcTool() {
 
   // Export state
   const [exportVolumeId, setExportVolumeId] = useState<number | null>(null);
+  // Scripture panel state
+  const [scripturePanel, setScripturePanel] = useState<ScripturePanelState | null>(null);
   const chartRefs = useRef<Map<number, React.RefObject<any>>>(new Map());
   const initialSearchDone = useRef(false);
 
@@ -152,7 +162,7 @@ export default function NarrativeArcTool() {
 
       for (let i = 0; i < terms.length; i++) {
         const term = terms[i];
-        const volumeData = new Map<number, { label: string; count: number }[]>();
+        const volumeData = new Map<number, TermDataPoint[]>();
 
         for (const vol of selectedVolumes) {
           const isSingleBook = vol.books.length === 1;
@@ -173,6 +183,8 @@ export default function NarrativeArcTool() {
             const chapterData = (data.results as { chapter: number; count: number }[]).map((r) => ({
               label: `Section ${r.chapter}`,
               count: r.count,
+              bookId: book.id,
+              chapter: r.chapter,
             }));
             volumeData.set(vol.id, chapterData);
           } else {
@@ -190,7 +202,7 @@ export default function NarrativeArcTool() {
               const result = data.results.find(
                 (r: { bookId: number }) => r.bookId === b.id
               );
-              return { label: b.name, count: result?.count || 0 };
+              return { label: b.name, count: result?.count || 0, bookId: b.id };
             });
             volumeData.set(vol.id, bookData);
           }
@@ -426,6 +438,8 @@ export default function NarrativeArcTool() {
                     {vol.books.length === 1
                       ? `Word frequency by section across ${vol.name}`
                       : "Word frequency by book in narrative order"}
+                    {" — "}
+                    <span style={{ color: "var(--text-muted)", fontSize: "0.82rem" }}>click any point to read verses</span>
                   </p>
                 </div>
                 <ExportButton onClick={() => setExportVolumeId(vol.id)} />
@@ -465,6 +479,31 @@ export default function NarrativeArcTool() {
                     responsive: true,
                     maintainAspectRatio: false,
                     ...({ clip: false } as Record<string, unknown>),
+                    onHover: (event, elements) => {
+                      const canvas = event.native?.target as HTMLCanvasElement | undefined;
+                      if (canvas) canvas.style.cursor = elements.length > 0 ? "pointer" : "default";
+                    },
+                    onClick: (_event, elements) => {
+                      if (elements.length === 0) return;
+                      const el = elements[0];
+                      const dataIndex = el.index;
+                      const datasetIndex = el.datasetIndex;
+                      const termResult = volResults[datasetIndex];
+                      if (!termResult) return;
+                      const dataPoints = termResult.volumeData.get(vol.id);
+                      if (!dataPoints || !dataPoints[dataIndex]) return;
+                      const point = dataPoints[dataIndex];
+                      if (point.count === 0) return;
+                      setScripturePanel({
+                        word: termResult.term,
+                        bookId: point.bookId,
+                        bookName: point.chapter != null ? vol.books[0]?.name || point.label : point.label,
+                        chapter: point.chapter,
+                        caseInsensitive,
+                        wholeWord,
+                        volumeColor: VOLUME_COLORS[vol.abbrev],
+                      });
+                    },
                     interaction: {
                       mode: "index",
                       intersect: false,
@@ -662,6 +701,14 @@ export default function NarrativeArcTool() {
           onClose={() => setExportVolumeId(null)}
           chartRef={chartRefs.current.get(exportVolumeId) || { current: null }}
           title={volumes.find((v) => v.id === exportVolumeId)?.name || "chart"}
+        />
+      )}
+
+      {/* Scripture panel */}
+      {scripturePanel && (
+        <ScripturePanel
+          {...scripturePanel}
+          onClose={() => setScripturePanel(null)}
         />
       )}
     </div>

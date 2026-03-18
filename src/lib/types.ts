@@ -26,6 +26,22 @@ export interface FrequencyResult {
   verseCount: number;
 }
 
+export interface Verse {
+  chapter: number;
+  verse: number;
+  text: string;
+}
+
+export interface ScripturePanelState {
+  word: string;
+  bookId: number;
+  bookName: string;
+  chapter?: number;
+  caseInsensitive: boolean;
+  wholeWord: boolean;
+  volumeColor?: string;
+}
+
 export interface MatchedWord {
   word: string;
   count: number;

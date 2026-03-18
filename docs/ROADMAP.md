@@ -36,7 +36,7 @@ Built to house the **full LDS canon** (OT, NT, Book of Mormon, D&C, Pearl of Gre
 - Heatmap/Narrative Arc view toggle per module
 - "Compare multiple keywords →" link to narrative arc page with term prepopulated
 
-### NEXT: Scripture Panel (Right-Side Slider)
+### ✅ DONE: Scripture Panel (Right-Side Slider)
 This is the foundation that connects everything. When a user clicks any data point:
 1. A **right-side slider panel** slides in from the right edge of the screen
 2. Shows all **matching verses** from that book/chapter with the search term **highlighted**

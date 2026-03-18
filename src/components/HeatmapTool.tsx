@@ -13,8 +13,9 @@ import {
 } from "chart.js";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Line } from "react-chartjs-2";
-import type { Volume } from "@/lib/types";
+import type { Volume, ScripturePanelState } from "@/lib/types";
 import { VOLUME_COLORS, getContrastText } from "@/lib/constants";
+import ScripturePanel from "./ScripturePanel";
 import { ExportButton } from "./ExportChartModal";
 import ExportChartModal from "./ExportChartModal";
 import ExportHtmlModal from "./ExportHtmlModal";
@@ -62,7 +63,8 @@ export default function HeatmapTool() {
   const [results, setResults] = useState<HeatmapCell[]>([]);
   const [maxCount, setMaxCount] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
-  const [hoveredCell, setHoveredCell] = useState<HeatmapCell | null>(null);
+  const [hoveredCell, setHoveredCell] = useState<{ cell: HeatmapCell; rect: DOMRect } | null>(null);
+  const [scripturePanel, setScripturePanel] = useState<ScripturePanelState | null>(null);
   const [exportAbbrev, setExportAbbrev] = useState<string | null>(null);
   const [exportChartAbbrev, setExportChartAbbrev] = useState<string | null>(null);
   // Per-volume view mode: "heatmap" or "arc"
@@ -258,17 +260,21 @@ export default function HeatmapTool() {
         </div>
       </div>
 
-      {/* Hover tooltip */}
-      {hoveredCell && hoveredCell.count > 0 && (
+      {/* Hover tooltip — positioned above the hovered cell */}
+      {hoveredCell && hoveredCell.cell.count > 0 && (
         <div style={{
-          position: "fixed", bottom: "20px", left: "50%", transform: "translateX(-50%)",
-          background: "#1a1a2e", border: "1px solid var(--border)", borderRadius: "10px",
-          padding: "10px 16px", zIndex: 100, fontSize: "0.85rem", color: "var(--text)",
-          boxShadow: "0 8px 32px rgba(0,0,0,0.4)", whiteSpace: "nowrap",
+          position: "fixed",
+          top: hoveredCell.rect.top - 44,
+          left: Math.min(hoveredCell.rect.left + hoveredCell.rect.width / 2, window.innerWidth - 120),
+          transform: "translateX(-50%)",
+          background: "#1a1a2e", border: "1px solid var(--border)", borderRadius: "8px",
+          padding: "6px 12px", zIndex: 100, fontSize: "0.8rem", color: "var(--text)",
+          boxShadow: "0 4px 16px rgba(0,0,0,0.5)", whiteSpace: "nowrap",
+          pointerEvents: "none",
         }}>
-          <strong>{hoveredCell.bookName} {hoveredCell.chapter}</strong>
-          <span style={{ color: "var(--text-secondary)", marginLeft: "8px" }}>
-            {hoveredCell.count} {hoveredCell.count === 1 ? "occurrence" : "occurrences"}
+          <strong>{hoveredCell.cell.bookName} {hoveredCell.cell.chapter}</strong>
+          <span style={{ color: "var(--text-secondary)", marginLeft: "6px" }}>
+            {hoveredCell.cell.count} {hoveredCell.cell.count === 1 ? "occurrence" : "occurrences"}
           </span>
         </div>
       )}
@@ -315,15 +321,32 @@ export default function HeatmapTool() {
                 {group.chapters.map((cell) => (
                   <div
                     key={cell.chapter}
-                    onMouseEnter={() => setHoveredCell(cell)}
+                    onMouseEnter={(e) => {
+                      if (cell.count > 0) {
+                        setHoveredCell({ cell, rect: e.currentTarget.getBoundingClientRect() });
+                      }
+                    }}
                     onMouseLeave={() => setHoveredCell(null)}
+                    onClick={() => {
+                      if (cell.count > 0 && word) {
+                        setScripturePanel({
+                          word: word.trim(),
+                          bookId: cell.bookId,
+                          bookName: cell.bookName,
+                          chapter: cell.chapter,
+                          caseInsensitive,
+                          wholeWord,
+                          volumeColor: VOLUME_COLORS[cell.volumeAbbrev],
+                        });
+                      }
+                    }}
                     style={{
                       flex: "1 1 0", minWidth: isMobile ? "2px" : "4px", maxWidth: isMobile ? "8px" : "14px",
                       height: isMobile ? "14px" : "20px", borderRadius: "2px",
                       background: getCellColor(cell.count, cell.volumeAbbrev),
                       cursor: cell.count > 0 ? "pointer" : "default",
+                      transition: "transform 0.1s",
                     }}
-                    title={`${cell.bookName} ${cell.chapter}: ${cell.count}`}
                   />
                 ))}
               </div>
@@ -526,6 +549,43 @@ export default function HeatmapTool() {
                             responsive: true,
                             maintainAspectRatio: false,
                             ...({ clip: false } as Record<string, unknown>),
+                            onHover: (event, elements) => {
+                              const canvas = event.native?.target as HTMLCanvasElement | undefined;
+                              if (canvas) canvas.style.cursor = elements.length > 0 ? "pointer" : "default";
+                            },
+                            onClick: (_event, elements) => {
+                              if (elements.length === 0 || !word) return;
+                              const el = elements[0];
+                              const dataIndex = el.index;
+                              if (isSingleBook) {
+                                const chapter = books[0].chapters[dataIndex];
+                                if (chapter && chapter.count > 0) {
+                                  const bookEntry = Array.from(vg.books.entries())[0];
+                                  setScripturePanel({
+                                    word: word.trim(),
+                                    bookId: bookEntry[0],
+                                    bookName: bookEntry[1].bookName,
+                                    chapter: chapter.chapter,
+                                    caseInsensitive,
+                                    wholeWord,
+                                    volumeColor: volColor,
+                                  });
+                                }
+                              } else {
+                                const bookArr = Array.from(vg.books.entries());
+                                const bookEntry = bookArr[dataIndex];
+                                if (bookEntry && arcData[dataIndex] > 0) {
+                                  setScripturePanel({
+                                    word: word.trim(),
+                                    bookId: bookEntry[0],
+                                    bookName: bookEntry[1].bookName,
+                                    caseInsensitive,
+                                    wholeWord,
+                                    volumeColor: volColor,
+                                  });
+                                }
+                              }
+                            },
                             interaction: { mode: "index", intersect: false },
                             plugins: {
                               legend: {
@@ -606,6 +666,14 @@ export default function HeatmapTool() {
           onClose={() => setExportChartAbbrev(null)}
           chartRef={chartRefs.current.get(exportChartAbbrev) || { current: null }}
           title={volumes.find(v => v.abbrev === exportChartAbbrev)?.name || exportChartAbbrev}
+        />
+      )}
+
+      {/* Scripture panel */}
+      {scripturePanel && (
+        <ScripturePanel
+          {...scripturePanel}
+          onClose={() => setScripturePanel(null)}
         />
       )}
     </div>

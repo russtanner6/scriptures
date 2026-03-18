@@ -15,10 +15,12 @@ export async function GET(request: NextRequest) {
 
   const caseInsensitive = params.get("caseInsensitive") !== "false";
   const wholeWord = params.get("wholeWord") !== "false";
+  const chapter = params.get("chapter");
 
   const result = await getMatchingVerses(word.trim(), Number(bookId), {
     caseInsensitive,
     wholeWord,
+    chapter: chapter != null ? Number(chapter) : undefined,
   });
 
   return NextResponse.json(result);

@@ -20,7 +20,8 @@ import DashboardCard from "./DashboardCard";
 import HorizontalBarList from "./HorizontalBarList";
 import type { BarItem } from "./HorizontalBarList";
 import DataTable from "./DataTable";
-import VerseModal from "./VerseModal";
+import ScripturePanel from "./ScripturePanel";
+import type { ScripturePanelState } from "@/lib/types";
 
 ChartJS.register(
   CategoryScale,
@@ -73,7 +74,7 @@ export default function WordFrequencyTool() {
   // Chart visibility toggles — all on by default
   const [arcVolumeTab, setArcVolumeTab] = useState<number | null>(null);
   const [breakdownTab, setBreakdownTab] = useState<number | null>(null);
-  const [verseModal, setVerseModal] = useState<{ bookId: number; bookName: string } | null>(null);
+  const [scripturePanel, setScripturePanel] = useState<ScripturePanelState | null>(null);
   const [visiblePanels, setVisiblePanels] = useState<Set<string>>(
     new Set(["breakdowns", "top10", "arc", "table"])
   );
@@ -871,7 +872,14 @@ export default function WordFrequencyTool() {
                     items={allBooksInVolume}
                     color={VOLUME_COLORS[activeV.abbrev]}
                     onBarClick={(item: BarItem) =>
-                      item.id && setVerseModal({ bookId: item.id, bookName: item.label })
+                      item.id && results && setScripturePanel({
+                        word: results.word,
+                        bookId: item.id,
+                        bookName: item.label,
+                        caseInsensitive: results.caseInsensitive,
+                        wholeWord: results.wholeWord,
+                        volumeColor: VOLUME_COLORS[activeV.abbrev],
+                      })
                     }
                   />
                 </DashboardCard>
@@ -898,7 +906,14 @@ export default function WordFrequencyTool() {
                       id: r.bookId,
                     }))}
                   onBarClick={(item: BarItem) =>
-                    item.id && setVerseModal({ bookId: item.id, bookName: item.label })
+                    item.id && results && setScripturePanel({
+                      word: results.word,
+                      bookId: item.id,
+                      bookName: item.label,
+                      caseInsensitive: results.caseInsensitive,
+                      wholeWord: results.wholeWord,
+                      volumeColor: item.color,
+                    })
                   }
                 />
               </DashboardCard>
@@ -1159,15 +1174,11 @@ export default function WordFrequencyTool() {
         </div>
       )}
 
-      {/* Verse modal */}
-      {verseModal && results && (
-        <VerseModal
-          word={results.word}
-          bookId={verseModal.bookId}
-          bookName={verseModal.bookName}
-          caseInsensitive={results.caseInsensitive}
-          wholeWord={results.wholeWord}
-          onClose={() => setVerseModal(null)}
+      {/* Scripture panel */}
+      {scripturePanel && (
+        <ScripturePanel
+          {...scripturePanel}
+          onClose={() => setScripturePanel(null)}
         />
       )}
     </div>

@@ -56,7 +56,7 @@ src/
 │   ├── DashboardCard.tsx      # Collapsible section wrapper (supports headerExtra)
 │   ├── DataTable.tsx          # Sortable results table
 │   ├── StatCard.tsx           # Stat pills
-│   ├── VerseModal.tsx         # Full-screen verse viewer
+│   ├── ScripturePanel.tsx     # Right-side slider panel for verse viewing
 │   ├── HorizontalBarList.tsx  # Bar chart component
 │   ├── Header.tsx             # Site header + hamburger menu
 │   └── NavMenu.tsx            # Slide-in nav (from RIGHT side)
@@ -91,7 +91,7 @@ scripts/                       # build-db.ts, book-order.ts
 - **Volume selectors:** Compact color-coded checkboxes (14px), inline horizontal row. Multi-select enabled.
 - **Search panels:** Go button inside the search bar. Volumes + options on a single compact row below.
 - **"Exact match"** (not "Whole word") for the whole-word toggle label.
-- **Every data point is a doorway to scripture.** Bar charts have clickable icons. Narrative arc points should be clickable to open verse modal. Modules should tell users data is clickable (e.g., "Click any point to read verses").
+- **Every data point is a doorway to scripture.** Clicking any data point (bar chart icon, narrative arc point, heatmap cell) opens the ScripturePanel — a right-side slider showing matching verses with the search term highlighted. Modules include hint text (e.g., "click any point to read verses"). Heatmap cells pass a `chapter` filter for chapter-specific results.
 - **Export:** All chart modules have an EXPORT button (top right) → modal with PNG/JPG/PDF options. Uses `ExportChartModal` component.
 - **Links:** Blue (`var(--accent)` = `#3B82F6`), underlined, for in-page/module navigation.
 - **Legend spacing:** Use `legendMarginPlugin` to add 28px below Chart.js legends (prevents overlap with data labels).
@@ -122,10 +122,11 @@ scripts/                       # build-db.ts, book-order.ts
 ## Pages
 1. **Word Search** (`/`) — Single-word frequency search with bar charts, narrative arc section, data table, stat cards. Has "Compare multiple terms →" link in narrative arc header. Sticky jump-to nav.
 2. **Narrative Arc** (`/narrative-arc`) — Multi-term comparison (up to 6). Multi-volume with stacked charts. D&C plots by section. Sticky jump-to nav. Deep linking (`?terms=faith,grace`). Export per chart.
-3. **Theme Heatmap** (`/heatmap`) — Single-word heatmap across all volumes. Each volume module has heatmap/arc view toggle (flame icon / curve icon, smooth fade transition). Color-coded cells by volume. Per-volume color scale legends (centered, under heading). Descriptive subtitle with reference count. Export per module. "Compare multiple keywords →" link to narrative arc with term prepopulated. Sticky jump-to nav. Deep linking (`?word=faith`).
-4. **Future:** Home landing page with tool links. Clickable chart points → verse modal. Scripture reader with right-side slider panel.
+3. **Theme Heatmap** (`/heatmap`) — Single-word heatmap across all volumes. Each volume module has heatmap/arc view toggle (flame icon / curve icon, smooth fade transition). Color-coded cells by volume. Per-volume color scale legends (centered, under heading). Descriptive subtitle with reference count. Export per module. "Compare multiple keywords →" link to narrative arc with term prepopulated. Sticky jump-to nav. Deep linking (`?word=faith`). Hovering a colored cell shows tooltip above cell (not bottom of page). Clicking a cell opens ScripturePanel with chapter-specific verses. Arc view points also clickable.
+4. **Future:** Home landing page with tool links. Scripture reader with right-side slider panel.
 
 ## Key Components
+- **ScripturePanel** — Right-side slider panel that shows matching verses when clicking any data point (bar chart, narrative arc point, heatmap cell). Dark theme, slide-in animation, Escape/backdrop to dismiss. Full-width on mobile. Props include optional `chapter` (for heatmap cells) and `volumeColor` (for accent theming). Replaces the old VerseModal.
 - **ExportChartModal / ExportButton** — Reusable Chart.js export (PNG/JPG/PDF via jsPDF). Solid dark background modal.
 - **ExportHtmlModal** — Reusable HTML-to-image export (uses html2canvas). For non-chart modules like heatmaps.
 - **legendMarginPlugin** — Chart.js plugin adding space below legend. Apply to all Line charts.
@@ -138,7 +139,7 @@ scripts/                       # build-db.ts, book-order.ts
 - `/api/word-frequency` — Word frequency by book (supports volumeIds, bookIds filters)
 - `/api/word-frequency-by-chapter` — Word frequency by chapter/section for a single book (used for D&C)
 - `/api/heatmap` — Word frequency by book+chapter for all volumes (used for heatmap grid)
-- `/api/verses` — Fetch matching verses for a book
+- `/api/verses` — Fetch matching verses for a book (supports optional `chapter` filter)
 - `/api/book-stats` — Word/verse counts per book
 
 ## Key Patterns
