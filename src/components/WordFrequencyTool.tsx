@@ -675,7 +675,7 @@ export default function WordFrequencyTool() {
             ))}
           </div>
 
-          {/* Chart visibility toggles — sticky jump-to nav */}
+          {/* Sticky jump-to nav + cross-tool links */}
           <div
             style={{
               display: "flex",
@@ -735,6 +735,51 @@ export default function WordFrequencyTool() {
                 {panel.label}
               </button>
             ))}
+
+            {/* Separator + cross-tool links */}
+            <span style={{ color: "var(--border)", margin: "0 4px" }}>|</span>
+            <a
+              href={`/heatmap?word=${encodeURIComponent(results.word)}`}
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "5px",
+                padding: "5px 12px",
+                borderRadius: "8px",
+                border: "1px solid rgba(255,255,255,0.08)",
+                background: "rgba(255,255,255,0.04)",
+                color: "var(--accent)",
+                fontSize: "0.78rem",
+                fontWeight: 500,
+                fontFamily: "inherit",
+                textDecoration: "none",
+                transition: "all 0.15s ease",
+              }}
+            >
+              🔥 Heatmap
+            </a>
+            {results.results.length > 0 && (
+              <a
+                href={`/wordcloud?bookId=${results.results[0].bookId}`}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "5px",
+                  padding: "5px 12px",
+                  borderRadius: "8px",
+                  border: "1px solid rgba(255,255,255,0.08)",
+                  background: "rgba(255,255,255,0.04)",
+                  color: "var(--accent)",
+                  fontSize: "0.78rem",
+                  fontWeight: 500,
+                  fontFamily: "inherit",
+                  textDecoration: "none",
+                  transition: "all 0.15s ease",
+                }}
+              >
+                ☁️ Word Cloud
+              </a>
+            )}
           </div>
 
           {/* Matched words breakdown (partial search only) */}
