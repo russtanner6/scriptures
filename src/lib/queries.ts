@@ -104,15 +104,23 @@ export async function getWordFrequency(
     params
   );
 
+  // Detect phrase search: if wrapped in quotes, treat as exact phrase
+  const isPhrase = /^".*"$/.test(word) || /^'.*'$/.test(word);
+  const searchTerm = isPhrase ? word.slice(1, -1) : word;
+
   // Build regex
-  const escaped = escapeRegex(word);
-  const pattern = wholeWord ? `\\b${escaped}\\b` : escaped;
+  const escaped = escapeRegex(searchTerm);
+  // Phrases always match exactly (no word boundary needed since they contain spaces)
+  const pattern = isPhrase
+    ? escaped
+    : wholeWord
+      ? `\\b${escaped}\\b`
+      : escaped;
   const flags = caseInsensitive ? "gi" : "g";
   const regex = new RegExp(pattern, flags);
 
-  // For partial matches, also capture the full word containing the match
-  // so we can show a breakdown of which words matched
-  const wordCapture = !wholeWord
+  // For partial matches (not whole word and not phrase), capture full words
+  const wordCapture = !wholeWord && !isPhrase
     ? new RegExp(`\\b\\w*${escaped}\\w*\\b`, caseInsensitive ? "gi" : "g")
     : null;
 

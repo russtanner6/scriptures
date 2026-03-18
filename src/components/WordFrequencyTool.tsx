@@ -62,6 +62,8 @@ export default function WordFrequencyTool() {
   const [results, setResults] = useState<WordFrequencyResponse | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [volumesExpanded, setVolumesExpanded] = useState(false);
+  const [optionsExpanded, setOptionsExpanded] = useState(false);
+  const [showHelp, setShowHelp] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const isMobile = useIsMobile();
 
@@ -178,7 +180,7 @@ export default function WordFrequencyTool() {
               value={word}
               onChange={(e) => setWord(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder='Search a word or phrase...'
+              placeholder={isMobile ? 'Search...' : 'Search a word, phrase, or "exact phrase"...'}
               style={{
                 width: "100%",
                 padding: "14px 16px 14px 46px",
@@ -218,7 +220,75 @@ export default function WordFrequencyTool() {
           >
             {isLoading ? (isMobile ? "..." : "Analyzing...") : (isMobile ? "Go" : "Analyze")}
           </button>
+          {/* Help button */}
+          <button
+            type="button"
+            onClick={() => setShowHelp(!showHelp)}
+            style={{
+              padding: "10px 14px",
+              background: showHelp ? "rgba(59, 130, 246, 0.1)" : "transparent",
+              border: showHelp ? "1px solid rgba(59, 130, 246, 0.3)" : "1px solid var(--border)",
+              borderRadius: "12px",
+              color: showHelp ? "var(--accent)" : "var(--text-muted)",
+              fontSize: "0.92rem",
+              fontWeight: 700,
+              fontFamily: "inherit",
+              cursor: "pointer",
+              transition: "all 0.15s ease",
+              lineHeight: 1,
+              flexShrink: 0,
+            }}
+            title="Search help"
+          >
+            ?
+          </button>
         </div>
+
+        {/* Help popup */}
+        {showHelp && (
+          <div
+            style={{
+              background: "var(--zinc-900)",
+              border: "1px solid var(--border-accent)",
+              borderRadius: "12px",
+              padding: "20px",
+              marginBottom: "16px",
+              fontSize: "0.85rem",
+              lineHeight: 1.7,
+              color: "var(--text-secondary)",
+            }}
+          >
+            <div style={{ fontWeight: 700, color: "var(--text)", marginBottom: "12px", fontSize: "0.9rem" }}>
+              Search Tips
+            </div>
+            <div style={{ display: "grid", gap: "8px" }}>
+              <div>
+                <code style={{ color: "var(--accent)", background: "var(--accent-soft)", padding: "2px 6px", borderRadius: "4px", fontSize: "0.8rem" }}>Jesus</code>
+                {" "}— Search for a single word
+              </div>
+              <div>
+                <code style={{ color: "var(--accent)", background: "var(--accent-soft)", padding: "2px 6px", borderRadius: "4px", fontSize: "0.8rem" }}>{'"come unto me"'}</code>
+                {" "}— Wrap in quotes to search an exact phrase
+              </div>
+              <div>
+                <code style={{ color: "var(--accent)", background: "var(--accent-soft)", padding: "2px 6px", borderRadius: "4px", fontSize: "0.8rem" }}>tim</code>
+                {" "}+ <span style={{ color: "var(--emerald)" }}>Whole word OFF</span> — Find all words containing &quot;tim&quot; (time, Timothy, etc.)
+              </div>
+              <div style={{ borderTop: "1px solid var(--border)", paddingTop: "8px", marginTop: "4px" }}>
+                <strong style={{ color: "var(--text)" }}>Options:</strong>
+              </div>
+              <div>
+                <span style={{ color: "var(--accent)" }}>Case-insensitive</span> — &quot;jesus&quot; matches &quot;Jesus&quot; and &quot;JESUS&quot;
+              </div>
+              <div>
+                <span style={{ color: "var(--accent)" }}>Whole word</span> — Only matches the exact word, not words containing it. Turn off for partial/substring matching.
+              </div>
+              <div>
+                <span style={{ color: "var(--emerald)" }}>Show toggles</span> — After searching, use the green toggles to show/hide chart sections
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Volume pills — render helper */}
         {(() => {
@@ -372,89 +442,177 @@ export default function WordFrequencyTool() {
           );
         })()}
 
-        {/* Options section -- same inline layout as Volumes */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "6px",
-            paddingTop: "12px",
-            borderTop: "1px solid var(--border)",
-          }}
-        >
-          <span
-            style={{
-              fontSize: "0.68rem",
-              fontWeight: 600,
-              textTransform: "uppercase",
-              letterSpacing: "0.12em",
-              color: "var(--text-muted)",
-              marginRight: "8px",
-            }}
-          >
-            Options
-          </span>
-          <button
-            type="button"
-            onClick={() => setCaseInsensitive(!caseInsensitive)}
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              padding: "5px 12px",
-              borderRadius: "100px",
-              border: caseInsensitive
-                ? "1px solid rgba(59, 130, 246, 0.3)"
-                : "1px solid var(--border)",
-              background: caseInsensitive
-                ? "rgba(59, 130, 246, 0.1)"
-                : "transparent",
-              color: caseInsensitive
-                ? "var(--accent)"
-                : "var(--text-muted)",
-              fontSize: "0.78rem",
-              fontWeight: 500,
-              fontFamily: "inherit",
-              cursor: "pointer",
-              transition: "all 0.15s ease",
-            }}
-          >
-            <span style={{ fontSize: "0.7rem" }}>
-              {caseInsensitive ? "✓" : ""}
-            </span>
-            Case-insensitive
-          </button>
-          <button
-            type="button"
-            onClick={() => setWholeWord(!wholeWord)}
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              padding: "5px 12px",
-              borderRadius: "100px",
-              border: wholeWord
-                ? "1px solid rgba(59, 130, 246, 0.3)"
-                : "1px solid var(--border)",
-              background: wholeWord
-                ? "rgba(59, 130, 246, 0.1)"
-                : "transparent",
-              color: wholeWord
-                ? "var(--accent)"
-                : "var(--text-muted)",
-              fontSize: "0.78rem",
-              fontWeight: 500,
-              fontFamily: "inherit",
-              cursor: "pointer",
-              transition: "all 0.15s ease",
-            }}
-          >
-            <span style={{ fontSize: "0.7rem" }}>
-              {wholeWord ? "✓" : ""}
-            </span>
-            Whole word
-          </button>
-        </div>
+        {/* Options section */}
+        {(() => {
+          const optionPills = (
+            <>
+              <button
+                type="button"
+                onClick={() => setCaseInsensitive(!caseInsensitive)}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  padding: "5px 12px",
+                  borderRadius: "100px",
+                  border: caseInsensitive
+                    ? "1px solid rgba(59, 130, 246, 0.3)"
+                    : "1px solid var(--border)",
+                  background: caseInsensitive
+                    ? "rgba(59, 130, 246, 0.1)"
+                    : "transparent",
+                  color: caseInsensitive
+                    ? "var(--accent)"
+                    : "var(--text-muted)",
+                  fontSize: "0.78rem",
+                  fontWeight: 500,
+                  fontFamily: "inherit",
+                  cursor: "pointer",
+                  transition: "all 0.15s ease",
+                }}
+              >
+                <span style={{ fontSize: "0.7rem" }}>
+                  {caseInsensitive ? "✓" : ""}
+                </span>
+                Case-insensitive
+              </button>
+              <button
+                type="button"
+                onClick={() => setWholeWord(!wholeWord)}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  padding: "5px 12px",
+                  borderRadius: "100px",
+                  border: wholeWord
+                    ? "1px solid rgba(59, 130, 246, 0.3)"
+                    : "1px solid var(--border)",
+                  background: wholeWord
+                    ? "rgba(59, 130, 246, 0.1)"
+                    : "transparent",
+                  color: wholeWord
+                    ? "var(--accent)"
+                    : "var(--text-muted)",
+                  fontSize: "0.78rem",
+                  fontWeight: 500,
+                  fontFamily: "inherit",
+                  cursor: "pointer",
+                  transition: "all 0.15s ease",
+                }}
+              >
+                <span style={{ fontSize: "0.7rem" }}>
+                  {wholeWord ? "✓" : ""}
+                </span>
+                Whole word
+              </button>
+            </>
+          );
+
+          return (
+            <>
+              {/* Desktop: inline */}
+              <div
+                className="volumes-desktop"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  paddingTop: "12px",
+                  borderTop: "1px solid var(--border)",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: "0.68rem",
+                    fontWeight: 600,
+                    textTransform: "uppercase",
+                    letterSpacing: "0.12em",
+                    color: "var(--text-muted)",
+                    marginRight: "8px",
+                  }}
+                >
+                  Options
+                </span>
+                {optionPills}
+              </div>
+
+              {/* Mobile: collapsible */}
+              <div
+                className="volumes-mobile"
+                style={{
+                  display: "none",
+                  paddingTop: "12px",
+                  borderTop: "1px solid var(--border)",
+                }}
+              >
+                <button
+                  type="button"
+                  onClick={() => setOptionsExpanded(!optionsExpanded)}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    width: "100%",
+                    padding: "10px 14px",
+                    background: "var(--zinc-900)",
+                    border: "1px solid var(--border-accent)",
+                    borderRadius: optionsExpanded ? "10px 10px 0 0" : "10px",
+                    color: "var(--text)",
+                    fontSize: "0.82rem",
+                    fontWeight: 600,
+                    fontFamily: "inherit",
+                    cursor: "pointer",
+                    transition: "border-radius 0.15s",
+                  }}
+                >
+                  <span style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                    <span
+                      style={{
+                        fontSize: "0.68rem",
+                        fontWeight: 600,
+                        textTransform: "uppercase",
+                        letterSpacing: "0.12em",
+                        color: "var(--text-muted)",
+                      }}
+                    >
+                      Options
+                    </span>
+                    <span style={{ color: "var(--text-secondary)", fontWeight: 500 }}>
+                      {[caseInsensitive && "Case-insensitive", wholeWord && "Whole word"].filter(Boolean).join(", ") || "None"}
+                    </span>
+                  </span>
+                  <span
+                    style={{
+                      fontSize: "0.7rem",
+                      color: "var(--text-muted)",
+                      transition: "transform 0.2s",
+                      transform: optionsExpanded ? "rotate(180deg)" : "rotate(0deg)",
+                    }}
+                  >
+                    ▼
+                  </span>
+                </button>
+                {optionsExpanded && (
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "8px",
+                      flexWrap: "wrap",
+                      padding: "12px 14px",
+                      background: "var(--zinc-900)",
+                      border: "1px solid var(--border-accent)",
+                      borderTop: "none",
+                      borderRadius: "0 0 10px 10px",
+                    }}
+                  >
+                    {optionPills}
+                  </div>
+                )}
+              </div>
+            </>
+          );
+        })()}
       </div>
 
       {/* Results */}
