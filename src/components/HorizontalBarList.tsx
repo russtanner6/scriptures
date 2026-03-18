@@ -83,18 +83,19 @@ export default function HorizontalBarList({
                 }}
               />
 
-              {/* Number inside the bar */}
+              {/* Number — always near the right end of the colored fill */}
               {item.value > 0 && (
                 <span
                   style={{
                     position: "absolute",
-                    right: pct > 20 ? undefined : "8px",
-                    left: pct > 20 ? `calc(${pct}% - 8px)` : undefined,
-                    transform: pct > 20 ? "translateX(-100%)" : undefined,
+                    left: pct > 12
+                      ? `calc(${pct}% - 8px)`
+                      : `calc(${pct}% + 6px)`,
+                    transform: pct > 12 ? "translateX(-100%)" : undefined,
                     fontWeight: 700,
                     fontSize: "0.78rem",
                     fontVariantNumeric: "tabular-nums",
-                    color: pct > 20 ? "#fff" : "var(--text-secondary)",
+                    color: pct > 12 ? "#fff" : "var(--text-secondary)",
                     lineHeight: "30px",
                   }}
                 >

@@ -810,6 +810,7 @@ export default function WordFrequencyTool() {
                         borderSkipped: false,
                         barPercentage: 0.7,
                         categoryPercentage: 0.7,
+                        maxBarThickness: 30,
                       },
                       // Actual data bars
                       {
@@ -824,6 +825,7 @@ export default function WordFrequencyTool() {
                         borderSkipped: false,
                         barPercentage: 0.7,
                         categoryPercentage: 0.7,
+                        maxBarThickness: 30,
                       },
                     ],
                   }}
@@ -966,7 +968,7 @@ export default function WordFrequencyTool() {
                 title={`Top ${Math.min(10, results.results.length)} books — all scripture`}
                 description="Ranked by raw count"
               >
-                <div className="chart-container">
+                <div style={{ position: "relative", height: "450px" }}>
                   <Bar
                     data={{
                       labels: results.results
