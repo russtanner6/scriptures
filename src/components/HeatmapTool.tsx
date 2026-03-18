@@ -428,7 +428,7 @@ export default function HeatmapTool() {
                         fontFamily: "inherit", cursor: "pointer", transition: "all 0.15s",
                       }}>
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <rect x="3" y="3" width="7" height="7" /><rect x="14" y="3" width="7" height="7" /><rect x="3" y="14" width="7" height="7" /><rect x="14" y="14" width="7" height="7" />
+                        <path d="M12 22c-4 0-8-2-8-8 0-4 2-6 4-8 1-1 2-3 2-5 1 2 3 3 4 3 2 0 3-1 3-3 2 3 3 6 3 9 0 6-4 12-8 12z" />
                       </svg>
                       Heatmap
                     </button>
@@ -443,24 +443,28 @@ export default function HeatmapTool() {
                         fontFamily: "inherit", cursor: "pointer", transition: "all 0.15s",
                       }}>
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                        <path d="M2 20 C6 20, 7 4, 12 4 S18 20, 22 20" />
                       </svg>
                       Narrative Arc
                     </button>
                   </div>
 
                   {/* Heatmap view */}
-                  {getViewMode(abbrev) === "heatmap" && (
-                    <>
-                      {renderColorScale(abbrev)}
-                      <div style={{ marginTop: "12px" }}>
-                        {Array.from(vg.books.entries()).map(([bookId, group]) => renderBookRow(bookId, group))}
-                      </div>
-                    </>
-                  )}
+                  <div style={{
+                    opacity: getViewMode(abbrev) === "heatmap" ? 1 : 0,
+                    maxHeight: getViewMode(abbrev) === "heatmap" ? "2000px" : "0px",
+                    overflow: "hidden",
+                    transition: "opacity 0.3s ease, max-height 0.3s ease",
+                  }}>
+                    {renderColorScale(abbrev)}
+                    <div style={{ marginTop: "12px" }}>
+                      {Array.from(vg.books.entries()).map(([bookId, group]) => renderBookRow(bookId, group))}
+                    </div>
+                  </div>
 
                   {/* Arc view */}
-                  {getViewMode(abbrev) === "arc" && (() => {
+                  {(() => {
+                    const isArc = getViewMode(abbrev) === "arc";
                     if (!chartRefs.current.has(abbrev)) chartRefs.current.set(abbrev, createRef());
                     const thisChartRef = chartRefs.current.get(abbrev)!;
                     const books = Array.from(vg.books.values());
@@ -477,6 +481,12 @@ export default function HeatmapTool() {
                       : books.map(b => b.chapters.reduce((s, c) => s + c.count, 0));
 
                     return (
+                      <div style={{
+                        opacity: isArc ? 1 : 0,
+                        maxHeight: isArc ? "600px" : "0px",
+                        overflow: "hidden",
+                        transition: "opacity 0.3s ease, max-height 0.3s ease",
+                      }}>
                       <div style={{ position: "relative", height: isMobile ? "350px" : "480px", marginTop: "8px" }}>
                         <Line
                           ref={thisChartRef}
@@ -542,6 +552,7 @@ export default function HeatmapTool() {
                             },
                           }}
                         />
+                      </div>
                       </div>
                     );
                   })()}
