@@ -26,6 +26,7 @@ export default function DashboardCard({
         borderRadius: "16px",
         padding: "28px",
         transition: "border-color 0.2s",
+        overflow: "hidden",
       }}
       onMouseEnter={(e) =>
         (e.currentTarget.style.borderColor = "var(--border-accent)")

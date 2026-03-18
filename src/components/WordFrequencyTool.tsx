@@ -39,6 +39,18 @@ ChartJS.defaults.font.family = "'Inter', sans-serif";
 ChartJS.defaults.font.size = 13;
 ChartJS.defaults.font.weight = 500;
 
+// Hook to detect mobile viewport
+function useIsMobile(breakpoint = 768) {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < breakpoint);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, [breakpoint]);
+  return isMobile;
+}
+
 export default function WordFrequencyTool() {
   const [volumes, setVolumes] = useState<Volume[]>([]);
   const [selectedVolumeIds, setSelectedVolumeIds] = useState<Set<number>>(
@@ -49,7 +61,9 @@ export default function WordFrequencyTool() {
   const [wholeWord, setWholeWord] = useState(true);
   const [results, setResults] = useState<WordFrequencyResponse | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [volumesExpanded, setVolumesExpanded] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+  const isMobile = useIsMobile();
 
   // Load volumes on mount
   useEffect(() => {
@@ -193,72 +207,157 @@ export default function WordFrequencyTool() {
           </button>
         </div>
 
-        {/* Volumes section */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "6px",
-            marginBottom: "16px",
-          }}
-        >
-          <span
-            style={{
-              fontSize: "0.68rem",
-              fontWeight: 600,
-              textTransform: "uppercase",
-              letterSpacing: "0.12em",
-              color: "var(--text-muted)",
-              marginRight: "8px",
-              whiteSpace: "nowrap",
-            }}
-          >
-            Volumes
-          </span>
-          <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
-            {volumes.map((v) => {
-              const isActive = selectedVolumeIds.has(v.id);
-              const color = VOLUME_COLORS[v.abbrev];
-              return (
-                <button
-                  key={v.id}
-                  type="button"
-                  onClick={() => toggleVolume(v.id)}
+        {/* Volume pills — render helper */}
+        {(() => {
+          const volumePills = volumes.map((v) => {
+            const isActive = selectedVolumeIds.has(v.id);
+            const color = VOLUME_COLORS[v.abbrev];
+            return (
+              <button
+                key={v.id}
+                type="button"
+                onClick={() => toggleVolume(v.id)}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "7px",
+                  padding: "7px 14px",
+                  borderRadius: "100px",
+                  border: isActive
+                    ? `1px solid ${color}50`
+                    : "1px solid var(--border)",
+                  background: isActive ? `${color}15` : "transparent",
+                  color: isActive ? color : "var(--text-muted)",
+                  fontSize: "0.8rem",
+                  fontWeight: isActive ? 600 : 500,
+                  fontFamily: "inherit",
+                  cursor: "pointer",
+                  transition: "all 0.15s ease",
+                  letterSpacing: "0.01em",
+                }}
+              >
+                <span
                   style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "7px",
-                    padding: "7px 14px",
-                    borderRadius: "100px",
-                    border: isActive
-                      ? `1px solid ${color}50`
-                      : "1px solid var(--border)",
-                    background: isActive ? `${color}15` : "transparent",
-                    color: isActive ? color : "var(--text-muted)",
-                    fontSize: "0.8rem",
-                    fontWeight: isActive ? 600 : 500,
-                    fontFamily: "inherit",
-                    cursor: "pointer",
-                    transition: "all 0.15s ease",
-                    letterSpacing: "0.01em",
+                    width: "7px",
+                    height: "7px",
+                    borderRadius: "50%",
+                    background: color,
+                    opacity: isActive ? 1 : 0.3,
+                    transition: "opacity 0.15s",
+                  }}
+                />
+                {v.abbrev === "D&C" ? "D&C" : v.name}
+              </button>
+            );
+          });
+
+          return (
+            <>
+              {/* Desktop: inline pills */}
+              <div
+                className="volumes-desktop"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  marginBottom: "16px",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: "0.68rem",
+                    fontWeight: 600,
+                    textTransform: "uppercase",
+                    letterSpacing: "0.12em",
+                    color: "var(--text-muted)",
+                    marginRight: "8px",
+                    whiteSpace: "nowrap",
                   }}
                 >
+                  Volumes
+                </span>
+                <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+                  {volumePills}
+                </div>
+              </div>
+
+              {/* Mobile: collapsible section */}
+              <div
+                className="volumes-mobile"
+                style={{
+                  display: "none",
+                  marginBottom: "16px",
+                }}
+              >
+                <button
+                  type="button"
+                  onClick={() => setVolumesExpanded(!volumesExpanded)}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    width: "100%",
+                    padding: "10px 14px",
+                    background: "var(--zinc-900)",
+                    border: "1px solid var(--border-accent)",
+                    borderRadius: volumesExpanded ? "10px 10px 0 0" : "10px",
+                    color: "var(--text)",
+                    fontSize: "0.82rem",
+                    fontWeight: 600,
+                    fontFamily: "inherit",
+                    cursor: "pointer",
+                    transition: "border-radius 0.15s",
+                  }}
+                >
+                  <span style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                    <span
+                      style={{
+                        fontSize: "0.68rem",
+                        fontWeight: 600,
+                        textTransform: "uppercase",
+                        letterSpacing: "0.12em",
+                        color: "var(--text-muted)",
+                      }}
+                    >
+                      Volumes
+                    </span>
+                    <span style={{ color: "var(--text-secondary)", fontWeight: 500 }}>
+                      {selectedVolumeIds.size === volumes.length
+                        ? "All selected"
+                        : `${selectedVolumeIds.size} of ${volumes.length}`}
+                    </span>
+                  </span>
                   <span
                     style={{
-                      width: "7px",
-                      height: "7px",
-                      borderRadius: "50%",
-                      background: color,
-                      opacity: isActive ? 1 : 0.3,
-                      transition: "opacity 0.15s",
+                      fontSize: "0.7rem",
+                      color: "var(--text-muted)",
+                      transition: "transform 0.2s",
+                      transform: volumesExpanded ? "rotate(180deg)" : "rotate(0deg)",
                     }}
-                  />
-                  {v.abbrev === "D&C" ? "D&C" : v.name}
+                  >
+                    ▼
+                  </span>
                 </button>
-              );
-            })}
-          </div>
-        </div>
+                {volumesExpanded && (
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "8px",
+                      flexWrap: "wrap",
+                      padding: "12px 14px",
+                      background: "var(--zinc-900)",
+                      border: "1px solid var(--border-accent)",
+                      borderTop: "none",
+                      borderRadius: "0 0 10px 10px",
+                    }}
+                  >
+                    {volumePills}
+                  </div>
+                )}
+              </div>
+            </>
+          );
+        })()}
 
         {/* Options section -- same inline layout as Volumes */}
         <div
@@ -402,7 +501,7 @@ export default function WordFrequencyTool() {
                     cutout: "68%",
                     plugins: {
                       legend: {
-                        position: typeof window !== "undefined" && window.innerWidth < 768 ? "bottom" : "right",
+                        position: isMobile ? "bottom" : "right",
                         labels: {
                           padding: 16,
                           usePointStyle: true,

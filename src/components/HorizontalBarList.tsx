@@ -27,16 +27,7 @@ export default function HorizontalBarList({
           : barColor;
 
         return (
-          <div
-            key={i}
-            style={{
-              display: "grid",
-              gridTemplateColumns: "100px 1fr 38px",
-              alignItems: "center",
-              gap: "10px",
-              fontSize: "0.88rem",
-            }}
-          >
+          <div key={i} className="bar-list-row">
             <div
               style={{
                 textAlign: "right",
