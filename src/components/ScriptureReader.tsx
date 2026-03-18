@@ -86,11 +86,13 @@ export default function ScriptureReader() {
         const urlChapter = searchParams.get("chapter");
         if (urlBookId && urlChapter) {
           const bid = Number(urlBookId);
-          const ch = Number(urlChapter);
+          let ch = Number(urlChapter);
           // Find the book in volumes to get volume abbrev
           for (const vol of vols) {
             const book = vol.books.find((b) => b.id === bid);
             if (book) {
+              // Clamp chapter to valid range
+              ch = Math.max(1, Math.min(ch, book.chapterCount));
               setSelectedVolume(vol.abbrev);
               setSelectedBookId(bid);
               setSelectedBookName(book.name);
@@ -193,7 +195,7 @@ export default function ScriptureReader() {
         <mark
           key={i}
           style={{
-            background: lightMode ? "rgba(59, 130, 246, 0.2)" : "rgba(139, 92, 246, 0.25)",
+            background: lightMode ? "rgba(59, 130, 246, 0.25)" : "rgba(139, 92, 246, 0.3)",
             color: "inherit",
             padding: "1px 3px",
             borderRadius: "3px",
@@ -613,7 +615,7 @@ export default function ScriptureReader() {
                     color: "var(--text-muted)",
                   }}
                 >
-                  {book.chapterCount} {selectedVolume === "D&C" ? "sections" : "chapters"}
+                  {book.chapterCount} {selectedVolume === "D&C" ? (book.chapterCount === 1 ? "section" : "sections") : (book.chapterCount === 1 ? "chapter" : "chapters")}
                 </div>
               </div>
               <svg
