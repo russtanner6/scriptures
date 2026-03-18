@@ -166,8 +166,10 @@ export default function VerseModal({
         <div
           style={{
             overflowY: "auto",
+            WebkitOverflowScrolling: "touch",
             padding: "16px 24px 24px",
             flex: 1,
+            minHeight: 0,
           }}
         >
           {isLoading && (

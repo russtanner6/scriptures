@@ -530,6 +530,7 @@ export default function NarrativeArcTool() {
               options={{
                 responsive: true,
                 maintainAspectRatio: false,
+                ...({ clip: false } as Record<string, unknown>),
                 interaction: {
                   mode: "index",
                   intersect: false,

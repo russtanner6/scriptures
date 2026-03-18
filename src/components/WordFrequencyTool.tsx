@@ -1029,6 +1029,7 @@ export default function WordFrequencyTool() {
                       options={{
                         responsive: true,
                         maintainAspectRatio: false,
+                        ...({ clip: false } as Record<string, unknown>),
                         plugins: {
                           legend: { display: false },
                           tooltip: {
@@ -1047,7 +1048,7 @@ export default function WordFrequencyTool() {
                             formatter: (value: number) => value.toLocaleString(),
                           },
                         },
-                        layout: { padding: { top: 40 } },
+                        layout: { padding: { top: 30 } },
                         scales: {
                           y: {
                             grid: {
