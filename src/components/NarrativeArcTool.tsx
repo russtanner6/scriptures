@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, createRef } from "react";
+import ExportChartModal, { ExportButton } from "./ExportChartModal";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -55,6 +56,10 @@ export default function NarrativeArcTool() {
   const [results, setResults] = useState<TermResult[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // Export state
+  const [exportVolumeId, setExportVolumeId] = useState<number | null>(null);
+  const chartRefs = useRef<Map<number, React.RefObject<any>>>(new Map());
 
   // Load volumes on mount — select all by default
   useEffect(() => {
@@ -271,6 +276,36 @@ export default function NarrativeArcTool() {
         </div>
       </div>
 
+      {/* Jump-to volume navigation */}
+      {results.length > 0 && selectedVolumes.length > 1 && (
+        <div style={{ display: "flex", alignItems: "center", gap: "6px", marginTop: "20px", flexWrap: "wrap" }}>
+          <span style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)", marginRight: "4px" }}>Jump to</span>
+          {selectedVolumes.map((v) => {
+            const volColor = VOLUME_COLORS[v.abbrev];
+            return (
+              <button
+                key={v.id}
+                type="button"
+                onClick={() => {
+                  const el = document.getElementById(`arc-vol-${v.id}`);
+                  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
+                style={{
+                  display: "inline-flex", alignItems: "center", gap: "5px",
+                  padding: "5px 12px", borderRadius: "8px",
+                  border: "1px solid rgba(255,255,255,0.08)", background: "rgba(255,255,255,0.06)",
+                  color: "var(--text-secondary)", fontSize: "0.78rem", fontWeight: 500,
+                  fontFamily: "inherit", cursor: "pointer", transition: "all 0.15s",
+                }}
+              >
+                <span style={{ width: "8px", height: "8px", borderRadius: "2px", background: volColor, flexShrink: 0 }} />
+                {v.name}
+              </button>
+            );
+          })}
+        </div>
+      )}
+
       {/* Charts — one per selected volume */}
       {results.length > 0 &&
         selectedVolumes.map((vol) => {
@@ -278,9 +313,16 @@ export default function NarrativeArcTool() {
           if (volResults.length === 0) return null;
           const color = VOLUME_COLORS[vol.abbrev];
 
+          // Get or create chart ref for this volume
+          if (!chartRefs.current.has(vol.id)) {
+            chartRefs.current.set(vol.id, createRef());
+          }
+          const thisChartRef = chartRefs.current.get(vol.id)!;
+
           return (
             <div
               key={vol.id}
+              id={`arc-vol-${vol.id}`}
               style={{
                 background: "var(--surface)",
                 border: "1px solid var(--border)",
@@ -291,30 +333,30 @@ export default function NarrativeArcTool() {
                 WebkitBackdropFilter: "blur(20px)",
               }}
             >
-              <h3
-                style={{
-                  fontSize: "0.88rem",
-                  fontWeight: 700,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.1em",
-                  color: "var(--text)",
-                  marginBottom: "4px",
-                }}
-              >
-                <span style={{ color }}>{vol.name}</span> — Narrative Arc
-              </h3>
-              <p
-                style={{
-                  fontSize: "0.85rem",
-                  color: "var(--text-secondary)",
-                  marginBottom: "24px",
-                }}
-              >
-                Word frequency by book in narrative order
-              </p>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+                <div>
+                  <h3
+                    style={{
+                      fontSize: "0.88rem",
+                      fontWeight: 700,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.1em",
+                      color: "var(--text)",
+                      marginBottom: "4px",
+                    }}
+                  >
+                    <span style={{ color }}>{vol.name}</span> — Narrative Arc
+                  </h3>
+                  <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "0" }}>
+                    Word frequency by book in narrative order
+                  </p>
+                </div>
+                <ExportButton onClick={() => setExportVolumeId(vol.id)} />
+              </div>
 
-              <div style={{ position: "relative", height: "500px" }}>
+              <div style={{ position: "relative", height: "500px", marginTop: "20px" }}>
                 <Line
+                  ref={thisChartRef}
                   data={{
                     labels: vol.books.map((b) => b.name),
                     datasets: volResults.map((r) => {
@@ -511,6 +553,15 @@ export default function NarrativeArcTool() {
         </div>
       )}
 
+      {/* Export modal */}
+      {exportVolumeId !== null && (
+        <ExportChartModal
+          isOpen={true}
+          onClose={() => setExportVolumeId(null)}
+          chartRef={chartRefs.current.get(exportVolumeId) || { current: null }}
+          title={volumes.find((v) => v.id === exportVolumeId)?.name || "chart"}
+        />
+      )}
     </div>
   );
 }

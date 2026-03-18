@@ -12,6 +12,7 @@
   "dependencies": {
     "chart.js": "^4.5.1",
     "chartjs-plugin-datalabels": "^2.2.0",
+    "jspdf": "^4.2.1",
     "next": "16.1.7",
     "react": "19.2.3",
     "react-chartjs-2": "^5.3.1",
