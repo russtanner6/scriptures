@@ -14,7 +14,7 @@ import {
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Line } from "react-chartjs-2";
 import type { Volume } from "@/lib/types";
-import { VOLUME_COLORS } from "@/lib/constants";
+import { VOLUME_COLORS, getContrastText } from "@/lib/constants";
 
 ChartJS.register(
   CategoryScale,
@@ -343,7 +343,7 @@ export default function NarrativeArcTool() {
                       ? `1px solid ${color}`
                       : "1px solid var(--border)",
                     background: isActive ? color : "transparent",
-                    color: isActive ? "#fff" : "var(--text-muted)",
+                    color: isActive ? getContrastText(color) : "var(--text-muted)",
                     fontSize: "0.8rem",
                     fontWeight: isActive ? 600 : 500,
                     fontFamily: "inherit",

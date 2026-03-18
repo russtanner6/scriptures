@@ -14,7 +14,7 @@ import {
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Line } from "react-chartjs-2";
 import type { Volume, WordFrequencyResponse } from "@/lib/types";
-import { VOLUME_COLORS } from "@/lib/constants";
+import { VOLUME_COLORS, getContrastText } from "@/lib/constants";
 import StatCard from "./StatCard";
 import DashboardCard from "./DashboardCard";
 import HorizontalBarList from "./HorizontalBarList";
@@ -363,7 +363,7 @@ export default function WordFrequencyTool() {
                     ? `1px solid ${color}`
                     : "1px solid var(--border)",
                   background: isActive ? color : "transparent",
-                  color: isActive ? "#fff" : "var(--text-muted)",
+                  color: isActive ? getContrastText(color) : "var(--text-muted)",
                   fontSize: "0.8rem",
                   fontWeight: isActive ? 600 : 500,
                   fontFamily: "inherit",
@@ -879,7 +879,7 @@ export default function WordFrequencyTool() {
                                 ? `1px solid ${tabColor}`
                                 : "1px solid var(--border)",
                               background: isActive ? tabColor : "transparent",
-                              color: isActive ? "#fff" : "var(--text-muted)",
+                              color: isActive ? getContrastText(tabColor) : "var(--text-muted)",
                               fontSize: "0.78rem",
                               fontWeight: isActive ? 600 : 500,
                               fontFamily: "inherit",
@@ -977,7 +977,7 @@ export default function WordFrequencyTool() {
                                 ? `1px solid ${tabColor}`
                                 : "1px solid var(--border)",
                               background: isActive ? tabColor : "transparent",
-                              color: isActive ? "#fff" : "var(--text-muted)",
+                              color: isActive ? getContrastText(tabColor) : "var(--text-muted)",
                               fontSize: "0.78rem",
                               fontWeight: isActive ? 600 : 500,
                               fontFamily: "inherit",

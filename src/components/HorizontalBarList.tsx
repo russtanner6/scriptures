@@ -1,5 +1,7 @@
 "use client";
 
+import { getContrastText } from "@/lib/constants";
+
 export interface BarItem {
   label: string;
   value: number;
@@ -95,8 +97,8 @@ export default function HorizontalBarList({
                     fontWeight: 700,
                     fontSize: "0.78rem",
                     fontVariantNumeric: "tabular-nums",
-                    color: pct > 18 ? "#fff" : "#fafafa",
-                    textShadow: pct > 18 ? "0 1px 3px rgba(0,0,0,0.4)" : "none",
+                    color: pct > 18 ? getContrastText(barColor) : "#fafafa",
+                    textShadow: pct > 18 && getContrastText(barColor) === "#fff" ? "0 1px 3px rgba(0,0,0,0.4)" : "none",
                     lineHeight: "30px",
                   }}
                 >
