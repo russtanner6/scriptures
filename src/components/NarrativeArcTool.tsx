@@ -29,6 +29,7 @@ ChartJS.register(
 );
 
 ChartJS.defaults.plugins.datalabels = { display: false } as never;
+ChartJS.defaults.font.family = "'Inter', -apple-system, BlinkMacSystemFont, sans-serif";
 
 const TERM_COLORS = [
   "#f59e0b", // amber
@@ -60,14 +61,27 @@ export default function NarrativeArcTool() {
   // Export state
   const [exportVolumeId, setExportVolumeId] = useState<number | null>(null);
   const chartRefs = useRef<Map<number, React.RefObject<any>>>(new Map());
+  const initialSearchDone = useRef(false);
 
-  // Load volumes on mount — select all by default
+  // Load volumes on mount + check URL for deep link
   useEffect(() => {
     fetch("/api/books")
       .then((r) => r.json())
       .then((data) => {
         setVolumes(data.volumes);
         setSelectedVolumeIds(new Set(data.volumes.map((v: Volume) => v.id)));
+
+        // Deep link: read URL params
+        if (!initialSearchDone.current) {
+          const urlParams = new URLSearchParams(window.location.search);
+          const urlTerms = urlParams.get("terms");
+          if (urlTerms) {
+            initialSearchDone.current = true;
+            setTerms(urlTerms.split(",").slice(0, 6));
+            if (urlParams.get("ci") === "false") setCaseInsensitive(false);
+            if (urlParams.get("em") === "false") setWholeWord(false);
+          }
+        }
       });
   }, []);
 
@@ -144,10 +158,24 @@ export default function NarrativeArcTool() {
       }
 
       setResults(newResults);
+
+      // Update URL for deep linking
+      const urlParams = new URLSearchParams();
+      urlParams.set("terms", terms.join(","));
+      if (!caseInsensitive) urlParams.set("ci", "false");
+      if (!wholeWord) urlParams.set("em", "false");
+      window.history.replaceState({}, "", `?${urlParams.toString()}`);
     } finally {
       setIsLoading(false);
     }
   }, [terms, selectedVolumes, caseInsensitive, wholeWord]);
+
+  // Auto-search if terms came from URL
+  useEffect(() => {
+    if (initialSearchDone.current && terms.length > 0 && volumes.length > 0 && results.length === 0) {
+      handleAnalyze();
+    }
+  }, [terms, volumes.length, handleAnalyze, results.length]);
 
   return (
     <div>
@@ -276,9 +304,9 @@ export default function NarrativeArcTool() {
         </div>
       </div>
 
-      {/* Jump-to volume navigation */}
+      {/* Jump-to volume navigation — sticky on scroll */}
       {results.length > 0 && selectedVolumes.length > 1 && (
-        <div style={{ display: "flex", alignItems: "center", gap: "6px", marginTop: "20px", flexWrap: "wrap" }}>
+        <div style={{ position: "sticky", top: 0, zIndex: 50, background: "var(--bg)", paddingTop: "12px", paddingBottom: "12px", marginTop: "8px", display: "flex", alignItems: "center", gap: "6px", flexWrap: "wrap" }}>
           <span style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)", marginRight: "4px" }}>Jump to</span>
           {selectedVolumes.map((v) => {
             const volColor = VOLUME_COLORS[v.abbrev];
@@ -337,7 +365,7 @@ export default function NarrativeArcTool() {
                 <div>
                   <h3
                     style={{
-                      fontSize: "0.88rem",
+                      fontSize: "1.05rem",
                       fontWeight: 700,
                       textTransform: "uppercase",
                       letterSpacing: "0.1em",
@@ -345,7 +373,7 @@ export default function NarrativeArcTool() {
                       marginBottom: "4px",
                     }}
                   >
-                    <span style={{ color }}>{vol.name}</span> — Narrative Arc
+                    <span style={{ color }}>{vol.name}</span>
                   </h3>
                   <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "0" }}>
                     Word frequency by book in narrative order
@@ -387,13 +415,16 @@ export default function NarrativeArcTool() {
                     },
                     plugins: {
                       legend: {
-                        position: "bottom",
+                        position: "top",
+                        align: "center",
                         labels: {
                           padding: 20,
                           usePointStyle: true,
                           pointStyle: "rectRounded",
                           pointStyleWidth: 16,
-                          font: { size: 13, weight: 600 },
+                          font: { size: 13, weight: 600, family: "'Inter', sans-serif" },
+                          color: "#e0e0e0",
+                          boxHeight: 8,
                         },
                       },
                       tooltip: {
@@ -412,7 +443,7 @@ export default function NarrativeArcTool() {
                         formatter: (value: number) => value.toLocaleString(),
                       },
                     },
-                    layout: { padding: { top: 28 } },
+                    layout: { padding: { top: 36 } },
                     scales: {
                       y: {
                         grid: { color: "rgba(255,255,255,0.06)" },
