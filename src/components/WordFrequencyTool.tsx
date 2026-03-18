@@ -72,6 +72,7 @@ export default function WordFrequencyTool() {
   const isMobile = useIsMobile();
 
   // Chart visibility toggles — all on by default
+  const [arcVolumeTab, setArcVolumeTab] = useState<number | null>(null);
   const [visiblePanels, setVisiblePanels] = useState<Set<string>>(
     new Set(["share", "counts", "breakdowns", "top10", "arc", "table"])
   );
@@ -892,17 +893,22 @@ export default function WordFrequencyTool() {
                         },
                       },
                       datalabels: {
-                        display: (ctx) => ctx.datasetIndex === 1,
-                        anchor: "end",
+                        display: (ctx) => ctx.datasetIndex === 1 && (ctx.dataset.data as number[])[ctx.dataIndex] > 0,
+                        anchor: (ctx) => {
+                          const max = Math.max(...(ctx.dataset.data as number[]));
+                          const val = (ctx.dataset.data as number[])[ctx.dataIndex];
+                          return val / max > 0.25 ? "center" : "end";
+                        },
                         align: (ctx) => {
                           const max = Math.max(...(ctx.dataset.data as number[]));
                           const val = (ctx.dataset.data as number[])[ctx.dataIndex];
-                          return val / max > 0.3 ? "start" : "end";
+                          return val / max > 0.25 ? "center" : "right";
                         },
+                        offset: 8,
                         color: (ctx) => {
                           const max = Math.max(...(ctx.dataset.data as number[]));
                           const val = (ctx.dataset.data as number[])[ctx.dataIndex];
-                          return val / max > 0.3 ? "#fff" : "#b0a8c0";
+                          return val / max > 0.25 ? "#fff" : "#b0a8c0";
                         },
                         font: { weight: 700, size: 12 },
                         formatter: (value: number) => value.toLocaleString(),
@@ -1036,17 +1042,22 @@ export default function WordFrequencyTool() {
                           },
                         },
                         datalabels: {
-                          display: (ctx) => ctx.datasetIndex === 1,
-                          anchor: "end",
+                          display: (ctx) => ctx.datasetIndex === 1 && (ctx.dataset.data as number[])[ctx.dataIndex] > 0,
+                          anchor: (ctx) => {
+                            const max = Math.max(...(ctx.dataset.data as number[]));
+                            const val = (ctx.dataset.data as number[])[ctx.dataIndex];
+                            return val / max > 0.25 ? "center" : "end";
+                          },
                           align: (ctx) => {
                             const max = Math.max(...(ctx.dataset.data as number[]));
                             const val = (ctx.dataset.data as number[])[ctx.dataIndex];
-                            return val / max > 0.3 ? "start" : "end";
+                            return val / max > 0.25 ? "center" : "right";
                           },
+                          offset: 8,
                           color: (ctx) => {
                             const max = Math.max(...(ctx.dataset.data as number[]));
                             const val = (ctx.dataset.data as number[])[ctx.dataIndex];
-                            return val / max > 0.3 ? "#fff" : "#b0a8c0";
+                            return val / max > 0.25 ? "#fff" : "#b0a8c0";
                           },
                           font: { weight: 700, size: 11 },
                           formatter: (value: number) => value.toLocaleString(),
@@ -1070,96 +1081,139 @@ export default function WordFrequencyTool() {
               </DashboardCard>
             )}
 
-            {/* Narrative arcs — one per volume with results */}
-            {visiblePanels.has("arc") && volumeAgg
-              .filter((v) => v.count > 0)
-              .map((v) => {
+            {/* Narrative arcs — tabbed by volume */}
+            {visiblePanels.has("arc") && (() => {
+              const arcVolumes = volumeAgg.filter((v) => {
+                if (v.count === 0) return false;
                 const vol = volumes.find((vol) => vol.id === v.id);
-                if (!vol || vol.books.length < 2) return null;
-                const color = VOLUME_COLORS[v.abbrev] || "#8b5cf6";
-                const arcData = vol.books.map((b) => {
-                  const r = results.results.find((r) => r.bookId === b.id);
-                  return { name: b.name, count: r?.count || 0 };
-                });
-                const maxCount = Math.max(...arcData.map((d) => d.count));
-                if (maxCount === 0) return null;
+                return vol && vol.books.length >= 2;
+              });
+              if (arcVolumes.length === 0) return null;
 
-                return (
-                  <DashboardCard
-                    key={`arc-${v.id}`}
-                    title={`${v.name} narrative arc`}
-                    description={`Frequency of "${results.word}" by book in narrative order`}
-                    fullWidth
-                  >
-                    <div className="chart-container-tall">
-                      <Line
-                        data={{
-                          labels: arcData.map((d) => d.name),
-                          datasets: [
-                            {
-                              data: arcData.map((d) => d.count),
-                              fill: true,
-                              backgroundColor: `${color}14`,
-                              borderColor: color,
-                              borderWidth: 2,
-                              pointBackgroundColor: arcData.map((d) =>
-                                d.count === maxCount && d.count > 0
-                                  ? "#fff"
-                                  : color
-                              ),
-                              pointBorderColor: color,
-                              pointBorderWidth: arcData.map((d) =>
-                                d.count === maxCount && d.count > 0
-                                  ? 3
-                                  : 1
-                              ),
-                              pointRadius: arcData.map((d) =>
-                                d.count === maxCount && d.count > 0
-                                  ? 7
-                                  : d.count > 0
-                                    ? 3.5
-                                    : 2
-                              ),
-                              tension: 0.35,
-                            },
-                          ],
-                        }}
-                        options={{
-                          responsive: true,
-                          maintainAspectRatio: false,
-                          plugins: {
-                            legend: { display: false },
-                            tooltip: {
-                              callbacks: {
-                                label: (ctx) =>
-                                  ` ${ctx.raw} occurrences`,
-                              },
-                            },
-                            datalabels: { display: false },
-                          },
-                          layout: { padding: { top: 12 } },
-                          scales: {
-                            y: {
-                              grid: {
-                                color: "rgba(139,92,246,0.06)",
-                              },
-                              ticks: { font: { weight: 600 } },
-                              beginAtZero: true,
-                            },
-                            x: {
-                              grid: { display: false },
-                              ticks: {
-                                maxRotation: 45,
-                                font: { size: 12, weight: 500 },
-                              },
-                            },
-                          },
-                        }}
-                      />
+              // Auto-select first tab if none selected or selection invalid
+              const activeTabId = arcVolumes.some((v) => v.id === arcVolumeTab)
+                ? arcVolumeTab
+                : arcVolumes[0].id;
+
+              const activeVol = volumes.find((v) => v.id === activeTabId);
+              if (!activeVol) return null;
+
+              const color = VOLUME_COLORS[arcVolumes.find((v) => v.id === activeTabId)?.abbrev || ""] || "#8b5cf6";
+              const arcData = activeVol.books.map((b) => {
+                const r = results.results.find((r) => r.bookId === b.id);
+                return { name: b.name, count: r?.count || 0 };
+              });
+              const maxCount = Math.max(...arcData.map((d) => d.count));
+
+              return (
+                <DashboardCard
+                  title="Narrative arc"
+                  description={`Frequency of "${results.word}" by book in narrative order`}
+                  fullWidth
+                >
+                  {/* Volume tabs */}
+                  {arcVolumes.length > 1 && (
+                    <div style={{ display: "flex", gap: "6px", marginBottom: "20px", flexWrap: "wrap" }}>
+                      {arcVolumes.map((v) => {
+                        const isActive = v.id === activeTabId;
+                        const tabColor = VOLUME_COLORS[v.abbrev] || "#8b5cf6";
+                        return (
+                          <button
+                            key={v.id}
+                            type="button"
+                            onClick={() => setArcVolumeTab(v.id)}
+                            style={{
+                              padding: "6px 16px",
+                              borderRadius: "100px",
+                              border: isActive
+                                ? `1px solid ${tabColor}`
+                                : "1px solid var(--border)",
+                              background: isActive ? tabColor : "transparent",
+                              color: isActive ? "#fff" : "var(--text-muted)",
+                              fontSize: "0.78rem",
+                              fontWeight: isActive ? 600 : 500,
+                              fontFamily: "inherit",
+                              cursor: "pointer",
+                              transition: "all 0.15s ease",
+                            }}
+                          >
+                            {v.abbrev === "D&C" ? "D&C" : v.name}
+                          </button>
+                        );
+                      })}
                     </div>
-                  </DashboardCard>
-                );
-              })}
+                  )}
+
+                  <div className="chart-container-tall">
+                    <Line
+                      key={activeTabId}
+                      data={{
+                        labels: arcData.map((d) => d.name),
+                        datasets: [
+                          {
+                            data: arcData.map((d) => d.count),
+                            fill: true,
+                            backgroundColor: `${color}14`,
+                            borderColor: color,
+                            borderWidth: 2,
+                            pointBackgroundColor: arcData.map((d) =>
+                              d.count === maxCount && d.count > 0
+                                ? "#fff"
+                                : color
+                            ),
+                            pointBorderColor: color,
+                            pointBorderWidth: arcData.map((d) =>
+                              d.count === maxCount && d.count > 0
+                                ? 3
+                                : 1
+                            ),
+                            pointRadius: arcData.map((d) =>
+                              d.count === maxCount && d.count > 0
+                                ? 7
+                                : d.count > 0
+                                  ? 3.5
+                                  : 2
+                            ),
+                            tension: 0.35,
+                          },
+                        ],
+                      }}
+                      options={{
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                          legend: { display: false },
+                          tooltip: {
+                            callbacks: {
+                              label: (ctx) =>
+                                ` ${ctx.raw} occurrences`,
+                            },
+                          },
+                          datalabels: { display: false },
+                        },
+                        layout: { padding: { top: 12 } },
+                        scales: {
+                          y: {
+                            grid: {
+                              color: "rgba(139,92,246,0.06)",
+                            },
+                            ticks: { font: { weight: 600 } },
+                            beginAtZero: true,
+                          },
+                          x: {
+                            grid: { display: false },
+                            ticks: {
+                              maxRotation: 45,
+                              font: { size: 12, weight: 500 },
+                            },
+                          },
+                        },
+                      }}
+                    />
+                  </div>
+                </DashboardCard>
+              );
+            })()}
 
             {/* Summary table */}
             {visiblePanels.has("table") && (
