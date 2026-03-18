@@ -341,9 +341,9 @@ export default function NarrativeArcTool() {
                     borderRadius: "8px",
                     border: isActive
                       ? `1px solid ${color}`
-                      : "1px solid var(--border)",
-                    background: isActive ? color : "transparent",
-                    color: isActive ? getContrastText(color) : "var(--text-muted)",
+                      : "1px solid rgba(255,255,255,0.15)",
+                    background: isActive ? color : "rgba(255,255,255,0.06)",
+                    color: isActive ? getContrastText(color) : "var(--text-secondary)",
                     fontSize: "0.8rem",
                     fontWeight: isActive ? 600 : 500,
                     fontFamily: "inherit",
@@ -351,15 +351,6 @@ export default function NarrativeArcTool() {
                     transition: "all 0.15s ease",
                   }}
                 >
-                  <span
-                    style={{
-                      width: "7px",
-                      height: "7px",
-                      borderRadius: "50%",
-                      background: color,
-                      opacity: isActive ? 1 : 0.3,
-                    }}
-                  />
                   {v.abbrev === "D&C" ? "D&C" : v.name}
                 </button>
               );
