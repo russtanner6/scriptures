@@ -191,7 +191,7 @@ body::before {
 }
 
 .search-bar-glow {
-  animation: searchGlow 1.8s ease-out 0.5s 1 forwards;
+  animation: searchGlow 1.8s ease-out 2.5s 1 forwards;
 }
 
 .search-panel {
