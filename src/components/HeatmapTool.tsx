@@ -357,16 +357,19 @@ export default function HeatmapTool() {
                   padding: isMobile ? "16px" : "24px", marginBottom: "16px",
                   backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)",
                 }}>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
-                    <h3 style={{ fontSize: "1.05rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text)", margin: 0 }}>
-                      <span style={{ color: volColor }}>{vg.volumeName}</span>
-                    </h3>
-                    <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                      <span style={{ fontSize: "0.78rem", color: "var(--text-secondary)", fontWeight: 600, fontVariantNumeric: "tabular-nums" }}>
-                        {volTotal.toLocaleString()} total
-                      </span>
-                      <ExportButton onClick={() => setExportAbbrev(abbrev)} />
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "4px" }}>
+                    <div>
+                      <h3 style={{ fontSize: "1.05rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text)", margin: 0 }}>
+                        <span style={{ color: volColor }}>{vg.volumeName}</span>
+                      </h3>
+                      <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", margin: "4px 0 0" }}>
+                        {volTotal > 0
+                          ? <>There {volTotal === 1 ? "is" : "are"} <strong style={{ color: "var(--text)" }}>{volTotal.toLocaleString()}</strong> {volTotal === 1 ? "reference" : "references"} to &quot;{word}&quot; in the {vg.volumeName}</>
+                          : <>No references to &quot;{word}&quot; found in the {vg.volumeName}</>
+                        }
+                      </p>
                     </div>
+                    <ExportButton onClick={() => setExportAbbrev(abbrev)} />
                   </div>
 
                   {renderColorScale(abbrev)}
