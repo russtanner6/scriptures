@@ -335,7 +335,7 @@ export default function WordFrequencyTool() {
                   alignItems: "center",
                   gap: "7px",
                   padding: "7px 14px",
-                  borderRadius: "100px",
+                  borderRadius: "8px",
                   border: isActive
                     ? `1px solid ${color}`
                     : "1px solid var(--border)",
@@ -484,7 +484,7 @@ export default function WordFrequencyTool() {
                   alignItems: "center",
                   gap: "6px",
                   padding: "5px 12px",
-                  borderRadius: "100px",
+                  borderRadius: "8px",
                   border: caseInsensitive
                     ? "1px solid #8b5cf6"
                     : "1px solid var(--border)",
@@ -514,7 +514,7 @@ export default function WordFrequencyTool() {
                   alignItems: "center",
                   gap: "6px",
                   padding: "5px 12px",
-                  borderRadius: "100px",
+                  borderRadius: "8px",
                   border: wholeWord
                     ? "1px solid #8b5cf6"
                     : "1px solid var(--border)",
@@ -711,7 +711,7 @@ export default function WordFrequencyTool() {
                     alignItems: "center",
                     gap: "5px",
                     padding: "5px 12px",
-                    borderRadius: "100px",
+                    borderRadius: "8px",
                     border: isOn
                       ? "1px solid #10b981"
                       : "1px solid var(--border)",
@@ -760,7 +760,7 @@ export default function WordFrequencyTool() {
                       alignItems: "center",
                       gap: "6px",
                       padding: "5px 12px",
-                      borderRadius: "100px",
+                      borderRadius: "8px",
                       background: "var(--accent-soft)",
                       border: "1px solid rgba(59, 130, 246, 0.15)",
                       fontSize: "0.8rem",
@@ -924,7 +924,7 @@ export default function WordFrequencyTool() {
                             onClick={() => setBreakdownTab(v.id)}
                             style={{
                               padding: "6px 16px",
-                              borderRadius: "100px",
+                              borderRadius: "8px",
                               border: isActive
                                 ? `1px solid ${tabColor}`
                                 : "1px solid var(--border)",
@@ -1115,7 +1115,7 @@ export default function WordFrequencyTool() {
                             onClick={() => setArcVolumeTab(v.id)}
                             style={{
                               padding: "6px 16px",
-                              borderRadius: "100px",
+                              borderRadius: "8px",
                               border: isActive
                                 ? `1px solid ${tabColor}`
                                 : "1px solid var(--border)",

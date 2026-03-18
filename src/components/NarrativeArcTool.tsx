@@ -254,7 +254,7 @@ export default function NarrativeArcTool() {
                   alignItems: "center",
                   gap: "8px",
                   padding: "6px 14px",
-                  borderRadius: "100px",
+                  borderRadius: "8px",
                   background: TERM_COLORS[i % TERM_COLORS.length],
                   color: "#fff",
                   fontSize: "0.82rem",
@@ -334,7 +334,7 @@ export default function NarrativeArcTool() {
                     alignItems: "center",
                     gap: "7px",
                     padding: "7px 14px",
-                    borderRadius: "100px",
+                    borderRadius: "8px",
                     border: isActive
                       ? `1px solid ${color}`
                       : "1px solid var(--border)",
@@ -394,7 +394,7 @@ export default function NarrativeArcTool() {
               alignItems: "center",
               gap: "6px",
               padding: "5px 12px",
-              borderRadius: "100px",
+              borderRadius: "8px",
               border: caseInsensitive
                 ? "1px solid #8b5cf6"
                 : "1px solid var(--border)",
@@ -420,7 +420,7 @@ export default function NarrativeArcTool() {
               alignItems: "center",
               gap: "6px",
               padding: "5px 12px",
-              borderRadius: "100px",
+              borderRadius: "8px",
               border: wholeWord
                 ? "1px solid #8b5cf6"
                 : "1px solid var(--border)",
@@ -455,7 +455,7 @@ export default function NarrativeArcTool() {
                   ? "var(--text-muted)"
                   : "#fff",
               border: "none",
-              borderRadius: "100px",
+              borderRadius: "8px",
               fontSize: "0.88rem",
               fontWeight: 600,
               cursor:
