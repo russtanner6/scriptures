@@ -426,6 +426,8 @@ export default function NarrativeArcTool() {
                           color: "#e0e0e0",
                           boxHeight: 8,
                         },
+                        // Extra space below legend before chart area
+                        ...({ padding: 28 } as Record<string, unknown>),
                       },
                       tooltip: {
                         callbacks: {
@@ -443,7 +445,7 @@ export default function NarrativeArcTool() {
                         formatter: (value: number) => value.toLocaleString(),
                       },
                     },
-                    layout: { padding: { top: 36 } },
+                    layout: { padding: { top: 20 } },
                     scales: {
                       y: {
                         grid: { color: "rgba(255,255,255,0.06)" },
