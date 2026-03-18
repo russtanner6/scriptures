@@ -368,6 +368,84 @@ export interface VerseMatch {
   text: string;
 }
 
+export async function getChapterVerses(
+  bookId: number,
+  chapter: number
+): Promise<{ bookName: string; volumeAbbrev: string; chapterCount: number; verses: VerseMatch[] }> {
+  const db = await getDb();
+
+  const bookRows = execToObjects<{ name: string; volume_id: number; chapter_count: number }>(
+    db,
+    `SELECT b.name, b.volume_id, b.chapter_count FROM books b WHERE b.id = ?`,
+    [bookId]
+  );
+  const bookName = displayName(bookRows[0]?.name || "Unknown");
+  const chapterCount = bookRows[0]?.chapter_count || 0;
+
+  // Get volume abbrev
+  const volRows = execToObjects<{ abbrev: string }>(
+    db,
+    `SELECT abbrev FROM volumes WHERE id = ?`,
+    [bookRows[0]?.volume_id || 0]
+  );
+  const volumeAbbrev = volRows[0]?.abbrev || "";
+
+  const verses = execToObjects<{ chapter: number; verse: number; text: string }>(
+    db,
+    `SELECT chapter, verse, text FROM verses WHERE book_id = ? AND chapter = ? ORDER BY verse`,
+    [bookId, chapter]
+  );
+
+  return { bookName, volumeAbbrev, chapterCount, verses };
+}
+
+export async function getBookIdBySlug(
+  volumeAbbrev: string,
+  bookSlug: string
+): Promise<{ bookId: number; bookName: string; chapterCount: number } | null> {
+  const db = await getDb();
+
+  // Map volume abbreviation to volume name patterns
+  const volumeMap: Record<string, string[]> = {
+    ot: ["Old Testament"],
+    nt: ["New Testament"],
+    bom: ["Book of Mormon"],
+    dc: ["Doctrine and Covenants", "D&C"],
+    pogp: ["Pearl of Great Price"],
+  };
+
+  const volumeNames = volumeMap[volumeAbbrev.toLowerCase()];
+  if (!volumeNames) return null;
+
+  // Get volume IDs
+  const placeholders = volumeNames.map(() => "?").join(",");
+  const volRows = execToObjects<{ id: number }>(
+    db,
+    `SELECT id FROM volumes WHERE name IN (${placeholders})`,
+    volumeNames
+  );
+  if (volRows.length === 0) return null;
+
+  // Normalize slug to match book names
+  const slugNormalized = bookSlug.toLowerCase().replace(/-/g, " ");
+
+  // Get all books in this volume
+  const volIds = volRows.map(v => v.id);
+  const volPlaceholders = volIds.map(() => "?").join(",");
+  const books = execToObjects<{ id: number; name: string; chapter_count: number }>(
+    db,
+    `SELECT id, name, chapter_count FROM books WHERE volume_id IN (${volPlaceholders})`,
+    volIds
+  );
+
+  // Match by normalized name
+  const match = books.find(b => b.name.toLowerCase().replace(/-/g, " ") === slugNormalized)
+    || books.find(b => b.name.toLowerCase().replace(/\s+/g, "-") === bookSlug.toLowerCase());
+
+  if (!match) return null;
+  return { bookId: match.id, bookName: displayName(match.name), chapterCount: match.chapter_count };
+}
+
 export async function getMatchingVerses(
   word: string,
   bookId: number,

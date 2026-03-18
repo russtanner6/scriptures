@@ -161,6 +161,27 @@ export default function ScripturePanel({
                   ? "Loading verses..."
                   : `${verses.length} verse${verses.length !== 1 ? "s" : ""} containing "${word}"`}
               </p>
+              {!isLoading && verses.length > 0 && (
+                <a
+                  href={`/read?bookId=${bookId}&chapter=${chapter || (verses[0]?.chapter ?? 1)}&highlight=${encodeURIComponent(word)}`}
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "4px",
+                    fontSize: "0.78rem",
+                    fontWeight: 500,
+                    color: accentColor,
+                    textDecoration: "none",
+                    marginTop: "4px",
+                    opacity: 0.85,
+                    transition: "opacity 0.15s",
+                  }}
+                  onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
+                  onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.85")}
+                >
+                  Read in context →
+                </a>
+              )}
             </div>
             <button
               onClick={onClose}
