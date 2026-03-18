@@ -3,6 +3,8 @@
 ## What is this?
 A Next.js web app for searching and exploring scriptures with interactive visualizations, verse modals, and volume-based filtering. Volumes: Old Testament, New Testament, Book of Mormon, D&C, Pearl of Great Price.
 
+**Domain:** scripturexplorer.com (hosted on Vercel)
+
 ## Project Locations
 - **Mac Studio:** `/Users/rmt-mac-studio/Projects/Scripture Explorer/`
 - **External Drive (Samsung 4T):** `/Volumes/Samsung 4T/Projects/Scripture Explorer/`
@@ -80,8 +82,9 @@ scripts/                       # build-db.ts, book-order.ts
 
 ### UI Patterns
 - **Buttons:** "Go" (not "Analyze") for all search/action buttons.
-- **Volume selectors:** Color-coded checkboxes (compact), not large pills. Multi-select enabled.
-- **Search panels:** Two-column layout on desktop (search left, options/volumes right). Stacks vertically on mobile.
+- **Volume selectors:** Compact color-coded checkboxes (14px), inline horizontal row. Multi-select enabled.
+- **Search panels:** Go button inside the search bar. Volumes + options on a single compact row below.
+- **"Exact match"** (not "Whole word") for the whole-word toggle label.
 - **Chart legends:** Use `pointStyle: "rectRounded"` (not circles/ovals). Adequate spacing from chart top.
 - **Nav menu:** Slides in from the RIGHT side of the screen.
 - **DashboardCard:** Supports `headerExtra` prop for inline links/actions next to the description.
