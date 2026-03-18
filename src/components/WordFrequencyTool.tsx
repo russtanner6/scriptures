@@ -1070,52 +1070,50 @@ export default function WordFrequencyTool() {
               </DashboardCard>
             )}
 
-            {/* Narrative arc — Book of Mormon */}
-            {visiblePanels.has("arc") && results.results.some((r) => r.volumeAbbrev === "BoM") && (
-              <DashboardCard
-                title="Book of Mormon narrative arc"
-                description={`Frequency of "${results.word}" by book in narrative order`}
-                fullWidth
-              >
-                <div className="chart-container-tall">
-                  {(() => {
-                    const bomVolume = volumes.find(
-                      (v) => v.abbrev === "BoM"
-                    );
-                    if (!bomVolume) return null;
-                    const bomData = bomVolume.books.map((b) => {
-                      const r = results.results.find(
-                        (r) => r.bookId === b.id
-                      );
-                      return { name: b.name, count: r?.count || 0 };
-                    });
-                    const maxCount = Math.max(
-                      ...bomData.map((d) => d.count)
-                    );
+            {/* Narrative arcs — one per volume with results */}
+            {visiblePanels.has("arc") && volumeAgg
+              .filter((v) => v.count > 0)
+              .map((v) => {
+                const vol = volumes.find((vol) => vol.id === v.id);
+                if (!vol || vol.books.length < 2) return null;
+                const color = VOLUME_COLORS[v.abbrev] || "#8b5cf6";
+                const arcData = vol.books.map((b) => {
+                  const r = results.results.find((r) => r.bookId === b.id);
+                  return { name: b.name, count: r?.count || 0 };
+                });
+                const maxCount = Math.max(...arcData.map((d) => d.count));
+                if (maxCount === 0) return null;
 
-                    return (
+                return (
+                  <DashboardCard
+                    key={`arc-${v.id}`}
+                    title={`${v.name} narrative arc`}
+                    description={`Frequency of "${results.word}" by book in narrative order`}
+                    fullWidth
+                  >
+                    <div className="chart-container-tall">
                       <Line
                         data={{
-                          labels: bomData.map((d) => d.name),
+                          labels: arcData.map((d) => d.name),
                           datasets: [
                             {
-                              data: bomData.map((d) => d.count),
+                              data: arcData.map((d) => d.count),
                               fill: true,
-                              backgroundColor: "rgba(245,158,11,0.08)",
-                              borderColor: "#f59e0b",
+                              backgroundColor: `${color}14`,
+                              borderColor: color,
                               borderWidth: 2,
-                              pointBackgroundColor: bomData.map((d) =>
+                              pointBackgroundColor: arcData.map((d) =>
                                 d.count === maxCount && d.count > 0
                                   ? "#fff"
-                                  : "#f59e0b"
+                                  : color
                               ),
-                              pointBorderColor: "#f59e0b",
-                              pointBorderWidth: bomData.map((d) =>
+                              pointBorderColor: color,
+                              pointBorderWidth: arcData.map((d) =>
                                 d.count === maxCount && d.count > 0
                                   ? 3
                                   : 1
                               ),
-                              pointRadius: bomData.map((d) =>
+                              pointRadius: arcData.map((d) =>
                                 d.count === maxCount && d.count > 0
                                   ? 7
                                   : d.count > 0
@@ -1146,6 +1144,7 @@ export default function WordFrequencyTool() {
                                 color: "rgba(139,92,246,0.06)",
                               },
                               ticks: { font: { weight: 600 } },
+                              beginAtZero: true,
                             },
                             x: {
                               grid: { display: false },
@@ -1157,11 +1156,10 @@ export default function WordFrequencyTool() {
                           },
                         }}
                       />
-                    );
-                  })()}
-                </div>
-              </DashboardCard>
-            )}
+                    </div>
+                  </DashboardCard>
+                );
+              })}
 
             {/* Summary table */}
             {visiblePanels.has("table") && (
