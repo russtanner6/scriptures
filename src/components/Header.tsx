@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import NavMenu from "./NavMenu";
 
 export default function Header({ showSubtitle = false }: { showSubtitle?: boolean }) {
@@ -23,7 +24,11 @@ export default function Header({ showSubtitle = false }: { showSubtitle?: boolea
 
       <NavMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
 
-      <h1 className="header-title">Scripture Explorer</h1>
+      <h1 className="header-title">
+        <Link href="/" style={{ color: "inherit", textDecoration: "none" }}>
+          Scripture Explorer
+        </Link>
+      </h1>
       {showSubtitle && (
         <div className="header-subtitle">
           Search and analyze word frequencies across the LDS Standard Works.{" "}
