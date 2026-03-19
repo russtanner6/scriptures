@@ -79,7 +79,7 @@ src/
 │   ├── DataTable.tsx          # Sortable results table with ▲▼ sort icons
 │   ├── StatCard.tsx           # Stat pills
 │   ├── ScripturePanel.tsx     # Right-side slider panel for verse viewing
-│   ├── ScriptureReader.tsx    # Full scripture reader (~1400 lines) with insights, search, progress, annotations, resources, Word Explorer
+│   ├── ScriptureReader.tsx    # Full scripture reader (~1400 lines) with insights, search, progress, annotations, resources, Word Explorer, modern language toggle
 │   ├── ResourceMarker.tsx     # Inline pill markers for resources (video/article/PDF) + overflow badge
 │   ├── ResourcePanel.tsx      # Slide-in side panel for resource details (YouTube embed, tags, navigation)
 │   ├── WordExplorerPanel.tsx   # Slide-up panel for in-context word frequency exploration (book/volume/all)
@@ -98,8 +98,8 @@ src/
 │   ├── scripture-urls.ts      # Verse reference URL builder
 │   ├── sentiment-lexicon.ts   # 7 tone categories with word lists + scoring (NEW)
 │   └── chiasmus-detector.ts   # Chiasmus (ABBA pattern) detection algorithm (NEW)
-data/                          # scriptures.db + sql-wasm.wasm + parallel-passages.json + timeline.json + resources.json + speakers.json
-scripts/                       # build-db.ts, book-order.ts, build-speakers.ts
+data/                          # scriptures.db + sql-wasm.wasm + parallel-passages.json + timeline.json + resources.json + speakers.json + speakers-lds.json + speakers-bible-backup.json + web-bible.json
+scripts/                       # build-db.ts, book-order.ts, build-speakers.ts, build-speakers-lds.ts, merge-speakers.ts, add-modern-text.ts
 ```
 
 ## Global Design Rules
@@ -183,7 +183,7 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 8. **Chiasmus Detector** (`/chiasmus`) — Find ABBA mirror patterns. Single-column flow layout (picker-style). Scan entire volume.
 9. **Topic Map** (`/topics`) — Chapter similarity finder. Single-column flow layout (picker-style). Cosine similarity.
 10. **Timeline** (`/timeline`) — SHELVED. Code preserved but removed from nav/footer/home page.
-11. **Scripture Reader** (`/read`) — Full reading experience with light/dark mode, font size, keyboard nav, reading progress, Chapter Insights, verse popover, annotations, Word Explorer panel. Reading streaks. Cream light theme (#f8f6f1), lighter dark theme (#1a1a21), gradient progress bar, centered tree logo.
+11. **Scripture Reader** (`/read`) — Full reading experience with light/dark mode, font size, keyboard nav, reading progress, Chapter Insights, verse popover, annotations, Word Explorer panel, modern language toggle (OT/NT only). Reading streaks. Cream light theme (#f8f6f1), lighter dark theme (#1a1a21), gradient progress bar, centered tree logo.
 12. **Bookmarks** (`/bookmarks`) — Saved verses grouped by volume.
 
 ## Key Components
@@ -220,7 +220,7 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - `/api/heatmap` — Word frequency by book+chapter for all volumes (used for heatmap grid)
 - `/api/word-cloud` — Top N most frequent words in a book/volume (with optional chapter filter), stopword-filtered
 - `/api/verses` — Fetch matching verses for a book (supports optional `chapter` filter)
-- `/api/chapter` — Fetch all verses for a book+chapter (for scripture reader, no search filter)
+- `/api/chapter` — Fetch all verses for a book+chapter (for scripture reader, no search filter). Includes `text_modern` field (WEB text for OT/NT, null for BoM/D&C/PoGP)
 - `/api/chapter-stats` — Chapter-level stats: word count, verse count, unique words, top words, key themes (TF-IDF), verse density
 - `/api/random-verse` — Single random verse with book/volume context (for landing page)
 - `/api/book-stats` — Word/verse counts per book
@@ -238,3 +238,5 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - Results clear when volume selection changes
 - Deep linking: URL params updated on search, read on mount
 - Single-book volume detection: `vol.books.length === 1` triggers chapter-level plotting
+- **Speaker data:** Bible speakers from Clear-Bible/speaker-quotations (6,913 entries). BoM/D&C/PoGP from `build-speakers-lds.ts` (718 entries, text-pattern analysis + explicit chapter overrides). Merged via `merge-speakers.ts`. 7,631 total across 82 books. QA'd against 26 key chapters.
+- **Modern language:** `text_modern` column in verses table. OT+NT populated with World English Bible (WEB, public domain) via `add-modern-text.ts`. 31,095/31,102 verses matched (99.98%). BoM/D&C/PoGP not yet available. Toggle shows in Layers section only when modern text exists for the chapter.
