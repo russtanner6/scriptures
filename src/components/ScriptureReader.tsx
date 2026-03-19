@@ -809,34 +809,39 @@ export default function ScriptureReader() {
           )}
         </div>
 
-        {/* Search occurrence navigator — shows where matches are in the chapter */}
-        {activeHighlight && searchMatchCount > 0 && !isMobile && (
+        {/* Search occurrence navigator — visual minimap of matches */}
+        {activeHighlight && searchMatchCount > 0 && (
           <div
             style={{
               position: "fixed",
-              bottom: "44px",
+              bottom: isMobile ? "40px" : "44px",
               left: 0,
               right: 0,
               zIndex: 51,
-              padding: "6px 24px",
-              background: lightMode ? "rgba(250, 249, 246, 0.9)" : "rgba(15, 15, 18, 0.9)",
+              padding: isMobile ? "4px 12px" : "6px 24px",
+              background: lightMode ? "rgba(250, 249, 246, 0.92)" : "rgba(15, 15, 18, 0.92)",
               backdropFilter: "blur(8px)",
               WebkitBackdropFilter: "blur(8px)",
               borderTop: `1px solid ${theme.border}`,
               display: "flex",
               alignItems: "center",
-              gap: "12px",
+              gap: isMobile ? "8px" : "12px",
             }}
           >
-            <span style={{ fontSize: "0.68rem", color: theme.textMuted, whiteSpace: "nowrap", fontWeight: 500 }}>
-              {searchMatchCount} match{searchMatchCount !== 1 ? "es" : ""}
-            </span>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", minWidth: isMobile ? "40px" : "50px" }}>
+              <span style={{ fontSize: "0.68rem", color: volColor, fontWeight: 700 }}>
+                {searchMatchCount}
+              </span>
+              <span style={{ fontSize: "0.55rem", color: theme.textMuted, fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.05em" }}>
+                {searchMatchCount !== 1 ? "matches" : "match"}
+              </span>
+            </div>
             <div
               style={{
                 flex: 1,
                 display: "flex",
                 gap: "1px",
-                height: "20px",
+                height: isMobile ? "16px" : "22px",
                 borderRadius: "3px",
                 overflow: "hidden",
               }}
@@ -854,21 +859,28 @@ export default function ScriptureReader() {
                     }}
                     style={{
                       flex: 1,
-                      background: hasMatch ? volColor : (lightMode ? "rgba(0,0,0,0.04)" : "rgba(255,255,255,0.04)"),
+                      background: hasMatch ? volColor : (lightMode ? "rgba(0,0,0,0.03)" : "rgba(255,255,255,0.03)"),
                       opacity: hasMatch ? intensity : 1,
                       cursor: "pointer",
-                      transition: "all 0.2s ease",
+                      transition: "all 0.25s ease",
                       borderRadius: "1px",
-                      transform: isCurrent ? "scaleY(1.6)" : "scaleY(1)",
+                      transform: isCurrent ? "scaleY(1.5)" : "scaleY(1)",
                       transformOrigin: "bottom",
-                      boxShadow: isCurrent ? `0 -2px 6px ${volColor}60` : "none",
-                      outline: isCurrent ? `1px solid ${lightMode ? "rgba(0,0,0,0.3)" : "rgba(255,255,255,0.4)"}` : "none",
+                      boxShadow: isCurrent ? `0 -2px 8px ${volColor}50` : "none",
+                      outline: isCurrent ? `1.5px solid ${volColor}` : "none",
+                      outlineOffset: "-1px",
                     }}
                     title={hasMatch ? `Verse ${vm.verse}: ${vm.count} match${vm.count !== 1 ? "es" : ""}` : `Verse ${vm.verse}`}
                   />
                 );
               })}
             </div>
+            {/* Current verse indicator */}
+            {!isMobile && (
+              <span style={{ fontSize: "0.62rem", color: theme.textMuted, whiteSpace: "nowrap", minWidth: "36px", textAlign: "right" }}>
+                v.{currentVisibleVerse}
+              </span>
+            )}
           </div>
         )}
 
