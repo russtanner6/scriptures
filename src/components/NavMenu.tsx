@@ -10,7 +10,7 @@ const NAV_ITEMS: { href: string; label: string; icon?: string; svgIcon?: string 
   { href: "/heatmap", label: "Theme Heatmap", svgIcon: "/heatmap.svg" },
   { href: "/wordcloud", label: "Word Cloud", svgIcon: "/word-cloud.svg" },
   { href: "/read", label: "Read Scriptures", svgIcon: "/scriptures.svg" },
-  { href: "/bookmarks", label: "Bookmarks", icon: "★" },
+  { href: "/bookmarks", label: "Bookmarks", svgIcon: "/favorite.svg" },
 ];
 
 export default function NavMenu({
