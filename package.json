@@ -12,6 +12,7 @@
   "dependencies": {
     "chart.js": "^4.5.1",
     "chartjs-plugin-datalabels": "^2.2.0",
+    "chartjs-plugin-zoom": "^2.2.0",
     "html2canvas": "^1.4.1",
     "jspdf": "^4.2.1",
     "next": "16.1.7",

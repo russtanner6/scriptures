@@ -12,12 +12,14 @@ import {
   Legend,
 } from "chart.js";
 import ChartDataLabels from "chartjs-plugin-datalabels";
+import zoomPlugin from "chartjs-plugin-zoom";
 import { Line } from "react-chartjs-2";
 import type { Volume, WordFrequencyResponse } from "@/lib/types";
 import { VOLUME_COLORS, getContrastText, compactVolumeName } from "@/lib/constants";
 import StatCard from "./StatCard";
 import DashboardCard from "./DashboardCard";
 import HorizontalBarList from "./HorizontalBarList";
+import ChartZoomControls from "./ChartZoomControls";
 import type { BarItem } from "./HorizontalBarList";
 import DataTable from "./DataTable";
 import ScripturePanel from "./ScripturePanel";
@@ -31,7 +33,8 @@ ChartJS.register(
   Filler,
   Tooltip,
   Legend,
-  ChartDataLabels
+  ChartDataLabels,
+  zoomPlugin
 );
 
 // Chart.js global defaults for dark theme
@@ -75,6 +78,7 @@ export default function WordFrequencyTool() {
   const [arcVolumeTab, setArcVolumeTab] = useState<number | null>(null);
   const [breakdownTab, setBreakdownTab] = useState<number | null>(null);
   const [scripturePanel, setScripturePanel] = useState<ScripturePanelState | null>(null);
+  const arcChartRef = useRef<any>(null);
   // Chapter-level data for single-book volumes (e.g., D&C) — keyed by volume id
   const [chapterData, setChapterData] = useState<Map<number, { label: string; count: number; bookId: number; chapter: number }[]>>(new Map());
   const [visiblePanels, setVisiblePanels] = useState<Set<string>>(
@@ -1111,8 +1115,12 @@ export default function WordFrequencyTool() {
                     </div>
                   )}
 
-                  <div className="chart-container-tall">
+                  <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "8px" }}>
+                    <ChartZoomControls chartRef={arcChartRef} color={color} isMobile={isMobile} />
+                  </div>
+                  <div className="chart-container-tall" style={{ overflow: "hidden" }}>
                     <Line
+                      ref={arcChartRef}
                       key={activeTabId}
                       data={{
                         labels: arcData.map((d) => d.name),
@@ -1174,6 +1182,20 @@ export default function WordFrequencyTool() {
                                 font: { weight: 700, size: 11 },
                                 formatter: (value: number) => value.toLocaleString(),
                               } as any,
+                          zoom: {
+                            zoom: {
+                              wheel: { enabled: false },
+                              pinch: { enabled: false },
+                              drag: { enabled: false },
+                            },
+                            pan: {
+                              enabled: true,
+                              mode: "x" as const,
+                            },
+                            limits: {
+                              x: { minRange: 3 },
+                            },
+                          },
                         },
                         layout: { padding: { top: 30 } },
                         onHover: (_event: any, elements: any[]) => {
