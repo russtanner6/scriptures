@@ -358,12 +358,20 @@ export default function SentimentArcTool() {
                         grid: { color: "rgba(255,255,255,0.05)" },
                       },
                     },
-                    onClick: (_event: any, elements: any) => {
-                      if (elements.length > 0) {
-                        const idx = elements[0].index;
+                    onClick: (_event: any, elements: any, chart: any) => {
+                      // Use 'nearest' + intersect to get the specific point clicked,
+                      // not all datasets at that x-index (which always picks dataset 0)
+                      const nearest = chart.getElementsAtEventForMode(
+                        _event.native,
+                        "nearest",
+                        { intersect: true },
+                        false
+                      );
+                      if (nearest.length > 0) {
+                        const idx = nearest[0].index;
                         const ch = chapters[idx];
                         // Get the active category from the clicked dataset
-                        const dsIdx = elements[0].datasetIndex;
+                        const dsIdx = nearest[0].datasetIndex;
                         const activeCats = SENTIMENT_CATEGORIES.filter((c) => activeCategories.has(c.id));
                         const cat = activeCats[dsIdx];
                         if (cat) {

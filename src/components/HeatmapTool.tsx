@@ -665,14 +665,18 @@ export default function HeatmapTool() {
                                 ticks: {
                                   maxRotation: isSingleBook ? 0 : (isMobile ? 90 : 45),
                                   font: { size: isSingleBook ? 9 : (isMobile ? 9 : 11), weight: 500 },
+                                  // Use `val` (category index) not `index` (visible tick position) — index shifts when zoomed
                                   callback: isSingleBook
-                                    ? function(this: any, _val: any, index: number) {
-                                        const num = index + 1;
-                                        if (num === 1 || num % 10 === 0) return `Sec ${num}`;
-                                        return "";
+                                    ? function(this: any, val: any) {
+                                        const num = (val as number) + 1;
+                                        const scale = this as any;
+                                        const visibleRange = (scale.max || 0) - (scale.min || 0) + 1;
+                                        const step = visibleRange > 80 ? 10 : visibleRange > 30 ? 5 : 1;
+                                        if (num === 1 || num % step === 0) return `Sec ${num}`;
+                                        return null;
                                       }
-                                    : function(this: any, _val: any, index: number) {
-                                        return arcLabels[index] || "";
+                                    : function(this: any, val: any) {
+                                        return arcLabels[val as number] || "";
                                       },
                                   autoSkip: !isSingleBook,
                                 },

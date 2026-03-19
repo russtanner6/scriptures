@@ -972,14 +972,18 @@ export default function WordFrequencyTool() {
                             ticks: {
                               maxRotation: isSingleBook ? 0 : 45,
                               font: { size: isSingleBook ? 9 : 12, weight: 500 },
+                              // Use `val` (category index) not `index` (visible tick position) — index shifts when zoomed
                               callback: isSingleBook
-                                ? function(this: unknown, _val: unknown, index: number) {
-                                    const sectionNum = index + 1;
-                                    if (sectionNum === 1 || sectionNum % 10 === 0) return `Sec ${sectionNum}`;
-                                    return "";
+                                ? function(this: any, val: unknown) {
+                                    const sectionNum = (val as number) + 1;
+                                    const scale = this as any;
+                                    const visibleRange = (scale.max || 0) - (scale.min || 0) + 1;
+                                    const step = visibleRange > 80 ? 10 : visibleRange > 30 ? 5 : 1;
+                                    if (sectionNum === 1 || sectionNum % step === 0) return `Sec ${sectionNum}`;
+                                    return null;
                                   }
-                                : function(this: unknown, _val: unknown, index: number) {
-                                    return arcData[index]?.name || "";
+                                : function(this: unknown, val: unknown) {
+                                    return arcData[val as number]?.name || "";
                                   },
                               autoSkip: !isSingleBook,
                             },

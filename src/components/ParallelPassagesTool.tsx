@@ -126,14 +126,17 @@ export default function ParallelPassagesTool() {
     <div className="page-container">
       <Header />
 
-      <h1 style={{ fontSize: isMobile ? "1.3rem" : "1.6rem", fontWeight: 700, color: "var(--text)", marginBottom: "8px" }}>
-        Parallel Passages
-      </h1>
-      <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "8px", lineHeight: 1.5, maxWidth: "640px" }}>
-        Compare side-by-side texts that appear in multiple books of scripture. Differences are highlighted to reveal how passages were adapted across volumes.
-      </p>
-      <div style={{ marginBottom: "24px" }}>
-        <MethodLink onClick={() => setShowMethodology(true)} />
+      {/* Selection panel */}
+      <div className="search-panel" style={{ marginBottom: "24px" }}>
+        <h1 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
+          Parallel Passages
+        </h1>
+        <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", marginBottom: "6px", lineHeight: 1.4 }}>
+          Compare side-by-side texts that appear in multiple books of scripture. Differences are highlighted to reveal how passages were adapted across volumes.
+        </p>
+        <div style={{ marginBottom: "0" }}>
+          <MethodLink onClick={() => setShowMethodology(true)} />
+        </div>
       </div>
 
       {/* Group selector */}
@@ -265,26 +268,26 @@ export default function ParallelPassagesTool() {
               {/* Source */}
               <div
                 style={{
-                  background: "#ffffff",
+                  background: "var(--surface)",
                   borderRadius: "12px",
                   padding: isMobile ? "16px" : "24px",
-                  border: "1px solid #e5e7eb",
+                  border: "1px solid var(--border)",
                 }}
               >
-                <div style={{ fontSize: "0.92rem", fontWeight: 700, color: "#222", marginBottom: "4px" }}>
+                <div style={{ fontSize: "0.92rem", fontWeight: 700, color: "var(--text)", marginBottom: "4px" }}>
                   {activePair.sourceBook} {activePair.sourceChapter}
                 </div>
-                <div style={{ fontSize: "0.7rem", color: "#888", marginBottom: "16px" }}>
+                <div style={{ fontSize: "0.7rem", color: "var(--text-muted)", marginBottom: "16px" }}>
                   Source text
                 </div>
-                <div style={{ fontSize: "0.88rem", color: "#333", lineHeight: 1.9 }}>
+                <div style={{ fontSize: "0.88rem", color: "rgba(255,255,255,0.75)", lineHeight: 1.9 }}>
                   {activePair.sourceVerses.map((sv) => {
                     // Find matching target verse
                     const tv = activePair.targetVerses.find((t) => t.verse === sv.verse);
                     const diff = showDiff && tv ? diffWords(sv.text, tv.text) : null;
                     return (
                       <div key={sv.verse} style={{ marginBottom: "8px" }}>
-                        <span style={{ fontSize: "0.72rem", fontWeight: 700, color: "#999", marginRight: "6px" }}>
+                        <span style={{ fontSize: "0.72rem", fontWeight: 700, color: "var(--text-muted)", marginRight: "6px" }}>
                           {sv.verse}
                         </span>
                         {diff ? diff.source : sv.text}
@@ -297,25 +300,25 @@ export default function ParallelPassagesTool() {
               {/* Target */}
               <div
                 style={{
-                  background: "#ffffff",
+                  background: "var(--surface)",
                   borderRadius: "12px",
                   padding: isMobile ? "16px" : "24px",
-                  border: "1px solid #e5e7eb",
+                  border: "1px solid var(--border)",
                 }}
               >
-                <div style={{ fontSize: "0.92rem", fontWeight: 700, color: "#222", marginBottom: "4px" }}>
+                <div style={{ fontSize: "0.92rem", fontWeight: 700, color: "var(--text)", marginBottom: "4px" }}>
                   {activePair.targetBook} {activePair.targetChapter}
                 </div>
-                <div style={{ fontSize: "0.7rem", color: "#888", marginBottom: "16px" }}>
+                <div style={{ fontSize: "0.7rem", color: "var(--text-muted)", marginBottom: "16px" }}>
                   Parallel text
                 </div>
-                <div style={{ fontSize: "0.88rem", color: "#333", lineHeight: 1.9 }}>
+                <div style={{ fontSize: "0.88rem", color: "rgba(255,255,255,0.75)", lineHeight: 1.9 }}>
                   {activePair.targetVerses.map((tv) => {
                     const sv = activePair.sourceVerses.find((s) => s.verse === tv.verse);
                     const diff = showDiff && sv ? diffWords(sv.text, tv.text) : null;
                     return (
                       <div key={tv.verse} style={{ marginBottom: "8px" }}>
-                        <span style={{ fontSize: "0.72rem", fontWeight: 700, color: "#999", marginRight: "6px" }}>
+                        <span style={{ fontSize: "0.72rem", fontWeight: 700, color: "var(--text-muted)", marginRight: "6px" }}>
                           {tv.verse}
                         </span>
                         {diff ? diff.target : tv.text}

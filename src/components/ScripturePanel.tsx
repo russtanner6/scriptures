@@ -147,7 +147,7 @@ export default function ScripturePanel({
                 style={{
                   fontSize: "1.15rem",
                   fontWeight: 700,
-                  color: volumeColor || "#222",
+                  color: "#222",
                   marginBottom: "4px",
                 }}
               >
@@ -263,7 +263,7 @@ export default function ScripturePanel({
                         fontWeight: 700,
                         textTransform: "uppercase",
                         letterSpacing: "0.08em",
-                        color: accentColor,
+                        color: "#222",
                         marginBottom: "8px",
                         textDecoration: "none",
                         transition: "opacity 0.15s",
@@ -298,7 +298,7 @@ export default function ScripturePanel({
                         fontWeight: 700,
                         textTransform: "uppercase",
                         letterSpacing: "0.08em",
-                        color: accentColor,
+                        color: "#222",
                         marginBottom: "8px",
                       }}
                     >

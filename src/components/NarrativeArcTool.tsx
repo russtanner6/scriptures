@@ -576,9 +576,17 @@ export default function NarrativeArcTool() {
                       const canvas = event.native?.target as HTMLCanvasElement | undefined;
                       if (canvas) canvas.style.cursor = elements.length > 0 ? "pointer" : "default";
                     },
-                    onClick: (_event, elements) => {
-                      if (elements.length === 0) return;
-                      const el = elements[0];
+                    onClick: (_event, elements, chart) => {
+                      // Use 'nearest' + intersect to get the specific point clicked,
+                      // not all datasets at that x-index (which always picks dataset 0)
+                      const nearest = chart.getElementsAtEventForMode(
+                        (_event as any).native,
+                        "nearest",
+                        { intersect: true },
+                        false
+                      );
+                      if (nearest.length === 0) return;
+                      const el = nearest[0];
                       const dataIndex = el.index;
                       const datasetIndex = el.datasetIndex;
                       const termResult = volResults[datasetIndex];
@@ -654,15 +662,20 @@ export default function NarrativeArcTool() {
                         ticks: {
                           maxRotation: isSingleBook ? 0 : (isMobile ? 90 : 45),
                           font: { size: isSingleBook ? 9 : (isMobile ? 9 : 11), weight: 500 },
-                          // For single-book volumes with many sections, show every 10th label
+                          // For single-book volumes with many sections, show sparse labels
+                          // Use `val` (category index) not `index` (visible tick position) — index shifts when zoomed
                           callback: isSingleBook
-                            ? function(this: any, _val: any, index: number) {
-                                const sectionNum = index + 1;
-                                if (sectionNum === 1 || sectionNum % 10 === 0) return `Sec ${sectionNum}`;
-                                return "";
+                            ? function(this: any, val: any) {
+                                const sectionNum = (val as number) + 1;
+                                // When zoomed in, show more labels; when zoomed out, show every 10th
+                                const scale = this as any;
+                                const visibleRange = (scale.max || 0) - (scale.min || 0) + 1;
+                                const step = visibleRange > 80 ? 10 : visibleRange > 30 ? 5 : 1;
+                                if (sectionNum === 1 || sectionNum % step === 0) return `Sec ${sectionNum}`;
+                                return null;
                               }
-                            : function(this: any, _val: any, index: number) {
-                                return allLabels[index] || "";
+                            : function(this: any, val: any) {
+                                return allLabels[val as number] || "";
                               },
                           autoSkip: !isSingleBook,
                         },
@@ -692,7 +705,7 @@ export default function NarrativeArcTool() {
                 >
                   <thead>
                     <tr>
-                      {["Term", "Total", "Peak Book"].map((heading, idx) => (
+                      {["Term", "Total", "Most Frequent In"].map((heading, idx) => (
                         <th
                           key={heading}
                           style={{
