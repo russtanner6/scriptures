@@ -53,7 +53,7 @@ src/
 │   ├── parallel/      # Side-by-side parallel passage comparison (NEW)
 │   ├── chiasmus/      # Chiasmus (ABBA pattern) detector (NEW)
 │   ├── topics/        # Topic map — find thematically similar chapters (NEW)
-│   ├── timeline/      # Historical timeline of books and events (NEW)
+│   ├── timeline/      # Historical timeline (SHELVED — removed from nav, code preserved)
 │   ├── read/          # Scripture reader (volume → book → chapter)
 │   ├── bookmarks/     # Saved verse bookmarks
 │   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats, word-cloud, chapter-stats, random-verse, sentiment, parallel-passages, chiasmus, topic-similarity)
@@ -65,7 +65,11 @@ src/
 │   ├── ParallelPassagesTool.tsx # Side-by-side passage comparison with diff (NEW)
 │   ├── ChiasmusTool.tsx       # Chiasmus pattern detector with visual display (NEW)
 │   ├── TopicMapTool.tsx       # Find thematically similar chapters (NEW)
-│   ├── TimelineTool.tsx       # Historical timeline visualization (NEW)
+│   ├── TimelineTool.tsx       # Historical timeline (SHELVED — code preserved)
+│   ├── FilterDropdown.tsx     # Reusable collapsible dropdown for filter groups (Volumes, Options, etc.)
+│   ├── Footer.tsx             # Site-wide footer (copyright, nav links, resources)
+│   ├── VolumeCheckboxes.tsx   # Shared: VolumeCheckboxes, CategoryPills, SectionLabel components
+│   ├── MethodologyModal.tsx   # Shared: MethodologyModal, MethodSection, MethodNote, MethodLink
 │   ├── ChapterInsights.tsx    # Collapsible chapter analysis panel (TF-IDF themes, word cloud, density)
 │   ├── VersePopover.tsx       # Verse tap popover (copy, bookmark, key words, notes)
 │   ├── BookmarksList.tsx      # Bookmarks page with volume grouping
@@ -166,17 +170,17 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 - Accent: purple (#8b5cf6) for interactive elements
 
 ## Pages
-1. **Home** (`/`) — Landing page with gradient hero, 6 core tool cards + 5 discovery tool cards, random verse, recent searches, stats footer.
-2. **Word Search** (`/search`) — Single-word frequency search with bar charts, narrative arc section, data table, stat cards. Sticky jump-to nav.
-3. **Narrative Arc** (`/narrative-arc`) — Multi-term comparison (up to 6). All 5 volumes. Deep linking (`?terms=faith,grace`). Export per chart.
-4. **Theme Heatmap** (`/heatmap`) — Single-word heatmap across all volumes. Heatmap/arc view toggle. Deep linking (`?word=faith`).
-5. **Word Cloud** (`/wordcloud`) — Interactive tag cloud. Volume → Book → Chapter. Deep linking. Adjustable word count.
-6. **Sentiment Arc** (`/sentiment`) — Emotional tone across books. 7 categories (promise, warning, praise, lament, commandment, prophetic, faith). Chart.js line charts per volume with zoom.
-7. **Parallel Passages** (`/parallel`) — Side-by-side comparison of parallel texts (Isaiah/2 Nephi, Sermon on Mount/3 Nephi, etc.). Word-level diff highlighting.
-8. **Chiasmus Detector** (`/chiasmus`) — Find ABBA mirror patterns in chapters. Volume → Book → Chapter selection. Scan entire volume. Visual bracket display.
-9. **Topic Map** (`/topics`) — Pick any chapter, find thematically similar chapters via cosine similarity. Shared terms. Cross-volume discovery.
-10. **Timeline** (`/timeline`) — Historical timeline with era bands, book bars by volume, key events. Period filters. Click to read.
-11. **Scripture Reader** (`/read`) — Full reading experience with light/dark mode, font size, keyboard nav, reading progress, Chapter Insights, verse popover (copy/bookmark/notes), in-chapter search, annotation indicators. Reading streaks.
+1. **Home** (`/`) — Landing page with gradient hero, 6 core tool cards + 4 discovery tool cards, random verse, recent searches. Site-wide Footer component.
+2. **Word Search** (`/search`) — Single-word frequency search with bar charts, narrative arc section, data table, stat cards. Two-column search panel with FilterDropdowns.
+3. **Narrative Arc** (`/narrative-arc`) — Multi-term comparison (up to 6). All 5 volumes. Two-column search panel with FilterDropdowns. Deep linking (`?terms=faith,grace`).
+4. **Theme Heatmap** (`/heatmap`) — Single-word heatmap across all volumes. Two-column search panel with FilterDropdowns. Heatmap/arc view toggle. Deep linking (`?word=faith`).
+5. **Word Cloud** (`/wordcloud`) — Interactive tag cloud. Single-column flow layout (no search bar). Volume → Book → Chapter. Deep linking.
+6. **Sentiment Arc** (`/sentiment`) — Emotional tone across books. Two-column search panel with FilterDropdowns. 7 categories.
+7. **Parallel Passages** (`/parallel`) — Side-by-side comparison of parallel texts. Word-level diff highlighting. ⚠️ NOT yet updated with new search panel pattern.
+8. **Chiasmus Detector** (`/chiasmus`) — Find ABBA mirror patterns. Single-column flow layout (picker-style). Scan entire volume.
+9. **Topic Map** (`/topics`) — Chapter similarity finder. Single-column flow layout (picker-style). Cosine similarity.
+10. **Timeline** (`/timeline`) — SHELVED. Code preserved but removed from nav/footer/home page.
+11. **Scripture Reader** (`/read`) — Full reading experience with light/dark mode, font size, keyboard nav, reading progress, Chapter Insights, verse popover, annotations. Reading streaks.
 12. **Bookmarks** (`/bookmarks`) — Saved verses grouped by volume.
 
 ## Key Components
@@ -187,13 +191,23 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 - **ParallelPassagesTool** — Side-by-side passage comparison with word-level diff highlighting.
 - **ChiasmusTool** — Chiasmus pattern detection with visual bracket display and volume scanning.
 - **TopicMapTool** — Chapter similarity finder using cosine similarity on word vectors.
-- **TimelineTool** — Historical timeline with era bands, swim lanes, and event markers.
+- **TimelineTool** — Historical timeline (SHELVED — code preserved, removed from nav).
+- **FilterDropdown** — Reusable collapsible dropdown trigger for filter groups (Volumes, Options, Categories). Used by search-bar tools.
+- **Footer** — Site-wide footer: brand, nav links (Analyze/Discover), external resources, copyright.
+- **VolumeCheckboxes** — Shared: `VolumeCheckboxes` (14px custom checkboxes), `CategoryPills` (toggle pills), `SectionLabel` (0.65rem uppercase labels).
+- **MethodologyModal** — Shared: `MethodologyModal`, `MethodSection`, `MethodNote`, `MethodLink` for "How this works" modals.
 - **BookmarksList** — Bookmarks page component with volume grouping.
 - **ExportChartModal / ExportButton** — Chart.js export (PNG/JPG/PDF via jsPDF).
 - **DashboardCard** — Section wrapper with `headerExtra` prop.
 - **ChartHints** — Platform-aware interaction hints (Option/Alt + scroll, pinch, etc.).
 - **useIsMobile(768)** — Hook for responsive layout.
 - **search-bar-glow** — CSS class for search bar border glow animation.
+
+### Search Panel Patterns
+Two layout patterns exist depending on whether the tool has a search bar:
+- **Two-column (search-bar tools):** Left column = title, description, search bar. Right column = FilterDropdown components (Volumes, Options). Used by: WordFrequencyTool, NarrativeArcTool, HeatmapTool, SentimentArcTool.
+- **Single-column flow (picker tools):** Title/description at top, then horizontal-flow selectors (volume pills → book → chapter). Used by: WordCloudTool, ChiasmusTool, TopicMapTool.
+- All search panels use `.search-panel` class: max-width 900px, centered with `margin: auto`, `overflow: visible` (needed for dropdown panels).
 
 ## API Routes
 - `/api/books` — All volumes with books
