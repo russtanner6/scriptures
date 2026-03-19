@@ -3,12 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const NAV_ITEMS = [
-  { href: "/", label: "Home", icon: "🏠" },
-  { href: "/search", label: "Word Search", icon: "🔍" },
+const NAV_ITEMS: { href: string; label: string; icon?: string; svgIcon?: string }[] = [
+  { href: "/", label: "Home", svgIcon: "/home.svg" },
+  { href: "/search", label: "Word Search", svgIcon: "/search.svg" },
   { href: "/narrative-arc", label: "Narrative Arc", icon: "📈" },
-  { href: "/heatmap", label: "Theme Heatmap", icon: "🔥" },
-  { href: "/wordcloud", label: "Word Cloud", icon: "☁️" },
+  { href: "/heatmap", label: "Theme Heatmap", svgIcon: "/heatmap.svg" },
+  { href: "/wordcloud", label: "Word Cloud", svgIcon: "/word-cloud.svg" },
   { href: "/read", label: "Read Scriptures", icon: "📖" },
   { href: "/bookmarks", label: "Bookmarks", icon: "★" },
 ];
@@ -118,7 +118,20 @@ export default function NavMenu({
                   transition: "all 0.15s ease",
                 }}
               >
-                <span style={{ fontSize: "1.1rem" }}>{item.icon}</span>
+                {item.svgIcon ? (
+                  <img
+                    src={item.svgIcon}
+                    alt=""
+                    style={{
+                      width: "18px",
+                      height: "18px",
+                      filter: isActive ? "invert(1) brightness(1)" : "invert(1) brightness(0.55)",
+                      transition: "filter 0.15s",
+                    }}
+                  />
+                ) : (
+                  <span style={{ fontSize: "1.1rem" }}>{item.icon}</span>
+                )}
                 {item.label}
               </Link>
             );
