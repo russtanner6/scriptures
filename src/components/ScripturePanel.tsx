@@ -128,9 +128,11 @@ export default function ScripturePanel({
         <div
           style={{
             padding: "20px 24px 16px",
-            borderBottom: "1px solid #e5e7eb",
             flexShrink: 0,
-            background: "#fafafa",
+            background: "#f8f8f8",
+            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.06)",
+            zIndex: 1,
+            position: "relative",
           }}
         >
           <div
@@ -138,7 +140,6 @@ export default function ScripturePanel({
               display: "flex",
               justifyContent: "space-between",
               alignItems: "flex-start",
-              marginBottom: "8px",
             }}
           >
             <div style={{ flex: 1, minWidth: 0 }}>
@@ -146,7 +147,7 @@ export default function ScripturePanel({
                 style={{
                   fontSize: "1.15rem",
                   fontWeight: 700,
-                  color: "#222",
+                  color: volumeColor || "#222",
                   marginBottom: "4px",
                 }}
               >
@@ -155,40 +156,19 @@ export default function ScripturePanel({
               <p
                 style={{
                   fontSize: "0.82rem",
-                  color: "#666",
+                  color: "#888",
                 }}
               >
                 {isLoading
                   ? "Loading verses..."
                   : `${verses.length} verse${verses.length !== 1 ? "s" : ""} containing "${word}"`}
               </p>
-              {!isLoading && verses.length > 0 && (
-                <a
-                  href={`/read?bookId=${bookId}&chapter=${chapter || (verses[0]?.chapter ?? 1)}&highlight=${encodeURIComponent(word)}`}
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "4px",
-                    fontSize: "0.78rem",
-                    fontWeight: 500,
-                    color: accentColor,
-                    textDecoration: "none",
-                    marginTop: "4px",
-                    opacity: 0.85,
-                    transition: "opacity 0.15s",
-                  }}
-                  onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
-                  onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.85")}
-                >
-                  Read in context →
-                </a>
-              )}
             </div>
             <button
               onClick={onClose}
               style={{
                 background: "rgba(0, 0, 0, 0.04)",
-                border: "1px solid #e5e7eb",
+                border: "1px solid #e0e0e0",
                 borderRadius: "8px",
                 width: "36px",
                 height: "36px",
@@ -215,18 +195,6 @@ export default function ScripturePanel({
               ✕
             </button>
           </div>
-
-          {/* Volume color accent bar */}
-          {volumeColor && (
-            <div
-              style={{
-                height: "3px",
-                background: `linear-gradient(90deg, ${volumeColor}, ${volumeColor}00)`,
-                borderRadius: "2px",
-                marginTop: "4px",
-              }}
-            />
-          )}
         </div>
 
         {/* Verses list */}
