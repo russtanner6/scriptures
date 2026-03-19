@@ -189,16 +189,17 @@ function downloadFile(dataUrl: string, filename: string) {
  * Small "EXPORT" button to place in chart module headers.
  * Usage: <ExportButton onClick={() => setShowExport(true)} />
  */
-export function ExportButton({ onClick }: { onClick: () => void }) {
+export function ExportButton({ onClick, compact }: { onClick: () => void; compact?: boolean }) {
   return (
     <button
       type="button"
       onClick={onClick}
+      title="Export chart"
       style={{
         display: "inline-flex",
         alignItems: "center",
         gap: "5px",
-        padding: "4px 10px",
+        padding: compact ? "5px 7px" : "4px 10px",
         borderRadius: "6px",
         border: "1px solid rgba(255,255,255,0.1)",
         background: "transparent",
@@ -217,7 +218,46 @@ export function ExportButton({ onClick }: { onClick: () => void }) {
         <polyline points="7 10 12 15 17 10" />
         <line x1="12" y1="15" x2="12" y2="3" />
       </svg>
-      Export
+      {!compact && "Export"}
+    </button>
+  );
+}
+
+/**
+ * Small "ZOOM" toggle button for chart module headers.
+ * Usage: <ZoomButton active={zoomActive} onClick={() => toggleZoom()} />
+ */
+export function ZoomButton({ active, onClick, compact }: { active: boolean; onClick: () => void; compact?: boolean }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      title={active ? "Disable zoom — click to turn off" : "Enable zoom — scroll to zoom, drag to pan"}
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        gap: "5px",
+        padding: compact ? "5px 7px" : "4px 10px",
+        borderRadius: "6px",
+        border: active ? "1px solid var(--accent, #3B82F6)" : "1px solid rgba(255,255,255,0.1)",
+        background: active ? "var(--accent, #3B82F6)" : "transparent",
+        color: active ? "#fff" : "var(--text-secondary, #9ca3af)",
+        fontSize: "0.72rem",
+        fontWeight: 600,
+        textTransform: "uppercase",
+        letterSpacing: "0.08em",
+        fontFamily: "inherit",
+        cursor: "pointer",
+        transition: "all 0.15s",
+      }}
+    >
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="11" cy="11" r="8" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        <line x1="11" y1="8" x2="11" y2="14" />
+        <line x1="8" y1="11" x2="14" y2="11" />
+      </svg>
+      {!compact && (active ? "Zoom ON" : "Zoom")}
     </button>
   );
 }

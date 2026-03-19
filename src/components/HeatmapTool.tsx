@@ -16,7 +16,7 @@ import { Line } from "react-chartjs-2";
 import type { Volume, ScripturePanelState } from "@/lib/types";
 import { VOLUME_COLORS, getContrastText, compactVolumeName } from "@/lib/constants";
 import ScripturePanel from "./ScripturePanel";
-import { ExportButton } from "./ExportChartModal";
+import { ExportButton, ZoomButton } from "./ExportChartModal";
 import ExportChartModal from "./ExportChartModal";
 import ExportHtmlModal from "./ExportHtmlModal";
 
@@ -452,10 +452,30 @@ export default function HeatmapTool() {
                         }
                       </p>
                     </div>
-                    <ExportButton onClick={() => {
-                      if (getViewMode(abbrev) === "arc") setExportChartAbbrev(abbrev);
-                      else setExportAbbrev(abbrev);
-                    }} />
+                    <div style={{ display: "flex", gap: "6px", alignItems: "center", flexShrink: 0 }}>
+                      {!isMobile && getViewMode(abbrev) === "arc" && (
+                        <ZoomButton
+                          active={zoomActiveAbbrevs.has(abbrev)}
+                          onClick={() => {
+                            setZoomActiveAbbrevs((prev) => {
+                              const next = new Set(prev);
+                              if (next.has(abbrev)) {
+                                next.delete(abbrev);
+                                const ref = chartRefs.current.get(abbrev);
+                                if (ref?.current) ref.current.resetZoom();
+                              } else {
+                                next.add(abbrev);
+                              }
+                              return next;
+                            });
+                          }}
+                        />
+                      )}
+                      <ExportButton compact={isMobile} onClick={() => {
+                        if (getViewMode(abbrev) === "arc") setExportChartAbbrev(abbrev);
+                        else setExportAbbrev(abbrev);
+                      }} />
+                    </div>
                   </div>
 
                   {/* View toggle */}
@@ -565,7 +585,7 @@ export default function HeatmapTool() {
                           options={{
                             responsive: true,
                             maintainAspectRatio: false,
-                            ...({ clip: true } as Record<string, unknown>),
+                            ...({ clip: { left: true, right: true, bottom: true, top: false } } as Record<string, unknown>),
                             onHover: (event, elements) => {
                               const canvas = event.native?.target as HTMLCanvasElement | undefined;
                               if (canvas) canvas.style.cursor = elements.length > 0 ? "pointer" : "default";
@@ -641,8 +661,10 @@ export default function HeatmapTool() {
                                         if (num === 1 || num % 10 === 0) return `Sec ${num}`;
                                         return "";
                                       }
-                                    : undefined,
-                                  autoSkip: false,
+                                    : function(this: any, _val: any, index: number) {
+                                        return arcLabels[index] || "";
+                                      },
+                                  autoSkip: !isSingleBook,
                                 },
                               },
                             },
@@ -650,40 +672,6 @@ export default function HeatmapTool() {
                         />
                       </div>
                       </div>
-                      {!isMobile && (
-                        <div style={{ textAlign: "center", marginTop: "6px" }}>
-                          <button
-                            type="button"
-                            onClick={() => {
-                              setZoomActiveAbbrevs((prev) => {
-                                const next = new Set(prev);
-                                if (next.has(abbrev)) {
-                                  next.delete(abbrev);
-                                  const ref = chartRefs.current.get(abbrev);
-                                  if (ref?.current) ref.current.resetZoom();
-                                } else {
-                                  next.add(abbrev);
-                                }
-                                return next;
-                              });
-                            }}
-                            style={{
-                              background: zoomActiveAbbrevs.has(abbrev) ? "var(--accent)" : "transparent",
-                              color: zoomActiveAbbrevs.has(abbrev) ? "#fff" : "var(--text-muted)",
-                              border: zoomActiveAbbrevs.has(abbrev) ? "1px solid var(--accent)" : "1px solid var(--border)",
-                              borderRadius: "6px",
-                              padding: "4px 12px",
-                              fontSize: "0.72rem",
-                              fontFamily: "inherit",
-                              cursor: "pointer",
-                              transition: "all 0.15s ease",
-                              opacity: zoomActiveAbbrevs.has(abbrev) ? 1 : 0.7,
-                            }}
-                          >
-                            {zoomActiveAbbrevs.has(abbrev) ? "Zoom ON — scroll to zoom, drag to pan" : "Enable zoom"}
-                          </button>
-                        </div>
-                      )}
                       {isMobile && (
                         <p style={{ textAlign: "center", fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "6px", opacity: 0.6 }}>
                           Swipe to explore →

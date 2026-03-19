@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback, createRef } from "react";
-import ExportChartModal, { ExportButton } from "./ExportChartModal";
+import ExportChartModal, { ExportButton, ZoomButton } from "./ExportChartModal";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -446,7 +446,27 @@ export default function NarrativeArcTool() {
                     <span style={{ color: "var(--text-muted)", fontSize: "0.82rem" }}>click any point to read verses</span>
                   </p>
                 </div>
-                <ExportButton onClick={() => setExportVolumeId(vol.id)} />
+                <div style={{ display: "flex", gap: "6px", alignItems: "center", flexShrink: 0 }}>
+                  {!isMobile && (
+                    <ZoomButton
+                      active={zoomActiveVols.has(vol.id)}
+                      onClick={() => {
+                        setZoomActiveVols((prev) => {
+                          const next = new Set(prev);
+                          if (next.has(vol.id)) {
+                            next.delete(vol.id);
+                            const ref = chartRefs.current.get(vol.id);
+                            if (ref?.current) ref.current.resetZoom();
+                          } else {
+                            next.add(vol.id);
+                          }
+                          return next;
+                        });
+                      }}
+                    />
+                  )}
+                  <ExportButton compact={isMobile} onClick={() => setExportVolumeId(vol.id)} />
+                </div>
               </div>
 
               {(() => {
@@ -484,7 +504,7 @@ export default function NarrativeArcTool() {
                   options={{
                     responsive: true,
                     maintainAspectRatio: false,
-                    ...({ clip: true } as Record<string, unknown>),
+                    ...({ clip: { left: true, right: true, bottom: true, top: false } } as Record<string, unknown>),
                     onHover: (event, elements) => {
                       const canvas = event.native?.target as HTMLCanvasElement | undefined;
                       if (canvas) canvas.style.cursor = elements.length > 0 ? "pointer" : "default";
@@ -572,8 +592,10 @@ export default function NarrativeArcTool() {
                                 if (sectionNum === 1 || sectionNum % 10 === 0) return `Sec ${sectionNum}`;
                                 return "";
                               }
-                            : undefined,
-                          autoSkip: false,
+                            : function(this: any, _val: any, index: number) {
+                                return allLabels[index] || "";
+                              },
+                          autoSkip: !isSingleBook,
                         },
                       },
                     },
@@ -581,40 +603,6 @@ export default function NarrativeArcTool() {
                 />
               </div>
               </div>
-              {!isMobile && (
-                <div style={{ textAlign: "center", marginTop: "6px" }}>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setZoomActiveVols((prev) => {
-                        const next = new Set(prev);
-                        if (next.has(vol.id)) {
-                          next.delete(vol.id);
-                          const ref = chartRefs.current.get(vol.id);
-                          if (ref?.current) ref.current.resetZoom();
-                        } else {
-                          next.add(vol.id);
-                        }
-                        return next;
-                      });
-                    }}
-                    style={{
-                      background: zoomActiveVols.has(vol.id) ? "var(--accent)" : "transparent",
-                      color: zoomActiveVols.has(vol.id) ? "#fff" : "var(--text-muted)",
-                      border: zoomActiveVols.has(vol.id) ? "1px solid var(--accent)" : "1px solid var(--border)",
-                      borderRadius: "6px",
-                      padding: "4px 12px",
-                      fontSize: "0.72rem",
-                      fontFamily: "inherit",
-                      cursor: "pointer",
-                      transition: "all 0.15s ease",
-                      opacity: zoomActiveVols.has(vol.id) ? 1 : 0.7,
-                    }}
-                  >
-                    {zoomActiveVols.has(vol.id) ? "Zoom ON — scroll to zoom, drag to pan" : "Enable zoom"}
-                  </button>
-                </div>
-              )}
               {isMobile && (
                 <p style={{ textAlign: "center", fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "6px", opacity: 0.6 }}>
                   Swipe to explore →

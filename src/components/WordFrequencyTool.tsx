@@ -21,6 +21,7 @@ import DashboardCard from "./DashboardCard";
 import HorizontalBarList from "./HorizontalBarList";
 import type { BarItem } from "./HorizontalBarList";
 import DataTable from "./DataTable";
+import ExportChartModal, { ExportButton, ZoomButton } from "./ExportChartModal";
 import ScripturePanel from "./ScripturePanel";
 import type { ScripturePanelState } from "@/lib/types";
 
@@ -66,8 +67,6 @@ export default function WordFrequencyTool() {
   const [wholeWord, setWholeWord] = useState(true);
   const [results, setResults] = useState<WordFrequencyResponse | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [volumesExpanded, setVolumesExpanded] = useState(false);
-  const [optionsExpanded, setOptionsExpanded] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const pendingSearch = useRef(false);
@@ -86,6 +85,7 @@ export default function WordFrequencyTool() {
   const [scripturePanel, setScripturePanel] = useState<ScripturePanelState | null>(null);
   const arcChartRef = useRef<any>(null);
   const [arcZoomActive, setArcZoomActive] = useState(false);
+  const [exportArc, setExportArc] = useState(false);
   // Chapter-level data for single-book volumes (e.g., D&C) — keyed by volume id
   const [chapterData, setChapterData] = useState<Map<number, { label: string; count: number; bookId: number; chapter: number }[]>>(new Map());
   const [visiblePanels, setVisiblePanels] = useState<Set<string>>(
@@ -416,317 +416,41 @@ export default function WordFrequencyTool() {
           </div>
         )}
 
-        {/* Volume pills — render helper */}
-        {(() => {
-          const volumePills = volumes.map((v) => {
-            const isActive = selectedVolumeIds.has(v.id);
-            const color = VOLUME_COLORS[v.abbrev];
-            return (
-              <button
-                key={v.id}
-                type="button"
-                onClick={() => toggleVolume(v.id)}
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "7px",
-                  padding: "7px 14px",
-                  borderRadius: "8px",
-                  border: isActive
-                    ? `1px solid ${color}`
-                    : "1px solid rgba(255,255,255,0.08)",
-                  background: isActive ? color : "rgba(255,255,255,0.06)",
-                  color: isActive ? getContrastText(color) : "var(--text-secondary)",
-                  fontSize: "0.8rem",
-                  fontWeight: isActive ? 600 : 500,
-                  fontFamily: "inherit",
-                  cursor: "pointer",
-                  transition: "all 0.15s ease",
-                  letterSpacing: "0.01em",
-                }}
-              >
-                {compactVolumeName(v.name, isMobile)}
-              </button>
-            );
-          });
-
-          return (
-            <>
-              {/* Desktop: inline pills */}
-              <div
-                className="volumes-desktop"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "6px",
-                  marginBottom: "16px",
-                }}
-              >
-                <span
-                  style={{
-                    fontSize: "0.68rem",
-                    fontWeight: 600,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.12em",
-                    color: "var(--text-muted)",
-                    marginRight: "8px",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  Volumes
-                </span>
-                <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
-                  {volumePills}
-                </div>
-              </div>
-
-              {/* Mobile: collapsible section */}
-              <div
-                className="volumes-mobile"
-                style={{
-                  display: "none",
-                  marginBottom: "16px",
-                }}
-              >
-                <button
-                  type="button"
-                  onClick={() => setVolumesExpanded(!volumesExpanded)}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    width: "100%",
-                    padding: "10px 14px",
-                    background: "var(--zinc-900)",
-                    border: "1px solid var(--border-accent)",
-                    borderRadius: volumesExpanded ? "10px 10px 0 0" : "10px",
-                    color: "var(--text)",
-                    fontSize: "0.82rem",
-                    fontWeight: 600,
-                    fontFamily: "inherit",
-                    cursor: "pointer",
-                    transition: "border-radius 0.15s",
-                  }}
-                >
-                  <span style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                    <span
-                      style={{
-                        fontSize: "0.68rem",
-                        fontWeight: 600,
-                        textTransform: "uppercase",
-                        letterSpacing: "0.12em",
-                        color: "var(--text-muted)",
-                      }}
-                    >
-                      Volumes
-                    </span>
-                    <span style={{ color: "var(--text-secondary)", fontWeight: 500 }}>
-                      {selectedVolumeIds.size === volumes.length
-                        ? "All selected"
-                        : `${selectedVolumeIds.size} of ${volumes.length}`}
-                    </span>
+        {/* Volumes + Options — compact checkbox row (matches narrative arc / heatmap style) */}
+        <div style={{ display: "flex", alignItems: isMobile ? "flex-start" : "center", gap: isMobile ? "10px" : "16px", flexWrap: "wrap", flexDirection: isMobile ? "column" : "row" }}>
+          <span style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)" }}>Volumes</span>
+          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+            {volumes.map((v) => {
+              const isActive = selectedVolumeIds.has(v.id);
+              const color = VOLUME_COLORS[v.abbrev];
+              return (
+                <label key={v.id} style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", fontWeight: isActive ? 600 : 400, color: isActive ? "var(--text)" : "var(--text-secondary)", transition: "color 0.15s", whiteSpace: "nowrap" }}>
+                  <span onClick={(e) => { e.preventDefault(); toggleVolume(v.id); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: isActive ? `2px solid ${color}` : "2px solid rgba(255,255,255,0.2)", background: isActive ? color : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                    {isActive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke={getContrastText(color)} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
                   </span>
-                  <span
-                    style={{
-                      fontSize: "0.7rem",
-                      color: "var(--text-muted)",
-                      transition: "transform 0.2s",
-                      transform: volumesExpanded ? "rotate(180deg)" : "rotate(0deg)",
-                    }}
-                  >
-                    ▼
-                  </span>
-                </button>
-                {volumesExpanded && (
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "8px",
-                      flexWrap: "wrap",
-                      padding: "12px 14px",
-                      background: "var(--zinc-900)",
-                      border: "1px solid var(--border-accent)",
-                      borderTop: "none",
-                      borderRadius: "0 0 10px 10px",
-                    }}
-                  >
-                    {volumePills}
-                  </div>
-                )}
-              </div>
-            </>
-          );
-        })()}
+                  {compactVolumeName(v.name, isMobile)}
+                </label>
+              );
+            })}
+          </div>
 
-        {/* Options section */}
-        {(() => {
-          const optionPills = (
-            <>
-              <button
-                type="button"
-                onClick={() => setCaseInsensitive(!caseInsensitive)}
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "6px",
-                  padding: "5px 12px",
-                  borderRadius: "8px",
-                  border: caseInsensitive
-                    ? "1px solid #3b82f6"
-                    : "1px solid var(--border)",
-                  background: caseInsensitive
-                    ? "#3b82f6"
-                    : "transparent",
-                  color: caseInsensitive
-                    ? "#fff"
-                    : "var(--text-muted)",
-                  fontSize: "0.78rem",
-                  fontWeight: 500,
-                  fontFamily: "inherit",
-                  cursor: "pointer",
-                  transition: "all 0.15s ease",
-                }}
-              >
-                <span style={{ fontSize: "0.7rem" }}>
-                  {caseInsensitive ? "✓" : ""}
-                </span>
-                Case-insensitive
-              </button>
-              <button
-                type="button"
-                onClick={() => setWholeWord(!wholeWord)}
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "6px",
-                  padding: "5px 12px",
-                  borderRadius: "8px",
-                  border: wholeWord
-                    ? "1px solid #3b82f6"
-                    : "1px solid var(--border)",
-                  background: wholeWord
-                    ? "#3b82f6"
-                    : "transparent",
-                  color: wholeWord
-                    ? "#fff"
-                    : "var(--text-muted)",
-                  fontSize: "0.78rem",
-                  fontWeight: 500,
-                  fontFamily: "inherit",
-                  cursor: "pointer",
-                  transition: "all 0.15s ease",
-                }}
-              >
-                <span style={{ fontSize: "0.7rem" }}>
-                  {wholeWord ? "✓" : ""}
-                </span>
-                Exact match
-              </button>
-            </>
-          );
+          <span style={{ width: "1px", height: "16px", background: "rgba(255,255,255,0.1)", display: isMobile ? "none" : "block" }} />
 
-          return (
-            <>
-              {/* Desktop: inline */}
-              <div
-                className="volumes-desktop"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "6px",
-                  paddingTop: "12px",
-                }}
-              >
-                <span
-                  style={{
-                    fontSize: "0.68rem",
-                    fontWeight: 600,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.12em",
-                    color: "var(--text-muted)",
-                    marginRight: "8px",
-                  }}
-                >
-                  Options
-                </span>
-                {optionPills}
-              </div>
-
-              {/* Mobile: collapsible */}
-              <div
-                className="volumes-mobile"
-                style={{
-                  display: "none",
-                  paddingTop: "12px",
-                }}
-              >
-                <button
-                  type="button"
-                  onClick={() => setOptionsExpanded(!optionsExpanded)}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    width: "100%",
-                    padding: "10px 14px",
-                    background: "var(--zinc-900)",
-                    border: "1px solid var(--border-accent)",
-                    borderRadius: optionsExpanded ? "10px 10px 0 0" : "10px",
-                    color: "var(--text)",
-                    fontSize: "0.82rem",
-                    fontWeight: 600,
-                    fontFamily: "inherit",
-                    cursor: "pointer",
-                    transition: "border-radius 0.15s",
-                  }}
-                >
-                  <span style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                    <span
-                      style={{
-                        fontSize: "0.68rem",
-                        fontWeight: 600,
-                        textTransform: "uppercase",
-                        letterSpacing: "0.12em",
-                        color: "var(--text-muted)",
-                      }}
-                    >
-                      Options
-                    </span>
-                    <span style={{ color: "var(--text-secondary)", fontWeight: 500 }}>
-                      {[caseInsensitive && "Case-insensitive", wholeWord && "Exact match"].filter(Boolean).join(", ") || "None"}
-                    </span>
-                  </span>
-                  <span
-                    style={{
-                      fontSize: "0.7rem",
-                      color: "var(--text-muted)",
-                      transition: "transform 0.2s",
-                      transform: optionsExpanded ? "rotate(180deg)" : "rotate(0deg)",
-                    }}
-                  >
-                    ▼
-                  </span>
-                </button>
-                {optionsExpanded && (
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "8px",
-                      flexWrap: "wrap",
-                      padding: "12px 14px",
-                      background: "var(--zinc-900)",
-                      border: "1px solid var(--border-accent)",
-                      borderTop: "none",
-                      borderRadius: "0 0 10px 10px",
-                    }}
-                  >
-                    {optionPills}
-                  </div>
-                )}
-              </div>
-            </>
-          );
-        })()}
+          <div style={{ display: "flex", gap: "10px" }}>
+            <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: caseInsensitive ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
+              <span onClick={(e) => { e.preventDefault(); setCaseInsensitive(!caseInsensitive); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: caseInsensitive ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: caseInsensitive ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                {caseInsensitive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+              </span>
+              Case-insensitive
+            </label>
+            <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: wholeWord ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
+              <span onClick={(e) => { e.preventDefault(); setWholeWord(!wholeWord); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: wholeWord ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: wholeWord ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                {wholeWord && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+              </span>
+              Exact match
+            </label>
+          </div>
+        </div>
       </div>
 
       {/* Results */}
@@ -1097,23 +821,37 @@ export default function WordFrequencyTool() {
                   description={isSingleBook ? `Frequency of "${results.word}" by section` : `Frequency of "${results.word}" by book in narrative order`}
                   fullWidth
                   headerExtra={
-                    <a
-                      href="/narrative-arc"
-                      style={{
-                        fontSize: "0.78rem",
-                        fontWeight: 600,
-                        color: "var(--accent)",
-                        textDecoration: "underline",
-                        textUnderlineOffset: "3px",
-                        whiteSpace: "nowrap",
-                        opacity: 0.85,
-                        transition: "opacity 0.15s",
-                      }}
-                      onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
-                      onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.85"; }}
-                    >
-                      Compare multiple terms →
-                    </a>
+                    <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
+                      <a
+                        href="/narrative-arc"
+                        style={{
+                          fontSize: "0.78rem",
+                          fontWeight: 600,
+                          color: "var(--accent)",
+                          textDecoration: "underline",
+                          textUnderlineOffset: "3px",
+                          whiteSpace: "nowrap",
+                          opacity: 0.85,
+                          transition: "opacity 0.15s",
+                        }}
+                        onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
+                        onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.85"; }}
+                      >
+                        Compare multiple terms →
+                      </a>
+                      {!isMobile && (
+                        <ZoomButton
+                          compact={isMobile}
+                          active={arcZoomActive}
+                          onClick={() => {
+                            const next = !arcZoomActive;
+                            setArcZoomActive(next);
+                            if (!next && arcChartRef.current) arcChartRef.current.resetZoom();
+                          }}
+                        />
+                      )}
+                      <ExportButton compact={isMobile} onClick={() => setExportArc(true)} />
+                    </div>
                   }
                 >
                   {/* Volume tabs */}
@@ -1191,7 +929,7 @@ export default function WordFrequencyTool() {
                       options={{
                         responsive: true,
                         maintainAspectRatio: false,
-                        ...({ clip: true } as Record<string, unknown>),
+                        ...({ clip: { left: true, right: true, bottom: true, top: false } } as Record<string, unknown>),
                         plugins: {
                           legend: { display: false },
                           tooltip: {
@@ -1269,8 +1007,10 @@ export default function WordFrequencyTool() {
                                     if (sectionNum === 1 || sectionNum % 10 === 0) return `Sec ${sectionNum}`;
                                     return "";
                                   }
-                                : undefined,
-                              autoSkip: false,
+                                : function(this: unknown, _val: unknown, index: number) {
+                                    return arcData[index]?.name || "";
+                                  },
+                              autoSkip: !isSingleBook,
                             },
                           },
                         },
@@ -1278,34 +1018,6 @@ export default function WordFrequencyTool() {
                     />
                   </div>
                   </div>
-                  {!isMobile && (
-                    <div style={{ textAlign: "center", marginTop: "6px" }}>
-                      <button
-                        type="button"
-                        onClick={() => {
-                          const next = !arcZoomActive;
-                          setArcZoomActive(next);
-                          if (!next && arcChartRef.current) {
-                            arcChartRef.current.resetZoom();
-                          }
-                        }}
-                        style={{
-                          background: arcZoomActive ? "var(--accent)" : "transparent",
-                          color: arcZoomActive ? "#fff" : "var(--text-muted)",
-                          border: arcZoomActive ? "1px solid var(--accent)" : "1px solid var(--border)",
-                          borderRadius: "6px",
-                          padding: "4px 12px",
-                          fontSize: "0.72rem",
-                          fontFamily: "inherit",
-                          cursor: "pointer",
-                          transition: "all 0.15s ease",
-                          opacity: arcZoomActive ? 1 : 0.7,
-                        }}
-                      >
-                        {arcZoomActive ? "Zoom ON — scroll to zoom, drag to pan" : "Enable zoom"}
-                      </button>
-                    </div>
-                  )}
                   {isMobile && (
                     <p style={{ textAlign: "center", fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "6px", opacity: 0.6 }}>
                       Swipe to explore →
@@ -1410,6 +1122,14 @@ export default function WordFrequencyTool() {
           onClose={() => setScripturePanel(null)}
         />
       )}
+
+      {/* Export modal for narrative arc */}
+      <ExportChartModal
+        isOpen={exportArc}
+        onClose={() => setExportArc(false)}
+        chartRef={arcChartRef}
+        title={results ? `${results.word} narrative arc` : "narrative arc"}
+      />
     </div>
   );
 }
