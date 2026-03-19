@@ -12,7 +12,7 @@ import {
   Legend,
 } from "chart.js";
 import ChartDataLabels from "chartjs-plugin-datalabels";
-import zoomPlugin from "chartjs-plugin-zoom";
+// Zoom plugin loaded client-side only (see useEffect below)
 import { Line } from "react-chartjs-2";
 import type { Volume, WordFrequencyResponse } from "@/lib/types";
 import { VOLUME_COLORS, getContrastText, compactVolumeName } from "@/lib/constants";
@@ -33,9 +33,9 @@ ChartJS.register(
   Filler,
   Tooltip,
   Legend,
-  ChartDataLabels,
-  zoomPlugin
+  ChartDataLabels
 );
+// Zoom plugin registered client-side in useEffect
 
 // Chart.js global defaults for dark theme
 ChartJS.defaults.color = "#9ca3af";
@@ -73,6 +73,13 @@ export default function WordFrequencyTool() {
   const inputRef = useRef<HTMLInputElement>(null);
   const pendingSearch = useRef(false);
   const isMobile = useIsMobile();
+
+  // Register zoom plugin client-side only (avoids SSR window error)
+  useEffect(() => {
+    import("chartjs-plugin-zoom").then((mod) => {
+      ChartJS.register(mod.default);
+    });
+  }, []);
 
   // Chart visibility toggles — all on by default
   const [arcVolumeTab, setArcVolumeTab] = useState<number | null>(null);
