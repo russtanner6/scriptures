@@ -387,12 +387,12 @@ export default function ScriptureReader() {
   // Speaker type colors — darker in light mode for readability
   const SPEAKER_COLORS: Record<SpeakerType, string> = lightMode
     ? {
-        divine: "#B8860B",
-        prophet: "#2563EB",
-        apostle: "#059669",
-        angel: "#7C3AED",
-        narrator: "#4B5563",
-        other: "#6B7280",
+        divine: "#9A6B00",
+        prophet: "#1D4ED8",
+        apostle: "#047857",
+        angel: "#6D28D9",
+        narrator: "#374151",
+        other: "#4B5563",
       }
     : {
         divine: "#F5A623",
@@ -796,22 +796,22 @@ export default function ScriptureReader() {
                     style={{
                       display: "inline-flex",
                       alignItems: "center",
-                      gap: "5px",
-                      padding: "5px 12px",
-                      borderRadius: "20px",
+                      gap: "4px",
+                      padding: "3px 9px",
+                      borderRadius: "6px",
                       border: `1px solid ${showSpeakers ? (lightMode ? "rgba(0,0,0,0.15)" : "rgba(255,255,255,0.15)") : theme.border}`,
                       background: showSpeakers
                         ? (lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.08)")
                         : "transparent",
                       color: showSpeakers ? theme.text : theme.textMuted,
-                      fontSize: "0.72rem",
+                      fontSize: "0.65rem",
                       fontWeight: 500,
                       cursor: "pointer",
                       fontFamily: "inherit",
                       transition: "all 0.15s",
                     }}
                   >
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
                       <circle cx="12" cy="7" r="4" />
                     </svg>
@@ -828,28 +828,28 @@ export default function ScriptureReader() {
                     style={{
                       display: "inline-flex",
                       alignItems: "center",
-                      gap: "5px",
-                      padding: "5px 12px",
-                      borderRadius: "20px",
+                      gap: "4px",
+                      padding: "3px 9px",
+                      borderRadius: "6px",
                       border: `1px solid ${showResources ? (lightMode ? "rgba(0,0,0,0.15)" : "rgba(255,255,255,0.15)") : theme.border}`,
                       background: showResources
                         ? (lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.08)")
                         : "transparent",
                       color: showResources ? theme.text : theme.textMuted,
-                      fontSize: "0.72rem",
+                      fontSize: "0.65rem",
                       fontWeight: 500,
                       cursor: "pointer",
                       fontFamily: "inherit",
                       transition: "all 0.15s",
                     }}
                   >
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
                       <line x1="8" y1="21" x2="16" y2="21" />
                       <line x1="12" y1="17" x2="12" y2="21" />
                     </svg>
                     Resources
-                    <span style={{ fontSize: "0.62rem", color: theme.textMuted }}>
+                    <span style={{ fontSize: "0.58rem", color: theme.textMuted }}>
                       ({chapterResources.length})
                     </span>
                   </button>
@@ -864,32 +864,46 @@ export default function ScriptureReader() {
                 return (
                   <div
                     style={{
-                      fontSize: "0.68rem",
-                      color: theme.textMuted,
                       marginTop: "10px",
                       display: "flex",
                       alignItems: "center",
-                      gap: "12px",
+                      gap: "6px",
                       flexWrap: "wrap",
                     }}
                   >
+                    <span style={{
+                      fontSize: "0.58rem",
+                      fontWeight: 600,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.08em",
+                      color: theme.textMuted,
+                      marginRight: "2px",
+                    }}>
+                      Speakers:
+                    </span>
                     {uniqueSpeakers.slice(0, 8).map((s) => (
                       <span
                         key={s.speaker}
                         style={{
-                          display: "flex",
+                          display: "inline-flex",
                           alignItems: "center",
-                          gap: "4px",
+                          gap: "3px",
+                          padding: "1px 7px",
+                          borderRadius: "4px",
+                          background: lightMode
+                            ? `${SPEAKER_COLORS[s.speakerType]}18`
+                            : `${SPEAKER_COLORS[s.speakerType]}20`,
+                          border: `1px solid ${SPEAKER_COLORS[s.speakerType]}${lightMode ? "30" : "40"}`,
                           color: SPEAKER_COLORS[s.speakerType],
                           fontWeight: 600,
-                          fontSize: "0.62rem",
+                          fontSize: "0.58rem",
                           textTransform: "uppercase",
-                          letterSpacing: "0.04em",
+                          letterSpacing: "0.03em",
                         }}
                       >
                         <span style={{
-                          width: "6px",
-                          height: "6px",
+                          width: "5px",
+                          height: "5px",
                           borderRadius: "50%",
                           background: SPEAKER_COLORS[s.speakerType],
                           flexShrink: 0,
@@ -898,7 +912,7 @@ export default function ScriptureReader() {
                       </span>
                     ))}
                     {uniqueSpeakers.length > 8 && (
-                      <span style={{ color: theme.textMuted }}>
+                      <span style={{ fontSize: "0.58rem", color: theme.textMuted }}>
                         +{uniqueSpeakers.length - 8} more
                       </span>
                     )}
@@ -910,7 +924,7 @@ export default function ScriptureReader() {
 
           {!isLoading &&
             verses.map((v) => {
-              const externalUrl = getVerseUrl(selectedBookName || "", v.chapter, v.verse);
+              // External URL available if needed: getVerseUrl(selectedBookName || "", v.chapter, v.verse)
               // Resource layer: find resources that START at this verse, and resources that COVER this verse
               const verseStartResources = showResources
                 ? chapterResources.filter((r) => r.verseStart === v.verse)
@@ -995,20 +1009,11 @@ export default function ScriptureReader() {
                   >
                   <span
                     style={{
-                      fontSize: "0.72rem",
+                      fontSize: "0.82rem",
                       fontWeight: 700,
                       color: theme.verseNum,
                       marginRight: "6px",
-                      verticalAlign: "super",
-                      cursor: externalUrl ? "pointer" : "default",
-                      transition: "color 0.15s",
                     }}
-                    title={externalUrl ? "Open on churchofjesuschrist.org" : undefined}
-                    onClick={() => {
-                      if (externalUrl) window.open(externalUrl, "_blank");
-                    }}
-                    onMouseEnter={(e) => { if (externalUrl) e.currentTarget.style.color = volColor; }}
-                    onMouseLeave={(e) => { if (externalUrl) e.currentTarget.style.color = theme.verseNum; }}
                   >
                     {v.verse}
                   </span>
@@ -1224,10 +1229,10 @@ export default function ScriptureReader() {
             bottom: 0,
             left: 0,
             right: 0,
-            background: lightMode ? "rgba(250, 249, 246, 0.95)" : "rgba(17, 17, 22, 0.95)",
-            backdropFilter: "blur(12px)",
-            WebkitBackdropFilter: "blur(12px)",
-            borderTop: `1px solid ${theme.border}`,
+            background: lightMode ? "#222222" : "#faf9f6",
+            backdropFilter: "none",
+            WebkitBackdropFilter: "none",
+            borderTop: lightMode ? "none" : "none",
             padding: isMobile ? "8px 16px" : "10px 24px",
             display: "flex",
             justifyContent: "space-between",
@@ -1241,7 +1246,7 @@ export default function ScriptureReader() {
             style={{
               background: "none",
               border: "none",
-              color: theme.textSecondary,
+              color: lightMode ? "#ffffff" : "#222222",
               cursor: isFirstChapterOfVolume ? "default" : "pointer",
               fontSize: "0.82rem",
               fontWeight: 600,
@@ -1265,18 +1270,18 @@ export default function ScriptureReader() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                opacity: 0.5,
+                opacity: 0.6,
                 transition: "opacity 0.15s",
               }}
               onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.5"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.6"; }}
             >
-              <img src="/tree-logo.svg" alt="Home" style={{ height: "22px", width: "auto", filter: lightMode ? "invert(1)" : "none" }} />
+              <img src="/tree-logo.svg" alt="Home" style={{ height: "22px", width: "auto", filter: lightMode ? "none" : "invert(1)" }} />
             </a>
             <div
               style={{
                 fontSize: "0.62rem",
-                color: theme.textMuted,
+                color: lightMode ? "rgba(255,255,255,0.4)" : "rgba(0,0,0,0.35)",
                 fontWeight: 500,
               }}
             >
@@ -1289,7 +1294,7 @@ export default function ScriptureReader() {
             style={{
               background: "none",
               border: "none",
-              color: theme.textSecondary,
+              color: lightMode ? "#ffffff" : "#222222",
               cursor: isLastChapterOfVolume ? "default" : "pointer",
               fontSize: "0.82rem",
               fontWeight: 600,
