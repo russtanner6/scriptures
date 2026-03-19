@@ -141,7 +141,7 @@ export default function NarrativeArcTool() {
       }
       return next;
     });
-    setResults([]);
+    // Don't clear results — let toggles filter display reactively
   };
 
   const addTerm = () => {
@@ -246,6 +246,83 @@ export default function NarrativeArcTool() {
       handleAnalyze();
     }
   }, [terms, volumes.length, handleAnalyze, results.length]);
+
+  // Auto-fetch data for newly toggled-on volumes that don't have data yet
+  useEffect(() => {
+    if (results.length === 0 || terms.length === 0) return;
+    const missingVolumes = volumes.filter(
+      (v) => selectedVolumeIds.has(v.id) && results.length > 0 && !results[0].volumeData.has(v.id)
+    );
+    if (missingVolumes.length === 0) return;
+
+    (async () => {
+      const updatedResults = [...results];
+      for (const vol of missingVolumes) {
+        for (let i = 0; i < updatedResults.length; i++) {
+          const term = updatedResults[i].term;
+          const isSingleBook = vol.books.length === 1;
+
+          if (isSingleBook) {
+            const book = vol.books[0];
+            const params = new URLSearchParams({
+              word: term,
+              bookId: String(book.id),
+              chapterCount: String(book.chapterCount),
+              caseInsensitive: String(caseInsensitive),
+              wholeWord: String(wholeWord),
+            });
+            try {
+              const res = await fetch(`/api/word-frequency-by-chapter?${params}`);
+              const data = await res.json();
+              const chapterDataArr = (data.results as { chapter: number; count: number }[]).map((r) => ({
+                label: `Section ${r.chapter}`,
+                count: r.count,
+                bookId: book.id,
+                chapter: r.chapter,
+              }));
+              updatedResults[i] = {
+                ...updatedResults[i],
+                volumeData: new Map([...updatedResults[i].volumeData, [vol.id, chapterDataArr]]),
+              };
+            } catch {}
+          } else {
+            const params = new URLSearchParams({
+              word: term,
+              caseInsensitive: String(caseInsensitive),
+              wholeWord: String(wholeWord),
+              volumeIds: String(vol.id),
+            });
+            try {
+              const res = await fetch(`/api/word-frequency?${params}`);
+              const data = await res.json();
+              const bookData = vol.books.map((b) => {
+                const result = data.results.find((r: { bookId: number }) => r.bookId === b.id);
+                return { label: b.name, count: result?.count || 0, bookId: b.id };
+              });
+              updatedResults[i] = {
+                ...updatedResults[i],
+                volumeData: new Map([...updatedResults[i].volumeData, [vol.id, bookData]]),
+              };
+            } catch {}
+          }
+        }
+      }
+      setResults(updatedResults);
+    })();
+  }, [selectedVolumeIds]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Auto-re-search when options change and we already have results
+  const prevNarrOptions = useRef({ caseInsensitive, wholeWord });
+  useEffect(() => {
+    if (results.length === 0 || terms.length === 0) return;
+    if (
+      prevNarrOptions.current.caseInsensitive !== caseInsensitive ||
+      prevNarrOptions.current.wholeWord !== wholeWord
+    ) {
+      prevNarrOptions.current = { caseInsensitive, wholeWord };
+      handleAnalyze();
+    }
+  }, [caseInsensitive, wholeWord]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div>

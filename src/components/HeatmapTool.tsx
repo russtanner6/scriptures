@@ -134,9 +134,7 @@ export default function HeatmapTool() {
         caseInsensitive: String(caseInsensitive),
         wholeWord: String(wholeWord),
       });
-      if (selectedVolumeIds.size < volumes.length) {
-        params.set("volumeIds", Array.from(selectedVolumeIds).join(","));
-      }
+      // Always fetch all volumes — toggles filter client-side
       const res = await fetch(`/api/heatmap?${params}`);
       const data = await res.json();
       setResults(data.results);
@@ -160,6 +158,20 @@ export default function HeatmapTool() {
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [word, volumes.length]);
+
+  // Auto-re-search when options change and we already have results
+  const prevHeatmapOptions = useRef({ caseInsensitive, wholeWord });
+  useEffect(() => {
+    if (results.length === 0 || !word.trim()) return;
+    if (
+      prevHeatmapOptions.current.caseInsensitive !== caseInsensitive ||
+      prevHeatmapOptions.current.wholeWord !== wholeWord
+    ) {
+      prevHeatmapOptions.current = { caseInsensitive, wholeWord };
+      handleSearch();
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [caseInsensitive, wholeWord]);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") { e.preventDefault(); handleSearch(); }
@@ -306,9 +318,14 @@ export default function HeatmapTool() {
 
       {/* Results */}
       {results.length > 0 && (() => {
+        // Filter results by selected volumes
+        const selectedAbbrevs = new Set(volumes.filter(v => selectedVolumeIds.has(v.id)).map(v => v.abbrev));
+        const filteredResults = results.filter(cell => selectedAbbrevs.has(cell.volumeAbbrev));
+        if (filteredResults.length === 0) return null;
+
         // Group by volume
         const volumeGroups = new Map<string, { volumeName: string; abbrev: string; books: Map<number, { bookName: string; volumeAbbrev: string; chapters: HeatmapCell[] }> }>();
-        for (const cell of results) {
+        for (const cell of filteredResults) {
           const vol = volumes.find(v => v.books.some(b => b.id === cell.bookId));
           const volKey = vol?.abbrev || cell.volumeAbbrev;
           const volName = vol?.name || cell.volumeAbbrev;

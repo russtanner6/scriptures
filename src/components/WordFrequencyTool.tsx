@@ -139,12 +139,7 @@ export default function WordFrequencyTool() {
         caseInsensitive: String(caseInsensitive),
         wholeWord: String(wholeWord),
       });
-      if (selectedVolumeIds.size < volumes.length) {
-        params.set(
-          "volumeIds",
-          Array.from(selectedVolumeIds).join(",")
-        );
-      }
+      // Always fetch all volumes — toggles filter client-side after initial search
       const res = await fetch(`/api/word-frequency?${params}`);
       const data = await res.json();
       setResults(data);
@@ -175,6 +170,19 @@ export default function WordFrequencyTool() {
       handleSearch();
     }
   }, [word, volumes.length, handleSearch, results]);
+
+  // Auto-re-search when options change and we already have results
+  const prevOptions = useRef({ caseInsensitive, wholeWord });
+  useEffect(() => {
+    if (!results || !word.trim()) return;
+    if (
+      prevOptions.current.caseInsensitive !== caseInsensitive ||
+      prevOptions.current.wholeWord !== wholeWord
+    ) {
+      prevOptions.current = { caseInsensitive, wholeWord };
+      handleSearch();
+    }
+  }, [caseInsensitive, wholeWord]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Fetch chapter-level data for single-book volumes (e.g., D&C) when results change
   useEffect(() => {

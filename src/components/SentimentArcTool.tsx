@@ -114,7 +114,29 @@ export default function SentimentArcTool() {
     setSelectedVolumes((prev) =>
       prev.includes(id) ? prev.filter((v) => v !== id) : [...prev, id]
     );
+    // Don't clear results — let toggles filter display reactively
   };
+
+  // Auto-fetch data for newly toggled-on volumes that don't have data yet
+  useEffect(() => {
+    if (!hasSearched || results.size === 0) return;
+    const missingVolIds = selectedVolumes.filter((volId) => !results.has(volId));
+    if (missingVolIds.length === 0) return;
+
+    (async () => {
+      const newResults = new Map(results);
+      for (const volId of missingVolIds) {
+        try {
+          const resp = await fetch(`/api/sentiment?volumeId=${volId}`);
+          const data = await resp.json();
+          if (data.chapters) {
+            newResults.set(volId, data.chapters);
+          }
+        } catch {}
+      }
+      setResults(newResults);
+    })();
+  }, [selectedVolumes]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const toggleCategory = (catId: string) => {
     setActiveCategories((prev) => {
@@ -238,7 +260,7 @@ export default function SentimentArcTool() {
       )}
 
       {volumes
-        .filter((v) => results.has(v.id))
+        .filter((v) => results.has(v.id) && selectedVolumes.includes(v.id))
         .map((vol) => {
           const chapters = results.get(vol.id)!;
           const color = VOLUME_COLORS[vol.abbrev] || "#888";
