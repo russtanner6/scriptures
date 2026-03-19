@@ -1239,7 +1239,7 @@ export default function WordFrequencyTool() {
                                     return "";
                                   }
                                 : undefined,
-                              autoSkip: true,
+                              autoSkip: false,
                             },
                           },
                         },
@@ -1247,6 +1247,16 @@ export default function WordFrequencyTool() {
                     />
                   </div>
                   </div>
+                  {!isMobile && (
+                    <p style={{ textAlign: "center", fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "6px", opacity: 0.6 }}>
+                      Scroll to zoom · Drag to pan
+                    </p>
+                  )}
+                  {isMobile && (
+                    <p style={{ textAlign: "center", fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "6px", opacity: 0.6 }}>
+                      Swipe to explore →
+                    </p>
+                  )}
                 </DashboardCard>
                 </div>
               );

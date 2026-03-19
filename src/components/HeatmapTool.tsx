@@ -642,7 +642,7 @@ export default function HeatmapTool() {
                                   callback: isSingleBook
                                     ? function(this: any, _val: any, index: number) {
                                         const num = index + 1;
-                                        if (num === 1 || num % 10 === 0) return num.toString();
+                                        if (num === 1 || num % 10 === 0) return `Sec ${num}`;
                                         return "";
                                       }
                                     : undefined,
@@ -654,6 +654,16 @@ export default function HeatmapTool() {
                         />
                       </div>
                       </div>
+                      {!isMobile && (
+                        <p style={{ textAlign: "center", fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "6px", opacity: 0.6 }}>
+                          Scroll to zoom · Drag to pan
+                        </p>
+                      )}
+                      {isMobile && (
+                        <p style={{ textAlign: "center", fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "6px", opacity: 0.6 }}>
+                          Swipe to explore →
+                        </p>
+                      )}
                       </div>
                     );
                   })()}

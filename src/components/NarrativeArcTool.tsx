@@ -572,7 +572,7 @@ export default function NarrativeArcTool() {
                           callback: isSingleBook
                             ? function(this: any, _val: any, index: number) {
                                 const sectionNum = index + 1;
-                                if (sectionNum === 1 || sectionNum % 10 === 0) return sectionNum.toString();
+                                if (sectionNum === 1 || sectionNum % 10 === 0) return `Sec ${sectionNum}`;
                                 return "";
                               }
                             : undefined,
@@ -584,6 +584,16 @@ export default function NarrativeArcTool() {
                 />
               </div>
               </div>
+              {!isMobile && (
+                <p style={{ textAlign: "center", fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "6px", opacity: 0.6 }}>
+                  Scroll to zoom · Drag to pan
+                </p>
+              )}
+              {isMobile && (
+                <p style={{ textAlign: "center", fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "6px", opacity: 0.6 }}>
+                  Swipe to explore →
+                </p>
+              )}
               </>);
               })()}
 
