@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 const NAV_ITEMS: { href: string; label: string; icon?: string; svgIcon?: string }[] = [
   { href: "/", label: "Home", svgIcon: "/home.svg" },
   { href: "/search", label: "Word Search", svgIcon: "/search.svg" },
-  { href: "/narrative-arc", label: "Narrative Arc", icon: "📈" },
+  { href: "/narrative-arc", label: "Narrative Arc", svgIcon: "/narrative-arc.svg" },
   { href: "/heatmap", label: "Theme Heatmap", svgIcon: "/heatmap.svg" },
   { href: "/wordcloud", label: "Word Cloud", svgIcon: "/word-cloud.svg" },
   { href: "/read", label: "Read Scriptures", svgIcon: "/scriptures.svg" },
@@ -125,7 +125,7 @@ export default function NavMenu({
                     style={{
                       width: "18px",
                       height: "18px",
-                      filter: isActive ? "invert(1) brightness(1)" : "invert(1) brightness(0.55)",
+                      filter: isActive ? "invert(1) brightness(1)" : "invert(1) brightness(0.7)",
                       transition: "filter 0.15s",
                     }}
                   />
