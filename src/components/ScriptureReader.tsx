@@ -487,12 +487,18 @@ export default function ScriptureReader() {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            position: "relative",
           }}
         >
           {/* Tree logo — centered on desktop, opens nav menu */}
           {!isMobile && (
-            <div style={{ position: "absolute", left: "50%", transform: "translateX(-50%)" }}>
+            <div style={{
+              position: "absolute",
+              left: 0,
+              right: 0,
+              display: "flex",
+              justifyContent: "center",
+              pointerEvents: "none",
+            }}>
               <button
                 onClick={() => setMenuOpen(true)}
                 title="Menu"
@@ -505,6 +511,7 @@ export default function ScriptureReader() {
                   transition: "opacity 0.15s",
                   display: "flex",
                   alignItems: "center",
+                  pointerEvents: "auto",
                 }}
                 onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.6"; }}
