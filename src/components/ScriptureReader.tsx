@@ -50,6 +50,9 @@ export default function ScriptureReader() {
   // Reading progress
   const [scrollProgress, setScrollProgress] = useState(0);
 
+  // Current visible verse (for search navigator sync)
+  const [currentVisibleVerse, setCurrentVisibleVerse] = useState(1);
+
   // Reading progress
   const [chapterMarkedRead, setChapterMarkedRead] = useState(false);
   const [showReadToast, setShowReadToast] = useState(false);
@@ -97,6 +100,31 @@ export default function ScriptureReader() {
     container.addEventListener("scroll", handleScroll, { passive: true });
     return () => container.removeEventListener("scroll", handleScroll);
   }, [selectedChapter, verses]);
+
+  // Track which verse is currently visible (for search navigator)
+  useEffect(() => {
+    if (!verses.length || selectedChapter === null) return;
+    const container = scrollContainerRef.current;
+    if (!container) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            const verseNum = parseInt(id.replace("verse-", ""), 10);
+            if (!isNaN(verseNum)) setCurrentVisibleVerse(verseNum);
+          }
+        }
+      },
+      { root: container, rootMargin: "-40% 0px -40% 0px", threshold: 0 }
+    );
+    // Observe all verse elements
+    for (const v of verses) {
+      const el = document.getElementById(`verse-${v.verse}`);
+      if (el) observer.observe(el);
+    }
+    return () => observer.disconnect();
+  }, [verses, selectedChapter]);
 
   // Auto-mark chapter read when scrolled to bottom
   useEffect(() => {
@@ -261,27 +289,32 @@ export default function ScriptureReader() {
   // Active highlight word: either from deep link or from in-chapter search
   const activeHighlight = searchTerm.length >= 2 ? searchTerm : highlightWord;
 
-  // Count search matches across all verses
-  const searchMatchCount = activeHighlight
-    ? verses.reduce((count, v) => {
+  // Per-verse match data for search navigator
+  const verseMatches = activeHighlight
+    ? verses.map((v) => {
         const escaped = activeHighlight.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
         const regex = new RegExp(`\\b${escaped}\\b`, "gi");
         const matches = v.text.match(regex);
-        return count + (matches ? matches.length : 0);
-      }, 0)
-    : 0;
+        return { verse: v.verse, count: matches ? matches.length : 0 };
+      })
+    : [];
+
+  const searchMatchCount = verseMatches.reduce((sum, v) => sum + v.count, 0);
+  const maxVerseMatches = Math.max(...verseMatches.map((v) => v.count), 1);
 
   const renderVerseText = (text: string) => {
     if (!activeHighlight) return text;
     const escaped = activeHighlight.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     const regex = new RegExp(`(\\b${escaped}\\b)`, "gi");
     const parts = text.split(regex);
+    // Use volume color for highlights
+    const volHighlightColor = selectedVolume ? VOLUME_COLORS[selectedVolume] || "#3B82F6" : "#3B82F6";
     return parts.map((part, i) =>
       regex.test(part) ? (
         <mark
           key={i}
           style={{
-            background: lightMode ? "rgba(59, 130, 246, 0.25)" : "rgba(139, 92, 246, 0.3)",
+            background: lightMode ? `${volHighlightColor}30` : `${volHighlightColor}40`,
             color: "inherit",
             padding: "1px 3px",
             borderRadius: "3px",
@@ -775,6 +808,69 @@ export default function ScriptureReader() {
             </div>
           )}
         </div>
+
+        {/* Search occurrence navigator — shows where matches are in the chapter */}
+        {activeHighlight && searchMatchCount > 0 && !isMobile && (
+          <div
+            style={{
+              position: "fixed",
+              bottom: "44px",
+              left: 0,
+              right: 0,
+              zIndex: 51,
+              padding: "6px 24px",
+              background: lightMode ? "rgba(250, 249, 246, 0.9)" : "rgba(15, 15, 18, 0.9)",
+              backdropFilter: "blur(8px)",
+              WebkitBackdropFilter: "blur(8px)",
+              borderTop: `1px solid ${theme.border}`,
+              display: "flex",
+              alignItems: "center",
+              gap: "12px",
+            }}
+          >
+            <span style={{ fontSize: "0.68rem", color: theme.textMuted, whiteSpace: "nowrap", fontWeight: 500 }}>
+              {searchMatchCount} match{searchMatchCount !== 1 ? "es" : ""}
+            </span>
+            <div
+              style={{
+                flex: 1,
+                display: "flex",
+                gap: "1px",
+                height: "20px",
+                borderRadius: "3px",
+                overflow: "hidden",
+              }}
+            >
+              {verseMatches.map((vm) => {
+                const hasMatch = vm.count > 0;
+                const intensity = hasMatch ? 0.3 + (vm.count / maxVerseMatches) * 0.7 : 0;
+                const isCurrent = vm.verse === currentVisibleVerse;
+                return (
+                  <div
+                    key={vm.verse}
+                    onClick={() => {
+                      const el = document.getElementById(`verse-${vm.verse}`);
+                      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+                    }}
+                    style={{
+                      flex: 1,
+                      background: hasMatch ? volColor : (lightMode ? "rgba(0,0,0,0.04)" : "rgba(255,255,255,0.04)"),
+                      opacity: hasMatch ? intensity : 1,
+                      cursor: "pointer",
+                      transition: "all 0.2s ease",
+                      borderRadius: "1px",
+                      transform: isCurrent ? "scaleY(1.6)" : "scaleY(1)",
+                      transformOrigin: "bottom",
+                      boxShadow: isCurrent ? `0 -2px 6px ${volColor}60` : "none",
+                      outline: isCurrent ? `1px solid ${lightMode ? "rgba(0,0,0,0.3)" : "rgba(255,255,255,0.4)"}` : "none",
+                    }}
+                    title={hasMatch ? `Verse ${vm.verse}: ${vm.count} match${vm.count !== 1 ? "es" : ""}` : `Verse ${vm.verse}`}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        )}
 
         {/* Bottom nav */}
         <div
