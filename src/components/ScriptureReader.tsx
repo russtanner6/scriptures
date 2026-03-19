@@ -415,11 +415,11 @@ export default function ScriptureReader() {
         verseText: "#333333",
       }
     : {
-        bg: "#111116",
+        bg: "#1a1a21",
         text: "#f0f0f0",
         textSecondary: "#b0b0b0",
         textMuted: "#666666",
-        surface: "rgba(255, 255, 255, 0.04)",
+        surface: "rgba(255, 255, 255, 0.05)",
         border: "rgba(255, 255, 255, 0.08)",
         verseNum: "#555555",
         verseText: "rgba(255, 255, 255, 0.85)",
