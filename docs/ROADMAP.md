@@ -60,6 +60,8 @@ Built to house the **full LDS canon** (OT, NT, Book of Mormon, D&C, Pearl of Gre
 
 **⚠️ ACCURACY IS CRITICAL.** People will scrutinize this. When in doubt, DO NOT include a speaker attribution — it's far better to leave a verse unattributed than to attribute it incorrectly. Only tag verses where the speaker is clearly identifiable from the text itself (explicit "And God said", "Jesus saith", narrative framing, etc.). Ambiguous passages should remain untagged.
 
+**Current status:** A draft `data/speakers-lds.json` (741 entries, 36 speakers) was auto-generated via pattern matching but has known errors (e.g., 2 Nephi 1 attributed to Nephi instead of Lehi). **This data MUST be reviewed and corrected before shipping.** The merged `speakers.json` should be reverted to Bible-only until QA is complete.
+
 **Data generation approach:**
 - Use scripture text + contextual clues (explicit speech markers, quotation patterns)
 - Cross-reference with published LDS scripture study resources where possible
@@ -107,9 +109,12 @@ User vision: treat each verse as its own interactive module supporting:
 
 ### Modern Language Toggle
 - Toggle between KJV and a modern/natural language paraphrase per verse or chapter
-- Need a data source: public domain modern translation or AI-generated paraphrase
-- Could start with a single book as proof of concept
-- Database schema: `translations` table with verse_id + translation_id + text
+- **NO API needed — zero cost approach:**
+  - **Bible (OT+NT):** Use World English Bible (WEB) — public domain modern English translation by biblical scholars. Free, accurate, well-regarded. Map verses to existing DB.
+  - **BoM/D&C/PoGP:** Generate modern text in Claude Code sessions (covered by subscription). Do chapter-by-chapter across multiple sessions.
+- Database schema: add `text_modern` column to `verses` table (nullable — graceful fallback when not yet available)
+- UI: "Modern" toggle pill in Layers section (same as Speakers/Resources), per-verse toggle in VersePopover
+- Progressive rollout: start with NT, then BoM, OT, D&C/PoGP
 
 ### Saved/Favorited Queries
 - Heart icon on search results to save a query (word + volumes + options)
