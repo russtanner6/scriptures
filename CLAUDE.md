@@ -49,15 +49,25 @@ src/
 │   ├── narrative-arc/ # Multi-term narrative arc comparison
 │   ├── heatmap/       # Theme heatmap with heatmap/arc toggle per volume
 │   ├── wordcloud/     # Word cloud visualization per book/chapter/volume
+│   ├── sentiment/     # Sentiment/tone arc across books (NEW)
+│   ├── parallel/      # Side-by-side parallel passage comparison (NEW)
+│   ├── chiasmus/      # Chiasmus (ABBA pattern) detector (NEW)
+│   ├── topics/        # Topic map — find thematically similar chapters (NEW)
+│   ├── timeline/      # Historical timeline of books and events (NEW)
 │   ├── read/          # Scripture reader (volume → book → chapter)
 │   ├── bookmarks/     # Saved verse bookmarks
-│   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats, word-cloud, chapter-stats, random-verse)
+│   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats, word-cloud, chapter-stats, random-verse, sentiment, parallel-passages, chiasmus, topic-similarity)
 ├── components/
 │   ├── WordFrequencyTool.tsx  # Main search interface (wheel zoom desktop, swipe mobile)
 │   ├── NarrativeArcTool.tsx   # Multi-term narrative arc (wheel zoom desktop, swipe mobile)
 │   ├── HeatmapTool.tsx        # Theme heatmap with arc toggle per volume
+│   ├── SentimentArcTool.tsx   # Sentiment/tone arc with 7 categories (NEW)
+│   ├── ParallelPassagesTool.tsx # Side-by-side passage comparison with diff (NEW)
+│   ├── ChiasmusTool.tsx       # Chiasmus pattern detector with visual display (NEW)
+│   ├── TopicMapTool.tsx       # Find thematically similar chapters (NEW)
+│   ├── TimelineTool.tsx       # Historical timeline visualization (NEW)
 │   ├── ChapterInsights.tsx    # Collapsible chapter analysis panel (TF-IDF themes, word cloud, density)
-│   ├── VersePopover.tsx       # Verse tap popover (copy, bookmark, key words)
+│   ├── VersePopover.tsx       # Verse tap popover (copy, bookmark, key words, notes)
 │   ├── BookmarksList.tsx      # Bookmarks page with volume grouping
 │   ├── SvgIcon.tsx            # Inline SVG icon helper
 │   ├── ExportHtmlModal.tsx    # HTML-to-image export (html2canvas)
@@ -65,20 +75,23 @@ src/
 │   ├── DataTable.tsx          # Sortable results table with ▲▼ sort icons
 │   ├── StatCard.tsx           # Stat pills
 │   ├── ScripturePanel.tsx     # Right-side slider panel for verse viewing
-│   ├── ScriptureReader.tsx    # Full scripture reader (~1100 lines) with insights, search, progress
+│   ├── ScriptureReader.tsx    # Full scripture reader (~1100 lines) with insights, search, progress, annotations
 │   ├── WordCloudTool.tsx      # Interactive word cloud per book/chapter/volume
 │   ├── HorizontalBarList.tsx  # Bar chart component
 │   ├── Header.tsx             # Site header + hamburger menu (showSubtitle prop)
-│   └── NavMenu.tsx            # Slide-in nav with custom SVG icons
+│   └── NavMenu.tsx            # Slide-in nav with sections (Analyze/Discover/Read)
 ├── lib/
 │   ├── db.ts                  # sql.js initialization
 │   ├── queries.ts             # Database queries + displayName() + getChapterStats() + getRandomVerse()
 │   ├── types.ts               # TypeScript interfaces
 │   ├── constants.ts           # Volume colors, contrast text, compactVolumeName()
 │   ├── bookmarks.ts           # Bookmark CRUD (localStorage)
+│   ├── annotations.ts         # Personal verse notes CRUD (localStorage) (NEW)
 │   ├── reading-progress.ts    # Reading streaks + chapter completion tracking (localStorage)
-│   └── scripture-urls.ts      # Verse reference URL builder
-data/                          # scriptures.db + sql-wasm.wasm
+│   ├── scripture-urls.ts      # Verse reference URL builder
+│   ├── sentiment-lexicon.ts   # 7 tone categories with word lists + scoring (NEW)
+│   └── chiasmus-detector.ts   # Chiasmus (ABBA pattern) detection algorithm (NEW)
+data/                          # scriptures.db + sql-wasm.wasm + parallel-passages.json + timeline.json
 scripts/                       # build-db.ts, book-order.ts
 ```
 
@@ -153,24 +166,32 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 - Accent: purple (#8b5cf6) for interactive elements
 
 ## Pages
-1. **Home** (`/`) — Landing page with gradient hero, 6 tool cards (Word Search, Narrative Arc, Heatmap, Word Cloud, Read, Bookmarks), random verse ("Discover a Verse"), recent searches from localStorage, stats footer.
-2. **Word Search** (`/search`) — Single-word frequency search with bar charts, narrative arc section (D&C plots by section), data table, stat cards. Cross-tool links to Heatmap and Word Cloud in jump-to nav. Sticky jump-to nav.
-3. **Narrative Arc** (`/narrative-arc`) — Multi-term comparison (up to 6). All 5 volumes including D&C (by section). Sticky jump-to nav. Deep linking (`?terms=faith,grace`). Export per chart.
-4. **Theme Heatmap** (`/heatmap`) — Single-word heatmap across all volumes. Heatmap/arc view toggle per volume. Color-coded cells. Clicking cells opens ScripturePanel. Deep linking (`?word=faith`).
-5. **Word Cloud** (`/wordcloud`) — Interactive tag cloud. Volume → Book → Chapter or "Entire Volume". Deep linking (`?bookId=X&chapter=Y`). Adjustable word count (20-120). Click words to search.
-6. **Scripture Reader** (`/read`) — Volume picker (with reading progress %) → Book list (with read counts/checkmarks) → Chapter reading view. Features: light/dark mode, font size control (3 sizes), keyboard nav (← →), reading progress bar, volume context header, Chapter Insights panel (key themes via TF-IDF, mini word cloud, verse density strip, quick links), verse interactions (tap → popover with copy/bookmark/key words), in-chapter search with occurrence navigator bar (visual minimap of matches with scroll position indicator), end-of-chapter nav. Deep linking. URL updates. Reading streaks with "Chapter complete!" toast.
-7. **Bookmarks** (`/bookmarks`) — Saved verses grouped by volume, links to reader, remove functionality.
+1. **Home** (`/`) — Landing page with gradient hero, 6 core tool cards + 5 discovery tool cards, random verse, recent searches, stats footer.
+2. **Word Search** (`/search`) — Single-word frequency search with bar charts, narrative arc section, data table, stat cards. Sticky jump-to nav.
+3. **Narrative Arc** (`/narrative-arc`) — Multi-term comparison (up to 6). All 5 volumes. Deep linking (`?terms=faith,grace`). Export per chart.
+4. **Theme Heatmap** (`/heatmap`) — Single-word heatmap across all volumes. Heatmap/arc view toggle. Deep linking (`?word=faith`).
+5. **Word Cloud** (`/wordcloud`) — Interactive tag cloud. Volume → Book → Chapter. Deep linking. Adjustable word count.
+6. **Sentiment Arc** (`/sentiment`) — Emotional tone across books. 7 categories (promise, warning, praise, lament, commandment, prophetic, faith). Chart.js line charts per volume with zoom.
+7. **Parallel Passages** (`/parallel`) — Side-by-side comparison of parallel texts (Isaiah/2 Nephi, Sermon on Mount/3 Nephi, etc.). Word-level diff highlighting.
+8. **Chiasmus Detector** (`/chiasmus`) — Find ABBA mirror patterns in chapters. Volume → Book → Chapter selection. Scan entire volume. Visual bracket display.
+9. **Topic Map** (`/topics`) — Pick any chapter, find thematically similar chapters via cosine similarity. Shared terms. Cross-volume discovery.
+10. **Timeline** (`/timeline`) — Historical timeline with era bands, book bars by volume, key events. Period filters. Click to read.
+11. **Scripture Reader** (`/read`) — Full reading experience with light/dark mode, font size, keyboard nav, reading progress, Chapter Insights, verse popover (copy/bookmark/notes), in-chapter search, annotation indicators. Reading streaks.
+12. **Bookmarks** (`/bookmarks`) — Saved verses grouped by volume.
 
 ## Key Components
-- **ScripturePanel** — Right-side slider panel that shows matching verses when clicking any data point.
+- **ScripturePanel** — Right-side slider panel showing matching verses when clicking chart data points.
 - **ChapterInsights** — Collapsible panel in reader: stats bar, key themes (TF-IDF), mini word cloud, verse density strip, cross-tool quick links.
-- **VersePopover** — Tap verse text → popover/bottom-sheet with reference, word count, key words, copy, bookmark.
-- **BookmarksList** — Bookmarks page component with volume grouping and remove functionality.
+- **VersePopover** — Tap verse → popover with reference, word count, key words, copy, bookmark, and personal notes.
+- **SentimentArcTool** — Multi-volume sentiment analysis with category toggles and Chart.js line charts.
+- **ParallelPassagesTool** — Side-by-side passage comparison with word-level diff highlighting.
+- **ChiasmusTool** — Chiasmus pattern detection with visual bracket display and volume scanning.
+- **TopicMapTool** — Chapter similarity finder using cosine similarity on word vectors.
+- **TimelineTool** — Historical timeline with era bands, swim lanes, and event markers.
+- **BookmarksList** — Bookmarks page component with volume grouping.
 - **ExportChartModal / ExportButton** — Chart.js export (PNG/JPG/PDF via jsPDF).
-- **ExportHtmlModal** — HTML-to-image export (html2canvas).
-- **legendMarginPlugin** — Chart.js plugin adding space below legend.
 - **DashboardCard** — Section wrapper with `headerExtra` prop.
-- **WordCloudTool** — Interactive word cloud with volume/book/chapter/entire-volume selection.
+- **ChartHints** — Platform-aware interaction hints (Option/Alt + scroll, pinch, etc.).
 - **useIsMobile(768)** — Hook for responsive layout.
 - **search-bar-glow** — CSS class for search bar border glow animation.
 
@@ -185,6 +206,10 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 - `/api/chapter-stats` — Chapter-level stats: word count, verse count, unique words, top words, key themes (TF-IDF), verse density
 - `/api/random-verse` — Single random verse with book/volume context (for landing page)
 - `/api/book-stats` — Word/verse counts per book
+- `/api/sentiment` — Sentiment scores per chapter for a volume (uses sentiment-lexicon.ts)
+- `/api/parallel-passages` — List passage groups or fetch verse pairs with texts for comparison
+- `/api/chiasmus` — Detect chiastic patterns in a chapter (uses chiasmus-detector.ts)
+- `/api/topic-similarity` — Find thematically similar chapters via cosine similarity
 
 ## Key Patterns
 - `displayName()` in queries.ts normalizes all volume and book names (D&C fix)
