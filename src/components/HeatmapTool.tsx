@@ -15,6 +15,7 @@ import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Line } from "react-chartjs-2";
 import type { Volume, ScripturePanelState } from "@/lib/types";
 import { VOLUME_COLORS, getContrastText, compactVolumeName } from "@/lib/constants";
+import ChartZoomControls from "./ChartZoomControls";
 import ScripturePanel from "./ScripturePanel";
 import { ExportButton } from "./ExportChartModal";
 import ExportChartModal from "./ExportChartModal";
@@ -55,6 +56,14 @@ interface HeatmapCell {
 
 export default function HeatmapTool() {
   const isMobile = useIsMobile();
+
+  // Register zoom plugin client-side only
+  useEffect(() => {
+    import("chartjs-plugin-zoom").then((mod) => {
+      ChartJS.register(mod.default);
+    });
+  }, []);
+
   const [volumes, setVolumes] = useState<Volume[]>([]);
   const [selectedVolumeIds, setSelectedVolumeIds] = useState<Set<number>>(new Set());
   const [word, setWord] = useState("");
@@ -536,7 +545,10 @@ export default function HeatmapTool() {
                         overflow: "hidden",
                         transition: "opacity 0.3s ease, max-height 0.3s ease",
                       }}>
-                      <div style={{ position: "relative", height: isMobile ? "350px" : "480px", marginTop: "8px" }}>
+                      <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "4px" }}>
+                        <ChartZoomControls chartRef={thisChartRef} color={volColor} isMobile={isMobile} />
+                      </div>
+                      <div style={{ position: "relative", height: isMobile ? "350px" : "480px", overflow: "hidden" }}>
                         <Line
                           ref={thisChartRef}
                           plugins={[legendMarginPlugin]}
@@ -615,6 +627,11 @@ export default function HeatmapTool() {
                                 anchor: "end", align: "top", offset: 4,
                                 color: "#fafafa", font: { weight: 700, size: 10 },
                                 formatter: (value: number) => value.toLocaleString(),
+                              },
+                              zoom: {
+                                zoom: { wheel: { enabled: false }, pinch: { enabled: false }, drag: { enabled: false } },
+                                pan: { enabled: true, mode: "x" as const },
+                                limits: { x: { minRange: 3 } },
                               },
                             },
                             layout: { padding: { top: 20 } },
