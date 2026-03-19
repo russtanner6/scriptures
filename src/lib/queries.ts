@@ -366,6 +366,7 @@ export interface VerseMatch {
   chapter: number;
   verse: number;
   text: string;
+  text_modern?: string | null;
 }
 
 export async function getChapterVerses(
@@ -390,9 +391,9 @@ export async function getChapterVerses(
   );
   const volumeAbbrev = volRows[0]?.abbrev || "";
 
-  const verses = execToObjects<{ chapter: number; verse: number; text: string }>(
+  const verses = execToObjects<{ chapter: number; verse: number; text: string; text_modern: string | null }>(
     db,
-    `SELECT chapter, verse, text FROM verses WHERE book_id = ? AND chapter = ? ORDER BY verse`,
+    `SELECT chapter, verse, text, text_modern FROM verses WHERE book_id = ? AND chapter = ? ORDER BY verse`,
     [bookId, chapter]
   );
 

@@ -18,6 +18,7 @@ interface ReaderVerse {
   chapter: number;
   verse: number;
   text: string;
+  text_modern?: string | null;
 }
 
 function useIsMobile(breakpoint = 768) {
@@ -89,6 +90,11 @@ export default function ScriptureReader() {
   const [showSpeakers, setShowSpeakers] = useState(true);
   const [chapterSpeakers, setChapterSpeakers] = useState<SpeakerAttribution[]>([]);
 
+  // Modern language layer
+  const [showModern, setShowModern] = useState(false);
+  // Whether the current chapter has any modern text available
+  const hasModernText = verses.some((v) => v.text_modern);
+
   // Search term highlight (when arriving from ScripturePanel)
   const highlightWord = searchParams.get("highlight") || null;
 
@@ -109,6 +115,8 @@ export default function ScriptureReader() {
     if (savedResources === "false") setShowResources(false);
     const savedSpeakers = localStorage.getItem("reader-show-speakers");
     if (savedSpeakers === "false") setShowSpeakers(false);
+    const savedModern = localStorage.getItem("reader-show-modern");
+    if (savedModern === "true") setShowModern(true);
   }, []);
 
   // Track scroll progress in reading view
@@ -811,7 +819,7 @@ export default function ScriptureReader() {
           )}
 
           {/* Layers section — toggle pills for Speakers and Resources */}
-          {!isLoading && (chapterSpeakers.length > 0 || chapterResources.length > 0) && (
+          {!isLoading && (chapterSpeakers.length > 0 || chapterResources.length > 0 || hasModernText) && (
             <div style={{ marginBottom: "20px" }}>
               <div
                 style={{
@@ -892,6 +900,38 @@ export default function ScriptureReader() {
                     <span style={{ fontSize: "0.58rem", color: theme.textMuted }}>
                       ({chapterResources.length})
                     </span>
+                  </button>
+                )}
+                {hasModernText && (
+                  <button
+                    onClick={() => {
+                      const next = !showModern;
+                      setShowModern(next);
+                      localStorage.setItem("reader-show-modern", String(next));
+                    }}
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "4px",
+                      padding: "3px 9px",
+                      borderRadius: "6px",
+                      border: `1px solid ${showModern ? (lightMode ? "rgba(0,0,0,0.15)" : "rgba(255,255,255,0.15)") : theme.border}`,
+                      background: showModern
+                        ? (lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.08)")
+                        : "transparent",
+                      color: showModern ? theme.text : theme.textMuted,
+                      fontSize: "0.65rem",
+                      fontWeight: 500,
+                      cursor: "pointer",
+                      fontFamily: "inherit",
+                      transition: "all 0.15s",
+                    }}
+                  >
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M4 21V14" /><path d="M4 10V3" /><path d="M12 21V12" /><path d="M12 8V3" /><path d="M20 21V16" /><path d="M20 12V3" />
+                      <line x1="1" y1="14" x2="7" y2="14" /><line x1="9" y1="8" x2="15" y2="8" /><line x1="17" y1="16" x2="23" y2="16" />
+                    </svg>
+                    Modern
                   </button>
                 )}
               </div>
@@ -1073,7 +1113,7 @@ export default function ScriptureReader() {
                   )}
                   <span
                     onClick={() => {
-                      setActiveVerse({ verse: v.verse, chapter: v.chapter, text: v.text });
+                      setActiveVerse({ verse: v.verse, chapter: v.chapter, text: showModern && v.text_modern ? v.text_modern : v.text });
                       setActiveResourcePanel(null); // close resource panel when opening verse popover
                     }}
                     style={{
@@ -1083,7 +1123,7 @@ export default function ScriptureReader() {
                       cursor: "pointer",
                     }}
                   >
-                    {renderVerseText(v.text)}
+                    {renderVerseText(showModern && v.text_modern ? v.text_modern : v.text)}
                   </span>
                   {/* Resource markers */}
                   {verseStartResources.length > 0 && (
