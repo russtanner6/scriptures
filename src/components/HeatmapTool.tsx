@@ -469,9 +469,7 @@ export default function HeatmapTool() {
                         fontSize: "0.78rem", fontWeight: getViewMode(abbrev) === "heatmap" ? 600 : 400,
                         fontFamily: "inherit", cursor: "pointer", transition: "all 0.15s",
                       }}>
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M12 22c-4 0-8-2-8-8 0-4 2-6 4-8 1-1 2-3 2-5 1 2 3 3 4 3 2 0 3-1 3-3 2 3 3 6 3 9 0 6-4 12-8 12z" />
-                      </svg>
+                      <img src="/heatmap.svg" alt="" style={{ width: "14px", height: "14px", filter: getViewMode(abbrev) === "heatmap" ? "invert(1) brightness(1)" : "invert(1) brightness(0.5)" }} />
                       Heatmap
                     </button>
                     <button type="button" onClick={() => { if (getViewMode(abbrev) !== "arc") toggleViewMode(abbrev); }}
@@ -484,9 +482,7 @@ export default function HeatmapTool() {
                         fontSize: "0.78rem", fontWeight: getViewMode(abbrev) === "arc" ? 600 : 400,
                         fontFamily: "inherit", cursor: "pointer", transition: "all 0.15s",
                       }}>
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M2 20 C6 20, 7 4, 12 4 S18 20, 22 20" />
-                      </svg>
+                      <img src="/narrative-arc.svg" alt="" style={{ width: "14px", height: "14px", filter: getViewMode(abbrev) === "arc" ? "invert(1) brightness(1)" : "invert(1) brightness(0.5)" }} />
                       Narrative Arc
                     </button>
                     {word && (
