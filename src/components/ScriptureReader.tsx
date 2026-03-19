@@ -9,6 +9,7 @@ import ChapterInsights from "./ChapterInsights";
 import VersePopover from "./VersePopover";
 import ResourceMarker, { ResourceOverflowBadge, getResourceTypeColor } from "./ResourceMarker";
 import ResourcePanel from "./ResourcePanel";
+import NavMenu from "./NavMenu";
 import { markChapterRead, isChapterRead, getReadChaptersForBook, getVolumeProgress } from "@/lib/reading-progress";
 import { getAnnotationsForChapter } from "@/lib/annotations";
 
@@ -38,6 +39,7 @@ export default function ScriptureReader() {
   const [volumes, setVolumes] = useState<Volume[]>([]);
   const [lightMode, setLightMode] = useState(false);
   const [fontSize, setFontSize] = useState(1); // 0=small, 1=medium, 2=large
+  const [menuOpen, setMenuOpen] = useState(false);
 
   // Navigation state
   const [selectedVolume, setSelectedVolume] = useState<string | null>(null);
@@ -455,15 +457,15 @@ export default function ScriptureReader() {
           transition: "background 0.3s ease, color 0.3s ease",
         }}
       >
-        {/* Reading progress bar */}
+        {/* Reading progress bar — volume color gradient */}
         <div
           style={{
             position: "fixed",
             top: 0,
             left: 0,
-            height: "2px",
+            height: "3px",
             width: `${scrollProgress * 100}%`,
-            background: lightMode ? "rgba(0, 0, 0, 0.15)" : "rgba(255, 255, 255, 0.20)",
+            background: "linear-gradient(90deg, #DC2F4B 0%, #E8532C 25%, #F57B20 50%, #F5A623 75%, #F5C829 100%)",
             zIndex: 100,
             transition: "width 0.1s linear",
           }}
@@ -486,6 +488,27 @@ export default function ScriptureReader() {
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: "12px", minWidth: 0 }}>
+            {/* Tree logo — opens nav menu (desktop only, mobile has it in bottom bar) */}
+            {!isMobile && (
+              <button
+                onClick={() => setMenuOpen(true)}
+                title="Menu"
+                style={{
+                  background: "none",
+                  border: "none",
+                  cursor: "pointer",
+                  padding: "4px",
+                  opacity: 0.6,
+                  transition: "opacity 0.15s",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+                onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.6"; }}
+              >
+                <img src="/tree-logo.svg" alt="Menu" style={{ height: "22px", width: "auto", filter: lightMode ? "invert(1)" : "none" }} />
+              </button>
+            )}
             <button
               onClick={() => {
                 setSelectedChapter(null);
@@ -699,6 +722,9 @@ export default function ScriptureReader() {
             </select>
           </div>
         </div>
+
+        {/* Nav Menu */}
+        <NavMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
 
         {/* Verses */}
         <div
@@ -1119,19 +1145,19 @@ export default function ScriptureReader() {
                 <button
                   onClick={goToNextChapter}
                   style={{
-                    background: `${volColor}15`,
-                    border: `1px solid ${volColor}40`,
+                    background: lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.08)",
+                    border: `1px solid ${lightMode ? "rgba(0,0,0,0.12)" : "rgba(255,255,255,0.12)"}`,
                     borderRadius: "8px",
                     padding: "10px 20px",
-                    color: volColor,
+                    color: theme.text,
                     fontSize: "0.85rem",
                     fontWeight: 600,
                     fontFamily: "inherit",
                     cursor: "pointer",
                     transition: "all 0.15s",
                   }}
-                  onMouseEnter={(e) => { e.currentTarget.style.background = `${volColor}25`; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.background = `${volColor}15`; }}
+                  onMouseEnter={(e) => { e.currentTarget.style.background = lightMode ? "rgba(0,0,0,0.10)" : "rgba(255,255,255,0.12)"; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.background = lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.08)"; }}
                 >
                   {nextLabel} →
                 </button>
@@ -1262,31 +1288,28 @@ export default function ScriptureReader() {
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="miter"><polyline points="15 18 9 12 15 6" /></svg> Prev
           </button>
-          <div style={{ textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
-            <a
-              href="/"
-              title="Back to home"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                opacity: 0.6,
-                transition: "opacity 0.15s",
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.6"; }}
-            >
-              <img src="/tree-logo.svg" alt="Home" style={{ height: "22px", width: "auto", filter: lightMode ? "none" : "invert(1)" }} />
-            </a>
-            <div
-              style={{
-                fontSize: "0.62rem",
-                color: lightMode ? "rgba(255,255,255,0.4)" : "rgba(0,0,0,0.35)",
-                fontWeight: 500,
-              }}
-            >
-              {isDC ? "Section" : "Chapter"} {selectedChapter} of {chapterCount}
-            </div>
+          <div style={{ textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center" }}>
+            {isMobile && (
+              <button
+                onClick={() => setMenuOpen(true)}
+                title="Menu"
+                style={{
+                  background: "none",
+                  border: "none",
+                  cursor: "pointer",
+                  padding: "2px",
+                  opacity: 0.6,
+                  transition: "opacity 0.15s",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+                onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.6"; }}
+              >
+                <img src="/tree-logo.svg" alt="Menu" style={{ height: "22px", width: "auto", filter: lightMode ? "none" : "invert(1)" }} />
+              </button>
+            )}
           </div>
           <button
             onClick={goToNextChapter}
