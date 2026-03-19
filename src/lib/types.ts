@@ -61,6 +61,35 @@ export interface BooksResponse {
   volumes: Volume[];
 }
 
+// ── Resource Layer ──
+export type ResourceType = "video" | "article" | "pdf";
+
+export interface Resource {
+  id: string;
+  type: ResourceType;
+  title: string;
+  description: string;
+  url: string;
+  thumbnailUrl?: string;
+  book: string;
+  chapter: number;
+  verseStart: number;
+  verseEnd: number;
+  tags?: string[];
+}
+
+// ── Speaker Attribution ──
+export type SpeakerType = "divine" | "narrator" | "prophet" | "apostle" | "angel" | "other";
+
+export interface SpeakerAttribution {
+  book: string;
+  chapter: number;
+  verseStart: number;
+  verseEnd: number;
+  speaker: string;
+  speakerType: SpeakerType;
+}
+
 export interface BookStat {
   bookId: number;
   bookName: string;

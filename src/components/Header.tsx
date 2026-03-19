@@ -25,7 +25,12 @@ export default function Header({ showSubtitle = false }: { showSubtitle?: boolea
       <NavMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
 
       <h1 className="header-title">
-        <Link href="/" style={{ color: "inherit", textDecoration: "none" }}>
+        <Link href="/" style={{ color: "inherit", textDecoration: "none", display: "flex", alignItems: "center", gap: "10px" }}>
+          <img
+            src="/tree-logo.svg"
+            alt="Scripture Explorer"
+            style={{ height: "32px", width: "auto" }}
+          />
           Scripture Explorer
         </Link>
       </h1>

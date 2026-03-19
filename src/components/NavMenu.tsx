@@ -160,8 +160,12 @@ export default function NavMenu({
               letterSpacing: "0.14em",
               color: "var(--accent)",
               marginBottom: "4px",
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
             }}
           >
+            <img src="/tree-logo.svg" alt="" style={{ height: "20px", width: "auto" }} />
             Scripture Explorer
           </div>
           <div style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>

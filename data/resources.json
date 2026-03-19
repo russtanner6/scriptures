@@ -1,0 +1,78 @@
+[
+  {
+    "id": "gen-1-creation-overview",
+    "type": "video",
+    "title": "The Creation — Genesis 1 Overview",
+    "description": "An engaging overview of the Genesis creation narrative, exploring the literary structure, theological themes, and Ancient Near Eastern context of the seven days of creation.",
+    "url": "https://www.youtube.com/watch?v=GQI72THyO5I",
+    "thumbnailUrl": "https://img.youtube.com/vi/GQI72THyO5I/mqdefault.jpg",
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 31,
+    "tags": ["creation", "overview", "literary structure"]
+  },
+  {
+    "id": "gen-1-let-there-be-light",
+    "type": "article",
+    "title": "Let There Be Light: The Meaning of Day One",
+    "description": "Explores the theological significance of light as the first creative act and what it reveals about God's nature and purpose.",
+    "url": "https://www.biblestudytools.com/genesis/1.html",
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 5,
+    "tags": ["light", "day one", "symbolism"]
+  },
+  {
+    "id": "gen-1-image-of-god",
+    "type": "video",
+    "title": "What Does 'Image of God' Actually Mean?",
+    "description": "A deep dive into the Hebrew concept of 'tselem Elohim' — what it meant to the original audience and what it means for humanity today.",
+    "url": "https://www.youtube.com/watch?v=YbipxLDtY8c",
+    "thumbnailUrl": "https://img.youtube.com/vi/YbipxLDtY8c/mqdefault.jpg",
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 26,
+    "verseEnd": 28,
+    "tags": ["image of God", "humanity", "hebrew"]
+  },
+  {
+    "id": "gen-1-lds-creation",
+    "type": "article",
+    "title": "The Creation in Latter-day Saint Theology",
+    "description": "How the LDS understanding of creation differs from traditional Christianity, including the role of Christ as Creator and the concept of organizing existing matter.",
+    "url": "https://www.churchofjesuschrist.org/study/manual/old-testament-student-manual-genesis-2-samuel/enrichment-b",
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 31,
+    "tags": ["LDS", "creation", "theology"]
+  },
+  {
+    "id": "matt-5-sermon-mount-overview",
+    "type": "video",
+    "title": "The Sermon on the Mount — Matthew 5 Overview",
+    "description": "A comprehensive look at the Beatitudes and Christ's revolutionary teachings about the kingdom of God.",
+    "url": "https://www.youtube.com/watch?v=GGCF3OPWN14",
+    "thumbnailUrl": "https://img.youtube.com/vi/GGCF3OPWN14/mqdefault.jpg",
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 1,
+    "verseEnd": 12,
+    "tags": ["sermon on the mount", "beatitudes"]
+  },
+  {
+    "id": "matt-5-salt-light",
+    "type": "video",
+    "title": "Salt and Light — What Did Jesus Mean?",
+    "description": "Understanding the cultural context of salt and light metaphors in first-century Palestine.",
+    "url": "https://www.youtube.com/watch?v=wPfBsBmNpJk",
+    "thumbnailUrl": "https://img.youtube.com/vi/wPfBsBmNpJk/mqdefault.jpg",
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 13,
+    "verseEnd": 16,
+    "tags": ["salt", "light", "metaphor"]
+  }
+]

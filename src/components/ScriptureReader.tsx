@@ -2,11 +2,13 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import type { Volume } from "@/lib/types";
+import type { Volume, Resource } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import { getVerseUrl } from "@/lib/scripture-urls";
 import ChapterInsights from "./ChapterInsights";
 import VersePopover from "./VersePopover";
+import ResourceMarker, { ResourceOverflowBadge, getResourceTypeColor } from "./ResourceMarker";
+import ResourcePanel from "./ResourcePanel";
 import { markChapterRead, isChapterRead, getReadChaptersForBook, getVolumeProgress, getStreak } from "@/lib/reading-progress";
 import { getAnnotationsForChapter } from "@/lib/annotations";
 
@@ -74,6 +76,11 @@ export default function ScriptureReader() {
   // Annotations — track which verses in current chapter have notes
   const [annotatedVerses, setAnnotatedVerses] = useState<Set<number>>(new Set());
 
+  // Resource layer
+  const [showResources, setShowResources] = useState(true);
+  const [chapterResources, setChapterResources] = useState<Resource[]>([]);
+  const [activeResourcePanel, setActiveResourcePanel] = useState<{ resources: Resource[]; index: number } | null>(null);
+
   // Search term highlight (when arriving from ScripturePanel)
   const highlightWord = searchParams.get("highlight") || null;
 
@@ -90,6 +97,8 @@ export default function ScriptureReader() {
     if (savedLight === "true") setLightMode(true);
     const savedFont = localStorage.getItem("reader-font-size");
     if (savedFont) setFontSize(Number(savedFont));
+    const savedResources = localStorage.getItem("reader-show-resources");
+    if (savedResources === "false") setShowResources(false);
   }, []);
 
   // Track scroll progress in reading view
@@ -175,7 +184,18 @@ export default function ScriptureReader() {
               const params = new URLSearchParams({ bookId: String(bid), chapter: String(ch) });
               fetch(`/api/chapter?${params}`)
                 .then((r) => r.json())
-                .then((data) => setVerses(data.verses || []));
+                .then((chData) => {
+                  setVerses(chData.verses || []);
+                  // Load annotations
+                  const annotations = getAnnotationsForChapter(bid, ch);
+                  setAnnotatedVerses(new Set(annotations.map((a: { verse: number }) => a.verse)));
+                  // Load resources
+                  const bookNameForApi = chData.bookName || book.name;
+                  fetch(`/api/resources?book=${encodeURIComponent(bookNameForApi)}&chapter=${ch}`)
+                    .then((r) => r.json())
+                    .then((resData) => setChapterResources(resData.resources || []))
+                    .catch(() => {});
+                });
               break;
             }
           }
@@ -203,6 +223,17 @@ export default function ScriptureReader() {
       // Load annotations for this chapter
       const annotations = getAnnotationsForChapter(bookId, chapter);
       setAnnotatedVerses(new Set(annotations.map((a) => a.verse)));
+      // Load resources for this chapter
+      setChapterResources([]);
+      setActiveResourcePanel(null);
+      try {
+        const bookNameForApi = data.bookName || "";
+        const resResp = await fetch(`/api/resources?book=${encodeURIComponent(bookNameForApi)}&chapter=${chapter}`);
+        const resData = await resResp.json();
+        setChapterResources(resData.resources || []);
+      } catch {
+        // Resources are non-critical, don't block reading
+      }
     } finally {
       setIsLoading(false);
     }
@@ -488,6 +519,55 @@ export default function ScriptureReader() {
               </div>
             )}
 
+            {/* Resource layer toggle */}
+            {chapterResources.length > 0 && (
+              <button
+                onClick={() => {
+                  const next = !showResources;
+                  setShowResources(next);
+                  localStorage.setItem("reader-show-resources", String(next));
+                }}
+                title={showResources ? "Hide resources" : "Show resources"}
+                style={{
+                  position: "relative",
+                  background: showResources
+                    ? (lightMode ? `${volColor}10` : `${volColor}15`)
+                    : (lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.06)"),
+                  border: `1px solid ${showResources ? `${volColor}40` : theme.border}`,
+                  borderRadius: "8px",
+                  width: "36px",
+                  height: "36px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  cursor: "pointer",
+                  fontSize: "0.85rem",
+                  transition: "all 0.15s",
+                  color: showResources ? volColor : theme.textSecondary,
+                }}
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+                {/* Badge dot */}
+                <span
+                  style={{
+                    position: "absolute",
+                    top: "4px",
+                    right: "4px",
+                    width: "7px",
+                    height: "7px",
+                    borderRadius: "50%",
+                    background: volColor,
+                    opacity: showResources ? 1 : 0.5,
+                    fontSize: "0",
+                  }}
+                />
+              </button>
+            )}
+
             {/* Search toggle */}
             {searchOpen ? (
               <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
@@ -705,9 +785,42 @@ export default function ScriptureReader() {
             </div>
           )}
 
+          {/* Resource count indicator */}
+          {!isLoading && showResources && chapterResources.length > 0 && (
+            <div
+              style={{
+                fontSize: "0.72rem",
+                color: theme.textMuted,
+                marginBottom: "16px",
+                display: "flex",
+                alignItems: "center",
+                gap: "6px",
+                opacity: 0.7,
+              }}
+            >
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+              {chapterResources.length} resource{chapterResources.length !== 1 ? "s" : ""} linked in this chapter
+            </div>
+          )}
+
           {!isLoading &&
             verses.map((v) => {
               const externalUrl = getVerseUrl(selectedBookName || "", v.chapter, v.verse);
+              // Resource layer: find resources that START at this verse, and resources that COVER this verse
+              const verseStartResources = showResources
+                ? chapterResources.filter((r) => r.verseStart === v.verse)
+                : [];
+              const verseCoveredBy = showResources
+                ? chapterResources.filter((r) => v.verse >= r.verseStart && v.verse <= r.verseEnd)
+                : [];
+              // Left border for verse spans
+              const spanBorderColor = verseCoveredBy.length > 0
+                ? getResourceTypeColor(verseCoveredBy[0].type)
+                : null;
               return (
                 <div
                   key={v.verse}
@@ -715,6 +828,9 @@ export default function ScriptureReader() {
                   style={{
                     marginBottom: "4px",
                     lineHeight: 2,
+                    borderLeft: spanBorderColor ? `3px solid ${spanBorderColor}25` : "3px solid transparent",
+                    paddingLeft: spanBorderColor ? "10px" : "10px",
+                    transition: "border-color 0.3s ease, padding-left 0.3s ease",
                   }}
                 >
                   <span
@@ -751,7 +867,10 @@ export default function ScriptureReader() {
                     </span>
                   )}
                   <span
-                    onClick={() => setActiveVerse({ verse: v.verse, chapter: v.chapter, text: v.text })}
+                    onClick={() => {
+                      setActiveVerse({ verse: v.verse, chapter: v.chapter, text: v.text });
+                      setActiveResourcePanel(null); // close resource panel when opening verse popover
+                    }}
                     style={{
                       fontSize: fontSizes[fontSize].body,
                       color: theme.verseText,
@@ -761,6 +880,38 @@ export default function ScriptureReader() {
                   >
                     {renderVerseText(v.text)}
                   </span>
+                  {/* Resource markers */}
+                  {verseStartResources.length > 0 && (
+                    <>
+                      {verseStartResources.slice(0, 3).map((r, ri) => (
+                        <ResourceMarker
+                          key={r.id}
+                          resource={r}
+                          lightMode={lightMode}
+                          onClick={() => {
+                            setActiveVerse(null); // close verse popover
+                            setActiveResourcePanel({
+                              resources: chapterResources,
+                              index: chapterResources.indexOf(r),
+                            });
+                          }}
+                        />
+                      ))}
+                      {verseStartResources.length > 3 && (
+                        <ResourceOverflowBadge
+                          count={verseStartResources.length - 3}
+                          lightMode={lightMode}
+                          onClick={() => {
+                            setActiveVerse(null);
+                            setActiveResourcePanel({
+                              resources: chapterResources,
+                              index: chapterResources.indexOf(verseStartResources[0]),
+                            });
+                          }}
+                        />
+                      )}
+                    </>
+                  )}
                 </div>
               );
             })}
@@ -1003,6 +1154,19 @@ export default function ScriptureReader() {
               </span>
             )}
           </div>
+        )}
+
+        {/* Resource Panel */}
+        {activeResourcePanel && selectedBookId && selectedVolume && (
+          <ResourcePanel
+            resources={activeResourcePanel.resources}
+            initialIndex={activeResourcePanel.index}
+            bookName={selectedBookName || ""}
+            volColor={volColor}
+            lightMode={lightMode}
+            isMobile={isMobile}
+            onClose={() => setActiveResourcePanel(null)}
+          />
         )}
 
         {/* Verse Popover */}
