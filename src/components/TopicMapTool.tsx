@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import type { Volume } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import Header from "./Header";
+import { SectionLabel } from "./VolumeCheckboxes";
 import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./MethodologyModal";
 
 function useIsMobile(breakpoint = 768) {
@@ -91,9 +92,7 @@ export default function TopicMapTool() {
       <div className="search-panel" style={{ marginBottom: "24px" }}>
         {/* Volume */}
         <div style={{ marginBottom: "12px" }}>
-          <div style={{ fontSize: "0.65rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "6px" }}>
-            Volume
-          </div>
+          <SectionLabel>Volume</SectionLabel>
           <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
             {volumes.map((v) => {
               const color = VOLUME_COLORS[v.abbrev] || "#888";
@@ -131,9 +130,7 @@ export default function TopicMapTool() {
         {/* Book — skip for single-book volumes like D&C */}
         {selectedVol && selectedVol.books.length > 1 && (
           <div style={{ marginBottom: "12px" }}>
-            <div style={{ fontSize: "0.65rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "6px" }}>
-              Book
-            </div>
+            <SectionLabel>Book</SectionLabel>
             <div style={{ display: "flex", gap: "4px", flexWrap: "wrap" }}>
               {selectedVol.books.map((b) => (
                 <button
@@ -162,9 +159,7 @@ export default function TopicMapTool() {
           const label = isSingleBook ? "Section" : "Chapter";
           return (
             <div>
-              <div style={{ fontSize: "0.65rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "6px" }}>
-                {label}
-              </div>
+              <SectionLabel>{label}</SectionLabel>
               <div style={{ display: "flex", gap: "4px", flexWrap: "wrap" }}>
                 {Array.from({ length: book.chapterCount }, (_, i) => i + 1).map((ch) => (
                   <button

@@ -19,6 +19,7 @@ import Header from "./Header";
 import DashboardCard from "./DashboardCard";
 import ChartHints from "./ChartHints";
 import ScripturePanel from "./ScripturePanel";
+import VolumeCheckboxes, { CategoryPills } from "./VolumeCheckboxes";
 import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./MethodologyModal";
 import type { ScripturePanelState } from "@/lib/types";
 
@@ -168,68 +169,23 @@ export default function SentimentArcTool() {
 
         {/* Category toggles */}
         <div style={{ marginBottom: "12px" }}>
-          <div style={{ fontSize: "0.65rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "8px" }}>
-            Tone Categories
-          </div>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
-            {SENTIMENT_CATEGORIES.map((cat) => {
-              const active = activeCategories.has(cat.id);
-              return (
-                <button
-                  key={cat.id}
-                  type="button"
-                  onClick={() => toggleCategory(cat.id)}
-                  style={{
-                    padding: "4px 12px",
-                    borderRadius: "20px",
-                    border: `1px solid ${active ? cat.color : "var(--border)"}`,
-                    background: active ? `${cat.color}20` : "transparent",
-                    color: active ? cat.color : "var(--text-muted)",
-                    fontSize: "0.75rem",
-                    fontWeight: active ? 600 : 400,
-                    fontFamily: "inherit",
-                    cursor: "pointer",
-                    transition: "all 0.15s",
-                  }}
-                >
-                  {cat.label}
-                </button>
-              );
-            })}
-          </div>
+          <CategoryPills
+            categories={SENTIMENT_CATEGORIES.map((c) => ({ id: c.id, label: c.label, color: c.color }))}
+            activeIds={activeCategories}
+            onToggle={toggleCategory}
+            label="Tone Categories"
+          />
         </div>
 
         {/* Volume selectors + Go */}
         <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-          <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
-            {volumes.map((v) => {
-              const color = VOLUME_COLORS[v.abbrev] || "#888";
-              const checked = selectedVolumes.includes(v.id);
-              return (
-                <label
-                  key={v.id}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "4px",
-                    cursor: "pointer",
-                    fontSize: "0.78rem",
-                    color: checked ? color : "var(--text-muted)",
-                    fontWeight: checked ? 600 : 400,
-                    transition: "all 0.15s",
-                  }}
-                >
-                  <input
-                    type="checkbox"
-                    checked={checked}
-                    onChange={() => toggleVolume(v.id)}
-                    style={{ accentColor: color, width: "14px", height: "14px" }}
-                  />
-                  {isMobile ? v.abbrev : v.name}
-                </label>
-              );
-            })}
-          </div>
+          <VolumeCheckboxes
+            volumes={volumes}
+            selectedIds={selectedVolumes}
+            onToggle={toggleVolume}
+            isMobile={isMobile}
+            label="Volumes"
+          />
           <button
             onClick={handleAnalyze}
             disabled={loading || selectedVolumes.length === 0}

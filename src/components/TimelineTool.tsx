@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
-import { VOLUME_COLORS } from "@/lib/constants";
+import { VOLUME_COLORS, getContrastText } from "@/lib/constants";
 import Header from "./Header";
 import ChartHints from "./ChartHints";
+import { CategoryPills, SectionLabel } from "./VolumeCheckboxes";
 import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./MethodologyModal";
 import timelineData from "../../data/timeline.json";
 
@@ -373,9 +374,7 @@ export default function TimelineTool() {
 
         {/* Period filters */}
         <div style={{ marginBottom: "12px" }}>
-          <div style={{ fontSize: "0.65rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "6px" }}>
-            Time Period
-          </div>
+          <SectionLabel>Time Period</SectionLabel>
           <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
             {PERIODS.map((p) => (
               <button
@@ -402,10 +401,8 @@ export default function TimelineTool() {
 
         {/* Volume toggles */}
         <div style={{ marginBottom: viewMode === "events" ? "12px" : "0" }}>
-          <div style={{ fontSize: "0.65rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "6px" }}>
-            Volumes
-          </div>
-          <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+          <SectionLabel>Volumes</SectionLabel>
+          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
             {volumeOrder.map((abbrev) => {
               const color = VOLUME_COLORS[abbrev] || "#888";
               const active = activeVolumes.has(abbrev);
@@ -415,19 +412,36 @@ export default function TimelineTool() {
                   style={{
                     display: "flex",
                     alignItems: "center",
-                    gap: "4px",
+                    gap: "6px",
                     cursor: "pointer",
-                    fontSize: "0.78rem",
-                    color: active ? color : "var(--text-muted)",
+                    fontSize: "0.8rem",
                     fontWeight: active ? 600 : 400,
+                    color: active ? "var(--text)" : "var(--text-secondary)",
+                    transition: "color 0.15s",
+                    whiteSpace: "nowrap",
                   }}
                 >
-                  <input
-                    type="checkbox"
-                    checked={active}
-                    onChange={() => toggleVolume(abbrev)}
-                    style={{ accentColor: color, width: "14px", height: "14px" }}
-                  />
+                  <span
+                    onClick={(e) => { e.preventDefault(); toggleVolume(abbrev); }}
+                    style={{
+                      width: "14px",
+                      height: "14px",
+                      borderRadius: "3px",
+                      border: active ? `2px solid ${color}` : "2px solid rgba(255,255,255,0.2)",
+                      background: active ? color : "transparent",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      transition: "all 0.15s",
+                      flexShrink: 0,
+                    }}
+                  >
+                    {active && (
+                      <svg width="8" height="8" viewBox="0 0 10 10" fill="none">
+                        <path d="M2 5L4 7L8 3" stroke={getContrastText(color)} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    )}
+                  </span>
                   {isMobile ? abbrev : volumeNames[abbrev]}
                 </label>
               );
@@ -437,40 +451,12 @@ export default function TimelineTool() {
 
         {/* Event category filters — only in events view */}
         {viewMode === "events" && (
-          <div>
-            <div style={{ fontSize: "0.65rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "6px" }}>
-              Event Categories
-            </div>
-            <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
-              {EVENT_CATEGORIES.map((cat) => {
-                const active = activeCategories.has(cat.id);
-                return (
-                  <button
-                    key={cat.id}
-                    onClick={() => toggleCategory(cat.id)}
-                    style={{
-                      padding: "4px 12px",
-                      borderRadius: "20px",
-                      border: `1px solid ${active ? cat.color : "var(--border)"}`,
-                      background: active ? `${cat.color}20` : "transparent",
-                      color: active ? cat.color : "var(--text-muted)",
-                      fontSize: "0.75rem",
-                      fontWeight: active ? 600 : 400,
-                      fontFamily: "inherit",
-                      cursor: "pointer",
-                      transition: "all 0.15s",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "4px",
-                    }}
-                  >
-                    <span style={{ fontSize: "0.7rem" }}>{cat.icon}</span>
-                    {cat.label}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
+          <CategoryPills
+            categories={EVENT_CATEGORIES.map((c) => ({ id: c.id, label: `${c.icon} ${c.label}`, color: c.color }))}
+            activeIds={activeCategories}
+            onToggle={toggleCategory}
+            label="Event Categories"
+          />
         )}
       </div>
 

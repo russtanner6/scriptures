@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import type { Volume } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
+import { SectionLabel } from "./VolumeCheckboxes";
 
 interface WordCloudItem {
   word: string;
@@ -188,18 +189,7 @@ export default function WordCloudTool() {
       >
         {/* Volume selector */}
         <div style={{ marginBottom: "16px" }}>
-          <div
-            style={{
-              fontSize: "0.72rem",
-              fontWeight: 600,
-              textTransform: "uppercase",
-              letterSpacing: "0.08em",
-              color: "var(--text-muted)",
-              marginBottom: "8px",
-            }}
-          >
-            VOLUME
-          </div>
+          <SectionLabel>Volume</SectionLabel>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
             {volumes.map((vol) => {
               const color = VOLUME_COLORS[vol.abbrev] || "#3B82F6";
@@ -214,19 +204,19 @@ export default function WordCloudTool() {
                     setData(null);
                   }}
                   style={{
-                    background: isSelected ? color : "transparent",
+                    background: isSelected ? `${color}20` : "transparent",
                     border: `1px solid ${isSelected ? color : "var(--border)"}`,
-                    borderRadius: "6px",
-                    padding: "6px 12px",
-                    fontSize: "0.82rem",
+                    borderRadius: "8px",
+                    padding: "5px 12px",
+                    fontSize: "0.78rem",
                     fontWeight: isSelected ? 600 : 400,
-                    color: isSelected ? "#fff" : "var(--text-secondary)",
+                    color: isSelected ? color : "var(--text-muted)",
                     cursor: "pointer",
                     fontFamily: "inherit",
                     transition: "all 0.15s",
                   }}
                 >
-                  {vol.name}
+                  {isMobile ? vol.abbrev : vol.name}
                 </button>
               );
             })}
@@ -236,18 +226,7 @@ export default function WordCloudTool() {
         {/* Book selector */}
         {selectedVol && (
           <div style={{ marginBottom: "16px" }}>
-            <div
-              style={{
-                fontSize: "0.72rem",
-                fontWeight: 600,
-                textTransform: "uppercase",
-                letterSpacing: "0.08em",
-                color: "var(--text-muted)",
-                marginBottom: "8px",
-              }}
-            >
-              BOOK
-            </div>
+            <SectionLabel>Book</SectionLabel>
             <select
               value={selectedBookId || ""}
               onChange={(e) => {
@@ -283,18 +262,7 @@ export default function WordCloudTool() {
         {/* Chapter selector (optional) */}
         {selectedBook && selectedBookId !== -1 && selectedBook.chapterCount > 1 && (
           <div style={{ marginBottom: "16px" }}>
-            <div
-              style={{
-                fontSize: "0.72rem",
-                fontWeight: 600,
-                textTransform: "uppercase",
-                letterSpacing: "0.08em",
-                color: "var(--text-muted)",
-                marginBottom: "8px",
-              }}
-            >
-              {selectedVolume === "D&C" ? "SECTION" : "CHAPTER"} (optional)
-            </div>
+            <SectionLabel>{selectedVolume === "D&C" ? "Section" : "Chapter"} (optional)</SectionLabel>
             <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
               <select
                 value={selectedChapter || ""}
@@ -345,18 +313,7 @@ export default function WordCloudTool() {
         {/* Word count slider */}
         {selectedBookId && (
           <div>
-            <div
-              style={{
-                fontSize: "0.72rem",
-                fontWeight: 600,
-                textTransform: "uppercase",
-                letterSpacing: "0.08em",
-                color: "var(--text-muted)",
-                marginBottom: "8px",
-              }}
-            >
-              WORDS TO SHOW: {wordLimit}
-            </div>
+            <SectionLabel>Words to show: {wordLimit}</SectionLabel>
             <input
               type="range"
               min="20"
