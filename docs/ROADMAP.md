@@ -33,6 +33,9 @@ Built to house the **full LDS canon** (OT, NT, Book of Mormon, D&C, Pearl of Gre
 - **Bookmarks** (`/bookmarks`) — saved verse bookmarks grouped by volume
 - **Resource Layer** — inline video/article/PDF markers on verses, slide-in panel with YouTube embeds, toggle on/off
 - **Reading Streaks** — chapter completion tracking with streak counter
+- **Word Explorer Panel** — slide-up in-context panel for exploring word frequency across book/volume/all scopes without leaving the reader
+- **Speaker Legend** — color-coded speaker pills in Chapter Insights showing who speaks in each chapter
+- **UI Polish** — cream light theme, lighter dark theme, gradient progress bar (5 volume colors), centered tree logo, inverted bottom bar, inline verse numbers
 
 ### Infrastructure
 - **Scripture Panel** — right-side slider showing matching verses when clicking any chart data point

@@ -79,9 +79,10 @@ src/
 │   ├── DataTable.tsx          # Sortable results table with ▲▼ sort icons
 │   ├── StatCard.tsx           # Stat pills
 │   ├── ScripturePanel.tsx     # Right-side slider panel for verse viewing
-│   ├── ScriptureReader.tsx    # Full scripture reader (~1200 lines) with insights, search, progress, annotations, resources
+│   ├── ScriptureReader.tsx    # Full scripture reader (~1400 lines) with insights, search, progress, annotations, resources, Word Explorer
 │   ├── ResourceMarker.tsx     # Inline pill markers for resources (video/article/PDF) + overflow badge
 │   ├── ResourcePanel.tsx      # Slide-in side panel for resource details (YouTube embed, tags, navigation)
+│   ├── WordExplorerPanel.tsx   # Slide-up panel for in-context word frequency exploration (book/volume/all)
 │   ├── WordCloudTool.tsx      # Interactive word cloud per book/chapter/volume
 │   ├── HorizontalBarList.tsx  # Bar chart component
 │   ├── Header.tsx             # Site header with tree logo + hamburger menu (showSubtitle prop)
@@ -182,12 +183,13 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 8. **Chiasmus Detector** (`/chiasmus`) — Find ABBA mirror patterns. Single-column flow layout (picker-style). Scan entire volume.
 9. **Topic Map** (`/topics`) — Chapter similarity finder. Single-column flow layout (picker-style). Cosine similarity.
 10. **Timeline** (`/timeline`) — SHELVED. Code preserved but removed from nav/footer/home page.
-11. **Scripture Reader** (`/read`) — Full reading experience with light/dark mode, font size, keyboard nav, reading progress, Chapter Insights, verse popover, annotations. Reading streaks.
+11. **Scripture Reader** (`/read`) — Full reading experience with light/dark mode, font size, keyboard nav, reading progress, Chapter Insights, verse popover, annotations, Word Explorer panel. Reading streaks. Cream light theme (#f8f6f1), lighter dark theme (#1a1a21), gradient progress bar, centered tree logo.
 12. **Bookmarks** (`/bookmarks`) — Saved verses grouped by volume.
 
 ## Key Components
 - **ScripturePanel** — Right-side slider panel showing matching verses when clicking chart data points.
-- **ChapterInsights** — Collapsible panel in reader: stats bar, key themes (TF-IDF), mini word cloud, verse density strip, cross-tool quick links.
+- **ChapterInsights** — Collapsible panel in reader: stats bar (Verses + Words), key themes (TF-IDF), speaker legend with color-coded pills, mini word cloud, verse density strip, cross-tool quick links. Key themes/top words trigger WordExplorerPanel.
+- **WordExplorerPanel** — Slide-up panel for in-context word frequency exploration. Three scopes (book/volume/all), horizontal bar chart, current chapter highlighted, "go deeper" links. Triggered from ChapterInsights.
 - **VersePopover** — Tap verse → popover with reference, word count, key words, copy, bookmark, and personal notes.
 - **SentimentArcTool** — Multi-volume sentiment analysis with category toggles and Chart.js line charts.
 - **ParallelPassagesTool** — Side-by-side passage comparison with word-level diff highlighting.
