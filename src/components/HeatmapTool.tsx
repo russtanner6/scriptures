@@ -652,7 +652,7 @@ export default function HeatmapTool() {
       {/* Empty state */}
       {results.length === 0 && !isLoading && (
         <div style={{ textAlign: "center", padding: "80px 20px", color: "var(--text-muted)" }}>
-          <div style={{ fontSize: "3rem", marginBottom: "16px" }}>🔥</div>
+          <div style={{ marginBottom: "16px" }}><img src="/heatmap.svg" alt="" style={{ width: "48px", height: "48px", filter: "invert(1) brightness(0.4)" }} /></div>
           <div style={{ fontSize: "1.1rem", fontWeight: 500 }}>
             Search for a word to see its heatmap
           </div>

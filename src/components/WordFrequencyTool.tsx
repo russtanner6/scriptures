@@ -791,7 +791,7 @@ export default function WordFrequencyTool() {
                 transition: "all 0.15s ease",
               }}
             >
-              🔥 Heatmap
+              <img src="/heatmap.svg" alt="" style={{ width: "14px", height: "14px", filter: "invert(1) brightness(0.85)" }} /> Heatmap
             </a>
             {results.results.length > 0 && (
               <a
@@ -812,7 +812,7 @@ export default function WordFrequencyTool() {
                   transition: "all 0.15s ease",
                 }}
               >
-                ☁️ Word Cloud
+                <img src="/word-cloud.svg" alt="" style={{ width: "14px", height: "14px", filter: "invert(1) brightness(0.85)" }} /> Word Cloud
               </a>
             )}
           </div>

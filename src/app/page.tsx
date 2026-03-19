@@ -28,42 +28,42 @@ function useIsMobile(breakpoint = 768) {
 const TOOLS = [
   {
     href: "/search",
-    icon: "🔍",
+    svgIcon: "/search.svg",
     name: "Word Search",
     description: "Search any word or phrase and see its frequency across all 87 books with charts and stats.",
     color: "#3B82F6",
   },
   {
     href: "/narrative-arc",
-    icon: "📈",
+    svgIcon: "/narrative-arc.svg",
     name: "Narrative Arc",
     description: "Compare up to 6 words across volumes to see how themes develop through the scriptures.",
     color: "#8b5cf6",
   },
   {
     href: "/heatmap",
-    icon: "🔥",
+    svgIcon: "/heatmap.svg",
     name: "Theme Heatmap",
     description: "Visualize word frequency by chapter across every book with color-coded heatmaps.",
     color: "#ef4444",
   },
   {
     href: "/wordcloud",
-    icon: "☁️",
+    svgIcon: "/word-cloud.svg",
     name: "Word Cloud",
     description: "See the most frequent words in any book, chapter, or volume as an interactive cloud.",
     color: "#F57B20",
   },
   {
     href: "/read",
-    icon: "📖",
+    svgIcon: "/scriptures.svg",
     name: "Read Scriptures",
     description: "Read with chapter insights, key themes, verse interactions, and cross-tool links built in.",
     color: "#10b981",
   },
   {
     href: "/bookmarks",
-    icon: "★",
+    svgIcon: "/favorite.svg",
     name: "Bookmarks",
     description: "Your saved verses from reading sessions. Tap any verse while reading to bookmark it.",
     color: "#F5A623",
@@ -196,7 +196,15 @@ export default function HomePage() {
               }}
             />
             <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
-              <span style={{ fontSize: "1.3rem" }}>{tool.icon}</span>
+              <img
+                src={tool.svgIcon}
+                alt=""
+                style={{
+                  width: "22px",
+                  height: "22px",
+                  filter: "invert(1) brightness(0.85)",
+                }}
+              />
               <span
                 style={{
                   fontSize: "1rem",

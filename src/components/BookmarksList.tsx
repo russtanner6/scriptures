@@ -59,7 +59,7 @@ export default function BookmarksList() {
 
       {bookmarks.length === 0 && (
         <div style={{ textAlign: "center", padding: "60px 20px", color: "var(--text-muted)" }}>
-          <div style={{ fontSize: "2.5rem", marginBottom: "12px" }}>★</div>
+          <div style={{ marginBottom: "12px" }}><img src="/favorite.svg" alt="" style={{ width: "44px", height: "44px", filter: "invert(1) brightness(0.4)" }} /></div>
           <div style={{ fontSize: "0.92rem", marginBottom: "16px" }}>
             Tap any verse text while reading to bookmark it
           </div>

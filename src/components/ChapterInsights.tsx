@@ -362,7 +362,7 @@ export default function ChapterInsights({
                 transition: "all 0.15s",
               }}
             >
-              ☁️ Word Cloud
+              <img src="/word-cloud.svg" alt="" style={{ width: "13px", height: "13px", filter: lightMode ? "brightness(0.4)" : "invert(1) brightness(0.75)" }} /> Word Cloud
             </a>
             {stats.keyThemes[0] && (
               <a
@@ -382,7 +382,7 @@ export default function ChapterInsights({
                   transition: "all 0.15s",
                 }}
               >
-                🔥 Heatmap: {stats.keyThemes[0].word}
+                <img src="/heatmap.svg" alt="" style={{ width: "13px", height: "13px", filter: lightMode ? "brightness(0.4)" : "invert(1) brightness(0.75)" }} /> Heatmap: {stats.keyThemes[0].word}
               </a>
             )}
             {stats.keyThemes[0] && (
@@ -403,7 +403,7 @@ export default function ChapterInsights({
                   transition: "all 0.15s",
                 }}
               >
-                🔍 Search: {stats.keyThemes[0].word}
+                <img src="/search.svg" alt="" style={{ width: "13px", height: "13px", filter: lightMode ? "brightness(0.4)" : "invert(1) brightness(0.75)" }} /> Search: {stats.keyThemes[0].word}
               </a>
             )}
           </div>
