@@ -15,11 +15,14 @@ export default function Header({ showSubtitle = false }: { showSubtitle?: boolea
         type="button"
         title="Menu"
         onClick={() => setMenuOpen(true)}
-        style={{ left: "auto", right: 0 }}
+        style={{ left: "auto", right: 0, flexDirection: "row", alignItems: "center", gap: "10px" }}
       >
-        <span className="hamburger-line" style={{ width: "14px", marginLeft: "auto" }} />
-        <span className="hamburger-line" style={{ width: "22px" }} />
-        <span className="hamburger-line" style={{ width: "18px", marginLeft: "auto" }} />
+        <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
+          <span className="hamburger-line" style={{ width: "14px", marginLeft: "auto" }} />
+          <span className="hamburger-line" style={{ width: "22px" }} />
+          <span className="hamburger-line" style={{ width: "18px", marginLeft: "auto" }} />
+        </div>
+        <span style={{ fontSize: "0.6rem", fontWeight: 600, letterSpacing: "0.12em", color: "#ffffff", textTransform: "uppercase" }}>Menu</span>
       </button>
 
       <NavMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />

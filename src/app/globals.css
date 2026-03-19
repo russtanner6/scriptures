@@ -113,6 +113,9 @@ body::before {
   margin-bottom: 16px;
   text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header-eyebrow {
@@ -173,13 +176,13 @@ body::before {
 
 .hamburger-line {
   height: 2px;
-  background: var(--text-secondary);
-  border-radius: 2px;
+  background: #ffffff;
+  border-radius: 0;
   transition: background 0.2s;
 }
 
 .hamburger-btn:hover .hamburger-line {
-  background: var(--text);
+  background: #ffffff;
 }
 
 /* Stat cards grid */

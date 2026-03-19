@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 930.84 1014.88">
   <defs>
-    <linearGradient id="volumeGradient" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#DC2F4B" />
-      <stop offset="25%" stop-color="#E8532C" />
-      <stop offset="50%" stop-color="#F57B20" />
-      <stop offset="75%" stop-color="#F5A623" />
-      <stop offset="100%" stop-color="#F5C829" />
-    </linearGradient>
     <style>
       .cls-1 {
-        fill: url(#volumeGradient);
+        fill: #ffffff;
       }
     </style>
   </defs>
