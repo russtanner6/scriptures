@@ -183,6 +183,18 @@ export default function HeatmapTool() {
       {/* Header */}
       <div style={{ marginBottom: "24px" }}>
         <h2 style={{ fontSize: "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px" }}>
+          <img
+            src="/heatmap.svg"
+            alt=""
+            style={{
+              display: "inline-block",
+              width: isMobile ? "20px" : "24px",
+              height: isMobile ? "20px" : "24px",
+              verticalAlign: "middle",
+              marginRight: "10px",
+              filter: "invert(1) brightness(0.85)",
+            }}
+          />
           Theme Heatmap
         </h2>
         <p style={{ color: "var(--text-secondary)", fontSize: isMobile ? "0.85rem" : "0.92rem" }}>
