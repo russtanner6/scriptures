@@ -79,10 +79,12 @@ src/
 │   ├── DataTable.tsx          # Sortable results table with ▲▼ sort icons
 │   ├── StatCard.tsx           # Stat pills
 │   ├── ScripturePanel.tsx     # Right-side slider panel for verse viewing
-│   ├── ScriptureReader.tsx    # Full scripture reader (~1100 lines) with insights, search, progress, annotations
+│   ├── ScriptureReader.tsx    # Full scripture reader (~1200 lines) with insights, search, progress, annotations, resources
+│   ├── ResourceMarker.tsx     # Inline pill markers for resources (video/article/PDF) + overflow badge
+│   ├── ResourcePanel.tsx      # Slide-in side panel for resource details (YouTube embed, tags, navigation)
 │   ├── WordCloudTool.tsx      # Interactive word cloud per book/chapter/volume
 │   ├── HorizontalBarList.tsx  # Bar chart component
-│   ├── Header.tsx             # Site header + hamburger menu (showSubtitle prop)
+│   ├── Header.tsx             # Site header with tree logo + hamburger menu (showSubtitle prop)
 │   └── NavMenu.tsx            # Slide-in nav with sections (Analyze/Discover/Read)
 ├── lib/
 │   ├── db.ts                  # sql.js initialization
@@ -95,8 +97,8 @@ src/
 │   ├── scripture-urls.ts      # Verse reference URL builder
 │   ├── sentiment-lexicon.ts   # 7 tone categories with word lists + scoring (NEW)
 │   └── chiasmus-detector.ts   # Chiasmus (ABBA pattern) detection algorithm (NEW)
-data/                          # scriptures.db + sql-wasm.wasm + parallel-passages.json + timeline.json
-scripts/                       # build-db.ts, book-order.ts
+data/                          # scriptures.db + sql-wasm.wasm + parallel-passages.json + timeline.json + resources.json + speakers.json
+scripts/                       # build-db.ts, book-order.ts, build-speakers.ts
 ```
 
 ## Global Design Rules
@@ -224,6 +226,7 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - `/api/parallel-passages` — List passage groups or fetch verse pairs with texts for comparison
 - `/api/chiasmus` — Detect chiastic patterns in a chapter (uses chiasmus-detector.ts)
 - `/api/topic-similarity` — Find thematically similar chapters via cosine similarity
+- `/api/resources` — Fetch linked resources (videos, articles, PDFs) for a book+chapter
 
 ## Key Patterns
 - `displayName()` in queries.ts normalizes all volume and book names (D&C fix)
