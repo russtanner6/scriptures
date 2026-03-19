@@ -244,6 +244,11 @@ body::before {
   overflow: visible;
 }
 
+/* Footer link hover */
+footer a:hover {
+  color: var(--text) !important;
+}
+
 /* HorizontalBarList responsive grid */
 .bar-list-row {
   display: grid;

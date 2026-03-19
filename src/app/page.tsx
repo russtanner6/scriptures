@@ -456,20 +456,6 @@ export default function HomePage() {
         </div>
       )}
 
-      {/* Stats footer */}
-      <div
-        style={{
-          textAlign: "center",
-          padding: "24px 0 48px",
-          fontSize: "0.78rem",
-          color: "var(--text-muted)",
-          borderTop: "1px solid var(--border)",
-        }}
-      >
-        <strong style={{ color: "var(--text-secondary)" }}>41,995</strong> verses across{" "}
-        <strong style={{ color: "var(--text-secondary)" }}>87</strong> books &bull;{" "}
-        <strong style={{ color: "var(--text-secondary)" }}>5</strong> volumes &bull; Scripture Explorer
-      </div>
     </div>
   );
 }
