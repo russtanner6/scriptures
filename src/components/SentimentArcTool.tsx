@@ -359,19 +359,27 @@ export default function SentimentArcTool() {
                       },
                     },
                     onClick: (_event: any, elements: any, chart: any) => {
-                      // Use 'nearest' + intersect to get the specific point clicked,
-                      // not all datasets at that x-index (which always picks dataset 0)
-                      const nearest = chart.getElementsAtEventForMode(
-                        _event.native,
-                        "nearest",
-                        { intersect: true },
-                        false
-                      );
-                      if (nearest.length > 0) {
-                        const idx = nearest[0].index;
+                      if (elements.length > 0) {
+                        // elements contains all datasets at this x-index (mode: "index").
+                        // Find the one whose rendered y-position is closest to the click.
+                        const clickY = _event.y as number;
+                        let closestEl = elements[0];
+                        let minDist = Infinity;
+                        for (const el of elements) {
+                          const meta = chart.getDatasetMeta(el.datasetIndex);
+                          const point = meta.data[el.index];
+                          if (point) {
+                            const dist = Math.abs(point.y - clickY);
+                            if (dist < minDist) {
+                              minDist = dist;
+                              closestEl = el;
+                            }
+                          }
+                        }
+                        const idx = closestEl.index;
                         const ch = chapters[idx];
                         // Get the active category from the clicked dataset
-                        const dsIdx = nearest[0].datasetIndex;
+                        const dsIdx = closestEl.datasetIndex;
                         const activeCats = SENTIMENT_CATEGORIES.filter((c) => activeCategories.has(c.id));
                         const cat = activeCats[dsIdx];
                         if (cat) {

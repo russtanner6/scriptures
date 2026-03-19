@@ -577,16 +577,24 @@ export default function NarrativeArcTool() {
                       if (canvas) canvas.style.cursor = elements.length > 0 ? "pointer" : "default";
                     },
                     onClick: (_event, elements, chart) => {
-                      // Use 'nearest' + intersect to get the specific point clicked,
-                      // not all datasets at that x-index (which always picks dataset 0)
-                      const nearest = chart.getElementsAtEventForMode(
-                        (_event as any).native,
-                        "nearest",
-                        { intersect: true },
-                        false
-                      );
-                      if (nearest.length === 0) return;
-                      const el = nearest[0];
+                      if (elements.length === 0) return;
+                      // elements contains all datasets at this x-index (mode: "index").
+                      // Find the one whose rendered y-position is closest to the click.
+                      const clickY = (_event as any).y as number;
+                      let closestEl = elements[0];
+                      let minDist = Infinity;
+                      for (const el of elements) {
+                        const meta = chart.getDatasetMeta(el.datasetIndex);
+                        const point = meta.data[el.index];
+                        if (point) {
+                          const dist = Math.abs(point.y - clickY);
+                          if (dist < minDist) {
+                            minDist = dist;
+                            closestEl = el;
+                          }
+                        }
+                      }
+                      const el = closestEl;
                       const dataIndex = el.index;
                       const datasetIndex = el.datasetIndex;
                       const termResult = volResults[datasetIndex];
