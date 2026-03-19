@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import type { Volume } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import { getVerseUrl } from "@/lib/scripture-urls";
+import ChapterInsights from "./ChapterInsights";
 
 interface ReaderVerse {
   chapter: number;
@@ -493,6 +494,23 @@ export default function ScriptureReader() {
             {chapterLabel}
           </div>
 
+          {/* Chapter Insights Panel */}
+          {!isLoading && verses.length > 0 && (
+            <ChapterInsights
+              bookId={selectedBookId}
+              chapter={selectedChapter}
+              bookName={selectedBookName || ""}
+              volumeAbbrev={selectedVolume}
+              volColor={volColor}
+              lightMode={lightMode}
+              isMobile={isMobile}
+              onScrollToVerse={(verse) => {
+                const el = document.getElementById(`verse-${verse}`);
+                if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+              }}
+            />
+          )}
+
           {isLoading && (
             <div style={{ textAlign: "center", padding: "60px", color: theme.textMuted }}>
               Loading...
@@ -505,6 +523,7 @@ export default function ScriptureReader() {
               return (
                 <div
                   key={v.verse}
+                  id={`verse-${v.verse}`}
                   style={{
                     marginBottom: "4px",
                     lineHeight: 2,

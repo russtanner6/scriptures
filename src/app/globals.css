@@ -194,6 +194,11 @@ body::before {
   animation: searchGlow 1.8s ease-out 2.5s 1 forwards;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .search-panel {
   background: var(--surface);
   border: 1px solid var(--border);

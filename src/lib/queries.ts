@@ -666,3 +666,152 @@ export async function getVolumeWordCloudData(
     words: cloudWords,
   };
 }
+
+// ── Chapter Stats (for ChapterInsights in reader) ──
+
+export interface ChapterStats {
+  wordCount: number;
+  verseCount: number;
+  uniqueWords: number;
+  avgVerseLength: number;
+  topWords: { word: string; count: number; weight: number }[];
+  keyThemes: { word: string; score: number }[];
+  verseDensity: { verse: number; wordCount: number }[];
+}
+
+// Tokenize text into cleaned words (shared helper)
+function tokenize(text: string): string[] {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z'-]/g, " ")
+    .split(/\s+/)
+    .map((w) => w.replace(/^['-]+|['-]+$/g, ""))
+    .filter((w) => w.length >= 3 && !STOP_WORDS.has(w));
+}
+
+export async function getChapterStats(
+  bookId: number,
+  chapter: number
+): Promise<ChapterStats> {
+  const db = await getDb();
+
+  // Get all verses for this chapter
+  const chapterVerses = execToObjects<{ verse: number; text: string }>(
+    db,
+    `SELECT verse, text FROM verses WHERE book_id = ? AND chapter = ? ORDER BY verse`,
+    [bookId, chapter]
+  );
+
+  if (chapterVerses.length === 0) {
+    return {
+      wordCount: 0, verseCount: 0, uniqueWords: 0, avgVerseLength: 0,
+      topWords: [], keyThemes: [], verseDensity: [],
+    };
+  }
+
+  // Tokenize chapter
+  const chapterWordCounts = new Map<string, number>();
+  let totalWords = 0;
+  const verseDensity: { verse: number; wordCount: number }[] = [];
+
+  for (const v of chapterVerses) {
+    const words = tokenize(v.text);
+    verseDensity.push({ verse: v.verse, wordCount: words.length });
+    totalWords += words.length;
+    for (const w of words) {
+      chapterWordCounts.set(w, (chapterWordCounts.get(w) || 0) + 1);
+    }
+  }
+
+  const uniqueWords = chapterWordCounts.size;
+  const avgVerseLength = Math.round(totalWords / chapterVerses.length);
+
+  // Top 15 words
+  const sortedWords = Array.from(chapterWordCounts.entries())
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 15);
+  const maxCount = sortedWords.length > 0 ? sortedWords[0][1] : 1;
+  const topWords = sortedWords.map(([word, count]) => ({
+    word,
+    count,
+    weight: count / maxCount,
+  }));
+
+  // Key themes via simple TF-IDF
+  // Get word frequencies for the entire book (for document frequency)
+  const allBookVerses = execToObjects<{ chapter: number; text: string }>(
+    db,
+    `SELECT chapter, text FROM verses WHERE book_id = ?`,
+    [bookId]
+  );
+
+  // Count how many chapters each word appears in (document frequency)
+  const chapterSets = new Map<string, Set<number>>();
+  for (const v of allBookVerses) {
+    const words = new Set(tokenize(v.text));
+    for (const w of words) {
+      if (!chapterSets.has(w)) chapterSets.set(w, new Set());
+      chapterSets.get(w)!.add(v.chapter);
+    }
+  }
+
+  const totalChapters = new Set(allBookVerses.map((v) => v.chapter)).size;
+
+  // TF-IDF: (term freq in chapter) * log(total chapters / chapters containing term)
+  const tfidf: [string, number][] = [];
+  for (const [word, count] of chapterWordCounts.entries()) {
+    const df = chapterSets.get(word)?.size || 1;
+    const tf = count / totalWords;
+    const idf = Math.log(totalChapters / df);
+    tfidf.push([word, tf * idf]);
+  }
+
+  tfidf.sort((a, b) => b[1] - a[1]);
+  const keyThemes = tfidf.slice(0, 5).map(([word, score]) => ({ word, score }));
+
+  return {
+    wordCount: totalWords,
+    verseCount: chapterVerses.length,
+    uniqueWords,
+    avgVerseLength,
+    topWords,
+    keyThemes,
+    verseDensity,
+  };
+}
+
+export async function getRandomVerse(): Promise<{
+  verse: number;
+  chapter: number;
+  text: string;
+  bookId: number;
+  bookName: string;
+  volumeAbbrev: string;
+} | null> {
+  const db = await getDb();
+  const rows = execToObjects<{
+    verse: number;
+    chapter: number;
+    text: string;
+    book_id: number;
+    book_name: string;
+    abbrev: string;
+  }>(
+    db,
+    `SELECT v.verse, v.chapter, v.text, v.book_id, b.name as book_name, vol.abbrev
+     FROM verses v
+     JOIN books b ON v.book_id = b.id
+     JOIN volumes vol ON b.volume_id = vol.id
+     ORDER BY RANDOM() LIMIT 1`
+  );
+  if (rows.length === 0) return null;
+  const r = rows[0];
+  return {
+    verse: r.verse,
+    chapter: r.chapter,
+    text: r.text,
+    bookId: r.book_id,
+    bookName: displayName(r.book_name),
+    volumeAbbrev: r.abbrev,
+  };
+}
