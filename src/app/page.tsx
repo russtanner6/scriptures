@@ -108,7 +108,7 @@ export default function HomePage() {
 
   return (
     <div className="page-container">
-      <Header />
+      <Header showSubtitle />
 
       {/* Hero */}
       <div style={{ textAlign: "center", marginBottom: isMobile ? "32px" : "48px" }}>

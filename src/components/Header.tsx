@@ -3,7 +3,7 @@
 import { useState } from "react";
 import NavMenu from "./NavMenu";
 
-export default function Header() {
+export default function Header({ showSubtitle = false }: { showSubtitle?: boolean }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -24,15 +24,17 @@ export default function Header() {
       <NavMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
 
       <h1 className="header-title">Scripture Explorer</h1>
-      <div className="header-subtitle">
-        Search and analyze word frequencies across the LDS Standard Works.{" "}
-        <strong style={{ color: "var(--text)", fontWeight: 700 }}>
-          41,995
-        </strong>{" "}
-        verses across{" "}
-        <strong style={{ color: "var(--text)", fontWeight: 700 }}>87</strong>{" "}
-        books.
-      </div>
+      {showSubtitle && (
+        <div className="header-subtitle">
+          Search and analyze word frequencies across the LDS Standard Works.{" "}
+          <strong style={{ color: "var(--text)", fontWeight: 700 }}>
+            41,995
+          </strong>{" "}
+          verses across{" "}
+          <strong style={{ color: "var(--text)", fontWeight: 700 }}>87</strong>{" "}
+          books.
+        </div>
+      )}
     </div>
   );
 }
