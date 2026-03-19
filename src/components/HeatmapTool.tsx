@@ -20,6 +20,7 @@ import { ExportButton } from "./ExportChartModal";
 import ChartHints from "./ChartHints";
 import ExportChartModal from "./ExportChartModal";
 import ExportHtmlModal from "./ExportHtmlModal";
+import FilterDropdown from "./FilterDropdown";
 
 ChartJS.register(CategoryScale, LinearScale, LineElement, PointElement, Filler, Tooltip, Legend, ChartDataLabels);
 
@@ -205,94 +206,94 @@ export default function HeatmapTool() {
 
   return (
     <div>
-      {/* Header */}
-      <div style={{ marginBottom: "24px" }}>
-        <h2 style={{ fontSize: "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px" }}>
-          <img
-            src="/heatmap.svg"
-            alt=""
-            style={{
-              display: "inline-block",
-              width: isMobile ? "20px" : "24px",
-              height: isMobile ? "20px" : "24px",
-              verticalAlign: "middle",
-              marginRight: "10px",
-              filter: "invert(1) brightness(0.85)",
-            }}
-          />
-          Theme Heatmap
-        </h2>
-        <p style={{ color: "var(--text-secondary)", fontSize: isMobile ? "0.85rem" : "0.92rem" }}>
-          See how a word or phrase is distributed across every chapter of scripture.
-          Brighter cells = higher frequency. Click any cell to read the verses.
-        </p>
-      </div>
-
       {/* Search panel */}
       <div className="search-panel">
-        {/* Search bar with Go */}
-        <div className="search-bar-glow" style={{ display: "flex", background: "var(--zinc-900)", border: "1px solid var(--border-accent)", borderRadius: "14px", overflow: "hidden", marginBottom: "12px" }}>
-          <div style={{ position: "relative", flex: 1, display: "flex", alignItems: "center" }}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ position: "absolute", left: "16px", pointerEvents: "none" }}>
-              <circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" />
-            </svg>
-            <input
-              ref={inputRef}
-              type="text"
-              value={word}
-              onChange={(e) => setWord(e.target.value)}
-              onKeyDown={handleKeyDown}
-              placeholder={isMobile ? "Search..." : "Enter a word or phrase..."}
-              style={{ width: "100%", padding: "14px 16px 14px 46px", background: "transparent", border: "none", color: "var(--text)", fontSize: "0.95rem", fontFamily: "inherit", outline: "none" }}
-            />
+        <div style={{ display: "flex", gap: isMobile ? "16px" : "24px", flexDirection: isMobile ? "column" : "row", alignItems: "flex-start" }}>
+          {/* LEFT COLUMN */}
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <h2 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
+              <img src="/heatmap.svg" alt="" style={{ display: "inline-block", width: isMobile ? "18px" : "22px", height: isMobile ? "18px" : "22px", verticalAlign: "middle", marginRight: "8px", filter: "invert(1) brightness(0.85)" }} />
+              Theme Heatmap
+            </h2>
+            <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", marginBottom: "14px", lineHeight: 1.4 }}>
+              See how a word is distributed across every chapter. Brighter cells = higher frequency.
+            </p>
+            {/* Search bar with Go */}
+            <div className="search-bar-glow" style={{ display: "flex", background: "var(--zinc-900)", border: "1px solid var(--border-accent)", borderRadius: "12px", overflow: "hidden" }}>
+              <div style={{ position: "relative", flex: 1, display: "flex", alignItems: "center" }}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ position: "absolute", left: "16px", pointerEvents: "none" }}>
+                  <circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" />
+                </svg>
+                <input
+                  ref={inputRef}
+                  type="text"
+                  value={word}
+                  onChange={(e) => setWord(e.target.value)}
+                  onKeyDown={handleKeyDown}
+                  placeholder={isMobile ? "Search..." : "Enter a word or phrase..."}
+                  style={{ width: "100%", padding: "12px 16px 12px 46px", background: "transparent", border: "none", color: "var(--text)", fontSize: "0.95rem", fontFamily: "inherit", outline: "none" }}
+                />
+              </div>
+              <button
+                onClick={handleSearch}
+                disabled={!word.trim() || isLoading}
+                style={{
+                  padding: "12px 28px",
+                  background: !word.trim() || isLoading ? "var(--zinc-800)" : "#3B82F6",
+                  color: !word.trim() || isLoading ? "var(--text-muted)" : "#fff",
+                  border: "none", borderLeft: "1px solid var(--border)",
+                  fontSize: "0.88rem", fontWeight: 600, cursor: !word.trim() || isLoading ? "not-allowed" : "pointer",
+                  fontFamily: "inherit", transition: "background 0.2s", whiteSpace: "nowrap",
+                }}
+              >
+                {isLoading ? (isMobile ? "..." : "Searching...") : "Go"}
+              </button>
+            </div>
           </div>
-          <button
-            onClick={handleSearch}
-            disabled={!word.trim() || isLoading}
-            style={{
-              padding: "14px 28px",
-              background: !word.trim() || isLoading ? "var(--zinc-800)" : "#3B82F6",
-              color: !word.trim() || isLoading ? "var(--text-muted)" : "#fff",
-              border: "none", borderLeft: "1px solid var(--border)",
-              fontSize: "0.88rem", fontWeight: 600, cursor: !word.trim() || isLoading ? "not-allowed" : "pointer",
-              fontFamily: "inherit", transition: "background 0.2s", whiteSpace: "nowrap",
-            }}
-          >
-            {isLoading ? (isMobile ? "..." : "Searching...") : "Go"}
-          </button>
-        </div>
 
-        {/* Volumes + Options row */}
-        <div style={{ display: "flex", alignItems: isMobile ? "flex-start" : "center", gap: isMobile ? "10px" : "16px", flexWrap: "wrap", flexDirection: isMobile ? "column" : "row" }}>
-          <span style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)" }}>Volumes</span>
-          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-            {volumes.map((v) => {
-              const isActive = selectedVolumeIds.has(v.id);
-              const color = VOLUME_COLORS[v.abbrev];
-              return (
-                <label key={v.id} style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", fontWeight: isActive ? 600 : 400, color: isActive ? "var(--text)" : "var(--text-secondary)", transition: "color 0.15s", whiteSpace: "nowrap" }}>
-                  <span onClick={(e) => { e.preventDefault(); toggleVolume(v.id); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: isActive ? `2px solid ${color}` : "2px solid rgba(255,255,255,0.2)", background: isActive ? color : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
-                    {isActive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke={getContrastText(color)} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+          {/* RIGHT COLUMN */}
+          <div style={{ display: "flex", flexDirection: "column", gap: "8px", flexShrink: 0, paddingTop: isMobile ? "0" : "36px" }}>
+            <FilterDropdown
+              label="Volumes"
+              activeCount={selectedVolumeIds.size}
+              totalCount={volumes.length}
+              colorDots={volumes.filter(v => selectedVolumeIds.has(v.id)).map(v => VOLUME_COLORS[v.abbrev])}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                {volumes.map((v) => {
+                  const isActive = selectedVolumeIds.has(v.id);
+                  const color = VOLUME_COLORS[v.abbrev];
+                  return (
+                    <label key={v.id} style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", fontWeight: isActive ? 600 : 400, color: isActive ? "var(--text)" : "var(--text-secondary)", transition: "color 0.15s", whiteSpace: "nowrap" }}>
+                      <span onClick={(e) => { e.preventDefault(); toggleVolume(v.id); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: isActive ? `2px solid ${color}` : "2px solid rgba(255,255,255,0.2)", background: isActive ? color : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                        {isActive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke={getContrastText(color)} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+                      </span>
+                      {v.name}
+                    </label>
+                  );
+                })}
+              </div>
+            </FilterDropdown>
+            <FilterDropdown
+              label="Options"
+              activeCount={(caseInsensitive ? 1 : 0) + (wholeWord ? 1 : 0)}
+              totalCount={2}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: caseInsensitive ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
+                  <span onClick={(e) => { e.preventDefault(); setCaseInsensitive(!caseInsensitive); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: caseInsensitive ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: caseInsensitive ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                    {caseInsensitive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
                   </span>
-                  {compactVolumeName(v.name, isMobile)}
+                  Case-insensitive
                 </label>
-              );
-            })}
-          </div>
-          <span style={{ width: "1px", height: "16px", background: "rgba(255,255,255,0.1)" }} />
-          <div style={{ display: "flex", gap: "10px" }}>
-            <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: caseInsensitive ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
-              <span onClick={(e) => { e.preventDefault(); setCaseInsensitive(!caseInsensitive); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: caseInsensitive ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: caseInsensitive ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
-                {caseInsensitive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
-              </span>
-              Case-insensitive
-            </label>
-            <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: wholeWord ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
-              <span onClick={(e) => { e.preventDefault(); setWholeWord(!wholeWord); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: wholeWord ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: wholeWord ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
-                {wholeWord && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
-              </span>
-              Exact match
-            </label>
+                <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: wholeWord ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
+                  <span onClick={(e) => { e.preventDefault(); setWholeWord(!wholeWord); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: wholeWord ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: wholeWord ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                    {wholeWord && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+                  </span>
+                  Exact match
+                </label>
+              </div>
+            </FilterDropdown>
           </div>
         </div>
       </div>

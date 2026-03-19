@@ -18,6 +18,7 @@ import { Line } from "react-chartjs-2";
 import type { Volume, ScripturePanelState } from "@/lib/types";
 import { VOLUME_COLORS, getContrastText, compactVolumeName } from "@/lib/constants";
 import ScripturePanel from "./ScripturePanel";
+import FilterDropdown from "./FilterDropdown";
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -326,129 +327,130 @@ export default function NarrativeArcTool() {
 
   return (
     <div>
-      {/* Tool header */}
-      <div style={{ marginBottom: "24px" }}>
-        <h2
-          style={{
-            fontSize: "1.4rem",
-            fontWeight: 700,
-            color: "var(--text)",
-            marginBottom: "6px",
-          }}
-        >
-          Narrative Arc Explorer
-        </h2>
-        <p style={{ color: "var(--text-secondary)", fontSize: isMobile ? "0.85rem" : "0.92rem" }}>
-          Compare up to 6 search terms across multiple volumes to see how themes
-          flow through the scriptures in narrative order.
-        </p>
-      </div>
+      {/* Search panel — two-column layout */}
+      <div className="search-panel" style={{ display: "flex", gap: isMobile ? "16px" : "24px", flexDirection: isMobile ? "column" : "row", alignItems: "flex-start" }}>
+        {/* LEFT column: title, description, search bar, term chips */}
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <h2 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
+            Narrative Arc Explorer
+          </h2>
+          <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", marginBottom: "14px", lineHeight: 1.4 }}>
+            Compare up to 6 terms across volumes to see how themes flow through scripture.
+          </p>
 
-      {/* Search panel */}
-      <div className="search-panel">
-        {/* Search input + Add + Go */}
-        <div
-          className="search-bar-glow"
-          style={{
-            display: "flex",
-            background: "var(--zinc-900)",
-            border: "1px solid var(--border-accent)",
-            borderRadius: "14px",
-            overflow: "hidden",
-            marginBottom: "12px",
-          }}
-        >
-          <div style={{ position: "relative", flex: 1, display: "flex", alignItems: "center" }}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ position: "absolute", left: "16px", pointerEvents: "none" }}>
-              <circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" />
-            </svg>
-            <input
-              ref={inputRef}
-              type="text"
-              value={currentTerm}
-              onChange={(e) => setCurrentTerm(e.target.value)}
-              onKeyDown={handleKeyDown}
-              placeholder={terms.length >= 6 ? "Maximum 6 terms" : isMobile ? "Add term..." : "Add a search term..."}
-              disabled={terms.length >= 6}
-              style={{ width: "100%", padding: "14px 16px 14px 46px", background: "transparent", border: "none", color: "var(--text)", fontSize: "0.95rem", fontFamily: "inherit", outline: "none" }}
-            />
+          {/* Search input + Add + Go */}
+          <div
+            className="search-bar-glow"
+            style={{
+              display: "flex",
+              background: "var(--zinc-900)",
+              border: "1px solid var(--border-accent)",
+              borderRadius: "12px",
+              overflow: "hidden",
+              marginBottom: "12px",
+            }}
+          >
+            <div style={{ position: "relative", flex: 1, display: "flex", alignItems: "center" }}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ position: "absolute", left: "16px", pointerEvents: "none" }}>
+                <circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" />
+              </svg>
+              <input
+                ref={inputRef}
+                type="text"
+                value={currentTerm}
+                onChange={(e) => setCurrentTerm(e.target.value)}
+                onKeyDown={handleKeyDown}
+                placeholder={terms.length >= 6 ? "Maximum 6 terms" : isMobile ? "Add term..." : "Add a search term..."}
+                disabled={terms.length >= 6}
+                style={{ width: "100%", padding: "12px 16px 12px 46px", background: "transparent", border: "none", color: "var(--text)", fontSize: "0.95rem", fontFamily: "inherit", outline: "none" }}
+              />
+            </div>
+            <button
+              onClick={addTerm}
+              disabled={!currentTerm.trim() || terms.length >= 6}
+              style={{
+                padding: "12px 20px",
+                background: !currentTerm.trim() || terms.length >= 6 ? "var(--zinc-800)" : "rgba(59,130,246,0.15)",
+                color: !currentTerm.trim() || terms.length >= 6 ? "var(--text-muted)" : "#60A5FA",
+                border: "none", borderLeft: "1px solid var(--border)",
+                fontSize: "0.88rem", fontWeight: 600, cursor: !currentTerm.trim() || terms.length >= 6 ? "not-allowed" : "pointer",
+                fontFamily: "inherit", transition: "background 0.2s", whiteSpace: "nowrap",
+              }}
+            >
+              + Add
+            </button>
+            <button
+              onClick={handleAnalyze}
+              disabled={terms.length === 0 || isLoading}
+              style={{
+                padding: "12px 28px",
+                background: terms.length === 0 || isLoading ? "var(--zinc-800)" : "#3B82F6",
+                color: terms.length === 0 || isLoading ? "var(--text-muted)" : "#fff",
+                border: "none", borderLeft: "1px solid var(--border)",
+                fontSize: "0.88rem", fontWeight: 600, cursor: terms.length === 0 || isLoading ? "not-allowed" : "pointer",
+                fontFamily: "inherit", transition: "background 0.2s", whiteSpace: "nowrap",
+              }}
+            >
+              {isLoading ? (isMobile ? "..." : "Searching...") : "Go"}
+            </button>
           </div>
-          <button
-            onClick={addTerm}
-            disabled={!currentTerm.trim() || terms.length >= 6}
-            style={{
-              padding: "14px 20px",
-              background: !currentTerm.trim() || terms.length >= 6 ? "var(--zinc-800)" : "rgba(59,130,246,0.15)",
-              color: !currentTerm.trim() || terms.length >= 6 ? "var(--text-muted)" : "#60A5FA",
-              border: "none", borderLeft: "1px solid var(--border)",
-              fontSize: "0.88rem", fontWeight: 600, cursor: !currentTerm.trim() || terms.length >= 6 ? "not-allowed" : "pointer",
-              fontFamily: "inherit", transition: "background 0.2s", whiteSpace: "nowrap",
-            }}
-          >
-            + Add
-          </button>
-          <button
-            onClick={handleAnalyze}
-            disabled={terms.length === 0 || isLoading}
-            style={{
-              padding: "14px 28px",
-              background: terms.length === 0 || isLoading ? "var(--zinc-800)" : "#3B82F6",
-              color: terms.length === 0 || isLoading ? "var(--text-muted)" : "#fff",
-              border: "none", borderLeft: "1px solid var(--border)",
-              fontSize: "0.88rem", fontWeight: 600, cursor: terms.length === 0 || isLoading ? "not-allowed" : "pointer",
-              fontFamily: "inherit", transition: "background 0.2s", whiteSpace: "nowrap",
-            }}
-          >
-            {isLoading ? (isMobile ? "..." : "Searching...") : "Go"}
-          </button>
+
+          {/* Term chips */}
+          {terms.length > 0 && (
+            <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+              {terms.map((term, i) => (
+                <span key={term} style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "5px 12px", borderRadius: "8px", background: TERM_COLORS[i % TERM_COLORS.length], color: "#fff", fontSize: "0.82rem", fontWeight: 600 }}>
+                  {term}
+                  <button type="button" onClick={() => removeTerm(term)} style={{ background: "rgba(255,255,255,0.2)", border: "none", borderRadius: "50%", width: "18px", height: "18px", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", color: "#fff", fontSize: "0.7rem", fontWeight: 700, lineHeight: 1, padding: 0 }}>✕</button>
+                </span>
+              ))}
+            </div>
+          )}
         </div>
 
-        {/* Term chips */}
-        {terms.length > 0 && (
-          <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginBottom: "12px" }}>
-            {terms.map((term, i) => (
-              <span key={term} style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "5px 12px", borderRadius: "8px", background: TERM_COLORS[i % TERM_COLORS.length], color: "#fff", fontSize: "0.82rem", fontWeight: 600 }}>
-                {term}
-                <button type="button" onClick={() => removeTerm(term)} style={{ background: "rgba(255,255,255,0.2)", border: "none", borderRadius: "50%", width: "18px", height: "18px", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", color: "#fff", fontSize: "0.7rem", fontWeight: 700, lineHeight: 1, padding: 0 }}>✕</button>
-              </span>
-            ))}
-          </div>
-        )}
-
-        {/* Volumes + Options */}
-        <div style={{ display: "flex", alignItems: isMobile ? "flex-start" : "center", gap: isMobile ? "10px" : "16px", flexWrap: "wrap", flexDirection: isMobile ? "column" : "row" }}>
-          <span style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)" }}>Volumes</span>
-          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-            {volumes.map((v) => {
-              const isActive = selectedVolumeIds.has(v.id);
-              const color = VOLUME_COLORS[v.abbrev];
-              return (
-                <label key={v.id} style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", fontWeight: isActive ? 600 : 400, color: isActive ? "var(--text)" : "var(--text-secondary)", transition: "color 0.15s", whiteSpace: "nowrap" }}>
-                  <span onClick={(e) => { e.preventDefault(); toggleVolume(v.id); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: isActive ? `2px solid ${color}` : "2px solid rgba(255,255,255,0.2)", background: isActive ? color : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
-                    {isActive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke={getContrastText(color)} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
-                  </span>
-                  {compactVolumeName(v.name, isMobile)}
-                </label>
-              );
-            })}
-          </div>
-
-          <span style={{ width: "1px", height: "16px", background: "rgba(255,255,255,0.1)" }} />
-
-          <div style={{ display: "flex", gap: "10px" }}>
-            <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: caseInsensitive ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
-              <span onClick={(e) => { e.preventDefault(); setCaseInsensitive(!caseInsensitive); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: caseInsensitive ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: caseInsensitive ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
-                {caseInsensitive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
-              </span>
-              Case-insensitive
-            </label>
-            <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: wholeWord ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
-              <span onClick={(e) => { e.preventDefault(); setWholeWord(!wholeWord); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: wholeWord ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: wholeWord ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
-                {wholeWord && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
-              </span>
-              Exact match
-            </label>
-          </div>
+        {/* RIGHT column: FilterDropdown for Volumes and Options */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "8px", flexShrink: 0, paddingTop: isMobile ? "0" : "36px" }}>
+          <FilterDropdown
+            label="Volumes"
+            activeCount={selectedVolumeIds.size}
+            totalCount={volumes.length}
+            colorDots={volumes.filter(v => selectedVolumeIds.has(v.id)).map(v => VOLUME_COLORS[v.abbrev])}
+          >
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+              {volumes.map((v) => {
+                const isActive = selectedVolumeIds.has(v.id);
+                const color = VOLUME_COLORS[v.abbrev];
+                return (
+                  <label key={v.id} style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", fontWeight: isActive ? 600 : 400, color: isActive ? "var(--text)" : "var(--text-secondary)", transition: "color 0.15s", whiteSpace: "nowrap" }}>
+                    <span onClick={(e) => { e.preventDefault(); toggleVolume(v.id); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: isActive ? `2px solid ${color}` : "2px solid rgba(255,255,255,0.2)", background: isActive ? color : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                      {isActive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke={getContrastText(color)} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+                    </span>
+                    {v.name}
+                  </label>
+                );
+              })}
+            </div>
+          </FilterDropdown>
+          <FilterDropdown
+            label="Options"
+            activeCount={(caseInsensitive ? 1 : 0) + (wholeWord ? 1 : 0)}
+            totalCount={2}
+          >
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+              <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: caseInsensitive ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
+                <span onClick={(e) => { e.preventDefault(); setCaseInsensitive(!caseInsensitive); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: caseInsensitive ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: caseInsensitive ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                  {caseInsensitive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+                </span>
+                Case-insensitive
+              </label>
+              <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: wholeWord ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
+                <span onClick={(e) => { e.preventDefault(); setWholeWord(!wholeWord); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: wholeWord ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: wholeWord ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                  {wholeWord && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+                </span>
+                Exact match
+              </label>
+            </div>
+          </FilterDropdown>
         </div>
       </div>
 

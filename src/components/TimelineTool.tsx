@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { VOLUME_COLORS, getContrastText } from "@/lib/constants";
 import Header from "./Header";
 import ChartHints from "./ChartHints";
-import { CategoryPills, SectionLabel } from "./VolumeCheckboxes";
+import FilterDropdown from "./FilterDropdown";
 import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./MethodologyModal";
 import timelineData from "../../data/timeline.json";
 
@@ -336,128 +336,160 @@ export default function TimelineTool() {
     <div className="page-container">
       <Header />
 
-      <h1 style={{ fontSize: isMobile ? "1.3rem" : "1.6rem", fontWeight: 700, color: "var(--text)", marginBottom: "8px" }}>
-        Scripture Timeline
-      </h1>
-      <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "8px", lineHeight: 1.5, maxWidth: "640px" }}>
-        Explore key events and the historical span of scripture books across all five volumes.
-      </p>
-      <div style={{ marginBottom: "20px" }}>
-        <MethodLink onClick={() => setShowMethodology(true)} />
-      </div>
-
       {/* Controls panel */}
-      <div className="search-panel" style={{ marginBottom: "24px" }}>
-        {/* View mode toggle */}
-        <div style={{ display: "flex", gap: "4px", marginBottom: "16px" }}>
-          {(["events", "books"] as const).map((mode) => (
-            <button
-              key={mode}
-              onClick={() => setViewMode(mode)}
-              style={{
-                padding: "6px 18px",
-                borderRadius: "8px",
-                border: "none",
-                background: viewMode === mode ? "rgba(139,92,246,0.2)" : "rgba(255,255,255,0.04)",
-                color: viewMode === mode ? "#8b5cf6" : "var(--text-muted)",
-                fontSize: "0.82rem",
-                fontWeight: viewMode === mode ? 600 : 400,
-                fontFamily: "inherit",
-                cursor: "pointer",
-                transition: "all 0.15s",
-              }}
-            >
-              {mode === "events" ? "Events" : "Book Spans"}
-            </button>
-          ))}
-        </div>
+      <div className="search-panel" style={{ marginBottom: "24px", display: "flex", gap: isMobile ? "16px" : "24px", flexDirection: isMobile ? "column" : "row", alignItems: "flex-start" }}>
+        {/* Left column: title, description, method link, view toggle */}
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <h1 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
+            Scripture Timeline
+          </h1>
+          <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", marginBottom: "10px", lineHeight: 1.4 }}>
+            Explore key events and the historical span of scripture books.
+          </p>
+          <MethodLink onClick={() => setShowMethodology(true)} />
 
-        {/* Period filters */}
-        <div style={{ marginBottom: "12px" }}>
-          <SectionLabel>Time Period</SectionLabel>
-          <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
-            {PERIODS.map((p) => (
+          {/* View mode toggle */}
+          <div style={{ display: "flex", gap: "4px", marginTop: "14px" }}>
+            {(["events", "books"] as const).map((mode) => (
               <button
-                key={p.id}
-                onClick={() => setActivePeriod(p.id)}
+                key={mode}
+                onClick={() => setViewMode(mode)}
                 style={{
-                  padding: "5px 14px",
-                  borderRadius: "20px",
-                  border: `1px solid ${activePeriod === p.id ? "var(--accent)" : "var(--border)"}`,
-                  background: activePeriod === p.id ? "rgba(59,130,246,0.15)" : "transparent",
-                  color: activePeriod === p.id ? "var(--accent)" : "var(--text-muted)",
-                  fontSize: "0.75rem",
-                  fontWeight: activePeriod === p.id ? 600 : 400,
+                  padding: "6px 18px",
+                  borderRadius: "8px",
+                  border: "none",
+                  background: viewMode === mode ? "rgba(139,92,246,0.2)" : "rgba(255,255,255,0.04)",
+                  color: viewMode === mode ? "#8b5cf6" : "var(--text-muted)",
+                  fontSize: "0.82rem",
+                  fontWeight: viewMode === mode ? 600 : 400,
                   fontFamily: "inherit",
                   cursor: "pointer",
                   transition: "all 0.15s",
                 }}
               >
-                {p.label}
+                {mode === "events" ? "Events" : "Book Spans"}
               </button>
             ))}
           </div>
         </div>
 
-        {/* Volume toggles */}
-        <div style={{ marginBottom: viewMode === "events" ? "12px" : "0" }}>
-          <SectionLabel>Volumes</SectionLabel>
-          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-            {volumeOrder.map((abbrev) => {
-              const color = VOLUME_COLORS[abbrev] || "#888";
-              const active = activeVolumes.has(abbrev);
-              return (
-                <label
-                  key={abbrev}
+        {/* Right column: filter dropdowns */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "8px", flexShrink: 0, paddingTop: isMobile ? "0" : "36px" }}>
+          <FilterDropdown label="Time Period" icon="📅">
+            <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+              {PERIODS.map((p) => (
+                <button
+                  key={p.id}
+                  onClick={() => setActivePeriod(p.id)}
                   style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "6px",
-                    cursor: "pointer",
+                    padding: "6px 12px",
+                    borderRadius: "8px",
+                    border: "none",
+                    background: activePeriod === p.id ? "rgba(59,130,246,0.15)" : "transparent",
+                    color: activePeriod === p.id ? "var(--accent)" : "var(--text-muted)",
                     fontSize: "0.8rem",
-                    fontWeight: active ? 600 : 400,
-                    color: active ? "var(--text)" : "var(--text-secondary)",
-                    transition: "color 0.15s",
-                    whiteSpace: "nowrap",
+                    fontWeight: activePeriod === p.id ? 600 : 400,
+                    fontFamily: "inherit",
+                    cursor: "pointer",
+                    textAlign: "left" as const,
+                    transition: "all 0.15s",
                   }}
                 >
-                  <span
-                    onClick={(e) => { e.preventDefault(); toggleVolume(abbrev); }}
+                  {p.label}
+                </button>
+              ))}
+            </div>
+          </FilterDropdown>
+
+          <FilterDropdown
+            label="Volumes"
+            activeCount={activeVolumes.size}
+            totalCount={5}
+            colorDots={volumeOrder.filter((a) => activeVolumes.has(a)).map((a) => VOLUME_COLORS[a])}
+          >
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+              {volumeOrder.map((abbrev) => {
+                const color = VOLUME_COLORS[abbrev] || "#888";
+                const active = activeVolumes.has(abbrev);
+                return (
+                  <label
+                    key={abbrev}
                     style={{
-                      width: "14px",
-                      height: "14px",
-                      borderRadius: "3px",
-                      border: active ? `2px solid ${color}` : "2px solid rgba(255,255,255,0.2)",
-                      background: active ? color : "transparent",
                       display: "flex",
                       alignItems: "center",
-                      justifyContent: "center",
-                      transition: "all 0.15s",
-                      flexShrink: 0,
+                      gap: "8px",
+                      cursor: "pointer",
+                      fontSize: "0.82rem",
+                      fontWeight: active ? 600 : 400,
+                      color: active ? "var(--text)" : "var(--text-secondary)",
+                      whiteSpace: "nowrap",
                     }}
                   >
-                    {active && (
-                      <svg width="8" height="8" viewBox="0 0 10 10" fill="none">
-                        <path d="M2 5L4 7L8 3" stroke={getContrastText(color)} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    )}
-                  </span>
-                  {isMobile ? abbrev : volumeNames[abbrev]}
-                </label>
-              );
-            })}
-          </div>
-        </div>
+                    <span
+                      onClick={(e) => { e.preventDefault(); toggleVolume(abbrev); }}
+                      style={{
+                        width: "14px",
+                        height: "14px",
+                        borderRadius: "3px",
+                        border: active ? `2px solid ${color}` : "2px solid rgba(255,255,255,0.2)",
+                        background: active ? color : "transparent",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        transition: "all 0.15s",
+                        flexShrink: 0,
+                      }}
+                    >
+                      {active && (
+                        <svg width="8" height="8" viewBox="0 0 10 10" fill="none">
+                          <path d="M2 5L4 7L8 3" stroke={getContrastText(color)} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      )}
+                    </span>
+                    {volumeNames[abbrev]}
+                  </label>
+                );
+              })}
+            </div>
+          </FilterDropdown>
 
-        {/* Event category filters — only in events view */}
-        {viewMode === "events" && (
-          <CategoryPills
-            categories={EVENT_CATEGORIES.map((c) => ({ id: c.id, label: `${c.icon} ${c.label}`, color: c.color }))}
-            activeIds={activeCategories}
-            onToggle={toggleCategory}
-            label="Event Categories"
-          />
-        )}
+          {viewMode === "events" && (
+            <FilterDropdown
+              label="Categories"
+              activeCount={activeCategories.size}
+              totalCount={EVENT_CATEGORIES.length}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+                {EVENT_CATEGORIES.map((cat) => {
+                  const active = activeCategories.has(cat.id);
+                  return (
+                    <button
+                      key={cat.id}
+                      onClick={() => toggleCategory(cat.id)}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "8px",
+                        background: "none",
+                        border: "none",
+                        cursor: "pointer",
+                        fontSize: "0.82rem",
+                        fontFamily: "inherit",
+                        color: active ? cat.color : "var(--text-muted)",
+                        fontWeight: active ? 600 : 400,
+                        padding: "2px 0",
+                        transition: "all 0.15s",
+                      }}
+                    >
+                      <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: active ? cat.color : "rgba(255,255,255,0.15)", transition: "all 0.15s" }} />
+                      {cat.icon} {cat.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </FilterDropdown>
+          )}
+        </div>
       </div>
 
       {/* EVENT TIMELINE VIEW */}

@@ -23,6 +23,7 @@ import type { BarItem } from "./HorizontalBarList";
 import DataTable from "./DataTable";
 import ExportChartModal, { ExportButton } from "./ExportChartModal";
 import ChartHints from "./ChartHints";
+import FilterDropdown from "./FilterDropdown";
 import ScripturePanel from "./ScripturePanel";
 import type { ScripturePanelState } from "@/lib/types";
 
@@ -281,188 +282,157 @@ export default function WordFrequencyTool() {
     });
   };
 
+  // Active volume color dots for the filter dropdown badge
+  const activeVolumeDots = volumes.filter((v) => selectedVolumeIds.has(v.id)).map((v) => VOLUME_COLORS[v.abbrev]);
+  const optionsActiveCount = (caseInsensitive ? 1 : 0) + (wholeWord ? 1 : 0);
+
   return (
     <div>
-      {/* Search Controls */}
+      {/* Search Controls — two-column layout */}
       <div className="search-panel">
-        {/* Search bar with integrated button */}
-        <div
-          className="search-bar-glow"
-          style={{
-            display: "flex",
-            background: "var(--zinc-900)",
-            border: "1px solid var(--border-accent)",
-            borderRadius: "14px",
-            overflow: "hidden",
-            marginBottom: "20px",
-          }}
-        >
-          <div style={{ position: "relative", flex: 1, display: "flex", alignItems: "center" }}>
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="var(--text-muted)"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              style={{ position: "absolute", left: "16px", pointerEvents: "none" }}
-            >
-              <circle cx="11" cy="11" r="8" />
-              <path d="m21 21-4.3-4.3" />
-            </svg>
-            <input
-              ref={inputRef}
-              type="text"
-              value={word}
-              onChange={(e) => setWord(e.target.value)}
-              onKeyDown={handleKeyDown}
-              placeholder={isMobile ? 'Search...' : 'Search a word, phrase, or "exact phrase"...'}
+        <div style={{ display: "flex", gap: isMobile ? "16px" : "24px", flexDirection: isMobile ? "column" : "row", alignItems: "flex-start" }}>
+          {/* LEFT COLUMN — Title, description, search bar */}
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <h1 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
+              Word Search
+            </h1>
+            <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", marginBottom: "14px", lineHeight: 1.4 }}>
+              Search any word or phrase across all scripture volumes.
+            </p>
+
+            {/* Search bar */}
+            <div
+              className="search-bar-glow"
               style={{
-                width: "100%",
-                padding: "14px 16px 14px 46px",
-                background: "transparent",
-                border: "none",
-                color: "var(--text)",
-                fontSize: "0.95rem",
-                fontFamily: "inherit",
-                outline: "none",
+                display: "flex",
+                background: "var(--zinc-900)",
+                border: "1px solid var(--border-accent)",
+                borderRadius: "12px",
+                overflow: "hidden",
               }}
-            />
+            >
+              <div style={{ position: "relative", flex: 1, display: "flex", alignItems: "center" }}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ position: "absolute", left: "14px", pointerEvents: "none" }}>
+                  <circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" />
+                </svg>
+                <input
+                  ref={inputRef}
+                  type="text"
+                  value={word}
+                  onChange={(e) => setWord(e.target.value)}
+                  onKeyDown={handleKeyDown}
+                  placeholder={isMobile ? 'Search...' : 'Search a word or "exact phrase"...'}
+                  style={{ width: "100%", padding: "12px 14px 12px 42px", background: "transparent", border: "none", color: "var(--text)", fontSize: "0.92rem", fontFamily: "inherit", outline: "none" }}
+                />
+              </div>
+              <button
+                onClick={handleSearch}
+                disabled={!word.trim() || isLoading}
+                style={{
+                  padding: "12px 20px",
+                  background: !word.trim() || isLoading ? "var(--zinc-800)" : "linear-gradient(135deg, #3b82f6, #60a5fa)",
+                  color: !word.trim() || isLoading ? "var(--text-muted)" : "#fff",
+                  border: "none", borderLeft: "1px solid var(--border)",
+                  fontSize: "0.85rem", fontWeight: 600, cursor: !word.trim() || isLoading ? "not-allowed" : "pointer",
+                  fontFamily: "inherit", transition: "background 0.2s", whiteSpace: "nowrap",
+                }}
+              >
+                {isLoading ? (isMobile ? "..." : "Searching...") : "Go"}
+              </button>
+            </div>
+
+            {/* Search tips link */}
+            <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "6px" }}>
+              <button
+                type="button"
+                onClick={() => setShowHelp(!showHelp)}
+                style={{ background: "none", border: "none", color: showHelp ? "#3b82f6" : "var(--text-muted)", fontSize: "0.72rem", fontWeight: 500, fontFamily: "inherit", cursor: "pointer", textDecoration: "underline", textUnderlineOffset: "3px", padding: 0, transition: "color 0.15s" }}
+              >
+                Search tips
+              </button>
+            </div>
           </div>
-          <button
-            onClick={handleSearch}
-            disabled={!word.trim() || isLoading}
-            style={{
-              padding: "14px 20px",
-              background:
-                !word.trim() || isLoading
-                  ? "var(--zinc-800)"
-                  : "linear-gradient(135deg, #3b82f6, #60a5fa)",
-              color:
-                !word.trim() || isLoading
-                  ? "var(--text-muted)"
-                  : "#fff",
-              border: "none",
-              borderLeft: "1px solid var(--border)",
-              fontSize: "0.88rem",
-              fontWeight: 600,
-              cursor:
-                !word.trim() || isLoading ? "not-allowed" : "pointer",
-              fontFamily: "inherit",
-              transition: "background 0.2s",
-              whiteSpace: "nowrap",
-              letterSpacing: "0.02em",
-            }}
-          >
-            {isLoading ? (isMobile ? "..." : "Searching...") : "Go"}
-          </button>
-        </div>
-        {/* Search tips link — below search bar */}
-        <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "8px", marginBottom: "-8px" }}>
-          <button
-            type="button"
-            onClick={() => setShowHelp(!showHelp)}
-            style={{
-              background: "none",
-              border: "none",
-              color: showHelp ? "#3b82f6" : "var(--text-muted)",
-              fontSize: "0.75rem",
-              fontWeight: 500,
-              fontFamily: "inherit",
-              cursor: "pointer",
-              textDecoration: "underline",
-              textUnderlineOffset: "3px",
-              padding: 0,
-              transition: "color 0.15s",
-            }}
-          >
-            Search tips
-          </button>
+
+          {/* RIGHT COLUMN — Filter dropdowns */}
+          <div style={{ display: "flex", flexDirection: "column", gap: "8px", flexShrink: 0, paddingTop: isMobile ? "0" : "36px" }}>
+            <FilterDropdown
+              label="Volumes"
+              activeCount={selectedVolumeIds.size}
+              totalCount={volumes.length}
+              colorDots={activeVolumeDots}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                {volumes.map((v) => {
+                  const isActive = selectedVolumeIds.has(v.id);
+                  const color = VOLUME_COLORS[v.abbrev];
+                  return (
+                    <label key={v.id} style={{ display: "flex", alignItems: "center", gap: "8px", cursor: "pointer", fontSize: "0.82rem", fontWeight: isActive ? 600 : 400, color: isActive ? "var(--text)" : "var(--text-secondary)", transition: "color 0.15s", whiteSpace: "nowrap" }}>
+                      <span onClick={(e) => { e.preventDefault(); toggleVolume(v.id); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: isActive ? `2px solid ${color}` : "2px solid rgba(255,255,255,0.2)", background: isActive ? color : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                        {isActive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke={getContrastText(color)} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+                      </span>
+                      {v.name}
+                    </label>
+                  );
+                })}
+              </div>
+            </FilterDropdown>
+
+            <FilterDropdown
+              label="Options"
+              activeCount={optionsActiveCount}
+              totalCount={2}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <label style={{ display: "flex", alignItems: "center", gap: "8px", cursor: "pointer", fontSize: "0.82rem", color: caseInsensitive ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
+                  <span onClick={(e) => { e.preventDefault(); setCaseInsensitive(!caseInsensitive); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: caseInsensitive ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: caseInsensitive ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                    {caseInsensitive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+                  </span>
+                  Case-insensitive
+                </label>
+                <label style={{ display: "flex", alignItems: "center", gap: "8px", cursor: "pointer", fontSize: "0.82rem", color: wholeWord ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
+                  <span onClick={(e) => { e.preventDefault(); setWholeWord(!wholeWord); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: wholeWord ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: wholeWord ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                    {wholeWord && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+                  </span>
+                  Exact match
+                </label>
+              </div>
+            </FilterDropdown>
+          </div>
         </div>
 
-        {/* Help popup */}
+        {/* Help popup — full width below the two columns */}
         {showHelp && (
           <div
             style={{
               background: "var(--zinc-900)",
               border: "1px solid var(--border-accent)",
               borderRadius: "12px",
-              padding: "20px",
-              marginBottom: "16px",
-              fontSize: "0.85rem",
+              padding: "16px 20px",
+              marginTop: "16px",
+              fontSize: "0.82rem",
               lineHeight: 1.7,
               color: "var(--text-secondary)",
             }}
           >
-            <div style={{ fontWeight: 700, color: "var(--text)", marginBottom: "12px", fontSize: "0.9rem" }}>
+            <div style={{ fontWeight: 700, color: "var(--text)", marginBottom: "10px", fontSize: "0.85rem" }}>
               Search Tips
             </div>
-            <div style={{ display: "grid", gap: "8px" }}>
+            <div style={{ display: "grid", gap: "6px" }}>
               <div>
-                <code style={{ color: "var(--accent)", background: "var(--accent-soft)", padding: "2px 6px", borderRadius: "4px", fontSize: "0.8rem" }}>Jesus</code>
+                <code style={{ color: "var(--accent)", background: "var(--accent-soft)", padding: "2px 6px", borderRadius: "4px", fontSize: "0.78rem" }}>Jesus</code>
                 {" "}— Search for a single word
               </div>
               <div>
-                <code style={{ color: "var(--accent)", background: "var(--accent-soft)", padding: "2px 6px", borderRadius: "4px", fontSize: "0.8rem" }}>{'"come unto me"'}</code>
+                <code style={{ color: "var(--accent)", background: "var(--accent-soft)", padding: "2px 6px", borderRadius: "4px", fontSize: "0.78rem" }}>{'"come unto me"'}</code>
                 {" "}— Wrap in quotes to search an exact phrase
               </div>
               <div>
-                <code style={{ color: "var(--accent)", background: "var(--accent-soft)", padding: "2px 6px", borderRadius: "4px", fontSize: "0.8rem" }}>tim</code>
+                <code style={{ color: "var(--accent)", background: "var(--accent-soft)", padding: "2px 6px", borderRadius: "4px", fontSize: "0.78rem" }}>tim</code>
                 {" "}+ <span style={{ color: "var(--emerald)" }}>Exact match OFF</span> — Find all words containing &quot;tim&quot; (time, Timothy, etc.)
-              </div>
-              <div style={{ borderTop: "1px solid var(--border)", paddingTop: "8px", marginTop: "4px" }}>
-                <strong style={{ color: "var(--text)" }}>Options:</strong>
-              </div>
-              <div>
-                <span style={{ color: "var(--accent)" }}>Case-insensitive</span> — &quot;jesus&quot; matches &quot;Jesus&quot; and &quot;JESUS&quot;
-              </div>
-              <div>
-                <span style={{ color: "var(--accent)" }}>Exact match</span> — Only matches the exact word, not words containing it. Turn off for partial/substring matching.
-              </div>
-              <div>
-                <span style={{ color: "var(--emerald)" }}>Show toggles</span> — After searching, use the green toggles to show/hide chart sections
               </div>
             </div>
           </div>
         )}
-
-        {/* Volumes + Options — compact checkbox row (matches narrative arc / heatmap style) */}
-        <div style={{ display: "flex", alignItems: isMobile ? "flex-start" : "center", gap: isMobile ? "10px" : "16px", flexWrap: "wrap", flexDirection: isMobile ? "column" : "row" }}>
-          <span style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)" }}>Volumes</span>
-          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-            {volumes.map((v) => {
-              const isActive = selectedVolumeIds.has(v.id);
-              const color = VOLUME_COLORS[v.abbrev];
-              return (
-                <label key={v.id} style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", fontWeight: isActive ? 600 : 400, color: isActive ? "var(--text)" : "var(--text-secondary)", transition: "color 0.15s", whiteSpace: "nowrap" }}>
-                  <span onClick={(e) => { e.preventDefault(); toggleVolume(v.id); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: isActive ? `2px solid ${color}` : "2px solid rgba(255,255,255,0.2)", background: isActive ? color : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
-                    {isActive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke={getContrastText(color)} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
-                  </span>
-                  {compactVolumeName(v.name, isMobile)}
-                </label>
-              );
-            })}
-          </div>
-
-          <span style={{ width: "1px", height: "16px", background: "rgba(255,255,255,0.1)", display: isMobile ? "none" : "block" }} />
-
-          <div style={{ display: "flex", gap: "10px" }}>
-            <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: caseInsensitive ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
-              <span onClick={(e) => { e.preventDefault(); setCaseInsensitive(!caseInsensitive); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: caseInsensitive ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: caseInsensitive ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
-                {caseInsensitive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
-              </span>
-              Case-insensitive
-            </label>
-            <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.8rem", color: wholeWord ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
-              <span onClick={(e) => { e.preventDefault(); setWholeWord(!wholeWord); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: wholeWord ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: wholeWord ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
-                {wholeWord && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
-              </span>
-              Exact match
-            </label>
-          </div>
-        </div>
       </div>
 
       {/* Results */}

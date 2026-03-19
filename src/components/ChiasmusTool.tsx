@@ -108,148 +108,152 @@ export default function ChiasmusTool() {
     <div className="page-container">
       <Header />
 
-      <h1 style={{ fontSize: isMobile ? "1.3rem" : "1.6rem", fontWeight: 700, color: "var(--text)", marginBottom: "8px" }}>
-        Chiasmus Detector
-      </h1>
-      <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "8px", lineHeight: 1.5, maxWidth: "640px" }}>
-        Discover chiastic (ABBA mirror) patterns in scripture — a literary structure where themes mirror each other around a central point.
-      </p>
-      <div style={{ marginBottom: "20px" }}>
-        <MethodLink onClick={() => setShowMethodology(true)} />
-      </div>
-
-      {/* Volume + Book + Section selection */}
+      {/* Two-column selection panel */}
       <div className="search-panel" style={{ marginBottom: "24px" }}>
-        <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginBottom: "12px" }}>
-          {/* Volume picker */}
-          <div>
-            <SectionLabel>Volume</SectionLabel>
-            <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
-              {volumes.map((v) => {
-                const color = VOLUME_COLORS[v.abbrev] || "#888";
-                const active = selectedVolume === v.id;
-                const isSingleBook = v.books.length === 1;
-                return (
-                  <button
-                    key={v.id}
-                    onClick={() => {
-                      setSelectedVolume(v.id);
-                      setSelectedChapter(null);
-                      setResult(null);
-                      setScanResults([]);
-                      // Auto-select the book for single-book volumes (D&C)
-                      if (isSingleBook) {
-                        setSelectedBook(v.books[0].id);
-                      } else {
-                        setSelectedBook(null);
-                      }
-                    }}
-                    style={{
-                      padding: "5px 12px",
-                      borderRadius: "8px",
-                      border: `1px solid ${active ? color : "var(--border)"}`,
-                      background: active ? `${color}20` : "transparent",
-                      color: active ? color : "var(--text-muted)",
-                      fontSize: "0.78rem",
-                      fontWeight: active ? 600 : 400,
-                      fontFamily: "inherit",
-                      cursor: "pointer",
-                      transition: "all 0.15s",
-                    }}
-                  >
-                    {isMobile ? v.abbrev : v.name}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-
-        {/* Book picker — skip for single-book volumes like D&C */}
-        {selectedVol && selectedVol.books.length > 1 && (
-          <div style={{ marginBottom: "12px" }}>
-            <SectionLabel>Book</SectionLabel>
-            <div style={{ display: "flex", gap: "4px", flexWrap: "wrap" }}>
-              {selectedVol.books.map((b) => (
-                <button
-                  key={b.id}
-                  onClick={() => { setSelectedBook(b.id); setSelectedChapter(null); setResult(null); }}
-                  style={{
-                    padding: "4px 10px",
-                    borderRadius: "6px",
-                    border: `1px solid ${selectedBook === b.id ? "var(--accent)" : "var(--border)"}`,
-                    background: selectedBook === b.id ? "rgba(59,130,246,0.15)" : "transparent",
-                    color: selectedBook === b.id ? "var(--accent)" : "var(--text-muted)",
-                    fontSize: "0.72rem",
-                    fontWeight: selectedBook === b.id ? 600 : 400,
-                    fontFamily: "inherit",
-                    cursor: "pointer",
-                    transition: "all 0.15s",
-                  }}
-                >
-                  {b.name}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Chapter/Section picker */}
-        {selectedBook && selectedVol && (() => {
-          const book = selectedVol.books.find((b) => b.id === selectedBook);
-          if (!book) return null;
-          const isSingleBook = selectedVol.books.length === 1;
-          const label = isSingleBook ? "Section" : "Chapter";
-          return (
+        <div style={{ display: "flex", gap: isMobile ? "16px" : "24px", flexDirection: isMobile ? "column" : "row", alignItems: "flex-start" }}>
+          {/* Left column — title, description, method link, scan button */}
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <h1 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
+              Chiasmus Detector
+            </h1>
+            <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", marginBottom: "10px", lineHeight: 1.4 }}>
+              Discover chiastic (ABBA mirror) patterns in scripture — a literary structure where themes mirror each other around a central point.
+            </p>
             <div style={{ marginBottom: "12px" }}>
-              <SectionLabel>{label}</SectionLabel>
-              <div style={{ display: "flex", gap: "4px", flexWrap: "wrap" }}>
-                {Array.from({ length: book.chapterCount }, (_, i) => i + 1).map((ch) => (
-                  <button
-                    key={ch}
-                    onClick={() => analyzeChapter(selectedBook, ch)}
-                    style={{
-                      padding: "4px 8px",
-                      borderRadius: "6px",
-                      border: `1px solid ${selectedChapter === ch ? "var(--accent)" : "var(--border)"}`,
-                      background: selectedChapter === ch ? "rgba(59,130,246,0.15)" : "transparent",
-                      color: selectedChapter === ch ? "var(--accent)" : "var(--text-muted)",
-                      fontSize: "0.72rem",
-                      fontFamily: "inherit",
-                      cursor: "pointer",
-                      minWidth: "32px",
-                      transition: "all 0.15s",
-                    }}
-                  >
-                    {ch}
-                  </button>
-                ))}
+              <MethodLink onClick={() => setShowMethodology(true)} />
+            </div>
+            {/* Scan entire volume button */}
+            {selectedVol && (
+              <button
+                onClick={() => scanVolume(selectedVol.id)}
+                disabled={scanning}
+                style={{
+                  padding: "8px 20px",
+                  borderRadius: "8px",
+                  border: "none",
+                  background: "rgba(139,92,246,0.2)",
+                  color: "#8b5cf6",
+                  fontSize: "0.82rem",
+                  fontWeight: 600,
+                  fontFamily: "inherit",
+                  cursor: scanning ? "wait" : "pointer",
+                  opacity: scanning ? 0.6 : 1,
+                }}
+              >
+                {scanning ? "Scanning..." : `Scan entire ${isMobile ? selectedVol.abbrev : selectedVol.name}`}
+              </button>
+            )}
+          </div>
+
+          {/* Right column — progressive selectors */}
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px", flexShrink: 0, paddingTop: isMobile ? "0" : "36px", minWidth: isMobile ? "auto" : "280px" }}>
+            {/* Volume - always visible */}
+            <div>
+              <SectionLabel>Volume</SectionLabel>
+              <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
+                {volumes.map((v) => {
+                  const color = VOLUME_COLORS[v.abbrev] || "#888";
+                  const active = selectedVolume === v.id;
+                  const isSingleBook = v.books.length === 1;
+                  return (
+                    <button
+                      key={v.id}
+                      onClick={() => {
+                        setSelectedVolume(v.id);
+                        setSelectedChapter(null);
+                        setResult(null);
+                        setScanResults([]);
+                        if (isSingleBook) {
+                          setSelectedBook(v.books[0].id);
+                        } else {
+                          setSelectedBook(null);
+                        }
+                      }}
+                      style={{
+                        padding: "5px 12px",
+                        borderRadius: "8px",
+                        border: `1px solid ${active ? color : "var(--border)"}`,
+                        background: active ? `${color}20` : "transparent",
+                        color: active ? color : "var(--text-muted)",
+                        fontSize: "0.78rem",
+                        fontWeight: active ? 600 : 400,
+                        fontFamily: "inherit",
+                        cursor: "pointer",
+                        transition: "all 0.15s",
+                      }}
+                    >
+                      {isMobile ? v.abbrev : v.name}
+                    </button>
+                  );
+                })}
               </div>
             </div>
-          );
-        })()}
 
-        {/* Scan entire volume button */}
-        {selectedVol && (
-          <button
-            onClick={() => scanVolume(selectedVol.id)}
-            disabled={scanning}
-            style={{
-              padding: "8px 20px",
-              borderRadius: "8px",
-              border: "none",
-              background: "rgba(139,92,246,0.2)",
-              color: "#8b5cf6",
-              fontSize: "0.82rem",
-              fontWeight: 600,
-              fontFamily: "inherit",
-              cursor: scanning ? "wait" : "pointer",
-              opacity: scanning ? 0.6 : 1,
-            }}
-          >
-            {scanning ? "Scanning..." : `Scan entire ${isMobile ? selectedVol.abbrev : selectedVol.name}`}
-          </button>
-        )}
+            {/* Book — skip for single-book volumes like D&C */}
+            {selectedVol && selectedVol.books.length > 1 && (
+              <div>
+                <SectionLabel>Book</SectionLabel>
+                <div style={{ display: "flex", gap: "4px", flexWrap: "wrap", maxHeight: "120px", overflowY: "auto" }}>
+                  {selectedVol.books.map((b) => (
+                    <button
+                      key={b.id}
+                      onClick={() => { setSelectedBook(b.id); setSelectedChapter(null); setResult(null); }}
+                      style={{
+                        padding: "4px 10px",
+                        borderRadius: "6px",
+                        border: `1px solid ${selectedBook === b.id ? "var(--accent)" : "var(--border)"}`,
+                        background: selectedBook === b.id ? "rgba(59,130,246,0.15)" : "transparent",
+                        color: selectedBook === b.id ? "var(--accent)" : "var(--text-muted)",
+                        fontSize: "0.72rem",
+                        fontWeight: selectedBook === b.id ? 600 : 400,
+                        fontFamily: "inherit",
+                        cursor: "pointer",
+                        transition: "all 0.15s",
+                      }}
+                    >
+                      {b.name}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Chapter/Section picker */}
+            {selectedBook && selectedVol && (() => {
+              const book = selectedVol.books.find((b) => b.id === selectedBook);
+              if (!book) return null;
+              const isSingleBook = selectedVol.books.length === 1;
+              const label = isSingleBook ? "Section" : "Chapter";
+              return (
+                <div>
+                  <SectionLabel>{label}</SectionLabel>
+                  <div style={{ display: "flex", gap: "4px", flexWrap: "wrap", maxHeight: "120px", overflowY: "auto" }}>
+                    {Array.from({ length: book.chapterCount }, (_, i) => i + 1).map((ch) => (
+                      <button
+                        key={ch}
+                        onClick={() => analyzeChapter(selectedBook, ch)}
+                        style={{
+                          padding: "4px 8px",
+                          borderRadius: "6px",
+                          border: `1px solid ${selectedChapter === ch ? "var(--accent)" : "var(--border)"}`,
+                          background: selectedChapter === ch ? "rgba(59,130,246,0.15)" : "transparent",
+                          color: selectedChapter === ch ? "var(--accent)" : "var(--text-muted)",
+                          fontSize: "0.72rem",
+                          fontFamily: "inherit",
+                          cursor: "pointer",
+                          minWidth: "32px",
+                          transition: "all 0.15s",
+                        }}
+                      >
+                        {ch}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              );
+            })()}
+          </div>
+        </div>
       </div>
 
       {/* Scan results */}

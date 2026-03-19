@@ -149,37 +149,7 @@ export default function WordCloudTool() {
 
   return (
     <div>
-      {/* Title */}
-      <div style={{ marginBottom: "24px" }}>
-        <h2
-          style={{
-            fontSize: "1.4rem",
-            fontWeight: 700,
-            color: "var(--text)",
-            marginBottom: "6px",
-          }}
-        >
-          <img
-            src="/word-cloud.svg"
-            alt=""
-            style={{
-              display: "inline-block",
-              width: isMobile ? "22px" : "26px",
-              height: isMobile ? "22px" : "26px",
-              verticalAlign: "middle",
-              marginRight: "10px",
-              filter: "invert(1) brightness(0.85)",
-            }}
-          />
-          Word Cloud
-        </h2>
-        <p style={{ color: "var(--text-secondary)", fontSize: isMobile ? "0.85rem" : "0.92rem" }}>
-          Visualize the most frequent words in any book or chapter.
-          Select a volume, then a book to generate the cloud.
-        </p>
-      </div>
-
-      {/* Controls */}
+      {/* Two-column selection panel */}
       <div
         style={{
           background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "10px",
@@ -187,147 +157,174 @@ export default function WordCloudTool() {
           marginBottom: "24px",
         }}
       >
-        {/* Volume selector */}
-        <div style={{ marginBottom: "16px" }}>
-          <SectionLabel>Volume</SectionLabel>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-            {volumes.map((vol) => {
-              const color = VOLUME_COLORS[vol.abbrev] || "#3B82F6";
-              const isSelected = selectedVolume === vol.abbrev;
-              return (
-                <button
-                  key={vol.id}
-                  onClick={() => {
-                    setSelectedVolume(vol.abbrev);
-                    setSelectedBookId(null);
+        <div style={{ display: "flex", gap: isMobile ? "16px" : "24px", flexDirection: isMobile ? "column" : "row", alignItems: "flex-start" }}>
+          {/* Left column — title, description */}
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <h2 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
+              <img
+                src="/word-cloud.svg"
+                alt=""
+                style={{
+                  display: "inline-block",
+                  width: isMobile ? "22px" : "26px",
+                  height: isMobile ? "22px" : "26px",
+                  verticalAlign: "middle",
+                  marginRight: "10px",
+                  filter: "invert(1) brightness(0.85)",
+                }}
+              />
+              Word Cloud
+            </h2>
+            <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", marginBottom: "10px", lineHeight: 1.4 }}>
+              Visualize the most frequent words in any book or chapter. Select a volume, then a book to generate the cloud.
+            </p>
+          </div>
+
+          {/* Right column — progressive selectors */}
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px", flexShrink: 0, paddingTop: isMobile ? "0" : "36px", minWidth: isMobile ? "auto" : "280px" }}>
+            {/* Volume - always visible */}
+            <div>
+              <SectionLabel>Volume</SectionLabel>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
+                {volumes.map((vol) => {
+                  const color = VOLUME_COLORS[vol.abbrev] || "#3B82F6";
+                  const isSelected = selectedVolume === vol.abbrev;
+                  return (
+                    <button
+                      key={vol.id}
+                      onClick={() => {
+                        setSelectedVolume(vol.abbrev);
+                        setSelectedBookId(null);
+                        setSelectedChapter(null);
+                        setData(null);
+                      }}
+                      style={{
+                        background: isSelected ? `${color}20` : "transparent",
+                        border: `1px solid ${isSelected ? color : "var(--border)"}`,
+                        borderRadius: "8px",
+                        padding: "5px 12px",
+                        fontSize: "0.78rem",
+                        fontWeight: isSelected ? 600 : 400,
+                        color: isSelected ? color : "var(--text-muted)",
+                        cursor: "pointer",
+                        fontFamily: "inherit",
+                        transition: "all 0.15s",
+                      }}
+                    >
+                      {isMobile ? vol.abbrev : vol.name}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Book selector */}
+            {selectedVol && (
+              <div>
+                <SectionLabel>Book</SectionLabel>
+                <select
+                  value={selectedBookId || ""}
+                  onChange={(e) => {
+                    const id = Number(e.target.value);
+                    setSelectedBookId(id || null);
                     setSelectedChapter(null);
-                    setData(null);
                   }}
                   style={{
-                    background: isSelected ? `${color}20` : "transparent",
-                    border: `1px solid ${isSelected ? color : "var(--border)"}`,
+                    background: "rgba(255,255,255,0.06)",
+                    border: "1px solid var(--border)",
                     borderRadius: "8px",
-                    padding: "5px 12px",
-                    fontSize: "0.78rem",
-                    fontWeight: isSelected ? 600 : 400,
-                    color: isSelected ? color : "var(--text-muted)",
-                    cursor: "pointer",
+                    color: "var(--text)",
+                    padding: "8px 12px",
+                    fontSize: "0.88rem",
                     fontFamily: "inherit",
-                    transition: "all 0.15s",
+                    cursor: "pointer",
+                    outline: "none",
+                    width: isMobile ? "100%" : "auto",
+                    minWidth: "200px",
                   }}
                 >
-                  {isMobile ? vol.abbrev : vol.name}
-                </button>
-              );
-            })}
+                  <option value="">Select a book...</option>
+                  <option value={-1}>★ Entire {selectedVol.name}</option>
+                  {selectedVol.books.map((book) => (
+                    <option key={book.id} value={book.id}>
+                      {book.name} ({book.chapterCount} {selectedVolume === "D&C" ? "sec" : "ch"})
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
+
+            {/* Chapter selector (optional) */}
+            {selectedBook && selectedBookId !== -1 && selectedBook.chapterCount > 1 && (
+              <div>
+                <SectionLabel>{selectedVolume === "D&C" ? "Section" : "Chapter"} (optional)</SectionLabel>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                  <select
+                    value={selectedChapter || ""}
+                    onChange={(e) => {
+                      const ch = Number(e.target.value);
+                      setSelectedChapter(ch || null);
+                    }}
+                    style={{
+                      background: "rgba(255,255,255,0.06)",
+                      border: "1px solid var(--border)",
+                      borderRadius: "8px",
+                      color: "var(--text)",
+                      padding: "8px 12px",
+                      fontSize: "0.88rem",
+                      fontFamily: "inherit",
+                      cursor: "pointer",
+                      outline: "none",
+                    }}
+                  >
+                    <option value="">All {selectedVolume === "D&C" ? "sections" : "chapters"}</option>
+                    {Array.from({ length: selectedBook.chapterCount }, (_, i) => i + 1).map((ch) => (
+                      <option key={ch} value={ch}>
+                        {selectedVolume === "D&C" ? `Section ${ch}` : `Chapter ${ch}`}
+                      </option>
+                    ))}
+                  </select>
+                  {selectedChapter && (
+                    <button
+                      onClick={() => setSelectedChapter(null)}
+                      style={{
+                        background: "none",
+                        border: "none",
+                        color: "var(--text-muted)",
+                        cursor: "pointer",
+                        fontSize: "0.78rem",
+                        fontFamily: "inherit",
+                        textDecoration: "underline",
+                        textUnderlineOffset: "3px",
+                      }}
+                    >
+                      Clear
+                    </button>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* Word count slider */}
+            {selectedBookId && (
+              <div>
+                <SectionLabel>Words to show: {wordLimit}</SectionLabel>
+                <input
+                  type="range"
+                  min="20"
+                  max="120"
+                  step="10"
+                  value={wordLimit}
+                  onChange={(e) => setWordLimit(Number(e.target.value))}
+                  style={{
+                    width: isMobile ? "100%" : "200px",
+                    accentColor: volColor,
+                  }}
+                />
+              </div>
+            )}
           </div>
         </div>
-
-        {/* Book selector */}
-        {selectedVol && (
-          <div style={{ marginBottom: "16px" }}>
-            <SectionLabel>Book</SectionLabel>
-            <select
-              value={selectedBookId || ""}
-              onChange={(e) => {
-                const id = Number(e.target.value);
-                setSelectedBookId(id || null);
-                setSelectedChapter(null);
-              }}
-              style={{
-                background: "rgba(255,255,255,0.06)",
-                border: "1px solid var(--border)",
-                borderRadius: "8px",
-                color: "var(--text)",
-                padding: "8px 12px",
-                fontSize: "0.88rem",
-                fontFamily: "inherit",
-                cursor: "pointer",
-                outline: "none",
-                width: isMobile ? "100%" : "auto",
-                minWidth: "200px",
-              }}
-            >
-              <option value="">Select a book...</option>
-              <option value={-1}>★ Entire {selectedVol.name}</option>
-              {selectedVol.books.map((book) => (
-                <option key={book.id} value={book.id}>
-                  {book.name} ({book.chapterCount} {selectedVolume === "D&C" ? "sec" : "ch"})
-                </option>
-              ))}
-            </select>
-          </div>
-        )}
-
-        {/* Chapter selector (optional) */}
-        {selectedBook && selectedBookId !== -1 && selectedBook.chapterCount > 1 && (
-          <div style={{ marginBottom: "16px" }}>
-            <SectionLabel>{selectedVolume === "D&C" ? "Section" : "Chapter"} (optional)</SectionLabel>
-            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-              <select
-                value={selectedChapter || ""}
-                onChange={(e) => {
-                  const ch = Number(e.target.value);
-                  setSelectedChapter(ch || null);
-                }}
-                style={{
-                  background: "rgba(255,255,255,0.06)",
-                  border: "1px solid var(--border)",
-                  borderRadius: "8px",
-                  color: "var(--text)",
-                  padding: "8px 12px",
-                  fontSize: "0.88rem",
-                  fontFamily: "inherit",
-                  cursor: "pointer",
-                  outline: "none",
-                }}
-              >
-                <option value="">All {selectedVolume === "D&C" ? "sections" : "chapters"}</option>
-                {Array.from({ length: selectedBook.chapterCount }, (_, i) => i + 1).map((ch) => (
-                  <option key={ch} value={ch}>
-                    {selectedVolume === "D&C" ? `Section ${ch}` : `Chapter ${ch}`}
-                  </option>
-                ))}
-              </select>
-              {selectedChapter && (
-                <button
-                  onClick={() => setSelectedChapter(null)}
-                  style={{
-                    background: "none",
-                    border: "none",
-                    color: "var(--text-muted)",
-                    cursor: "pointer",
-                    fontSize: "0.78rem",
-                    fontFamily: "inherit",
-                    textDecoration: "underline",
-                    textUnderlineOffset: "3px",
-                  }}
-                >
-                  Clear
-                </button>
-              )}
-            </div>
-          </div>
-        )}
-
-        {/* Word count slider */}
-        {selectedBookId && (
-          <div>
-            <SectionLabel>Words to show: {wordLimit}</SectionLabel>
-            <input
-              type="range"
-              min="20"
-              max="120"
-              step="10"
-              value={wordLimit}
-              onChange={(e) => setWordLimit(Number(e.target.value))}
-              style={{
-                width: isMobile ? "100%" : "200px",
-                accentColor: volColor,
-              }}
-            />
-          </div>
-        )}
       </div>
 
       {/* Word Cloud Display */}

@@ -13,13 +13,13 @@ import {
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 import type { Volume } from "@/lib/types";
-import { VOLUME_COLORS } from "@/lib/constants";
+import { VOLUME_COLORS, getContrastText } from "@/lib/constants";
 import { SENTIMENT_CATEGORIES } from "@/lib/sentiment-lexicon";
 import Header from "./Header";
 import DashboardCard from "./DashboardCard";
 import ChartHints from "./ChartHints";
 import ScripturePanel from "./ScripturePanel";
-import VolumeCheckboxes, { CategoryPills } from "./VolumeCheckboxes";
+import FilterDropdown from "./FilterDropdown";
 import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./MethodologyModal";
 import type { ScripturePanelState } from "@/lib/types";
 
@@ -155,56 +155,89 @@ export default function SentimentArcTool() {
     <div className="page-container">
       <Header />
 
-      {/* Search panel */}
+      {/* Search panel — two-column layout */}
       <div className="search-panel" style={{ marginBottom: "24px" }}>
-        <h1 style={{ fontSize: isMobile ? "1.3rem" : "1.6rem", fontWeight: 700, color: "var(--text)", marginBottom: "8px" }}>
-          Sentiment Arc
-        </h1>
-        <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "8px", lineHeight: 1.5 }}>
-          See how emotional tone shifts across scripture — promises, warnings, praise, lament, and more.
-        </p>
-        <div style={{ marginBottom: "16px" }}>
-          <MethodLink onClick={() => setShowMethodology(true)} />
-        </div>
+        <div style={{ display: "flex", gap: isMobile ? "16px" : "24px", flexDirection: isMobile ? "column" : "row", alignItems: "flex-start" }}>
+          {/* LEFT COLUMN — Title, description, method link, Go button */}
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <h1 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
+              Sentiment Arc
+            </h1>
+            <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", marginBottom: "10px", lineHeight: 1.4 }}>
+              See how emotional tone shifts across scripture — promises, warnings, praise, and more.
+            </p>
+            <MethodLink onClick={() => setShowMethodology(true)} />
+            <div style={{ marginTop: "14px" }}>
+              <button
+                onClick={handleAnalyze}
+                disabled={loading || selectedVolumes.length === 0}
+                style={{
+                  padding: "10px 28px",
+                  borderRadius: "10px",
+                  border: "none",
+                  background: loading || selectedVolumes.length === 0 ? "var(--zinc-800)" : "var(--accent)",
+                  color: loading || selectedVolumes.length === 0 ? "var(--text-muted)" : "#fff",
+                  fontSize: "0.85rem",
+                  fontWeight: 600,
+                  fontFamily: "inherit",
+                  cursor: loading ? "wait" : "pointer",
+                  transition: "all 0.15s",
+                }}
+              >
+                {loading ? "Searching..." : "Go"}
+              </button>
+            </div>
+          </div>
 
-        {/* Category toggles */}
-        <div style={{ marginBottom: "12px" }}>
-          <CategoryPills
-            categories={SENTIMENT_CATEGORIES.map((c) => ({ id: c.id, label: c.label, color: c.color }))}
-            activeIds={activeCategories}
-            onToggle={toggleCategory}
-            label="Tone Categories"
-          />
-        </div>
+          {/* RIGHT COLUMN — Filter dropdowns */}
+          <div style={{ display: "flex", flexDirection: "column", gap: "8px", flexShrink: 0, paddingTop: isMobile ? "0" : "36px" }}>
+            <FilterDropdown
+              label="Volumes"
+              activeCount={selectedVolumes.length}
+              totalCount={volumes.length}
+              colorDots={volumes.filter(v => selectedVolumes.includes(v.id)).map(v => VOLUME_COLORS[v.abbrev])}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                {volumes.map((v) => {
+                  const isActive = selectedVolumes.includes(v.id);
+                  const color = VOLUME_COLORS[v.abbrev];
+                  return (
+                    <label key={v.id} style={{ display: "flex", alignItems: "center", gap: "8px", cursor: "pointer", fontSize: "0.82rem", fontWeight: isActive ? 600 : 400, color: isActive ? "var(--text)" : "var(--text-secondary)", transition: "color 0.15s", whiteSpace: "nowrap" }}>
+                      <span onClick={(e) => { e.preventDefault(); toggleVolume(v.id); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: isActive ? `2px solid ${color}` : "2px solid rgba(255,255,255,0.2)", background: isActive ? color : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                        {isActive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke={getContrastText(color)} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+                      </span>
+                      {v.name}
+                    </label>
+                  );
+                })}
+              </div>
+            </FilterDropdown>
 
-        {/* Volume selectors + Go */}
-        <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-          <VolumeCheckboxes
-            volumes={volumes}
-            selectedIds={selectedVolumes}
-            onToggle={toggleVolume}
-            isMobile={isMobile}
-            label="Volumes"
-          />
-          <button
-            onClick={handleAnalyze}
-            disabled={loading || selectedVolumes.length === 0}
-            style={{
-              padding: "8px 24px",
-              borderRadius: "8px",
-              border: "none",
-              background: "var(--accent)",
-              color: "#fff",
-              fontSize: "0.85rem",
-              fontWeight: 600,
-              fontFamily: "inherit",
-              cursor: loading ? "wait" : "pointer",
-              opacity: loading ? 0.6 : 1,
-              transition: "all 0.15s",
-            }}
-          >
-            {loading ? "Searching..." : "Go"}
-          </button>
+            <FilterDropdown
+              label="Tone Categories"
+              activeCount={activeCategories.size}
+              totalCount={SENTIMENT_CATEGORIES.length}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+                {SENTIMENT_CATEGORIES.map((cat) => {
+                  const active = activeCategories.has(cat.id);
+                  return (
+                    <button key={cat.id} onClick={() => toggleCategory(cat.id)} style={{
+                      display: "flex", alignItems: "center", gap: "8px",
+                      background: "none", border: "none", cursor: "pointer",
+                      fontSize: "0.82rem", fontFamily: "inherit",
+                      color: active ? cat.color : "var(--text-muted)",
+                      fontWeight: active ? 600 : 400,
+                      padding: "2px 0", transition: "all 0.15s",
+                    }}>
+                      <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: active ? cat.color : "rgba(255,255,255,0.15)", flexShrink: 0, transition: "all 0.15s" }} />
+                      {cat.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </FilterDropdown>
+          </div>
         </div>
       </div>
 
