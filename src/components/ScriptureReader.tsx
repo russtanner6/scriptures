@@ -7,6 +7,7 @@ import { VOLUME_COLORS } from "@/lib/constants";
 import { getVerseUrl } from "@/lib/scripture-urls";
 import ChapterInsights from "./ChapterInsights";
 import VersePopover from "./VersePopover";
+import { markChapterRead, isChapterRead, getReadChaptersForBook, getVolumeProgress, getStreak } from "@/lib/reading-progress";
 
 interface ReaderVerse {
   chapter: number;
@@ -48,6 +49,11 @@ export default function ScriptureReader() {
 
   // Reading progress
   const [scrollProgress, setScrollProgress] = useState(0);
+
+  // Reading progress
+  const [chapterMarkedRead, setChapterMarkedRead] = useState(false);
+  const [showReadToast, setShowReadToast] = useState(false);
+  const [streakInfo, setStreakInfo] = useState({ streak: 0, isActiveToday: false });
 
   // In-chapter search
   const [searchOpen, setSearchOpen] = useState(false);
@@ -91,6 +97,25 @@ export default function ScriptureReader() {
     container.addEventListener("scroll", handleScroll, { passive: true });
     return () => container.removeEventListener("scroll", handleScroll);
   }, [selectedChapter, verses]);
+
+  // Auto-mark chapter read when scrolled to bottom
+  useEffect(() => {
+    if (scrollProgress >= 0.95 && !chapterMarkedRead && selectedBookId && selectedChapter && verses.length > 0) {
+      markChapterRead(selectedBookId, selectedChapter);
+      setChapterMarkedRead(true);
+      setStreakInfo(getStreak());
+      setShowReadToast(true);
+      setTimeout(() => setShowReadToast(false), 2500);
+    }
+  }, [scrollProgress, chapterMarkedRead, selectedBookId, selectedChapter, verses]);
+
+  // Reset chapter-read state on chapter change
+  useEffect(() => {
+    if (selectedBookId && selectedChapter) {
+      setChapterMarkedRead(isChapterRead(selectedBookId, selectedChapter));
+      setStreakInfo(getStreak());
+    }
+  }, [selectedBookId, selectedChapter]);
 
   // Load volumes + handle deep link
   useEffect(() => {
@@ -402,6 +427,27 @@ export default function ScriptureReader() {
           </div>
 
           <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "6px" : "8px" }}>
+            {/* Streak badge */}
+            {streakInfo.streak > 0 && !isMobile && (
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "3px",
+                  padding: "4px 10px",
+                  borderRadius: "20px",
+                  background: `${volColor}15`,
+                  border: `1px solid ${volColor}30`,
+                  fontSize: "0.7rem",
+                  fontWeight: 600,
+                  color: volColor,
+                }}
+                title={`${streakInfo.streak}-day reading streak`}
+              >
+                🔥 {streakInfo.streak}
+              </div>
+            )}
+
             {/* Search toggle */}
             {searchOpen ? (
               <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
@@ -799,6 +845,37 @@ export default function ScriptureReader() {
           </button>
         </div>
 
+        {/* Chapter Complete Toast */}
+        {showReadToast && (
+          <div
+            style={{
+              position: "fixed",
+              top: "80px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              zIndex: 150,
+              background: volColor,
+              color: "#fff",
+              padding: "10px 24px",
+              borderRadius: "24px",
+              fontSize: "0.85rem",
+              fontWeight: 600,
+              boxShadow: `0 4px 20px ${volColor}40`,
+              animation: "fadeIn 0.3s ease",
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
+            }}
+          >
+            ✓ Chapter complete!
+            {streakInfo.streak > 1 && (
+              <span style={{ fontSize: "0.75rem", opacity: 0.9 }}>
+                🔥 {streakInfo.streak}-day streak
+              </span>
+            )}
+          </div>
+        )}
+
         {/* Verse Popover */}
         {activeVerse && selectedBookId && selectedVolume && (
           <VersePopover
@@ -917,7 +994,20 @@ export default function ScriptureReader() {
                     color: "var(--text-muted)",
                   }}
                 >
-                  {book.chapterCount} {selectedVolume === "D&C" ? (book.chapterCount === 1 ? "section" : "sections") : (book.chapterCount === 1 ? "chapter" : "chapters")}
+                  {(() => {
+                    const readCount = getReadChaptersForBook(book.id, book.chapterCount);
+                    const label = selectedVolume === "D&C" ? (book.chapterCount === 1 ? "section" : "sections") : (book.chapterCount === 1 ? "chapter" : "chapters");
+                    return (
+                      <>
+                        {book.chapterCount} {label}
+                        {readCount > 0 && (
+                          <span style={{ color: volColor, marginLeft: "6px" }}>
+                            · {readCount === book.chapterCount ? "✓ Complete" : `${readCount} read`}
+                          </span>
+                        )}
+                      </>
+                    );
+                  })()}
                 </div>
               </div>
               <svg
@@ -1022,7 +1112,19 @@ export default function ScriptureReader() {
                   color: "var(--text-muted)",
                 }}
               >
-                {vol.books.length} {vol.books.length === 1 ? "book" : "books"}
+                {(() => {
+                  const progress = getVolumeProgress(vol.books.map(b => ({ id: b.id, chapterCount: b.chapterCount })));
+                  return (
+                    <>
+                      {vol.books.length} {vol.books.length === 1 ? "book" : "books"}
+                      {progress.read > 0 && (
+                        <span style={{ marginLeft: "8px", color }}>
+                          · {progress.percentage}% read
+                        </span>
+                      )}
+                    </>
+                  );
+                })()}
               </div>
             </button>
           );

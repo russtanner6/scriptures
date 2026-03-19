@@ -75,6 +75,8 @@ export default function WordFrequencyTool() {
   const [arcVolumeTab, setArcVolumeTab] = useState<number | null>(null);
   const [breakdownTab, setBreakdownTab] = useState<number | null>(null);
   const [scripturePanel, setScripturePanel] = useState<ScripturePanelState | null>(null);
+  // Chapter-level data for single-book volumes (e.g., D&C) — keyed by volume id
+  const [chapterData, setChapterData] = useState<Map<number, { label: string; count: number; bookId: number; chapter: number }[]>>(new Map());
   const [visiblePanels, setVisiblePanels] = useState<Set<string>>(
     new Set(["breakdowns", "top10", "arc", "table"])
   );
@@ -149,6 +151,39 @@ export default function WordFrequencyTool() {
       handleSearch();
     }
   }, [word, volumes.length, handleSearch, results]);
+
+  // Fetch chapter-level data for single-book volumes (e.g., D&C) when results change
+  useEffect(() => {
+    if (!results) { setChapterData(new Map()); return; }
+    const singleBookVols = volumes.filter(
+      (v) => v.books.length === 1 && selectedVolumeIds.has(v.id)
+    );
+    if (singleBookVols.length === 0) { setChapterData(new Map()); return; }
+
+    Promise.all(
+      singleBookVols.map(async (vol) => {
+        const book = vol.books[0];
+        const params = new URLSearchParams({
+          word: results.word,
+          bookId: String(book.id),
+          chapterCount: String(book.chapterCount),
+          caseInsensitive: String(results.caseInsensitive),
+          wholeWord: String(results.wholeWord),
+        });
+        const res = await fetch(`/api/word-frequency-by-chapter?${params}`);
+        const data = await res.json();
+        const chapters = (data.results as { chapter: number; count: number }[]).map((r) => ({
+          label: `Section ${r.chapter}`,
+          count: r.count,
+          bookId: book.id,
+          chapter: r.chapter,
+        }));
+        return [vol.id, chapters] as const;
+      })
+    ).then((entries) => {
+      setChapterData(new Map(entries));
+    });
+  }, [results, volumes, selectedVolumeIds]);
 
   // Auto-search when a matched word pill is clicked
   useEffect(() => {
@@ -967,11 +1002,7 @@ export default function WordFrequencyTool() {
 
             {/* Narrative arcs — tabbed by volume */}
             {visiblePanels.has("arc") && (() => {
-              const arcVolumes = volumeAgg.filter((v) => {
-                if (v.count === 0) return false;
-                const vol = volumes.find((vol) => vol.id === v.id);
-                return vol && vol.books.length >= 2;
-              });
+              const arcVolumes = volumeAgg.filter((v) => v.count > 0);
               if (arcVolumes.length === 0) return null;
 
               // Auto-select first tab if none selected or selection invalid
@@ -983,17 +1014,25 @@ export default function WordFrequencyTool() {
               if (!activeVol) return null;
 
               const color = VOLUME_COLORS[arcVolumes.find((v) => v.id === activeTabId)?.abbrev || ""] || "#3b82f6";
-              const arcData = activeVol.books.map((b) => {
-                const r = results.results.find((r) => r.bookId === b.id);
-                return { name: b.name, count: r?.count || 0 };
-              });
-              const maxCount = Math.max(...arcData.map((d) => d.count));
+              const isSingleBook = activeVol.books.length === 1;
+              const arcData = isSingleBook
+                ? (chapterData.get(activeVol.id) || []).map((d) => ({
+                    name: d.label,
+                    count: d.count,
+                    bookId: d.bookId,
+                    chapter: d.chapter,
+                  }))
+                : activeVol.books.map((b) => {
+                    const r = results.results.find((r) => r.bookId === b.id);
+                    return { name: b.name, count: r?.count || 0, bookId: b.id, chapter: undefined as number | undefined };
+                  });
+              const maxCount = Math.max(...arcData.map((d) => d.count), 0);
 
               return (
                 <div id="section-arc">
                 <DashboardCard
                   title="Narrative arc"
-                  description={`Frequency of "${results.word}" by book in narrative order`}
+                  description={isSingleBook ? `Frequency of "${results.word}" by section` : `Frequency of "${results.word}" by book in narrative order`}
                   fullWidth
                   headerExtra={
                     <a
@@ -1071,13 +1110,16 @@ export default function WordFrequencyTool() {
                                 ? 3
                                 : 1
                             ),
-                            pointRadius: arcData.map((d) =>
-                              d.count === maxCount && d.count > 0
-                                ? 7
-                                : d.count > 0
-                                  ? 3.5
-                                  : 2
-                            ),
+                            pointRadius: isSingleBook
+                              ? 2
+                              : arcData.map((d) =>
+                                  d.count === maxCount && d.count > 0
+                                    ? 7
+                                    : d.count > 0
+                                      ? 3.5
+                                      : 2
+                                ),
+                            pointHoverRadius: isSingleBook ? 5 : 7,
                             tension: 0.35,
                           },
                         ],
@@ -1090,19 +1132,24 @@ export default function WordFrequencyTool() {
                           legend: { display: false },
                           tooltip: {
                             callbacks: {
+                              title: isSingleBook
+                                ? (items) => `Section ${items[0].dataIndex + 1}`
+                                : undefined,
                               label: (ctx) =>
                                 ` ${ctx.raw} occurrences`,
                             },
                           },
-                          datalabels: {
-                            display: (ctx) => (ctx.dataset.data as number[])[ctx.dataIndex] > 0,
-                            anchor: "end",
-                            align: "top",
-                            offset: 4,
-                            color: "#fafafa",
-                            font: { weight: 700, size: 11 },
-                            formatter: (value: number) => value.toLocaleString(),
-                          },
+                          datalabels: isSingleBook
+                            ? { display: false }
+                            : {
+                                display: (ctx: { dataset: { data: number[] }; dataIndex: number }) => ctx.dataset.data[ctx.dataIndex] > 0,
+                                anchor: "end" as const,
+                                align: "top" as const,
+                                offset: 4,
+                                color: "#fafafa",
+                                font: { weight: 700 as const, size: 11 },
+                                formatter: (value: number) => value.toLocaleString(),
+                              },
                         },
                         layout: { padding: { top: 30 } },
                         scales: {
@@ -1116,8 +1163,16 @@ export default function WordFrequencyTool() {
                           x: {
                             grid: { display: false },
                             ticks: {
-                              maxRotation: 45,
-                              font: { size: 12, weight: 500 },
+                              maxRotation: isSingleBook ? 0 : 45,
+                              font: { size: isSingleBook ? 9 : 12, weight: 500 },
+                              callback: isSingleBook
+                                ? function(this: unknown, _val: unknown, index: number) {
+                                    const sectionNum = index + 1;
+                                    if (sectionNum === 1 || sectionNum % 10 === 0) return sectionNum.toString();
+                                    return "";
+                                  }
+                                : undefined,
+                              autoSkip: false,
                             },
                           },
                         },
