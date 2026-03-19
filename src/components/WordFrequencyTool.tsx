@@ -140,6 +140,15 @@ export default function WordFrequencyTool() {
       if (!caseInsensitive) urlParams.set("ci", "false");
       if (!wholeWord) urlParams.set("ww", "false");
       window.history.replaceState({}, "", `?${urlParams.toString()}`);
+
+      // Save to recent searches (for landing page)
+      try {
+        const recent = JSON.parse(localStorage.getItem("recent-searches") || "[]");
+        const filtered = recent.filter((s: string) => s !== word.trim());
+        filtered.unshift(word.trim());
+        localStorage.setItem("recent-searches", JSON.stringify(filtered.slice(0, 10)));
+      } catch {}
+
     } finally {
       setIsLoading(false);
     }
@@ -1167,6 +1176,25 @@ export default function WordFrequencyTool() {
                               } as any,
                         },
                         layout: { padding: { top: 30 } },
+                        onHover: (_event: any, elements: any[]) => {
+                          const canvas = (_event as any)?.native?.target as HTMLCanvasElement | undefined;
+                          if (canvas) canvas.style.cursor = elements.length > 0 ? "pointer" : "default";
+                        },
+                        onClick: (_event: any, elements: any[]) => {
+                          if (elements.length === 0) return;
+                          const idx = elements[0].index;
+                          const point = arcData[idx];
+                          if (!point || point.count === 0) return;
+                          setScripturePanel({
+                            word: results.word,
+                            bookId: point.bookId,
+                            bookName: isSingleBook ? (activeVol?.books[0]?.name || point.name) : point.name,
+                            chapter: point.chapter,
+                            caseInsensitive: results.caseInsensitive,
+                            wholeWord: results.wholeWord,
+                            volumeColor: color,
+                          });
+                        },
                         scales: {
                           y: {
                             grid: {
