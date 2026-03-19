@@ -1,0 +1,84 @@
+[
+  {
+    "id": "isaiah-2nephi-main",
+    "label": "Isaiah in 2 Nephi",
+    "description": "Nephi quotes extensive passages from Isaiah, often with subtle differences in wording.",
+    "pairs": [
+      { "sourceBook": "Isaiah", "sourceChapter": 2, "targetBook": "2 Nephi", "targetChapter": 12 },
+      { "sourceBook": "Isaiah", "sourceChapter": 3, "targetBook": "2 Nephi", "targetChapter": 13 },
+      { "sourceBook": "Isaiah", "sourceChapter": 4, "targetBook": "2 Nephi", "targetChapter": 14 },
+      { "sourceBook": "Isaiah", "sourceChapter": 5, "targetBook": "2 Nephi", "targetChapter": 15 },
+      { "sourceBook": "Isaiah", "sourceChapter": 6, "targetBook": "2 Nephi", "targetChapter": 16 },
+      { "sourceBook": "Isaiah", "sourceChapter": 7, "targetBook": "2 Nephi", "targetChapter": 17 },
+      { "sourceBook": "Isaiah", "sourceChapter": 8, "targetBook": "2 Nephi", "targetChapter": 18 },
+      { "sourceBook": "Isaiah", "sourceChapter": 9, "targetBook": "2 Nephi", "targetChapter": 19 },
+      { "sourceBook": "Isaiah", "sourceChapter": 10, "targetBook": "2 Nephi", "targetChapter": 20 },
+      { "sourceBook": "Isaiah", "sourceChapter": 11, "targetBook": "2 Nephi", "targetChapter": 21 },
+      { "sourceBook": "Isaiah", "sourceChapter": 12, "targetBook": "2 Nephi", "targetChapter": 22 },
+      { "sourceBook": "Isaiah", "sourceChapter": 13, "targetBook": "2 Nephi", "targetChapter": 23 },
+      { "sourceBook": "Isaiah", "sourceChapter": 14, "targetBook": "2 Nephi", "targetChapter": 24 }
+    ]
+  },
+  {
+    "id": "isaiah-1nephi",
+    "label": "Isaiah in 1 Nephi",
+    "description": "Nephi includes two chapters of Isaiah early in his record.",
+    "pairs": [
+      { "sourceBook": "Isaiah", "sourceChapter": 48, "targetBook": "1 Nephi", "targetChapter": 20 },
+      { "sourceBook": "Isaiah", "sourceChapter": 49, "targetBook": "1 Nephi", "targetChapter": 21 }
+    ]
+  },
+  {
+    "id": "isaiah-2nephi-7-8",
+    "label": "Isaiah in 2 Nephi (50-51)",
+    "description": "Additional Isaiah passages quoted by Nephi.",
+    "pairs": [
+      { "sourceBook": "Isaiah", "sourceChapter": 50, "targetBook": "2 Nephi", "targetChapter": 7 },
+      { "sourceBook": "Isaiah", "sourceChapter": 51, "targetBook": "2 Nephi", "targetChapter": 8 }
+    ]
+  },
+  {
+    "id": "sermon-mount-bountiful",
+    "label": "Sermon on the Mount / Sermon at Bountiful",
+    "description": "Jesus delivers a sermon to the Nephites that closely parallels the Sermon on the Mount.",
+    "pairs": [
+      { "sourceBook": "Matthew", "sourceChapter": 5, "targetBook": "3 Nephi", "targetChapter": 12 },
+      { "sourceBook": "Matthew", "sourceChapter": 6, "targetBook": "3 Nephi", "targetChapter": 13 },
+      { "sourceBook": "Matthew", "sourceChapter": 7, "targetBook": "3 Nephi", "targetChapter": 14 }
+    ]
+  },
+  {
+    "id": "malachi-3nephi",
+    "label": "Malachi in 3 Nephi",
+    "description": "Jesus quotes Malachi to the Nephites, including the prophecy of Elijah.",
+    "pairs": [
+      { "sourceBook": "Malachi", "sourceChapter": 3, "targetBook": "3 Nephi", "targetChapter": 24 },
+      { "sourceBook": "Malachi", "sourceChapter": 4, "targetBook": "3 Nephi", "targetChapter": 25 }
+    ]
+  },
+  {
+    "id": "isaiah-53-mosiah-14",
+    "label": "Isaiah 53 in Mosiah",
+    "description": "Abinadi quotes the suffering servant prophecy from Isaiah.",
+    "pairs": [
+      { "sourceBook": "Isaiah", "sourceChapter": 53, "targetBook": "Mosiah", "targetChapter": 14 }
+    ]
+  },
+  {
+    "id": "isaiah-3nephi",
+    "label": "Isaiah in 3 Nephi",
+    "description": "Jesus quotes Isaiah to the Nephites at Bountiful.",
+    "pairs": [
+      { "sourceBook": "Isaiah", "sourceChapter": 52, "targetBook": "3 Nephi", "targetChapter": 20 },
+      { "sourceBook": "Isaiah", "sourceChapter": 54, "targetBook": "3 Nephi", "targetChapter": 22 }
+    ]
+  },
+  {
+    "id": "ten-commandments",
+    "label": "Ten Commandments",
+    "description": "The Ten Commandments appear in both Exodus and Deuteronomy, and are referenced by Abinadi.",
+    "pairs": [
+      { "sourceBook": "Exodus", "sourceChapter": 20, "targetBook": "Deuteronomy", "targetChapter": 5 }
+    ]
+  }
+]

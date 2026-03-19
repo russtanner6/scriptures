@@ -3,13 +3,32 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const NAV_ITEMS: { href: string; label: string; icon?: string; svgIcon?: string }[] = [
+interface NavItem {
+  href: string;
+  label: string;
+  svgIcon?: string;
+  icon?: string;
+  section?: string;
+}
+
+const NAV_ITEMS: NavItem[] = [
   { href: "/", label: "Home", svgIcon: "/home.svg" },
-  { href: "/search", label: "Word Search", svgIcon: "/search.svg" },
+
+  // Analysis
+  { href: "/search", label: "Word Search", svgIcon: "/search.svg", section: "Analyze" },
   { href: "/narrative-arc", label: "Narrative Arc", svgIcon: "/narrative-arc.svg" },
   { href: "/heatmap", label: "Theme Heatmap", svgIcon: "/heatmap.svg" },
   { href: "/wordcloud", label: "Word Cloud", svgIcon: "/word-cloud.svg" },
-  { href: "/read", label: "Read Scriptures", svgIcon: "/scriptures.svg" },
+  { href: "/sentiment", label: "Sentiment Arc", svgIcon: "/sentiment.svg" },
+
+  // Discover
+  { href: "/parallel", label: "Parallel Passages", svgIcon: "/parallel.svg", section: "Discover" },
+  { href: "/chiasmus", label: "Chiasmus Detector", svgIcon: "/chiasmus.svg" },
+  { href: "/topics", label: "Topic Map", svgIcon: "/topics.svg" },
+  { href: "/timeline", label: "Timeline", svgIcon: "/timeline.svg" },
+
+  // Read
+  { href: "/read", label: "Read Scriptures", svgIcon: "/scriptures.svg", section: "Read" },
   { href: "/bookmarks", label: "Bookmarks", svgIcon: "/favorite.svg" },
 ];
 
@@ -21,6 +40,71 @@ export default function NavMenu({
   onClose: () => void;
 }) {
   const pathname = usePathname();
+
+  // Build items with section dividers
+  const rendered: React.ReactNode[] = [];
+  for (let i = 0; i < NAV_ITEMS.length; i++) {
+    const item = NAV_ITEMS[i];
+
+    // Section divider
+    if (item.section) {
+      rendered.push(
+        <div
+          key={`section-${item.section}`}
+          style={{
+            fontSize: "0.58rem",
+            fontWeight: 700,
+            textTransform: "uppercase",
+            letterSpacing: "0.16em",
+            color: "var(--text-muted)",
+            padding: "12px 16px 4px",
+            marginTop: i > 1 ? "4px" : "0",
+          }}
+        >
+          {item.section}
+        </div>
+      );
+    }
+
+    const isActive = pathname === item.href;
+    rendered.push(
+      <Link
+        key={item.href}
+        href={item.href}
+        onClick={onClose}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "12px",
+          padding: "10px 16px",
+          borderRadius: "12px",
+          textDecoration: "none",
+          fontSize: "0.88rem",
+          fontWeight: isActive ? 600 : 500,
+          color: isActive ? "#fff" : "var(--text-secondary)",
+          background: isActive ? "rgba(255, 255, 255, 0.08)" : "transparent",
+          border: isActive ? "1px solid rgba(255, 255, 255, 0.14)" : "1px solid transparent",
+          transition: "all 0.15s ease",
+        }}
+      >
+        {item.svgIcon ? (
+          <img
+            src={item.svgIcon}
+            alt=""
+            style={{
+              width: "18px",
+              height: "18px",
+              filter: isActive ? "invert(1) brightness(1)" : "invert(1) brightness(0.7)",
+              transition: "filter 0.15s",
+            }}
+          />
+        ) : (
+          <span style={{ fontSize: "1.1rem" }}>{item.icon}</span>
+        )}
+        {item.label}
+      </Link>
+    );
+  }
 
   return (
     <>
@@ -58,14 +142,15 @@ export default function NavMenu({
           display: "flex",
           flexDirection: "column",
           padding: "24px 0",
+          overflowY: "auto",
         }}
       >
         {/* Header */}
         <div
           style={{
-            padding: "0 24px 24px",
+            padding: "0 24px 20px",
             borderBottom: "1px solid var(--border)",
-            marginBottom: "16px",
+            marginBottom: "8px",
           }}
         >
           <div
@@ -80,62 +165,14 @@ export default function NavMenu({
           >
             Scripture Explorer
           </div>
-          <div
-            style={{
-              fontSize: "0.78rem",
-              color: "var(--text-muted)",
-            }}
-          >
-            Analysis Tools
+          <div style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>
+            Analysis &amp; Discovery Tools
           </div>
         </div>
 
         {/* Nav links */}
-        <div style={{ display: "flex", flexDirection: "column", gap: "4px", padding: "0 12px" }}>
-          {NAV_ITEMS.map((item) => {
-            const isActive = pathname === item.href;
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={onClose}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "12px",
-                  padding: "12px 16px",
-                  borderRadius: "12px",
-                  textDecoration: "none",
-                  fontSize: "0.92rem",
-                  fontWeight: isActive ? 600 : 500,
-                  color: isActive ? "#fff" : "var(--text-secondary)",
-                  background: isActive
-                    ? "rgba(255, 255, 255, 0.08)"
-                    : "transparent",
-                  border: isActive
-                    ? "1px solid rgba(255, 255, 255, 0.14)"
-                    : "1px solid transparent",
-                  transition: "all 0.15s ease",
-                }}
-              >
-                {item.svgIcon ? (
-                  <img
-                    src={item.svgIcon}
-                    alt=""
-                    style={{
-                      width: "18px",
-                      height: "18px",
-                      filter: isActive ? "invert(1) brightness(1)" : "invert(1) brightness(0.7)",
-                      transition: "filter 0.15s",
-                    }}
-                  />
-                ) : (
-                  <span style={{ fontSize: "1.1rem" }}>{item.icon}</span>
-                )}
-                {item.label}
-              </Link>
-            );
-          })}
+        <div style={{ display: "flex", flexDirection: "column", gap: "2px", padding: "0 12px" }}>
+          {rendered}
         </div>
 
         {/* Footer */}
@@ -148,7 +185,7 @@ export default function NavMenu({
             color: "var(--text-muted)",
           }}
         >
-          41,995 verses · 87 books
+          41,995 verses · 87 books · 5 volumes
         </div>
       </nav>
     </>

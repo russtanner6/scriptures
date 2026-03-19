@@ -70,6 +70,44 @@ const TOOLS = [
   },
 ];
 
+const DISCOVER_TOOLS = [
+  {
+    href: "/sentiment",
+    svgIcon: "/sentiment.svg",
+    name: "Sentiment Arc",
+    description: "See how emotional tone — promises, warnings, praise, lament — shifts across entire books.",
+    color: "#10b981",
+  },
+  {
+    href: "/parallel",
+    svgIcon: "/parallel.svg",
+    name: "Parallel Passages",
+    description: "Compare side-by-side texts that appear in multiple books, with differences highlighted.",
+    color: "#3B82F6",
+  },
+  {
+    href: "/chiasmus",
+    svgIcon: "/chiasmus.svg",
+    name: "Chiasmus Detector",
+    description: "Find mirror-pattern literary structures (ABBA) hidden in chapters across all volumes.",
+    color: "#8b5cf6",
+  },
+  {
+    href: "/topics",
+    svgIcon: "/topics.svg",
+    name: "Topic Map",
+    description: "Pick any chapter and discover thematically similar chapters across all of scripture.",
+    color: "#06b6d4",
+  },
+  {
+    href: "/timeline",
+    svgIcon: "/timeline.svg",
+    name: "Timeline",
+    description: "See when scripture events happened and how books overlap across thousands of years.",
+    color: "#F5A623",
+  },
+];
+
 export default function HomePage() {
   const isMobile = useIsMobile();
   const [randomVerse, setRandomVerse] = useState<RandomVerse | null>(null);
@@ -227,6 +265,98 @@ export default function HomePage() {
             </p>
           </Link>
         ))}
+      </div>
+
+      {/* Discover Tools */}
+      <div style={{ marginBottom: "32px" }}>
+        <div
+          style={{
+            fontSize: "0.65rem",
+            fontWeight: 600,
+            textTransform: "uppercase",
+            letterSpacing: "0.12em",
+            color: "var(--text-muted)",
+            marginBottom: "12px",
+          }}
+        >
+          Discovery Tools
+        </div>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)",
+            gap: isMobile ? "12px" : "16px",
+          }}
+        >
+          {DISCOVER_TOOLS.map((tool) => (
+            <Link
+              key={tool.href}
+              href={tool.href}
+              style={{
+                background: "var(--surface)",
+                border: "1px solid var(--border)",
+                borderRadius: "12px",
+                padding: isMobile ? "18px" : "24px",
+                textDecoration: "none",
+                transition: "all 0.2s ease",
+                position: "relative",
+                overflow: "hidden",
+                display: "block",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = tool.color;
+                e.currentTarget.style.transform = "translateY(-2px)";
+                e.currentTarget.style.boxShadow = `0 8px 24px ${tool.color}15`;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = "var(--border)";
+                e.currentTarget.style.transform = "translateY(0)";
+                e.currentTarget.style.boxShadow = "none";
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  height: "2px",
+                  background: tool.color,
+                }}
+              />
+              <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
+                <img
+                  src={tool.svgIcon}
+                  alt=""
+                  style={{
+                    width: "22px",
+                    height: "22px",
+                    filter: "invert(1) brightness(0.85)",
+                  }}
+                />
+                <span
+                  style={{
+                    fontSize: "1rem",
+                    fontWeight: 700,
+                    color: "var(--text)",
+                  }}
+                >
+                  {tool.name}
+                </span>
+              </div>
+              <p
+                style={{
+                  fontSize: "0.82rem",
+                  color: "var(--text-muted)",
+                  lineHeight: 1.5,
+                  margin: 0,
+                }}
+              >
+                {tool.description}
+              </p>
+            </Link>
+          ))}
+        </div>
       </div>
 
       {/* Random Verse */}

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import { addBookmark, removeBookmark, isBookmarked } from "@/lib/bookmarks";
+import { getAnnotation, saveAnnotation, deleteAnnotation } from "@/lib/annotations";
 
 interface VersePopoverProps {
   bookId: number;
@@ -54,10 +55,22 @@ export default function VersePopover({
 }: VersePopoverProps) {
   const [bookmarked, setBookmarked] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [showNotes, setShowNotes] = useState(false);
+  const [noteText, setNoteText] = useState("");
+  const [noteSaved, setNoteSaved] = useState(false);
   const popoverRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setBookmarked(isBookmarked(bookId, chapter, verse));
+    const existing = getAnnotation(bookId, chapter, verse);
+    if (existing) {
+      setNoteText(existing.note);
+      setShowNotes(true);
+    } else {
+      setNoteText("");
+      setShowNotes(false);
+    }
+    setNoteSaved(false);
   }, [bookId, chapter, verse]);
 
   // Close on Escape
@@ -262,6 +275,81 @@ export default function VersePopover({
           </div>
         )}
 
+        {/* Notes section */}
+        {showNotes && (
+          <div style={{ marginBottom: "12px" }}>
+            <textarea
+              value={noteText}
+              onChange={(e) => { setNoteText(e.target.value); setNoteSaved(false); }}
+              placeholder="Add your notes about this verse..."
+              rows={3}
+              style={{
+                width: "100%",
+                padding: "10px 12px",
+                borderRadius: "8px",
+                border: `1px solid ${theme.border}`,
+                background: lightMode ? "#f8f8f8" : "rgba(255,255,255,0.04)",
+                color: theme.text,
+                fontSize: "0.82rem",
+                fontFamily: "inherit",
+                lineHeight: 1.5,
+                resize: "vertical",
+                outline: "none",
+              }}
+              onFocus={(e) => { e.currentTarget.style.borderColor = volColor; }}
+              onBlur={(e) => { e.currentTarget.style.borderColor = theme.border; }}
+            />
+            <div style={{ display: "flex", gap: "8px", marginTop: "6px", justifyContent: "flex-end" }}>
+              {noteText.trim() !== "" && (
+                <button
+                  onClick={() => {
+                    deleteAnnotation(bookId, chapter, verse);
+                    setNoteText("");
+                    setShowNotes(false);
+                    setNoteSaved(false);
+                  }}
+                  style={{
+                    padding: "4px 12px",
+                    borderRadius: "6px",
+                    border: `1px solid ${theme.border}`,
+                    background: "transparent",
+                    color: theme.textMuted,
+                    fontSize: "0.72rem",
+                    fontFamily: "inherit",
+                    cursor: "pointer",
+                  }}
+                >
+                  Delete note
+                </button>
+              )}
+              <button
+                onClick={() => {
+                  if (noteText.trim()) {
+                    saveAnnotation(bookId, chapter, verse, noteText.trim());
+                    setNoteSaved(true);
+                    setTimeout(() => setNoteSaved(false), 1500);
+                  }
+                }}
+                disabled={!noteText.trim() || noteSaved}
+                style={{
+                  padding: "4px 14px",
+                  borderRadius: "6px",
+                  border: "none",
+                  background: noteSaved ? `${volColor}30` : volColor,
+                  color: noteSaved ? volColor : "#fff",
+                  fontSize: "0.72rem",
+                  fontWeight: 600,
+                  fontFamily: "inherit",
+                  cursor: noteSaved ? "default" : "pointer",
+                  transition: "all 0.15s",
+                }}
+              >
+                {noteSaved ? "✓ Saved" : "Save note"}
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* Actions */}
         <div
           style={{
@@ -314,6 +402,28 @@ export default function VersePopover({
             }}
           >
             {bookmarked ? "★ Saved" : "☆ Bookmark"}
+          </button>
+          <button
+            onClick={() => setShowNotes(!showNotes)}
+            style={{
+              flex: 1,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "6px",
+              padding: "8px",
+              borderRadius: "8px",
+              border: `1px solid ${showNotes ? volColor + "50" : theme.border}`,
+              background: showNotes ? `${volColor}15` : "transparent",
+              color: showNotes ? volColor : theme.textSecondary,
+              fontSize: "0.78rem",
+              fontWeight: 500,
+              fontFamily: "inherit",
+              cursor: "pointer",
+              transition: "all 0.15s",
+            }}
+          >
+            {noteText ? "✎ Notes" : "✎ Note"}
           </button>
         </div>
       </div>
