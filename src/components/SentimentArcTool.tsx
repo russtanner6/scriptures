@@ -320,16 +320,7 @@ export default function SentimentArcTool() {
                     interaction: { mode: "index", intersect: false },
                     plugins: {
                       legend: {
-                        position: "top",
-                        labels: {
-                          color: "rgba(255,255,255,0.7)",
-                          font: { size: isMobile ? 10 : 11 },
-                          pointStyle: "rectRounded",
-                          usePointStyle: true,
-                          boxWidth: 10,
-                          boxHeight: 10,
-                          padding: isMobile ? 8 : 12,
-                        },
+                        display: false, // Hidden — we use our own category toggles above
                       },
                       tooltip: {
                         backgroundColor: "rgba(20,20,30,0.95)",
