@@ -21,7 +21,7 @@ import DashboardCard from "./DashboardCard";
 import HorizontalBarList from "./HorizontalBarList";
 import type { BarItem } from "./HorizontalBarList";
 import DataTable from "./DataTable";
-import ExportChartModal, { ExportButton, ZoomControls } from "./ExportChartModal";
+import ExportChartModal, { ExportButton } from "./ExportChartModal";
 import ScripturePanel from "./ScripturePanel";
 import type { ScripturePanelState } from "@/lib/types";
 
@@ -84,7 +84,6 @@ export default function WordFrequencyTool() {
   const [breakdownTab, setBreakdownTab] = useState<number | null>(null);
   const [scripturePanel, setScripturePanel] = useState<ScripturePanelState | null>(null);
   const arcChartRef = useRef<any>(null);
-  const [arcZoomActive, setArcZoomActive] = useState(false);
   const [exportArc, setExportArc] = useState(false);
   // Chapter-level data for single-book volumes (e.g., D&C) — keyed by volume id
   const [chapterData, setChapterData] = useState<Map<number, { label: string; count: number; bookId: number; chapter: number }[]>>(new Map());
@@ -818,7 +817,7 @@ export default function WordFrequencyTool() {
                 <div id="section-arc">
                 <DashboardCard
                   title="Narrative arc"
-                  description={isSingleBook ? `Frequency of "${results.word}" by section` : `Frequency of "${results.word}" by book in narrative order`}
+                  description={<>{isSingleBook ? `Frequency of "${results.word}" by section` : `Frequency of "${results.word}" by book in narrative order`}{" — "}<span style={{ color: "var(--text-muted)", fontSize: "0.82rem" }}>click any point to read verses{!isMobile && " · ⇧ Shift + scroll to zoom, double-click to reset"}</span></>}
                   fullWidth
                   headerExtra={
                     <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
@@ -839,14 +838,6 @@ export default function WordFrequencyTool() {
                       >
                         Compare multiple terms →
                       </a>
-                      {!isMobile && (
-                        <ZoomControls
-                          compact={isMobile}
-                          active={arcZoomActive}
-                          onToggle={() => setArcZoomActive(!arcZoomActive)}
-                          chartRef={arcChartRef}
-                        />
-                      )}
                       <ExportButton compact={isMobile} onClick={() => setExportArc(true)} />
                     </div>
                   }
@@ -885,7 +876,7 @@ export default function WordFrequencyTool() {
                   )}
 
                   <div style={isMobile ? { overflowX: "auto", WebkitOverflowScrolling: "touch", margin: "0 -16px", padding: "0 16px" } : {}}>
-                  <div className="chart-container-tall" style={isMobile ? { width: `${Math.max(600, arcData.length * 28)}px`, minWidth: "100%" } : {}}>
+                  <div className="chart-container-tall" style={isMobile ? { width: `${Math.max(600, arcData.length * 28)}px`, minWidth: "100%" } : {}} onDoubleClick={() => arcChartRef.current?.resetZoom()}>
                     <Line
                       ref={arcChartRef}
                       key={activeTabId}
@@ -949,21 +940,18 @@ export default function WordFrequencyTool() {
                                 font: { weight: 700, size: 11 },
                                 formatter: (value: number) => value.toLocaleString(),
                               } as any,
-                          zoom: isMobile ? { zoom: { wheel: { enabled: false }, pinch: { enabled: false }, drag: { enabled: false } }, pan: { enabled: false } } : {
-                            zoom: {
-                              wheel: { enabled: false, speed: 0.05 },
-                              pinch: { enabled: false },
-                              drag: { enabled: false },
-                              mode: "x" as const,
+                          zoom: isMobile
+                            ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const }, pan: { enabled: true, mode: "x" as const }, limits: { x: { minRange: 3 } } }
+                            : {
+                              zoom: {
+                                wheel: { enabled: true, speed: 0.05, modifierKey: "shift" as const },
+                                pinch: { enabled: true },
+                                drag: { enabled: false },
+                                mode: "x" as const,
+                              },
+                              pan: { enabled: true, mode: "x" as const },
+                              limits: { x: { minRange: 3 } },
                             },
-                            pan: {
-                              enabled: false,
-                              mode: "x" as const,
-                            },
-                            limits: {
-                              x: { minRange: 3 },
-                            },
-                          },
                         },
                         layout: { padding: { top: 30 } },
                         onHover: (_event: any, elements: any[]) => {

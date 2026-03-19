@@ -12,7 +12,7 @@ export default function DashboardCard({
   headerExtra,
 }: {
   title: string;
-  description?: string;
+  description?: React.ReactNode;
   children: ReactNode;
   fullWidth?: boolean;
   tag?: string;

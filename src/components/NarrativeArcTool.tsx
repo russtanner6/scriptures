@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback, createRef } from "react";
-import ExportChartModal, { ExportButton, ZoomControls } from "./ExportChartModal";
+import ExportChartModal, { ExportButton } from "./ExportChartModal";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -102,7 +102,6 @@ export default function NarrativeArcTool() {
   // Scripture panel state
   const [scripturePanel, setScripturePanel] = useState<ScripturePanelState | null>(null);
   const chartRefs = useRef<Map<number, React.RefObject<any>>>(new Map());
-  const [zoomActiveVols, setZoomActiveVols] = useState<Set<number>>(new Set());
   const initialSearchDone = useRef(false);
 
   // Load volumes on mount + check URL for deep link
@@ -443,24 +442,10 @@ export default function NarrativeArcTool() {
                       ? `Word frequency by section across ${vol.name}`
                       : "Word frequency by book in narrative order"}
                     {" — "}
-                    <span style={{ color: "var(--text-muted)", fontSize: "0.82rem" }}>click any point to read verses</span>
+                    <span style={{ color: "var(--text-muted)", fontSize: "0.82rem" }}>click any point to read verses{!isMobile && " · ⇧ Shift + scroll to zoom, double-click to reset"}</span>
                   </p>
                 </div>
                 <div style={{ display: "flex", gap: "6px", alignItems: "center", flexShrink: 0 }}>
-                  {!isMobile && (
-                    <ZoomControls
-                      active={zoomActiveVols.has(vol.id)}
-                      onToggle={() => {
-                        setZoomActiveVols((prev) => {
-                          const next = new Set(prev);
-                          if (next.has(vol.id)) next.delete(vol.id);
-                          else next.add(vol.id);
-                          return next;
-                        });
-                      }}
-                      chartRef={chartRefs.current.get(vol.id)!}
-                    />
-                  )}
                   <ExportButton compact={isMobile} onClick={() => setExportVolumeId(vol.id)} />
                 </div>
               </div>
@@ -473,7 +458,7 @@ export default function NarrativeArcTool() {
                 return (
               <>
               <div style={isMobile ? { overflowX: "auto", WebkitOverflowScrolling: "touch", marginTop: "8px" } : { marginTop: "8px" }}>
-              <div style={{ position: "relative", height: isMobile ? "350px" : "540px", ...(isMobile ? { width: `${Math.max(600, allLabels.length * 28)}px`, minWidth: "100%" } : {}) }}>
+              <div style={{ position: "relative", height: isMobile ? "350px" : "540px", ...(isMobile ? { width: `${Math.max(600, allLabels.length * 28)}px`, minWidth: "100%" } : {}) }} onDoubleClick={() => thisChartRef.current?.resetZoom()}>
                 <Line
                   ref={thisChartRef}
                   plugins={[legendMarginPlugin]}
@@ -565,11 +550,13 @@ export default function NarrativeArcTool() {
                         font: { weight: 700, size: 10 },
                         formatter: (value: number) => value.toLocaleString(),
                       },
-                      zoom: isMobile ? { zoom: { wheel: { enabled: false }, pinch: { enabled: false }, drag: { enabled: false } }, pan: { enabled: false } } : {
-                        zoom: { wheel: { enabled: false, speed: 0.05 }, pinch: { enabled: false }, drag: { enabled: false }, mode: "x" as const },
-                        pan: { enabled: false, mode: "x" as const },
-                        limits: { x: { minRange: 3 } },
-                      },
+                      zoom: isMobile
+                        ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const }, pan: { enabled: true, mode: "x" as const }, limits: { x: { minRange: 3 } } }
+                        : {
+                          zoom: { wheel: { enabled: true, speed: 0.05, modifierKey: "shift" as const }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const },
+                          pan: { enabled: true, mode: "x" as const },
+                          limits: { x: { minRange: 3 } },
+                        },
                     },
                     layout: { padding: { top: 20 } },
                     scales: {

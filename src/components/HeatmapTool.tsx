@@ -16,7 +16,7 @@ import { Line } from "react-chartjs-2";
 import type { Volume, ScripturePanelState } from "@/lib/types";
 import { VOLUME_COLORS, getContrastText, compactVolumeName } from "@/lib/constants";
 import ScripturePanel from "./ScripturePanel";
-import { ExportButton, ZoomControls } from "./ExportChartModal";
+import { ExportButton } from "./ExportChartModal";
 import ExportChartModal from "./ExportChartModal";
 import ExportHtmlModal from "./ExportHtmlModal";
 
@@ -78,7 +78,6 @@ export default function HeatmapTool() {
   // Per-volume view mode: "heatmap" or "arc"
   const [viewModes, setViewModes] = useState<Map<string, "heatmap" | "arc">>(new Map());
   const chartRefs = useRef<Map<string, React.RefObject<any>>>(new Map());
-  const [zoomActiveAbbrevs, setZoomActiveAbbrevs] = useState<Set<string>>(new Set());
 
   const getViewMode = (abbrev: string) => viewModes.get(abbrev) || "heatmap";
   const toggleViewMode = (abbrev: string) => {
@@ -450,23 +449,14 @@ export default function HeatmapTool() {
                           ? <>There {volTotal === 1 ? "is" : "are"} <strong style={{ color: "var(--text)" }}>{volTotal.toLocaleString()}</strong> {volTotal === 1 ? "reference" : "references"} to &quot;{word}&quot; in the {vg.volumeName}</>
                           : <>No references to &quot;{word}&quot; found in the {vg.volumeName}</>
                         }
+                        {getViewMode(abbrev) === "arc" && (
+                          <span style={{ color: "var(--text-muted)", fontSize: "0.82rem" }}>
+                            {" — "}click any point to read verses{!isMobile && " · ⇧ Shift + scroll to zoom, double-click to reset"}
+                          </span>
+                        )}
                       </p>
                     </div>
                     <div style={{ display: "flex", gap: "6px", alignItems: "center", flexShrink: 0 }}>
-                      {!isMobile && getViewMode(abbrev) === "arc" && (
-                        <ZoomControls
-                          active={zoomActiveAbbrevs.has(abbrev)}
-                          onToggle={() => {
-                            setZoomActiveAbbrevs((prev) => {
-                              const next = new Set(prev);
-                              if (next.has(abbrev)) next.delete(abbrev);
-                              else next.add(abbrev);
-                              return next;
-                            });
-                          }}
-                          chartRef={chartRefs.current.get(abbrev)!}
-                        />
-                      )}
                       <ExportButton compact={isMobile} onClick={() => {
                         if (getViewMode(abbrev) === "arc") setExportChartAbbrev(abbrev);
                         else setExportAbbrev(abbrev);
@@ -557,7 +547,7 @@ export default function HeatmapTool() {
                         transition: "opacity 0.3s ease, max-height 0.3s ease",
                       }}>
                       <div style={isMobile ? { overflowX: "auto", WebkitOverflowScrolling: "touch" } : {}}>
-                      <div style={{ position: "relative", height: isMobile ? "350px" : "480px", ...(isMobile ? { width: `${Math.max(600, arcLabels.length * 28)}px`, minWidth: "100%" } : {}) }}>
+                      <div style={{ position: "relative", height: isMobile ? "350px" : "480px", ...(isMobile ? { width: `${Math.max(600, arcLabels.length * 28)}px`, minWidth: "100%" } : {}) }} onDoubleClick={() => thisChartRef.current?.resetZoom()}>
                         <Line
                           ref={thisChartRef}
                           plugins={[legendMarginPlugin]}
@@ -637,11 +627,13 @@ export default function HeatmapTool() {
                                 color: "#fafafa", font: { weight: 700, size: 10 },
                                 formatter: (value: number) => value.toLocaleString(),
                               },
-                              zoom: isMobile ? { zoom: { wheel: { enabled: false }, pinch: { enabled: false }, drag: { enabled: false } }, pan: { enabled: false } } : {
-                                zoom: { wheel: { enabled: false, speed: 0.05 }, pinch: { enabled: false }, drag: { enabled: false }, mode: "x" as const },
-                                pan: { enabled: false, mode: "x" as const },
-                                limits: { x: { minRange: 3 } },
-                              },
+                              zoom: isMobile
+                                ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const }, pan: { enabled: true, mode: "x" as const }, limits: { x: { minRange: 3 } } }
+                                : {
+                                  zoom: { wheel: { enabled: true, speed: 0.05, modifierKey: "shift" as const }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const },
+                                  pan: { enabled: true, mode: "x" as const },
+                                  limits: { x: { minRange: 3 } },
+                                },
                             },
                             layout: { padding: { top: 20 } },
                             scales: {
