@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import type { Volume, Resource } from "@/lib/types";
+import type { Volume, Resource, SpeakerAttribution, SpeakerType } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import { getVerseUrl } from "@/lib/scripture-urls";
 import ChapterInsights from "./ChapterInsights";
@@ -81,6 +81,10 @@ export default function ScriptureReader() {
   const [chapterResources, setChapterResources] = useState<Resource[]>([]);
   const [activeResourcePanel, setActiveResourcePanel] = useState<{ resources: Resource[]; index: number } | null>(null);
 
+  // Speaker attribution layer
+  const [showSpeakers, setShowSpeakers] = useState(true);
+  const [chapterSpeakers, setChapterSpeakers] = useState<SpeakerAttribution[]>([]);
+
   // Search term highlight (when arriving from ScripturePanel)
   const highlightWord = searchParams.get("highlight") || null;
 
@@ -99,6 +103,8 @@ export default function ScriptureReader() {
     if (savedFont) setFontSize(Number(savedFont));
     const savedResources = localStorage.getItem("reader-show-resources");
     if (savedResources === "false") setShowResources(false);
+    const savedSpeakers = localStorage.getItem("reader-show-speakers");
+    if (savedSpeakers === "false") setShowSpeakers(false);
   }, []);
 
   // Track scroll progress in reading view
@@ -189,11 +195,15 @@ export default function ScriptureReader() {
                   // Load annotations
                   const annotations = getAnnotationsForChapter(bid, ch);
                   setAnnotatedVerses(new Set(annotations.map((a: { verse: number }) => a.verse)));
-                  // Load resources
+                  // Load resources + speakers
                   const bookNameForApi = chData.bookName || book.name;
                   fetch(`/api/resources?book=${encodeURIComponent(bookNameForApi)}&chapter=${ch}`)
                     .then((r) => r.json())
                     .then((resData) => setChapterResources(resData.resources || []))
+                    .catch(() => {});
+                  fetch(`/api/speakers?book=${encodeURIComponent(bookNameForApi)}&chapter=${ch}`)
+                    .then((r) => r.json())
+                    .then((spkData) => setChapterSpeakers(spkData.speakers || []))
                     .catch(() => {});
                 });
               break;
@@ -226,13 +236,22 @@ export default function ScriptureReader() {
       // Load resources for this chapter
       setChapterResources([]);
       setActiveResourcePanel(null);
+      // Load speakers for this chapter
+      setChapterSpeakers([]);
+      const bookNameForApi = data.bookName || "";
       try {
-        const bookNameForApi = data.bookName || "";
         const resResp = await fetch(`/api/resources?book=${encodeURIComponent(bookNameForApi)}&chapter=${chapter}`);
         const resData = await resResp.json();
         setChapterResources(resData.resources || []);
       } catch {
         // Resources are non-critical, don't block reading
+      }
+      try {
+        const spkResp = await fetch(`/api/speakers?book=${encodeURIComponent(bookNameForApi)}&chapter=${chapter}`);
+        const spkData = await spkResp.json();
+        setChapterSpeakers(spkData.speakers || []);
+      } catch {
+        // Speakers are non-critical
       }
     } finally {
       setIsLoading(false);
@@ -367,6 +386,16 @@ export default function ScriptureReader() {
   };
 
   // Color theme
+  // Speaker type colors
+  const SPEAKER_COLORS: Record<SpeakerType, string> = {
+    divine: "#F5A623",   // warm gold
+    prophet: "#3B82F6",  // blue
+    apostle: "#10B981",  // green
+    angel: "#A78BFA",    // lavender
+    narrator: "#6B7280", // gray
+    other: "#9CA3AF",    // light gray
+  };
+
   const theme = lightMode
     ? {
         bg: "#faf9f6",
@@ -562,6 +591,54 @@ export default function ScriptureReader() {
                     borderRadius: "50%",
                     background: volColor,
                     opacity: showResources ? 1 : 0.5,
+                    fontSize: "0",
+                  }}
+                />
+              </button>
+            )}
+
+            {/* Speaker attribution toggle */}
+            {chapterSpeakers.length > 0 && (
+              <button
+                onClick={() => {
+                  const next = !showSpeakers;
+                  setShowSpeakers(next);
+                  localStorage.setItem("reader-show-speakers", String(next));
+                }}
+                title={showSpeakers ? "Hide speakers" : "Show speakers"}
+                style={{
+                  position: "relative",
+                  background: showSpeakers
+                    ? (lightMode ? `${SPEAKER_COLORS.divine}15` : `${SPEAKER_COLORS.divine}20`)
+                    : (lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.06)"),
+                  border: `1px solid ${showSpeakers ? `${SPEAKER_COLORS.divine}40` : theme.border}`,
+                  borderRadius: "8px",
+                  width: "36px",
+                  height: "36px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  cursor: "pointer",
+                  fontSize: "0.85rem",
+                  transition: "all 0.15s",
+                  color: showSpeakers ? SPEAKER_COLORS.divine : theme.textSecondary,
+                }}
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+                {/* Badge dot */}
+                <span
+                  style={{
+                    position: "absolute",
+                    top: "4px",
+                    right: "4px",
+                    width: "7px",
+                    height: "7px",
+                    borderRadius: "50%",
+                    background: SPEAKER_COLORS.divine,
+                    opacity: showSpeakers ? 1 : 0.5,
                     fontSize: "0",
                   }}
                 />
@@ -785,6 +862,64 @@ export default function ScriptureReader() {
             </div>
           )}
 
+          {/* Speaker legend */}
+          {!isLoading && showSpeakers && chapterSpeakers.length > 0 && (() => {
+            const uniqueSpeakers = Array.from(
+              new Map(chapterSpeakers.map((s) => [s.speaker, s])).values()
+            );
+            return (
+              <div
+                style={{
+                  fontSize: "0.68rem",
+                  color: theme.textMuted,
+                  marginBottom: "12px",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "12px",
+                  flexWrap: "wrap",
+                  opacity: 0.8,
+                }}
+              >
+                <span style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
+                  Speakers:
+                </span>
+                {uniqueSpeakers.slice(0, 8).map((s) => (
+                  <span
+                    key={s.speaker}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "4px",
+                      color: SPEAKER_COLORS[s.speakerType],
+                      fontWeight: 600,
+                      fontSize: "0.62rem",
+                      textTransform: "uppercase",
+                      letterSpacing: "0.04em",
+                    }}
+                  >
+                    <span style={{
+                      width: "6px",
+                      height: "6px",
+                      borderRadius: "50%",
+                      background: SPEAKER_COLORS[s.speakerType],
+                      flexShrink: 0,
+                    }} />
+                    {s.speaker}
+                  </span>
+                ))}
+                {uniqueSpeakers.length > 8 && (
+                  <span style={{ color: theme.textMuted }}>
+                    +{uniqueSpeakers.length - 8} more
+                  </span>
+                )}
+              </div>
+            );
+          })()}
+
           {/* Resource count indicator */}
           {!isLoading && showResources && chapterResources.length > 0 && (
             <div
@@ -817,10 +952,17 @@ export default function ScriptureReader() {
               const verseCoveredBy = showResources
                 ? chapterResources.filter((r) => v.verse >= r.verseStart && v.verse <= r.verseEnd)
                 : [];
-              // Left border for verse spans
-              const spanBorderColor = verseCoveredBy.length > 0
+              // Speaker attribution for this verse
+              const verseSpeaker = showSpeakers
+                ? chapterSpeakers.find((s) => v.verse >= s.verseStart && v.verse <= s.verseEnd)
+                : null;
+              const isFirstOfSpeakerSpan = verseSpeaker && v.verse === verseSpeaker.verseStart;
+              const speakerColor = verseSpeaker ? SPEAKER_COLORS[verseSpeaker.speakerType] : null;
+              // Left border: speaker takes priority, then resource
+              const resourceBorderColor = verseCoveredBy.length > 0
                 ? getResourceTypeColor(verseCoveredBy[0].type)
                 : null;
+              const leftBorderColor = speakerColor || resourceBorderColor;
               return (
                 <div
                   key={v.verse}
@@ -828,11 +970,39 @@ export default function ScriptureReader() {
                   style={{
                     marginBottom: "4px",
                     lineHeight: 2,
-                    borderLeft: spanBorderColor ? `3px solid ${spanBorderColor}25` : "3px solid transparent",
-                    paddingLeft: spanBorderColor ? "10px" : "10px",
-                    transition: "border-color 0.3s ease, padding-left 0.3s ease",
+                    position: "relative",
+                    borderLeft: leftBorderColor ? `3px solid ${leftBorderColor}${speakerColor ? "50" : "25"}` : "3px solid transparent",
+                    paddingLeft: "10px",
+                    transition: "border-color 0.3s ease",
                   }}
                 >
+                  {/* Speaker name label — shown on first verse of a speaker span */}
+                  {isFirstOfSpeakerSpan && verseSpeaker && (
+                    <div
+                      style={{
+                        fontSize: "0.58rem",
+                        fontWeight: 700,
+                        letterSpacing: "0.06em",
+                        color: speakerColor,
+                        textTransform: "uppercase",
+                        marginBottom: "2px",
+                        opacity: 0.85,
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "6px",
+                      }}
+                    >
+                      <span style={{
+                        display: "inline-block",
+                        width: "6px",
+                        height: "6px",
+                        borderRadius: "50%",
+                        background: speakerColor || undefined,
+                        flexShrink: 0,
+                      }} />
+                      {verseSpeaker.speaker}
+                    </div>
+                  )}
                   <span
                     style={{
                       fontSize: "0.72rem",

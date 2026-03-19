@@ -22,7 +22,7 @@ export default function Header({ showSubtitle = false }: { showSubtitle?: boolea
           <span className="hamburger-line" style={{ width: "22px" }} />
           <span className="hamburger-line" style={{ width: "18px", marginLeft: "auto" }} />
         </div>
-        <span style={{ fontSize: "0.6rem", fontWeight: 600, letterSpacing: "0.12em", color: "#ffffff", textTransform: "uppercase" }}>Menu</span>
+        <span className="hamburger-label" style={{ fontSize: "0.6rem", fontWeight: 600, letterSpacing: "0.12em", color: "#ffffff", textTransform: "uppercase" }}>Menu</span>
       </button>
 
       <NavMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />

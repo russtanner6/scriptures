@@ -326,6 +326,10 @@ footer a:hover {
     padding: 8px;
   }
 
+  .hamburger-label {
+    display: none;
+  }
+
   .search-panel {
     padding: 16px;
     border-radius: 10px;
