@@ -158,6 +158,18 @@ export default function WordCloudTool() {
             marginBottom: "6px",
           }}
         >
+          <img
+            src="/word-cloud.svg"
+            alt=""
+            style={{
+              display: "inline-block",
+              width: isMobile ? "22px" : "26px",
+              height: isMobile ? "22px" : "26px",
+              verticalAlign: "middle",
+              marginRight: "10px",
+              filter: "invert(1) brightness(0.85)",
+            }}
+          />
           Word Cloud
         </h2>
         <p style={{ color: "var(--text-secondary)", fontSize: isMobile ? "0.85rem" : "0.92rem" }}>
