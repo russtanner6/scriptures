@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback, createRef } from "react";
-import ExportChartModal, { ExportButton, ZoomButton } from "./ExportChartModal";
+import ExportChartModal, { ExportButton, ZoomControls } from "./ExportChartModal";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -448,21 +448,17 @@ export default function NarrativeArcTool() {
                 </div>
                 <div style={{ display: "flex", gap: "6px", alignItems: "center", flexShrink: 0 }}>
                   {!isMobile && (
-                    <ZoomButton
+                    <ZoomControls
                       active={zoomActiveVols.has(vol.id)}
-                      onClick={() => {
+                      onToggle={() => {
                         setZoomActiveVols((prev) => {
                           const next = new Set(prev);
-                          if (next.has(vol.id)) {
-                            next.delete(vol.id);
-                            const ref = chartRefs.current.get(vol.id);
-                            if (ref?.current) ref.current.resetZoom();
-                          } else {
-                            next.add(vol.id);
-                          }
+                          if (next.has(vol.id)) next.delete(vol.id);
+                          else next.add(vol.id);
                           return next;
                         });
                       }}
+                      chartRef={chartRefs.current.get(vol.id)!}
                     />
                   )}
                   <ExportButton compact={isMobile} onClick={() => setExportVolumeId(vol.id)} />

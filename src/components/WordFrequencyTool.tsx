@@ -21,7 +21,7 @@ import DashboardCard from "./DashboardCard";
 import HorizontalBarList from "./HorizontalBarList";
 import type { BarItem } from "./HorizontalBarList";
 import DataTable from "./DataTable";
-import ExportChartModal, { ExportButton, ZoomButton } from "./ExportChartModal";
+import ExportChartModal, { ExportButton, ZoomControls } from "./ExportChartModal";
 import ScripturePanel from "./ScripturePanel";
 import type { ScripturePanelState } from "@/lib/types";
 
@@ -840,14 +840,11 @@ export default function WordFrequencyTool() {
                         Compare multiple terms →
                       </a>
                       {!isMobile && (
-                        <ZoomButton
+                        <ZoomControls
                           compact={isMobile}
                           active={arcZoomActive}
-                          onClick={() => {
-                            const next = !arcZoomActive;
-                            setArcZoomActive(next);
-                            if (!next && arcChartRef.current) arcChartRef.current.resetZoom();
-                          }}
+                          onToggle={() => setArcZoomActive(!arcZoomActive)}
+                          chartRef={arcChartRef}
                         />
                       )}
                       <ExportButton compact={isMobile} onClick={() => setExportArc(true)} />

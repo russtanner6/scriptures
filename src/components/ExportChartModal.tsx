@@ -224,40 +224,97 @@ export function ExportButton({ onClick, compact }: { onClick: () => void; compac
 }
 
 /**
- * Small "ZOOM" toggle button for chart module headers.
- * Usage: <ZoomButton active={zoomActive} onClick={() => toggleZoom()} />
+ * Zoom controls: toggle + / − Fit buttons.
+ * When active, shows +/− and Fit. Toggling off preserves current zoom level.
+ * chartRef must be a ref to the Chart.js instance (from react-chartjs-2).
  */
-export function ZoomButton({ active, onClick, compact }: { active: boolean; onClick: () => void; compact?: boolean }) {
+export function ZoomControls({ active, onToggle, chartRef, compact }: {
+  active: boolean;
+  onToggle: () => void;
+  chartRef: React.RefObject<any>;
+  compact?: boolean;
+}) {
+  const btnBase: React.CSSProperties = {
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "4px 8px",
+    borderRadius: "6px",
+    border: "1px solid rgba(255,255,255,0.1)",
+    background: "transparent",
+    color: "var(--text-secondary, #9ca3af)",
+    fontSize: "0.78rem",
+    fontWeight: 700,
+    fontFamily: "inherit",
+    cursor: "pointer",
+    transition: "all 0.15s",
+    lineHeight: 1,
+    minWidth: "26px",
+  };
+
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      title={active ? "Disable zoom — click to turn off" : "Enable zoom — scroll to zoom, drag to pan"}
-      style={{
-        display: "inline-flex",
-        alignItems: "center",
-        gap: "5px",
-        padding: compact ? "5px 7px" : "4px 10px",
-        borderRadius: "6px",
-        border: active ? "1px solid var(--accent, #3B82F6)" : "1px solid rgba(255,255,255,0.1)",
-        background: active ? "var(--accent, #3B82F6)" : "transparent",
-        color: active ? "#fff" : "var(--text-secondary, #9ca3af)",
-        fontSize: "0.72rem",
-        fontWeight: 600,
-        textTransform: "uppercase",
-        letterSpacing: "0.08em",
-        fontFamily: "inherit",
-        cursor: "pointer",
-        transition: "all 0.15s",
-      }}
-    >
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="11" cy="11" r="8" />
-        <line x1="21" y1="21" x2="16.65" y2="16.65" />
-        <line x1="11" y1="8" x2="11" y2="14" />
-        <line x1="8" y1="11" x2="14" y2="11" />
-      </svg>
-      {!compact && (active ? "Zoom ON" : "Zoom")}
-    </button>
+    <div style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+      {/* +/− and Fit — visible when zoom is active */}
+      {active && (
+        <>
+          <button
+            type="button"
+            title="Zoom in"
+            onClick={() => chartRef.current?.zoom(1.3)}
+            style={btnBase}
+          >
+            +
+          </button>
+          <button
+            type="button"
+            title="Zoom out"
+            onClick={() => chartRef.current?.zoom(0.7)}
+            style={btnBase}
+          >
+            −
+          </button>
+          <button
+            type="button"
+            title="Fit — reset to show all data"
+            onClick={() => chartRef.current?.resetZoom()}
+            style={{ ...btnBase, fontSize: "0.68rem", fontWeight: 600, letterSpacing: "0.04em" }}
+          >
+            Fit
+          </button>
+        </>
+      )}
+
+      {/* Zoom toggle */}
+      <button
+        type="button"
+        onClick={onToggle}
+        title={active ? "Disable wheel/pinch zoom" : "Enable zoom — scroll to zoom, drag to pan"}
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          gap: "5px",
+          padding: compact ? "5px 7px" : "4px 10px",
+          borderRadius: "6px",
+          border: active ? "1px solid var(--accent, #3B82F6)" : "1px solid rgba(255,255,255,0.1)",
+          background: active ? "var(--accent, #3B82F6)" : "transparent",
+          color: active ? "#fff" : "var(--text-secondary, #9ca3af)",
+          fontSize: "0.72rem",
+          fontWeight: 600,
+          textTransform: "uppercase",
+          letterSpacing: "0.08em",
+          fontFamily: "inherit",
+          cursor: "pointer",
+          transition: "all 0.15s",
+        }}
+      >
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          <line x1="11" y1="8" x2="11" y2="14" />
+          <line x1="8" y1="11" x2="14" y2="11" />
+        </svg>
+        {!compact && (active ? "Zoom ON" : "Zoom")}
+      </button>
+    </div>
   );
 }

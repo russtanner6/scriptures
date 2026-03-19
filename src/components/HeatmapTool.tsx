@@ -16,7 +16,7 @@ import { Line } from "react-chartjs-2";
 import type { Volume, ScripturePanelState } from "@/lib/types";
 import { VOLUME_COLORS, getContrastText, compactVolumeName } from "@/lib/constants";
 import ScripturePanel from "./ScripturePanel";
-import { ExportButton, ZoomButton } from "./ExportChartModal";
+import { ExportButton, ZoomControls } from "./ExportChartModal";
 import ExportChartModal from "./ExportChartModal";
 import ExportHtmlModal from "./ExportHtmlModal";
 
@@ -454,21 +454,17 @@ export default function HeatmapTool() {
                     </div>
                     <div style={{ display: "flex", gap: "6px", alignItems: "center", flexShrink: 0 }}>
                       {!isMobile && getViewMode(abbrev) === "arc" && (
-                        <ZoomButton
+                        <ZoomControls
                           active={zoomActiveAbbrevs.has(abbrev)}
-                          onClick={() => {
+                          onToggle={() => {
                             setZoomActiveAbbrevs((prev) => {
                               const next = new Set(prev);
-                              if (next.has(abbrev)) {
-                                next.delete(abbrev);
-                                const ref = chartRefs.current.get(abbrev);
-                                if (ref?.current) ref.current.resetZoom();
-                              } else {
-                                next.add(abbrev);
-                              }
+                              if (next.has(abbrev)) next.delete(abbrev);
+                              else next.add(abbrev);
                               return next;
                             });
                           }}
+                          chartRef={chartRefs.current.get(abbrev)!}
                         />
                       )}
                       <ExportButton compact={isMobile} onClick={() => {
