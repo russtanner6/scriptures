@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "build-db": "tsx scripts/build-db.ts"
+    "build-db": "tsx scripts/build-db.ts",
+    "build-speakers": "tsx scripts/build-speakers.ts",
+    "build-speakers-lds": "tsx scripts/build-speakers-lds.ts",
+    "merge-speakers": "tsx scripts/merge-speakers.ts"
   },
   "dependencies": {
     "chart.js": "^4.5.1",
