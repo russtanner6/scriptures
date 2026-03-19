@@ -4,7 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NAV_ITEMS = [
-  { href: "/", label: "Word Frequency", icon: "🔍" },
+  { href: "/", label: "Home", icon: "🏠" },
+  { href: "/search", label: "Word Search", icon: "🔍" },
   { href: "/narrative-arc", label: "Narrative Arc", icon: "📈" },
   { href: "/heatmap", label: "Theme Heatmap", icon: "🔥" },
   { href: "/wordcloud", label: "Word Cloud", icon: "☁️" },

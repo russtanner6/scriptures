@@ -420,7 +420,7 @@ export default function WordCloudTool() {
                   onMouseLeave={() => setHoveredWord(null)}
                   onClick={() => {
                     // Navigate to search for this word
-                    window.location.href = `/?word=${encodeURIComponent(item.word)}`;
+                    window.location.href = `/search?word=${encodeURIComponent(item.word)}`;
                   }}
                   style={{
                     display: "inline-block",
