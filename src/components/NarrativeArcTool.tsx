@@ -81,9 +81,13 @@ export default function NarrativeArcTool() {
   const isMobile = useIsMobile();
 
   // Register zoom plugin client-side only
+  const zoomPluginRef = useRef<any>(null);
+  const [zoomReady, setZoomReady] = useState(false);
   useEffect(() => {
     import("chartjs-plugin-zoom").then((mod) => {
       ChartJS.register(mod.default);
+      zoomPluginRef.current = mod.default;
+      setZoomReady(true);
     });
   }, []);
 
@@ -460,8 +464,9 @@ export default function NarrativeArcTool() {
               <div style={isMobile ? { overflowX: "auto", WebkitOverflowScrolling: "touch", marginTop: "8px" } : { marginTop: "8px" }}>
               <div style={{ position: "relative", height: isMobile ? "350px" : "540px", ...(isMobile ? { width: `${Math.max(600, allLabels.length * 28)}px`, minWidth: "100%" } : {}) }} onDoubleClick={() => thisChartRef.current?.resetZoom()}>
                 <Line
+                  key={`${vol.id}-${zoomReady}`}
                   ref={thisChartRef}
-                  plugins={[legendMarginPlugin]}
+                  plugins={[legendMarginPlugin, ...(zoomPluginRef.current ? [zoomPluginRef.current] : [])]}
                   data={{
                     labels: allLabels,
                     datasets: volResults.map((r) => {

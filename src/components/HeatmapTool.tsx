@@ -57,9 +57,13 @@ export default function HeatmapTool() {
   const isMobile = useIsMobile();
 
   // Register zoom plugin client-side only
+  const zoomPluginRef = useRef<any>(null);
+  const [zoomReady, setZoomReady] = useState(false);
   useEffect(() => {
     import("chartjs-plugin-zoom").then((mod) => {
       ChartJS.register(mod.default);
+      zoomPluginRef.current = mod.default;
+      setZoomReady(true);
     });
   }, []);
 
@@ -549,8 +553,9 @@ export default function HeatmapTool() {
                       <div style={isMobile ? { overflowX: "auto", WebkitOverflowScrolling: "touch" } : {}}>
                       <div style={{ position: "relative", height: isMobile ? "350px" : "480px", ...(isMobile ? { width: `${Math.max(600, arcLabels.length * 28)}px`, minWidth: "100%" } : {}) }} onDoubleClick={() => thisChartRef.current?.resetZoom()}>
                         <Line
+                          key={`${abbrev}-${zoomReady}`}
                           ref={thisChartRef}
-                          plugins={[legendMarginPlugin]}
+                          plugins={[legendMarginPlugin, ...(zoomPluginRef.current ? [zoomPluginRef.current] : [])]}
                           data={{
                             labels: arcLabels,
                             datasets: [{

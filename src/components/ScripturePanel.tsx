@@ -70,8 +70,8 @@ export default function ScripturePanel({
           style={{
             background: volumeColor
               ? `${volumeColor}30`
-              : "rgba(139, 92, 246, 0.25)",
-            color: "var(--text)",
+              : "rgba(139, 92, 246, 0.2)",
+            color: "#222",
             padding: "1px 3px",
             borderRadius: "3px",
           }}
@@ -114,22 +114,23 @@ export default function ScripturePanel({
           right: 0,
           bottom: 0,
           width: "min(100vw, 480px)",
-          background: "#1a1a22",
-          borderLeft: `1px solid rgba(255, 255, 255, 0.08)`,
+          background: "#ffffff",
+          borderLeft: "1px solid #e5e7eb",
           zIndex: 201,
           display: "flex",
           flexDirection: "column",
           transform: isVisible ? "translateX(0)" : "translateX(100%)",
           transition: "transform 0.3s ease",
-          boxShadow: "-8px 0 32px rgba(0, 0, 0, 0.4)",
+          boxShadow: "-8px 0 32px rgba(0, 0, 0, 0.15)",
         }}
       >
         {/* Header */}
         <div
           style={{
             padding: "20px 24px 16px",
-            borderBottom: "1px solid rgba(255, 255, 255, 0.06)",
+            borderBottom: "1px solid #e5e7eb",
             flexShrink: 0,
+            background: "#fafafa",
           }}
         >
           <div
@@ -145,7 +146,7 @@ export default function ScripturePanel({
                 style={{
                   fontSize: "1.15rem",
                   fontWeight: 700,
-                  color: "var(--text)",
+                  color: "#222",
                   marginBottom: "4px",
                 }}
               >
@@ -154,7 +155,7 @@ export default function ScripturePanel({
               <p
                 style={{
                   fontSize: "0.82rem",
-                  color: "var(--text-muted)",
+                  color: "#666",
                 }}
               >
                 {isLoading
@@ -186,8 +187,8 @@ export default function ScripturePanel({
             <button
               onClick={onClose}
               style={{
-                background: "rgba(255, 255, 255, 0.06)",
-                border: "1px solid rgba(255, 255, 255, 0.08)",
+                background: "rgba(0, 0, 0, 0.04)",
+                border: "1px solid #e5e7eb",
                 borderRadius: "8px",
                 width: "36px",
                 height: "36px",
@@ -195,7 +196,7 @@ export default function ScripturePanel({
                 alignItems: "center",
                 justifyContent: "center",
                 cursor: "pointer",
-                color: "var(--text-secondary)",
+                color: "#999",
                 fontSize: "1.1rem",
                 fontFamily: "inherit",
                 transition: "all 0.15s",
@@ -203,12 +204,12 @@ export default function ScripturePanel({
                 marginLeft: "12px",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)";
-                e.currentTarget.style.color = "var(--text)";
+                e.currentTarget.style.background = "rgba(0, 0, 0, 0.08)";
+                e.currentTarget.style.color = "#333";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = "rgba(255, 255, 255, 0.06)";
-                e.currentTarget.style.color = "var(--text-secondary)";
+                e.currentTarget.style.background = "rgba(0, 0, 0, 0.04)";
+                e.currentTarget.style.color = "#999";
               }}
             >
               ✕
@@ -236,6 +237,7 @@ export default function ScripturePanel({
             padding: "12px 24px 24px",
             flex: 1,
             minHeight: 0,
+            background: "#ffffff",
           }}
         >
           {isLoading && (
@@ -243,7 +245,7 @@ export default function ScripturePanel({
               style={{
                 textAlign: "center",
                 padding: "40px",
-                color: "var(--text-muted)",
+                color: "#999",
               }}
             >
               Loading...
@@ -255,7 +257,7 @@ export default function ScripturePanel({
               style={{
                 textAlign: "center",
                 padding: "40px",
-                color: "var(--text-muted)",
+                color: "#999",
               }}
             >
               No matching verses found.
@@ -270,7 +272,7 @@ export default function ScripturePanel({
                   padding: "14px 0",
                   borderBottom:
                     i < verses.length - 1
-                      ? "1px solid rgba(255, 255, 255, 0.04)"
+                      ? "1px solid #eee"
                       : "none",
                 }}
               >
@@ -339,7 +341,7 @@ export default function ScripturePanel({
                 <div
                   style={{
                     fontSize: "0.95rem",
-                    color: "var(--text-secondary)",
+                    color: "#222",
                     lineHeight: 1.8,
                   }}
                 >

@@ -73,9 +73,13 @@ export default function WordFrequencyTool() {
   const isMobile = useIsMobile();
 
   // Register zoom plugin client-side only (avoids SSR window error)
+  const zoomPluginRef = useRef<any>(null);
+  const [zoomReady, setZoomReady] = useState(false);
   useEffect(() => {
     import("chartjs-plugin-zoom").then((mod) => {
       ChartJS.register(mod.default);
+      zoomPluginRef.current = mod.default;
+      setZoomReady(true);
     });
   }, []);
 
@@ -879,7 +883,8 @@ export default function WordFrequencyTool() {
                   <div className="chart-container-tall" style={isMobile ? { width: `${Math.max(600, arcData.length * 28)}px`, minWidth: "100%" } : {}} onDoubleClick={() => arcChartRef.current?.resetZoom()}>
                     <Line
                       ref={arcChartRef}
-                      key={activeTabId}
+                      key={`${activeTabId}-${zoomReady}`}
+                      plugins={zoomPluginRef.current ? [zoomPluginRef.current] : []}
                       data={{
                         labels: arcData.map((d) => d.name),
                         datasets: [
