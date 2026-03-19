@@ -17,6 +17,7 @@ import { Line } from "react-chartjs-2";
 import type { Volume, ScripturePanelState } from "@/lib/types";
 import { VOLUME_COLORS, getContrastText, compactVolumeName } from "@/lib/constants";
 import ScripturePanel from "./ScripturePanel";
+import ChartZoomControls from "./ChartZoomControls";
 
 ChartJS.register(
   CategoryScale,
@@ -80,6 +81,14 @@ interface TermResult {
 
 export default function NarrativeArcTool() {
   const isMobile = useIsMobile();
+
+  // Register zoom plugin client-side only
+  useEffect(() => {
+    import("chartjs-plugin-zoom").then((mod) => {
+      ChartJS.register(mod.default);
+    });
+  }, []);
+
   const [volumes, setVolumes] = useState<Volume[]>([]);
   const [selectedVolumeIds, setSelectedVolumeIds] = useState<Set<number>>(new Set());
   const [terms, setTerms] = useState<string[]>([]);
@@ -451,7 +460,11 @@ export default function NarrativeArcTool() {
                 const allLabels = firstTermData.map((d) => d.label);
 
                 return (
-              <div style={{ position: "relative", height: isMobile ? "350px" : "540px", marginTop: "8px" }}>
+              <>
+              <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "8px", marginBottom: "4px" }}>
+                <ChartZoomControls chartRef={thisChartRef} color={color} isMobile={isMobile} />
+              </div>
+              <div style={{ position: "relative", height: isMobile ? "350px" : "540px", overflow: "hidden" }}>
                 <Line
                   ref={thisChartRef}
                   plugins={[legendMarginPlugin]}
@@ -541,6 +554,11 @@ export default function NarrativeArcTool() {
                         font: { weight: 700, size: 10 },
                         formatter: (value: number) => value.toLocaleString(),
                       },
+                      zoom: {
+                        zoom: { wheel: { enabled: false }, pinch: { enabled: false }, drag: { enabled: false } },
+                        pan: { enabled: true, mode: "x" as const },
+                        limits: { x: { minRange: 3 } },
+                      },
                     },
                     layout: { padding: { top: 20 } },
                     scales: {
@@ -569,7 +587,7 @@ export default function NarrativeArcTool() {
                   }}
                 />
               </div>
-                );
+              </>);
               })()}
 
               {/* Summary table for this volume */}
