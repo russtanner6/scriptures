@@ -25,7 +25,6 @@ const NAV_ITEMS: NavItem[] = [
   { href: "/parallel", label: "Parallel Passages", svgIcon: "/parallel.svg", section: "Discover" },
   { href: "/chiasmus", label: "Chiasmus Detector", svgIcon: "/chiasmus.svg" },
   { href: "/topics", label: "Topic Map", svgIcon: "/topics.svg" },
-  { href: "/timeline", label: "Timeline", svgIcon: "/timeline.svg" },
 
   // Read
   { href: "/read", label: "Read Scriptures", svgIcon: "/scriptures.svg", section: "Read" },

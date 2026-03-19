@@ -99,13 +99,6 @@ const DISCOVER_TOOLS = [
     description: "Pick any chapter and discover thematically similar chapters across all of scripture.",
     color: "#06b6d4",
   },
-  {
-    href: "/timeline",
-    svgIcon: "/timeline.svg",
-    name: "Timeline",
-    description: "See when scripture events happened and how books overlap across thousands of years.",
-    color: "#F5A623",
-  },
 ];
 
 export default function HomePage() {
