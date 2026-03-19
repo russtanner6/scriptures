@@ -14,7 +14,7 @@ import {
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Line } from "react-chartjs-2";
 import type { Volume, WordFrequencyResponse } from "@/lib/types";
-import { VOLUME_COLORS, getContrastText } from "@/lib/constants";
+import { VOLUME_COLORS, getContrastText, compactVolumeName } from "@/lib/constants";
 import StatCard from "./StatCard";
 import DashboardCard from "./DashboardCard";
 import HorizontalBarList from "./HorizontalBarList";
@@ -401,7 +401,7 @@ export default function WordFrequencyTool() {
                   letterSpacing: "0.01em",
                 }}
               >
-                {v.name}
+                {compactVolumeName(v.name, isMobile)}
               </button>
             );
           });
@@ -698,7 +698,7 @@ export default function WordFrequencyTool() {
             {volumeAgg.map((v) => (
               <StatCard
                 key={v.id}
-                label={v.name}
+                label={compactVolumeName(v.name, isMobile)}
                 value={v.count}
                 subtitle={
                   results.totalCount > 0

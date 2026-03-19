@@ -15,7 +15,7 @@ import {
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Line } from "react-chartjs-2";
 import type { Volume, ScripturePanelState } from "@/lib/types";
-import { VOLUME_COLORS, getContrastText } from "@/lib/constants";
+import { VOLUME_COLORS, getContrastText, compactVolumeName } from "@/lib/constants";
 import ScripturePanel from "./ScripturePanel";
 
 ChartJS.register(
@@ -338,7 +338,7 @@ export default function NarrativeArcTool() {
                   <span onClick={(e) => { e.preventDefault(); toggleVolume(v.id); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: isActive ? `2px solid ${color}` : "2px solid rgba(255,255,255,0.2)", background: isActive ? color : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
                     {isActive && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke={getContrastText(color)} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
                   </span>
-                  {v.name}
+                  {compactVolumeName(v.name, isMobile)}
                 </label>
               );
             })}
@@ -386,7 +386,7 @@ export default function NarrativeArcTool() {
                 }}
               >
                 <span style={{ width: "8px", height: "8px", borderRadius: "2px", background: volColor, flexShrink: 0 }} />
-                {v.name}
+                {compactVolumeName(v.name, isMobile)}
               </button>
             );
           })}

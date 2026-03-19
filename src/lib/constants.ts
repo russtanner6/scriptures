@@ -14,6 +14,34 @@ export const VOLUME_COLORS_SOFT: Record<string, string> = {
   PoGP: "rgba(245,200,41,0.1)",
 };
 
+// Short names for tight spaces (tabs, pills, chart labels)
+export const VOLUME_SHORT_NAMES: Record<string, string> = {
+  "Old Testament": "Old Testament",
+  "New Testament": "New Testament",
+  "Book of Mormon": "Book of Mormon",
+  "D&C": "D&C",
+  "Pearl of Great Price": "Pearl of Great Price",
+};
+
+// Abbreviated names for very tight spaces (mobile tabs, stat cards)
+export const VOLUME_ABBREV_NAMES: Record<string, string> = {
+  "Old Testament": "OT",
+  "New Testament": "NT",
+  "Book of Mormon": "BoM",
+  "D&C": "D&C",
+  "Pearl of Great Price": "PoGP",
+};
+
+// Get a compact display name — uses abbreviation for Pearl of Great Price
+export function compactVolumeName(name: string, isMobile = false): string {
+  if (isMobile) {
+    return VOLUME_ABBREV_NAMES[name] || name;
+  }
+  // On desktop, only abbreviate Pearl of Great Price
+  if (name === "Pearl of Great Price") return "Pearl of GP";
+  return name;
+}
+
 /**
  * Returns "#fff" or a dark color based on the perceived luminance
  * of the background color. Uses the W3C relative luminance formula.
