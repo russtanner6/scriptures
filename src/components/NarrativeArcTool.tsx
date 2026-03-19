@@ -419,13 +419,8 @@ export default function NarrativeArcTool() {
               key={vol.id}
               id={`arc-vol-${vol.id}`}
               style={{
-                background: "var(--surface)",
-                border: "1px solid var(--border)",
-                borderRadius: "10px",
-                padding: "28px",
+                padding: "28px 0",
                 marginTop: "20px",
-                backdropFilter: "blur(20px)",
-                WebkitBackdropFilter: "blur(20px)",
               }}
             >
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
