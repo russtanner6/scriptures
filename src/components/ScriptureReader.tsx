@@ -8,6 +8,7 @@ import { getVerseUrl } from "@/lib/scripture-urls";
 import ChapterInsights from "./ChapterInsights";
 import VersePopover from "./VersePopover";
 import { markChapterRead, isChapterRead, getReadChaptersForBook, getVolumeProgress, getStreak } from "@/lib/reading-progress";
+import { getAnnotationsForChapter } from "@/lib/annotations";
 
 interface ReaderVerse {
   chapter: number;
@@ -69,6 +70,9 @@ export default function ScriptureReader() {
     chapter: number;
     text: string;
   } | null>(null);
+
+  // Annotations — track which verses in current chapter have notes
+  const [annotatedVerses, setAnnotatedVerses] = useState<Set<number>>(new Set());
 
   // Search term highlight (when arriving from ScripturePanel)
   const highlightWord = searchParams.get("highlight") || null;
@@ -196,6 +200,9 @@ export default function ScriptureReader() {
       setVerses(data.verses || []);
       setSelectedBookName(data.bookName);
       setChapterCount(data.chapterCount);
+      // Load annotations for this chapter
+      const annotations = getAnnotationsForChapter(bookId, chapter);
+      setAnnotatedVerses(new Set(annotations.map((a) => a.verse)));
     } finally {
       setIsLoading(false);
     }
@@ -729,6 +736,20 @@ export default function ScriptureReader() {
                   >
                     {v.verse}
                   </span>
+                  {annotatedVerses.has(v.verse) && (
+                    <span
+                      title="You have a note on this verse"
+                      style={{
+                        fontSize: "0.6rem",
+                        color: volColor,
+                        marginRight: "4px",
+                        verticalAlign: "super",
+                        opacity: 0.7,
+                      }}
+                    >
+                      ✎
+                    </span>
+                  )}
                   <span
                     onClick={() => setActiveVerse({ verse: v.verse, chapter: v.chapter, text: v.text })}
                     style={{
@@ -996,7 +1017,14 @@ export default function ScriptureReader() {
             volColor={volColor}
             lightMode={lightMode}
             isMobile={isMobile}
-            onClose={() => setActiveVerse(null)}
+            onClose={() => {
+              setActiveVerse(null);
+              // Refresh annotation indicators
+              if (selectedBookId && selectedChapter) {
+                const annotations = getAnnotationsForChapter(selectedBookId, selectedChapter);
+                setAnnotatedVerses(new Set(annotations.map((a) => a.verse)));
+              }
+            }}
           />
         )}
       </div>
