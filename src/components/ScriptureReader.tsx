@@ -6,6 +6,7 @@ import type { Volume } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import { getVerseUrl } from "@/lib/scripture-urls";
 import ChapterInsights from "./ChapterInsights";
+import VersePopover from "./VersePopover";
 
 interface ReaderVerse {
   chapter: number;
@@ -47,6 +48,13 @@ export default function ScriptureReader() {
 
   // Reading progress
   const [scrollProgress, setScrollProgress] = useState(0);
+
+  // Verse popover state
+  const [activeVerse, setActiveVerse] = useState<{
+    verse: number;
+    chapter: number;
+    text: string;
+  } | null>(null);
 
   // Search term highlight (when arriving from ScripturePanel)
   const highlightWord = searchParams.get("highlight") || null;
@@ -549,10 +557,12 @@ export default function ScriptureReader() {
                     {v.verse}
                   </span>
                   <span
+                    onClick={() => setActiveVerse({ verse: v.verse, chapter: v.chapter, text: v.text })}
                     style={{
                       fontSize: fontSizes[fontSize].body,
                       color: theme.verseText,
                       transition: "font-size 0.2s ease",
+                      cursor: "pointer",
                     }}
                   >
                     {renderVerseText(v.text)}
@@ -694,6 +704,22 @@ export default function ScriptureReader() {
             Next →
           </button>
         </div>
+
+        {/* Verse Popover */}
+        {activeVerse && selectedBookId && selectedVolume && (
+          <VersePopover
+            bookId={selectedBookId}
+            chapter={activeVerse.chapter}
+            verse={activeVerse.verse}
+            text={activeVerse.text}
+            bookName={selectedBookName || ""}
+            volumeAbbrev={selectedVolume}
+            volColor={volColor}
+            lightMode={lightMode}
+            isMobile={isMobile}
+            onClose={() => setActiveVerse(null)}
+          />
+        )}
       </div>
     );
   }

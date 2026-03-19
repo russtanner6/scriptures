@@ -9,6 +9,7 @@ const NAV_ITEMS = [
   { href: "/heatmap", label: "Theme Heatmap", icon: "🔥" },
   { href: "/wordcloud", label: "Word Cloud", icon: "☁️" },
   { href: "/read", label: "Read Scriptures", icon: "📖" },
+  { href: "/bookmarks", label: "Bookmarks", icon: "★" },
 ];
 
 export default function NavMenu({
