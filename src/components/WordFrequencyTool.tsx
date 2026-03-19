@@ -319,30 +319,27 @@ export default function WordFrequencyTool() {
           >
             {isLoading ? (isMobile ? "..." : "Searching...") : "Go"}
           </button>
-          {/* Help link — next to Analyze button */}
+        </div>
+        {/* Search tips link — below search bar */}
+        <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "8px", marginBottom: "-8px" }}>
           <button
             type="button"
             onClick={() => setShowHelp(!showHelp)}
             style={{
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-              width: "36px",
-              height: "100%",
               background: "none",
               border: "none",
-              borderLeft: "1px solid var(--border)",
               color: showHelp ? "#3b82f6" : "var(--text-muted)",
-              fontSize: "0.82rem",
-              fontWeight: 700,
+              fontSize: "0.75rem",
+              fontWeight: 500,
               fontFamily: "inherit",
               cursor: "pointer",
+              textDecoration: "underline",
+              textUnderlineOffset: "3px",
+              padding: 0,
               transition: "color 0.15s",
-              flexShrink: 0,
             }}
-            title="Search tips"
           >
-            ?
+            Search tips
           </button>
         </div>
 
