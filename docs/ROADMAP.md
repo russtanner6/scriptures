@@ -55,13 +55,31 @@ Built to house the **full LDS canon** (OT, NT, Book of Mormon, D&C, Pearl of Gre
 
 ## Up Next — Immediate Priorities
 
-### 1. Speaker Attribution UI
-**Data is ready** in `data/speakers.json`. Need to build the visual layer:
+### 1. Speaker Attribution — Data Expansion + UI
+**Bible data is ready** in `data/speakers.json` (6,913 entries). Still need BoM, D&C, Pearl of Great Price.
+
+**⚠️ ACCURACY IS CRITICAL.** People will scrutinize this. When in doubt, DO NOT include a speaker attribution — it's far better to leave a verse unattributed than to attribute it incorrectly. Only tag verses where the speaker is clearly identifiable from the text itself (explicit "And God said", "Jesus saith", narrative framing, etc.). Ambiguous passages should remain untagged.
+
+**Data generation approach:**
+- Use scripture text + contextual clues (explicit speech markers, quotation patterns)
+- Cross-reference with published LDS scripture study resources where possible
+- Validate against known passages (e.g., Sermon on the Mount = Jesus, Ten Commandments = God)
+- Run a QA pass: sample 100+ verses per volume, verify accuracy
+- Ship with conservative coverage (high precision) rather than aggressive coverage (high recall)
+
+**UI (reader):**
 - Color-coded verses by speaker type (divine=gold, prophet=blue, apostle=green, angel=silver, narrator=gray, other=default)
 - Speaker name displayed vertically along the left side of verse spans
 - Toggle on/off in reader toolbar (like the resource toggle)
 - API route: `/api/speakers?book=Genesis&chapter=1`
-- Start with Bible books (full coverage), BoM/D&C/PoGP data needed later
+
+### 2. Speaker Frequency Chart (NEW tool idea)
+**A "who's speaking" visualization across volumes/timelines.** Like narrative arc but for speakers instead of words.
+- Show when certain people (Jesus, Moses, Paul, Nephi, Moroni, etc.) are speaking across books/chapters
+- Could be integrated into existing tools (Narrative Arc, Heatmap) as a new mode, or a standalone page
+- Bar chart or timeline showing speaker presence across the entire canon
+- Filter by speaker, compare multiple speakers, see where their words cluster
+- Great for study questions like "Where does Jesus speak in the Old Testament?" or "How much of D&C is direct revelation vs. narrative?"
 
 ### 2. ParallelPassagesTool Search Panel Update
 Last tool not updated to the new search panel pattern. Needs dark theme CSS variables and consistent layout.
@@ -163,10 +181,11 @@ User vision: treat each verse as its own interactive module supporting:
 ---
 
 ## Priority Order
-1. **Speaker Attribution UI** — data ready, build the visual layer
-2. **ParallelPassagesTool update** — last tool needing search panel refresh
-3. **Mobile UX refinement** — clean by default
-4. **Favorite verses** (heart icon, localStorage first)
+1. **Speaker Attribution** — expand data to BoM/D&C/PoGP (accuracy-first), then build UI
+2. **Speaker Frequency Chart** — "who's speaking" visualization across volumes
+3. **ParallelPassagesTool update** — last tool needing search panel refresh
+4. **Mobile UX refinement** — clean by default
+5. **Favorite verses** (heart icon, localStorage first)
 5. **Modern Language Toggle** (need data source)
 6. **Firebase Auth + Saved Searches**
 7. **Reading Plans**
