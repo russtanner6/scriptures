@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import type { SpeakerAttribution, SpeakerType } from "@/lib/types";
 
 interface ChapterStats {
   wordCount: number;
@@ -21,7 +22,18 @@ interface ChapterInsightsProps {
   lightMode: boolean;
   isMobile: boolean;
   onScrollToVerse?: (verse: number) => void;
+  onExploreWord?: (word: string) => void;
+  speakers?: SpeakerAttribution[];
 }
+
+const SPEAKER_COLORS_LIGHT: Record<SpeakerType, string> = {
+  divine: "#9A6B00", prophet: "#1D4ED8", apostle: "#047857",
+  angel: "#6D28D9", narrator: "#374151", other: "#4B5563",
+};
+const SPEAKER_COLORS_DARK: Record<SpeakerType, string> = {
+  divine: "#F5A623", prophet: "#3B82F6", apostle: "#10B981",
+  angel: "#A78BFA", narrator: "#6B7280", other: "#9CA3AF",
+};
 
 export default function ChapterInsights({
   bookId,
@@ -32,6 +44,8 @@ export default function ChapterInsights({
   lightMode,
   isMobile,
   onScrollToVerse,
+  onExploreWord,
+  speakers = [],
 }: ChapterInsightsProps) {
   const [stats, setStats] = useState<ChapterStats | null>(null);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -78,7 +92,7 @@ export default function ChapterInsights({
     <div
       style={{
         marginBottom: "24px",
-        borderRadius: "10px",
+        borderRadius: "8px",
         border: `1px solid ${theme.border}`,
         overflow: "hidden",
         transition: "all 0.3s ease",
@@ -103,9 +117,8 @@ export default function ChapterInsights({
         <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "10px" : "16px", flexWrap: "wrap" }}>
           {/* Stats pills */}
           {[
-            { label: "Words", value: stats.wordCount.toLocaleString() },
             { label: "Verses", value: stats.verseCount },
-            { label: "Unique", value: stats.uniqueWords },
+            { label: "Words", value: stats.wordCount.toLocaleString() },
           ].map((pill) => (
             <div
               key={pill.label}
@@ -192,28 +205,101 @@ export default function ChapterInsights({
               </div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
                 {stats.keyThemes.map((t) => (
-                  <a
+                  <button
                     key={t.word}
-                    href={`/heatmap?word=${encodeURIComponent(t.word)}`}
+                    onClick={() => onExploreWord ? onExploreWord(t.word) : window.location.href = `/heatmap?word=${encodeURIComponent(t.word)}`}
                     style={{
                       display: "inline-block",
                       padding: "4px 12px",
-                      borderRadius: "20px",
+                      borderRadius: "6px",
                       background: `${volColor}18`,
                       border: `1px solid ${volColor}30`,
                       color: volColor,
                       fontSize: "0.78rem",
                       fontWeight: 600,
-                      textDecoration: "none",
+                      cursor: "pointer",
+                      fontFamily: "inherit",
                       transition: "all 0.15s",
                     }}
                   >
                     {t.word}
-                  </a>
+                  </button>
                 ))}
               </div>
             </div>
           )}
+
+          {/* Speakers in this chapter */}
+          {speakers.length > 0 && (() => {
+            const speakerColors = lightMode ? SPEAKER_COLORS_LIGHT : SPEAKER_COLORS_DARK;
+            const uniqueSpeakers = Array.from(
+              new Map(speakers.map((s) => [s.speaker, s])).values()
+            );
+            // Count verses per speaker
+            const speakerVerseCounts = new Map<string, number>();
+            speakers.forEach((s) => {
+              const count = s.verseEnd - s.verseStart + 1;
+              speakerVerseCounts.set(s.speaker, (speakerVerseCounts.get(s.speaker) || 0) + count);
+            });
+            return (
+              <div>
+                <div
+                  style={{
+                    fontSize: "0.65rem",
+                    fontWeight: 600,
+                    textTransform: "uppercase",
+                    letterSpacing: "0.1em",
+                    color: theme.textMuted,
+                    marginBottom: "8px",
+                  }}
+                >
+                  Speakers
+                </div>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
+                  {uniqueSpeakers.map((s) => {
+                    const color = speakerColors[s.speakerType];
+                    const verseCount = speakerVerseCounts.get(s.speaker) || 0;
+                    return (
+                      <div
+                        key={s.speaker}
+                        style={{
+                          display: "inline-flex",
+                          alignItems: "center",
+                          gap: "4px",
+                          padding: "3px 9px",
+                          borderRadius: "4px",
+                          background: `${color}18`,
+                          border: `1px solid ${color}30`,
+                        }}
+                      >
+                        <span style={{
+                          width: "5px",
+                          height: "5px",
+                          borderRadius: "50%",
+                          background: color,
+                          flexShrink: 0,
+                        }} />
+                        <span style={{
+                          fontSize: "0.72rem",
+                          fontWeight: 600,
+                          color: color,
+                        }}>
+                          {s.speaker}
+                        </span>
+                        <span style={{
+                          fontSize: "0.6rem",
+                          color: theme.textMuted,
+                          fontWeight: 500,
+                        }}>
+                          {verseCount}v
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })()}
 
           {/* Mini Word Cloud */}
           {stats.topWords.length > 0 && (
@@ -235,9 +321,9 @@ export default function ChapterInsights({
                   const size = 0.7 + w.weight * (isMobile ? 0.8 : 1.1);
                   const opacity = 0.45 + w.weight * 0.55;
                   return (
-                    <a
+                    <button
                       key={w.word}
-                      href={`/heatmap?word=${encodeURIComponent(w.word)}`}
+                      onClick={() => onExploreWord ? onExploreWord(w.word) : window.location.href = `/heatmap?word=${encodeURIComponent(w.word)}`}
                       style={{
                         display: "inline-block",
                         fontSize: `${size}rem`,
@@ -245,13 +331,16 @@ export default function ChapterInsights({
                         color: volColor,
                         opacity,
                         padding: "1px 5px",
-                        textDecoration: "none",
+                        background: "none",
+                        border: "none",
+                        cursor: "pointer",
+                        fontFamily: "inherit",
                         transition: "opacity 0.15s",
                       }}
                       title={`${w.word}: ${w.count}×`}
                     >
                       {w.word}
-                    </a>
+                    </button>
                   );
                 })}
               </div>

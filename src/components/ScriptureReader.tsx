@@ -9,6 +9,7 @@ import ChapterInsights from "./ChapterInsights";
 import VersePopover from "./VersePopover";
 import ResourceMarker, { ResourceOverflowBadge, getResourceTypeColor } from "./ResourceMarker";
 import ResourcePanel from "./ResourcePanel";
+import WordExplorerPanel from "./WordExplorerPanel";
 import NavMenu from "./NavMenu";
 import { markChapterRead, isChapterRead, getReadChaptersForBook, getVolumeProgress } from "@/lib/reading-progress";
 import { getAnnotationsForChapter } from "@/lib/annotations";
@@ -40,6 +41,7 @@ export default function ScriptureReader() {
   const [lightMode, setLightMode] = useState(false);
   const [fontSize, setFontSize] = useState(1); // 0=small, 1=medium, 2=large
   const [menuOpen, setMenuOpen] = useState(false);
+  const [exploredWord, setExploredWord] = useState<string | null>(null);
 
   // Navigation state
   const [selectedVolume, setSelectedVolume] = useState<string | null>(null);
@@ -790,6 +792,8 @@ export default function ScriptureReader() {
                 const el = document.getElementById(`verse-${verse}`);
                 if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
               }}
+              onExploreWord={(word) => setExploredWord(word)}
+              speakers={chapterSpeakers}
             />
           )}
 
@@ -1363,6 +1367,25 @@ export default function ScriptureReader() {
           >
             ✓ Chapter complete!
           </div>
+        )}
+
+        {/* Word Explorer Panel */}
+        {exploredWord && selectedBookId && selectedVolume && (
+          <WordExplorerPanel
+            word={exploredWord}
+            bookId={selectedBookId}
+            bookName={selectedBookName || ""}
+            chapter={selectedChapter!}
+            chapterCount={chapterCount}
+            volumeAbbrev={selectedVolume}
+            volColor={volColor}
+            lightMode={lightMode}
+            isMobile={isMobile}
+            onClose={() => setExploredWord(null)}
+            onNavigateToChapter={(ch) => {
+              goToChapter(selectedVolume, selectedBookId, selectedBookName || "", ch, chapterCount);
+            }}
+          />
         )}
 
         {/* Resource Panel */}
