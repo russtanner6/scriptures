@@ -481,15 +481,17 @@ export default function NarrativeArcTool() {
                     labels: allLabels,
                     datasets: volResults.map((r) => {
                       const data = r.volumeData.get(vol.id) || [];
+                      // Single term → use volume color; multiple terms → use term color for distinction
+                      const lineColor = volResults.length === 1 ? color : r.color;
                       return {
                         label: r.term,
                         data: data.map((d) => d.count),
                         fill: true,
-                        backgroundColor: `${r.color}12`,
-                        borderColor: r.color,
+                        backgroundColor: `${lineColor}14`,
+                        borderColor: lineColor,
                         borderWidth: isSingleBook ? 2 : 2.5,
-                        pointBackgroundColor: r.color,
-                        pointBorderColor: r.color,
+                        pointBackgroundColor: lineColor,
+                        pointBorderColor: lineColor,
                         pointBorderWidth: 1,
                         pointRadius: isSingleBook ? 2 : 4,
                         pointHoverRadius: isSingleBook ? 5 : 7,
@@ -564,8 +566,8 @@ export default function NarrativeArcTool() {
                         formatter: (value: number) => value.toLocaleString(),
                       },
                       zoom: isMobile ? { zoom: { wheel: { enabled: false }, pinch: { enabled: false }, drag: { enabled: false } }, pan: { enabled: false } } : {
-                        zoom: { wheel: { enabled: zoomActiveVols.has(vol.id), speed: 0.05 }, pinch: { enabled: zoomActiveVols.has(vol.id) }, drag: { enabled: false }, mode: "x" as const },
-                        pan: { enabled: zoomActiveVols.has(vol.id), mode: "x" as const },
+                        zoom: { wheel: { enabled: false, speed: 0.05 }, pinch: { enabled: false }, drag: { enabled: false }, mode: "x" as const },
+                        pan: { enabled: false, mode: "x" as const },
                         limits: { x: { minRange: 3 } },
                       },
                     },

@@ -951,13 +951,13 @@ export default function WordFrequencyTool() {
                               } as any,
                           zoom: isMobile ? { zoom: { wheel: { enabled: false }, pinch: { enabled: false }, drag: { enabled: false } }, pan: { enabled: false } } : {
                             zoom: {
-                              wheel: { enabled: arcZoomActive, speed: 0.05 },
-                              pinch: { enabled: arcZoomActive },
+                              wheel: { enabled: false, speed: 0.05 },
+                              pinch: { enabled: false },
                               drag: { enabled: false },
                               mode: "x" as const,
                             },
                             pan: {
-                              enabled: arcZoomActive,
+                              enabled: false,
                               mode: "x" as const,
                             },
                             limits: {

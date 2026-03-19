@@ -638,8 +638,8 @@ export default function HeatmapTool() {
                                 formatter: (value: number) => value.toLocaleString(),
                               },
                               zoom: isMobile ? { zoom: { wheel: { enabled: false }, pinch: { enabled: false }, drag: { enabled: false } }, pan: { enabled: false } } : {
-                                zoom: { wheel: { enabled: zoomActiveAbbrevs.has(abbrev), speed: 0.05 }, pinch: { enabled: zoomActiveAbbrevs.has(abbrev) }, drag: { enabled: false }, mode: "x" as const },
-                                pan: { enabled: zoomActiveAbbrevs.has(abbrev), mode: "x" as const },
+                                zoom: { wheel: { enabled: false, speed: 0.05 }, pinch: { enabled: false }, drag: { enabled: false }, mode: "x" as const },
+                                pan: { enabled: false, mode: "x" as const },
                                 limits: { x: { minRange: 3 } },
                               },
                             },

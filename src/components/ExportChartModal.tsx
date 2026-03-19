@@ -238,18 +238,32 @@ export function ZoomControls({ active, onToggle, chartRef, compact }: {
     display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",
-    padding: "4px 8px",
+    padding: compact ? "5px 7px" : "4px 10px",
     borderRadius: "6px",
     border: "1px solid rgba(255,255,255,0.1)",
     background: "transparent",
     color: "var(--text-secondary, #9ca3af)",
-    fontSize: "0.78rem",
-    fontWeight: 700,
+    fontSize: "0.72rem",
+    fontWeight: 600,
+    textTransform: "uppercase" as const,
+    letterSpacing: "0.08em",
     fontFamily: "inherit",
     cursor: "pointer",
     transition: "all 0.15s",
     lineHeight: 1,
-    minWidth: "26px",
+  };
+
+  // Toggle zoom/pan on the chart instance directly (avoids options change → zoom reset)
+  const handleToggle = () => {
+    const chart = chartRef.current;
+    if (chart?.options?.plugins?.zoom) {
+      const willBeActive = !active;
+      chart.options.plugins.zoom.zoom.wheel.enabled = willBeActive;
+      chart.options.plugins.zoom.zoom.pinch.enabled = willBeActive;
+      chart.options.plugins.zoom.pan.enabled = willBeActive;
+      chart.update("none");
+    }
+    onToggle();
   };
 
   return (
@@ -277,7 +291,7 @@ export function ZoomControls({ active, onToggle, chartRef, compact }: {
             type="button"
             title="Fit — reset to show all data"
             onClick={() => chartRef.current?.resetZoom()}
-            style={{ ...btnBase, fontSize: "0.68rem", fontWeight: 600, letterSpacing: "0.04em" }}
+            style={btnBase}
           >
             Fit
           </button>
@@ -287,7 +301,7 @@ export function ZoomControls({ active, onToggle, chartRef, compact }: {
       {/* Zoom toggle */}
       <button
         type="button"
-        onClick={onToggle}
+        onClick={handleToggle}
         title={active ? "Disable wheel/pinch zoom" : "Enable zoom — scroll to zoom, drag to pan"}
         style={{
           display: "inline-flex",
