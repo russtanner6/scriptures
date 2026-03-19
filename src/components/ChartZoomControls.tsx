@@ -1,11 +1,12 @@
 "use client";
 
-import { useRef, useState, useCallback, useEffect } from "react";
+import { useState, useCallback } from "react";
 
 interface ChartZoomControlsProps {
   chartRef: React.RefObject<any>;
   color?: string;
   isMobile?: boolean;
+  onZoomChange?: (level: number, scale: number) => void;
 }
 
 const ZOOM_LEVELS = [
@@ -14,7 +15,7 @@ const ZOOM_LEVELS = [
   { label: "4x", scale: 4 },
 ];
 
-export default function ChartZoomControls({ chartRef, color = "#3B82F6", isMobile = false }: ChartZoomControlsProps) {
+export default function ChartZoomControls({ chartRef, color = "#3B82F6", isMobile = false, onZoomChange }: ChartZoomControlsProps) {
   const [currentLevel, setCurrentLevel] = useState(0);
 
   const applyZoom = useCallback((levelIndex: number) => {
@@ -23,17 +24,17 @@ export default function ChartZoomControls({ chartRef, color = "#3B82F6", isMobil
 
     const targetScale = ZOOM_LEVELS[levelIndex].scale;
     setCurrentLevel(levelIndex);
+    onZoomChange?.(levelIndex, targetScale);
 
     if (targetScale === 1) {
       chart.resetZoom();
     } else {
-      // Reset first, then zoom to target
       chart.resetZoom();
       requestAnimationFrame(() => {
         chart.zoom(targetScale);
       });
     }
-  }, [chartRef]);
+  }, [chartRef, onZoomChange]);
 
   const zoomIn = useCallback(() => {
     const next = Math.min(currentLevel + 1, ZOOM_LEVELS.length - 1);
@@ -44,6 +45,24 @@ export default function ChartZoomControls({ chartRef, color = "#3B82F6", isMobil
     const next = Math.max(currentLevel - 1, 0);
     applyZoom(next);
   }, [currentLevel, applyZoom]);
+
+  const btnBase = (disabled: boolean): React.CSSProperties => ({
+    width: isMobile ? "28px" : "30px",
+    height: isMobile ? "28px" : "30px",
+    borderRadius: "6px",
+    border: "none",
+    background: disabled ? "transparent" : "rgba(255,255,255,0.06)",
+    color: disabled ? "var(--text-muted)" : "var(--text-secondary)",
+    fontSize: "1rem",
+    fontWeight: 700,
+    cursor: disabled ? "default" : "pointer",
+    fontFamily: "inherit",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    opacity: disabled ? 0.4 : 1,
+    transition: "all 0.15s",
+  });
 
   return (
     <div
@@ -57,32 +76,9 @@ export default function ChartZoomControls({ chartRef, color = "#3B82F6", isMobil
         padding: "3px",
       }}
     >
-      <button
-        onClick={zoomOut}
-        disabled={currentLevel === 0}
-        style={{
-          width: isMobile ? "28px" : "30px",
-          height: isMobile ? "28px" : "30px",
-          borderRadius: "6px",
-          border: "none",
-          background: currentLevel === 0 ? "transparent" : "rgba(255,255,255,0.06)",
-          color: currentLevel === 0 ? "var(--text-muted)" : "var(--text-secondary)",
-          fontSize: "1rem",
-          fontWeight: 700,
-          cursor: currentLevel === 0 ? "default" : "pointer",
-          fontFamily: "inherit",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          opacity: currentLevel === 0 ? 0.4 : 1,
-          transition: "all 0.15s",
-        }}
-        title="Zoom out"
-      >
+      <button onClick={zoomOut} disabled={currentLevel === 0} style={btnBase(currentLevel === 0)} title="Zoom out">
         −
       </button>
-
-      {/* Zoom level indicator */}
       <span
         style={{
           fontSize: "0.68rem",
@@ -96,29 +92,7 @@ export default function ChartZoomControls({ chartRef, color = "#3B82F6", isMobil
       >
         {ZOOM_LEVELS[currentLevel].label}
       </span>
-
-      <button
-        onClick={zoomIn}
-        disabled={currentLevel === ZOOM_LEVELS.length - 1}
-        style={{
-          width: isMobile ? "28px" : "30px",
-          height: isMobile ? "28px" : "30px",
-          borderRadius: "6px",
-          border: "none",
-          background: currentLevel === ZOOM_LEVELS.length - 1 ? "transparent" : "rgba(255,255,255,0.06)",
-          color: currentLevel === ZOOM_LEVELS.length - 1 ? "var(--text-muted)" : "var(--text-secondary)",
-          fontSize: "1rem",
-          fontWeight: 700,
-          cursor: currentLevel === ZOOM_LEVELS.length - 1 ? "default" : "pointer",
-          fontFamily: "inherit",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          opacity: currentLevel === ZOOM_LEVELS.length - 1 ? 0.4 : 1,
-          transition: "all 0.15s",
-        }}
-        title="Zoom in"
-      >
+      <button onClick={zoomIn} disabled={currentLevel === ZOOM_LEVELS.length - 1} style={btnBase(currentLevel === ZOOM_LEVELS.length - 1)} title="Zoom in">
         +
       </button>
     </div>

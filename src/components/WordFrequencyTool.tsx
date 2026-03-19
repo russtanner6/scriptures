@@ -86,6 +86,7 @@ export default function WordFrequencyTool() {
   const [breakdownTab, setBreakdownTab] = useState<number | null>(null);
   const [scripturePanel, setScripturePanel] = useState<ScripturePanelState | null>(null);
   const arcChartRef = useRef<any>(null);
+  const [arcZoomLevel, setArcZoomLevel] = useState(0);
   // Chapter-level data for single-book volumes (e.g., D&C) — keyed by volume id
   const [chapterData, setChapterData] = useState<Map<number, { label: string; count: number; bookId: number; chapter: number }[]>>(new Map());
   const [visiblePanels, setVisiblePanels] = useState<Set<string>>(
@@ -1120,7 +1121,7 @@ export default function WordFrequencyTool() {
                   )}
 
                   <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "8px" }}>
-                    <ChartZoomControls chartRef={arcChartRef} color={color} isMobile={isMobile} />
+                    <ChartZoomControls chartRef={arcChartRef} color={color} isMobile={isMobile} onZoomChange={(level) => setArcZoomLevel(level)} />
                   </div>
                   <div className="chart-container-tall" style={{ overflow: "hidden" }}>
                     <Line
@@ -1147,12 +1148,12 @@ export default function WordFrequencyTool() {
                                 : 1
                             ),
                             pointRadius: isSingleBook
-                              ? 2
+                              ? (arcZoomLevel >= 2 ? 4 : arcZoomLevel >= 1 ? 3 : 2)
                               : arcData.map((d) =>
                                   d.count === maxCount && d.count > 0
-                                    ? 7
+                                    ? (arcZoomLevel >= 1 ? 9 : 7)
                                     : d.count > 0
-                                      ? 3.5
+                                      ? (arcZoomLevel >= 1 ? 5 : 3.5)
                                       : 2
                                 ),
                             pointHoverRadius: isSingleBook ? 5 : 7,
@@ -1175,7 +1176,7 @@ export default function WordFrequencyTool() {
                                 ` ${ctx.raw} occurrences`,
                             },
                           },
-                          datalabels: isSingleBook
+                          datalabels: (isSingleBook && arcZoomLevel < 2)
                             ? { display: false }
                             : {
                                 display: (ctx: any) => (ctx.dataset.data as number[])[ctx.dataIndex] > 0,
@@ -1183,7 +1184,7 @@ export default function WordFrequencyTool() {
                                 align: "top",
                                 offset: 4,
                                 color: "#fafafa",
-                                font: { weight: 700, size: 11 },
+                                font: { weight: 700, size: arcZoomLevel >= 2 ? 9 : 11 },
                                 formatter: (value: number) => value.toLocaleString(),
                               } as any,
                           zoom: {
@@ -1237,11 +1238,13 @@ export default function WordFrequencyTool() {
                               callback: isSingleBook
                                 ? function(this: unknown, _val: unknown, index: number) {
                                     const sectionNum = index + 1;
-                                    if (sectionNum === 1 || sectionNum % 10 === 0) return sectionNum.toString();
+                                    // Show more labels at higher zoom
+                                    const interval = arcZoomLevel >= 2 ? 1 : arcZoomLevel >= 1 ? 5 : 10;
+                                    if (sectionNum === 1 || sectionNum % interval === 0) return `Sec ${sectionNum}`;
                                     return "";
                                   }
                                 : undefined,
-                              autoSkip: false,
+                              autoSkip: arcZoomLevel > 0 ? false : true,
                             },
                           },
                         },
