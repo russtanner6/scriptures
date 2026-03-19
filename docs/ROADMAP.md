@@ -1,111 +1,100 @@
 # Scripture Explorer — Product Roadmap
 
 ## Vision
-Scripture Explorer is a scripture research tool first, but could evolve into a full-blown scripture study platform with user accounts, full scripture reading, and premium features.
+Scripture Explorer is a scripture research tool first, but evolving into a full scripture study platform with user accounts, personalized reading, and premium features.
 
 ## Audience
 Built to house the **full LDS canon** (OT, NT, Book of Mormon, D&C, Pearl of Great Price), but **not all users will be LDS**. The tool should be welcoming and useful to anyone studying the Bible.
 
-### Volume Visibility Settings
-- Users should be able to **permanently hide volumes** they don't want to see (e.g., a non-LDS user hides BoM, D&C, PoGP and only sees OT + NT).
-- This is a **global user preference**, not a per-search toggle. When a volume is hidden:
-  - It doesn't appear in volume selectors on any page
-  - It's excluded from all searches, charts, heatmaps, and results
-  - It doesn't show in the scripture reader (future)
-- Before user accounts exist: store preference in `localStorage`
-- After user accounts: store in Firebase user profile
+### Volume Visibility Settings (Future)
+- Users should be able to **permanently hide volumes** they don't want to see
+- Global user preference, not per-search. When hidden: excluded from all selectors, searches, charts, reader
+- Before user accounts: `localStorage`. After: Firebase user profile
 - Default: all volumes visible
-- Settings accessible from a gear icon or settings page
 
-## Current State (Live)
-- **Word Frequency Search** (`/`) — single word/phrase search with bar charts, narrative arc, data table, stat cards
-- **Narrative Arc Explorer** (`/narrative-arc`) — multi-term comparison across volumes, stacked charts, D&C section-level, export, deep linking
-- **Domain:** scripturexplorer.com (Vercel)
+**Domain:** scripturexplorer.com (hosted on Vercel)
 
 ---
 
-## Tier 1 — Immediate (Next Session)
+## Completed Features
 
-### ✅ DONE: Export on Narrative Arc + Heatmap
-- ExportButton + ExportChartModal on narrative arc charts
-- ExportButton + ExportHtmlModal on heatmap modules
-- Still needed: ExportButton on word frequency page chart modules
+### Analysis Tools
+- **Word Frequency Search** (`/search`) — single word/phrase search with bar charts, narrative arc, data table, stat cards
+- **Narrative Arc Explorer** (`/narrative-arc`) — multi-term comparison (up to 6), all 5 volumes, deep linking
+- **Theme Heatmap** (`/heatmap`) — single-word heatmap across all volumes with heatmap/arc toggle per module
+- **Word Cloud** (`/wordcloud`) — interactive tag cloud per book/chapter/volume
+- **Sentiment Arc** (`/sentiment`) — emotional tone across books, 7 categories
+- **Parallel Passages** (`/parallel`) — side-by-side comparison with word-level diff
+- **Chiasmus Detector** (`/chiasmus`) — ABBA pattern detection with visual display
+- **Topic Map** (`/topics`) — chapter similarity finder via cosine similarity
 
-### ✅ DONE: Heatmap Page with Arc Toggle
-- Theme Heatmap page with per-volume modules
-- Heatmap/Narrative Arc view toggle per module
-- "Compare multiple keywords →" link to narrative arc page with term prepopulated
+### Reading Experience
+- **Scripture Reader** (`/read`) — full reading with light/dark mode, font size, keyboard nav, reading progress, Chapter Insights, verse popover, annotations
+- **Bookmarks** (`/bookmarks`) — saved verse bookmarks grouped by volume
+- **Resource Layer** — inline video/article/PDF markers on verses, slide-in panel with YouTube embeds, toggle on/off
+- **Reading Streaks** — chapter completion tracking with streak counter
 
-### ✅ DONE: Scripture Panel (Right-Side Slider)
-This is the foundation that connects everything. When a user clicks any data point:
-1. A **right-side slider panel** slides in from the right edge of the screen
-2. Shows all **matching verses** from that book/chapter with the search term **highlighted**
-3. Panel has a "Read in context →" link that deep-links to the full scripture reader page
-4. Panel can be dismissed by clicking outside or pressing X
+### Infrastructure
+- **Scripture Panel** — right-side slider showing matching verses when clicking any chart data point
+- **Export** — PNG/JPG/PDF export on all chart modules
+- **Deep Linking** — URL params on all tools for sharing
+- **Landing Page** (`/`) — hero, 6 core + 4 discovery tool cards, random verse, recent searches
+- **Nav Menu** — slide-in from right, organized by Analyze/Discover/Read
+- **Footer** — site-wide with nav links and resources
+- **Tree Logo** — centered white tree SVG in header
 
-**What triggers the panel:**
-- Clicking a **narrative arc data point** → shows verses from that book (or section for D&C)
-- Clicking a **heatmap cell** → shows verses from that specific chapter
-- Clicking a **bar chart row** icon → already opens verse modal (refactor to use the panel instead)
-- All modules should have a subtle note: "Click any point to read verses"
-
-**Implementation plan:**
-1. Create `ScripturePanel.tsx` — slide-in panel component
-   - Takes: bookId, chapter (optional), searchWord, onClose
-   - Fetches matching verses via `/api/verses`
-   - Highlights search term in verse text using `<mark>` tags
-   - Shows book name, chapter:verse references
-   - "Read in context →" link (points to future `/read/...` page)
-   - Responsive: full-width overlay on mobile, right-side panel on desktop
-2. Add panel state to each page (which book/chapter is open)
-3. Wire click handlers:
-   - Narrative arc: Chart.js `onClick` event → get clicked point's book/section
-   - Heatmap: cell `onClick` → already has bookId + chapter
-   - Bar charts: refactor existing verse modal to use ScripturePanel
-4. Add "Click any point to read verses" hint text to module descriptions
-
-### ✅ DONE: Full Scripture Reader (`/read`)
-- After the panel works, build the full reader page
-- URL structure: `/read/ot/genesis/1`, `/read/dc/76`, etc.
-- Clean reading layout, chapter navigation, search term highlighting
-- The panel's "Read in context →" links point here
-
-### ✅ DONE: Word Cloud (`/wordcloud`)
-- Interactive tag cloud visualization per book/chapter
-- Volume → Book → optional Chapter selection
-- Word size proportional to frequency, volume-colored
-- Click any word to search it across all volumes
-- Adjustable word count (20–120), stopword filtering
-- Deep linking (`?bookId=X&chapter=Y`)
-- Hover tooltips with occurrence counts
+### Data
+- **Speaker Attribution Data** — `data/speakers.json` from Clear-Bible dataset (6,913 entries, full Bible, all 66 books)
+- **Resource Seed Data** — `data/resources.json` (6 entries: Genesis 1 + Matthew 5)
+- **Parallel Passages** — `data/parallel-passages.json`
 
 ---
 
-## Tier 2 — Near-Term Features
+## Up Next — Immediate Priorities
 
-### Theme Heatmap (`/heatmap`)
-- Pick a theme/word → see a heatmap grid: rows = books, columns = chapters
-- Color intensity = frequency
-- Like a GitHub contribution chart for scripture themes
-- Clicking a cell opens the verses
-- Could be stunning visually with the warm volume color palette
-- **Implementation:** Query word frequency by chapter for all books. Render as CSS grid with color-scaled cells.
+### 1. Speaker Attribution UI
+**Data is ready** in `data/speakers.json`. Need to build the visual layer:
+- Color-coded verses by speaker type (divine=gold, prophet=blue, apostle=green, angel=silver, narrator=gray, other=default)
+- Speaker name displayed vertically along the left side of verse spans
+- Toggle on/off in reader toolbar (like the resource toggle)
+- API route: `/api/speakers?book=Genesis&chapter=1`
+- Start with Bible books (full coverage), BoM/D&C/PoGP data needed later
 
-### Full Scripture Reader (`/read`)
-- Browse all scriptures: Volume → Book → Chapter → Verses
-- Clean, readable layout (like a digital scripture book)
-- Search term highlighting when arriving from a search
-- **Right-side slider panel** instead of full-page modal when clicking data points elsewhere on the site
-  - Shows relevant verses with context
-  - "Go deeper" link takes you to the full reader page at that location
-- This replaces the current verse modal approach with something more integrated
-- **Implementation:** New page with URL routing (`/read/bom/alma/32`), verse rendering component, highlight support
+### 2. ParallelPassagesTool Search Panel Update
+Last tool not updated to the new search panel pattern. Needs dark theme CSS variables and consistent layout.
+
+### 3. Mobile UX Refinement
+- Test all features at 375px minimum
+- "Clean by default, power users can dig in" philosophy
+- Resource layer mobile layout
+- Speaker layer mobile layout
+
+### 4. Visual QA Pass
+- Verify all pages at desktop + mobile widths
+- Check logo, hamburger, nav menu consistency across all pages
+
+---
+
+## Near-Term Features
+
+### Verse-as-Module Architecture
+User vision: treat each verse as its own interactive module supporting:
+- **Favorite verses** — heart icon on each verse, saved to localStorage → Firebase
+- **Non-sequential multi-verse selection** — select scattered verses to add notes/tags to as a group
+- **Color-coding by user** — personal verse highlighting with custom colors
+- **Personal notes per verse** — already have annotations, but expand to support richer content
 
 ### Modern Language Toggle
-- Toggle between KJV and modern/natural language translation
-- Possibly Hebrew for OT
-- Would need a second (or third) text source in the database
-- **Data consideration:** Need to source or license modern translations. Could use public domain translations or partner with a publisher.
+- Toggle between KJV and a modern/natural language paraphrase per verse or chapter
+- Need a data source: public domain modern translation or AI-generated paraphrase
+- Could start with a single book as proof of concept
+- Database schema: `translations` table with verse_id + translation_id + text
+
+### Saved/Favorited Queries
+- Heart icon on search results to save a query (word + volumes + options)
+- Saved searches visible in user dashboard
+- One-click to re-run a saved search
+- Requires Firebase for cross-device persistence
 
 ---
 
@@ -113,68 +102,38 @@ This is the foundation that connects everything. When a user clicks any data poi
 
 ### User Authentication (Firebase Auth)
 - Email/password + Google Sign-In
-- Required for: saved searches, reading progress, favorites
-- Firebase is the right choice — free tier generous, easy to set up with Next.js
-
-### Saved Searches / Favorites
-- Save any search (word, options, volumes) to user profile
-- "Favorites" area in user dashboard showing saved charts/searches
-- One-click to re-run a saved search
-- Could include saved snapshots of charts (stored as image URLs)
+- Required for: saved searches, reading progress sync, favorites across devices
+- Firebase free tier is generous, easy to set up with Next.js
 
 ### Reading Plans & Progress
 - Pre-built plans: Come Follow Me, chronological, topical, 90-day challenge
 - Custom plans: user picks books/chapters, sets pace
 - Progress tracking: checkmarks per chapter, streak counter, completion percentage
 - Daily reading reminder (push notification or email)
-- **Implementation:** Firebase Firestore for plan data + progress. React components for plan browser, progress tracker.
 
-### Verse of the Day / Discovery
-- Shows on home page and/or user dashboard after login
-- Random or curated interesting verses with context
-- Could highlight lesser-known passages
-- Share button for social media
+### Cross-Reference Explorer
+- Parse LDS scripture footnotes for cross-reference data (or use open dataset)
+- Visual web/graph showing connections between verses
+- Could use AI-generated semantic similarity as fallback
 
 ---
 
 ## Tier 4 — Advanced / Premium Features
 
-### Cross-Reference Explorer
-- **Challenge:** The current database doesn't have cross-reference data
-- **Options:**
-  1. Build cross-reference data from LDS scripture footnotes (would need to parse footnote markup from source files)
-  2. Use an existing cross-reference dataset (some are available as open data)
-  3. AI-generated connections (semantic similarity between verses)
-- Visual web/graph showing connections between verses
-- Could be a premium feature due to complexity
-
-### Speaker/Author Index
-- **Challenge:** Needs speaker attribution data per verse (not in current DB)
-- **Options:**
-  1. Manual/crowdsourced tagging
-  2. AI-assisted speaker detection (quotes are often marked in the text)
-- Browse by speaker: see all of Jesus's words, Paul's letters, Nephi's writings
-- Filter by volume, topic
-- Visual timeline of a speaker's contributions
-
 ### Chapter Summaries
 - AI-generated one-paragraph summary per chapter
-- Could be generated once and cached in the database
+- Generated once and cached
 - Useful as quick reference while browsing
-- Could be a premium feature
 
-### Side-by-Side Comparison
-- Compare parallel passages (Isaiah ↔ 2 Nephi, Gospels ↔ 3 Nephi)
-- Highlight differences, additions, omissions
-- **Implementation:** Would need a mapping of parallel passages (partially available in existing cross-reference data)
-- Split-screen view with synced scrolling
+### Volume Visibility Settings
+- Per-user volume hiding (see Audience section above)
 
 ---
 
 ## Monetization Ideas
-- **Free tier:** Word search, narrative arc, heatmap, basic scripture reader
+- **Free tier:** All analysis tools, scripture reader, basic bookmarks
 - **Premium ($4.99/mo or $29.99/yr):**
-  - Saved searches & favorites
+  - Saved searches & favorites (cross-device)
   - Reading plans with progress tracking
   - Cross-reference explorer
   - Chapter summaries
@@ -198,26 +157,16 @@ This is the foundation that connects everything. When a user clicks any data poi
 - Scripture data stays in SQLite (fast, no server needed)
 - User data in Firestore (real-time sync, offline support)
 
-### Scripture Reader URL Structure
-```
-/read                          → Volume picker
-/read/ot                       → Old Testament books
-/read/ot/genesis               → Genesis chapters
-/read/ot/genesis/1             → Genesis Chapter 1 verses
-/read/bom/alma/32              → Alma 32
-/read/dc/76                    → D&C Section 76
-```
-
 ---
 
-## Priority Order (Recommended)
-1. Clickable chart points → verse reader (immediate)
-2. Export on all charts (immediate)
-3. Theme Heatmap (high impact, visually stunning)
-4. Full Scripture Reader with right-side slider
-5. Word Cloud on frequency page
-6. Firebase Auth + Saved Searches
-7. Reading Plans
-8. Modern Language Toggle
-9. Cross-Reference Explorer
-10. Speaker/Author Index
+## Priority Order
+1. **Speaker Attribution UI** — data ready, build the visual layer
+2. **ParallelPassagesTool update** — last tool needing search panel refresh
+3. **Mobile UX refinement** — clean by default
+4. **Favorite verses** (heart icon, localStorage first)
+5. **Modern Language Toggle** (need data source)
+6. **Firebase Auth + Saved Searches**
+7. **Reading Plans**
+8. **Cross-Reference Explorer**
+9. **Chapter Summaries**
+10. **Volume Visibility Settings**
