@@ -929,6 +929,10 @@ export default function ScriptureReader() {
                 ? getResourceTypeColor(verseCoveredBy[0].type)
                 : null;
               const leftBorderColor = speakerColor || resourceBorderColor;
+              // Calculate speaker span height (number of verses in this span)
+              const speakerSpanLength = verseSpeaker
+                ? verseSpeaker.verseEnd - verseSpeaker.verseStart + 1
+                : 0;
               return (
                 <div
                   key={v.verse}
@@ -937,38 +941,58 @@ export default function ScriptureReader() {
                     marginBottom: "4px",
                     lineHeight: 2,
                     position: "relative",
-                    borderLeft: leftBorderColor ? `3px solid ${leftBorderColor}${speakerColor ? "50" : "25"}` : "3px solid transparent",
-                    paddingLeft: "10px",
-                    transition: "border-color 0.3s ease",
+                    display: "flex",
+                    alignItems: "stretch",
                   }}
                 >
-                  {/* Speaker name label — shown on first verse of a speaker span */}
-                  {isFirstOfSpeakerSpan && verseSpeaker && (
+                  {/* Vertical speaker name — left of bar, only on first verse of span */}
+                  {verseSpeaker && showSpeakers ? (
                     <div
                       style={{
-                        fontSize: "0.58rem",
-                        fontWeight: 700,
-                        letterSpacing: "0.06em",
-                        color: speakerColor || undefined,
-                        textTransform: "uppercase",
-                        marginBottom: "2px",
-                        opacity: 0.85,
+                        width: isFirstOfSpeakerSpan ? "22px" : "22px",
+                        flexShrink: 0,
                         display: "flex",
-                        alignItems: "center",
-                        gap: "6px",
+                        alignItems: "flex-start",
+                        justifyContent: "center",
+                        paddingTop: isFirstOfSpeakerSpan ? "4px" : "0",
+                        position: "relative",
                       }}
                     >
-                      <span style={{
-                        display: "inline-block",
-                        width: "6px",
-                        height: "6px",
-                        borderRadius: "50%",
-                        background: speakerColor || undefined,
-                        flexShrink: 0,
-                      }} />
-                      {verseSpeaker.speaker}
+                      {isFirstOfSpeakerSpan && verseSpeaker && (
+                        <span
+                          style={{
+                            writingMode: "vertical-rl",
+                            textOrientation: "mixed",
+                            transform: "rotate(180deg)",
+                            fontSize: "0.52rem",
+                            fontWeight: 700,
+                            letterSpacing: "0.08em",
+                            textTransform: "uppercase",
+                            color: speakerColor || undefined,
+                            opacity: 0.7,
+                            whiteSpace: "nowrap",
+                            lineHeight: 1,
+                            maxHeight: `${speakerSpanLength * 3.2}em`,
+                            overflow: "hidden",
+                          }}
+                        >
+                          {verseSpeaker.speaker}
+                        </span>
+                      )}
                     </div>
+                  ) : (
+                    <div style={{ width: showSpeakers ? "22px" : "0px", flexShrink: 0 }} />
                   )}
+                  {/* Verse content with left border bar */}
+                  <div
+                    style={{
+                      flex: 1,
+                      minWidth: 0,
+                      borderLeft: leftBorderColor ? `3px solid ${leftBorderColor}${speakerColor ? "50" : "25"}` : "3px solid transparent",
+                      paddingLeft: "10px",
+                      transition: "border-color 0.3s ease",
+                    }}
+                  >
                   <span
                     style={{
                       fontSize: "0.72rem",
@@ -1048,6 +1072,7 @@ export default function ScriptureReader() {
                       )}
                     </>
                   )}
+                  </div>
                 </div>
               );
             })}
