@@ -43,32 +43,41 @@ npm run build-db     # Rebuild scripture database
 ```
 src/
 ├── app/              # Next.js App Router pages
-│   ├── page.tsx      # Main search/explore page (WordFrequencyTool)
+│   ├── page.tsx      # Landing page (hero, tool cards, random verse, recent searches)
 │   ├── layout.tsx    # Root layout
-│   ├── narrative-arc/ # Dedicated multi-term narrative arc comparison
+│   ├── search/        # Word frequency search (moved from /)
+│   ├── narrative-arc/ # Multi-term narrative arc comparison
 │   ├── heatmap/       # Theme heatmap with heatmap/arc toggle per volume
-│   ├── wordcloud/     # Word cloud visualization per book/chapter
+│   ├── wordcloud/     # Word cloud visualization per book/chapter/volume
 │   ├── read/          # Scripture reader (volume → book → chapter)
-│   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats, word-cloud)
+│   ├── bookmarks/     # Saved verse bookmarks
+│   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats, word-cloud, chapter-stats, random-verse)
 ├── components/
-│   ├── WordFrequencyTool.tsx  # Main search interface (42KB)
-│   ├── NarrativeArcTool.tsx   # Multi-term narrative arc comparison
+│   ├── WordFrequencyTool.tsx  # Main search interface with zoom controls
+│   ├── NarrativeArcTool.tsx   # Multi-term narrative arc with zoom controls
 │   ├── HeatmapTool.tsx        # Theme heatmap with arc toggle per volume
+│   ├── ChapterInsights.tsx    # Collapsible chapter analysis panel (TF-IDF themes, word cloud, density)
+│   ├── VersePopover.tsx       # Verse tap popover (copy, bookmark, key words)
+│   ├── BookmarksList.tsx      # Bookmarks page with volume grouping
+│   ├── ChartZoomControls.tsx  # Reusable +/- zoom buttons (Fit/2x/4x)
+│   ├── SvgIcon.tsx            # Inline SVG icon helper
 │   ├── ExportHtmlModal.tsx    # HTML-to-image export (html2canvas)
 │   ├── DashboardCard.tsx      # Collapsible section wrapper (supports headerExtra)
-│   ├── DataTable.tsx          # Sortable results table
+│   ├── DataTable.tsx          # Sortable results table with ▲▼ sort icons
 │   ├── StatCard.tsx           # Stat pills
 │   ├── ScripturePanel.tsx     # Right-side slider panel for verse viewing
-│   ├── ScriptureReader.tsx    # Full scripture reader with light/dark mode, keyboard nav, progress bar
-│   ├── WordCloudTool.tsx      # Interactive word cloud per book/chapter
+│   ├── ScriptureReader.tsx    # Full scripture reader (~1100 lines) with insights, search, progress
+│   ├── WordCloudTool.tsx      # Interactive word cloud per book/chapter/volume
 │   ├── HorizontalBarList.tsx  # Bar chart component
-│   ├── Header.tsx             # Site header + hamburger menu
-│   └── NavMenu.tsx            # Slide-in nav (from RIGHT side)
+│   ├── Header.tsx             # Site header + hamburger menu (showSubtitle prop)
+│   └── NavMenu.tsx            # Slide-in nav with custom SVG icons
 ├── lib/
 │   ├── db.ts                  # sql.js initialization
-│   ├── queries.ts             # Database queries + displayName() normalization
+│   ├── queries.ts             # Database queries + displayName() + getChapterStats() + getRandomVerse()
 │   ├── types.ts               # TypeScript interfaces
-│   ├── constants.ts           # Volume colors, contrast text helper
+│   ├── constants.ts           # Volume colors, contrast text, compactVolumeName()
+│   ├── bookmarks.ts           # Bookmark CRUD (localStorage)
+│   ├── reading-progress.ts    # Reading streaks + chapter completion tracking (localStorage)
 │   └── scripture-urls.ts      # Verse reference URL builder
 data/                          # scriptures.db + sql-wasm.wasm
 scripts/                       # build-db.ts, book-order.ts
