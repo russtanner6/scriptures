@@ -4,9 +4,9 @@
   /* ===== DARK GREY PALETTE ===== */
   --bg: #0f0f12;
   --bg-gradient: linear-gradient(145deg, #0f0f12 0%, #131318 40%, #0f0f12 100%);
-  --surface: rgba(255, 255, 255, 0.035);
-  --surface-hover: rgba(255, 255, 255, 0.06);
-  --border: rgba(255, 255, 255, 0.05);
+  --surface: #111116;
+  --surface-hover: #151519;
+  --border: rgba(255, 255, 255, 0.06);
   --border-accent: rgba(255, 255, 255, 0.10);
   --text: #f0f0f0;
   --text-secondary: #9ca3af;
@@ -226,7 +226,10 @@ body::before {
 }
 
 .search-panel {
-  padding: 28px 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 28px;
   margin-bottom: 32px;
   max-width: 100%;
   overflow: hidden;

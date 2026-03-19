@@ -181,7 +181,8 @@ export default function WordCloudTool() {
       {/* Controls */}
       <div
         style={{
-          padding: isMobile ? "16px 0" : "20px 0",
+          background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "10px",
+          padding: isMobile ? "16px" : "20px 24px",
           marginBottom: "24px",
         }}
       >
@@ -408,7 +409,8 @@ export default function WordCloudTool() {
           {/* The cloud */}
           <div
             style={{
-              padding: isMobile ? "20px 0" : "32px 0",
+              background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "10px",
+              padding: isMobile ? "20px 16px" : "32px",
               textAlign: "center",
               lineHeight: isMobile ? 2.2 : 2.4,
               minHeight: "200px",

@@ -23,7 +23,10 @@ export default function DashboardCard({
     <div
       className={`dashboard-card${fullWidth ? " full-width" : ""}`}
       style={{
-        padding: "28px 0",
+        background: "var(--surface)",
+        border: "1px solid var(--border)",
+        borderRadius: "10px",
+        padding: "28px",
       }}
     >
       <h2

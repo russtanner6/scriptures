@@ -419,7 +419,8 @@ export default function NarrativeArcTool() {
               key={vol.id}
               id={`arc-vol-${vol.id}`}
               style={{
-                padding: "28px 0",
+                background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "10px",
+                padding: "28px",
                 marginTop: "20px",
               }}
             >

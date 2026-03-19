@@ -437,7 +437,8 @@ export default function HeatmapTool() {
 
               return (
                 <div key={abbrev} id={`heatmap-${abbrev}`} style={{
-                  padding: isMobile ? "16px 0" : "24px 0", marginBottom: "16px",
+                  background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "10px",
+                  padding: isMobile ? "16px" : "24px", marginBottom: "16px",
                 }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "4px" }}>
                     <div>
