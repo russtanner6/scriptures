@@ -455,7 +455,7 @@ export default function HeatmapTool() {
                         }
                         {getViewMode(abbrev) === "arc" && (
                           <span style={{ color: "var(--text-muted)", fontSize: "0.82rem" }}>
-                            {" — "}click any point to read verses{!isMobile && " · ⇧ Shift + scroll to zoom, double-click to reset"}
+                            {" — "}click any point to read verses{!isMobile && " · Alt/Option + scroll to zoom, double-click to reset"}
                           </span>
                         )}
                       </p>
@@ -635,7 +635,7 @@ export default function HeatmapTool() {
                               zoom: isMobile
                                 ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const }, pan: { enabled: true, mode: "x" as const }, limits: { x: { minRange: 3 } } }
                                 : {
-                                  zoom: { wheel: { enabled: true, speed: 0.05, modifierKey: "shift" as const }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const },
+                                  zoom: { wheel: { enabled: true, speed: 0.05, modifierKey: "alt" as const }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const },
                                   pan: { enabled: true, mode: "x" as const },
                                   limits: { x: { minRange: 3 } },
                                 },

@@ -821,7 +821,7 @@ export default function WordFrequencyTool() {
                 <div id="section-arc">
                 <DashboardCard
                   title="Narrative arc"
-                  description={<>{isSingleBook ? `Frequency of "${results.word}" by section` : `Frequency of "${results.word}" by book in narrative order`}{" — "}<span style={{ color: "var(--text-muted)", fontSize: "0.82rem" }}>click any point to read verses{!isMobile && " · ⇧ Shift + scroll to zoom, double-click to reset"}</span></>}
+                  description={<>{isSingleBook ? `Frequency of "${results.word}" by section` : `Frequency of "${results.word}" by book in narrative order`}{" — "}<span style={{ color: "var(--text-muted)", fontSize: "0.82rem" }}>click any point to read verses{!isMobile && " · Alt/Option + scroll to zoom, double-click to reset"}</span></>}
                   fullWidth
                   headerExtra={
                     <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
@@ -949,7 +949,7 @@ export default function WordFrequencyTool() {
                             ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const }, pan: { enabled: true, mode: "x" as const }, limits: { x: { minRange: 3 } } }
                             : {
                               zoom: {
-                                wheel: { enabled: true, speed: 0.05, modifierKey: "shift" as const },
+                                wheel: { enabled: true, speed: 0.05, modifierKey: "alt" as const },
                                 pinch: { enabled: true },
                                 drag: { enabled: false },
                                 mode: "x" as const,

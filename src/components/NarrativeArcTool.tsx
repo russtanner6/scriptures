@@ -446,7 +446,7 @@ export default function NarrativeArcTool() {
                       ? `Word frequency by section across ${vol.name}`
                       : "Word frequency by book in narrative order"}
                     {" — "}
-                    <span style={{ color: "var(--text-muted)", fontSize: "0.82rem" }}>click any point to read verses{!isMobile && " · ⇧ Shift + scroll to zoom, double-click to reset"}</span>
+                    <span style={{ color: "var(--text-muted)", fontSize: "0.82rem" }}>click any point to read verses{!isMobile && " · Alt/Option + scroll to zoom, double-click to reset"}</span>
                   </p>
                 </div>
                 <div style={{ display: "flex", gap: "6px", alignItems: "center", flexShrink: 0 }}>
@@ -558,7 +558,7 @@ export default function NarrativeArcTool() {
                       zoom: isMobile
                         ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const }, pan: { enabled: true, mode: "x" as const }, limits: { x: { minRange: 3 } } }
                         : {
-                          zoom: { wheel: { enabled: true, speed: 0.05, modifierKey: "shift" as const }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const },
+                          zoom: { wheel: { enabled: true, speed: 0.05, modifierKey: "alt" as const }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const },
                           pan: { enabled: true, mode: "x" as const },
                           limits: { x: { minRange: 3 } },
                         },
