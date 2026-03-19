@@ -53,13 +53,12 @@ src/
 │   ├── bookmarks/     # Saved verse bookmarks
 │   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats, word-cloud, chapter-stats, random-verse)
 ├── components/
-│   ├── WordFrequencyTool.tsx  # Main search interface with zoom controls
-│   ├── NarrativeArcTool.tsx   # Multi-term narrative arc with zoom controls
+│   ├── WordFrequencyTool.tsx  # Main search interface (wheel zoom desktop, swipe mobile)
+│   ├── NarrativeArcTool.tsx   # Multi-term narrative arc (wheel zoom desktop, swipe mobile)
 │   ├── HeatmapTool.tsx        # Theme heatmap with arc toggle per volume
 │   ├── ChapterInsights.tsx    # Collapsible chapter analysis panel (TF-IDF themes, word cloud, density)
 │   ├── VersePopover.tsx       # Verse tap popover (copy, bookmark, key words)
 │   ├── BookmarksList.tsx      # Bookmarks page with volume grouping
-│   ├── ChartZoomControls.tsx  # Reusable +/- zoom buttons (Fit/2x/4x)
 │   ├── SvgIcon.tsx            # Inline SVG icon helper
 │   ├── ExportHtmlModal.tsx    # HTML-to-image export (html2canvas)
 │   ├── DashboardCard.tsx      # Collapsible section wrapper (supports headerExtra)

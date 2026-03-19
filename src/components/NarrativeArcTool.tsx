@@ -17,8 +17,6 @@ import { Line } from "react-chartjs-2";
 import type { Volume, ScripturePanelState } from "@/lib/types";
 import { VOLUME_COLORS, getContrastText, compactVolumeName } from "@/lib/constants";
 import ScripturePanel from "./ScripturePanel";
-import ChartZoomControls from "./ChartZoomControls";
-
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -461,10 +459,8 @@ export default function NarrativeArcTool() {
 
                 return (
               <>
-              <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "8px", marginBottom: "4px" }}>
-                <ChartZoomControls chartRef={thisChartRef} color={color} isMobile={isMobile} />
-              </div>
-              <div style={{ position: "relative", height: isMobile ? "350px" : "540px", overflow: "hidden" }}>
+              <div style={isMobile ? { overflowX: "auto", WebkitOverflowScrolling: "touch", marginTop: "8px" } : { marginTop: "8px" }}>
+              <div style={{ position: "relative", height: isMobile ? "350px" : "540px", ...(isMobile ? { width: `${Math.max(600, allLabels.length * 28)}px`, minWidth: "100%" } : {}) }}>
                 <Line
                   ref={thisChartRef}
                   plugins={[legendMarginPlugin]}
@@ -554,8 +550,8 @@ export default function NarrativeArcTool() {
                         font: { weight: 700, size: 10 },
                         formatter: (value: number) => value.toLocaleString(),
                       },
-                      zoom: {
-                        zoom: { wheel: { enabled: false }, pinch: { enabled: false }, drag: { enabled: false } },
+                      zoom: isMobile ? { zoom: { wheel: { enabled: false }, pinch: { enabled: false }, drag: { enabled: false } }, pan: { enabled: false } } : {
+                        zoom: { wheel: { enabled: true, speed: 0.05 }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const },
                         pan: { enabled: true, mode: "x" as const },
                         limits: { x: { minRange: 3 } },
                       },
@@ -586,6 +582,7 @@ export default function NarrativeArcTool() {
                     },
                   }}
                 />
+              </div>
               </div>
               </>);
               })()}
