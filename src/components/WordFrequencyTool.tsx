@@ -885,34 +885,46 @@ export default function WordFrequencyTool() {
               if (breakdownVolumes.length === 0) return null;
 
               const activeId = breakdownVolumes.some((v) => v.id === breakdownTab)
-                ? breakdownTab
+                ? breakdownTab!
                 : breakdownVolumes[0].id;
 
               const activeV = breakdownVolumes.find((v) => v.id === activeId);
               if (!activeV) return null;
 
-              const volumeBooks = results.results.filter(
-                (r) => r.volumeAbbrev === activeV.abbrev
-              );
-              const allBooksInVolume =
-                volumes
-                  .find((vol) => vol.id === activeId)
-                  ?.books.map((b) => {
-                    const result = volumeBooks.find(
-                      (r) => r.bookId === b.id
+              const activeVolObj = volumes.find((vol) => vol.id === activeId);
+              const isSingleBookBreakdown = activeVolObj && activeVolObj.books.length === 1;
+
+              const allBooksInVolume = isSingleBookBreakdown
+                ? (chapterData.get(activeId) || []).map((d) => ({
+                    label: d.label,
+                    value: d.count,
+                    id: d.bookId,
+                    chapter: d.chapter,
+                  }))
+                : (() => {
+                    const volumeBooks = results.results.filter(
+                      (r) => r.volumeAbbrev === activeV.abbrev
                     );
-                    return {
-                      label: b.name,
-                      value: result?.count || 0,
-                      id: b.id,
-                    };
-                  }) || [];
+                    return (
+                      activeVolObj?.books.map((b) => {
+                        const result = volumeBooks.find(
+                          (r) => r.bookId === b.id
+                        );
+                        return {
+                          label: b.name,
+                          value: result?.count || 0,
+                          id: b.id,
+                          chapter: undefined as number | undefined,
+                        };
+                      }) || []
+                    );
+                  })();
 
               return (
                 <div id="section-breakdowns">
                 <DashboardCard
                   title="Volume breakdown"
-                  description={`Occurrences by book — click a bar to read verses`}
+                  description={isSingleBookBreakdown ? `Occurrences by section — click a bar to read verses` : `Occurrences by book — click a bar to read verses`}
                   fullWidth
                 >
                   {/* Volume tabs */}
@@ -951,16 +963,19 @@ export default function WordFrequencyTool() {
                   <HorizontalBarList
                     items={allBooksInVolume}
                     color={VOLUME_COLORS[activeV.abbrev]}
-                    onBarClick={(item: BarItem) =>
-                      item.id && results && setScripturePanel({
+                    onBarClick={(item: BarItem) => {
+                      if (!item.id || !results) return;
+                      const matchingItem = allBooksInVolume.find((b) => b.label === item.label && b.id === item.id);
+                      setScripturePanel({
                         word: results.word,
                         bookId: item.id,
                         bookName: item.label,
+                        chapter: matchingItem?.chapter,
                         caseInsensitive: results.caseInsensitive,
                         wholeWord: results.wholeWord,
                         volumeColor: VOLUME_COLORS[activeV.abbrev],
-                      })
-                    }
+                      });
+                    }}
                   />
                 </DashboardCard>
                 </div>
@@ -1142,14 +1157,14 @@ export default function WordFrequencyTool() {
                           datalabels: isSingleBook
                             ? { display: false }
                             : {
-                                display: (ctx: { dataset: { data: number[] }; dataIndex: number }) => ctx.dataset.data[ctx.dataIndex] > 0,
-                                anchor: "end" as const,
-                                align: "top" as const,
+                                display: (ctx: any) => (ctx.dataset.data as number[])[ctx.dataIndex] > 0,
+                                anchor: "end",
+                                align: "top",
                                 offset: 4,
                                 color: "#fafafa",
-                                font: { weight: 700 as const, size: 11 },
+                                font: { weight: 700, size: 11 },
                                 formatter: (value: number) => value.toLocaleString(),
-                              },
+                              } as any,
                         },
                         layout: { padding: { top: 30 } },
                         scales: {
