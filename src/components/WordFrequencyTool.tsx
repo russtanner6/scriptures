@@ -1160,7 +1160,7 @@ export default function WordFrequencyTool() {
                       options={{
                         responsive: true,
                         maintainAspectRatio: false,
-                        ...({ clip: false } as Record<string, unknown>),
+                        ...({ clip: true } as Record<string, unknown>),
                         plugins: {
                           legend: { display: false },
                           tooltip: {

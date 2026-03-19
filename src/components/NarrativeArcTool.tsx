@@ -487,7 +487,7 @@ export default function NarrativeArcTool() {
                   options={{
                     responsive: true,
                     maintainAspectRatio: false,
-                    ...({ clip: false } as Record<string, unknown>),
+                    ...({ clip: true } as Record<string, unknown>),
                     onHover: (event, elements) => {
                       const canvas = event.native?.target as HTMLCanvasElement | undefined;
                       if (canvas) canvas.style.cursor = elements.length > 0 ? "pointer" : "default";
