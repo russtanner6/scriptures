@@ -1314,9 +1314,6 @@ export default function WordFrequencyTool() {
             color: "var(--text-muted)",
           }}
         >
-          <div style={{ fontSize: "3rem", marginBottom: "16px" }}>
-            &#x1F50D;
-          </div>
           <div style={{ fontSize: "1.1rem", fontWeight: 500 }}>
             Enter a word or phrase above to analyze its frequency across the
             scriptures

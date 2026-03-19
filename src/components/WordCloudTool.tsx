@@ -506,7 +506,6 @@ export default function WordCloudTool() {
             fontSize: "0.92rem",
           }}
         >
-          <div style={{ marginBottom: "12px" }}><img src="/word-cloud.svg" alt="" style={{ width: "44px", height: "44px", filter: "invert(1) brightness(0.4)" }} /></div>
           Select a volume and book above to generate a word cloud
         </div>
       )}

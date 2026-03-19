@@ -702,7 +702,6 @@ export default function NarrativeArcTool() {
             color: "var(--text-muted)",
           }}
         >
-          <div style={{ marginBottom: "16px" }}><img src="/narrative-arc.svg" alt="" style={{ width: "48px", height: "48px", filter: "invert(1) brightness(0.4)" }} /></div>
           <div style={{ fontSize: "1.1rem", fontWeight: 500 }}>
             Add search terms and click Go
           </div>
