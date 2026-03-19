@@ -31,8 +31,8 @@ export default function Footer() {
   return (
     <footer
       style={{
-        borderTop: "1px solid var(--border)",
-        background: "rgba(0, 0, 0, 0.2)",
+        borderTop: "1px solid rgba(255,255,255,0.08)",
+        background: "rgba(0, 0, 0, 0.35)",
         marginTop: "64px",
       }}
     >
@@ -63,7 +63,7 @@ export default function Footer() {
           <p
             style={{
               fontSize: "0.78rem",
-              color: "var(--text-muted)",
+              color: "rgba(255,255,255,0.45)",
               lineHeight: 1.6,
               marginBottom: "16px",
               maxWidth: "240px",
@@ -90,9 +90,9 @@ export default function Footer() {
               rel="noopener noreferrer"
               style={{
                 fontSize: "0.75rem",
-                color: "var(--text-muted)",
+                color: "rgba(255,255,255,0.5)",
                 textDecoration: "none",
-                transition: "opacity 0.15s",
+                transition: "color 0.15s",
               }}
             >
               GitHub
@@ -108,7 +108,7 @@ export default function Footer() {
               fontWeight: 600,
               textTransform: "uppercase",
               letterSpacing: "0.1em",
-              color: "var(--text-muted)",
+              color: "rgba(255,255,255,0.4)",
               marginBottom: "12px",
             }}
           >
@@ -121,7 +121,7 @@ export default function Footer() {
                 href={link.href}
                 style={{
                   fontSize: "0.78rem",
-                  color: "var(--text-secondary)",
+                  color: "rgba(255,255,255,0.55)",
                   textDecoration: "none",
                   transition: "color 0.15s",
                 }}
@@ -140,7 +140,7 @@ export default function Footer() {
               fontWeight: 600,
               textTransform: "uppercase",
               letterSpacing: "0.1em",
-              color: "var(--text-muted)",
+              color: "rgba(255,255,255,0.4)",
               marginBottom: "12px",
             }}
           >
@@ -153,7 +153,7 @@ export default function Footer() {
                 href={link.href}
                 style={{
                   fontSize: "0.78rem",
-                  color: "var(--text-secondary)",
+                  color: "rgba(255,255,255,0.55)",
                   textDecoration: "none",
                   transition: "color 0.15s",
                 }}
@@ -172,7 +172,7 @@ export default function Footer() {
               fontWeight: 600,
               textTransform: "uppercase",
               letterSpacing: "0.1em",
-              color: "var(--text-muted)",
+              color: "rgba(255,255,255,0.4)",
               marginBottom: "12px",
             }}
           >
@@ -187,7 +187,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 style={{
                   fontSize: "0.78rem",
-                  color: "var(--text-secondary)",
+                  color: "rgba(255,255,255,0.55)",
                   textDecoration: "none",
                   transition: "color 0.15s",
                 }}
@@ -203,7 +203,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div
         style={{
-          borderTop: "1px solid var(--border)",
+          borderTop: "1px solid rgba(255,255,255,0.06)",
           padding: "20px 24px",
           display: "flex",
           justifyContent: "center",
@@ -215,21 +215,21 @@ export default function Footer() {
         <span
           style={{
             fontSize: "0.72rem",
-            color: "var(--text-muted)",
+            color: "rgba(255,255,255,0.4)",
             letterSpacing: "0.02em",
           }}
         >
           © {year} Russ Tanner
         </span>
-        <span style={{ fontSize: "0.6rem", color: "var(--border)", margin: "0 4px" }}>•</span>
+        <span style={{ fontSize: "0.6rem", color: "rgba(255,255,255,0.2)", margin: "0 4px" }}>•</span>
         <span
           style={{
             fontSize: "0.72rem",
-            color: "var(--text-muted)",
+            color: "rgba(255,255,255,0.4)",
             letterSpacing: "0.02em",
           }}
         >
-          <strong style={{ color: "var(--text-secondary)" }}>41,995</strong> verses · <strong style={{ color: "var(--text-secondary)" }}>87</strong> books · <strong style={{ color: "var(--text-secondary)" }}>5</strong> volumes
+          <strong style={{ color: "rgba(255,255,255,0.6)" }}>41,995</strong> verses · <strong style={{ color: "rgba(255,255,255,0.6)" }}>87</strong> books · <strong style={{ color: "rgba(255,255,255,0.6)" }}>5</strong> volumes
         </span>
       </div>
     </footer>
