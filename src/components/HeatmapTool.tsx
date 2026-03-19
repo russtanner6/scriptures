@@ -17,6 +17,7 @@ import type { Volume, ScripturePanelState } from "@/lib/types";
 import { VOLUME_COLORS, getContrastText, compactVolumeName } from "@/lib/constants";
 import ScripturePanel from "./ScripturePanel";
 import { ExportButton } from "./ExportChartModal";
+import ChartHints from "./ChartHints";
 import ExportChartModal from "./ExportChartModal";
 import ExportHtmlModal from "./ExportHtmlModal";
 
@@ -453,12 +454,8 @@ export default function HeatmapTool() {
                           ? <>There {volTotal === 1 ? "is" : "are"} <strong style={{ color: "var(--text)" }}>{volTotal.toLocaleString()}</strong> {volTotal === 1 ? "reference" : "references"} to &quot;{word}&quot; in the {vg.volumeName}</>
                           : <>No references to &quot;{word}&quot; found in the {vg.volumeName}</>
                         }
-                        {getViewMode(abbrev) === "arc" && (
-                          <span style={{ color: "var(--text-muted)", fontSize: "0.82rem" }}>
-                            {" — "}click any point to read verses{!isMobile && " · Alt/Option + scroll to zoom, double-click to reset"}
-                          </span>
-                        )}
                       </p>
+                      {getViewMode(abbrev) === "arc" && <ChartHints isMobile={isMobile} />}
                     </div>
                     <div style={{ display: "flex", gap: "6px", alignItems: "center", flexShrink: 0 }}>
                       <ExportButton compact={isMobile} onClick={() => {

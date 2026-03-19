@@ -22,6 +22,7 @@ import HorizontalBarList from "./HorizontalBarList";
 import type { BarItem } from "./HorizontalBarList";
 import DataTable from "./DataTable";
 import ExportChartModal, { ExportButton } from "./ExportChartModal";
+import ChartHints from "./ChartHints";
 import ScripturePanel from "./ScripturePanel";
 import type { ScripturePanelState } from "@/lib/types";
 
@@ -821,7 +822,7 @@ export default function WordFrequencyTool() {
                 <div id="section-arc">
                 <DashboardCard
                   title="Narrative arc"
-                  description={<>{isSingleBook ? `Frequency of "${results.word}" by section` : `Frequency of "${results.word}" by book in narrative order`}{" — "}<span style={{ color: "var(--text-muted)", fontSize: "0.82rem" }}>click any point to read verses{!isMobile && " · Alt/Option + scroll to zoom, double-click to reset"}</span></>}
+                  description={isSingleBook ? `Frequency of "${results.word}" by section` : `Frequency of "${results.word}" by book in narrative order`}
                   fullWidth
                   headerExtra={
                     <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
@@ -846,6 +847,8 @@ export default function WordFrequencyTool() {
                     </div>
                   }
                 >
+                  <ChartHints isMobile={isMobile} />
+
                   {/* Volume tabs */}
                   {arcVolumes.length > 1 && (
                     <div style={{ display: "flex", gap: "6px", marginBottom: "20px", flexWrap: "wrap" }}>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback, createRef } from "react";
 import ExportChartModal, { ExportButton } from "./ExportChartModal";
+import ChartHints from "./ChartHints";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -445,9 +446,8 @@ export default function NarrativeArcTool() {
                     {vol.books.length === 1
                       ? `Word frequency by section across ${vol.name}`
                       : "Word frequency by book in narrative order"}
-                    {" — "}
-                    <span style={{ color: "var(--text-muted)", fontSize: "0.82rem" }}>click any point to read verses{!isMobile && " · Alt/Option + scroll to zoom, double-click to reset"}</span>
                   </p>
+                  <ChartHints isMobile={isMobile} />
                 </div>
                 <div style={{ display: "flex", gap: "6px", alignItems: "center", flexShrink: 0 }}>
                   <ExportButton compact={isMobile} onClick={() => setExportVolumeId(vol.id)} />
