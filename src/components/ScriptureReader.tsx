@@ -49,6 +49,11 @@ export default function ScriptureReader() {
   // Reading progress
   const [scrollProgress, setScrollProgress] = useState(0);
 
+  // In-chapter search
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
+  const searchInputRef = useRef<HTMLInputElement>(null);
+
   // Verse popover state
   const [activeVerse, setActiveVerse] = useState<{
     verse: number;
@@ -126,6 +131,8 @@ export default function ScriptureReader() {
   const loadChapter = useCallback(async (bookId: number, chapter: number) => {
     setIsLoading(true);
     setScrollProgress(0);
+    setSearchTerm("");
+    setSearchOpen(false);
     try {
       const params = new URLSearchParams({
         bookId: String(bookId),
@@ -226,9 +233,22 @@ export default function ScriptureReader() {
   }, [selectedChapter, goToPrevChapter, goToNextChapter]);
 
   // Highlight search term in verse text
+  // Active highlight word: either from deep link or from in-chapter search
+  const activeHighlight = searchTerm.length >= 2 ? searchTerm : highlightWord;
+
+  // Count search matches across all verses
+  const searchMatchCount = activeHighlight
+    ? verses.reduce((count, v) => {
+        const escaped = activeHighlight.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        const regex = new RegExp(`\\b${escaped}\\b`, "gi");
+        const matches = v.text.match(regex);
+        return count + (matches ? matches.length : 0);
+      }, 0)
+    : 0;
+
   const renderVerseText = (text: string) => {
-    if (!highlightWord) return text;
-    const escaped = highlightWord.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    if (!activeHighlight) return text;
+    const escaped = activeHighlight.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     const regex = new RegExp(`(\\b${escaped}\\b)`, "gi");
     const parts = text.split(regex);
     return parts.map((part, i) =>
@@ -382,6 +402,80 @@ export default function ScriptureReader() {
           </div>
 
           <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "6px" : "8px" }}>
+            {/* Search toggle */}
+            {searchOpen ? (
+              <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+                <input
+                  ref={searchInputRef}
+                  type="text"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Escape") {
+                      setSearchOpen(false);
+                      setSearchTerm("");
+                    }
+                  }}
+                  placeholder="Find..."
+                  autoFocus
+                  style={{
+                    width: isMobile ? "90px" : "130px",
+                    padding: "5px 10px",
+                    borderRadius: "8px",
+                    border: `1px solid ${theme.border}`,
+                    background: lightMode ? "rgba(0,0,0,0.04)" : "rgba(255,255,255,0.06)",
+                    color: theme.text,
+                    fontSize: "0.78rem",
+                    fontFamily: "inherit",
+                    outline: "none",
+                  }}
+                />
+                {searchTerm.length >= 2 && (
+                  <span style={{ fontSize: "0.68rem", color: theme.textMuted, whiteSpace: "nowrap" }}>
+                    {searchMatchCount}
+                  </span>
+                )}
+                <button
+                  onClick={() => { setSearchOpen(false); setSearchTerm(""); }}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    color: theme.textMuted,
+                    fontSize: "0.85rem",
+                    cursor: "pointer",
+                    padding: "4px",
+                    fontFamily: "inherit",
+                  }}
+                >
+                  ✕
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={() => {
+                  setSearchOpen(true);
+                  setTimeout(() => searchInputRef.current?.focus(), 100);
+                }}
+                title="Search in chapter"
+                style={{
+                  background: lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.06)",
+                  border: `1px solid ${theme.border}`,
+                  borderRadius: "8px",
+                  width: "36px",
+                  height: "36px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  cursor: "pointer",
+                  fontSize: "0.85rem",
+                  transition: "all 0.15s",
+                  color: theme.textSecondary,
+                }}
+              >
+                🔍
+              </button>
+            )}
+
             {/* Font size toggle */}
             <button
               onClick={cycleFontSize}
