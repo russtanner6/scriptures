@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import type { Volume } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import Header from "./Header";
+import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./MethodologyModal";
 import type { ChiasmPattern } from "@/lib/chiasmus-detector";
 
 function useIsMobile(breakpoint = 768) {
@@ -38,6 +39,7 @@ export default function ChiasmusTool() {
   const [loading, setLoading] = useState(false);
   const [scanning, setScanning] = useState(false);
   const [scanResults, setScanResults] = useState<{ bookId: number; bookName: string; chapter: number; volumeAbbrev: string; patternCount: number; topConfidence: number }[]>([]);
+  const [showMethodology, setShowMethodology] = useState(false);
 
   useEffect(() => {
     fetch("/api/books")
@@ -108,11 +110,14 @@ export default function ChiasmusTool() {
       <h1 style={{ fontSize: isMobile ? "1.3rem" : "1.6rem", fontWeight: 700, color: "var(--text)", marginBottom: "8px" }}>
         Chiasmus Detector
       </h1>
-      <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "20px", lineHeight: 1.5, maxWidth: "640px" }}>
+      <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "8px", lineHeight: 1.5, maxWidth: "640px" }}>
         Discover chiastic (ABBA mirror) patterns in scripture — a literary structure where themes mirror each other around a central point.
       </p>
+      <div style={{ marginBottom: "20px" }}>
+        <MethodLink onClick={() => setShowMethodology(true)} />
+      </div>
 
-      {/* Volume + Book selection */}
+      {/* Volume + Book + Section selection */}
       <div className="search-panel" style={{ marginBottom: "24px" }}>
         <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginBottom: "12px" }}>
           {/* Volume picker */}
@@ -124,10 +129,22 @@ export default function ChiasmusTool() {
               {volumes.map((v) => {
                 const color = VOLUME_COLORS[v.abbrev] || "#888";
                 const active = selectedVolume === v.id;
+                const isSingleBook = v.books.length === 1;
                 return (
                   <button
                     key={v.id}
-                    onClick={() => { setSelectedVolume(v.id); setSelectedBook(null); setSelectedChapter(null); setResult(null); setScanResults([]); }}
+                    onClick={() => {
+                      setSelectedVolume(v.id);
+                      setSelectedChapter(null);
+                      setResult(null);
+                      setScanResults([]);
+                      // Auto-select the book for single-book volumes (D&C)
+                      if (isSingleBook) {
+                        setSelectedBook(v.books[0].id);
+                      } else {
+                        setSelectedBook(null);
+                      }
+                    }}
                     style={{
                       padding: "5px 12px",
                       borderRadius: "8px",
@@ -149,8 +166,8 @@ export default function ChiasmusTool() {
           </div>
         </div>
 
-        {/* Book picker */}
-        {selectedVol && (
+        {/* Book picker — skip for single-book volumes like D&C */}
+        {selectedVol && selectedVol.books.length > 1 && (
           <div style={{ marginBottom: "12px" }}>
             <div style={{ fontSize: "0.65rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "6px" }}>
               Book
@@ -180,14 +197,16 @@ export default function ChiasmusTool() {
           </div>
         )}
 
-        {/* Chapter picker */}
+        {/* Chapter/Section picker */}
         {selectedBook && selectedVol && (() => {
           const book = selectedVol.books.find((b) => b.id === selectedBook);
           if (!book) return null;
+          const isSingleBook = selectedVol.books.length === 1;
+          const label = isSingleBook ? "Section" : "Chapter";
           return (
             <div style={{ marginBottom: "12px" }}>
               <div style={{ fontSize: "0.65rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "6px" }}>
-                Chapter
+                {label}
               </div>
               <div style={{ display: "flex", gap: "4px", flexWrap: "wrap" }}>
                 {Array.from({ length: book.chapterCount }, (_, i) => i + 1).map((ch) => (
@@ -386,6 +405,77 @@ export default function ChiasmusTool() {
           })}
         </div>
       )}
+
+      {/* Methodology modal */}
+      <MethodologyModal
+        title="How Chiasmus Detection Works"
+        isOpen={showMethodology}
+        onClose={() => setShowMethodology(false)}
+        isMobile={isMobile}
+      >
+        <MethodSection title="Overview">
+          <p style={{ margin: "0 0 8px" }}>
+            Chiasmus is a <strong style={{ color: "var(--text)" }}>literary structure</strong> in which ideas are
+            presented in an A–B–C…C′–B′–A′ mirror pattern around a central pivot point. This tool algorithmically
+            scans chapter text for chiastic patterns by analyzing shared vocabulary between verse groups arranged
+            in mirror positions.
+          </p>
+        </MethodSection>
+
+        <MethodSection title="How Patterns Are Found">
+          <p style={{ margin: "0 0 8px" }}>
+            For each chapter, the detector: (1) extracts <strong style={{ color: "var(--text)" }}>content keywords</strong> from
+            every verse by filtering out common English stopwords and short words, retaining only substantive terms;
+            (2) tries every possible center point in the chapter; (3) pairs verse groups that mirror each other
+            around that center (e.g., verses 1–2 paired with verses 10–11, verses 3–4 with 8–9); (4) measures the
+            vocabulary overlap of each mirror pair using <strong style={{ color: "var(--text)" }}>Jaccard similarity</strong> —
+            the number of shared keywords divided by the total unique keywords across both groups.
+          </p>
+          <p style={{ margin: "0 0 8px" }}>
+            A pattern is reported only when <strong style={{ color: "var(--text)" }}>two or more mirror pairs</strong> show
+            meaningful keyword overlap, suggesting deliberate structural repetition rather than coincidence.
+          </p>
+        </MethodSection>
+
+        <MethodSection title="Confidence Scoring">
+          <p style={{ margin: "0 0 8px" }}>
+            The confidence score reflects: the <strong style={{ color: "var(--text)" }}>average Jaccard similarity</strong> across
+            all mirror pairs, weighted by the number of pairs (deeper patterns with more layers score higher).
+            A score of 80–100% indicates strong lexical mirroring across multiple layers; 40–60% suggests partial
+            or thematic chiasmus; below 40% indicates possible but uncertain patterns.
+          </p>
+        </MethodSection>
+
+        <MethodSection title="What It Shows Well">
+          <p style={{ margin: "0" }}>
+            This tool is best at identifying <strong style={{ color: "var(--text)" }}>lexical chiasmus</strong> — patterns
+            where the same or similar words recur in mirror positions. It can surface well-known chiastic structures
+            (such as those in Alma 36 or many Psalms) and reveal less obvious patterns for further study. The
+            "Scan entire volume" feature lets you quickly identify which chapters have the strongest chiastic
+            structures.
+          </p>
+        </MethodSection>
+
+        <MethodSection title="Known Limitations">
+          <p style={{ margin: "0" }}>
+            This is <strong style={{ color: "var(--text)" }}>keyword-based structural analysis, not semantic
+            analysis</strong>. It detects word-level repetition in mirror positions but cannot identify thematic
+            or conceptual chiasmus where the same idea is expressed using different vocabulary. It also cannot
+            detect chiasmus that spans multiple chapters. Some detected patterns may be coincidental, especially
+            in longer chapters with repeated vocabulary. The tool is designed to <em>suggest</em> where chiastic
+            structures may exist — confirming true literary chiasmus requires close reading and scholarly judgment.
+          </p>
+        </MethodSection>
+
+        <MethodNote>
+          <strong style={{ color: "var(--text)" }}>For researchers:</strong> This approach uses a simplified version
+          of the methods described in chiasmus detection literature (e.g., Boyd &amp; Maddox, 2004; Welch, 1969).
+          Full scholarly analysis considers additional factors like semantic parallelism, grammatical inversion,
+          and thematic centrality of the pivot — none of which are captured by keyword overlap alone. Use this
+          tool as a discovery aid to identify candidates for deeper structural analysis, not as a definitive
+          classifier of chiastic form.
+        </MethodNote>
+      </MethodologyModal>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import { VOLUME_COLORS } from "@/lib/constants";
 import Header from "./Header";
+import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./MethodologyModal";
 
 function useIsMobile(breakpoint = 768) {
   const [isMobile, setIsMobile] = useState(false);
@@ -93,6 +94,7 @@ export default function ParallelPassagesTool() {
   const [activePairIdx, setActivePairIdx] = useState(0);
   const [loading, setLoading] = useState(false);
   const [showDiff, setShowDiff] = useState(true);
+  const [showMethodology, setShowMethodology] = useState(false);
 
   // Load groups
   useEffect(() => {
@@ -127,9 +129,12 @@ export default function ParallelPassagesTool() {
       <h1 style={{ fontSize: isMobile ? "1.3rem" : "1.6rem", fontWeight: 700, color: "var(--text)", marginBottom: "8px" }}>
         Parallel Passages
       </h1>
-      <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "24px", lineHeight: 1.5, maxWidth: "640px" }}>
+      <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "8px", lineHeight: 1.5, maxWidth: "640px" }}>
         Compare side-by-side texts that appear in multiple books of scripture. Differences are highlighted to reveal how passages were adapted across volumes.
       </p>
+      <div style={{ marginBottom: "24px" }}>
+        <MethodLink onClick={() => setShowMethodology(true)} />
+      </div>
 
       {/* Group selector */}
       {!detail && (
@@ -323,6 +328,59 @@ export default function ParallelPassagesTool() {
           )}
         </div>
       )}
+
+      {/* Methodology modal */}
+      <MethodologyModal
+        title="How Parallel Passages Work"
+        isOpen={showMethodology}
+        onClose={() => setShowMethodology(false)}
+        isMobile={isMobile}
+      >
+        <MethodSection title="Overview">
+          <p style={{ margin: "0 0 8px" }}>
+            Many passages in scripture appear in <strong style={{ color: "var(--text)" }}>multiple books</strong> —
+            sometimes quoted verbatim, sometimes adapted or expanded. This tool places these parallel texts
+            side by side so you can see exactly what changed and what was preserved.
+          </p>
+        </MethodSection>
+
+        <MethodSection title="The Passage Groups">
+          <p style={{ margin: "0 0 8px" }}>
+            The curated passage groups include well-known textual parallels: Isaiah chapters quoted in the
+            Book of Mormon, the Sermon on the Mount compared with Christ&rsquo;s sermon in 3 Nephi,
+            Malachi as quoted in 3 Nephi, and other significant shared texts. Each group maps specific
+            chapter-to-chapter correspondences between the source and parallel texts.
+          </p>
+        </MethodSection>
+
+        <MethodSection title="Difference Highlighting">
+          <p style={{ margin: "0 0 8px" }}>
+            When "Highlight differences" is enabled, the tool performs a <strong style={{ color: "var(--text)" }}>word-level
+            comparison</strong> between each verse pair. Words that appear in one version but not the other are
+            highlighted — <span style={{ background: "rgba(239, 68, 68, 0.15)", padding: "0 3px", borderRadius: "2px" }}>red
+            in the source</span> and <span style={{ background: "rgba(59, 130, 246, 0.15)", padding: "0 3px", borderRadius: "2px" }}>blue
+            in the parallel</span>. This makes additions, omissions, and substitutions immediately visible.
+          </p>
+        </MethodSection>
+
+        <MethodSection title="What It Shows Well">
+          <p style={{ margin: "0" }}>
+            This tool is ideal for studying <strong style={{ color: "var(--text)" }}>textual transmission</strong> —
+            how passages were preserved, adapted, or expanded as they moved between texts. For example, comparing
+            Isaiah in the KJV Bible with its quotation in the Book of Mormon reveals systematic differences
+            that scholars have studied extensively. The visual diff makes these differences immediately apparent
+            without requiring verse-by-verse manual comparison.
+          </p>
+        </MethodSection>
+
+        <MethodNote>
+          <strong style={{ color: "var(--text)" }}>For researchers:</strong> The diff algorithm compares
+          word sets between corresponding verses (bag-of-words approach, ignoring word order). This highlights
+          vocabulary differences effectively but does not capture word-order changes or grammatical restructuring
+          within a verse. For detailed textual criticism, the highlighted passages serve as a starting point —
+          use the &ldquo;Read&rdquo; links to examine full context in the scripture reader.
+        </MethodNote>
+      </MethodologyModal>
     </div>
   );
 }

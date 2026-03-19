@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import type { Volume } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import Header from "./Header";
+import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./MethodologyModal";
 
 function useIsMobile(breakpoint = 768) {
   const [isMobile, setIsMobile] = useState(false);
@@ -40,6 +41,7 @@ export default function TopicMapTool() {
   const [selectedChapter, setSelectedChapter] = useState<number | null>(null);
   const [result, setResult] = useState<TopicResult | null>(null);
   const [loading, setLoading] = useState(false);
+  const [showMethodology, setShowMethodology] = useState(false);
 
   useEffect(() => {
     fetch("/api/books")
@@ -78,9 +80,12 @@ export default function TopicMapTool() {
       <h1 style={{ fontSize: isMobile ? "1.3rem" : "1.6rem", fontWeight: 700, color: "var(--text)", marginBottom: "8px" }}>
         Topic Map
       </h1>
-      <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "20px", lineHeight: 1.5, maxWidth: "640px" }}>
+      <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "8px", lineHeight: 1.5, maxWidth: "640px" }}>
         Pick any chapter and find thematically similar chapters across all of scripture. Discover unexpected connections.
       </p>
+      <div style={{ marginBottom: "20px" }}>
+        <MethodLink onClick={() => setShowMethodology(true)} />
+      </div>
 
       {/* Selection */}
       <div className="search-panel" style={{ marginBottom: "24px" }}>
@@ -93,10 +98,20 @@ export default function TopicMapTool() {
             {volumes.map((v) => {
               const color = VOLUME_COLORS[v.abbrev] || "#888";
               const active = selectedVolume === v.id;
+              const isSingleBook = v.books.length === 1;
               return (
                 <button
                   key={v.id}
-                  onClick={() => { setSelectedVolume(v.id); setSelectedBook(null); setSelectedChapter(null); setResult(null); }}
+                  onClick={() => {
+                    setSelectedVolume(v.id);
+                    setSelectedChapter(null);
+                    setResult(null);
+                    if (isSingleBook) {
+                      setSelectedBook(v.books[0].id);
+                    } else {
+                      setSelectedBook(null);
+                    }
+                  }}
                   style={{
                     padding: "5px 12px", borderRadius: "8px",
                     border: `1px solid ${active ? color : "var(--border)"}`,
@@ -113,8 +128,8 @@ export default function TopicMapTool() {
           </div>
         </div>
 
-        {/* Book */}
-        {selectedVol && (
+        {/* Book — skip for single-book volumes like D&C */}
+        {selectedVol && selectedVol.books.length > 1 && (
           <div style={{ marginBottom: "12px" }}>
             <div style={{ fontSize: "0.65rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "6px" }}>
               Book
@@ -139,14 +154,16 @@ export default function TopicMapTool() {
           </div>
         )}
 
-        {/* Chapter */}
+        {/* Chapter/Section picker */}
         {selectedBook && selectedVol && (() => {
           const book = selectedVol.books.find((b) => b.id === selectedBook);
           if (!book) return null;
+          const isSingleBook = selectedVol.books.length === 1;
+          const label = isSingleBook ? "Section" : "Chapter";
           return (
             <div>
               <div style={{ fontSize: "0.65rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "6px" }}>
-                Chapter
+                {label}
               </div>
               <div style={{ display: "flex", gap: "4px", flexWrap: "wrap" }}>
                 {Array.from({ length: book.chapterCount }, (_, i) => i + 1).map((ch) => (
@@ -275,6 +292,71 @@ export default function TopicMapTool() {
           </div>
         </div>
       )}
+
+      {/* Methodology modal */}
+      <MethodologyModal
+        title="How Topic Similarity Works"
+        isOpen={showMethodology}
+        onClose={() => setShowMethodology(false)}
+        isMobile={isMobile}
+      >
+        <MethodSection title="Overview">
+          <p style={{ margin: "0 0 8px" }}>
+            This tool finds <strong style={{ color: "var(--text)" }}>thematically related chapters</strong> across
+            all of scripture by comparing the vocabulary of a selected chapter against every other chapter
+            using a standard information retrieval technique called cosine similarity.
+          </p>
+        </MethodSection>
+
+        <MethodSection title="How It Works">
+          <p style={{ margin: "0 0 8px" }}>
+            Each chapter is converted into a <strong style={{ color: "var(--text)" }}>word frequency vector</strong> —
+            a list of how often each distinct word appears. Common English stopwords are removed, leaving only
+            substantive content words. The tool then computes the <strong style={{ color: "var(--text)" }}>cosine
+            similarity</strong> between the selected chapter&rsquo;s vector and every other chapter&rsquo;s vector.
+            Cosine similarity measures the angle between two vectors: chapters that use similar vocabulary in similar
+            proportions will have a high score (close to 100%), regardless of chapter length.
+          </p>
+        </MethodSection>
+
+        <MethodSection title="Shared Terms">
+          <p style={{ margin: "0 0 8px" }}>
+            The colored term pills shown for each result highlight the <strong style={{ color: "var(--text)" }}>most
+            significant shared words</strong> — content words that appear frequently in both the source chapter
+            and the matching chapter. These give an at-a-glance indication of <em>why</em> the chapters are
+            related.
+          </p>
+        </MethodSection>
+
+        <MethodSection title="What It Shows Well">
+          <p style={{ margin: "0" }}>
+            Topic Map excels at finding chapters with <strong style={{ color: "var(--text)" }}>overlapping
+            subject matter</strong> across different books and volumes — for example, connecting prophecies
+            of Christ in Isaiah with their fulfillment narratives in 3 Nephi, or linking covenant language
+            in Deuteronomy with similar themes in Mosiah. Click any result to pivot and explore further
+            connections.
+          </p>
+        </MethodSection>
+
+        <MethodSection title="Known Limitations">
+          <p style={{ margin: "0" }}>
+            This is <strong style={{ color: "var(--text)" }}>vocabulary overlap, not semantic
+            understanding</strong>. Two chapters about the same topic using different vocabulary (e.g.,
+            synonyms or paraphrases) may score low. Conversely, chapters sharing common but thematically
+            unrelated words may score higher than expected. Short chapters with limited vocabulary produce
+            less reliable results. The tool is a discovery aid for finding connections to investigate,
+            not a definitive measure of thematic relatedness.
+          </p>
+        </MethodSection>
+
+        <MethodNote>
+          <strong style={{ color: "var(--text)" }}>For researchers:</strong> This implements standard
+          TF-based cosine similarity, a foundational technique in information retrieval and computational
+          text analysis. More sophisticated approaches (TF-IDF weighting, latent semantic analysis,
+          or embedding-based similarity) would improve accuracy but require significantly more computation.
+          The current approach provides a practical balance of speed and usefulness for exploratory study.
+        </MethodNote>
+      </MethodologyModal>
     </div>
   );
 }

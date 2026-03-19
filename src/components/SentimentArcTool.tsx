@@ -19,6 +19,7 @@ import Header from "./Header";
 import DashboardCard from "./DashboardCard";
 import ChartHints from "./ChartHints";
 import ScripturePanel from "./ScripturePanel";
+import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./MethodologyModal";
 import type { ScripturePanelState } from "@/lib/types";
 
 ChartJS.register(CategoryScale, LinearScale, LineElement, PointElement, Filler, Tooltip, Legend);
@@ -64,6 +65,7 @@ export default function SentimentArcTool() {
   const [loading, setLoading] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
   const [panel, setPanel] = useState<ScripturePanelState | null>(null);
+  const [showMethodology, setShowMethodology] = useState(false);
   const chartRefs = useRef<Map<number, React.RefObject<any>>>(new Map());
 
   // Zoom plugin
@@ -135,9 +137,12 @@ export default function SentimentArcTool() {
         <h1 style={{ fontSize: isMobile ? "1.3rem" : "1.6rem", fontWeight: 700, color: "var(--text)", marginBottom: "8px" }}>
           Sentiment Arc
         </h1>
-        <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "16px", lineHeight: 1.5 }}>
+        <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "8px", lineHeight: 1.5 }}>
           See how emotional tone shifts across scripture — promises, warnings, praise, lament, and more.
         </p>
+        <div style={{ marginBottom: "16px" }}>
+          <MethodLink onClick={() => setShowMethodology(true)} />
+        </div>
 
         {/* Category toggles */}
         <div style={{ marginBottom: "12px" }}>
@@ -387,6 +392,74 @@ export default function SentimentArcTool() {
           onClose={() => setPanel(null)}
         />
       )}
+
+      {/* Methodology modal */}
+      <MethodologyModal
+        title="How Sentiment Analysis Works"
+        isOpen={showMethodology}
+        onClose={() => setShowMethodology(false)}
+        isMobile={isMobile}
+      >
+        <MethodSection title="Overview">
+          <p style={{ margin: "0 0 8px" }}>
+            This tool measures the <strong style={{ color: "var(--text)" }}>emotional and thematic tone</strong> of
+            scripture by counting how frequently words associated with specific categories appear in each chapter.
+            It reveals macro-level patterns — how the tone of an entire book shifts from chapter to chapter.
+          </p>
+        </MethodSection>
+
+        <MethodSection title="The Lexicon">
+          <p style={{ margin: "0 0 8px" }}>
+            Each of the 7 categories contains a curated list of 30–50 English words strongly associated with that tone.
+            For example, the <strong style={{ color: "#10b981" }}>Promise &amp; Blessing</strong> category includes words
+            like <em>bless, salvation, mercy, grace, peace, redeem, forgive, heal</em>, while
+            the <strong style={{ color: "#ef4444" }}>Warning &amp; Judgment</strong> category includes <em>woe, destroy,
+            wrath, curse, damnation, affliction</em>.
+          </p>
+          <p style={{ margin: "0 0 8px" }}>
+            The full list of {SENTIMENT_CATEGORIES.reduce((sum, c) => sum + c.words.size, 0)} words across
+            all categories was curated specifically for scriptural language patterns, drawing on the vocabulary
+            of the King James tradition used across all five standard works.
+          </p>
+        </MethodSection>
+
+        <MethodSection title="Scoring Method">
+          <p style={{ margin: "0 0 8px" }}>
+            For each chapter, every word is checked against all 7 category word lists. The score for a category
+            in a given chapter is simply the <strong style={{ color: "var(--text)" }}>count of matching words</strong>.
+            This raw count approach means longer chapters naturally produce higher scores — the chart reflects
+            both the density and the volume of thematic language.
+          </p>
+        </MethodSection>
+
+        <MethodSection title="What It Shows Well">
+          <p style={{ margin: "0" }}>
+            The Sentiment Arc is best used for identifying <strong style={{ color: "var(--text)" }}>broad tonal
+            shifts</strong> across a book or volume — where does the text shift from warning to promise?
+            Where does praise concentrate? It can surface structural patterns like the shift from prophetic
+            warning to covenant language in Isaiah, or the dramatic tonal change in 3 Nephi when Christ appears.
+          </p>
+        </MethodSection>
+
+        <MethodSection title="Known Limitations">
+          <p style={{ margin: "0" }}>
+            This is <strong style={{ color: "var(--text)" }}>keyword frequency analysis, not natural language
+            understanding</strong>. It counts words without regard to context, negation, or figurative use.
+            A verse saying &ldquo;there shall be no peace&rdquo; would still register &ldquo;peace&rdquo; in
+            the Promise category. Some words appear in multiple categories where the overlap is meaningful.
+            The tool is designed to surface patterns for further study — it identifies <em>where</em> to look,
+            not <em>what</em> to conclude.
+          </p>
+        </MethodSection>
+
+        <MethodNote>
+          <strong style={{ color: "var(--text)" }}>For researchers:</strong> This approach is analogous to
+          dictionary-based sentiment analysis methods used in computational linguistics (e.g., LIWC, NRC
+          Emotion Lexicon), adapted for the specific vocabulary of KJV-tradition scriptural texts. The
+          categories were designed to reflect theological themes rather than general emotional valence.
+          Results should be treated as exploratory — a starting point for close reading, not a substitute for it.
+        </MethodNote>
+      </MethodologyModal>
     </div>
   );
 }
