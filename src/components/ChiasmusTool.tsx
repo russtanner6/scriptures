@@ -108,45 +108,20 @@ export default function ChiasmusTool() {
     <div className="page-container">
       <Header />
 
-      {/* Two-column selection panel */}
+      {/* Selection panel */}
       <div className="search-panel" style={{ marginBottom: "24px" }}>
-        <div style={{ display: "flex", gap: isMobile ? "16px" : "24px", flexDirection: isMobile ? "column" : "row", alignItems: "flex-start" }}>
-          {/* Left column — title, description, method link, scan button */}
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <h1 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
-              Chiasmus Detector
-            </h1>
-            <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", marginBottom: "10px", lineHeight: 1.4 }}>
-              Discover chiastic (ABBA mirror) patterns in scripture — a literary structure where themes mirror each other around a central point.
-            </p>
-            <div style={{ marginBottom: "12px" }}>
-              <MethodLink onClick={() => setShowMethodology(true)} />
-            </div>
-            {/* Scan entire volume button */}
-            {selectedVol && (
-              <button
-                onClick={() => scanVolume(selectedVol.id)}
-                disabled={scanning}
-                style={{
-                  padding: "8px 20px",
-                  borderRadius: "8px",
-                  border: "none",
-                  background: "rgba(139,92,246,0.2)",
-                  color: "#8b5cf6",
-                  fontSize: "0.82rem",
-                  fontWeight: 600,
-                  fontFamily: "inherit",
-                  cursor: scanning ? "wait" : "pointer",
-                  opacity: scanning ? 0.6 : 1,
-                }}
-              >
-                {scanning ? "Scanning..." : `Scan entire ${isMobile ? selectedVol.abbrev : selectedVol.name}`}
-              </button>
-            )}
-          </div>
+        <h1 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
+          Chiasmus Detector
+        </h1>
+        <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", marginBottom: "6px", lineHeight: 1.4 }}>
+          Discover chiastic (ABBA mirror) patterns in scripture.
+        </p>
+        <div style={{ marginBottom: "16px" }}>
+          <MethodLink onClick={() => setShowMethodology(true)} />
+        </div>
 
-          {/* Right column — progressive selectors */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "12px", flexShrink: 0, paddingTop: isMobile ? "0" : "36px", minWidth: isMobile ? "auto" : "280px" }}>
+        {/* Selectors — horizontal flow */}
+        <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "flex-end" }}>
             {/* Volume - always visible */}
             <div>
               <SectionLabel>Volume</SectionLabel>
@@ -252,8 +227,31 @@ export default function ChiasmusTool() {
                 </div>
               );
             })()}
-          </div>
         </div>
+
+        {/* Scan entire volume button */}
+        {selectedVol && (
+          <div style={{ marginTop: "14px" }}>
+            <button
+              onClick={() => scanVolume(selectedVol.id)}
+              disabled={scanning}
+              style={{
+                padding: "8px 20px",
+                borderRadius: "8px",
+                border: "none",
+                background: "rgba(139,92,246,0.2)",
+                color: "#8b5cf6",
+                fontSize: "0.82rem",
+                fontWeight: 600,
+                fontFamily: "inherit",
+                cursor: scanning ? "wait" : "pointer",
+                opacity: scanning ? 0.6 : 1,
+              }}
+            >
+              {scanning ? "Scanning..." : `Scan entire ${isMobile ? selectedVol.abbrev : selectedVol.name}`}
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Scan results */}

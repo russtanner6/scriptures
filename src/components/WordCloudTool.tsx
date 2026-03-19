@@ -149,39 +149,29 @@ export default function WordCloudTool() {
 
   return (
     <div>
-      {/* Two-column selection panel */}
-      <div
-        style={{
-          background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "10px",
-          padding: isMobile ? "16px" : "20px 24px",
-          marginBottom: "24px",
-        }}
-      >
-        <div style={{ display: "flex", gap: isMobile ? "16px" : "24px", flexDirection: isMobile ? "column" : "row", alignItems: "flex-start" }}>
-          {/* Left column — title, description */}
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <h2 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
-              <img
-                src="/word-cloud.svg"
-                alt=""
-                style={{
-                  display: "inline-block",
-                  width: isMobile ? "22px" : "26px",
-                  height: isMobile ? "22px" : "26px",
-                  verticalAlign: "middle",
-                  marginRight: "10px",
-                  filter: "invert(1) brightness(0.85)",
-                }}
-              />
-              Word Cloud
-            </h2>
-            <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", marginBottom: "10px", lineHeight: 1.4 }}>
-              Visualize the most frequent words in any book or chapter. Select a volume, then a book to generate the cloud.
-            </p>
-          </div>
+      {/* Selection panel */}
+      <div className="search-panel" style={{ marginBottom: "24px" }}>
+        <h2 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
+          <img
+            src="/word-cloud.svg"
+            alt=""
+            style={{
+              display: "inline-block",
+              width: isMobile ? "18px" : "22px",
+              height: isMobile ? "18px" : "22px",
+              verticalAlign: "middle",
+              marginRight: "8px",
+              filter: "invert(1) brightness(0.85)",
+            }}
+          />
+          Word Cloud
+        </h2>
+        <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", marginBottom: "16px", lineHeight: 1.4 }}>
+          Visualize the most frequent words in any book or chapter.
+        </p>
 
-          {/* Right column — progressive selectors */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "12px", flexShrink: 0, paddingTop: isMobile ? "0" : "36px", minWidth: isMobile ? "auto" : "280px" }}>
+        {/* Selectors — horizontal flow */}
+        <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "flex-end" }}>
             {/* Volume - always visible */}
             <div>
               <SectionLabel>Volume</SectionLabel>
@@ -323,7 +313,6 @@ export default function WordCloudTool() {
                 />
               </div>
             )}
-          </div>
         </div>
       </div>
 
