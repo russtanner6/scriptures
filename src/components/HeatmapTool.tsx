@@ -78,6 +78,7 @@ export default function HeatmapTool() {
   // Per-volume view mode: "heatmap" or "arc"
   const [viewModes, setViewModes] = useState<Map<string, "heatmap" | "arc">>(new Map());
   const chartRefs = useRef<Map<string, React.RefObject<any>>>(new Map());
+  const [zoomActiveAbbrevs, setZoomActiveAbbrevs] = useState<Set<string>>(new Set());
 
   const getViewMode = (abbrev: string) => viewModes.get(abbrev) || "heatmap";
   const toggleViewMode = (abbrev: string) => {
@@ -626,8 +627,8 @@ export default function HeatmapTool() {
                                 formatter: (value: number) => value.toLocaleString(),
                               },
                               zoom: isMobile ? { zoom: { wheel: { enabled: false }, pinch: { enabled: false }, drag: { enabled: false } }, pan: { enabled: false } } : {
-                                zoom: { wheel: { enabled: true, speed: 0.05 }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const },
-                                pan: { enabled: true, mode: "x" as const },
+                                zoom: { wheel: { enabled: zoomActiveAbbrevs.has(abbrev), speed: 0.05 }, pinch: { enabled: zoomActiveAbbrevs.has(abbrev) }, drag: { enabled: false }, mode: "x" as const },
+                                pan: { enabled: zoomActiveAbbrevs.has(abbrev), mode: "x" as const },
                                 limits: { x: { minRange: 3 } },
                               },
                             },
@@ -655,9 +656,38 @@ export default function HeatmapTool() {
                       </div>
                       </div>
                       {!isMobile && (
-                        <p style={{ textAlign: "center", fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "6px", opacity: 0.6 }}>
-                          Scroll to zoom · Drag to pan
-                        </p>
+                        <div style={{ textAlign: "center", marginTop: "6px" }}>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setZoomActiveAbbrevs((prev) => {
+                                const next = new Set(prev);
+                                if (next.has(abbrev)) {
+                                  next.delete(abbrev);
+                                  const ref = chartRefs.current.get(abbrev);
+                                  if (ref?.current) ref.current.resetZoom();
+                                } else {
+                                  next.add(abbrev);
+                                }
+                                return next;
+                              });
+                            }}
+                            style={{
+                              background: zoomActiveAbbrevs.has(abbrev) ? "var(--accent)" : "transparent",
+                              color: zoomActiveAbbrevs.has(abbrev) ? "#fff" : "var(--text-muted)",
+                              border: zoomActiveAbbrevs.has(abbrev) ? "1px solid var(--accent)" : "1px solid var(--border)",
+                              borderRadius: "6px",
+                              padding: "4px 12px",
+                              fontSize: "0.72rem",
+                              fontFamily: "inherit",
+                              cursor: "pointer",
+                              transition: "all 0.15s ease",
+                              opacity: zoomActiveAbbrevs.has(abbrev) ? 1 : 0.7,
+                            }}
+                          >
+                            {zoomActiveAbbrevs.has(abbrev) ? "Zoom ON — scroll to zoom, drag to pan" : "Enable zoom"}
+                          </button>
+                        </div>
                       )}
                       {isMobile && (
                         <p style={{ textAlign: "center", fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "6px", opacity: 0.6 }}>

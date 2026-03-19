@@ -102,6 +102,7 @@ export default function NarrativeArcTool() {
   // Scripture panel state
   const [scripturePanel, setScripturePanel] = useState<ScripturePanelState | null>(null);
   const chartRefs = useRef<Map<number, React.RefObject<any>>>(new Map());
+  const [zoomActiveVols, setZoomActiveVols] = useState<Set<number>>(new Set());
   const initialSearchDone = useRef(false);
 
   // Load volumes on mount + check URL for deep link
@@ -551,8 +552,8 @@ export default function NarrativeArcTool() {
                         formatter: (value: number) => value.toLocaleString(),
                       },
                       zoom: isMobile ? { zoom: { wheel: { enabled: false }, pinch: { enabled: false }, drag: { enabled: false } }, pan: { enabled: false } } : {
-                        zoom: { wheel: { enabled: true, speed: 0.05 }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const },
-                        pan: { enabled: true, mode: "x" as const },
+                        zoom: { wheel: { enabled: zoomActiveVols.has(vol.id), speed: 0.05 }, pinch: { enabled: zoomActiveVols.has(vol.id) }, drag: { enabled: false }, mode: "x" as const },
+                        pan: { enabled: zoomActiveVols.has(vol.id), mode: "x" as const },
                         limits: { x: { minRange: 3 } },
                       },
                     },
@@ -585,9 +586,38 @@ export default function NarrativeArcTool() {
               </div>
               </div>
               {!isMobile && (
-                <p style={{ textAlign: "center", fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "6px", opacity: 0.6 }}>
-                  Scroll to zoom · Drag to pan
-                </p>
+                <div style={{ textAlign: "center", marginTop: "6px" }}>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setZoomActiveVols((prev) => {
+                        const next = new Set(prev);
+                        if (next.has(vol.id)) {
+                          next.delete(vol.id);
+                          const ref = chartRefs.current.get(vol.id);
+                          if (ref?.current) ref.current.resetZoom();
+                        } else {
+                          next.add(vol.id);
+                        }
+                        return next;
+                      });
+                    }}
+                    style={{
+                      background: zoomActiveVols.has(vol.id) ? "var(--accent)" : "transparent",
+                      color: zoomActiveVols.has(vol.id) ? "#fff" : "var(--text-muted)",
+                      border: zoomActiveVols.has(vol.id) ? "1px solid var(--accent)" : "1px solid var(--border)",
+                      borderRadius: "6px",
+                      padding: "4px 12px",
+                      fontSize: "0.72rem",
+                      fontFamily: "inherit",
+                      cursor: "pointer",
+                      transition: "all 0.15s ease",
+                      opacity: zoomActiveVols.has(vol.id) ? 1 : 0.7,
+                    }}
+                  >
+                    {zoomActiveVols.has(vol.id) ? "Zoom ON — scroll to zoom, drag to pan" : "Enable zoom"}
+                  </button>
+                </div>
               )}
               {isMobile && (
                 <p style={{ textAlign: "center", fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "6px", opacity: 0.6 }}>

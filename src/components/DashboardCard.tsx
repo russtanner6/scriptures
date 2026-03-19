@@ -23,21 +23,7 @@ export default function DashboardCard({
     <div
       className={`dashboard-card${fullWidth ? " full-width" : ""}`}
       style={{
-        background: "var(--surface)",
-        border: "1px solid var(--border)",
-        borderRadius: "10px",
-        padding: "28px",
-        transition: "border-color 0.2s, box-shadow 0.2s",
-        backdropFilter: "blur(20px)",
-        WebkitBackdropFilter: "blur(20px)",
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = "var(--border-accent)";
-        e.currentTarget.style.boxShadow = "0 0 24px rgba(255, 255, 255, 0.03)";
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = "var(--border)";
-        e.currentTarget.style.boxShadow = "none";
+        padding: "28px 0",
       }}
     >
       <h2

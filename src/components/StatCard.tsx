@@ -22,19 +22,6 @@ export default function StatCard({
         border: "1px solid var(--border)",
         borderRadius: "10px",
         padding: "24px 20px",
-        transition: "border-color 0.2s, background 0.2s, box-shadow 0.2s",
-        backdropFilter: "blur(20px)",
-        WebkitBackdropFilter: "blur(20px)",
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = "var(--border-accent)";
-        e.currentTarget.style.background = "var(--surface-hover)";
-        e.currentTarget.style.boxShadow = "0 0 24px rgba(255, 255, 255, 0.03)";
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = "var(--border)";
-        e.currentTarget.style.background = "var(--surface)";
-        e.currentTarget.style.boxShadow = "none";
       }}
     >
       <button

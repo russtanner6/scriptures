@@ -85,6 +85,7 @@ export default function WordFrequencyTool() {
   const [breakdownTab, setBreakdownTab] = useState<number | null>(null);
   const [scripturePanel, setScripturePanel] = useState<ScripturePanelState | null>(null);
   const arcChartRef = useRef<any>(null);
+  const [arcZoomActive, setArcZoomActive] = useState(false);
   // Chapter-level data for single-book volumes (e.g., D&C) — keyed by volume id
   const [chapterData, setChapterData] = useState<Map<number, { label: string; count: number; bookId: number; chapter: number }[]>>(new Map());
   const [visiblePanels, setVisiblePanels] = useState<Set<string>>(
@@ -1215,13 +1216,13 @@ export default function WordFrequencyTool() {
                               } as any,
                           zoom: isMobile ? { zoom: { wheel: { enabled: false }, pinch: { enabled: false }, drag: { enabled: false } }, pan: { enabled: false } } : {
                             zoom: {
-                              wheel: { enabled: true, speed: 0.05 },
-                              pinch: { enabled: true },
+                              wheel: { enabled: arcZoomActive, speed: 0.05 },
+                              pinch: { enabled: arcZoomActive },
                               drag: { enabled: false },
                               mode: "x" as const,
                             },
                             pan: {
-                              enabled: true,
+                              enabled: arcZoomActive,
                               mode: "x" as const,
                             },
                             limits: {
@@ -1278,9 +1279,32 @@ export default function WordFrequencyTool() {
                   </div>
                   </div>
                   {!isMobile && (
-                    <p style={{ textAlign: "center", fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "6px", opacity: 0.6 }}>
-                      Scroll to zoom · Drag to pan
-                    </p>
+                    <div style={{ textAlign: "center", marginTop: "6px" }}>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const next = !arcZoomActive;
+                          setArcZoomActive(next);
+                          if (!next && arcChartRef.current) {
+                            arcChartRef.current.resetZoom();
+                          }
+                        }}
+                        style={{
+                          background: arcZoomActive ? "var(--accent)" : "transparent",
+                          color: arcZoomActive ? "#fff" : "var(--text-muted)",
+                          border: arcZoomActive ? "1px solid var(--accent)" : "1px solid var(--border)",
+                          borderRadius: "6px",
+                          padding: "4px 12px",
+                          fontSize: "0.72rem",
+                          fontFamily: "inherit",
+                          cursor: "pointer",
+                          transition: "all 0.15s ease",
+                          opacity: arcZoomActive ? 1 : 0.7,
+                        }}
+                      >
+                        {arcZoomActive ? "Zoom ON — scroll to zoom, drag to pan" : "Enable zoom"}
+                      </button>
+                    </div>
                   )}
                   {isMobile && (
                     <p style={{ textAlign: "center", fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "6px", opacity: 0.6 }}>
