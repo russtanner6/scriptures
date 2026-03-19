@@ -407,7 +407,7 @@ export default function ScriptureReader() {
 
   const theme = lightMode
     ? {
-        bg: "#faf9f6",
+        bg: "#f8f6f1",
         text: "#222222",
         textSecondary: "#555555",
         textMuted: "#999999",
@@ -477,7 +477,7 @@ export default function ScriptureReader() {
             position: "sticky",
             top: 0,
             zIndex: 50,
-            background: lightMode ? "rgba(250, 249, 246, 0.95)" : "rgba(17, 17, 22, 0.95)",
+            background: lightMode ? "rgba(248, 246, 241, 0.95)" : "rgba(17, 17, 22, 0.95)",
             backdropFilter: "blur(12px)",
             WebkitBackdropFilter: "blur(12px)",
             borderBottom: `1px solid ${theme.border}`,
@@ -485,11 +485,12 @@ export default function ScriptureReader() {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
+            position: "relative",
           }}
         >
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", minWidth: 0 }}>
-            {/* Tree logo — opens nav menu (desktop only, mobile has it in bottom bar) */}
-            {!isMobile && (
+          {/* Tree logo — centered on desktop, opens nav menu */}
+          {!isMobile && (
+            <div style={{ position: "absolute", left: "50%", transform: "translateX(-50%)" }}>
               <button
                 onClick={() => setMenuOpen(true)}
                 title="Menu"
@@ -508,7 +509,9 @@ export default function ScriptureReader() {
               >
                 <img src="/tree-logo.svg" alt="Menu" style={{ height: "22px", width: "auto", filter: lightMode ? "invert(1)" : "none" }} />
               </button>
-            )}
+            </div>
+          )}
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", minWidth: 0 }}>
             <button
               onClick={() => {
                 setSelectedChapter(null);
@@ -1183,7 +1186,7 @@ export default function ScriptureReader() {
               right: 0,
               zIndex: 51,
               padding: isMobile ? "4px 12px" : "6px 24px",
-              background: lightMode ? "rgba(250, 249, 246, 0.92)" : "rgba(17, 17, 22, 0.92)",
+              background: lightMode ? "rgba(248, 246, 241, 0.92)" : "rgba(17, 17, 22, 0.92)",
               backdropFilter: "blur(8px)",
               WebkitBackdropFilter: "blur(8px)",
               borderTop: `1px solid ${theme.border}`,
