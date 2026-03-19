@@ -85,6 +85,27 @@ scripts/                       # build-db.ts, book-order.ts
 ## Global Design Rules
 **These rules apply to ALL pages and components. Changes must be consistent across the entire site.**
 
+### Global Consistency Mandate
+**When changing any visual element (icon, color, background, font, spacing, pattern), apply it EVERYWHERE it appears across the entire codebase — not just the page or component you're currently working on.** Before committing a visual change:
+1. **Search all components** for the element being changed (grep for the icon path, color value, CSS class, inline style pattern, etc.)
+2. **Update every instance** — don't leave stale versions on other pages
+3. **Verify all pages** that use the element still look correct
+This applies to: icons (SVG files, inline SVGs, emoji), colors, card/module backgrounds, borders, blur effects, spacing, font sizes, button styles, toggle styles, and any other visual pattern. If a change makes sense on one page, it almost certainly makes sense on all pages.
+
+### Icons
+All tool icons live in `public/` as SVG files. **Always use these canonical files** — never create inline SVG approximations:
+| Icon | File | Used for |
+|------|------|----------|
+| Home | `/home.svg` | Nav menu |
+| Search | `/search.svg` | Nav menu, search bars |
+| Narrative Arc | `/narrative-arc.svg` | Nav menu, view toggles, jump-to links |
+| Heatmap | `/heatmap.svg` | Nav menu, view toggles, jump-to links |
+| Word Cloud | `/word-cloud.svg` | Nav menu, jump-to links |
+| Scriptures | `/scriptures.svg` | Nav menu |
+| Favorite | `/favorite.svg` | Nav menu, bookmarks |
+
+Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with brightness 1.0 for active, 0.5–0.7 for inactive/muted.
+
 ### Naming
 - Always use "D&C" (never "Doctrine and Covenants"). Handled by `displayName()` in `queries.ts`.
 - Volume order is always: OT → NT → BoM → D&C → PoGP (left to right).
@@ -109,7 +130,7 @@ scripts/                       # build-db.ts, book-order.ts
 - **Legend spacing:** Use `legendMarginPlugin` to add 28px below Chart.js legends (prevents overlap with data labels).
 - **Jump-to navigation:** Any page with multiple modules/sections MUST have a sticky jump-to nav bar that stays at the top on scroll. Uses color-coded pills matching the volume colors. No dark background behind it.
 - **Search bar glow:** All search bars use `search-bar-glow` CSS class — subtle blue border pulse, 2.5s delay after page load, runs once.
-- **View toggles:** Heatmap modules have heatmap/arc toggle buttons (separate rounded pills, no borders, flame + curve icons). Smooth fade transition (0.3s) between views.
+- **View toggles:** Heatmap modules have heatmap/arc toggle buttons (separate rounded pills, no borders, using `/heatmap.svg` and `/narrative-arc.svg` icons). Smooth fade transition (0.3s) between views.
 - **Single-book volumes (D&C):** Plot by section/chapter instead of book. Sparse x-axis labels (every 10th). Smaller point radius. Tooltip shows "Section N".
 - **Audience:** Built for the full LDS canon, but not all users are LDS. Volume visibility settings (future) will let users permanently hide volumes they don't want (e.g., hide BoM/D&C/PoGP for Bible-only users). See `docs/ROADMAP.md` for details.
 - **Chart legends:** Use `pointStyle: "rectRounded"` (not circles/ovals). Adequate spacing from chart top.
