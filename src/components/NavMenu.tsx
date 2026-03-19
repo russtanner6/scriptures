@@ -9,7 +9,7 @@ const NAV_ITEMS: { href: string; label: string; icon?: string; svgIcon?: string 
   { href: "/narrative-arc", label: "Narrative Arc", icon: "📈" },
   { href: "/heatmap", label: "Theme Heatmap", svgIcon: "/heatmap.svg" },
   { href: "/wordcloud", label: "Word Cloud", svgIcon: "/word-cloud.svg" },
-  { href: "/read", label: "Read Scriptures", icon: "📖" },
+  { href: "/read", label: "Read Scriptures", svgIcon: "/scriptures.svg" },
   { href: "/bookmarks", label: "Bookmarks", icon: "★" },
 ];
 
