@@ -556,7 +556,7 @@ export default function NarrativeArcTool() {
                         formatter: (value: number) => value.toLocaleString(),
                       },
                       zoom: isMobile
-                        ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const }, pan: { enabled: true, mode: "x" as const }, limits: { x: { minRange: 3 } } }
+                        ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const }, pan: { enabled: true, mode: "x" as const }, limits: { x: { minRange: 5 } } }
                         : {
                           zoom: { wheel: { enabled: true, speed: 0.05, modifierKey: "alt" as const }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const },
                           pan: { enabled: true, mode: "x" as const },

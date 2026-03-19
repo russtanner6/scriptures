@@ -427,7 +427,7 @@ export default function HeatmapTool() {
                       onClick={() => { const el = document.getElementById(`heatmap-${abbrev}`); if (el) el.scrollIntoView({ behavior: "smooth", block: "start" }); }}
                       style={{ display: "inline-flex", alignItems: "center", gap: "5px", padding: "5px 12px", borderRadius: "8px", border: "1px solid rgba(255,255,255,0.08)", background: "rgba(255,255,255,0.06)", color: "var(--text-secondary)", fontSize: "0.78rem", fontWeight: 500, fontFamily: "inherit", cursor: "pointer", transition: "all 0.15s" }}>
                       <span style={{ width: "8px", height: "8px", borderRadius: "2px", background: volColor, flexShrink: 0 }} />
-                      {vg.volumeName}
+                      {compactVolumeName(vg.volumeName, isMobile)}
                     </button>
                   );
                 })}
@@ -455,7 +455,7 @@ export default function HeatmapTool() {
                           : <>No references to &quot;{word}&quot; found in the {vg.volumeName}</>
                         }
                       </p>
-                      {getViewMode(abbrev) === "arc" && <ChartHints isMobile={isMobile} />}
+                      <ChartHints isMobile={isMobile} showZoom={getViewMode(abbrev) === "arc"} />
                     </div>
                     <div style={{ display: "flex", gap: "6px", alignItems: "center", flexShrink: 0 }}>
                       <ExportButton compact={isMobile} onClick={() => {
@@ -466,11 +466,12 @@ export default function HeatmapTool() {
                   </div>
 
                   {/* View toggle */}
-                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "8px", marginBottom: "12px" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "6px", marginTop: "8px", marginBottom: "12px", flexWrap: "wrap" }}>
                     <button type="button" onClick={() => { if (getViewMode(abbrev) !== "heatmap") toggleViewMode(abbrev); }}
+                      title="Heatmap view"
                       style={{
-                        display: "inline-flex", alignItems: "center", gap: "6px",
-                        padding: "6px 14px", borderRadius: "8px",
+                        display: "inline-flex", alignItems: "center", gap: "5px",
+                        padding: isMobile ? "6px 10px" : "6px 14px", borderRadius: "8px",
                         border: "none",
                         background: getViewMode(abbrev) === "heatmap" ? "rgba(255,255,255,0.12)" : "transparent",
                         color: getViewMode(abbrev) === "heatmap" ? "var(--text)" : "var(--text-muted)",
@@ -478,12 +479,13 @@ export default function HeatmapTool() {
                         fontFamily: "inherit", cursor: "pointer", transition: "all 0.15s",
                       }}>
                       <img src="/heatmap.svg" alt="" style={{ width: "14px", height: "14px", filter: getViewMode(abbrev) === "heatmap" ? "invert(1) brightness(1)" : "invert(1) brightness(0.5)" }} />
-                      Heatmap
+                      {!isMobile && "Heatmap"}
                     </button>
                     <button type="button" onClick={() => { if (getViewMode(abbrev) !== "arc") toggleViewMode(abbrev); }}
+                      title="Narrative arc view"
                       style={{
-                        display: "inline-flex", alignItems: "center", gap: "6px",
-                        padding: "6px 14px", borderRadius: "8px",
+                        display: "inline-flex", alignItems: "center", gap: "5px",
+                        padding: isMobile ? "6px 10px" : "6px 14px", borderRadius: "8px",
                         border: "none",
                         background: getViewMode(abbrev) === "arc" ? "rgba(255,255,255,0.12)" : "transparent",
                         color: getViewMode(abbrev) === "arc" ? "var(--text)" : "var(--text-muted)",
@@ -491,13 +493,13 @@ export default function HeatmapTool() {
                         fontFamily: "inherit", cursor: "pointer", transition: "all 0.15s",
                       }}>
                       <img src="/narrative-arc.svg" alt="" style={{ width: "14px", height: "14px", filter: getViewMode(abbrev) === "arc" ? "invert(1) brightness(1)" : "invert(1) brightness(0.5)" }} />
-                      Narrative Arc
+                      {!isMobile && "Narrative Arc"}
                     </button>
-                    {word && (
+                    {word && !isMobile && (
                       <a
                         href={`/narrative-arc?terms=${encodeURIComponent(word.trim())}`}
                         style={{
-                          marginLeft: "12px", fontSize: "0.75rem", fontWeight: 500,
+                          marginLeft: "6px", fontSize: "0.75rem", fontWeight: 500,
                           color: "var(--accent)", textDecoration: "underline",
                           textUnderlineOffset: "3px", opacity: 0.85, transition: "opacity 0.15s",
                         }}
@@ -630,7 +632,7 @@ export default function HeatmapTool() {
                                 formatter: (value: number) => value.toLocaleString(),
                               },
                               zoom: isMobile
-                                ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const }, pan: { enabled: true, mode: "x" as const }, limits: { x: { minRange: 3 } } }
+                                ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const }, pan: { enabled: true, mode: "x" as const }, limits: { x: { minRange: 5 } } }
                                 : {
                                   zoom: { wheel: { enabled: true, speed: 0.05, modifierKey: "alt" as const }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const },
                                   pan: { enabled: true, mode: "x" as const },
