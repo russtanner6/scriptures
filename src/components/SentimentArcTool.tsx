@@ -203,7 +203,7 @@ export default function SentimentArcTool() {
               transition: "all 0.15s",
             }}
           >
-            {loading ? "Analyzing..." : "Go"}
+            {loading ? "Searching..." : "Go"}
           </button>
         </div>
       </div>
