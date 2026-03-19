@@ -229,6 +229,33 @@ export default function WordFrequencyTool() {
         .filter((v) => selectedVolumeIds.has(v.id))
     : [];
 
+  // Expand single-book volumes (D&C) into per-section entries for Top Books & Data Table
+  const expandedResults = results
+    ? results.results.flatMap((r) => {
+        // Find the volume for this result
+        const vol = volumes.find((v) => v.abbrev === r.volumeAbbrev);
+        if (vol && vol.books.length === 1) {
+          // Single-book volume — replace with per-section entries from chapterData
+          const sections = chapterData.get(vol.id);
+          if (sections && sections.length > 0) {
+            return sections
+              .filter((s) => s.count > 0)
+              .map((s) => ({
+                bookId: s.bookId,
+                bookName: `${r.bookName} ${s.chapter}`,
+                volumeName: r.volumeName,
+                volumeAbbrev: r.volumeAbbrev,
+                displayOrder: r.displayOrder + s.chapter * 0.001,
+                count: s.count,
+                verseCount: 0, // chapter-level verse count not available
+                chapter: s.chapter,
+              }));
+          }
+        }
+        return [r];
+      })
+    : [];
+
   const toggleVolume = (id: number) => {
     setSelectedVolumeIds((prev) => {
       const next = new Set(prev);
@@ -999,14 +1026,14 @@ export default function WordFrequencyTool() {
             })()}
 
             {/* Top 10 books */}
-            {visiblePanels.has("top10") && results.results.length > 0 && (
+            {visiblePanels.has("top10") && expandedResults.length > 0 && (
               <div id="section-top10" className="full-width">
               <DashboardCard
-                title={`Top ${Math.min(10, results.results.length)} books (all volumes)`}
+                title={`Top ${Math.min(10, expandedResults.length)} books & sections (all volumes)`}
                 description="Ranked by raw count"
               >
                 <HorizontalBarList
-                  items={results.results
+                  items={expandedResults
                     .slice()
                     .sort((a, b) => b.count - a.count)
                     .slice(0, 10)
@@ -1016,16 +1043,19 @@ export default function WordFrequencyTool() {
                       color: VOLUME_COLORS[r.volumeAbbrev] || "#3b82f6",
                       id: r.bookId,
                     }))}
-                  onBarClick={(item: BarItem) =>
-                    item.id && results && setScripturePanel({
+                  onBarClick={(item: BarItem) => {
+                    if (!item.id || !results) return;
+                    const match = expandedResults.find((r) => r.bookName === item.label && r.bookId === item.id);
+                    setScripturePanel({
                       word: results.word,
                       bookId: item.id,
                       bookName: item.label,
+                      chapter: match && "chapter" in match ? (match as { chapter?: number }).chapter : undefined,
                       caseInsensitive: results.caseInsensitive,
                       wholeWord: results.wholeWord,
                       volumeColor: item.color,
-                    })
-                  }
+                    });
+                  }}
                 />
               </DashboardCard>
               </div>
@@ -1282,14 +1312,14 @@ export default function WordFrequencyTool() {
                     mono: true,
                   },
                 ]}
-                rows={results.results
+                rows={expandedResults
                   .slice()
                   .sort((a, b) => b.count - a.count)
                   .map((r) => ({
                     book: r.bookName,
                     volume: r.volumeAbbrev,
                     count: r.count,
-                    verses: r.verseCount,
+                    verses: r.verseCount || "—",
                   }))}
                 totalRow={{
                   book: "Total",
