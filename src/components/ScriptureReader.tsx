@@ -9,7 +9,7 @@ import ChapterInsights from "./ChapterInsights";
 import VersePopover from "./VersePopover";
 import ResourceMarker, { ResourceOverflowBadge, getResourceTypeColor } from "./ResourceMarker";
 import ResourcePanel from "./ResourcePanel";
-import { markChapterRead, isChapterRead, getReadChaptersForBook, getVolumeProgress, getStreak } from "@/lib/reading-progress";
+import { markChapterRead, isChapterRead, getReadChaptersForBook, getVolumeProgress } from "@/lib/reading-progress";
 import { getAnnotationsForChapter } from "@/lib/annotations";
 
 interface ReaderVerse {
@@ -59,7 +59,7 @@ export default function ScriptureReader() {
   // Reading progress
   const [chapterMarkedRead, setChapterMarkedRead] = useState(false);
   const [showReadToast, setShowReadToast] = useState(false);
-  const [streakInfo, setStreakInfo] = useState({ streak: 0, isActiveToday: false });
+  // (streak counter removed)
 
   // In-chapter search
   const [searchOpen, setSearchOpen] = useState(false);
@@ -150,7 +150,6 @@ export default function ScriptureReader() {
     if (scrollProgress >= 0.95 && !chapterMarkedRead && selectedBookId && selectedChapter && verses.length > 0) {
       markChapterRead(selectedBookId, selectedChapter);
       setChapterMarkedRead(true);
-      setStreakInfo(getStreak());
       setShowReadToast(true);
       setTimeout(() => setShowReadToast(false), 2500);
     }
@@ -160,7 +159,6 @@ export default function ScriptureReader() {
   useEffect(() => {
     if (selectedBookId && selectedChapter) {
       setChapterMarkedRead(isChapterRead(selectedBookId, selectedChapter));
-      setStreakInfo(getStreak());
     }
   }, [selectedBookId, selectedChapter]);
 
@@ -386,35 +384,44 @@ export default function ScriptureReader() {
   };
 
   // Color theme
-  // Speaker type colors
-  const SPEAKER_COLORS: Record<SpeakerType, string> = {
-    divine: "#F5A623",   // warm gold
-    prophet: "#3B82F6",  // blue
-    apostle: "#10B981",  // green
-    angel: "#A78BFA",    // lavender
-    narrator: "#6B7280", // gray
-    other: "#9CA3AF",    // light gray
-  };
+  // Speaker type colors — darker in light mode for readability
+  const SPEAKER_COLORS: Record<SpeakerType, string> = lightMode
+    ? {
+        divine: "#B8860B",
+        prophet: "#2563EB",
+        apostle: "#059669",
+        angel: "#7C3AED",
+        narrator: "#4B5563",
+        other: "#6B7280",
+      }
+    : {
+        divine: "#F5A623",
+        prophet: "#3B82F6",
+        apostle: "#10B981",
+        angel: "#A78BFA",
+        narrator: "#6B7280",
+        other: "#9CA3AF",
+      };
 
   const theme = lightMode
     ? {
         bg: "#faf9f6",
-        text: "#1a1a1a",
-        textSecondary: "#555",
-        textMuted: "#888",
-        surface: "rgba(0, 0, 0, 0.03)",
-        border: "rgba(0, 0, 0, 0.08)",
-        verseNum: "#aaa",
-        verseText: "#2a2a2a",
+        text: "#222222",
+        textSecondary: "#555555",
+        textMuted: "#999999",
+        surface: "rgba(0, 0, 0, 0.04)",
+        border: "rgba(0, 0, 0, 0.10)",
+        verseNum: "#bbbbbb",
+        verseText: "#333333",
       }
     : {
-        bg: "var(--bg)",
-        text: "var(--text)",
-        textSecondary: "var(--text-secondary)",
-        textMuted: "var(--text-muted)",
-        surface: "var(--surface)",
-        border: "var(--border)",
-        verseNum: "var(--text-muted)",
+        bg: "#111116",
+        text: "#f0f0f0",
+        textSecondary: "#b0b0b0",
+        textMuted: "#666666",
+        surface: "rgba(255, 255, 255, 0.04)",
+        border: "rgba(255, 255, 255, 0.08)",
+        verseNum: "#555555",
         verseText: "rgba(255, 255, 255, 0.85)",
       };
 
@@ -456,7 +463,7 @@ export default function ScriptureReader() {
             left: 0,
             height: "2px",
             width: `${scrollProgress * 100}%`,
-            background: volColor,
+            background: lightMode ? "rgba(0, 0, 0, 0.15)" : "rgba(255, 255, 255, 0.20)",
             zIndex: 100,
             transition: "width 0.1s linear",
           }}
@@ -468,7 +475,7 @@ export default function ScriptureReader() {
             position: "sticky",
             top: 0,
             zIndex: 50,
-            background: lightMode ? "rgba(250, 249, 246, 0.95)" : "rgba(15, 15, 18, 0.95)",
+            background: lightMode ? "rgba(250, 249, 246, 0.95)" : "rgba(17, 17, 22, 0.95)",
             backdropFilter: "blur(12px)",
             WebkitBackdropFilter: "blur(12px)",
             borderBottom: `1px solid ${theme.border}`,
@@ -518,7 +525,7 @@ export default function ScriptureReader() {
                   fontWeight: 600,
                   textTransform: "uppercase",
                   letterSpacing: "0.1em",
-                  color: volColor,
+                  color: theme.textMuted,
                 }}
               >
                 {chapterLabel}
@@ -527,124 +534,6 @@ export default function ScriptureReader() {
           </div>
 
           <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "6px" : "8px" }}>
-            {/* Streak badge */}
-            {streakInfo.streak > 0 && !isMobile && (
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "3px",
-                  padding: "4px 10px",
-                  borderRadius: "20px",
-                  background: `${volColor}15`,
-                  border: `1px solid ${volColor}30`,
-                  fontSize: "0.7rem",
-                  fontWeight: 600,
-                  color: volColor,
-                }}
-                title={`${streakInfo.streak}-day reading streak`}
-              >
-                🔥 {streakInfo.streak}
-              </div>
-            )}
-
-            {/* Resource layer toggle */}
-            {chapterResources.length > 0 && (
-              <button
-                onClick={() => {
-                  const next = !showResources;
-                  setShowResources(next);
-                  localStorage.setItem("reader-show-resources", String(next));
-                }}
-                title={showResources ? "Hide resources" : "Show resources"}
-                style={{
-                  position: "relative",
-                  background: showResources
-                    ? (lightMode ? `${volColor}10` : `${volColor}15`)
-                    : (lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.06)"),
-                  border: `1px solid ${showResources ? `${volColor}40` : theme.border}`,
-                  borderRadius: "8px",
-                  width: "36px",
-                  height: "36px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  cursor: "pointer",
-                  fontSize: "0.85rem",
-                  transition: "all 0.15s",
-                  color: showResources ? volColor : theme.textSecondary,
-                }}
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-                  <line x1="8" y1="21" x2="16" y2="21" />
-                  <line x1="12" y1="17" x2="12" y2="21" />
-                </svg>
-                {/* Badge dot */}
-                <span
-                  style={{
-                    position: "absolute",
-                    top: "4px",
-                    right: "4px",
-                    width: "7px",
-                    height: "7px",
-                    borderRadius: "50%",
-                    background: volColor,
-                    opacity: showResources ? 1 : 0.5,
-                    fontSize: "0",
-                  }}
-                />
-              </button>
-            )}
-
-            {/* Speaker attribution toggle */}
-            {chapterSpeakers.length > 0 && (
-              <button
-                onClick={() => {
-                  const next = !showSpeakers;
-                  setShowSpeakers(next);
-                  localStorage.setItem("reader-show-speakers", String(next));
-                }}
-                title={showSpeakers ? "Hide speakers" : "Show speakers"}
-                style={{
-                  position: "relative",
-                  background: showSpeakers
-                    ? (lightMode ? `${SPEAKER_COLORS.divine}15` : `${SPEAKER_COLORS.divine}20`)
-                    : (lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.06)"),
-                  border: `1px solid ${showSpeakers ? `${SPEAKER_COLORS.divine}40` : theme.border}`,
-                  borderRadius: "8px",
-                  width: "36px",
-                  height: "36px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  cursor: "pointer",
-                  fontSize: "0.85rem",
-                  transition: "all 0.15s",
-                  color: showSpeakers ? SPEAKER_COLORS.divine : theme.textSecondary,
-                }}
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-                {/* Badge dot */}
-                <span
-                  style={{
-                    position: "absolute",
-                    top: "4px",
-                    right: "4px",
-                    width: "7px",
-                    height: "7px",
-                    borderRadius: "50%",
-                    background: SPEAKER_COLORS.divine,
-                    opacity: showSpeakers ? 1 : 0.5,
-                    fontSize: "0",
-                  }}
-                />
-              </button>
-            )}
-
             {/* Search toggle */}
             {searchOpen ? (
               <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
@@ -715,7 +604,10 @@ export default function ScriptureReader() {
                   color: theme.textSecondary,
                 }}
               >
-                🔍
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
               </button>
             )}
 
@@ -757,11 +649,27 @@ export default function ScriptureReader() {
                 alignItems: "center",
                 justifyContent: "center",
                 cursor: "pointer",
-                fontSize: "1rem",
                 transition: "all 0.15s",
+                color: theme.textSecondary,
               }}
             >
-              {lightMode ? "🌙" : "☀️"}
+              {lightMode ? (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+              ) : (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="5" />
+                  <line x1="12" y1="1" x2="12" y2="3" />
+                  <line x1="12" y1="21" x2="12" y2="23" />
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                  <line x1="1" y1="12" x2="3" y2="12" />
+                  <line x1="21" y1="12" x2="23" y2="12" />
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                </svg>
+              )}
             </button>
 
             {/* Chapter selector */}
@@ -832,7 +740,7 @@ export default function ScriptureReader() {
               fontWeight: 600,
               textTransform: "uppercase",
               letterSpacing: "0.12em",
-              color: volColor,
+              color: theme.textMuted,
               marginBottom: "32px",
             }}
           >
@@ -862,83 +770,141 @@ export default function ScriptureReader() {
             </div>
           )}
 
-          {/* Speaker legend */}
-          {!isLoading && showSpeakers && chapterSpeakers.length > 0 && (() => {
-            const uniqueSpeakers = Array.from(
-              new Map(chapterSpeakers.map((s) => [s.speaker, s])).values()
-            );
-            return (
+          {/* Layers section — toggle pills for Speakers and Resources */}
+          {!isLoading && (chapterSpeakers.length > 0 || chapterResources.length > 0) && (
+            <div style={{ marginBottom: "20px" }}>
               <div
                 style={{
-                  fontSize: "0.68rem",
+                  fontSize: "0.62rem",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.1em",
                   color: theme.textMuted,
-                  marginBottom: "12px",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "12px",
-                  flexWrap: "wrap",
-                  opacity: 0.8,
+                  marginBottom: "8px",
                 }}
               >
-                <span style={{ display: "flex", alignItems: "center", gap: "4px" }}>
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                    <circle cx="12" cy="7" r="4" />
-                  </svg>
-                  Speakers:
-                </span>
-                {uniqueSpeakers.slice(0, 8).map((s) => (
-                  <span
-                    key={s.speaker}
+                Layers
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
+                {chapterSpeakers.length > 0 && (
+                  <button
+                    onClick={() => {
+                      const next = !showSpeakers;
+                      setShowSpeakers(next);
+                      localStorage.setItem("reader-show-speakers", String(next));
+                    }}
                     style={{
-                      display: "flex",
+                      display: "inline-flex",
                       alignItems: "center",
-                      gap: "4px",
-                      color: SPEAKER_COLORS[s.speakerType],
-                      fontWeight: 600,
-                      fontSize: "0.62rem",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.04em",
+                      gap: "5px",
+                      padding: "5px 12px",
+                      borderRadius: "20px",
+                      border: `1px solid ${showSpeakers ? (lightMode ? "rgba(0,0,0,0.15)" : "rgba(255,255,255,0.15)") : theme.border}`,
+                      background: showSpeakers
+                        ? (lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.08)")
+                        : "transparent",
+                      color: showSpeakers ? theme.text : theme.textMuted,
+                      fontSize: "0.72rem",
+                      fontWeight: 500,
+                      cursor: "pointer",
+                      fontFamily: "inherit",
+                      transition: "all 0.15s",
                     }}
                   >
-                    <span style={{
-                      width: "6px",
-                      height: "6px",
-                      borderRadius: "50%",
-                      background: SPEAKER_COLORS[s.speakerType],
-                      flexShrink: 0,
-                    }} />
-                    {s.speaker}
-                  </span>
-                ))}
-                {uniqueSpeakers.length > 8 && (
-                  <span style={{ color: theme.textMuted }}>
-                    +{uniqueSpeakers.length - 8} more
-                  </span>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    Speakers
+                  </button>
+                )}
+                {chapterResources.length > 0 && (
+                  <button
+                    onClick={() => {
+                      const next = !showResources;
+                      setShowResources(next);
+                      localStorage.setItem("reader-show-resources", String(next));
+                    }}
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "5px",
+                      padding: "5px 12px",
+                      borderRadius: "20px",
+                      border: `1px solid ${showResources ? (lightMode ? "rgba(0,0,0,0.15)" : "rgba(255,255,255,0.15)") : theme.border}`,
+                      background: showResources
+                        ? (lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.08)")
+                        : "transparent",
+                      color: showResources ? theme.text : theme.textMuted,
+                      fontSize: "0.72rem",
+                      fontWeight: 500,
+                      cursor: "pointer",
+                      fontFamily: "inherit",
+                      transition: "all 0.15s",
+                    }}
+                  >
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                      <line x1="8" y1="21" x2="16" y2="21" />
+                      <line x1="12" y1="17" x2="12" y2="21" />
+                    </svg>
+                    Resources
+                    <span style={{ fontSize: "0.62rem", color: theme.textMuted }}>
+                      ({chapterResources.length})
+                    </span>
+                  </button>
                 )}
               </div>
-            );
-          })()}
 
-          {/* Resource count indicator */}
-          {!isLoading && showResources && chapterResources.length > 0 && (
-            <div
-              style={{
-                fontSize: "0.72rem",
-                color: theme.textMuted,
-                marginBottom: "16px",
-                display: "flex",
-                alignItems: "center",
-                gap: "6px",
-                opacity: 0.7,
-              }}
-            >
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-                <line x1="8" y1="21" x2="16" y2="21" />
-                <line x1="12" y1="17" x2="12" y2="21" />
-              </svg>
-              {chapterResources.length} resource{chapterResources.length !== 1 ? "s" : ""} linked in this chapter
+              {/* Speaker legend — shown below toggle when Speakers is on */}
+              {showSpeakers && chapterSpeakers.length > 0 && (() => {
+                const uniqueSpeakers = Array.from(
+                  new Map(chapterSpeakers.map((s) => [s.speaker, s])).values()
+                );
+                return (
+                  <div
+                    style={{
+                      fontSize: "0.68rem",
+                      color: theme.textMuted,
+                      marginTop: "10px",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "12px",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    {uniqueSpeakers.slice(0, 8).map((s) => (
+                      <span
+                        key={s.speaker}
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "4px",
+                          color: SPEAKER_COLORS[s.speakerType],
+                          fontWeight: 600,
+                          fontSize: "0.62rem",
+                          textTransform: "uppercase",
+                          letterSpacing: "0.04em",
+                        }}
+                      >
+                        <span style={{
+                          width: "6px",
+                          height: "6px",
+                          borderRadius: "50%",
+                          background: SPEAKER_COLORS[s.speakerType],
+                          flexShrink: 0,
+                        }} />
+                        {s.speaker}
+                      </span>
+                    ))}
+                    {uniqueSpeakers.length > 8 && (
+                      <span style={{ color: theme.textMuted }}>
+                        +{uniqueSpeakers.length - 8} more
+                      </span>
+                    )}
+                  </div>
+                );
+              })()}
             </div>
           )}
 
@@ -983,7 +949,7 @@ export default function ScriptureReader() {
                         fontSize: "0.58rem",
                         fontWeight: 700,
                         letterSpacing: "0.06em",
-                        color: speakerColor,
+                        color: speakerColor || undefined,
                         textTransform: "uppercase",
                         marginBottom: "2px",
                         opacity: 0.85,
@@ -1161,7 +1127,7 @@ export default function ScriptureReader() {
               right: 0,
               zIndex: 51,
               padding: isMobile ? "4px 12px" : "6px 24px",
-              background: lightMode ? "rgba(250, 249, 246, 0.92)" : "rgba(15, 15, 18, 0.92)",
+              background: lightMode ? "rgba(250, 249, 246, 0.92)" : "rgba(17, 17, 22, 0.92)",
               backdropFilter: "blur(8px)",
               WebkitBackdropFilter: "blur(8px)",
               borderTop: `1px solid ${theme.border}`,
@@ -1233,7 +1199,7 @@ export default function ScriptureReader() {
             bottom: 0,
             left: 0,
             right: 0,
-            background: lightMode ? "rgba(250, 249, 246, 0.95)" : "rgba(15, 15, 18, 0.95)",
+            background: lightMode ? "rgba(250, 249, 246, 0.95)" : "rgba(17, 17, 22, 0.95)",
             backdropFilter: "blur(12px)",
             WebkitBackdropFilter: "blur(12px)",
             borderTop: `1px solid ${theme.border}`,
@@ -1252,21 +1218,39 @@ export default function ScriptureReader() {
               border: "none",
               color: theme.textSecondary,
               cursor: isFirstChapterOfVolume ? "default" : "pointer",
-              fontSize: "0.85rem",
+              fontSize: "0.82rem",
               fontWeight: 600,
               fontFamily: "inherit",
               padding: "8px 12px",
               opacity: isFirstChapterOfVolume ? 0.3 : 1,
               minWidth: "80px",
               textAlign: "left",
+              display: "flex",
+              alignItems: "center",
+              gap: "6px",
             }}
           >
-            ← Prev
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="miter"><polyline points="15 18 9 12 15 6" /></svg> Prev
           </button>
-          <div style={{ textAlign: "center" }}>
+          <div style={{ textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
+            <a
+              href="/"
+              title="Back to home"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                opacity: 0.5,
+                transition: "opacity 0.15s",
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.5"; }}
+            >
+              <img src="/tree-logo.svg" alt="Home" style={{ height: "22px", width: "auto", filter: lightMode ? "invert(1)" : "none" }} />
+            </a>
             <div
               style={{
-                fontSize: "0.75rem",
+                fontSize: "0.62rem",
                 color: theme.textMuted,
                 fontWeight: 500,
               }}
@@ -1282,16 +1266,20 @@ export default function ScriptureReader() {
               border: "none",
               color: theme.textSecondary,
               cursor: isLastChapterOfVolume ? "default" : "pointer",
-              fontSize: "0.85rem",
+              fontSize: "0.82rem",
               fontWeight: 600,
               fontFamily: "inherit",
               padding: "8px 12px",
               opacity: isLastChapterOfVolume ? 0.3 : 1,
               minWidth: "80px",
               textAlign: "right",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "flex-end",
+              gap: "6px",
             }}
           >
-            Next →
+            Next <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="miter"><polyline points="9 18 15 12 9 6" /></svg>
           </button>
         </div>
 
@@ -1304,13 +1292,13 @@ export default function ScriptureReader() {
               left: "50%",
               transform: "translateX(-50%)",
               zIndex: 150,
-              background: volColor,
-              color: "#fff",
+              background: lightMode ? "#222" : "#f0f0f0",
+              color: lightMode ? "#fff" : "#111",
               padding: "10px 24px",
               borderRadius: "24px",
               fontSize: "0.85rem",
               fontWeight: 600,
-              boxShadow: `0 4px 20px ${volColor}40`,
+              boxShadow: "0 4px 20px rgba(0,0,0,0.2)",
               animation: "fadeIn 0.3s ease",
               display: "flex",
               alignItems: "center",
@@ -1318,11 +1306,6 @@ export default function ScriptureReader() {
             }}
           >
             ✓ Chapter complete!
-            {streakInfo.streak > 1 && (
-              <span style={{ fontSize: "0.75rem", opacity: 0.9 }}>
-                🔥 {streakInfo.streak}-day streak
-              </span>
-            )}
           </div>
         )}
 

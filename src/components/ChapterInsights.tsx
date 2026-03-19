@@ -119,7 +119,7 @@ export default function ChapterInsights({
                 style={{
                   fontSize: isMobile ? "0.82rem" : "0.88rem",
                   fontWeight: 700,
-                  color: volColor,
+                  color: theme.text,
                 }}
               >
                 {pill.value}
