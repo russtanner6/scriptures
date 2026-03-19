@@ -26,7 +26,7 @@ const dotStyle: React.CSSProperties = {
  * Platform-aware (Mac shows "Option", PC shows "Alt").
  * Mobile shows tap/pinch hints; desktop shows click/scroll/double-click.
  */
-export default function ChartHints({ isMobile, showZoom = true }: { isMobile: boolean; showZoom?: boolean }) {
+export default function ChartHints({ isMobile, showZoom = true, clickHint, showDrag = false }: { isMobile: boolean; showZoom?: boolean; clickHint?: string; showDrag?: boolean }) {
   const [isMac, setIsMac] = useState(false);
 
   useEffect(() => {
@@ -53,8 +53,22 @@ export default function ChartHints({ isMobile, showZoom = true }: { isMobile: bo
         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.6 }}>
           <path d="M15 15l-2 5L9 9l11 4-5 2z" />
         </svg>
-        {isMobile ? "Tap" : "Click"} any point to read verses
+        {clickHint || `${isMobile ? "Tap" : "Click"} any point to read verses`}
       </span>
+
+      {showDrag && !isMobile && (
+        <>
+          <span style={dotStyle} />
+          <span style={hintStyle}>
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.6 }}>
+              <polyline points="5 9 2 12 5 15" />
+              <polyline points="19 9 22 12 19 15" />
+              <line x1="2" y1="12" x2="22" y2="12" />
+            </svg>
+            Drag to pan
+          </span>
+        </>
+      )}
 
       {showZoom && (
         <>

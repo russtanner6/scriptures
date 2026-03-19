@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { VOLUME_COLORS } from "@/lib/constants";
 import Header from "./Header";
+import ChartHints from "./ChartHints";
 import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./MethodologyModal";
 import timelineData from "../../data/timeline.json";
 
@@ -57,7 +58,27 @@ export default function TimelineTool() {
   const [expandedEvent, setExpandedEvent] = useState<number | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
+  // Zoom/pan state for Book Spans view
+  const [zoomStart, setZoomStart] = useState<number | null>(null);
+  const [zoomEnd, setZoomEnd] = useState<number | null>(null);
+  const isDragging = useRef(false);
+  const dragStartX = useRef(0);
+  const dragStartRange = useRef<[number, number]>([0, 0]);
+  const pinchStartDist = useRef(0);
+  const pinchStartRange = useRef<[number, number]>([0, 0]);
+
   const period = PERIODS.find((p) => p.id === activePeriod) || PERIODS[0];
+
+  // Reset zoom when period changes
+  useEffect(() => {
+    setZoomStart(null);
+    setZoomEnd(null);
+  }, [activePeriod]);
+
+  // Effective view range (zoomed or full period)
+  const viewStart = zoomStart ?? period.start;
+  const viewEnd = zoomEnd ?? period.end;
+  const isZoomed = zoomStart !== null || zoomEnd !== null;
 
   const events = (timelineData.events as TimelineEvent[]).filter(
     (e) =>
@@ -75,8 +96,201 @@ export default function TimelineTool() {
     (e) => e.endYear >= period.start && e.startYear <= period.end
   );
 
-  const range = period.end - period.start;
-  const toPercent = (year: number) => ((year - period.start) / range) * 100;
+  const range = viewEnd - viewStart;
+  const fullRange = period.end - period.start;
+  const toPercent = (year: number) => ((year - viewStart) / range) * 100;
+
+  // Zoom handler (Alt+scroll)
+  const handleWheel = useCallback(
+    (e: WheelEvent) => {
+      if (!e.altKey) return;
+      e.preventDefault();
+      e.stopPropagation();
+
+      const container = scrollRef.current;
+      if (!container) return;
+
+      const rect = container.getBoundingClientRect();
+      const mouseX = (e.clientX - rect.left) / rect.width; // 0-1 position
+      const curStart = zoomStart ?? period.start;
+      const curEnd = zoomEnd ?? period.end;
+      const curRange = curEnd - curStart;
+
+      // Zoom factor
+      const zoomSpeed = 0.08;
+      const delta = e.deltaY > 0 ? 1 + zoomSpeed : 1 - zoomSpeed;
+      const newRange = Math.max(curRange * delta, fullRange * 0.02); // Min 2% of full range
+      const clampedRange = Math.min(newRange, fullRange);
+
+      // Zoom centered on cursor
+      const pivot = curStart + mouseX * curRange;
+      let newStart = pivot - mouseX * clampedRange;
+      let newEnd = pivot + (1 - mouseX) * clampedRange;
+
+      // Clamp to period bounds
+      if (newStart < period.start) {
+        newStart = period.start;
+        newEnd = newStart + clampedRange;
+      }
+      if (newEnd > period.end) {
+        newEnd = period.end;
+        newStart = newEnd - clampedRange;
+      }
+
+      // If we're back to full range, reset zoom
+      if (clampedRange >= fullRange * 0.98) {
+        setZoomStart(null);
+        setZoomEnd(null);
+      } else {
+        setZoomStart(Math.round(newStart));
+        setZoomEnd(Math.round(newEnd));
+      }
+    },
+    [zoomStart, zoomEnd, period.start, period.end, fullRange]
+  );
+
+  // Register wheel handler (needs passive: false)
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el || viewMode !== "books") return;
+    el.addEventListener("wheel", handleWheel, { passive: false });
+    return () => el.removeEventListener("wheel", handleWheel);
+  }, [handleWheel, viewMode]);
+
+  // Drag-to-pan handlers
+  const handleMouseDown = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (e.button !== 0) return;
+      isDragging.current = true;
+      dragStartX.current = e.clientX;
+      dragStartRange.current = [zoomStart ?? period.start, zoomEnd ?? period.end];
+      (e.currentTarget as HTMLDivElement).style.cursor = "grabbing";
+    },
+    [zoomStart, zoomEnd, period.start, period.end]
+  );
+
+  const handleMouseMove = useCallback(
+    (e: React.MouseEvent) => {
+      if (!isDragging.current) return;
+      const container = scrollRef.current;
+      if (!container) return;
+
+      const dx = e.clientX - dragStartX.current;
+      const containerWidth = container.getBoundingClientRect().width;
+      const [startRange, endRange] = dragStartRange.current;
+      const yearRange = endRange - startRange;
+      const yearDelta = -(dx / containerWidth) * yearRange;
+
+      let newStart = startRange + yearDelta;
+      let newEnd = endRange + yearDelta;
+
+      // Clamp to period bounds
+      if (newStart < period.start) {
+        newStart = period.start;
+        newEnd = newStart + yearRange;
+      }
+      if (newEnd > period.end) {
+        newEnd = period.end;
+        newStart = newEnd - yearRange;
+      }
+
+      setZoomStart(Math.round(newStart));
+      setZoomEnd(Math.round(newEnd));
+    },
+    [period.start, period.end]
+  );
+
+  const handleMouseUp = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      isDragging.current = false;
+      (e.currentTarget as HTMLDivElement).style.cursor = isZoomed ? "grab" : "default";
+    },
+    [isZoomed]
+  );
+
+  // Touch handlers for pinch zoom + drag on mobile
+  const handleTouchStart = useCallback(
+    (e: React.TouchEvent) => {
+      if (e.touches.length === 2) {
+        // Pinch start
+        const d = Math.hypot(
+          e.touches[0].clientX - e.touches[1].clientX,
+          e.touches[0].clientY - e.touches[1].clientY
+        );
+        pinchStartDist.current = d;
+        pinchStartRange.current = [zoomStart ?? period.start, zoomEnd ?? period.end];
+      } else if (e.touches.length === 1) {
+        // Drag start
+        isDragging.current = true;
+        dragStartX.current = e.touches[0].clientX;
+        dragStartRange.current = [zoomStart ?? period.start, zoomEnd ?? period.end];
+      }
+    },
+    [zoomStart, zoomEnd, period.start, period.end]
+  );
+
+  const handleTouchMove = useCallback(
+    (e: React.TouchEvent) => {
+      const container = scrollRef.current;
+      if (!container) return;
+
+      if (e.touches.length === 2) {
+        // Pinch zoom
+        e.preventDefault();
+        const d = Math.hypot(
+          e.touches[0].clientX - e.touches[1].clientX,
+          e.touches[0].clientY - e.touches[1].clientY
+        );
+        const scale = pinchStartDist.current / d;
+        const [startRange, endRange] = pinchStartRange.current;
+        const center = (startRange + endRange) / 2;
+        const halfRange = ((endRange - startRange) / 2) * scale;
+        const newRange = Math.max(halfRange * 2, fullRange * 0.02);
+        const clampedHalf = Math.min(newRange, fullRange) / 2;
+
+        let newStart = center - clampedHalf;
+        let newEnd = center + clampedHalf;
+
+        if (newStart < period.start) { newStart = period.start; newEnd = newStart + clampedHalf * 2; }
+        if (newEnd > period.end) { newEnd = period.end; newStart = newEnd - clampedHalf * 2; }
+
+        if (clampedHalf * 2 >= fullRange * 0.98) {
+          setZoomStart(null);
+          setZoomEnd(null);
+        } else {
+          setZoomStart(Math.round(newStart));
+          setZoomEnd(Math.round(newEnd));
+        }
+      } else if (e.touches.length === 1 && isDragging.current) {
+        // Drag pan
+        const dx = e.touches[0].clientX - dragStartX.current;
+        const containerWidth = container.getBoundingClientRect().width;
+        const [startRange, endRange] = dragStartRange.current;
+        const yearRange = endRange - startRange;
+        const yearDelta = -(dx / containerWidth) * yearRange;
+
+        let newStart = startRange + yearDelta;
+        let newEnd = endRange + yearDelta;
+
+        if (newStart < period.start) { newStart = period.start; newEnd = newStart + yearRange; }
+        if (newEnd > period.end) { newEnd = period.end; newStart = newEnd - yearRange; }
+
+        setZoomStart(Math.round(newStart));
+        setZoomEnd(Math.round(newEnd));
+      }
+    },
+    [period.start, period.end, fullRange]
+  );
+
+  const handleTouchEnd = useCallback(() => {
+    isDragging.current = false;
+  }, []);
+
+  // Double-click to reset zoom
+  const handleDoubleClick = useCallback(() => {
+    setZoomStart(null);
+    setZoomEnd(null);
+  }, []);
 
   const volumeBooks = new Map<string, TimelineBook[]>();
   for (const abbrev of volumeOrder) {
@@ -437,142 +651,193 @@ export default function TimelineTool() {
 
       {/* BOOK SPANS VIEW */}
       {viewMode === "books" && (
-        <div
-          ref={scrollRef}
-          style={{
-            background: "var(--surface)",
-            border: "1px solid var(--border)",
-            borderRadius: "12px",
-            padding: isMobile ? "16px" : "24px",
-            overflowX: "auto",
-            position: "relative",
-          }}
-        >
-          {/* Era bands */}
-          <div style={{ position: "relative", height: "32px", marginBottom: "8px", minWidth: isMobile ? "600px" : "auto" }}>
-            {eras.map((era, i) => {
-              const left = Math.max(toPercent(era.startYear), 0);
-              const right = Math.min(toPercent(era.endYear), 100);
-              const width = right - left;
-              if (width <= 0) return null;
-              return (
-                <div
-                  key={i}
-                  style={{
-                    position: "absolute",
-                    left: `${left}%`,
-                    width: `${width}%`,
-                    top: 0,
-                    height: "100%",
-                    background: `${era.color}15`,
-                    borderRadius: "4px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    overflow: "hidden",
-                  }}
-                >
-                  {width > 8 && (
-                    <span style={{ fontSize: "0.62rem", color: era.color, fontWeight: 600, whiteSpace: "nowrap", opacity: 0.8 }}>
-                      {era.label}
-                    </span>
-                  )}
-                </div>
-              );
-            })}
-          </div>
+        <div>
+          <ChartHints isMobile={isMobile} showZoom={true} clickHint="Click any book to read" showDrag={true} />
+          {isZoomed && (
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "8px", marginBottom: "4px" }}>
+              <span style={{ fontSize: "0.72rem", color: "var(--text-muted)" }}>
+                Viewing: {fmtYear(viewStart)} – {fmtYear(viewEnd)}
+              </span>
+              <button
+                onClick={handleDoubleClick}
+                style={{
+                  padding: "2px 10px",
+                  borderRadius: "6px",
+                  border: "1px solid var(--border)",
+                  background: "rgba(255,255,255,0.04)",
+                  color: "var(--accent)",
+                  fontSize: "0.7rem",
+                  fontWeight: 500,
+                  fontFamily: "inherit",
+                  cursor: "pointer",
+                }}
+              >
+                Reset zoom
+              </button>
+            </div>
+          )}
+          <div
+            ref={scrollRef}
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={handleMouseUp}
+            onDoubleClick={handleDoubleClick}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+            style={{
+              background: "var(--surface)",
+              border: "1px solid var(--border)",
+              borderRadius: "12px",
+              padding: isMobile ? "16px" : "24px",
+              overflow: "hidden",
+              position: "relative",
+              cursor: isZoomed ? "grab" : "default",
+              userSelect: "none",
+              marginTop: "8px",
+              touchAction: "pan-y",
+            }}
+          >
+            {/* Era bands */}
+            <div style={{ position: "relative", height: "32px", marginBottom: "8px" }}>
+              {eras.map((era, i) => {
+                const left = Math.max(toPercent(era.startYear), 0);
+                const right = Math.min(toPercent(era.endYear), 100);
+                const width = right - left;
+                if (width <= 0 || left > 100 || right < 0) return null;
+                return (
+                  <div
+                    key={i}
+                    style={{
+                      position: "absolute",
+                      left: `${Math.max(left, 0)}%`,
+                      width: `${Math.min(width, 100 - Math.max(left, 0))}%`,
+                      top: 0,
+                      height: "100%",
+                      background: `${era.color}15`,
+                      borderRadius: "4px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      overflow: "hidden",
+                    }}
+                  >
+                    {width > 6 && (
+                      <span style={{ fontSize: "0.62rem", color: era.color, fontWeight: 600, whiteSpace: "nowrap", opacity: 0.8 }}>
+                        {era.label}
+                      </span>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
 
-          {/* Axis line */}
-          <div style={{ position: "relative", height: "24px", borderBottom: "2px solid rgba(255,255,255,0.15)", marginBottom: "16px", minWidth: isMobile ? "600px" : "auto" }}>
-            {(() => {
-              const ticks: number[] = [];
-              const step = range > 3000 ? 500 : range > 1000 ? 200 : range > 200 ? 50 : 10;
-              const start = Math.ceil(period.start / step) * step;
-              for (let y = start; y <= period.end; y += step) {
-                ticks.push(y);
-              }
-              return ticks.map((y) => (
-                <div
-                  key={y}
-                  style={{
-                    position: "absolute",
-                    left: `${toPercent(y)}%`,
-                    bottom: "-2px",
-                    transform: "translateX(-50%)",
-                  }}
-                >
-                  <div style={{ width: "1px", height: "8px", background: "rgba(255,255,255,0.25)" }} />
-                  <div style={{ fontSize: "0.6rem", color: "var(--text-muted)", marginTop: "2px", whiteSpace: "nowrap", transform: "translateX(-50%)", position: "absolute", left: "50%" }}>
-                    {fmtYear(y)}
-                  </div>
-                </div>
-              ));
-            })()}
-          </div>
+            {/* Axis line */}
+            <div style={{ position: "relative", height: "24px", borderBottom: "2px solid rgba(255,255,255,0.15)", marginBottom: "16px" }}>
+              {(() => {
+                const ticks: number[] = [];
+                const step = range > 3000 ? 500 : range > 1000 ? 200 : range > 200 ? 50 : range > 50 ? 10 : range > 10 ? 5 : 1;
+                const start = Math.ceil(viewStart / step) * step;
+                for (let y = start; y <= viewEnd; y += step) {
+                  ticks.push(y);
+                }
+                return ticks.map((y) => {
+                  const pct = toPercent(y);
+                  if (pct < 0 || pct > 100) return null;
+                  return (
+                    <div
+                      key={y}
+                      style={{
+                        position: "absolute",
+                        left: `${pct}%`,
+                        bottom: "-2px",
+                        transform: "translateX(-50%)",
+                      }}
+                    >
+                      <div style={{ width: "1px", height: "8px", background: "rgba(255,255,255,0.25)" }} />
+                      <div style={{ fontSize: "0.6rem", color: "var(--text-muted)", marginTop: "2px", whiteSpace: "nowrap", transform: "translateX(-50%)", position: "absolute", left: "50%" }}>
+                        {fmtYear(y)}
+                      </div>
+                    </div>
+                  );
+                });
+              })()}
+            </div>
 
-          {/* Swim lanes by volume */}
-          <div style={{ marginTop: "28px", minWidth: isMobile ? "600px" : "auto" }}>
-            {Array.from(volumeBooks.entries()).map(([abbrev, vBooks]) => {
-              const color = VOLUME_COLORS[abbrev] || "#888";
-              return (
-                <div key={abbrev} style={{ marginBottom: "16px" }}>
-                  <div style={{ fontSize: "0.68rem", fontWeight: 600, color, marginBottom: "6px", textTransform: "uppercase", letterSpacing: "0.08em" }}>
-                    {isMobile ? abbrev : volumeNames[abbrev]}
+            {/* Swim lanes by volume */}
+            <div style={{ marginTop: "28px" }}>
+              {Array.from(volumeBooks.entries()).map(([abbrev, vBooks]) => {
+                const color = VOLUME_COLORS[abbrev] || "#888";
+                // Filter to books visible in zoomed range
+                const visibleBooks = vBooks.filter(
+                  (b) => b.endYear >= viewStart && b.startYear <= viewEnd
+                );
+                if (visibleBooks.length === 0) return null;
+                return (
+                  <div key={abbrev} style={{ marginBottom: "16px" }}>
+                    <div style={{ fontSize: "0.68rem", fontWeight: 600, color, marginBottom: "6px", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+                      {isMobile ? abbrev : volumeNames[abbrev]}
+                    </div>
+                    <div style={{ position: "relative", height: "26px" }}>
+                      {visibleBooks.map((book) => {
+                        const left = toPercent(book.startYear);
+                        const right = toPercent(book.endYear);
+                        let clampedLeft = Math.max(left, 0);
+                        let clampedRight = Math.min(right, 100);
+                        let width = clampedRight - clampedLeft;
+                        if (width < 0.5) width = 0.5;
+                        const isHovered = hoveredBook === book.name;
+                        return (
+                          <div
+                            key={book.name}
+                            onMouseEnter={() => setHoveredBook(book.name)}
+                            onMouseLeave={() => setHoveredBook(null)}
+                            title={`${book.name} (${fmtYear(book.startYear)} – ${fmtYear(book.endYear)})`}
+                            style={{
+                              position: "absolute",
+                              left: `${clampedLeft}%`,
+                              width: `${width}%`,
+                              top: "2px",
+                              height: "22px",
+                              background: isHovered ? color : `${color}80`,
+                              borderRadius: "4px",
+                              cursor: "pointer",
+                              transition: isDragging.current ? "none" : "all 0.15s",
+                              display: "flex",
+                              alignItems: "center",
+                              paddingLeft: "4px",
+                              overflow: "hidden",
+                              zIndex: isHovered ? 10 : 1,
+                              boxShadow: isHovered ? `0 2px 8px ${color}40` : "none",
+                            }}
+                            onClick={(e) => {
+                              // Don't navigate if we just finished dragging
+                              if (Math.abs(e.clientX - dragStartX.current) > 5) return;
+                              window.location.href = `/read?book=${encodeURIComponent(book.name)}`;
+                            }}
+                          >
+                            {width > 3 && (
+                              <span
+                                style={{
+                                  fontSize: "0.58rem",
+                                  fontWeight: 600,
+                                  color: "#fff",
+                                  whiteSpace: "nowrap",
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.4)",
+                                }}
+                              >
+                                {book.name}
+                              </span>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
-                  <div style={{ position: "relative", height: "26px" }}>
-                    {vBooks.map((book) => {
-                      const left = Math.max(toPercent(book.startYear), 0);
-                      const right = Math.min(toPercent(book.endYear), 100);
-                      let width = right - left;
-                      if (width < 0.5) width = 0.5;
-                      const isHovered = hoveredBook === book.name;
-                      return (
-                        <div
-                          key={book.name}
-                          onMouseEnter={() => setHoveredBook(book.name)}
-                          onMouseLeave={() => setHoveredBook(null)}
-                          title={`${book.name} (${fmtYear(book.startYear)} – ${fmtYear(book.endYear)})`}
-                          style={{
-                            position: "absolute",
-                            left: `${left}%`,
-                            width: `${width}%`,
-                            top: "2px",
-                            height: "22px",
-                            background: isHovered ? color : `${color}80`,
-                            borderRadius: "4px",
-                            cursor: "pointer",
-                            transition: "all 0.15s",
-                            display: "flex",
-                            alignItems: "center",
-                            paddingLeft: "4px",
-                            overflow: "hidden",
-                            zIndex: isHovered ? 10 : 1,
-                            boxShadow: isHovered ? `0 2px 8px ${color}40` : "none",
-                          }}
-                          onClick={() => {
-                            window.location.href = `/read?book=${encodeURIComponent(book.name)}`;
-                          }}
-                        >
-                          {width > 3 && (
-                            <span
-                              style={{
-                                fontSize: "0.58rem",
-                                fontWeight: 600,
-                                color: "#fff",
-                                whiteSpace: "nowrap",
-                                textShadow: "0 1px 2px rgba(0,0,0,0.4)",
-                              }}
-                            >
-                              {book.name}
-                            </span>
-                          )}
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
       )}
