@@ -51,14 +51,30 @@ export default function Footer() {
         <div>
           <div
             style={{
-              fontSize: "1.1rem",
-              fontWeight: 700,
-              color: "var(--text)",
+              display: "flex",
+              alignItems: "center",
+              gap: "10px",
               marginBottom: "10px",
-              letterSpacing: "-0.01em",
             }}
           >
-            Scripture Explorer
+            <img
+              src="/tree-logo.svg"
+              alt=""
+              style={{
+                height: "24px",
+                width: "auto",
+                opacity: 0.4,
+                filter: "grayscale(100%)",
+              }}
+            />
+            <span style={{
+              fontSize: "1rem",
+              fontWeight: 700,
+              color: "rgba(255,255,255,0.5)",
+              letterSpacing: "-0.01em",
+            }}>
+              Scripture Explorer
+            </span>
           </div>
           <p
             style={{
