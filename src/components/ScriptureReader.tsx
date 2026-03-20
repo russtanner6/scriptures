@@ -2,10 +2,11 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import type { Volume, Resource, SpeakerAttribution, SpeakerType } from "@/lib/types";
+import type { Volume, Resource, SpeakerAttribution, SpeakerType, ScriptureCharacter } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import { getVerseUrl } from "@/lib/scripture-urls";
 import ChapterInsights from "./ChapterInsights";
+import CharacterDetailPanel from "./CharacterDetailPanel";
 import VersePopover from "./VersePopover";
 import ResourceMarker, { getResourceTypeColor } from "./ResourceMarker";
 import ResourcePanel from "./ResourcePanel";
@@ -91,6 +92,10 @@ export default function ScriptureReader() {
   const [showSpeakers, setShowSpeakers] = useState(true);
   const [chapterSpeakers, setChapterSpeakers] = useState<SpeakerAttribution[]>([]);
 
+  // Character panel
+  const [allCharacters, setAllCharacters] = useState<ScriptureCharacter[]>([]);
+  const [selectedCharacter, setSelectedCharacter] = useState<ScriptureCharacter | null>(null);
+
   // Reading mode: original (default), modern (verse-by-verse modern language), narration (chapter prose)
   type ReadingMode = "original" | "modern" | "narration";
   const [readingMode, setReadingMode] = useState<ReadingMode>("original");
@@ -110,6 +115,30 @@ export default function ScriptureReader() {
     { body: isMobile ? "1rem" : "1.05rem", label: "A" },
     { body: isMobile ? "1.1rem" : "1.18rem", label: "A" },
   ];
+
+  // Load all characters (for detail panel navigation)
+  useEffect(() => {
+    fetch("/api/characters")
+      .then((r) => r.json())
+      .then((data) => setAllCharacters(data.characters || []))
+      .catch(() => {});
+  }, []);
+
+  // Helper: open character panel by id
+  const openCharacterById = useCallback((characterId: string) => {
+    const char = allCharacters.find((c) => c.id === characterId);
+    if (char) setSelectedCharacter(char);
+  }, [allCharacters]);
+
+  // Helper: open character panel by speaker name (fuzzy match)
+  const openCharacterByName = useCallback((speakerName: string) => {
+    const nameLower = speakerName.toLowerCase();
+    const char = allCharacters.find(
+      (c) => c.name.toLowerCase() === nameLower ||
+             c.aliases.some((a) => a.toLowerCase() === nameLower)
+    );
+    if (char) setSelectedCharacter(char);
+  }, [allCharacters]);
 
   // Load preferences from localStorage
   useEffect(() => {
@@ -703,6 +732,7 @@ export default function ScriptureReader() {
                 if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
               }}
               onExploreWord={(word) => setExploredWord(word)}
+              onSelectCharacter={openCharacterById}
               speakers={chapterSpeakers}
             />
           )}
@@ -1018,10 +1048,10 @@ export default function ScriptureReader() {
                     >
                       {isFirstOfSpeakerSpan && verseSpeaker && (
                         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "5px" }}>
-                          {/* Person avatar — will open character panel when built */}
+                          {/* Person avatar — opens character detail panel */}
                           <button
                             onClick={() => {
-                              // TODO: open character/speaker panel for verseSpeaker.speaker
+                              openCharacterByName(verseSpeaker.speaker);
                             }}
                             title={verseSpeaker.speaker}
                             style={{
@@ -1584,6 +1614,16 @@ export default function ScriptureReader() {
                 setAnnotatedVerses(new Set(annotations.map((a) => a.verse)));
               }
             }}
+          />
+        )}
+
+        {/* Character Detail Panel */}
+        {selectedCharacter && (
+          <CharacterDetailPanel
+            character={selectedCharacter}
+            allCharacters={allCharacters}
+            onClose={() => setSelectedCharacter(null)}
+            onSelectCharacter={(c) => setSelectedCharacter(c)}
           />
         )}
       </div>

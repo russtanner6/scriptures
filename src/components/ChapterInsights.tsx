@@ -13,6 +13,14 @@ interface ChapterStats {
   verseDensity: { verse: number; wordCount: number }[];
 }
 
+interface ChapterCharacter {
+  id: string;
+  name: string;
+  portraitUrl: string | null;
+  roles: string[];
+  tier: number;
+}
+
 interface ChapterInsightsProps {
   bookId: number;
   chapter: number;
@@ -23,6 +31,7 @@ interface ChapterInsightsProps {
   isMobile: boolean;
   onScrollToVerse?: (verse: number) => void;
   onExploreWord?: (word: string) => void;
+  onSelectCharacter?: (characterId: string) => void;
   speakers?: SpeakerAttribution[];
 }
 
@@ -45,12 +54,14 @@ export default function ChapterInsights({
   isMobile,
   onScrollToVerse,
   onExploreWord,
+  onSelectCharacter,
   speakers = [],
 }: ChapterInsightsProps) {
   const [stats, setStats] = useState<ChapterStats | null>(null);
   const [isExpanded, setIsExpanded] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [hoveredDensityVerse, setHoveredDensityVerse] = useState<number | null>(null);
+  const [chapterChars, setChapterChars] = useState<ChapterCharacter[]>([]);
 
   // Fetch stats when chapter changes
   useEffect(() => {
@@ -63,6 +74,15 @@ export default function ChapterInsights({
         setIsLoading(false);
       })
       .catch(() => setIsLoading(false));
+  }, [bookId, chapter]);
+
+  // Fetch characters in this chapter
+  useEffect(() => {
+    setChapterChars([]);
+    fetch(`/api/chapter-characters?bookId=${bookId}&chapter=${chapter}`)
+      .then((r) => r.json())
+      .then((data) => setChapterChars(data.characters || []))
+      .catch(() => {});
   }, [bookId, chapter]);
 
   const theme = lightMode
@@ -300,6 +320,86 @@ export default function ChapterInsights({
               </div>
             );
           })()}
+
+          {/* People in this Chapter */}
+          {chapterChars.length > 0 && (
+            <div>
+              <div
+                style={{
+                  fontSize: "0.65rem",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.1em",
+                  color: theme.textMuted,
+                  marginBottom: "8px",
+                }}
+              >
+                People in this Chapter
+              </div>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+                {chapterChars.map((c) => (
+                  <button
+                    key={c.id}
+                    onClick={() => onSelectCharacter?.(c.id)}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "7px",
+                      padding: "4px 10px 4px 4px",
+                      borderRadius: "20px",
+                      background: theme.pillBg,
+                      border: `1px solid ${theme.border}`,
+                      cursor: onSelectCharacter ? "pointer" : "default",
+                      fontFamily: "inherit",
+                      transition: "all 0.15s",
+                    }}
+                    title={c.roles.join(", ")}
+                  >
+                    {c.portraitUrl ? (
+                      <img
+                        src={c.portraitUrl}
+                        alt=""
+                        loading="lazy"
+                        style={{
+                          width: "26px",
+                          height: "26px",
+                          borderRadius: "50%",
+                          objectFit: "cover",
+                          objectPosition: "center 20%",
+                        }}
+                      />
+                    ) : (
+                      <div
+                        style={{
+                          width: "26px",
+                          height: "26px",
+                          borderRadius: "50%",
+                          background: `${volColor}25`,
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          fontSize: "0.62rem",
+                          fontWeight: 700,
+                          color: volColor,
+                        }}
+                      >
+                        {c.name.charAt(0)}
+                      </div>
+                    )}
+                    <span
+                      style={{
+                        fontSize: "0.74rem",
+                        fontWeight: 600,
+                        color: theme.textSecondary,
+                      }}
+                    >
+                      {c.name}
+                    </span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Mini Word Cloud */}
           {stats.topWords.length > 0 && (
