@@ -7,7 +7,7 @@ import { VOLUME_COLORS } from "@/lib/constants";
 import { getVerseUrl } from "@/lib/scripture-urls";
 import ChapterInsights from "./ChapterInsights";
 import VersePopover from "./VersePopover";
-import ResourceMarker, { ResourceOverflowBadge, getResourceTypeColor } from "./ResourceMarker";
+import ResourceMarker, { getResourceTypeColor } from "./ResourceMarker";
 import ResourcePanel from "./ResourcePanel";
 import WordExplorerPanel from "./WordExplorerPanel";
 import NavMenu from "./NavMenu";
@@ -597,117 +597,15 @@ export default function ScriptureReader() {
           </div>
 
           <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "6px" : "8px" }}>
-            {/* Search toggle */}
-            {searchOpen ? (
-              <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
-                <input
-                  ref={searchInputRef}
-                  type="text"
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Escape") {
-                      setSearchOpen(false);
-                      setSearchTerm("");
-                    }
-                  }}
-                  placeholder="Find..."
-                  autoFocus
-                  style={{
-                    width: isMobile ? "90px" : "130px",
-                    padding: "5px 10px",
-                    borderRadius: "8px",
-                    border: `1px solid ${bar.surfaceBorder}`,
-                    background: bar.surface,
-                    color: bar.text,
-                    fontSize: "0.78rem",
-                    fontFamily: "inherit",
-                    outline: "none",
-                  }}
-                />
-                {searchTerm.length >= 2 && (
-                  <span style={{ fontSize: "0.68rem", color: bar.textMuted, whiteSpace: "nowrap" }}>
-                    {searchMatchCount}
-                  </span>
-                )}
-                <button
-                  onClick={() => { setSearchOpen(false); setSearchTerm(""); }}
-                  style={{
-                    background: "none",
-                    border: "none",
-                    color: bar.textMuted,
-                    fontSize: "0.85rem",
-                    cursor: "pointer",
-                    padding: "4px",
-                    fontFamily: "inherit",
-                  }}
-                >
-                  ✕
-                </button>
-              </div>
-            ) : (
-              <button
-                onClick={() => {
-                  setSearchOpen(true);
-                  setTimeout(() => searchInputRef.current?.focus(), 100);
-                }}
-                title="Search in chapter"
-                style={{
-                  background: bar.surface,
-                  border: `1px solid ${bar.surfaceBorder}`,
-                  borderRadius: "8px",
-                  width: "36px",
-                  height: "36px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  cursor: "pointer",
-                  fontSize: "0.85rem",
-                  transition: "all 0.15s",
-                  color: bar.textSecondary,
-                }}
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="11" cy="11" r="8" />
-                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                </svg>
-              </button>
-            )}
-
-            {/* Font size toggle */}
-            <button
-              onClick={cycleFontSize}
-              title="Change font size"
-              style={{
-                background: bar.surface,
-                border: `1px solid ${bar.surfaceBorder}`,
-                borderRadius: "8px",
-                width: "36px",
-                height: "36px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                cursor: "pointer",
-                fontSize: fontSize === 0 ? "0.7rem" : fontSize === 1 ? "0.85rem" : "1rem",
-                fontWeight: 700,
-                color: bar.textSecondary,
-                fontFamily: "inherit",
-                transition: "all 0.15s",
-              }}
-            >
-              {fontSizes[fontSize].label}
-            </button>
-
-            {/* Light/dark toggle */}
+            {/* Light/dark toggle — stays in top bar */}
             <button
               onClick={toggleLightMode}
               title={lightMode ? "Switch to dark mode" : "Switch to light mode"}
               style={{
-                background: bar.surface,
-                border: `1px solid ${bar.surfaceBorder}`,
-                borderRadius: "8px",
-                width: "36px",
-                height: "36px",
+                background: "none",
+                border: "none",
+                width: "32px",
+                height: "32px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -734,32 +632,6 @@ export default function ScriptureReader() {
                 </svg>
               )}
             </button>
-
-            {/* Chapter selector */}
-            <select
-              value={selectedChapter}
-              onChange={(e) => {
-                const ch = Number(e.target.value);
-                goToChapter(selectedVolume, selectedBookId, selectedBookName || "", ch, chapterCount);
-              }}
-              style={{
-                background: lightMode ? "rgba(0,0,0,0.04)" : "rgba(255,255,255,0.06)",
-                border: `1px solid ${theme.border}`,
-                borderRadius: "8px",
-                color: theme.text,
-                padding: "6px 10px",
-                fontSize: "0.82rem",
-                fontFamily: "inherit",
-                cursor: "pointer",
-                outline: "none",
-              }}
-            >
-              {Array.from({ length: chapterCount }, (_, i) => i + 1).map((ch) => (
-                <option key={ch} value={ch}>
-                  {isDC ? `Sec ${ch}` : `Ch ${ch}`}
-                </option>
-              ))}
-            </select>
           </div>
         </div>
 
@@ -1244,37 +1116,20 @@ export default function ScriptureReader() {
                   >
                     {renderVerseText(readingMode === "modern" && v.text_modern ? v.text_modern : v.text)}
                   </span>
-                  {/* Resource markers */}
+                  {/* Resource marker — single pill per verse, opens panel */}
                   {verseStartResources.length > 0 && (
-                    <>
-                      {verseStartResources.slice(0, 3).map((r, ri) => (
-                        <ResourceMarker
-                          key={r.id}
-                          resource={r}
-                          lightMode={lightMode}
-                          onClick={() => {
-                            setActiveVerse(null); // close verse popover
-                            setActiveResourcePanel({
-                              resources: chapterResources,
-                              index: chapterResources.indexOf(r),
-                            });
-                          }}
-                        />
-                      ))}
-                      {verseStartResources.length > 3 && (
-                        <ResourceOverflowBadge
-                          count={verseStartResources.length - 3}
-                          lightMode={lightMode}
-                          onClick={() => {
-                            setActiveVerse(null);
-                            setActiveResourcePanel({
-                              resources: chapterResources,
-                              index: chapterResources.indexOf(verseStartResources[0]),
-                            });
-                          }}
-                        />
-                      )}
-                    </>
+                    <ResourceMarker
+                      resource={verseStartResources[0]}
+                      lightMode={lightMode}
+                      count={verseStartResources.length}
+                      onClick={() => {
+                        setActiveVerse(null);
+                        setActiveResourcePanel({
+                          resources: chapterResources,
+                          index: chapterResources.indexOf(verseStartResources[0]),
+                        });
+                      }}
+                    />
                   )}
                   </div>
                 </div>
@@ -1421,7 +1276,7 @@ export default function ScriptureReader() {
           </div>
         )}
 
-        {/* Bottom nav */}
+        {/* Bottom bar — nav + controls */}
         <div
           style={{
             position: "fixed",
@@ -1432,81 +1287,214 @@ export default function ScriptureReader() {
             backdropFilter: "blur(12px)",
             WebkitBackdropFilter: "blur(12px)",
             borderTop: `1px solid ${bar.border}`,
-            padding: isMobile ? "8px 16px" : "10px 24px",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
             zIndex: 50,
           }}
         >
-          <button
-            onClick={goToPrevChapter}
-            disabled={isFirstChapterOfVolume}
-            style={{
-              background: "none",
-              border: "none",
-              color: bar.textSecondary,
-              cursor: isFirstChapterOfVolume ? "default" : "pointer",
-              fontSize: "0.82rem",
-              fontWeight: 600,
-              fontFamily: "inherit",
-              padding: "8px 12px",
-              opacity: isFirstChapterOfVolume ? 0.3 : 1,
-              minWidth: "80px",
-              textAlign: "left",
+          {/* Search input row — expands above controls when open */}
+          {searchOpen && (
+            <div style={{
+              padding: "8px 16px",
+              borderBottom: `1px solid ${bar.border}`,
               display: "flex",
               alignItems: "center",
-              gap: "6px",
-            }}
-          >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="miter"><polyline points="15 18 9 12 15 6" /></svg> Prev
-          </button>
-          <div style={{ textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center" }}>
-            {isMobile && (
+              gap: "8px",
+            }}>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={bar.textMuted} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <input
+                ref={searchInputRef}
+                type="text"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Escape") {
+                    setSearchOpen(false);
+                    setSearchTerm("");
+                  }
+                }}
+                placeholder="Find in chapter..."
+                autoFocus
+                style={{
+                  flex: 1,
+                  padding: "6px 10px",
+                  borderRadius: "6px",
+                  border: "none",
+                  background: bar.surface,
+                  color: bar.text,
+                  fontSize: "0.82rem",
+                  fontFamily: "inherit",
+                  outline: "none",
+                }}
+              />
+              {searchTerm.length >= 2 && (
+                <span style={{ fontSize: "0.7rem", color: bar.textMuted, whiteSpace: "nowrap" }}>
+                  {searchMatchCount} found
+                </span>
+              )}
               <button
-                onClick={() => setMenuOpen(true)}
-                title="Menu"
+                onClick={() => { setSearchOpen(false); setSearchTerm(""); }}
                 style={{
                   background: "none",
                   border: "none",
+                  color: bar.textMuted,
+                  fontSize: "0.82rem",
                   cursor: "pointer",
-                  padding: "2px",
-                  opacity: 0.6,
-                  transition: "opacity 0.15s",
+                  padding: "4px",
+                  fontFamily: "inherit",
+                }}
+              >
+                ✕
+              </button>
+            </div>
+          )}
+          {/* Main controls row */}
+          <div style={{
+            padding: isMobile ? "6px 12px" : "8px 20px",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}>
+            {/* Prev */}
+            <button
+              onClick={goToPrevChapter}
+              disabled={isFirstChapterOfVolume}
+              title="Previous chapter"
+              style={{
+                background: "none",
+                border: "none",
+                color: bar.textSecondary,
+                cursor: isFirstChapterOfVolume ? "default" : "pointer",
+                padding: "8px",
+                opacity: isFirstChapterOfVolume ? 0.3 : 1,
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="miter"><polyline points="15 18 9 12 15 6" /></svg>
+            </button>
+
+            {/* Center controls */}
+            <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "12px" : "16px" }}>
+              {/* Search */}
+              <button
+                onClick={() => {
+                  if (searchOpen) {
+                    setSearchOpen(false);
+                    setSearchTerm("");
+                  } else {
+                    setSearchOpen(true);
+                    setTimeout(() => searchInputRef.current?.focus(), 100);
+                  }
+                }}
+                title="Search in chapter"
+                style={{
+                  background: "none",
+                  border: "none",
+                  color: searchOpen ? bar.text : bar.textSecondary,
+                  cursor: "pointer",
+                  padding: "6px",
                   display: "flex",
                   alignItems: "center",
-                  justifyContent: "center",
+                  transition: "color 0.15s",
                 }}
-                onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.6"; }}
               >
-                <img src="/tree-logo.svg" alt="Menu" style={{ height: "22px", width: "auto" }} />
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
               </button>
-            )}
+
+              {/* Font size */}
+              <button
+                onClick={cycleFontSize}
+                title="Change font size"
+                style={{
+                  background: "none",
+                  border: "none",
+                  color: bar.textSecondary,
+                  cursor: "pointer",
+                  padding: "6px",
+                  display: "flex",
+                  alignItems: "center",
+                  fontSize: fontSize === 0 ? "0.75rem" : fontSize === 1 ? "0.9rem" : "1.05rem",
+                  fontWeight: 700,
+                  fontFamily: "inherit",
+                  transition: "all 0.15s",
+                }}
+              >
+                {fontSizes[fontSize].label}
+              </button>
+
+              {/* Chapter selector */}
+              <select
+                value={selectedChapter}
+                onChange={(e) => {
+                  const ch = Number(e.target.value);
+                  goToChapter(selectedVolume, selectedBookId, selectedBookName || "", ch, chapterCount);
+                }}
+                style={{
+                  background: "none",
+                  border: "none",
+                  color: bar.textSecondary,
+                  padding: "4px 2px",
+                  fontSize: "0.78rem",
+                  fontWeight: 600,
+                  fontFamily: "inherit",
+                  cursor: "pointer",
+                  outline: "none",
+                  WebkitAppearance: "none",
+                  appearance: "none",
+                }}
+              >
+                {Array.from({ length: chapterCount }, (_, i) => i + 1).map((ch) => (
+                  <option key={ch} value={ch} style={{ background: "#1a1a22", color: "#f0f0f0" }}>
+                    {isDC ? `Sec ${ch}` : `Ch ${ch}`}
+                  </option>
+                ))}
+              </select>
+
+              {/* Menu (mobile only) */}
+              {isMobile && (
+                <button
+                  onClick={() => setMenuOpen(true)}
+                  title="Menu"
+                  style={{
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                    padding: "4px",
+                    opacity: 0.6,
+                    transition: "opacity 0.15s",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <img src="/tree-logo.svg" alt="Menu" style={{ height: "20px", width: "auto" }} />
+                </button>
+              )}
+            </div>
+
+            {/* Next */}
+            <button
+              onClick={goToNextChapter}
+              disabled={isLastChapterOfVolume}
+              title="Next chapter"
+              style={{
+                background: "none",
+                border: "none",
+                color: bar.textSecondary,
+                cursor: isLastChapterOfVolume ? "default" : "pointer",
+                padding: "8px",
+                opacity: isLastChapterOfVolume ? 0.3 : 1,
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="miter"><polyline points="9 18 15 12 9 6" /></svg>
+            </button>
           </div>
-          <button
-            onClick={goToNextChapter}
-            disabled={isLastChapterOfVolume}
-            style={{
-              background: "none",
-              border: "none",
-              color: bar.textSecondary,
-              cursor: isLastChapterOfVolume ? "default" : "pointer",
-              fontSize: "0.82rem",
-              fontWeight: 600,
-              fontFamily: "inherit",
-              padding: "8px 12px",
-              opacity: isLastChapterOfVolume ? 0.3 : 1,
-              minWidth: "80px",
-              textAlign: "right",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "flex-end",
-              gap: "6px",
-            }}
-          >
-            Next <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="miter"><polyline points="9 18 15 12 9 6" /></svg>
-          </button>
         </div>
 
         {/* Chapter Complete Toast */}

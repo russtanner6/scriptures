@@ -33,17 +33,23 @@ export function getResourceTypeColor(type: ResourceType): string {
   return TYPE_COLORS[type];
 }
 
+/** Single resource pill per verse — shows type icon and count if multiple */
 export default function ResourceMarker({
   resource,
   lightMode,
+  count,
   onClick,
 }: {
   resource: Resource;
   lightMode: boolean;
+  count?: number;
   onClick: () => void;
 }) {
   const color = TYPE_COLORS[resource.type];
   const icon = TYPE_ICONS[resource.type];
+  const label = count && count > 1
+    ? `${count} Resources`
+    : resource.type === "video" ? "Video" : resource.type === "article" ? "Link" : "PDF";
 
   return (
     <button
@@ -51,7 +57,7 @@ export default function ResourceMarker({
         e.stopPropagation();
         onClick();
       }}
-      title={resource.title}
+      title={count && count > 1 ? `${count} resources on this verse` : resource.title}
       style={{
         display: "inline-flex",
         alignItems: "center",
@@ -84,49 +90,8 @@ export default function ResourceMarker({
     >
       {icon}
       <span style={{ letterSpacing: "0.02em", textTransform: "uppercase" }}>
-        {resource.type === "video" ? "Video" : resource.type === "article" ? "Link" : "PDF"}
+        {label}
       </span>
-    </button>
-  );
-}
-
-/** Shows a count badge when there are more resources than maxVisible */
-export function ResourceOverflowBadge({
-  count,
-  lightMode,
-  onClick,
-}: {
-  count: number;
-  lightMode: boolean;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      onClick={(e) => {
-        e.stopPropagation();
-        onClick();
-      }}
-      title={`${count} more resource${count !== 1 ? "s" : ""}`}
-      style={{
-        display: "inline-flex",
-        alignItems: "center",
-        padding: "2px 7px",
-        height: "18px",
-        borderRadius: "4px",
-        border: `1px solid ${lightMode ? "rgba(0,0,0,0.1)" : "rgba(255,255,255,0.1)"}`,
-        background: lightMode ? "rgba(0,0,0,0.05)" : "rgba(255,255,255,0.06)",
-        color: lightMode ? "#666" : "rgba(255,255,255,0.5)",
-        fontSize: "0.6rem",
-        fontWeight: 600,
-        fontFamily: "inherit",
-        cursor: "pointer",
-        transition: "all 0.15s",
-        verticalAlign: "middle",
-        marginLeft: "4px",
-        lineHeight: 1,
-      }}
-    >
-      +{count}
     </button>
   );
 }
