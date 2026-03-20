@@ -421,7 +421,7 @@ export default function ChapterInsights({
               }
             }
 
-            const neutralColor = lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.08)";
+            const neutralColor = lightMode ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.06)";
 
             return (
               <div>
@@ -439,12 +439,21 @@ export default function ChapterInsights({
                 </div>
                 <div
                   style={{
+                    background: lightMode ? "rgba(0,0,0,0.12)" : "rgba(0,0,0,0.35)",
+                    borderRadius: "10px",
+                    padding: "4px",
+                    boxShadow: lightMode
+                      ? "inset 0 2px 4px rgba(0,0,0,0.08)"
+                      : "inset 0 2px 4px rgba(0,0,0,0.3)",
+                  }}
+                >
+                <div
+                  style={{
                     display: "flex",
-                    height: "28px",
+                    height: "24px",
                     borderRadius: "6px",
                     overflow: "hidden",
                     cursor: "pointer",
-                    border: `1px solid ${theme.border}`,
                   }}
                 >
                   {segments.map((seg, i) => {
@@ -479,6 +488,7 @@ export default function ChapterInsights({
                       />
                     );
                   })}
+                </div>
                 </div>
                 {/* Verse scale markers */}
                 <div style={{
