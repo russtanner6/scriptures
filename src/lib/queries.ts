@@ -372,7 +372,7 @@ export interface VerseMatch {
 export async function getChapterVerses(
   bookId: number,
   chapter: number
-): Promise<{ bookName: string; volumeAbbrev: string; chapterCount: number; verses: VerseMatch[] }> {
+): Promise<{ bookName: string; volumeAbbrev: string; chapterCount: number; verses: VerseMatch[]; narration?: string | null }> {
   const db = await getDb();
 
   const bookRows = execToObjects<{ name: string; volume_id: number; chapter_count: number }>(
@@ -397,7 +397,20 @@ export async function getChapterVerses(
     [bookId, chapter]
   );
 
-  return { bookName, volumeAbbrev, chapterCount, verses };
+  // Get narration if available
+  let narration: string | null = null;
+  try {
+    const narRows = execToObjects<{ narration: string }>(
+      db,
+      `SELECT narration FROM narrations WHERE book_id = ? AND chapter = ?`,
+      [bookId, chapter]
+    );
+    narration = narRows[0]?.narration || null;
+  } catch {
+    // narrations table may not exist yet — that's fine
+  }
+
+  return { bookName, volumeAbbrev, chapterCount, verses, narration };
 }
 
 export async function getBookIdBySlug(

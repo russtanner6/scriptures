@@ -90,10 +90,13 @@ export default function ScriptureReader() {
   const [showSpeakers, setShowSpeakers] = useState(true);
   const [chapterSpeakers, setChapterSpeakers] = useState<SpeakerAttribution[]>([]);
 
-  // Modern language layer
-  const [showModern, setShowModern] = useState(false);
-  // Whether the current chapter has any modern text available
+  // Reading mode: original (default), modern (verse-by-verse modern language), narration (chapter prose)
+  type ReadingMode = "original" | "modern" | "narration";
+  const [readingMode, setReadingMode] = useState<ReadingMode>("original");
+  const [chapterNarration, setChapterNarration] = useState<string | null>(null);
+  // Whether the current chapter has modern text or narration available
   const hasModernText = verses.some((v) => v.text_modern);
+  const hasNarration = !!chapterNarration;
 
   // Search term highlight (when arriving from ScripturePanel)
   const highlightWord = searchParams.get("highlight") || null;
@@ -115,8 +118,8 @@ export default function ScriptureReader() {
     if (savedResources === "false") setShowResources(false);
     const savedSpeakers = localStorage.getItem("reader-show-speakers");
     if (savedSpeakers === "false") setShowSpeakers(false);
-    const savedModern = localStorage.getItem("reader-show-modern");
-    if (savedModern === "true") setShowModern(true);
+    const savedMode = localStorage.getItem("reader-reading-mode");
+    if (savedMode === "modern" || savedMode === "narration") setReadingMode(savedMode);
   }, []);
 
   // Track scroll progress in reading view
@@ -202,6 +205,7 @@ export default function ScriptureReader() {
                 .then((r) => r.json())
                 .then((chData) => {
                   setVerses(chData.verses || []);
+                  setChapterNarration(chData.narration || null);
                   // Load annotations
                   const annotations = getAnnotationsForChapter(bid, ch);
                   setAnnotatedVerses(new Set(annotations.map((a: { verse: number }) => a.verse)));
@@ -238,6 +242,7 @@ export default function ScriptureReader() {
       const res = await fetch(`/api/chapter?${params}`);
       const data = await res.json();
       setVerses(data.verses || []);
+      setChapterNarration(data.narration || null);
       setSelectedBookName(data.bookName);
       setChapterCount(data.chapterCount);
       // Load annotations for this chapter
@@ -818,8 +823,8 @@ export default function ScriptureReader() {
             </div>
           )}
 
-          {/* Layers section — toggle pills for Speakers and Resources */}
-          {!isLoading && (chapterSpeakers.length > 0 || chapterResources.length > 0 || hasModernText) && (
+          {/* Layers section — toggle pills for Speakers, Resources, and Reading Mode */}
+          {!isLoading && (chapterSpeakers.length > 0 || chapterResources.length > 0 || hasModernText || hasNarration) && (
             <div style={{ marginBottom: "20px" }}>
               <div
                 style={{
@@ -902,37 +907,44 @@ export default function ScriptureReader() {
                     </span>
                   </button>
                 )}
-                {hasModernText && (
-                  <button
-                    onClick={() => {
-                      const next = !showModern;
-                      setShowModern(next);
-                      localStorage.setItem("reader-show-modern", String(next));
-                    }}
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "4px",
-                      padding: "3px 9px",
-                      borderRadius: "6px",
-                      border: `1px solid ${showModern ? (lightMode ? "rgba(0,0,0,0.15)" : "rgba(255,255,255,0.15)") : theme.border}`,
-                      background: showModern
-                        ? (lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.08)")
-                        : "transparent",
-                      color: showModern ? theme.text : theme.textMuted,
-                      fontSize: "0.65rem",
-                      fontWeight: 500,
-                      cursor: "pointer",
-                      fontFamily: "inherit",
-                      transition: "all 0.15s",
-                    }}
-                  >
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M4 21V14" /><path d="M4 10V3" /><path d="M12 21V12" /><path d="M12 8V3" /><path d="M20 21V16" /><path d="M20 12V3" />
-                      <line x1="1" y1="14" x2="7" y2="14" /><line x1="9" y1="8" x2="15" y2="8" /><line x1="17" y1="16" x2="23" y2="16" />
-                    </svg>
-                    Modern
-                  </button>
+                {(hasModernText || hasNarration) && (
+                  <div style={{ display: "inline-flex", alignItems: "center", gap: "2px", background: lightMode ? "rgba(0,0,0,0.04)" : "rgba(255,255,255,0.04)", borderRadius: "6px", padding: "2px" }}>
+                    {(["original", "modern", "narration"] as ReadingMode[]).map((mode) => {
+                      // Only show modes that have content (original always shown)
+                      if (mode === "modern" && !hasModernText) return null;
+                      if (mode === "narration" && !hasNarration) return null;
+                      const isActive = readingMode === mode;
+                      const labels: Record<ReadingMode, string> = { original: "Original", modern: "Modern", narration: "Narration" };
+                      return (
+                        <button
+                          key={mode}
+                          onClick={() => {
+                            setReadingMode(mode);
+                            localStorage.setItem("reader-reading-mode", mode);
+                          }}
+                          style={{
+                            display: "inline-flex",
+                            alignItems: "center",
+                            gap: "3px",
+                            padding: "2px 8px",
+                            borderRadius: "5px",
+                            border: "none",
+                            background: isActive
+                              ? (lightMode ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.12)")
+                              : "transparent",
+                            color: isActive ? theme.text : theme.textMuted,
+                            fontSize: "0.62rem",
+                            fontWeight: isActive ? 600 : 400,
+                            cursor: "pointer",
+                            fontFamily: "inherit",
+                            transition: "all 0.15s",
+                          }}
+                        >
+                          {labels[mode]}
+                        </button>
+                      );
+                    })}
+                  </div>
                 )}
               </div>
 
@@ -1002,7 +1014,28 @@ export default function ScriptureReader() {
             </div>
           )}
 
-          {!isLoading &&
+          {/* Narration mode — chapter prose */}
+          {!isLoading && readingMode === "narration" && chapterNarration && (
+            <div
+              style={{
+                fontSize: fontSizes[fontSize].body,
+                color: theme.verseText,
+                lineHeight: 1.9,
+                padding: isMobile ? "0 8px" : "0",
+                whiteSpace: "pre-wrap",
+                transition: "font-size 0.2s ease",
+              }}
+            >
+              {chapterNarration.split("\n\n").map((paragraph, i) => (
+                <p key={i} style={{ marginBottom: "1.2em", textIndent: i > 0 ? "1.5em" : "0" }}>
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          )}
+
+          {/* Verse-by-verse mode (original or modern) */}
+          {!isLoading && readingMode !== "narration" &&
             verses.map((v) => {
               // External URL available if needed: getVerseUrl(selectedBookName || "", v.chapter, v.verse)
               // Resource layer: find resources that START at this verse, and resources that COVER this verse
@@ -1113,7 +1146,7 @@ export default function ScriptureReader() {
                   )}
                   <span
                     onClick={() => {
-                      setActiveVerse({ verse: v.verse, chapter: v.chapter, text: showModern && v.text_modern ? v.text_modern : v.text });
+                      setActiveVerse({ verse: v.verse, chapter: v.chapter, text: readingMode === "modern" && v.text_modern ? v.text_modern : v.text });
                       setActiveResourcePanel(null); // close resource panel when opening verse popover
                     }}
                     style={{
@@ -1123,7 +1156,7 @@ export default function ScriptureReader() {
                       cursor: "pointer",
                     }}
                   >
-                    {renderVerseText(showModern && v.text_modern ? v.text_modern : v.text)}
+                    {renderVerseText(readingMode === "modern" && v.text_modern ? v.text_modern : v.text)}
                   </span>
                   {/* Resource markers */}
                   {verseStartResources.length > 0 && (
