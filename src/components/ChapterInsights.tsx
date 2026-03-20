@@ -36,14 +36,24 @@ interface ChapterInsightsProps {
   speakers?: SpeakerAttribution[];
 }
 
-const SPEAKER_COLORS_LIGHT: Record<SpeakerType, string> = {
+const SPEAKER_TYPE_COLORS_LIGHT: Record<SpeakerType, string> = {
   divine: "#B47E00", prophet: "#2563EB", apostle: "#059669",
-  angel: "#7C3AED", narrator: "#0E7490", other: "#9333EA",
+  angel: "#7C3AED", narrator: "#0E7490", other: "",
 };
-const SPEAKER_COLORS_DARK: Record<SpeakerType, string> = {
+const SPEAKER_TYPE_COLORS_DARK: Record<SpeakerType, string> = {
   divine: "#FBBF24", prophet: "#60A5FA", apostle: "#34D399",
-  angel: "#C4B5FD", narrator: "#22D3EE", other: "#A78BFA",
+  angel: "#C4B5FD", narrator: "#22D3EE", other: "",
 };
+
+// Distinct palette for individual "other" speakers so each gets a unique color
+const OTHER_PALETTE_LIGHT = [
+  "#9333EA", "#C2410C", "#0369A1", "#15803D", "#A21CAF",
+  "#B45309", "#1D4ED8", "#047857", "#7E22CE", "#BE123C",
+];
+const OTHER_PALETTE_DARK = [
+  "#A78BFA", "#FB923C", "#38BDF8", "#4ADE80", "#E879F9",
+  "#FCD34D", "#818CF8", "#2DD4BF", "#C084FC", "#FB7185",
+];
 
 export default function ChapterInsights({
   bookId,
@@ -106,7 +116,10 @@ export default function ChapterInsights({
   if (isLoading || !stats) return null;
 
   // Build speaker info map: speaker name → { color, verseCount, speakerType }
-  const speakerColors = lightMode ? SPEAKER_COLORS_LIGHT : SPEAKER_COLORS_DARK;
+  // Each "other" speaker gets a unique color from a palette
+  const typeColors = lightMode ? SPEAKER_TYPE_COLORS_LIGHT : SPEAKER_TYPE_COLORS_DARK;
+  const otherPalette = lightMode ? OTHER_PALETTE_LIGHT : OTHER_PALETTE_DARK;
+  let otherIndex = 0;
   const speakerMap = new Map<string, { color: string; verseCount: number; speakerType: SpeakerType }>();
   speakers.forEach((s) => {
     const existing = speakerMap.get(s.speaker);
@@ -114,8 +127,11 @@ export default function ChapterInsights({
     if (existing) {
       existing.verseCount += count;
     } else {
+      const color = s.speakerType === "other"
+        ? otherPalette[otherIndex++ % otherPalette.length]
+        : typeColors[s.speakerType];
       speakerMap.set(s.speaker, {
-        color: speakerColors[s.speakerType],
+        color,
         verseCount: count,
         speakerType: s.speakerType,
       });
@@ -272,11 +288,11 @@ export default function ChapterInsights({
             <div>
               <div
                 style={{
-                  fontSize: "0.65rem",
-                  fontWeight: 600,
+                  fontSize: "0.78rem",
+                  fontWeight: 700,
                   textTransform: "uppercase",
                   letterSpacing: "0.1em",
-                  color: theme.textMuted,
+                  color: theme.text,
                   marginBottom: "8px",
                 }}
               >
@@ -382,7 +398,8 @@ export default function ChapterInsights({
             const verseColors: (string | null)[] = new Array(stats.verseCount).fill(null);
             const verseSpeakerNames: (string | null)[] = new Array(stats.verseCount).fill(null);
             for (const s of speakers) {
-              const color = speakerColors[s.speakerType];
+              const spkInfo = speakerMap.get(s.speaker);
+              const color = spkInfo?.color || "#888";
               for (let v = s.verseStart; v <= s.verseEnd && v <= stats.verseCount; v++) {
                 verseColors[v - 1] = color;
                 verseSpeakerNames[v - 1] = s.speaker;
@@ -493,11 +510,11 @@ export default function ChapterInsights({
             <div>
               <div
                 style={{
-                  fontSize: "0.65rem",
-                  fontWeight: 600,
+                  fontSize: "0.78rem",
+                  fontWeight: 700,
                   textTransform: "uppercase",
                   letterSpacing: "0.1em",
-                  color: theme.textMuted,
+                  color: theme.text,
                   marginBottom: "10px",
                 }}
               >

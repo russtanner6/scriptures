@@ -458,23 +458,25 @@ export default function ScriptureReader() {
 
   // Color theme
   // Speaker type colors — darker in light mode for readability
-  const SPEAKER_COLORS: Record<SpeakerType, string> = lightMode
-    ? {
-        divine: "#B47E00",
-        prophet: "#2563EB",
-        apostle: "#059669",
-        angel: "#7C3AED",
-        narrator: "#0E7490",
-        other: "#9333EA",
-      }
-    : {
-        divine: "#FBBF24",
-        prophet: "#60A5FA",
-        apostle: "#34D399",
-        angel: "#C4B5FD",
-        narrator: "#22D3EE",
-        other: "#A78BFA",
-      };
+  const SPEAKER_TYPE_COLORS: Record<SpeakerType, string> = lightMode
+    ? { divine: "#B47E00", prophet: "#2563EB", apostle: "#059669", angel: "#7C3AED", narrator: "#0E7490", other: "" }
+    : { divine: "#FBBF24", prophet: "#60A5FA", apostle: "#34D399", angel: "#C4B5FD", narrator: "#22D3EE", other: "" };
+  const OTHER_PALETTE = lightMode
+    ? ["#9333EA", "#C2410C", "#0369A1", "#15803D", "#A21CAF", "#B45309", "#1D4ED8", "#047857", "#7E22CE", "#BE123C"]
+    : ["#A78BFA", "#FB923C", "#38BDF8", "#4ADE80", "#E879F9", "#FCD34D", "#818CF8", "#2DD4BF", "#C084FC", "#FB7185"];
+  // Assign unique color per speaker name (shared across the chapter)
+  const speakerColorMap = new Map<string, string>();
+  let otherIdx = 0;
+  for (const s of chapterSpeakers) {
+    if (!speakerColorMap.has(s.speaker)) {
+      speakerColorMap.set(
+        s.speaker,
+        s.speakerType === "other"
+          ? OTHER_PALETTE[otherIdx++ % OTHER_PALETTE.length]
+          : SPEAKER_TYPE_COLORS[s.speakerType],
+      );
+    }
+  }
 
   const theme = lightMode
     ? {
@@ -1039,7 +1041,7 @@ export default function ScriptureReader() {
                 ? chapterSpeakers.find((s) => v.verse >= s.verseStart && v.verse <= s.verseEnd)
                 : null;
               const isFirstOfSpeakerSpan = verseSpeaker && v.verse === verseSpeaker.verseStart;
-              const speakerColor = verseSpeaker ? SPEAKER_COLORS[verseSpeaker.speakerType] : null;
+              const speakerColor = verseSpeaker ? (speakerColorMap.get(verseSpeaker.speaker) || "#888") : null;
               // Left border: speaker takes priority, then resource
               const resourceBorderColor = verseCoveredBy.length > 0
                 ? getResourceTypeColor(verseCoveredBy[0].type)
