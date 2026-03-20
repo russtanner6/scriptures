@@ -99,6 +99,13 @@ const DISCOVER_TOOLS = [
     description: "Pick any chapter and discover thematically similar chapters across all of scripture.",
     color: "#06b6d4",
   },
+  {
+    href: "/characters",
+    svgIcon: "/people.svg",
+    name: "People",
+    description: "Every named person across all volumes with bios, family connections, and volume appearances.",
+    color: "#f59e0b",
+  },
 ];
 
 export default function HomePage() {
@@ -139,7 +146,7 @@ export default function HomePage() {
 
   return (
     <div className="page-container">
-      <Header showSubtitle />
+      <Header />
 
       {/* Hero */}
       <div style={{ textAlign: "center", marginBottom: isMobile ? "32px" : "48px" }}>
@@ -175,8 +182,7 @@ export default function HomePage() {
             lineHeight: 1.6,
           }}
         >
-          Interactive analysis tools, visualizations, and a beautiful reading experience
-          for the Old Testament, New Testament, Book of Mormon, D&C, and Pearl of Great Price.
+          Search, analyze, and read 41,995 verses across all five volumes of scripture.
         </p>
       </div>
 
