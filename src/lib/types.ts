@@ -90,6 +90,23 @@ export interface SpeakerAttribution {
   speakerType: SpeakerType;
 }
 
+// ── Character Directory ──
+export interface ScriptureCharacter {
+  id: string;
+  name: string;
+  aliases: string[];
+  bio: string;
+  era: string;
+  timePeriod: string;
+  roles: string[];
+  gender: "male" | "female";
+  volumes: string[];
+  family: Record<string, string | string[]>;
+  speakerType: SpeakerType;
+  tier: 1 | 2 | 3 | 4;
+  portraitUrl?: string;
+}
+
 export interface BookStat {
   bookId: number;
   bookName: string;

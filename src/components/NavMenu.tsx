@@ -28,6 +28,7 @@ const NAV_ITEMS: NavItem[] = [
 
   // Read
   { href: "/read", label: "Read Scriptures", svgIcon: "/scriptures.svg", section: "Read" },
+  { href: "/characters", label: "People", svgIcon: "/people.svg" },
   { href: "/bookmarks", label: "Bookmarks", svgIcon: "/favorite.svg" },
 ];
 

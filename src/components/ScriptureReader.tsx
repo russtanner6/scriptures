@@ -1006,17 +1006,18 @@ export default function ScriptureReader() {
                   {verseSpeaker && showSpeakers ? (
                     <div
                       style={{
-                        width: isFirstOfSpeakerSpan ? "22px" : "22px",
+                        width: "30px",
                         flexShrink: 0,
                         display: "flex",
                         alignItems: "flex-start",
                         justifyContent: "center",
                         paddingTop: isFirstOfSpeakerSpan ? "4px" : "0",
+                        paddingRight: "6px",
                         position: "relative",
                       }}
                     >
                       {isFirstOfSpeakerSpan && verseSpeaker && (
-                        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
+                        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "5px" }}>
                           {/* Person avatar — will open character panel when built */}
                           <button
                             onClick={() => {
@@ -1066,7 +1067,7 @@ export default function ScriptureReader() {
                       )}
                     </div>
                   ) : (
-                    <div style={{ width: showSpeakers ? "22px" : "0px", flexShrink: 0 }} />
+                    <div style={{ width: showSpeakers ? "30px" : "0px", flexShrink: 0 }} />
                   )}
                   {/* Verse content with left border bar */}
                   <div
