@@ -794,6 +794,99 @@ export async function getChapterStats(
   };
 }
 
+export interface CharacterMention {
+  bookId: number;
+  bookName: string;
+  volumeAbbrev: string;
+  chapter: number;
+  verse: number;
+  text: string;
+}
+
+export interface CharacterMentionStats {
+  totalMentions: number;
+  byVolume: Record<string, number>;
+  byBook: { bookId: number; bookName: string; volumeAbbrev: string; count: number }[];
+  firstMention: CharacterMention | null;
+  lastMention: CharacterMention | null;
+}
+
+export async function getCharacterMentions(
+  name: string,
+  aliases: string[]
+): Promise<CharacterMentionStats> {
+  const db = await getDb();
+
+  // Build search terms — name + aliases, case-insensitive whole-word
+  const searchTerms = [name, ...aliases].filter(Boolean);
+  // Build regex pattern: \b(term1|term2|...)\b
+  const escaped = searchTerms.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  const pattern = new RegExp(`\\b(${escaped.join("|")})\\b`, "i");
+
+  // Fetch all verses with book/volume info (ordered by canonical order)
+  const allVerses = execToObjects<{
+    book_id: number;
+    book_name: string;
+    abbrev: string;
+    chapter: number;
+    verse: number;
+    text: string;
+    vol_order: number;
+    book_order: number;
+  }>(
+    db,
+    `SELECT v.book_id, b.name as book_name, vol.abbrev,
+            v.chapter, v.verse, v.text,
+            vol.display_order as vol_order, b.display_order as book_order
+     FROM verses v
+     JOIN books b ON v.book_id = b.id
+     JOIN volumes vol ON b.volume_id = vol.id
+     ORDER BY vol.display_order, b.display_order, v.chapter, v.verse`
+  );
+
+  // Filter matching verses
+  const matches: (typeof allVerses[0])[] = [];
+  for (const v of allVerses) {
+    if (pattern.test(v.text)) {
+      matches.push(v);
+    }
+  }
+
+  // Aggregate by volume
+  const byVolume: Record<string, number> = {};
+  const byBookMap = new Map<number, { bookId: number; bookName: string; volumeAbbrev: string; count: number }>();
+
+  for (const m of matches) {
+    byVolume[m.abbrev] = (byVolume[m.abbrev] || 0) + 1;
+    const existing = byBookMap.get(m.book_id);
+    if (existing) {
+      existing.count++;
+    } else {
+      byBookMap.set(m.book_id, {
+        bookId: m.book_id,
+        bookName: displayName(m.book_name),
+        volumeAbbrev: m.abbrev,
+        count: 1,
+      });
+    }
+  }
+
+  const first = matches.length > 0 ? matches[0] : null;
+  const last = matches.length > 0 ? matches[matches.length - 1] : null;
+
+  return {
+    totalMentions: matches.length,
+    byVolume,
+    byBook: Array.from(byBookMap.values()),
+    firstMention: first
+      ? { bookId: first.book_id, bookName: displayName(first.book_name), volumeAbbrev: first.abbrev, chapter: first.chapter, verse: first.verse, text: first.text }
+      : null,
+    lastMention: last
+      ? { bookId: last.book_id, bookName: displayName(last.book_name), volumeAbbrev: last.abbrev, chapter: last.chapter, verse: last.verse, text: last.text }
+      : null,
+  };
+}
+
 export async function getRandomVerse(): Promise<{
   verse: number;
   chapter: number;

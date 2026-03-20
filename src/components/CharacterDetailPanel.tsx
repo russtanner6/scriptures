@@ -1,10 +1,19 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
+import Link from "next/link";
 import type { ScriptureCharacter } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 
 const VOLUME_ORDER = ["OT", "NT", "BoM", "D&C", "PoGP"];
+
+interface MentionStats {
+  totalMentions: number;
+  byVolume: Record<string, number>;
+  byBook: { bookId: number; bookName: string; volumeAbbrev: string; count: number }[];
+  firstMention: { bookId: number; bookName: string; volumeAbbrev: string; chapter: number; verse: number; text: string } | null;
+  lastMention: { bookId: number; bookName: string; volumeAbbrev: string; chapter: number; verse: number; text: string } | null;
+}
 
 function useIsMobile(breakpoint = 768) {
   const [isMobile, setIsMobile] = useState(false);
@@ -29,6 +38,8 @@ export default function CharacterDetailPanel({
   onSelectCharacter: (c: ScriptureCharacter) => void;
 }) {
   const [isVisible, setIsVisible] = useState(false);
+  const [mentions, setMentions] = useState<MentionStats | null>(null);
+  const [mentionsLoading, setMentionsLoading] = useState(false);
   const isMobile = useIsMobile();
   const panelRef = useRef<HTMLDivElement>(null);
   const touchStartX = useRef(0);
@@ -46,6 +57,17 @@ export default function CharacterDetailPanel({
     // Scroll to top on character change
     panelRef.current?.scrollTo(0, 0);
   }, [character.id]);
+
+  // Fetch mention stats
+  useEffect(() => {
+    setMentions(null);
+    setMentionsLoading(true);
+    const aliases = character.aliases.join(",");
+    fetch(`/api/character-mentions?name=${encodeURIComponent(character.name)}${aliases ? `&aliases=${encodeURIComponent(aliases)}` : ""}`)
+      .then((r) => r.json())
+      .then((data) => { setMentions(data); setMentionsLoading(false); })
+      .catch(() => setMentionsLoading(false));
+  }, [character.id, character.name, character.aliases]);
 
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
@@ -361,6 +383,164 @@ export default function CharacterDetailPanel({
                   </span>
                 ))}
               </div>
+            </div>
+          )}
+
+          {/* Scripture Mentions */}
+          {(mentionsLoading || mentions) && (
+            <div style={{ marginBottom: "28px" }}>
+              <div style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "12px" }}>
+                Scripture Mentions
+              </div>
+
+              {mentionsLoading ? (
+                <div style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>Searching scriptures...</div>
+              ) : mentions && mentions.totalMentions > 0 ? (
+                <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
+                  {/* Total count */}
+                  <div style={{ fontSize: "0.82rem", color: "var(--text-secondary)" }}>
+                    Found in <strong style={{ color: "var(--text)" }}>{mentions.totalMentions.toLocaleString()}</strong> verse{mentions.totalMentions !== 1 ? "s" : ""}
+                  </div>
+
+                  {/* Volume heatmap bar */}
+                  <div>
+                    <div style={{ display: "flex", borderRadius: "6px", overflow: "hidden", height: "24px" }}>
+                      {VOLUME_ORDER.filter((v) => mentions.byVolume[v]).map((v) => {
+                        const count = mentions.byVolume[v] || 0;
+                        const pct = (count / mentions.totalMentions) * 100;
+                        return (
+                          <div
+                            key={v}
+                            title={`${v}: ${count} mentions`}
+                            style={{
+                              width: `${pct}%`,
+                              minWidth: pct > 0 ? "24px" : "0",
+                              background: VOLUME_COLORS[v],
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              fontSize: "0.6rem",
+                              fontWeight: 700,
+                              color: "#fff",
+                              transition: "width 0.5s ease",
+                            }}
+                          >
+                            {pct > 8 ? v : ""}
+                          </div>
+                        );
+                      })}
+                    </div>
+                    {/* Volume legend below bar */}
+                    <div style={{ display: "flex", gap: "12px", marginTop: "6px", flexWrap: "wrap" }}>
+                      {VOLUME_ORDER.filter((v) => mentions.byVolume[v]).map((v) => (
+                        <div key={v} style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+                          <div style={{ width: "8px", height: "8px", borderRadius: "2px", background: VOLUME_COLORS[v] }} />
+                          <span style={{ fontSize: "0.68rem", color: "var(--text-muted)" }}>
+                            {v} <strong style={{ color: "var(--text-secondary)" }}>{mentions.byVolume[v]}</strong>
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Top books */}
+                  {mentions.byBook.length > 0 && (
+                    <div>
+                      <div style={{ fontSize: "0.65rem", fontWeight: 600, color: "var(--text-muted)", marginBottom: "6px", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+                        Most Mentioned In
+                      </div>
+                      <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}>
+                        {mentions.byBook
+                          .sort((a, b) => b.count - a.count)
+                          .slice(0, 5)
+                          .map((b) => {
+                            const maxCount = mentions.byBook[0] ? Math.max(...mentions.byBook.map((x) => x.count)) : 1;
+                            const pct = (b.count / maxCount) * 100;
+                            return (
+                              <div key={b.bookId} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                                <span style={{ fontSize: "0.72rem", color: "var(--text-secondary)", minWidth: "100px", textAlign: "right" }}>
+                                  {b.bookName}
+                                </span>
+                                <div style={{ flex: 1, height: "6px", borderRadius: "3px", background: "rgba(255,255,255,0.06)" }}>
+                                  <div style={{
+                                    height: "100%",
+                                    width: `${pct}%`,
+                                    borderRadius: "3px",
+                                    background: VOLUME_COLORS[b.volumeAbbrev] || "#8b5cf6",
+                                    transition: "width 0.5s ease",
+                                  }} />
+                                </div>
+                                <span style={{ fontSize: "0.68rem", color: "var(--text-muted)", minWidth: "24px" }}>
+                                  {b.count}
+                                </span>
+                              </div>
+                            );
+                          })}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* First & Last Mention */}
+                  <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                    {mentions.firstMention && (
+                      <Link
+                        href={`/read?bookId=${mentions.firstMention.bookId}&chapter=${mentions.firstMention.chapter}`}
+                        style={{
+                          display: "block",
+                          padding: "10px 14px",
+                          borderRadius: "10px",
+                          background: "rgba(255,255,255,0.03)",
+                          border: "1px solid var(--border)",
+                          textDecoration: "none",
+                          transition: "all 0.15s",
+                        }}
+                      >
+                        <div style={{ fontSize: "0.62rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "4px" }}>
+                          First Mention
+                        </div>
+                        <div style={{ fontSize: "0.78rem", color: "var(--text-secondary)", fontStyle: "italic", lineHeight: 1.5, marginBottom: "4px", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" as const, overflow: "hidden" }}>
+                          &ldquo;{mentions.firstMention.text}&rdquo;
+                        </div>
+                        <div style={{ fontSize: "0.72rem", fontWeight: 600, color: VOLUME_COLORS[mentions.firstMention.volumeAbbrev] || "var(--accent)" }}>
+                          {mentions.firstMention.bookName} {mentions.firstMention.chapter}:{mentions.firstMention.verse}
+                          <span style={{ fontWeight: 400, color: "var(--accent)", marginLeft: "8px" }}>Read →</span>
+                        </div>
+                      </Link>
+                    )}
+
+                    {mentions.lastMention && mentions.firstMention &&
+                     (mentions.lastMention.bookId !== mentions.firstMention.bookId ||
+                      mentions.lastMention.chapter !== mentions.firstMention.chapter ||
+                      mentions.lastMention.verse !== mentions.firstMention.verse) && (
+                      <Link
+                        href={`/read?bookId=${mentions.lastMention.bookId}&chapter=${mentions.lastMention.chapter}`}
+                        style={{
+                          display: "block",
+                          padding: "10px 14px",
+                          borderRadius: "10px",
+                          background: "rgba(255,255,255,0.03)",
+                          border: "1px solid var(--border)",
+                          textDecoration: "none",
+                          transition: "all 0.15s",
+                        }}
+                      >
+                        <div style={{ fontSize: "0.62rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "4px" }}>
+                          Last Mention
+                        </div>
+                        <div style={{ fontSize: "0.78rem", color: "var(--text-secondary)", fontStyle: "italic", lineHeight: 1.5, marginBottom: "4px", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" as const, overflow: "hidden" }}>
+                          &ldquo;{mentions.lastMention.text}&rdquo;
+                        </div>
+                        <div style={{ fontSize: "0.72rem", fontWeight: 600, color: VOLUME_COLORS[mentions.lastMention.volumeAbbrev] || "var(--accent)" }}>
+                          {mentions.lastMention.bookName} {mentions.lastMention.chapter}:{mentions.lastMention.verse}
+                          <span style={{ fontWeight: 400, color: "var(--accent)", marginLeft: "8px" }}>Read →</span>
+                        </div>
+                      </Link>
+                    )}
+                  </div>
+                </div>
+              ) : mentions ? (
+                <div style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>No direct mentions found by name.</div>
+              ) : null}
             </div>
           )}
 
