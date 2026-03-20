@@ -30,9 +30,9 @@ export default function Header({ showSubtitle = false }: { showSubtitle?: boolea
       <h1 className="header-title" style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100%", margin: 0 }}>
         <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
           <img
-            src="/logo-full.svg"
+            src="/tree-logo.svg"
             alt="Scripture Explorer"
-            style={{ height: "48px", width: "auto", maxWidth: "min(480px, 75vw)" }}
+            style={{ height: "64px", width: "auto" }}
           />
         </Link>
       </h1>
