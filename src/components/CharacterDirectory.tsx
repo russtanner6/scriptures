@@ -15,16 +15,20 @@ const VOLUME_LABELS: Record<string, string> = {
 };
 
 const ERA_ORDER = [
-  "Patriarchs",
+  "Eternal",
+  "Creation",
+  "Antediluvian",
+  "Patriarchal",
   "Exodus",
   "Conquest",
   "Judges",
   "United Monarchy",
-  "Divided Monarchy",
-  "Exile/Return",
-  "Intertestamental",
+  "Divided Kingdom",
+  "Exile & Return",
+  "Jaredite",
   "New Testament",
   "Book of Mormon - Early",
+  "Book of Mormon - Middle",
   "Book of Mormon - Late",
   "Restoration",
 ];
