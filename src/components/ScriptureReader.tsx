@@ -1094,59 +1094,6 @@ export default function ScriptureReader() {
                 </div>
               )}
 
-              {/* Speaker legend — centered, no heading label, bigger + brighter pills */}
-              {showSpeakers && chapterSpeakers.length > 0 && (() => {
-                const uniqueSpeakers = Array.from(
-                  new Map(chapterSpeakers.map((s) => [s.speaker, s])).values()
-                );
-                return (
-                  <div
-                    style={{
-                      marginTop: "12px",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "6px",
-                      flexWrap: "wrap",
-                      justifyContent: "center",
-                    }}
-                  >
-                    {uniqueSpeakers.slice(0, 8).map((s) => (
-                      <span
-                        key={s.speaker}
-                        style={{
-                          display: "inline-flex",
-                          alignItems: "center",
-                          gap: "4px",
-                          padding: "2px 9px",
-                          borderRadius: "5px",
-                          background: lightMode
-                            ? `${SPEAKER_COLORS[s.speakerType]}22`
-                            : `${SPEAKER_COLORS[s.speakerType]}28`,
-                          border: `1px solid ${SPEAKER_COLORS[s.speakerType]}${lightMode ? "40" : "50"}`,
-                          color: SPEAKER_COLORS[s.speakerType],
-                          fontWeight: 700,
-                          fontSize: "0.68rem",
-                          letterSpacing: "0.02em",
-                        }}
-                      >
-                        <span style={{
-                          width: "6px",
-                          height: "6px",
-                          borderRadius: "50%",
-                          background: SPEAKER_COLORS[s.speakerType],
-                          flexShrink: 0,
-                        }} />
-                        {s.speaker}
-                      </span>
-                    ))}
-                    {uniqueSpeakers.length > 8 && (
-                      <span style={{ fontSize: "0.65rem", color: theme.textMuted }}>
-                        +{uniqueSpeakers.length - 8} more
-                      </span>
-                    )}
-                  </div>
-                );
-              })()}
             </div>
           )}
 

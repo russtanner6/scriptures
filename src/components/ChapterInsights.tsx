@@ -27,12 +27,12 @@ interface ChapterInsightsProps {
 }
 
 const SPEAKER_COLORS_LIGHT: Record<SpeakerType, string> = {
-  divine: "#9A6B00", prophet: "#1D4ED8", apostle: "#047857",
-  angel: "#6D28D9", narrator: "#374151", other: "#4B5563",
+  divine: "#B47E00", prophet: "#2563EB", apostle: "#059669",
+  angel: "#7C3AED", narrator: "#4B5563", other: "#6B7280",
 };
 const SPEAKER_COLORS_DARK: Record<SpeakerType, string> = {
-  divine: "#F5A623", prophet: "#3B82F6", apostle: "#10B981",
-  angel: "#A78BFA", narrator: "#6B7280", other: "#9CA3AF",
+  divine: "#FBBF24", prophet: "#60A5FA", apostle: "#34D399",
+  angel: "#C4B5FD", narrator: "#9CA3AF", other: "#D1D5DB",
 };
 
 export default function ChapterInsights({
