@@ -23,6 +23,7 @@ import FilterDropdown from "./FilterDropdown";
 import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./MethodologyModal";
 import type { ScripturePanelState } from "@/lib/types";
 import { chartScrollbarPlugin } from "@/lib/chart-scrollbar-plugin";
+import { usePreferencesContext } from "@/components/PreferencesProvider";
 
 ChartJS.register(CategoryScale, LinearScale, LineElement, PointElement, Filler, Tooltip, Legend);
 
@@ -57,6 +58,7 @@ interface ChapterScore {
 }
 
 export default function SentimentArcTool() {
+  const { isVolumeVisible } = usePreferencesContext();
   const isMobile = useIsMobile();
   const [volumes, setVolumes] = useState<Volume[]>([]);
   const [selectedVolumes, setSelectedVolumes] = useState<number[]>([]);
@@ -86,8 +88,9 @@ export default function SentimentArcTool() {
       .then((r) => r.json())
       .then((data) => {
         if (data.volumes) {
-          setVolumes(data.volumes);
-          setSelectedVolumes(data.volumes.map((v: Volume) => v.id));
+          const filtered = data.volumes.filter((v: Volume) => isVolumeVisible(v.abbrev));
+          setVolumes(filtered);
+          setSelectedVolumes(filtered.map((v: Volume) => v.id));
         }
       })
       .catch(() => {});

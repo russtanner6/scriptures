@@ -8,6 +8,7 @@ import Header from "./Header";
 import { SectionLabel } from "./VolumeCheckboxes";
 import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./MethodologyModal";
 import type { ChiasmPattern } from "@/lib/chiasmus-detector";
+import { usePreferencesContext } from "@/components/PreferencesProvider";
 
 function useIsMobile(breakpoint = 768) {
   const [isMobile, setIsMobile] = useState(false);
@@ -30,6 +31,7 @@ interface ChiasmResult {
 }
 
 export default function ChiasmusTool() {
+  const { isVolumeVisible } = usePreferencesContext();
   const isMobile = useIsMobile();
   const searchParams = useSearchParams();
   const [volumes, setVolumes] = useState<Volume[]>([]);
@@ -47,7 +49,7 @@ export default function ChiasmusTool() {
       .then((r) => r.json())
       .then((data) => {
         if (data.volumes) {
-          setVolumes(data.volumes);
+          setVolumes(data.volumes.filter((v: Volume) => isVolumeVisible(v.abbrev)));
           // Check URL params
           const urlBook = searchParams.get("bookId");
           const urlChapter = searchParams.get("chapter");

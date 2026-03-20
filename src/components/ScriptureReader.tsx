@@ -13,6 +13,7 @@ import ResourcePanel from "./ResourcePanel";
 import WordExplorerPanel from "./WordExplorerPanel";
 import NavMenu from "./NavMenu";
 import { markChapterRead, isChapterRead, getReadChaptersForBook, getVolumeProgress } from "@/lib/reading-progress";
+import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { modalStyles as mStyles, getModalTheme } from "@/lib/modal-styles";
 import { getAnnotationsForChapter } from "@/lib/annotations";
 
@@ -35,6 +36,7 @@ function useIsMobile(breakpoint = 768) {
 }
 
 export default function ScriptureReader() {
+  const { isVolumeVisible, displaySpeakerName, theologyMode } = usePreferencesContext();
   const router = useRouter();
   const searchParams = useSearchParams();
   const isMobile = useIsMobile();
@@ -224,7 +226,7 @@ export default function ScriptureReader() {
     fetch("/api/books")
       .then((r) => r.json())
       .then((data) => {
-        const vols: Volume[] = data.volumes;
+        const vols: Volume[] = data.volumes.filter((v: Volume) => isVolumeVisible(v.abbrev));
         setVolumes(vols);
 
         // Deep link: ?bookId=X&chapter=Y&verse=Z
@@ -468,9 +470,10 @@ export default function ScriptureReader() {
   const speakerColorMap = new Map<string, string>();
   let otherIdx = 0;
   for (const s of chapterSpeakers) {
-    if (!speakerColorMap.has(s.speaker)) {
+    const name = displaySpeakerName(s.speaker, s.speakerType, selectedVolume || "");
+    if (!speakerColorMap.has(name)) {
       speakerColorMap.set(
-        s.speaker,
+        name,
         s.speakerType === "other"
           ? OTHER_PALETTE[otherIdx++ % OTHER_PALETTE.length]
           : SPEAKER_TYPE_COLORS[s.speakerType],
@@ -1041,7 +1044,8 @@ export default function ScriptureReader() {
                 ? chapterSpeakers.find((s) => v.verse >= s.verseStart && v.verse <= s.verseEnd)
                 : null;
               const isFirstOfSpeakerSpan = verseSpeaker && v.verse === verseSpeaker.verseStart;
-              const speakerColor = verseSpeaker ? (speakerColorMap.get(verseSpeaker.speaker) || "#888") : null;
+              const verseSpeakerDisplayName = verseSpeaker ? displaySpeakerName(verseSpeaker.speaker, verseSpeaker.speakerType, selectedVolume || "") : null;
+              const speakerColor = verseSpeakerDisplayName ? (speakerColorMap.get(verseSpeakerDisplayName) || "#888") : null;
               // Left border: speaker takes priority, then resource
               const resourceBorderColor = verseCoveredBy.length > 0
                 ? getResourceTypeColor(verseCoveredBy[0].type)
@@ -1094,7 +1098,7 @@ export default function ScriptureReader() {
                             {/* Portrait / avatar circle — closest to scripture (right side on desktop via row-reverse) */}
                             <button
                               onClick={() => openCharacterByName(verseSpeaker.speaker)}
-                              title={verseSpeaker.speaker}
+                              title={verseSpeakerDisplayName || verseSpeaker.speaker}
                               style={{
                                 background: portrait ? "none" : `${speakerColor || "#888"}25`,
                                 border: portrait ? `2px solid ${speakerColor || "#888"}` : "none",
@@ -1142,7 +1146,7 @@ export default function ScriptureReader() {
                                   opacity: 0.9,
                                 }}
                               >
-                                {verseSpeaker.speaker}
+                                {verseSpeakerDisplayName || verseSpeaker.speaker}
                               </span>
                             )}
                           </div>

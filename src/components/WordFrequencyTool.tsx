@@ -27,6 +27,7 @@ import FilterDropdown from "./FilterDropdown";
 import ScripturePanel from "./ScripturePanel";
 import type { ScripturePanelState } from "@/lib/types";
 import { chartScrollbarPlugin } from "@/lib/chart-scrollbar-plugin";
+import { usePreferencesContext } from "@/components/PreferencesProvider";
 
 ChartJS.register(
   CategoryScale,
@@ -61,6 +62,7 @@ function useIsMobile(breakpoint = 768) {
 }
 
 export default function WordFrequencyTool() {
+  const { isVolumeVisible } = usePreferencesContext();
   const [volumes, setVolumes] = useState<Volume[]>([]);
   const [selectedVolumeIds, setSelectedVolumeIds] = useState<Set<number>>(
     new Set()
@@ -113,9 +115,10 @@ export default function WordFrequencyTool() {
     fetch("/api/books")
       .then((r) => r.json())
       .then((data) => {
-        setVolumes(data.volumes);
+        const filtered = data.volumes.filter((v: Volume) => isVolumeVisible(v.abbrev));
+        setVolumes(filtered);
         setSelectedVolumeIds(
-          new Set(data.volumes.map((v: Volume) => v.id))
+          new Set(filtered.map((v: Volume) => v.id))
         );
 
         // Check URL params for deep link

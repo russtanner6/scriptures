@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import type { SpeakerAttribution, SpeakerType } from "@/lib/types";
+import { usePreferencesContext } from "@/components/PreferencesProvider";
 
 interface ChapterStats {
   wordCount: number;
@@ -68,6 +69,7 @@ export default function ChapterInsights({
   onSelectCharacter,
   speakers = [],
 }: ChapterInsightsProps) {
+  const { displaySpeakerName } = usePreferencesContext();
   const [stats, setStats] = useState<ChapterStats | null>(null);
   const [isExpanded, setIsExpanded] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -122,7 +124,8 @@ export default function ChapterInsights({
   let otherIndex = 0;
   const speakerMap = new Map<string, { color: string; verseCount: number; speakerType: SpeakerType }>();
   speakers.forEach((s) => {
-    const existing = speakerMap.get(s.speaker);
+    const name = displaySpeakerName(s.speaker, s.speakerType, volumeAbbrev);
+    const existing = speakerMap.get(name);
     const count = s.verseEnd - s.verseStart + 1;
     if (existing) {
       existing.verseCount += count;
@@ -130,7 +133,7 @@ export default function ChapterInsights({
       const color = s.speakerType === "other"
         ? otherPalette[otherIndex++ % otherPalette.length]
         : typeColors[s.speakerType];
-      speakerMap.set(s.speaker, {
+      speakerMap.set(name, {
         color,
         verseCount: count,
         speakerType: s.speakerType,
@@ -398,11 +401,12 @@ export default function ChapterInsights({
             const verseColors: (string | null)[] = new Array(stats.verseCount).fill(null);
             const verseSpeakerNames: (string | null)[] = new Array(stats.verseCount).fill(null);
             for (const s of speakers) {
-              const spkInfo = speakerMap.get(s.speaker);
+              const name = displaySpeakerName(s.speaker, s.speakerType, volumeAbbrev);
+              const spkInfo = speakerMap.get(name);
               const color = spkInfo?.color || "#888";
               for (let v = s.verseStart; v <= s.verseEnd && v <= stats.verseCount; v++) {
                 verseColors[v - 1] = color;
-                verseSpeakerNames[v - 1] = s.speaker;
+                verseSpeakerNames[v - 1] = name;
               }
             }
 

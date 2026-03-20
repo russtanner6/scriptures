@@ -54,6 +54,7 @@ src/
 │   ├── chiasmus/      # Chiasmus (ABBA pattern) detector (NEW)
 │   ├── topics/        # Topic map — find thematically similar chapters (NEW)
 │   ├── timeline/      # Historical timeline (SHELVED — removed from nav, code preserved)
+│   ├── settings/      # User preferences (volume visibility, theology mode)
 │   ├── read/          # Scripture reader (volume → book → chapter)
 │   ├── bookmarks/     # Saved verse bookmarks
 │   ├── characters/    # Character directory page
@@ -67,6 +68,8 @@ src/
 │   ├── ChiasmusTool.tsx       # Chiasmus pattern detector with visual display (NEW)
 │   ├── TopicMapTool.tsx       # Find thematically similar chapters (NEW)
 │   ├── TimelineTool.tsx       # Historical timeline (SHELVED — code preserved)
+│   ├── PreferencesProvider.tsx # React context for user preferences (volume visibility, theology mode)
+│   ├── SettingsPanel.tsx      # Settings page UI: volume toggles + OT interpretation radio
 │   ├── FilterDropdown.tsx     # Reusable collapsible dropdown for filter groups (Volumes, Options, etc.)
 │   ├── Footer.tsx             # Site-wide footer (copyright, nav links, resources)
 │   ├── VolumeCheckboxes.tsx   # Shared: VolumeCheckboxes, CategoryPills, SectionLabel components
@@ -96,6 +99,7 @@ src/
 │   ├── queries.ts             # Database queries + displayName() + getChapterStats() + getRandomVerse()
 │   ├── types.ts               # TypeScript interfaces
 │   ├── constants.ts           # Volume colors, contrast text, compactVolumeName()
+│   ├── preferences.ts         # User preferences CRUD (localStorage): volume visibility, theology mode, speaker name mapping
 │   ├── bookmarks.ts           # Bookmark CRUD (localStorage)
 │   ├── annotations.ts         # Personal verse notes CRUD (localStorage) (NEW)
 │   ├── reading-progress.ts    # Reading streaks + chapter completion tracking (localStorage)
@@ -191,6 +195,7 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 10. **Timeline** (`/timeline`) — SHELVED. Code preserved but removed from nav/footer/home page.
 11. **Scripture Reader** (`/read`) — Full reading experience with light/dark mode, font size, keyboard nav, reading progress, Chapter Insights, verse popover, annotations, Word Explorer panel, modern language toggle (OT/NT only). Reading streaks. Cream light theme (#f8f6f1), lighter dark theme (#1a1a21), gradient progress bar, centered tree logo.
 12. **Bookmarks** (`/bookmarks`) — Saved verses grouped by volume.
+13. **Settings** (`/settings`) — User preferences: volume visibility toggles (color-coded, descriptions), OT interpretation mode (LDS/Traditional). Changes save immediately to localStorage. Accessible from nav menu.
 
 ## Key Components
 - **ScripturePanel** — Right-side slider panel showing matching verses when clicking chart data points.
@@ -248,4 +253,6 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - **Character data:** `data/characters.json` — 302 named individuals with bios, aliases, family relationships, portraits (~40), volumes, tiers. `/api/chapter-characters` finds characters per chapter via speaker matching + whole-word text scanning with volume-aware deduplication.
 - **VolumeTooltip:** Reusable component wrapping volume abbreviation pills/badges. Shows full name on hover (600ms delay). Applied to CharacterDetailPanel, CharacterDirectory, home page.
 - **useBackToClose:** Shared hook for mobile back-button panel close. Pushes history state, listens for popstate. Used by all slide-in panels and modals.
+- **User Preferences System:** `PreferencesProvider` context wraps the app (in layout.tsx). All components use `usePreferencesContext()` to get `isVolumeVisible()`, `displaySpeakerName()`, `theologyMode`. New tools/features MUST call `usePreferencesContext()` and filter volumes accordingly. Preferences stored in localStorage as abbreviation keys. Merge-with-defaults pattern ensures forward compatibility.
+- **Theology mode:** When `theologyMode === "lds"` and volume is OT and speaker type is "divine", God/LORD/The LORD → "Jesus Christ (Jehovah)". Applied in ChapterInsights and ScriptureReader speaker maps.
 - **Modern language:** `text_modern` column in verses table. OT+NT populated with World English Bible (WEB, public domain) via `add-modern-text.ts`. 31,095/31,102 verses matched (99.98%). BoM/D&C/PoGP not yet available. Toggle shows in Layers section only when modern text exists for the chapter.

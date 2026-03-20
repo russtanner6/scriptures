@@ -22,6 +22,7 @@ import ExportChartModal from "./ExportChartModal";
 import ExportHtmlModal from "./ExportHtmlModal";
 import FilterDropdown from "./FilterDropdown";
 import { chartScrollbarPlugin } from "@/lib/chart-scrollbar-plugin";
+import { usePreferencesContext } from "@/components/PreferencesProvider";
 
 ChartJS.register(CategoryScale, LinearScale, LineElement, PointElement, Filler, Tooltip, Legend, ChartDataLabels);
 
@@ -57,6 +58,7 @@ interface HeatmapCell {
 }
 
 export default function HeatmapTool() {
+  const { isVolumeVisible } = usePreferencesContext();
   const isMobile = useIsMobile();
 
   // Register zoom plugin client-side only
@@ -101,8 +103,9 @@ export default function HeatmapTool() {
     fetch("/api/books")
       .then((r) => r.json())
       .then((data) => {
-        setVolumes(data.volumes);
-        setSelectedVolumeIds(new Set(data.volumes.map((v: Volume) => v.id)));
+        const filtered = data.volumes.filter((v: Volume) => isVolumeVisible(v.abbrev));
+        setVolumes(filtered);
+        setSelectedVolumeIds(new Set(filtered.map((v: Volume) => v.id)));
 
         // Deep link
         if (!initialSearchDone.current) {

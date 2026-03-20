@@ -5,6 +5,7 @@ import type { ScriptureCharacter } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import VolumeTooltip from "./VolumeTooltip";
 import CharacterDetailPanel from "./CharacterDetailPanel";
+import { usePreferencesContext } from "@/components/PreferencesProvider";
 
 const VOLUME_ORDER = ["OT", "NT", "BoM", "D&C", "PoGP"];
 const VOLUME_LABELS: Record<string, string> = {
@@ -46,6 +47,7 @@ function useIsMobile(breakpoint = 768) {
 }
 
 export default function CharacterDirectory() {
+  const { isVolumeVisible } = usePreferencesContext();
   const [characters, setCharacters] = useState<ScriptureCharacter[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
@@ -81,7 +83,8 @@ export default function CharacterDirectory() {
 
   // Filtered characters
   const filtered = useMemo(() => {
-    let list = characters;
+    // First filter by user's volume visibility preferences
+    let list = characters.filter((c) => c.volumes.some((v: string) => isVolumeVisible(v)));
 
     if (searchTerm.length >= 2) {
       const term = searchTerm.toLowerCase();
@@ -162,7 +165,7 @@ export default function CharacterDirectory() {
           justifyContent: "center",
           flexWrap: "wrap",
         }}>
-          {VOLUME_ORDER.map((v) => (
+          {VOLUME_ORDER.filter(isVolumeVisible).map((v) => (
             <div key={v} style={{ display: "flex", alignItems: "center", gap: "5px" }}>
               <span style={{
                 fontSize: "0.65rem",
@@ -288,7 +291,7 @@ export default function CharacterDirectory() {
               Volume
             </div>
             <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
-              {VOLUME_ORDER.map((v) => (
+              {VOLUME_ORDER.filter(isVolumeVisible).map((v) => (
                 <VolumeTooltip key={v} abbrev={v}>
                   <button
                     onClick={() => setVolumeFilter(volumeFilter === v ? null : v)}

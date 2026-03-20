@@ -6,6 +6,7 @@ import { useBackToClose } from "@/lib/useBackToClose";
 import type { ScriptureCharacter } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import VolumeTooltip from "./VolumeTooltip";
+import { usePreferencesContext } from "@/components/PreferencesProvider";
 
 const VOLUME_ORDER = ["OT", "NT", "BoM", "D&C", "PoGP"];
 
@@ -39,6 +40,7 @@ export default function CharacterDetailPanel({
   onClose: () => void;
   onSelectCharacter: (c: ScriptureCharacter) => void;
 }) {
+  const { isVolumeVisible } = usePreferencesContext();
   const [isVisible, setIsVisible] = useState(false);
   const [mentions, setMentions] = useState<MentionStats | null>(null);
   const [mentionsLoading, setMentionsLoading] = useState(false);
@@ -405,7 +407,7 @@ export default function CharacterDetailPanel({
                   {/* Volume heatmap bar */}
                   <div>
                     <div style={{ display: "flex", borderRadius: "6px", overflow: "hidden", height: "24px" }}>
-                      {VOLUME_ORDER.filter((v) => mentions.byVolume[v]).map((v) => {
+                      {VOLUME_ORDER.filter((v) => mentions.byVolume[v] && isVolumeVisible(v)).map((v) => {
                         const count = mentions.byVolume[v] || 0;
                         const pct = (count / mentions.totalMentions) * 100;
                         return (
@@ -432,7 +434,7 @@ export default function CharacterDetailPanel({
                     </div>
                     {/* Volume legend below bar */}
                     <div style={{ display: "flex", gap: "12px", marginTop: "6px", flexWrap: "wrap" }}>
-                      {VOLUME_ORDER.filter((v) => mentions.byVolume[v]).map((v) => (
+                      {VOLUME_ORDER.filter((v) => mentions.byVolume[v] && isVolumeVisible(v)).map((v) => (
                         <div key={v} style={{ display: "flex", alignItems: "center", gap: "4px" }}>
                           <div style={{ width: "8px", height: "8px", borderRadius: "2px", background: VOLUME_COLORS[v] }} />
                           <span style={{ fontSize: "0.68rem", color: "var(--text-muted)" }}>

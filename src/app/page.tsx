@@ -5,6 +5,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import { VOLUME_COLORS } from "@/lib/constants";
 import VolumeTooltip from "@/components/VolumeTooltip";
+import { usePreferencesContext } from "@/components/PreferencesProvider";
 import type { ScriptureCharacter } from "@/lib/types";
 
 interface RandomVerse {
@@ -94,6 +95,7 @@ const PRIMARY_TOOLS = [
 
 export default function HomePage() {
   const isMobile = useIsMobile();
+  const { isVolumeVisible } = usePreferencesContext();
   const [randomVerse, setRandomVerse] = useState<RandomVerse | null>(null);
   const [featuredChars, setFeaturedChars] = useState<ScriptureCharacter[]>([]);
   const [spotlightChar, setSpotlightChar] = useState<ScriptureCharacter | null>(null);
@@ -101,22 +103,33 @@ export default function HomePage() {
   useEffect(() => {
     fetch("/api/random-verse")
       .then((r) => r.json())
-      .then((data) => setRandomVerse(data))
+      .then((data) => {
+        // If the random verse is from a hidden volume, don't show it
+        if (data && data.volumeAbbrev && !isVolumeVisible(data.volumeAbbrev)) {
+          setRandomVerse(null);
+        } else {
+          setRandomVerse(data);
+        }
+      })
       .catch(() => {});
-  }, []);
+  }, [isVolumeVisible]);
 
   useEffect(() => {
     fetch("/api/characters")
       .then((r) => r.json())
       .then((data) => {
         const chars: ScriptureCharacter[] = data.characters || [];
-        const withPortraits = chars.filter((c) => c.portraitUrl);
+        // Filter characters to only those appearing in visible volumes
+        const visibleChars = chars.filter((c) =>
+          c.volumes.some((v: string) => isVolumeVisible(v))
+        );
+        const withPortraits = visibleChars.filter((c) => c.portraitUrl);
         const shuffled = withPortraits.sort(() => Math.random() - 0.5);
         setSpotlightChar(shuffled[0] || null);
         setFeaturedChars(shuffled.slice(1, 7));
       })
       .catch(() => {});
-  }, []);
+  }, [isVolumeVisible]);
 
   const volColor = randomVerse ? VOLUME_COLORS[randomVerse.volumeAbbrev] || "#3B82F6" : "#3B82F6";
   const isDC = randomVerse?.volumeAbbrev === "D&C";

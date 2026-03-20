@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import type { Volume } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import { SectionLabel } from "./VolumeCheckboxes";
+import { usePreferencesContext } from "@/components/PreferencesProvider";
 
 interface WordCloudItem {
   word: string;
@@ -44,6 +45,7 @@ function seededShuffle<T>(arr: T[], seed: number): T[] {
 }
 
 export default function WordCloudTool() {
+  const { isVolumeVisible } = usePreferencesContext();
   const isMobile = useIsMobile();
   const searchParams = useSearchParams();
   const [volumes, setVolumes] = useState<Volume[]>([]);
@@ -60,7 +62,7 @@ export default function WordCloudTool() {
     fetch("/api/books")
       .then((r) => r.json())
       .then((d) => {
-        const vols = d.volumes;
+        const vols = d.volumes.filter((v: Volume) => isVolumeVisible(v.abbrev));
         setVolumes(vols);
         // Deep link: ?bookId=X or ?bookId=X&chapter=Y
         const urlBookId = searchParams.get("bookId");

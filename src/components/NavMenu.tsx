@@ -37,6 +37,9 @@ const NAV_ITEMS: NavItem[] = [
   { href: "/parallel", label: "Parallel Passages", svgIcon: "/parallel.svg", section: "Discover" },
   { href: "/chiasmus", label: "Chiasmus Detector", svgIcon: "/chiasmus.svg" },
   { href: "/topics", label: "Topic Map", svgIcon: "/topics.svg" },
+
+  // Settings
+  { href: "/settings", label: "Settings", svgIcon: "/settings.svg", section: "Settings" },
 ];
 
 export default function NavMenu({

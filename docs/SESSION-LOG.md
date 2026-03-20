@@ -1,5 +1,27 @@
 # Scripture Explorer — Session Log
 
+## 2026-03-21 — Session 8: User Preferences System (Volume Visibility + Theology Mode)
+
+### What was done
+- **Preferences storage layer** (`src/lib/preferences.ts`) — localStorage CRUD with SSR-safe guards, merge-with-defaults pattern for forward compatibility, volume visibility helpers, theology mode speaker name mapping.
+- **PreferencesProvider** (`src/components/PreferencesProvider.tsx`) — React context wrapping the entire app via layout.tsx. Provides `isVolumeVisible()`, `visibleVolumeAbbrevs`, `displaySpeakerName()`, `theologyMode`, and `hydrated` flag for SSR safety.
+- **Settings page** (`/settings`) — Volume Visibility section with 5 color-coded toggle switches (with descriptions and abbreviation badges), Old Testament Interpretation section with LDS/Traditional radio options. At least 1 volume must stay visible. OT Interpretation only visible when OT is enabled.
+- **Settings in nav menu** — New "Settings" section with gear icon (`public/settings.svg`).
+- **Volume filtering wired into all tool components** — WordFrequencyTool, NarrativeArcTool, HeatmapTool, SentimentArcTool, WordCloudTool, ChiasmusTool, TopicMapTool all filter volumes after fetch using `isVolumeVisible()`.
+- **Volume filtering in remaining pages** — Home page (random verse + character spotlight), BookmarksList (hides bookmarks from hidden volumes), CharacterDirectory (filters characters + volume filter pills), CharacterDetailPanel (volume heatmap + legend), ScriptureReader (landing volume cards).
+- **Theology mode in speaker labels** — ChapterInsights and ScriptureReader use `displaySpeakerName()` to map "God"/"LORD"/"The LORD" → "Jesus Christ (Jehovah)" for divine speakers in OT when LDS mode is active.
+
+### Architecture decisions
+- Preferences stored as abbreviation keys (OT, NT, BoM, D&C, PoGP), not numeric IDs — decoupled from database.
+- Merge-with-defaults pattern ensures adding new preference fields in the future requires no migration.
+- `displaySpeakerName()` is centralized in the context, so any new component gets theology-aware speaker names automatically.
+- Data (bookmarks, notes, annotations) for hidden volumes is preserved — only the UI hides them.
+- System designed for extensibility: future content types (blog posts, articles) can check `theologyMode` and volume preferences.
+
+### 1 commit pushed to GitHub
+
+---
+
 ## 2026-03-20 — Session 7: Insights Overhaul, Speaker Timeline, Mobile Back-Button, Preferences Planning
 
 ### What was done

@@ -20,6 +20,7 @@ import { VOLUME_COLORS, getContrastText, compactVolumeName } from "@/lib/constan
 import ScripturePanel from "./ScripturePanel";
 import FilterDropdown from "./FilterDropdown";
 import { chartScrollbarPlugin } from "@/lib/chart-scrollbar-plugin";
+import { usePreferencesContext } from "@/components/PreferencesProvider";
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -81,6 +82,7 @@ interface TermResult {
 }
 
 export default function NarrativeArcTool() {
+  const { isVolumeVisible } = usePreferencesContext();
   const isMobile = useIsMobile();
 
   // Register zoom plugin client-side only
@@ -116,8 +118,9 @@ export default function NarrativeArcTool() {
     fetch("/api/books")
       .then((r) => r.json())
       .then((data) => {
-        setVolumes(data.volumes);
-        setSelectedVolumeIds(new Set(data.volumes.map((v: Volume) => v.id)));
+        const filtered = data.volumes.filter((v: Volume) => isVolumeVisible(v.abbrev));
+        setVolumes(filtered);
+        setSelectedVolumeIds(new Set(filtered.map((v: Volume) => v.id)));
 
         // Deep link: read URL params
         if (!initialSearchDone.current) {

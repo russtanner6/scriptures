@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { getBookmarks, removeBookmark, type Bookmark } from "@/lib/bookmarks";
 import { VOLUME_COLORS } from "@/lib/constants";
+import { usePreferencesContext } from "@/components/PreferencesProvider";
 
 function useIsMobile(breakpoint = 768) {
   const [isMobile, setIsMobile] = useState(false);
@@ -16,6 +17,7 @@ function useIsMobile(breakpoint = 768) {
 }
 
 export default function BookmarksList() {
+  const { isVolumeVisible } = usePreferencesContext();
   const isMobile = useIsMobile();
   const [bookmarks, setBookmarks] = useState<Bookmark[]>([]);
 
@@ -28,10 +30,11 @@ export default function BookmarksList() {
     setBookmarks(getBookmarks());
   };
 
-  // Group by volume
-  const volumeOrder = ["OT", "NT", "BoM", "D&C", "PoGP"];
+  // Group by volume — only show visible volumes
+  const volumeOrder = ["OT", "NT", "BoM", "D&C", "PoGP"].filter(isVolumeVisible);
   const grouped = new Map<string, Bookmark[]>();
   for (const bm of bookmarks) {
+    if (!isVolumeVisible(bm.volumeAbbrev)) continue; // hide bookmarks from hidden volumes
     const key = bm.volumeAbbrev;
     if (!grouped.has(key)) grouped.set(key, []);
     grouped.get(key)!.push(bm);
