@@ -767,6 +767,7 @@ export default function ScriptureReader() {
               textTransform: "uppercase",
               letterSpacing: "0.15em",
               color: theme.textMuted,
+              textAlign: "center",
               marginBottom: "6px",
             }}
           >
@@ -781,6 +782,7 @@ export default function ScriptureReader() {
               color: theme.text,
               marginBottom: "4px",
               letterSpacing: "-0.01em",
+              textAlign: "center",
             }}
           >
             {selectedBookName}
@@ -793,6 +795,7 @@ export default function ScriptureReader() {
               letterSpacing: "0.12em",
               color: theme.textMuted,
               marginBottom: "32px",
+              textAlign: "center",
             }}
           >
             {chapterLabel}
@@ -825,7 +828,7 @@ export default function ScriptureReader() {
 
           {/* Layers section — toggle pills for Speakers, Resources, and Reading Mode */}
           {!isLoading && (chapterSpeakers.length > 0 || chapterResources.length > 0 || hasModernText || hasNarration) && (
-            <div style={{ marginBottom: "20px" }}>
+            <div style={{ marginBottom: "20px", textAlign: "center" }}>
               <div
                 style={{
                   fontSize: "0.62rem",
@@ -838,7 +841,7 @@ export default function ScriptureReader() {
               >
                 Layers
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", justifyContent: "center" }}>
                 {chapterSpeakers.length > 0 && (
                   <button
                     onClick={() => {
@@ -1065,7 +1068,7 @@ export default function ScriptureReader() {
                   key={v.verse}
                   id={`verse-${v.verse}`}
                   style={{
-                    marginBottom: "4px",
+                    marginBottom: "14px",
                     lineHeight: 2,
                     position: "relative",
                     display: "flex",
