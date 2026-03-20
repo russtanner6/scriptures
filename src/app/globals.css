@@ -57,6 +57,7 @@
 html {
   background: var(--bg);
   overflow-x: hidden;
+  overflow-y: scroll; /* Always show scrollbar to prevent layout shift */
 }
 
 body {
