@@ -56,7 +56,8 @@ src/
 │   ├── timeline/      # Historical timeline (SHELVED — removed from nav, code preserved)
 │   ├── read/          # Scripture reader (volume → book → chapter)
 │   ├── bookmarks/     # Saved verse bookmarks
-│   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats, word-cloud, chapter-stats, random-verse, sentiment, parallel-passages, chiasmus, topic-similarity)
+│   ├── characters/    # Character directory page
+│   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats, word-cloud, chapter-stats, random-verse, sentiment, parallel-passages, chiasmus, topic-similarity, chapter-characters, characters, character-mentions, resources)
 ├── components/
 │   ├── WordFrequencyTool.tsx  # Main search interface (wheel zoom desktop, swipe mobile)
 │   ├── NarrativeArcTool.tsx   # Multi-term narrative arc (wheel zoom desktop, swipe mobile)
@@ -70,7 +71,7 @@ src/
 │   ├── Footer.tsx             # Site-wide footer (copyright, nav links, resources)
 │   ├── VolumeCheckboxes.tsx   # Shared: VolumeCheckboxes, CategoryPills, SectionLabel components
 │   ├── MethodologyModal.tsx   # Shared: MethodologyModal, MethodSection, MethodNote, MethodLink
-│   ├── ChapterInsights.tsx    # Collapsible chapter analysis panel (TF-IDF themes, word cloud, density)
+│   ├── ChapterInsights.tsx    # Collapsible chapter insights: People pills, Speaker Timeline, Key Themes
 │   ├── VersePopover.tsx       # Verse tap popover (copy, bookmark, key words, notes)
 │   ├── BookmarksList.tsx      # Bookmarks page with volume grouping
 │   ├── SvgIcon.tsx            # Inline SVG icon helper
@@ -79,7 +80,10 @@ src/
 │   ├── DataTable.tsx          # Sortable results table with ▲▼ sort icons
 │   ├── StatCard.tsx           # Stat pills
 │   ├── ScripturePanel.tsx     # Right-side slider panel for verse viewing
-│   ├── ScriptureReader.tsx    # Full scripture reader (~1400 lines) with insights, search, progress, annotations, resources, Word Explorer, modern language toggle
+│   ├── ScriptureReader.tsx    # Full scripture reader (~1600 lines) with insights, search, progress, annotations, resources, Word Explorer, modern language toggle, per-speaker unique colors
+│   ├── CharacterDirectory.tsx # Character directory page with 302 people, filters, search
+│   ├── CharacterDetailPanel.tsx # Slide-in character detail with bio, aliases, mentions, family tree
+│   ├── VolumeTooltip.tsx      # Styled hover tooltip for volume abbreviations (OT → "Old Testament")
 │   ├── ResourceMarker.tsx     # Inline pill markers for resources (video/article/PDF) + overflow badge
 │   ├── ResourcePanel.tsx      # Slide-in side panel for resource details (YouTube embed, tags, navigation)
 │   ├── WordExplorerPanel.tsx   # Slide-up panel for in-context word frequency exploration (book/volume/all)
@@ -97,8 +101,10 @@ src/
 │   ├── reading-progress.ts    # Reading streaks + chapter completion tracking (localStorage)
 │   ├── scripture-urls.ts      # Verse reference URL builder
 │   ├── sentiment-lexicon.ts   # 7 tone categories with word lists + scoring (NEW)
-│   └── chiasmus-detector.ts   # Chiasmus (ABBA pattern) detection algorithm (NEW)
-data/                          # scriptures.db + sql-wasm.wasm + parallel-passages.json + timeline.json + resources.json + speakers.json + speakers-lds.json + speakers-bible-backup.json + web-bible.json
+│   ├── chiasmus-detector.ts   # Chiasmus (ABBA pattern) detection algorithm
+│   ├── useBackToClose.ts      # Hook: mobile back-button closes panels instead of navigating away
+│   └── modal-styles.ts        # Shared popup/modal styling tokens
+data/                          # scriptures.db + sql-wasm.wasm + parallel-passages.json + timeline.json + resources.json + speakers.json + characters.json + web-bible.json
 scripts/                       # build-db.ts, book-order.ts, build-speakers.ts, build-speakers-lds.ts, merge-speakers.ts, add-modern-text.ts
 ```
 
@@ -188,7 +194,7 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 
 ## Key Components
 - **ScripturePanel** — Right-side slider panel showing matching verses when clicking chart data points.
-- **ChapterInsights** — Collapsible panel in reader: stats bar (Verses + Words), key themes (TF-IDF), speaker legend with color-coded pills, mini word cloud, verse density strip, cross-tool quick links. Key themes/top words trigger WordExplorerPanel.
+- **ChapterInsights** — Collapsible panel in reader: collapsed bar (verse count + 3 stacked portraits + people count + "INSIGHTS"), expanded (People pills with speaker-colored borders + verse count, Speaker Timeline color-coded bar with trough styling, Key Themes in neutral colors). Click timeline to jump to verse. Key themes trigger WordExplorerPanel.
 - **WordExplorerPanel** — Slide-up panel for in-context word frequency exploration. Three scopes (book/volume/all), horizontal bar chart, current chapter highlighted, "go deeper" links. Triggered from ChapterInsights.
 - **VersePopover** — Tap verse → popover with reference, word count, key words, copy, bookmark, and personal notes.
 - **SentimentArcTool** — Multi-volume sentiment analysis with category toggles and Chart.js line charts.
@@ -238,5 +244,8 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - Results clear when volume selection changes
 - Deep linking: URL params updated on search, read on mount
 - Single-book volume detection: `vol.books.length === 1` triggers chapter-level plotting
-- **Speaker data:** Bible speakers from Clear-Bible/speaker-quotations (6,913 entries). BoM/D&C/PoGP from `build-speakers-lds.ts` (718 entries, text-pattern analysis + explicit chapter overrides). Merged via `merge-speakers.ts`. 7,631 total across 82 books. QA'd against 26 key chapters.
+- **Speaker data:** Bible speakers from Clear-Bible/speaker-quotations (6,913 entries). BoM/D&C/PoGP from `build-speakers-lds.ts` (718 entries, text-pattern analysis + explicit chapter overrides). Merged via `merge-speakers.ts`. 7,631 total across 82 books. QA'd against 26 key chapters. Each "other" speaker gets unique color from 10-color palette (not shared).
+- **Character data:** `data/characters.json` — 302 named individuals with bios, aliases, family relationships, portraits (~40), volumes, tiers. `/api/chapter-characters` finds characters per chapter via speaker matching + whole-word text scanning with volume-aware deduplication.
+- **VolumeTooltip:** Reusable component wrapping volume abbreviation pills/badges. Shows full name on hover (600ms delay). Applied to CharacterDetailPanel, CharacterDirectory, home page.
+- **useBackToClose:** Shared hook for mobile back-button panel close. Pushes history state, listens for popstate. Used by all slide-in panels and modals.
 - **Modern language:** `text_modern` column in verses table. OT+NT populated with World English Bible (WEB, public domain) via `add-modern-text.ts`. 31,095/31,102 verses matched (99.98%). BoM/D&C/PoGP not yet available. Toggle shows in Layers section only when modern text exists for the chapter.
