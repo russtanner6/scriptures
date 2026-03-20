@@ -60,7 +60,6 @@ export default function ChapterInsights({
   const [stats, setStats] = useState<ChapterStats | null>(null);
   const [isExpanded, setIsExpanded] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [hoveredDensityVerse, setHoveredDensityVerse] = useState<number | null>(null);
   const [chapterChars, setChapterChars] = useState<ChapterCharacter[]>([]);
 
   // Fetch stats when chapter changes
@@ -105,8 +104,58 @@ export default function ChapterInsights({
 
   if (isLoading || !stats) return null;
 
-  const isDC = volumeAbbrev === "D&C";
-  const maxDensity = Math.max(...stats.verseDensity.map((v) => v.wordCount), 1);
+  // Build speaker info map: speaker name → { color, verseCount, speakerType }
+  const speakerColors = lightMode ? SPEAKER_COLORS_LIGHT : SPEAKER_COLORS_DARK;
+  const speakerMap = new Map<string, { color: string; verseCount: number; speakerType: SpeakerType }>();
+  speakers.forEach((s) => {
+    const existing = speakerMap.get(s.speaker);
+    const count = s.verseEnd - s.verseStart + 1;
+    if (existing) {
+      existing.verseCount += count;
+    } else {
+      speakerMap.set(s.speaker, {
+        color: speakerColors[s.speakerType],
+        verseCount: count,
+        speakerType: s.speakerType,
+      });
+    }
+  });
+
+  // Match characters to speakers (by name, case-insensitive)
+  function getSpeakerInfo(charName: string) {
+    // Direct match
+    const direct = speakerMap.get(charName);
+    if (direct) return direct;
+    // Case-insensitive
+    for (const [name, info] of speakerMap) {
+      if (name.toLowerCase() === charName.toLowerCase()) return info;
+    }
+    return null;
+  }
+
+  // Portrait circles for collapsed bar — always show 3, use real portraits where available
+  const portraitChars = chapterChars.slice(0, 3);
+  // Fill to 3 with placeholders if fewer characters
+  while (portraitChars.length < 3 && chapterChars.length > 0) {
+    portraitChars.push({ id: `placeholder-${portraitChars.length}`, name: "?", portraitUrl: null, roles: [], tier: 9 });
+  }
+
+  const linkStyle = {
+    display: "inline-flex" as const,
+    alignItems: "center" as const,
+    gap: "4px",
+    padding: "5px 12px",
+    borderRadius: "6px",
+    border: `1px solid ${theme.border}`,
+    background: theme.pillBg,
+    color: theme.textSecondary,
+    fontSize: "0.72rem",
+    fontWeight: 500,
+    textDecoration: "none" as const,
+    transition: "all 0.15s",
+  };
+
+  const iconFilter = lightMode ? "brightness(0.4)" : "invert(1) brightness(0.75)";
 
   return (
     <div
@@ -134,42 +183,64 @@ export default function ChapterInsights({
           gap: "12px",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "10px" : "16px", flexWrap: "wrap" }}>
-          {/* Stats pills */}
-          {[
-            { label: "Verses", value: stats.verseCount },
-            { label: "Words", value: stats.wordCount.toLocaleString() },
-          ].map((pill) => (
-            <div
-              key={pill.label}
-              style={{
-                display: "flex",
-                alignItems: "baseline",
-                gap: "4px",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: isMobile ? "0.82rem" : "0.88rem",
-                  fontWeight: 700,
-                  color: theme.text,
-                }}
-              >
-                {pill.value}
-              </span>
-              <span
-                style={{
-                  fontSize: "0.65rem",
-                  fontWeight: 500,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.06em",
-                  color: theme.textMuted,
-                }}
-              >
-                {pill.label}
-              </span>
+        <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "12px" : "20px", flexWrap: "wrap" }}>
+          {/* Verse count */}
+          <div style={{ display: "flex", alignItems: "baseline", gap: "4px" }}>
+            <span style={{ fontSize: isMobile ? "0.82rem" : "0.88rem", fontWeight: 700, color: theme.text }}>
+              {stats.verseCount}
+            </span>
+            <span style={{ fontSize: "0.65rem", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.06em", color: theme.textMuted }}>
+              Verses
+            </span>
+          </div>
+
+          {/* People count with stacked portraits */}
+          {chapterChars.length > 0 && (
+            <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+              {/* Stacked portrait circles */}
+              <div style={{ display: "flex", position: "relative", width: `${18 + (Math.min(portraitChars.length, 3) - 1) * 12}px`, height: "22px" }}>
+                {portraitChars.slice(0, 3).map((c, i) => (
+                  <div
+                    key={c.id}
+                    style={{
+                      position: "absolute",
+                      left: `${i * 12}px`,
+                      width: "22px",
+                      height: "22px",
+                      borderRadius: "50%",
+                      overflow: "hidden",
+                      border: `2px solid ${lightMode ? "#f0efe8" : "#1a1a21"}`,
+                      zIndex: 3 - i,
+                      background: c.portraitUrl ? undefined : `${volColor}30`,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    {c.portraitUrl ? (
+                      <img
+                        src={c.portraitUrl}
+                        alt=""
+                        style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%" }}
+                      />
+                    ) : (
+                      <span style={{ fontSize: "0.5rem", fontWeight: 700, color: volColor }}>
+                        {c.name.charAt(0)}
+                      </span>
+                    )}
+                  </div>
+                ))}
+              </div>
+              <div style={{ display: "flex", alignItems: "baseline", gap: "4px" }}>
+                <span style={{ fontSize: isMobile ? "0.82rem" : "0.88rem", fontWeight: 700, color: theme.text }}>
+                  {chapterChars.length}
+                </span>
+                <span style={{ fontSize: "0.65rem", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.06em", color: theme.textMuted }}>
+                  People
+                </span>
+              </div>
             </div>
-          ))}
+          )}
         </div>
 
         {/* Expand/collapse indicator */}
@@ -208,120 +279,7 @@ export default function ChapterInsights({
             animation: "fadeIn 0.3s ease",
           }}
         >
-          {/* Key Themes */}
-          {stats.keyThemes.length > 0 && (
-            <div>
-              <div
-                style={{
-                  fontSize: "0.65rem",
-                  fontWeight: 600,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.1em",
-                  color: theme.textMuted,
-                  marginBottom: "8px",
-                }}
-              >
-                Key Themes
-              </div>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
-                {stats.keyThemes.map((t) => (
-                  <button
-                    key={t.word}
-                    onClick={() => onExploreWord ? onExploreWord(t.word) : window.location.href = `/heatmap?word=${encodeURIComponent(t.word)}`}
-                    style={{
-                      display: "inline-block",
-                      padding: "4px 12px",
-                      borderRadius: "6px",
-                      background: `${volColor}18`,
-                      border: `1px solid ${volColor}30`,
-                      color: volColor,
-                      fontSize: "0.78rem",
-                      fontWeight: 600,
-                      cursor: "pointer",
-                      fontFamily: "inherit",
-                      transition: "all 0.15s",
-                    }}
-                  >
-                    {t.word}
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Speakers in this chapter */}
-          {speakers.length > 0 && (() => {
-            const speakerColors = lightMode ? SPEAKER_COLORS_LIGHT : SPEAKER_COLORS_DARK;
-            const uniqueSpeakers = Array.from(
-              new Map(speakers.map((s) => [s.speaker, s])).values()
-            );
-            // Count verses per speaker
-            const speakerVerseCounts = new Map<string, number>();
-            speakers.forEach((s) => {
-              const count = s.verseEnd - s.verseStart + 1;
-              speakerVerseCounts.set(s.speaker, (speakerVerseCounts.get(s.speaker) || 0) + count);
-            });
-            return (
-              <div>
-                <div
-                  style={{
-                    fontSize: "0.65rem",
-                    fontWeight: 600,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.1em",
-                    color: theme.textMuted,
-                    marginBottom: "8px",
-                  }}
-                >
-                  Speakers
-                </div>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
-                  {uniqueSpeakers.map((s) => {
-                    const color = speakerColors[s.speakerType];
-                    const verseCount = speakerVerseCounts.get(s.speaker) || 0;
-                    return (
-                      <div
-                        key={s.speaker}
-                        style={{
-                          display: "inline-flex",
-                          alignItems: "center",
-                          gap: "4px",
-                          padding: "3px 9px",
-                          borderRadius: "4px",
-                          background: `${color}18`,
-                          border: `1px solid ${color}30`,
-                        }}
-                      >
-                        <span style={{
-                          width: "5px",
-                          height: "5px",
-                          borderRadius: "50%",
-                          background: color,
-                          flexShrink: 0,
-                        }} />
-                        <span style={{
-                          fontSize: "0.72rem",
-                          fontWeight: 600,
-                          color: color,
-                        }}>
-                          {s.speaker}
-                        </span>
-                        <span style={{
-                          fontSize: "0.6rem",
-                          color: theme.textMuted,
-                          fontWeight: 500,
-                        }}>
-                          {verseCount}v
-                        </span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            );
-          })()}
-
-          {/* People in this Chapter */}
+          {/* People in this Chapter — merged with speaker indicators */}
           {chapterChars.length > 0 && (
             <div>
               <div
@@ -337,264 +295,158 @@ export default function ChapterInsights({
                 People in this Chapter
               </div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                {chapterChars.map((c) => (
+                {chapterChars.map((c) => {
+                  const spk = getSpeakerInfo(c.name);
+                  const isSpeaker = !!spk;
+                  return (
+                    <button
+                      key={c.id}
+                      onClick={() => onSelectCharacter?.(c.id)}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "7px",
+                        padding: "4px 10px 4px 4px",
+                        borderRadius: "20px",
+                        background: theme.pillBg,
+                        border: isSpeaker
+                          ? `2.5px solid ${spk!.color}`
+                          : `1px solid ${theme.border}`,
+                        cursor: onSelectCharacter ? "pointer" : "default",
+                        fontFamily: "inherit",
+                        transition: "all 0.15s",
+                      }}
+                      title={isSpeaker ? `${c.name} — speaks in ${spk!.verseCount} verse${spk!.verseCount !== 1 ? "s" : ""}` : c.roles.join(", ")}
+                    >
+                      {c.portraitUrl ? (
+                        <img
+                          src={c.portraitUrl}
+                          alt=""
+                          loading="lazy"
+                          style={{
+                            width: "26px",
+                            height: "26px",
+                            borderRadius: "50%",
+                            objectFit: "cover",
+                            objectPosition: "center 20%",
+                          }}
+                        />
+                      ) : (
+                        <div
+                          style={{
+                            width: "26px",
+                            height: "26px",
+                            borderRadius: "50%",
+                            background: `${volColor}25`,
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            fontSize: "0.62rem",
+                            fontWeight: 700,
+                            color: volColor,
+                          }}
+                        >
+                          {c.name.charAt(0)}
+                        </div>
+                      )}
+                      <span
+                        style={{
+                          fontSize: "0.74rem",
+                          fontWeight: 600,
+                          color: isSpeaker ? spk!.color : theme.textSecondary,
+                        }}
+                      >
+                        {c.name}
+                      </span>
+                      {isSpeaker && (
+                        <span style={{ fontSize: "0.58rem", color: theme.textMuted, fontWeight: 500 }}>
+                          {spk!.verseCount}v
+                        </span>
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
+              {/* Speaker legend hint */}
+              {speakers.length > 0 && (
+                <div style={{
+                  fontSize: "0.62rem",
+                  color: theme.textMuted,
+                  marginTop: "8px",
+                  lineHeight: 1.5,
+                }}>
+                  Color borders indicate speakers — colors match the verse margins below
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Key Themes */}
+          {stats.keyThemes.length > 0 && (
+            <div>
+              <div
+                style={{
+                  fontSize: "0.65rem",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.1em",
+                  color: theme.textMuted,
+                  marginBottom: "4px",
+                }}
+              >
+                Key Themes
+              </div>
+              <div style={{
+                fontSize: "0.6rem",
+                color: theme.textMuted,
+                marginBottom: "8px",
+                lineHeight: 1.4,
+              }}>
+                Words that stand out in this chapter — tap to explore across all scripture
+              </div>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
+                {stats.keyThemes.map((t) => (
                   <button
-                    key={c.id}
-                    onClick={() => onSelectCharacter?.(c.id)}
+                    key={t.word}
+                    onClick={() => onExploreWord ? onExploreWord(t.word) : undefined}
                     style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "7px",
-                      padding: "4px 10px 4px 4px",
-                      borderRadius: "20px",
-                      background: theme.pillBg,
-                      border: `1px solid ${theme.border}`,
-                      cursor: onSelectCharacter ? "pointer" : "default",
+                      display: "inline-block",
+                      padding: "4px 12px",
+                      borderRadius: "6px",
+                      background: `${volColor}18`,
+                      border: `1px solid ${volColor}30`,
+                      color: volColor,
+                      fontSize: "0.78rem",
+                      fontWeight: 600,
+                      cursor: onExploreWord ? "pointer" : "default",
                       fontFamily: "inherit",
                       transition: "all 0.15s",
                     }}
-                    title={c.roles.join(", ")}
                   >
-                    {c.portraitUrl ? (
-                      <img
-                        src={c.portraitUrl}
-                        alt=""
-                        loading="lazy"
-                        style={{
-                          width: "26px",
-                          height: "26px",
-                          borderRadius: "50%",
-                          objectFit: "cover",
-                          objectPosition: "center 20%",
-                        }}
-                      />
-                    ) : (
-                      <div
-                        style={{
-                          width: "26px",
-                          height: "26px",
-                          borderRadius: "50%",
-                          background: `${volColor}25`,
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          fontSize: "0.62rem",
-                          fontWeight: 700,
-                          color: volColor,
-                        }}
-                      >
-                        {c.name.charAt(0)}
-                      </div>
-                    )}
-                    <span
-                      style={{
-                        fontSize: "0.74rem",
-                        fontWeight: 600,
-                        color: theme.textSecondary,
-                      }}
-                    >
-                      {c.name}
-                    </span>
+                    {t.word}
                   </button>
                 ))}
               </div>
             </div>
           )}
 
-          {/* Mini Word Cloud */}
-          {stats.topWords.length > 0 && (
-            <div>
-              <div
-                style={{
-                  fontSize: "0.65rem",
-                  fontWeight: 600,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.1em",
-                  color: theme.textMuted,
-                  marginBottom: "8px",
-                }}
-              >
-                Top Words
-              </div>
-              <div style={{ lineHeight: 2, textAlign: "center" }}>
-                {stats.topWords.map((w) => {
-                  const size = 0.7 + w.weight * (isMobile ? 0.8 : 1.1);
-                  const opacity = 0.45 + w.weight * 0.55;
-                  return (
-                    <button
-                      key={w.word}
-                      onClick={() => onExploreWord ? onExploreWord(w.word) : window.location.href = `/heatmap?word=${encodeURIComponent(w.word)}`}
-                      style={{
-                        display: "inline-block",
-                        fontSize: `${size}rem`,
-                        fontWeight: w.weight > 0.5 ? 700 : w.weight > 0.2 ? 600 : 400,
-                        color: volColor,
-                        opacity,
-                        padding: "1px 5px",
-                        background: "none",
-                        border: "none",
-                        cursor: "pointer",
-                        fontFamily: "inherit",
-                        transition: "opacity 0.15s",
-                      }}
-                      title={`${w.word}: ${w.count}×`}
-                    >
-                      {w.word}
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-
-          {/* Verse Density Strip */}
-          {stats.verseDensity.length > 0 && (
-            <div>
-              <div
-                style={{
-                  fontSize: "0.65rem",
-                  fontWeight: 600,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.1em",
-                  color: theme.textMuted,
-                  marginBottom: "8px",
-                }}
-              >
-                Verse Length
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "1px",
-                  height: "28px",
-                  borderRadius: "4px",
-                  overflow: "hidden",
-                  position: "relative",
-                }}
-              >
-                {stats.verseDensity.map((v) => {
-                  const intensity = v.wordCount / maxDensity;
-                  const isHovered = hoveredDensityVerse === v.verse;
-                  return (
-                    <div
-                      key={v.verse}
-                      style={{
-                        flex: 1,
-                        background: volColor,
-                        opacity: 0.15 + intensity * 0.75,
-                        cursor: "pointer",
-                        transition: "opacity 0.15s, transform 0.1s",
-                        transform: isHovered ? "scaleY(1.15)" : "scaleY(1)",
-                        transformOrigin: "bottom",
-                        position: "relative",
-                      }}
-                      onMouseEnter={() => setHoveredDensityVerse(v.verse)}
-                      onMouseLeave={() => setHoveredDensityVerse(null)}
-                      onClick={() => onScrollToVerse?.(v.verse)}
-                      title={`Verse ${v.verse}: ${v.wordCount} words`}
-                    />
-                  );
-                })}
-              </div>
-              {hoveredDensityVerse != null && (
-                <div
-                  style={{
-                    fontSize: "0.68rem",
-                    color: theme.textMuted,
-                    marginTop: "4px",
-                    textAlign: "center",
-                  }}
-                >
-                  Verse {hoveredDensityVerse}:{" "}
-                  {stats.verseDensity.find((v) => v.verse === hoveredDensityVerse)?.wordCount} words
-                </div>
-              )}
-              <div
-                style={{
-                  fontSize: "0.62rem",
-                  color: theme.textMuted,
-                  marginTop: "4px",
-                  textAlign: "center",
-                  opacity: hoveredDensityVerse != null ? 0 : 0.7,
-                  transition: "opacity 0.15s",
-                }}
-              >
-                Click a bar to jump to that verse
-              </div>
-            </div>
-          )}
-
-          {/* Quick Links */}
+          {/* Quick Links — no divider, no prepopulated terms */}
           <div
             style={{
               display: "flex",
               flexWrap: "wrap",
               gap: "8px",
-              paddingTop: "4px",
-              borderTop: `1px solid ${theme.border}`,
             }}
           >
-            <a
-              href={`/wordcloud?bookId=${bookId}&chapter=${chapter}`}
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "4px",
-                padding: "5px 12px",
-                borderRadius: "6px",
-                border: `1px solid ${theme.border}`,
-                background: theme.pillBg,
-                color: theme.textSecondary,
-                fontSize: "0.72rem",
-                fontWeight: 500,
-                textDecoration: "none",
-                transition: "all 0.15s",
-              }}
-            >
-              <img src="/word-cloud.svg" alt="" style={{ width: "13px", height: "13px", filter: lightMode ? "brightness(0.4)" : "invert(1) brightness(0.75)" }} /> Word Cloud
+            <a href={`/wordcloud?bookId=${bookId}&chapter=${chapter}`} style={linkStyle}>
+              <img src="/word-cloud.svg" alt="" style={{ width: "13px", height: "13px", filter: iconFilter }} /> Word Cloud
             </a>
-            {stats.keyThemes[0] && (
-              <a
-                href={`/heatmap?word=${encodeURIComponent(stats.keyThemes[0].word)}`}
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "4px",
-                  padding: "5px 12px",
-                  borderRadius: "6px",
-                  border: `1px solid ${theme.border}`,
-                  background: theme.pillBg,
-                  color: theme.textSecondary,
-                  fontSize: "0.72rem",
-                  fontWeight: 500,
-                  textDecoration: "none",
-                  transition: "all 0.15s",
-                }}
-              >
-                <img src="/heatmap.svg" alt="" style={{ width: "13px", height: "13px", filter: lightMode ? "brightness(0.4)" : "invert(1) brightness(0.75)" }} /> Heatmap: {stats.keyThemes[0].word}
-              </a>
-            )}
-            {stats.keyThemes[0] && (
-              <a
-                href={`/search?word=${encodeURIComponent(stats.keyThemes[0].word)}`}
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "4px",
-                  padding: "5px 12px",
-                  borderRadius: "6px",
-                  border: `1px solid ${theme.border}`,
-                  background: theme.pillBg,
-                  color: theme.textSecondary,
-                  fontSize: "0.72rem",
-                  fontWeight: 500,
-                  textDecoration: "none",
-                  transition: "all 0.15s",
-                }}
-              >
-                <img src="/search.svg" alt="" style={{ width: "13px", height: "13px", filter: lightMode ? "brightness(0.4)" : "invert(1) brightness(0.75)" }} /> Search: {stats.keyThemes[0].word}
-              </a>
-            )}
+            <a href={`/heatmap`} style={linkStyle}>
+              <img src="/heatmap.svg" alt="" style={{ width: "13px", height: "13px", filter: iconFilter }} /> Heatmap
+            </a>
+            <a href={`/search`} style={linkStyle}>
+              <img src="/search.svg" alt="" style={{ width: "13px", height: "13px", filter: iconFilter }} /> Word Search
+            </a>
           </div>
         </div>
       )}

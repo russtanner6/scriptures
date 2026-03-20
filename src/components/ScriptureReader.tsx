@@ -217,9 +217,10 @@ export default function ScriptureReader() {
         const vols: Volume[] = data.volumes;
         setVolumes(vols);
 
-        // Deep link: ?bookId=X&chapter=Y
+        // Deep link: ?bookId=X&chapter=Y&verse=Z
         const urlBookId = searchParams.get("bookId");
         const urlChapter = searchParams.get("chapter");
+        const urlVerse = searchParams.get("verse");
         if (urlBookId && urlChapter) {
           const bid = Number(urlBookId);
           let ch = Number(urlChapter);
@@ -251,6 +252,19 @@ export default function ScriptureReader() {
                     .then((r) => r.json())
                     .then((spkData) => setChapterSpeakers(spkData.speakers || []))
                     .catch(() => {});
+                  // Scroll to specific verse if provided
+                  if (urlVerse) {
+                    setTimeout(() => {
+                      const el = document.getElementById(`verse-${urlVerse}`);
+                      if (el) {
+                        el.scrollIntoView({ behavior: "smooth", block: "center" });
+                        // Brief highlight flash
+                        el.style.transition = "background 0.3s";
+                        el.style.background = `rgba(59, 130, 246, 0.15)`;
+                        setTimeout(() => { el.style.background = ""; }, 2500);
+                      }
+                    }, 400);
+                  }
                 });
               break;
             }

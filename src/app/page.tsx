@@ -498,7 +498,7 @@ export default function HomePage() {
                 — {verseRef}
               </span>
               <a
-                href={`/read?bookId=${randomVerse.bookId}&chapter=${randomVerse.chapter}`}
+                href={`/read?bookId=${randomVerse.bookId}&chapter=${randomVerse.chapter}&verse=${randomVerse.verse}`}
                 style={{
                   fontSize: "0.75rem",
                   fontWeight: 500,

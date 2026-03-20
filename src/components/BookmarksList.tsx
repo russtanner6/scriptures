@@ -124,7 +124,7 @@ export default function BookmarksList() {
                   >
                     <div style={{ flex: 1, minWidth: 0 }}>
                       <a
-                        href={`/read?bookId=${bm.bookId}&chapter=${bm.chapter}`}
+                        href={`/read?bookId=${bm.bookId}&chapter=${bm.chapter}&verse=${bm.verse}`}
                         style={{
                           fontSize: "0.88rem",
                           fontWeight: 600,
