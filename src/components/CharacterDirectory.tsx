@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
 import type { ScriptureCharacter } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
+import VolumeTooltip from "./VolumeTooltip";
 import CharacterDetailPanel from "./CharacterDetailPanel";
 
 const VOLUME_ORDER = ["OT", "NT", "BoM", "D&C", "PoGP"];
@@ -288,24 +289,25 @@ export default function CharacterDirectory() {
             </div>
             <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
               {VOLUME_ORDER.map((v) => (
-                <button
-                  key={v}
-                  onClick={() => setVolumeFilter(volumeFilter === v ? null : v)}
-                  style={{
-                    padding: "5px 12px",
-                    borderRadius: "6px",
-                    border: `1px solid ${volumeFilter === v ? VOLUME_COLORS[v] : "var(--border)"}`,
-                    background: volumeFilter === v ? `${VOLUME_COLORS[v]}20` : "transparent",
-                    color: volumeFilter === v ? VOLUME_COLORS[v] : "var(--text-secondary)",
-                    fontSize: "0.75rem",
-                    fontWeight: 600,
-                    fontFamily: "inherit",
-                    cursor: "pointer",
-                    transition: "all 0.15s",
-                  }}
-                >
-                  {v}
-                </button>
+                <VolumeTooltip key={v} abbrev={v}>
+                  <button
+                    onClick={() => setVolumeFilter(volumeFilter === v ? null : v)}
+                    style={{
+                      padding: "5px 12px",
+                      borderRadius: "6px",
+                      border: `1px solid ${volumeFilter === v ? VOLUME_COLORS[v] : "var(--border)"}`,
+                      background: volumeFilter === v ? `${VOLUME_COLORS[v]}20` : "transparent",
+                      color: volumeFilter === v ? VOLUME_COLORS[v] : "var(--text-secondary)",
+                      fontSize: "0.75rem",
+                      fontWeight: 600,
+                      fontFamily: "inherit",
+                      cursor: "pointer",
+                      transition: "all 0.15s",
+                    }}
+                  >
+                    {v}
+                  </button>
+                </VolumeTooltip>
               ))}
             </div>
           </div>

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import { VOLUME_COLORS } from "@/lib/constants";
+import VolumeTooltip from "@/components/VolumeTooltip";
 import type { ScriptureCharacter } from "@/lib/types";
 
 interface RandomVerse {
@@ -271,8 +272,9 @@ export default function HomePage() {
               </p>
               <div style={{ display: "flex", gap: "5px" }}>
                 {spotlightChar.volumes.map((v) => (
-                  <span
+                  <VolumeTooltip
                     key={v}
+                    abbrev={v}
                     style={{
                       fontSize: "0.58rem",
                       fontWeight: 700,
@@ -281,9 +283,7 @@ export default function HomePage() {
                       padding: "2px 7px",
                       borderRadius: "4px",
                     }}
-                  >
-                    {v}
-                  </span>
+                  />
                 ))}
               </div>
             </div>

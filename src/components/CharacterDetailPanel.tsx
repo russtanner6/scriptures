@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useBackToClose } from "@/lib/useBackToClose";
 import type { ScriptureCharacter } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
+import VolumeTooltip from "./VolumeTooltip";
 
 const VOLUME_ORDER = ["OT", "NT", "BoM", "D&C", "PoGP"];
 
@@ -330,20 +331,15 @@ export default function CharacterDetailPanel({
           }}>
             <div style={{ display: "flex", gap: "5px" }}>
               {character.volumes.map((v) => (
-                <span
-                  key={v}
-                  style={{
-                    fontSize: "0.65rem",
-                    fontWeight: 700,
-                    color: VOLUME_COLORS[v] || "#888",
-                    background: `${VOLUME_COLORS[v] || "#888"}18`,
-                    padding: "3px 9px",
-                    borderRadius: "5px",
-                    letterSpacing: "0.04em",
-                  }}
-                >
-                  {v}
-                </span>
+                <VolumeTooltip key={v} abbrev={v} style={{
+                  fontSize: "0.65rem",
+                  fontWeight: 700,
+                  color: VOLUME_COLORS[v] || "#888",
+                  background: `${VOLUME_COLORS[v] || "#888"}18`,
+                  padding: "3px 9px",
+                  borderRadius: "5px",
+                  letterSpacing: "0.04em",
+                }} />
               ))}
             </div>
             <span style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>
@@ -367,7 +363,7 @@ export default function CharacterDetailPanel({
           {/* Aliases */}
           {character.aliases.length > 0 && (
             <div style={{ marginBottom: "28px" }}>
-              <div style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "8px" }}>
+              <div style={{ fontSize: "0.78rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text)", marginBottom: "10px" }}>
                 Also Known As
               </div>
               <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
@@ -393,7 +389,7 @@ export default function CharacterDetailPanel({
           {/* Scripture Mentions */}
           {(mentionsLoading || mentions) && (
             <div style={{ marginBottom: "28px" }}>
-              <div style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "12px" }}>
+              <div style={{ fontSize: "0.78rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text)", marginBottom: "12px" }}>
                 Scripture Mentions
               </div>
 
@@ -440,7 +436,7 @@ export default function CharacterDetailPanel({
                         <div key={v} style={{ display: "flex", alignItems: "center", gap: "4px" }}>
                           <div style={{ width: "8px", height: "8px", borderRadius: "2px", background: VOLUME_COLORS[v] }} />
                           <span style={{ fontSize: "0.68rem", color: "var(--text-muted)" }}>
-                            {v} <strong style={{ color: "var(--text-secondary)" }}>{mentions.byVolume[v]}</strong>
+                            <VolumeTooltip abbrev={v} /> <strong style={{ color: "var(--text-secondary)" }}>{mentions.byVolume[v]}</strong>
                           </span>
                         </div>
                       ))}
@@ -485,7 +481,7 @@ export default function CharacterDetailPanel({
                   )}
 
                   {/* First & Last Mention */}
-                  <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                  <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginTop: "8px" }}>
                     {mentions.firstMention && (
                       <Link
                         href={`/read?bookId=${mentions.firstMention.bookId}&chapter=${mentions.firstMention.chapter}&verse=${mentions.firstMention.verse}`}
