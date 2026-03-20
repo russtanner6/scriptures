@@ -47,9 +47,8 @@ export default function ResourceMarker({
 }) {
   const color = TYPE_COLORS[resource.type];
   const icon = TYPE_ICONS[resource.type];
-  const label = count && count > 1
-    ? `${count} Resources`
-    : resource.type === "video" ? "Video" : resource.type === "article" ? "Link" : "PDF";
+  const typeLabel = resource.type === "video" ? "Video" : resource.type === "article" ? "Link" : "PDF";
+  const label = count && count > 1 ? `${count} ${typeLabel}s` : typeLabel;
 
   return (
     <button

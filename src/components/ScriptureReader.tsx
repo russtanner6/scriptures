@@ -1117,21 +1117,29 @@ export default function ScriptureReader() {
                   >
                     {renderVerseText(readingMode === "modern" && v.text_modern ? v.text_modern : v.text)}
                   </span>
-                  {/* Resource marker — single pill per verse, opens panel */}
-                  {verseStartResources.length > 0 && (
-                    <ResourceMarker
-                      resource={verseStartResources[0]}
-                      lightMode={lightMode}
-                      count={verseStartResources.length}
-                      onClick={() => {
-                        setActiveVerse(null);
-                        setActiveResourcePanel({
-                          resources: chapterResources,
-                          index: chapterResources.indexOf(verseStartResources[0]),
-                        });
-                      }}
-                    />
-                  )}
+                  {/* Resource markers — one pill per resource type */}
+                  {verseStartResources.length > 0 && (() => {
+                    const byType = verseStartResources.reduce((acc, r) => {
+                      acc[r.type] = acc[r.type] || [];
+                      acc[r.type].push(r);
+                      return acc;
+                    }, {} as Record<string, typeof verseStartResources>);
+                    return Object.entries(byType).map(([, resources]) => (
+                      <ResourceMarker
+                        key={resources[0].type + "-" + v.verse}
+                        resource={resources[0]}
+                        lightMode={lightMode}
+                        count={resources.length}
+                        onClick={() => {
+                          setActiveVerse(null);
+                          setActiveResourcePanel({
+                            resources: chapterResources,
+                            index: chapterResources.indexOf(resources[0]),
+                          });
+                        }}
+                      />
+                    ));
+                  })()}
                   </div>
                 </div>
               );
