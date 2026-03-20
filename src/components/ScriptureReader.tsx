@@ -1152,7 +1152,12 @@ export default function ScriptureReader() {
                       minWidth: 0,
                       borderLeft: leftBorderColor ? `3px solid ${leftBorderColor}${speakerColor ? "50" : "25"}` : "3px solid transparent",
                       paddingLeft: "10px",
-                      transition: "border-color 0.3s ease",
+                      paddingTop: speakerColor ? "4px" : undefined,
+                      paddingBottom: speakerColor ? "4px" : undefined,
+                      paddingRight: speakerColor ? "8px" : undefined,
+                      background: speakerColor ? `${speakerColor}08` : undefined,
+                      borderRadius: speakerColor ? "4px" : undefined,
+                      transition: "border-color 0.3s ease, background 0.3s ease",
                     }}
                   >
                   <span

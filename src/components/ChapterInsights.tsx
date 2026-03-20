@@ -276,10 +276,10 @@ export default function ChapterInsights({
       {isExpanded && (
         <div
           style={{
-            padding: isMobile ? "16px 14px" : "20px 16px",
+            padding: isMobile ? "18px 14px" : "24px 16px",
             display: "flex",
             flexDirection: "column",
-            gap: "20px",
+            gap: "28px",
             animation: "fadeIn 0.3s ease",
           }}
         >
@@ -296,90 +296,111 @@ export default function ChapterInsights({
                   marginBottom: "8px",
                 }}
               >
-                People in this Chapter
+                People in this {volumeAbbrev === "D&C" ? "Section" : "Chapter"}
               </div>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
                 {chapterChars.map((c) => {
                   const spk = getSpeakerInfo(c.name, c.aliases || []);
                   const isSpeaker = !!spk;
                   return (
-                    <button
-                      key={c.id}
-                      onClick={() => onSelectCharacter?.(c.id)}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "7px",
-                        padding: "4px 10px 4px 4px",
-                        borderRadius: "20px",
-                        background: theme.pillBg,
-                        border: isSpeaker
-                          ? `2.5px solid ${spk!.color}`
-                          : `1px solid ${theme.border}`,
-                        cursor: onSelectCharacter ? "pointer" : "default",
-                        fontFamily: "inherit",
-                        transition: "all 0.15s",
-                      }}
-                      title={isSpeaker ? `${c.name} — speaks in ${spk!.verseCount} verse${spk!.verseCount !== 1 ? "s" : ""}` : c.roles.join(", ")}
-                    >
-                      {c.portraitUrl ? (
-                        <img
-                          src={c.portraitUrl}
-                          alt=""
-                          loading="lazy"
+                    <div key={c.id} style={{ position: "relative" }}>
+                      <button
+                        onClick={() => onSelectCharacter?.(c.id)}
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "7px",
+                          padding: "4px 10px 4px 4px",
+                          borderRadius: "20px",
+                          background: theme.pillBg,
+                          border: isSpeaker
+                            ? `2.5px solid ${spk!.color}`
+                            : `1px solid ${theme.border}`,
+                          cursor: onSelectCharacter ? "pointer" : "default",
+                          fontFamily: "inherit",
+                          transition: "all 0.15s",
+                        }}
+                        title={isSpeaker ? `${c.name} — speaks in ${spk!.verseCount} verse${spk!.verseCount !== 1 ? "s" : ""}` : c.roles.join(", ")}
+                      >
+                        {c.portraitUrl ? (
+                          <img
+                            src={c.portraitUrl}
+                            alt=""
+                            loading="lazy"
+                            style={{
+                              width: "26px",
+                              height: "26px",
+                              borderRadius: "50%",
+                              objectFit: "cover",
+                              objectPosition: "center 20%",
+                            }}
+                          />
+                        ) : (
+                          <div
+                            style={{
+                              width: "26px",
+                              height: "26px",
+                              borderRadius: "50%",
+                              background: `${volColor}25`,
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              fontSize: "0.62rem",
+                              fontWeight: 700,
+                              color: volColor,
+                            }}
+                          >
+                            {c.name.charAt(0)}
+                          </div>
+                        )}
+                        <span
                           style={{
-                            width: "26px",
-                            height: "26px",
-                            borderRadius: "50%",
-                            objectFit: "cover",
-                            objectPosition: "center 20%",
+                            fontSize: "0.74rem",
+                            fontWeight: 600,
+                            color: isSpeaker ? spk!.color : theme.textSecondary,
                           }}
-                        />
-                      ) : (
-                        <div
+                        >
+                          {c.name}
+                        </span>
+                      </button>
+                      {/* Speaker verse count badge — top-right corner */}
+                      {isSpeaker && (
+                        <span
                           style={{
-                            width: "26px",
-                            height: "26px",
-                            borderRadius: "50%",
-                            background: `${volColor}25`,
+                            position: "absolute",
+                            top: "-6px",
+                            right: "-4px",
+                            minWidth: "18px",
+                            height: "18px",
+                            borderRadius: "9px",
+                            background: spk!.color,
+                            color: lightMode ? "#fff" : "#111",
+                            fontSize: "0.56rem",
+                            fontWeight: 700,
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
-                            fontSize: "0.62rem",
-                            fontWeight: 700,
-                            color: volColor,
+                            padding: "0 4px",
+                            lineHeight: 1,
+                            boxShadow: `0 0 0 2px ${lightMode ? "#f0efe8" : "#1a1a21"}`,
                           }}
                         >
-                          {c.name.charAt(0)}
-                        </div>
-                      )}
-                      <span
-                        style={{
-                          fontSize: "0.74rem",
-                          fontWeight: 600,
-                          color: isSpeaker ? spk!.color : theme.textSecondary,
-                        }}
-                      >
-                        {c.name}
-                      </span>
-                      {isSpeaker && (
-                        <span style={{ fontSize: "0.58rem", color: theme.textMuted, fontWeight: 500 }}>
-                          {spk!.verseCount}v
+                          {spk!.verseCount}
                         </span>
                       )}
-                    </button>
+                    </div>
                   );
                 })}
               </div>
               {/* Speaker legend hint */}
               {speakers.length > 0 && (
                 <div style={{
-                  fontSize: "0.62rem",
-                  color: theme.textMuted,
-                  marginTop: "8px",
-                  lineHeight: 1.5,
+                  fontSize: "0.74rem",
+                  color: theme.textSecondary,
+                  marginTop: "14px",
+                  lineHeight: 1.6,
                 }}>
-                  Color borders indicate speakers — colors match the verse margins below
+                  Color borders indicate speakers — the number shows how many verses they speak. Colors match the verse margins below.
                 </div>
               )}
             </div>
@@ -395,18 +416,10 @@ export default function ChapterInsights({
                   textTransform: "uppercase",
                   letterSpacing: "0.1em",
                   color: theme.textMuted,
-                  marginBottom: "4px",
+                  marginBottom: "10px",
                 }}
               >
                 Key Themes
-              </div>
-              <div style={{
-                fontSize: "0.6rem",
-                color: theme.textMuted,
-                marginBottom: "8px",
-                lineHeight: 1.4,
-              }}>
-                Words that stand out in this chapter — tap to explore across all scripture
               </div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
                 {stats.keyThemes.map((t) => (
@@ -415,11 +428,11 @@ export default function ChapterInsights({
                     onClick={() => onExploreWord ? onExploreWord(t.word) : undefined}
                     style={{
                       display: "inline-block",
-                      padding: "4px 12px",
+                      padding: "5px 14px",
                       borderRadius: "6px",
-                      background: `${volColor}18`,
-                      border: `1px solid ${volColor}30`,
-                      color: volColor,
+                      background: theme.pillBg,
+                      border: `1px solid ${theme.border}`,
+                      color: theme.text,
                       fontSize: "0.78rem",
                       fontWeight: 600,
                       cursor: onExploreWord ? "pointer" : "default",
@@ -430,6 +443,14 @@ export default function ChapterInsights({
                     {t.word}
                   </button>
                 ))}
+              </div>
+              <div style={{
+                fontSize: "0.74rem",
+                color: theme.textSecondary,
+                marginTop: "12px",
+                lineHeight: 1.6,
+              }}>
+                Words that stand out in this {volumeAbbrev === "D&C" ? "section" : "chapter"} — tap to explore across all scripture
               </div>
             </div>
           )}
