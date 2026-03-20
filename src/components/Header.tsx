@@ -15,20 +15,22 @@ export default function Header({
 
   return (
     <div className="header-wrapper">
-      {/* Hamburger menu — right side */}
+      {/* Hamburger menu — fixed to viewport top-right */}
       <button
         className="hamburger-btn"
         type="button"
         title="Menu"
         onClick={() => setMenuOpen(true)}
         style={{
+          position: "fixed",
           left: "auto",
-          right: 0,
-          top: "50%",
-          transform: "translateY(-50%)",
+          right: "24px",
+          top: "28px",
+          transform: "none",
           flexDirection: "row",
           alignItems: "center",
           gap: "10px",
+          zIndex: 50,
         }}
       >
         <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
