@@ -14,6 +14,11 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
   { href: "/", label: "Home", svgIcon: "/home.svg" },
 
+  // Read — first section after Home
+  { href: "/read", label: "Read Scriptures", svgIcon: "/scriptures.svg", section: "Read" },
+  { href: "/characters", label: "People", svgIcon: "/people.svg" },
+  { href: "/bookmarks", label: "Bookmarks", svgIcon: "/favorite.svg" },
+
   // Analysis
   { href: "/search", label: "Word Search", svgIcon: "/search.svg", section: "Analyze" },
   { href: "/narrative-arc", label: "Narrative Arc", svgIcon: "/narrative-arc.svg" },
@@ -25,11 +30,6 @@ const NAV_ITEMS: NavItem[] = [
   { href: "/parallel", label: "Parallel Passages", svgIcon: "/parallel.svg", section: "Discover" },
   { href: "/chiasmus", label: "Chiasmus Detector", svgIcon: "/chiasmus.svg" },
   { href: "/topics", label: "Topic Map", svgIcon: "/topics.svg" },
-
-  // Read
-  { href: "/read", label: "Read Scriptures", svgIcon: "/scriptures.svg", section: "Read" },
-  { href: "/characters", label: "People", svgIcon: "/people.svg" },
-  { href: "/bookmarks", label: "Bookmarks", svgIcon: "/favorite.svg" },
 ];
 
 export default function NavMenu({

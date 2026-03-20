@@ -4,7 +4,13 @@ import { useState } from "react";
 import Link from "next/link";
 import NavMenu from "./NavMenu";
 
-export default function Header({ showSubtitle = false }: { showSubtitle?: boolean }) {
+export default function Header({
+  showSubtitle = false,
+  variant = "default",
+}: {
+  showSubtitle?: boolean;
+  variant?: "home" | "default";
+}) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -15,7 +21,15 @@ export default function Header({ showSubtitle = false }: { showSubtitle?: boolea
         type="button"
         title="Menu"
         onClick={() => setMenuOpen(true)}
-        style={{ left: "auto", right: 0, flexDirection: "row", alignItems: "center", gap: "10px" }}
+        style={{
+          left: "auto",
+          right: 0,
+          top: "50%",
+          transform: "translateY(-50%)",
+          flexDirection: "row",
+          alignItems: "center",
+          gap: "10px",
+        }}
       >
         <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
           <span className="hamburger-line" style={{ width: "14px", marginLeft: "auto" }} />
@@ -29,11 +43,19 @@ export default function Header({ showSubtitle = false }: { showSubtitle?: boolea
 
       <h1 className="header-title" style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100%", margin: 0 }}>
         <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
-          <img
-            src="/tree-logo.svg"
-            alt="Scripture Explorer"
-            style={{ height: "64px", width: "auto" }}
-          />
+          {variant === "home" ? (
+            <img
+              src="/logo-full.svg"
+              alt="Scripture Explorer"
+              style={{ height: "56px", width: "auto", maxWidth: "min(400px, 70vw)" }}
+            />
+          ) : (
+            <img
+              src="/tree-logo.svg"
+              alt="Scripture Explorer"
+              style={{ height: "64px", width: "auto" }}
+            />
+          )}
         </Link>
       </h1>
       {showSubtitle && (

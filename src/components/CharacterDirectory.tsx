@@ -148,9 +148,35 @@ export default function CharacterDirectory() {
         <h2 style={{ fontSize: "1.6rem", fontWeight: 700, color: "var(--text)", marginBottom: "8px" }}>
           People of the Scriptures
         </h2>
-        <p style={{ color: "var(--text-secondary)", fontSize: isMobile ? "0.85rem" : "0.95rem", maxWidth: "500px", margin: "0 auto" }}>
+        <p style={{ color: "var(--text-secondary)", fontSize: isMobile ? "0.85rem" : "0.95rem", maxWidth: "500px", margin: "0 auto 14px" }}>
           {characters.length} named individuals across all five volumes
         </p>
+        {/* Volume legend */}
+        <div style={{
+          display: "flex",
+          gap: "10px",
+          justifyContent: "center",
+          flexWrap: "wrap",
+        }}>
+          {VOLUME_ORDER.map((v) => (
+            <div key={v} style={{ display: "flex", alignItems: "center", gap: "5px" }}>
+              <span style={{
+                fontSize: "0.65rem",
+                fontWeight: 700,
+                color: VOLUME_COLORS[v],
+                background: `${VOLUME_COLORS[v]}18`,
+                padding: "2px 6px",
+                borderRadius: "3px",
+                letterSpacing: "0.03em",
+              }}>
+                {v}
+              </span>
+              <span style={{ fontSize: "0.72rem", color: "var(--text-muted)" }}>
+                {VOLUME_LABELS[v]}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Search + filter bar */}
