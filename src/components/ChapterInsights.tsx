@@ -144,22 +144,6 @@ export default function ChapterInsights({
     portraitChars.push({ id: `placeholder-${portraitChars.length}`, name: "?", portraitUrl: null, roles: [], tier: 9, aliases: [] });
   }
 
-  const linkStyle = {
-    display: "inline-flex" as const,
-    alignItems: "center" as const,
-    gap: "4px",
-    padding: "5px 12px",
-    borderRadius: "6px",
-    border: `1px solid ${theme.border}`,
-    background: theme.pillBg,
-    color: theme.textSecondary,
-    fontSize: "0.72rem",
-    fontWeight: 500,
-    textDecoration: "none" as const,
-    transition: "all 0.15s",
-  };
-
-  const iconFilter = lightMode ? "brightness(0.4)" : "invert(1) brightness(0.75)";
 
   return (
     <div
@@ -441,24 +425,6 @@ export default function ChapterInsights({
             </div>
           )}
 
-          {/* Quick Links — no divider, no prepopulated terms */}
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "8px",
-            }}
-          >
-            <a href={`/wordcloud?bookId=${bookId}&chapter=${chapter}`} style={linkStyle}>
-              <img src="/word-cloud.svg" alt="" style={{ width: "13px", height: "13px", filter: iconFilter }} /> Word Cloud
-            </a>
-            <a href={`/heatmap`} style={linkStyle}>
-              <img src="/heatmap.svg" alt="" style={{ width: "13px", height: "13px", filter: iconFilter }} /> Heatmap
-            </a>
-            <a href={`/search`} style={linkStyle}>
-              <img src="/search.svg" alt="" style={{ width: "13px", height: "13px", filter: iconFilter }} /> Word Search
-            </a>
-          </div>
         </div>
       )}
     </div>
