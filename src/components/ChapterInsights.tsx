@@ -532,7 +532,7 @@ export default function ChapterInsights({
                 marginTop: "12px",
                 lineHeight: 1.6,
               }}>
-                Words that stand out in this {volumeAbbrev === "D&C" ? "section" : "chapter"} — tap to explore across all scripture
+                Tap any theme to see how often it appears across all scripture
               </div>
             </div>
           )}
