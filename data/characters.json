@@ -67,7 +67,8 @@
       "son": "Jesus Christ"
     },
     "speakerType": "deity",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/god_compressed.jpg"
   },
   {
     "id": "holy-ghost",
@@ -129,7 +130,8 @@
       "daughters": "unnamed"
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/adam_compressed.jpg"
   },
   {
     "id": "eve",
@@ -157,7 +159,8 @@
       ]
     },
     "speakerType": "other",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/eve_compressed.jpg"
   },
   {
     "id": "noah",
@@ -231,7 +234,8 @@
       ]
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/abraham_compressed.jpg"
   },
   {
     "id": "sarah",
@@ -286,7 +290,8 @@
       ]
     },
     "speakerType": "other",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/isaac_compressed.jpg"
   },
   {
     "id": "rebekah",
@@ -314,7 +319,8 @@
       "brother": "Laban"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "portraitUrl": "/characters/rebekah_compressed.jpg"
   },
   {
     "id": "jacob-israel",
@@ -363,7 +369,8 @@
       ]
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/jacob_compressed.jpg"
   },
   {
     "id": "esau",
@@ -435,7 +442,8 @@
       ]
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/joseph_compressed.jpg"
   },
   {
     "id": "moses",
@@ -470,7 +478,8 @@
       "father-in-law": "Jethro"
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/moses_compressed.jpg"
   },
   {
     "id": "aaron-ot",
@@ -592,7 +601,8 @@
       "great-grandmother": "Ruth"
     },
     "speakerType": "leader",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/david_compressed.jpg"
   },
   {
     "id": "solomon",
@@ -619,7 +629,8 @@
       "son": "Rehoboam"
     },
     "speakerType": "leader",
-    "tier": 2
+    "tier": 2,
+    "portraitUrl": "/characters/king-solomon_compressed.jpg"
   },
   {
     "id": "isaiah",
@@ -737,7 +748,8 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/elijah-the-tishbite_compressed.jpg"
   },
   {
     "id": "elisha",
@@ -857,7 +869,8 @@
       "great-grandson": "David"
     },
     "speakerType": "other",
-    "tier": 2
+    "tier": 2,
+    "portraitUrl": "/characters/ruth_compressed.jpg"
   },
   {
     "id": "esther",
@@ -880,7 +893,8 @@
       "cousin/guardian": "Mordecai"
     },
     "speakerType": "other",
-    "tier": 2
+    "tier": 2,
+    "portraitUrl": "/characters/esther_compressed.jpg"
   },
   {
     "id": "enoch",
@@ -905,7 +919,8 @@
       "son": "Methuselah"
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/enoch_compressed.jpg"
   },
   {
     "id": "cain",
@@ -930,7 +945,8 @@
       "brother": "Abel"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "portraitUrl": "/characters/cain_compressed.jpg"
   },
   {
     "id": "abel",
@@ -1114,7 +1130,8 @@
       "son": "Ishmael"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "portraitUrl": "/characters/hagar_compressed.jpg"
   },
   {
     "id": "ishmael-ot",
@@ -1178,7 +1195,8 @@
       "husband": "Lappidoth"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "portraitUrl": "/characters/deborah_compressed.jpg"
   },
   {
     "id": "gideon-ot",
@@ -1291,7 +1309,8 @@
       "son": "Solomon"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "portraitUrl": "/characters/bathsheba_compressed.jpg"
   },
   {
     "id": "absalom",
@@ -1923,7 +1942,8 @@
       "father": "Jonah (Jonas)"
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/simon-peter_compressed.jpg"
   },
   {
     "id": "paul",
@@ -2026,7 +2046,8 @@
       "relative": "Elisabeth"
     },
     "speakerType": "other",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/mary-mother-of-jesus_compressed.jpg"
   },
   {
     "id": "joseph-of-nazareth",
@@ -2218,7 +2239,8 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 2
+    "tier": 2,
+    "portraitUrl": "/characters/judas-iscariot_compressed.jpg"
   },
   {
     "id": "mary-magdalene",
@@ -2236,7 +2258,8 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 2
+    "tier": 2,
+    "portraitUrl": "/characters/mary-magdalene_compressed.jpg"
   },
   {
     "id": "martha",
@@ -2280,7 +2303,8 @@
       ]
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "portraitUrl": "/characters/lazarus_compressed.jpg"
   },
   {
     "id": "stephen",
@@ -2447,7 +2471,8 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "portraitUrl": "/characters/pilot_compressed.jpg"
   },
   {
     "id": "nicodemus",
@@ -2670,7 +2695,8 @@
       "daughters": "unnamed"
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/lehi_compressed.jpg"
   },
   {
     "id": "sariah",
@@ -2731,7 +2757,8 @@
       "wife": "unnamed"
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/nephi_compressed.jpg"
   },
   {
     "id": "laman",
@@ -2914,7 +2941,8 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "portraitUrl": "/characters/laban_compressed.jpg"
   },
   {
     "id": "ishmael-bom",
@@ -3024,7 +3052,8 @@
       "son": "Mosiah II"
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/king-benjamin_compressed.jpg"
   },
   {
     "id": "mosiah-i",
@@ -3128,7 +3157,8 @@
       ]
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/alma-the-younger_compressed.jpg"
   },
   {
     "id": "abinadi",
@@ -3147,7 +3177,8 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "portraitUrl": "/characters/abinadi_compressed.jpg"
   },
   {
     "id": "king-noah",
@@ -3170,7 +3201,8 @@
       "son": "Limhi"
     },
     "speakerType": "leader",
-    "tier": 2
+    "tier": 2,
+    "portraitUrl": "/characters/king-noah_compressed.jpg"
   },
   {
     "id": "ammon-son-of-mosiah",
@@ -3298,7 +3330,8 @@
       ]
     },
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "portraitUrl": "/characters/helaman_compressed.jpg"
   },
   {
     "id": "helaman-son-of-helaman",
@@ -3368,7 +3401,8 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "portraitUrl": "/characters/samuel-the-lamanite_compressed.jpg"
   },
   {
     "id": "mormon",
@@ -3417,7 +3451,8 @@
       "father": "Mormon"
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/moroni_compressed.jpg"
   },
   {
     "id": "amalickiah",
@@ -3603,7 +3638,8 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "portraitUrl": "/characters/abish_compressed.jpg"
   },
   {
     "id": "zeezrom",
@@ -3809,7 +3845,8 @@
       "brother": "Jared"
     },
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "portraitUrl": "/characters/brother-of-jared_compressed.jpg"
   },
   {
     "id": "jared-bom",
@@ -4105,7 +4142,8 @@
       ]
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "portraitUrl": "/characters/joseph-smith_compressed.jpg"
   },
   {
     "id": "oliver-cowdery",
@@ -4148,7 +4186,8 @@
       "father": "Isaac Hale"
     },
     "speakerType": "other",
-    "tier": 2
+    "tier": 2,
+    "portraitUrl": "/characters/emma-smith_compressed.jpg"
   },
   {
     "id": "sidney-rigdon",
@@ -4989,7 +5028,8 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "portraitUrl": "/characters/goliath_compressed.jpg"
   },
   {
     "id": "naaman",
