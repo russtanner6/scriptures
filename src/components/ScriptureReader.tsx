@@ -404,20 +404,20 @@ export default function ScriptureReader() {
   // Speaker type colors — darker in light mode for readability
   const SPEAKER_COLORS: Record<SpeakerType, string> = lightMode
     ? {
-        divine: "#9A6B00",
-        prophet: "#1D4ED8",
-        apostle: "#047857",
-        angel: "#6D28D9",
-        narrator: "#374151",
-        other: "#4B5563",
+        divine: "#B47E00",
+        prophet: "#2563EB",
+        apostle: "#059669",
+        angel: "#7C3AED",
+        narrator: "#4B5563",
+        other: "#6B7280",
       }
     : {
-        divine: "#F5A623",
-        prophet: "#3B82F6",
-        apostle: "#10B981",
-        angel: "#A78BFA",
-        narrator: "#6B7280",
-        other: "#9CA3AF",
+        divine: "#FBBF24",
+        prophet: "#60A5FA",
+        apostle: "#34D399",
+        angel: "#C4B5FD",
+        narrator: "#9CA3AF",
+        other: "#D1D5DB",
       };
 
   const theme = lightMode
@@ -826,21 +826,9 @@ export default function ScriptureReader() {
             </div>
           )}
 
-          {/* Layers section — toggle pills for Speakers, Resources, and Reading Mode */}
+          {/* Layer toggles — no section headings, centered, same-size pills with colored active state */}
           {!isLoading && (chapterSpeakers.length > 0 || chapterResources.length > 0 || hasModernText || hasNarration) && (
             <div style={{ marginBottom: "20px", textAlign: "center" }}>
-              <div
-                style={{
-                  fontSize: "0.62rem",
-                  fontWeight: 600,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.1em",
-                  color: theme.textMuted,
-                  marginBottom: "8px",
-                }}
-              >
-                Layers
-              </div>
               <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", justifyContent: "center" }}>
                 {chapterSpeakers.length > 0 && (
                   <button
@@ -853,21 +841,21 @@ export default function ScriptureReader() {
                       display: "inline-flex",
                       alignItems: "center",
                       gap: "4px",
-                      padding: "3px 9px",
+                      padding: "4px 12px",
                       borderRadius: "6px",
-                      border: `1px solid ${showSpeakers ? (lightMode ? "rgba(0,0,0,0.15)" : "rgba(255,255,255,0.15)") : theme.border}`,
+                      border: `1px solid ${showSpeakers ? `${volColor}50` : theme.border}`,
                       background: showSpeakers
-                        ? (lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.08)")
+                        ? `${volColor}18`
                         : "transparent",
-                      color: showSpeakers ? theme.text : theme.textMuted,
-                      fontSize: "0.65rem",
-                      fontWeight: 500,
+                      color: showSpeakers ? (lightMode ? volColor : volColor) : theme.textMuted,
+                      fontSize: "0.68rem",
+                      fontWeight: 600,
                       cursor: "pointer",
                       fontFamily: "inherit",
-                      transition: "all 0.15s",
+                      transition: "all 0.2s",
                     }}
                   >
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
                       <circle cx="12" cy="7" r="4" />
                     </svg>
@@ -885,73 +873,102 @@ export default function ScriptureReader() {
                       display: "inline-flex",
                       alignItems: "center",
                       gap: "4px",
-                      padding: "3px 9px",
+                      padding: "4px 12px",
                       borderRadius: "6px",
-                      border: `1px solid ${showResources ? (lightMode ? "rgba(0,0,0,0.15)" : "rgba(255,255,255,0.15)") : theme.border}`,
+                      border: `1px solid ${showResources ? `${volColor}50` : theme.border}`,
                       background: showResources
-                        ? (lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.08)")
+                        ? `${volColor}18`
                         : "transparent",
-                      color: showResources ? theme.text : theme.textMuted,
-                      fontSize: "0.65rem",
-                      fontWeight: 500,
+                      color: showResources ? (lightMode ? volColor : volColor) : theme.textMuted,
+                      fontSize: "0.68rem",
+                      fontWeight: 600,
                       cursor: "pointer",
                       fontFamily: "inherit",
-                      transition: "all 0.15s",
+                      transition: "all 0.2s",
                     }}
                   >
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
                       <line x1="8" y1="21" x2="16" y2="21" />
                       <line x1="12" y1="17" x2="12" y2="21" />
                     </svg>
                     Resources
-                    <span style={{ fontSize: "0.58rem", color: theme.textMuted }}>
+                    <span style={{ fontSize: "0.6rem", opacity: 0.7 }}>
                       ({chapterResources.length})
                     </span>
                   </button>
                 )}
-                {(hasModernText || hasNarration) && (
-                  <div style={{ display: "inline-flex", alignItems: "center", gap: "2px", background: lightMode ? "rgba(0,0,0,0.04)" : "rgba(255,255,255,0.04)", borderRadius: "6px", padding: "2px" }}>
-                    {(["original", "modern", "narration"] as ReadingMode[]).map((mode) => {
-                      // Only show modes that have content (original always shown)
-                      if (mode === "modern" && !hasModernText) return null;
-                      if (mode === "narration" && !hasNarration) return null;
-                      const isActive = readingMode === mode;
-                      const labels: Record<ReadingMode, string> = { original: "Original", modern: "Modern", narration: "Narration" };
-                      return (
-                        <button
-                          key={mode}
-                          onClick={() => {
-                            setReadingMode(mode);
-                            localStorage.setItem("reader-reading-mode", mode);
-                          }}
-                          style={{
-                            display: "inline-flex",
-                            alignItems: "center",
-                            gap: "3px",
-                            padding: "2px 8px",
-                            borderRadius: "5px",
-                            border: "none",
-                            background: isActive
-                              ? (lightMode ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.12)")
-                              : "transparent",
-                            color: isActive ? theme.text : theme.textMuted,
-                            fontSize: "0.62rem",
-                            fontWeight: isActive ? 600 : 400,
-                            cursor: "pointer",
-                            fontFamily: "inherit",
-                            transition: "all 0.15s",
-                          }}
-                        >
-                          {labels[mode]}
-                        </button>
-                      );
-                    })}
-                  </div>
-                )}
+                {/* Three-way reading mode sliding toggle */}
+                {(hasModernText || hasNarration) && (() => {
+                  const modes: ReadingMode[] = ["original", "modern", "narration"].filter((mode) => {
+                    if (mode === "modern") return hasModernText;
+                    if (mode === "narration") return hasNarration;
+                    return true;
+                  }) as ReadingMode[];
+                  const labels: Record<ReadingMode, string> = { original: "Original", modern: "Modern", narration: "Narration" };
+                  const activeIndex = modes.indexOf(readingMode);
+                  const effectiveIndex = activeIndex >= 0 ? activeIndex : 0;
+                  const pillWidthPercent = 100 / modes.length;
+                  return (
+                    <div style={{
+                      display: "inline-flex",
+                      position: "relative",
+                      borderRadius: "8px",
+                      border: `1px solid ${theme.border}`,
+                      background: lightMode ? "rgba(0,0,0,0.03)" : "rgba(255,255,255,0.04)",
+                      padding: "3px",
+                      overflow: "hidden",
+                    }}>
+                      {/* Sliding indicator */}
+                      <div style={{
+                        position: "absolute",
+                        top: "3px",
+                        bottom: "3px",
+                        left: `calc(${effectiveIndex * pillWidthPercent}% + 3px)`,
+                        width: `calc(${pillWidthPercent}% - 6px)`,
+                        borderRadius: "6px",
+                        background: volColor,
+                        transition: "left 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
+                        zIndex: 0,
+                      }} />
+                      {modes.map((mode, i) => {
+                        const isActive = readingMode === mode;
+                        return (
+                          <button
+                            key={mode}
+                            onClick={() => {
+                              setReadingMode(mode);
+                              localStorage.setItem("reader-reading-mode", mode);
+                            }}
+                            style={{
+                              position: "relative",
+                              zIndex: 1,
+                              display: "inline-flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              padding: "4px 12px",
+                              borderRadius: "6px",
+                              border: "none",
+                              background: "transparent",
+                              color: isActive ? "#ffffff" : theme.textMuted,
+                              fontSize: "0.68rem",
+                              fontWeight: 600,
+                              cursor: "pointer",
+                              fontFamily: "inherit",
+                              transition: "color 0.2s",
+                              whiteSpace: "nowrap",
+                            }}
+                          >
+                            {labels[mode]}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  );
+                })()}
               </div>
 
-              {/* Speaker legend — shown below toggle when Speakers is on */}
+              {/* Speaker legend — centered, no heading label, bigger + brighter pills */}
               {showSpeakers && chapterSpeakers.length > 0 && (() => {
                 const uniqueSpeakers = Array.from(
                   new Map(chapterSpeakers.map((s) => [s.speaker, s])).values()
@@ -959,46 +976,36 @@ export default function ScriptureReader() {
                 return (
                   <div
                     style={{
-                      marginTop: "10px",
+                      marginTop: "12px",
                       display: "flex",
                       alignItems: "center",
                       gap: "6px",
                       flexWrap: "wrap",
+                      justifyContent: "center",
                     }}
                   >
-                    <span style={{
-                      fontSize: "0.58rem",
-                      fontWeight: 600,
-                      textTransform: "uppercase",
-                      letterSpacing: "0.08em",
-                      color: theme.textMuted,
-                      marginRight: "2px",
-                    }}>
-                      Speakers:
-                    </span>
                     {uniqueSpeakers.slice(0, 8).map((s) => (
                       <span
                         key={s.speaker}
                         style={{
                           display: "inline-flex",
                           alignItems: "center",
-                          gap: "3px",
-                          padding: "1px 7px",
-                          borderRadius: "4px",
+                          gap: "4px",
+                          padding: "2px 9px",
+                          borderRadius: "5px",
                           background: lightMode
-                            ? `${SPEAKER_COLORS[s.speakerType]}18`
-                            : `${SPEAKER_COLORS[s.speakerType]}20`,
-                          border: `1px solid ${SPEAKER_COLORS[s.speakerType]}${lightMode ? "30" : "40"}`,
+                            ? `${SPEAKER_COLORS[s.speakerType]}22`
+                            : `${SPEAKER_COLORS[s.speakerType]}28`,
+                          border: `1px solid ${SPEAKER_COLORS[s.speakerType]}${lightMode ? "40" : "50"}`,
                           color: SPEAKER_COLORS[s.speakerType],
-                          fontWeight: 600,
-                          fontSize: "0.58rem",
-                          textTransform: "uppercase",
-                          letterSpacing: "0.03em",
+                          fontWeight: 700,
+                          fontSize: "0.68rem",
+                          letterSpacing: "0.02em",
                         }}
                       >
                         <span style={{
-                          width: "5px",
-                          height: "5px",
+                          width: "6px",
+                          height: "6px",
                           borderRadius: "50%",
                           background: SPEAKER_COLORS[s.speakerType],
                           flexShrink: 0,
@@ -1007,7 +1014,7 @@ export default function ScriptureReader() {
                       </span>
                     ))}
                     {uniqueSpeakers.length > 8 && (
-                      <span style={{ fontSize: "0.58rem", color: theme.textMuted }}>
+                      <span style={{ fontSize: "0.65rem", color: theme.textMuted }}>
                         +{uniqueSpeakers.length - 8} more
                       </span>
                     )}
@@ -1068,7 +1075,7 @@ export default function ScriptureReader() {
                   key={v.verse}
                   id={`verse-${v.verse}`}
                   style={{
-                    marginBottom: "14px",
+                    marginBottom: "28px",
                     lineHeight: 2,
                     position: "relative",
                     display: "flex",
@@ -1094,12 +1101,12 @@ export default function ScriptureReader() {
                             writingMode: "vertical-rl",
                             textOrientation: "mixed",
                             transform: "rotate(180deg)",
-                            fontSize: "0.52rem",
-                            fontWeight: 700,
-                            letterSpacing: "0.08em",
+                            fontSize: "0.62rem",
+                            fontWeight: 800,
+                            letterSpacing: "0.06em",
                             textTransform: "uppercase",
                             color: speakerColor || undefined,
-                            opacity: 0.7,
+                            opacity: 1,
                             whiteSpace: "nowrap",
                             lineHeight: 1,
                             maxHeight: `${speakerSpanLength * 3.2}em`,
@@ -1345,10 +1352,10 @@ export default function ScriptureReader() {
             bottom: 0,
             left: 0,
             right: 0,
-            background: lightMode ? "#222222" : "#faf9f6",
-            backdropFilter: "none",
-            WebkitBackdropFilter: "none",
-            borderTop: lightMode ? "none" : "none",
+            background: lightMode ? "#f8f6f1" : "rgba(17, 17, 22, 0.95)",
+            backdropFilter: "blur(12px)",
+            WebkitBackdropFilter: "blur(12px)",
+            borderTop: `1px solid ${theme.border}`,
             padding: isMobile ? "8px 16px" : "10px 24px",
             display: "flex",
             justifyContent: "space-between",
@@ -1362,7 +1369,7 @@ export default function ScriptureReader() {
             style={{
               background: "none",
               border: "none",
-              color: lightMode ? "#ffffff" : "#222222",
+              color: theme.textSecondary,
               cursor: isFirstChapterOfVolume ? "default" : "pointer",
               fontSize: "0.82rem",
               fontWeight: 600,
@@ -1397,7 +1404,7 @@ export default function ScriptureReader() {
                 onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.6"; }}
               >
-                <img src="/tree-logo.svg" alt="Menu" style={{ height: "22px", width: "auto", filter: lightMode ? "none" : "invert(1)" }} />
+                <img src="/tree-logo.svg" alt="Menu" style={{ height: "22px", width: "auto", filter: lightMode ? "invert(1)" : "none" }} />
               </button>
             )}
           </div>
@@ -1407,7 +1414,7 @@ export default function ScriptureReader() {
             style={{
               background: "none",
               border: "none",
-              color: lightMode ? "#ffffff" : "#222222",
+              color: theme.textSecondary,
               cursor: isLastChapterOfVolume ? "default" : "pointer",
               fontSize: "0.82rem",
               fontWeight: 600,
