@@ -151,6 +151,9 @@ export default function CharacterDirectory() {
         <p style={{ color: "var(--text-secondary)", fontSize: isMobile ? "0.85rem" : "0.95rem", maxWidth: "500px", margin: "0 auto 14px" }}>
           {characters.length} named individuals across all five volumes
         </p>
+        <p style={{ color: "var(--text-muted)", fontSize: "0.78rem", maxWidth: "440px", margin: "0 auto 14px", lineHeight: 1.5 }}>
+          Color labels show which volumes a person appears in:
+        </p>
         {/* Volume legend */}
         <div style={{
           display: "flex",
