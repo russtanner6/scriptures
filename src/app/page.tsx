@@ -259,7 +259,7 @@ export default function HomePage() {
               </div>
               <p style={{
                 fontSize: "0.9rem",
-                color: "var(--text-secondary)",
+                color: "rgba(255,255,255,0.8)",
                 lineHeight: 1.7,
                 margin: "0 0 16px",
                 display: "-webkit-box",

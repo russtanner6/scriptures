@@ -330,7 +330,7 @@ export default function CharacterDetailPanel({
           <div style={{ marginBottom: "28px" }}>
             <p style={{
               fontSize: "0.92rem",
-              color: "var(--text-secondary)",
+              color: "rgba(255,255,255,0.85)",
               lineHeight: 1.75,
               margin: 0,
             }}>

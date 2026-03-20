@@ -72,6 +72,11 @@ body {
   overflow-x: hidden;
 }
 
+/* Ensure Inter everywhere — buttons, inputs, selects, textareas */
+*, *::before, *::after {
+  font-family: inherit;
+}
+
 body::before {
   content: "";
   position: fixed;
