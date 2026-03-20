@@ -19,6 +19,7 @@ interface ChapterCharacter {
   portraitUrl: string | null;
   roles: string[];
   tier: number;
+  aliases: string[];
 }
 
 interface ChapterInsightsProps {
@@ -37,11 +38,11 @@ interface ChapterInsightsProps {
 
 const SPEAKER_COLORS_LIGHT: Record<SpeakerType, string> = {
   divine: "#B47E00", prophet: "#2563EB", apostle: "#059669",
-  angel: "#7C3AED", narrator: "#4B5563", other: "#6B7280",
+  angel: "#7C3AED", narrator: "#0E7490", other: "#9333EA",
 };
 const SPEAKER_COLORS_DARK: Record<SpeakerType, string> = {
   divine: "#FBBF24", prophet: "#60A5FA", apostle: "#34D399",
-  angel: "#C4B5FD", narrator: "#9CA3AF", other: "#D1D5DB",
+  angel: "#C4B5FD", narrator: "#22D3EE", other: "#A78BFA",
 };
 
 export default function ChapterInsights({
@@ -121,14 +122,17 @@ export default function ChapterInsights({
     }
   });
 
-  // Match characters to speakers (by name, case-insensitive)
-  function getSpeakerInfo(charName: string) {
-    // Direct match
-    const direct = speakerMap.get(charName);
-    if (direct) return direct;
-    // Case-insensitive
-    for (const [name, info] of speakerMap) {
-      if (name.toLowerCase() === charName.toLowerCase()) return info;
+  // Match characters to speakers (by name or aliases, case-insensitive)
+  function getSpeakerInfo(charName: string, charAliases: string[]) {
+    // Check character name and all aliases against speaker names
+    const namesToCheck = [charName, ...charAliases];
+    for (const n of namesToCheck) {
+      const direct = speakerMap.get(n);
+      if (direct) return direct;
+      // Case-insensitive fallback
+      for (const [speakerName, info] of speakerMap) {
+        if (speakerName.toLowerCase() === n.toLowerCase()) return info;
+      }
     }
     return null;
   }
@@ -137,7 +141,7 @@ export default function ChapterInsights({
   const portraitChars = chapterChars.slice(0, 3);
   // Fill to 3 with placeholders if fewer characters
   while (portraitChars.length < 3 && chapterChars.length > 0) {
-    portraitChars.push({ id: `placeholder-${portraitChars.length}`, name: "?", portraitUrl: null, roles: [], tier: 9 });
+    portraitChars.push({ id: `placeholder-${portraitChars.length}`, name: "?", portraitUrl: null, roles: [], tier: 9, aliases: [] });
   }
 
   const linkStyle = {
@@ -255,7 +259,7 @@ export default function ChapterInsights({
             whiteSpace: "nowrap",
           }}
         >
-          {!isExpanded && <span>Insights</span>}
+          {!isExpanded && <span style={{ textTransform: "uppercase", letterSpacing: "0.08em", color: theme.textSecondary }}>Insights</span>}
           <span
             style={{
               transform: isExpanded ? "rotate(180deg)" : "rotate(0)",
@@ -296,7 +300,7 @@ export default function ChapterInsights({
               </div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                 {chapterChars.map((c) => {
-                  const spk = getSpeakerInfo(c.name);
+                  const spk = getSpeakerInfo(c.name, c.aliases || []);
                   const isSpeaker = !!spk;
                   return (
                     <button

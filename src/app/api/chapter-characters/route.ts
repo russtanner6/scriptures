@@ -139,6 +139,7 @@ export async function GET(request: NextRequest) {
       portraitUrl: c.portraitUrl || null,
       roles: c.roles.slice(0, 2),
       tier: c.tier,
+      aliases: c.aliases,
     }));
 
     return NextResponse.json({ characters: slim }, {

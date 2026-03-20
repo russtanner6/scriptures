@@ -140,6 +140,16 @@ export default function ScriptureReader() {
     if (char) setSelectedCharacter(char);
   }, [allCharacters]);
 
+  // Helper: find character portrait URL by speaker name
+  const getCharacterPortrait = useCallback((speakerName: string): string | null => {
+    const nameLower = speakerName.toLowerCase();
+    const char = allCharacters.find(
+      (c) => c.name.toLowerCase() === nameLower ||
+             c.aliases.some((a) => a.toLowerCase() === nameLower)
+    );
+    return char?.portraitUrl || null;
+  }, [allCharacters]);
+
   // Load preferences from localStorage
   useEffect(() => {
     const savedLight = localStorage.getItem("reader-light-mode");
@@ -454,16 +464,16 @@ export default function ScriptureReader() {
         prophet: "#2563EB",
         apostle: "#059669",
         angel: "#7C3AED",
-        narrator: "#4B5563",
-        other: "#6B7280",
+        narrator: "#0E7490",
+        other: "#9333EA",
       }
     : {
         divine: "#FBBF24",
         prophet: "#60A5FA",
         apostle: "#34D399",
         angel: "#C4B5FD",
-        narrator: "#9CA3AF",
-        other: "#D1D5DB",
+        narrator: "#22D3EE",
+        other: "#A78BFA",
       };
 
   const theme = lightMode
@@ -1046,72 +1056,94 @@ export default function ScriptureReader() {
                     alignItems: "stretch",
                   }}
                 >
-                  {/* Vertical speaker name — left of bar, only on first verse of span */}
+                  {/* Speaker label — horizontal on desktop, circle-only on mobile */}
                   {verseSpeaker && showSpeakers ? (
                     <div
                       style={{
-                        width: "30px",
+                        width: isMobile ? "24px" : "30px",
                         flexShrink: 0,
                         display: "flex",
                         alignItems: "flex-start",
                         justifyContent: "center",
                         paddingTop: isFirstOfSpeakerSpan ? "4px" : "0",
-                        paddingRight: "6px",
+                        paddingRight: isMobile ? "4px" : "6px",
                         position: "relative",
                       }}
                     >
-                      {isFirstOfSpeakerSpan && verseSpeaker && (
-                        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "5px" }}>
-                          {/* Person avatar — opens character detail panel */}
-                          <button
-                            onClick={() => {
-                              openCharacterByName(verseSpeaker.speaker);
-                            }}
-                            title={verseSpeaker.speaker}
-                            style={{
-                              background: `${speakerColor || "#888"}25`,
-                              border: "none",
-                              borderRadius: "50%",
-                              width: "18px",
-                              height: "18px",
-                              display: "flex",
-                              alignItems: "center",
-                              justifyContent: "center",
-                              cursor: "pointer",
-                              padding: 0,
-                              flexShrink: 0,
-                              transition: "all 0.15s",
-                            }}
-                          >
-                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke={speakerColor || "#888"} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                              <circle cx="12" cy="7" r="4" />
-                            </svg>
-                          </button>
-                          <span
-                            style={{
-                              writingMode: "vertical-rl",
-                              textOrientation: "mixed",
-                              transform: "rotate(180deg)",
-                              fontSize: "0.62rem",
-                              fontWeight: 800,
-                              letterSpacing: "0.06em",
-                              textTransform: "uppercase",
-                              color: speakerColor || undefined,
-                              opacity: 1,
-                              whiteSpace: "nowrap",
-                              lineHeight: 1,
-                              maxHeight: `${speakerSpanLength * 3.2}em`,
-                              overflow: "hidden",
-                            }}
-                          >
-                            {verseSpeaker.speaker}
-                          </span>
-                        </div>
-                      )}
+                      {isFirstOfSpeakerSpan && verseSpeaker && (() => {
+                        const portrait = getCharacterPortrait(verseSpeaker.speaker);
+                        const avatarSize = isMobile ? 20 : 22;
+                        return (
+                          <div style={{
+                            display: "flex",
+                            flexDirection: isMobile ? "column" : "row-reverse",
+                            alignItems: "center",
+                            gap: isMobile ? "0" : "5px",
+                            position: isMobile ? "relative" : "absolute",
+                            right: isMobile ? undefined : "6px",
+                            top: "2px",
+                            whiteSpace: "nowrap",
+                          }}>
+                            {/* Portrait / avatar circle — closest to scripture (right side on desktop via row-reverse) */}
+                            <button
+                              onClick={() => openCharacterByName(verseSpeaker.speaker)}
+                              title={verseSpeaker.speaker}
+                              style={{
+                                background: portrait ? "none" : `${speakerColor || "#888"}25`,
+                                border: portrait ? `2px solid ${speakerColor || "#888"}` : "none",
+                                borderRadius: "50%",
+                                width: `${avatarSize}px`,
+                                height: `${avatarSize}px`,
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                cursor: "pointer",
+                                padding: 0,
+                                flexShrink: 0,
+                                overflow: "hidden",
+                                transition: "all 0.15s",
+                              }}
+                            >
+                              {portrait ? (
+                                <img
+                                  src={portrait}
+                                  alt=""
+                                  style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                    objectPosition: "center 20%",
+                                  }}
+                                />
+                              ) : (
+                                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke={speakerColor || "#888"} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                  <circle cx="12" cy="7" r="4" />
+                                </svg>
+                              )}
+                            </button>
+                            {/* Desktop: horizontal name label extending left */}
+                            {!isMobile && (
+                              <span
+                                style={{
+                                  fontSize: "0.58rem",
+                                  fontWeight: 700,
+                                  letterSpacing: "0.06em",
+                                  textTransform: "uppercase",
+                                  color: speakerColor || undefined,
+                                  lineHeight: 1,
+                                  opacity: 0.9,
+                                }}
+                              >
+                                {verseSpeaker.speaker}
+                              </span>
+                            )}
+                          </div>
+                        );
+                      })()}
                     </div>
                   ) : (
-                    <div style={{ width: showSpeakers ? "30px" : "0px", flexShrink: 0 }} />
+                    <div style={{ width: showSpeakers ? (isMobile ? "24px" : "30px") : "0px", flexShrink: 0 }} />
                   )}
                   {/* Verse content with left border bar */}
                   <div
