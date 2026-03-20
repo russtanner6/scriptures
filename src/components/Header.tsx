@@ -55,7 +55,7 @@ export default function Header({
             <img
               src="/tree-logo.svg"
               alt="Scripture Explorer"
-              style={{ height: "64px", width: "auto" }}
+              style={{ height: "44px", width: "auto" }}
             />
           )}
         </Link>
