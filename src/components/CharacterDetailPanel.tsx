@@ -43,6 +43,8 @@ export default function CharacterDetailPanel({
   useEffect(() => {
     setIsVisible(false);
     requestAnimationFrame(() => setIsVisible(true));
+    // Scroll to top on character change
+    panelRef.current?.scrollTo(0, 0);
   }, [character.id]);
 
   const handleKeyDown = useCallback(
@@ -100,6 +102,7 @@ export default function CharacterDetailPanel({
   }
 
   const panelWidth = isMobile ? "calc(100vw - 48px)" : "min(100vw, 520px)";
+  const hasPortrait = !!character.portraitUrl;
 
   return (
     <>
@@ -109,9 +112,9 @@ export default function CharacterDetailPanel({
         style={{
           position: "fixed",
           inset: 0,
-          background: "rgba(0, 0, 0, 0.5)",
-          backdropFilter: "blur(2px)",
-          WebkitBackdropFilter: "blur(2px)",
+          background: "rgba(0, 0, 0, 0.6)",
+          backdropFilter: "blur(4px)",
+          WebkitBackdropFilter: "blur(4px)",
           zIndex: 200,
           opacity: isVisible ? 1 : 0,
           transition: "opacity 0.3s ease",
@@ -139,7 +142,7 @@ export default function CharacterDetailPanel({
             ? `translateX(${swipeOffset}px)`
             : "translateX(100%)",
           transition: swipeOffset > 0 ? "none" : "transform 0.3s ease",
-          boxShadow: "-8px 0 32px rgba(0, 0, 0, 0.3)",
+          boxShadow: "-8px 0 32px rgba(0, 0, 0, 0.4)",
           borderRadius: isMobile ? "12px 0 0 12px" : undefined,
           overflowY: "auto",
           WebkitOverflowScrolling: "touch",
@@ -147,8 +150,17 @@ export default function CharacterDetailPanel({
       >
         {/* Swipe handle (mobile) */}
         {isMobile && (
-          <div style={{ display: "flex", justifyContent: "center", padding: "8px 0 0" }}>
-            <div style={{ width: "36px", height: "4px", borderRadius: "2px", background: "rgba(255,255,255,0.15)" }} />
+          <div style={{
+            display: "flex",
+            justifyContent: "center",
+            padding: "8px 0 0",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            zIndex: 3,
+          }}>
+            <div style={{ width: "36px", height: "4px", borderRadius: "2px", background: "rgba(255,255,255,0.25)" }} />
           </div>
         )}
 
@@ -159,8 +171,8 @@ export default function CharacterDetailPanel({
             position: "absolute",
             top: "12px",
             right: "12px",
-            background: "rgba(255,255,255,0.06)",
-            border: "1px solid rgba(255,255,255,0.08)",
+            background: "rgba(0,0,0,0.4)",
+            border: "1px solid rgba(255,255,255,0.12)",
             borderRadius: "8px",
             width: "32px",
             height: "32px",
@@ -168,48 +180,99 @@ export default function CharacterDetailPanel({
             alignItems: "center",
             justifyContent: "center",
             cursor: "pointer",
-            color: "var(--text-muted)",
+            color: "#fff",
             fontSize: "0.9rem",
             fontFamily: "inherit",
-            zIndex: 1,
+            zIndex: 3,
+            backdropFilter: "blur(8px)",
+            WebkitBackdropFilter: "blur(8px)",
           }}
         >
           ✕
         </button>
 
-        {/* Header with avatar */}
-        <div style={{
-          padding: isMobile ? "24px 20px 20px" : "32px 28px 24px",
-          borderBottom: "1px solid var(--border)",
-        }}>
-          <div style={{ display: "flex", gap: "16px", alignItems: "flex-start" }}>
-            {/* Large avatar */}
+        {/* Hero portrait area */}
+        {hasPortrait ? (
+          <div style={{
+            width: "100%",
+            aspectRatio: "3 / 4",
+            maxHeight: isMobile ? "55vh" : "480px",
+            position: "relative",
+            overflow: "hidden",
+            flexShrink: 0,
+          }}>
+            <img
+              src={character.portraitUrl}
+              alt={character.name}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+              }}
+            />
+            {/* Gradient overlay at bottom for text readability */}
             <div style={{
-              width: "64px",
-              height: "64px",
+              position: "absolute",
+              bottom: 0,
+              left: 0,
+              right: 0,
+              height: "50%",
+              background: "linear-gradient(transparent, var(--bg, #111116))",
+              pointerEvents: "none",
+            }} />
+            {/* Name overlay on portrait */}
+            <div style={{
+              position: "absolute",
+              bottom: "16px",
+              left: isMobile ? "16px" : "24px",
+              right: "16px",
+              zIndex: 2,
+            }}>
+              <h2 style={{
+                fontSize: isMobile ? "1.5rem" : "1.8rem",
+                fontWeight: 700,
+                color: "#fff",
+                marginBottom: "6px",
+                textShadow: "0 2px 8px rgba(0,0,0,0.4)",
+              }}>
+                {character.name}
+              </h2>
+              <div style={{
+                fontSize: "0.85rem",
+                color: "rgba(255,255,255,0.85)",
+                fontWeight: 500,
+                textShadow: "0 1px 4px rgba(0,0,0,0.4)",
+              }}>
+                {character.roles.join(" · ")}
+              </div>
+            </div>
+          </div>
+        ) : (
+          /* No portrait — simple header */
+          <div style={{
+            padding: isMobile ? "32px 20px 20px" : "40px 28px 24px",
+            borderBottom: "1px solid var(--border)",
+            display: "flex",
+            gap: "16px",
+            alignItems: "center",
+          }}>
+            <div style={{
+              width: "72px",
+              height: "72px",
               borderRadius: "50%",
-              background: `${color}18`,
-              border: `3px solid ${color}40`,
+              background: `${color}15`,
+              border: `2px solid ${color}30`,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               flexShrink: 0,
             }}>
-              {character.portraitUrl ? (
-                <img
-                  src={character.portraitUrl}
-                  alt={character.name}
-                  style={{ width: "100%", height: "100%", borderRadius: "50%", objectFit: "cover" }}
-                />
-              ) : (
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-              )}
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity={0.5}>
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
             </div>
-
-            <div style={{ flex: 1, minWidth: 0, paddingRight: "36px" }}>
+            <div style={{ flex: 1, paddingRight: "36px" }}>
               <h2 style={{
                 fontSize: "1.3rem",
                 fontWeight: 700,
@@ -218,51 +281,57 @@ export default function CharacterDetailPanel({
               }}>
                 {character.name}
               </h2>
-
-              {/* Roles */}
               <div style={{
                 fontSize: "0.82rem",
                 color: color,
                 fontWeight: 600,
-                marginBottom: "8px",
               }}>
                 {character.roles.join(" · ")}
               </div>
-
-              {/* Volume pills */}
-              <div style={{ display: "flex", gap: "5px", flexWrap: "wrap" }}>
-                {character.volumes.map((v) => (
-                  <span
-                    key={v}
-                    style={{
-                      fontSize: "0.62rem",
-                      fontWeight: 700,
-                      color: VOLUME_COLORS[v] || "#888",
-                      background: `${VOLUME_COLORS[v] || "#888"}18`,
-                      padding: "2px 8px",
-                      borderRadius: "4px",
-                      letterSpacing: "0.04em",
-                    }}
-                  >
-                    {v}
-                  </span>
-                ))}
-              </div>
             </div>
           </div>
-        </div>
+        )}
 
         {/* Content */}
         <div style={{ padding: isMobile ? "20px" : "24px 28px", flex: 1 }}>
-          {/* Bio */}
-          <div style={{ marginBottom: "24px" }}>
-            <div style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "8px" }}>
-              About
+          {/* Volume pills + era row */}
+          <div style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "12px",
+            marginBottom: "20px",
+            flexWrap: "wrap",
+          }}>
+            <div style={{ display: "flex", gap: "5px" }}>
+              {character.volumes.map((v) => (
+                <span
+                  key={v}
+                  style={{
+                    fontSize: "0.65rem",
+                    fontWeight: 700,
+                    color: VOLUME_COLORS[v] || "#888",
+                    background: `${VOLUME_COLORS[v] || "#888"}18`,
+                    padding: "3px 9px",
+                    borderRadius: "5px",
+                    letterSpacing: "0.04em",
+                  }}
+                >
+                  {v}
+                </span>
+              ))}
             </div>
+            <span style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>
+              {character.era}
+              {character.timePeriod && character.timePeriod !== "unknown" && ` · ${character.timePeriod}`}
+            </span>
+          </div>
+
+          {/* Bio */}
+          <div style={{ marginBottom: "28px" }}>
             <p style={{
-              fontSize: "0.9rem",
+              fontSize: "0.92rem",
               color: "var(--text-secondary)",
-              lineHeight: 1.7,
+              lineHeight: 1.75,
               margin: 0,
             }}>
               {character.bio}
@@ -271,7 +340,7 @@ export default function CharacterDetailPanel({
 
           {/* Aliases */}
           {character.aliases.length > 0 && (
-            <div style={{ marginBottom: "24px" }}>
+            <div style={{ marginBottom: "28px" }}>
               <div style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "8px" }}>
                 Also Known As
               </div>
@@ -295,28 +364,6 @@ export default function CharacterDetailPanel({
             </div>
           )}
 
-          {/* Era & Time Period */}
-          <div style={{ marginBottom: "24px", display: "flex", gap: "24px", flexWrap: "wrap" }}>
-            <div>
-              <div style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "6px" }}>
-                Era
-              </div>
-              <div style={{ fontSize: "0.85rem", color: "var(--text)" }}>
-                {character.era}
-              </div>
-            </div>
-            {character.timePeriod && character.timePeriod !== "unknown" && (
-              <div>
-                <div style={{ fontSize: "0.68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "6px" }}>
-                  Time Period
-                </div>
-                <div style={{ fontSize: "0.85rem", color: "var(--text)" }}>
-                  {character.timePeriod}
-                </div>
-              </div>
-            )}
-          </div>
-
           {/* Family */}
           {familyEntries.length > 0 && (
             <div style={{ marginBottom: "24px" }}>
@@ -324,52 +371,84 @@ export default function CharacterDetailPanel({
                 Family
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
-                {familyEntries.map(({ label, char: fc }, i) => (
-                  <button
-                    key={`${fc.id}-${label}-${i}`}
-                    onClick={() => onSelectCharacter(fc)}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "10px",
-                      padding: "8px 12px",
-                      borderRadius: "8px",
-                      border: "1px solid var(--border)",
-                      background: "transparent",
-                      cursor: "pointer",
-                      fontFamily: "inherit",
-                      textAlign: "left",
-                      transition: "all 0.15s",
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.background = "rgba(255,255,255,0.04)";
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.background = "transparent";
-                    }}
-                  >
-                    <span style={{
-                      fontSize: "0.65rem",
-                      fontWeight: 600,
-                      textTransform: "uppercase",
-                      letterSpacing: "0.06em",
-                      color: "var(--text-muted)",
-                      minWidth: "60px",
-                    }}>
-                      {label}
-                    </span>
-                    <span style={{
-                      fontSize: "0.85rem",
-                      fontWeight: 600,
-                      color: "var(--text)",
-                    }}>
-                      {fc.name}
-                    </span>
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: "auto" }}>
-                      <polyline points="9 18 15 12 9 6" />
-                    </svg>
-                  </button>
-                ))}
+                {familyEntries.map(({ label, char: fc }, i) => {
+                  const fcColor = (() => {
+                    for (const v of VOLUME_ORDER) {
+                      if (fc.volumes.includes(v)) return VOLUME_COLORS[v] || "#8b5cf6";
+                    }
+                    return "#8b5cf6";
+                  })();
+                  return (
+                    <button
+                      key={`${fc.id}-${label}-${i}`}
+                      onClick={() => onSelectCharacter(fc)}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "10px",
+                        padding: "8px 12px",
+                        borderRadius: "10px",
+                        border: "1px solid var(--border)",
+                        background: "transparent",
+                        cursor: "pointer",
+                        fontFamily: "inherit",
+                        textAlign: "left",
+                        transition: "all 0.15s",
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = "rgba(255,255,255,0.04)";
+                        e.currentTarget.style.borderColor = `${fcColor}40`;
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = "transparent";
+                        e.currentTarget.style.borderColor = "var(--border)";
+                      }}
+                    >
+                      {/* Mini avatar for family member */}
+                      <div style={{
+                        width: "32px",
+                        height: "32px",
+                        borderRadius: "50%",
+                        background: `${fcColor}15`,
+                        border: `1.5px solid ${fcColor}30`,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                        overflow: "hidden",
+                      }}>
+                        {fc.portraitUrl ? (
+                          <img src={fc.portraitUrl} alt={fc.name} style={{ width: "100%", height: "100%", borderRadius: "50%", objectFit: "cover" }} />
+                        ) : (
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={fcColor} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity={0.4}>
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                          </svg>
+                        )}
+                      </div>
+                      <div style={{ flex: 1, minWidth: 0 }}>
+                        <div style={{
+                          fontSize: "0.85rem",
+                          fontWeight: 600,
+                          color: "var(--text)",
+                        }}>
+                          {fc.name}
+                        </div>
+                        <div style={{
+                          fontSize: "0.65rem",
+                          fontWeight: 500,
+                          textTransform: "capitalize",
+                          color: "var(--text-muted)",
+                        }}>
+                          {label}
+                        </div>
+                      </div>
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+                        <polyline points="9 18 15 12 9 6" />
+                      </svg>
+                    </button>
+                  );
+                })}
               </div>
             </div>
           )}

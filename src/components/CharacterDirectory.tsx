@@ -33,17 +33,6 @@ const ERA_ORDER = [
   "Restoration",
 ];
 
-const ROLE_ICONS: Record<string, string> = {
-  Prophet: "prophet",
-  King: "king",
-  Apostle: "apostle",
-  Judge: "judge",
-  Priest: "priest",
-  Mother: "mother",
-  Wife: "wife",
-  Warrior: "warrior",
-};
-
 function useIsMobile(breakpoint = 768) {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -153,17 +142,14 @@ export default function CharacterDirectory() {
   }
 
   return (
-    <div>
+    <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
       {/* Page header */}
-      <div style={{ marginBottom: "24px" }}>
-        <h2 style={{ fontSize: "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px" }}>
+      <div style={{ marginBottom: "28px", textAlign: "center" }}>
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 700, color: "var(--text)", marginBottom: "8px" }}>
           People of the Scriptures
         </h2>
-        <p style={{ color: "var(--text-secondary)", fontSize: isMobile ? "0.85rem" : "0.92rem", marginBottom: "4px" }}>
-          Every named person across all five volumes of scripture.
-        </p>
-        <p style={{ color: "var(--text-muted)", fontSize: "0.78rem" }}>
-          {characters.length} people identified
+        <p style={{ color: "var(--text-secondary)", fontSize: isMobile ? "0.85rem" : "0.95rem", maxWidth: "500px", margin: "0 auto" }}>
+          {characters.length} named individuals across all five volumes
         </p>
       </div>
 
@@ -173,11 +159,11 @@ export default function CharacterDirectory() {
         gap: "10px",
         alignItems: "center",
         marginBottom: "16px",
-        flexWrap: "wrap",
+        maxWidth: "600px",
+        margin: "0 auto 16px",
       }}>
         <div style={{
           flex: 1,
-          minWidth: "200px",
           position: "relative",
         }}>
           <svg
@@ -192,7 +178,7 @@ export default function CharacterDirectory() {
             type="text"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder="Search by name, alias, or description..."
+            placeholder="Search by name or description..."
             className="search-bar-glow"
             style={{
               width: "100%",
@@ -263,6 +249,8 @@ export default function CharacterDirectory() {
           display: "flex",
           flexDirection: "column",
           gap: "14px",
+          maxWidth: "600px",
+          margin: "0 auto 20px",
         }}>
           {/* Volume filter */}
           <div>
@@ -404,22 +392,25 @@ export default function CharacterDirectory() {
       )}
 
       {/* Results count */}
-      <div style={{ fontSize: "0.78rem", color: "var(--text-muted)", marginBottom: "16px" }}>
+      <div style={{ fontSize: "0.78rem", color: "var(--text-muted)", marginBottom: "20px", textAlign: "center" }}>
         {filtered.length === characters.length
-          ? `${characters.length} people`
-          : `${filtered.length} of ${characters.length} people`}
+          ? `Showing all ${characters.length}`
+          : `${filtered.length} of ${characters.length}`}
       </div>
 
-      {/* Character grid */}
+      {/* Character grid — portrait cards */}
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: isMobile ? "1fr" : "repeat(auto-fill, minmax(320px, 1fr))",
-          gap: "12px",
+          gridTemplateColumns: isMobile
+            ? "repeat(2, 1fr)"
+            : "repeat(auto-fill, minmax(180px, 1fr))",
+          gap: isMobile ? "12px" : "20px",
         }}
       >
         {filtered.map((c) => {
           const color = getCharColor(c);
+          const hasPortrait = !!c.portraitUrl;
           return (
             <button
               key={c.id}
@@ -427,108 +418,113 @@ export default function CharacterDirectory() {
               style={{
                 background: "var(--surface)",
                 border: "1px solid var(--border)",
-                borderRadius: "10px",
-                padding: "14px 16px",
-                textAlign: "left",
+                borderRadius: "14px",
+                padding: "0",
+                textAlign: "center",
                 cursor: "pointer",
                 fontFamily: "inherit",
-                transition: "all 0.15s",
+                transition: "all 0.2s",
+                overflow: "hidden",
                 display: "flex",
-                gap: "12px",
-                alignItems: "flex-start",
+                flexDirection: "column",
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.borderColor = color;
-                e.currentTarget.style.background = `${color}08`;
+                e.currentTarget.style.transform = "translateY(-2px)";
+                e.currentTarget.style.boxShadow = `0 8px 24px ${color}20`;
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = "var(--border)";
-                e.currentTarget.style.background = "var(--surface)";
+                e.currentTarget.style.transform = "translateY(0)";
+                e.currentTarget.style.boxShadow = "none";
               }}
             >
-              {/* Avatar */}
+              {/* Portrait area */}
               <div style={{
-                width: "40px",
-                height: "40px",
-                borderRadius: "50%",
-                background: `${color}18`,
-                border: `2px solid ${color}30`,
+                width: "100%",
+                aspectRatio: "3 / 4",
+                background: hasPortrait ? "transparent" : `linear-gradient(135deg, ${color}15, ${color}08)`,
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                flexShrink: 0,
+                overflow: "hidden",
               }}>
-                {c.portraitUrl ? (
+                {hasPortrait ? (
                   <img
                     src={c.portraitUrl}
                     alt={c.name}
-                    style={{ width: "100%", height: "100%", borderRadius: "50%", objectFit: "cover" }}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                    loading="lazy"
                   />
                 ) : (
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                    <circle cx="12" cy="7" r="4" />
-                  </svg>
+                  <div style={{
+                    width: "72px",
+                    height: "72px",
+                    borderRadius: "50%",
+                    background: `${color}18`,
+                    border: `2px solid ${color}30`,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}>
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity={0.5}>
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                  </div>
                 )}
               </div>
 
-              {/* Info */}
-              <div style={{ flex: 1, minWidth: 0 }}>
+              {/* Info section */}
+              <div style={{
+                padding: "12px 10px 14px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "4px",
+              }}>
                 <div style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  marginBottom: "3px",
+                  fontSize: isMobile ? "0.82rem" : "0.9rem",
+                  fontWeight: 700,
+                  color: "var(--text)",
+                  lineHeight: 1.2,
                 }}>
-                  <span style={{
-                    fontSize: "0.92rem",
-                    fontWeight: 700,
-                    color: "var(--text)",
-                  }}>
-                    {c.name}
-                  </span>
-                  {/* Volume pills */}
-                  <div style={{ display: "flex", gap: "3px" }}>
-                    {c.volumes.map((v) => (
-                      <span
-                        key={v}
-                        style={{
-                          fontSize: "0.55rem",
-                          fontWeight: 700,
-                          color: VOLUME_COLORS[v] || "#888",
-                          background: `${VOLUME_COLORS[v] || "#888"}15`,
-                          padding: "1px 4px",
-                          borderRadius: "3px",
-                          letterSpacing: "0.03em",
-                        }}
-                      >
-                        {v}
-                      </span>
-                    ))}
-                  </div>
+                  {c.name}
                 </div>
 
-                {/* Roles */}
-                <div style={{
-                  fontSize: "0.72rem",
-                  color: color,
-                  fontWeight: 600,
-                  marginBottom: "4px",
-                }}>
-                  {c.roles.slice(0, 3).join(" · ")}
+                {/* Volume pills */}
+                <div style={{ display: "flex", gap: "3px", justifyContent: "center", marginTop: "2px" }}>
+                  {c.volumes.map((v) => (
+                    <span
+                      key={v}
+                      style={{
+                        fontSize: "0.55rem",
+                        fontWeight: 700,
+                        color: VOLUME_COLORS[v] || "#888",
+                        background: `${VOLUME_COLORS[v] || "#888"}15`,
+                        padding: "1px 5px",
+                        borderRadius: "3px",
+                        letterSpacing: "0.03em",
+                      }}
+                    >
+                      {v}
+                    </span>
+                  ))}
                 </div>
 
-                {/* Bio preview */}
+                {/* Role - one line */}
                 <div style={{
-                  fontSize: "0.78rem",
+                  fontSize: "0.7rem",
                   color: "var(--text-muted)",
-                  lineHeight: 1.4,
-                  display: "-webkit-box",
-                  WebkitLineClamp: 2,
-                  WebkitBoxOrient: "vertical",
+                  fontWeight: 500,
+                  whiteSpace: "nowrap",
                   overflow: "hidden",
+                  textOverflow: "ellipsis",
                 }}>
-                  {c.bio}
+                  {c.roles.slice(0, 2).join(" · ")}
                 </div>
               </div>
             </button>
