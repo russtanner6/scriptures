@@ -1144,25 +1144,53 @@ export default function ScriptureReader() {
                       }}
                     >
                       {isFirstOfSpeakerSpan && verseSpeaker && (
-                        <span
-                          style={{
-                            writingMode: "vertical-rl",
-                            textOrientation: "mixed",
-                            transform: "rotate(180deg)",
-                            fontSize: "0.62rem",
-                            fontWeight: 800,
-                            letterSpacing: "0.06em",
-                            textTransform: "uppercase",
-                            color: speakerColor || undefined,
-                            opacity: 1,
-                            whiteSpace: "nowrap",
-                            lineHeight: 1,
-                            maxHeight: `${speakerSpanLength * 3.2}em`,
-                            overflow: "hidden",
-                          }}
-                        >
-                          {verseSpeaker.speaker}
-                        </span>
+                        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
+                          {/* Person avatar — will open character panel when built */}
+                          <button
+                            onClick={() => {
+                              // TODO: open character/speaker panel for verseSpeaker.speaker
+                            }}
+                            title={verseSpeaker.speaker}
+                            style={{
+                              background: `${speakerColor || "#888"}25`,
+                              border: "none",
+                              borderRadius: "50%",
+                              width: "18px",
+                              height: "18px",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              cursor: "pointer",
+                              padding: 0,
+                              flexShrink: 0,
+                              transition: "all 0.15s",
+                            }}
+                          >
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke={speakerColor || "#888"} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                              <circle cx="12" cy="7" r="4" />
+                            </svg>
+                          </button>
+                          <span
+                            style={{
+                              writingMode: "vertical-rl",
+                              textOrientation: "mixed",
+                              transform: "rotate(180deg)",
+                              fontSize: "0.62rem",
+                              fontWeight: 800,
+                              letterSpacing: "0.06em",
+                              textTransform: "uppercase",
+                              color: speakerColor || undefined,
+                              opacity: 1,
+                              whiteSpace: "nowrap",
+                              lineHeight: 1,
+                              maxHeight: `${speakerSpanLength * 3.2}em`,
+                              overflow: "hidden",
+                            }}
+                          >
+                            {verseSpeaker.speaker}
+                          </span>
+                        </div>
                       )}
                     </div>
                   ) : (
