@@ -97,6 +97,8 @@ export default function ScriptureReader() {
   // Whether the current chapter has modern text or narration available
   const hasModernText = verses.some((v) => v.text_modern);
   const hasNarration = !!chapterNarration;
+  // Reading mode help popup
+  const [showReadingModeHelp, setShowReadingModeHelp] = useState(false);
 
   // Search term highlight (when arriving from ScripturePanel)
   const highlightWord = searchParams.get("highlight") || null;
@@ -966,7 +968,131 @@ export default function ScriptureReader() {
                     </div>
                   );
                 })()}
+                {/* Help icon — explains reading modes */}
+                {(hasModernText || hasNarration) && (
+                  <button
+                    onClick={() => setShowReadingModeHelp(true)}
+                    title="About reading modes"
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      width: "22px",
+                      height: "22px",
+                      borderRadius: "50%",
+                      border: `1px solid ${theme.border}`,
+                      background: "transparent",
+                      color: theme.textMuted,
+                      fontSize: "0.65rem",
+                      fontWeight: 700,
+                      cursor: "pointer",
+                      fontFamily: "inherit",
+                      transition: "all 0.15s",
+                      flexShrink: 0,
+                    }}
+                  >
+                    ?
+                  </button>
+                )}
               </div>
+
+              {/* Reading mode help popup */}
+              {showReadingModeHelp && (
+                <div
+                  onClick={() => setShowReadingModeHelp(false)}
+                  style={{
+                    position: "fixed",
+                    inset: 0,
+                    zIndex: 200,
+                    background: "rgba(0,0,0,0.5)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    padding: "20px",
+                  }}
+                >
+                  <div
+                    onClick={(e) => e.stopPropagation()}
+                    style={{
+                      background: lightMode ? "#ffffff" : "#1e1e28",
+                      borderRadius: "14px",
+                      padding: isMobile ? "24px 20px" : "28px 32px",
+                      maxWidth: "480px",
+                      width: "100%",
+                      boxShadow: "0 20px 60px rgba(0,0,0,0.3)",
+                      border: `1px solid ${lightMode ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"}`,
+                      position: "relative",
+                    }}
+                  >
+                    <button
+                      onClick={() => setShowReadingModeHelp(false)}
+                      style={{
+                        position: "absolute",
+                        top: "14px",
+                        right: "14px",
+                        background: "none",
+                        border: "none",
+                        color: theme.textMuted,
+                        fontSize: "1.1rem",
+                        cursor: "pointer",
+                        padding: "4px",
+                        fontFamily: "inherit",
+                        lineHeight: 1,
+                      }}
+                    >
+                      ✕
+                    </button>
+                    <h3 style={{
+                      fontSize: "1rem",
+                      fontWeight: 700,
+                      color: theme.text,
+                      marginBottom: "16px",
+                    }}>
+                      Reading Modes
+                    </h3>
+                    <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
+                      <div>
+                        <div style={{ fontSize: "0.82rem", fontWeight: 700, color: theme.text, marginBottom: "3px" }}>
+                          Original
+                        </div>
+                        <p style={{ fontSize: "0.78rem", color: theme.textSecondary, lineHeight: 1.5, margin: 0 }}>
+                          The standard scripture text as published — King James Version for the Bible, and the original 1981 edition text for the Book of Mormon.
+                        </p>
+                      </div>
+                      {hasModernText && (
+                        <div>
+                          <div style={{ fontSize: "0.82rem", fontWeight: 700, color: theme.text, marginBottom: "3px" }}>
+                            Modern
+                          </div>
+                          <p style={{ fontSize: "0.78rem", color: theme.textSecondary, lineHeight: 1.5, margin: 0 }}>
+                            A verse-by-verse modern English translation designed to be clear and accessible while preserving the original meaning, names, and structure. Old Testament and New Testament use the World English Bible (WEB), a public-domain modern translation. Book of Mormon modern text was carefully generated using AI with strict 1:1 verse alignment and proper-noun preservation, then audited for accuracy.
+                          </p>
+                        </div>
+                      )}
+                      {hasNarration && (
+                        <div>
+                          <div style={{ fontSize: "0.82rem", fontWeight: 700, color: theme.text, marginBottom: "3px" }}>
+                            Narration
+                          </div>
+                          <p style={{ fontSize: "0.78rem", color: theme.textSecondary, lineHeight: 1.5, margin: 0 }}>
+                            A chapter-level prose summary that retells the events, teachings, and themes of the chapter in a flowing narrative style. Useful for getting an overview before diving into the verses, or for reviewing what a chapter covers.
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                    <p style={{
+                      fontSize: "0.68rem",
+                      color: theme.textMuted,
+                      lineHeight: 1.5,
+                      margin: "16px 0 0 0",
+                      borderTop: `1px solid ${theme.border}`,
+                      paddingTop: "12px",
+                    }}>
+                      Modern and Narration modes are supplementary tools to aid understanding. They are not official scripture and should not be used as doctrinal sources. Always refer to the Original text for study and teaching.
+                    </p>
+                  </div>
+                </div>
+              )}
 
               {/* Speaker legend — centered, no heading label, bigger + brighter pills */}
               {showSpeakers && chapterSpeakers.length > 0 && (() => {
