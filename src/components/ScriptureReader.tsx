@@ -753,7 +753,12 @@ export default function ScriptureReader() {
               isMobile={isMobile}
               onScrollToVerse={(verse) => {
                 const el = document.getElementById(`verse-${verse}`);
-                if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+                if (el) {
+                  el.scrollIntoView({ behavior: "smooth", block: "center" });
+                  el.style.transition = "background 0.3s";
+                  el.style.background = "rgba(59, 130, 246, 0.15)";
+                  setTimeout(() => { el.style.background = ""; }, 2000);
+                }
               }}
               onExploreWord={(word) => setExploredWord(word)}
               onSelectCharacter={openCharacterById}

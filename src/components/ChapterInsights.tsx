@@ -376,6 +376,118 @@ export default function ChapterInsights({
             </div>
           )}
 
+          {/* Speaker Timeline — color-coded heatmap of who speaks where */}
+          {speakers.length > 0 && stats.verseCount > 0 && (() => {
+            // Build per-verse speaker color map
+            const verseColors: (string | null)[] = new Array(stats.verseCount).fill(null);
+            const verseSpeakerNames: (string | null)[] = new Array(stats.verseCount).fill(null);
+            for (const s of speakers) {
+              const color = speakerColors[s.speakerType];
+              for (let v = s.verseStart; v <= s.verseEnd && v <= stats.verseCount; v++) {
+                verseColors[v - 1] = color;
+                verseSpeakerNames[v - 1] = s.speaker;
+              }
+            }
+
+            // Group consecutive verses with same color into segments
+            const segments: { start: number; end: number; color: string | null; speaker: string | null }[] = [];
+            let segStart = 0;
+            for (let i = 1; i <= verseColors.length; i++) {
+              if (i === verseColors.length || verseColors[i] !== verseColors[segStart]) {
+                segments.push({
+                  start: segStart,
+                  end: i - 1,
+                  color: verseColors[segStart],
+                  speaker: verseSpeakerNames[segStart],
+                });
+                segStart = i;
+              }
+            }
+
+            const neutralColor = lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.08)";
+
+            return (
+              <div>
+                <div
+                  style={{
+                    fontSize: "0.65rem",
+                    fontWeight: 600,
+                    textTransform: "uppercase",
+                    letterSpacing: "0.1em",
+                    color: theme.textMuted,
+                    marginBottom: "10px",
+                  }}
+                >
+                  Speaker Timeline
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    height: "28px",
+                    borderRadius: "6px",
+                    overflow: "hidden",
+                    cursor: "pointer",
+                    border: `1px solid ${theme.border}`,
+                  }}
+                >
+                  {segments.map((seg, i) => {
+                    const width = ((seg.end - seg.start + 1) / stats.verseCount) * 100;
+                    const verseNum = seg.start + 1;
+                    const verseLabel = seg.start === seg.end
+                      ? `Verse ${verseNum}`
+                      : `Verses ${verseNum}–${seg.end + 1}`;
+                    const title = seg.speaker
+                      ? `${seg.speaker} — ${verseLabel}`
+                      : verseLabel;
+                    return (
+                      <div
+                        key={i}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onScrollToVerse?.(verseNum);
+                        }}
+                        title={title}
+                        style={{
+                          width: `${width}%`,
+                          minWidth: "2px",
+                          background: seg.color || neutralColor,
+                          opacity: seg.color ? 0.7 : 1,
+                          transition: "opacity 0.15s",
+                          borderRight: i < segments.length - 1
+                            ? `1px solid ${lightMode ? "rgba(255,255,255,0.5)" : "rgba(0,0,0,0.3)"}`
+                            : "none",
+                        }}
+                        onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
+                        onMouseLeave={(e) => { e.currentTarget.style.opacity = seg.color ? "0.7" : "1"; }}
+                      />
+                    );
+                  })}
+                </div>
+                {/* Verse scale markers */}
+                <div style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  marginTop: "4px",
+                  fontSize: "0.58rem",
+                  color: theme.textMuted,
+                  fontWeight: 500,
+                }}>
+                  <span>1</span>
+                  {stats.verseCount > 10 && <span>{Math.round(stats.verseCount / 2)}</span>}
+                  <span>{stats.verseCount}</span>
+                </div>
+                <div style={{
+                  fontSize: "0.74rem",
+                  color: theme.textSecondary,
+                  marginTop: "10px",
+                  lineHeight: 1.6,
+                }}>
+                  Each color represents a speaker — tap any segment to jump to that verse
+                </div>
+              </div>
+            );
+          })()}
+
           {/* Key Themes */}
           {stats.keyThemes.length > 0 && (
             <div>
