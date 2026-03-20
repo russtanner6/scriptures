@@ -26,6 +26,7 @@ import ChartHints from "./ChartHints";
 import FilterDropdown from "./FilterDropdown";
 import ScripturePanel from "./ScripturePanel";
 import type { ScripturePanelState } from "@/lib/types";
+import { chartScrollbarPlugin } from "@/lib/chart-scrollbar-plugin";
 
 ChartJS.register(
   CategoryScale,
@@ -865,7 +866,7 @@ export default function WordFrequencyTool() {
                     <Line
                       ref={arcChartRef}
                       key={`${activeTabId}-${zoomReady}`}
-                      plugins={zoomPluginRef.current ? [zoomPluginRef.current] : []}
+                      plugins={[...(zoomPluginRef.current ? [zoomPluginRef.current] : []), chartScrollbarPlugin]}
                       data={{
                         labels: arcData.map((d) => d.name),
                         datasets: [
@@ -939,7 +940,7 @@ export default function WordFrequencyTool() {
                               limits: { x: { minRange: 3 } },
                             },
                         },
-                        layout: { padding: { top: 30 } },
+                        layout: { padding: { top: 30, bottom: 20 } },
                         onHover: (_event: any, elements: any[]) => {
                           const canvas = (_event as any)?.native?.target as HTMLCanvasElement | undefined;
                           if (canvas) canvas.style.cursor = elements.length > 0 ? "pointer" : "default";

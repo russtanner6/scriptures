@@ -22,6 +22,7 @@ import ScripturePanel from "./ScripturePanel";
 import FilterDropdown from "./FilterDropdown";
 import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./MethodologyModal";
 import type { ScripturePanelState } from "@/lib/types";
+import { chartScrollbarPlugin } from "@/lib/chart-scrollbar-plugin";
 
 ChartJS.register(CategoryScale, LinearScale, LineElement, PointElement, Filler, Tooltip, Legend);
 
@@ -301,11 +302,12 @@ export default function SentimentArcTool() {
                 <Line
                   ref={chartRef}
                   key={`sentiment-${vol.id}-${zoomReady}`}
-                  plugins={[legendMarginPlugin, ...(zoomPluginRef.current ? [zoomPluginRef.current] : [])]}
+                  plugins={[legendMarginPlugin, ...(zoomPluginRef.current ? [zoomPluginRef.current] : []), chartScrollbarPlugin]}
                   data={{ labels, datasets }}
                   options={{
                     responsive: true,
                     maintainAspectRatio: false,
+                    layout: { padding: { bottom: 20 } },
                     interaction: { mode: "index", intersect: false },
                     plugins: {
                       legend: {

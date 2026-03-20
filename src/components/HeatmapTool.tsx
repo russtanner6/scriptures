@@ -21,6 +21,7 @@ import ChartHints from "./ChartHints";
 import ExportChartModal from "./ExportChartModal";
 import ExportHtmlModal from "./ExportHtmlModal";
 import FilterDropdown from "./FilterDropdown";
+import { chartScrollbarPlugin } from "@/lib/chart-scrollbar-plugin";
 
 ChartJS.register(CategoryScale, LinearScale, LineElement, PointElement, Filler, Tooltip, Legend, ChartDataLabels);
 
@@ -572,7 +573,7 @@ export default function HeatmapTool() {
                         <Line
                           key={`${abbrev}-${zoomReady}`}
                           ref={thisChartRef}
-                          plugins={[legendMarginPlugin, ...(zoomPluginRef.current ? [zoomPluginRef.current] : [])]}
+                          plugins={[legendMarginPlugin, ...(zoomPluginRef.current ? [zoomPluginRef.current] : []), chartScrollbarPlugin]}
                           data={{
                             labels: arcLabels,
                             datasets: [{
@@ -657,7 +658,7 @@ export default function HeatmapTool() {
                                   limits: { x: { minRange: 3 } },
                                 },
                             },
-                            layout: { padding: { top: 20 } },
+                            layout: { padding: { top: 20, bottom: 20 } },
                             scales: {
                               y: { grid: { color: "rgba(255,255,255,0.06)" }, ticks: { font: { weight: 600 } }, beginAtZero: true },
                               x: {

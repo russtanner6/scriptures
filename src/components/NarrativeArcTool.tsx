@@ -19,6 +19,7 @@ import type { Volume, ScripturePanelState } from "@/lib/types";
 import { VOLUME_COLORS, getContrastText, compactVolumeName } from "@/lib/constants";
 import ScripturePanel from "./ScripturePanel";
 import FilterDropdown from "./FilterDropdown";
+import { chartScrollbarPlugin } from "@/lib/chart-scrollbar-plugin";
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -545,7 +546,7 @@ export default function NarrativeArcTool() {
                 <Line
                   key={`${vol.id}-${zoomReady}`}
                   ref={thisChartRef}
-                  plugins={[legendMarginPlugin, ...(zoomPluginRef.current ? [zoomPluginRef.current] : [])]}
+                  plugins={[legendMarginPlugin, ...(zoomPluginRef.current ? [zoomPluginRef.current] : []), chartScrollbarPlugin]}
                   data={{
                     labels: allLabels,
                     datasets: volResults.map((r) => {
@@ -658,7 +659,7 @@ export default function NarrativeArcTool() {
                           limits: { x: { minRange: 3 } },
                         },
                     },
-                    layout: { padding: { top: 20 } },
+                    layout: { padding: { top: 20, bottom: 20 } },
                     scales: {
                       y: {
                         grid: { color: "rgba(255,255,255,0.06)" },
