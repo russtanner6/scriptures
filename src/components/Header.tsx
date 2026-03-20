@@ -27,33 +27,13 @@ export default function Header({ showSubtitle = false }: { showSubtitle?: boolea
 
       <NavMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
 
-      <h1 className="header-title" style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100%", gap: "12px", margin: 0 }}>
-        <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: "12px" }}>
-          <span style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: "0.65rem",
-            fontWeight: 500,
-            letterSpacing: "0.18em",
-            color: "#ffffff",
-            textTransform: "uppercase",
-          }}>
-            Scripture
-          </span>
+      <h1 className="header-title" style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100%", margin: 0 }}>
+        <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
           <img
-            src="/tree-logo.svg"
+            src="/logo-full.svg"
             alt="Scripture Explorer"
             style={{ height: "36px", width: "auto" }}
           />
-          <span style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: "0.65rem",
-            fontWeight: 500,
-            letterSpacing: "0.18em",
-            color: "#ffffff",
-            textTransform: "uppercase",
-          }}>
-            Explorer
-          </span>
         </Link>
       </h1>
       {showSubtitle && (
