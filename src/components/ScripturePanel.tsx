@@ -1,8 +1,19 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { getVerseUrl } from "@/lib/scripture-urls";
 import type { Verse, ScripturePanelState } from "@/lib/types";
+
+function useIsMobile(breakpoint = 768) {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < breakpoint);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, [breakpoint]);
+  return isMobile;
+}
 
 export default function ScripturePanel({
   word,
@@ -17,6 +28,11 @@ export default function ScripturePanel({
   const [verses, setVerses] = useState<Verse[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isVisible, setIsVisible] = useState(false);
+  const isMobile = useIsMobile();
+  const panelRef = useRef<HTMLDivElement>(null);
+  const touchStartX = useRef(0);
+  const touchDeltaX = useRef(0);
+  const [swipeOffset, setSwipeOffset] = useState(0);
 
   // Slide-in animation
   useEffect(() => {
@@ -54,6 +70,29 @@ export default function ScripturePanel({
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [handleKeyDown]);
 
+  // Swipe-to-close (right swipe dismisses panel)
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchDeltaX.current = 0;
+  }, []);
+
+  const handleTouchMove = useCallback((e: React.TouchEvent) => {
+    const delta = e.touches[0].clientX - touchStartX.current;
+    touchDeltaX.current = delta;
+    if (delta > 0) {
+      setSwipeOffset(delta);
+    }
+  }, []);
+
+  const handleTouchEnd = useCallback(() => {
+    if (touchDeltaX.current > 80) {
+      onClose();
+    } else {
+      setSwipeOffset(0);
+    }
+    touchDeltaX.current = 0;
+  }, [onClose]);
+
   // Highlight the search word in verse text
   const highlightWord = (text: string) => {
     const isPhrase = /^".*"$/.test(word) || /^'.*'$/.test(word);
@@ -84,10 +123,12 @@ export default function ScripturePanel({
     );
   };
 
-  const accentColor = volumeColor || "var(--accent)";
   const headerSubtitle = chapter != null
     ? `${bookName} ${chapter}`
     : bookName;
+
+  // Mobile: leave a sliver (48px) to show the page behind
+  const panelWidth = isMobile ? "calc(100vw - 48px)" : "min(100vw, 480px)";
 
   return (
     <>
@@ -108,31 +149,55 @@ export default function ScripturePanel({
 
       {/* Panel */}
       <div
+        ref={panelRef}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
         style={{
           position: "fixed",
           top: 0,
           right: 0,
           bottom: 0,
-          width: "min(100vw, 480px)",
+          width: panelWidth,
           background: "#ffffff",
           borderLeft: "1px solid #e5e7eb",
           zIndex: 201,
           display: "flex",
           flexDirection: "column",
-          transform: isVisible ? "translateX(0)" : "translateX(100%)",
-          transition: "transform 0.3s ease",
+          transform: isVisible
+            ? `translateX(${swipeOffset}px)`
+            : "translateX(100%)",
+          transition: swipeOffset > 0 ? "none" : "transform 0.3s ease",
           boxShadow: "-8px 0 32px rgba(0, 0, 0, 0.15)",
+          borderRadius: isMobile ? "12px 0 0 12px" : undefined,
         }}
       >
+        {/* Swipe handle (mobile) */}
+        {isMobile && (
+          <div style={{
+            display: "flex",
+            justifyContent: "center",
+            padding: "8px 0 0",
+          }}>
+            <div style={{
+              width: "36px",
+              height: "4px",
+              borderRadius: "2px",
+              background: "rgba(0,0,0,0.15)",
+            }} />
+          </div>
+        )}
+
         {/* Header */}
         <div
           style={{
-            padding: "20px 24px 16px",
+            padding: isMobile ? "12px 16px 12px" : "20px 24px 16px",
             flexShrink: 0,
             background: "#f8f8f8",
             boxShadow: "0 2px 8px rgba(0, 0, 0, 0.06)",
             zIndex: 1,
             position: "relative",
+            borderRadius: isMobile ? "12px 0 0 0" : undefined,
           }}
         >
           <div
@@ -202,7 +267,7 @@ export default function ScripturePanel({
           style={{
             overflowY: "auto",
             WebkitOverflowScrolling: "touch",
-            padding: "12px 24px 24px",
+            padding: isMobile ? "12px 16px 24px" : "12px 24px 24px",
             flex: 1,
             minHeight: 0,
             background: "#ffffff",

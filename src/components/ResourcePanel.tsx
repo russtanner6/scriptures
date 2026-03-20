@@ -106,7 +106,7 @@ export default function ResourcePanel({
           top: 0,
           right: 0,
           bottom: 0,
-          width: isMobile ? "100vw" : "min(100vw, 500px)",
+          width: isMobile ? "calc(100vw - 48px)" : "min(100vw, 500px)",
           background: bg,
           borderLeft: isMobile ? "none" : `1px solid ${border}`,
           zIndex: 201,
