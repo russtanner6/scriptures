@@ -450,6 +450,16 @@ export default function ScriptureReader() {
   // ── READING VIEW ──
   if (selectedChapter !== null && selectedBookId !== null && selectedVolume) {
     const volColor = VOLUME_COLORS[selectedVolume] || "#3B82F6";
+    // Bar colors — always dark regardless of light/dark theme
+    const bar = {
+      bg: "rgba(17, 17, 22, 0.95)",
+      border: "rgba(255, 255, 255, 0.08)",
+      text: "#f0f0f0",
+      textSecondary: "#b0b0b0",
+      textMuted: "#666666",
+      surface: "rgba(255, 255, 255, 0.06)",
+      surfaceBorder: "rgba(255, 255, 255, 0.08)",
+    };
     const vol = volumes.find((v) => v.abbrev === selectedVolume);
     const isDC = selectedVolume === "D&C";
     const chapterLabel = isDC ? `Section ${selectedChapter}` : `Chapter ${selectedChapter}`;
@@ -497,10 +507,10 @@ export default function ScriptureReader() {
             position: "sticky",
             top: 0,
             zIndex: 50,
-            background: lightMode ? "rgba(248, 246, 241, 0.95)" : "rgba(17, 17, 22, 0.95)",
+            background: "rgba(17, 17, 22, 0.95)",
             backdropFilter: "blur(12px)",
             WebkitBackdropFilter: "blur(12px)",
-            borderBottom: `1px solid ${theme.border}`,
+            borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
             padding: isMobile ? "10px 16px" : "12px 24px",
             display: "flex",
             alignItems: "center",
@@ -534,7 +544,7 @@ export default function ScriptureReader() {
                 onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.6"; }}
               >
-                <img src="/tree-logo.svg" alt="Menu" style={{ height: "22px", width: "auto", filter: lightMode ? "invert(1)" : "none" }} />
+                <img src="/tree-logo.svg" alt="Menu" style={{ height: "22px", width: "auto" }} />
               </button>
             </div>
           )}
@@ -549,7 +559,7 @@ export default function ScriptureReader() {
               style={{
                 background: "none",
                 border: "none",
-                color: theme.textSecondary,
+                color: bar.textSecondary,
                 cursor: "pointer",
                 fontSize: "1.2rem",
                 padding: "4px 8px",
@@ -564,7 +574,7 @@ export default function ScriptureReader() {
                 style={{
                   fontSize: isMobile ? "0.85rem" : "0.95rem",
                   fontWeight: 700,
-                  color: theme.text,
+                  color: bar.text,
                   whiteSpace: "nowrap",
                   overflow: "hidden",
                   textOverflow: "ellipsis",
@@ -578,7 +588,7 @@ export default function ScriptureReader() {
                   fontWeight: 600,
                   textTransform: "uppercase",
                   letterSpacing: "0.1em",
-                  color: theme.textMuted,
+                  color: bar.textMuted,
                 }}
               >
                 {chapterLabel}
@@ -607,16 +617,16 @@ export default function ScriptureReader() {
                     width: isMobile ? "90px" : "130px",
                     padding: "5px 10px",
                     borderRadius: "8px",
-                    border: `1px solid ${theme.border}`,
-                    background: lightMode ? "rgba(0,0,0,0.04)" : "rgba(255,255,255,0.06)",
-                    color: theme.text,
+                    border: `1px solid ${bar.surfaceBorder}`,
+                    background: bar.surface,
+                    color: bar.text,
                     fontSize: "0.78rem",
                     fontFamily: "inherit",
                     outline: "none",
                   }}
                 />
                 {searchTerm.length >= 2 && (
-                  <span style={{ fontSize: "0.68rem", color: theme.textMuted, whiteSpace: "nowrap" }}>
+                  <span style={{ fontSize: "0.68rem", color: bar.textMuted, whiteSpace: "nowrap" }}>
                     {searchMatchCount}
                   </span>
                 )}
@@ -625,7 +635,7 @@ export default function ScriptureReader() {
                   style={{
                     background: "none",
                     border: "none",
-                    color: theme.textMuted,
+                    color: bar.textMuted,
                     fontSize: "0.85rem",
                     cursor: "pointer",
                     padding: "4px",
@@ -643,8 +653,8 @@ export default function ScriptureReader() {
                 }}
                 title="Search in chapter"
                 style={{
-                  background: lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.06)",
-                  border: `1px solid ${theme.border}`,
+                  background: bar.surface,
+                  border: `1px solid ${bar.surfaceBorder}`,
                   borderRadius: "8px",
                   width: "36px",
                   height: "36px",
@@ -654,7 +664,7 @@ export default function ScriptureReader() {
                   cursor: "pointer",
                   fontSize: "0.85rem",
                   transition: "all 0.15s",
-                  color: theme.textSecondary,
+                  color: bar.textSecondary,
                 }}
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -669,8 +679,8 @@ export default function ScriptureReader() {
               onClick={cycleFontSize}
               title="Change font size"
               style={{
-                background: lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.06)",
-                border: `1px solid ${theme.border}`,
+                background: bar.surface,
+                border: `1px solid ${bar.surfaceBorder}`,
                 borderRadius: "8px",
                 width: "36px",
                 height: "36px",
@@ -680,7 +690,7 @@ export default function ScriptureReader() {
                 cursor: "pointer",
                 fontSize: fontSize === 0 ? "0.7rem" : fontSize === 1 ? "0.85rem" : "1rem",
                 fontWeight: 700,
-                color: theme.textSecondary,
+                color: bar.textSecondary,
                 fontFamily: "inherit",
                 transition: "all 0.15s",
               }}
@@ -693,8 +703,8 @@ export default function ScriptureReader() {
               onClick={toggleLightMode}
               title={lightMode ? "Switch to dark mode" : "Switch to light mode"}
               style={{
-                background: lightMode ? "rgba(0,0,0,0.06)" : "rgba(255,255,255,0.06)",
-                border: `1px solid ${theme.border}`,
+                background: bar.surface,
+                border: `1px solid ${bar.surfaceBorder}`,
                 borderRadius: "8px",
                 width: "36px",
                 height: "36px",
@@ -703,7 +713,7 @@ export default function ScriptureReader() {
                 justifyContent: "center",
                 cursor: "pointer",
                 transition: "all 0.15s",
-                color: theme.textSecondary,
+                color: bar.textSecondary,
               }}
             >
               {lightMode ? (
@@ -982,12 +992,13 @@ export default function ScriptureReader() {
                       display: "inline-flex",
                       alignItems: "center",
                       justifyContent: "center",
+                      alignSelf: "center",
                       width: "22px",
                       height: "22px",
                       borderRadius: "50%",
-                      border: `1px solid ${theme.border}`,
-                      background: "transparent",
-                      color: theme.textMuted,
+                      border: "none",
+                      background: lightMode ? "#c0c0c0" : "rgba(255,255,255,0.18)",
+                      color: lightMode ? "#ffffff" : "#1a1a1a",
                       fontSize: "0.65rem",
                       fontWeight: 700,
                       cursor: "pointer",
@@ -1389,10 +1400,10 @@ export default function ScriptureReader() {
             bottom: 0,
             left: 0,
             right: 0,
-            background: lightMode ? "#f8f6f1" : "rgba(17, 17, 22, 0.95)",
+            background: bar.bg,
             backdropFilter: "blur(12px)",
             WebkitBackdropFilter: "blur(12px)",
-            borderTop: `1px solid ${theme.border}`,
+            borderTop: `1px solid ${bar.border}`,
             padding: isMobile ? "8px 16px" : "10px 24px",
             display: "flex",
             justifyContent: "space-between",
@@ -1406,7 +1417,7 @@ export default function ScriptureReader() {
             style={{
               background: "none",
               border: "none",
-              color: theme.textSecondary,
+              color: bar.textSecondary,
               cursor: isFirstChapterOfVolume ? "default" : "pointer",
               fontSize: "0.82rem",
               fontWeight: 600,
@@ -1441,7 +1452,7 @@ export default function ScriptureReader() {
                 onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.6"; }}
               >
-                <img src="/tree-logo.svg" alt="Menu" style={{ height: "22px", width: "auto", filter: lightMode ? "invert(1)" : "none" }} />
+                <img src="/tree-logo.svg" alt="Menu" style={{ height: "22px", width: "auto" }} />
               </button>
             )}
           </div>
@@ -1451,7 +1462,7 @@ export default function ScriptureReader() {
             style={{
               background: "none",
               border: "none",
-              color: theme.textSecondary,
+              color: bar.textSecondary,
               cursor: isLastChapterOfVolume ? "default" : "pointer",
               fontSize: "0.82rem",
               fontWeight: 600,
