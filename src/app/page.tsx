@@ -149,7 +149,7 @@ export default function HomePage() {
       <Header variant="home" />
 
       {/* Hero */}
-      <div style={{ textAlign: "center", marginBottom: isMobile ? "32px" : "48px" }}>
+      <div style={{ textAlign: "center", marginTop: isMobile ? "0" : "32px", marginBottom: isMobile ? "32px" : "48px" }}>
         <h2
           style={{
             fontSize: isMobile ? "1.6rem" : "2.2rem",
@@ -177,7 +177,7 @@ export default function HomePage() {
           style={{
             fontSize: isMobile ? "0.88rem" : "1rem",
             color: "var(--text-secondary)",
-            maxWidth: "540px",
+            maxWidth: "680px",
             margin: "0 auto",
             lineHeight: 1.6,
           }}
