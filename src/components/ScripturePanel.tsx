@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import { getVerseUrl } from "@/lib/scripture-urls";
+import { useBackToClose } from "@/lib/useBackToClose";
 import type { Verse, ScripturePanelState } from "@/lib/types";
 
 function useIsMobile(breakpoint = 768) {
@@ -33,6 +34,9 @@ export default function ScripturePanel({
   const touchStartX = useRef(0);
   const touchDeltaX = useRef(0);
   const [swipeOffset, setSwipeOffset] = useState(0);
+
+  // Mobile back-button closes panel instead of navigating away
+  useBackToClose(onClose);
 
   // Slide-in animation
   useEffect(() => {

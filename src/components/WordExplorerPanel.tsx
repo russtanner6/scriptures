@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { useBackToClose } from "@/lib/useBackToClose";
 import { VOLUME_COLORS } from "@/lib/constants";
 
 interface HeatmapResult {
@@ -52,6 +53,9 @@ export default function WordExplorerPanel({
   const [isLoading, setIsLoading] = useState(true);
   const [totalCount, setTotalCount] = useState(0);
   const panelRef = useRef<HTMLDivElement>(null);
+
+  // Mobile back-button closes panel instead of navigating away
+  useBackToClose(onClose);
 
   const theme = lightMode
     ? {

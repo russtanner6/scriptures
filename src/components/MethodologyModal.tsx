@@ -1,7 +1,14 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useBackToClose } from "@/lib/useBackToClose";
 import { modalStyles as mStyles, getModalTheme } from "@/lib/modal-styles";
+
+/** Mounts only when modal is open — pushes a history entry so back-button closes modal */
+function BackButtonHandler({ onClose }: { onClose: () => void }) {
+  useBackToClose(onClose);
+  return null;
+}
 
 interface MethodologyModalProps {
   title: string;
@@ -51,6 +58,9 @@ export default function MethodologyModal({
 
   return (
     <>
+      {/* Back-button handler — only mounted when modal is open */}
+      <BackButtonHandler onClose={onClose} />
+
       {/* Backdrop */}
       <div
         style={{

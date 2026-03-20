@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import Link from "next/link";
+import { useBackToClose } from "@/lib/useBackToClose";
 import type { ScriptureCharacter } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 
@@ -45,6 +46,9 @@ export default function CharacterDetailPanel({
   const touchStartX = useRef(0);
   const touchDeltaX = useRef(0);
   const [swipeOffset, setSwipeOffset] = useState(0);
+
+  // Mobile back-button closes panel instead of navigating away
+  useBackToClose(onClose);
 
   useEffect(() => {
     requestAnimationFrame(() => setIsVisible(true));

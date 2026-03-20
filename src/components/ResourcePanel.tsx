@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { useBackToClose } from "@/lib/useBackToClose";
 import type { Resource, ResourceType } from "@/lib/types";
 import { getResourceTypeColor } from "./ResourceMarker";
 
@@ -40,6 +41,9 @@ export default function ResourcePanel({
 }) {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const [isVisible, setIsVisible] = useState(false);
+
+  // Mobile back-button closes panel instead of navigating away
+  useBackToClose(onClose);
 
   const resource = resources[currentIndex];
   if (!resource) return null;

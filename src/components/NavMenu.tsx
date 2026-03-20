@@ -2,6 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useBackToClose } from "@/lib/useBackToClose";
+
+/** Mounts only when menu is open — pushes a history entry so back-button closes menu */
+function BackButtonHandler({ onClose }: { onClose: () => void }) {
+  useBackToClose(onClose);
+  return null;
+}
 
 interface NavItem {
   href: string;
@@ -108,6 +115,9 @@ export default function NavMenu({
 
   return (
     <>
+      {/* Back-button handler — only mounted when menu is open */}
+      {isOpen && <BackButtonHandler onClose={onClose} />}
+
       {/* Backdrop */}
       {isOpen && (
         <div
