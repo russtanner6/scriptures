@@ -12,6 +12,7 @@ import ResourcePanel from "./ResourcePanel";
 import WordExplorerPanel from "./WordExplorerPanel";
 import NavMenu from "./NavMenu";
 import { markChapterRead, isChapterRead, getReadChaptersForBook, getVolumeProgress } from "@/lib/reading-progress";
+import { modalStyles as mStyles, getModalTheme } from "@/lib/modal-styles";
 import { getAnnotationsForChapter } from "@/lib/annotations";
 
 interface ReaderVerse {
@@ -443,6 +444,8 @@ export default function ScriptureReader() {
         verseNum: "#555555",
         verseText: "rgba(255, 255, 255, 0.85)",
       };
+
+  const mt = getModalTheme(lightMode);
 
   // ── READING VIEW ──
   if (selectedChapter !== null && selectedBookId !== null && selectedVolume) {
@@ -1002,94 +1005,52 @@ export default function ScriptureReader() {
               {showReadingModeHelp && (
                 <div
                   onClick={() => setShowReadingModeHelp(false)}
-                  style={{
-                    position: "fixed",
-                    inset: 0,
-                    zIndex: 200,
-                    background: "rgba(0,0,0,0.5)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    padding: "20px",
-                  }}
+                  style={mStyles.backdrop}
                 >
                   <div
                     onClick={(e) => e.stopPropagation()}
-                    style={{
-                      background: lightMode ? "#ffffff" : "#1e1e28",
-                      borderRadius: "14px",
-                      padding: isMobile ? "24px 20px" : "28px 32px",
-                      maxWidth: "480px",
-                      width: "100%",
-                      boxShadow: "0 20px 60px rgba(0,0,0,0.3)",
-                      border: `1px solid ${lightMode ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"}`,
-                      position: "relative",
-                    }}
+                    style={{ ...mStyles.panel(isMobile), ...mt.panelColors }}
                   >
                     <button
                       onClick={() => setShowReadingModeHelp(false)}
-                      style={{
-                        position: "absolute",
-                        top: "14px",
-                        right: "14px",
-                        background: "none",
-                        border: "none",
-                        color: theme.textMuted,
-                        fontSize: "1.1rem",
-                        cursor: "pointer",
-                        padding: "4px",
-                        fontFamily: "inherit",
-                        lineHeight: 1,
-                      }}
+                      style={{ ...mStyles.closeButton, color: mt.closeColor }}
                     >
                       ✕
                     </button>
-                    <h3 style={{
-                      fontSize: "1rem",
-                      fontWeight: 700,
-                      color: theme.text,
-                      marginBottom: "16px",
-                    }}>
+                    <h3 style={{ ...mStyles.title, color: mt.title }}>
                       Reading Modes
                     </h3>
                     <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                       <div>
-                        <div style={{ fontSize: "0.82rem", fontWeight: 700, color: theme.text, marginBottom: "3px" }}>
+                        <div style={{ ...mStyles.sectionTitle, color: mt.title }}>
                           Original
                         </div>
-                        <p style={{ fontSize: "0.78rem", color: theme.textSecondary, lineHeight: 1.5, margin: 0 }}>
+                        <p style={{ ...mStyles.body, color: mt.body }}>
                           The standard scripture text as published — King James Version for the Bible, and the original 1981 edition text for the Book of Mormon.
                         </p>
                       </div>
                       {hasModernText && (
                         <div>
-                          <div style={{ fontSize: "0.82rem", fontWeight: 700, color: theme.text, marginBottom: "3px" }}>
+                          <div style={{ ...mStyles.sectionTitle, color: mt.title }}>
                             Modern
                           </div>
-                          <p style={{ fontSize: "0.78rem", color: theme.textSecondary, lineHeight: 1.5, margin: 0 }}>
+                          <p style={{ ...mStyles.body, color: mt.body }}>
                             A verse-by-verse modern English translation designed to be clear and accessible while preserving the original meaning, names, and structure. Old Testament and New Testament use the World English Bible (WEB), a public-domain modern translation. Book of Mormon modern text was carefully generated using AI with strict 1:1 verse alignment and proper-noun preservation, then audited for accuracy.
                           </p>
                         </div>
                       )}
                       {hasNarration && (
                         <div>
-                          <div style={{ fontSize: "0.82rem", fontWeight: 700, color: theme.text, marginBottom: "3px" }}>
+                          <div style={{ ...mStyles.sectionTitle, color: mt.title }}>
                             Narration
                           </div>
-                          <p style={{ fontSize: "0.78rem", color: theme.textSecondary, lineHeight: 1.5, margin: 0 }}>
+                          <p style={{ ...mStyles.body, color: mt.body }}>
                             A chapter-level prose summary that retells the events, teachings, and themes of the chapter in a flowing narrative style. Useful for getting an overview before diving into the verses, or for reviewing what a chapter covers.
                           </p>
                         </div>
                       )}
                     </div>
-                    <p style={{
-                      fontSize: "0.68rem",
-                      color: theme.textMuted,
-                      lineHeight: 1.5,
-                      margin: "16px 0 0 0",
-                      borderTop: `1px solid ${theme.border}`,
-                      paddingTop: "12px",
-                    }}>
+                    <p style={{ ...mStyles.footnote, color: mt.muted, borderTop: `1px solid ${mt.divider}` }}>
                       Modern and Narration modes are supplementary tools to aid understanding. They are not official scripture and should not be used as doctrinal sources. Always refer to the Original text for study and teaching.
                     </p>
                   </div>

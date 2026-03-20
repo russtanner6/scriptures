@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { modalStyles as mStyles, getModalTheme } from "@/lib/modal-styles";
 
 interface MethodologyModalProps {
   title: string;
@@ -18,6 +19,8 @@ export default function MethodologyModal({
   isMobile,
 }: MethodologyModalProps) {
   const panelRef = useRef<HTMLDivElement>(null);
+  // Methodology modals are always on the dark site theme
+  const mt = getModalTheme(false);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -51,12 +54,7 @@ export default function MethodologyModal({
       {/* Backdrop */}
       <div
         style={{
-          position: "fixed",
-          inset: 0,
-          background: "rgba(0, 0, 0, 0.5)",
-          backdropFilter: "blur(4px)",
-          WebkitBackdropFilter: "blur(4px)",
-          zIndex: 200,
+          ...mStyles.backdrop,
           animation: "fadeIn 0.2s ease",
         }}
       />
@@ -71,16 +69,16 @@ export default function MethodologyModal({
           right: isMobile ? "4%" : "auto",
           transform: isMobile ? "none" : "translate(-50%, -50%)",
           zIndex: 201,
-          background: "#1a1a24",
-          border: "1px solid rgba(255, 255, 255, 0.1)",
-          borderRadius: "16px",
-          padding: isMobile ? "24px 20px" : "32px",
+          ...mt.panelColors,
+          borderRadius: "14px",
+          padding: isMobile ? "24px 20px" : "28px 32px",
           maxWidth: isMobile ? "none" : "580px",
           width: isMobile ? "auto" : "92%",
           maxHeight: isMobile ? "90vh" : "80vh",
-          overflowY: "auto",
-          boxShadow: "0 16px 48px rgba(0, 0, 0, 0.4)",
+          overflowY: "auto" as const,
+          boxShadow: "0 20px 60px rgba(0, 0, 0, 0.3)",
           animation: "fadeIn 0.2s ease",
+          textAlign: "left" as const,
         }}
       >
         {/* Header */}
@@ -107,10 +105,10 @@ export default function MethodologyModal({
             </div>
             <h3
               style={{
+                ...mStyles.title,
                 fontSize: "1.1rem",
-                fontWeight: 700,
-                color: "var(--text)",
-                margin: 0,
+                color: mt.title,
+                marginBottom: 0,
               }}
             >
               {title}
@@ -119,10 +117,10 @@ export default function MethodologyModal({
           <button
             onClick={onClose}
             style={{
-              background: "rgba(255,255,255,0.06)",
-              border: "1px solid rgba(255,255,255,0.1)",
+              background: mt.closeBg,
+              border: `1px solid ${mt.closeBorder}`,
               borderRadius: "8px",
-              color: "var(--text-muted)",
+              color: mt.closeColor,
               fontSize: "0.85rem",
               padding: "4px 10px",
               cursor: "pointer",
@@ -138,8 +136,9 @@ export default function MethodologyModal({
         <div
           style={{
             fontSize: "0.85rem",
-            color: "var(--text-secondary)",
+            color: mt.body,
             lineHeight: 1.75,
+            textAlign: "left",
           }}
         >
           {children}
@@ -153,7 +152,7 @@ export default function MethodologyModal({
 
 export function MethodSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div style={{ marginBottom: "20px" }}>
+    <div style={{ marginBottom: "20px", textAlign: "left" }}>
       <h4
         style={{
           fontSize: "0.82rem",
@@ -182,6 +181,7 @@ export function MethodNote({ children }: { children: React.ReactNode }) {
         color: "var(--text-secondary)",
         lineHeight: 1.6,
         marginTop: "16px",
+        textAlign: "left",
       }}
     >
       {children}

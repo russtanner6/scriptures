@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { modalStyles as mStyles, getModalTheme } from "@/lib/modal-styles";
 
 type ExportFormat = "png" | "jpg" | "pdf";
 
@@ -16,6 +17,8 @@ export default function ExportHtmlModal({
   title: string;
 }) {
   const [exporting, setExporting] = useState(false);
+  // Export modals are always on the dark site theme
+  const mt = getModalTheme(false);
 
   if (!isOpen) return null;
 
@@ -63,20 +66,50 @@ export default function ExportHtmlModal({
 
   return (
     <>
-      <div onClick={onClose} style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.6)", backdropFilter: "blur(4px)", zIndex: 1000 }} />
-      <div style={{ position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)", background: "#1a1a2e", border: "1px solid var(--border, rgba(255,255,255,0.08))", borderRadius: "12px", padding: "28px", zIndex: 1001, minWidth: "280px", maxWidth: "360px" }}>
-        <h3 style={{ fontSize: "1rem", fontWeight: 700, color: "var(--text, #f0f0f0)", marginBottom: "6px" }}>Export Heatmap</h3>
-        <p style={{ fontSize: "0.85rem", color: "var(--text-secondary, #9ca3af)", marginBottom: "20px" }}>Choose a format to download</p>
+      <div onClick={onClose} style={mStyles.backdropHigh} />
+      <div
+        style={{
+          position: "fixed",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          zIndex: 1001,
+          ...mStyles.panelCompact(false),
+          ...mt.panelColors,
+        }}
+      >
+        <h3 style={{ ...mStyles.title, color: mt.title }}>Export Heatmap</h3>
+        <p style={{ ...mStyles.body, color: mt.subtitle, marginBottom: "20px" }}>Choose a format to download</p>
         <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
           {([
             { format: "png" as ExportFormat, label: "PNG", desc: "Best for presentations" },
             { format: "jpg" as ExportFormat, label: "JPG", desc: "Smaller file size" },
             { format: "pdf" as ExportFormat, label: "PDF", desc: "Print-ready document" },
           ]).map(({ format, label, desc }) => (
-            <button key={format} onClick={() => handleExport(format)} disabled={exporting} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "12px 16px", borderRadius: "8px", border: "1px solid rgba(255,255,255,0.08)", background: "rgba(255,255,255,0.04)", color: "var(--text, #f0f0f0)", fontSize: "0.88rem", fontWeight: 600, fontFamily: "inherit", cursor: exporting ? "wait" : "pointer", transition: "all 0.15s", textAlign: "left" }}>
+            <button
+              key={format}
+              onClick={() => handleExport(format)}
+              disabled={exporting}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                padding: "12px 16px",
+                borderRadius: "8px",
+                border: `1px solid ${mt.panelBorder}`,
+                background: "rgba(255,255,255,0.04)",
+                color: mt.title,
+                fontSize: "0.88rem",
+                fontWeight: 600,
+                fontFamily: "inherit",
+                cursor: exporting ? "wait" : "pointer",
+                transition: "all 0.15s",
+                textAlign: "left",
+              }}
+            >
               <div>
                 <div>{label}</div>
-                <div style={{ fontSize: "0.75rem", fontWeight: 400, color: "var(--text-muted, #6b7280)", marginTop: "2px" }}>{desc}</div>
+                <div style={{ fontSize: "0.75rem", fontWeight: 400, color: mt.muted, marginTop: "2px" }}>{desc}</div>
               </div>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, opacity: 0.5 }}>
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" />
@@ -84,7 +117,24 @@ export default function ExportHtmlModal({
             </button>
           ))}
         </div>
-        <button onClick={onClose} style={{ marginTop: "16px", width: "100%", padding: "10px", borderRadius: "8px", border: "1px solid rgba(255,255,255,0.08)", background: "transparent", color: "var(--text-secondary, #9ca3af)", fontSize: "0.82rem", fontWeight: 500, fontFamily: "inherit", cursor: "pointer" }}>Cancel</button>
+        <button
+          onClick={onClose}
+          style={{
+            marginTop: "16px",
+            width: "100%",
+            padding: "10px",
+            borderRadius: "8px",
+            border: `1px solid ${mt.panelBorder}`,
+            background: "transparent",
+            color: mt.subtitle,
+            fontSize: "0.82rem",
+            fontWeight: 500,
+            fontFamily: "inherit",
+            cursor: "pointer",
+          }}
+        >
+          Cancel
+        </button>
       </div>
     </>
   );
