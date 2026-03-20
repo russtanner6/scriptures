@@ -32,7 +32,7 @@ export default function Header({ showSubtitle = false }: { showSubtitle?: boolea
           <img
             src="/logo-full.svg"
             alt="Scripture Explorer"
-            style={{ height: "52px", width: "auto", maxWidth: "min(380px, 70vw)" }}
+            style={{ height: "48px", width: "auto", maxWidth: "min(480px, 75vw)" }}
           />
         </Link>
       </h1>
