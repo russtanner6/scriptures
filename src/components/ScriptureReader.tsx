@@ -828,10 +828,12 @@ export default function ScriptureReader() {
             </div>
           )}
 
-          {/* Layer toggles — no section headings, centered, same-size pills with colored active state */}
-          {!isLoading && (chapterSpeakers.length > 0 || chapterResources.length > 0 || hasModernText || hasNarration) && (
-            <div style={{ marginBottom: "20px", textAlign: "center" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", justifyContent: "center" }}>
+          {/* Layer toggles — no section headings, centered, uniform height, standard blue accent */}
+          {!isLoading && (chapterSpeakers.length > 0 || chapterResources.length > 0 || hasModernText || hasNarration) && (() => {
+            const toggleAccent = lightMode ? "#4A7FD4" : "#5B8DEF";
+            return (
+            <div style={{ marginBottom: "36px", textAlign: "center" }}>
+              <div style={{ display: "flex", alignItems: "stretch", gap: "8px", flexWrap: "wrap", justifyContent: "center" }}>
                 {chapterSpeakers.length > 0 && (
                   <button
                     onClick={() => {
@@ -843,13 +845,13 @@ export default function ScriptureReader() {
                       display: "inline-flex",
                       alignItems: "center",
                       gap: "4px",
-                      padding: "4px 12px",
-                      borderRadius: "6px",
-                      border: `1px solid ${showSpeakers ? `${volColor}50` : theme.border}`,
+                      padding: "7px 12px",
+                      borderRadius: "8px",
+                      border: `1px solid ${showSpeakers ? `${toggleAccent}50` : theme.border}`,
                       background: showSpeakers
-                        ? `${volColor}18`
-                        : "transparent",
-                      color: showSpeakers ? (lightMode ? volColor : volColor) : theme.textMuted,
+                        ? `${toggleAccent}18`
+                        : lightMode ? "rgba(0,0,0,0.03)" : "rgba(255,255,255,0.04)",
+                      color: showSpeakers ? toggleAccent : theme.textMuted,
                       fontSize: "0.68rem",
                       fontWeight: 600,
                       cursor: "pointer",
@@ -875,13 +877,13 @@ export default function ScriptureReader() {
                       display: "inline-flex",
                       alignItems: "center",
                       gap: "4px",
-                      padding: "4px 12px",
-                      borderRadius: "6px",
-                      border: `1px solid ${showResources ? `${volColor}50` : theme.border}`,
+                      padding: "7px 12px",
+                      borderRadius: "8px",
+                      border: `1px solid ${showResources ? `${toggleAccent}50` : theme.border}`,
                       background: showResources
-                        ? `${volColor}18`
-                        : "transparent",
-                      color: showResources ? (lightMode ? volColor : volColor) : theme.textMuted,
+                        ? `${toggleAccent}18`
+                        : lightMode ? "rgba(0,0,0,0.03)" : "rgba(255,255,255,0.04)",
+                      color: showResources ? toggleAccent : theme.textMuted,
                       fontSize: "0.68rem",
                       fontWeight: 600,
                       cursor: "pointer",
@@ -929,7 +931,7 @@ export default function ScriptureReader() {
                         left: `calc(${effectiveIndex * pillWidthPercent}% + 3px)`,
                         width: `calc(${pillWidthPercent}% - 6px)`,
                         borderRadius: "6px",
-                        background: volColor,
+                        background: toggleAccent,
                         transition: "left 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
                         zIndex: 0,
                       }} />
@@ -1095,7 +1097,8 @@ export default function ScriptureReader() {
               )}
 
             </div>
-          )}
+          );
+          })()}
 
           {/* Narration mode — chapter prose */}
           {!isLoading && readingMode === "narration" && chapterNarration && (
