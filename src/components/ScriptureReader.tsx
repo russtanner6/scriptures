@@ -1,12 +1,13 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import type { Volume, Resource, SpeakerAttribution, SpeakerType, ScriptureCharacter } from "@/lib/types";
+import type { Volume, Resource, SpeakerAttribution, SpeakerType, ScriptureCharacter, ScriptureLocation } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import { getVerseUrl } from "@/lib/scripture-urls";
 import ChapterInsights from "./ChapterInsights";
 import CharacterDetailPanel from "./CharacterDetailPanel";
+import LocationDetailPanel from "./LocationDetailPanel";
 import VersePopover from "./VersePopover";
 import ResourceMarker, { getResourceTypeColor } from "./ResourceMarker";
 import ResourcePanel from "./ResourcePanel";
@@ -88,6 +89,10 @@ export default function ScriptureReader() {
   const [allCharacters, setAllCharacters] = useState<ScriptureCharacter[]>([]);
   const [selectedCharacter, setSelectedCharacter] = useState<ScriptureCharacter | null>(null);
 
+  // Location panel
+  const [allLocations, setAllLocations] = useState<ScriptureLocation[]>([]);
+  const [selectedLocation, setSelectedLocation] = useState<ScriptureLocation | null>(null);
+
   // Reading mode: original (default), modern (verse-by-verse modern language), narration (chapter prose)
   type ReadingMode = "original" | "modern" | "narration";
   const [readingMode, setReadingMode] = useState<ReadingMode>("original");
@@ -113,6 +118,14 @@ export default function ScriptureReader() {
     fetch("/api/characters")
       .then((r) => r.json())
       .then((data) => setAllCharacters(data.characters || []))
+      .catch(() => {});
+  }, []);
+
+  // Load all locations (for entity linking + detail panel)
+  useEffect(() => {
+    fetch("/api/locations")
+      .then((r) => r.json())
+      .then((data) => setAllLocations(data.locations || []))
       .catch(() => {});
   }, []);
 
@@ -422,30 +435,199 @@ export default function ScriptureReader() {
   const searchMatchCount = verseMatches.reduce((sum, v) => sum + v.count, 0);
   const maxVerseMatches = Math.max(...verseMatches.map((v) => v.count), 1);
 
-  const renderVerseText = (text: string) => {
-    if (!activeHighlight) return text;
-    const escaped = activeHighlight.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    const regex = new RegExp(`(\\b${escaped}\\b)`, "gi");
-    const parts = text.split(regex);
-    // Use volume color for highlights
+  // ── Entity linking: first-mention hyperlinks for people and places ──
+  type EntityEntry = { type: "person"; entity: ScriptureCharacter } | { type: "place"; entity: ScriptureLocation };
+
+  // Build a map of name → entity, sorted by name length descending (longer names first)
+  const entityMap = useMemo(() => {
+    const map = new Map<string, EntityEntry>();
+    // Characters (people) — name + aliases
+    for (const c of allCharacters) {
+      if (!map.has(c.name.toLowerCase())) {
+        map.set(c.name.toLowerCase(), { type: "person", entity: c });
+      }
+      for (const alias of c.aliases) {
+        if (!map.has(alias.toLowerCase())) {
+          map.set(alias.toLowerCase(), { type: "person", entity: c });
+        }
+      }
+    }
+    // Locations (places) — name + aliases
+    for (const loc of allLocations) {
+      if (!map.has(loc.name.toLowerCase())) {
+        map.set(loc.name.toLowerCase(), { type: "place", entity: loc });
+      }
+      for (const alias of loc.aliases) {
+        if (!map.has(alias.toLowerCase())) {
+          map.set(alias.toLowerCase(), { type: "place", entity: loc });
+        }
+      }
+    }
+    return map;
+  }, [allCharacters, allLocations]);
+
+  // Build regex from all entity names, sorted by length descending to prevent partial matches
+  const entityRegex = useMemo(() => {
+    if (entityMap.size === 0) return null;
+    const names = Array.from(entityMap.keys())
+      .filter((n) => n.length >= 3) // skip very short names to avoid false positives
+      .sort((a, b) => b.length - a.length);
+    if (names.length === 0) return null;
+    const escaped = names.map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+    return new RegExp(`\\b(${escaped.join("|")})\\b`, "gi");
+  }, [entityMap]);
+
+  // Track first mentions per entity per chapter — resets when chapter or verses change
+  const firstMentions = useMemo(() => {
+    if (!entityRegex || verses.length === 0) return new Map<number, Map<number, EntityEntry>>();
+    // Map: verseNumber → Map<startIndex, EntityEntry>
+    const result = new Map<number, Map<number, EntityEntry>>();
+    const seen = new Set<string>(); // track entity IDs already linked
+
+    for (const v of verses) {
+      const text = readingMode === "modern" && v.text_modern ? v.text_modern : v.text;
+      let match: RegExpExecArray | null;
+      entityRegex.lastIndex = 0;
+      while ((match = entityRegex.exec(text)) !== null) {
+        const matchedName = match[1].toLowerCase();
+        const entry = entityMap.get(matchedName);
+        if (!entry) continue;
+        const entityId = entry.type === "person"
+          ? `person:${(entry.entity as ScriptureCharacter).id}`
+          : `place:${(entry.entity as ScriptureLocation).id}`;
+        if (seen.has(entityId)) continue;
+        seen.add(entityId);
+        if (!result.has(v.verse)) result.set(v.verse, new Map());
+        result.get(v.verse)!.set(match.index, entry);
+      }
+    }
+    return result;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [entityRegex, entityMap, verses, selectedChapter, readingMode]);
+
+  const renderVerseText = (text: string, verseNumber?: number) => {
     const volHighlightColor = selectedVolume ? VOLUME_COLORS[selectedVolume] || "#3B82F6" : "#3B82F6";
-    return parts.map((part, i) =>
-      regex.test(part) ? (
-        <mark
-          key={i}
-          style={{
-            background: lightMode ? `${volHighlightColor}30` : `${volHighlightColor}40`,
-            color: "inherit",
-            padding: "1px 3px",
-            borderRadius: "3px",
-          }}
-        >
-          {part}
-        </mark>
-      ) : (
-        <span key={i}>{part}</span>
-      )
-    );
+    const verseEntityMap = verseNumber ? firstMentions.get(verseNumber) : undefined;
+
+    // If no highlights and no entity links, return plain text
+    if (!activeHighlight && !verseEntityMap?.size) return text;
+
+    // Build a list of annotated ranges: entity links + search highlights
+    type Segment = { start: number; end: number; kind: "entity"; entry: EntityEntry }
+      | { start: number; end: number; kind: "highlight" };
+    const segments: Segment[] = [];
+
+    // Entity first-mention segments
+    if (verseEntityMap && entityRegex) {
+      entityRegex.lastIndex = 0;
+      let m: RegExpExecArray | null;
+      while ((m = entityRegex.exec(text)) !== null) {
+        if (verseEntityMap.has(m.index)) {
+          segments.push({ start: m.index, end: m.index + m[0].length, kind: "entity", entry: verseEntityMap.get(m.index)! });
+        }
+      }
+    }
+
+    // Search highlight segments
+    if (activeHighlight) {
+      const escaped = activeHighlight.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const hlRegex = new RegExp(`\\b${escaped}\\b`, "gi");
+      let m: RegExpExecArray | null;
+      while ((m = hlRegex.exec(text)) !== null) {
+        segments.push({ start: m.index, end: m.index + m[0].length, kind: "highlight" });
+      }
+    }
+
+    if (segments.length === 0) return text;
+
+    // Sort segments by start position; entity takes precedence over highlight at same position
+    segments.sort((a, b) => a.start - b.start || (a.kind === "entity" ? -1 : 1));
+
+    // Remove overlapping segments (earlier/longer wins)
+    const merged: Segment[] = [];
+    let lastEnd = 0;
+    for (const seg of segments) {
+      if (seg.start < lastEnd) continue; // skip overlapping
+      merged.push(seg);
+      lastEnd = seg.end;
+    }
+
+    // Build React elements
+    const elements: React.ReactNode[] = [];
+    let cursor = 0;
+    for (let i = 0; i < merged.length; i++) {
+      const seg = merged[i];
+      // Plain text before this segment
+      if (cursor < seg.start) {
+        elements.push(<span key={`t${i}`}>{text.slice(cursor, seg.start)}</span>);
+      }
+      const segText = text.slice(seg.start, seg.end);
+      if (seg.kind === "highlight") {
+        elements.push(
+          <mark
+            key={`h${i}`}
+            style={{
+              background: lightMode ? `${volHighlightColor}30` : `${volHighlightColor}40`,
+              color: "inherit",
+              padding: "1px 3px",
+              borderRadius: "3px",
+            }}
+          >
+            {segText}
+          </mark>
+        );
+      } else {
+        // Entity link
+        const entry = seg.entry;
+        elements.push(
+          <span
+            key={`e${i}`}
+            role="button"
+            tabIndex={0}
+            onClick={(e) => {
+              e.stopPropagation();
+              if (entry.type === "person") {
+                setSelectedCharacter(entry.entity as ScriptureCharacter);
+              } else {
+                setSelectedLocation(entry.entity as ScriptureLocation);
+              }
+            }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                e.stopPropagation();
+                if (entry.type === "person") {
+                  setSelectedCharacter(entry.entity as ScriptureCharacter);
+                } else {
+                  setSelectedLocation(entry.entity as ScriptureLocation);
+                }
+              }
+            }}
+            style={{
+              color: "inherit",
+              textDecoration: "underline",
+              textDecorationColor: lightMode ? "rgba(59, 130, 246, 0.5)" : "rgba(59, 130, 246, 0.4)",
+              textUnderlineOffset: "2px",
+              textDecorationThickness: "1.5px",
+              cursor: "pointer",
+              borderRadius: "2px",
+              transition: "text-decoration-color 0.15s",
+            }}
+            onMouseEnter={(e) => { e.currentTarget.style.textDecorationColor = "rgba(59, 130, 246, 0.8)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.textDecorationColor = lightMode ? "rgba(59, 130, 246, 0.5)" : "rgba(59, 130, 246, 0.4)"; }}
+          >
+            {segText}
+          </span>
+        );
+      }
+      cursor = seg.end;
+    }
+    // Remaining plain text
+    if (cursor < text.length) {
+      elements.push(<span key="tail">{text.slice(cursor)}</span>);
+    }
+
+    return <>{elements}</>;
   };
 
   // Color theme
@@ -1197,7 +1379,7 @@ export default function ScriptureReader() {
                       cursor: "pointer",
                     }}
                   >
-                    {renderVerseText(readingMode === "modern" && v.text_modern ? v.text_modern : v.text)}
+                    {renderVerseText(readingMode === "modern" && v.text_modern ? v.text_modern : v.text, v.verse)}
                   </span>
                   {/* Resource markers — one pill per resource type */}
                   {verseStartResources.length > 0 && (() => {
@@ -1680,6 +1862,15 @@ export default function ScriptureReader() {
             allCharacters={allCharacters}
             onClose={() => setSelectedCharacter(null)}
             onSelectCharacter={(c) => setSelectedCharacter(c)}
+          />
+        )}
+
+        {/* Location Detail Panel */}
+        {selectedLocation && (
+          <LocationDetailPanel
+            location={selectedLocation}
+            onClose={() => setSelectedLocation(null)}
+            onSelectLocation={(loc) => setSelectedLocation(loc)}
           />
         )}
       </div>
