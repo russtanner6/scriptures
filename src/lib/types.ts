@@ -107,6 +107,40 @@ export interface ScriptureCharacter {
   portraitUrl?: string;
 }
 
+// ── Location Directory ──
+export type LocationType =
+  | "city"
+  | "river"
+  | "mountain"
+  | "sea"
+  | "desert"
+  | "region"
+  | "valley"
+  | "well"
+  | "plain"
+  | "island"
+  | "garden"
+  | "land"
+  | "hill"
+  | "wilderness"
+  | "waters";
+
+export interface ScriptureLocation {
+  id: string;
+  name: string;
+  aliases: string[];
+  description: string;
+  lat: number | null;
+  lng: number | null;
+  region: string;
+  locationType: LocationType;
+  volumes: string[];
+  era: string;
+  significance: string;
+  tier: 1 | 2 | 3 | 4;
+  knownLocation: boolean;
+}
+
 export interface BookStat {
   bookId: number;
   bookName: string;

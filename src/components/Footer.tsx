@@ -16,6 +16,7 @@ const DISCOVER_LINKS = [
   { href: "/chiasmus", label: "Chiasmus Detector" },
   { href: "/read", label: "Scripture Reader" },
   { href: "/characters", label: "People" },
+  { href: "/locations", label: "Places" },
   { href: "/bookmarks", label: "Bookmarks" },
 ];
 

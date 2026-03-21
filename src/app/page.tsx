@@ -61,7 +61,13 @@ const PRIMARY_TOOLS = [
     href: "/characters",
     svgIcon: "/people.svg",
     name: "People",
-    description: "302 named individuals with bios, family trees, and portraits.",
+    description: "750+ named individuals with bios, family trees, and portraits.",
+  },
+  {
+    href: "/locations",
+    svgIcon: "/locations.svg",
+    name: "Places",
+    description: "333 scripture locations with maps, mention stats, and volume coverage.",
   },
   {
     href: "/parallel",

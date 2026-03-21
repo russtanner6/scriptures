@@ -24,6 +24,7 @@ const NAV_ITEMS: NavItem[] = [
   // Read — first section after Home
   { href: "/read", label: "Read Scriptures", svgIcon: "/scriptures.svg", section: "Read" },
   { href: "/characters", label: "People", svgIcon: "/people.svg" },
+  { href: "/locations", label: "Places", svgIcon: "/locations.svg" },
   { href: "/bookmarks", label: "Bookmarks", svgIcon: "/favorite.svg" },
 
   // Analysis
