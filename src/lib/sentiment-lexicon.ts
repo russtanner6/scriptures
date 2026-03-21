@@ -205,3 +205,48 @@ export function scoreText(text: string): ScoreResult {
 
   return { scores, wordCount: totalWords, lowConfidence };
 }
+
+/**
+ * Get the dominant tone category for a single verse.
+ * Returns the category with the most keyword hits (with negation handling),
+ * or null if the verse has no sentiment keywords.
+ * Used for verse-level tone coloring in the reader.
+ */
+export function getVerseDominantTone(text: string): SentimentCategory | null {
+  const words = text.toLowerCase().replace(/[^a-z'-]/g, " ").split(/\s+/);
+  const cleaned: string[] = [];
+  for (const w of words) {
+    const c = w.replace(/^['-]+|['-]+$/g, "");
+    if (c.length >= 2) cleaned.push(c);
+  }
+
+  const counts: Record<string, number> = {};
+  for (const cat of SENTIMENT_CATEGORIES) {
+    counts[cat.id] = 0;
+  }
+
+  for (let i = 0; i < cleaned.length; i++) {
+    let negated = false;
+    if (i >= 1 && NEGATION_WORDS.has(cleaned[i - 1])) negated = true;
+    if (!negated && i >= 2 && NEGATION_WORDS.has(cleaned[i - 2])) negated = true;
+    if (negated) continue;
+
+    for (const cat of SENTIMENT_CATEGORIES) {
+      if (cat.words.has(cleaned[i])) {
+        counts[cat.id]++;
+      }
+    }
+  }
+
+  let bestId = "";
+  let bestCount = 0;
+  for (const cat of SENTIMENT_CATEGORIES) {
+    if (counts[cat.id] > bestCount) {
+      bestCount = counts[cat.id];
+      bestId = cat.id;
+    }
+  }
+
+  if (bestCount === 0) return null;
+  return SENTIMENT_CATEGORIES.find((c) => c.id === bestId) || null;
+}

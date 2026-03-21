@@ -18,6 +18,7 @@ import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { modalStyles as mStyles, getModalTheme } from "@/lib/modal-styles";
 import { getAnnotationsForChapter } from "@/lib/annotations";
 import { useIsMobile } from "@/lib/useIsMobile";
+import { getVerseDominantTone, type SentimentCategory } from "@/lib/sentiment-lexicon";
 
 interface ReaderVerse {
   chapter: number;
@@ -85,6 +86,14 @@ export default function ScriptureReader() {
   const [showSpeakers, setShowSpeakers] = useState(true);
   const [chapterSpeakers, setChapterSpeakers] = useState<SpeakerAttribution[]>([]);
 
+  // Tone overlay layer
+  const [showToneOverlay, setShowToneOverlay] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("reader-show-tone") === "true";
+    }
+    return false;
+  });
+
   // Character panel
   const [allCharacters, setAllCharacters] = useState<ScriptureCharacter[]>([]);
   const [selectedCharacter, setSelectedCharacter] = useState<ScriptureCharacter | null>(null);
@@ -92,6 +101,17 @@ export default function ScriptureReader() {
   // Location panel
   const [allLocations, setAllLocations] = useState<ScriptureLocation[]>([]);
   const [selectedLocation, setSelectedLocation] = useState<ScriptureLocation | null>(null);
+
+  // Per-verse dominant tone (memoized)
+  const verseToneMap = useMemo(() => {
+    if (!showToneOverlay) return new Map<number, SentimentCategory>();
+    const map = new Map<number, SentimentCategory>();
+    for (const v of verses) {
+      const tone = getVerseDominantTone(v.text);
+      if (tone) map.set(v.verse, tone);
+    }
+    return map;
+  }, [verses, showToneOverlay]);
 
   // Reading mode: original (default), modern (verse-by-verse modern language), narration (chapter prose)
   type ReadingMode = "original" | "modern" | "narration";
@@ -971,7 +991,7 @@ export default function ScriptureReader() {
           )}
 
           {/* Layer toggles — no section headings, centered, uniform height, standard blue accent */}
-          {!isLoading && (chapterSpeakers.length > 0 || chapterResources.length > 0 || hasModernText || hasNarration) && (() => {
+          {!isLoading && (chapterSpeakers.length > 0 || chapterResources.length > 0 || hasModernText || hasNarration || verses.length > 0) && (() => {
             const toggleAccent = lightMode ? "#4A7FD4" : "#5B8DEF";
             return (
             <div style={{ marginBottom: "36px", textAlign: "center" }}>
@@ -1044,6 +1064,40 @@ export default function ScriptureReader() {
                     </span>
                   </button>
                 )}
+                {/* Tone overlay toggle */}
+                <button
+                  onClick={() => {
+                    const next = !showToneOverlay;
+                    setShowToneOverlay(next);
+                    localStorage.setItem("reader-show-tone", String(next));
+                  }}
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "4px",
+                    padding: "7px 12px",
+                    borderRadius: "8px",
+                    border: `1px solid ${showToneOverlay ? `${toggleAccent}50` : theme.border}`,
+                    background: showToneOverlay
+                      ? `${toggleAccent}18`
+                      : lightMode ? "rgba(0,0,0,0.03)" : "rgba(255,255,255,0.04)",
+                    color: showToneOverlay ? toggleAccent : theme.textMuted,
+                    fontSize: "0.68rem",
+                    fontWeight: 600,
+                    cursor: "pointer",
+                    fontFamily: "inherit",
+                    transition: "all 0.2s",
+                  }}
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                    <path d="M3 9h18" />
+                    <path d="M3 15h18" />
+                    <path d="M9 3v18" />
+                    <path d="M15 3v18" />
+                  </svg>
+                  Tone
+                </button>
                 {/* Three-way reading mode sliding toggle */}
                 {(hasModernText || hasNarration) && (() => {
                   const modes: ReadingMode[] = ["original", "modern", "narration"].filter((mode) => {
@@ -1232,6 +1286,8 @@ export default function ScriptureReader() {
               const verseCoveredBy = showResources
                 ? chapterResources.filter((r) => v.verse >= r.verseStart && v.verse <= r.verseEnd)
                 : [];
+              // Tone overlay for this verse
+              const verseTone = showToneOverlay ? verseToneMap.get(v.verse) : null;
               // Speaker attribution for this verse
               const verseSpeaker = showSpeakers
                 ? chapterSpeakers.find((s) => v.verse >= s.verseStart && v.verse <= s.verseEnd)
@@ -1354,13 +1410,21 @@ export default function ScriptureReader() {
                     style={{
                       flex: 1,
                       minWidth: 0,
-                      borderLeft: leftBorderColor ? `3px solid ${leftBorderColor}${speakerColor ? "50" : "25"}` : "3px solid transparent",
+                      borderLeft: leftBorderColor
+                        ? `3px solid ${leftBorderColor}${speakerColor ? "50" : "25"}`
+                        : verseTone
+                          ? `3px solid ${verseTone.color}30`
+                          : "3px solid transparent",
                       paddingLeft: "10px",
-                      paddingTop: speakerColor ? "4px" : undefined,
-                      paddingBottom: speakerColor ? "4px" : undefined,
-                      paddingRight: speakerColor ? "8px" : undefined,
-                      background: speakerColor ? `${speakerColor}08` : undefined,
-                      borderRadius: speakerColor ? "4px" : undefined,
+                      paddingTop: speakerColor || verseTone ? "4px" : undefined,
+                      paddingBottom: speakerColor || verseTone ? "4px" : undefined,
+                      paddingRight: speakerColor || verseTone ? "8px" : undefined,
+                      background: speakerColor
+                        ? `${speakerColor}08`
+                        : verseTone
+                          ? (lightMode ? `${verseTone.color}12` : `${verseTone.color}0a`)
+                          : undefined,
+                      borderRadius: speakerColor || verseTone ? "4px" : undefined,
                       transition: "border-color 0.3s ease, background 0.3s ease",
                     }}
                   >
