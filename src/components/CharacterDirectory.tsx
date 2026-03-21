@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo, useCallback } from "react";
+import { useSearchParams } from "next/navigation";
 import type { ScriptureCharacter } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import VolumeTooltip from "./VolumeTooltip";
@@ -38,6 +39,7 @@ const ERA_ORDER = [
 
 export default function CharacterDirectory() {
   const { isVolumeVisible } = usePreferencesContext();
+  const searchParams = useSearchParams();
   const [characters, setCharacters] = useState<ScriptureCharacter[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
@@ -48,6 +50,7 @@ export default function CharacterDirectory() {
   const [selectedCharacter, setSelectedCharacter] = useState<ScriptureCharacter | null>(null);
   const [showFilters, setShowFilters] = useState(false);
   const isMobile = useIsMobile();
+  const [deepLinkHandled, setDeepLinkHandled] = useState(false);
 
   useEffect(() => {
     fetch("/api/characters")
@@ -58,6 +61,19 @@ export default function CharacterDirectory() {
       })
       .catch(() => setIsLoading(false));
   }, []);
+
+  // Deep-link: auto-open character panel from ?person=characterId
+  useEffect(() => {
+    if (deepLinkHandled || characters.length === 0) return;
+    const personId = searchParams.get("person");
+    if (personId) {
+      const found = characters.find((c) => c.id === personId);
+      if (found) {
+        setSelectedCharacter(found);
+      }
+      setDeepLinkHandled(true);
+    }
+  }, [characters, searchParams, deepLinkHandled]);
 
   // Extract unique values for filters
   const eras = useMemo(() => {
@@ -168,7 +184,7 @@ export default function CharacterDirectory() {
               }}>
                 {v}
               </span>
-              <span style={{ fontSize: "0.72rem", color: "var(--text-muted)" }}>
+              <span style={{ fontSize: "0.72rem", color: "var(--text-secondary)" }}>
                 {VOLUME_LABELS[v]}
               </span>
             </div>

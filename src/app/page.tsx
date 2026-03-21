@@ -273,7 +273,7 @@ export default function HomePage() {
           {/* Spotlight Character */}
           {spotlightChar && (
             <Link
-              href="/characters"
+              href={`/characters?person=${spotlightChar.id}`}
               style={{
                 display: "block",
                 textDecoration: "none",
@@ -428,7 +428,7 @@ export default function HomePage() {
                 {featuredChars.map((c) => (
                   <Link
                     key={c.id}
-                    href="/characters"
+                    href={`/characters?person=${c.id}`}
                     style={{
                       textDecoration: "none",
                       textAlign: "center",
