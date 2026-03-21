@@ -92,7 +92,7 @@ export default function NavMenu({
           textDecoration: "none",
           fontSize: "0.88rem",
           fontWeight: isActive ? 600 : 500,
-          color: isActive ? "#fff" : "var(--text-secondary)",
+          color: "#fefefe",
           background: isActive ? "rgba(255, 255, 255, 0.08)" : "transparent",
           border: isActive ? "1px solid rgba(255, 255, 255, 0.14)" : "1px solid transparent",
           transition: "all 0.15s ease",
@@ -105,7 +105,7 @@ export default function NavMenu({
             style={{
               width: "18px",
               height: "18px",
-              filter: isActive ? "invert(1) brightness(1)" : "invert(1) brightness(0.7)",
+              filter: "invert(1) brightness(1)",
               transition: "filter 0.15s",
             }}
           />
