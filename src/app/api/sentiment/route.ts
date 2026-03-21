@@ -30,6 +30,8 @@ export async function GET(request: NextRequest) {
     bookName: string;
     chapter: number;
     scores: Record<string, number>;
+    wordCount: number;
+    lowConfidence: boolean;
     verseCount: number;
   }[] = [];
 
@@ -49,12 +51,14 @@ export async function GET(request: NextRequest) {
       verseStmt.free();
 
       if (verseCount > 0) {
-        const scores = scoreText(allText);
+        const result = scoreText(allText);
         chapters.push({
           bookId: book.id,
           bookName: book.name === "Doctrine and Covenants" ? "D&C" : book.name,
           chapter: ch,
-          scores,
+          scores: result.scores,
+          wordCount: result.wordCount,
+          lowConfidence: result.lowConfidence,
           verseCount,
         });
       }

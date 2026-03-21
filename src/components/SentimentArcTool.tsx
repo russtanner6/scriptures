@@ -44,6 +44,8 @@ interface ChapterScore {
   bookName: string;
   chapter: number;
   scores: Record<string, number>;
+  wordCount: number;
+  lowConfidence: boolean;
   verseCount: number;
 }
 
@@ -321,6 +323,21 @@ export default function SentimentArcTool() {
                               ? `Section ${ch.chapter}`
                               : `${ch.bookName} ${ch.chapter}`;
                           },
+                          label: (context: any) => {
+                            const val = context.parsed?.y;
+                            const label = context.dataset?.label || "";
+                            return `${label}: ${val?.toFixed(1)} per 1k words`;
+                          },
+                          afterBody: (items: any) => {
+                            const idx = items[0]?.dataIndex;
+                            if (idx == null) return "";
+                            const ch = chapters[idx];
+                            const lines: string[] = [];
+                            if (ch.lowConfidence) {
+                              lines.push("⚠ Short chapter — data may be skewed");
+                            }
+                            return lines;
+                          },
                         },
                       },
                       datalabels: { display: false },
@@ -348,6 +365,12 @@ export default function SentimentArcTool() {
                       },
                       y: {
                         beginAtZero: true,
+                        title: {
+                          display: !isMobile,
+                          text: "Frequency per 1,000 words",
+                          color: "rgba(255,255,255,0.5)",
+                          font: { size: 11 },
+                        },
                         ticks: {
                           color: "rgba(255,255,255,0.5)",
                           font: { size: 10 },
@@ -442,10 +465,12 @@ export default function SentimentArcTool() {
 
         <MethodSection title="Scoring Method">
           <p style={{ margin: "0 0 8px" }}>
-            For each chapter, every word is checked against all 7 category word lists. The score for a category
-            in a given chapter is simply the <strong style={{ color: "var(--text)" }}>count of matching words</strong>.
-            This raw count approach means longer chapters naturally produce higher scores — the chart reflects
-            both the density and the volume of thematic language.
+            For each chapter, every word is checked against all 7 category word lists. Scores
+            are <strong style={{ color: "var(--text)" }}>normalized to frequency per 1,000 words</strong>,
+            so short and long chapters are directly comparable. A 2-word negation look-back skips
+            keywords preceded by words like &ldquo;not,&rdquo; &ldquo;no,&rdquo; &ldquo;never,&rdquo;
+            or &ldquo;without&rdquo; — so &ldquo;shall not destroy&rdquo; no longer inflates
+            the Warning score. Chapters under 50 words receive a dampening factor to reduce noise.
           </p>
         </MethodSection>
 
@@ -461,11 +486,10 @@ export default function SentimentArcTool() {
         <MethodSection title="Known Limitations">
           <p style={{ margin: "0" }}>
             This is <strong style={{ color: "var(--text)" }}>keyword frequency analysis, not natural language
-            understanding</strong>. It counts words without regard to context, negation, or figurative use.
-            A verse saying &ldquo;there shall be no peace&rdquo; would still register &ldquo;peace&rdquo; in
-            the Promise category. Some words appear in multiple categories where the overlap is meaningful.
-            The tool is designed to surface patterns for further study — it identifies <em>where</em> to look,
-            not <em>what</em> to conclude.
+            understanding</strong>. While basic negation is handled (2-word look-back), it cannot detect
+            figurative use, sarcasm, or complex grammatical structures. Some words appear in multiple
+            categories where the overlap is meaningful. The tool is designed to surface patterns for
+            further study — it identifies <em>where</em> to look, not <em>what</em> to conclude.
           </p>
         </MethodSection>
 

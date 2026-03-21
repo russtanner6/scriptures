@@ -128,6 +128,14 @@ export const SENTIMENT_CATEGORIES: SentimentCategory[] = [
   },
 ];
 
+/** Negation words — if one of these appears within 2 words before a keyword, skip the hit */
+const NEGATION_WORDS = new Set([
+  "not", "no", "never", "neither", "nor", "none", "without", "cannot",
+  "dont", "doesnt", "didnt", "wont", "wouldnt", "shouldnt", "couldnt",
+  "hardly", "scarcely", "barely", "lack", "lacking", "absent",
+  "nay", "nought", "naught",
+]);
+
 /** Quick lookup: word → category IDs */
 const wordToCategoryCache = new Map<string, string[]>();
 
@@ -141,21 +149,59 @@ export function getWordCategories(word: string): string[] {
   return cats;
 }
 
-/** Score a block of text against all categories. Returns { categoryId: count } */
-export function scoreText(text: string): Record<string, number> {
-  const scores: Record<string, number> = {};
+export interface ScoreResult {
+  scores: Record<string, number>;   // normalized: per 1,000 words, 1 decimal
+  wordCount: number;
+  lowConfidence: boolean;            // true when wordCount < 50
+}
+
+/**
+ * Score a block of text against all categories.
+ * Returns normalized scores (per 1,000 words) with negation handling.
+ */
+export function scoreText(text: string): ScoreResult {
+  const rawScores: Record<string, number> = {};
   for (const cat of SENTIMENT_CATEGORIES) {
-    scores[cat.id] = 0;
+    rawScores[cat.id] = 0;
   }
+
   const words = text.toLowerCase().replace(/[^a-z'-]/g, " ").split(/\s+/);
+  const cleaned: string[] = [];
   for (const w of words) {
-    const clean = w.replace(/^['-]+|['-]+$/g, "");
-    if (clean.length < 2) continue;
+    const c = w.replace(/^['-]+|['-]+$/g, "");
+    if (c.length >= 2) cleaned.push(c);
+  }
+
+  const totalWords = cleaned.length;
+
+  for (let i = 0; i < cleaned.length; i++) {
+    const word = cleaned[i];
+    // 2-word look-back negation check
+    let negated = false;
+    if (i >= 1 && NEGATION_WORDS.has(cleaned[i - 1])) negated = true;
+    if (!negated && i >= 2 && NEGATION_WORDS.has(cleaned[i - 2])) negated = true;
+    if (negated) continue;
+
     for (const cat of SENTIMENT_CATEGORIES) {
-      if (cat.words.has(clean)) {
-        scores[cat.id]++;
+      if (cat.words.has(word)) {
+        rawScores[cat.id]++;
       }
     }
   }
-  return scores;
+
+  // Normalize to per-1,000-words
+  const scores: Record<string, number> = {};
+  const lowConfidence = totalWords < 50;
+  const dampening = lowConfidence ? 0.5 : 1;
+
+  for (const cat of SENTIMENT_CATEGORIES) {
+    if (totalWords === 0) {
+      scores[cat.id] = 0;
+    } else {
+      const normalized = (rawScores[cat.id] / totalWords) * 1000 * dampening;
+      scores[cat.id] = Math.round(normalized * 10) / 10;
+    }
+  }
+
+  return { scores, wordCount: totalWords, lowConfidence };
 }
