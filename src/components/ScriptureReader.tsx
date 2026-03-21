@@ -747,7 +747,7 @@ export default function ScriptureReader() {
             justifyContent: "space-between",
           }}
         >
-          {/* Tree logo — centered on desktop, opens nav menu */}
+          {/* Tree logo — centered, links to home */}
           {!isMobile && (
             <div style={{
               position: "absolute",
@@ -757,9 +757,9 @@ export default function ScriptureReader() {
               justifyContent: "center",
               pointerEvents: "none",
             }}>
-              <button
-                onClick={() => setMenuOpen(true)}
-                title="Menu"
+              <a
+                href="/"
+                title="Home"
                 style={{
                   background: "none",
                   border: "none",
@@ -770,12 +770,13 @@ export default function ScriptureReader() {
                   display: "flex",
                   alignItems: "center",
                   pointerEvents: "auto",
+                  textDecoration: "none",
                 }}
                 onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.6"; }}
               >
-                <img src="/tree-logo.svg" alt="Menu" style={{ height: "22px", width: "auto" }} />
-              </button>
+                <img src="/tree-logo.svg" alt="Home" style={{ height: "22px", width: "auto" }} />
+              </a>
             </div>
           )}
           <div style={{ display: "flex", alignItems: "center", gap: "12px", minWidth: 0 }}>
@@ -861,6 +862,26 @@ export default function ScriptureReader() {
                   <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
                 </svg>
               )}
+            </button>
+            {/* Hamburger menu */}
+            <button
+              onClick={() => setMenuOpen(true)}
+              title="Menu"
+              style={{
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                padding: "4px 0",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-end",
+                gap: "4px",
+                color: bar.textSecondary,
+              }}
+            >
+              <span style={{ display: "block", width: "12px", height: "1.5px", background: "#fefefe", borderRadius: "1px" }} />
+              <span style={{ display: "block", width: "18px", height: "1.5px", background: "#fefefe", borderRadius: "1px" }} />
+              <span style={{ display: "block", width: "15px", height: "1.5px", background: "#fefefe", borderRadius: "1px" }} />
             </button>
           </div>
         </div>
