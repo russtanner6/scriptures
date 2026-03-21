@@ -1,5 +1,21 @@
 # Scripture Explorer — Session Log
 
+## 2026-03-21 — Session 12: Sentiment Enhancement + Tone Overlay + Character Radar
+
+### What was done
+- **Sentiment analysis enhancement** — Normalized scores to per-1,000-words for cross-chapter comparability. Added 25-word negation set with 2-word look-back (not, no, never, without, etc.). Low-volume dampening (0.5x for chapters under 50 words). New `ScoreResult` interface with `wordCount` and `lowConfidence` fields.
+- **Sentiment Arc UI updates** — Y-axis label "Frequency per 1,000 words", tooltips show "X per 1k words" with low-confidence warning for short chapters. Updated methodology modal to document negation handling.
+- **Tone overlay in reader** — New "Tone" toggle button in reader layer toggles. Per-verse dominant tone scoring via `getVerseDominantTone()`. Subtle colored backgrounds and left borders by sentiment category. Memoized for performance.
+- **Character tone profile radar** — New `/api/character-sentiment` endpoint scoring mention verses against 7 sentiment categories. Radar chart in CharacterDetailPanel using Chart.js RadialLinearScale. Color-coded axis labels, purple fill area for RPG-style stat visualization.
+
+### Key technical details
+- `scoreText()` now returns `{ scores, wordCount, lowConfidence }` instead of just scores
+- Negation handling: 2-word look-back before each keyword, skips hit if negated
+- `getVerseDominantTone()`: lightweight per-verse scoring for reader overlay
+- Character sentiment API scans all 42k verses with regex, averages normalized scores
+
+---
+
 ## 2026-03-21 — Session 10: Characters Expansion + Locations Feature + Entity Linking
 
 ### What was done

@@ -59,7 +59,7 @@ src/
 │   ├── bookmarks/     # Saved verse bookmarks
 │   ├── characters/    # Character directory page (757 people)
 │   ├── locations/     # Location directory page (333 places)
-│   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats, word-cloud, chapter-stats, random-verse, sentiment, parallel-passages, chiasmus, topic-similarity, chapter-characters, characters, character-mentions, locations, location-mentions, resources)
+│   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats, word-cloud, chapter-stats, random-verse, sentiment, parallel-passages, chiasmus, topic-similarity, chapter-characters, characters, character-mentions, character-sentiment, locations, location-mentions, resources)
 ├── components/
 │   ├── WordFrequencyTool.tsx  # Main search interface (wheel zoom desktop, swipe mobile)
 │   ├── NarrativeArcTool.tsx   # Multi-term narrative arc (wheel zoom desktop, swipe mobile)
@@ -86,9 +86,9 @@ src/
 │   ├── DataTable.tsx          # Sortable results table with ▲▼ sort icons
 │   ├── StatCard.tsx           # Stat pills
 │   ├── ScripturePanel.tsx     # Right-side slider panel for verse viewing
-│   ├── ScriptureReader.tsx    # Full scripture reader (~1600 lines) with insights, search, progress, annotations, resources, Word Explorer, modern language toggle, per-speaker unique colors
+│   ├── ScriptureReader.tsx    # Full scripture reader (~2100 lines) with insights, search, progress, annotations, resources, Word Explorer, modern language toggle, per-speaker unique colors, tone overlay
 │   ├── CharacterDirectory.tsx # Character directory page with 757 people, filters, search
-│   ├── CharacterDetailPanel.tsx # Slide-in character detail with bio, aliases, mentions, family tree
+│   ├── CharacterDetailPanel.tsx # Slide-in character detail with bio, aliases, mentions, family tree, tone radar chart
 │   ├── VolumeTooltip.tsx      # Styled hover tooltip for volume abbreviations (OT → "Old Testament")
 │   ├── ResourceMarker.tsx     # Inline pill markers for resources (video/article/PDF) + overflow badge
 │   ├── ResourcePanel.tsx      # Slide-in side panel for resource details (YouTube embed, tags, navigation)
@@ -107,7 +107,7 @@ src/
 │   ├── annotations.ts         # Personal verse notes CRUD (localStorage) (NEW)
 │   ├── reading-progress.ts    # Reading streaks + chapter completion tracking (localStorage)
 │   ├── scripture-urls.ts      # Verse reference URL builder
-│   ├── sentiment-lexicon.ts   # 7 tone categories with word lists + scoring (NEW)
+│   ├── sentiment-lexicon.ts   # 7 tone categories with word lists, negation handling, per-1k-word normalization, verse-level tone detection
 │   ├── chiasmus-detector.ts   # Chiasmus (ABBA pattern) detection algorithm
 │   ├── useIsMobile.ts         # Shared debounced responsive hook (replaces 15 inline duplicates)
 │   ├── useBackToClose.ts      # Hook: mobile back-button closes panels instead of navigating away
@@ -246,6 +246,7 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - `/api/topic-similarity` — Find thematically similar chapters via cosine similarity
 - `/api/resources` — Fetch linked resources (videos, articles, PDFs) for a book+chapter
 - `/api/locations` — All 333 scripture locations from locations.json
+- `/api/character-sentiment` — Sentiment scores for a character's mention verses (7 categories, averaged per-1k-words)
 - `/api/location-mentions` — Mention stats for a location (reuses getCharacterMentions)
 
 ## Key Patterns
