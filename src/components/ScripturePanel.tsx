@@ -123,9 +123,10 @@ export default function ScripturePanel({
 
     if (isMultiWord) {
       // Multi-word: split by pipe, escape each, join with alternation
+      // Use non-capturing group (?:) to avoid double captures in .split()
       const words = word.split("|").map((w) => w.trim()).filter(Boolean);
       const escapedWords = words.map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
-      pattern = `\\b(${escapedWords.join("|")})\\b`;
+      pattern = `\\b(?:${escapedWords.join("|")})\\b`;
     } else {
       const isPhrase = /^".*"$/.test(word) || /^'.*'$/.test(word);
       const searchTerm = isPhrase ? word.slice(1, -1) : word;
