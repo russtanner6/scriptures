@@ -487,6 +487,18 @@ export async function getMatchingVerses(
     params
   );
 
+  // Multi-word search: pipe-delimited words (e.g., "bless|blessed|mercy|grace")
+  const isMultiWord = word.includes("|");
+  if (isMultiWord) {
+    const words = word.split("|").map((w) => w.trim()).filter(Boolean);
+    const escapedWords = words.map((w) => escapeRegex(w));
+    const altPattern = `\\b(${escapedWords.join("|")})\\b`;
+    const flags = caseInsensitive ? "gi" : "g";
+    const regex = new RegExp(altPattern, flags);
+    const matching = verses.filter((v) => regex.test(v.text));
+    return { bookName, verses: matching };
+  }
+
   // Detect phrase search
   const isPhrase = /^".*"$/.test(word) || /^'.*'$/.test(word);
   const searchTerm = isPhrase ? word.slice(1, -1) : word;

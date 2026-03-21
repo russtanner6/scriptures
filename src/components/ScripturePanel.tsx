@@ -14,6 +14,7 @@ export default function ScripturePanel({
   caseInsensitive,
   wholeWord,
   volumeColor,
+  displayLabel,
   onClose,
 }: ScripturePanelState & { onClose: () => void }) {
   const [verses, setVerses] = useState<Verse[]>([]);
@@ -115,12 +116,23 @@ export default function ScripturePanel({
     swipeEngaged.current = false;
   }, [onClose]);
 
-  // Highlight the search word in verse text
+  // Highlight the search word(s) in verse text
   const highlightWord = (text: string) => {
-    const isPhrase = /^".*"$/.test(word) || /^'.*'$/.test(word);
-    const searchTerm = isPhrase ? word.slice(1, -1) : word;
-    const escaped = searchTerm.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    const pattern = wholeWord && !isPhrase ? `\\b${escaped}\\b` : escaped;
+    const isMultiWord = word.includes("|");
+    let pattern: string;
+
+    if (isMultiWord) {
+      // Multi-word: split by pipe, escape each, join with alternation
+      const words = word.split("|").map((w) => w.trim()).filter(Boolean);
+      const escapedWords = words.map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+      pattern = `\\b(${escapedWords.join("|")})\\b`;
+    } else {
+      const isPhrase = /^".*"$/.test(word) || /^'.*'$/.test(word);
+      const searchTerm = isPhrase ? word.slice(1, -1) : word;
+      const escaped = searchTerm.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      pattern = wholeWord && !isPhrase ? `\\b${escaped}\\b` : escaped;
+    }
+
     const regex = new RegExp(`(${pattern})`, caseInsensitive ? "gi" : "g");
     const parts = text.split(regex);
 
@@ -249,7 +261,9 @@ export default function ScripturePanel({
               >
                 {isLoading
                   ? "Loading verses..."
-                  : `${verses.length} verse${verses.length !== 1 ? "s" : ""} containing "${word}"`}
+                  : displayLabel
+                    ? `${verses.length} verse${verses.length !== 1 ? "s" : ""} with ${displayLabel} words`
+                    : `${verses.length} verse${verses.length !== 1 ? "s" : ""} containing "${word}"`}
               </p>
             </div>
             <button

@@ -379,16 +379,17 @@ export default function SentimentArcTool() {
                         const activeCats = SENTIMENT_CATEGORIES.filter((c) => activeCategories.has(c.id));
                         const cat = activeCats[dsIdx];
                         if (cat) {
-                          // Use the first word from the category as search
-                          const firstWord = Array.from(cat.words)[0];
+                          // Pass ALL category words so panel shows every matching verse
+                          const allWords = Array.from(cat.words).join("|");
                           setPanel({
-                            word: firstWord,
+                            word: allWords,
                             bookId: ch.bookId,
                             bookName: ch.bookName,
                             chapter: ch.chapter,
                             caseInsensitive: true,
                             wholeWord: true,
                             volumeColor: cat.color,
+                            displayLabel: cat.label,
                           });
                         }
                       }

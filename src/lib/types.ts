@@ -40,6 +40,8 @@ export interface ScripturePanelState {
   caseInsensitive: boolean;
   wholeWord: boolean;
   volumeColor?: string;
+  /** Optional display label for the header (e.g., category name for sentiment) */
+  displayLabel?: string;
 }
 
 export interface MatchedWord {
