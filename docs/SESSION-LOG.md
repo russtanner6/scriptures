@@ -1,5 +1,16 @@
 # Scripture Explorer — Session Log
 
+## 2026-03-21 — Session 10: Characters Expansion + Locations Feature + Entity Linking
+
+### What was done
+- **Character database expanded** from 302 → 757 people across all 5 volumes (OT 265, NT 214, BoM 202, D&C 165, PoGP 50).
+- **Portraits needed list** — 41 prominent characters (tier 1-2) need portraits (`docs/PORTRAITS-NEEDED.md`).
+- **Locations database** — 333 places (`data/locations.json`): 183 with GPS coordinates, 150 without.
+- **Location feature** — LocationDetailPanel (OpenStreetMap embed, Google Maps link, mention stats), LocationDirectory page, API routes, nav/footer/home integration.
+- **Entity linking** — ScriptureReader auto-hyperlinks first mention of each person/place per chapter. Subtle blue underline, click opens detail panels.
+
+---
+
 ## 2026-03-21 — Session 9: Mobile UX Polish + Speaker Accuracy
 
 ### What was done

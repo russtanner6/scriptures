@@ -57,8 +57,9 @@ src/
 │   ├── settings/      # User preferences (volume visibility, theology mode)
 │   ├── read/          # Scripture reader (volume → book → chapter)
 │   ├── bookmarks/     # Saved verse bookmarks
-│   ├── characters/    # Character directory page
-│   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats, word-cloud, chapter-stats, random-verse, sentiment, parallel-passages, chiasmus, topic-similarity, chapter-characters, characters, character-mentions, resources)
+│   ├── characters/    # Character directory page (757 people)
+│   ├── locations/     # Location directory page (333 places)
+│   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats, word-cloud, chapter-stats, random-verse, sentiment, parallel-passages, chiasmus, topic-similarity, chapter-characters, characters, character-mentions, locations, location-mentions, resources)
 ├── components/
 │   ├── WordFrequencyTool.tsx  # Main search interface (wheel zoom desktop, swipe mobile)
 │   ├── NarrativeArcTool.tsx   # Multi-term narrative arc (wheel zoom desktop, swipe mobile)
@@ -76,6 +77,8 @@ src/
 │   ├── MethodologyModal.tsx   # Shared: MethodologyModal, MethodSection, MethodNote, MethodLink
 │   ├── ChapterInsights.tsx    # Collapsible chapter insights: People pills, Speaker Timeline, Key Themes
 │   ├── VersePopover.tsx       # Verse tap popover (copy, bookmark, key words, notes)
+│   ├── LocationDirectory.tsx   # Location directory page with filters, search, detail panel
+│   ├── LocationDetailPanel.tsx # Slide-in location detail with map, mentions, volume heatmap
 │   ├── BookmarksList.tsx      # Bookmarks page with volume grouping
 │   ├── SvgIcon.tsx            # Inline SVG icon helper
 │   ├── ExportHtmlModal.tsx    # HTML-to-image export (html2canvas)
@@ -84,7 +87,7 @@ src/
 │   ├── StatCard.tsx           # Stat pills
 │   ├── ScripturePanel.tsx     # Right-side slider panel for verse viewing
 │   ├── ScriptureReader.tsx    # Full scripture reader (~1600 lines) with insights, search, progress, annotations, resources, Word Explorer, modern language toggle, per-speaker unique colors
-│   ├── CharacterDirectory.tsx # Character directory page with 302 people, filters, search
+│   ├── CharacterDirectory.tsx # Character directory page with 757 people, filters, search
 │   ├── CharacterDetailPanel.tsx # Slide-in character detail with bio, aliases, mentions, family tree
 │   ├── VolumeTooltip.tsx      # Styled hover tooltip for volume abbreviations (OT → "Old Testament")
 │   ├── ResourceMarker.tsx     # Inline pill markers for resources (video/article/PDF) + overflow badge
@@ -106,9 +109,10 @@ src/
 │   ├── scripture-urls.ts      # Verse reference URL builder
 │   ├── sentiment-lexicon.ts   # 7 tone categories with word lists + scoring (NEW)
 │   ├── chiasmus-detector.ts   # Chiasmus (ABBA pattern) detection algorithm
+│   ├── useIsMobile.ts         # Shared debounced responsive hook (replaces 15 inline duplicates)
 │   ├── useBackToClose.ts      # Hook: mobile back-button closes panels instead of navigating away
 │   └── modal-styles.ts        # Shared popup/modal styling tokens
-data/                          # scriptures.db + sql-wasm.wasm + parallel-passages.json + timeline.json + resources.json + speakers.json + characters.json + web-bible.json
+data/                          # scriptures.db + sql-wasm.wasm + parallel-passages.json + timeline.json + resources.json + speakers.json + characters.json + locations.json + web-bible.json
 scripts/                       # build-db.ts, book-order.ts, build-speakers.ts, build-speakers-lds.ts, merge-speakers.ts, add-modern-text.ts
 ```
 
@@ -195,7 +199,8 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 10. **Timeline** (`/timeline`) — SHELVED. Code preserved but removed from nav/footer/home page.
 11. **Scripture Reader** (`/read`) — Full reading experience with light/dark mode, font size, keyboard nav, reading progress, Chapter Insights, verse popover, annotations, Word Explorer panel, modern language toggle (OT/NT only). Reading streaks. Cream light theme (#f8f6f1), lighter dark theme (#1a1a21), gradient progress bar, centered tree logo.
 12. **Bookmarks** (`/bookmarks`) — Saved verses grouped by volume.
-13. **Settings** (`/settings`) — User preferences: volume visibility toggles (color-coded, descriptions), OT interpretation mode (LDS/Traditional). Changes save immediately to localStorage. Accessible from nav menu.
+13. **Locations** (`/locations`) — Location directory: 333 named places across all volumes. Search, filter by volume/type/region. Location cards with type emoji, volume pills, significance. Clicking opens LocationDetailPanel with OpenStreetMap embed (for known locations), mention stats, volume heatmap, top books, Google Maps link.
+14. **Settings** (`/settings`) — User preferences: volume visibility toggles (color-coded, descriptions), OT interpretation mode (LDS/Traditional). Changes save immediately to localStorage. Accessible from nav menu.
 
 ## Key Components
 - **ScripturePanel** — Right-side slider panel showing matching verses when clicking chart data points.
@@ -240,6 +245,8 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - `/api/chiasmus` — Detect chiastic patterns in a chapter (uses chiasmus-detector.ts)
 - `/api/topic-similarity` — Find thematically similar chapters via cosine similarity
 - `/api/resources` — Fetch linked resources (videos, articles, PDFs) for a book+chapter
+- `/api/locations` — All 333 scripture locations from locations.json
+- `/api/location-mentions` — Mention stats for a location (reuses getCharacterMentions)
 
 ## Key Patterns
 - `displayName()` in queries.ts normalizes all volume and book names (D&C fix)
@@ -250,7 +257,9 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - Deep linking: URL params updated on search, read on mount
 - Single-book volume detection: `vol.books.length === 1` triggers chapter-level plotting
 - **Speaker data:** Bible speakers from Clear-Bible/speaker-quotations (6,913 entries). BoM/D&C/PoGP from `build-speakers-lds.ts` (718 entries, text-pattern analysis + explicit chapter overrides). Merged via `merge-speakers.ts`. 7,631 total across 82 books. QA'd against 26 key chapters. Each "other" speaker gets unique color from 10-color palette (not shared).
-- **Character data:** `data/characters.json` — 302 named individuals with bios, aliases, family relationships, portraits (~40), volumes, tiers. `/api/chapter-characters` finds characters per chapter via speaker matching + whole-word text scanning with volume-aware deduplication.
+- **Character data:** `data/characters.json` — 757 named individuals with bios, aliases, family relationships, portraits (~40 of 71 prominent), volumes, tiers (1-4). Tiers 1-2 are "prominent" (71 people). `/api/chapter-characters` finds characters per chapter via speaker matching + whole-word text scanning with volume-aware deduplication.
+- **Location data:** `data/locations.json` — 333 named scripture locations with descriptions, coordinates (183 known), aliases, region, type, era, significance, tiers. BoM locations have `knownLocation: false`. D&C/PoGP real-world sites have GPS coordinates. `/api/locations` serves all, `/api/location-mentions` reuses character mention search for text scanning.
+- **Entity linking:** ScriptureReader auto-links first mentions of people and places in each chapter. Builds regex from all character/location names+aliases (longest first), tracks first occurrence per entity per chapter. Subtle blue underline styling. Clicking opens CharacterDetailPanel or LocationDetailPanel.
 - **VolumeTooltip:** Reusable component wrapping volume abbreviation pills/badges. Shows full name on hover (600ms delay). Applied to CharacterDetailPanel, CharacterDirectory, home page.
 - **useBackToClose:** Shared hook for mobile back-button panel close. Pushes history state, listens for popstate. Used by all slide-in panels and modals.
 - **User Preferences System:** `PreferencesProvider` context wraps the app (in layout.tsx). All components use `usePreferencesContext()` to get `isVolumeVisible()`, `displaySpeakerName()`, `theologyMode`. New tools/features MUST call `usePreferencesContext()` and filter volumes accordingly. Preferences stored in localStorage as abbreviation keys. Merge-with-defaults pattern ensures forward compatibility.
