@@ -242,6 +242,7 @@ export default function SentimentArcTool() {
         </div>
       )}
 
+      <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
       {volumes
         .filter((v) => results.has(v.id) && selectedVolumes.includes(v.id))
         .map((vol) => {
@@ -400,6 +401,7 @@ export default function SentimentArcTool() {
             </DashboardCard>
           );
         })}
+      </div>
 
       {panel && (
         <ScripturePanel
