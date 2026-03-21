@@ -135,9 +135,12 @@ export default function ScripturePanel({
 
     const regex = new RegExp(`(${pattern})`, caseInsensitive ? "gi" : "g");
     const parts = text.split(regex);
+    // Use a separate non-global regex for testing — the 'g' flag causes
+    // lastIndex state to persist between test() calls, breaking alternation
+    const testRegex = new RegExp(`^(${pattern})$`, caseInsensitive ? "i" : "");
 
     return parts.map((part, i) =>
-      regex.test(part) ? (
+      testRegex.test(part) ? (
         <mark
           key={i}
           style={{

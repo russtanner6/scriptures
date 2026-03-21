@@ -493,7 +493,9 @@ export async function getMatchingVerses(
     const words = word.split("|").map((w) => w.trim()).filter(Boolean);
     const escapedWords = words.map((w) => escapeRegex(w));
     const altPattern = `\\b(${escapedWords.join("|")})\\b`;
-    const flags = caseInsensitive ? "gi" : "g";
+    // Use 'i' flag only (not 'g') — the 'g' flag causes regex.test() to
+    // maintain lastIndex state between calls, skipping ~half the matches
+    const flags = caseInsensitive ? "i" : "";
     const regex = new RegExp(altPattern, flags);
     const matching = verses.filter((v) => regex.test(v.text));
     return { bookName, verses: matching };
@@ -510,7 +512,9 @@ export async function getMatchingVerses(
     : wholeWord
       ? `\\b${escaped}\\b`
       : escaped;
-  const flags = caseInsensitive ? "gi" : "g";
+  // Use 'i' flag only (not 'g') — the 'g' flag causes regex.test() to
+  // maintain lastIndex state between calls, skipping ~half the matches
+  const flags = caseInsensitive ? "i" : "";
   const regex = new RegExp(pattern, flags);
 
   // Filter verses that match

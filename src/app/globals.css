@@ -58,7 +58,7 @@ html {
   background: var(--bg);
   overflow-x: hidden;
   overflow-y: scroll; /* Always show scrollbar to prevent layout shift */
-  overscroll-behavior: none; /* Prevent pull-to-refresh and scroll chaining */
+  overscroll-behavior-y: contain; /* Prevent pull-to-refresh without blocking normal scroll */
 }
 
 body {
