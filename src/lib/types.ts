@@ -80,6 +80,21 @@ export interface Resource {
   tags?: string[];
 }
 
+// ── Context Eggs ──
+export type EggCategory = "Linguistic" | "Historical" | "Cultural" | "Literary" | "Restoration";
+
+export interface ContextEgg {
+  id: string;
+  book: string;
+  chapter: number;
+  verse: number;
+  keyword: string;
+  category: EggCategory;
+  title: string;
+  insight: string;
+  source: string;
+}
+
 // ── Speaker Attribution ──
 export type SpeakerType = "divine" | "narrator" | "prophet" | "apostle" | "angel" | "other";
 

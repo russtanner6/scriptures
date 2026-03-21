@@ -19,6 +19,9 @@ import { modalStyles as mStyles, getModalTheme } from "@/lib/modal-styles";
 import { getAnnotationsForChapter } from "@/lib/annotations";
 import { useIsMobile } from "@/lib/useIsMobile";
 import { getVerseDominantTone, type SentimentCategory } from "@/lib/sentiment-lexicon";
+import type { ContextEgg } from "@/lib/types";
+import EggMarker from "./EggMarker";
+import EggPopover from "./EggPopover";
 
 interface ReaderVerse {
   chapter: number;
@@ -94,6 +97,17 @@ export default function ScriptureReader() {
     return false;
   });
 
+  // Context Eggs layer
+  const [showContextEggs, setShowContextEggs] = useState(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("reader-show-context-eggs");
+      return saved === null ? true : saved === "true"; // default ON
+    }
+    return true;
+  });
+  const [chapterEggs, setChapterEggs] = useState<ContextEgg[]>([]);
+  const [activeEgg, setActiveEgg] = useState<ContextEgg | null>(null);
+
   // Character panel
   const [allCharacters, setAllCharacters] = useState<ScriptureCharacter[]>([]);
   const [selectedCharacter, setSelectedCharacter] = useState<ScriptureCharacter | null>(null);
@@ -120,6 +134,26 @@ export default function ScriptureReader() {
   // Whether the current chapter has modern text or narration available
   const hasModernText = verses.some((v) => v.text_modern);
   const hasNarration = !!chapterNarration;
+
+  // Per-verse egg keyword positions (memoized — must be after readingMode)
+  const eggKeywordMap = useMemo(() => {
+    if (!showContextEggs || chapterEggs.length === 0) return new Map<number, Array<{ start: number; end: number; egg: ContextEgg }>>();
+    const map = new Map<number, Array<{ start: number; end: number; egg: ContextEgg }>>();
+    for (const egg of chapterEggs) {
+      const verse = verses.find((v) => v.verse === egg.verse);
+      if (!verse) continue;
+      const text = readingMode === "modern" && verse.text_modern ? verse.text_modern : verse.text;
+      const escaped = egg.keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const regex = new RegExp(`\\b${escaped}\\b`, "i");
+      const match = regex.exec(text);
+      if (match) {
+        if (!map.has(egg.verse)) map.set(egg.verse, []);
+        map.get(egg.verse)!.push({ start: match.index, end: match.index + match[0].length, egg });
+      }
+    }
+    return map;
+  }, [chapterEggs, verses, showContextEggs, readingMode]);
+
   // Reading mode help popup
   const [showReadingModeHelp, setShowReadingModeHelp] = useState(false);
 
@@ -283,6 +317,10 @@ export default function ScriptureReader() {
                     .then((r) => r.json())
                     .then((resData) => setChapterResources(resData.resources || []))
                     .catch(() => {});
+                  fetch(`/api/context-eggs?book=${encodeURIComponent(bookNameForApi)}&chapter=${ch}`)
+                    .then((r) => r.json())
+                    .then((eggData) => setChapterEggs(eggData.eggs || []))
+                    .catch(() => {});
                   fetch(`/api/speakers?book=${encodeURIComponent(bookNameForApi)}&chapter=${ch}`)
                     .then((r) => r.json())
                     .then((spkData) => setChapterSpeakers(spkData.speakers || []))
@@ -329,9 +367,11 @@ export default function ScriptureReader() {
       // Load annotations for this chapter
       const annotations = getAnnotationsForChapter(bookId, chapter);
       setAnnotatedVerses(new Set(annotations.map((a) => a.verse)));
-      // Load resources for this chapter
+      // Load resources + eggs for this chapter
       setChapterResources([]);
+      setChapterEggs([]);
       setActiveResourcePanel(null);
+      setActiveEgg(null);
       // Load speakers for this chapter
       setChapterSpeakers([]);
       const bookNameForApi = data.bookName || "";
@@ -339,9 +379,12 @@ export default function ScriptureReader() {
         const resResp = await fetch(`/api/resources?book=${encodeURIComponent(bookNameForApi)}&chapter=${chapter}`);
         const resData = await resResp.json();
         setChapterResources(resData.resources || []);
-      } catch {
-        // Resources are non-critical, don't block reading
-      }
+      } catch {}
+      try {
+        const eggResp = await fetch(`/api/context-eggs?book=${encodeURIComponent(bookNameForApi)}&chapter=${chapter}`);
+        const eggData = await eggResp.json();
+        setChapterEggs(eggData.eggs || []);
+      } catch {}
       try {
         const spkResp = await fetch(`/api/speakers?book=${encodeURIComponent(bookNameForApi)}&chapter=${chapter}`);
         const spkData = await spkResp.json();
@@ -529,12 +572,16 @@ export default function ScriptureReader() {
     const volHighlightColor = selectedVolume ? VOLUME_COLORS[selectedVolume] || "#3B82F6" : "#3B82F6";
     const verseEntityMap = verseNumber ? firstMentions.get(verseNumber) : undefined;
 
-    // If no highlights and no entity links, return plain text
-    if (!activeHighlight && !verseEntityMap?.size) return text;
+    // Egg keywords for this verse
+    const verseEggs = (showContextEggs && verseNumber) ? eggKeywordMap.get(verseNumber) : undefined;
 
-    // Build a list of annotated ranges: entity links + search highlights
+    // If no highlights, entity links, or egg keywords, return plain text
+    if (!activeHighlight && !verseEntityMap?.size && !verseEggs?.length) return text;
+
+    // Build a list of annotated ranges: entity links + search highlights + egg keywords
     type Segment = { start: number; end: number; kind: "entity"; entry: EntityEntry }
-      | { start: number; end: number; kind: "highlight" };
+      | { start: number; end: number; kind: "highlight" }
+      | { start: number; end: number; kind: "egg"; egg: ContextEgg };
     const segments: Segment[] = [];
 
     // Entity first-mention segments
@@ -558,10 +605,18 @@ export default function ScriptureReader() {
       }
     }
 
+    // Egg keyword segments (lowest priority)
+    if (verseEggs) {
+      for (const e of verseEggs) {
+        segments.push({ start: e.start, end: e.end, kind: "egg", egg: e.egg });
+      }
+    }
+
     if (segments.length === 0) return text;
 
-    // Sort segments by start position; entity takes precedence over highlight at same position
-    segments.sort((a, b) => a.start - b.start || (a.kind === "entity" ? -1 : 1));
+    // Sort: entity > highlight > egg priority at same position
+    const kindPriority = { entity: 0, highlight: 1, egg: 2 };
+    segments.sort((a, b) => a.start - b.start || kindPriority[a.kind] - kindPriority[b.kind]);
 
     // Remove overlapping segments (earlier/longer wins)
     const merged: Segment[] = [];
@@ -595,6 +650,26 @@ export default function ScriptureReader() {
           >
             {segText}
           </mark>
+        );
+      } else if (seg.kind === "egg") {
+        // Context Egg keyword with glint animation
+        const delayIndex = chapterEggs.indexOf(seg.egg);
+        elements.push(
+          <span
+            key={`egg${i}`}
+            className="egg-keyword-glint"
+            style={{
+              "--egg-delay": `${delayIndex * 7}s`,
+              "--egg-glint-color": lightMode ? "rgba(218, 180, 60, 0.25)" : "rgba(245, 168, 35, 0.2)",
+              "--egg-hover-color": lightMode ? "rgba(218, 180, 60, 0.15)" : "rgba(245, 168, 35, 0.12)",
+            } as React.CSSProperties}
+            role="button"
+            tabIndex={0}
+            onClick={(e) => { e.stopPropagation(); setActiveEgg(seg.egg); }}
+            onKeyDown={(e) => { if (e.key === "Enter") { e.stopPropagation(); setActiveEgg(seg.egg); } }}
+          >
+            {segText}
+          </span>
         );
       } else {
         // Entity link
@@ -1064,6 +1139,42 @@ export default function ScriptureReader() {
                     </span>
                   </button>
                 )}
+                {/* Context Eggs toggle */}
+                {chapterEggs.length > 0 && (
+                  <button
+                    onClick={() => {
+                      const next = !showContextEggs;
+                      setShowContextEggs(next);
+                      localStorage.setItem("reader-show-context-eggs", String(next));
+                    }}
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "4px",
+                      padding: "7px 12px",
+                      borderRadius: "8px",
+                      border: `1px solid ${showContextEggs ? `${toggleAccent}50` : theme.border}`,
+                      background: showContextEggs
+                        ? `${toggleAccent}18`
+                        : lightMode ? "rgba(0,0,0,0.03)" : "rgba(255,255,255,0.04)",
+                      color: showContextEggs ? toggleAccent : theme.textMuted,
+                      fontSize: "0.68rem",
+                      fontWeight: 600,
+                      cursor: "pointer",
+                      fontFamily: "inherit",
+                      transition: "all 0.2s",
+                    }}
+                  >
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 3C8 3 5 7 5 13c0 4 3 8 7 8s7-4 7-8c0-6-3-10-7-10z" />
+                      <path d="M9 13h6" opacity="0.5" />
+                    </svg>
+                    Context
+                    <span style={{ fontSize: "0.6rem", opacity: 0.7 }}>
+                      ({chapterEggs.length})
+                    </span>
+                  </button>
+                )}
                 {/* Tone overlay toggle */}
                 <button
                   onClick={() => {
@@ -1489,6 +1600,15 @@ export default function ScriptureReader() {
                       />
                     ));
                   })()}
+                  {/* Context Egg markers */}
+                  {showContextEggs && chapterEggs.filter((e) => e.verse === v.verse).map((egg) => (
+                    <EggMarker
+                      key={`egg-${egg.id}`}
+                      egg={egg}
+                      lightMode={lightMode}
+                      onClick={() => { setActiveVerse(null); setActiveEgg(egg); }}
+                    />
+                  ))}
                   </div>
                 </div>
               );
@@ -1937,6 +2057,16 @@ export default function ScriptureReader() {
                 setAnnotatedVerses(new Set(annotations.map((a) => a.verse)));
               }
             }}
+          />
+        )}
+
+        {/* Context Egg Popover */}
+        {activeEgg && (
+          <EggPopover
+            egg={activeEgg}
+            lightMode={lightMode}
+            isMobile={isMobile}
+            onClose={() => setActiveEgg(null)}
           />
         )}
 

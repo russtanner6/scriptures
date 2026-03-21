@@ -457,3 +457,41 @@ footer a:hover {
     font-size: 0.72rem !important;
   }
 }
+
+/* ── Context Egg Glint Animation ── */
+@keyframes eggGlint {
+  0%, 7% {
+    background-position: -100% 0;
+  }
+  7.01% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.egg-keyword-glint {
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 30%,
+    var(--egg-glint-color, rgba(218, 180, 60, 0.25)) 50%,
+    transparent 70%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  background-position: 200% 0;
+  animation: eggGlint 30s ease-in-out infinite;
+  animation-delay: var(--egg-delay, 0s);
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 1px 2px;
+  transition: background-color 0.2s;
+}
+
+.egg-keyword-glint:hover {
+  background-color: var(--egg-hover-color, rgba(218, 180, 60, 0.15));
+}
+
+/* Dark mode glint colors — applied via inline style vars in the component */

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "gen-1-1-god",
+    "book": "Genesis",
+    "chapter": 1,
+    "verse": 1,
+    "keyword": "God",
+    "category": "Linguistic",
+    "title": "Elohim — A Plural Noun",
+    "insight": "The Hebrew word here is 'Elohim,' a plural noun paired with a singular verb ('bara'). This grammatical oddity suggests a 'plurality of majesty' or a divine council, reflecting an ancient Near Eastern understanding of God as the head of a heavenly assembly rather than a solitary figure.",
+    "source": "Jewish Encyclopedia, 'Names of God'; Michael Heiser, The Unseen Realm (2015)"
+  },
+  {
+    "id": "gen-1-2-deep",
+    "book": "Genesis",
+    "chapter": 1,
+    "verse": 2,
+    "keyword": "deep",
+    "category": "Historical",
+    "title": "Tehom — The Primordial Waters",
+    "insight": "The Hebrew word 'tehom' (deep) echoes the Mesopotamian creation narrative where the god Marduk battles Tiamat, the sea goddess of chaos. Genesis quietly subverts this myth: there is no battle here. God simply speaks, and the chaotic waters obey.",
+    "source": "John Walton, The Lost World of Genesis One (IVP Academic, 2009)"
+  },
+  {
+    "id": "gen-1-6-firmament",
+    "book": "Genesis",
+    "chapter": 1,
+    "verse": 6,
+    "keyword": "firmament",
+    "category": "Cultural",
+    "title": "Raqia — The Vault of Heaven",
+    "insight": "The Hebrew 'raqia' means something hammered or beaten out, like a metal dome. Ancient Israelites envisioned the sky as a solid vault holding back celestial waters. This is cosmological poetry describing God imposing order on chaos, not a physics textbook.",
+    "source": "Paul Seely, 'The Firmament and the Water Above,' Westminster Theological Journal 53 (1991)"
+  },
+  {
+    "id": "gen-22-2-only-son",
+    "book": "Genesis",
+    "chapter": 22,
+    "verse": 2,
+    "keyword": "only son",
+    "category": "Literary",
+    "title": "Yachid — The Beloved, Only One",
+    "insight": "The Hebrew 'yachid' means more than 'only' — it carries the weight of 'uniquely beloved.' Abraham had other sons (Ishmael), but Isaac was the singular child of the covenant promise. Early Christian writers saw this as a deliberate foreshadowing of God offering his own 'yachid.'",
+    "source": "Nahum Sarna, JPS Torah Commentary: Genesis (Jewish Publication Society, 1989)"
+  },
+  {
+    "id": "exo-12-13-passover",
+    "book": "Exodus",
+    "chapter": 12,
+    "verse": 13,
+    "keyword": "pass over",
+    "category": "Linguistic",
+    "title": "Pasach — To Hover and Protect",
+    "insight": "The Hebrew verb 'pasach' doesn't simply mean 'skip over.' In ancient Near Eastern usage it can mean 'to hover over protectively' or 'to stand guard.' The image is of God stationed at the doorway like a sentinel, shielding those inside from the destroyer.",
+    "source": "William Propp, Anchor Bible Commentary: Exodus 1-18 (Doubleday, 1999)"
+  },
+  {
+    "id": "matt-19-24-camel",
+    "book": "Matthew",
+    "chapter": 19,
+    "verse": 24,
+    "keyword": "camel",
+    "category": "Linguistic",
+    "title": "Kamilos — Was It a Rope?",
+    "insight": "Some early Greek manuscripts use 'kamilos' (a thick shipping rope) instead of 'kamelos' (camel). Whether rope or camel, the metaphor is the same: entering the kingdom requires stripping away attachments, like unweaving a cable to thread it through a needle's eye.",
+    "source": "W. D. Davies & Dale C. Allison, ICC Commentary on Matthew (T&T Clark, 1997)"
+  },
+  {
+    "id": "john-11-35-wept",
+    "book": "John",
+    "chapter": 11,
+    "verse": 35,
+    "keyword": "wept",
+    "category": "Linguistic",
+    "title": "Edakrusen — Silent, Deep Mourning",
+    "insight": "The Greek 'edakrusen' describes quiet tears welling up, distinct from the loud wailing ('klaio') of the crowd. Jesus isn't performing grief — he is experiencing a deep, personal frustration with death itself as a temporary but painful barrier separating him from those he loves.",
+    "source": "Raymond Brown, Anchor Bible Commentary: The Gospel According to John (Doubleday, 1966)"
+  },
+  {
+    "id": "1ne-4-9-steel",
+    "book": "1 Nephi",
+    "chapter": 4,
+    "verse": 9,
+    "keyword": "steel",
+    "category": "Historical",
+    "title": "Carburized Iron in the Ancient Levant",
+    "insight": "While 600 BC was the Iron Age, 'steel' (iron hardened by carbon absorption in the forge) did exist in the ancient Near East. Excavations at sites in modern Israel and Jordan have produced carburized iron blades from this period. This was not modern stainless steel, but a hardened iron alloy consistent with the text's time period.",
+    "source": "Robert Maddin et al., 'Early Iron Technology,' Scientific American (1977); Maxwell Institute, 'Steel in the Book of Mormon'"
+  },
+  {
+    "id": "dc-88-11-light",
+    "book": "Doctrine and Covenants",
+    "chapter": 88,
+    "verse": 11,
+    "keyword": "light",
+    "category": "Restoration",
+    "title": "Light as a Physical and Spiritual Substance",
+    "insight": "In 1832, the dominant scientific model described light as a substance called 'luminiferous ether' that physically permeated the universe. Joseph Smith draws on this familiar framework to describe how divine power literally fills, governs, and gives life to all things — bridging contemporary science and theology.",
+    "source": "Samuel Brown, 'Joseph Smith's Ether,' BYU Studies Quarterly 55:2 (2016)"
+  },
+  {
+    "id": "moses-7-18-heart",
+    "book": "Moses",
+    "chapter": 7,
+    "verse": 18,
+    "keyword": "heart",
+    "category": "Cultural",
+    "title": "Lev — The Seat of the Intellect",
+    "insight": "In ancient Hebrew thought, the 'heart' (lev) was the organ of intellect, will, and decision-making — not just emotion. To be of 'one heart' meant the community shared a common intellectual vision and moral purpose, a unity of mind and commitment, not merely a shared feeling.",
+    "source": "Hans Walter Wolff, Anthropology of the Old Testament (Fortress Press, 1974)"
+  }
+]
