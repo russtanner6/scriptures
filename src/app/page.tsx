@@ -24,7 +24,7 @@ const PRIMARY_TOOLS = [
   {
     href: "/read",
     svgIcon: "/scriptures.svg",
-    name: "Read",
+    name: "Scriptures",
     description: "Beautiful reading with insights, themes, and verse interactions.",
   },
   {
@@ -100,7 +100,6 @@ export default function HomePage() {
     fetch("/api/random-verse")
       .then((r) => r.json())
       .then((data) => {
-        // If the random verse is from a hidden volume, don't show it
         if (data && data.volumeAbbrev && !isVolumeVisible(data.volumeAbbrev)) {
           setRandomVerse(null);
         } else {
@@ -115,7 +114,6 @@ export default function HomePage() {
       .then((r) => r.json())
       .then((data) => {
         const chars: ScriptureCharacter[] = data.characters || [];
-        // Filter characters to only those appearing in visible volumes
         const visibleChars = chars.filter((c) =>
           c.volumes.some((v: string) => isVolumeVisible(v))
         );
@@ -150,7 +148,7 @@ export default function HomePage() {
       <div style={{
         textAlign: "center",
         marginTop: isMobile ? "8px" : "40px",
-        marginBottom: isMobile ? "36px" : "56px",
+        marginBottom: isMobile ? "28px" : "48px",
       }}>
         <h2
           style={{
@@ -188,339 +186,351 @@ export default function HomePage() {
         </p>
       </div>
 
-      {/* Character Spotlight — full-width visual banner */}
-      {spotlightChar && (
-        <Link
-          href="/characters"
-          style={{
-            display: "block",
-            textDecoration: "none",
-            marginBottom: isMobile ? "36px" : "52px",
-          }}
-        >
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: isMobile ? "1fr" : "280px 1fr",
-              borderRadius: "18px",
-              overflow: "hidden",
-              background: "var(--surface)",
-              border: "1px solid var(--border)",
-              transition: "all 0.3s ease",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = `${getCharColor(spotlightChar)}50`;
-              e.currentTarget.style.boxShadow = `0 12px 40px ${getCharColor(spotlightChar)}15`;
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "var(--border)";
-              e.currentTarget.style.boxShadow = "none";
-            }}
-          >
-            {/* Portrait */}
-            <div style={{
-              aspectRatio: isMobile ? "16 / 9" : "3 / 4",
-              overflow: "hidden",
-            }}>
-              <img
-                src={spotlightChar.portraitUrl}
-                alt={spotlightChar.name}
+      {/* ═══ TWO-COLUMN LAYOUT (desktop) / STACKED (mobile) ═══ */}
+      <div style={{
+        display: "grid",
+        gridTemplateColumns: isMobile ? "1fr" : "1fr 340px",
+        gap: isMobile ? "28px" : "28px",
+        marginBottom: isMobile ? "36px" : "52px",
+        alignItems: "start",
+      }}>
+        {/* ── LEFT COLUMN: Tool Cards ── */}
+        <div>
+          <div style={{
+            display: "grid",
+            gridTemplateColumns: isMobile ? "1fr 1fr" : "repeat(3, 1fr)",
+            gap: isMobile ? "10px" : "12px",
+          }}>
+            {PRIMARY_TOOLS.map((tool) => (
+              <Link
+                key={tool.href}
+                href={tool.href}
                 style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                  objectPosition: "center 20%",
+                  background: "var(--surface)",
+                  border: "1px solid var(--border)",
+                  borderRadius: "14px",
+                  padding: isMobile ? "16px 14px" : "18px 16px",
+                  textDecoration: "none",
+                  transition: "all 0.2s ease",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "10px",
                 }}
-              />
-            </div>
-            {/* Info */}
-            <div style={{
-              padding: isMobile ? "20px" : "32px 36px",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-            }}>
-              <div style={{
-                fontSize: "0.6rem",
-                fontWeight: 600,
-                textTransform: "uppercase",
-                letterSpacing: "0.14em",
-                color: getCharColor(spotlightChar),
-                marginBottom: "10px",
-              }}>
-                Featured Person
-              </div>
-              <div style={{
-                fontSize: isMobile ? "1.4rem" : "1.8rem",
-                fontWeight: 700,
-                color: "var(--text)",
-                marginBottom: "8px",
-                letterSpacing: "-0.02em",
-              }}>
-                {spotlightChar.name}
-              </div>
-              <div style={{
-                fontSize: "0.82rem",
-                color: "var(--text-muted)",
-                fontWeight: 500,
-                marginBottom: "14px",
-              }}>
-                {spotlightChar.roles.slice(0, 3).join(" · ")}
-              </div>
-              <p style={{
-                fontSize: "0.9rem",
-                color: "rgba(255,255,255,0.8)",
-                lineHeight: 1.7,
-                margin: "0 0 16px",
-                display: "-webkit-box",
-                WebkitLineClamp: isMobile ? 3 : 4,
-                WebkitBoxOrient: "vertical",
-                overflow: "hidden",
-              }}>
-                {spotlightChar.bio}
-              </p>
-              <div style={{ display: "flex", gap: "5px" }}>
-                {spotlightChar.volumes.map((v) => (
-                  <VolumeTooltip
-                    key={v}
-                    abbrev={v}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = "rgba(255,255,255,0.2)";
+                  e.currentTarget.style.transform = "translateY(-2px)";
+                  e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.3)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = "var(--border)";
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow = "none";
+                }}
+              >
+                <div style={{
+                  width: "34px",
+                  height: "34px",
+                  borderRadius: "10px",
+                  background: "rgba(255,255,255,0.04)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}>
+                  <img
+                    src={tool.svgIcon}
+                    alt=""
                     style={{
-                      fontSize: "0.58rem",
-                      fontWeight: 700,
-                      color: VOLUME_COLORS[v] || "#888",
-                      background: `${VOLUME_COLORS[v] || "#888"}15`,
-                      padding: "2px 7px",
-                      borderRadius: "4px",
+                      width: "17px",
+                      height: "17px",
+                      filter: "invert(1) brightness(0.7)",
                     }}
                   />
+                </div>
+                <div>
+                  <div style={{
+                    fontSize: "0.82rem",
+                    fontWeight: 700,
+                    color: "var(--text)",
+                    marginBottom: "4px",
+                  }}>
+                    {tool.name}
+                  </div>
+                  <div style={{
+                    fontSize: "0.7rem",
+                    color: "var(--text-muted)",
+                    lineHeight: 1.45,
+                  }}>
+                    {tool.description}
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* ── RIGHT COLUMN: Spotlight + Random Verse ── */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          {/* Spotlight Character */}
+          {spotlightChar && (
+            <Link
+              href="/characters"
+              style={{
+                display: "block",
+                textDecoration: "none",
+              }}
+            >
+              <div
+                style={{
+                  borderRadius: "16px",
+                  overflow: "hidden",
+                  background: "var(--surface)",
+                  border: "1px solid var(--border)",
+                  transition: "all 0.3s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = `${getCharColor(spotlightChar)}50`;
+                  e.currentTarget.style.boxShadow = `0 12px 40px ${getCharColor(spotlightChar)}15`;
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = "var(--border)";
+                  e.currentTarget.style.boxShadow = "none";
+                }}
+              >
+                {/* Portrait */}
+                <div style={{
+                  aspectRatio: "4 / 3",
+                  overflow: "hidden",
+                  position: "relative",
+                }}>
+                  <img
+                    src={spotlightChar.portraitUrl}
+                    alt={spotlightChar.name}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      objectPosition: "center 20%",
+                    }}
+                  />
+                  {/* Gradient overlay at bottom of image */}
+                  <div style={{
+                    position: "absolute",
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    height: "60px",
+                    background: "linear-gradient(transparent, var(--surface))",
+                  }} />
+                </div>
+                {/* Info */}
+                <div style={{ padding: "14px 18px 18px" }}>
+                  <div style={{
+                    fontSize: "0.55rem",
+                    fontWeight: 600,
+                    textTransform: "uppercase",
+                    letterSpacing: "0.14em",
+                    color: getCharColor(spotlightChar),
+                    marginBottom: "6px",
+                  }}>
+                    Spotlight
+                  </div>
+                  <div style={{
+                    fontSize: "1.3rem",
+                    fontWeight: 700,
+                    color: "var(--text)",
+                    marginBottom: "4px",
+                    letterSpacing: "-0.02em",
+                  }}>
+                    {spotlightChar.name}
+                  </div>
+                  <div style={{
+                    fontSize: "0.75rem",
+                    color: "var(--text-muted)",
+                    fontWeight: 500,
+                    marginBottom: "10px",
+                  }}>
+                    {spotlightChar.roles.slice(0, 3).join(" · ")}
+                  </div>
+                  <p style={{
+                    fontSize: "0.82rem",
+                    color: "rgba(255,255,255,0.7)",
+                    lineHeight: 1.6,
+                    margin: "0 0 12px",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 3,
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                  }}>
+                    {spotlightChar.bio}
+                  </p>
+                  <div style={{ display: "flex", gap: "5px" }}>
+                    {spotlightChar.volumes.map((v) => (
+                      <VolumeTooltip
+                        key={v}
+                        abbrev={v}
+                        style={{
+                          fontSize: "0.55rem",
+                          fontWeight: 700,
+                          color: VOLUME_COLORS[v] || "#888",
+                          background: `${VOLUME_COLORS[v] || "#888"}15`,
+                          padding: "2px 7px",
+                          borderRadius: "4px",
+                        }}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* More People row */}
+          {featuredChars.length > 0 && (
+            <div style={{
+              background: "var(--surface)",
+              border: "1px solid var(--border)",
+              borderRadius: "14px",
+              padding: "14px 16px",
+            }}>
+              <div style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                marginBottom: "10px",
+              }}>
+                <div style={{
+                  fontSize: "0.55rem",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.12em",
+                  color: "var(--text-muted)",
+                }}>
+                  More People
+                </div>
+                <Link
+                  href="/characters"
+                  style={{
+                    fontSize: "0.68rem",
+                    fontWeight: 500,
+                    color: "var(--accent)",
+                    textDecoration: "underline",
+                    textUnderlineOffset: "3px",
+                  }}
+                >
+                  View all 757 →
+                </Link>
+              </div>
+              <div style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(6, 1fr)",
+                gap: "6px",
+              }}>
+                {featuredChars.map((c) => (
+                  <Link
+                    key={c.id}
+                    href="/characters"
+                    style={{
+                      textDecoration: "none",
+                      textAlign: "center",
+                      transition: "transform 0.2s",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = "translateY(-2px)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = "translateY(0)";
+                    }}
+                  >
+                    <div style={{
+                      width: "100%",
+                      aspectRatio: "1",
+                      borderRadius: "10px",
+                      overflow: "hidden",
+                      marginBottom: "4px",
+                      border: "1px solid var(--border)",
+                    }}>
+                      <img
+                        src={c.portraitUrl}
+                        alt={c.name}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                          objectPosition: "center 20%",
+                        }}
+                        loading="lazy"
+                      />
+                    </div>
+                    <div style={{
+                      fontSize: "0.6rem",
+                      fontWeight: 600,
+                      color: "var(--text-secondary)",
+                      lineHeight: 1.2,
+                    }}>
+                      {c.name}
+                    </div>
+                  </Link>
                 ))}
               </div>
             </div>
-          </div>
-        </Link>
-      )}
+          )}
 
-      {/* Tools Grid */}
-      <div style={{ marginBottom: isMobile ? "36px" : "52px" }}>
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: isMobile ? "1fr 1fr" : "repeat(5, 1fr)",
-          gap: isMobile ? "10px" : "12px",
-        }}>
-          {PRIMARY_TOOLS.map((tool) => (
-            <Link
-              key={tool.href}
-              href={tool.href}
+          {/* Random Verse */}
+          {randomVerse && (
+            <div
               style={{
                 background: "var(--surface)",
                 border: "1px solid var(--border)",
                 borderRadius: "14px",
-                padding: isMobile ? "16px 14px" : "20px 18px",
-                textDecoration: "none",
-                transition: "all 0.2s ease",
-                display: "flex",
-                flexDirection: "column",
-                gap: "10px",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = "rgba(255,255,255,0.2)";
-                e.currentTarget.style.transform = "translateY(-2px)";
-                e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.3)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = "var(--border)";
-                e.currentTarget.style.transform = "translateY(0)";
-                e.currentTarget.style.boxShadow = "none";
+                padding: "16px 18px",
+                borderLeft: `3px solid ${volColor}`,
               }}
             >
-              <div style={{
-                width: "36px",
-                height: "36px",
-                borderRadius: "10px",
-                background: "rgba(255,255,255,0.04)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}>
-                <img
-                  src={tool.svgIcon}
-                  alt=""
-                  style={{
-                    width: "18px",
-                    height: "18px",
-                    filter: "invert(1) brightness(0.7)",
-                  }}
-                />
-              </div>
-              <div>
-                <div style={{
-                  fontSize: "0.85rem",
-                  fontWeight: 700,
-                  color: "var(--text)",
-                  marginBottom: "4px",
-                }}>
-                  {tool.name}
-                </div>
-                <div style={{
-                  fontSize: "0.72rem",
+              <div
+                style={{
+                  fontSize: "0.55rem",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.12em",
                   color: "var(--text-muted)",
-                  lineHeight: 1.45,
-                }}>
-                  {tool.description}
-                </div>
+                  marginBottom: "10px",
+                }}
+              >
+                Discover a Verse
               </div>
-            </Link>
-          ))}
-        </div>
-      </div>
-
-      {/* Bottom section — Character portraits row + Random verse */}
-      <div style={{
-        display: "grid",
-        gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
-        gap: isMobile ? "28px" : "24px",
-        marginBottom: "20px",
-      }}>
-        {/* More characters */}
-        {featuredChars.length > 0 && (
-          <div>
-            <div style={{
-              fontSize: "0.6rem",
-              fontWeight: 600,
-              textTransform: "uppercase",
-              letterSpacing: "0.12em",
-              color: "var(--text-muted)",
-              marginBottom: "14px",
-            }}>
-              More People
-            </div>
-            <div style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(6, 1fr)",
-              gap: "8px",
-            }}>
-              {featuredChars.map((c) => (
-                <Link
-                  key={c.id}
-                  href="/characters"
+              <div
+                style={{
+                  fontSize: "0.88rem",
+                  color: "var(--text-secondary)",
+                  lineHeight: 1.7,
+                  fontStyle: "italic",
+                  marginBottom: "12px",
+                }}
+              >
+                &ldquo;{randomVerse.text.length > 200
+                  ? randomVerse.text.substring(0, 200) + "..."
+                  : randomVerse.text}&rdquo;
+              </div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "8px" }}>
+                <span style={{ fontSize: "0.78rem", fontWeight: 600, color: volColor }}>
+                  — {verseRef}
+                </span>
+                <a
+                  href={`/read?bookId=${randomVerse.bookId}&chapter=${randomVerse.chapter}&verse=${randomVerse.verse}`}
                   style={{
-                    textDecoration: "none",
-                    textAlign: "center",
-                    transition: "transform 0.2s",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = "translateY(-2px)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = "translateY(0)";
+                    fontSize: "0.72rem",
+                    fontWeight: 500,
+                    color: "var(--accent)",
+                    textDecoration: "underline",
+                    textUnderlineOffset: "3px",
                   }}
                 >
-                  <div style={{
-                    width: "100%",
-                    aspectRatio: "1",
-                    borderRadius: "12px",
-                    overflow: "hidden",
-                    marginBottom: "6px",
-                    border: "1px solid var(--border)",
-                  }}>
-                    <img
-                      src={c.portraitUrl}
-                      alt={c.name}
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                        objectPosition: "center 20%",
-                      }}
-                      loading="lazy"
-                    />
-                  </div>
-                  <div style={{
-                    fontSize: "0.68rem",
-                    fontWeight: 600,
-                    color: "var(--text-secondary)",
-                    lineHeight: 1.2,
-                  }}>
-                    {c.name}
-                  </div>
-                </Link>
-              ))}
+                  Read in context →
+                </a>
+              </div>
             </div>
-            <div style={{ textAlign: "center", marginTop: "12px" }}>
-              <Link
-                href="/characters"
-                style={{
-                  fontSize: "0.75rem",
-                  fontWeight: 500,
-                  color: "var(--accent)",
-                  textDecoration: "underline",
-                  textUnderlineOffset: "3px",
-                }}
-              >
-                View all 302 people →
-              </Link>
-            </div>
-          </div>
-        )}
-
-        {/* Random Verse */}
-        {randomVerse && (
-          <div
-            style={{
-              background: "var(--surface)",
-              border: "1px solid var(--border)",
-              borderRadius: "14px",
-              padding: isMobile ? "20px" : "24px",
-              borderLeft: `3px solid ${volColor}`,
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-            }}
-          >
-            <div
-              style={{
-                fontSize: "0.6rem",
-                fontWeight: 600,
-                textTransform: "uppercase",
-                letterSpacing: "0.12em",
-                color: "var(--text-muted)",
-                marginBottom: "14px",
-              }}
-            >
-              Discover a Verse
-            </div>
-            <div
-              style={{
-                fontSize: isMobile ? "0.92rem" : "1rem",
-                color: "var(--text-secondary)",
-                lineHeight: 1.8,
-                fontStyle: "italic",
-                marginBottom: "14px",
-              }}
-            >
-              &ldquo;{randomVerse.text.length > 250
-                ? randomVerse.text.substring(0, 250) + "..."
-                : randomVerse.text}&rdquo;
-            </div>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "8px" }}>
-              <span style={{ fontSize: "0.82rem", fontWeight: 600, color: volColor }}>
-                — {verseRef}
-              </span>
-              <a
-                href={`/read?bookId=${randomVerse.bookId}&chapter=${randomVerse.chapter}&verse=${randomVerse.verse}`}
-                style={{
-                  fontSize: "0.75rem",
-                  fontWeight: 500,
-                  color: "var(--accent)",
-                  textDecoration: "underline",
-                  textUnderlineOffset: "3px",
-                }}
-              >
-                Read in context →
-              </a>
-            </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );

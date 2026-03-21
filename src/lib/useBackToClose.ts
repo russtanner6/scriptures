@@ -29,9 +29,12 @@ export function useBackToClose(onClose: () => void) {
       // (close button, backdrop click, escape key, swipe), we need to
       // remove the history entry we pushed so the stack stays clean.
       if (!closedByPop.current) {
-        // Only go back if our entry is still on top
+        // Only remove our entry if it's still on top AND we're not
+        // navigating (e.g., user clicked a Next.js Link inside the panel).
+        // Using replaceState instead of back() avoids cancelling pending
+        // navigations triggered by Link clicks.
         if (window.history.state?.panel) {
-          window.history.back();
+          window.history.replaceState(null, "");
         }
       }
     };
