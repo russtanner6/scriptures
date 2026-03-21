@@ -1,18 +1,21 @@
 # Scripture Explorer — Session Log
 
-## 2026-03-21 — Session 12: Sentiment Enhancement + Tone Overlay + Character Radar
+## 2026-03-21 — Session 12: Sentiment Enhancement + Tone Overlay + Character Radar + Context Eggs
 
 ### What was done
 - **Sentiment analysis enhancement** — Normalized scores to per-1,000-words for cross-chapter comparability. Added 25-word negation set with 2-word look-back (not, no, never, without, etc.). Low-volume dampening (0.5x for chapters under 50 words). New `ScoreResult` interface with `wordCount` and `lowConfidence` fields.
 - **Sentiment Arc UI updates** — Y-axis label "Frequency per 1,000 words", tooltips show "X per 1k words" with low-confidence warning for short chapters. Updated methodology modal to document negation handling.
 - **Tone overlay in reader** — New "Tone" toggle button in reader layer toggles. Per-verse dominant tone scoring via `getVerseDominantTone()`. Subtle colored backgrounds and left borders by sentiment category. Memoized for performance.
 - **Character tone profile radar** — New `/api/character-sentiment` endpoint scoring mention verses against 7 sentiment categories. Radar chart in CharacterDetailPanel using Chart.js RadialLinearScale. Color-coded axis labels, purple fill area for RPG-style stat visualization.
+- **Context Eggs** — Scholarly backstory system embedded in scripture text. 10 seed entries across all volumes (linguistic, historical, cultural, literary, restoration categories). Sidecar-loaded per chapter. EGG pills inline next to verses. Glint animation shimmers keyword every 30s. Parchment/slate popover with category badge, title, insight, source citation. "Context" layer toggle. Bottom sheet on mobile. Segment priority: entity > highlight > egg.
 
 ### Key technical details
 - `scoreText()` now returns `{ scores, wordCount, lowConfidence }` instead of just scores
 - Negation handling: 2-word look-back before each keyword, skips hit if negated
 - `getVerseDominantTone()`: lightweight per-verse scoring for reader overlay
 - Character sentiment API scans all 42k verses with regex, averages normalized scores
+- Context Eggs use "egg" segment kind in renderVerseText — lowest priority, never conflicts with entity links or search highlights
+- Glint animation: 30s CSS cycle, 2s sweep in first 7%, idle remainder. Theme-aware via CSS custom properties
 
 ---
 

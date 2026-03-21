@@ -95,6 +95,8 @@ src/
 │   ├── WordExplorerPanel.tsx   # Slide-up panel for in-context word frequency exploration (book/volume/all)
 │   ├── WordCloudTool.tsx      # Interactive word cloud per book/chapter/volume
 │   ├── HorizontalBarList.tsx  # Bar chart component
+│   ├── EggMarker.tsx           # Inline amber/gold pill for Context Eggs (follows ResourceMarker pattern)
+│   ├── EggPopover.tsx          # Parchment/slate popover for scholarly insights (bottom sheet on mobile)
 │   ├── Header.tsx             # Site header with tree logo + hamburger menu (showSubtitle prop)
 │   └── NavMenu.tsx            # Slide-in nav with sections (Analyze/Discover/Read)
 ├── lib/
@@ -112,7 +114,7 @@ src/
 │   ├── useIsMobile.ts         # Shared debounced responsive hook (replaces 15 inline duplicates)
 │   ├── useBackToClose.ts      # Hook: mobile back-button closes panels instead of navigating away
 │   └── modal-styles.ts        # Shared popup/modal styling tokens
-data/                          # scriptures.db + sql-wasm.wasm + parallel-passages.json + timeline.json + resources.json + speakers.json + characters.json + locations.json + web-bible.json
+data/                          # scriptures.db + sql-wasm.wasm + parallel-passages.json + timeline.json + resources.json + speakers.json + characters.json + locations.json + web-bible.json + context-eggs.json
 scripts/                       # build-db.ts, book-order.ts, build-speakers.ts, build-speakers-lds.ts, merge-speakers.ts, add-modern-text.ts
 ```
 
@@ -247,6 +249,7 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - `/api/resources` — Fetch linked resources (videos, articles, PDFs) for a book+chapter
 - `/api/locations` — All 333 scripture locations from locations.json
 - `/api/character-sentiment` — Sentiment scores for a character's mention verses (7 categories, averaged per-1k-words)
+- `/api/context-eggs` — Scholarly backstory insights for a book+chapter (from context-eggs.json)
 - `/api/location-mentions` — Mention stats for a location (reuses getCharacterMentions)
 
 ## Key Patterns
