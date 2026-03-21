@@ -1,0 +1,6267 @@
+[
+  {
+    "id": "adam-ondi-ahman",
+    "name": "Adam-ondi-Ahman",
+    "aliases": [
+      "Spring Hill"
+    ],
+    "description": "A place in Daviess County, Missouri identified as where Adam blessed his posterity. Named by the Lord; also called Spring Hill.",
+    "lat": 39.8847,
+    "lng": -93.9975,
+    "region": "Missouri, United States",
+    "locationType": "land",
+    "volumes": [
+      "D&C"
+    ],
+    "era": "Adamic era / Missouri period (1838)",
+    "significance": "Where Adam gathered his posterity; prophesied location of a future gathering before Christ's return",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "ammonihah",
+    "name": "Ammonihah",
+    "aliases": [
+      "Desolation of Nehors"
+    ],
+    "description": "A wicked Nephite city where Alma and Amulek preached. The inhabitants rejected the gospel and were later completely destroyed by a Lamanite army.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~82–81 BC)",
+    "significance": "Site of Alma and Amulek's mission; believers were burned; later destroyed and called Desolation of Nehors",
+    "tier": 1,
+    "knownLocation": false
+  },
+  {
+    "id": "antioch-syria",
+    "name": "Antioch (Syria)",
+    "aliases": [
+      "Antioch on the Orontes"
+    ],
+    "description": "Third largest city in the Roman Empire. Believers were first called Christians here. Base for Paul's missionary journeys. Major early church center.",
+    "lat": 36.2,
+    "lng": 36.15,
+    "region": "Syria",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Where believers were first called Christians; Paul's mission base",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "babylon",
+    "name": "Babylon",
+    "aliases": [
+      "Babel",
+      "Shinar"
+    ],
+    "description": "Capital of the Babylonian Empire. Site of the Tower of Babel. Nebuchadnezzar destroyed Jerusalem and exiled Judah here. Daniel and Ezekiel prophesied during the exile.",
+    "lat": 32.5363,
+    "lng": 44.4209,
+    "region": "Mesopotamia",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Patriarchal through Exile",
+    "significance": "Site of the Exile; symbol of worldly power and opposition to God",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "bethlehem",
+    "name": "Bethlehem",
+    "aliases": [
+      "Ephrath",
+      "Ephrathah",
+      "Bethlehem Ephrathah",
+      "Bethlehem-judah"
+    ],
+    "description": "Birthplace of Jesus Christ and King David. Rachel was buried nearby. Ruth and Boaz's story takes place here.",
+    "lat": 31.7054,
+    "lng": 35.2024,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Patriarchal through New Testament",
+    "significance": "Birthplace of David and Jesus; fulfillment of Micah's prophecy",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "bountiful-bom",
+    "name": "Bountiful",
+    "aliases": [
+      "land Bountiful"
+    ],
+    "description": "A prosperous Nephite land and city in the New World, located near the narrow neck of land. Also the name of the coastal land where Lehi's family built their ship in the Old World.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Nephite era (~80 BC–AD 34)",
+    "significance": "Where Christ appeared to the Nephites after his resurrection; strategic military location near the narrow neck of land",
+    "tier": 1,
+    "knownLocation": false
+  },
+  {
+    "id": "canaan",
+    "name": "Canaan",
+    "aliases": [
+      "Promised Land",
+      "Land of Canaan"
+    ],
+    "description": "The land promised by God to Abraham and his descendants. The Israelites conquered it under Joshua after the Exodus from Egypt.",
+    "lat": 31.9,
+    "lng": 35.2,
+    "region": "Israel",
+    "locationType": "region",
+    "volumes": [
+      "OT",
+      "PoGP"
+    ],
+    "era": "Patriarchal through Conquest",
+    "significance": "The Promised Land given by covenant to Abraham's descendants",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "capernaum",
+    "name": "Capernaum",
+    "aliases": [],
+    "description": "Fishing village on the north shore of the Sea of Galilee that served as Jesus's home base during his Galilean ministry. Site of many healings and teachings.",
+    "lat": 32.8814,
+    "lng": 35.5753,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Jesus's ministry headquarters in Galilee",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "cumorah",
+    "name": "Cumorah",
+    "aliases": [
+      "hill Cumorah",
+      "land of Cumorah",
+      "Ramah"
+    ],
+    "description": "A hill and surrounding land of many waters, rivers, and fountains where the final Nephite battle took place. Called Ramah by the Jaredites.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "hill",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Final Nephite era (AD 385) / Jaredite era",
+    "significance": "Site of the final destruction of the Nephite nation; where Mormon hid the sacred records",
+    "tier": 1,
+    "knownLocation": false
+  },
+  {
+    "id": "damascus",
+    "name": "Damascus",
+    "aliases": [],
+    "description": "Ancient city in Syria. Paul was traveling to Damascus to persecute Christians when he saw a vision of Christ and was converted. Ananias baptized him here.",
+    "lat": 33.5138,
+    "lng": 36.2765,
+    "region": "Syria",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Patriarchal through New Testament",
+    "significance": "Site of Paul's conversion; one of the world's oldest cities",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "dead-sea",
+    "name": "Dead Sea",
+    "aliases": [
+      "Salt Sea",
+      "Sea of the Arabah",
+      "Eastern Sea"
+    ],
+    "description": "Hypersaline lake at the lowest point on earth, bordering ancient Israel and Moab. The cities of Sodom and Gomorrah were traditionally located near its shores.",
+    "lat": 31.5,
+    "lng": 35.5,
+    "region": "Israel",
+    "locationType": "sea",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal through Prophetic",
+    "significance": "Near Sodom and Gomorrah; boundary marker of the Promised Land",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "eden-garden",
+    "name": "Eden",
+    "aliases": [
+      "Garden of Eden"
+    ],
+    "description": "The garden planted by God eastward in Eden where Adam and Eve were placed. A river went out of Eden to water the garden.",
+    "lat": null,
+    "lng": null,
+    "region": "Unknown (primeval)",
+    "locationType": "garden",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Creation",
+    "significance": "Where God placed Adam and Eve; site of the Fall of man",
+    "tier": 1,
+    "knownLocation": false
+  },
+  {
+    "id": "egypt",
+    "name": "Egypt",
+    "aliases": [
+      "Mizraim",
+      "Land of Egypt"
+    ],
+    "description": "Ancient civilization along the Nile where Israel was enslaved for centuries. The Exodus from Egypt is the defining event of Israelite identity. The Holy Family fled here after Jesus's birth.",
+    "lat": 26.8206,
+    "lng": 30.8025,
+    "region": "Egypt",
+    "locationType": "region",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Patriarchal through New Testament",
+    "significance": "Site of Israel's bondage and the Exodus; refuge for the Holy Family",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "egypt-pogp",
+    "name": "Egypt",
+    "aliases": [
+      "land of Egypt"
+    ],
+    "description": "The ancient kingdom south of Canaan where Abraham sojourned during a famine. First discovered and settled by Egyptus, daughter of Ham.",
+    "lat": 26.8206,
+    "lng": 30.8025,
+    "region": "North Africa (modern Egypt)",
+    "locationType": "land",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Abrahamic era (~2000 BC)",
+    "significance": "Where Abraham sojourned; origin of Pharaoh's dynasty from Ham's lineage",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "euphrates-river",
+    "name": "Euphrates River",
+    "aliases": [
+      "Euphrates",
+      "The Great River"
+    ],
+    "description": "One of the four rivers of Eden and the northeastern boundary of the Promised Land. Major river of Mesopotamia running through Babylon.",
+    "lat": 34.35,
+    "lng": 38.0,
+    "region": "Mesopotamia",
+    "locationType": "river",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Creation through Prophetic",
+    "significance": "Boundary of the Promised Land; river of Eden and Babylon",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "galilee",
+    "name": "Galilee",
+    "aliases": [
+      "Galilee of the Gentiles"
+    ],
+    "description": "Northern region of Israel, home district of Jesus and most of his apostles. Jesus performed the majority of his miracles and teachings in this region.",
+    "lat": 32.75,
+    "lng": 35.35,
+    "region": "Israel",
+    "locationType": "region",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Divided Kingdom through New Testament",
+    "significance": "Primary region of Jesus's ministry",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "garden-of-eden",
+    "name": "Garden of Eden",
+    "aliases": [
+      "Eden"
+    ],
+    "description": "Paradise garden planted by God where Adam and Eve lived before the Fall. Located near the Tigris and Euphrates rivers according to Genesis.",
+    "lat": null,
+    "lng": null,
+    "region": "Mesopotamia",
+    "locationType": "garden",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Creation",
+    "significance": "Original dwelling of humanity; setting of the Fall",
+    "tier": 1,
+    "knownLocation": false
+  },
+  {
+    "id": "gethsemane",
+    "name": "Gethsemane",
+    "aliases": [
+      "Garden of Gethsemane"
+    ],
+    "description": "Garden at the foot of the Mount of Olives where Jesus prayed in agony and was arrested the night before his crucifixion.",
+    "lat": 31.7793,
+    "lng": 35.2396,
+    "region": "Israel",
+    "locationType": "garden",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Site of Jesus's agonizing prayer and betrayal by Judas",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "golgotha",
+    "name": "Golgotha",
+    "aliases": [
+      "Calvary",
+      "Place of the Skull"
+    ],
+    "description": "The place outside Jerusalem where Jesus was crucified. The name means 'Place of the Skull' in Aramaic.",
+    "lat": 31.7784,
+    "lng": 35.2298,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Site of Jesus's crucifixion",
+    "tier": 1,
+    "knownLocation": false
+  },
+  {
+    "id": "hebron",
+    "name": "Hebron",
+    "aliases": [
+      "Kirjath-arba",
+      "Kiriath-arba",
+      "Mamre"
+    ],
+    "description": "One of the oldest cities in the world. Abraham, Isaac, Jacob, Sarah, Rebekah, and Leah are buried in the Cave of Machpelah here. David's first capital.",
+    "lat": 31.5326,
+    "lng": 35.0998,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal through Monarchy",
+    "significance": "Burial place of the patriarchs; David's first capital",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "independence",
+    "name": "Independence",
+    "aliases": [],
+    "description": "A city in Missouri designated by revelation as the 'center place' of Zion, with a spot identified for a future temple.",
+    "lat": 39.0911,
+    "lng": -94.4155,
+    "region": "Missouri, United States",
+    "locationType": "city",
+    "volumes": [
+      "D&C"
+    ],
+    "era": "Early Church (1831–1833)",
+    "significance": "Designated as the center place of Zion and location for a future temple",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "jericho",
+    "name": "Jericho",
+    "aliases": [
+      "City of Palm Trees"
+    ],
+    "description": "First Canaanite city conquered by Israel when its walls fell after seven days of marching. In the NT, Jesus healed blind Bartimaeus and called Zacchaeus here.",
+    "lat": 31.8611,
+    "lng": 35.4444,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Conquest through New Testament",
+    "significance": "First city conquered in the Promised Land; site of NT miracles",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "jerusalem",
+    "name": "Jerusalem",
+    "aliases": [
+      "Jebus",
+      "Zion",
+      "City of David",
+      "Salem",
+      "Holy City"
+    ],
+    "description": "Capital of ancient Israel and Judah, site of Solomon's Temple and the Second Temple. Central to the ministry, crucifixion, and resurrection of Jesus Christ.",
+    "lat": 31.7683,
+    "lng": 35.2137,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Patriarchal through New Testament",
+    "significance": "Most important city in scripture; spiritual center of Judaism and Christianity",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "jordan-river",
+    "name": "Jordan River",
+    "aliases": [
+      "Jordan"
+    ],
+    "description": "Major river flowing from the Sea of Galilee to the Dead Sea. Israel crossed it to enter the Promised Land. Naaman was healed in its waters. Jesus was baptized here by John.",
+    "lat": 31.84,
+    "lng": 35.55,
+    "region": "Israel",
+    "locationType": "river",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Conquest through New Testament",
+    "significance": "Boundary of the Promised Land; site of Jesus's baptism",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "judea",
+    "name": "Judea",
+    "aliases": [
+      "Judah"
+    ],
+    "description": "Southern region centered on Jerusalem, territory of the tribe of Judah. The southern kingdom after the split. In NT times, the Roman province containing Jerusalem.",
+    "lat": 31.6,
+    "lng": 35.1,
+    "region": "Judah",
+    "locationType": "region",
+    "volumes": [
+      "OT",
+      "NT",
+      "BoM"
+    ],
+    "era": "Conquest through New Testament",
+    "significance": "Territory of Judah; location of Jerusalem and the Temple",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "kirtland",
+    "name": "Kirtland",
+    "aliases": [
+      "land of Kirtland"
+    ],
+    "description": "A city in northeastern Ohio where the early Latter-day Saints gathered, built a temple, and received many revelations.",
+    "lat": 41.6264,
+    "lng": -81.3618,
+    "region": "Ohio, United States",
+    "locationType": "city",
+    "volumes": [
+      "D&C"
+    ],
+    "era": "Early Church (1831–1838)",
+    "significance": "Site of the Kirtland Temple; center of Church operations; where many D&C sections were received",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "mormon-place",
+    "name": "Mormon",
+    "aliases": [
+      "waters of Mormon",
+      "forest of Mormon",
+      "place of Mormon",
+      "land of Mormon"
+    ],
+    "description": "A place with waters and a forest where Alma the Elder baptized believers and established the Church. Located in the borders of the land of Nephi.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "waters",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Late Zeniffite era (~147 BC)",
+    "significance": "Where Alma performed the first recorded Nephite baptisms and organized the church in secret",
+    "tier": 1,
+    "knownLocation": false
+  },
+  {
+    "id": "mount-carmel",
+    "name": "Mount Carmel",
+    "aliases": [
+      "Carmel"
+    ],
+    "description": "Mountain range in northern Israel where Elijah challenged and defeated the 450 prophets of Baal, proving the Lord is God.",
+    "lat": 32.741,
+    "lng": 35.0377,
+    "region": "Israel",
+    "locationType": "mountain",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Divided Kingdom",
+    "significance": "Elijah's contest with the prophets of Baal",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "mount-moriah",
+    "name": "Mount Moriah",
+    "aliases": [
+      "Temple Mount"
+    ],
+    "description": "Mountain where Abraham was commanded to sacrifice Isaac. Later identified as the site where Solomon built the Temple in Jerusalem.",
+    "lat": 31.7781,
+    "lng": 35.2354,
+    "region": "Israel",
+    "locationType": "mountain",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal through Monarchy",
+    "significance": "Site of Abraham's near-sacrifice of Isaac and Solomon's Temple",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "mount-sinai",
+    "name": "Mount Sinai",
+    "aliases": [
+      "Horeb",
+      "Mount Horeb",
+      "Mountain of God"
+    ],
+    "description": "Mountain where God gave Moses the Ten Commandments and the Law. Also where Elijah fled and encountered God in a still small voice.",
+    "lat": 28.5394,
+    "lng": 33.9753,
+    "region": "Arabia",
+    "locationType": "mountain",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Exodus",
+    "significance": "Where God delivered the Law to Moses; covenant foundation of Israel",
+    "tier": 1,
+    "knownLocation": false
+  },
+  {
+    "id": "mount-of-olives",
+    "name": "Mount of Olives",
+    "aliases": [
+      "Olivet"
+    ],
+    "description": "Mountain east of Jerusalem where Jesus often taught his disciples, delivered the Olivet Discourse, and ascended into heaven. David fled over it during Absalom's rebellion.",
+    "lat": 31.7784,
+    "lng": 35.2456,
+    "region": "Israel",
+    "locationType": "mountain",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Monarchy through New Testament",
+    "significance": "Site of Jesus's ascension and the Olivet Discourse",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "nauvoo",
+    "name": "Nauvoo",
+    "aliases": [
+      "city of Nauvoo"
+    ],
+    "description": "A city in Illinois on the Mississippi River where the Saints gathered after being expelled from Missouri. Site of the Nauvoo Temple and the Nauvoo House.",
+    "lat": 40.55,
+    "lng": -91.385,
+    "region": "Illinois, United States",
+    "locationType": "city",
+    "volumes": [
+      "D&C"
+    ],
+    "era": "Nauvoo period (1839–1846)",
+    "significance": "Major gathering place of the Saints; site of the Nauvoo Temple; where Joseph Smith was martyred nearby",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "nazareth",
+    "name": "Nazareth",
+    "aliases": [],
+    "description": "Hometown of Jesus where he grew up. The angel Gabriel announced the birth of Jesus to Mary here. Jesus was rejected by his hometown synagogue.",
+    "lat": 32.6996,
+    "lng": 35.3035,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Hometown of Jesus; site of the Annunciation",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "nephi-land",
+    "name": "Nephi",
+    "aliases": [
+      "land of Nephi",
+      "Lehi-Nephi"
+    ],
+    "description": "A major land and city in the southern portion of Book of Mormon geography. Originally settled by Nephi after separating from his brothers, later occupied by Lamanites.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Nephite/Lamanite era (~580 BC–AD 385)",
+    "significance": "Original Nephite settlement; later the Lamanite capital; site of King Noah's reign and Abinadi's preaching",
+    "tier": 1,
+    "knownLocation": false
+  },
+  {
+    "id": "nile-river",
+    "name": "Nile River",
+    "aliases": [
+      "River of Egypt",
+      "Shihor"
+    ],
+    "description": "Great river of Egypt, turned to blood as the first plague. Baby Moses was placed in a basket on the Nile and found by Pharaoh's daughter.",
+    "lat": 30.0444,
+    "lng": 31.2357,
+    "region": "Egypt",
+    "locationType": "river",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal through Exodus",
+    "significance": "Site of Moses's rescue and the first plague",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "nineveh",
+    "name": "Nineveh",
+    "aliases": [],
+    "description": "Capital of the Assyrian Empire. God sent Jonah to preach repentance here, and the city repented. Later prophets Nahum and Zephaniah prophesied its destruction.",
+    "lat": 36.36,
+    "lng": 43.153,
+    "region": "Mesopotamia",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Prophetic",
+    "significance": "City that repented at Jonah's preaching; capital of Assyria",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "red-sea",
+    "name": "Red Sea",
+    "aliases": [
+      "Sea of Reeds"
+    ],
+    "description": "Body of water miraculously parted by God through Moses, allowing the Israelites to escape Egypt while Pharaoh's army was drowned.",
+    "lat": 27.5,
+    "lng": 34.0,
+    "region": "Egypt",
+    "locationType": "sea",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Exodus",
+    "significance": "Site of the miraculous parting during the Exodus",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "rome",
+    "name": "Rome",
+    "aliases": [],
+    "description": "Capital of the Roman Empire. Paul wrote his epistle to the Romans and was eventually imprisoned and martyred here. Center of the early Gentile church.",
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "region": "Rome/Italy",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Capital of the empire; destination of Paul's ministry",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "samaria-city",
+    "name": "Samaria",
+    "aliases": [
+      "Sebaste"
+    ],
+    "description": "Capital of the northern kingdom of Israel built by King Omri. Fell to Assyria in 722 BC. In the NT era, Jesus ministered to the Samaritan woman at a nearby well.",
+    "lat": 32.2747,
+    "lng": 35.1903,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Divided Kingdom through New Testament",
+    "significance": "Capital of the northern kingdom; center of Samaritan worship",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "sea-of-galilee",
+    "name": "Sea of Galilee",
+    "aliases": [
+      "Lake of Gennesaret",
+      "Sea of Tiberias",
+      "Sea of Chinnereth",
+      "Kinnereth"
+    ],
+    "description": "Freshwater lake in northern Israel where Jesus called his first disciples, walked on water, calmed the storm, and performed many miracles along its shores.",
+    "lat": 32.8231,
+    "lng": 35.5831,
+    "region": "Israel",
+    "locationType": "sea",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Center of Jesus's Galilean ministry; site of many miracles",
+    "tier": 1,
+    "knownLocation": true
+  },
+  {
+    "id": "sidon-river",
+    "name": "Sidon",
+    "aliases": [
+      "river Sidon",
+      "waters of Sidon"
+    ],
+    "description": "The most prominent river in the Book of Mormon, flowing past Zarahemla. Site of numerous battles and baptisms.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "river",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Nephite era (~200 BC–AD 385)",
+    "significance": "Major geographical landmark; bodies of slain soldiers were cast into it during multiple wars",
+    "tier": 1,
+    "knownLocation": false
+  },
+  {
+    "id": "zarahemla",
+    "name": "Zarahemla",
+    "aliases": [],
+    "description": "Capital city of the Nephite nation and center of government for much of the Book of Mormon narrative. Destroyed by fire at the time of Christ's crucifixion.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Nephite era (~200 BC–AD 34)",
+    "significance": "Political and spiritual capital of the Nephites; site of many sermons, wars, and the seat of the chief judges",
+    "tier": 1,
+    "knownLocation": false
+  },
+  {
+    "id": "enoch-city",
+    "name": "Zion (City of Enoch)",
+    "aliases": [
+      "City of Holiness",
+      "city of Enoch",
+      "Zion"
+    ],
+    "description": "A city built by Enoch whose people were of one heart and one mind. The entire city was taken up into heaven.",
+    "lat": null,
+    "lng": null,
+    "region": "Unknown (primeval)",
+    "locationType": "city",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Antediluvian",
+    "significance": "The city translated to heaven because of its righteousness; model for future Zion",
+    "tier": 1,
+    "knownLocation": false
+  },
+  {
+    "id": "antionum",
+    "name": "Antionum",
+    "aliases": [
+      "land of Antionum"
+    ],
+    "description": "The land of the Zoramites, east of Zarahemla and bordering the seashore, south of Jershon.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~74 BC)",
+    "significance": "Where Alma preached to the apostate Zoramites and their Rameumptom",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "assyria",
+    "name": "Assyria",
+    "aliases": [
+      "Asshur"
+    ],
+    "description": "Powerful Mesopotamian empire that conquered the northern kingdom of Israel in 722 BC, scattering the ten tribes.",
+    "lat": 36.35,
+    "lng": 43.15,
+    "region": "Mesopotamia",
+    "locationType": "region",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Divided Kingdom through Exile",
+    "significance": "Conquered northern Israel; scattered the ten tribes",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "athens",
+    "name": "Athens",
+    "aliases": [],
+    "description": "Cultural capital of the ancient world where Paul preached on Mars Hill (the Areopagus), delivering his famous sermon about the 'Unknown God.'",
+    "lat": 37.9715,
+    "lng": 23.7267,
+    "region": "Greece",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Paul's Mars Hill sermon on the Unknown God",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "beersheba",
+    "name": "Beersheba",
+    "aliases": [
+      "Beer-sheba"
+    ],
+    "description": "Southernmost major city of Israel. Abraham and Abimelech made a covenant here. Isaac built an altar here. 'From Dan to Beersheba' described the full extent of Israel.",
+    "lat": 31.2518,
+    "lng": 34.7913,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal through Monarchy",
+    "significance": "Southern boundary of Israel; patriarchal covenant site",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "bethany",
+    "name": "Bethany",
+    "aliases": [
+      "el-Azariyeh"
+    ],
+    "description": "Village near Jerusalem, home of Mary, Martha, and Lazarus. Jesus raised Lazarus from the dead here and was anointed with perfume before his final Passover.",
+    "lat": 31.77,
+    "lng": 35.26,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Home of Lazarus; site of the resurrection miracle",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "bethel",
+    "name": "Bethel",
+    "aliases": [
+      "Luz"
+    ],
+    "description": "Place where Jacob dreamed of a ladder reaching to heaven with angels ascending and descending. A major worship center in ancient Israel, later condemned for its golden calf.",
+    "lat": 31.9349,
+    "lng": 35.2263,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "PoGP"
+    ],
+    "era": "Patriarchal through Divided Kingdom",
+    "significance": "Jacob's ladder vision; later center of unauthorized worship",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "bethsaida",
+    "name": "Bethsaida",
+    "aliases": [],
+    "description": "Fishing village on the Sea of Galilee, hometown of Peter, Andrew, and Philip. Jesus healed a blind man here and fed the 5,000 nearby.",
+    "lat": 32.9081,
+    "lng": 35.6308,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Home of Peter, Andrew, Philip; feeding of the 5,000 nearby",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "bountiful-old-world",
+    "name": "Bountiful (Old World)",
+    "aliases": [],
+    "description": "A fertile coastal land where Lehi's family arrived after traveling through the Arabian wilderness. They built their ship here before crossing the ocean.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Lehite journey (~590 BC)",
+    "significance": "Where Nephi built the ship to cross the ocean to the promised land",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "caesarea",
+    "name": "Caesarea",
+    "aliases": [
+      "Caesarea Maritima"
+    ],
+    "description": "Roman administrative capital of Judea built by Herod the Great. Peter baptized Cornelius here. Paul was imprisoned here for two years before sailing to Rome.",
+    "lat": 32.5,
+    "lng": 34.8903,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Roman capital of Judea; site of Cornelius's conversion and Paul's imprisonment",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "caesarea-philippi",
+    "name": "Caesarea Philippi",
+    "aliases": [
+      "Banias",
+      "Paneas"
+    ],
+    "description": "City at the base of Mount Hermon where Peter confessed Jesus as the Christ and Jesus declared he would build his church on that rock.",
+    "lat": 33.2483,
+    "lng": 35.6925,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Peter's confession of Christ; 'upon this rock I will build my church'",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "cana",
+    "name": "Cana",
+    "aliases": [
+      "Cana of Galilee"
+    ],
+    "description": "Village in Galilee where Jesus performed his first miracle, turning water into wine at a wedding feast.",
+    "lat": 32.7472,
+    "lng": 35.3397,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Jesus's first miracle — water to wine",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "machpelah",
+    "name": "Cave of Machpelah",
+    "aliases": [
+      "Machpelah"
+    ],
+    "description": "Cave and field near Hebron that Abraham purchased as a burial site. Abraham, Sarah, Isaac, Rebekah, Jacob, and Leah were buried here.",
+    "lat": 31.5243,
+    "lng": 35.1108,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal",
+    "significance": "Burial place of the patriarchs and matriarchs",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "chaldea",
+    "name": "Chaldea",
+    "aliases": [
+      "land of Chaldea",
+      "land of the Chaldeans"
+    ],
+    "description": "The region in southern Mesopotamia where Abraham grew up among idolatrous peoples who practiced human sacrifice.",
+    "lat": 30.9628,
+    "lng": 46.1031,
+    "region": "Mesopotamia (modern Iraq)",
+    "locationType": "region",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Abrahamic era (~2000 BC)",
+    "significance": "Land of Abraham's birth and early life; land of famine and idolatry from which he was called out",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "corinth",
+    "name": "Corinth",
+    "aliases": [],
+    "description": "Major Greek commercial city where Paul established a church and spent 18 months teaching. He wrote two epistles to the Corinthians addressing church issues.",
+    "lat": 37.9061,
+    "lng": 22.8796,
+    "region": "Greece",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Major Pauline church; recipient of two epistles",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "cyprus",
+    "name": "Cyprus",
+    "aliases": [
+      "Kittim"
+    ],
+    "description": "Large Mediterranean island and homeland of Barnabas. Paul and Barnabas began their first missionary journey here.",
+    "lat": 35.1264,
+    "lng": 33.4299,
+    "region": "Asia Minor",
+    "locationType": "island",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Barnabas's homeland; first missionary journey started here",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "dan",
+    "name": "Dan",
+    "aliases": [
+      "Laish",
+      "Leshem"
+    ],
+    "description": "Northernmost city of Israel, originally called Laish. Jeroboam set up a golden calf here. 'From Dan to Beersheba' described the full extent of Israel.",
+    "lat": 33.2492,
+    "lng": 35.6519,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Judges through Divided Kingdom",
+    "significance": "Northern boundary of Israel; site of Jeroboam's golden calf",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "desolation",
+    "name": "Desolation",
+    "aliases": [
+      "land of Desolation",
+      "city of Desolation"
+    ],
+    "description": "A land and city in the northward region, named by the Nephites because of the destroyed Jaredite civilization found there.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Late Nephite era (~AD 360–375)",
+    "significance": "Named for the ruins of the Jaredites; site of battles in the final wars of the Nephites",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "emmaus",
+    "name": "Emmaus",
+    "aliases": [],
+    "description": "Village about seven miles from Jerusalem where the resurrected Jesus appeared to two disciples on the road, though they did not recognize him until he broke bread.",
+    "lat": null,
+    "lng": null,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Resurrected Christ appeared to two disciples on the road",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "ephesus",
+    "name": "Ephesus",
+    "aliases": [],
+    "description": "Major city in Asia Minor with a famous temple of Artemis. Paul ministered here for three years. One of the seven churches addressed in Revelation.",
+    "lat": 37.9492,
+    "lng": 27.3639,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Paul's longest ministry stay; one of the seven churches of Revelation",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "far-west",
+    "name": "Far West",
+    "aliases": [
+      "city of Far West"
+    ],
+    "description": "A city in Caldwell County, Missouri designated as a holy and consecrated land. Saints were commanded to build a temple there.",
+    "lat": 39.6583,
+    "lng": -94.2008,
+    "region": "Missouri, United States",
+    "locationType": "city",
+    "volumes": [
+      "D&C"
+    ],
+    "era": "Missouri period (1836–1839)",
+    "significance": "Designated as a holy land; temple site commanded; headquarters before the Missouri expulsion",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "fayette",
+    "name": "Fayette",
+    "aliases": [],
+    "description": "A town in Seneca County, New York where the Church of Jesus Christ of Latter-day Saints was formally organized on April 6, 1830.",
+    "lat": 42.8609,
+    "lng": -76.8282,
+    "region": "New York, United States",
+    "locationType": "city",
+    "volumes": [
+      "D&C"
+    ],
+    "era": "Restoration (1829–1830)",
+    "significance": "Birthplace of the restored Church; site of organizational meeting at Peter Whitmer farm",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "galatia",
+    "name": "Galatia",
+    "aliases": [],
+    "description": "Region in central Asia Minor where Paul established churches. He wrote the Epistle to the Galatians defending justification by faith.",
+    "lat": 39.5,
+    "lng": 32.0,
+    "region": "Asia Minor",
+    "locationType": "region",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Recipient of Paul's epistle on justification by faith",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "gath",
+    "name": "Gath",
+    "aliases": [],
+    "description": "One of the five major Philistine cities, home of Goliath the giant whom David defeated. David later fled to Gath and feigned madness before King Achish.",
+    "lat": 31.6144,
+    "lng": 34.8467,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Judges through Monarchy",
+    "significance": "Home of Goliath; David's refuge",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "gaza",
+    "name": "Gaza",
+    "aliases": [
+      "Azzah"
+    ],
+    "description": "One of the five major Philistine cities. Samson carried away its gates and was later imprisoned and died here pulling down the temple of Dagon. Philip baptized the Ethiopian eunuch on the road to Gaza.",
+    "lat": 31.5,
+    "lng": 34.4667,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Judges through New Testament",
+    "significance": "Philistine city; Samson's death; Ethiopian eunuch's baptism route",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "gibeon",
+    "name": "Gibeon",
+    "aliases": [],
+    "description": "Canaanite city whose inhabitants tricked Joshua into making a peace treaty. God made the sun stand still here during Joshua's battle. Solomon received wisdom in a dream here.",
+    "lat": 31.8489,
+    "lng": 35.1861,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Conquest through Monarchy",
+    "significance": "Sun stood still; Solomon's dream of wisdom",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "gideon",
+    "name": "Gideon",
+    "aliases": [
+      "valley of Gideon",
+      "city of Gideon",
+      "land of Gideon"
+    ],
+    "description": "A city, land, and valley near Zarahemla, east of the river Sidon. Named after the Nephite patriot Gideon.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~90–73 BC)",
+    "significance": "Where Alma preached important sermons about Christ's coming; location of Nehor's crime",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "gilgal",
+    "name": "Gilgal",
+    "aliases": [],
+    "description": "First camp of Israel after crossing the Jordan. Twelve stones were set up here as a memorial. Saul was made king here. Samuel judged Israel here.",
+    "lat": 31.87,
+    "lng": 35.43,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Conquest through Monarchy",
+    "significance": "Memorial of Jordan crossing; Saul's coronation site",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "gomorrah",
+    "name": "Gomorrah",
+    "aliases": [],
+    "description": "City destroyed alongside Sodom by divine judgment. Referenced throughout scripture as a warning against wickedness.",
+    "lat": null,
+    "lng": null,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Patriarchal",
+    "significance": "Destroyed with Sodom as symbol of divine judgment",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "goshen",
+    "name": "Goshen",
+    "aliases": [
+      "Land of Goshen"
+    ],
+    "description": "Fertile region in the eastern Nile Delta where the Israelites lived during their sojourn in Egypt, from the time of Joseph until the Exodus.",
+    "lat": 30.85,
+    "lng": 31.85,
+    "region": "Egypt",
+    "locationType": "region",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal through Exodus",
+    "significance": "Israelite settlement in Egypt during the 400-year sojourn",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "haran",
+    "name": "Haran",
+    "aliases": [
+      "Harran",
+      "Charran"
+    ],
+    "description": "City in upper Mesopotamia where Abraham's family settled after leaving Ur. Abraham departed here for Canaan. Jacob fled here to escape Esau and married Leah and Rachel.",
+    "lat": 36.8644,
+    "lng": 39.0331,
+    "region": "Mesopotamia",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "PoGP"
+    ],
+    "era": "Patriarchal",
+    "significance": "Abraham's departure point for Canaan; Jacob married here",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "harmony",
+    "name": "Harmony",
+    "aliases": [],
+    "description": "A town in Susquehanna County, Pennsylvania where Joseph Smith translated much of the Book of Mormon and received priesthood keys.",
+    "lat": 41.9559,
+    "lng": -75.5185,
+    "region": "Pennsylvania, United States",
+    "locationType": "city",
+    "volumes": [
+      "D&C"
+    ],
+    "era": "Restoration (1827–1830)",
+    "significance": "Where Joseph translated the Book of Mormon; where the Aaronic Priesthood was restored on the Susquehanna River",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "helam",
+    "name": "Helam",
+    "aliases": [
+      "city of Helam",
+      "land of Helam"
+    ],
+    "description": "A land and city where Alma the Elder and his followers settled after fleeing from King Noah. They were later placed in bondage by the Lamanites.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Late Zeniffite era (~145–120 BC)",
+    "significance": "Where Alma's people established a righteous community and were miraculously delivered from bondage",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "irreantum",
+    "name": "Irreantum",
+    "aliases": [],
+    "description": "The sea beheld by Lehi's family upon reaching the land of Bountiful, interpreted as meaning 'many waters.'",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "sea",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Lehite journey (~590 BC)",
+    "significance": "The sea from which Nephi's family launched their voyage to the promised land",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "ishmael-land",
+    "name": "Ishmael",
+    "aliases": [
+      "land of Ishmael"
+    ],
+    "description": "A Lamanite land called after the sons of Ishmael, where King Lamoni ruled and Ammon served as a servant.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~90 BC)",
+    "significance": "Where Ammon's famous mission took place, including defending the king's flocks at the waters of Sebus",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "jackson-county",
+    "name": "Jackson County",
+    "aliases": [],
+    "description": "A county in western Missouri identified as the location of Zion and the New Jerusalem. The Saints were violently expelled in 1833.",
+    "lat": 39.0069,
+    "lng": -94.3477,
+    "region": "Missouri, United States",
+    "locationType": "region",
+    "volumes": [
+      "D&C"
+    ],
+    "era": "Early Church (1831–1833)",
+    "significance": "Designated land of Zion; Saints were driven out; land purchases commanded by revelation",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "jacobs-well",
+    "name": "Jacob's Well",
+    "aliases": [],
+    "description": "Well near Shechem/Sychar where Jesus met the Samaritan woman and offered her 'living water,' revealing himself as the Messiah.",
+    "lat": 32.2094,
+    "lng": 35.285,
+    "region": "Israel",
+    "locationType": "well",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Jesus offered 'living water' to the Samaritan woman",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "jershon",
+    "name": "Jershon",
+    "aliases": [
+      "land of Jershon"
+    ],
+    "description": "A land given by the Nephites to the converted Lamanites (Anti-Nephi-Lehies/people of Ammon) as a place of refuge.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~77 BC)",
+    "significance": "Safe haven provided by the Nephites for the pacifist Anti-Nephi-Lehies",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "jezreel-valley",
+    "name": "Jezreel Valley",
+    "aliases": [
+      "Valley of Jezreel",
+      "Plain of Esdraelon",
+      "Valley of Megiddo"
+    ],
+    "description": "Large fertile valley in northern Israel, site of numerous battles. Gideon defeated the Midianites here. Saul died on nearby Mount Gilboa.",
+    "lat": 32.5667,
+    "lng": 35.3167,
+    "region": "Israel",
+    "locationType": "valley",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Judges through Monarchy",
+    "significance": "Major battlefield; Gideon's victory; Saul's death",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "joppa",
+    "name": "Joppa",
+    "aliases": [
+      "Jaffa",
+      "Yafo"
+    ],
+    "description": "Ancient seaport where Jonah boarded a ship fleeing from God. Peter raised Tabitha from the dead and received his vision of clean and unclean animals here.",
+    "lat": 32.0533,
+    "lng": 34.7553,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Prophetic through New Testament",
+    "significance": "Jonah's departure port; Peter's vision of the Gentiles",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "kadesh-barnea",
+    "name": "Kadesh-barnea",
+    "aliases": [
+      "Kadesh",
+      "En-mishpat",
+      "Meribah-kadesh"
+    ],
+    "description": "Oasis in the Negev desert where Israel camped and sent spies into Canaan. The people's refusal to enter led to 40 years of wandering. Moses struck the rock here.",
+    "lat": 30.65,
+    "lng": 34.4,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Exodus",
+    "significance": "Spies sent to Canaan; Israel condemned to wander 40 years",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "kolob",
+    "name": "Kolob",
+    "aliases": [],
+    "description": "The great governing star (or planet) nearest to the throne of God, where one revolution equals one thousand years of earth time.",
+    "lat": null,
+    "lng": null,
+    "region": "Celestial",
+    "locationType": "region",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Eternal / Abrahamic revelation",
+    "significance": "Represents God's dwelling place and the governing order of the cosmos in Abraham's vision",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "laodicea",
+    "name": "Laodicea",
+    "aliases": [],
+    "description": "Wealthy city in Asia Minor and one of the seven churches in Revelation, rebuked for being 'lukewarm.'",
+    "lat": 37.8361,
+    "lng": 29.1086,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "One of seven churches; rebuked for lukewarmness",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "lebanon",
+    "name": "Lebanon",
+    "aliases": [],
+    "description": "Mountainous region north of Israel famous for its cedar trees, used to build Solomon's Temple.",
+    "lat": 33.8547,
+    "lng": 35.8623,
+    "region": "Phoenicia",
+    "locationType": "region",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Monarchy through Prophetic",
+    "significance": "Cedars of Lebanon used in Solomon's Temple",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "lehi-nephi",
+    "name": "Lehi-Nephi",
+    "aliases": [
+      "city of Lehi-Nephi"
+    ],
+    "description": "The city of Nephi as known during Zeniff's era, combining the names of Lehi and Nephi.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Zeniffite era (~200–120 BC)",
+    "significance": "Center of Zeniff's colony; given to the Nephites by Lamanite king Laman as part of a deceptive treaty",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "lemuel-valley",
+    "name": "Lemuel",
+    "aliases": [
+      "valley of Lemuel"
+    ],
+    "description": "A valley near the river Laman and the Red Sea where Lehi's family first camped. Also a later Lamanite city.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "valley",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Lehite journey (~600 BC)",
+    "significance": "First named campsite of Lehi's family in the wilderness; where Lehi gave his sons counsel",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "macedonia",
+    "name": "Macedonia",
+    "aliases": [
+      "Macedon"
+    ],
+    "description": "Roman province in northern Greece. Paul received a vision calling him here. Churches at Philippi, Thessalonica, and Berea were in Macedonia.",
+    "lat": 41.0,
+    "lng": 22.0,
+    "region": "Greece",
+    "locationType": "region",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Paul's Macedonian call; first European churches",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "manchester",
+    "name": "Manchester",
+    "aliases": [],
+    "description": "A town in Ontario County (now Wayne County), New York where the Smith family lived and where Joseph Smith had the First Vision and retrieved the gold plates.",
+    "lat": 42.97,
+    "lng": -77.23,
+    "region": "New York, United States",
+    "locationType": "city",
+    "volumes": [
+      "D&C",
+      "PoGP"
+    ],
+    "era": "Restoration (1820–1827)",
+    "significance": "Site of the Sacred Grove (First Vision); near the Hill Cumorah where the plates were retrieved",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "manti",
+    "name": "Manti",
+    "aliases": [
+      "land of Manti",
+      "city of Manti"
+    ],
+    "description": "A significant Nephite city in the southern part of Nephite territory, near the headwaters of the river Sidon.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~87–62 BC)",
+    "significance": "Key strategic military location during the wars with the Lamanites; site of Captain Moroni's campaigns",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "mediterranean-sea",
+    "name": "Mediterranean Sea",
+    "aliases": [
+      "Great Sea",
+      "Western Sea",
+      "Sea of the Philistines"
+    ],
+    "description": "The large sea forming the western boundary of the Promised Land.",
+    "lat": 35.0,
+    "lng": 18.0,
+    "region": "Other",
+    "locationType": "sea",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Patriarchal through New Testament",
+    "significance": "Western boundary of the Promised Land",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "megiddo",
+    "name": "Megiddo",
+    "aliases": [
+      "Armageddon",
+      "Har-Megiddo"
+    ],
+    "description": "Strategic fortified city overlooking the Jezreel Valley. Solomon built it as a chariot city. King Josiah was killed here. Associated with the apocalyptic battle of Armageddon.",
+    "lat": 32.5847,
+    "lng": 35.1847,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Conquest through New Testament",
+    "significance": "Strategic fortress; associated with the battle of Armageddon",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "midian",
+    "name": "Midian",
+    "aliases": [
+      "Land of Midian"
+    ],
+    "description": "Region in northwestern Arabia where Moses fled after killing the Egyptian. He married Zipporah and encountered the burning bush here.",
+    "lat": 28.5,
+    "lng": 36.5,
+    "region": "Arabia",
+    "locationType": "region",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Exodus",
+    "significance": "Moses's refuge; burning bush encounter",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "missouri",
+    "name": "Missouri",
+    "aliases": [
+      "land of Missouri"
+    ],
+    "description": "The state designated by revelation as the land of Zion and the inheritance of the Saints.",
+    "lat": 38.5739,
+    "lng": -92.6038,
+    "region": "Missouri, United States",
+    "locationType": "region",
+    "volumes": [
+      "D&C"
+    ],
+    "era": "Early Church (1831–1839)",
+    "significance": "Land of the Saints' inheritance; designated location of the New Jerusalem",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "moab",
+    "name": "Moab",
+    "aliases": [
+      "Land of Moab"
+    ],
+    "description": "Region east of the Dead Sea. Ruth was from Moab. Balaam was summoned to curse Israel from here. Moses viewed the Promised Land and died here.",
+    "lat": 31.4,
+    "lng": 35.8,
+    "region": "Transjordan",
+    "locationType": "region",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal through Monarchy",
+    "significance": "Ruth's homeland; Moses's death; Balaam's oracle",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "moron",
+    "name": "Moron",
+    "aliases": [
+      "land of Moron"
+    ],
+    "description": "The land where the Jaredite kings dwelt and ruled, near the land called Desolation by the Nephites.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Jaredite era",
+    "significance": "Capital region of the Jaredite kingdom; where the throne was located",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "moroni-city",
+    "name": "Moroni",
+    "aliases": [
+      "city of Moroni",
+      "land of Moroni"
+    ],
+    "description": "A Nephite coastal city by the east sea, on the southern border of Nephite territory. It sank into the sea at the time of Christ's crucifixion.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~72 BC–AD 34)",
+    "significance": "Strategic coastal city founded by Captain Moroni; destroyed by sinking into the sea at Christ's death",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "mount-ararat",
+    "name": "Mount Ararat",
+    "aliases": [
+      "Mountains of Ararat"
+    ],
+    "description": "Mountain range where Noah's ark came to rest after the Flood receded. Located in the region of ancient Armenia.",
+    "lat": 39.7019,
+    "lng": 44.2991,
+    "region": "Other",
+    "locationType": "mountain",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Antediluvian",
+    "significance": "Resting place of Noah's ark after the Flood",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "mount-hermon",
+    "name": "Mount Hermon",
+    "aliases": [
+      "Sirion",
+      "Senir"
+    ],
+    "description": "Highest mountain in the region at the northern boundary of Israel. Its melting snow feeds the Jordan River. Possible site of the Transfiguration.",
+    "lat": 33.4167,
+    "lng": 35.8573,
+    "region": "Israel",
+    "locationType": "mountain",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Conquest through Monarchy",
+    "significance": "Northern boundary of Israel; possible Transfiguration site",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "mount-nebo",
+    "name": "Mount Nebo",
+    "aliases": [
+      "Pisgah",
+      "Mount Pisgah"
+    ],
+    "description": "Mountain in Moab where Moses viewed the Promised Land before his death. God buried Moses in a valley in the land of Moab nearby.",
+    "lat": 31.7672,
+    "lng": 35.7253,
+    "region": "Transjordan",
+    "locationType": "mountain",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Exodus",
+    "significance": "Where Moses saw the Promised Land before his death",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "mount-tabor",
+    "name": "Mount Tabor",
+    "aliases": [
+      "Tabor"
+    ],
+    "description": "Mountain in the Jezreel Valley. Deborah and Barak gathered forces here before defeating Sisera. Traditional site of the Transfiguration of Jesus.",
+    "lat": 32.6867,
+    "lng": 35.3917,
+    "region": "Israel",
+    "locationType": "mountain",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Judges through New Testament",
+    "significance": "Deborah's victory; traditional Transfiguration site",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "mount-zion",
+    "name": "Mount Zion",
+    "aliases": [
+      "Zion"
+    ],
+    "description": "Originally the Jebusite fortress captured by David, later applied to the Temple Mount and all of Jerusalem. Frequently used as a symbol for God's holy dwelling.",
+    "lat": 31.7717,
+    "lng": 35.2286,
+    "region": "Israel",
+    "locationType": "mountain",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Monarchy through New Testament",
+    "significance": "Symbol of God's dwelling; David's captured fortress",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "mulek",
+    "name": "Mulek",
+    "aliases": [
+      "city of Mulek"
+    ],
+    "description": "A Nephite city on the east coast that was captured by the Lamanites and later retaken by Moroni and Teancum through a clever stratagem.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~66–63 BC)",
+    "significance": "Site of a major military campaign where Moroni and Teancum recaptured the city from the Lamanites",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "nahom",
+    "name": "Nahom",
+    "aliases": [],
+    "description": "A place in the Arabian wilderness where Ishmael was buried. The family turned eastward from here toward the coast.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Lehite journey (~589 BC)",
+    "significance": "Burial place of Ishmael; notable as a pre-existing place name (not named by Lehi's group)",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "nephihah",
+    "name": "Nephihah",
+    "aliases": [
+      "city of Nephihah",
+      "plains of Nephihah"
+    ],
+    "description": "A Nephite city between the cities of Moroni and Aaron, and site of nearby plains. It was a significant location during the Lamanite wars.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~72–62 BC)",
+    "significance": "Important military location during Captain Moroni's campaigns against the Lamanites",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "palmyra",
+    "name": "Palmyra",
+    "aliases": [],
+    "description": "A town in Wayne County, New York where the Smith family lived and where the Book of Mormon was first published.",
+    "lat": 43.064,
+    "lng": -77.2336,
+    "region": "New York, United States",
+    "locationType": "city",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Restoration (1816–1830)",
+    "significance": "Smith family home; where the Book of Mormon was published at E.B. Grandin's print shop",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "patmos",
+    "name": "Patmos",
+    "aliases": [],
+    "description": "Small Greek island in the Aegean Sea where the apostle John was exiled and received the visions recorded in the book of Revelation.",
+    "lat": 37.3208,
+    "lng": 26.5472,
+    "region": "Greece",
+    "locationType": "island",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Where John received the Revelation",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "peniel",
+    "name": "Peniel",
+    "aliases": [
+      "Penuel"
+    ],
+    "description": "Place east of the Jordan where Jacob wrestled with an angel through the night and was renamed Israel, meaning 'he who strives with God.'",
+    "lat": 32.29,
+    "lng": 35.68,
+    "region": "Transjordan",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal",
+    "significance": "Jacob wrestled with God and was renamed Israel",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "pergamum",
+    "name": "Pergamum",
+    "aliases": [
+      "Pergamos"
+    ],
+    "description": "City in Asia Minor and one of the seven churches addressed in Revelation. Called 'where Satan's throne is,' likely referring to the great altar of Zeus.",
+    "lat": 39.1217,
+    "lng": 27.1842,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "One of seven churches in Revelation; 'where Satan's throne is'",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "persia",
+    "name": "Persia",
+    "aliases": [
+      "Elam",
+      "Media and Persia"
+    ],
+    "description": "Empire that conquered Babylon and allowed the Jews to return to Jerusalem under Cyrus. Setting of Esther, Ezra, and Nehemiah.",
+    "lat": 32.4279,
+    "lng": 53.688,
+    "region": "Persia",
+    "locationType": "region",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Exile through Return",
+    "significance": "Freed the Jews from Babylonian exile; setting of Esther",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "philippi",
+    "name": "Philippi",
+    "aliases": [],
+    "description": "Roman colony in Macedonia where Paul established the first European church. Lydia was baptized here. Paul and Silas were imprisoned and miraculously freed.",
+    "lat": 41.0161,
+    "lng": 24.2872,
+    "region": "Greece",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "First European church; Paul and Silas imprisoned here",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "plain-of-shinar",
+    "name": "Plain of Shinar",
+    "aliases": [
+      "Shinar",
+      "Land of Shinar"
+    ],
+    "description": "Plain in Mesopotamia where the Tower of Babel was built. Early post-flood civilization settled here. Later identified with Babylonia.",
+    "lat": 32.5,
+    "lng": 44.5,
+    "region": "Mesopotamia",
+    "locationType": "plain",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Antediluvian through Patriarchal",
+    "significance": "Tower of Babel; origin of scattered languages",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "samaria-region",
+    "name": "Samaria (Region)",
+    "aliases": [],
+    "description": "Central region of Israel between Galilee and Judea, inhabited by the Samaritans in the NT period.",
+    "lat": 32.28,
+    "lng": 35.2,
+    "region": "Israel",
+    "locationType": "region",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Divided Kingdom through New Testament",
+    "significance": "Territory between Judea and Galilee; Samaritan homeland",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "sebus",
+    "name": "Sebus",
+    "aliases": [
+      "water of Sebus",
+      "waters of Sebus"
+    ],
+    "description": "A place of water where Lamanite flocks were taken to drink and where robbers would scatter them. Site of Ammon's defense of king Lamoni's flocks.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "waters",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~90 BC)",
+    "significance": "Where Ammon defended king Lamoni's flocks and cut off the arms of the attackers",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "shechem",
+    "name": "Shechem",
+    "aliases": [
+      "Sychar",
+      "Sichem"
+    ],
+    "description": "Central city in Canaan where Abraham first built an altar. Joseph's bones were buried here. Joshua made a covenant here. Jesus met the Samaritan woman near here.",
+    "lat": 32.2131,
+    "lng": 35.2828,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Patriarchal through New Testament",
+    "significance": "Abraham's first altar in Canaan; covenant renewal site",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "shiloh",
+    "name": "Shiloh",
+    "aliases": [],
+    "description": "Central worship site where the Tabernacle stood for over 300 years during the period of the Judges. Samuel grew up serving here under Eli.",
+    "lat": 32.0556,
+    "lng": 35.2892,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Conquest through Judges",
+    "significance": "First permanent home of the Tabernacle; Samuel's childhood home",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "shim",
+    "name": "Shim",
+    "aliases": [
+      "hill Shim"
+    ],
+    "description": "A hill where Ammaron deposited the sacred records. Mormon later retrieved them from there.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "hill",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Late Nephite era (AD 321–345)",
+    "significance": "Hiding place of the sacred Nephite records before Mormon retrieved and abridged them",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "sidon",
+    "name": "Sidon",
+    "aliases": [
+      "Zidon"
+    ],
+    "description": "Ancient Phoenician port city. Jezebel was a Sidonian princess. Elijah stayed with the widow of Zarephath near Sidon. Jesus visited the region.",
+    "lat": 33.5633,
+    "lng": 35.3717,
+    "region": "Phoenicia",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Patriarchal through New Testament",
+    "significance": "Major Phoenician city; home of Jezebel's family",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "smyrna",
+    "name": "Smyrna",
+    "aliases": [],
+    "description": "City in Asia Minor and one of the seven churches in Revelation, praised for enduring tribulation and poverty.",
+    "lat": 38.4192,
+    "lng": 27.1287,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "One of seven churches in Revelation; praised for faithfulness",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "sodom",
+    "name": "Sodom",
+    "aliases": [],
+    "description": "Wicked city near the Dead Sea destroyed by God with fire and brimstone. Lot and his family were rescued, but his wife looked back and became a pillar of salt.",
+    "lat": null,
+    "lng": null,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Patriarchal",
+    "significance": "Symbol of divine judgment; destroyed for wickedness",
+    "tier": 2,
+    "knownLocation": false
+  },
+  {
+    "id": "susa",
+    "name": "Susa",
+    "aliases": [
+      "Shushan"
+    ],
+    "description": "Capital of the Persian Empire where Esther became queen, Haman plotted against the Jews, and Nehemiah served as cupbearer to King Artaxerxes.",
+    "lat": 32.19,
+    "lng": 48.25,
+    "region": "Persia",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Exile through Return",
+    "significance": "Setting of Esther; Nehemiah's starting point",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "susquehanna-river",
+    "name": "Susquehanna",
+    "aliases": [
+      "Susquehanna River"
+    ],
+    "description": "A river in Pennsylvania on whose banks the Aaronic and Melchizedek Priesthoods were restored and Michael detected the devil.",
+    "lat": 41.9612,
+    "lng": -75.5092,
+    "region": "Pennsylvania, United States",
+    "locationType": "river",
+    "volumes": [
+      "D&C",
+      "PoGP"
+    ],
+    "era": "Restoration (1829)",
+    "significance": "Where John the Baptist and Peter, James, and John restored the priesthoods",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "tarsus",
+    "name": "Tarsus",
+    "aliases": [],
+    "description": "Prominent city in Cilicia and the birthplace and hometown of the apostle Paul.",
+    "lat": 36.9164,
+    "lng": 34.8961,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Birthplace of the apostle Paul",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "thessalonica",
+    "name": "Thessalonica",
+    "aliases": [
+      "Thessaloniki"
+    ],
+    "description": "Major city in Macedonia where Paul established a church. He wrote two epistles to the Thessalonians addressing the Second Coming.",
+    "lat": 40.6401,
+    "lng": 22.9444,
+    "region": "Greece",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Recipient of two Pauline epistles on the Second Coming",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "tigris-river",
+    "name": "Tigris River",
+    "aliases": [
+      "Hiddekel"
+    ],
+    "description": "One of the four rivers of Eden and a major river of Mesopotamia. Daniel received a vision near the great river Hiddekel.",
+    "lat": 33.3,
+    "lng": 44.4,
+    "region": "Mesopotamia",
+    "locationType": "river",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Creation through Prophetic",
+    "significance": "River of Eden; Daniel's vision",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "tyre",
+    "name": "Tyre",
+    "aliases": [
+      "Tyrus"
+    ],
+    "description": "Major Phoenician port city. Hiram of Tyre supplied materials for Solomon's Temple. Ezekiel prophesied its destruction. Jesus visited the region.",
+    "lat": 33.2705,
+    "lng": 35.1964,
+    "region": "Phoenicia",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Monarchy through New Testament",
+    "significance": "Supplied materials for the Temple; prophesied against by Ezekiel",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "ur",
+    "name": "Ur",
+    "aliases": [
+      "Ur of the Chaldees",
+      "Ur of the Chaldeans"
+    ],
+    "description": "Abraham's birthplace in Mesopotamia, from which God called him to journey to the Promised Land.",
+    "lat": 30.9628,
+    "lng": 46.103,
+    "region": "Mesopotamia",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "PoGP"
+    ],
+    "era": "Patriarchal",
+    "significance": "Abraham's homeland; starting point of the covenant journey",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "valley-of-elah",
+    "name": "Valley of Elah",
+    "aliases": [
+      "Elah"
+    ],
+    "description": "Valley southwest of Jerusalem where the young David defeated Goliath the Philistine champion with a sling and stone.",
+    "lat": 31.6856,
+    "lng": 34.96,
+    "region": "Israel",
+    "locationType": "valley",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Monarchy",
+    "significance": "David defeated Goliath here",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "valley-of-hinnom",
+    "name": "Valley of Hinnom",
+    "aliases": [
+      "Gehenna",
+      "Ge-Hinnom",
+      "Tophet",
+      "Topheth"
+    ],
+    "description": "Valley south of Jerusalem where children were sacrificed to Molech. Jeremiah prophesied judgment on it. In NT times, used as a symbol for hell (Gehenna).",
+    "lat": 31.7667,
+    "lng": 35.2278,
+    "region": "Israel",
+    "locationType": "valley",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Monarchy through New Testament",
+    "significance": "Child sacrifice site; origin of the NT word for hell",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "judean-wilderness",
+    "name": "Wilderness of Judea",
+    "aliases": [
+      "Judean Desert",
+      "Wilderness of Judah"
+    ],
+    "description": "Desert region east of Jerusalem descending toward the Dead Sea. David hid from Saul here. John the Baptist preached here. Jesus was tempted here for 40 days.",
+    "lat": 31.55,
+    "lng": 35.35,
+    "region": "Israel",
+    "locationType": "desert",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Monarchy through New Testament",
+    "significance": "David's refuge; Jesus's temptation; John the Baptist's ministry",
+    "tier": 2,
+    "knownLocation": true
+  },
+  {
+    "id": "aaron-city",
+    "name": "Aaron",
+    "aliases": [
+      "city of Aaron"
+    ],
+    "description": "A Nephite city near the borders of Nephihah and Moroni. Also referenced as a place where prisoners fled during Mormon's era.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~72 BC)",
+    "significance": "Border city between Moroni and Nephihah in the eastern Nephite territory",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "achaia",
+    "name": "Achaia",
+    "aliases": [],
+    "description": "Roman province in southern Greece, with Corinth as its capital. Paul spent 18 months here.",
+    "lat": 38.0,
+    "lng": 22.5,
+    "region": "Greece",
+    "locationType": "region",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Province containing Corinth; Paul ministered 18 months",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "adullam",
+    "name": "Adullam",
+    "aliases": [
+      "Cave of Adullam"
+    ],
+    "description": "City with a nearby cave where David hid from Saul and gathered 400 discontented followers who became his mighty men.",
+    "lat": 31.65,
+    "lng": 34.98,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Monarchy",
+    "significance": "David's hideout; gathered his mighty men",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "ai",
+    "name": "Ai",
+    "aliases": [
+      "Hai"
+    ],
+    "description": "Canaanite city near Bethel. Israel was defeated here due to Achan's sin, then conquered it after dealing with the sin.",
+    "lat": 31.9167,
+    "lng": 35.25,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Conquest",
+    "significance": "Israel's initial defeat due to sin; then conquered",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "alexandria",
+    "name": "Alexandria",
+    "aliases": [],
+    "description": "Major Egyptian port city. Apollos was from here. The Septuagint was produced here. Ships from Alexandria feature in Acts.",
+    "lat": 31.2001,
+    "lng": 29.9187,
+    "region": "Egypt",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Apollos's hometown; Septuagint origin; grain ships to Rome",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "alma-valley",
+    "name": "Alma",
+    "aliases": [
+      "valley of Alma"
+    ],
+    "description": "A valley where Alma the Elder's people stopped during their exodus from the land of Helam and poured out thanks to God.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "valley",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Late Zeniffite era (~120 BC)",
+    "significance": "Named after Alma; where the people gave thanks for their deliverance from Lamanite bondage",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "ammon",
+    "name": "Ammon",
+    "aliases": [
+      "Land of Ammon",
+      "Rabbah"
+    ],
+    "description": "Region east of the Jordan, homeland of the Ammonites. Their capital Rabbah was besieged by David's army when Uriah was killed.",
+    "lat": 31.95,
+    "lng": 35.9333,
+    "region": "Transjordan",
+    "locationType": "region",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal through Monarchy",
+    "significance": "Ammonite homeland; Uriah killed during siege of Rabbah",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "amulon",
+    "name": "Amulon",
+    "aliases": [
+      "land of Amulon"
+    ],
+    "description": "A land named after the former priest of King Noah who settled there with other priests and Lamanite women.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Late Zeniffite era (~145 BC)",
+    "significance": "Settlement of the wicked priests of Noah who became oppressors of Alma's people",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "anathoth",
+    "name": "Anathoth",
+    "aliases": [],
+    "description": "Priestly city in Benjamin, hometown of the prophet Jeremiah.",
+    "lat": 31.8167,
+    "lng": 35.25,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Monarchy through Prophetic",
+    "significance": "Hometown of Jeremiah",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "antioch-pisidia",
+    "name": "Antioch in Pisidia",
+    "aliases": [
+      "Pisidian Antioch"
+    ],
+    "description": "City in Asia Minor where Paul preached a major sermon in the synagogue on his first missionary journey and turned to the Gentiles after Jewish rejection.",
+    "lat": 38.3,
+    "lng": 31.1833,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Paul turned to the Gentiles after Jewish rejection",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "antiparah",
+    "name": "Antiparah",
+    "aliases": [
+      "city of Antiparah"
+    ],
+    "description": "A Lamanite-held city in the southwestern theater. Helaman's warriors lured the Lamanite garrison out through a decoy march.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~64 BC)",
+    "significance": "Site of the famous decoy strategy that drew out Lamanite armies, leading to their defeat",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "arabia-region",
+    "name": "Arabia",
+    "aliases": [],
+    "description": "Vast peninsula south and east of Israel. Paul went to Arabia after his conversion before returning to Damascus.",
+    "lat": 24.0,
+    "lng": 45.0,
+    "region": "Arabia",
+    "locationType": "region",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Patriarchal through New Testament",
+    "significance": "Paul went here after conversion; Sinai located here per Galatians",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "arimathea",
+    "name": "Arimathea",
+    "aliases": [],
+    "description": "Hometown of Joseph of Arimathea, the wealthy member of the Sanhedrin who provided his own tomb for Jesus's burial.",
+    "lat": null,
+    "lng": null,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Home of Joseph who buried Jesus in his tomb",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "arnon-river",
+    "name": "Arnon River",
+    "aliases": [
+      "River Arnon",
+      "Wadi Mujib"
+    ],
+    "description": "River gorge in Transjordan that served as the border between Moab and the Amorite territory conquered by Israel.",
+    "lat": 31.48,
+    "lng": 35.6,
+    "region": "Transjordan",
+    "locationType": "river",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Exodus through Prophetic",
+    "significance": "Boundary between Moab and Israel's Transjordan territory",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "ashdod",
+    "name": "Ashdod",
+    "aliases": [
+      "Azotus"
+    ],
+    "description": "One of the five major Philistine cities. The Ark of the Covenant was brought here to the temple of Dagon, which fell before it. Philip preached here after baptizing the Ethiopian eunuch.",
+    "lat": 31.804,
+    "lng": 34.649,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Judges through New Testament",
+    "significance": "Dagon's temple fell before the Ark here",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "ashkelon",
+    "name": "Ashkelon",
+    "aliases": [
+      "Askelon"
+    ],
+    "description": "One of the five major Philistine cities on the Mediterranean coast. Samson killed thirty men here. Mentioned in prophetic oracles.",
+    "lat": 31.6688,
+    "lng": 34.566,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Judges through Prophetic",
+    "significance": "Major Philistine city",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "bashan",
+    "name": "Bashan",
+    "aliases": [],
+    "description": "Fertile region east of the Sea of Galilee. Israel defeated King Og of Bashan before entering the Promised Land.",
+    "lat": 32.9,
+    "lng": 36.0,
+    "region": "Transjordan",
+    "locationType": "region",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Exodus through Monarchy",
+    "significance": "Defeat of King Og; known for fertility and strength",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "beer-lahai-roi",
+    "name": "Beer-lahai-roi",
+    "aliases": [],
+    "description": "Well in the Negev between Kadesh and Bered where the angel of the Lord appeared to Hagar after she fled from Sarah. Name means 'Well of the Living One who sees me.'",
+    "lat": null,
+    "lng": null,
+    "region": "Israel",
+    "locationType": "well",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal",
+    "significance": "Hagar's encounter with the angel; God sees the outcast",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "berea",
+    "name": "Berea",
+    "aliases": [
+      "Beroea"
+    ],
+    "description": "Macedonian city where Paul preached after leaving Thessalonica. The Bereans were praised for examining the Scriptures daily to verify Paul's teaching.",
+    "lat": 40.5231,
+    "lng": 22.3428,
+    "region": "Greece",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Noble Bereans searched scriptures daily",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "beth-horon",
+    "name": "Beth-horon",
+    "aliases": [
+      "Upper Beth-horon",
+      "Lower Beth-horon"
+    ],
+    "description": "Twin cities on the road from Jerusalem to the coast. Joshua's army chased the Amorites here while God hurled hailstones.",
+    "lat": 31.8789,
+    "lng": 35.1328,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Conquest through Monarchy",
+    "significance": "God hurled hailstones on the Amorites here",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "bethshan",
+    "name": "Beth-shan",
+    "aliases": [
+      "Beth-shean",
+      "Scythopolis"
+    ],
+    "description": "City where the Philistines displayed the bodies of Saul and his sons on the city wall after Gilboa.",
+    "lat": 32.505,
+    "lng": 35.5044,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Judges through Monarchy",
+    "significance": "Saul's body displayed on its walls",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "beth-shemesh",
+    "name": "Beth-shemesh",
+    "aliases": [],
+    "description": "City in Judah where the Ark of the Covenant was returned by the Philistines on a cart pulled by cows.",
+    "lat": 31.75,
+    "lng": 34.9833,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Judges through Monarchy",
+    "significance": "Ark of the Covenant returned here by the Philistines",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "bethabara",
+    "name": "Bethabara",
+    "aliases": [],
+    "description": "A place beyond Jordan referenced in Nephi's vision where his father Lehi saw the Messiah would be baptized.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Lehite era (~600 BC, prophetic vision)",
+    "significance": "Prophesied location of the Messiah's baptism by John",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "bethphage",
+    "name": "Bethphage",
+    "aliases": [],
+    "description": "Village on the Mount of Olives from which Jesus sent two disciples to fetch the donkey for his triumphal entry into Jerusalem.",
+    "lat": 31.7783,
+    "lng": 35.25,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Starting point of Jesus's triumphal entry",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "bozrah",
+    "name": "Bozrah",
+    "aliases": [],
+    "description": "Capital of Edom, prophesied against by Isaiah, Jeremiah, and Amos.",
+    "lat": 30.7333,
+    "lng": 35.6167,
+    "region": "Transjordan",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Prophetic",
+    "significance": "Edomite capital; Isaiah's judgment vision",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "brook-cherith",
+    "name": "Brook Cherith",
+    "aliases": [
+      "Kerith",
+      "Wadi Cherith"
+    ],
+    "description": "Brook east of the Jordan where God commanded Elijah to hide during the drought. Ravens brought him bread and meat.",
+    "lat": null,
+    "lng": null,
+    "region": "Israel",
+    "locationType": "river",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Divided Kingdom",
+    "significance": "Elijah fed by ravens during the drought",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "carchemish",
+    "name": "Carchemish",
+    "aliases": [],
+    "description": "City on the Euphrates where Nebuchadnezzar defeated Pharaoh Necho in 605 BC, establishing Babylonian dominance.",
+    "lat": 36.835,
+    "lng": 38.0,
+    "region": "Syria",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Prophetic",
+    "significance": "Nebuchadnezzar defeated Egypt; shifted world power",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "chorazin",
+    "name": "Chorazin",
+    "aliases": [
+      "Korazin"
+    ],
+    "description": "Town near the Sea of Galilee denounced by Jesus along with Bethsaida and Capernaum for not repenting despite witnessing many miracles.",
+    "lat": 32.91,
+    "lng": 35.56,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Denounced by Jesus for unrepentance",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "colesville",
+    "name": "Colesville",
+    "aliases": [],
+    "description": "A town in Broome County, New York where an early branch of the Church was established.",
+    "lat": 42.2101,
+    "lng": -75.7835,
+    "region": "New York, United States",
+    "locationType": "city",
+    "volumes": [
+      "D&C"
+    ],
+    "era": "Early Church (1830–1831)",
+    "significance": "Home of an early branch of the Church; Saints were persecuted and later gathered to Ohio and Missouri",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "colossae",
+    "name": "Colossae",
+    "aliases": [
+      "Colosse"
+    ],
+    "description": "City in Asia Minor near Laodicea. Paul wrote his Epistle to the Colossians to the church here.",
+    "lat": 37.7873,
+    "lng": 29.2614,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Recipient of Paul's Epistle to the Colossians",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "corihor-land",
+    "name": "Corihor",
+    "aliases": [
+      "land of Corihor",
+      "valley of Corihor"
+    ],
+    "description": "A Jaredite land and valley where armies gathered. The people of Shiz fled there during the final Jaredite wars.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Jaredite era",
+    "significance": "Major gathering place during the final Jaredite civil war between Coriantumr and Shiz",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "crete",
+    "name": "Crete",
+    "aliases": [
+      "Caphtor"
+    ],
+    "description": "Large Mediterranean island. Paul sailed past it on his voyage to Rome. Titus was left here to appoint elders in every city.",
+    "lat": 35.2401,
+    "lng": 24.8093,
+    "region": "Greece",
+    "locationType": "island",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Titus appointed elders here; Paul's sea voyage",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "cumeni",
+    "name": "Cumeni",
+    "aliases": [
+      "city of Cumeni",
+      "city Cumeni"
+    ],
+    "description": "A Nephite city captured by the Lamanites and retaken by Helaman and his stripling warriors through siege.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~64 BC)",
+    "significance": "Retaken by Helaman's 2,000 stripling warriors during the southwest campaign",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "cyrene",
+    "name": "Cyrene",
+    "aliases": [],
+    "description": "Greek city in North Africa. Simon of Cyrene carried Jesus's cross. People from Cyrene were present at Pentecost.",
+    "lat": 32.8242,
+    "lng": 21.8569,
+    "region": "Other",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Simon of Cyrene carried Jesus's cross",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "decapolis",
+    "name": "Decapolis",
+    "aliases": [],
+    "description": "League of ten Greco-Roman cities mostly east of the Jordan. Jesus ministered here, including healing the Gadarene demoniac.",
+    "lat": 32.65,
+    "lng": 35.85,
+    "region": "Transjordan",
+    "locationType": "region",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Gentile region where Jesus ministered and healed",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "dothan",
+    "name": "Dothan",
+    "aliases": [],
+    "description": "City where Joseph's brothers sold him into slavery. Later, Elisha's servant saw the hills full of horses and chariots of fire here.",
+    "lat": 32.395,
+    "lng": 35.2283,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal through Divided Kingdom",
+    "significance": "Joseph sold into slavery; Elisha's angelic army vision",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "ekron",
+    "name": "Ekron",
+    "aliases": [],
+    "description": "Northernmost of the five major Philistine cities. The Ark was sent here before being returned to Israel. Baal-zebub, god of Ekron, was consulted by King Ahaziah.",
+    "lat": 31.7808,
+    "lng": 34.8531,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Judges through Divided Kingdom",
+    "significance": "Philistine city; home of Baal-zebub",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "elim",
+    "name": "Elim",
+    "aliases": [],
+    "description": "Oasis with twelve springs of water and seventy palm trees where Israel camped after crossing the Red Sea.",
+    "lat": null,
+    "lng": null,
+    "region": "Arabia",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Exodus",
+    "significance": "Oasis of refreshment during the Exodus",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "en-gedi",
+    "name": "En-gedi",
+    "aliases": [
+      "En Gedi",
+      "Engedi"
+    ],
+    "description": "Oasis on the western shore of the Dead Sea where David hid from Saul in caves and spared Saul's life.",
+    "lat": 31.4667,
+    "lng": 35.3833,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Monarchy",
+    "significance": "David hid from Saul; spared Saul's life in a cave",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "endor",
+    "name": "Endor",
+    "aliases": [
+      "En-dor"
+    ],
+    "description": "Town where Saul consulted a medium the night before the battle of Gilboa, and the spirit of Samuel appeared to him.",
+    "lat": 32.6333,
+    "lng": 35.3833,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Monarchy",
+    "significance": "Saul consulted the medium; Samuel's spirit appeared",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "ezion-geber",
+    "name": "Ezion-geber",
+    "aliases": [
+      "Ezion-Gaber"
+    ],
+    "description": "Port city at the head of the Gulf of Aqaba from which Solomon launched ships to Ophir for gold trade.",
+    "lat": 29.55,
+    "lng": 35.0,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Exodus through Monarchy",
+    "significance": "Solomon's port for the Ophir gold trade",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "gadara",
+    "name": "Gadara",
+    "aliases": [
+      "Country of the Gadarenes",
+      "Gerasa"
+    ],
+    "description": "City east of the Sea of Galilee where Jesus cast a legion of demons out of a man, sending them into a herd of swine.",
+    "lat": 32.6553,
+    "lng": 35.6775,
+    "region": "Transjordan",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Jesus cast out Legion; swine ran into the sea",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "gezer",
+    "name": "Gezer",
+    "aliases": [],
+    "description": "Strategic Canaanite city. Pharaoh conquered it and gave it to Solomon as a dowry. Solomon fortified it along with Hazor and Megiddo.",
+    "lat": 31.8742,
+    "lng": 34.9197,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Conquest through Monarchy",
+    "significance": "Solomon's fortified city; Pharaoh's dowry gift",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "gibeah",
+    "name": "Gibeah",
+    "aliases": [
+      "Gibeah of Saul"
+    ],
+    "description": "City in Benjamin and King Saul's hometown and capital. Scene of the horrific crime that led to civil war against Benjamin.",
+    "lat": 31.8214,
+    "lng": 35.2322,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Judges through Monarchy",
+    "significance": "Saul's capital; civil war trigger",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "gid",
+    "name": "Gid",
+    "aliases": [
+      "city of Gid"
+    ],
+    "description": "A Nephite city on the eastern borders by the seashore, captured by the Lamanites and later recaptured.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~67 BC)",
+    "significance": "One of the east coast cities captured during the Lamanite invasion",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "gihon-spring",
+    "name": "Gihon Spring",
+    "aliases": [
+      "Gihon",
+      "Waters of Shiloah"
+    ],
+    "description": "Jerusalem's main water source. Solomon was anointed king here. Hezekiah built his tunnel from here to the Pool of Siloam.",
+    "lat": 31.7737,
+    "lng": 35.2354,
+    "region": "Israel",
+    "locationType": "well",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Monarchy",
+    "significance": "Solomon's anointing; Hezekiah's tunnel",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "gilead",
+    "name": "Gilead",
+    "aliases": [],
+    "description": "Mountainous region east of the Jordan, known for its balm. Jacob and Laban made a covenant here. Elijah was from Gilead.",
+    "lat": 32.3,
+    "lng": 35.8,
+    "region": "Transjordan",
+    "locationType": "region",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal through Divided Kingdom",
+    "significance": "Elijah's homeland; famous for its healing balm",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "gilgal-bom",
+    "name": "Gilgal",
+    "aliases": [
+      "city of Gilgal",
+      "valley of Gilgal"
+    ],
+    "description": "A Nephite city that was sunk into the earth at Christ's death. Also a valley in the land of the Jaredites where Coriantumr and Shared battled.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "AD 34 / Jaredite era",
+    "significance": "Destroyed at Christ's death; also a major Jaredite battle site",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "hamath",
+    "name": "Hamath",
+    "aliases": [],
+    "description": "Syrian city on the Orontes River marking the northern boundary of the Promised Land.",
+    "lat": 35.1333,
+    "lng": 36.75,
+    "region": "Syria",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Conquest through Prophetic",
+    "significance": "Northern boundary of the Promised Land",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "hazor",
+    "name": "Hazor",
+    "aliases": [],
+    "description": "Largest Canaanite city in the north, conquered by Joshua. Its king Jabin oppressed Israel before Deborah and Barak defeated him. Solomon later fortified it.",
+    "lat": 33.0172,
+    "lng": 35.5681,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Conquest through Monarchy",
+    "significance": "Largest Canaanite city; conquered by Joshua, fortified by Solomon",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "hermounts",
+    "name": "Hermounts",
+    "aliases": [
+      "wilderness of Hermounts"
+    ],
+    "description": "A wilderness region west and north of Zarahemla, infested with wild and ravenous beasts.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "wilderness",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~87 BC)",
+    "significance": "Where the Amlicites and Lamanites fled after being driven out by the Nephites",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "heshbon",
+    "name": "Heshbon",
+    "aliases": [],
+    "description": "Capital of Sihon, king of the Amorites, defeated by Israel before crossing the Jordan.",
+    "lat": 31.8,
+    "lng": 35.8,
+    "region": "Transjordan",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Exodus through Prophetic",
+    "significance": "Sihon's capital; defeated before entering Canaan",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "iconium",
+    "name": "Iconium",
+    "aliases": [
+      "Konya"
+    ],
+    "description": "City in Asia Minor where Paul and Barnabas preached on their first missionary journey, winning many converts but facing opposition.",
+    "lat": 37.8714,
+    "lng": 32.4846,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Paul's first missionary journey; mixed reception",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "idumea",
+    "name": "Idumea",
+    "aliases": [
+      "Edom"
+    ],
+    "description": "Region south of Judea, homeland of Esau's descendants. The Herods were of Idumean descent.",
+    "lat": 31.0,
+    "lng": 35.0,
+    "region": "Transjordan",
+    "locationType": "region",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Patriarchal through New Testament",
+    "significance": "Esau's descendants; Herod's family origin",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "jabbok-river",
+    "name": "Jabbok River",
+    "aliases": [
+      "River Jabbok",
+      "Wadi Zerqa"
+    ],
+    "description": "River east of the Jordan that Jacob crossed the night he wrestled with the angel at Peniel.",
+    "lat": 32.1833,
+    "lng": 35.75,
+    "region": "Transjordan",
+    "locationType": "river",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal through Conquest",
+    "significance": "Jacob wrestled with the angel at its ford",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "jabesh-gilead",
+    "name": "Jabesh-gilead",
+    "aliases": [
+      "Jabesh Gilead"
+    ],
+    "description": "City east of the Jordan whose men rescued the bodies of Saul and his sons from the Philistines.",
+    "lat": 32.4,
+    "lng": 35.65,
+    "region": "Transjordan",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Judges through Monarchy",
+    "significance": "Saul rescued it; its men honored Saul in death",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "jershon-pogp",
+    "name": "Jershon (Abraham)",
+    "aliases": [],
+    "description": "A place on the route from Haran to Canaan where Abraham built an altar and prayed for his father's household.",
+    "lat": null,
+    "lng": null,
+    "region": "Middle East",
+    "locationType": "land",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Abrahamic era (~2000 BC)",
+    "significance": "Where Abraham built an altar and offered sacrifice on the way to Canaan",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "jerusalem-bom",
+    "name": "Jerusalem (BoM)",
+    "aliases": [
+      "city of Jerusalem"
+    ],
+    "description": "A city in the land of Nephi, near the waters of Mormon, distinct from the Old World Jerusalem. Destroyed by water at Christ's death.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "AD 34",
+    "significance": "A New World city that was destroyed by flooding at the time of Christ's crucifixion",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "jezreel-city",
+    "name": "Jezreel",
+    "aliases": [],
+    "description": "City in the valley of the same name. Ahab had a palace here. Naboth's vineyard was here, which Jezebel seized. Jehu killed Joram and Jezebel here.",
+    "lat": 32.5561,
+    "lng": 35.3314,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Divided Kingdom",
+    "significance": "Ahab's palace; Naboth's vineyard; Jezebel's death",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "kidron-valley",
+    "name": "Kidron Valley",
+    "aliases": [
+      "Brook Kidron",
+      "Valley of Jehoshaphat"
+    ],
+    "description": "Valley between Jerusalem and the Mount of Olives. David crossed it fleeing Absalom. Jesus crossed it going to Gethsemane. Idols were burned here by righteous kings.",
+    "lat": 31.7742,
+    "lng": 35.2386,
+    "region": "Israel",
+    "locationType": "valley",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Monarchy through New Testament",
+    "significance": "David fled Absalom; Jesus crossed to Gethsemane",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "kiriath-jearim",
+    "name": "Kiriath-jearim",
+    "aliases": [
+      "Kiriath-baal",
+      "Baalah"
+    ],
+    "description": "City where the Ark of the Covenant was kept for 20 years in the house of Abinadab, until David brought it to Jerusalem.",
+    "lat": 31.805,
+    "lng": 35.105,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Judges through Monarchy",
+    "significance": "Ark stored here for 20 years before David moved it",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "lachish",
+    "name": "Lachish",
+    "aliases": [],
+    "description": "Major fortified city in Judah conquered by Joshua. Sennacherib besieged it during his campaign against Judah. Nebuchadnezzar destroyed it before Jerusalem fell.",
+    "lat": 31.5642,
+    "lng": 34.8486,
+    "region": "Judah",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Conquest through Exile",
+    "significance": "Key Judean fortress; besieged by Sennacherib and Nebuchadnezzar",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "laman-river",
+    "name": "Laman",
+    "aliases": [
+      "river Laman"
+    ],
+    "description": "A river named by Lehi that emptied into the Red Sea, located at the family's first wilderness camp.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "river",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Lehite journey (~600 BC)",
+    "significance": "Named by Lehi as a symbol, wishing his son Laman would be like the river continually running into righteousness",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "lehi-city",
+    "name": "Lehi",
+    "aliases": [
+      "city of Lehi"
+    ],
+    "description": "A Nephite city on the eastern seaboard that was captured by the Lamanites during the wars recorded in Alma.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~67 BC)",
+    "significance": "One of several east coast cities captured and later recovered during the Nephite-Lamanite wars",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "lydda",
+    "name": "Lydda",
+    "aliases": [
+      "Lod"
+    ],
+    "description": "City in the coastal plain where Peter healed Aeneas, a man who had been paralyzed for eight years.",
+    "lat": 31.9508,
+    "lng": 34.8953,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Peter healed Aeneas of paralysis",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "lystra",
+    "name": "Lystra",
+    "aliases": [],
+    "description": "City in Asia Minor where Paul healed a lame man and the people tried to worship him as Hermes. Paul was later stoned here. Timothy's hometown.",
+    "lat": 37.5833,
+    "lng": 32.35,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Paul stoned; Timothy's hometown",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "magdala",
+    "name": "Magdala",
+    "aliases": [
+      "Magadan",
+      "Dalmanutha"
+    ],
+    "description": "Town on the western shore of the Sea of Galilee, hometown of Mary Magdalene.",
+    "lat": 32.8392,
+    "lng": 35.51,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Hometown of Mary Magdalene",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "malta",
+    "name": "Malta",
+    "aliases": [
+      "Melita"
+    ],
+    "description": "Mediterranean island where Paul was shipwrecked on his voyage to Rome. A viper bit him but he was unharmed. He healed the father of Publius here.",
+    "lat": 35.9375,
+    "lng": 14.3754,
+    "region": "Rome/Italy",
+    "locationType": "island",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Paul's shipwreck; healing miracles",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "marah",
+    "name": "Marah",
+    "aliases": [],
+    "description": "Place in the wilderness where the Israelites found bitter water. God showed Moses a tree to make the water sweet.",
+    "lat": null,
+    "lng": null,
+    "region": "Arabia",
+    "locationType": "well",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Exodus",
+    "significance": "Bitter water made sweet; God tested Israel",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "melek",
+    "name": "Melek",
+    "aliases": [
+      "land of Melek"
+    ],
+    "description": "A Nephite land west of the river Sidon where Alma preached with great success.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~82 BC)",
+    "significance": "Location of Alma's successful missionary work before traveling to Ammonihah",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "memphis",
+    "name": "Memphis",
+    "aliases": [
+      "Noph"
+    ],
+    "description": "Ancient Egyptian capital on the Nile. Isaiah, Jeremiah, and Ezekiel prophesied against it.",
+    "lat": 29.8508,
+    "lng": 31.2506,
+    "region": "Egypt",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Prophetic",
+    "significance": "Egyptian capital; prophesied against by major prophets",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "michmash",
+    "name": "Michmash",
+    "aliases": [
+      "Micmash"
+    ],
+    "description": "Town where Jonathan and his armor-bearer climbed a cliff to attack the Philistine garrison, triggering a rout.",
+    "lat": 31.8694,
+    "lng": 35.275,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Monarchy",
+    "significance": "Jonathan's bold attack on the Philistine garrison",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "middoni",
+    "name": "Middoni",
+    "aliases": [
+      "land of Middoni"
+    ],
+    "description": "A Lamanite land ruled by king Antiomno, where Aaron, Muloki, and Ammah were imprisoned.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~90 BC)",
+    "significance": "Where Ammon and Lamoni traveled to free imprisoned missionaries",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "miletus",
+    "name": "Miletus",
+    "aliases": [],
+    "description": "Port city in Asia Minor where Paul gave his farewell address to the Ephesian elders on his way to Jerusalem.",
+    "lat": 37.5306,
+    "lng": 27.2778,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Paul's farewell to the Ephesian elders",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "mizpah",
+    "name": "Mizpah",
+    "aliases": [
+      "Mizpeh"
+    ],
+    "description": "Gathering place for Israel's assemblies during the Judges and Samuel. Saul was selected king here. Gedaliah governed from here after Jerusalem fell.",
+    "lat": 31.8413,
+    "lng": 35.1979,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Judges through Exile",
+    "significance": "National assembly site; Saul chosen king; post-exile governor",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "moreh-plains",
+    "name": "Moreh",
+    "aliases": [
+      "plains of Moreh"
+    ],
+    "description": "Plains in Canaan near Sechem where Abraham offered sacrifice and received the promise of the land.",
+    "lat": 32.2146,
+    "lng": 35.2725,
+    "region": "Middle East (modern Palestine)",
+    "locationType": "plain",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Abrahamic era (~2000 BC)",
+    "significance": "Where God appeared to Abraham and promised the land to his seed",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "morianton",
+    "name": "Morianton",
+    "aliases": [
+      "city of Morianton",
+      "land of Morianton"
+    ],
+    "description": "A Nephite city and land near the east seashore. Its people attempted to flee northward but were stopped by Moroni's forces.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~68–67 BC)",
+    "significance": "Site of a border dispute that nearly led to Lamanite access to the land northward",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "moronihah-city",
+    "name": "Moronihah",
+    "aliases": [
+      "city of Moronihah"
+    ],
+    "description": "A great Nephite city that was covered with earth at the time of Christ's crucifixion, with a great mountain forming in its place.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "AD 34",
+    "significance": "Buried by earthquake at Christ's death as divine judgment for the wickedness of its inhabitants",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "mount-ebal",
+    "name": "Mount Ebal",
+    "aliases": [],
+    "description": "Mountain north of Shechem where Joshua built an altar and the curses of the Law were pronounced, as Moses had commanded.",
+    "lat": 32.2353,
+    "lng": 35.2761,
+    "region": "Israel",
+    "locationType": "mountain",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Conquest",
+    "significance": "Site of covenant curses ceremony under Joshua",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "mount-gerizim",
+    "name": "Mount Gerizim",
+    "aliases": [],
+    "description": "Mountain south of Shechem where the blessings of the Law were pronounced. Later became the sacred mountain of the Samaritans.",
+    "lat": 32.1994,
+    "lng": 35.2728,
+    "region": "Israel",
+    "locationType": "mountain",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Conquest through New Testament",
+    "significance": "Blessings mountain; Samaritan worship center",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "mount-gilboa",
+    "name": "Mount Gilboa",
+    "aliases": [
+      "Gilboa"
+    ],
+    "description": "Mountain where King Saul and his sons Jonathan, Abinadab, and Malchishua died in battle against the Philistines. David lamented their deaths.",
+    "lat": 32.4917,
+    "lng": 35.4,
+    "region": "Israel",
+    "locationType": "mountain",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Monarchy",
+    "significance": "Death of Saul and Jonathan",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "mount-hor",
+    "name": "Mount Hor",
+    "aliases": [],
+    "description": "Mountain on the border of Edom where Aaron died and was buried. His priestly garments were transferred to his son Eleazar.",
+    "lat": null,
+    "lng": null,
+    "region": "Arabia",
+    "locationType": "mountain",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Exodus",
+    "significance": "Aaron's death and burial; priestly succession",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "mount-seir",
+    "name": "Mount Seir",
+    "aliases": [
+      "Seir"
+    ],
+    "description": "Mountain range in Edom, homeland of Esau and his descendants. Prophets pronounced judgment on it.",
+    "lat": 30.55,
+    "lng": 35.4,
+    "region": "Transjordan",
+    "locationType": "mountain",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal through Prophetic",
+    "significance": "Homeland of Esau/Edom",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "nain",
+    "name": "Nain",
+    "aliases": [],
+    "description": "Small village in Galilee where Jesus raised a widow's only son from the dead as the funeral procession was leaving the city.",
+    "lat": 32.6317,
+    "lng": 35.3483,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Jesus raised a widow's son from the dead",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "negev",
+    "name": "Negev",
+    "aliases": [
+      "Negeb",
+      "The South"
+    ],
+    "description": "Arid region in southern Israel where the patriarchs pastured their flocks.",
+    "lat": 30.85,
+    "lng": 34.75,
+    "region": "Israel",
+    "locationType": "desert",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal through Monarchy",
+    "significance": "Patriarchal grazing lands; southern boundary region",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "new-york-city",
+    "name": "New York",
+    "aliases": [
+      "city of New York"
+    ],
+    "description": "The city where the bishop was commanded to go and warn the people with the sound of the gospel.",
+    "lat": 40.7128,
+    "lng": -74.006,
+    "region": "New York, United States",
+    "locationType": "city",
+    "volumes": [
+      "D&C"
+    ],
+    "era": "Early Church (1833)",
+    "significance": "One of three major cities where the bishop was commanded to preach",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "nimrod-valley",
+    "name": "Nimrod",
+    "aliases": [
+      "valley of Nimrod"
+    ],
+    "description": "A valley named after the mighty hunter where the Lord spoke to the brother of Jared before the Jaredite departure.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "valley",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Jaredite era (Tower of Babel period)",
+    "significance": "Where the Lord gave instructions to the brother of Jared for the journey to the promised land",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "noah-city",
+    "name": "Noah",
+    "aliases": [
+      "city of Noah",
+      "land of Noah"
+    ],
+    "description": "A previously weak Nephite city that Captain Moroni fortified to exceed the strength of Ammonihah.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~72 BC)",
+    "significance": "Demonstrated Moroni's strategic military fortification tactics",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "nob",
+    "name": "Nob",
+    "aliases": [],
+    "description": "City of priests where David received the showbread and Goliath's sword from Ahimelech. Saul later massacred 85 priests here.",
+    "lat": 31.79,
+    "lng": 35.23,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Monarchy",
+    "significance": "David received showbread; Saul massacred the priests",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "nod",
+    "name": "Nod",
+    "aliases": [
+      "land of Nod"
+    ],
+    "description": "A land east of Eden where Cain dwelt with his wife and brethren after being shut out from the Lord's presence.",
+    "lat": null,
+    "lng": null,
+    "region": "Unknown (primeval)",
+    "locationType": "land",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Antediluvian",
+    "significance": "Where Cain settled after being cursed; beginning of a wicked lineage",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "olaha-shinehah",
+    "name": "Olaha Shinehah",
+    "aliases": [
+      "plains of Olaha Shinehah"
+    ],
+    "description": "A place described as the land where Adam dwelt, mentioned alongside the mountains of Adam-ondi-Ahman.",
+    "lat": null,
+    "lng": null,
+    "region": "Missouri, United States (traditional)",
+    "locationType": "plain",
+    "volumes": [
+      "D&C"
+    ],
+    "era": "Adamic era",
+    "significance": "Described as the land where Adam dwelt; associated with the primeval history of the earth",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "olishem",
+    "name": "Olishem",
+    "aliases": [
+      "plain of Olishem"
+    ],
+    "description": "A plain near Potiphar's Hill where the altar of the priest of Pharaoh stood.",
+    "lat": null,
+    "lng": null,
+    "region": "Mesopotamia",
+    "locationType": "plain",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Abrahamic era (~2000 BC)",
+    "significance": "Location of the altar where Abraham was nearly sacrificed to heathen gods",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "omner",
+    "name": "Omner",
+    "aliases": [
+      "city of Omner"
+    ],
+    "description": "A Nephite city on the eastern borders by the seashore, captured by the Lamanites.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~67 BC)",
+    "significance": "One of the east coast cities captured by Amalickiah's forces",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "onidah",
+    "name": "Onidah",
+    "aliases": [
+      "hill Onidah"
+    ],
+    "description": "A place and hill where Lamanites fled for safety and where Alma preached to the poor Zoramites.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "hill",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~74 BC)",
+    "significance": "Where Alma delivered his famous sermon on faith to the humble Zoramites",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "ophir",
+    "name": "Ophir",
+    "aliases": [],
+    "description": "Famed land rich in gold, to which Solomon sent ships from Ezion-geber. Its exact location is unknown.",
+    "lat": null,
+    "lng": null,
+    "region": "Other",
+    "locationType": "region",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Monarchy",
+    "significance": "Source of Solomon's gold",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "ophrah",
+    "name": "Ophrah",
+    "aliases": [
+      "Ophrah of the Abiezrites"
+    ],
+    "description": "Hometown of Gideon in Manasseh. The angel of the Lord appeared to Gideon here, calling him to deliver Israel from Midian.",
+    "lat": null,
+    "lng": null,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Judges",
+    "significance": "Gideon's hometown; angel's call under the oak",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "philadelphia-asia",
+    "name": "Philadelphia",
+    "aliases": [],
+    "description": "City in Asia Minor and one of the seven churches in Revelation, praised and given an 'open door' with no rebuke from Christ.",
+    "lat": 38.3535,
+    "lng": 28.522,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "One of seven churches; praised with no rebuke",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "pithom",
+    "name": "Pithom",
+    "aliases": [],
+    "description": "One of the two store cities built by enslaved Israelites for Pharaoh, along with Raamses, before the Exodus.",
+    "lat": 30.55,
+    "lng": 32.1,
+    "region": "Egypt",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Exodus",
+    "significance": "Built by Israelite slave labor",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "bethesda",
+    "name": "Pool of Bethesda",
+    "aliases": [
+      "Bethzatha"
+    ],
+    "description": "Pool in Jerusalem with five porticoes where Jesus healed a man who had been an invalid for 38 years.",
+    "lat": 31.7814,
+    "lng": 35.2354,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Jesus healed the 38-year invalid",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "siloam",
+    "name": "Pool of Siloam",
+    "aliases": [
+      "Siloam",
+      "Shiloah"
+    ],
+    "description": "Pool in Jerusalem fed by Hezekiah's tunnel where Jesus sent the blind man to wash and receive his sight.",
+    "lat": 31.7714,
+    "lng": 35.2349,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Monarchy through New Testament",
+    "significance": "Blind man healed; Hezekiah's tunnel",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "potiphars-hill",
+    "name": "Potiphar's Hill",
+    "aliases": [],
+    "description": "A hill in the land of Ur of Chaldea where the priest of Pharaoh offered sacrifices, including a child offering, upon an altar.",
+    "lat": null,
+    "lng": null,
+    "region": "Mesopotamia",
+    "locationType": "hill",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Abrahamic era (~2000 BC)",
+    "significance": "Site of the altar where Abraham was nearly sacrificed and where human sacrifices were offered",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "raamses",
+    "name": "Raamses",
+    "aliases": [
+      "Rameses",
+      "Pi-Ramesses"
+    ],
+    "description": "Store city built by Israelite slaves and their departure point for the Exodus.",
+    "lat": 30.7903,
+    "lng": 31.8233,
+    "region": "Egypt",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Exodus",
+    "significance": "Departure point of the Exodus; built by Israelite slaves",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "ramah",
+    "name": "Ramah",
+    "aliases": [
+      "Ramathaim-zophim"
+    ],
+    "description": "City in Benjamin, Samuel's hometown and the place where he judged Israel. Rachel's weeping was associated with Ramah.",
+    "lat": 31.85,
+    "lng": 35.2167,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT",
+      "BoM"
+    ],
+    "era": "Judges through New Testament",
+    "significance": "Samuel's hometown; Rachel's weeping",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "ramoth-gilead",
+    "name": "Ramoth-gilead",
+    "aliases": [
+      "Ramoth in Gilead"
+    ],
+    "description": "City of refuge east of the Jordan. Ahab was killed in battle here. Jehu was anointed king here.",
+    "lat": 32.55,
+    "lng": 36.0,
+    "region": "Transjordan",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Conquest through Divided Kingdom",
+    "significance": "City of refuge; Ahab killed; Jehu anointed king",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "rephidim",
+    "name": "Rephidim",
+    "aliases": [],
+    "description": "Place where Israel fought the Amalekites while Moses held up his hands. Also where Moses struck the rock at Massah and Meribah for water.",
+    "lat": null,
+    "lng": null,
+    "region": "Arabia",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Exodus",
+    "significance": "Battle with Amalek; Moses struck the rock",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "riplah",
+    "name": "Riplah",
+    "aliases": [
+      "hill Riplah"
+    ],
+    "description": "A hill near the river Sidon where Captain Moroni concealed part of his army to ambush the Lamanites led by Zerahemnah.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "hill",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~74 BC)",
+    "significance": "Site of Moroni's strategic ambush leading to the defeat of Zerahemnah",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "ripliancum",
+    "name": "Ripliancum",
+    "aliases": [
+      "waters of Ripliancum"
+    ],
+    "description": "Large waters in the land northward, interpreted as meaning 'large, or to exceed all.' Site of a major Jaredite battle.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "waters",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Jaredite era",
+    "significance": "Near-final battle site in the destruction of the Jaredite civilization",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "sardis",
+    "name": "Sardis",
+    "aliases": [],
+    "description": "City in Asia Minor and one of the seven churches in Revelation, warned that it was spiritually dead and needed to wake up.",
+    "lat": 38.4889,
+    "lng": 28.0406,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "One of seven churches; warned of spiritual death",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "sechem",
+    "name": "Sechem",
+    "aliases": [
+      "Shechem"
+    ],
+    "description": "A place in the plains of Moreh in Canaan where Abraham offered sacrifice after arriving in the promised land.",
+    "lat": 32.2146,
+    "lng": 35.2725,
+    "region": "Middle East (modern Nablus, Palestine)",
+    "locationType": "city",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Abrahamic era (~2000 BC)",
+    "significance": "Where God promised Abraham the land of Canaan for his seed",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "sela-petra",
+    "name": "Sela",
+    "aliases": [
+      "Petra",
+      "Rock"
+    ],
+    "description": "Edomite city, likely the famous rock-cut city of Petra. Amaziah captured it.",
+    "lat": 30.3285,
+    "lng": 35.4414,
+    "region": "Transjordan",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Monarchy through Prophetic",
+    "significance": "Edomite fortress captured by Amaziah; likely Petra",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "sharon",
+    "name": "Sharon",
+    "aliases": [
+      "Plain of Sharon"
+    ],
+    "description": "Fertile coastal plain along the Mediterranean, famous for its beauty. 'Rose of Sharon' appears in Song of Solomon.",
+    "lat": 32.3,
+    "lng": 34.85,
+    "region": "Israel",
+    "locationType": "plain",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Monarchy through New Testament",
+    "significance": "Symbol of beauty; 'Rose of Sharon'",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "sharon-vt",
+    "name": "Sharon",
+    "aliases": [],
+    "description": "A town in Windsor County, Vermont where Joseph Smith was born on December 23, 1805.",
+    "lat": 43.7834,
+    "lng": -72.452,
+    "region": "Vermont, United States",
+    "locationType": "city",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Pre-Restoration (1805)",
+    "significance": "Birthplace of the Prophet Joseph Smith",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "shazer",
+    "name": "Shazer",
+    "aliases": [],
+    "description": "A place in the wilderness where Lehi's family camped during their journey through Arabia, used as a base for hunting.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Lehite journey (~590 BC)",
+    "significance": "Named campsite during Lehi's wilderness journey near the Red Sea",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "sheba",
+    "name": "Sheba",
+    "aliases": [
+      "Saba"
+    ],
+    "description": "Kingdom in southern Arabia. The Queen of Sheba visited Solomon to test his wisdom and was overwhelmed by his wealth and knowledge.",
+    "lat": 15.3694,
+    "lng": 44.191,
+    "region": "Arabia",
+    "locationType": "region",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Monarchy",
+    "significance": "Queen of Sheba visited Solomon",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "shem",
+    "name": "Shem",
+    "aliases": [
+      "city of Shem"
+    ],
+    "description": "A Nephite city that Mormon fortified and gathered his people into during the final wars with the Lamanites.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Late Nephite era (~AD 328)",
+    "significance": "Where Mormon rallied the Nephites and temporarily stopped the Lamanite advance",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "shemlon",
+    "name": "Shemlon",
+    "aliases": [
+      "land of Shemlon"
+    ],
+    "description": "A land possessed by the Lamanites, near the lands of Shilom and Nephi. Zeniff sent spies to observe Lamanite preparations there.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Zeniffite era (~187 BC)",
+    "significance": "Lamanite territory from which attacks on Zeniff's people were launched",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "shilom",
+    "name": "Shilom",
+    "aliases": [
+      "city of Shilom",
+      "land of Shilom"
+    ],
+    "description": "A city and land near the city of Nephi (Lehi-Nephi), part of the territory given by king Laman to Zeniff's people.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Zeniffite era (~200–120 BC)",
+    "significance": "Part of the Zeniffite settlement in the land of Nephi; site of military lookout tower",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "shunem",
+    "name": "Shunem",
+    "aliases": [],
+    "description": "Town in the Jezreel Valley where a wealthy woman hosted Elisha. When her son died, Elisha raised him from the dead.",
+    "lat": 32.6,
+    "lng": 35.3333,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Divided Kingdom",
+    "significance": "Elisha raised the Shunammite's son from the dead",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "sidom",
+    "name": "Sidom",
+    "aliases": [
+      "land of Sidom"
+    ],
+    "description": "A land where the believers who were cast out of Ammonihah gathered. Alma and Amulek ministered to them there.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~81 BC)",
+    "significance": "Place of refuge for those expelled from Ammonihah for believing in Alma's words",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "simeon-mount",
+    "name": "Simeon",
+    "aliases": [
+      "mount Simeon"
+    ],
+    "description": "A mountain where the Lord commanded Enoch to go. From its top, Enoch beheld the heavens open and was clothed in glory.",
+    "lat": null,
+    "lng": null,
+    "region": "Unknown (primeval)",
+    "locationType": "mountain",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Antediluvian",
+    "significance": "Where Enoch had his great vision, seeing the Lord face to face",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "tarshish",
+    "name": "Tarshish",
+    "aliases": [
+      "Tharshish"
+    ],
+    "description": "Distant maritime destination, possibly in Spain. Jonah tried to flee here instead of going to Nineveh. Solomon's fleet traded there.",
+    "lat": null,
+    "lng": null,
+    "region": "Other",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Monarchy through Prophetic",
+    "significance": "Jonah's attempted escape destination; symbol of distant lands",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "teancum-city",
+    "name": "Teancum",
+    "aliases": [
+      "city Teancum",
+      "city of Teancum"
+    ],
+    "description": "A Nephite city in the borders by the seashore, near the city Desolation. Its inhabitants were driven out by the Lamanites.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Late Nephite era (~AD 364)",
+    "significance": "Coastal city near Desolation; its inhabitants were taken prisoner and sacrificed to idol gods",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "tekoa",
+    "name": "Tekoa",
+    "aliases": [
+      "Tekoah"
+    ],
+    "description": "Town south of Bethlehem, hometown of the prophet Amos. A wise woman from Tekoa persuaded David to reconcile with Absalom.",
+    "lat": 31.6333,
+    "lng": 35.2167,
+    "region": "Judah",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Monarchy through Prophetic",
+    "significance": "Hometown of Amos",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "thyatira",
+    "name": "Thyatira",
+    "aliases": [],
+    "description": "City in Asia Minor and one of the seven churches in Revelation. Home of Lydia, the seller of purple cloth whom Paul baptized in Philippi.",
+    "lat": 38.92,
+    "lng": 27.84,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "One of seven churches; home of Lydia",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "tiberias",
+    "name": "Tiberias",
+    "aliases": [],
+    "description": "City on the western shore of the Sea of Galilee built by Herod Antipas. The sea was sometimes called the Sea of Tiberias.",
+    "lat": 32.7922,
+    "lng": 35.53,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Gave alternate name to the Sea of Galilee",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "tirzah",
+    "name": "Tirzah",
+    "aliases": [],
+    "description": "First capital of the northern kingdom of Israel before Omri moved it to Samaria. Known for its beauty.",
+    "lat": 32.3,
+    "lng": 35.35,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Divided Kingdom",
+    "significance": "First capital of the northern kingdom",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "troas",
+    "name": "Troas",
+    "aliases": [
+      "Alexandria Troas"
+    ],
+    "description": "Port city in northwest Asia Minor where Paul received the Macedonian vision calling him to Europe. Eutychus fell from a window here during Paul's sermon.",
+    "lat": 39.75,
+    "lng": 26.1667,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Paul's Macedonian call vision; Eutychus raised",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "valley-of-achor",
+    "name": "Valley of Achor",
+    "aliases": [
+      "Achor"
+    ],
+    "description": "Valley near Jericho where Achan was executed for taking forbidden plunder. Hosea promised it would become a 'door of hope.'",
+    "lat": 31.83,
+    "lng": 35.38,
+    "region": "Israel",
+    "locationType": "valley",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Conquest through Prophetic",
+    "significance": "Achan's sin punished; Hosea's 'door of hope'",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "valley-of-aijalon",
+    "name": "Valley of Aijalon",
+    "aliases": [
+      "Ajalon"
+    ],
+    "description": "Valley where the moon stood still at Joshua's command during the battle against the Amorite coalition.",
+    "lat": 31.84,
+    "lng": 35.04,
+    "region": "Israel",
+    "locationType": "valley",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Conquest",
+    "significance": "Moon stood still at Joshua's command",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "wilderness-of-paran",
+    "name": "Wilderness of Paran",
+    "aliases": [
+      "Paran"
+    ],
+    "description": "Large desert region in the northeastern Sinai Peninsula where Ishmael grew up and where the Israelites wandered. The spies were sent from here.",
+    "lat": 29.5,
+    "lng": 34.5,
+    "region": "Arabia",
+    "locationType": "desert",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal through Exodus",
+    "significance": "Ishmael's home; departure point for the spies",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "wilderness-of-shur",
+    "name": "Wilderness of Shur",
+    "aliases": [
+      "Desert of Shur"
+    ],
+    "description": "Desert region east of Egypt that the Israelites entered immediately after crossing the Red Sea.",
+    "lat": 30.0,
+    "lng": 33.5,
+    "region": "Arabia",
+    "locationType": "desert",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal through Exodus",
+    "significance": "First wilderness after the Red Sea crossing",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "wilderness-of-sin",
+    "name": "Wilderness of Sin",
+    "aliases": [
+      "Desert of Sin"
+    ],
+    "description": "Desert region between Elim and Sinai where God first provided manna and quail to feed the Israelites during the Exodus.",
+    "lat": 29.0,
+    "lng": 33.5,
+    "region": "Arabia",
+    "locationType": "desert",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Exodus",
+    "significance": "God first provided manna to Israel",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "wilderness-of-zin",
+    "name": "Wilderness of Zin",
+    "aliases": [
+      "Desert of Zin"
+    ],
+    "description": "Desert region in the Negev where Kadesh-barnea was located. Miriam died and was buried here. Moses struck the rock for water.",
+    "lat": 30.5,
+    "lng": 34.5,
+    "region": "Israel",
+    "locationType": "desert",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Exodus",
+    "significance": "Miriam's burial; Moses struck the rock",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "zarephath",
+    "name": "Zarephath",
+    "aliases": [
+      "Sarepta"
+    ],
+    "description": "Phoenician town between Tyre and Sidon where Elijah stayed with a widow whose flour and oil did not run out, and whose son he raised from the dead.",
+    "lat": 33.45,
+    "lng": 35.2833,
+    "region": "Phoenicia",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Divided Kingdom",
+    "significance": "Widow's miraculous provision; her son raised by Elijah",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "ziklag",
+    "name": "Ziklag",
+    "aliases": [],
+    "description": "Philistine city given to David by Achish while David was fleeing from Saul. Amalekites raided it but David recovered everything.",
+    "lat": null,
+    "lng": null,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Monarchy",
+    "significance": "David's refuge from Saul; raided by Amalekites",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "zoar",
+    "name": "Zoar",
+    "aliases": [
+      "Bela"
+    ],
+    "description": "Small city near Sodom to which Lot fled when Sodom was destroyed. God spared it at Lot's request.",
+    "lat": null,
+    "lng": null,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal",
+    "significance": "Lot's refuge from Sodom's destruction",
+    "tier": 3,
+    "knownLocation": false
+  },
+  {
+    "id": "zorah",
+    "name": "Zorah",
+    "aliases": [],
+    "description": "Town in the territory of Dan, birthplace of Samson.",
+    "lat": 31.7733,
+    "lng": 35.0008,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Judges",
+    "significance": "Birthplace of Samson",
+    "tier": 3,
+    "knownLocation": true
+  },
+  {
+    "id": "ablom",
+    "name": "Ablom",
+    "aliases": [],
+    "description": "A place by the seashore where king Omer fled with his family to escape the conspiracy of his son Jared.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Jaredite era",
+    "significance": "Refuge of king Omer after being warned by God to flee",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "agosh",
+    "name": "Agosh",
+    "aliases": [
+      "plains of Agosh"
+    ],
+    "description": "Plains in Jaredite territory where Coriantumr fought and killed Lib during the final wars.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "plain",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Jaredite era",
+    "significance": "Battle site where Lib was killed and his brother Shiz took command",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "akish-wilderness",
+    "name": "Akish",
+    "aliases": [
+      "wilderness of Akish"
+    ],
+    "description": "A wilderness area in Jaredite territory where multiple battles took place between Coriantumr and his enemies.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "wilderness",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Jaredite era",
+    "significance": "Repeated battle site during the final Jaredite wars",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "amnihu",
+    "name": "Amnihu",
+    "aliases": [
+      "hill Amnihu"
+    ],
+    "description": "A hill east of the river Sidon, near Zarahemla, where the Amlicites gathered to begin their war against the Nephites.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "hill",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~87 BC)",
+    "significance": "Starting point of the Amlicite rebellion against the Nephite government",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "angola",
+    "name": "Angola",
+    "aliases": [
+      "city of Angola"
+    ],
+    "description": "A city where Mormon's army took temporary refuge during the final Nephite retreat before being driven out by the Lamanites.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Late Nephite era (~AD 327)",
+    "significance": "One of the cities Mormon attempted to defend during the final Nephite retreat northward",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "ani-anti",
+    "name": "Ani-Anti",
+    "aliases": [],
+    "description": "A village where Muloki and Ammah preached the word of God to the Lamanites.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~90 BC)",
+    "significance": "One of the mission locations of the sons of Mosiah among the Lamanites",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "antum",
+    "name": "Antum",
+    "aliases": [
+      "land Antum"
+    ],
+    "description": "A land containing the hill Shim where Ammaron deposited the sacred records for Mormon to retrieve.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Late Nephite era (~AD 321)",
+    "significance": "Location of the hill Shim and the deposit of sacred Nephite records",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "boaz",
+    "name": "Boaz",
+    "aliases": [
+      "city Boaz"
+    ],
+    "description": "A city where the Nephites briefly stood against the Lamanites during their final retreat before being driven out.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Late Nephite era (~AD 375)",
+    "significance": "One of the last cities defended by the Nephites before the final retreat to Cumorah",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "cainan-land",
+    "name": "Cainan",
+    "aliases": [
+      "land of Cainan"
+    ],
+    "description": "A land of promise named after Cainan, son of Enos. Enoch later came out from this land before his prophetic ministry.",
+    "lat": null,
+    "lng": null,
+    "region": "Unknown (primeval)",
+    "locationType": "land",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Antediluvian",
+    "significance": "Enoch's homeland; a land of righteousness from which he began his prophetic mission",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "cenchreae",
+    "name": "Cenchreae",
+    "aliases": [
+      "Cenchrea"
+    ],
+    "description": "Eastern port of Corinth where Paul shaved his head in fulfillment of a vow. Phoebe served the church here.",
+    "lat": 37.8847,
+    "lng": 22.9908,
+    "region": "Greece",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Paul's vow; Phoebe's church",
+    "tier": 4,
+    "knownLocation": true
+  },
+  {
+    "id": "comnor",
+    "name": "Comnor",
+    "aliases": [
+      "hill Comnor"
+    ],
+    "description": "A Jaredite hill near the valley of Shurr where Coriantumr gathered his armies and challenged Shiz to battle.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "hill",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Jaredite era",
+    "significance": "Site of a major battle between Coriantumr and Shiz's armies",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "david",
+    "name": "David",
+    "aliases": [
+      "land of David"
+    ],
+    "description": "A land from which the Nephites were driven during their final retreat northward.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Late Nephite era (~AD 327)",
+    "significance": "Part of the Nephite retreat route in the final wars",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "derbe",
+    "name": "Derbe",
+    "aliases": [],
+    "description": "City in Asia Minor and the farthest point of Paul's first missionary journey.",
+    "lat": 37.35,
+    "lng": 33.4,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Farthest point of Paul's first journey",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "enoch-land",
+    "name": "Enoch (land)",
+    "aliases": [
+      "land of Enoch"
+    ],
+    "description": "One of several lands seen by Enoch in his vision, listed alongside Sharon, Omner, Heni, Shem, Haner, and Hanannihah.",
+    "lat": null,
+    "lng": null,
+    "region": "Unknown (primeval)",
+    "locationType": "land",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Antediluvian",
+    "significance": "Part of Enoch's prophetic commission",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "fair-havens",
+    "name": "Fair Havens",
+    "aliases": [],
+    "description": "Harbor on the southern coast of Crete where Paul's ship stopped. Paul warned against continuing the voyage.",
+    "lat": 34.95,
+    "lng": 24.82,
+    "region": "Greece",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Paul warned of danger if they sailed on",
+    "tier": 4,
+    "knownLocation": true
+  },
+  {
+    "id": "gad-city",
+    "name": "Gad",
+    "aliases": [
+      "city of Gad"
+    ],
+    "description": "A city burned with fire at the time of Christ's crucifixion.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "AD 34",
+    "significance": "Destroyed by fire at Christ's death",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "gadiandi",
+    "name": "Gadiandi",
+    "aliases": [
+      "city of Gadiandi"
+    ],
+    "description": "A city that was sunk and replaced by hills and valleys at the time of Christ's crucifixion.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "AD 34",
+    "significance": "Destroyed at Christ's death; inhabitants buried in the earth",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "gadiomnah",
+    "name": "Gadiomnah",
+    "aliases": [
+      "city of Gadiomnah"
+    ],
+    "description": "A city that was sunk and replaced by hills and valleys at the time of Christ's crucifixion.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "AD 34",
+    "significance": "Destroyed at Christ's death; inhabitants buried in the earth",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "gimgimno",
+    "name": "Gimgimno",
+    "aliases": [
+      "city of Gimgimno"
+    ],
+    "description": "A city that was sunk and replaced by hills and valleys at the time of Christ's crucifixion.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "AD 34",
+    "significance": "Destroyed at Christ's death",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "hai",
+    "name": "Hai",
+    "aliases": [
+      "Ai"
+    ],
+    "description": "A place east of Bethel where Abraham pitched his tent in Canaan.",
+    "lat": 31.917,
+    "lng": 35.258,
+    "region": "Middle East (modern et-Tell, Palestine)",
+    "locationType": "city",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Abrahamic era (~2000 BC)",
+    "significance": "Geographical marker for Abraham's camp in Canaan, east of Bethel",
+    "tier": 4,
+    "knownLocation": true
+  },
+  {
+    "id": "hanannihah",
+    "name": "Hanannihah",
+    "aliases": [
+      "land of Hanannihah"
+    ],
+    "description": "One of several lands seen by Enoch in his vision, listed alongside Sharon, Enoch, Omner, Heni, Shem, and Haner.",
+    "lat": null,
+    "lng": null,
+    "region": "Unknown (primeval)",
+    "locationType": "land",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Antediluvian",
+    "significance": "Part of Enoch's prophetic commission",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "haner",
+    "name": "Haner",
+    "aliases": [
+      "land of Haner"
+    ],
+    "description": "One of several lands seen by Enoch in his vision, listed alongside Sharon, Enoch, Omner, Heni, Shem, and Hanannihah.",
+    "lat": null,
+    "lng": null,
+    "region": "Unknown (primeval)",
+    "locationType": "land",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Antediluvian",
+    "significance": "Part of Enoch's prophetic commission",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "heni",
+    "name": "Heni",
+    "aliases": [
+      "land of Heni"
+    ],
+    "description": "One of several lands seen by Enoch in his vision, listed alongside Sharon, Enoch, Omner, Shem, Haner, and Hanannihah.",
+    "lat": null,
+    "lng": null,
+    "region": "Unknown (primeval)",
+    "locationType": "land",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Antediluvian",
+    "significance": "Part of Enoch's prophetic commission",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "heshlon",
+    "name": "Heshlon",
+    "aliases": [
+      "plains of Heshlon"
+    ],
+    "description": "Plains in Jaredite territory where Coriantumr pursued Shared after defeating him in the valley of Gilgal.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "plain",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Jaredite era",
+    "significance": "Battle site in the Jaredite civil war between Coriantumr and Shared",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "heth",
+    "name": "Heth",
+    "aliases": [
+      "land of Heth"
+    ],
+    "description": "A Jaredite land where Jared rebelled against his father and gained half the kingdom.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Jaredite era",
+    "significance": "Site of a rebellion that split the Jaredite kingdom",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "jacob-city",
+    "name": "Jacob",
+    "aliases": [
+      "city of Jacob"
+    ],
+    "description": "A city that was sunk and replaced by hills and valleys at the time of Christ's crucifixion.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "AD 34",
+    "significance": "Destroyed at Christ's death",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "jacobugath",
+    "name": "Jacobugath",
+    "aliases": [],
+    "description": "A great city inhabited by the people of king Jacob, burned with fire at Christ's crucifixion because of secret combinations.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "AD 34",
+    "significance": "Destroyed by fire for extreme wickedness and secret combinations",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "jashon",
+    "name": "Jashon",
+    "aliases": [
+      "city of Jashon",
+      "land of Jashon"
+    ],
+    "description": "A city and land near the hill Shim where the Nephites retreated. Mormon retrieved the plates of Nephi from nearby.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Late Nephite era (~AD 345)",
+    "significance": "Near the hill Shim where the sacred records were deposited",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "jordan-city",
+    "name": "Jordan",
+    "aliases": [
+      "city of Jordan"
+    ],
+    "description": "A Nephite city mentioned in the context of the destructions at Christ's crucifixion.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "AD 34",
+    "significance": "Named in the account of cities destroyed at Christ's death",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "josh",
+    "name": "Josh",
+    "aliases": [
+      "city of Josh"
+    ],
+    "description": "A city burned with fire at the time of Christ's crucifixion.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "AD 34",
+    "significance": "Destroyed by fire at Christ's death for wickedness",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "joshua",
+    "name": "Joshua",
+    "aliases": [
+      "land of Joshua"
+    ],
+    "description": "A land in the borders west by the seashore where Mormon's retreating Nephite army gathered.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Late Nephite era (~AD 327)",
+    "significance": "Temporary staging ground during the Nephite retreat",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "kishkumen",
+    "name": "Kishkumen",
+    "aliases": [
+      "city of Kishkumen"
+    ],
+    "description": "A city burned with fire at the time of Christ's crucifixion.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "AD 34",
+    "significance": "Destroyed by fire at Christ's death for wickedness",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "laman-city",
+    "name": "Laman (city)",
+    "aliases": [
+      "city of Laman"
+    ],
+    "description": "A city burned with fire at the time of Christ's crucifixion because of wickedness.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "AD 34",
+    "significance": "Destroyed by fire at Christ's death for casting out prophets",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "lemuel-city",
+    "name": "Lemuel (city)",
+    "aliases": [
+      "city of Lemuel"
+    ],
+    "description": "A city in the land of Nephi where Amulon was appointed teacher over the Lamanite people.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Zeniffite era (~120 BC)",
+    "significance": "Lamanite city under the teaching influence of Amulon and the priests of Noah",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "mahujah",
+    "name": "Mahujah",
+    "aliases": [
+      "place Mahujah"
+    ],
+    "description": "A place where Enoch stood and cried unto the Lord, receiving a voice from heaven telling him to go to mount Simeon.",
+    "lat": null,
+    "lng": null,
+    "region": "Unknown (primeval)",
+    "locationType": "land",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Antediluvian",
+    "significance": "Where Enoch received his prophetic calling from the Lord",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "minon",
+    "name": "Minon",
+    "aliases": [
+      "land of Minon"
+    ],
+    "description": "A land above the land of Zarahemla, in the course of the land of Nephi, where a large Lamanite army was spotted.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~87 BC)",
+    "significance": "Where Nephite scouts discovered the Lamanite-Amlicite alliance marching against Zarahemla",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "mocum",
+    "name": "Mocum",
+    "aliases": [
+      "city of Mocum"
+    ],
+    "description": "A city destroyed by being covered with water at the time of Christ's crucifixion.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "AD 34",
+    "significance": "Destroyed by flooding at Christ's death",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "moriantum",
+    "name": "Moriantum",
+    "aliases": [],
+    "description": "A place referenced by Mormon where Nephite soldiers committed atrocities against captured Lamanite women.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Late Nephite era (~AD 375)",
+    "significance": "Referenced in Mormon's lament over the moral degradation of both Nephites and Lamanites",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "myra",
+    "name": "Myra",
+    "aliases": [],
+    "description": "City in Lycia where Paul's centurion transferred him to an Alexandrian grain ship sailing for Italy.",
+    "lat": 36.2597,
+    "lng": 29.9833,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Paul changed ships on voyage to Rome",
+    "tier": 4,
+    "knownLocation": true
+  },
+  {
+    "id": "neapolis",
+    "name": "Neapolis",
+    "aliases": [
+      "Kavala"
+    ],
+    "description": "Port city in Macedonia where Paul first set foot in Europe on his second missionary journey.",
+    "lat": 40.9361,
+    "lng": 24.4053,
+    "region": "Greece",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Paul's first European landing point",
+    "tier": 4,
+    "knownLocation": true
+  },
+  {
+    "id": "waters-of-noah",
+    "name": "Noah (waters)",
+    "aliases": [
+      "waters of Noah"
+    ],
+    "description": "Waters near the land of Nephi mentioned in the context of Lamanite-Nephite conflicts.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "waters",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Zeniffite era (~145 BC)",
+    "significance": "Site of a battle between Zeniff's people and the Lamanites",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "ogath",
+    "name": "Ogath",
+    "aliases": [],
+    "description": "A place where Coriantumr's armies pitched their tents during the final Jaredite wars after fleeing southward.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Jaredite era",
+    "significance": "Campsite during the final Jaredite conflict near the hill Ramah/Cumorah",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "omner-land",
+    "name": "Omner (Moses)",
+    "aliases": [
+      "land of Omner"
+    ],
+    "description": "One of several lands seen by Enoch in his vision, listed alongside Sharon, Enoch, Heni, Shem, Haner, and Hanannihah.",
+    "lat": null,
+    "lng": null,
+    "region": "Unknown (primeval)",
+    "locationType": "land",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Antediluvian",
+    "significance": "Part of Enoch's prophetic commission",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "on-heliopolis",
+    "name": "On",
+    "aliases": [
+      "Heliopolis"
+    ],
+    "description": "Ancient Egyptian city of the sun. Joseph married Asenath, daughter of Potiphera, priest of On.",
+    "lat": 30.131,
+    "lng": 31.3125,
+    "region": "Egypt",
+    "locationType": "city",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Patriarchal",
+    "significance": "Joseph married into the priestly family here",
+    "tier": 4,
+    "knownLocation": true
+  },
+  {
+    "id": "onihah",
+    "name": "Onihah",
+    "aliases": [
+      "city of Onihah"
+    ],
+    "description": "A city destroyed by being covered with water at the time of Christ's crucifixion.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "AD 34",
+    "significance": "Destroyed by flooding at Christ's death",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "paphos",
+    "name": "Paphos",
+    "aliases": [],
+    "description": "City on Cyprus where Paul confronted the sorcerer Bar-Jesus and converted the proconsul Sergius Paulus.",
+    "lat": 34.7553,
+    "lng": 32.4225,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Paul confronted Bar-Jesus; proconsul converted",
+    "tier": 4,
+    "knownLocation": true
+  },
+  {
+    "id": "perga",
+    "name": "Perga",
+    "aliases": [],
+    "description": "City in Pamphylia where John Mark left Paul and Barnabas during the first missionary journey.",
+    "lat": 36.9614,
+    "lng": 30.8533,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "John Mark deserted the mission here",
+    "tier": 4,
+    "knownLocation": true
+  },
+  {
+    "id": "gibeon-pool",
+    "name": "Pool of Gibeon",
+    "aliases": [],
+    "description": "Large pool at Gibeon where Joab's men and Abner's men fought in a deadly contest during the civil war between David and Ish-bosheth.",
+    "lat": 31.8489,
+    "lng": 35.1861,
+    "region": "Israel",
+    "locationType": "well",
+    "volumes": [
+      "OT"
+    ],
+    "era": "Monarchy",
+    "significance": "Joab vs Abner's deadly contest during civil war",
+    "tier": 4,
+    "knownLocation": true
+  },
+  {
+    "id": "ptolemais",
+    "name": "Ptolemais",
+    "aliases": [
+      "Acco",
+      "Acre",
+      "Accho"
+    ],
+    "description": "Port city on the Mediterranean coast. Paul stopped here briefly on his return from his third missionary journey.",
+    "lat": 32.9261,
+    "lng": 35.0764,
+    "region": "Israel",
+    "locationType": "city",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "era": "Conquest through New Testament",
+    "significance": "Paul visited briefly; ancient Phoenician port",
+    "tier": 4,
+    "knownLocation": true
+  },
+  {
+    "id": "puteoli",
+    "name": "Puteoli",
+    "aliases": [
+      "Pozzuoli"
+    ],
+    "description": "Port city near Naples where Paul landed on his voyage to Rome and found Christian brothers.",
+    "lat": 40.8263,
+    "lng": 14.1246,
+    "region": "Rome/Italy",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Paul's landing port in Italy on his way to Rome",
+    "tier": 4,
+    "knownLocation": true
+  },
+  {
+    "id": "rhodes",
+    "name": "Rhodes",
+    "aliases": [],
+    "description": "Greek island that Paul's ship passed on his return from his third missionary journey.",
+    "lat": 36.4349,
+    "lng": 28.2176,
+    "region": "Greece",
+    "locationType": "island",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Paul passed through on his third journey",
+    "tier": 4,
+    "knownLocation": true
+  },
+  {
+    "id": "salamis",
+    "name": "Salamis",
+    "aliases": [],
+    "description": "Port city on Cyprus where Paul and Barnabas first preached at the start of their first missionary journey.",
+    "lat": 35.1833,
+    "lng": 33.9,
+    "region": "Asia Minor",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "First stop on Paul's first missionary journey",
+    "tier": 4,
+    "knownLocation": true
+  },
+  {
+    "id": "samothrace",
+    "name": "Samothrace",
+    "aliases": [
+      "Samothracia"
+    ],
+    "description": "Island in the northern Aegean where Paul stopped on his voyage from Troas to Neapolis.",
+    "lat": 40.4722,
+    "lng": 25.525,
+    "region": "Greece",
+    "locationType": "island",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Waypoint on Paul's journey to Europe",
+    "tier": 4,
+    "knownLocation": true
+  },
+  {
+    "id": "seleucia",
+    "name": "Seleucia",
+    "aliases": [],
+    "description": "Port city of Antioch in Syria from which Paul and Barnabas sailed to Cyprus to begin their first missionary journey.",
+    "lat": 36.1167,
+    "lng": 35.9333,
+    "region": "Syria",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Departure port for Paul's first missionary journey",
+    "tier": 4,
+    "knownLocation": true
+  },
+  {
+    "id": "sharon-moses",
+    "name": "Sharon (Moses)",
+    "aliases": [
+      "land of Sharon"
+    ],
+    "description": "A land seen by Enoch in his vision, listed alongside the lands of Enoch, Omner, Heni, Shem, Haner, and Hanannihah.",
+    "lat": null,
+    "lng": null,
+    "region": "Unknown (primeval)",
+    "locationType": "land",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Antediluvian",
+    "significance": "One of several lands whose inhabitants Enoch was commanded to call to repentance",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "shem-land",
+    "name": "Shem (Moses)",
+    "aliases": [
+      "land of Shem"
+    ],
+    "description": "One of several lands seen by Enoch in his vision, listed alongside Sharon, Enoch, Omner, Heni, Haner, and Hanannihah.",
+    "lat": null,
+    "lng": null,
+    "region": "Unknown (primeval)",
+    "locationType": "land",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Antediluvian",
+    "significance": "Part of Enoch's prophetic commission",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "sherrizah",
+    "name": "Sherrizah",
+    "aliases": [
+      "tower of Sherrizah"
+    ],
+    "description": "A place with a tower where the Lamanites held many Nephite prisoners, including women and children, during the final wars.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Late Nephite era (~AD 375)",
+    "significance": "Site of atrocities against Nephite prisoners described in Moroni's letters from Mormon",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "shimnilom",
+    "name": "Shimnilom",
+    "aliases": [
+      "city of Shimnilom"
+    ],
+    "description": "A Lamanite city mentioned alongside Shilom, Shemlon, and Lemuel in the land of Nephi.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Zeniffite era (~120 BC)",
+    "significance": "One of several cities where Amulon was appointed teacher over the Lamanites",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "shulon",
+    "name": "Shulon",
+    "aliases": [
+      "land of Shulon"
+    ],
+    "description": "A land from which Enos and the people of God departed to dwell in a land of promise named Cainan.",
+    "lat": null,
+    "lng": null,
+    "region": "Unknown (primeval)",
+    "locationType": "land",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Antediluvian",
+    "significance": "Early dwelling place of the people of God before their migration",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "shum-valley",
+    "name": "Shum",
+    "aliases": [
+      "valley of Shum"
+    ],
+    "description": "A valley where Enoch beheld a great people dwelling in tents, called the people of Shum.",
+    "lat": null,
+    "lng": null,
+    "region": "Unknown (primeval)",
+    "locationType": "valley",
+    "volumes": [
+      "PoGP"
+    ],
+    "era": "Antediluvian",
+    "significance": "Part of Enoch's prophetic vision of the peoples of the earth",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "shurr",
+    "name": "Shurr",
+    "aliases": [
+      "valley of Shurr"
+    ],
+    "description": "A Jaredite valley near the hill Comnor where Coriantumr pitched his tents during the final wars.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "valley",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Jaredite era",
+    "significance": "Staging ground for the battle at the hill Comnor",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "siron",
+    "name": "Siron",
+    "aliases": [
+      "land of Siron"
+    ],
+    "description": "A land among the borders of the Lamanites where the harlot Isabel lived. Alma's son Corianton went there.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "land",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~74 BC)",
+    "significance": "Where Corianton abandoned his mission to consort with the harlot Isabel",
+    "tier": 4,
+    "knownLocation": false
+  },
+  {
+    "id": "syracuse",
+    "name": "Syracuse",
+    "aliases": [],
+    "description": "Major city on Sicily where Paul's ship stopped for three days on his voyage from Malta to Rome.",
+    "lat": 37.0755,
+    "lng": 15.2866,
+    "region": "Rome/Italy",
+    "locationType": "city",
+    "volumes": [
+      "NT"
+    ],
+    "era": "New Testament",
+    "significance": "Paul stopped here en route to Rome",
+    "tier": 4,
+    "knownLocation": true
+  },
+  {
+    "id": "thompson",
+    "name": "Thompson",
+    "aliases": [],
+    "description": "A township in Geauga County, Ohio where early Saints settled but experienced rebellion and stiffneckedness.",
+    "lat": 41.5301,
+    "lng": -81.0555,
+    "region": "Ohio, United States",
+    "locationType": "city",
+    "volumes": [
+      "D&C"
+    ],
+    "era": "Early Church (1831)",
+    "significance": "Early gathering place where some Saints refused to live the law of consecration",
+    "tier": 4,
+    "knownLocation": true
+  },
+  {
+    "id": "zeezrom-city",
+    "name": "Zeezrom",
+    "aliases": [
+      "city of Zeezrom"
+    ],
+    "description": "A Nephite city named after the lawyer Zeezrom, located in the southwestern region near Manti.",
+    "lat": null,
+    "lng": null,
+    "region": "Americas (BoM)",
+    "locationType": "city",
+    "volumes": [
+      "BoM"
+    ],
+    "era": "Reign of the judges (~64 BC)",
+    "significance": "One of the cities held by the Lamanites in the southwest war zone",
+    "tier": 4,
+    "knownLocation": false
+  }
+]
