@@ -7,17 +7,7 @@ import ChartHints from "./ChartHints";
 import FilterDropdown from "./FilterDropdown";
 import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./MethodologyModal";
 import timelineData from "../../data/timeline.json";
-
-function useIsMobile(breakpoint = 768) {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < breakpoint);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, [breakpoint]);
-  return isMobile;
-}
+import { useIsMobile } from "@/lib/useIsMobile";
 
 type Era = { label: string; startYear: number; endYear: number; color: string };
 type EventCategory = { id: string; label: string; color: string; icon: string };

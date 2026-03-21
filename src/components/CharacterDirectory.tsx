@@ -6,6 +6,7 @@ import { VOLUME_COLORS } from "@/lib/constants";
 import VolumeTooltip from "./VolumeTooltip";
 import CharacterDetailPanel from "./CharacterDetailPanel";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
+import { useIsMobile } from "@/lib/useIsMobile";
 
 const VOLUME_ORDER = ["OT", "NT", "BoM", "D&C", "PoGP"];
 const VOLUME_LABELS: Record<string, string> = {
@@ -34,17 +35,6 @@ const ERA_ORDER = [
   "Book of Mormon - Late",
   "Restoration",
 ];
-
-function useIsMobile(breakpoint = 768) {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < breakpoint);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, [breakpoint]);
-  return isMobile;
-}
 
 export default function CharacterDirectory() {
   const { isVolumeVisible } = usePreferencesContext();
@@ -209,6 +199,9 @@ export default function CharacterDirectory() {
           </svg>
           <input
             type="text"
+            enterKeyHint="search"
+            autoCapitalize="none"
+            autoCorrect="off"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             placeholder="Search by name or description..."

@@ -126,7 +126,9 @@ export default function ChapterInsights({
   speakers.forEach((s) => {
     const name = displaySpeakerName(s.speaker, s.speakerType, volumeAbbrev);
     const existing = speakerMap.get(name);
-    const count = s.verseEnd - s.verseStart + 1;
+    // Cap verseEnd to actual chapter size (sentinels in data use 200)
+    const cappedEnd = stats ? Math.min(s.verseEnd, stats.verseCount) : s.verseEnd;
+    const count = cappedEnd - s.verseStart + 1;
     if (existing) {
       existing.verseCount += count;
     } else {

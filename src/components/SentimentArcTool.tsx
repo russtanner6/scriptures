@@ -24,6 +24,7 @@ import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./Metho
 import type { ScripturePanelState } from "@/lib/types";
 import { chartScrollbarPlugin } from "@/lib/chart-scrollbar-plugin";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
+import { useIsMobile } from "@/lib/useIsMobile";
 
 ChartJS.register(CategoryScale, LinearScale, LineElement, PointElement, Filler, Tooltip, Legend);
 
@@ -37,17 +38,6 @@ const legendMarginPlugin = {
     };
   },
 };
-
-function useIsMobile(breakpoint = 768) {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < breakpoint);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, [breakpoint]);
-  return isMobile;
-}
 
 interface ChapterScore {
   bookId: number;
@@ -279,6 +269,7 @@ export default function SentimentArcTool() {
               borderWidth: 2,
               pointRadius: isMobile ? 1 : 2,
               pointHoverRadius: 5,
+              pointHitRadius: isMobile ? 20 : 10,
               pointBackgroundColor: cat.color,
             }));
 
@@ -333,15 +324,15 @@ export default function SentimentArcTool() {
                       },
                       datalabels: { display: false },
                       zoom: {
-                        pan: { enabled: isMobile, mode: "x" as const },
+                        pan: { enabled: isMobile, mode: "x", threshold: 10 },
                         zoom: {
-                          wheel: { enabled: !isMobile, modifierKey: "alt" as const },
-                          pinch: { enabled: isMobile },
-                          mode: "x" as const,
+                          wheel: { enabled: !isMobile, modifierKey: "alt" },
+                          pinch: { enabled: isMobile, threshold: 10 },
+                          mode: "x",
                           ...(isMobile ? { drag: { enabled: false } } : {}),
                         },
-                        limits: { x: { minRange: isMobile ? 5 : 10 } },
-                      },
+                        limits: { x: { minRange: isMobile ? 8 : 10 } },
+                      } as any,
                     },
                     scales: {
                       x: {

@@ -84,18 +84,18 @@ export default function VersePopover({
 
   // Close on outside click
   useEffect(() => {
-    const handleClick = (e: MouseEvent) => {
+    const handleClick = (e: Event) => {
       if (popoverRef.current && !popoverRef.current.contains(e.target as Node)) {
         onClose();
       }
     };
-    // Delay to prevent immediate close from the click that opened it
+    // Delay to prevent immediate close from the tap that opened it
     const timer = setTimeout(() => {
-      window.addEventListener("click", handleClick);
-    }, 100);
+      window.addEventListener("pointerdown", handleClick);
+    }, 250);
     return () => {
       clearTimeout(timer);
-      window.removeEventListener("click", handleClick);
+      window.removeEventListener("pointerdown", handleClick);
     };
   }, [onClose]);
 
@@ -154,7 +154,7 @@ export default function VersePopover({
         background: theme.bg,
         borderTop: `1px solid ${theme.border}`,
         borderRadius: "16px 16px 0 0",
-        padding: "20px 20px 28px",
+        padding: "20px 20px calc(28px + env(safe-area-inset-bottom, 0px))",
         boxShadow: theme.shadow,
         animation: "slideUp 0.25s ease",
       }
@@ -212,8 +212,14 @@ export default function VersePopover({
               color: theme.textMuted,
               fontSize: "1.2rem",
               cursor: "pointer",
-              padding: "4px 8px",
+              padding: "10px 12px",
+              minWidth: "44px",
+              minHeight: "44px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
               fontFamily: "inherit",
+              margin: "-6px -8px -6px 0",
             }}
           >
             ✕

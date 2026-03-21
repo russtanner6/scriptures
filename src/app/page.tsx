@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import { VOLUME_COLORS } from "@/lib/constants";
 import VolumeTooltip from "@/components/VolumeTooltip";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
+import { useIsMobile } from "@/lib/useIsMobile";
 import type { ScriptureCharacter } from "@/lib/types";
 
 interface RandomVerse {
@@ -15,17 +16,6 @@ interface RandomVerse {
   bookId: number;
   bookName: string;
   volumeAbbrev: string;
-}
-
-function useIsMobile(breakpoint = 768) {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < breakpoint);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, [breakpoint]);
-  return isMobile;
 }
 
 const VOLUME_ORDER = ["OT", "NT", "BoM", "D&C", "PoGP"];

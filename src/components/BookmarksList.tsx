@@ -4,17 +4,7 @@ import { useState, useEffect } from "react";
 import { getBookmarks, removeBookmark, type Bookmark } from "@/lib/bookmarks";
 import { VOLUME_COLORS } from "@/lib/constants";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
-
-function useIsMobile(breakpoint = 768) {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < breakpoint);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, [breakpoint]);
-  return isMobile;
-}
+import { useIsMobile } from "@/lib/useIsMobile";
 
 export default function BookmarksList() {
   const { isVolumeVisible } = usePreferencesContext();

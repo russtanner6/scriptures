@@ -3,18 +3,8 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { getVerseUrl } from "@/lib/scripture-urls";
 import { useBackToClose } from "@/lib/useBackToClose";
+import { useIsMobile } from "@/lib/useIsMobile";
 import type { Verse, ScripturePanelState } from "@/lib/types";
-
-function useIsMobile(breakpoint = 768) {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < breakpoint);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, [breakpoint]);
-  return isMobile;
-}
 
 export default function ScripturePanel({
   word,
@@ -75,26 +65,54 @@ export default function ScripturePanel({
   }, [handleKeyDown]);
 
   // Swipe-to-close (right swipe dismisses panel)
+  // Uses dead zone + velocity tracking for native-quality gesture feel
+  const touchStartY = useRef(0);
+  const touchStartTime = useRef(0);
+  const swipeEngaged = useRef(false);
+
   const handleTouchStart = useCallback((e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
+    touchStartY.current = e.touches[0].clientY;
+    touchStartTime.current = Date.now();
     touchDeltaX.current = 0;
+    swipeEngaged.current = false;
   }, []);
 
   const handleTouchMove = useCallback((e: React.TouchEvent) => {
-    const delta = e.touches[0].clientX - touchStartX.current;
-    touchDeltaX.current = delta;
-    if (delta > 0) {
-      setSwipeOffset(delta);
+    const dx = e.touches[0].clientX - touchStartX.current;
+    const dy = e.touches[0].clientY - touchStartY.current;
+    touchDeltaX.current = dx;
+
+    // Dead zone: require 15px horizontal movement AND more horizontal than vertical
+    if (!swipeEngaged.current) {
+      if (Math.abs(dx) > 15 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+        swipeEngaged.current = true;
+      } else {
+        return; // Don't engage swipe yet
+      }
+    }
+
+    if (dx > 0) {
+      setSwipeOffset(dx);
     }
   }, []);
 
   const handleTouchEnd = useCallback(() => {
-    if (touchDeltaX.current > 80) {
+    if (!swipeEngaged.current) {
+      touchDeltaX.current = 0;
+      return;
+    }
+    const elapsed = Date.now() - touchStartTime.current;
+    const velocity = touchDeltaX.current / Math.max(elapsed, 1); // px per ms
+
+    // Dismiss if: fast flick (velocity > 0.5 px/ms) OR dragged far enough (> 120px)
+    if (velocity > 0.5 || touchDeltaX.current > 120) {
       onClose();
     } else {
       setSwipeOffset(0);
     }
     touchDeltaX.current = 0;
+    swipeEngaged.current = false;
   }, [onClose]);
 
   // Highlight the search word in verse text
@@ -171,7 +189,8 @@ export default function ScripturePanel({
           transform: isVisible
             ? `translateX(${swipeOffset}px)`
             : "translateX(100%)",
-          transition: swipeOffset > 0 ? "none" : "transform 0.3s ease",
+          transition: swipeOffset > 0 ? "none" : "transform 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
+          willChange: "transform",
           boxShadow: "-8px 0 32px rgba(0, 0, 0, 0.15)",
           borderRadius: isMobile ? "12px 0 0 12px" : undefined,
         }}

@@ -73,25 +73,42 @@ function main() {
   const ldsBooks = new Set(lds.map(e => e.book));
   const overlap = [...ldsBooks].filter(b => bibleBooks.has(b));
 
+  let combined: SpeakerEntry[];
   if (overlap.length > 0) {
     console.warn(`Warning: ${overlap.length} books appear in both files: ${overlap.join(", ")}`);
     console.warn("Filtering out LDS books from Bible data to avoid duplicates.");
     // Remove any LDS books that already exist in Bible data
     const filteredBible = bible.filter(e => !ldsBooks.has(e.book));
     console.log(`Bible entries: ${filteredBible.length} (was ${bible.length})`);
-    var combined = [...filteredBible, ...lds];
+    combined = [...filteredBible, ...lds];
   } else {
     // Back up the original Bible-only speakers.json
     if (!fs.existsSync(BACKUP_PATH)) {
       fs.copyFileSync(BIBLE_PATH, BACKUP_PATH);
       console.log(`Backed up original to ${BACKUP_PATH}`);
     }
-    var combined = [...bible, ...lds];
+    combined = [...bible, ...lds];
   }
 
   // Build order map
   const orderMap = new Map<string, number>();
   BOOK_ORDER.forEach((name, idx) => orderMap.set(name, idx));
+
+  // Deduplicate exact duplicates (same book, chapter, verseStart, verseEnd, speaker)
+  const seen = new Set<string>();
+  const deduped: SpeakerEntry[] = [];
+  for (const e of combined) {
+    const key = `${e.book}|${e.chapter}|${e.verseStart}|${e.verseEnd}|${e.speaker}`;
+    if (!seen.has(key)) {
+      seen.add(key);
+      deduped.push(e);
+    }
+  }
+  const dupeCount = combined.length - deduped.length;
+  if (dupeCount > 0) {
+    console.log(`  Removed ${dupeCount} exact duplicates`);
+  }
+  combined = deduped;
 
   // Sort by book order, chapter, verse
   combined.sort((a, b) => {

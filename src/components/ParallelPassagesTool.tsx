@@ -5,17 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { VOLUME_COLORS } from "@/lib/constants";
 import Header from "./Header";
 import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./MethodologyModal";
-
-function useIsMobile(breakpoint = 768) {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < breakpoint);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, [breakpoint]);
-  return isMobile;
-}
+import { useIsMobile } from "@/lib/useIsMobile";
 
 interface PassageGroup {
   id: string;

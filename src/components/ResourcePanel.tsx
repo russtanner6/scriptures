@@ -117,7 +117,8 @@ export default function ResourcePanel({
           display: "flex",
           flexDirection: "column",
           transform: isVisible ? "translateX(0)" : "translateX(100%)",
-          transition: "transform 0.3s ease",
+          transition: "transform 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
+          willChange: "transform",
           boxShadow: "-8px 0 32px rgba(0, 0, 0, 0.25)",
         }}
       >

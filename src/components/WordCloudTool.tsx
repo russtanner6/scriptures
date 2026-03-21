@@ -6,6 +6,7 @@ import type { Volume } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import { SectionLabel } from "./VolumeCheckboxes";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
+import { useIsMobile } from "@/lib/useIsMobile";
 
 interface WordCloudItem {
   word: string;
@@ -19,17 +20,6 @@ interface WordCloudData {
   chapterLabel: string;
   totalWords: number;
   words: WordCloudItem[];
-}
-
-function useIsMobile(breakpoint = 768) {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < breakpoint);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, [breakpoint]);
-  return isMobile;
 }
 
 // Shuffle array deterministically using a seed

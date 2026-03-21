@@ -16,23 +16,13 @@ import { markChapterRead, isChapterRead, getReadChaptersForBook, getVolumeProgre
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { modalStyles as mStyles, getModalTheme } from "@/lib/modal-styles";
 import { getAnnotationsForChapter } from "@/lib/annotations";
+import { useIsMobile } from "@/lib/useIsMobile";
 
 interface ReaderVerse {
   chapter: number;
   verse: number;
   text: string;
   text_modern?: string | null;
-}
-
-function useIsMobile(breakpoint = 768) {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < breakpoint);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, [breakpoint]);
-  return isMobile;
 }
 
 export default function ScriptureReader() {
@@ -1307,7 +1297,7 @@ export default function ScriptureReader() {
           <div
             style={{
               position: "fixed",
-              bottom: isMobile ? "40px" : "44px",
+              bottom: isMobile ? "calc(40px + env(safe-area-inset-bottom, 0px))" : "calc(44px + env(safe-area-inset-bottom, 0px))",
               left: 0,
               right: 0,
               zIndex: 51,
@@ -1389,6 +1379,7 @@ export default function ScriptureReader() {
             WebkitBackdropFilter: "blur(12px)",
             borderTop: `1px solid ${bar.border}`,
             zIndex: 50,
+            paddingBottom: "env(safe-area-inset-bottom, 0px)",
           }}
         >
           {/* Search input row — expands above controls when open */}
@@ -1407,6 +1398,9 @@ export default function ScriptureReader() {
               <input
                 ref={searchInputRef}
                 type="text"
+                enterKeyHint="search"
+                autoCapitalize="none"
+                autoCorrect="off"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 onKeyDown={(e) => {

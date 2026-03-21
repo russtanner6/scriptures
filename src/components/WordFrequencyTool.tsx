@@ -28,6 +28,7 @@ import ScripturePanel from "./ScripturePanel";
 import type { ScripturePanelState } from "@/lib/types";
 import { chartScrollbarPlugin } from "@/lib/chart-scrollbar-plugin";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
+import { useIsMobile } from "@/lib/useIsMobile";
 
 ChartJS.register(
   CategoryScale,
@@ -48,18 +49,6 @@ ChartJS.defaults.plugins.datalabels = { display: false } as never;
 ChartJS.defaults.font.family = "'Inter', sans-serif";
 ChartJS.defaults.font.size = 13;
 ChartJS.defaults.font.weight = 500;
-
-// Hook to detect mobile viewport
-function useIsMobile(breakpoint = 768) {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < breakpoint);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, [breakpoint]);
-  return isMobile;
-}
 
 export default function WordFrequencyTool() {
   const { isVolumeVisible } = usePreferencesContext();
@@ -322,6 +311,9 @@ export default function WordFrequencyTool() {
                 <input
                   ref={inputRef}
                   type="text"
+                  enterKeyHint="search"
+                  autoCapitalize="none"
+                  autoCorrect="off"
                   value={word}
                   onChange={(e) => setWord(e.target.value)}
                   onKeyDown={handleKeyDown}
@@ -865,7 +857,7 @@ export default function WordFrequencyTool() {
                   )}
 
                   <div style={isMobile ? { overflowX: "auto", WebkitOverflowScrolling: "touch", margin: "0 -16px", padding: "0 16px" } : {}}>
-                  <div className="chart-container-tall" style={isMobile ? { width: `${Math.max(600, arcData.length * 28)}px`, minWidth: "100%" } : {}} onDoubleClick={() => arcChartRef.current?.resetZoom()}>
+                  <div className={`chart-container-tall${isMobile ? " chart-touch-container" : ""}`} style={isMobile ? { width: `${Math.max(600, arcData.length * 28)}px`, minWidth: "100%" } : {}} onDoubleClick={() => arcChartRef.current?.resetZoom()}>
                     <Line
                       ref={arcChartRef}
                       key={`${activeTabId}-${zoomReady}`}
@@ -900,6 +892,7 @@ export default function WordFrequencyTool() {
                                       : 2
                                 ),
                             pointHoverRadius: isSingleBook ? 5 : 7,
+                            pointHitRadius: isMobile ? 20 : 10,
                             tension: 0.35,
                           },
                         ],
@@ -930,18 +923,18 @@ export default function WordFrequencyTool() {
                                 font: { weight: 700, size: 11 },
                                 formatter: (value: number) => value.toLocaleString(),
                               } as any,
-                          zoom: isMobile
-                            ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const }, pan: { enabled: true, mode: "x" as const }, limits: { x: { minRange: 5 } } }
+                          zoom: (isMobile
+                            ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true, threshold: 10 }, drag: { enabled: false }, mode: "x" }, pan: { enabled: true, mode: "x", threshold: 10 }, limits: { x: { minRange: 8 } } }
                             : {
                               zoom: {
-                                wheel: { enabled: true, speed: 0.05, modifierKey: "alt" as const },
-                                pinch: { enabled: true },
+                                wheel: { enabled: true, speed: 0.05, modifierKey: "alt" },
+                                pinch: { enabled: true, threshold: 10 },
                                 drag: { enabled: false },
-                                mode: "x" as const,
+                                mode: "x",
                               },
-                              pan: { enabled: true, mode: "x" as const },
+                              pan: { enabled: true, mode: "x", threshold: 10 },
                               limits: { x: { minRange: 3 } },
-                            },
+                            }) as any,
                         },
                         layout: { padding: { top: 30, bottom: 20 } },
                         onHover: (_event: any, elements: any[]) => {

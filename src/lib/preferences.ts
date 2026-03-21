@@ -74,9 +74,16 @@ export function getDisplaySpeakerName(
   volumeAbbrev: string,
   theologyMode: TheologyMode
 ): string {
-  if (theologyMode === "lds" && volumeAbbrev === "OT" && speakerType === "divine") {
-    if (speaker === "God" || speaker === "LORD" || speaker === "The LORD") {
-      return "Jesus Christ (Jehovah)";
+  if (theologyMode === "lds" && speakerType === "divine") {
+    // OT: God/LORD/Jesus → Jesus Christ (Jehovah)
+    if (volumeAbbrev === "OT") {
+      if (speaker === "God" || speaker === "LORD" || speaker === "The LORD" || speaker === "Jesus") {
+        return "Jesus Christ (Jehovah)";
+      }
+    }
+    // D&C: "God" in divine speech is also Jesus Christ in LDS theology
+    if (volumeAbbrev === "D&C" && speaker === "God") {
+      return "Jesus Christ";
     }
   }
   return speaker;

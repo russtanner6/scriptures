@@ -21,6 +21,7 @@ import ScripturePanel from "./ScripturePanel";
 import FilterDropdown from "./FilterDropdown";
 import { chartScrollbarPlugin } from "@/lib/chart-scrollbar-plugin";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
+import { useIsMobile } from "@/lib/useIsMobile";
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -55,17 +56,6 @@ const TERM_COLORS = [
   "#06b6d4", // cyan
   "#a78bfa", // light violet
 ];
-
-function useIsMobile(breakpoint = 768) {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < breakpoint);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, [breakpoint]);
-  return isMobile;
-}
 
 interface TermDataPoint {
   label: string;
@@ -361,6 +351,9 @@ export default function NarrativeArcTool() {
               <input
                 ref={inputRef}
                 type="text"
+                enterKeyHint="search"
+                autoCapitalize="none"
+                autoCorrect="off"
                 value={currentTerm}
                 onChange={(e) => setCurrentTerm(e.target.value)}
                 onKeyDown={handleKeyDown}
@@ -568,6 +561,7 @@ export default function NarrativeArcTool() {
                         pointBorderWidth: 1,
                         pointRadius: isSingleBook ? 2 : 4,
                         pointHoverRadius: isSingleBook ? 5 : 7,
+                        pointHitRadius: isMobile ? 20 : 10,
                         tension: 0.35,
                       };
                     }),
@@ -654,13 +648,13 @@ export default function NarrativeArcTool() {
                         font: { weight: 700, size: 10 },
                         formatter: (value: number) => value.toLocaleString(),
                       },
-                      zoom: isMobile
-                        ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const }, pan: { enabled: true, mode: "x" as const }, limits: { x: { minRange: 5 } } }
+                      zoom: (isMobile
+                        ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true, threshold: 10 }, drag: { enabled: false }, mode: "x" }, pan: { enabled: true, mode: "x", threshold: 10 }, limits: { x: { minRange: 8 } } }
                         : {
-                          zoom: { wheel: { enabled: true, speed: 0.05, modifierKey: "alt" as const }, pinch: { enabled: true }, drag: { enabled: false }, mode: "x" as const },
-                          pan: { enabled: true, mode: "x" as const },
+                          zoom: { wheel: { enabled: true, speed: 0.05, modifierKey: "alt" }, pinch: { enabled: true, threshold: 10 }, drag: { enabled: false }, mode: "x" },
+                          pan: { enabled: true, mode: "x", threshold: 10 },
                           limits: { x: { minRange: 3 } },
-                        },
+                        }) as any,
                     },
                     layout: { padding: { top: 20, bottom: 20 } },
                     scales: {

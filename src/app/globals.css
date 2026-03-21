@@ -62,7 +62,6 @@ html {
 
 body {
   background: var(--bg-gradient);
-  background-attachment: fixed;
   color: var(--text);
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.6;
@@ -70,6 +69,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  overscroll-behavior: none; /* Prevent pull-to-refresh and scroll chaining */
+  padding-bottom: env(safe-area-inset-bottom, 0px); /* iOS safe area */
 }
 
 /* Ensure Inter everywhere — buttons, inputs, selects, textareas */
@@ -167,7 +168,11 @@ body::before {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding: 10px;
+  padding: 12px;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: 1px solid transparent;
   border-radius: 10px;
@@ -240,7 +245,13 @@ body::before {
 }
 
 .filter-dropdown-panel {
-  animation: dropdownIn 0.15s ease-out;
+  animation: dropdownIn 0.22s ease-out;
+}
+
+/* Chart containers — prevent browser gestures from competing with Chart.js zoom/pan */
+.chart-touch-container {
+  touch-action: pan-y;
+  overscroll-behavior: contain;
 }
 
 .search-panel {

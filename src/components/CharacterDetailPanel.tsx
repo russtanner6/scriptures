@@ -7,6 +7,7 @@ import type { ScriptureCharacter } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import VolumeTooltip from "./VolumeTooltip";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
+import { useIsMobile } from "@/lib/useIsMobile";
 
 const VOLUME_ORDER = ["OT", "NT", "BoM", "D&C", "PoGP"];
 
@@ -16,17 +17,6 @@ interface MentionStats {
   byBook: { bookId: number; bookName: string; volumeAbbrev: string; count: number }[];
   firstMention: { bookId: number; bookName: string; volumeAbbrev: string; chapter: number; verse: number; text: string } | null;
   lastMention: { bookId: number; bookName: string; volumeAbbrev: string; chapter: number; verse: number; text: string } | null;
-}
-
-function useIsMobile(breakpoint = 768) {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < breakpoint);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, [breakpoint]);
-  return isMobile;
 }
 
 export default function CharacterDetailPanel({
@@ -87,20 +77,37 @@ export default function CharacterDetailPanel({
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [handleKeyDown]);
 
-  // Swipe-to-close
+  // Swipe-to-close with dead zone + velocity tracking
+  const touchStartY = useRef(0);
+  const touchStartTime = useRef(0);
+  const swipeEngaged = useRef(false);
+
   const handleTouchStart = useCallback((e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
+    touchStartY.current = e.touches[0].clientY;
+    touchStartTime.current = Date.now();
     touchDeltaX.current = 0;
+    swipeEngaged.current = false;
   }, []);
   const handleTouchMove = useCallback((e: React.TouchEvent) => {
-    const delta = e.touches[0].clientX - touchStartX.current;
-    touchDeltaX.current = delta;
-    if (delta > 0) setSwipeOffset(delta);
+    const dx = e.touches[0].clientX - touchStartX.current;
+    const dy = e.touches[0].clientY - touchStartY.current;
+    touchDeltaX.current = dx;
+    if (!swipeEngaged.current) {
+      if (Math.abs(dx) > 15 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+        swipeEngaged.current = true;
+      } else return;
+    }
+    if (dx > 0) setSwipeOffset(dx);
   }, []);
   const handleTouchEnd = useCallback(() => {
-    if (touchDeltaX.current > 80) onClose();
+    if (!swipeEngaged.current) { touchDeltaX.current = 0; return; }
+    const elapsed = Date.now() - touchStartTime.current;
+    const velocity = touchDeltaX.current / Math.max(elapsed, 1);
+    if (velocity > 0.5 || touchDeltaX.current > 120) onClose();
     else setSwipeOffset(0);
     touchDeltaX.current = 0;
+    swipeEngaged.current = false;
   }, [onClose]);
 
   // Primary volume color
@@ -170,7 +177,8 @@ export default function CharacterDetailPanel({
           transform: isVisible
             ? `translateX(${swipeOffset}px)`
             : "translateX(100%)",
-          transition: swipeOffset > 0 ? "none" : "transform 0.3s ease",
+          transition: swipeOffset > 0 ? "none" : "transform 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
+          willChange: "transform",
           boxShadow: "-8px 0 32px rgba(0, 0, 0, 0.4)",
           borderRadius: isMobile ? "12px 0 0 12px" : undefined,
           overflowY: "auto",

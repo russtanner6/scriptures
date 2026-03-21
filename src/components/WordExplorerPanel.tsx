@@ -198,7 +198,8 @@ export default function WordExplorerPanel({
           zIndex: 201,
           display: "flex",
           flexDirection: "column",
-          animation: "slideUp 0.25s ease-out",
+          animation: "slideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
+          willChange: "transform",
           overflow: "hidden",
         }}
       >
@@ -303,7 +304,7 @@ export default function WordExplorerPanel({
           flex: 1,
           overflowY: "auto",
           overflowX: "hidden",
-          padding: isMobile ? "0 20px 20px" : "0 28px 24px",
+          padding: isMobile ? "0 20px calc(20px + env(safe-area-inset-bottom, 0px))" : "0 28px calc(24px + env(safe-area-inset-bottom, 0px))",
         }}>
           {isLoading ? (
             <div style={{ textAlign: "center", padding: "40px 0", color: theme.textMuted, fontSize: "0.82rem" }}>

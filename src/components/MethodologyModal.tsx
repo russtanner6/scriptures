@@ -40,17 +40,17 @@ export default function MethodologyModal({
 
   useEffect(() => {
     if (!isOpen) return;
-    const handleClick = (e: MouseEvent) => {
+    const handleClick = (e: Event) => {
       if (panelRef.current && !panelRef.current.contains(e.target as Node)) {
         onClose();
       }
     };
     const timer = setTimeout(() => {
-      window.addEventListener("click", handleClick);
-    }, 100);
+      window.addEventListener("pointerdown", handleClick);
+    }, 250);
     return () => {
       clearTimeout(timer);
-      window.removeEventListener("click", handleClick);
+      window.removeEventListener("pointerdown", handleClick);
     };
   }, [isOpen, onClose]);
 
