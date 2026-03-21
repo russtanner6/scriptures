@@ -94,11 +94,12 @@ export default function CharacterDirectory() {
 
     if (searchTerm.length >= 2) {
       const term = searchTerm.toLowerCase();
+      // Search names and aliases only — bio search creates too much noise
+      // (e.g., searching "Paul" would return 100+ people whose bios mention Paul)
       list = list.filter(
         (c) =>
           c.name.toLowerCase().includes(term) ||
-          c.aliases.some((a) => a.toLowerCase().includes(term)) ||
-          c.bio.toLowerCase().includes(term)
+          c.aliases.some((a) => a.toLowerCase().includes(term))
       );
     }
 
@@ -220,7 +221,7 @@ export default function CharacterDirectory() {
             autoCorrect="off"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder="Search by name or description..."
+            placeholder="Search by name..."
             className="search-bar-glow"
             style={{
               width: "100%",
