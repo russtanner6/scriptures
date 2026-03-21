@@ -6,6 +6,7 @@ import type { ScriptureCharacter } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import VolumeTooltip from "./VolumeTooltip";
 import CharacterDetailPanel from "./CharacterDetailPanel";
+import RelationshipWeb from "./RelationshipWeb";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { useIsMobile } from "@/lib/useIsMobile";
 
@@ -49,6 +50,8 @@ export default function CharacterDirectory() {
   const [genderFilter, setGenderFilter] = useState<string | null>(null);
   const [selectedCharacter, setSelectedCharacter] = useState<ScriptureCharacter | null>(null);
   const [showFilters, setShowFilters] = useState(false);
+  const [showRelationshipWeb, setShowRelationshipWeb] = useState(false);
+  const [webInitialCharacter, setWebInitialCharacter] = useState<ScriptureCharacter | null>(null);
   const isMobile = useIsMobile();
   const [deepLinkHandled, setDeepLinkHandled] = useState(false);
 
@@ -191,6 +194,36 @@ export default function CharacterDirectory() {
             </div>
           ))}
         </div>
+
+        {/* Relationship Web button */}
+        <button
+          onClick={() => { setWebInitialCharacter(null); setShowRelationshipWeb(true); }}
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "6px",
+            padding: "8px 18px",
+            borderRadius: "10px",
+            border: "1px solid rgba(139, 92, 246, 0.3)",
+            background: "rgba(139, 92, 246, 0.08)",
+            color: "#8b5cf6",
+            fontSize: "0.78rem",
+            fontWeight: 600,
+            cursor: "pointer",
+            fontFamily: "inherit",
+            marginTop: "16px",
+            transition: "all 0.2s",
+          }}
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="5" r="3" />
+            <circle cx="5" cy="19" r="3" />
+            <circle cx="19" cy="19" r="3" />
+            <line x1="12" y1="8" x2="5" y2="16" />
+            <line x1="12" y1="8" x2="19" y2="16" />
+          </svg>
+          View Relationship Web
+        </button>
       </div>
 
       {/* Search + filter bar */}
@@ -589,6 +622,19 @@ export default function CharacterDirectory() {
           allCharacters={characters}
           onClose={() => setSelectedCharacter(null)}
           onSelectCharacter={setSelectedCharacter}
+        />
+      )}
+
+      {/* Relationship Web */}
+      {showRelationshipWeb && (
+        <RelationshipWeb
+          characters={characters}
+          initialCharacter={webInitialCharacter}
+          onClose={() => setShowRelationshipWeb(false)}
+          onSelectCharacter={(c) => {
+            setShowRelationshipWeb(false);
+            setSelectedCharacter(c);
+          }}
         />
       )}
     </div>
