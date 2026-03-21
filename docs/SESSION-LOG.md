@@ -1,5 +1,29 @@
 # Scripture Explorer — Session Log
 
+## 2026-03-21 — Session 9: Mobile UX Polish + Speaker Accuracy
+
+### What was done
+- **Shared useIsMobile hook** — Extracted debounced hook to `src/lib/useIsMobile.ts`, replaced 15 inline duplicates across all components. 150ms debounce prevents iOS URL-bar-triggered resize jank.
+- **Chart gesture tuning** — Added 10px threshold to pinch/pan in all 4 chart components (WordFrequency, NarrativeArc, Heatmap, Sentiment). Increased mobile minRange from 5 to 8. Added `pointHitRadius: isMobile ? 20 : 10` for easier mobile tapping.
+- **Swipe-to-dismiss rewrite** — ScripturePanel + CharacterDetailPanel: 15px dead zone, horizontal > vertical * 1.5 discrimination, velocity-based dismissal (>0.5 px/ms OR >120px distance).
+- **Panel transitions** — Standardized all slide-in panels to `0.25s cubic-bezier(0.16, 1, 0.3, 1)` for polished native feel. Added `will-change: transform` for GPU compositing.
+- **iOS safe areas** — Added `env(safe-area-inset-bottom)` padding to VersePopover mobile sheet, WordExplorerPanel, ScriptureReader bottom bar + search navigator.
+- **Touch handling** — Outside-click handlers changed from mousedown to pointerdown (FilterDropdown, MethodologyModal, VersePopover). Close button tap targets enlarged to 44x44px. Added `chart-touch-container` CSS class.
+- **Keyboard optimizations** — Added `enterKeyHint="search"`, `autoCapitalize="none"`, `autoCorrect="off"` to all search inputs (5 components).
+- **CSS fixes** — Removed `background-attachment: fixed` (iOS perf), added `overscroll-behavior: none`, safe area padding on body, dropdown animation timing 0.22s.
+- **Viewport meta** — Set `maximumScale: 1, userScalable: false, viewportFit: "cover"` in layout.tsx.
+- **Speaker data audit** — Found 902 exact duplicates in Bible data, verseEnd=200 sentinel inflation, missing theology mode mappings.
+- **Speaker fixes** — Deduplicated speakers.json (7,631 → 6,729 entries), capped verseEnd sentinel at runtime in ChapterInsights, expanded theology mode: OT "Jesus" → "Jesus Christ (Jehovah)", D&C "God" → "Jesus Christ".
+- **Merge script** — Added deduplication step, fixed var → let scoping.
+
+### Known issues remaining
+- 403 overlapping verse ranges in Bible speaker data (different speakers claim same verses)
+- verseEnd=200 sentinels still in data file (capped at runtime)
+- Mobile hamburger menu links may not work (reported Session 8, not yet investigated)
+- Chart scroll pad feature not yet built
+
+---
+
 ## 2026-03-21 — Session 8: User Preferences System (Volume Visibility + Theology Mode)
 
 ### What was done
