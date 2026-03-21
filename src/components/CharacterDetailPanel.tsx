@@ -8,6 +8,18 @@ import { VOLUME_COLORS } from "@/lib/constants";
 import VolumeTooltip from "./VolumeTooltip";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { useIsMobile } from "@/lib/useIsMobile";
+import { SENTIMENT_CATEGORIES } from "@/lib/sentiment-lexicon";
+import {
+  Chart as ChartJS,
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Tooltip,
+} from "chart.js";
+import { Radar } from "react-chartjs-2";
+
+ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip);
 
 const VOLUME_ORDER = ["OT", "NT", "BoM", "D&C", "PoGP"];
 
@@ -34,6 +46,7 @@ export default function CharacterDetailPanel({
   const [isVisible, setIsVisible] = useState(false);
   const [mentions, setMentions] = useState<MentionStats | null>(null);
   const [mentionsLoading, setMentionsLoading] = useState(false);
+  const [sentimentScores, setSentimentScores] = useState<Record<string, number> | null>(null);
   const isMobile = useIsMobile();
   const panelRef = useRef<HTMLDivElement>(null);
   const touchStartX = useRef(0);
@@ -55,15 +68,21 @@ export default function CharacterDetailPanel({
     panelRef.current?.scrollTo(0, 0);
   }, [character.id]);
 
-  // Fetch mention stats
+  // Fetch mention stats + sentiment scores
   useEffect(() => {
     setMentions(null);
     setMentionsLoading(true);
+    setSentimentScores(null);
     const aliases = character.aliases.join(",");
-    fetch(`/api/character-mentions?name=${encodeURIComponent(character.name)}${aliases ? `&aliases=${encodeURIComponent(aliases)}` : ""}`)
+    const qp = `name=${encodeURIComponent(character.name)}${aliases ? `&aliases=${encodeURIComponent(aliases)}` : ""}`;
+    fetch(`/api/character-mentions?${qp}`)
       .then((r) => r.json())
       .then((data) => { setMentions(data); setMentionsLoading(false); })
       .catch(() => setMentionsLoading(false));
+    fetch(`/api/character-sentiment?${qp}`)
+      .then((r) => r.json())
+      .then((data) => { if (data.scores) setSentimentScores(data.scores); })
+      .catch(() => {});
   }, [character.id, character.name, character.aliases]);
 
   const handleKeyDown = useCallback(
@@ -489,6 +508,68 @@ export default function CharacterDetailPanel({
                       </div>
                     </div>
                   )}
+
+                  {/* Tone Radar */}
+                  {sentimentScores && (() => {
+                    const hasData = SENTIMENT_CATEGORIES.some((c) => sentimentScores[c.id] > 0);
+                    if (!hasData) return null;
+                    const maxVal = Math.max(...SENTIMENT_CATEGORIES.map((c) => sentimentScores[c.id]));
+                    return (
+                      <div>
+                        <div style={{ fontSize: "0.65rem", fontWeight: 600, color: "var(--text-muted)", marginBottom: "6px", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+                          Tone Profile
+                        </div>
+                        <div style={{ height: isMobile ? "220px" : "260px", position: "relative" }}>
+                          <Radar
+                            data={{
+                              labels: SENTIMENT_CATEGORIES.map((c) => c.label.split(" ")[0]),
+                              datasets: [{
+                                data: SENTIMENT_CATEGORIES.map((c) => sentimentScores[c.id]),
+                                backgroundColor: "rgba(139, 92, 246, 0.15)",
+                                borderColor: "rgba(139, 92, 246, 0.6)",
+                                borderWidth: 2,
+                                pointBackgroundColor: SENTIMENT_CATEGORIES.map((c) => c.color),
+                                pointBorderColor: SENTIMENT_CATEGORIES.map((c) => c.color),
+                                pointRadius: 4,
+                                pointHoverRadius: 6,
+                              }],
+                            }}
+                            options={{
+                              responsive: true,
+                              maintainAspectRatio: false,
+                              plugins: {
+                                legend: { display: false },
+                                tooltip: {
+                                  backgroundColor: "rgba(20,20,30,0.95)",
+                                  titleFont: { size: 11 },
+                                  bodyFont: { size: 11 },
+                                  callbacks: {
+                                    label: (ctx: any) => `${ctx.parsed.r.toFixed(1)} per 1k words`,
+                                  },
+                                },
+                              },
+                              scales: {
+                                r: {
+                                  beginAtZero: true,
+                                  max: Math.ceil(maxVal * 1.2) || 10,
+                                  ticks: {
+                                    display: false,
+                                    stepSize: Math.ceil(maxVal / 4) || 5,
+                                  },
+                                  grid: { color: "rgba(255,255,255,0.08)" },
+                                  angleLines: { color: "rgba(255,255,255,0.08)" },
+                                  pointLabels: {
+                                    color: ((ctx: any) => SENTIMENT_CATEGORIES[ctx.index]?.color || "#888") as any,
+                                    font: { size: isMobile ? 9 : 11, weight: 600 as const },
+                                  },
+                                },
+                              },
+                            }}
+                          />
+                        </div>
+                      </div>
+                    );
+                  })()}
 
                   {/* First & Last Mention */}
                   <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginTop: "8px" }}>
