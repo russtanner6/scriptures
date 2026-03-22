@@ -150,7 +150,7 @@ export default function HomePage() {
         marginTop: isMobile ? "8px" : "40px",
         marginBottom: isMobile ? "28px" : "48px",
       }}>
-        <h2
+        <h1
           style={{
             fontSize: isMobile ? "1.6rem" : "2.4rem",
             fontWeight: 800,
@@ -172,7 +172,7 @@ export default function HomePage() {
           >
             Like Never Before
           </span>
-        </h2>
+        </h1>
         <p
           style={{
             fontSize: isMobile ? "0.9rem" : "1.05rem",

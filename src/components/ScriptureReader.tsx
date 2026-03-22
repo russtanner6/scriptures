@@ -962,7 +962,7 @@ export default function ScriptureReader() {
               </svg>
             </button>
             <div style={{ minWidth: 0 }}>
-              <div
+              <h1
                 style={{
                   fontSize: isMobile ? "0.85rem" : "0.95rem",
                   fontWeight: 700,
@@ -970,10 +970,11 @@ export default function ScriptureReader() {
                   whiteSpace: "nowrap",
                   overflow: "hidden",
                   textOverflow: "ellipsis",
+                  margin: 0,
                 }}
               >
                 {selectedBookName}
-              </div>
+              </h1>
               <div
                 style={{
                   fontSize: "0.68rem",

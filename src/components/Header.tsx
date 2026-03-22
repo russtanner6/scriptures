@@ -43,7 +43,7 @@ export default function Header({
 
       <NavMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
 
-      <h1 className="header-title" style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100%", margin: 0 }}>
+      <div className="header-title" style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100%", margin: 0 }}>
         <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
           {variant === "home" ? (
             <img
@@ -59,7 +59,7 @@ export default function Header({
             />
           )}
         </Link>
-      </h1>
+      </div>
       {showSubtitle && (
         <div className="header-subtitle">
           Search and analyze word frequencies across the LDS Standard Works.{" "}

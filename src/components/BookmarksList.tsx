@@ -33,7 +33,7 @@ export default function BookmarksList() {
   return (
     <div>
       <div style={{ marginBottom: "24px" }}>
-        <h2
+        <h1
           style={{
             fontSize: "1.4rem",
             fontWeight: 700,
@@ -42,7 +42,7 @@ export default function BookmarksList() {
           }}
         >
           Bookmarks
-        </h2>
+        </h1>
         <p style={{ color: "var(--text-secondary)", fontSize: isMobile ? "0.85rem" : "0.92rem" }}>
           {bookmarks.length === 0
             ? "No bookmarks yet. Tap any verse while reading to bookmark it."

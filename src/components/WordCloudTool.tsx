@@ -143,7 +143,7 @@ export default function WordCloudTool() {
     <div>
       {/* Selection panel */}
       <div className="search-panel" style={{ marginBottom: "24px" }}>
-        <h2 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
+        <h1 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
           <img
             src="/word-cloud.svg"
             alt=""
@@ -157,7 +157,7 @@ export default function WordCloudTool() {
             }}
           />
           Word Cloud
-        </h2>
+        </h1>
         <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", marginBottom: "16px", lineHeight: 1.4 }}>
           Visualize the most frequent words in any book or chapter.
         </p>

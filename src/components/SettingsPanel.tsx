@@ -34,7 +34,7 @@ export default function SettingsPanel() {
     <div style={{ maxWidth: "640px", margin: "0 auto" }}>
       {/* Page heading */}
       <div style={{ marginBottom: "32px" }}>
-        <h2
+        <h1
           style={{
             fontSize: "1.4rem",
             fontWeight: 700,
@@ -43,7 +43,7 @@ export default function SettingsPanel() {
           }}
         >
           Settings
-        </h2>
+        </h1>
         <p style={{ color: "var(--text-secondary)", fontSize: "0.92rem" }}>
           Customize your Scripture Explorer experience.
         </p>

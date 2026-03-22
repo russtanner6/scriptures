@@ -205,10 +205,10 @@ export default function HeatmapTool() {
         <div style={{ display: "flex", gap: isMobile ? "16px" : "24px", flexDirection: isMobile ? "column" : "row", alignItems: "flex-start" }}>
           {/* LEFT COLUMN */}
           <div style={{ flex: 1, minWidth: 0 }}>
-            <h2 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
+            <h1 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
               <img src="/heatmap.svg" alt="" style={{ display: "inline-block", width: isMobile ? "18px" : "22px", height: isMobile ? "18px" : "22px", verticalAlign: "middle", marginRight: "8px", filter: "invert(1) brightness(0.85)" }} />
               Theme Heatmap
-            </h2>
+            </h1>
             <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", marginBottom: "14px", lineHeight: 1.4 }}>
               See how a word is distributed across every chapter. Brighter cells = higher frequency.
             </p>

@@ -325,9 +325,9 @@ export default function NarrativeArcTool() {
       <div className="search-panel" style={{ display: "flex", gap: isMobile ? "16px" : "24px", flexDirection: isMobile ? "column" : "row", alignItems: "flex-start" }}>
         {/* LEFT column: title, description, search bar, term chips */}
         <div style={{ flex: 1, minWidth: 0 }}>
-          <h2 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
+          <h1 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
             Narrative Arc Explorer
-          </h2>
+          </h1>
           <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", marginBottom: "14px", lineHeight: 1.4 }}>
             Compare up to 6 terms across volumes to see how themes flow through scripture.
           </p>

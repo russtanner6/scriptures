@@ -175,9 +175,9 @@ export default function CharacterDirectory() {
     <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
       {/* Page header */}
       <div style={{ marginBottom: "28px", textAlign: "center", paddingTop: "12px" }}>
-        <h2 style={{ fontSize: "1.6rem", fontWeight: 700, color: "var(--text)", marginBottom: "16px" }}>
+        <h1 style={{ fontSize: "1.6rem", fontWeight: 700, color: "var(--text)", marginBottom: "16px" }}>
           People of the Scriptures
-        </h2>
+        </h1>
         {/* Volume legend */}
         <div style={{
           display: "flex",
