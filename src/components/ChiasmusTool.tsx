@@ -377,7 +377,7 @@ export default function ChiasmusTool() {
 
                 {/* Read in context link */}
                 <a
-                  href={`/read?bookId=${result.bookId}&chapter=${result.chapter}`}
+                  href={`/scriptures?bookId=${result.bookId}&chapter=${result.chapter}`}
                   style={{
                     display: "inline-block",
                     marginTop: "12px",

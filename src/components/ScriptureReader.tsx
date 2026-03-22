@@ -415,7 +415,7 @@ export default function ScriptureReader() {
       setChapterCount(bookChapterCount);
       loadChapter(bookId, chapter);
       // Update URL for bookmarking/sharing (without full navigation)
-      const url = `/read?bookId=${bookId}&chapter=${chapter}${highlightWord ? `&highlight=${encodeURIComponent(highlightWord)}` : ""}`;
+      const url = `/scriptures?bookId=${bookId}&chapter=${chapter}${highlightWord ? `&highlight=${encodeURIComponent(highlightWord)}` : ""}`;
       window.history.replaceState({}, "", url);
       // Scroll to top of reading container
       if (scrollContainerRef.current) {
@@ -944,7 +944,7 @@ export default function ScriptureReader() {
               onClick={() => {
                 setSelectedChapter(null);
                 setVerses([]);
-                window.history.replaceState({}, "", "/read");
+                window.history.replaceState({}, "", "/scriptures");
               }}
               style={{
                 background: "none",

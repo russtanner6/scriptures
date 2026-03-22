@@ -822,7 +822,7 @@ export default function TimelineTool() {
                             onClick={(e) => {
                               // Don't navigate if we just finished dragging
                               if (Math.abs(e.clientX - dragStartX.current) > 5) return;
-                              window.location.href = `/read?book=${encodeURIComponent(book.name)}`;
+                              window.location.href = `/scriptures?book=${encodeURIComponent(book.name)}`;
                             }}
                           >
                             {width > 3 && (

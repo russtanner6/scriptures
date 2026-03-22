@@ -22,7 +22,7 @@ const VOLUME_ORDER = ["OT", "NT", "BoM", "D&C", "PoGP"];
 
 const PRIMARY_TOOLS = [
   {
-    href: "/read",
+    href: "/scriptures",
     svgIcon: "/scriptures.svg",
     name: "Scriptures",
     description: "Beautiful reading with insights, themes, and verse interactions.",
@@ -516,7 +516,7 @@ export default function HomePage() {
                   — {verseRef}
                 </span>
                 <a
-                  href={`/read?bookId=${randomVerse.bookId}&chapter=${randomVerse.chapter}&verse=${randomVerse.verse}`}
+                  href={`/scriptures?bookId=${randomVerse.bookId}&chapter=${randomVerse.chapter}&verse=${randomVerse.verse}`}
                   style={{
                     fontSize: "0.72rem",
                     fontWeight: 500,

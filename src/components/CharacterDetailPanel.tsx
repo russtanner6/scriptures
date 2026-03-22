@@ -576,7 +576,7 @@ export default function CharacterDetailPanel({
                   <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginTop: "8px" }}>
                     {mentions.firstMention && (
                       <Link
-                        href={`/read?bookId=${mentions.firstMention.bookId}&chapter=${mentions.firstMention.chapter}&verse=${mentions.firstMention.verse}`}
+                        href={`/scriptures?bookId=${mentions.firstMention.bookId}&chapter=${mentions.firstMention.chapter}&verse=${mentions.firstMention.verse}`}
                         style={{
                           display: "block",
                           padding: "10px 14px",
@@ -605,7 +605,7 @@ export default function CharacterDetailPanel({
                       mentions.lastMention.chapter !== mentions.firstMention.chapter ||
                       mentions.lastMention.verse !== mentions.firstMention.verse) && (
                       <Link
-                        href={`/read?bookId=${mentions.lastMention.bookId}&chapter=${mentions.lastMention.chapter}&verse=${mentions.lastMention.verse}`}
+                        href={`/scriptures?bookId=${mentions.lastMention.bookId}&chapter=${mentions.lastMention.chapter}&verse=${mentions.lastMention.verse}`}
                         style={{
                           display: "block",
                           padding: "10px 14px",

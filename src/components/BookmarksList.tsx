@@ -57,7 +57,7 @@ export default function BookmarksList() {
             Tap any verse text while reading to bookmark it
           </div>
           <a
-            href="/read"
+            href="/scriptures"
             style={{
               display: "inline-block",
               padding: "10px 24px",
@@ -117,7 +117,7 @@ export default function BookmarksList() {
                   >
                     <div style={{ flex: 1, minWidth: 0 }}>
                       <a
-                        href={`/read?bookId=${bm.bookId}&chapter=${bm.chapter}&verse=${bm.verse}`}
+                        href={`/scriptures?bookId=${bm.bookId}&chapter=${bm.chapter}&verse=${bm.verse}`}
                         style={{
                           fontSize: "0.88rem",
                           fontWeight: 600,

@@ -270,7 +270,7 @@ export default function TopicMapTool() {
 
                   {/* Read link */}
                   <a
-                    href={`/read?bookId=${ch.bookId}&chapter=${ch.chapter}`}
+                    href={`/scriptures?bookId=${ch.bookId}&chapter=${ch.chapter}`}
                     onClick={(e) => e.stopPropagation()}
                     style={{ fontSize: "0.72rem", color: "var(--accent)", textDecoration: "none", whiteSpace: "nowrap" }}
                   >
