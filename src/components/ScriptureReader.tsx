@@ -261,15 +261,15 @@ export default function ScriptureReader() {
     return () => observer.disconnect();
   }, [verses, selectedChapter]);
 
-  // Auto-mark chapter read when scrolled to bottom
-  useEffect(() => {
-    if (scrollProgress >= 0.95 && !chapterMarkedRead && selectedBookId && selectedChapter && verses.length > 0) {
-      markChapterRead(selectedBookId, selectedChapter);
-      setChapterMarkedRead(true);
-      setShowReadToast(true);
-      setTimeout(() => setShowReadToast(false), 2500);
-    }
-  }, [scrollProgress, chapterMarkedRead, selectedBookId, selectedChapter, verses]);
+  // Auto-mark chapter read when scrolled to bottom (DISABLED — may re-enable later)
+  // useEffect(() => {
+  //   if (scrollProgress >= 0.95 && !chapterMarkedRead && selectedBookId && selectedChapter && verses.length > 0) {
+  //     markChapterRead(selectedBookId, selectedChapter);
+  //     setChapterMarkedRead(true);
+  //     setShowReadToast(true);
+  //     setTimeout(() => setShowReadToast(false), 2500);
+  //   }
+  // }, [scrollProgress, chapterMarkedRead, selectedBookId, selectedChapter, verses]);
 
   // Reset chapter-read state on chapter change
   useEffect(() => {
