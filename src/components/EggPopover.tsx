@@ -242,18 +242,32 @@ export default function EggPopover({
           {egg.insight}
         </p>
 
-        {/* Source */}
+        {/* Source — linked to Google search */}
         <div
           style={{
             fontSize: "0.78rem",
-            color: parchment.textMuted,
             fontStyle: "italic",
             lineHeight: 1.4,
             borderTop: `1px solid ${parchment.border}`,
             paddingTop: "10px",
           }}
         >
-          {egg.source}
+          <a
+            href={`https://www.google.com/search?q=${encodeURIComponent(egg.source)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: parchment.textMuted,
+              textDecoration: "underline",
+              textDecorationColor: `${parchment.textMuted}50`,
+              textUnderlineOffset: "2px",
+              transition: "color 0.15s",
+            }}
+            onMouseEnter={(e) => { e.currentTarget.style.color = "#2563EB"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.color = parchment.textMuted; }}
+          >
+            {egg.source}
+          </a>
         </div>
       </div>
     </>
