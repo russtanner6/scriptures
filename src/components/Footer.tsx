@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { analytics } from "@/lib/analytics";
 
 const TOOL_LINKS = [
   { href: "/search", label: "Word Search" },
@@ -136,6 +137,7 @@ export default function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
+                onClick={() => analytics.footerLinkClick(link.label, link.href)}
                 style={{
                   fontSize: "0.78rem",
                   color: "rgba(255,255,255,0.55)",
@@ -168,6 +170,7 @@ export default function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
+                onClick={() => analytics.footerLinkClick(link.label, link.href)}
                 style={{
                   fontSize: "0.78rem",
                   color: "rgba(255,255,255,0.55)",
@@ -202,6 +205,7 @@ export default function Footer() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => analytics.footerLinkClick(link.label, link.href)}
                 style={{
                   fontSize: "0.78rem",
                   color: "rgba(255,255,255,0.55)",

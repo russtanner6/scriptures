@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { addBookmark, removeBookmark, isBookmarked } from "@/lib/bookmarks";
 import { getAnnotation, saveAnnotation, deleteAnnotation } from "@/lib/annotations";
+import { analytics } from "@/lib/analytics";
 
 interface VersePopoverProps {
   bookId: number;
@@ -106,6 +107,7 @@ export default function VersePopover({
       : `${bookName} ${chapter}:${verse}`;
     navigator.clipboard.writeText(`${text} (${ref})`).then(() => {
       setCopied(true);
+      analytics.verseCopy(bookName, chapter, verse);
       setTimeout(() => setCopied(false), 1500);
     });
   }, [text, bookName, volumeAbbrev, chapter, verse]);
@@ -117,6 +119,7 @@ export default function VersePopover({
     } else {
       addBookmark({ bookId, chapter, verse, bookName, volumeAbbrev, text });
       setBookmarked(true);
+      analytics.verseBookmark(bookName, chapter, verse);
     }
   }, [bookmarked, bookId, chapter, verse, bookName, volumeAbbrev, text]);
 
@@ -333,6 +336,7 @@ export default function VersePopover({
                   if (noteText.trim()) {
                     saveAnnotation(bookId, chapter, verse, noteText.trim());
                     setNoteSaved(true);
+                    analytics.verseNoteAdd(bookName, chapter, verse);
                     setTimeout(() => setNoteSaved(false), 1500);
                   }
                 }}

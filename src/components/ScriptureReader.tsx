@@ -22,6 +22,7 @@ import { getVerseDominantTone, type SentimentCategory } from "@/lib/sentiment-le
 import type { ContextEgg } from "@/lib/types";
 import EggMarker from "./EggMarker";
 import EggPopover from "./EggPopover";
+import { analytics } from "@/lib/analytics";
 
 interface ReaderVerse {
   chapter: number;
@@ -400,6 +401,10 @@ export default function ScriptureReader() {
       } catch {
         // Speakers are non-critical
       }
+      // Track chapter read
+      if (data.bookName && selectedVolume) {
+        analytics.scriptureRead(data.bookName, chapter, selectedVolume);
+      }
     } finally {
       setIsLoading(false);
     }
@@ -429,6 +434,7 @@ export default function ScriptureReader() {
     setLightMode((prev) => {
       const next = !prev;
       localStorage.setItem("reader-light-mode", String(next));
+      analytics.themeToggle(next ? "light" : "dark");
       return next;
     });
   };
@@ -437,6 +443,7 @@ export default function ScriptureReader() {
     setFontSize((prev) => {
       const next = (prev + 1) % 3;
       localStorage.setItem("reader-font-size", String(next));
+      analytics.fontSizeChange(next);
       return next;
     });
   };
@@ -457,10 +464,12 @@ export default function ScriptureReader() {
   const goToPrevChapter = useCallback(() => {
     if (!selectedBookId || !selectedChapter || !selectedVolume) return;
     if (selectedChapter > 1) {
+      analytics.chapterNavigate(selectedBookName || "", selectedChapter - 1, "prev");
       goToChapter(selectedVolume, selectedBookId, selectedBookName || "", selectedChapter - 1, chapterCount);
     } else {
       const { prev } = getAdjacentBookInfo();
       if (prev) {
+        analytics.chapterNavigate(prev.name, prev.chapterCount, "prev");
         goToChapter(selectedVolume, prev.id, prev.name, prev.chapterCount, prev.chapterCount);
       }
     }
@@ -469,10 +478,12 @@ export default function ScriptureReader() {
   const goToNextChapter = useCallback(() => {
     if (!selectedBookId || !selectedChapter || !selectedVolume) return;
     if (selectedChapter < chapterCount) {
+      analytics.chapterNavigate(selectedBookName || "", selectedChapter + 1, "next");
       goToChapter(selectedVolume, selectedBookId, selectedBookName || "", selectedChapter + 1, chapterCount);
     } else {
       const { next } = getAdjacentBookInfo();
       if (next) {
+        analytics.chapterNavigate(next.name, 1, "next");
         goToChapter(selectedVolume, next.id, next.name, 1, next.chapterCount);
       }
     }
@@ -488,6 +499,15 @@ export default function ScriptureReader() {
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [selectedChapter, goToPrevChapter, goToNextChapter]);
+
+  // Track in-chapter search (debounced)
+  useEffect(() => {
+    if (searchTerm.length < 2 || !selectedBookName || !selectedChapter) return;
+    const timer = setTimeout(() => {
+      analytics.chapterSearch(selectedBookName, selectedChapter, searchTerm);
+    }, 500);
+    return () => clearTimeout(timer);
+  }, [searchTerm, selectedBookName, selectedChapter]);
 
   // Highlight search term in verse text
   // Active highlight word: either from deep link or from in-chapter search
@@ -666,8 +686,8 @@ export default function ScriptureReader() {
             key={`egg${i}`}
             role="button"
             tabIndex={0}
-            onClick={(e) => { e.stopPropagation(); setActiveEggs([seg.egg]); }}
-            onKeyDown={(e) => { if (e.key === "Enter") { e.stopPropagation(); setActiveEggs([seg.egg]); } }}
+            onClick={(e) => { e.stopPropagation(); analytics.eggKeywordClick(seg.egg.id || "", seg.egg.keyword); setActiveEggs([seg.egg]); }}
+            onKeyDown={(e) => { if (e.key === "Enter") { e.stopPropagation(); analytics.eggKeywordClick(seg.egg.id || "", seg.egg.keyword); setActiveEggs([seg.egg]); } }}
             style={{
               cursor: "pointer",
               borderRadius: "2px",
@@ -690,6 +710,7 @@ export default function ScriptureReader() {
             tabIndex={0}
             onClick={(e) => {
               e.stopPropagation();
+              analytics.entityLinkClick(isPerson ? "person" : "location", entry.entity.name, selectedBookName || "", selectedChapter || 0);
               if (isPerson) {
                 setSelectedCharacter(entry.entity as ScriptureCharacter);
               } else {
@@ -700,6 +721,7 @@ export default function ScriptureReader() {
               if (e.key === "Enter" || e.key === " ") {
                 e.preventDefault();
                 e.stopPropagation();
+                analytics.entityLinkClick(isPerson ? "person" : "location", entry.entity.name, selectedBookName || "", selectedChapter || 0);
                 if (isPerson) {
                   setSelectedCharacter(entry.entity as ScriptureCharacter);
                 } else {
@@ -1201,7 +1223,7 @@ export default function ScriptureReader() {
                   setTimeout(() => { el.style.background = ""; }, 2000);
                 }
               }}
-              onExploreWord={(word) => setExploredWord(word)}
+              onExploreWord={(word) => { analytics.insightsThemeClick(word, selectedBookName || "", selectedChapter || 0); setExploredWord(word); }}
               onSelectCharacter={openCharacterById}
               speakers={chapterSpeakers}
             />
@@ -1225,6 +1247,7 @@ export default function ScriptureReader() {
                       const next = !showSpeakers;
                       setShowSpeakers(next);
                       localStorage.setItem("reader-show-speakers", String(next));
+                      analytics.layerToggle("speakers", next);
                     }}
                     style={{
                       display: "inline-flex",
@@ -1257,6 +1280,7 @@ export default function ScriptureReader() {
                       const next = !showResources;
                       setShowResources(next);
                       localStorage.setItem("reader-show-resources", String(next));
+                      analytics.layerToggle("resources", next);
                     }}
                     style={{
                       display: "inline-flex",
@@ -1294,6 +1318,7 @@ export default function ScriptureReader() {
                       const next = !showContextEggs;
                       setShowContextEggs(next);
                       localStorage.setItem("reader-show-context-eggs", String(next));
+                      analytics.layerToggle("context-eggs", next);
                     }}
                     style={{
                       display: "inline-flex",
@@ -1365,6 +1390,7 @@ export default function ScriptureReader() {
                             onClick={() => {
                               setReadingMode(mode);
                               localStorage.setItem("reader-reading-mode", mode);
+                              analytics.readingModeToggle(mode);
                             }}
                             style={{
                               position: "relative",
@@ -1680,6 +1706,7 @@ export default function ScriptureReader() {
                   )}
                   <span
                     onClick={() => {
+                      analytics.verseTap(selectedBookName || "", selectedChapter || 0, v.verse);
                       setActiveVerse({ verse: v.verse, chapter: v.chapter, text: readingMode === "modern" && v.text_modern ? v.text_modern : v.text });
                       setActiveResourcePanel(null); // close resource panel when opening verse popover
                     }}
@@ -1709,6 +1736,7 @@ export default function ScriptureReader() {
                             lightMode={lightMode}
                             count={resources.length}
                             onClick={() => {
+                              analytics.resourceClick(resources[0].type, resources[0].title, selectedBookName || "", selectedChapter || 0);
                               setActiveVerse(null);
                               setActiveResourcePanel({
                                 resources: chapterResources,
@@ -1728,7 +1756,7 @@ export default function ScriptureReader() {
                             key={`egg-v${v.verse}`}
                             eggs={verseEggs}
                             lightMode={lightMode}
-                            onClick={() => { setActiveVerse(null); setActiveEggs(verseEggs); }}
+                            onClick={() => { analytics.eggPillClick(verseEggs[0]?.id || "", selectedBookName || "", selectedChapter || 0, v.verse, verseEggs[0]?.category || ""); setActiveVerse(null); setActiveEggs(verseEggs); }}
                           />
                         );
                       })()}

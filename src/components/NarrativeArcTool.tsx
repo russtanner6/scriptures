@@ -22,6 +22,7 @@ import FilterDropdown from "./FilterDropdown";
 import { chartScrollbarPlugin } from "@/lib/chart-scrollbar-plugin";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { useIsMobile } from "@/lib/useIsMobile";
+import { analytics } from "@/lib/analytics";
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -163,6 +164,7 @@ export default function NarrativeArcTool() {
 
   const handleAnalyze = useCallback(async () => {
     if (terms.length === 0 || selectedVolumes.length === 0) return;
+    analytics.search(terms.join(","), "narrative-arc");
     setIsLoading(true);
     try {
       const newResults: TermResult[] = [];
@@ -824,7 +826,7 @@ export default function NarrativeArcTool() {
       {exportVolumeId !== null && (
         <ExportChartModal
           isOpen={true}
-          onClose={() => setExportVolumeId(null)}
+          onClose={() => { analytics.exportChart("narrative-arc", "chart"); setExportVolumeId(null); }}
           chartRef={chartRefs.current.get(exportVolumeId) || { current: null }}
           title={volumes.find((v) => v.id === exportVolumeId)?.name || "chart"}
         />

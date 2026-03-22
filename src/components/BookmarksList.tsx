@@ -5,6 +5,7 @@ import { getBookmarks, removeBookmark, type Bookmark } from "@/lib/bookmarks";
 import { VOLUME_COLORS } from "@/lib/constants";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { useIsMobile } from "@/lib/useIsMobile";
+import { analytics } from "@/lib/analytics";
 
 export default function BookmarksList() {
   const { isVolumeVisible } = usePreferencesContext();
@@ -12,7 +13,9 @@ export default function BookmarksList() {
   const [bookmarks, setBookmarks] = useState<Bookmark[]>([]);
 
   useEffect(() => {
-    setBookmarks(getBookmarks());
+    const bms = getBookmarks();
+    setBookmarks(bms);
+    analytics.bookmarksView(bms.length);
   }, []);
 
   const handleRemove = (bm: Bookmark) => {

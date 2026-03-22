@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import type { SpeakerAttribution, SpeakerType } from "@/lib/types";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
+import { analytics } from "@/lib/analytics";
 
 interface ChapterStats {
   wordCount: number;
@@ -178,7 +179,7 @@ export default function ChapterInsights({
     >
       {/* Collapsed bar — always visible */}
       <button
-        onClick={() => setIsExpanded((prev) => !prev)}
+        onClick={() => { setIsExpanded((prev) => { if (!prev) analytics.insightsOpen(bookName, chapter || 0); return !prev; }); }}
         style={{
           width: "100%",
           display: "flex",
@@ -332,7 +333,7 @@ export default function ChapterInsights({
                   return (
                     <button
                       key={c.id}
-                      onClick={() => onSelectCharacter?.(c.id)}
+                      onClick={() => { analytics.insightsPersonClick(c.name, bookName, chapter || 0); onSelectCharacter?.(c.id); }}
                       style={{
                         display: "flex",
                         alignItems: "center",
@@ -552,6 +553,7 @@ export default function ChapterInsights({
                         key={i}
                         onClick={(e) => {
                           e.stopPropagation();
+                          analytics.speakerTimelineClick(seg.speaker || "narrator", verseNum);
                           onScrollToVerse?.(verseNum);
                         }}
                         title={title}

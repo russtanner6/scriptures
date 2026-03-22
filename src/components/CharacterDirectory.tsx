@@ -9,6 +9,7 @@ import CharacterDetailPanel from "./CharacterDetailPanel";
 import RelationshipWeb from "./RelationshipWeb";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { useIsMobile } from "@/lib/useIsMobile";
+import { analytics } from "@/lib/analytics";
 
 const VOLUME_ORDER = ["OT", "NT", "BoM", "D&C", "PoGP"];
 const VOLUME_LABELS: Record<string, string> = {
@@ -144,6 +145,13 @@ export default function CharacterDirectory() {
       return a.name.localeCompare(b.name);
     });
   }, [characters, searchTerm, volumeFilter, eraFilter, roleFilter, genderFilter]);
+
+  // Debounced search tracking
+  useEffect(() => {
+    if (searchTerm.length < 2) return;
+    const timer = setTimeout(() => analytics.peopleSearch(searchTerm), 500);
+    return () => clearTimeout(timer);
+  }, [searchTerm]);
 
   const clearFilters = useCallback(() => {
     setSearchTerm("");
@@ -345,7 +353,7 @@ export default function CharacterDirectory() {
               {VOLUME_ORDER.filter(isVolumeVisible).map((v) => (
                 <VolumeTooltip key={v} abbrev={v}>
                   <button
-                    onClick={() => setVolumeFilter(volumeFilter === v ? null : v)}
+                    onClick={() => { const next = volumeFilter === v ? null : v; setVolumeFilter(next); if (next) analytics.peopleFilter("volume", next); }}
                     style={{
                       padding: "5px 12px",
                       borderRadius: "6px",
@@ -377,7 +385,7 @@ export default function CharacterDirectory() {
               {(["male", "female"] as const).map((g) => (
                 <button
                   key={g}
-                  onClick={() => setGenderFilter(genderFilter === g ? null : g)}
+                  onClick={() => { const next = genderFilter === g ? null : g; setGenderFilter(next); if (next) analytics.peopleFilter("gender", next); }}
                   style={{
                     padding: "5px 12px",
                     borderRadius: "6px",
@@ -441,7 +449,7 @@ export default function CharacterDirectory() {
           return (
             <button
               key={c.id}
-              onClick={() => setSelectedCharacter(c)}
+              onClick={() => { analytics.personCardClick(c.id, c.name, c.tier); setSelectedCharacter(c); }}
               style={{
                 background: "var(--surface)",
                 border: "1px solid var(--border)",

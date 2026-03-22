@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useBackToClose } from "@/lib/useBackToClose";
 import { VOLUME_COLORS } from "@/lib/constants";
+import { analytics } from "@/lib/analytics";
 
 interface HeatmapResult {
   bookName: string;
@@ -53,6 +54,9 @@ export default function WordExplorerPanel({
   const [isLoading, setIsLoading] = useState(true);
   const [totalCount, setTotalCount] = useState(0);
   const panelRef = useRef<HTMLDivElement>(null);
+
+  // Track panel open
+  useEffect(() => { analytics.wordExplorerOpen(word, bookName); }, [word, bookName]);
 
   // Mobile back-button closes panel instead of navigating away
   useBackToClose(onClose);
@@ -277,7 +281,7 @@ export default function WordExplorerPanel({
             return (
               <button
                 key={s}
-                onClick={() => setScope(s)}
+                onClick={() => { setScope(s); analytics.wordExplorerScope(s, word); }}
                 style={{
                   padding: "4px 10px",
                   borderRadius: "6px",

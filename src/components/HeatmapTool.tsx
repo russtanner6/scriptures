@@ -24,6 +24,7 @@ import FilterDropdown from "./FilterDropdown";
 import { chartScrollbarPlugin } from "@/lib/chart-scrollbar-plugin";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { useIsMobile } from "@/lib/useIsMobile";
+import { analytics } from "@/lib/analytics";
 
 ChartJS.register(CategoryScale, LinearScale, LineElement, PointElement, Filler, Tooltip, Legend, ChartDataLabels);
 
@@ -122,6 +123,7 @@ export default function HeatmapTool() {
 
   const handleSearch = async () => {
     if (!word.trim()) return;
+    analytics.search(word.trim(), "heatmap");
     setIsLoading(true);
     try {
       const params = new URLSearchParams({
@@ -369,6 +371,7 @@ export default function HeatmapTool() {
                     onMouseLeave={() => setHoveredCell(null)}
                     onClick={() => {
                       if (cell.count > 0 && word) {
+                        analytics.heatmapCellClick(cell.bookName, cell.chapter, word.trim());
                         setScripturePanel({
                           word: word.trim(),
                           bookId: cell.bookId,
@@ -714,7 +717,7 @@ export default function HeatmapTool() {
       {exportAbbrev !== null && (
         <ExportHtmlModal
           isOpen={true}
-          onClose={() => setExportAbbrev(null)}
+          onClose={() => { analytics.exportChart("heatmap", "html"); setExportAbbrev(null); }}
           elementId={`heatmap-${exportAbbrev}`}
           title={volumes.find(v => v.abbrev === exportAbbrev)?.name || exportAbbrev}
         />
@@ -724,7 +727,7 @@ export default function HeatmapTool() {
       {exportChartAbbrev !== null && (
         <ExportChartModal
           isOpen={true}
-          onClose={() => setExportChartAbbrev(null)}
+          onClose={() => { analytics.exportChart("heatmap", "chart"); setExportChartAbbrev(null); }}
           chartRef={chartRefs.current.get(exportChartAbbrev) || { current: null }}
           title={volumes.find(v => v.abbrev === exportChartAbbrev)?.name || exportChartAbbrev}
         />

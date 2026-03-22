@@ -8,6 +8,7 @@ import VolumeTooltip from "@/components/VolumeTooltip";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { useIsMobile } from "@/lib/useIsMobile";
 import type { ScriptureCharacter } from "@/lib/types";
+import { analytics } from "@/lib/analytics";
 
 interface RandomVerse {
   verse: number;
@@ -205,6 +206,7 @@ export default function HomePage() {
               <Link
                 key={tool.href}
                 href={tool.href}
+                onClick={() => analytics.homeToolCardClick(tool.name)}
                 style={{
                   background: "var(--surface)",
                   border: "1px solid var(--border)",
@@ -274,6 +276,7 @@ export default function HomePage() {
           {spotlightChar && (
             <Link
               href={`/people?person=${spotlightChar.id}`}
+              onClick={() => analytics.homeSpotlightClick(spotlightChar.id)}
               style={{
                 display: "block",
                 textDecoration: "none",
@@ -517,6 +520,7 @@ export default function HomePage() {
                 </span>
                 <a
                   href={`/scriptures?bookId=${randomVerse.bookId}&chapter=${randomVerse.chapter}&verse=${randomVerse.verse}`}
+                  onClick={() => analytics.randomVerseClick(randomVerse.bookName, randomVerse.chapter, randomVerse.verse)}
                   style={{
                     fontSize: "0.72rem",
                     fontWeight: 500,

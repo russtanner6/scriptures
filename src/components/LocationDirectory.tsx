@@ -8,6 +8,7 @@ import VolumeTooltip from "./VolumeTooltip";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { useIsMobile } from "@/lib/useIsMobile";
 import LocationDetailPanel from "./LocationDetailPanel";
+import { analytics } from "@/lib/analytics";
 
 const VOLUME_ORDER = ["OT", "NT", "BoM", "D&C", "PoGP"];
 const VOLUME_LABELS: Record<string, string> = {
@@ -96,6 +97,13 @@ export default function LocationDirectory() {
       window.history.replaceState({}, "", url.toString());
     }
   }, [searchTerm, searchParams]);
+
+  // Debounced location search tracking
+  useEffect(() => {
+    if (searchTerm.length < 2) return;
+    const timer = setTimeout(() => analytics.locationSearch(searchTerm), 500);
+    return () => clearTimeout(timer);
+  }, [searchTerm]);
 
   // Extract unique regions from data, sorted by frequency
   const regions = useMemo(() => {
@@ -452,7 +460,7 @@ export default function LocationDirectory() {
           return (
             <button
               key={l.id}
-              onClick={() => setSelectedLocation(l)}
+              onClick={() => { analytics.locationCardClick(l.id, l.name); setSelectedLocation(l); }}
               style={{
                 background: "var(--surface)",
                 border: "1px solid var(--border)",

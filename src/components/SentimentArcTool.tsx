@@ -25,6 +25,7 @@ import type { ScripturePanelState } from "@/lib/types";
 import { chartScrollbarPlugin } from "@/lib/chart-scrollbar-plugin";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { useIsMobile } from "@/lib/useIsMobile";
+import { analytics } from "@/lib/analytics";
 
 ChartJS.register(CategoryScale, LinearScale, LineElement, PointElement, Filler, Tooltip, Legend);
 
@@ -90,6 +91,8 @@ export default function SentimentArcTool() {
 
   const handleAnalyze = async () => {
     if (selectedVolumes.length === 0) return;
+    const volNames = volumes.filter((v) => selectedVolumes.includes(v.id)).map((v) => v.abbrev).join(",");
+    analytics.search(volNames, "sentiment");
     setLoading(true);
     setHasSearched(true);
 

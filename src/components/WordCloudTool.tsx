@@ -7,6 +7,7 @@ import { VOLUME_COLORS } from "@/lib/constants";
 import { SectionLabel } from "./VolumeCheckboxes";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { useIsMobile } from "@/lib/useIsMobile";
+import { analytics } from "@/lib/analytics";
 
 interface WordCloudItem {
   word: string;
@@ -362,7 +363,7 @@ export default function WordCloudTool() {
                   onMouseEnter={() => setHoveredWord(item.word)}
                   onMouseLeave={() => setHoveredWord(null)}
                   onClick={() => {
-                    // Navigate to search for this word
+                    analytics.wordCloudClick(item.word, data?.bookName || "", data?.volumeAbbrev || "");
                     window.location.href = `/search?word=${encodeURIComponent(item.word)}`;
                   }}
                   style={{

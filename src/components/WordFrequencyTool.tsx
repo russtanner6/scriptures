@@ -29,6 +29,7 @@ import type { ScripturePanelState } from "@/lib/types";
 import { chartScrollbarPlugin } from "@/lib/chart-scrollbar-plugin";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { useIsMobile } from "@/lib/useIsMobile";
+import { analytics } from "@/lib/analytics";
 
 ChartJS.register(
   CategoryScale,
@@ -126,6 +127,7 @@ export default function WordFrequencyTool() {
 
   const handleSearch = useCallback(async () => {
     if (!word.trim()) return;
+    analytics.search(word.trim(), "word-frequency");
     setIsLoading(true);
     try {
       const params = new URLSearchParams({
@@ -271,6 +273,8 @@ export default function WordFrequencyTool() {
       } else {
         next.add(id);
       }
+      const selectedAbbrevs = volumes.filter((v) => next.has(v.id)).map((v) => v.abbrev);
+      analytics.searchVolumeFilter(selectedAbbrevs, "word-frequency");
       return next;
     });
   };
@@ -386,7 +390,7 @@ export default function WordFrequencyTool() {
                   Case-insensitive
                 </label>
                 <label style={{ display: "flex", alignItems: "center", gap: "8px", cursor: "pointer", fontSize: "0.82rem", color: wholeWord ? "var(--text)" : "var(--text-secondary)", whiteSpace: "nowrap" }}>
-                  <span onClick={(e) => { e.preventDefault(); setWholeWord(!wholeWord); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: wholeWord ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: wholeWord ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
+                  <span onClick={(e) => { e.preventDefault(); analytics.searchExactMatch(!wholeWord, "word-frequency"); setWholeWord(!wholeWord); }} style={{ width: "14px", height: "14px", borderRadius: "3px", border: wholeWord ? "2px solid #3B82F6" : "2px solid rgba(255,255,255,0.2)", background: wholeWord ? "#3B82F6" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.15s", flexShrink: 0 }}>
                     {wholeWord && <svg width="8" height="8" viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>}
                   </span>
                   Exact match
@@ -712,6 +716,8 @@ export default function WordFrequencyTool() {
                     onBarClick={(item: BarItem) => {
                       if (!item.id || !results) return;
                       const matchingItem = allBooksInVolume.find((b) => b.label === item.label && b.id === item.id);
+                      analytics.chartDataClick("word-frequency", item.label, matchingItem?.chapter ?? null, results.word);
+                      analytics.scripturePanelOpen("word-frequency", item.label, results.word);
                       setScripturePanel({
                         word: results.word,
                         bookId: item.id,
@@ -1098,7 +1104,7 @@ export default function WordFrequencyTool() {
       {/* Export modal for narrative arc */}
       <ExportChartModal
         isOpen={exportArc}
-        onClose={() => setExportArc(false)}
+        onClose={() => { setExportArc(false); if (exportArc) analytics.exportChart("word-frequency", "chart"); }}
         chartRef={arcChartRef}
         title={results ? `${results.word} narrative arc` : "narrative arc"}
       />

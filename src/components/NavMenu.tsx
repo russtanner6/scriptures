@@ -1,9 +1,11 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useBackToClose } from "@/lib/useBackToClose";
 import { useIsMobile } from "@/lib/useIsMobile";
+import { analytics } from "@/lib/analytics";
 
 /** Mounts only when menu is open — pushes a history entry so back-button closes menu */
 function BackButtonHandler({ onClose }: { onClose: () => void }) {
@@ -71,7 +73,7 @@ function NavLink({
   return (
     <Link
       href={item.href}
-      onClick={onClose}
+      onClick={() => { analytics.navMenuClick(item.href); onClose(); }}
       style={{
         display: "flex",
         alignItems: "center",
@@ -120,6 +122,9 @@ export default function NavMenu({
 }) {
   const pathname = usePathname();
   const isMobile = useIsMobile(768);
+
+  // Track menu open
+  useEffect(() => { if (isOpen) analytics.navMenuOpen(); }, [isOpen]);
 
   // ── Desktop mega menu ──
   const desktopMenu = (

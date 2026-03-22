@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { ContextEgg } from "@/lib/types";
 import { useBackToClose } from "@/lib/useBackToClose";
+import { analytics } from "@/lib/analytics";
 
 const CATEGORY_COLORS: Record<string, string> = {
   Linguistic: "#3B82F6",
@@ -171,7 +172,7 @@ export default function EggPopover({
             }}
           >
             <button
-              onClick={() => setCurrentIndex((i) => (i - 1 + total) % total)}
+              onClick={() => { analytics.eggNavigate("prev"); setCurrentIndex((i) => (i - 1 + total) % total); }}
               style={navBtnStyle}
               aria-label="Previous egg"
             >
@@ -188,7 +189,7 @@ export default function EggPopover({
               {currentIndex + 1} of {total}
             </span>
             <button
-              onClick={() => setCurrentIndex((i) => (i + 1) % total)}
+              onClick={() => { analytics.eggNavigate("next"); setCurrentIndex((i) => (i + 1) % total); }}
               style={navBtnStyle}
               aria-label="Next egg"
             >
@@ -256,6 +257,7 @@ export default function EggPopover({
             href={`https://www.google.com/search?q=${encodeURIComponent(egg.source)}`}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => analytics.eggSourceClick(egg.id || "", egg.source)}
             style={{
               color: lightMode ? "#5a5040" : "#b8b0a4",
               textDecoration: "underline",

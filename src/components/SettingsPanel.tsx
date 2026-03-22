@@ -3,6 +3,7 @@
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { VOLUME_COLORS } from "@/lib/constants";
 import { canDisableVolume, type TheologyMode } from "@/lib/preferences";
+import { analytics } from "@/lib/analytics";
 
 const VOLUMES = [
   { abbrev: "OT", name: "Old Testament", desc: "39 books — Genesis through Malachi" },
@@ -18,13 +19,16 @@ export default function SettingsPanel() {
   const toggleVolume = (abbrev: string) => {
     const currentlyVisible = isVolumeVisible(abbrev);
     if (currentlyVisible && !canDisableVolume(abbrev)) return; // can't hide the last one
+    const nextVisible = !currentlyVisible;
+    analytics.settingsVolumeToggle(abbrev, nextVisible);
     setPrefs({
       ...prefs,
-      visibleVolumes: { ...prefs.visibleVolumes, [abbrev]: !currentlyVisible },
+      visibleVolumes: { ...prefs.visibleVolumes, [abbrev]: nextVisible },
     });
   };
 
   const setTheologyMode = (mode: TheologyMode) => {
+    analytics.settingsTheologyMode(mode);
     setPrefs({ ...prefs, theologyMode: mode });
   };
 

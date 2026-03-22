@@ -8,6 +8,7 @@ import { VOLUME_COLORS } from "@/lib/constants";
 import VolumeTooltip from "./VolumeTooltip";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { useIsMobile } from "@/lib/useIsMobile";
+import { analytics } from "@/lib/analytics";
 import { SENTIMENT_CATEGORIES } from "@/lib/sentiment-lexicon";
 import {
   Chart as ChartJS,
@@ -585,6 +586,7 @@ export default function CharacterDetailPanel({
                       return (
                         <Link
                           href={`/scriptures?bookId=${m.bookId}${m.chapter > 0 ? `&chapter=${m.chapter}` : ""}&verse=${m.verse}`}
+                          onClick={() => analytics.personMentionClick(character.id, "first")}
                           style={{
                             display: "block",
                             padding: "10px 14px",
@@ -623,6 +625,7 @@ export default function CharacterDetailPanel({
                       return (
                         <Link
                           href={`/scriptures?bookId=${m.bookId}${m.chapter > 0 ? `&chapter=${m.chapter}` : ""}&verse=${m.verse}`}
+                          onClick={() => analytics.personMentionClick(character.id, "last")}
                           style={{
                             display: "block",
                             padding: "10px 14px",
