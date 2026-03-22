@@ -874,56 +874,179 @@ export default function ScriptureReader() {
               </a>
             </div>
           )}
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", minWidth: 0 }}>
-            <button
-              onClick={() => {
-                setSelectedChapter(null);
-                setVerses([]);
-                // Reset URL
-                window.history.replaceState({}, "", "/read");
-              }}
-              style={{
-                background: "none",
-                border: "none",
-                color: bar.textSecondary,
-                cursor: "pointer",
-                fontSize: "1.2rem",
-                padding: "4px 8px",
-                fontFamily: "inherit",
-              }}
-              title="Back to book list"
-            >
-              ←
-            </button>
-            <div style={{ minWidth: 0 }}>
-              <div
-                style={{
-                  fontSize: isMobile ? "0.85rem" : "0.95rem",
-                  fontWeight: 700,
-                  color: bar.text,
-                  whiteSpace: "nowrap",
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                }}
-              >
-                {selectedBookName}
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", minWidth: 0, flex: 1, overflow: "hidden" }}>
+            {/* Mobile: animated search bar in top bar */}
+            {isMobile && searchOpen ? (
+              <div style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
+                flex: 1,
+                animation: "slideInFromRight 0.25s ease",
+              }}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={bar.textMuted} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+                <input
+                  ref={searchInputRef}
+                  type="text"
+                  enterKeyHint="search"
+                  autoCapitalize="none"
+                  autoCorrect="off"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Escape") {
+                      setSearchOpen(false);
+                      setSearchTerm("");
+                    }
+                  }}
+                  placeholder="Find in chapter..."
+                  autoFocus
+                  style={{
+                    flex: 1,
+                    padding: "6px 10px",
+                    borderRadius: "6px",
+                    border: "none",
+                    background: bar.surface,
+                    color: bar.text,
+                    fontSize: "0.82rem",
+                    fontFamily: "inherit",
+                    outline: "none",
+                    minWidth: 0,
+                  }}
+                />
+                {searchTerm.length >= 2 && (
+                  <span style={{ fontSize: "0.68rem", color: bar.textMuted, whiteSpace: "nowrap" }}>
+                    {searchMatchCount}
+                  </span>
+                )}
+                <button
+                  onClick={() => { setSearchOpen(false); setSearchTerm(""); }}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    color: bar.textMuted,
+                    fontSize: "0.82rem",
+                    cursor: "pointer",
+                    padding: "4px",
+                    fontFamily: "inherit",
+                    flexShrink: 0,
+                  }}
+                >
+                  ✕
+                </button>
               </div>
-              <div
-                style={{
-                  fontSize: "0.68rem",
-                  fontWeight: 600,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.1em",
-                  color: bar.textMuted,
-                }}
-              >
-                {chapterLabel}
-              </div>
-            </div>
+            ) : (
+              <>
+                <button
+                  onClick={() => {
+                    setSelectedChapter(null);
+                    setVerses([]);
+                    // Reset URL
+                    window.history.replaceState({}, "", "/read");
+                  }}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    color: bar.textSecondary,
+                    cursor: "pointer",
+                    fontSize: "1.2rem",
+                    padding: "4px 8px",
+                    fontFamily: "inherit",
+                  }}
+                  title="Back to book list"
+                >
+                  ←
+                </button>
+                <div style={{ minWidth: 0 }}>
+                  <div
+                    style={{
+                      fontSize: isMobile ? "0.85rem" : "0.95rem",
+                      fontWeight: 700,
+                      color: bar.text,
+                      whiteSpace: "nowrap",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                    }}
+                  >
+                    {selectedBookName}
+                  </div>
+                  <div
+                    style={{
+                      fontSize: "0.68rem",
+                      fontWeight: 600,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.1em",
+                      color: bar.textMuted,
+                    }}
+                  >
+                    {chapterLabel}
+                  </div>
+                </div>
+              </>
+            )}
           </div>
 
-          <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "6px" : "8px" }}>
-            {/* Light/dark toggle — stays in top bar */}
+          <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "4px" : "8px" }}>
+            {/* Font size — mobile: in top bar */}
+            {isMobile && (
+              <button
+                onClick={cycleFontSize}
+                title="Change font size"
+                style={{
+                  background: "none",
+                  border: "none",
+                  color: bar.textSecondary,
+                  cursor: "pointer",
+                  width: "32px",
+                  height: "32px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontSize: fontSize === 0 ? "0.75rem" : fontSize === 1 ? "0.9rem" : "1.05rem",
+                  fontWeight: 700,
+                  fontFamily: "inherit",
+                  transition: "all 0.15s",
+                }}
+              >
+                {fontSizes[fontSize].label}
+              </button>
+            )}
+            {/* Search — mobile: in top bar */}
+            {isMobile && (
+              <button
+                onClick={() => {
+                  if (searchOpen) {
+                    setSearchOpen(false);
+                    setSearchTerm("");
+                  } else {
+                    setSearchOpen(true);
+                    setTimeout(() => searchInputRef.current?.focus(), 150);
+                  }
+                }}
+                title="Search in chapter"
+                style={{
+                  background: "none",
+                  border: "none",
+                  color: searchOpen ? bar.text : bar.textSecondary,
+                  cursor: "pointer",
+                  width: "32px",
+                  height: "32px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  transition: "color 0.15s",
+                }}
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+              </button>
+            )}
+            {/* Light/dark toggle */}
             <button
               onClick={toggleLightMode}
               title={lightMode ? "Switch to dark mode" : "Switch to light mode"}
@@ -1769,8 +1892,8 @@ export default function ScriptureReader() {
             paddingBottom: "env(safe-area-inset-bottom, 0px)",
           }}
         >
-          {/* Search input row — expands above controls when open */}
-          {searchOpen && (
+          {/* Desktop: Search input row — expands above controls when open */}
+          {!isMobile && searchOpen && (
             <div style={{
               padding: "8px 16px",
               borderBottom: `1px solid ${bar.border}`,
@@ -1857,106 +1980,122 @@ export default function ScriptureReader() {
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="miter"><polyline points="15 18 9 12 15 6" /></svg>
             </button>
 
-            {/* Center controls */}
-            <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "12px" : "16px" }}>
-              {/* Search */}
-              <button
-                onClick={() => {
-                  if (searchOpen) {
-                    setSearchOpen(false);
-                    setSearchTerm("");
-                  } else {
-                    setSearchOpen(true);
-                    setTimeout(() => searchInputRef.current?.focus(), 100);
-                  }
-                }}
-                title="Search in chapter"
-                style={{
-                  background: "none",
-                  border: "none",
-                  color: searchOpen ? bar.text : bar.textSecondary,
-                  cursor: "pointer",
-                  padding: "6px",
-                  display: "flex",
-                  alignItems: "center",
-                  transition: "color 0.15s",
-                }}
-              >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="11" cy="11" r="8" />
-                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                </svg>
-              </button>
-
-              {/* Font size */}
-              <button
-                onClick={cycleFontSize}
-                title="Change font size"
-                style={{
-                  background: "none",
-                  border: "none",
-                  color: bar.textSecondary,
-                  cursor: "pointer",
-                  padding: "6px",
-                  display: "flex",
-                  alignItems: "center",
-                  fontSize: fontSize === 0 ? "0.75rem" : fontSize === 1 ? "0.9rem" : "1.05rem",
-                  fontWeight: 700,
-                  fontFamily: "inherit",
-                  transition: "all 0.15s",
-                }}
-              >
-                {fontSizes[fontSize].label}
-              </button>
-
-              {/* Chapter selector */}
-              <select
-                value={selectedChapter}
-                onChange={(e) => {
-                  const ch = Number(e.target.value);
-                  goToChapter(selectedVolume, selectedBookId, selectedBookName || "", ch, chapterCount);
-                }}
-                style={{
-                  background: "none",
-                  border: "none",
-                  color: bar.textSecondary,
-                  padding: "4px 2px",
-                  fontSize: "0.78rem",
-                  fontWeight: 600,
-                  fontFamily: "inherit",
-                  cursor: "pointer",
-                  outline: "none",
-                  WebkitAppearance: "none",
-                  appearance: "none",
-                }}
-              >
-                {Array.from({ length: chapterCount }, (_, i) => i + 1).map((ch) => (
-                  <option key={ch} value={ch} style={{ background: "#1a1a22", color: "#f0f0f0" }}>
-                    {isDC ? `Sec ${ch}` : `Ch ${ch}`}
-                  </option>
-                ))}
-              </select>
-
-              {/* Menu (mobile only) */}
-              {isMobile && (
-                <button
-                  onClick={() => setMenuOpen(true)}
-                  title="Menu"
+            {/* Center controls — mobile: just chapter selector; desktop: full controls */}
+            {isMobile ? (
+              <div style={{ position: "relative", display: "flex", alignItems: "center" }}>
+                <select
+                  value={selectedChapter}
+                  onChange={(e) => {
+                    const ch = Number(e.target.value);
+                    goToChapter(selectedVolume, selectedBookId, selectedBookName || "", ch, chapterCount);
+                  }}
                   style={{
                     background: "none",
                     border: "none",
+                    color: bar.text,
+                    padding: "6px 20px 6px 4px",
+                    fontSize: "0.85rem",
+                    fontWeight: 600,
+                    fontFamily: "inherit",
                     cursor: "pointer",
-                    padding: "4px",
-                    opacity: 0.6,
-                    transition: "opacity 0.15s",
-                    display: "flex",
-                    alignItems: "center",
+                    outline: "none",
+                    WebkitAppearance: "none",
+                    appearance: "none",
+                    textAlign: "center",
                   }}
                 >
-                  <img src="/tree-logo.svg" alt="Menu" style={{ height: "20px", width: "auto" }} />
+                  {Array.from({ length: chapterCount }, (_, i) => i + 1).map((ch) => (
+                    <option key={ch} value={ch} style={{ background: "#1a1a22", color: "#f0f0f0" }}>
+                      {isDC ? `Section ${ch}` : `Chapter ${ch}`}
+                    </option>
+                  ))}
+                </select>
+                {/* Dropdown chevron indicator */}
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke={bar.textMuted} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ position: "absolute", right: "2px", pointerEvents: "none" }}>
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </div>
+            ) : (
+              <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+                {/* Search — desktop only in bottom bar */}
+                <button
+                  onClick={() => {
+                    if (searchOpen) {
+                      setSearchOpen(false);
+                      setSearchTerm("");
+                    } else {
+                      setSearchOpen(true);
+                      setTimeout(() => searchInputRef.current?.focus(), 100);
+                    }
+                  }}
+                  title="Search in chapter"
+                  style={{
+                    background: "none",
+                    border: "none",
+                    color: searchOpen ? bar.text : bar.textSecondary,
+                    cursor: "pointer",
+                    padding: "6px",
+                    display: "flex",
+                    alignItems: "center",
+                    transition: "color 0.15s",
+                  }}
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  </svg>
                 </button>
-              )}
-            </div>
+
+                {/* Font size — desktop only in bottom bar */}
+                <button
+                  onClick={cycleFontSize}
+                  title="Change font size"
+                  style={{
+                    background: "none",
+                    border: "none",
+                    color: bar.textSecondary,
+                    cursor: "pointer",
+                    padding: "6px",
+                    display: "flex",
+                    alignItems: "center",
+                    fontSize: fontSize === 0 ? "0.75rem" : fontSize === 1 ? "0.9rem" : "1.05rem",
+                    fontWeight: 700,
+                    fontFamily: "inherit",
+                    transition: "all 0.15s",
+                  }}
+                >
+                  {fontSizes[fontSize].label}
+                </button>
+
+                {/* Chapter selector — desktop */}
+                <select
+                  value={selectedChapter}
+                  onChange={(e) => {
+                    const ch = Number(e.target.value);
+                    goToChapter(selectedVolume, selectedBookId, selectedBookName || "", ch, chapterCount);
+                  }}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    color: bar.textSecondary,
+                    padding: "4px 2px",
+                    fontSize: "0.78rem",
+                    fontWeight: 600,
+                    fontFamily: "inherit",
+                    cursor: "pointer",
+                    outline: "none",
+                    WebkitAppearance: "none",
+                    appearance: "none",
+                  }}
+                >
+                  {Array.from({ length: chapterCount }, (_, i) => i + 1).map((ch) => (
+                    <option key={ch} value={ch} style={{ background: "#1a1a22", color: "#f0f0f0" }}>
+                      {isDC ? `Sec ${ch}` : `Ch ${ch}`}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
 
             {/* Next */}
             <button
