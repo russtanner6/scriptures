@@ -712,42 +712,71 @@ export default function ScriptureReader() {
             style={{
               color: "inherit",
               textDecoration: "underline",
-              textDecorationColor: lightMode ? "rgba(59, 130, 246, 0.6)" : "rgba(59, 130, 246, 0.5)",
+              textDecorationColor: lightMode ? "rgba(37, 99, 235, 0.5)" : "rgba(37, 99, 235, 0.45)",
               textUnderlineOffset: "3px",
               textDecorationThickness: "2px",
               cursor: "pointer",
               borderRadius: "2px",
               transition: "text-decoration-color 0.15s",
             }}
-            onMouseEnter={(e) => { e.currentTarget.style.textDecorationColor = "rgba(59, 130, 246, 0.8)"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.textDecorationColor = lightMode ? "rgba(59, 130, 246, 0.5)" : "rgba(59, 130, 246, 0.4)"; }}
+            onMouseEnter={(e) => { e.currentTarget.style.textDecorationColor = "rgba(37, 99, 235, 0.8)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.textDecorationColor = lightMode ? "rgba(37, 99, 235, 0.5)" : "rgba(37, 99, 235, 0.45)"; }}
           >
             {isPerson && portrait ? (
-              <img
-                src={portrait}
-                alt=""
-                style={{
-                  width: "16px",
-                  height: "16px",
-                  borderRadius: "50%",
-                  objectFit: "cover",
-                  display: "inline-block",
-                  verticalAlign: "middle",
-                  marginRight: "3px",
-                  marginTop: "-2px",
-                  border: lightMode ? "1px solid rgba(0,0,0,0.15)" : "1px solid rgba(255,255,255,0.2)",
-                }}
-              />
+              <span style={{
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "18px",
+                height: "18px",
+                borderRadius: "50%",
+                overflow: "hidden",
+                verticalAlign: "middle",
+                marginRight: "3px",
+                marginTop: "-2px",
+                border: "1.5px solid #2563EB",
+                flexShrink: 0,
+              }}>
+                <img src={portrait} alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              </span>
             ) : isPerson ? (
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={lightMode ? "rgba(59,130,246,0.7)" : "rgba(59,130,246,0.6)"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ display: "inline-block", verticalAlign: "middle", marginRight: "2px", marginTop: "-2px" }}>
-                <circle cx="12" cy="8" r="4" />
-                <path d="M20 21a8 8 0 1 0-16 0" />
-              </svg>
+              <span style={{
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "16px",
+                height: "16px",
+                borderRadius: "50%",
+                background: "#2563EB",
+                verticalAlign: "middle",
+                marginRight: "3px",
+                marginTop: "-2px",
+                flexShrink: 0,
+              }}>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M20 21a8 8 0 1 0-16 0" />
+                </svg>
+              </span>
             ) : (
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={lightMode ? "rgba(59,130,246,0.7)" : "rgba(59,130,246,0.6)"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ display: "inline-block", verticalAlign: "middle", marginRight: "2px", marginTop: "-2px" }}>
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                <circle cx="12" cy="10" r="3" />
-              </svg>
+              <span style={{
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "16px",
+                height: "16px",
+                borderRadius: "50%",
+                background: "#2563EB",
+                verticalAlign: "middle",
+                marginRight: "3px",
+                marginTop: "-2px",
+                flexShrink: 0,
+              }}>
+                <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </span>
             )}
             {segText}
           </span>
