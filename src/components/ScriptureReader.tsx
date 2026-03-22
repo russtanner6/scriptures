@@ -722,7 +722,7 @@ export default function ScriptureReader() {
             onMouseEnter={(e) => { e.currentTarget.style.textDecorationColor = "rgba(59, 130, 246, 0.8)"; }}
             onMouseLeave={(e) => { e.currentTarget.style.textDecorationColor = lightMode ? "rgba(59, 130, 246, 0.5)" : "rgba(59, 130, 246, 0.4)"; }}
           >
-            {isPerson && portrait && (
+            {isPerson && portrait ? (
               <img
                 src={portrait}
                 alt=""
@@ -732,14 +732,19 @@ export default function ScriptureReader() {
                   borderRadius: "50%",
                   objectFit: "cover",
                   display: "inline-block",
-                  verticalAlign: "text-bottom",
+                  verticalAlign: "middle",
                   marginRight: "3px",
+                  marginTop: "-2px",
                   border: lightMode ? "1px solid rgba(0,0,0,0.15)" : "1px solid rgba(255,255,255,0.2)",
                 }}
               />
-            )}
-            {!isPerson && (
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={lightMode ? "rgba(59,130,246,0.7)" : "rgba(59,130,246,0.6)"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ display: "inline-block", verticalAlign: "text-bottom", marginRight: "2px" }}>
+            ) : isPerson ? (
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={lightMode ? "rgba(59,130,246,0.7)" : "rgba(59,130,246,0.6)"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ display: "inline-block", verticalAlign: "middle", marginRight: "2px", marginTop: "-2px" }}>
+                <circle cx="12" cy="8" r="4" />
+                <path d="M20 21a8 8 0 1 0-16 0" />
+              </svg>
+            ) : (
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={lightMode ? "rgba(59,130,246,0.7)" : "rgba(59,130,246,0.6)"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ display: "inline-block", verticalAlign: "middle", marginRight: "2px", marginTop: "-2px" }}>
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                 <circle cx="12" cy="10" r="3" />
               </svg>
