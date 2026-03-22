@@ -953,13 +953,15 @@ export default function ScriptureReader() {
                 border: "none",
                 color: bar.textSecondary,
                 cursor: "pointer",
-                fontSize: "1.2rem",
-                padding: "4px 8px",
-                fontFamily: "inherit",
+                padding: "6px 8px",
+                display: "flex",
+                alignItems: "center",
               }}
               title="Back to book list"
             >
-              ←
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
             </button>
             <div style={{ minWidth: 0 }}>
               <div
