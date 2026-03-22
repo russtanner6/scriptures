@@ -870,17 +870,21 @@ export async function getCharacterMentions(
 
   // Aggregate by volume
   const byVolume: Record<string, number> = {};
-  const byBookMap = new Map<number, { bookId: number; bookName: string; volumeAbbrev: string; count: number }>();
+  // For D&C (single-book volume), aggregate by section instead of whole book
+  const byBookMap = new Map<string, { bookId: number; bookName: string; volumeAbbrev: string; count: number }>();
 
   for (const m of matches) {
     byVolume[m.abbrev] = (byVolume[m.abbrev] || 0) + 1;
-    const existing = byBookMap.get(m.book_id);
+    const isDC = displayName(m.book_name) === "D&C";
+    const key = isDC ? `${m.book_id}-${m.chapter}` : String(m.book_id);
+    const label = isDC ? `D&C ${m.chapter}` : displayName(m.book_name);
+    const existing = byBookMap.get(key);
     if (existing) {
       existing.count++;
     } else {
-      byBookMap.set(m.book_id, {
+      byBookMap.set(key, {
         bookId: m.book_id,
-        bookName: displayName(m.book_name),
+        bookName: label,
         volumeAbbrev: m.abbrev,
         count: 1,
       });
