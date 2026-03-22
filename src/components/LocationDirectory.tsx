@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo, useCallback } from "react";
+import { useSearchParams } from "next/navigation";
 import type { ScriptureLocation, LocationType } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import VolumeTooltip from "./VolumeTooltip";
@@ -61,9 +62,10 @@ const ALL_LOCATION_TYPES: LocationType[] = [
 
 export default function LocationDirectory() {
   const { isVolumeVisible } = usePreferencesContext();
+  const searchParams = useSearchParams();
   const [locations, setLocations] = useState<ScriptureLocation[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState(() => searchParams.get("q") || "");
   const [volumeFilter, setVolumeFilter] = useState<string | null>(null);
   const [typeFilter, setTypeFilter] = useState<LocationType | null>(null);
   const [regionFilter, setRegionFilter] = useState<string | null>(null);
@@ -80,6 +82,20 @@ export default function LocationDirectory() {
       })
       .catch(() => setIsLoading(false));
   }, []);
+
+  // Sync search term to URL (deep linking)
+  useEffect(() => {
+    const current = searchParams.get("q") || "";
+    if (searchTerm !== current) {
+      const url = new URL(window.location.href);
+      if (searchTerm) {
+        url.searchParams.set("q", searchTerm);
+      } else {
+        url.searchParams.delete("q");
+      }
+      window.history.replaceState({}, "", url.toString());
+    }
+  }, [searchTerm, searchParams]);
 
   // Extract unique regions from data, sorted by frequency
   const regions = useMemo(() => {

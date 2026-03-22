@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo, useCallback } from "react";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import type { ScriptureCharacter } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import VolumeTooltip from "./VolumeTooltip";
@@ -41,9 +41,10 @@ const ERA_ORDER = [
 export default function CharacterDirectory() {
   const { isVolumeVisible } = usePreferencesContext();
   const searchParams = useSearchParams();
+  const router = useRouter();
   const [characters, setCharacters] = useState<ScriptureCharacter[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState(() => searchParams.get("q") || "");
   const [volumeFilter, setVolumeFilter] = useState<string | null>(null);
   const [eraFilter, setEraFilter] = useState<string | null>(null);
   const [roleFilter, setRoleFilter] = useState<string | null>(null);
@@ -77,6 +78,21 @@ export default function CharacterDirectory() {
       setDeepLinkHandled(true);
     }
   }, [characters, searchParams, deepLinkHandled]);
+
+  // Sync search term to URL (deep linking)
+  useEffect(() => {
+    const current = searchParams.get("q") || "";
+    if (searchTerm !== current) {
+      const url = new URL(window.location.href);
+      if (searchTerm) {
+        url.searchParams.set("q", searchTerm);
+      } else {
+        url.searchParams.delete("q");
+      }
+      // Preserve person param if present
+      window.history.replaceState({}, "", url.toString());
+    }
+  }, [searchTerm, searchParams]);
 
   // Extract unique values for filters
   const eras = useMemo(() => {
@@ -162,12 +178,7 @@ export default function CharacterDirectory() {
         <h2 style={{ fontSize: "1.6rem", fontWeight: 700, color: "var(--text)", marginBottom: "8px" }}>
           People of the Scriptures
         </h2>
-        <p style={{ color: "var(--text-secondary)", fontSize: isMobile ? "0.85rem" : "0.95rem", maxWidth: "500px", margin: "0 auto 14px" }}>
-          {characters.length} named individuals across all five volumes
-        </p>
-        <p style={{ color: "var(--text-muted)", fontSize: "0.78rem", maxWidth: "440px", margin: "0 auto 14px", lineHeight: 1.5 }}>
-          Color labels show which volumes a person appears in:
-        </p>
+{/* Removed description text — search placeholder shows the count */}
         {/* Volume legend */}
         <div style={{
           display: "flex",
@@ -226,7 +237,7 @@ export default function CharacterDirectory() {
             autoCorrect="off"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder="Search by name..."
+            placeholder="Search 757 people by name..."
             className="search-bar-glow"
             style={{
               width: "100%",
