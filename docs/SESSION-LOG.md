@@ -1,6 +1,6 @@
 # Scripture Explorer — Session Log
 
-## 2026-03-21 — Session 12: Sentiment Enhancement + Tone Overlay + Character Radar + Context Eggs
+## 2026-03-21 — Session 12: Sentiment + Tone + Radar + Context Eggs (800) + Relationship Web
 
 ### What was done
 - **Sentiment analysis enhancement** — Normalized scores to per-1,000-words for cross-chapter comparability. Added 25-word negation set with 2-word look-back (not, no, never, without, etc.). Low-volume dampening (0.5x for chapters under 50 words). New `ScoreResult` interface with `wordCount` and `lowConfidence` fields.
@@ -16,6 +16,8 @@
 - Character sentiment API scans all 42k verses with regex, averages normalized scores
 - Context Eggs use "egg" segment kind in renderVerseText — lowest priority, never conflicts with entity links or search highlights
 - Glint animation: 30s CSS cycle, 2s sweep in first 7%, idle remainder. Theme-aware via CSS custom properties
+- Context Eggs expanded to 800 entries: OT 288, NT 215, BoM 183, D&C 63, PoGP 51
+- **Character Relationship Web** — Full-screen force-directed graph using react-force-graph-2d. Nodes colored by volume, breadcrumb navigation, glassmorphism side panel. Graph data built from characters.json family relationships. Subgraph BFS for focused exploration.
 
 ---
 
