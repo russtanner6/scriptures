@@ -103,7 +103,7 @@ export default function EggPopover({
             : "0 8px 32px rgba(0,0,0,0.5)",
           padding: "20px 22px",
           overflowY: "auto",
-          animation: isMobile ? "slideUp 0.25s ease-out" : "fadeIn 0.2s ease-out",
+          animation: isMobile ? "slideUp 0.25s ease-out" : "eggPopIn 0.2s ease-out",
         }}
       >
         {/* Close button */}

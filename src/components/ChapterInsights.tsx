@@ -38,8 +38,8 @@ interface ChapterInsightsProps {
 }
 
 const SPEAKER_TYPE_COLORS_LIGHT: Record<SpeakerType, string> = {
-  divine: "#B47E00", prophet: "#2563EB", apostle: "#059669",
-  angel: "#7C3AED", narrator: "#0E7490", other: "",
+  divine: "#D97706", prophet: "#3B82F6", apostle: "#10B981",
+  angel: "#8B5CF6", narrator: "#0891B2", other: "",
 };
 const SPEAKER_TYPE_COLORS_DARK: Record<SpeakerType, string> = {
   divine: "#FBBF24", prophet: "#60A5FA", apostle: "#34D399",

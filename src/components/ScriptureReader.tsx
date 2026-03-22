@@ -795,7 +795,7 @@ export default function ScriptureReader() {
   // Color theme
   // Speaker type colors — darker in light mode for readability
   const SPEAKER_TYPE_COLORS: Record<SpeakerType, string> = lightMode
-    ? { divine: "#B47E00", prophet: "#2563EB", apostle: "#059669", angel: "#7C3AED", narrator: "#0E7490", other: "" }
+    ? { divine: "#D97706", prophet: "#3B82F6", apostle: "#10B981", angel: "#8B5CF6", narrator: "#0891B2", other: "" }
     : { divine: "#FBBF24", prophet: "#60A5FA", apostle: "#34D399", angel: "#C4B5FD", narrator: "#22D3EE", other: "" };
   const OTHER_PALETTE = lightMode
     ? ["#9333EA", "#C2410C", "#0369A1", "#15803D", "#A21CAF", "#B45309", "#1D4ED8", "#047857", "#7E22CE", "#BE123C"]
