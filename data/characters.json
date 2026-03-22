@@ -144,7 +144,7 @@
     ],
     "bio": "Son of Alma the Elder who initially rebelled against the church and sought to destroy it. He was visited by an angel, fell unconscious for three days, and experienced a dramatic conversion. He became the first chief judge of the Nephites and later resigned to preach full-time. He is one of the most prominent figures in the Book of Mormon, with extensive sermons and missionary accounts.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 100–73 BC",
+    "timePeriod": "c. 100\u201373 BC",
     "roles": [
       "prophet",
       "judge",
@@ -178,7 +178,7 @@
     ],
     "bio": "Chief captain of the Nephite armies, appointed at age twenty-five. He was a brilliant military strategist who fortified Nephite cities and led them through years of war against the Lamanites and the dissenter Amalickiah. He created the 'title of liberty' to rally his people. Mormon wrote that if all men had been like Moroni, the powers of hell would have been shaken forever.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 100–56 BC",
+    "timePeriod": "c. 100\u201356 BC",
     "roles": [
       "military leader"
     ],
@@ -200,7 +200,7 @@
     "aliases": [],
     "bio": "Shepherd, musician, warrior, and second king of Israel. He slew Goliath as a youth, was anointed by Samuel, and eventually became king over all Israel. He conquered Jerusalem and made it his capital. He was called a man after God's own heart, though he committed serious sins including adultery with Bathsheba and arranging the death of her husband Uriah.",
     "era": "United Monarchy",
-    "timePeriod": "c. 1010–970 BC",
+    "timePeriod": "c. 1010\u2013970 BC",
     "roles": [
       "king",
       "musician",
@@ -276,7 +276,7 @@
     ],
     "bio": "A powerful prophet of Israel during the reign of King Ahab. He challenged the priests of Baal on Mount Carmel, was fed by ravens, raised a widow's son, and was taken to heaven in a chariot of fire without tasting death. He appeared on the Mount of Transfiguration with Moses and appeared in the Kirtland Temple in 1836 to restore the sealing keys of the priesthood.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 870–850 BC",
+    "timePeriod": "c. 870\u2013850 BC",
     "roles": [
       "prophet"
     ],
@@ -306,7 +306,7 @@
       "3 Nephi",
       "Moroni",
       "Doctrine and Covenants",
-      "Joseph Smith—History"
+      "Joseph Smith\u2014History"
     ]
   },
   {
@@ -394,7 +394,8 @@
     "era": "Eternal",
     "timePeriod": "Eternal",
     "roles": [
-      "deity"
+      "God",
+      "Creator"
     ],
     "gender": "male",
     "volumes": [
@@ -494,8 +495,8 @@
       "Doctrine and Covenants",
       "Moses",
       "Abraham",
-      "Joseph Smith—Matthew",
-      "Joseph Smith—History",
+      "Joseph Smith\u2014Matthew",
+      "Joseph Smith\u2014History",
       "Articles of Faith"
     ]
   },
@@ -513,7 +514,8 @@
     "era": "Eternal",
     "timePeriod": "Eternal",
     "roles": [
-      "deity"
+      "God",
+      "Comforter"
     ],
     "gender": "male",
     "volumes": [
@@ -575,7 +577,7 @@
       "Moroni",
       "Doctrine and Covenants",
       "Moses",
-      "Joseph Smith—History",
+      "Joseph Smith\u2014History",
       "Articles of Faith"
     ]
   },
@@ -639,7 +641,7 @@
       "3 Nephi",
       "Mormon",
       "Doctrine and Covenants",
-      "Joseph Smith—History"
+      "Joseph Smith\u2014History"
     ]
   },
   {
@@ -648,9 +650,9 @@
     "aliases": [
       "Esaias"
     ],
-    "bio": "One of the greatest Old Testament prophets, who ministered in Judah during the reigns of Uzziah, Jotham, Ahaz, and Hezekiah (c. 740–700 BC). His prophecies of the Messiah are among the most detailed in scripture. Large portions of Isaiah are quoted in the Book of Mormon, particularly by Nephi and by Jesus Christ himself.",
+    "bio": "One of the greatest Old Testament prophets, who ministered in Judah during the reigns of Uzziah, Jotham, Ahaz, and Hezekiah (c. 740\u2013700 BC). His prophecies of the Messiah are among the most detailed in scripture. Large portions of Isaiah are quoted in the Book of Mormon, particularly by Nephi and by Jesus Christ himself.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 740–700 BC",
+    "timePeriod": "c. 740\u2013700 BC",
     "roles": [
       "prophet"
     ],
@@ -792,12 +794,12 @@
     ],
     "bio": "The central figure of all scripture, recognized as the Son of God and Savior of the world. In the Old Testament, he is the God of Israel (Jehovah) who covenanted with Abraham, led Israel from Egypt, and spoke through prophets. In the New Testament, he was born of Mary in Bethlehem, ministered in Galilee and Judea, was crucified, and rose from the dead. The Book of Mormon records his appearance to the Nephites after his resurrection.",
     "era": "Eternal",
-    "timePeriod": "c. 4 BC – c. AD 33 (mortal ministry)",
+    "timePeriod": "c. 4 BC \u2013 c. AD 33 (mortal ministry)",
     "roles": [
-      "deity",
-      "teacher",
-      "healer",
-      "judge"
+      "Savior",
+      "Redeemer",
+      "Creator",
+      "Judge"
     ],
     "gender": "male",
     "volumes": [
@@ -894,8 +896,8 @@
       "Doctrine and Covenants",
       "Moses",
       "Abraham",
-      "Joseph Smith—Matthew",
-      "Joseph Smith—History",
+      "Joseph Smith\u2014Matthew",
+      "Joseph Smith\u2014History",
       "Articles of Faith"
     ]
   },
@@ -908,7 +910,7 @@
     ],
     "bio": "Son of Zebedee and brother of James, one of the original twelve apostles and part of Jesus' inner circle. He was present at the Transfiguration, in Gethsemane, and at the cross. He wrote the Gospel of John, three epistles, and the book of Revelation. LDS scripture teaches he was translated and continues to minister on the earth.",
     "era": "New Testament",
-    "timePeriod": "c. AD 6–100+",
+    "timePeriod": "c. AD 6\u2013100+",
     "roles": [
       "apostle",
       "writer",
@@ -947,7 +949,7 @@
     "aliases": [],
     "bio": "Son of Zacharias and Elisabeth, he was the forerunner of Jesus Christ. He preached repentance and baptized in the Jordan River, including baptizing Jesus himself. He was beheaded by Herod Antipas at the request of Salome. In LDS theology, he appeared as a resurrected being to Joseph Smith and Oliver Cowdery to restore the Aaronic Priesthood in 1829.",
     "era": "New Testament",
-    "timePeriod": "c. 6 BC – c. AD 29",
+    "timePeriod": "c. 6 BC \u2013 c. AD 29",
     "roles": [
       "prophet"
     ],
@@ -1045,7 +1047,7 @@
       "Doctrine and Covenants",
       "Moses",
       "Abraham",
-      "Joseph Smith—History"
+      "Joseph Smith\u2014History"
     ]
   },
   {
@@ -1057,7 +1059,7 @@
     ],
     "bio": "Founder and first prophet of The Church of Jesus Christ of Latter-day Saints. At age fourteen, he experienced the First Vision in which God the Father and Jesus Christ appeared to him. He translated the Book of Mormon from gold plates delivered by the angel Moroni, organized the Church in 1830, received numerous revelations recorded in the Doctrine and Covenants, and was martyred in Carthage, Illinois in 1844.",
     "era": "Restoration",
-    "timePeriod": "1805–1844",
+    "timePeriod": "1805\u20131844",
     "roles": [
       "prophet",
       "translator",
@@ -1088,7 +1090,7 @@
     "portraitUrl": "/characters/joseph-smith_compressed.jpg",
     "books": [
       "Doctrine and Covenants",
-      "Joseph Smith—History"
+      "Joseph Smith\u2014History"
     ]
   },
   {
@@ -1099,7 +1101,7 @@
     ],
     "bio": "A righteous Nephite king who fought off Lamanite invaders and established peace. He delivered one of the most important sermons in the Book of Mormon from a tower in Zarahemla, teaching about the atonement of Christ and service. His people experienced a mighty change of heart and entered into a covenant with God. He passed the kingdom to his son Mosiah.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 130–121 BC",
+    "timePeriod": "c. 130\u2013121 BC",
     "roles": [
       "king",
       "prophet"
@@ -1171,7 +1173,7 @@
     ],
     "bio": "A young woman of Nazareth, of the lineage of David, chosen to be the mother of Jesus Christ. The angel Gabriel announced she would conceive by the Holy Ghost. She bore Jesus in Bethlehem, was present at his first miracle in Cana, and stood at the foot of the cross. The Book of Mormon prophet Nephi saw her in vision as 'a virgin, most beautiful and fair.'",
     "era": "New Testament",
-    "timePeriod": "c. 18 BC – c. AD 45",
+    "timePeriod": "c. 18 BC \u2013 c. AD 45",
     "roles": [
       "other"
     ],
@@ -1205,7 +1207,7 @@
     "aliases": [],
     "bio": "A Nephite prophet, historian, and military leader who compiled and abridged the records of his people into the Book of Mormon. He took command of the Nephite armies at age fifteen and witnessed the final destruction of the Nephite nation. He was both a spiritual and military leader during the darkest period of Nephite history. The Book of Mormon is named after him.",
     "era": "Book of Mormon - Late",
-    "timePeriod": "c. AD 311–385",
+    "timePeriod": "c. AD 311\u2013385",
     "roles": [
       "prophet",
       "historian",
@@ -1241,7 +1243,7 @@
     ],
     "bio": "Son of Mormon and the last Nephite prophet. After his father's death, he completed the Book of Mormon record, abridged the Jaredite record (Book of Ether), and wrote the Book of Moroni. He wandered alone for decades, writing his final testimonies. He buried the plates in the Hill Cumorah. As a resurrected being, he appeared to Joseph Smith in 1823 and directed him to the plates.",
     "era": "Book of Mormon - Late",
-    "timePeriod": "c. AD 350–421",
+    "timePeriod": "c. AD 350\u2013421",
     "roles": [
       "prophet",
       "writer",
@@ -1347,7 +1349,7 @@
       "Ether",
       "Doctrine and Covenants",
       "Moses",
-      "Joseph Smith—Matthew"
+      "Joseph Smith\u2014Matthew"
     ]
   },
   {
@@ -1358,7 +1360,7 @@
     ],
     "bio": "Fourth son of Lehi and Sariah, and the principal author and narrator of 1 Nephi and 2 Nephi. Known for his great faith, he obtained the brass plates from Laban, built a ship to cross the ocean, and became the first leader of the Nephite people. He saw sweeping visions of Christ and the future. He declared, 'I will go and do the things which the Lord hath commanded.'",
     "era": "Book of Mormon - Early",
-    "timePeriod": "c. 600–544 BC",
+    "timePeriod": "c. 600\u2013544 BC",
     "roles": [
       "prophet",
       "leader",
@@ -1444,7 +1446,7 @@
     ],
     "bio": "A Pharisee from Tarsus who persecuted Christians until his dramatic conversion on the road to Damascus, where the risen Jesus appeared to him. He became the greatest missionary of the early church, making multiple journeys throughout the Roman Empire and establishing churches among the Gentiles. He wrote thirteen or fourteen epistles that form a major portion of the New Testament.",
     "era": "New Testament",
-    "timePeriod": "c. AD 5–67",
+    "timePeriod": "c. AD 5\u201367",
     "roles": [
       "apostle",
       "missionary",
@@ -1487,7 +1489,7 @@
     ],
     "bio": "A fisherman from Galilee who became the chief apostle and leader of the early Christian church. He confessed Jesus as the Christ, witnessed the Transfiguration, denied Jesus three times before the crucifixion, and then became a bold witness of the Resurrection. He preached at Pentecost and opened the gospel to the Gentiles. In LDS theology, he appeared with James and John to restore the Melchizedek Priesthood.",
     "era": "New Testament",
-    "timePeriod": "c. AD 1–67",
+    "timePeriod": "c. AD 1\u201367",
     "roles": [
       "apostle",
       "fisherman"
@@ -1596,7 +1598,7 @@
     ],
     "bio": "A priest in the court of King Noah who believed the prophet Abinadi's words and secretly recorded them. He fled into the wilderness, baptized believers at the Waters of Mormon, and established the church among the Nephites. He served as the first high priest over the church and was the father of Alma the Younger.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 173–91 BC",
+    "timePeriod": "c. 173\u201391 BC",
     "roles": [
       "priest",
       "prophet",
@@ -1623,7 +1625,7 @@
     ],
     "bio": "Son of King Mosiah who, after his conversion with Alma the Younger, became a missionary to the Lamanites. He served King Lamoni, defending his flocks by cutting off the arms of attackers. His service and testimony led to the conversion of King Lamoni and many Lamanites. He is one of the most celebrated missionaries in the Book of Mormon.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 100–77 BC",
+    "timePeriod": "c. 100\u201377 BC",
     "roles": [
       "missionary",
       "prince"
@@ -1653,7 +1655,7 @@
     "aliases": [],
     "bio": "A wealthy Nephite in Ammonihah who was visited by an angel and told to receive Alma into his home. He became Alma's missionary companion and together they preached in Ammonihah. He witnessed the burning of believing women and children by the wicked Ammonihahites and debated the lawyer Zeezrom, who later converted.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 82–74 BC",
+    "timePeriod": "c. 82\u201374 BC",
     "roles": [
       "missionary"
     ],
@@ -1678,7 +1680,7 @@
     "aliases": [],
     "bio": "Second president of The Church of Jesus Christ of Latter-day Saints who led the Saints westward to the Salt Lake Valley after Joseph Smith's martyrdom. He served as president of the Quorum of the Twelve Apostles and organized the massive pioneer migration. He is addressed in several D&C sections as a member of the Twelve.",
     "era": "Restoration",
-    "timePeriod": "1801–1877",
+    "timePeriod": "1801\u20131877",
     "roles": [
       "prophet",
       "leader"
@@ -1729,7 +1731,7 @@
     ],
     "bio": "A young nobleman from Judah taken captive to Babylon. He served in the courts of Nebuchadnezzar and later Darius, interpreting dreams and receiving visions of future kingdoms and the last days. He survived the lions' den through faith. His apocalyptic visions parallel those in Revelation.",
     "era": "Exile & Return",
-    "timePeriod": "c. 605–536 BC",
+    "timePeriod": "c. 605\u2013536 BC",
     "roles": [
       "prophet",
       "leader"
@@ -1759,7 +1761,7 @@
     ],
     "bio": "Prophet of Israel who succeeded Elijah after receiving a double portion of his spirit. He performed many miracles including healing Naaman the Syrian of leprosy, multiplying a widow's oil, raising the Shunammite woman's son, and feeding a hundred men with twenty loaves. He served during the reigns of several kings of Israel.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 850–800 BC",
+    "timePeriod": "c. 850\u2013800 BC",
     "roles": [
       "prophet"
     ],
@@ -1787,7 +1789,7 @@
     ],
     "bio": "Wife of Joseph Smith and the 'elect lady' addressed in D&C 25. She served as scribe during part of the Book of Mormon translation, compiled the first LDS hymnal, and was the first president of the Relief Society. She endured severe trials including the loss of children and her husband's martyrdom.",
     "era": "Restoration",
-    "timePeriod": "1804–1879",
+    "timePeriod": "1804\u20131879",
     "roles": [
       "leader"
     ],
@@ -1863,7 +1865,7 @@
     "aliases": [],
     "bio": "A priest and prophet who was among the Jews taken captive to Babylon in 597 BC. He prophesied from Babylon, receiving dramatic visions including the valley of dry bones (symbolizing Israel's restoration) and a detailed vision of a future temple. His prophecy of the sticks of Judah and Joseph is interpreted as foreshadowing the Bible and Book of Mormon.",
     "era": "Exile & Return",
-    "timePeriod": "c. 593–571 BC",
+    "timePeriod": "c. 593\u2013571 BC",
     "roles": [
       "prophet",
       "priest"
@@ -1915,9 +1917,9 @@
     "aliases": [
       "Helaman, son of Alma"
     ],
-    "bio": "Eldest son of Alma the Younger who received the sacred records and led the two thousand stripling warriors — young Lamanite converts who fought with miraculous protection. He served as a military leader and later as high priest. None of his young warriors were killed in battle, which he attributed to the faith taught them by their mothers.",
+    "bio": "Eldest son of Alma the Younger who received the sacred records and led the two thousand stripling warriors \u2014 young Lamanite converts who fought with miraculous protection. He served as a military leader and later as high priest. None of his young warriors were killed in battle, which he attributed to the faith taught them by their mothers.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 74–57 BC",
+    "timePeriod": "c. 74\u201357 BC",
     "roles": [
       "prophet",
       "military leader",
@@ -1952,7 +1954,7 @@
     "aliases": [],
     "bio": "Older brother of Joseph Smith and Assistant President of the Church, later ordained as Church Patriarch. He was a steadfast supporter of Joseph throughout the Restoration. He was martyred alongside Joseph at Carthage Jail in June 1844. D&C 124:15 describes him as having 'the integrity of his heart.'",
     "era": "Restoration",
-    "timePeriod": "1800–1844",
+    "timePeriod": "1800\u20131844",
     "roles": [
       "leader",
       "patriarch"
@@ -1980,7 +1982,7 @@
     ],
     "bio": "Fifth son of Lehi and Sariah, born in the wilderness. He was ordained a priest and teacher by Nephi. He authored the Book of Jacob in the Book of Mormon and delivered a powerful sermon against pride, materialism, and unchastity. He recorded the allegory of the olive tree from the prophet Zenos.",
     "era": "Book of Mormon - Early",
-    "timePeriod": "c. 592–500 BC",
+    "timePeriod": "c. 592\u2013500 BC",
     "roles": [
       "prophet",
       "priest",
@@ -2021,7 +2023,7 @@
     ],
     "bio": "Son of Zebedee and brother of John, one of the original twelve apostles and part of Jesus' inner circle along with Peter and John. He was present at the Transfiguration and in Gethsemane. He was the first apostle to be martyred, beheaded by Herod Agrippa I around AD 44. In LDS theology, he appeared with Peter and John to restore the Melchizedek Priesthood.",
     "era": "New Testament",
-    "timePeriod": "c. AD 3–44",
+    "timePeriod": "c. AD 3\u201344",
     "roles": [
       "apostle"
     ],
@@ -2053,9 +2055,9 @@
     "id": "jeremiah",
     "name": "Jeremiah",
     "aliases": [],
-    "bio": "Prophet in Judah who was called as a youth, ministering from the reign of Josiah through the fall of Jerusalem to Babylon (c. 626–586 BC). He warned of Jerusalem's destruction and was persecuted for his prophecies. He was a contemporary of Lehi and is mentioned in the Book of Mormon. Tradition says he was taken to Egypt after Jerusalem fell.",
+    "bio": "Prophet in Judah who was called as a youth, ministering from the reign of Josiah through the fall of Jerusalem to Babylon (c. 626\u2013586 BC). He warned of Jerusalem's destruction and was persecuted for his prophecies. He was a contemporary of Lehi and is mentioned in the Book of Mormon. Tradition says he was taken to Egypt after Jerusalem fell.",
     "era": "Exile & Return",
-    "timePeriod": "c. 626–586 BC",
+    "timePeriod": "c. 626\u2013586 BC",
     "roles": [
       "prophet"
     ],
@@ -2178,7 +2180,7 @@
     "aliases": [],
     "bio": "One of the original twelve apostles who betrayed Jesus for thirty pieces of silver by identifying him to the arresting party with a kiss in Gethsemane. He was the group's treasurer and had been stealing from the money bag. After the betrayal, he was filled with remorse and hanged himself.",
     "era": "New Testament",
-    "timePeriod": "c. AD 1–33",
+    "timePeriod": "c. AD 1\u201333",
     "roles": [
       "apostle"
     ],
@@ -2205,7 +2207,7 @@
     ],
     "bio": "A wicked Nephite king who taxed his people heavily, surrounded himself with corrupt priests, built extravagant buildings, and promoted wickedness. He had the prophet Abinadi burned to death. He was eventually overthrown by his own people and burned to death himself, as Abinadi had prophesied.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 160–145 BC",
+    "timePeriod": "c. 160\u2013145 BC",
     "roles": [
       "king"
     ],
@@ -2291,7 +2293,7 @@
     "aliases": [],
     "bio": "One of the Three Witnesses of the Book of Mormon who saw the gold plates and the angel Moroni. He financed the first printing of the Book of Mormon. He was entrusted with 116 pages of the manuscript which his wife lost, resulting in the Lord's rebuke in D&C 3 and 10. He eventually returned to the Church and died in Utah.",
     "era": "Restoration",
-    "timePeriod": "1783–1875",
+    "timePeriod": "1783\u20131875",
     "roles": [
       "witness"
     ],
@@ -2312,7 +2314,7 @@
     "aliases": [],
     "bio": "A devoted follower of Jesus from whom he cast out seven devils. She was present at the crucifixion and was the first to see the risen Christ at the empty tomb on Easter morning. Jesus told her, 'Touch me not; for I am not yet ascended to my Father.'",
     "era": "New Testament",
-    "timePeriod": "c. AD 1–50",
+    "timePeriod": "c. AD 1\u201350",
     "roles": [
       "disciple"
     ],
@@ -2339,7 +2341,7 @@
     ],
     "bio": "A tax collector whom Jesus called to be one of the twelve apostles. He is traditionally credited as the author of the Gospel of Matthew, the first book of the New Testament. He hosted a feast for Jesus at his house, which drew criticism from the Pharisees.",
     "era": "New Testament",
-    "timePeriod": "c. AD 1–70",
+    "timePeriod": "c. AD 1\u201370",
     "roles": [
       "apostle",
       "writer"
@@ -2427,7 +2429,7 @@
     ],
     "bio": "Son of King Benjamin who succeeded him as king of the Nephites. He was a seer who translated the Jaredite record using interpreters. Concerned about future contentions over the throne, he established a system of judges to replace the monarchy. He also sent Ammon's expedition to find the people of Zeniff.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 121–91 BC",
+    "timePeriod": "c. 121\u201391 BC",
     "roles": [
       "king",
       "seer",
@@ -2462,7 +2464,7 @@
     ],
     "bio": "Son of Helaman (son of Helaman) who served as chief judge before resigning to preach full-time with his brother Lehi. He performed mighty miracles, including prophetically identifying the murderer of the chief judge. He was given the sealing power and called down a famine to humble the people. He and his brother Lehi were once surrounded by fire while in prison.",
     "era": "Book of Mormon - Late",
-    "timePeriod": "c. 39–1 BC",
+    "timePeriod": "c. 39\u20131 BC",
     "roles": [
       "prophet",
       "judge"
@@ -2489,7 +2491,7 @@
     "aliases": [],
     "bio": "Served as principal scribe during the translation of the Book of Mormon and was one of the Three Witnesses who saw the gold plates and the angel Moroni. He was present when John the Baptist restored the Aaronic Priesthood and when Peter, James, and John restored the Melchizedek Priesthood. He is mentioned in more D&C sections than any person besides Joseph Smith.",
     "era": "Restoration",
-    "timePeriod": "1806–1850",
+    "timePeriod": "1806\u20131850",
     "roles": [
       "scribe",
       "witness",
@@ -2543,7 +2545,7 @@
     "aliases": [],
     "bio": "Last of the judges and first of the prophets after Moses in the traditional sense. His mother Hannah dedicated him to the Lord's service from birth. He anointed both Saul and David as kings of Israel. He served as judge, prophet, and priest, and his leadership marked the transition from the period of judges to the monarchy.",
     "era": "Judges",
-    "timePeriod": "c. 1070–1010 BC",
+    "timePeriod": "c. 1070\u20131010 BC",
     "roles": [
       "prophet",
       "judge",
@@ -2733,7 +2735,7 @@
       "Moroni",
       "Doctrine and Covenants",
       "Moses",
-      "Joseph Smith—History"
+      "Joseph Smith\u2014History"
     ]
   },
   {
@@ -2742,7 +2744,7 @@
     "aliases": [],
     "bio": "First king of Israel, anointed by Samuel. He was tall and initially humble but became disobedient to God's commands. He grew jealous of David and tried to kill him. He consulted the witch of Endor before his final battle and died by falling on his own sword on Mount Gilboa after being wounded by Philistine archers.",
     "era": "United Monarchy",
-    "timePeriod": "c. 1050–1010 BC",
+    "timePeriod": "c. 1050\u20131010 BC",
     "roles": [
       "king"
     ],
@@ -2771,7 +2773,7 @@
     "aliases": [],
     "bio": "A former Campbellite preacher who converted to the Church in 1830 and became Joseph Smith's counselor in the First Presidency. He shared the vision of the three degrees of glory recorded in D&C 76. He served as a spokesman and scribe. After Joseph Smith's death, he was rejected as leader in favor of Brigham Young.",
     "era": "Restoration",
-    "timePeriod": "1793–1876",
+    "timePeriod": "1793\u20131876",
     "roles": [
       "leader",
       "preacher"
@@ -2795,7 +2797,7 @@
     ],
     "bio": "Son of David and Bathsheba, third king of Israel. Known for his extraordinary wisdom, which he received as a gift from God. He built the first Temple in Jerusalem and expanded Israel's wealth and influence. In later life, he turned to idolatry through the influence of his many foreign wives.",
     "era": "United Monarchy",
-    "timePeriod": "c. 970–931 BC",
+    "timePeriod": "c. 970\u2013931 BC",
     "roles": [
       "king"
     ],
@@ -2843,7 +2845,7 @@
     ],
     "bio": "Son of King Mosiah and brother of Ammon who served as a missionary to the Lamanites. He was imprisoned in Middoni before being freed. He taught King Lamoni's father (the over-king of the Lamanites), leading to his dramatic conversion. His missionary labors helped establish the Anti-Nephi-Lehies.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 100–77 BC",
+    "timePeriod": "c. 100\u201377 BC",
     "roles": [
       "missionary",
       "prince"
@@ -3007,7 +3009,7 @@
     "aliases": [],
     "bio": "Philistine king of Gath to whom David twice fled from Saul. David first feigned madness before him. Later, Achish gave David the town of Ziklag, though the other Philistine lords sent David away before the battle of Gilboa.",
     "era": "United Monarchy",
-    "timePeriod": "c. 1015–1010 BC",
+    "timePeriod": "c. 1015\u20131010 BC",
     "roles": [
       "king"
     ],
@@ -3029,7 +3031,7 @@
     "aliases": [],
     "bio": "A Christian prophet from Jerusalem who prophesied a great famine throughout the Roman world in Acts 11:28 and later symbolically predicted Paul's arrest in Jerusalem by binding his own hands and feet with Paul's belt.",
     "era": "New Testament",
-    "timePeriod": "c. AD 44–58",
+    "timePeriod": "c. AD 44\u201358",
     "roles": [
       "prophet"
     ],
@@ -3050,7 +3052,7 @@
     "aliases": [],
     "bio": "King of the northern kingdom of Israel, married to the Phoenician princess Jezebel. He promoted Baal worship and clashed with the prophet Elijah. He is portrayed as one of the most wicked kings of Israel. He was killed by a random arrow in battle at Ramoth-gilead.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 874–853 BC",
+    "timePeriod": "c. 874\u2013853 BC",
     "roles": [
       "king"
     ],
@@ -3084,7 +3086,7 @@
     ],
     "bio": "King of Persia who ruled 127 provinces from India to Ethiopia. He deposed Queen Vashti and married Esther. He authorized Haman's plot against the Jews but reversed it, honoring Mordecai.",
     "era": "Post-Exile",
-    "timePeriod": "c. 486–465 BC",
+    "timePeriod": "c. 486\u2013465 BC",
     "roles": [
       "king"
     ],
@@ -3109,7 +3111,7 @@
     "aliases": [],
     "bio": "Wicked king of Judah who practiced idolatry and child sacrifice. When threatened by Syria and Israel, Isaiah offered him a sign but he refused. He appealed to Assyria for help, making Judah a vassal.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 735–715 BC",
+    "timePeriod": "c. 735\u2013715 BC",
     "roles": [
       "king"
     ],
@@ -3138,7 +3140,7 @@
     "aliases": [],
     "bio": "Son of Ahab and Jezebel who reigned two years. He fell through a lattice and was injured, then sent messengers to inquire of Baal-zebub. Elijah intercepted them and prophesied Ahaziah's death.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 853–852 BC",
+    "timePeriod": "c. 853\u2013852 BC",
     "roles": [
       "king"
     ],
@@ -3210,7 +3212,7 @@
     "aliases": [],
     "bio": "Eldest brother of Joseph Smith who died in 1823 before the Restoration. Joseph Smith saw him in the celestial kingdom in a vision recorded in D&C 137, leading to the doctrine that those who would have received the gospel had they lived shall be heirs of the celestial kingdom.",
     "era": "Restoration",
-    "timePeriod": "1798–1823",
+    "timePeriod": "1798\u20131823",
     "roles": [
       "family member"
     ],
@@ -3236,7 +3238,7 @@
     "aliases": [],
     "bio": "A Nephite dissenter who sought to become king. When Captain Moroni raised the title of liberty against him, he fled to the Lamanites with a small group of followers. Through treachery and murder, he became king of the Lamanites and launched a massive war against the Nephites. He was killed by Teancum with a javelin while he slept.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 72–67 BC",
+    "timePeriod": "c. 72\u201367 BC",
     "roles": [
       "leader",
       "military leader"
@@ -3260,7 +3262,7 @@
     "aliases": [],
     "bio": "King of Judah who defeated Edom but then worshipped Edomite gods. He challenged Jehoash of Israel, was defeated and captured, and Jerusalem's walls were broken down. He was eventually assassinated.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 796–767 BC",
+    "timePeriod": "c. 796\u2013767 BC",
     "roles": [
       "king"
     ],
@@ -3286,7 +3288,7 @@
     "aliases": [],
     "bio": "Brother of Amalickiah who became king of the Lamanites after Amalickiah's death. He continued the war against the Nephites and exchanged sharp epistles with Captain Moroni regarding prisoner exchanges. He was eventually killed by Teancum, who also died in the attempt.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 67–60 BC",
+    "timePeriod": "c. 67\u201360 BC",
     "roles": [
       "king"
     ],
@@ -3331,7 +3333,7 @@
     "aliases": [],
     "bio": "The high priest who commanded those standing near Paul to strike him on the mouth during his trial before the Sanhedrin. He later traveled to Caesarea with an orator named Tertullus to accuse Paul before Governor Felix.",
     "era": "New Testament",
-    "timePeriod": "c. AD 47–59",
+    "timePeriod": "c. AD 47\u201359",
     "roles": [
       "high priest"
     ],
@@ -3352,7 +3354,7 @@
     "aliases": [],
     "bio": "A member of the early Jerusalem church who, with his wife Sapphira, sold a possession but secretly kept back part of the price while claiming to give it all. He fell dead when Peter exposed the lie.",
     "era": "New Testament",
-    "timePeriod": "c. AD 30–35",
+    "timePeriod": "c. AD 30\u201335",
     "roles": [
       "other"
     ],
@@ -3375,7 +3377,7 @@
     "aliases": [],
     "bio": "Brother of Simon Peter and one of the original twelve apostles. He was initially a disciple of John the Baptist before following Jesus. He brought his brother Peter to Jesus and was present at the feeding of the five thousand, where he identified the boy with five loaves and two fishes.",
     "era": "New Testament",
-    "timePeriod": "c. AD 5–70",
+    "timePeriod": "c. AD 5\u201370",
     "roles": [
       "apostle",
       "fisherman"
@@ -3403,7 +3405,7 @@
     "aliases": [],
     "bio": "Brother of King Lamoni who became king of the converted Lamanites. Under his leadership, the converts buried their weapons of war and refused to fight, preferring to die rather than risk sinning again. Many of them were killed by attacking Lamanites, and the attackers were so moved that more Lamanites converted.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 90–77 BC",
+    "timePeriod": "c. 90\u201377 BC",
     "roles": [
       "king"
     ],
@@ -3447,7 +3449,7 @@
     "aliases": [],
     "bio": "A Macedonian from Thessalonica and companion of Paul who was seized during the Ephesian riot, accompanied Paul on his voyage to Rome, and is called Paul's 'fellowprisoner' in Colossians 4:10.",
     "era": "New Testament",
-    "timePeriod": "c. AD 50–62",
+    "timePeriod": "c. AD 50\u201362",
     "roles": [
       "missionary companion"
     ],
@@ -3470,7 +3472,7 @@
     "aliases": [],
     "bio": "King of Judah who removed idols, deposed his grandmother Maacah for her Asherah pole, and did what was right in the eyes of the LORD. He made a treaty with Syria against Israel rather than trusting God.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 911–870 BC",
+    "timePeriod": "c. 911\u2013870 BC",
     "roles": [
       "king"
     ],
@@ -3496,7 +3498,7 @@
     "aliases": [],
     "bio": "King of Israel who killed Nadab and exterminated the house of Jeroboam. He reigned 24 years doing evil. The prophet Jehu son of Hanani prophesied destruction against his house.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 909–886 BC",
+    "timePeriod": "c. 909\u2013886 BC",
     "roles": [
       "king"
     ],
@@ -3556,7 +3558,7 @@
     ],
     "bio": "A Levite from Cyprus who was an early convert and important leader in the Christian church. He vouched for Paul after his conversion and accompanied Paul on his first missionary journey. Known as the 'son of consolation,' he later had a disagreement with Paul over John Mark and went on a separate mission to Cyprus.",
     "era": "New Testament",
-    "timePeriod": "c. AD 1–61",
+    "timePeriod": "c. AD 1\u201361",
     "roles": [
       "missionary",
       "leader"
@@ -3591,7 +3593,7 @@
     ],
     "bio": "One of the original twelve apostles, often identified with Nathanael whom Philip brought to Jesus. When told about Jesus, he asked, 'Can any good thing come out of Nazareth?' Upon meeting Jesus, he was told, 'Behold, an Israelite indeed, in whom is no guile.'",
     "era": "New Testament",
-    "timePeriod": "c. AD 1–70",
+    "timePeriod": "c. AD 1\u201370",
     "roles": [
       "apostle"
     ],
@@ -3667,7 +3669,7 @@
     ],
     "bio": "Title used by several kings of Aram-Damascus. Ben-hadad besieged Samaria and demanded tribute. Elisha prophesied his recovery from illness, but his servant Hazael smothered him and took the throne.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 880–842 BC",
+    "timePeriod": "c. 880\u2013842 BC",
     "roles": [
       "king"
     ],
@@ -3785,7 +3787,7 @@
     ],
     "bio": "The Roman emperor who issued the decree that all the world should be taxed, which brought Joseph and Mary to Bethlehem where Jesus was born.",
     "era": "New Testament",
-    "timePeriod": "63 BC – AD 14",
+    "timePeriod": "63 BC \u2013 AD 14",
     "roles": [
       "emperor"
     ],
@@ -3809,7 +3811,7 @@
     ],
     "bio": "High priest during the ministry and trial of Jesus. He prophesied (unknowingly) that it was expedient for one man to die for the people. He presided over the trials of Jesus and later Peter and John. He was son-in-law of Annas.",
     "era": "New Testament",
-    "timePeriod": "c. AD 18–36 (as high priest)",
+    "timePeriod": "c. AD 18\u201336 (as high priest)",
     "roles": [
       "priest"
     ],
@@ -3939,7 +3941,7 @@
     "id": "corianton",
     "name": "Corianton",
     "aliases": [],
-    "bio": "Youngest son of Alma the Younger who abandoned his mission to the Zoramites to pursue the harlot Isabel. His father addressed three chapters of counsel to him (Alma 39–42), explaining the seriousness of sexual sin and the plan of mercy and justice. He eventually repented and returned to missionary service.",
+    "bio": "Youngest son of Alma the Younger who abandoned his mission to the Zoramites to pursue the harlot Isabel. His father addressed three chapters of counsel to him (Alma 39\u201342), explaining the seriousness of sexual sin and the plan of mercy and justice. He eventually repented and returned to missionary service.",
     "era": "Book of Mormon - Middle",
     "timePeriod": "c. 74 BC",
     "roles": [
@@ -4014,9 +4016,9 @@
     "aliases": [
       "Cyrus the Great"
     ],
-    "bio": "King of Persia who conquered Babylon and issued a decree allowing the Jews to return to Jerusalem and rebuild the temple. Isaiah prophesied of him by name about 150 years before his birth, calling him God's anointed (Isaiah 44:28–45:1).",
+    "bio": "King of Persia who conquered Babylon and issued a decree allowing the Jews to return to Jerusalem and rebuild the temple. Isaiah prophesied of him by name about 150 years before his birth, calling him God's anointed (Isaiah 44:28\u201345:1).",
     "era": "Exile & Return",
-    "timePeriod": "c. 559–530 BC",
+    "timePeriod": "c. 559\u2013530 BC",
     "roles": [
       "king"
     ],
@@ -4042,7 +4044,7 @@
     ],
     "bio": "One of the original Twelve Apostles of the Restoration. He was killed at the Battle of Crooked River in 1838. D&C 114 directed him to settle his business and prepare for a mission, and D&C 124 says the Lord has taken him unto himself.",
     "era": "Restoration",
-    "timePeriod": "1799–1838",
+    "timePeriod": "1799\u20131838",
     "roles": [
       "apostle"
     ],
@@ -4063,7 +4065,7 @@
     "aliases": [],
     "bio": "One of the Three Witnesses of the Book of Mormon. The translation was completed at his family's farm in Fayette, New York. He saw the gold plates and the angel Moroni. Though he was excommunicated in 1838, he maintained his testimony of the Book of Mormon until his death.",
     "era": "Restoration",
-    "timePeriod": "1805–1888",
+    "timePeriod": "1805\u20131888",
     "roles": [
       "witness"
     ],
@@ -4136,7 +4138,7 @@
     "aliases": [],
     "bio": "A companion of Paul who sent greetings in Colossians 4:14 and Philemon 24 but later deserted Paul, 'having loved this present world,' and departed to Thessalonica.",
     "era": "New Testament",
-    "timePeriod": "c. AD 55–65",
+    "timePeriod": "c. AD 55\u201365",
     "roles": [
       "missionary companion"
     ],
@@ -4180,7 +4182,7 @@
     "aliases": [],
     "bio": "A church leader criticized by the apostle John in 3 John 9-10 for loving preeminence, refusing to receive the apostle's letter, and casting out of the church those who would welcome traveling missionaries.",
     "era": "New Testament",
-    "timePeriod": "c. AD 85–95",
+    "timePeriod": "c. AD 85\u201395",
     "roles": [
       "church leader"
     ],
@@ -4201,7 +4203,7 @@
     "aliases": [],
     "bio": "First bishop of the Church, called by revelation in D&C 41. He was a hatter from Painesville, Ohio. He was tarred and feathered in Missouri for his faith. He served faithfully until his death in 1840.",
     "era": "Restoration",
-    "timePeriod": "1793–1840",
+    "timePeriod": "1793\u20131840",
     "roles": [
       "bishop"
     ],
@@ -4286,7 +4288,7 @@
     "tier": 3,
     "books": [
       "Doctrine and Covenants",
-      "Joseph Smith—History"
+      "Joseph Smith\u2014History"
     ]
   },
   {
@@ -4343,7 +4345,7 @@
     ],
     "bio": "Wife of Zacharias and mother of John the Baptist. She was a descendant of Aaron and was barren until old age, when an angel announced she would bear a son. She was a relative of Mary, the mother of Jesus, and when Mary visited her, the babe in her womb leaped for joy.",
     "era": "New Testament",
-    "timePeriod": "c. 50 BC – c. AD 10",
+    "timePeriod": "c. 50 BC \u2013 c. AD 10",
     "roles": [
       "other"
     ],
@@ -4370,7 +4372,7 @@
     ],
     "bio": "Mentioned in Joseph Smith--History 1:57 as the daughter of Isaac Hale whom Joseph married in January 1827. She is the same person as Emma Smith in D&C.",
     "era": "Restoration",
-    "timePeriod": "1804–1879",
+    "timePeriod": "1804\u20131879",
     "roles": [
       "wife"
     ],
@@ -4385,7 +4387,7 @@
     "speakerType": "other",
     "tier": 3,
     "books": [
-      "Joseph Smith—History"
+      "Joseph Smith\u2014History"
     ]
   },
   {
@@ -4394,7 +4396,7 @@
     "aliases": [],
     "bio": "Son of Jacob (son of Lehi) and author of the Book of Enos. He is known for his prolonged, wrestle-in-prayer experience while hunting, during which he received forgiveness of his sins and then prayed for the Nephites and Lamanites. He kept the records and passed them to his son Jarom.",
     "era": "Book of Mormon - Early",
-    "timePeriod": "c. 544–420 BC",
+    "timePeriod": "c. 544\u2013420 BC",
     "roles": [
       "prophet",
       "writer"
@@ -4421,7 +4423,7 @@
     "aliases": [],
     "bio": "The founder of the church at Colossae and Paul's 'dear fellowservant.' He was a faithful minister of Christ who labored fervently in prayer for the Colossians, Laodiceans, and Hieropolitans. Paul calls him a fellow prisoner in Philemon.",
     "era": "New Testament",
-    "timePeriod": "c. AD 55–62",
+    "timePeriod": "c. AD 55\u201362",
     "roles": [
       "church leader",
       "missionary"
@@ -4614,7 +4616,7 @@
     "aliases": [],
     "bio": "The Roman proconsul of Achaia before whom the Jews brought Paul in Corinth. He dismissed the case as a matter of Jewish law rather than Roman crime.",
     "era": "New Testament",
-    "timePeriod": "c. AD 51–52",
+    "timePeriod": "c. AD 51\u201352",
     "roles": [
       "official"
     ],
@@ -4635,7 +4637,7 @@
     "aliases": [],
     "bio": "Member of the Quorum of the Twelve Apostles named in D&C 124:129. Also called in D&C 136 to organize a company for the westward trek. He later served as a counselor in the First Presidency.",
     "era": "Restoration",
-    "timePeriod": "1817–1875",
+    "timePeriod": "1817\u20131875",
     "roles": [
       "apostle"
     ],
@@ -4686,7 +4688,7 @@
     "aliases": [],
     "bio": "A strong Nephite man who opposed King Noah and tried to slay him. He was a military leader who later served as a teacher and advisor in the church. He was killed by the anti-Christ Nehor. A city and valley were named after him.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 145–91 BC",
+    "timePeriod": "c. 145\u201391 BC",
     "roles": [
       "military leader",
       "teacher"
@@ -4709,7 +4711,7 @@
     "aliases": [],
     "bio": "Chief judge and military commander of the Nephites who led them to a decisive victory over the Gadianton robbers. He was described as a great prophet as well as a military leader. He gathered the Nephites together and prepared them with provisions and armor to defeat the robbers.",
     "era": "Book of Mormon - Late",
-    "timePeriod": "c. AD 17–22",
+    "timePeriod": "c. AD 17\u201322",
     "roles": [
       "military leader",
       "prophet",
@@ -4851,7 +4853,7 @@
     "aliases": [],
     "bio": "An official of Ben-hadad who murdered his master to become king of Aram-Damascus as God foretold to Elijah. He oppressed Israel throughout the reigns of Jehu and Jehoahaz, but wept when Elisha told him the evil he would do.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 842–800 BC",
+    "timePeriod": "c. 842\u2013800 BC",
     "roles": [
       "king"
     ],
@@ -4875,7 +4877,7 @@
     "aliases": [],
     "bio": "A member of the original Quorum of the Twelve Apostles and later first counselor in the First Presidency under Brigham Young. He led the first mission to England in 1837, which was remarkably successful. He was known for his strong faith and practical wisdom.",
     "era": "Restoration",
-    "timePeriod": "1801–1868",
+    "timePeriod": "1801\u20131868",
     "roles": [
       "apostle",
       "leader"
@@ -4899,7 +4901,7 @@
     ],
     "bio": "Son of Helaman (son of Alma) and chief judge of the Nephites. He named his sons Nephi and Lehi to remind them of their righteous ancestors. His record covers a period of Nephite prosperity followed by wickedness and Gadianton robber infiltration.",
     "era": "Book of Mormon - Late",
-    "timePeriod": "c. 45–39 BC",
+    "timePeriod": "c. 45\u201339 BC",
     "roles": [
       "judge",
       "prophet"
@@ -4928,7 +4930,7 @@
     "aliases": [],
     "bio": "Grandson of Herod the Great who killed the apostle James with the sword and imprisoned Peter. He was struck down by an angel and eaten by worms because he accepted the people's worship as a god.",
     "era": "New Testament",
-    "timePeriod": "c. 10 BC – AD 44",
+    "timePeriod": "c. 10 BC \u2013 AD 44",
     "roles": [
       "king"
     ],
@@ -4951,7 +4953,7 @@
     "aliases": [],
     "bio": "Son of Herod the Great, tetrarch of Galilee during Jesus' ministry. He had John the Baptist beheaded at the request of his stepdaughter Salome, prompted by Herodias. Jesus was sent to him by Pilate for questioning before the crucifixion, but Herod mocked Jesus and returned him to Pilate.",
     "era": "New Testament",
-    "timePeriod": "c. 20 BC – c. AD 39",
+    "timePeriod": "c. 20 BC \u2013 c. AD 39",
     "roles": [
       "ruler"
     ],
@@ -4978,7 +4980,7 @@
     "aliases": [],
     "bio": "King of Judea under Rome who rebuilt the Temple in Jerusalem but was known for cruelty and paranoia. He ordered the slaughter of male children in Bethlehem after learning from the wise men that a new 'king of the Jews' had been born. He died shortly after Jesus' birth.",
     "era": "New Testament",
-    "timePeriod": "c. 73–4 BC",
+    "timePeriod": "c. 73\u20134 BC",
     "roles": [
       "king"
     ],
@@ -5000,9 +5002,9 @@
     "id": "hezekiah",
     "name": "Hezekiah",
     "aliases": [],
-    "bio": "Righteous king of Judah who implemented sweeping religious reforms, removing idols and high places. When threatened by the Assyrian army of Sennacherib, he prayed and Isaiah prophesied deliverance — an angel struck down 185,000 Assyrian soldiers. When told he would die, he prayed and God extended his life by fifteen years.",
+    "bio": "Righteous king of Judah who implemented sweeping religious reforms, removing idols and high places. When threatened by the Assyrian army of Sennacherib, he prayed and Isaiah prophesied deliverance \u2014 an angel struck down 185,000 Assyrian soldiers. When told he would die, he prayed and God extended his life by fifteen years.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 715–686 BC",
+    "timePeriod": "c. 715\u2013686 BC",
     "roles": [
       "king"
     ],
@@ -5035,7 +5037,7 @@
     "aliases": [],
     "bio": "King of Tyre who was a friend and ally of both David and Solomon. He supplied cedar and cypress wood and skilled laborers for building David's palace and Solomon's temple.",
     "era": "United Monarchy",
-    "timePeriod": "c. 980–947 BC",
+    "timePeriod": "c. 980\u2013947 BC",
     "roles": [
       "king"
     ],
@@ -5058,7 +5060,7 @@
     "aliases": [],
     "bio": "A prophet in the northern kingdom of Israel during the 8th century BC. God commanded him to marry Gomer, an unfaithful woman, as a living parable of God's relationship with unfaithful Israel. His book emphasizes God's steadfast love and desire for Israel's repentance.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 750–720 BC",
+    "timePeriod": "c. 750\u2013720 BC",
     "roles": [
       "prophet"
     ],
@@ -5082,7 +5084,7 @@
     "aliases": [],
     "bio": "The last king of Israel who reigned nine years. He conspired against and killed King Pekah. He stopped paying tribute to Assyria and sought Egyptian aid, leading to Samaria's destruction.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 732–722 BC",
+    "timePeriod": "c. 732\u2013722 BC",
     "roles": [
       "king"
     ],
@@ -5207,7 +5209,7 @@
     ],
     "bio": "A brother (or close relative) of Jesus who became a leader of the church in Jerusalem after the Resurrection. He presided over the Jerusalem Council in Acts 15 and is traditionally credited with writing the Epistle of James. He was known for his piety and was martyred around AD 62.",
     "era": "New Testament",
-    "timePeriod": "c. AD 1–62",
+    "timePeriod": "c. AD 1\u201362",
     "roles": [
       "leader",
       "writer"
@@ -5258,7 +5260,7 @@
     ],
     "bio": "Son of Jehoahaz who visited Elisha on his deathbed. Elisha told him to strike the ground with arrows; he struck only three times, limiting his victories over Aram. He defeated Amaziah of Judah and broke down Jerusalem's walls.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 798–782 BC",
+    "timePeriod": "c. 798\u2013782 BC",
     "roles": [
       "king"
     ],
@@ -5282,7 +5284,7 @@
     "aliases": [],
     "bio": "High priest who hid the young prince Joash during Athaliah's reign and organized the coup that placed Joash on the throne. He guided the king in righteousness during his lifetime and was buried among the kings.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 840–800 BC",
+    "timePeriod": "c. 840\u2013800 BC",
     "roles": [
       "priest"
     ],
@@ -5313,7 +5315,7 @@
     ],
     "bio": "Son of Josiah installed as king of Judah by Pharaoh Neco. He taxed the people to pay Egypt. He cut up and burned Jeremiah's scroll of prophecies. He became Nebuchadnezzar's vassal but rebelled.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 609–598 BC",
+    "timePeriod": "c. 609\u2013598 BC",
     "roles": [
       "king"
     ],
@@ -5345,7 +5347,7 @@
     ],
     "bio": "King of Judah who married Ahab's daughter Athaliah. He killed all his brothers and walked in the ways of the kings of Israel. Elijah sent him a letter prophesying disease, and he died of a bowel illness.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 849–842 BC",
+    "timePeriod": "c. 849\u2013842 BC",
     "roles": [
       "king"
     ],
@@ -5371,7 +5373,7 @@
     "aliases": [],
     "bio": "Godly king of Judah who strengthened his kingdom and sent officials to teach the law. He unwisely allied with Ahab for battle at Ramoth-gilead. He established judges and sought the LORD.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 873–849 BC",
+    "timePeriod": "c. 873\u2013849 BC",
     "roles": [
       "king"
     ],
@@ -5399,7 +5401,7 @@
     "aliases": [],
     "bio": "Military commander anointed king of Israel by a prophet sent by Elisha. He killed King Joram, Ahaziah of Judah, and Jezebel. He exterminated the house of Ahab and the priests of Baal but continued in the sins of Jeroboam.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 842–815 BC",
+    "timePeriod": "c. 842\u2013815 BC",
     "roles": [
       "king",
       "military commander"
@@ -5427,7 +5429,7 @@
     ],
     "bio": "First king of the northern kingdom of Israel after the split from Judah. He set up golden calves at Bethel and Dan to prevent his people from traveling to Jerusalem to worship, establishing a pattern of idolatry that persisted throughout the northern kingdom's history. He is repeatedly referenced as the standard of wickedness in Kings.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 931–910 BC",
+    "timePeriod": "c. 931\u2013910 BC",
     "roles": [
       "king"
     ],
@@ -5456,7 +5458,7 @@
     "aliases": [],
     "bio": "King of Israel who reigned 41 years and restored Israel's borders from Lebo-hamath to the Sea of the Arabah. Despite his political success, he continued the sins of Jeroboam son of Nebat. Amos and Hosea prophesied during his reign.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 793–753 BC",
+    "timePeriod": "c. 793\u2013753 BC",
     "roles": [
       "king"
     ],
@@ -5483,7 +5485,7 @@
     ],
     "bio": "High priest who returned from exile with Zerubbabel. He helped rebuild the altar and lay the temple foundation. In Zechariah's vision, Satan accused him before God, and the LORD rebuked Satan and gave Jeshua clean garments.",
     "era": "Post-Exile",
-    "timePeriod": "c. 538–515 BC",
+    "timePeriod": "c. 538\u2013515 BC",
     "roles": [
       "priest"
     ],
@@ -5579,7 +5581,7 @@
     "aliases": [],
     "bio": "Phoenician princess and wife of King Ahab of Israel. She promoted Baal worship, killed many prophets of the Lord, and orchestrated the judicial murder of Naboth to seize his vineyard. Elijah prophesied her violent death, which was fulfilled when she was thrown from a window and eaten by dogs.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 874–841 BC",
+    "timePeriod": "c. 874\u2013841 BC",
     "roles": [
       "queen"
     ],
@@ -5606,7 +5608,7 @@
     "aliases": [],
     "bio": "David's nephew and commander of his army. He was a fierce and effective military leader who captured Jerusalem and won many battles. He killed Absalom against David's wishes and later supported Adonijah's claim to the throne, for which Solomon had him executed.",
     "era": "United Monarchy",
-    "timePeriod": "c. 1010–970 BC",
+    "timePeriod": "c. 1010\u2013970 BC",
     "roles": [
       "military leader"
     ],
@@ -5659,7 +5661,7 @@
     ],
     "bio": "Hidden as an infant when Athaliah murdered the royal family. At age seven, Jehoiada crowned him king. He repaired the temple but later killed Jehoiada's son Zechariah and was assassinated by his servants.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 835–796 BC",
+    "timePeriod": "c. 835\u2013796 BC",
     "roles": [
       "king"
     ],
@@ -5680,7 +5682,7 @@
     "aliases": [],
     "bio": "Third president of the Church who was present at Carthage Jail when Joseph and Hyrum Smith were killed. He was severely wounded but survived. He later served as president and declared, 'Joseph Smith, the Prophet and Seer of the Lord, has done more, save Jesus only, for the salvation of men in this world, than any other man that ever lived in it' (D&C 135).",
     "era": "Restoration",
-    "timePeriod": "1808–1887",
+    "timePeriod": "1808\u20131887",
     "roles": [
       "prophet",
       "apostle"
@@ -5702,7 +5704,7 @@
     "aliases": [],
     "bio": "Son of King Saul and devoted friend of David. Despite his father's jealousy of David, Jonathan remained fiercely loyal to David and helped protect him from Saul's attempts on his life. He was a brave warrior who died alongside his father in battle against the Philistines on Mount Gilboa.",
     "era": "United Monarchy",
-    "timePeriod": "c. 1030–1010 BC",
+    "timePeriod": "c. 1030\u20131010 BC",
     "roles": [
       "warrior",
       "prince"
@@ -5736,7 +5738,7 @@
     ],
     "bio": "Son of Ahab who reigned over Israel. He allied with Jehoshaphat against Moab and consulted Elisha. He was wounded fighting Hazael at Ramoth-gilead and killed by Jehu.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 852–841 BC",
+    "timePeriod": "c. 852\u2013841 BC",
     "roles": [
       "king"
     ],
@@ -5761,7 +5763,7 @@
     "aliases": [],
     "bio": "Father of the Prophet Joseph Smith and one of the Eight Witnesses of the Book of Mormon. He was the first Patriarch of the Church. He supported his son's prophetic calling from the earliest days and served faithfully until his death in 1840.",
     "era": "Restoration",
-    "timePeriod": "1771–1840",
+    "timePeriod": "1771\u20131840",
     "roles": [
       "patriarch",
       "witness"
@@ -5790,7 +5792,7 @@
     "aliases": [],
     "bio": "Husband of Mary and legal father of Jesus. A righteous carpenter descended from King David, he was warned in a dream by an angel not to put Mary away. He took his family to Egypt to escape Herod's slaughter of the innocents and later settled in Nazareth.",
     "era": "New Testament",
-    "timePeriod": "c. 30 BC – c. AD 18",
+    "timePeriod": "c. 30 BC \u2013 c. AD 18",
     "roles": [
       "other"
     ],
@@ -5817,7 +5819,7 @@
     "aliases": [],
     "bio": "King of Judah who became king at age eight and led the last great reformation before the Babylonian exile. During temple repairs, the book of the law was discovered, prompting his sweeping reforms. He removed idolatry, restored Passover observance, and was praised as the most righteous king since David. He was killed in battle at Megiddo.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 640–609 BC",
+    "timePeriod": "c. 640\u2013609 BC",
     "roles": [
       "king"
     ],
@@ -5925,7 +5927,7 @@
     ],
     "bio": "One of the twelve apostles, called 'Judas the brother of James' in Luke 6:16 and Acts 1:13, 'Lebbaeus whose surname was Thaddaeus' in Matthew 10:3, and 'Thaddaeus' in Mark 3:18. Distinguished from Judas Iscariot in John 14:22.",
     "era": "New Testament",
-    "timePeriod": "c. AD 30–70",
+    "timePeriod": "c. AD 30\u201370",
     "roles": [
       "apostle"
     ],
@@ -5949,7 +5951,7 @@
     ],
     "bio": "Brother of Jesus and James, and author of the Epistle of Jude. He identifies himself as 'a servant of Jesus Christ and brother of James.'",
     "era": "New Testament",
-    "timePeriod": "c. AD 30–80",
+    "timePeriod": "c. AD 30\u201380",
     "roles": [
       "author",
       "disciple"
@@ -6049,9 +6051,9 @@
     "id": "lazarus",
     "name": "Lazarus",
     "aliases": [],
-    "bio": "Brother of Martha and Mary who lived in Bethany. He fell ill and died, and Jesus raised him from the dead after four days in the tomb — one of the most notable miracles in the Gospels. His resurrection led many to believe in Jesus, and the chief priests plotted to kill him because of this.",
+    "bio": "Brother of Martha and Mary who lived in Bethany. He fell ill and died, and Jesus raised him from the dead after four days in the tomb \u2014 one of the most notable miracles in the Gospels. His resurrection led many to believe in Jesus, and the chief priests plotted to kill him because of this.",
     "era": "New Testament",
-    "timePeriod": "c. AD 1–50",
+    "timePeriod": "c. AD 1\u201350",
     "roles": [
       "other"
     ],
@@ -6116,7 +6118,7 @@
     ],
     "bio": "Son of Helaman (son of Helaman) and brother of Nephi. He was named after the original Lehi to inspire him to remember his ancestor's goodness. He served as a missionary with his brother Nephi and was imprisoned. While in prison, both brothers were surrounded by fire and the prison walls fell.",
     "era": "Book of Mormon - Late",
-    "timePeriod": "c. 39–1 BC",
+    "timePeriod": "c. 39\u20131 BC",
     "roles": [
       "missionary"
     ],
@@ -6215,7 +6217,7 @@
     ],
     "bio": "Son of King Noah and grandson of Zeniff. He became king after his father's death and ruled his people who were in bondage to the Lamanites. He was a righteous king who eventually led his people to escape Lamanite oppression and join the Nephites in Zarahemla.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 145–121 BC",
+    "timePeriod": "c. 145\u2013121 BC",
     "roles": [
       "king"
     ],
@@ -6285,7 +6287,7 @@
     "aliases": [],
     "bio": "Mother of the Prophet Joseph Smith. She wrote a detailed history of her son and the early Church. She was a woman of great faith who endured the loss of several children, including Joseph and Hyrum at Carthage. Her memoir is an important primary source for early Church history.",
     "era": "Restoration",
-    "timePeriod": "1775–1856",
+    "timePeriod": "1775\u20131856",
     "roles": [
       "other"
     ],
@@ -6311,7 +6313,7 @@
     "aliases": [],
     "bio": "A physician and companion of Paul, author of the Gospel of Luke and the Acts of the Apostles. He was a Gentile convert and the only non-Jewish author of a New Testament book. His Gospel emphasizes compassion, women, the poor, and the universal scope of salvation.",
     "era": "New Testament",
-    "timePeriod": "c. AD 1–84",
+    "timePeriod": "c. AD 1\u201384",
     "roles": [
       "writer",
       "physician"
@@ -6378,7 +6380,7 @@
     ],
     "bio": "Author of the Gospel of Mark, traditionally considered to have been based on Peter's preaching. He accompanied Paul and Barnabas on their first missionary journey but turned back, causing a rift between them. He later reconciled with Paul and was with him in Rome.",
     "era": "New Testament",
-    "timePeriod": "c. AD 5–68",
+    "timePeriod": "c. AD 5\u201368",
     "roles": [
       "writer",
       "missionary"
@@ -6407,7 +6409,7 @@
     "aliases": [],
     "bio": "Sister of Mary and Lazarus, who lived in Bethany. She was rebuked by Jesus for being 'careful and troubled about many things' while Mary sat at his feet. She expressed profound faith when Lazarus died, declaring, 'I know, that even now, whatsoever thou wilt ask of God, God will give it thee.'",
     "era": "New Testament",
-    "timePeriod": "c. AD 1–50",
+    "timePeriod": "c. AD 1\u201350",
     "roles": [
       "disciple"
     ],
@@ -6480,7 +6482,7 @@
     "aliases": [],
     "bio": "A prophet from Moresheth in Judah who was a contemporary of Isaiah. He prophesied judgment against Samaria and Jerusalem for injustice and idolatry. He foretold that the Messiah would be born in Bethlehem (Micah 5:2) and declared what God requires: 'to do justly, and to love mercy, and to walk humbly with thy God.'",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 735–700 BC",
+    "timePeriod": "c. 735\u2013700 BC",
     "roles": [
       "prophet"
     ],
@@ -6562,7 +6564,7 @@
     "aliases": [],
     "bio": "Son of Captain Moroni who took command of the Nephite armies after his father retired. He led successful military campaigns against the Lamanites and recaptured cities that had fallen.",
     "era": "Lehite (Middle)",
-    "timePeriod": "c. 60–50 BC",
+    "timePeriod": "c. 60\u201350 BC",
     "roles": [
       "military leader"
     ],
@@ -6669,7 +6671,7 @@
     "aliases": [],
     "bio": "King of Babylon who conquered Jerusalem, destroyed the temple, and carried the Jews into exile. He features prominently in the book of Daniel, where Daniel interpreted his dream of a great statue representing successive world kingdoms. He was humbled by God with a period of madness before acknowledging God's sovereignty.",
     "era": "Exile & Return",
-    "timePeriod": "c. 605–562 BC",
+    "timePeriod": "c. 605\u2013562 BC",
     "roles": [
       "king"
     ],
@@ -6746,7 +6748,7 @@
     ],
     "bio": "A prophet at the time of Christ's appearance to the Nephites. He prayed for his people and was visited by Jesus, who called him first among the twelve Nephite disciples. He baptized the people and was given power to perform great miracles.",
     "era": "Book of Mormon - Late",
-    "timePeriod": "c. AD 1–35",
+    "timePeriod": "c. AD 1\u201335",
     "roles": [
       "prophet",
       "disciple"
@@ -6773,7 +6775,7 @@
     ],
     "bio": "Son of Nephi (son of Helaman) who was given charge of the sacred records just before Christ's birth. He witnessed the signs of Christ's birth and death. He departed out of the land and was not heard of again. His son, also named Nephi, was among the twelve disciples chosen by Jesus.",
     "era": "Book of Mormon - Late",
-    "timePeriod": "c. 1 BC – AD 34",
+    "timePeriod": "c. 1 BC \u2013 AD 34",
     "roles": [
       "prophet"
     ],
@@ -6847,7 +6849,7 @@
     "aliases": [],
     "bio": "King of Israel who seized the throne after a civil war, purchased the hill of Samaria and built it as his capital city. He was Ahab's father and did more evil than all the kings before him.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 885–874 BC",
+    "timePeriod": "c. 885\u2013874 BC",
     "roles": [
       "king"
     ],
@@ -6874,7 +6876,7 @@
     "aliases": [],
     "bio": "An early apostle who, in 1841, traveled to Jerusalem and offered a dedicatory prayer on the Mount of Olives for the gathering of the Jews. He served in the Quorum of the Twelve Apostles and is addressed in several D&C sections.",
     "era": "Restoration",
-    "timePeriod": "1805–1878",
+    "timePeriod": "1805\u20131878",
     "roles": [
       "apostle"
     ],
@@ -6895,7 +6897,7 @@
     "aliases": [],
     "bio": "An early apostle, theologian, and mathematician who was baptized at age nineteen by his brother Parley P. Pratt. He served in the Quorum of the Twelve Apostles and was known for his intellectual defense of Church doctrines. He prepared the first edition of the Book of Mormon divided into verses.",
     "era": "Restoration",
-    "timePeriod": "1811–1881",
+    "timePeriod": "1811\u20131881",
     "roles": [
       "apostle",
       "theologian"
@@ -6917,9 +6919,9 @@
     "id": "pahoran",
     "name": "Pahoran",
     "aliases": [],
-    "bio": "Chief judge of the Nephites during the war chapters. He received a sharp letter from Captain Moroni accusing him of neglecting the armies. Pahoran's gracious response — explaining he had been driven from the judgment seat by king-men — is one of the Book of Mormon's notable exchanges. He joined forces with Moroni to recapture Zarahemla.",
+    "bio": "Chief judge of the Nephites during the war chapters. He received a sharp letter from Captain Moroni accusing him of neglecting the armies. Pahoran's gracious response \u2014 explaining he had been driven from the judgment seat by king-men \u2014 is one of the Book of Mormon's notable exchanges. He joined forces with Moroni to recapture Zarahemla.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 67–52 BC",
+    "timePeriod": "c. 67\u201352 BC",
     "roles": [
       "judge",
       "leader"
@@ -6944,7 +6946,7 @@
     "aliases": [],
     "bio": "An early apostle and prolific writer who authored 'A Voice of Warning' and other missionary tracts. He was among the first missionaries to the Lamanites and played a key role in converting Sidney Rigdon. He served in the Quorum of the Twelve Apostles and was martyred in Arkansas in 1857.",
     "era": "Restoration",
-    "timePeriod": "1807–1857",
+    "timePeriod": "1807\u20131857",
     "roles": [
       "apostle",
       "missionary",
@@ -7009,7 +7011,7 @@
     ],
     "bio": "Pharaoh of Egypt who marched through Judah to help Assyria against Babylon. King Josiah opposed him at Megiddo and was killed. Neco deposed Josiah's son Jehoahaz and installed Jehoiakim as a vassal.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 610–595 BC",
+    "timePeriod": "c. 610\u2013595 BC",
     "roles": [
       "king"
     ],
@@ -7055,7 +7057,7 @@
     ],
     "bio": "One of the original twelve apostles, from Bethsaida in Galilee. He brought Nathanael to Jesus. At the feeding of the five thousand, Jesus tested Philip by asking how they could feed the crowd. He also brought certain Greeks to meet Jesus.",
     "era": "New Testament",
-    "timePeriod": "c. AD 5–80",
+    "timePeriod": "c. AD 5\u201380",
     "roles": [
       "apostle"
     ],
@@ -7104,7 +7106,7 @@
     "aliases": [],
     "bio": "Roman governor of Judea who presided over the trial of Jesus. Despite declaring he found no fault in Jesus, he yielded to the crowd's demands and sentenced him to crucifixion. He symbolically washed his hands to declare his innocence of Jesus' blood.",
     "era": "New Testament",
-    "timePeriod": "c. AD 26–36 (tenure as governor)",
+    "timePeriod": "c. AD 26\u201336 (tenure as governor)",
     "roles": [
       "ruler"
     ],
@@ -7129,7 +7131,7 @@
     "aliases": [],
     "bio": "Captain of Pharaoh's guard who purchased Joseph as a slave from the Ishmaelites. He prospered because of Joseph but imprisoned him after his wife falsely accused Joseph of assault.",
     "era": "Patriarchal",
-    "timePeriod": "c. 1900–1850 BC",
+    "timePeriod": "c. 1900\u20131850 BC",
     "roles": [
       "official"
     ],
@@ -7241,9 +7243,9 @@
     "id": "rehoboam",
     "name": "Rehoboam",
     "aliases": [],
-    "bio": "Son of Solomon who became king of Judah. His arrogant response to the people's plea for lighter burdens — threatening to increase them — caused ten tribes to break away under Jeroboam, splitting the united kingdom into Israel (north) and Judah (south).",
+    "bio": "Son of Solomon who became king of Judah. His arrogant response to the people's plea for lighter burdens \u2014 threatening to increase them \u2014 caused ten tribes to break away under Jeroboam, splitting the united kingdom into Israel (north) and Judah (south).",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 931–913 BC",
+    "timePeriod": "c. 931\u2013913 BC",
     "roles": [
       "king"
     ],
@@ -7339,7 +7341,7 @@
     "tier": 3,
     "books": [
       "Doctrine and Covenants",
-      "Joseph Smith—History"
+      "Joseph Smith\u2014History"
     ]
   },
   {
@@ -7371,7 +7373,7 @@
     "aliases": [],
     "bio": "Wife of Ananias who conspired with him to lie about the sale price of their property while claiming to give the full amount to the apostles. She fell dead after Peter confronted her deception.",
     "era": "New Testament",
-    "timePeriod": "c. AD 30–35",
+    "timePeriod": "c. AD 30\u201335",
     "roles": [
       "other"
     ],
@@ -7560,7 +7562,7 @@
     "aliases": [],
     "bio": "One of the first seven deacons chosen by the apostles to serve the early church. He was full of the Holy Ghost and performed great wonders. He delivered a powerful speech recounting Israel's history before the Sanhedrin and became the first Christian martyr when he was stoned to death. Saul (Paul) was present at his stoning.",
     "era": "New Testament",
-    "timePeriod": "c. AD 5–34",
+    "timePeriod": "c. AD 5\u201334",
     "roles": [
       "deacon",
       "martyr"
@@ -7582,7 +7584,7 @@
     "aliases": [],
     "bio": "A brave Nephite military commander during the wars with the Lamanites. He personally killed Amalickiah by sneaking into his tent and putting a javelin through his heart. He later attempted the same tactic against Ammoron but was discovered and killed, though he succeeded in killing Ammoron as well.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 67–60 BC",
+    "timePeriod": "c. 67\u201360 BC",
     "roles": [
       "military leader"
     ],
@@ -7604,7 +7606,7 @@
     "aliases": [],
     "bio": "The addressee of both the Gospel of Luke and the book of Acts. Luke wrote his orderly accounts so that Theophilus might know the certainty of the things he had been taught.",
     "era": "New Testament",
-    "timePeriod": "c. AD 60–80",
+    "timePeriod": "c. AD 60\u201380",
     "roles": [
       "other"
     ],
@@ -7629,7 +7631,7 @@
     ],
     "bio": "One of the original twelve apostles, known for doubting Jesus' resurrection until he could see and touch the wounds. When he saw the risen Lord, he exclaimed, 'My Lord and my God!' He also showed courage when he said, 'Let us also go, that we may die with him,' when Jesus planned to return to Judea.",
     "era": "New Testament",
-    "timePeriod": "c. AD 1–72",
+    "timePeriod": "c. AD 1\u201372",
     "roles": [
       "apostle"
     ],
@@ -7654,7 +7656,7 @@
     "aliases": [],
     "bio": "A young convert from Lystra who became Paul's most trusted companion and protege. His mother Eunice was a Jewish believer and his grandmother Lois was also faithful. Paul wrote two epistles to him, advising him on church leadership and encouraging him to 'be thou an example of the believers.'",
     "era": "New Testament",
-    "timePeriod": "c. AD 17–97",
+    "timePeriod": "c. AD 17\u201397",
     "roles": [
       "missionary",
       "leader"
@@ -7746,7 +7748,7 @@
     ],
     "bio": "King of Judah who reigned 52 years and was greatly blessed while he sought the LORD. He built towers, strengthened the army, and developed agriculture. He was struck with leprosy for burning incense in the temple.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 792–740 BC",
+    "timePeriod": "c. 792\u2013740 BC",
     "roles": [
       "king"
     ],
@@ -7799,7 +7801,7 @@
     "aliases": [],
     "bio": "Fourth president of the Church who issued the 1890 Manifesto ending the practice of plural marriage. He was a prolific journal keeper whose diaries are invaluable historical records. He served as an apostle for decades before becoming Church president. Official Declaration 1 in the D&C bears his name.",
     "era": "Restoration",
-    "timePeriod": "1807–1898",
+    "timePeriod": "1807\u20131898",
     "roles": [
       "prophet",
       "apostle"
@@ -7821,7 +7823,7 @@
     "aliases": [],
     "bio": "Called in D&C 124 as counselor to Joseph Smith in the First Presidency. He was given keys to ask and receive blessings. He later became an antagonist of Joseph Smith and published the Nauvoo Expositor.",
     "era": "Restoration",
-    "timePeriod": "1809–1892",
+    "timePeriod": "1809\u20131892",
     "roles": [
       "first presidency counselor"
     ],
@@ -7842,7 +7844,7 @@
     "aliases": [],
     "bio": "Younger brother of Joseph Smith and member of the Quorum of the Twelve Apostles. Named in D&C 124:129 among the Twelve.",
     "era": "Restoration",
-    "timePeriod": "1811–1893",
+    "timePeriod": "1811\u20131893",
     "roles": [
       "apostle"
     ],
@@ -7889,7 +7891,7 @@
     ],
     "bio": "A priest of the course of Abijah and father of John the Baptist. While burning incense in the temple, the angel Gabriel appeared and announced that his wife Elisabeth would bear a son. Because he doubted, he was struck mute until the child's naming, when he prophesied and his speech returned.",
     "era": "New Testament",
-    "timePeriod": "c. 50 BC – c. AD 10",
+    "timePeriod": "c. 50 BC \u2013 c. AD 10",
     "roles": [
       "priest"
     ],
@@ -7971,7 +7973,7 @@
     ],
     "bio": "Last king of Judah, placed on the throne by Nebuchadnezzar. Despite Jeremiah's warnings, he rebelled against Babylon. He is mentioned in 1 Nephi as the reigning king when Lehi left Jerusalem. Jerusalem fell during his reign; he saw his sons killed and was blinded before being taken captive to Babylon.",
     "era": "Exile & Return",
-    "timePeriod": "c. 597–586 BC",
+    "timePeriod": "c. 597\u2013586 BC",
     "roles": [
       "king"
     ],
@@ -8002,7 +8004,7 @@
     "aliases": [],
     "bio": "A skilled lawyer in Ammonihah who initially tried to trap Alma and Amulek with cunning questions and bribery. He was confounded by Amulek and struck with a burning fever from guilt. He repented, was healed by Alma, and became a dedicated missionary and defender of the faith.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 82–74 BC",
+    "timePeriod": "c. 82\u201374 BC",
     "roles": [
       "lawyer",
       "missionary"
@@ -8025,7 +8027,7 @@
     "aliases": [],
     "bio": "A Nephite who led a group back to the land of Nephi to reclaim it. He made a treaty with the Lamanite king but was eventually attacked. Though zealous, his overeagerness led his people into a vulnerable situation. He was the father of King Noah and grandfather of Limhi.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 200–160 BC",
+    "timePeriod": "c. 200\u2013160 BC",
     "roles": [
       "leader",
       "writer"
@@ -8161,7 +8163,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint called in D&C 124:132 to replace Seymour Brunson on the Nauvoo high council.",
     "era": "Restoration",
-    "timePeriod": "1806–1877",
+    "timePeriod": "1806\u20131877",
     "roles": [
       "high councilor"
     ],
@@ -8240,7 +8242,7 @@
     ],
     "bio": "Son of Rehoboam who reigned as king of Judah for three years. He warred with Jeroboam of Israel and, trusting God, won a great victory despite being outnumbered two to one.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 913–911 BC",
+    "timePeriod": "c. 913\u2013911 BC",
     "roles": [
       "king"
     ],
@@ -8427,7 +8429,7 @@
     "aliases": [],
     "bio": "Fourth son of David who attempted to seize the throne as David lay dying. His claim was thwarted by Nathan, Bathsheba, and Zadok, who secured Solomon's coronation. He was later executed by Solomon after requesting David's concubine Abishag as a wife.",
     "era": "United Monarchy",
-    "timePeriod": "c. 1000–970 BC",
+    "timePeriod": "c. 1000\u2013970 BC",
     "roles": [
       "prince"
     ],
@@ -8544,7 +8546,7 @@
     "aliases": [],
     "bio": "Son of Shaphan who protected Jeremiah from being put to death after his temple sermon. His son Gedaliah became governor after the fall of Jerusalem.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 622–586 BC",
+    "timePeriod": "c. 622\u2013586 BC",
     "roles": [
       "official"
     ],
@@ -8640,7 +8642,7 @@
     "aliases": [],
     "bio": "A coppersmith who did Paul 'much evil' according to 2 Timothy 4:14. Possibly the same Alexander delivered to Satan alongside Hymenaeus in 1 Timothy 1:20.",
     "era": "New Testament",
-    "timePeriod": "c. AD 62–65",
+    "timePeriod": "c. AD 62\u201365",
     "roles": [
       "opponent"
     ],
@@ -8665,7 +8667,7 @@
     ],
     "bio": "Early Latter-day Saint mentioned in D&C 124 with whom the Lord was not well pleased, as he aspired to establish his own counsel instead of the ordained counsel of the Presidency.",
     "era": "Restoration",
-    "timePeriod": "1812–1856",
+    "timePeriod": "1812\u20131856",
     "roles": [
       "church member"
     ],
@@ -8686,7 +8688,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint named in D&C 124:132 as a member of the Nauvoo high council. He later organized his own splinter group.",
     "era": "Restoration",
-    "timePeriod": "1784–1864",
+    "timePeriod": "1784\u20131864",
     "roles": [
       "high councilor"
     ],
@@ -8707,7 +8709,7 @@
     "aliases": [],
     "bio": "Son of Abinadom and the final writer on the small plates of Nephi. He recorded the reign of King Benjamin and encouraged all people to come unto Christ. He had no seed and entrusted the plates to King Benjamin.",
     "era": "Book of Mormon - Early",
-    "timePeriod": "c. 279–130 BC",
+    "timePeriod": "c. 279\u2013130 BC",
     "roles": [
       "writer"
     ],
@@ -8780,7 +8782,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint called in D&C 124:136 as a counselor to the president of the high priests quorum, and in D&C 136 to organize a company for the westward trek. He later served as an apostle.",
     "era": "Restoration",
-    "timePeriod": "1813–1877",
+    "timePeriod": "1813\u20131877",
     "roles": [
       "apostle",
       "counselor"
@@ -8909,7 +8911,7 @@
     "aliases": [],
     "bio": "Brother of Amos, a Nephite record keeper who hid the sacred records in the hill Shim. He instructed the young Mormon, at age ten, to take the records when he was old enough and continue the record of his people.",
     "era": "Book of Mormon - Late",
-    "timePeriod": "c. AD 306–321",
+    "timePeriod": "c. AD 306\u2013321",
     "roles": [
       "record keeper"
     ],
@@ -9019,7 +9021,7 @@
     "aliases": [],
     "bio": "Son of Amos who kept the sacred records after his father. He maintained the records until about AD 305 when he delivered them to his brother Ammaron.",
     "era": "Lehite (Late)",
-    "timePeriod": "c. AD 194–305",
+    "timePeriod": "c. AD 194\u2013305",
     "roles": [
       "record keeper"
     ],
@@ -9087,7 +9089,7 @@
     "aliases": [],
     "bio": "Son of Kohath and grandson of Levi. He married Jochebed, and they were the parents of Moses, Aaron, and Miriam.",
     "era": "Exodus",
-    "timePeriod": "c. 1550–1400 BC",
+    "timePeriod": "c. 1550\u20131400 BC",
     "roles": [
       "patriarch"
     ],
@@ -9116,7 +9118,7 @@
     "aliases": [],
     "bio": "Leader of the wicked priests of King Noah who fled into the wilderness after Noah's death. He and the other priests kidnapped Lamanite daughters as wives. He later became a teacher over Alma's people in bondage and persecuted them for praying.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 145–121 BC",
+    "timePeriod": "c. 145\u2013121 BC",
     "roles": [
       "priest",
       "leader"
@@ -9160,7 +9162,7 @@
     "aliases": [],
     "bio": "An elderly prophetess of the tribe of Asher who spent her days fasting and praying in the temple. She was present when the infant Jesus was brought to the temple and spoke of him to all who looked for the redemption of Jerusalem.",
     "era": "New Testament",
-    "timePeriod": "c. 1st century BC – 1st century AD",
+    "timePeriod": "c. 1st century BC \u2013 1st century AD",
     "roles": [
       "prophetess"
     ],
@@ -9383,7 +9385,7 @@
     "aliases": [],
     "bio": "Son of Herod the Great who reigned over Judaea after his father's death. Joseph was afraid to return there and instead went to Galilee.",
     "era": "New Testament",
-    "timePeriod": "c. 23 BC – AD 18",
+    "timePeriod": "c. 23 BC \u2013 AD 18",
     "roles": [
       "ruler"
     ],
@@ -9430,7 +9432,7 @@
     ],
     "bio": "The Nabataean king whose governor in Damascus guarded the city in an attempt to seize Paul, who escaped by being lowered in a basket through a window in the wall.",
     "era": "New Testament",
-    "timePeriod": "c. 9 BC – AD 40",
+    "timePeriod": "c. 9 BC \u2013 AD 40",
     "roles": [
       "king"
     ],
@@ -9472,7 +9474,7 @@
     "aliases": [],
     "bio": "A companion of Paul whom he planned to send to Titus in Crete as a replacement so Titus could join Paul in Nicopolis.",
     "era": "New Testament",
-    "timePeriod": "c. AD 63–65",
+    "timePeriod": "c. AD 63\u201365",
     "roles": [
       "missionary"
     ],
@@ -9710,7 +9712,7 @@
     "aliases": [],
     "bio": "Son of Nahor and Milcah, and father of Rebekah and Laban. He consented to Rebekah's marriage to Isaac when Abraham's servant came seeking a wife for his master's son.",
     "era": "Patriarchal",
-    "timePeriod": "c. 2050–1950 BC",
+    "timePeriod": "c. 2050\u20131950 BC",
     "roles": [
       "patriarch"
     ],
@@ -9894,7 +9896,7 @@
     "aliases": [],
     "bio": "Sister of Joseph Smith, named in Joseph Smith--History 1:4 as one of the eleven children in the Smith family.",
     "era": "Restoration",
-    "timePeriod": "1812–1900",
+    "timePeriod": "1812\u20131900",
     "roles": [
       "family member"
     ],
@@ -9940,7 +9942,7 @@
     ],
     "bio": "Professor of classical studies at Columbia College in New York City. Martin Harris brought him the transcript of Book of Mormon characters, and he certified the translation was correct but later recanted when he learned the source (Joseph Smith--History 1:64-65).",
     "era": "Restoration",
-    "timePeriod": "1787–1867",
+    "timePeriod": "1787\u20131867",
     "roles": [
       "scholar"
     ],
@@ -9952,7 +9954,7 @@
     "speakerType": "other",
     "tier": 4,
     "books": [
-      "Joseph Smith—History"
+      "Joseph Smith\u2014History"
     ]
   },
   {
@@ -9961,7 +9963,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint named in D&C 124:132 as a member of the Nauvoo high council. He later became an apostle.",
     "era": "Restoration",
-    "timePeriod": "1809–1883",
+    "timePeriod": "1809\u20131883",
     "roles": [
       "high councilor",
       "apostle"
@@ -10097,7 +10099,7 @@
     ],
     "bio": "The Roman emperor who commanded all Jews to depart from Rome, which brought Aquila and Priscilla to Corinth. The prophet Agabus foretold a great famine that came in his days.",
     "era": "New Testament",
-    "timePeriod": "10 BC – AD 54",
+    "timePeriod": "10 BC \u2013 AD 54",
     "roles": [
       "emperor"
     ],
@@ -10393,7 +10395,7 @@
     ],
     "bio": "The Roman governor of Syria when the first census was taken that brought Joseph and Mary to Bethlehem.",
     "era": "New Testament",
-    "timePeriod": "c. 51 BC – AD 21",
+    "timePeriod": "c. 51 BC \u2013 AD 21",
     "roles": [
       "governor"
     ],
@@ -10581,7 +10583,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint named in D&C 124:132 as a member of the Nauvoo high council.",
     "era": "Restoration",
-    "timePeriod": "1803–1879",
+    "timePeriod": "1803\u20131879",
     "roles": [
       "high councilor"
     ],
@@ -10602,7 +10604,7 @@
     "aliases": [],
     "bio": "A man commended by the apostle John in 3 John 12 as having 'good report of all men, and of the truth itself,' in contrast to the problematic Diotrephes.",
     "era": "New Testament",
-    "timePeriod": "c. AD 85–95",
+    "timePeriod": "c. AD 85\u201395",
     "roles": [
       "believer"
     ],
@@ -10698,7 +10700,7 @@
     ],
     "bio": "Younger brother of Joseph Smith, named in Joseph Smith--History 1:4. He later served as a church leader and editor of the Times and Seasons before dying in 1841.",
     "era": "Restoration",
-    "timePeriod": "1816–1841",
+    "timePeriod": "1816\u20131841",
     "roles": [
       "family member",
       "editor"
@@ -10715,7 +10717,7 @@
     "speakerType": "other",
     "tier": 4,
     "books": [
-      "Joseph Smith—History"
+      "Joseph Smith\u2014History"
     ]
   },
   {
@@ -10747,7 +10749,7 @@
     "aliases": [],
     "bio": "The Jewish wife of Governor Felix. She was present when Felix sent for Paul and heard him speak about faith in Christ, righteousness, temperance, and judgment to come.",
     "era": "New Testament",
-    "timePeriod": "c. AD 38–79",
+    "timePeriod": "c. AD 38\u201379",
     "roles": [
       "royalty"
     ],
@@ -10856,7 +10858,7 @@
     "aliases": [],
     "bio": "Son of Baasha who reigned as king of Israel for two years. He was assassinated by his chariot commander Zimri while drinking himself drunk at the house of Arza in Tirzah.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 886–885 BC",
+    "timePeriod": "c. 886\u2013885 BC",
     "roles": [
       "king"
     ],
@@ -11018,7 +11020,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint and brother of Martin Harris. Called in D&C 75 to be united in the ministry with Simeon Carter.",
     "era": "Restoration",
-    "timePeriod": "1781–1869",
+    "timePeriod": "1781\u20131869",
     "roles": [
       "missionary"
     ],
@@ -11210,7 +11212,7 @@
     "aliases": [],
     "bio": "Called 'the chamberlain of the city' (treasurer of Corinth) in Romans 16:23. Paul sent him to Macedonia with Timothy and later mentions he 'abode at Corinth' in 2 Timothy 4:20.",
     "era": "New Testament",
-    "timePeriod": "c. AD 50–65",
+    "timePeriod": "c. AD 50\u201365",
     "roles": [
       "official",
       "believer"
@@ -11234,7 +11236,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint apostle called in D&C 136:12 to organize a company for the westward trek alongside Ezra T. Benson.",
     "era": "Restoration",
-    "timePeriod": "1818–1888",
+    "timePeriod": "1818\u20131888",
     "roles": [
       "apostle"
     ],
@@ -11323,7 +11325,7 @@
     "aliases": [],
     "bio": "Timothy's mother, a Jewish believer praised by Paul for her 'unfeigned faith.' She and her mother Lois nurtured Timothy in the faith from childhood.",
     "era": "New Testament",
-    "timePeriod": "c. AD 30–60",
+    "timePeriod": "c. AD 30\u201360",
     "roles": [
       "believer"
     ],
@@ -11391,7 +11393,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint and former Methodist minister called in D&C 52 to journey with Isaac Morley. He later apostatized and published critical letters about the church.",
     "era": "Restoration",
-    "timePeriod": "c. 1790s–1870s",
+    "timePeriod": "c. 1790s\u20131870s",
     "roles": [
       "missionary"
     ],
@@ -11412,7 +11414,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint apostle called in D&C 136:12 to organize a company for the westward trek alongside Erastus Snow. Grandfather of President Ezra Taft Benson.",
     "era": "Restoration",
-    "timePeriod": "1811–1869",
+    "timePeriod": "1811\u20131869",
     "roles": [
       "apostle"
     ],
@@ -11433,7 +11435,7 @@
     "aliases": [],
     "bio": "An early Church member who received a personal revelation (D&C 33) calling him to preach the gospel. He was called on a mission but struggled with obedience. He is one of many early members specifically addressed by name in the Doctrine and Covenants.",
     "era": "Restoration",
-    "timePeriod": "1793–1882",
+    "timePeriod": "1793\u20131882",
     "roles": [
       "missionary"
     ],
@@ -11475,7 +11477,7 @@
     "aliases": [],
     "bio": "A counselor to Joseph Smith in the First Presidency and one of the early leaders of the Church. He served as a scribe and physician. He is mentioned in several D&C sections and helped compile the 1835 edition of the Doctrine and Covenants.",
     "era": "Restoration",
-    "timePeriod": "1787–1842",
+    "timePeriod": "1787\u20131842",
     "roles": [
       "leader",
       "scribe"
@@ -11531,7 +11533,7 @@
     "aliases": [],
     "bio": "David's seer who twice brought him messages from the LORD. He told David to leave Moab and return to Judah. After David's census, Gad offered him a choice of three punishments.",
     "era": "United Monarchy",
-    "timePeriod": "c. 1010–970 BC",
+    "timePeriod": "c. 1010\u2013970 BC",
     "roles": [
       "prophet",
       "seer"
@@ -11555,7 +11557,7 @@
     "aliases": [],
     "bio": "A companion of Paul from Macedonia who was seized during the Ephesian riot. Paul also calls a Gaius his host in Corinth (Romans 16:23), and personally baptized a Gaius (1 Corinthians 1:14). Gaius of Derbe is listed in Acts 20:4. The name may refer to multiple individuals.",
     "era": "New Testament",
-    "timePeriod": "c. AD 50–60",
+    "timePeriod": "c. AD 50\u201360",
     "roles": [
       "believer",
       "missionary companion"
@@ -11580,7 +11582,7 @@
     "aliases": [],
     "bio": "The addressee of 3 John, whom the apostle John praises for walking in truth and showing hospitality to traveling missionaries even though they were strangers.",
     "era": "New Testament",
-    "timePeriod": "c. AD 85–95",
+    "timePeriod": "c. AD 85\u201395",
     "roles": [
       "church leader"
     ],
@@ -11601,7 +11603,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint described in D&C 124 as being without guile and trusted for his integrity. He was sealed to the office of bishopric and appointed to help build the Nauvoo House.",
     "era": "Restoration",
-    "timePeriod": "1794–1856",
+    "timePeriod": "1794\u20131856",
     "roles": [
       "bishop"
     ],
@@ -11712,7 +11714,7 @@
     "aliases": [],
     "bio": "Leader of the Gadianton robbers who wrote a threatening letter to Lachoneus, the Nephite governor, demanding surrender. The letter is notable for its flattery and audacity. He led the robber armies against the gathered Nephites and was killed in battle.",
     "era": "Book of Mormon - Late",
-    "timePeriod": "c. AD 16–21",
+    "timePeriod": "c. AD 16\u201321",
     "roles": [
       "leader"
     ],
@@ -12242,7 +12244,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint called in D&C 124 to pay stock into the Nauvoo House and named to the Nauvoo high council.",
     "era": "Restoration",
-    "timePeriod": "1785–1862",
+    "timePeriod": "1785\u20131862",
     "roles": [
       "high councilor"
     ],
@@ -12347,7 +12349,7 @@
     "aliases": [],
     "bio": "Wife of Herod Antipas and granddaughter of Herod the Great. She left her first husband Philip to marry Antipas, which John the Baptist condemned. She orchestrated John's beheading by having her daughter Salome request his head as a reward for her dance.",
     "era": "New Testament",
-    "timePeriod": "c. 15 BC – c. AD 39",
+    "timePeriod": "c. 15 BC \u2013 c. AD 39",
     "roles": [
       "queen"
     ],
@@ -12417,7 +12419,7 @@
     "aliases": [],
     "bio": "Son of King Mosiah and one of the four missionary sons who preached to the Lamanites. Like his brothers, he had rebelled against the church before being converted by an angelic visitation. He joined the fourteen-year mission to the Lamanites.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 100–77 BC",
+    "timePeriod": "c. 100\u201377 BC",
     "roles": [
       "missionary",
       "prince"
@@ -12471,7 +12473,7 @@
     "aliases": [],
     "bio": "One of the Eight Witnesses of the Book of Mormon. He claimed to receive revelations through a seer stone, but was corrected in D&C 28 that only Joseph Smith was appointed to receive revelations for the church.",
     "era": "Restoration",
-    "timePeriod": "1800–1852",
+    "timePeriod": "1800\u20131852",
     "roles": [
       "witness",
       "church member"
@@ -12592,7 +12594,7 @@
     "aliases": [],
     "bio": "A false teacher whom Paul 'delivered unto Satan' for blasphemy in 1 Timothy 1:20. He taught that the resurrection had already occurred, overthrowing the faith of some.",
     "era": "New Testament",
-    "timePeriod": "c. AD 62–65",
+    "timePeriod": "c. AD 62\u201365",
     "roles": [
       "false teacher"
     ],
@@ -12659,7 +12661,7 @@
     "aliases": [],
     "bio": "Called in D&C 124 to put stock into the Nauvoo House. The Lord said he loved him for his work and would forgive his sins. He was appointed and ordained to go with Hyrum Smith.",
     "era": "Restoration",
-    "timePeriod": "1791–1858",
+    "timePeriod": "1791\u20131858",
     "roles": [
       "land agent",
       "church member"
@@ -12681,7 +12683,7 @@
     "aliases": [],
     "bio": "Father of Emma Smith, residing in Harmony, Susquehanna County, Pennsylvania. Joseph Smith boarded at his house while employed by Josiah Stoal (Joseph Smith--History 1:56-57).",
     "era": "Restoration",
-    "timePeriod": "1763–1839",
+    "timePeriod": "1763\u20131839",
     "roles": [
       "father-in-law"
     ],
@@ -12695,7 +12697,7 @@
     "speakerType": "other",
     "tier": 4,
     "books": [
-      "Joseph Smith—History"
+      "Joseph Smith\u2014History"
     ]
   },
   {
@@ -12704,7 +12706,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint who had attempted a communal living arrangement before joining the church. Called in D&C 52 to journey to Missouri. He served as a counselor in a stake presidency.",
     "era": "Restoration",
-    "timePeriod": "1786–1865",
+    "timePeriod": "1786\u20131865",
     "roles": [
       "church leader"
     ],
@@ -13034,7 +13036,7 @@
     "aliases": [],
     "bio": "An early Church member who received a revelation (D&C 79) calling him to preach the gospel. He served several missions and was known for his effective proselytizing.",
     "era": "Restoration",
-    "timePeriod": "1801–1849",
+    "timePeriod": "1801\u20131849",
     "roles": [
       "missionary"
     ],
@@ -13055,7 +13057,7 @@
     "aliases": [],
     "bio": "Son of Enos and author of the Book of Jarom. He briefly recorded that the Nephites prospered by keeping the law of Moses and looking forward to the Messiah. He passed the records to his son Omni.",
     "era": "Book of Mormon - Early",
-    "timePeriod": "c. 420–361 BC",
+    "timePeriod": "c. 420\u2013361 BC",
     "roles": [
       "writer"
     ],
@@ -13102,7 +13104,7 @@
     "aliases": [],
     "bio": "Son of Jehu who reigned 17 years over Israel. He did evil, and God gave Israel into the hand of Hazael and Ben-hadad of Aram. He sought the LORD's favor and was granted a deliverer.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 814–798 BC",
+    "timePeriod": "c. 814\u2013798 BC",
     "roles": [
       "king"
     ],
@@ -13201,7 +13203,7 @@
     "id": "jephthah",
     "name": "Jephthah",
     "aliases": [],
-    "bio": "A judge of Israel, the son of Gilead by a prostitute, who was initially rejected by his half-brothers. He was called back to lead Israel against the Ammonites. He made a rash vow to sacrifice whatever came out of his house first if victorious — tragically, his daughter came out to greet him.",
+    "bio": "A judge of Israel, the son of Gilead by a prostitute, who was initially rejected by his half-brothers. He was called back to lead Israel against the Ammonites. He made a rash vow to sacrifice whatever came out of his house first if victorious \u2014 tragically, his daughter came out to greet him.",
     "era": "Judges",
     "timePeriod": "c. 1100 BC",
     "roles": [
@@ -13291,9 +13293,9 @@
     "id": "joel",
     "name": "Joel",
     "aliases": [],
-    "bio": "A prophet of Judah who used a devastating locust plague as a metaphor for the coming day of the Lord. He prophesied that God would pour out his Spirit on all flesh — a prophecy Peter cited as fulfilled at Pentecost.",
+    "bio": "A prophet of Judah who used a devastating locust plague as a metaphor for the coming day of the Lord. He prophesied that God would pour out his Spirit on all flesh \u2014 a prophecy Peter cited as fulfilled at Pentecost.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 835–800 BC (uncertain)",
+    "timePeriod": "c. 835\u2013800 BC (uncertain)",
     "roles": [
       "prophet"
     ],
@@ -13370,7 +13372,7 @@
     "aliases": [],
     "bio": "Assistant president of the Church and first mayor of Nauvoo who was excommunicated for immoral conduct in 1842. He subsequently became a vocal critic of the Church. He is referenced in D&C 124.",
     "era": "Restoration",
-    "timePeriod": "1804–1867",
+    "timePeriod": "1804\u20131867",
     "roles": [
       "leader"
     ],
@@ -13391,7 +13393,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint called in D&C 50 to labor in the vineyard. He later served as a church historian in Missouri but eventually left the church.",
     "era": "Restoration",
-    "timePeriod": "1794–1842",
+    "timePeriod": "1794\u20131842",
     "roles": [
       "church historian"
     ],
@@ -13412,7 +13414,7 @@
     "aliases": [],
     "bio": "Member of the Quorum of the Twelve Apostles named in D&C 124:129. He later left the church and did not follow the main body westward.",
     "era": "Restoration",
-    "timePeriod": "1799–1867",
+    "timePeriod": "1799\u20131867",
     "roles": [
       "apostle"
     ],
@@ -13433,7 +13435,7 @@
     "aliases": [],
     "bio": "An early convert whose wife died giving birth to twins. The twins were adopted by Joseph and Emma Smith (who had recently lost twins of their own). He received a revelation in D&C 99 calling him to preach.",
     "era": "Restoration",
-    "timePeriod": "1792–1871",
+    "timePeriod": "1792\u20131871",
     "roles": [
       "missionary"
     ],
@@ -13475,7 +13477,7 @@
     "aliases": [],
     "bio": "One of the Eight Witnesses of the Book of Mormon and brother of David Whitmer. He served as the Church's first historian, as commanded in D&C 47. He was excommunicated in 1838 but never denied his testimony of the Book of Mormon.",
     "era": "Restoration",
-    "timePeriod": "1802–1878",
+    "timePeriod": "1802\u20131878",
     "roles": [
       "historian",
       "witness"
@@ -13557,7 +13559,7 @@
     ],
     "bio": "Nominated alongside Matthias to replace Judas Iscariot as an apostle but not chosen when the lot fell to Matthias. Also surnamed Justus.",
     "era": "New Testament",
-    "timePeriod": "c. AD 30–60",
+    "timePeriod": "c. AD 30\u201360",
     "roles": [
       "disciple"
     ],
@@ -13580,7 +13582,7 @@
     ],
     "bio": "Early supporter of Joseph Smith who employed him before the translation of the Book of Mormon. Addressed in D&C 23, he was commanded to take up his cross and pray vocally.",
     "era": "Restoration",
-    "timePeriod": "1772–1847",
+    "timePeriod": "1772\u20131847",
     "roles": [
       "patron",
       "church member"
@@ -13625,7 +13627,7 @@
     "aliases": [],
     "bio": "Elder brother of Brigham Young, called in D&C 124:138 to preside over the quorum of seventies. He served as senior president of the First Quorum of the Seventy.",
     "era": "Restoration",
-    "timePeriod": "1797–1881",
+    "timePeriod": "1797\u20131881",
     "roles": [
       "seventy president"
     ],
@@ -13672,7 +13674,7 @@
     "aliases": [],
     "bio": "Named as one of Jesus' brothers in Matthew 13:55 and Mark 6:3, alongside James, Simon, and Judas.",
     "era": "New Testament",
-    "timePeriod": "c. AD 1–60",
+    "timePeriod": "c. AD 1\u201360",
     "roles": [
       "other"
     ],
@@ -13719,7 +13721,7 @@
     ],
     "bio": "A man in Chenango County who hired young Joseph Smith in 1825 to dig for a silver mine. He was among the earliest believers in Joseph's prophetic calling (Joseph Smith--History 1:56).",
     "era": "Restoration",
-    "timePeriod": "1770–1844",
+    "timePeriod": "1770\u20131844",
     "roles": [
       "employer",
       "supporter"
@@ -13732,7 +13734,7 @@
     "speakerType": "other",
     "tier": 4,
     "books": [
-      "Joseph Smith—History"
+      "Joseph Smith\u2014History"
     ]
   },
   {
@@ -13741,7 +13743,7 @@
     "aliases": [],
     "bio": "King of Judah who did what was right in the eyes of the LORD but did not enter the temple. He built the Upper Gate of the temple and fortified cities. He became mighty because he ordered his ways before the LORD.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 750–735 BC",
+    "timePeriod": "c. 750\u2013735 BC",
     "roles": [
       "king"
     ],
@@ -14083,7 +14085,7 @@
     "aliases": [],
     "bio": "Chief judge and governor of the Nephites who received the threatening epistle from Giddianhi. He wisely gathered the entire Nephite nation into one defensible area with provisions, rather than marching out to fight the Gadianton robbers. This strategy led to the robbers' defeat.",
     "era": "Book of Mormon - Late",
-    "timePeriod": "c. AD 16–30",
+    "timePeriod": "c. AD 16\u201330",
     "roles": [
       "judge",
       "leader"
@@ -14175,7 +14177,7 @@
     ],
     "bio": "A Nephite military commander who served under Captain Moroni during the wars with the Lamanites. He was given command of the city of Mulek and helped in several key battles. He should not be confused with the prophet Lehi, father of Nephi.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 67–60 BC",
+    "timePeriod": "c. 67\u201360 BC",
     "roles": [
       "military leader"
     ],
@@ -14264,7 +14266,7 @@
     ],
     "bio": "Early Latter-day Saint called in D&C 52 to take his journey with Zebedee Coltrin. Also called in D&C 124 to preside over the quorum of seventies.",
     "era": "Restoration",
-    "timePeriod": "1803–1882",
+    "timePeriod": "1803\u20131882",
     "roles": [
       "seventy",
       "church leader"
@@ -14370,7 +14372,7 @@
     "aliases": [],
     "bio": "Timothy's grandmother, praised by Paul for her 'unfeigned faith' which dwelt first in her and in Timothy's mother Eunice before being passed on to Timothy.",
     "era": "New Testament",
-    "timePeriod": "c. AD 30–60",
+    "timePeriod": "c. AD 30\u201360",
     "roles": [
       "believer"
     ],
@@ -14418,7 +14420,7 @@
     ],
     "bio": "Early Latter-day Saint and member of the original Quorum of the Twelve Apostles. Called in D&C 68 and D&C 75 to proclaim the gospel to the eastern countries.",
     "era": "Restoration",
-    "timePeriod": "1807–1861",
+    "timePeriod": "1807\u20131861",
     "roles": [
       "apostle"
     ],
@@ -14481,7 +14483,7 @@
     "aliases": [],
     "bio": "One of the original members of the Quorum of the Twelve Apostles, called in 1835. He was among the youngest of the original Twelve. He later left the Church and was excommunicated in 1838.",
     "era": "Restoration",
-    "timePeriod": "1811–1856",
+    "timePeriod": "1811\u20131856",
     "roles": [
       "apostle"
     ],
@@ -14502,7 +14504,7 @@
     "aliases": [],
     "bio": "An early apostle and member of Zion's Camp. He is mentioned in D&C 124 as one called to the Quorum of the Twelve. After Joseph Smith's death, he led a group of Saints to Texas rather than follow Brigham Young.",
     "era": "Restoration",
-    "timePeriod": "1796–1858",
+    "timePeriod": "1796\u20131858",
     "roles": [
       "apostle"
     ],
@@ -14770,7 +14772,7 @@
     "aliases": [],
     "bio": "Mother of John Mark whose house in Jerusalem served as a gathering place for believers. Peter went to her house after his miraculous release from prison in Acts 12:12.",
     "era": "New Testament",
-    "timePeriod": "c. AD 30–50",
+    "timePeriod": "c. AD 30\u201350",
     "roles": [
       "believer"
     ],
@@ -14927,7 +14929,7 @@
     "aliases": [],
     "bio": "King of Israel who seized the throne by killing Shallum. He paid heavy tribute to Tiglath-pileser of Assyria and was brutal in warfare.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 752–742 BC",
+    "timePeriod": "c. 752\u2013742 BC",
     "roles": [
       "king"
     ],
@@ -15142,7 +15144,7 @@
     "aliases": [],
     "bio": "Wife of Nahor (Abraham's brother) and daughter of Haran. She was the grandmother of Rebekah, who married Isaac.",
     "era": "Patriarchal",
-    "timePeriod": "c. 2100–2000 BC",
+    "timePeriod": "c. 2100\u20132000 BC",
     "roles": [
       "matriarch"
     ],
@@ -15420,7 +15422,7 @@
     "aliases": [],
     "bio": "Son of Jeroboam I who reigned over Israel two years. He continued his father's sins and was assassinated by Baasha during a siege of Gibbethon.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 910–909 BC",
+    "timePeriod": "c. 910\u2013909 BC",
     "roles": [
       "king"
     ],
@@ -15443,7 +15445,7 @@
     "aliases": [],
     "bio": "Brother of Abraham and son of Terah. His wife Milcah bore him eight sons. He is the grandfather of Rebekah through his son Bethuel.",
     "era": "Patriarchal",
-    "timePeriod": "c. 2100–2000 BC",
+    "timePeriod": "c. 2100\u20132000 BC",
     "roles": [
       "patriarch"
     ],
@@ -15613,7 +15615,7 @@
     "aliases": [],
     "bio": "The second chief judge of the Nephites, appointed by Alma the Younger when he stepped down to preach. Nephihah was a just man who served faithfully until his death. He was succeeded by his son Pahoran.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 83–67 BC",
+    "timePeriod": "c. 83\u201367 BC",
     "roles": [
       "judge"
     ],
@@ -15678,7 +15680,7 @@
     "aliases": [],
     "bio": "Second Presiding Bishop of the Church. He owned a store in Kirtland, Ohio, where Joseph Smith lived and received many revelations. He is mentioned in several D&C sections and served faithfully as bishop during challenging periods of Church history.",
     "era": "Restoration",
-    "timePeriod": "1795–1850",
+    "timePeriod": "1795\u20131850",
     "roles": [
       "bishop"
     ],
@@ -15699,7 +15701,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint who experienced one of the first miracles of the Restoration when Joseph Smith cast out an evil spirit from him. Called in D&C 52 and 54, and named to the Nauvoo high council in D&C 124.",
     "era": "Restoration",
-    "timePeriod": "1800–1847",
+    "timePeriod": "1800\u20131847",
     "roles": [
       "church member"
     ],
@@ -15930,7 +15932,7 @@
     "aliases": [],
     "bio": "Son of King Mosiah and one of the four missionary sons who served among the Lamanites. He was initially a rebel with Alma the Younger before their collective conversion by an angel. He spent fourteen years as a missionary among the Lamanites.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 100–77 BC",
+    "timePeriod": "c. 100\u201377 BC",
     "roles": [
       "missionary",
       "prince"
@@ -15960,7 +15962,7 @@
     "aliases": [],
     "bio": "Son of Jarom and author of the first portion of the Book of Omni. He described himself as a wicked man who had not kept the commandments but fulfilled his duty to keep the record. He passed the plates to his son Amaron.",
     "era": "Book of Mormon - Early",
-    "timePeriod": "c. 361–317 BC",
+    "timePeriod": "c. 361\u2013317 BC",
     "roles": [
       "writer"
     ],
@@ -16029,7 +16031,7 @@
     "aliases": [],
     "bio": "Son of Jared and the first king of the Jaredites. He was anointed king despite his father and the brother of Jared having refused the monarchy. He reigned righteously and lived to an old age.",
     "era": "Jaredite",
-    "timePeriod": "c. 2200–2100 BC (traditional)",
+    "timePeriod": "c. 2200\u20132100 BC (traditional)",
     "roles": [
       "king"
     ],
@@ -16073,7 +16075,7 @@
     "aliases": [],
     "bio": "An educated convert who gave up a career as a Baptist minister to join the Church. He became chancellor of the University of Deseret (now University of Utah) and served a mission to England.",
     "era": "Restoration",
-    "timePeriod": "1802–1855",
+    "timePeriod": "1802\u20131855",
     "roles": [
       "leader"
     ],
@@ -16186,7 +16188,7 @@
     ],
     "bio": "Son of Laish to whom Saul gave Michal, David's wife, after David fled. When David demanded Michal back, Abner took her from Paltiel, who followed weeping until sent home.",
     "era": "United Monarchy",
-    "timePeriod": "c. 1015–1005 BC",
+    "timePeriod": "c. 1015\u20131005 BC",
     "roles": [],
     "gender": "male",
     "volumes": [
@@ -16250,7 +16252,7 @@
     "aliases": [],
     "bio": "King of Israel who seized the throne by assassinating Pekahiah. He allied with Rezin of Syria against Judah. Tiglath-pileser conquered much of his territory. He was assassinated by Hoshea.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 752–732 BC",
+    "timePeriod": "c. 752\u2013732 BC",
     "roles": [
       "king"
     ],
@@ -16273,7 +16275,7 @@
     "aliases": [],
     "bio": "King of Israel who reigned two years and continued in the sins of Jeroboam. His officer Pekah conspired against him and assassinated him in the citadel of Samaria.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 742–740 BC",
+    "timePeriod": "c. 742\u2013740 BC",
     "roles": [
       "king"
     ],
@@ -16359,7 +16361,7 @@
     "aliases": [],
     "bio": "One of the Eight Witnesses of the Book of Mormon and brother of David and John Whitmer. The Church was organized at his parents' home in Fayette, New York on April 6, 1830. He served a mission to the Lamanites (Native Americans) and died in 1836.",
     "era": "Restoration",
-    "timePeriod": "1809–1836",
+    "timePeriod": "1809\u20131836",
     "roles": [
       "missionary",
       "witness"
@@ -16384,7 +16386,7 @@
     "id": "philemon",
     "name": "Philemon",
     "aliases": [],
-    "bio": "A wealthy Christian in Colossae to whom Paul wrote a personal letter asking him to receive back his runaway slave Onesimus — not as a slave but as a brother in Christ. Paul's epistle to Philemon is the shortest of his letters.",
+    "bio": "A wealthy Christian in Colossae to whom Paul wrote a personal letter asking him to receive back his runaway slave Onesimus \u2014 not as a slave but as a brother in Christ. Paul's epistle to Philemon is the shortest of his letters.",
     "era": "New Testament",
     "timePeriod": "c. 1st century AD",
     "roles": [
@@ -16725,7 +16727,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint called in D&C 52 to take his journey to Missouri with Samuel H. Smith. He served faithfully in various church callings.",
     "era": "Restoration",
-    "timePeriod": "1790–1861",
+    "timePeriod": "1790\u20131861",
     "roles": [
       "church leader"
     ],
@@ -16746,7 +16748,7 @@
     "aliases": [],
     "bio": "King of Aram-Damascus who allied with Pekah of Israel against Judah during the Syro-Ephraimite crisis. Isaiah prophesied his defeat, and Tiglath-pileser of Assyria killed him and conquered Damascus.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 750–732 BC",
+    "timePeriod": "c. 750\u2013732 BC",
     "roles": [
       "king"
     ],
@@ -16810,7 +16812,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint called in D&C 124 to help Joseph Smith write a proclamation. The Lord said he was well pleased with him.",
     "era": "Restoration",
-    "timePeriod": "1811–1841",
+    "timePeriod": "1811\u20131841",
     "roles": [
       "scribe"
     ],
@@ -16831,7 +16833,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint called in D&C 124 to build a house for Joseph Smith. He was told to obey the Lord's voice and hearken to counsel. He later apostatized.",
     "era": "Restoration",
-    "timePeriod": "c. 1811–1860s",
+    "timePeriod": "c. 1811\u20131860s",
     "roles": [
       "builder"
     ],
@@ -16852,7 +16854,7 @@
     "aliases": [],
     "bio": "Greeted by Paul in Romans 16:13 as 'chosen in the Lord,' with his mother also greeted warmly. Possibly the son of Simon of Cyrene mentioned in Mark 15:21.",
     "era": "New Testament",
-    "timePeriod": "c. AD 30–57",
+    "timePeriod": "c. AD 30\u201357",
     "roles": [
       "believer"
     ],
@@ -16917,7 +16919,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint named in D&C 124:132 as a member of the Nauvoo high council.",
     "era": "Restoration",
-    "timePeriod": "1778–1846",
+    "timePeriod": "1778\u20131846",
     "roles": [
       "high councilor"
     ],
@@ -16961,7 +16963,7 @@
     ],
     "bio": "Younger brother of Joseph Smith and one of the Eight Witnesses of the Book of Mormon. He served one of the first missions for the Church, distributing copies of the Book of Mormon. He died shortly after the martyrdom of Joseph and Hyrum.",
     "era": "Restoration",
-    "timePeriod": "1808–1844",
+    "timePeriod": "1808\u20131844",
     "roles": [
       "missionary",
       "witness"
@@ -17214,7 +17216,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint called in D&C 75 to be united in the ministry with Daniel Stanton. Named to the Nauvoo high council in D&C 124 but noted as having been taken by the Lord.",
     "era": "Restoration",
-    "timePeriod": "1799–1840",
+    "timePeriod": "1799\u20131840",
     "roles": [
       "church leader"
     ],
@@ -17235,7 +17237,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint called in D&C 124:141 to preside over the bishopric alongside Vinson Knight and Samuel H. Smith.",
     "era": "Restoration",
-    "timePeriod": "1789–1872",
+    "timePeriod": "1789\u20131872",
     "roles": [
       "bishopric"
     ],
@@ -17277,7 +17279,7 @@
     "aliases": [],
     "bio": "King of Assyria who besieged Samaria for three years after King Hoshea stopped paying tribute. The northern kingdom of Israel fell during his reign.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 727–722 BC",
+    "timePeriod": "c. 727\u2013722 BC",
     "roles": [
       "king"
     ],
@@ -17578,7 +17580,7 @@
     "aliases": [],
     "bio": "Second son of Alma the Younger, praised by his father for his faithfulness and steadiness. He served as a missionary and briefly held the sacred records between Helaman's death and passing them to Helaman's son. Alma compared him favorably to his troubled brother Corianton.",
     "era": "Book of Mormon - Middle",
-    "timePeriod": "c. 74–53 BC",
+    "timePeriod": "c. 74\u201353 BC",
     "roles": [
       "missionary"
     ],
@@ -17653,7 +17655,7 @@
     ],
     "bio": "Early Latter-day Saint called in D&C 53 to forsake the world and establish a store in Missouri. He served as a purchasing agent for the church in Zion.",
     "era": "Restoration",
-    "timePeriod": "1789–1834",
+    "timePeriod": "1789\u20131834",
     "roles": [
       "merchant",
       "church agent"
@@ -17801,7 +17803,7 @@
     "aliases": [],
     "bio": "Named as one of Jesus' brothers in Matthew 13:55 and Mark 6:3, alongside James, Joses, and Judas.",
     "era": "New Testament",
-    "timePeriod": "c. AD 1–60",
+    "timePeriod": "c. AD 1\u201360",
     "roles": [
       "other"
     ],
@@ -17871,7 +17873,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint who received the calling that was taken from Heman Basset as mentioned in D&C 52. He later apostatized.",
     "era": "Restoration",
-    "timePeriod": "1792–1870",
+    "timePeriod": "1792\u20131870",
     "roles": [
       "church member"
     ],
@@ -17892,7 +17894,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint called in D&C 52 to take his journey to Missouri with Simeon Carter, preaching along the way.",
     "era": "Restoration",
-    "timePeriod": "1793–1847",
+    "timePeriod": "1793\u20131847",
     "roles": [
       "missionary"
     ],
@@ -17958,7 +17960,7 @@
     "aliases": [],
     "bio": "Older sister of Joseph Smith, named in Joseph Smith--History 1:4 as one of the eleven children of Joseph Smith Sr. and Lucy Mack Smith.",
     "era": "Restoration",
-    "timePeriod": "1803–1876",
+    "timePeriod": "1803\u20131876",
     "roles": [
       "family member"
     ],
@@ -18046,7 +18048,7 @@
     "aliases": [],
     "bio": "An early Church member called on a mission in D&C 80. He later left the Church during the Kirtland apostasy of 1838.",
     "era": "Restoration",
-    "timePeriod": "1813–unknown",
+    "timePeriod": "1813\u2013unknown",
     "roles": [
       "missionary"
     ],
@@ -18206,7 +18208,7 @@
     "aliases": [],
     "bio": "Father of Abraham, Nahor, and Haran. He departed Ur of the Chaldeans with Abraham and Lot, intending to go to Canaan, but settled in Haran where he died at age 205.",
     "era": "Patriarchal",
-    "timePeriod": "c. 2100–2000 BC",
+    "timePeriod": "c. 2100\u20132000 BC",
     "roles": [
       "patriarch"
     ],
@@ -18295,7 +18297,7 @@
     "aliases": [],
     "bio": "First president of the Quorum of the Twelve Apostles. He received a personal revelation (D&C 31) and was told to 'be patient in afflictions.' He later apostatized over a dispute but returned to the Church in 1857 and bore testimony of its truthfulness.",
     "era": "Restoration",
-    "timePeriod": "1800–1866",
+    "timePeriod": "1800\u20131866",
     "roles": [
       "apostle"
     ],
@@ -18316,7 +18318,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint named in D&C 124:132 as a member of the Nauvoo high council.",
     "era": "Restoration",
-    "timePeriod": "1807–1886",
+    "timePeriod": "1807\u20131886",
     "roles": [
       "high councilor"
     ],
@@ -18339,7 +18341,7 @@
     ],
     "bio": "The Roman emperor during whose fifteenth year of reign John the Baptist began preaching and Jesus began his ministry.",
     "era": "New Testament",
-    "timePeriod": "42 BC – AD 37",
+    "timePeriod": "42 BC \u2013 AD 37",
     "roles": [
       "emperor"
     ],
@@ -18362,7 +18364,7 @@
     ],
     "bio": "Powerful king of Assyria who conquered much of Syria and Israel. King Ahaz of Judah appealed to him for help against Syria and Israel, paying heavy tribute from the temple treasury.",
     "era": "Divided Kingdom",
-    "timePeriod": "c. 745–727 BC",
+    "timePeriod": "c. 745\u2013727 BC",
     "roles": [
       "king"
     ],
@@ -18456,7 +18458,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint mentioned in D&C 63:39, commanded regarding the disposition of his property in Zion.",
     "era": "Restoration",
-    "timePeriod": "1793–1866",
+    "timePeriod": "1793\u20131866",
     "roles": [
       "church member"
     ],
@@ -18477,7 +18479,7 @@
     "aliases": [],
     "bio": "An Ephesian Christian who accompanied Paul to Jerusalem, where his presence sparked a riot when Jews assumed Paul had brought him into the temple. Paul later left him sick at Miletus.",
     "era": "New Testament",
-    "timePeriod": "c. AD 55–65",
+    "timePeriod": "c. AD 55\u201365",
     "roles": [
       "missionary companion"
     ],
@@ -18587,7 +18589,7 @@
     "aliases": [],
     "bio": "A trusted companion of Paul from Asia who accompanied him on his journey to Jerusalem. Paul calls him 'a beloved brother and faithful minister in the Lord' and sent him to Ephesus and Colossae as a letter-carrier and encourager.",
     "era": "New Testament",
-    "timePeriod": "c. AD 55–65",
+    "timePeriod": "c. AD 55\u201365",
     "roles": [
       "missionary companion",
       "letter carrier"
@@ -18613,7 +18615,7 @@
     "aliases": [],
     "bio": "Owner of a lecture hall in Ephesus where Paul taught daily for two years after leaving the synagogue.",
     "era": "New Testament",
-    "timePeriod": "c. AD 53–55",
+    "timePeriod": "c. AD 53\u201355",
     "roles": [
       "other"
     ],
@@ -18657,7 +18659,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint woman addressed in D&C 90:28-31, commanded to receive money to bear her expenses and go to the land of Zion. She donated much of her savings to the church.",
     "era": "Restoration",
-    "timePeriod": "1787–1884",
+    "timePeriod": "1787\u20131884",
     "roles": [
       "church member"
     ],
@@ -18678,7 +18680,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint called in D&C 124 to put stock into the Nauvoo House and also called to preside over the bishopric along with Samuel H. Smith and Shadrach Roundy.",
     "era": "Restoration",
-    "timePeriod": "1804–1842",
+    "timePeriod": "1804\u20131842",
     "roles": [
       "bishop"
     ],
@@ -18701,7 +18703,7 @@
     ],
     "bio": "An early convert who served as printer, editor, and hymn writer for the Church. He apostatized and testified against Joseph Smith in Missouri but later repented and was forgiven. Joseph Smith's famous letter to him, 'Come on, dear brother, since the war is past,' is preserved. He wrote the hymn 'The Spirit of God.'",
     "era": "Restoration",
-    "timePeriod": "1792–1872",
+    "timePeriod": "1792\u20131872",
     "roles": [
       "writer",
       "printer"
@@ -18725,7 +18727,7 @@
     ],
     "bio": "Older brother of Oliver Cowdery, called in D&C 106 to be a presiding high priest over the church in Freedom, New York. The Lord said there was joy in heaven when he bowed to the Lord's scepter.",
     "era": "Restoration",
-    "timePeriod": "1788–1851",
+    "timePeriod": "1788\u20131851",
     "roles": [
       "presiding high priest"
     ],
@@ -18769,7 +18771,7 @@
     "aliases": [],
     "bio": "An apostle and Church historian who was present at Carthage Jail when Joseph and Hyrum Smith were killed. He was the only one of the four men present who was not wounded, fulfilling Joseph Smith's earlier prophecy. He later served as second counselor to Brigham Young.",
     "era": "Restoration",
-    "timePeriod": "1804–1854",
+    "timePeriod": "1804\u20131854",
     "roles": [
       "apostle",
       "historian"
@@ -18812,7 +18814,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint named in D&C 124:132 as a member of the Nauvoo high council.",
     "era": "Restoration",
-    "timePeriod": "1784–1846",
+    "timePeriod": "1784\u20131846",
     "roles": [
       "high councilor"
     ],
@@ -18833,7 +18835,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint stake president in Nauvoo. Called in D&C 117 to preside and in D&C 124 to pay stock into the Nauvoo House and to ordain Isaac Galland.",
     "era": "Restoration",
-    "timePeriod": "1792–1872",
+    "timePeriod": "1792\u20131872",
     "roles": [
       "stake president"
     ],
@@ -18856,7 +18858,7 @@
     ],
     "bio": "One of the original members of the Quorum of the Twelve Apostles. He received several revelations through Joseph Smith (D&C 66, 68). He later apostatized and was excommunicated. He attempted to test Joseph's prophetic gift by secretly preparing questions, which Joseph answered by revelation.",
     "era": "Restoration",
-    "timePeriod": "1806–1883",
+    "timePeriod": "1806\u20131883",
     "roles": [
       "apostle"
     ],
@@ -18877,7 +18879,7 @@
     "aliases": [],
     "bio": "Father of the apostles James and John. He was a fisherman on the Sea of Galilee and was in the boat mending nets when Jesus called his sons to follow him.",
     "era": "New Testament",
-    "timePeriod": "c. AD 1–40",
+    "timePeriod": "c. AD 1\u201340",
     "roles": [
       "fisherman"
     ],
@@ -18904,7 +18906,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint called in D&C 52 to take his journey with Levi W. Hancock. He served in the first quorum of seventy.",
     "era": "Restoration",
-    "timePeriod": "1804–1887",
+    "timePeriod": "1804\u20131887",
     "roles": [
       "seventy"
     ],
@@ -19045,7 +19047,7 @@
     "aliases": [],
     "bio": "A lawyer whom Paul asks Titus to help on his journey, along with Apollos, so that nothing is wanting for them.",
     "era": "New Testament",
-    "timePeriod": "c. AD 63–65",
+    "timePeriod": "c. AD 63\u201365",
     "roles": [
       "lawyer",
       "believer"
@@ -19111,7 +19113,7 @@
     "id": "zephaniah",
     "name": "Zephaniah",
     "aliases": [],
-    "bio": "A prophet during the reign of King Josiah who warned of the coming 'day of the Lord' — a time of worldwide judgment. He prophesied against Judah's idolatry and the surrounding nations but concluded with a message of hope for a restored remnant.",
+    "bio": "A prophet during the reign of King Josiah who warned of the coming 'day of the Lord' \u2014 a time of worldwide judgment. He prophesied against Judah's idolatry and the surrounding nations but concluded with a message of hope for a restored remnant.",
     "era": "Divided Kingdom",
     "timePeriod": "c. 630 BC",
     "roles": [
@@ -19138,7 +19140,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint called in D&C 124:138 to preside over the quorum of seventies. He was one of the first seven presidents of the Seventy.",
     "era": "Restoration",
-    "timePeriod": "1789–1872",
+    "timePeriod": "1789\u20131872",
     "roles": [
       "seventy"
     ],
@@ -19201,7 +19203,7 @@
     "aliases": [],
     "bio": "David's sister and mother of the three warriors Joab, Abishai, and Asahel. She is consistently identified as the mother of these men, suggesting her prominence in the family.",
     "era": "United Monarchy",
-    "timePeriod": "c. 1040–1000 BC",
+    "timePeriod": "c. 1040\u20131000 BC",
     "roles": [
       "matriarch"
     ],
@@ -19251,7 +19253,7 @@
     "aliases": [],
     "bio": "Early Latter-day Saint missionary called in D&C 32 to accompany Oliver Cowdery, Parley P. Pratt, and Peter Whitmer Jr. on the mission to the Lamanites.",
     "era": "Restoration",
-    "timePeriod": "1806–1849",
+    "timePeriod": "1806\u20131849",
     "roles": [
       "missionary"
     ],

@@ -58,7 +58,7 @@ const PRIMARY_TOOLS = [
     description: "Emotional tone across books — praise, warning, lament, promise.",
   },
   {
-    href: "/characters",
+    href: "/people",
     svgIcon: "/people.svg",
     name: "People",
     description: "750+ named individuals with bios, family trees, and portraits.",
@@ -273,7 +273,7 @@ export default function HomePage() {
           {/* Spotlight Character */}
           {spotlightChar && (
             <Link
-              href={`/characters?person=${spotlightChar.id}`}
+              href={`/people?person=${spotlightChar.id}`}
               style={{
                 display: "block",
                 textDecoration: "none",
@@ -408,7 +408,7 @@ export default function HomePage() {
                   More People
                 </div>
                 <Link
-                  href="/characters"
+                  href="/people"
                   style={{
                     fontSize: "0.68rem",
                     fontWeight: 500,
@@ -428,7 +428,7 @@ export default function HomePage() {
                 {featuredChars.map((c) => (
                   <Link
                     key={c.id}
-                    href={`/characters?person=${c.id}`}
+                    href={`/people?person=${c.id}`}
                     style={{
                       textDecoration: "none",
                       textAlign: "center",

@@ -299,6 +299,7 @@ export default function CharacterDetailPanel({
                 color: "rgba(255,255,255,0.85)",
                 fontWeight: 500,
                 textShadow: "0 1px 4px rgba(0,0,0,0.4)",
+                textTransform: "capitalize",
               }}>
                 {character.roles.join(" · ")}
               </div>
@@ -342,6 +343,7 @@ export default function CharacterDetailPanel({
                 fontSize: "0.82rem",
                 color: color,
                 fontWeight: 600,
+                textTransform: "capitalize",
               }}>
                 {character.roles.join(" · ")}
               </div>
@@ -374,7 +376,7 @@ export default function CharacterDetailPanel({
             </div>
             <span style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>
               {character.era}
-              {character.timePeriod && character.timePeriod !== "unknown" && ` · ${character.timePeriod}`}
+              {character.timePeriod && character.timePeriod !== "unknown" && character.timePeriod !== character.era && ` · ${character.timePeriod}`}
             </span>
           </div>
 

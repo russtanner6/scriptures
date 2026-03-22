@@ -30,7 +30,7 @@ const SECTIONS: NavSection[] = [
     title: "Read",
     items: [
       { href: "/scriptures", label: "Read Scriptures", svgIcon: "/scriptures.svg", description: "Browse all 5 volumes" },
-      { href: "/characters", label: "People", svgIcon: "/people.svg", description: "757 named individuals" },
+      { href: "/people", label: "People", svgIcon: "/people.svg", description: "757 named individuals" },
       { href: "/locations", label: "Places", svgIcon: "/locations.svg", description: "333 scripture locations" },
       { href: "/bookmarks", label: "Bookmarks", svgIcon: "/favorite.svg", description: "Your saved verses" },
     ],

@@ -18,6 +18,11 @@ const nextConfig: NextConfig = {
         destination: "/scriptures/:path*",
         permanent: true,
       },
+      {
+        source: "/characters",
+        destination: "/people",
+        permanent: true,
+      },
     ];
   },
 };
