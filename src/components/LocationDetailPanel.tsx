@@ -74,8 +74,11 @@ export default function LocationDetailPanel({
   useEffect(() => {
     setMentions(null);
     setMentionsLoading(true);
+    // Fast path: use pre-computed id; fall back to name/aliases
     const aliases = location.aliases.join(",");
-    fetch(`/api/location-mentions?name=${encodeURIComponent(location.name)}${aliases ? `&aliases=${encodeURIComponent(aliases)}` : ""}`)
+    const fallbackQp = `name=${encodeURIComponent(location.name)}${aliases ? `&aliases=${encodeURIComponent(aliases)}` : ""}`;
+    const mentionQp = location.id ? `id=${encodeURIComponent(location.id)}` : fallbackQp;
+    fetch(`/api/location-mentions?${mentionQp}`)
       .then((r) => r.json())
       .then((data) => { setMentions(data); setMentionsLoading(false); })
       .catch(() => setMentionsLoading(false));

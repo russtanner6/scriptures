@@ -10,7 +10,8 @@
     "build-db": "tsx scripts/build-db.ts",
     "build-speakers": "tsx scripts/build-speakers.ts",
     "build-speakers-lds": "tsx scripts/build-speakers-lds.ts",
-    "merge-speakers": "tsx scripts/merge-speakers.ts"
+    "merge-speakers": "tsx scripts/merge-speakers.ts",
+    "build-mention-stats": "tsx scripts/build-mention-stats.ts"
   },
   "dependencies": {
     "chart.js": "^4.5.1",
@@ -27,10 +28,12 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/sql.js": "^1.4.9",
+    "better-sqlite3": "^12.8.0",
     "eslint": "^9",
     "eslint-config-next": "16.1.7",
     "tailwindcss": "^4",

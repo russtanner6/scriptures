@@ -73,14 +73,16 @@ export default function CharacterDetailPanel({
     setMentions(null);
     setMentionsLoading(true);
     setSentimentScores(null);
+    // Fast path: use pre-computed id; fall back to name/aliases/books
     const aliases = character.aliases.join(",");
     const books = character.books?.join(",") || "";
-    const qp = `name=${encodeURIComponent(character.name)}${aliases ? `&aliases=${encodeURIComponent(aliases)}` : ""}${books ? `&books=${encodeURIComponent(books)}` : ""}`;
-    fetch(`/api/character-mentions?${qp}`)
+    const fallbackQp = `name=${encodeURIComponent(character.name)}${aliases ? `&aliases=${encodeURIComponent(aliases)}` : ""}${books ? `&books=${encodeURIComponent(books)}` : ""}`;
+    const mentionQp = character.id ? `id=${encodeURIComponent(character.id)}` : fallbackQp;
+    fetch(`/api/character-mentions?${mentionQp}`)
       .then((r) => r.json())
       .then((data) => { setMentions(data); setMentionsLoading(false); })
       .catch(() => setMentionsLoading(false));
-    fetch(`/api/character-sentiment?${qp}`)
+    fetch(`/api/character-sentiment?${fallbackQp}`)
       .then((r) => r.json())
       .then((data) => { if (data.scores) setSentimentScores(data.scores); })
       .catch(() => {});
