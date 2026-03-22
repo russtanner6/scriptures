@@ -311,9 +311,35 @@ export default function CharacterDirectory() {
           maxWidth: "600px",
           margin: "0 auto 20px",
         }}>
+          {/* Clear all + filter count header */}
+          {hasActiveFilters && (
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <span style={{ fontSize: "0.72rem", color: "var(--text-secondary)" }}>
+                {filtered.length} of {characters.length} people
+              </span>
+              <button
+                onClick={clearFilters}
+                style={{
+                  padding: "4px 12px",
+                  borderRadius: "6px",
+                  border: "1px solid rgba(239, 68, 68, 0.3)",
+                  background: "rgba(239, 68, 68, 0.08)",
+                  color: "#ef4444",
+                  fontSize: "0.72rem",
+                  fontWeight: 600,
+                  fontFamily: "inherit",
+                  cursor: "pointer",
+                  transition: "all 0.15s",
+                }}
+              >
+                Clear All
+              </button>
+            </div>
+          )}
+
           {/* Volume filter */}
           <div>
-            <div style={{ fontSize: "0.7rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "8px" }}>
+            <div style={{ fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text)", marginBottom: "8px" }}>
               Volume
             </div>
             <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
@@ -326,7 +352,7 @@ export default function CharacterDirectory() {
                       borderRadius: "6px",
                       border: `1px solid ${volumeFilter === v ? VOLUME_COLORS[v] : "var(--border)"}`,
                       background: volumeFilter === v ? `${VOLUME_COLORS[v]}20` : "transparent",
-                      color: volumeFilter === v ? VOLUME_COLORS[v] : "var(--text-secondary)",
+                      color: volumeFilter === v ? VOLUME_COLORS[v] : "var(--text)",
                       fontSize: "0.75rem",
                       fontWeight: 600,
                       fontFamily: "inherit",
@@ -341,67 +367,11 @@ export default function CharacterDirectory() {
             </div>
           </div>
 
-          {/* Era filter */}
-          <div>
-            <div style={{ fontSize: "0.7rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "8px" }}>
-              Era
-            </div>
-            <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
-              {eras.map((e) => (
-                <button
-                  key={e}
-                  onClick={() => setEraFilter(eraFilter === e ? null : e)}
-                  style={{
-                    padding: "5px 10px",
-                    borderRadius: "6px",
-                    border: `1px solid ${eraFilter === e ? "var(--accent)" : "var(--border)"}`,
-                    background: eraFilter === e ? "rgba(139,92,246,0.15)" : "transparent",
-                    color: eraFilter === e ? "var(--accent)" : "var(--text-secondary)",
-                    fontSize: "0.72rem",
-                    fontWeight: 500,
-                    fontFamily: "inherit",
-                    cursor: "pointer",
-                    transition: "all 0.15s",
-                  }}
-                >
-                  {e}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Role filter */}
-          <div>
-            <div style={{ fontSize: "0.7rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "8px" }}>
-              Role
-            </div>
-            <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
-              {roles.slice(0, 15).map((r) => (
-                <button
-                  key={r}
-                  onClick={() => setRoleFilter(roleFilter === r ? null : r)}
-                  style={{
-                    padding: "5px 10px",
-                    borderRadius: "6px",
-                    border: `1px solid ${roleFilter === r ? "var(--accent)" : "var(--border)"}`,
-                    background: roleFilter === r ? "rgba(139,92,246,0.15)" : "transparent",
-                    color: roleFilter === r ? "var(--accent)" : "var(--text-secondary)",
-                    fontSize: "0.72rem",
-                    fontWeight: 500,
-                    fontFamily: "inherit",
-                    cursor: "pointer",
-                    transition: "all 0.15s",
-                  }}
-                >
-                  {r}
-                </button>
-              ))}
-            </div>
-          </div>
+          {/* Era and Role filters hidden for now */}
 
           {/* Gender filter */}
           <div>
-            <div style={{ fontSize: "0.7rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "8px" }}>
+            <div style={{ fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text)", marginBottom: "8px" }}>
               Gender
             </div>
             <div style={{ display: "flex", gap: "6px" }}>
@@ -414,9 +384,9 @@ export default function CharacterDirectory() {
                     borderRadius: "6px",
                     border: `1px solid ${genderFilter === g ? "var(--accent)" : "var(--border)"}`,
                     background: genderFilter === g ? "rgba(139,92,246,0.15)" : "transparent",
-                    color: genderFilter === g ? "var(--accent)" : "var(--text-secondary)",
+                    color: genderFilter === g ? "var(--accent)" : "var(--text)",
                     fontSize: "0.72rem",
-                    fontWeight: 500,
+                    fontWeight: 600,
                     fontFamily: "inherit",
                     cursor: "pointer",
                     transition: "all 0.15s",
@@ -428,35 +398,33 @@ export default function CharacterDirectory() {
               ))}
             </div>
           </div>
-
-          {hasActiveFilters && (
-            <button
-              onClick={clearFilters}
-              style={{
-                alignSelf: "flex-start",
-                padding: "5px 14px",
-                borderRadius: "6px",
-                border: "none",
-                background: "rgba(255,255,255,0.06)",
-                color: "var(--text-muted)",
-                fontSize: "0.72rem",
-                fontWeight: 500,
-                fontFamily: "inherit",
-                cursor: "pointer",
-              }}
-            >
-              Clear all filters
-            </button>
-          )}
         </div>
       )}
 
-      {/* Results count */}
-      <div style={{ fontSize: "0.78rem", color: "var(--text-muted)", marginBottom: "20px", textAlign: "center" }}>
-        {filtered.length === characters.length
-          ? `Showing all ${characters.length}`
-          : `${filtered.length} of ${characters.length}`}
-      </div>
+      {/* Results count + clear (outside filter panel) */}
+      {!showFilters && hasActiveFilters && (
+        <div style={{ display: "flex", justifyContent: "center", gap: "12px", alignItems: "center", marginBottom: "16px" }}>
+          <span style={{ fontSize: "0.78rem", color: "var(--text-secondary)" }}>
+            {filtered.length} of {characters.length} people
+          </span>
+          <button
+            onClick={clearFilters}
+            style={{
+              padding: "4px 12px",
+              borderRadius: "6px",
+              border: "1px solid rgba(239, 68, 68, 0.3)",
+              background: "rgba(239, 68, 68, 0.08)",
+              color: "#ef4444",
+              fontSize: "0.72rem",
+              fontWeight: 600,
+              fontFamily: "inherit",
+              cursor: "pointer",
+            }}
+          >
+            Clear All
+          </button>
+        </div>
+      )}
 
       {/* Character grid — portrait cards */}
       <div

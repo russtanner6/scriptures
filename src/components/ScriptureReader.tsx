@@ -1557,7 +1557,7 @@ export default function ScriptureReader() {
                     >
                       {isFirstOfSpeakerSpan && verseSpeaker && (() => {
                         const portrait = getCharacterPortrait(verseSpeaker.speaker);
-                        const avatarSize = isMobile ? 20 : 22;
+                        const avatarSize = isMobile ? 26 : 28;
                         return (
                           <div style={{
                             display: "flex",

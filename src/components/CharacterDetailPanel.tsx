@@ -376,7 +376,7 @@ export default function CharacterDetailPanel({
                 }} />
               ))}
             </div>
-            <span style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>
+            <span style={{ fontSize: "0.78rem", color: "var(--text)" }}>
               {character.era}
               {character.timePeriod && character.timePeriod !== "unknown" && character.timePeriod !== character.era && ` · ${character.timePeriod}`}
             </span>
