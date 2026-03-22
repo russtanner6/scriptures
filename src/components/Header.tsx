@@ -25,7 +25,7 @@ export default function Header({
           position: "fixed",
           left: "auto",
           right: "24px",
-          top: "28px",
+          top: "20px",
           transform: "none",
           flexDirection: "row",
           alignItems: "center",
