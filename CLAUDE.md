@@ -97,6 +97,7 @@ src/
 │   ├── HorizontalBarList.tsx  # Bar chart component
 │   ├── EggMarker.tsx           # Inline amber/gold pill for Context Eggs (follows ResourceMarker pattern)
 │   ├── EggPopover.tsx          # Parchment/slate popover for scholarly insights (bottom sheet on mobile)
+│   ├── RelationshipWeb.tsx     # Full-screen force-directed character relationship graph
 │   ├── Header.tsx             # Site header with tree logo + hamburger menu (showSubtitle prop)
 │   └── NavMenu.tsx            # Slide-in nav with sections (Analyze/Discover/Read)
 ├── lib/
@@ -112,6 +113,7 @@ src/
 │   ├── sentiment-lexicon.ts   # 7 tone categories with word lists, negation handling, per-1k-word normalization, verse-level tone detection
 │   ├── chiasmus-detector.ts   # Chiasmus (ABBA pattern) detection algorithm
 │   ├── useIsMobile.ts         # Shared debounced responsive hook (replaces 15 inline duplicates)
+│   ├── relationship-graph.ts   # Build relationship graphs from character family data (nodes, links, subgraph BFS)
 │   ├── useBackToClose.ts      # Hook: mobile back-button closes panels instead of navigating away
 │   └── modal-styles.ts        # Shared popup/modal styling tokens
 data/                          # scriptures.db + sql-wasm.wasm + parallel-passages.json + timeline.json + resources.json + speakers.json + characters.json + locations.json + web-bible.json + context-eggs.json
