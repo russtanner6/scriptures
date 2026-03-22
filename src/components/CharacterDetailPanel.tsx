@@ -516,7 +516,7 @@ export default function CharacterDetailPanel({
                     const maxVal = Math.max(...SENTIMENT_CATEGORIES.map((c) => sentimentScores[c.id]));
                     return (
                       <div>
-                        <div style={{ fontSize: "0.65rem", fontWeight: 600, color: "var(--text-muted)", marginBottom: "6px", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+                        <div style={{ fontSize: "0.8rem", fontWeight: 700, color: "var(--text)", marginBottom: "8px", textTransform: "uppercase", letterSpacing: "0.1em" }}>
                           Tone Profile
                         </div>
                         <div style={{ height: isMobile ? "220px" : "260px", position: "relative" }}>
@@ -525,8 +525,8 @@ export default function CharacterDetailPanel({
                               labels: SENTIMENT_CATEGORIES.map((c) => c.label.split(" ")[0]),
                               datasets: [{
                                 data: SENTIMENT_CATEGORIES.map((c) => sentimentScores[c.id]),
-                                backgroundColor: "rgba(139, 92, 246, 0.15)",
-                                borderColor: "rgba(139, 92, 246, 0.6)",
+                                backgroundColor: "rgba(180, 180, 200, 0.12)",
+                                borderColor: "rgba(180, 180, 200, 0.5)",
                                 borderWidth: 2,
                                 pointBackgroundColor: SENTIMENT_CATEGORIES.map((c) => c.color),
                                 pointBorderColor: SENTIMENT_CATEGORIES.map((c) => c.color),

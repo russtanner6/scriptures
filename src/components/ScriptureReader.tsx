@@ -319,7 +319,12 @@ export default function ScriptureReader() {
                     .catch(() => {});
                   fetch(`/api/context-eggs?book=${encodeURIComponent(bookNameForApi)}&chapter=${ch}`)
                     .then((r) => r.json())
-                    .then((eggData) => setChapterEggs(eggData.eggs || []))
+                    .then((eggData) => {
+                      const eggs = (eggData.eggs || []) as ContextEgg[];
+                      // Domain isolation: hide Restoration-category eggs if LDS volumes are toggled off
+                      const ldsVisible = isVolumeVisible("BoM") || isVolumeVisible("D&C") || isVolumeVisible("PoGP");
+                      setChapterEggs(ldsVisible ? eggs : eggs.filter((e) => e.category !== "Restoration"));
+                    })
                     .catch(() => {});
                   fetch(`/api/speakers?book=${encodeURIComponent(bookNameForApi)}&chapter=${ch}`)
                     .then((r) => r.json())
@@ -383,7 +388,10 @@ export default function ScriptureReader() {
       try {
         const eggResp = await fetch(`/api/context-eggs?book=${encodeURIComponent(bookNameForApi)}&chapter=${chapter}`);
         const eggData = await eggResp.json();
-        setChapterEggs(eggData.eggs || []);
+        const eggs = (eggData.eggs || []) as ContextEgg[];
+        // Domain isolation: hide Restoration-category eggs if LDS volumes are toggled off
+        const ldsVisible = isVolumeVisible("BoM") || isVolumeVisible("D&C") || isVolumeVisible("PoGP");
+        setChapterEggs(ldsVisible ? eggs : eggs.filter((e) => e.category !== "Restoration"));
       } catch {}
       try {
         const spkResp = await fetch(`/api/speakers?book=${encodeURIComponent(bookNameForApi)}&chapter=${chapter}`);
@@ -674,6 +682,9 @@ export default function ScriptureReader() {
       } else {
         // Entity link
         const entry = seg.entry;
+        const isPerson = entry.type === "person";
+        const personEntity = isPerson ? entry.entity as ScriptureCharacter : null;
+        const portrait = personEntity?.portraitUrl;
         elements.push(
           <span
             key={`e${i}`}
@@ -681,7 +692,7 @@ export default function ScriptureReader() {
             tabIndex={0}
             onClick={(e) => {
               e.stopPropagation();
-              if (entry.type === "person") {
+              if (isPerson) {
                 setSelectedCharacter(entry.entity as ScriptureCharacter);
               } else {
                 setSelectedLocation(entry.entity as ScriptureLocation);
@@ -691,7 +702,7 @@ export default function ScriptureReader() {
               if (e.key === "Enter" || e.key === " ") {
                 e.preventDefault();
                 e.stopPropagation();
-                if (entry.type === "person") {
+                if (isPerson) {
                   setSelectedCharacter(entry.entity as ScriptureCharacter);
                 } else {
                   setSelectedLocation(entry.entity as ScriptureLocation);
@@ -701,9 +712,9 @@ export default function ScriptureReader() {
             style={{
               color: "inherit",
               textDecoration: "underline",
-              textDecorationColor: lightMode ? "rgba(59, 130, 246, 0.5)" : "rgba(59, 130, 246, 0.4)",
-              textUnderlineOffset: "2px",
-              textDecorationThickness: "1.5px",
+              textDecorationColor: lightMode ? "rgba(59, 130, 246, 0.6)" : "rgba(59, 130, 246, 0.5)",
+              textUnderlineOffset: "3px",
+              textDecorationThickness: "2px",
               cursor: "pointer",
               borderRadius: "2px",
               transition: "text-decoration-color 0.15s",
@@ -711,6 +722,28 @@ export default function ScriptureReader() {
             onMouseEnter={(e) => { e.currentTarget.style.textDecorationColor = "rgba(59, 130, 246, 0.8)"; }}
             onMouseLeave={(e) => { e.currentTarget.style.textDecorationColor = lightMode ? "rgba(59, 130, 246, 0.5)" : "rgba(59, 130, 246, 0.4)"; }}
           >
+            {isPerson && portrait && (
+              <img
+                src={portrait}
+                alt=""
+                style={{
+                  width: "16px",
+                  height: "16px",
+                  borderRadius: "50%",
+                  objectFit: "cover",
+                  display: "inline-block",
+                  verticalAlign: "text-bottom",
+                  marginRight: "3px",
+                  border: lightMode ? "1px solid rgba(0,0,0,0.15)" : "1px solid rgba(255,255,255,0.2)",
+                }}
+              />
+            )}
+            {!isPerson && (
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={lightMode ? "rgba(59,130,246,0.7)" : "rgba(59,130,246,0.6)"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ display: "inline-block", verticalAlign: "text-bottom", marginRight: "2px" }}>
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            )}
             {segText}
           </span>
         );
