@@ -155,17 +155,13 @@ export default function NavMenu({
       }}>
         <div>
           <div style={{
-            fontSize: "0.72rem",
-            fontWeight: 600,
+            fontSize: "0.78rem",
+            fontWeight: 700,
             textTransform: "uppercase",
             letterSpacing: "0.14em",
-            color: "var(--accent)",
+            color: "var(--text)",
             marginBottom: "4px",
-            display: "flex",
-            alignItems: "center",
-            gap: "8px",
           }}>
-            <img src="/tree-logo.svg" alt="" style={{ height: "22px", width: "auto" }} />
             Scripture Explorer
           </div>
           <div style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>
@@ -208,13 +204,13 @@ export default function NavMenu({
           <div key={section.title}>
             {/* Section heading — left aligned */}
             <div style={{
-              fontSize: "0.62rem",
+              fontSize: "0.65rem",
               fontWeight: 700,
               textTransform: "uppercase",
               letterSpacing: "0.14em",
-              color: "var(--accent)",
+              color: "var(--text-secondary)",
               padding: "0 12px 8px",
-              borderBottom: "1px solid rgba(139, 92, 246, 0.2)",
+              borderBottom: "1px solid var(--border)",
               marginBottom: "8px",
               textAlign: "left",
             }}>
@@ -283,17 +279,13 @@ export default function NavMenu({
         marginBottom: "8px",
       }}>
         <div style={{
-          fontSize: "0.68rem",
-          fontWeight: 600,
+          fontSize: "0.75rem",
+          fontWeight: 700,
           textTransform: "uppercase",
           letterSpacing: "0.14em",
-          color: "var(--accent)",
+          color: "var(--text)",
           marginBottom: "4px",
-          display: "flex",
-          alignItems: "center",
-          gap: "8px",
         }}>
-          <img src="/tree-logo.svg" alt="" style={{ height: "20px", width: "auto" }} />
           Scripture Explorer
         </div>
         <div style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>

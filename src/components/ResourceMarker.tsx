@@ -73,7 +73,7 @@ export default function ResourceMarker({
         cursor: "pointer",
         transition: "all 0.15s",
         verticalAlign: "middle",
-        marginLeft: "6px",
+        marginLeft: "0",
         lineHeight: 1,
         whiteSpace: "nowrap",
         flexShrink: 0,

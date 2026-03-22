@@ -1185,48 +1185,6 @@ export default function ScriptureReader() {
             padding: isMobile ? "24px 20px 100px" : "40px 32px 120px",
           }}
         >
-          {/* Volume context */}
-          <div
-            style={{
-              fontSize: "0.72rem",
-              fontWeight: 600,
-              textTransform: "uppercase",
-              letterSpacing: "0.15em",
-              color: theme.textMuted,
-              textAlign: "center",
-              marginBottom: "6px",
-            }}
-          >
-            {vol?.name}
-          </div>
-
-          {/* Chapter heading */}
-          <h2
-            style={{
-              fontSize: isMobile ? "1.5rem" : "1.8rem",
-              fontWeight: 700,
-              color: theme.text,
-              marginBottom: "4px",
-              letterSpacing: "-0.01em",
-              textAlign: "center",
-            }}
-          >
-            {selectedBookName}
-          </h2>
-          <div
-            style={{
-              fontSize: "0.85rem",
-              fontWeight: 600,
-              textTransform: "uppercase",
-              letterSpacing: "0.12em",
-              color: theme.textMuted,
-              marginBottom: "32px",
-              textAlign: "center",
-            }}
-          >
-            {chapterLabel}
-          </div>
-
           {/* Chapter Insights Panel */}
           {!isLoading && verses.length > 0 && (
             <ChapterInsights
@@ -1770,38 +1728,43 @@ export default function ScriptureReader() {
                   >
                     {renderVerseText(readingMode === "modern" && v.text_modern ? v.text_modern : v.text, v.verse)}
                   </span>
-                  {/* Resource markers — one pill per resource type */}
-                  {verseStartResources.length > 0 && (() => {
-                    const byType = verseStartResources.reduce((acc, r) => {
-                      acc[r.type] = acc[r.type] || [];
-                      acc[r.type].push(r);
-                      return acc;
-                    }, {} as Record<string, typeof verseStartResources>);
-                    return Object.entries(byType).map(([, resources]) => (
-                      <ResourceMarker
-                        key={resources[0].type + "-" + v.verse}
-                        resource={resources[0]}
-                        lightMode={lightMode}
-                        count={resources.length}
-                        onClick={() => {
-                          setActiveVerse(null);
-                          setActiveResourcePanel({
-                            resources: chapterResources,
-                            index: chapterResources.indexOf(resources[0]),
-                          });
-                        }}
-                      />
-                    ));
-                  })()}
-                  {/* Context Egg markers */}
-                  {showContextEggs && chapterEggs.filter((e) => e.verse === v.verse).map((egg) => (
-                    <EggMarker
-                      key={`egg-${egg.id}`}
-                      egg={egg}
-                      lightMode={lightMode}
-                      onClick={() => { setActiveVerse(null); setActiveEgg(egg); }}
-                    />
-                  ))}
+                  {/* Pills row — below verse text */}
+                  {(verseStartResources.length > 0 || (showContextEggs && chapterEggs.some((e) => e.verse === v.verse))) && (
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: "5px", marginTop: "4px", marginLeft: "2px" }}>
+                      {/* Resource markers — one pill per resource type */}
+                      {verseStartResources.length > 0 && (() => {
+                        const byType = verseStartResources.reduce((acc, r) => {
+                          acc[r.type] = acc[r.type] || [];
+                          acc[r.type].push(r);
+                          return acc;
+                        }, {} as Record<string, typeof verseStartResources>);
+                        return Object.entries(byType).map(([, resources]) => (
+                          <ResourceMarker
+                            key={resources[0].type + "-" + v.verse}
+                            resource={resources[0]}
+                            lightMode={lightMode}
+                            count={resources.length}
+                            onClick={() => {
+                              setActiveVerse(null);
+                              setActiveResourcePanel({
+                                resources: chapterResources,
+                                index: chapterResources.indexOf(resources[0]),
+                              });
+                            }}
+                          />
+                        ));
+                      })()}
+                      {/* Context Egg markers */}
+                      {showContextEggs && chapterEggs.filter((e) => e.verse === v.verse).map((egg) => (
+                        <EggMarker
+                          key={`egg-${egg.id}`}
+                          egg={egg}
+                          lightMode={lightMode}
+                          onClick={() => { setActiveVerse(null); setActiveEgg(egg); }}
+                        />
+                      ))}
+                    </div>
+                  )}
                   </div>
                 </div>
               );
