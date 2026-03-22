@@ -200,7 +200,7 @@ export default function VersePopover({
             <div style={{ fontSize: "0.95rem", fontWeight: 700, color: theme.text }}>
               {reference}
             </div>
-            <div style={{ fontSize: "0.72rem", color: theme.textMuted, marginTop: "2px" }}>
+            <div style={{ fontSize: "0.82rem", color: theme.textMuted, marginTop: "2px" }}>
               {wordCount} words
             </div>
           </div>
@@ -246,8 +246,8 @@ export default function VersePopover({
           <div style={{ marginBottom: "14px" }}>
             <div
               style={{
-                fontSize: "0.62rem",
-                fontWeight: 600,
+                fontSize: "0.82rem",
+             fontWeight: 600,
                 textTransform: "uppercase",
                 letterSpacing: "0.1em",
                 color: theme.textMuted,
@@ -320,8 +320,8 @@ export default function VersePopover({
                     border: `1px solid ${theme.border}`,
                     background: "transparent",
                     color: theme.textMuted,
-                    fontSize: "0.72rem",
-                    fontFamily: "inherit",
+                    fontSize: "0.82rem",
+                 fontFamily: "inherit",
                     cursor: "pointer",
                   }}
                 >
@@ -343,8 +343,8 @@ export default function VersePopover({
                   border: "none",
                   background: noteSaved ? `${volColor}30` : volColor,
                   color: noteSaved ? volColor : "#fff",
-                  fontSize: "0.72rem",
-                  fontWeight: 600,
+                  fontSize: "0.82rem",
+               fontWeight: 600,
                   fontFamily: "inherit",
                   cursor: noteSaved ? "default" : "pointer",
                   transition: "all 0.15s",
@@ -378,7 +378,7 @@ export default function VersePopover({
               border: `1px solid ${theme.border}`,
               background: "transparent",
               color: copied ? volColor : theme.textSecondary,
-              fontSize: "0.78rem",
+              fontSize: "0.88rem",
               fontWeight: 500,
               fontFamily: "inherit",
               cursor: "pointer",
@@ -400,7 +400,7 @@ export default function VersePopover({
               border: `1px solid ${bookmarked ? volColor + "50" : theme.border}`,
               background: bookmarked ? `${volColor}15` : "transparent",
               color: bookmarked ? volColor : theme.textSecondary,
-              fontSize: "0.78rem",
+              fontSize: "0.88rem",
               fontWeight: 500,
               fontFamily: "inherit",
               cursor: "pointer",
@@ -422,7 +422,7 @@ export default function VersePopover({
               border: `1px solid ${showNotes ? volColor + "50" : theme.border}`,
               background: showNotes ? `${volColor}15` : "transparent",
               color: showNotes ? volColor : theme.textSecondary,
-              fontSize: "0.78rem",
+              fontSize: "0.88rem",
               fontWeight: 500,
               fontFamily: "inherit",
               cursor: "pointer",

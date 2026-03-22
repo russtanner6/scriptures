@@ -131,7 +131,7 @@ export default function EggPopover({
         <span
           style={{
             display: "inline-block",
-            fontSize: "0.58rem",
+            fontSize: "0.68rem",
             fontWeight: 700,
             textTransform: "uppercase",
             letterSpacing: "0.08em",
@@ -149,10 +149,10 @@ export default function EggPopover({
         {/* Title */}
         <h3
           style={{
-            fontSize: "0.95rem",
+            fontSize: "1.05rem",
             fontWeight: 700,
             color: parchment.titleColor,
-            margin: "0 0 8px",
+            margin: "0 0 10px",
             lineHeight: 1.3,
             paddingRight: "20px",
           }}
@@ -163,7 +163,7 @@ export default function EggPopover({
         {/* Insight */}
         <p
           style={{
-            fontSize: "0.82rem",
+            fontSize: "0.92rem",
             color: parchment.text,
             lineHeight: 1.7,
             margin: "0 0 14px",
@@ -175,7 +175,7 @@ export default function EggPopover({
         {/* Source */}
         <div
           style={{
-            fontSize: "0.68rem",
+            fontSize: "0.78rem",
             color: parchment.textMuted,
             fontStyle: "italic",
             lineHeight: 1.4,

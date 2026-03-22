@@ -942,121 +942,53 @@ export default function ScriptureReader() {
             </div>
           )}
           <div style={{ display: "flex", alignItems: "center", gap: "12px", minWidth: 0, flex: 1, overflow: "hidden" }}>
-            {/* Mobile: animated search bar in top bar */}
-            {isMobile && searchOpen ? (
-              <div style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                flex: 1,
-                animation: "slideInFromRight 0.25s ease",
-              }}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={bar.textMuted} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
-                  <circle cx="11" cy="11" r="8" />
-                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                </svg>
-                <input
-                  ref={searchInputRef}
-                  type="text"
-                  enterKeyHint="search"
-                  autoCapitalize="none"
-                  autoCorrect="off"
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Escape") {
-                      setSearchOpen(false);
-                      setSearchTerm("");
-                    }
-                  }}
-                  placeholder="Find in chapter..."
-                  autoFocus
-                  style={{
-                    flex: 1,
-                    padding: "6px 10px",
-                    borderRadius: "6px",
-                    border: "none",
-                    background: bar.surface,
-                    color: bar.text,
-                    fontSize: "0.82rem",
-                    fontFamily: "inherit",
-                    outline: "none",
-                    minWidth: 0,
-                  }}
-                />
-                {searchTerm.length >= 2 && (
-                  <span style={{ fontSize: "0.68rem", color: bar.textMuted, whiteSpace: "nowrap" }}>
-                    {searchMatchCount}
-                  </span>
-                )}
-                <button
-                  onClick={() => { setSearchOpen(false); setSearchTerm(""); }}
-                  style={{
-                    background: "none",
-                    border: "none",
-                    color: bar.textMuted,
-                    fontSize: "0.82rem",
-                    cursor: "pointer",
-                    padding: "4px",
-                    fontFamily: "inherit",
-                    flexShrink: 0,
-                  }}
-                >
-                  ✕
-                </button>
+            <button
+              onClick={() => {
+                setSelectedChapter(null);
+                setVerses([]);
+                window.history.replaceState({}, "", "/read");
+              }}
+              style={{
+                background: "none",
+                border: "none",
+                color: bar.textSecondary,
+                cursor: "pointer",
+                fontSize: "1.2rem",
+                padding: "4px 8px",
+                fontFamily: "inherit",
+              }}
+              title="Back to book list"
+            >
+              ←
+            </button>
+            <div style={{ minWidth: 0 }}>
+              <div
+                style={{
+                  fontSize: isMobile ? "0.85rem" : "0.95rem",
+                  fontWeight: 700,
+                  color: bar.text,
+                  whiteSpace: "nowrap",
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                }}
+              >
+                {selectedBookName}
               </div>
-            ) : (
-              <>
-                <button
-                  onClick={() => {
-                    setSelectedChapter(null);
-                    setVerses([]);
-                    // Reset URL
-                    window.history.replaceState({}, "", "/read");
-                  }}
-                  style={{
-                    background: "none",
-                    border: "none",
-                    color: bar.textSecondary,
-                    cursor: "pointer",
-                    fontSize: "1.2rem",
-                    padding: "4px 8px",
-                    fontFamily: "inherit",
-                  }}
-                  title="Back to book list"
-                >
-                  ←
-                </button>
-                <div style={{ minWidth: 0 }}>
-                  <div
-                    style={{
-                      fontSize: isMobile ? "0.85rem" : "0.95rem",
-                      fontWeight: 700,
-                      color: bar.text,
-                      whiteSpace: "nowrap",
-                      overflow: "hidden",
-                      textOverflow: "ellipsis",
-                    }}
-                  >
-                    {selectedBookName}
-                  </div>
-                  <div
-                    style={{
-                      fontSize: "0.68rem",
-                      fontWeight: 600,
-                      textTransform: "uppercase",
-                      letterSpacing: "0.1em",
-                      color: bar.textMuted,
-                    }}
-                  >
-                    {chapterLabel}
-                  </div>
-                </div>
-              </>
-            )}
+              <div
+                style={{
+                  fontSize: "0.68rem",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.1em",
+                  color: bar.textMuted,
+                }}
+              >
+                {chapterLabel}
+              </div>
+            </div>
           </div>
 
-          <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "4px" : "8px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "2px" : "6px" }}>
             {/* Font size — mobile: in top bar */}
             {isMobile && (
               <button
@@ -1067,12 +999,12 @@ export default function ScriptureReader() {
                   border: "none",
                   color: bar.textSecondary,
                   cursor: "pointer",
-                  width: "32px",
-                  height: "32px",
+                  width: "38px",
+                  height: "38px",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  fontSize: fontSize === 0 ? "0.75rem" : fontSize === 1 ? "0.9rem" : "1.05rem",
+                  fontSize: fontSize === 0 ? "0.9rem" : fontSize === 1 ? "1.05rem" : "1.2rem",
                   fontWeight: 700,
                   fontFamily: "inherit",
                   transition: "all 0.15s",
@@ -1099,15 +1031,15 @@ export default function ScriptureReader() {
                   border: "none",
                   color: searchOpen ? bar.text : bar.textSecondary,
                   cursor: "pointer",
-                  width: "32px",
-                  height: "32px",
+                  width: "38px",
+                  height: "38px",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   transition: "color 0.15s",
                 }}
               >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="11" cy="11" r="8" />
                   <line x1="21" y1="21" x2="16.65" y2="16.65" />
                 </svg>
@@ -1120,8 +1052,8 @@ export default function ScriptureReader() {
               style={{
                 background: "none",
                 border: "none",
-                width: "32px",
-                height: "32px",
+                width: "38px",
+                height: "38px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -1131,11 +1063,11 @@ export default function ScriptureReader() {
               }}
             >
               {lightMode ? (
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
                 </svg>
               ) : (
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="5" />
                   <line x1="12" y1="1" x2="12" y2="3" />
                   <line x1="12" y1="21" x2="12" y2="23" />
@@ -1170,6 +1102,77 @@ export default function ScriptureReader() {
             </button>
           </div>
         </div>
+
+        {/* Mobile: search panel drops down below header */}
+        {isMobile && searchOpen && (
+          <div style={{
+            position: "sticky",
+            top: isMobile ? "52px" : "56px",
+            zIndex: 49,
+            background: bar.bg,
+            backdropFilter: "blur(12px)",
+            WebkitBackdropFilter: "blur(12px)",
+            borderBottom: `1px solid ${bar.border}`,
+            padding: "10px 16px",
+            display: "flex",
+            alignItems: "center",
+            gap: "10px",
+            animation: "slideDown 0.2s ease",
+          }}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={bar.textMuted} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input
+              ref={searchInputRef}
+              type="text"
+              enterKeyHint="search"
+              autoCapitalize="none"
+              autoCorrect="off"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Escape") {
+                  setSearchOpen(false);
+                  setSearchTerm("");
+                }
+              }}
+              placeholder="Find in chapter..."
+              autoFocus
+              style={{
+                flex: 1,
+                padding: "8px 12px",
+                borderRadius: "8px",
+                border: "none",
+                background: bar.surface,
+                color: bar.text,
+                fontSize: "0.9rem",
+                fontFamily: "inherit",
+                outline: "none",
+              }}
+            />
+            {searchTerm.length >= 2 && (
+              <span style={{ fontSize: "0.75rem", color: bar.textMuted, whiteSpace: "nowrap" }}>
+                {searchMatchCount} found
+              </span>
+            )}
+            <button
+              onClick={() => { setSearchOpen(false); setSearchTerm(""); }}
+              style={{
+                background: "none",
+                border: "none",
+                color: bar.textMuted,
+                fontSize: "1rem",
+                cursor: "pointer",
+                padding: "4px 6px",
+                fontFamily: "inherit",
+                flexShrink: 0,
+              }}
+            >
+              ✕
+            </button>
+          </div>
+        )}
 
         {/* Nav Menu */}
         <NavMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
