@@ -578,60 +578,78 @@ export default function LocationDetailPanel({
 
                   {/* First & Last Mention */}
                   <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginTop: "8px" }}>
-                    {mentions.firstMention && (
-                      <Link
-                        href={`/scriptures?bookId=${mentions.firstMention.bookId}&chapter=${mentions.firstMention.chapter}&verse=${mentions.firstMention.verse}`}
-                        style={{
-                          display: "block",
-                          padding: "10px 14px",
-                          borderRadius: "10px",
-                          background: "rgba(255,255,255,0.03)",
-                          border: "1px solid var(--border)",
-                          textDecoration: "none",
-                          transition: "all 0.15s",
-                        }}
-                      >
-                        <div style={{ fontSize: "0.62rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "4px" }}>
-                          First Mention
-                        </div>
-                        <div style={{ fontSize: "0.78rem", color: "var(--text-secondary)", fontStyle: "italic", lineHeight: 1.5, marginBottom: "4px", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" as const, overflow: "hidden" }}>
-                          &ldquo;{mentions.firstMention.text}&rdquo;
-                        </div>
-                        <div style={{ fontSize: "0.72rem", fontWeight: 600, color: VOLUME_COLORS[mentions.firstMention.volumeAbbrev] || "var(--accent)" }}>
-                          {mentions.firstMention.bookName} {mentions.firstMention.chapter}:{mentions.firstMention.verse}
-                          <span style={{ fontWeight: 400, color: "var(--accent)", marginLeft: "8px" }}>Read →</span>
-                        </div>
-                      </Link>
-                    )}
+                    {mentions.firstMention && (() => {
+                      const m = mentions.firstMention;
+                      const refColor = VOLUME_COLORS[m.volumeAbbrev] || "var(--accent)";
+                      const chapterStr = m.chapter > 0 ? `${m.chapter}:${m.verse}` : `${m.verse}`;
+                      return (
+                        <Link
+                          href={`/scriptures?bookId=${m.bookId}${m.chapter > 0 ? `&chapter=${m.chapter}` : ""}&verse=${m.verse}`}
+                          style={{
+                            display: "block",
+                            padding: "10px 14px",
+                            borderRadius: "10px",
+                            background: "rgba(255,255,255,0.03)",
+                            border: "1px solid var(--border)",
+                            textDecoration: "none",
+                            transition: "all 0.15s",
+                          }}
+                        >
+                          <div style={{ fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text)", marginBottom: "5px" }}>
+                            First Mention
+                          </div>
+                          <div style={{ fontSize: "0.78rem", color: "var(--text-secondary)", fontStyle: "italic", lineHeight: 1.5, marginBottom: "6px", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" as const, overflow: "hidden" }}>
+                            &ldquo;{m.text}&rdquo;
+                          </div>
+                          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                            <span style={{ fontSize: "0.72rem", fontWeight: 600, color: refColor }}>
+                              {m.bookName} {chapterStr}
+                            </span>
+                            <span style={{ fontSize: "0.72rem", fontWeight: 500, color: refColor, display: "flex", alignItems: "center", gap: "3px" }}>
+                              Read <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4.5 2L8.5 6L4.5 10"/></svg>
+                            </span>
+                          </div>
+                        </Link>
+                      );
+                    })()}
 
                     {mentions.lastMention && mentions.firstMention &&
                      (mentions.lastMention.bookId !== mentions.firstMention.bookId ||
                       mentions.lastMention.chapter !== mentions.firstMention.chapter ||
-                      mentions.lastMention.verse !== mentions.firstMention.verse) && (
-                      <Link
-                        href={`/scriptures?bookId=${mentions.lastMention.bookId}&chapter=${mentions.lastMention.chapter}&verse=${mentions.lastMention.verse}`}
-                        style={{
-                          display: "block",
-                          padding: "10px 14px",
-                          borderRadius: "10px",
-                          background: "rgba(255,255,255,0.03)",
-                          border: "1px solid var(--border)",
-                          textDecoration: "none",
-                          transition: "all 0.15s",
-                        }}
-                      >
-                        <div style={{ fontSize: "0.62rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "4px" }}>
-                          Last Mention
-                        </div>
-                        <div style={{ fontSize: "0.78rem", color: "var(--text-secondary)", fontStyle: "italic", lineHeight: 1.5, marginBottom: "4px", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" as const, overflow: "hidden" }}>
-                          &ldquo;{mentions.lastMention.text}&rdquo;
-                        </div>
-                        <div style={{ fontSize: "0.72rem", fontWeight: 600, color: VOLUME_COLORS[mentions.lastMention.volumeAbbrev] || "var(--accent)" }}>
-                          {mentions.lastMention.bookName} {mentions.lastMention.chapter}:{mentions.lastMention.verse}
-                          <span style={{ fontWeight: 400, color: "var(--accent)", marginLeft: "8px" }}>Read →</span>
-                        </div>
-                      </Link>
-                    )}
+                      mentions.lastMention.verse !== mentions.firstMention.verse) && (() => {
+                      const m = mentions.lastMention!;
+                      const refColor = VOLUME_COLORS[m.volumeAbbrev] || "var(--accent)";
+                      const chapterStr = m.chapter > 0 ? `${m.chapter}:${m.verse}` : `${m.verse}`;
+                      return (
+                        <Link
+                          href={`/scriptures?bookId=${m.bookId}${m.chapter > 0 ? `&chapter=${m.chapter}` : ""}&verse=${m.verse}`}
+                          style={{
+                            display: "block",
+                            padding: "10px 14px",
+                            borderRadius: "10px",
+                            background: "rgba(255,255,255,0.03)",
+                            border: "1px solid var(--border)",
+                            textDecoration: "none",
+                            transition: "all 0.15s",
+                          }}
+                        >
+                          <div style={{ fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text)", marginBottom: "5px" }}>
+                            Last Mention
+                          </div>
+                          <div style={{ fontSize: "0.78rem", color: "var(--text-secondary)", fontStyle: "italic", lineHeight: 1.5, marginBottom: "6px", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" as const, overflow: "hidden" }}>
+                            &ldquo;{m.text}&rdquo;
+                          </div>
+                          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                            <span style={{ fontSize: "0.72rem", fontWeight: 600, color: refColor }}>
+                              {m.bookName} {chapterStr}
+                            </span>
+                            <span style={{ fontSize: "0.72rem", fontWeight: 500, color: refColor, display: "flex", alignItems: "center", gap: "3px" }}>
+                              Read <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4.5 2L8.5 6L4.5 10"/></svg>
+                            </span>
+                          </div>
+                        </Link>
+                      );
+                    })()}
                   </div>
                 </div>
               ) : mentions ? (

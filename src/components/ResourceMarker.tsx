@@ -10,19 +10,19 @@ const TYPE_COLORS: Record<ResourceType, string> = {
 
 const TYPE_ICONS: Record<ResourceType, React.ReactNode> = {
   video: (
-    <svg width="8" height="8" viewBox="0 0 24 24" fill="currentColor">
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor">
       <path d="M8 5v14l11-7z" />
     </svg>
   ),
   article: (
-    <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
       <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
       <polyline points="15 3 21 3 21 9" />
       <line x1="10" y1="14" x2="21" y2="3" />
     </svg>
   ),
   pdf: (
-    <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
       <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
       <polyline points="14 2 14 8 20 8" />
     </svg>
@@ -60,14 +60,14 @@ export default function ResourceMarker({
       style={{
         display: "inline-flex",
         alignItems: "center",
-        gap: "3px",
-        padding: "2px 7px",
-        height: "18px",
-        borderRadius: "4px",
+        gap: "4px",
+        padding: "3px 9px",
+        height: "22px",
+        borderRadius: "5px",
         border: `1px solid ${color}35`,
         background: lightMode ? `${color}10` : `${color}15`,
         color: color,
-        fontSize: "0.6rem",
+        fontSize: "0.68rem",
         fontWeight: 600,
         fontFamily: "inherit",
         cursor: "pointer",

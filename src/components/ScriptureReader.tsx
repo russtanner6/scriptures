@@ -1322,40 +1322,7 @@ export default function ScriptureReader() {
                     </span>
                   </button>
                 )}
-                {/* Tone overlay toggle */}
-                <button
-                  onClick={() => {
-                    const next = !showToneOverlay;
-                    setShowToneOverlay(next);
-                    localStorage.setItem("reader-show-tone", String(next));
-                  }}
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "4px",
-                    padding: "7px 12px",
-                    borderRadius: "8px",
-                    border: `1px solid ${showToneOverlay ? `${toggleAccent}50` : theme.border}`,
-                    background: showToneOverlay
-                      ? `${toggleAccent}18`
-                      : lightMode ? "rgba(0,0,0,0.03)" : "rgba(255,255,255,0.04)",
-                    color: showToneOverlay ? toggleAccent : theme.textMuted,
-                    fontSize: "0.68rem",
-                    fontWeight: 600,
-                    cursor: "pointer",
-                    fontFamily: "inherit",
-                    transition: "all 0.2s",
-                  }}
-                >
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="3" y="3" width="18" height="18" rx="2" />
-                    <path d="M3 9h18" />
-                    <path d="M3 15h18" />
-                    <path d="M9 3v18" />
-                    <path d="M15 3v18" />
-                  </svg>
-                  Tone
-                </button>
+                {/* Tone overlay toggle — removed (not useful enough to show) */}
                 {/* Three-way reading mode sliding toggle */}
                 {(hasModernText || hasNarration) && (() => {
                   const modes: ReadingMode[] = ["original", "modern", "narration"].filter((mode) => {
