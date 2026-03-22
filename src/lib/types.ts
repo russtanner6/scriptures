@@ -118,6 +118,7 @@ export interface ScriptureCharacter {
   roles: string[];
   gender: "male" | "female";
   volumes: string[];
+  books: string[];
   family: Record<string, string | string[]>;
   speakerType: SpeakerType;
   tier: 1 | 2 | 3 | 4;

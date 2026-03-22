@@ -39,7 +39,47 @@
     },
     "speakerType": "prophet",
     "tier": 1,
-    "portraitUrl": "/characters/abraham_compressed.jpg"
+    "portraitUrl": "/characters/abraham_compressed.jpg",
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Leviticus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Nehemiah",
+      "Psalms",
+      "Isaiah",
+      "Jeremiah",
+      "Ezekiel",
+      "Micah",
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "Romans",
+      "2 Corinthians",
+      "Galatians",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "1 Nephi",
+      "2 Nephi",
+      "Jacob",
+      "Mosiah",
+      "Alma",
+      "Helaman",
+      "3 Nephi",
+      "Mormon",
+      "Ether",
+      "Doctrine and Covenants",
+      "Abraham"
+    ]
   },
   {
     "id": "adam",
@@ -74,7 +114,27 @@
     },
     "speakerType": "prophet",
     "tier": 1,
-    "portraitUrl": "/characters/adam_compressed.jpg"
+    "portraitUrl": "/characters/adam_compressed.jpg",
+    "books": [
+      "Genesis",
+      "Deuteronomy",
+      "Joshua",
+      "1 Chronicles",
+      "Hosea",
+      "Luke",
+      "Romans",
+      "1 Corinthians",
+      "1 Timothy",
+      "Jude",
+      "2 Nephi",
+      "Mosiah",
+      "Alma",
+      "Mormon",
+      "Moroni",
+      "Doctrine and Covenants",
+      "Moses",
+      "Abraham"
+    ]
   },
   {
     "id": "alma-the-younger",
@@ -104,7 +164,11 @@
     },
     "speakerType": "prophet",
     "tier": 1,
-    "portraitUrl": "/characters/alma-the-younger_compressed.jpg"
+    "portraitUrl": "/characters/alma-the-younger_compressed.jpg",
+    "books": [
+      "Mosiah",
+      "Alma"
+    ]
   },
   {
     "id": "captain-moroni",
@@ -124,7 +188,11 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 1
+    "tier": 1,
+    "books": [
+      "Alma",
+      "Helaman"
+    ]
   },
   {
     "id": "david",
@@ -164,7 +232,41 @@
     },
     "speakerType": "leader",
     "tier": 1,
-    "portraitUrl": "/characters/david_compressed.jpg"
+    "portraitUrl": "/characters/david_compressed.jpg",
+    "books": [
+      "Ruth",
+      "1 Samuel",
+      "2 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Psalms",
+      "Proverbs",
+      "Ecclesiastes",
+      "Song of Solomon",
+      "Isaiah",
+      "Jeremiah",
+      "Ezekiel",
+      "Hosea",
+      "Amos",
+      "Zechariah",
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "Romans",
+      "2 Timothy",
+      "Hebrews",
+      "Revelation",
+      "2 Nephi",
+      "Jacob",
+      "Mormon",
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "elijah",
@@ -188,7 +290,24 @@
     "family": {},
     "speakerType": "prophet",
     "tier": 1,
-    "portraitUrl": "/characters/elijah-the-tishbite_compressed.jpg"
+    "portraitUrl": "/characters/elijah-the-tishbite_compressed.jpg",
+    "books": [
+      "1 Kings",
+      "2 Kings",
+      "2 Chronicles",
+      "Malachi",
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Romans",
+      "James",
+      "1 Nephi",
+      "3 Nephi",
+      "Moroni",
+      "Doctrine and Covenants",
+      "Joseph Smith—History"
+    ]
   },
   {
     "id": "enoch",
@@ -214,7 +333,15 @@
     },
     "speakerType": "prophet",
     "tier": 1,
-    "portraitUrl": "/characters/enoch_compressed.jpg"
+    "portraitUrl": "/characters/enoch_compressed.jpg",
+    "books": [
+      "Genesis",
+      "Luke",
+      "Hebrews",
+      "Jude",
+      "Doctrine and Covenants",
+      "Moses"
+    ]
   },
   {
     "id": "eve",
@@ -243,7 +370,14 @@
     },
     "speakerType": "other",
     "tier": 1,
-    "portraitUrl": "/characters/eve_compressed.jpg"
+    "portraitUrl": "/characters/eve_compressed.jpg",
+    "books": [
+      "Genesis",
+      "1 Nephi",
+      "2 Nephi",
+      "Doctrine and Covenants",
+      "Moses"
+    ]
   },
   {
     "id": "god-the-father",
@@ -275,7 +409,95 @@
     },
     "speakerType": "deity",
     "tier": 1,
-    "portraitUrl": "/characters/god_compressed.jpg"
+    "portraitUrl": "/characters/god_compressed.jpg",
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Leviticus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "Ruth",
+      "1 Samuel",
+      "2 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Esther",
+      "Job",
+      "Psalms",
+      "Proverbs",
+      "Ecclesiastes",
+      "Isaiah",
+      "Jeremiah",
+      "Lamentations",
+      "Ezekiel",
+      "Daniel",
+      "Hosea",
+      "Joel",
+      "Amos",
+      "Obadiah",
+      "Jonah",
+      "Micah",
+      "Nahum",
+      "Habakkuk",
+      "Zephaniah",
+      "Haggai",
+      "Zechariah",
+      "Malachi",
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John",
+      "2 John",
+      "3 John",
+      "Jude",
+      "Revelation",
+      "1 Nephi",
+      "2 Nephi",
+      "Jacob",
+      "Enos",
+      "Jarom",
+      "Omni",
+      "Words of Mormon",
+      "Mosiah",
+      "Alma",
+      "Helaman",
+      "3 Nephi",
+      "4 Nephi",
+      "Mormon",
+      "Ether",
+      "Moroni",
+      "Doctrine and Covenants",
+      "Moses",
+      "Abraham",
+      "Joseph Smith—Matthew",
+      "Joseph Smith—History",
+      "Articles of Faith"
+    ]
   },
   {
     "id": "holy-ghost",
@@ -303,7 +525,59 @@
     ],
     "family": {},
     "speakerType": "deity",
-    "tier": 1
+    "tier": 1,
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Numbers",
+      "Judges",
+      "1 Samuel",
+      "2 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "2 Chronicles",
+      "Job",
+      "Psalms",
+      "Ecclesiastes",
+      "Isaiah",
+      "Lamentations",
+      "Ezekiel",
+      "Micah",
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Ephesians",
+      "1 Thessalonians",
+      "2 Timothy",
+      "Titus",
+      "Hebrews",
+      "1 Peter",
+      "2 Peter",
+      "1 John",
+      "Jude",
+      "1 Nephi",
+      "2 Nephi",
+      "Jacob",
+      "Jarom",
+      "Words of Mormon",
+      "Mosiah",
+      "Alma",
+      "Helaman",
+      "3 Nephi",
+      "4 Nephi",
+      "Mormon",
+      "Ether",
+      "Moroni",
+      "Doctrine and Covenants",
+      "Moses",
+      "Joseph Smith—History",
+      "Articles of Faith"
+    ]
   },
   {
     "id": "isaac",
@@ -334,7 +608,39 @@
     },
     "speakerType": "other",
     "tier": 1,
-    "portraitUrl": "/characters/isaac_compressed.jpg"
+    "portraitUrl": "/characters/isaac_compressed.jpg",
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Leviticus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Psalms",
+      "Jeremiah",
+      "Amos",
+      "Matthew",
+      "Mark",
+      "Luke",
+      "Acts",
+      "Romans",
+      "Galatians",
+      "Hebrews",
+      "James",
+      "1 Nephi",
+      "Jacob",
+      "Mosiah",
+      "Alma",
+      "Helaman",
+      "3 Nephi",
+      "Mormon",
+      "Doctrine and Covenants",
+      "Joseph Smith—History"
+    ]
   },
   {
     "id": "isaiah",
@@ -363,7 +669,18 @@
       ]
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "books": [
+      "2 Kings",
+      "2 Chronicles",
+      "Isaiah",
+      "1 Nephi",
+      "2 Nephi",
+      "Mosiah",
+      "3 Nephi",
+      "Doctrine and Covenants",
+      "Moses"
+    ]
   },
   {
     "id": "jacob-israel",
@@ -413,7 +730,49 @@
     },
     "speakerType": "prophet",
     "tier": 1,
-    "portraitUrl": "/characters/jacob_compressed.jpg"
+    "portraitUrl": "/characters/jacob_compressed.jpg",
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "1 Samuel",
+      "2 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Psalms",
+      "Isaiah",
+      "Jeremiah",
+      "Ezekiel",
+      "Hosea",
+      "Amos",
+      "Obadiah",
+      "Micah",
+      "Malachi",
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "Romans",
+      "Hebrews",
+      "1 Nephi",
+      "2 Nephi",
+      "Jacob",
+      "Enos",
+      "Mosiah",
+      "Alma",
+      "3 Nephi",
+      "Mormon",
+      "Ether",
+      "Moroni",
+      "Doctrine and Covenants",
+      "Moses",
+      "Abraham"
+    ]
   },
   {
     "id": "jesus-christ",
@@ -453,7 +812,92 @@
       "adoptive father": "Joseph of Nazareth"
     },
     "speakerType": "deity",
-    "tier": 1
+    "tier": 1,
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Leviticus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "Ruth",
+      "1 Samuel",
+      "2 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Job",
+      "Psalms",
+      "Proverbs",
+      "Isaiah",
+      "Jeremiah",
+      "Lamentations",
+      "Ezekiel",
+      "Daniel",
+      "Hosea",
+      "Joel",
+      "Amos",
+      "Obadiah",
+      "Jonah",
+      "Micah",
+      "Nahum",
+      "Habakkuk",
+      "Zephaniah",
+      "Haggai",
+      "Zechariah",
+      "Malachi",
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John",
+      "2 John",
+      "Jude",
+      "Revelation",
+      "1 Nephi",
+      "2 Nephi",
+      "Jacob",
+      "Enos",
+      "Jarom",
+      "Omni",
+      "Words of Mormon",
+      "Mosiah",
+      "Alma",
+      "Helaman",
+      "3 Nephi",
+      "4 Nephi",
+      "Mormon",
+      "Ether",
+      "Moroni",
+      "Doctrine and Covenants",
+      "Moses",
+      "Abraham",
+      "Joseph Smith—Matthew",
+      "Joseph Smith—History",
+      "Articles of Faith"
+    ]
   },
   {
     "id": "john-apostle",
@@ -482,7 +926,20 @@
       "brother": "James"
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "Galatians",
+      "Revelation",
+      "1 Nephi",
+      "3 Nephi",
+      "Ether",
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "john-the-baptist",
@@ -505,7 +962,12 @@
       "mother": "Elisabeth"
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke"
+    ]
   },
   {
     "id": "joseph-son-of-jacob",
@@ -553,7 +1015,38 @@
     },
     "speakerType": "prophet",
     "tier": 1,
-    "portraitUrl": "/characters/joseph_compressed.jpg"
+    "portraitUrl": "/characters/joseph_compressed.jpg",
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "2 Samuel",
+      "1 Kings",
+      "1 Chronicles",
+      "Psalms",
+      "Isaiah",
+      "Jeremiah",
+      "Ezekiel",
+      "Amos",
+      "Obadiah",
+      "John",
+      "Acts",
+      "Hebrews",
+      "Revelation",
+      "1 Nephi",
+      "2 Nephi",
+      "Jacob",
+      "Alma",
+      "3 Nephi",
+      "Ether",
+      "Doctrine and Covenants",
+      "Moses",
+      "Abraham",
+      "Joseph Smith—History"
+    ]
   },
   {
     "id": "joseph-smith",
@@ -592,7 +1085,11 @@
     },
     "speakerType": "prophet",
     "tier": 1,
-    "portraitUrl": "/characters/joseph-smith_compressed.jpg"
+    "portraitUrl": "/characters/joseph-smith_compressed.jpg",
+    "books": [
+      "Doctrine and Covenants",
+      "Joseph Smith—History"
+    ]
   },
   {
     "id": "king-benjamin",
@@ -617,7 +1114,13 @@
     },
     "speakerType": "prophet",
     "tier": 1,
-    "portraitUrl": "/characters/king-benjamin_compressed.jpg"
+    "portraitUrl": "/characters/king-benjamin_compressed.jpg",
+    "books": [
+      "Words of Mormon",
+      "Mosiah",
+      "Helaman",
+      "Ether"
+    ]
   },
   {
     "id": "lehi",
@@ -648,7 +1151,17 @@
     },
     "speakerType": "prophet",
     "tier": 1,
-    "portraitUrl": "/characters/lehi_compressed.jpg"
+    "portraitUrl": "/characters/lehi_compressed.jpg",
+    "books": [
+      "1 Nephi",
+      "2 Nephi",
+      "Jacob",
+      "Mosiah",
+      "Alma",
+      "Helaman",
+      "3 Nephi",
+      "Mormon"
+    ]
   },
   {
     "id": "mary-mother-of-jesus",
@@ -674,7 +1187,17 @@
     },
     "speakerType": "other",
     "tier": 1,
-    "portraitUrl": "/characters/mary-mother-of-jesus_compressed.jpg"
+    "portraitUrl": "/characters/mary-mother-of-jesus_compressed.jpg",
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "Romans",
+      "Mosiah",
+      "Alma"
+    ]
   },
   {
     "id": "mormon",
@@ -697,7 +1220,17 @@
       "son": "Moroni"
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "books": [
+      "Words of Mormon",
+      "Mosiah",
+      "Alma",
+      "3 Nephi",
+      "4 Nephi",
+      "Mormon",
+      "Ether",
+      "Moroni"
+    ]
   },
   {
     "id": "moroni-son-of-mormon",
@@ -724,7 +1257,16 @@
     },
     "speakerType": "prophet",
     "tier": 1,
-    "portraitUrl": "/characters/moroni_compressed.jpg"
+    "portraitUrl": "/characters/moroni_compressed.jpg",
+    "books": [
+      "Words of Mormon",
+      "Alma",
+      "3 Nephi",
+      "Mormon",
+      "Ether",
+      "Moroni",
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "moses",
@@ -760,7 +1302,53 @@
     },
     "speakerType": "prophet",
     "tier": 1,
-    "portraitUrl": "/characters/moses_compressed.jpg"
+    "portraitUrl": "/characters/moses_compressed.jpg",
+    "books": [
+      "Exodus",
+      "Leviticus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "1 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Psalms",
+      "Isaiah",
+      "Jeremiah",
+      "Daniel",
+      "Micah",
+      "Malachi",
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "2 Timothy",
+      "Hebrews",
+      "Jude",
+      "Revelation",
+      "1 Nephi",
+      "2 Nephi",
+      "Jacob",
+      "Jarom",
+      "Mosiah",
+      "Alma",
+      "Helaman",
+      "3 Nephi",
+      "4 Nephi",
+      "Ether",
+      "Doctrine and Covenants",
+      "Moses",
+      "Joseph Smith—Matthew"
+    ]
   },
   {
     "id": "nephi-son-of-lehi",
@@ -794,7 +1382,11 @@
     },
     "speakerType": "prophet",
     "tier": 1,
-    "portraitUrl": "/characters/nephi_compressed.jpg"
+    "portraitUrl": "/characters/nephi_compressed.jpg",
+    "books": [
+      "1 Nephi",
+      "2 Nephi"
+    ]
   },
   {
     "id": "noah",
@@ -827,7 +1419,21 @@
       ]
     },
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "books": [
+      "Genesis",
+      "1 Chronicles",
+      "Isaiah",
+      "Ezekiel",
+      "Matthew",
+      "Luke",
+      "Hebrews",
+      "1 Peter",
+      "2 Peter",
+      "Ether",
+      "Doctrine and Covenants",
+      "Moses"
+    ]
   },
   {
     "id": "paul",
@@ -850,7 +1456,25 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 1
+    "tier": 1,
+    "books": [
+      "Acts",
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "Hebrews",
+      "2 Peter"
+    ]
   },
   {
     "id": "peter",
@@ -879,7 +1503,19 @@
     },
     "speakerType": "prophet",
     "tier": 1,
-    "portraitUrl": "/characters/simon-peter_compressed.jpg"
+    "portraitUrl": "/characters/simon-peter_compressed.jpg",
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "1 Corinthians",
+      "Galatians",
+      "1 Peter",
+      "2 Peter",
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "aaron-ot",
@@ -913,7 +1549,19 @@
       ]
     },
     "speakerType": "leader",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Exodus",
+      "Leviticus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "1 Samuel",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Psalms",
+      "Hebrews"
+    ]
   },
   {
     "id": "abinadi",
@@ -933,7 +1581,12 @@
     "family": {},
     "speakerType": "prophet",
     "tier": 2,
-    "portraitUrl": "/characters/abinadi_compressed.jpg"
+    "portraitUrl": "/characters/abinadi_compressed.jpg",
+    "books": [
+      "Mosiah",
+      "Alma",
+      "Mormon"
+    ]
   },
   {
     "id": "alma-the-elder",
@@ -957,7 +1610,10 @@
       "son": "Alma the Younger"
     },
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Mosiah"
+    ]
   },
   {
     "id": "ammon-son-of-mosiah",
@@ -985,7 +1641,11 @@
       ]
     },
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Mosiah",
+      "Alma"
+    ]
   },
   {
     "id": "amulek",
@@ -1005,7 +1665,12 @@
       "ancestor": "Aminadi"
     },
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Alma",
+      "Helaman",
+      "Ether"
+    ]
   },
   {
     "id": "brigham-young",
@@ -1024,7 +1689,10 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "brother-of-jared",
@@ -1048,7 +1716,10 @@
     },
     "speakerType": "prophet",
     "tier": 2,
-    "portraitUrl": "/characters/brother-of-jared_compressed.jpg"
+    "portraitUrl": "/characters/brother-of-jared_compressed.jpg",
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "daniel",
@@ -1070,7 +1741,15 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "1 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Ezekiel",
+      "Daniel",
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "elisha",
@@ -1093,7 +1772,12 @@
       "father": "Shaphat"
     },
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "1 Kings",
+      "2 Kings",
+      "Luke"
+    ]
   },
   {
     "id": "emma-smith",
@@ -1117,7 +1801,10 @@
     },
     "speakerType": "other",
     "tier": 2,
-    "portraitUrl": "/characters/emma-smith_compressed.jpg"
+    "portraitUrl": "/characters/emma-smith_compressed.jpg",
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "esther",
@@ -1141,7 +1828,10 @@
     },
     "speakerType": "other",
     "tier": 2,
-    "portraitUrl": "/characters/esther_compressed.jpg"
+    "portraitUrl": "/characters/esther_compressed.jpg",
+    "books": [
+      "Esther"
+    ]
   },
   {
     "id": "ether",
@@ -1162,7 +1852,10 @@
       "father": "Coriantor"
     },
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "ezekiel",
@@ -1184,7 +1877,11 @@
       "father": "Buzi"
     },
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Ezekiel",
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "gabriel",
@@ -1205,7 +1902,12 @@
     ],
     "family": {},
     "speakerType": "angel",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Daniel",
+      "Luke",
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "helaman-son-of-alma",
@@ -1238,7 +1940,11 @@
     },
     "speakerType": "prophet",
     "tier": 2,
-    "portraitUrl": "/characters/helaman_compressed.jpg"
+    "portraitUrl": "/characters/helaman_compressed.jpg",
+    "books": [
+      "Alma",
+      "Helaman"
+    ]
   },
   {
     "id": "hyrum-smith",
@@ -1261,7 +1967,10 @@
       "mother": "Lucy Mack Smith"
     },
     "speakerType": "other",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "jacob-son-of-lehi",
@@ -1294,7 +2003,14 @@
       "son": "Enos"
     },
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "2 Nephi",
+      "Jacob",
+      "Enos",
+      "Jarom",
+      "Omni"
+    ]
   },
   {
     "id": "james-apostle",
@@ -1320,7 +2036,18 @@
       "brother": "John"
     },
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "Acts",
+      "1 Corinthians",
+      "Galatians",
+      "James",
+      "Jude",
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "jeremiah",
@@ -1342,7 +2069,20 @@
       "father": "Hilkiah"
     },
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "2 Kings",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Jeremiah",
+      "Lamentations",
+      "Daniel",
+      "1 Nephi",
+      "Helaman",
+      "Ether",
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "job",
@@ -1362,7 +2102,12 @@
       "wife": "unnamed"
     },
     "speakerType": "other",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Genesis",
+      "Job",
+      "Ezekiel"
+    ]
   },
   {
     "id": "jonah",
@@ -1383,7 +2128,11 @@
       "father": "Amittai"
     },
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "2 Kings",
+      "Jonah"
+    ]
   },
   {
     "id": "joshua",
@@ -1407,7 +2156,21 @@
       "father": "Nun"
     },
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Exodus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "1 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "Nehemiah",
+      "Haggai",
+      "Zechariah"
+    ]
   },
   {
     "id": "judas-iscariot",
@@ -1426,7 +2189,13 @@
     "family": {},
     "speakerType": "other",
     "tier": 2,
-    "portraitUrl": "/characters/judas-iscariot_compressed.jpg"
+    "portraitUrl": "/characters/judas-iscariot_compressed.jpg",
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John"
+    ]
   },
   {
     "id": "king-noah",
@@ -1450,7 +2219,11 @@
     },
     "speakerType": "leader",
     "tier": 2,
-    "portraitUrl": "/characters/king-noah_compressed.jpg"
+    "portraitUrl": "/characters/king-noah_compressed.jpg",
+    "books": [
+      "Mosiah",
+      "Alma"
+    ]
   },
   {
     "id": "laman",
@@ -1478,7 +2251,14 @@
       ]
     },
     "speakerType": "other",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "1 Nephi",
+      "2 Nephi",
+      "Mosiah",
+      "Alma",
+      "3 Nephi"
+    ]
   },
   {
     "id": "malachi",
@@ -1498,7 +2278,12 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Malachi",
+      "3 Nephi",
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "martin-harris",
@@ -1516,7 +2301,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "mary-magdalene",
@@ -1535,7 +2323,13 @@
     "family": {},
     "speakerType": "other",
     "tier": 2,
-    "portraitUrl": "/characters/mary-magdalene_compressed.jpg"
+    "portraitUrl": "/characters/mary-magdalene_compressed.jpg",
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John"
+    ]
   },
   {
     "id": "matthew-apostle",
@@ -1558,7 +2352,13 @@
       "father": "Alphaeus"
     },
     "speakerType": "other",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "Acts"
+    ]
   },
   {
     "id": "melchizedek",
@@ -1582,7 +2382,14 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Genesis",
+      "Psalms",
+      "Hebrews",
+      "Alma",
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "michael",
@@ -1604,7 +2411,13 @@
     ],
     "family": {},
     "speakerType": "angel",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Daniel",
+      "Jude",
+      "Revelation",
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "mosiah-ii",
@@ -1634,7 +2447,12 @@
       ]
     },
     "speakerType": "leader",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Mosiah",
+      "Alma",
+      "Ether"
+    ]
   },
   {
     "id": "nephi-son-of-helaman",
@@ -1659,7 +2477,11 @@
       "son": "Nephi"
     },
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Helaman",
+      "3 Nephi"
+    ]
   },
   {
     "id": "oliver-cowdery",
@@ -1679,7 +2501,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "ruth",
@@ -1706,7 +2531,11 @@
     },
     "speakerType": "other",
     "tier": 2,
-    "portraitUrl": "/characters/ruth_compressed.jpg"
+    "portraitUrl": "/characters/ruth_compressed.jpg",
+    "books": [
+      "Ruth",
+      "Matthew"
+    ]
   },
   {
     "id": "samuel-ot",
@@ -1733,7 +2562,14 @@
       ]
     },
     "speakerType": "prophet",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "1 Samuel",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Psalms",
+      "Jeremiah"
+    ]
   },
   {
     "id": "samuel-the-lamanite",
@@ -1752,7 +2588,10 @@
     "family": {},
     "speakerType": "prophet",
     "tier": 2,
-    "portraitUrl": "/characters/samuel-the-lamanite_compressed.jpg"
+    "portraitUrl": "/characters/samuel-the-lamanite_compressed.jpg",
+    "books": [
+      "Mormon"
+    ]
   },
   {
     "id": "sarah",
@@ -1777,7 +2616,19 @@
       "son": "Isaac"
     },
     "speakerType": "other",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Genesis",
+      "Isaiah",
+      "Romans",
+      "Galatians",
+      "Hebrews",
+      "1 Peter",
+      "2 Nephi",
+      "Jacob",
+      "Doctrine and Covenants",
+      "Abraham"
+    ]
   },
   {
     "id": "sariah",
@@ -1805,7 +2656,10 @@
       ]
     },
     "speakerType": "other",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "1 Nephi"
+    ]
   },
   {
     "id": "satan",
@@ -1834,7 +2688,53 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "1 Chronicles",
+      "Nehemiah",
+      "Esther",
+      "Job",
+      "Psalms",
+      "Isaiah",
+      "Lamentations",
+      "Zechariah",
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Ephesians",
+      "Philippians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John",
+      "Jude",
+      "Revelation",
+      "1 Nephi",
+      "2 Nephi",
+      "Jacob",
+      "Omni",
+      "Mosiah",
+      "Alma",
+      "Helaman",
+      "3 Nephi",
+      "4 Nephi",
+      "Mormon",
+      "Ether",
+      "Moroni",
+      "Doctrine and Covenants",
+      "Moses",
+      "Joseph Smith—History"
+    ]
   },
   {
     "id": "saul-king",
@@ -1856,7 +2756,14 @@
       "daughter": "Michal"
     },
     "speakerType": "leader",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "1 Samuel",
+      "2 Samuel",
+      "1 Chronicles",
+      "Isaiah",
+      "Acts"
+    ]
   },
   {
     "id": "sidney-rigdon",
@@ -1875,7 +2782,10 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 2
+    "tier": 2,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "solomon",
@@ -1903,7 +2813,27 @@
     },
     "speakerType": "leader",
     "tier": 2,
-    "portraitUrl": "/characters/king-solomon_compressed.jpg"
+    "portraitUrl": "/characters/king-solomon_compressed.jpg",
+    "books": [
+      "2 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Proverbs",
+      "Song of Solomon",
+      "Jeremiah",
+      "Matthew",
+      "Luke",
+      "John",
+      "Acts",
+      "2 Nephi",
+      "Jacob",
+      "3 Nephi",
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "aaron-son-of-mosiah",
@@ -1931,7 +2861,11 @@
       ]
     },
     "speakerType": "prophet",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Mosiah",
+      "Alma"
+    ]
   },
   {
     "id": "abel",
@@ -1956,7 +2890,22 @@
       "brother": "Cain"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis",
+      "Numbers",
+      "Judges",
+      "1 Samuel",
+      "2 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "2 Chronicles",
+      "Matthew",
+      "Luke",
+      "Hebrews",
+      "Doctrine and Covenants",
+      "Moses"
+    ]
   },
   {
     "id": "abimelech-gerar",
@@ -1974,7 +2923,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis"
+    ]
   },
   {
     "id": "abimelech-son-of-gideon",
@@ -1994,7 +2946,11 @@
       "father": "gideon-ot"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Judges",
+      "2 Samuel"
+    ]
   },
   {
     "id": "abish",
@@ -2013,7 +2969,10 @@
     "family": {},
     "speakerType": "other",
     "tier": 3,
-    "portraitUrl": "/characters/abish_compressed.jpg"
+    "portraitUrl": "/characters/abish_compressed.jpg",
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "absalom",
@@ -2034,7 +2993,13 @@
       "sister": "Tamar"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Samuel",
+      "1 Kings",
+      "1 Chronicles",
+      "2 Chronicles"
+    ]
   },
   {
     "id": "achish",
@@ -2052,7 +3017,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Samuel",
+      "1 Kings"
+    ]
   },
   {
     "id": "agabus",
@@ -2070,7 +3039,10 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "ahab",
@@ -2095,7 +3067,14 @@
       ]
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Kings",
+      "2 Kings",
+      "2 Chronicles",
+      "Jeremiah",
+      "Micah"
+    ]
   },
   {
     "id": "ahasuerus",
@@ -2117,7 +3096,12 @@
       "wife": "esther"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Ezra",
+      "Esther",
+      "Daniel"
+    ]
   },
   {
     "id": "ahaz",
@@ -2138,7 +3122,15 @@
       "son": "hezekiah"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Isaiah",
+      "Hosea",
+      "Micah"
+    ]
   },
   {
     "id": "ahaziah-king-of-israel",
@@ -2159,7 +3151,12 @@
       "mother": "jezebel"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Kings",
+      "2 Kings",
+      "2 Chronicles"
+    ]
   },
   {
     "id": "ahijah-prophet",
@@ -2179,7 +3176,11 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Kings",
+      "2 Chronicles"
+    ]
   },
   {
     "id": "ahithophel",
@@ -2197,7 +3198,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Samuel",
+      "1 Chronicles"
+    ]
   },
   {
     "id": "alvin-smith",
@@ -2220,7 +3225,10 @@
       "mother": "lucy-mack-smith"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "amalickiah",
@@ -2241,7 +3249,10 @@
       "brother": "Ammoron"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "amaziah-king-of-judah",
@@ -2261,7 +3272,13 @@
       "father": "joash-king-of-judah"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Amos"
+    ]
   },
   {
     "id": "ammoron",
@@ -2281,7 +3298,11 @@
       "brother": "Amalickiah"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Alma",
+      "Helaman"
+    ]
   },
   {
     "id": "amos",
@@ -2299,7 +3320,10 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Amos"
+    ]
   },
   {
     "id": "ananias-high-priest",
@@ -2317,7 +3341,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "ananias-of-jerusalem",
@@ -2337,7 +3364,10 @@
       "wife": "sapphira"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "andrew",
@@ -2358,7 +3388,14 @@
       "brother": "Peter"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts"
+    ]
   },
   {
     "id": "anti-nephi-lehi",
@@ -2378,7 +3415,10 @@
       "brother": "Lamoni"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "antipas-of-pergamum",
@@ -2396,7 +3436,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Revelation"
+    ]
   },
   {
     "id": "aristarchus",
@@ -2414,7 +3457,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Acts",
+      "Colossians",
+      "Philemon"
+    ]
   },
   {
     "id": "asa",
@@ -2434,7 +3482,13 @@
       "son": "jehoshaphat"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Jeremiah"
+    ]
   },
   {
     "id": "baasha",
@@ -2454,7 +3508,13 @@
       "son": "elah-king-of-israel"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Kings",
+      "2 Kings",
+      "2 Chronicles",
+      "Jeremiah"
+    ]
   },
   {
     "id": "balaam",
@@ -2475,7 +3535,17 @@
       "father": "Beor"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Nehemiah",
+      "Micah",
+      "2 Peter",
+      "Jude",
+      "Revelation"
+    ]
   },
   {
     "id": "barnabas",
@@ -2499,7 +3569,19 @@
       "cousin": "John Mark"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "1 Corinthians",
+      "Galatians",
+      "Colossians",
+      "Hebrews",
+      "Revelation"
+    ]
   },
   {
     "id": "bartholomew",
@@ -2519,7 +3601,13 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "Acts"
+    ]
   },
   {
     "id": "bartimaeus",
@@ -2537,7 +3625,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Mark"
+    ]
   },
   {
     "id": "bathsheba",
@@ -2561,7 +3652,11 @@
     },
     "speakerType": "other",
     "tier": 3,
-    "portraitUrl": "/characters/bathsheba_compressed.jpg"
+    "portraitUrl": "/characters/bathsheba_compressed.jpg",
+    "books": [
+      "2 Samuel",
+      "1 Kings"
+    ]
   },
   {
     "id": "ben-hadad",
@@ -2582,7 +3677,14 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Kings",
+      "2 Kings",
+      "2 Chronicles",
+      "Jeremiah",
+      "Amos"
+    ]
   },
   {
     "id": "benjamin-ot",
@@ -2604,7 +3706,26 @@
       "brother (full)": "Joseph"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "1 Samuel",
+      "2 Samuel",
+      "1 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Esther",
+      "Psalms",
+      "Jeremiah",
+      "Ezekiel",
+      "Hosea",
+      "Obadiah"
+    ]
   },
   {
     "id": "bildad",
@@ -2622,7 +3743,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Job"
+    ]
   },
   {
     "id": "boaz",
@@ -2645,7 +3769,13 @@
       "mother": "Rahab"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Ruth",
+      "1 Kings",
+      "1 Chronicles",
+      "2 Chronicles"
+    ]
   },
   {
     "id": "caesar-augustus",
@@ -2665,7 +3795,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Luke",
+      "Acts"
+    ]
   },
   {
     "id": "caiaphas",
@@ -2687,7 +3821,13 @@
       "father-in-law": "Annas"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Matthew",
+      "Luke",
+      "John",
+      "Acts"
+    ]
   },
   {
     "id": "cain",
@@ -2713,7 +3853,15 @@
     },
     "speakerType": "other",
     "tier": 3,
-    "portraitUrl": "/characters/cain_compressed.jpg"
+    "portraitUrl": "/characters/cain_compressed.jpg",
+    "books": [
+      "Genesis",
+      "Joshua",
+      "Helaman",
+      "Ether",
+      "Doctrine and Covenants",
+      "Moses"
+    ]
   },
   {
     "id": "caleb",
@@ -2733,7 +3881,15 @@
       "father": "Jephunneh"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "1 Samuel",
+      "1 Chronicles"
+    ]
   },
   {
     "id": "claudius-lysias",
@@ -2753,7 +3909,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "cleopas",
@@ -2771,7 +3930,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Luke"
+    ]
   },
   {
     "id": "corianton",
@@ -2795,7 +3957,10 @@
       ]
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "coriantumr-jaredite",
@@ -2816,7 +3981,11 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Omni",
+      "Ether"
+    ]
   },
   {
     "id": "cornelius",
@@ -2834,7 +4003,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "cyrus",
@@ -2854,7 +4026,13 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Chronicles",
+      "Ezra",
+      "Isaiah",
+      "Daniel"
+    ]
   },
   {
     "id": "david-patten",
@@ -2874,7 +4052,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "david-whitmer",
@@ -2897,7 +4078,10 @@
       ]
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "deborah",
@@ -2919,7 +4103,11 @@
     },
     "speakerType": "leader",
     "tier": 3,
-    "portraitUrl": "/characters/deborah_compressed.jpg"
+    "portraitUrl": "/characters/deborah_compressed.jpg",
+    "books": [
+      "Genesis",
+      "Judges"
+    ]
   },
   {
     "id": "delilah",
@@ -2937,7 +4125,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Judges"
+    ]
   },
   {
     "id": "demas",
@@ -2955,7 +4146,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Colossians",
+      "2 Timothy",
+      "Philemon"
+    ]
   },
   {
     "id": "demetrius-silversmith",
@@ -2973,7 +4169,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "diotrephes",
@@ -2991,7 +4190,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "3 John"
+    ]
   },
   {
     "id": "edward-partridge",
@@ -3009,7 +4211,10 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "eglon",
@@ -3027,7 +4232,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Joshua",
+      "Judges"
+    ]
   },
   {
     "id": "eli",
@@ -3051,7 +4260,11 @@
       ]
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Samuel",
+      "1 Kings"
+    ]
   },
   {
     "id": "elias",
@@ -3070,7 +4283,11 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Doctrine and Covenants",
+      "Joseph Smith—History"
+    ]
   },
   {
     "id": "elihu",
@@ -3088,7 +4305,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Samuel",
+      "1 Chronicles",
+      "Job"
+    ]
   },
   {
     "id": "eliphaz",
@@ -3106,7 +4328,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis",
+      "1 Chronicles",
+      "Job"
+    ]
   },
   {
     "id": "elisabeth",
@@ -3130,7 +4357,10 @@
       "relative": "Mary"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Luke"
+    ]
   },
   {
     "id": "emma-hale",
@@ -3153,7 +4383,10 @@
       "father": "isaac-hale"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Joseph Smith—History"
+    ]
   },
   {
     "id": "enos-bom",
@@ -3175,7 +4408,12 @@
       "son": "Jarom"
     },
     "speakerType": "prophet",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Enos",
+      "Jarom",
+      "Mosiah"
+    ]
   },
   {
     "id": "epaphras",
@@ -3194,7 +4432,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Colossians",
+      "Philemon"
+    ]
   },
   {
     "id": "epaphroditus",
@@ -3213,7 +4455,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Philippians"
+    ]
   },
   {
     "id": "ephraim",
@@ -3238,7 +4483,31 @@
       "grandfather": "Jacob"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "1 Samuel",
+      "2 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Nehemiah",
+      "Psalms",
+      "Isaiah",
+      "Jeremiah",
+      "Ezekiel",
+      "Hosea",
+      "Obadiah",
+      "Zechariah",
+      "2 Nephi",
+      "Ether",
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "esau",
@@ -3263,7 +4532,33 @@
       "brother": "Jacob"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "1 Samuel",
+      "2 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Psalms",
+      "Isaiah",
+      "Jeremiah",
+      "Lamentations",
+      "Ezekiel",
+      "Daniel",
+      "Joel",
+      "Amos",
+      "Obadiah",
+      "Malachi",
+      "Romans",
+      "Hebrews"
+    ]
   },
   {
     "id": "ezra",
@@ -3282,7 +4577,12 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Chronicles",
+      "Ezra",
+      "Nehemiah"
+    ]
   },
   {
     "id": "gadianton",
@@ -3300,7 +4600,13 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Helaman",
+      "3 Nephi",
+      "4 Nephi",
+      "Mormon"
+    ]
   },
   {
     "id": "gallio",
@@ -3318,7 +4624,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "george-a-smith",
@@ -3336,7 +4645,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "gideon-ot",
@@ -3360,7 +4672,13 @@
       "son": "Abimelech"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Judges",
+      "1 Samuel",
+      "2 Samuel",
+      "Hebrews"
+    ]
   },
   {
     "id": "gideon-bom",
@@ -3379,7 +4697,11 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Mosiah",
+      "Alma"
+    ]
   },
   {
     "id": "gidgiddoni",
@@ -3399,7 +4721,10 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "3 Nephi"
+    ]
   },
   {
     "id": "goliath",
@@ -3418,7 +4743,12 @@
     "family": {},
     "speakerType": "other",
     "tier": 3,
-    "portraitUrl": "/characters/goliath_compressed.jpg"
+    "portraitUrl": "/characters/goliath_compressed.jpg",
+    "books": [
+      "1 Samuel",
+      "2 Samuel",
+      "1 Chronicles"
+    ]
   },
   {
     "id": "gomer",
@@ -3436,7 +4766,13 @@
       "husband": "hosea"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis",
+      "1 Chronicles",
+      "Ezekiel",
+      "Hosea"
+    ]
   },
   {
     "id": "hagar",
@@ -3459,7 +4795,10 @@
     },
     "speakerType": "other",
     "tier": 3,
-    "portraitUrl": "/characters/hagar_compressed.jpg"
+    "portraitUrl": "/characters/hagar_compressed.jpg",
+    "books": [
+      "Genesis"
+    ]
   },
   {
     "id": "haman",
@@ -3477,7 +4816,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Esther"
+    ]
   },
   {
     "id": "hannah",
@@ -3498,7 +4840,10 @@
       "son": "Samuel"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Samuel"
+    ]
   },
   {
     "id": "hazael",
@@ -3516,7 +4861,13 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Kings",
+      "2 Kings",
+      "2 Chronicles",
+      "Amos"
+    ]
   },
   {
     "id": "heber-c-kimball",
@@ -3535,7 +4886,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "helaman-son-of-helaman",
@@ -3562,7 +4916,11 @@
       ]
     },
     "speakerType": "prophet",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Helaman",
+      "3 Nephi"
+    ]
   },
   {
     "id": "herod-agrippa-i",
@@ -3582,7 +4940,10 @@
       "son": "agrippa-ii"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "herod-antipas",
@@ -3603,7 +4964,13 @@
       "wife": "Herodias"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "Acts"
+    ]
   },
   {
     "id": "herod-the-great",
@@ -3623,7 +4990,11 @@
       "son": "Herod Antipas"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Matthew",
+      "Luke"
+    ]
   },
   {
     "id": "hezekiah",
@@ -3644,7 +5015,19 @@
       "son": "Manasseh"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Proverbs",
+      "Isaiah",
+      "Jeremiah",
+      "Hosea",
+      "Micah"
+    ]
   },
   {
     "id": "hiram-king-of-tyre",
@@ -3662,7 +5045,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Samuel",
+      "1 Kings",
+      "2 Chronicles"
+    ]
   },
   {
     "id": "hosea",
@@ -3683,7 +5071,10 @@
       "wife": "Gomer"
     },
     "speakerType": "prophet",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Hosea"
+    ]
   },
   {
     "id": "hoshea-king-of-israel",
@@ -3701,7 +5092,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Kings"
+    ]
   },
   {
     "id": "ishmael-ot",
@@ -3723,7 +5117,13 @@
       "mother": "Hagar"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis",
+      "1 Chronicles",
+      "Moses",
+      "Abraham"
+    ]
   },
   {
     "id": "ishmael-bom",
@@ -3745,7 +5145,11 @@
       "daughters": "married Lehi's sons"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Nephi",
+      "Alma"
+    ]
   },
   {
     "id": "jabin",
@@ -3765,7 +5169,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Joshua",
+      "Judges",
+      "Psalms"
+    ]
   },
   {
     "id": "jairus",
@@ -3783,7 +5192,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Mark",
+      "Luke"
+    ]
   },
   {
     "id": "james-brother-of-jesus",
@@ -3807,7 +5220,10 @@
       "brother": "Jesus Christ"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Mark"
+    ]
   },
   {
     "id": "jared-bom",
@@ -3829,7 +5245,10 @@
       "brother": "Brother of Jared"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "jehoash-king-of-israel",
@@ -3852,7 +5271,10 @@
       "son": "jeroboam-ii"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Kings"
+    ]
   },
   {
     "id": "jehoiada",
@@ -3872,7 +5294,16 @@
       "wife": "jehosheba"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Nehemiah",
+      "Jeremiah"
+    ]
   },
   {
     "id": "jehoiakim",
@@ -3895,7 +5326,16 @@
       "son": "jehoiachin"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Nehemiah",
+      "Isaiah",
+      "Jeremiah",
+      "Daniel"
+    ]
   },
   {
     "id": "jehoram-king-of-judah",
@@ -3918,7 +5358,12 @@
       "wife": "athaliah"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Kings",
+      "2 Kings",
+      "2 Chronicles"
+    ]
   },
   {
     "id": "jehoshaphat",
@@ -3938,7 +5383,15 @@
       "father": "asa"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Joel"
+    ]
   },
   {
     "id": "jehu",
@@ -3957,7 +5410,14 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Hosea"
+    ]
   },
   {
     "id": "jeroboam",
@@ -3980,7 +5440,15 @@
       "son": "Nadab"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Hosea",
+      "Amos"
+    ]
   },
   {
     "id": "jeroboam-ii",
@@ -4000,7 +5468,12 @@
       "father": "jehoash-king-of-israel"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Kings",
+      "Hosea",
+      "Amos"
+    ]
   },
   {
     "id": "jeshua-high-priest",
@@ -4020,7 +5493,13 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Ezra",
+      "Nehemiah",
+      "Haggai",
+      "Zechariah"
+    ]
   },
   {
     "id": "jesse",
@@ -4045,7 +5524,23 @@
       "grandmother": "Ruth"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Ruth",
+      "1 Samuel",
+      "2 Samuel",
+      "1 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Psalms",
+      "Isaiah",
+      "Matthew",
+      "Luke",
+      "Acts",
+      "Romans",
+      "2 Nephi",
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "jethro",
@@ -4069,7 +5564,14 @@
       "son-in-law": "Moses"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Numbers",
+      "1 Chronicles",
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "jezebel",
@@ -4091,7 +5593,12 @@
       "father": "Ethbaal"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Kings",
+      "2 Kings",
+      "Revelation"
+    ]
   },
   {
     "id": "joab",
@@ -4111,7 +5618,15 @@
       "sister": "Zeruiah (David's sister)"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Samuel",
+      "2 Samuel",
+      "1 Kings",
+      "1 Chronicles",
+      "Ezra",
+      "Nehemiah"
+    ]
   },
   {
     "id": "joanna",
@@ -4131,7 +5646,10 @@
       "husband": "chuza"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Luke"
+    ]
   },
   {
     "id": "joash-king-of-judah",
@@ -4151,7 +5669,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Kings"
+    ]
   },
   {
     "id": "john-taylor",
@@ -4170,7 +5691,10 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "jonathan-ot",
@@ -4192,7 +5716,17 @@
       "son": "Mephibosheth"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Judges",
+      "1 Samuel",
+      "2 Samuel",
+      "1 Kings",
+      "1 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Jeremiah"
+    ]
   },
   {
     "id": "joram-king-of-israel",
@@ -4215,7 +5749,11 @@
       "mother": "jezebel"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Kings",
+      "2 Chronicles"
+    ]
   },
   {
     "id": "joseph-smith-sr",
@@ -4241,7 +5779,10 @@
       ]
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "joseph-of-nazareth",
@@ -4263,7 +5804,12 @@
       "father": "Jacob (or Heli)"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Matthew",
+      "Luke",
+      "John"
+    ]
   },
   {
     "id": "josiah",
@@ -4288,7 +5834,16 @@
       ]
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Jeremiah",
+      "Zephaniah",
+      "Zechariah"
+    ]
   },
   {
     "id": "judah",
@@ -4319,7 +5874,47 @@
       ]
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "Ruth",
+      "1 Samuel",
+      "2 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Esther",
+      "Psalms",
+      "Proverbs",
+      "Isaiah",
+      "Jeremiah",
+      "Lamentations",
+      "Ezekiel",
+      "Daniel",
+      "Hosea",
+      "Joel",
+      "Amos",
+      "Obadiah",
+      "Micah",
+      "Nahum",
+      "Zephaniah",
+      "Haggai",
+      "Zechariah",
+      "Malachi",
+      "Hebrews",
+      "1 Nephi",
+      "2 Nephi",
+      "Omni",
+      "3 Nephi"
+    ]
   },
   {
     "id": "judas-son-of-james",
@@ -4340,7 +5935,11 @@
     ],
     "family": {},
     "speakerType": "apostle",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Matthew",
+      "Mark"
+    ]
   },
   {
     "id": "jude-brother-of-jesus",
@@ -4364,7 +5963,14 @@
       "brother2": "james-brother-of-jesus"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts"
+    ]
   },
   {
     "id": "korihor",
@@ -4382,7 +5988,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "laban-bom",
@@ -4401,7 +6010,14 @@
     "family": {},
     "speakerType": "other",
     "tier": 3,
-    "portraitUrl": "/characters/laban_compressed.jpg"
+    "portraitUrl": "/characters/laban_compressed.jpg",
+    "books": [
+      "1 Nephi",
+      "2 Nephi",
+      "Jacob",
+      "Words of Mormon",
+      "Mosiah"
+    ]
   },
   {
     "id": "lamoni",
@@ -4424,7 +6040,10 @@
       "wife": "unnamed"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "lazarus",
@@ -4448,7 +6067,11 @@
     },
     "speakerType": "other",
     "tier": 3,
-    "portraitUrl": "/characters/lazarus_compressed.jpg"
+    "portraitUrl": "/characters/lazarus_compressed.jpg",
+    "books": [
+      "Luke",
+      "John"
+    ]
   },
   {
     "id": "leah",
@@ -4479,7 +6102,11 @@
       "daughter": "Dinah"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis",
+      "Ruth"
+    ]
   },
   {
     "id": "lehi-son-of-helaman",
@@ -4502,7 +6129,10 @@
       "brother": "Nephi"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Helaman"
+    ]
   },
   {
     "id": "lemuel",
@@ -4530,7 +6160,12 @@
       ]
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Nephi",
+      "2 Nephi",
+      "Alma"
+    ]
   },
   {
     "id": "levi",
@@ -4551,7 +6186,26 @@
       "mother": "Leah"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "1 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Psalms",
+      "Jeremiah",
+      "Ezekiel",
+      "Zechariah",
+      "Malachi",
+      "Hebrews",
+      "Revelation"
+    ]
   },
   {
     "id": "limhi",
@@ -4574,7 +6228,13 @@
       "grandfather": "Zeniff"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Mosiah",
+      "Alma",
+      "Helaman",
+      "Ether"
+    ]
   },
   {
     "id": "lot",
@@ -4595,7 +6255,29 @@
       "uncle": "Abraham"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis",
+      "Leviticus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "1 Samuel",
+      "1 Chronicles",
+      "Esther",
+      "Psalms",
+      "Proverbs",
+      "Isaiah",
+      "Jeremiah",
+      "Ezekiel",
+      "Daniel",
+      "Jonah",
+      "Micah",
+      "Luke",
+      "Acts",
+      "2 Peter"
+    ]
   },
   {
     "id": "lucy-mack-smith",
@@ -4620,7 +6302,8 @@
       ]
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": []
   },
   {
     "id": "luke",
@@ -4639,7 +6322,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Colossians",
+      "2 Timothy"
+    ]
   },
   {
     "id": "manasseh",
@@ -4663,7 +6350,25 @@
       "grandfather": "Jacob"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Psalms",
+      "Isaiah",
+      "Jeremiah",
+      "Ezekiel",
+      "2 Nephi",
+      "Alma"
+    ]
   },
   {
     "id": "mark",
@@ -4687,7 +6392,14 @@
       "cousin": "Barnabas"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Acts",
+      "Romans",
+      "Philippians",
+      "2 Timothy",
+      "Revelation"
+    ]
   },
   {
     "id": "martha",
@@ -4708,7 +6420,11 @@
       "brother": "Lazarus"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Luke",
+      "John"
+    ]
   },
   {
     "id": "mary-of-bethany",
@@ -4729,7 +6445,11 @@
       "brother": "Lazarus"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Luke",
+      "John"
+    ]
   },
   {
     "id": "medium-of-endor",
@@ -4749,7 +6469,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Samuel"
+    ]
   },
   {
     "id": "micah",
@@ -4767,7 +6490,14 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Judges",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Jeremiah",
+      "Micah"
+    ]
   },
   {
     "id": "miriam",
@@ -4792,7 +6522,14 @@
       "mother": "Jochebed"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Exodus",
+      "Numbers",
+      "Deuteronomy",
+      "1 Chronicles",
+      "Micah"
+    ]
   },
   {
     "id": "mordecai",
@@ -4812,7 +6549,12 @@
       "cousin/ward": "Esther"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Ezra",
+      "Nehemiah",
+      "Esther"
+    ]
   },
   {
     "id": "moronihah",
@@ -4832,7 +6574,13 @@
       "father": "captain-moroni"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Alma",
+      "Helaman",
+      "3 Nephi",
+      "Mormon"
+    ]
   },
   {
     "id": "mosiah-i",
@@ -4853,7 +6601,10 @@
       "son": "King Benjamin"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Omni"
+    ]
   },
   {
     "id": "naomi",
@@ -4880,7 +6631,10 @@
       "daughter-in-law": "Ruth"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Ruth"
+    ]
   },
   {
     "id": "nathan-prophet",
@@ -4898,7 +6652,16 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Zechariah"
+    ]
   },
   {
     "id": "nebuchadnezzar",
@@ -4916,7 +6679,17 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Esther",
+      "Jeremiah",
+      "Daniel"
+    ]
   },
   {
     "id": "nehemiah",
@@ -4937,7 +6710,11 @@
       "father": "Hachaliah"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Ezra",
+      "Nehemiah"
+    ]
   },
   {
     "id": "nehor",
@@ -4955,7 +6732,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Alma",
+      "Ether"
+    ]
   },
   {
     "id": "nephi-3ne",
@@ -4978,7 +6759,11 @@
       "father": "Nephi (son of Helaman)"
     },
     "speakerType": "prophet",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "3 Nephi",
+      "4 Nephi"
+    ]
   },
   {
     "id": "nephi-son-of-nephi",
@@ -5001,7 +6786,11 @@
       "son": "Nephi (disciple)"
     },
     "speakerType": "prophet",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "3 Nephi",
+      "4 Nephi"
+    ]
   },
   {
     "id": "nicodemus",
@@ -5019,7 +6808,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "John"
+    ]
   },
   {
     "id": "omer-jaredite",
@@ -5044,7 +6836,10 @@
       ]
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "omri",
@@ -5064,7 +6859,14 @@
       "son": "ahab"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Micah"
+    ]
   },
   {
     "id": "orson-hyde",
@@ -5082,7 +6884,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "orson-pratt",
@@ -5103,7 +6908,10 @@
       "brother": "Parley P. Pratt"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "pahoran",
@@ -5124,7 +6932,11 @@
       "father": "Nephihah"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Alma",
+      "Helaman"
+    ]
   },
   {
     "id": "parley-p-pratt",
@@ -5146,7 +6958,10 @@
       "brother": "Orson Pratt"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "pharaoh-exodus",
@@ -5167,7 +6982,24 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Deuteronomy",
+      "1 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Nehemiah",
+      "Psalms",
+      "Song of Solomon",
+      "Isaiah",
+      "Jeremiah",
+      "Ezekiel",
+      "Abraham"
+    ]
   },
   {
     "id": "pharaoh-neco",
@@ -5187,7 +7019,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Chronicles",
+      "Jeremiah"
+    ]
   },
   {
     "id": "pharaohs-daughter",
@@ -5205,7 +7041,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Exodus",
+      "1 Kings"
+    ]
   },
   {
     "id": "philip-apostle",
@@ -5225,7 +7065,14 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts"
+    ]
   },
   {
     "id": "phebe",
@@ -5246,7 +7093,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "pontius-pilate",
@@ -5265,7 +7115,13 @@
     "family": {},
     "speakerType": "leader",
     "tier": 3,
-    "portraitUrl": "/characters/pilot_compressed.jpg"
+    "portraitUrl": "/characters/pilot_compressed.jpg",
+    "books": [
+      "Matthew",
+      "Luke",
+      "Acts",
+      "1 Timothy"
+    ]
   },
   {
     "id": "potiphar",
@@ -5283,7 +7139,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis"
+    ]
   },
   {
     "id": "rachel",
@@ -5310,7 +7169,13 @@
       ]
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis",
+      "Ruth",
+      "1 Samuel",
+      "Matthew"
+    ]
   },
   {
     "id": "rahab",
@@ -5331,7 +7196,14 @@
       "son": "Boaz"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Joshua",
+      "Psalms",
+      "Isaiah",
+      "Hebrews",
+      "James"
+    ]
   },
   {
     "id": "rebekah",
@@ -5360,7 +7232,10 @@
     },
     "speakerType": "other",
     "tier": 3,
-    "portraitUrl": "/characters/rebekah_compressed.jpg"
+    "portraitUrl": "/characters/rebekah_compressed.jpg",
+    "books": [
+      "Genesis"
+    ]
   },
   {
     "id": "rehoboam",
@@ -5381,7 +7256,12 @@
       "mother": "Naamah"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Kings",
+      "1 Chronicles",
+      "2 Chronicles"
+    ]
   },
   {
     "id": "sam",
@@ -5409,7 +7289,12 @@
       ]
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Nephi",
+      "2 Nephi",
+      "Alma"
+    ]
   },
   {
     "id": "samson",
@@ -5430,7 +7315,10 @@
       "father": "Manoah"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Judges"
+    ]
   },
   {
     "id": "sam-smith",
@@ -5448,7 +7336,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Doctrine and Covenants",
+      "Joseph Smith—History"
+    ]
   },
   {
     "id": "sanballat",
@@ -5468,7 +7360,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Nehemiah"
+    ]
   },
   {
     "id": "sapphira",
@@ -5488,7 +7383,10 @@
       "husband": "ananias-of-jerusalem"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "sarai",
@@ -5510,7 +7408,11 @@
       "husband": "abraham"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Genesis",
+      "Abraham"
+    ]
   },
   {
     "id": "shadrach",
@@ -5530,7 +7432,15 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Jeremiah",
+      "Daniel"
+    ]
   },
   {
     "id": "sherem",
@@ -5548,7 +7458,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Jacob"
+    ]
   },
   {
     "id": "shule",
@@ -5569,7 +7482,10 @@
       "son": "omer-jaredite"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "shunammite-woman",
@@ -5585,7 +7501,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Kings"
+    ]
   },
   {
     "id": "simon-the-sorcerer",
@@ -5605,7 +7524,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "sisera",
@@ -5623,7 +7545,14 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Judges",
+      "1 Samuel",
+      "Ezra",
+      "Nehemiah",
+      "Psalms"
+    ]
   },
   {
     "id": "stephen",
@@ -5642,7 +7571,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "teancum",
@@ -5660,7 +7592,11 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Alma",
+      "Mormon"
+    ]
   },
   {
     "id": "theophilus",
@@ -5678,7 +7614,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Luke",
+      "Acts"
+    ]
   },
   {
     "id": "thomas",
@@ -5699,7 +7639,14 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts"
+    ]
   },
   {
     "id": "timothy",
@@ -5721,7 +7668,21 @@
       "grandmother": "Lois"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Acts",
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Philemon",
+      "Hebrews"
+    ]
   },
   {
     "id": "tobiah",
@@ -5741,7 +7702,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Ezra",
+      "Nehemiah"
+    ]
   },
   {
     "id": "uriah",
@@ -5764,7 +7729,14 @@
       "wife": "Bathsheba"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Samuel",
+      "1 Kings",
+      "1 Chronicles",
+      "Ezra",
+      "Isaiah"
+    ]
   },
   {
     "id": "uzziah",
@@ -5786,7 +7758,21 @@
       "son": "jotham-king-of-judah"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Isaiah",
+      "Jeremiah",
+      "Daniel",
+      "Hosea",
+      "Amos",
+      "Zechariah"
+    ]
   },
   {
     "id": "widow-of-zarephath",
@@ -5802,7 +7788,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Kings"
+    ]
   },
   {
     "id": "wilford-woodruff",
@@ -5821,7 +7810,10 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "william-law",
@@ -5839,7 +7831,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "william-smith-dc",
@@ -5859,7 +7854,10 @@
       "brother": "joseph-smith"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "zacchaeus",
@@ -5878,7 +7876,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Luke"
+    ]
   },
   {
     "id": "zacharias",
@@ -5901,7 +7902,10 @@
       "son": "John the Baptist"
     },
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Luke"
+    ]
   },
   {
     "id": "zarahemla",
@@ -5921,7 +7925,17 @@
       "ancestor": "Mulek"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Omni",
+      "Mosiah",
+      "Alma",
+      "Helaman",
+      "3 Nephi",
+      "4 Nephi",
+      "Mormon",
+      "Ether"
+    ]
   },
   {
     "id": "zechariah-prophet",
@@ -5942,7 +7956,12 @@
       "grandfather": "Iddo"
     },
     "speakerType": "prophet",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Ezra",
+      "Nehemiah",
+      "Zechariah"
+    ]
   },
   {
     "id": "zedekiah-king",
@@ -5966,7 +7985,16 @@
       "sons": "killed by Babylonians"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Jeremiah",
+      "Ezekiel",
+      "1 Nephi",
+      "Helaman"
+    ]
   },
   {
     "id": "zeezrom",
@@ -5985,7 +8013,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Alma",
+      "Helaman"
+    ]
   },
   {
     "id": "zeniff",
@@ -6007,7 +8039,10 @@
       "grandson": "Limhi"
     },
     "speakerType": "leader",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Mosiah"
+    ]
   },
   {
     "id": "zenos",
@@ -6025,7 +8060,14 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Nephi",
+      "Jacob",
+      "Alma",
+      "Helaman",
+      "3 Nephi"
+    ]
   },
   {
     "id": "zerahemnah",
@@ -6043,7 +8085,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "zophar",
@@ -6061,7 +8106,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "Job"
+    ]
   },
   {
     "id": "zoram",
@@ -6079,7 +8127,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 3
+    "tier": 3,
+    "books": [
+      "1 Nephi",
+      "2 Nephi",
+      "Alma"
+    ]
   },
   {
     "id": "aaron-jaredite",
@@ -6097,7 +8150,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "aaron-johnson-dc",
@@ -6115,7 +8171,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "abednego",
@@ -6135,7 +8194,17 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Jeremiah",
+      "Daniel"
+    ]
   },
   {
     "id": "abigail",
@@ -6156,7 +8225,12 @@
       "second_husband": "David"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Samuel",
+      "2 Samuel",
+      "1 Chronicles"
+    ]
   },
   {
     "id": "abijah-king-of-judah",
@@ -6179,7 +8253,13 @@
       "son": "asa"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Nehemiah"
+    ]
   },
   {
     "id": "abinadom",
@@ -6201,7 +8281,10 @@
       "son": "Amaleki"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Omni"
+    ]
   },
   {
     "id": "abiram",
@@ -6219,7 +8302,13 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Numbers",
+      "Deuteronomy",
+      "1 Kings",
+      "Psalms"
+    ]
   },
   {
     "id": "abishag",
@@ -6237,7 +8326,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Kings"
+    ]
   },
   {
     "id": "achaicus",
@@ -6255,7 +8347,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Corinthians"
+    ]
   },
   {
     "id": "adah",
@@ -6279,7 +8374,10 @@
       ]
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Moses"
+    ]
   },
   {
     "id": "adoni-bezek",
@@ -6297,7 +8395,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Judges"
+    ]
   },
   {
     "id": "adoni-zedek",
@@ -6315,7 +8416,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Joshua"
+    ]
   },
   {
     "id": "adonijah",
@@ -6335,7 +8439,14 @@
       "father": "David"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Samuel",
+      "1 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Nehemiah"
+    ]
   },
   {
     "id": "aeneas",
@@ -6353,7 +8464,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "aha-bom",
@@ -6371,7 +8485,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "ahah",
@@ -6391,7 +8508,10 @@
       "son": "ethem-jaredite"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "ahaziah-king-of-judah",
@@ -6412,7 +8532,11 @@
       "mother": "athaliah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings",
+      "2 Chronicles"
+    ]
   },
   {
     "id": "ahikam",
@@ -6433,7 +8557,12 @@
       "son": "gedaliah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings",
+      "2 Chronicles",
+      "Jeremiah"
+    ]
   },
   {
     "id": "ahimelech",
@@ -6453,7 +8582,12 @@
       "son": "abiathar"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Samuel",
+      "2 Samuel",
+      "1 Chronicles"
+    ]
   },
   {
     "id": "akish",
@@ -6471,7 +8605,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "alexander-son-of-simon",
@@ -6492,7 +8629,10 @@
       "brother": "rufus"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Mark"
+    ]
   },
   {
     "id": "alexander-coppersmith",
@@ -6510,7 +8650,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts",
+      "1 Timothy",
+      "2 Timothy"
+    ]
   },
   {
     "id": "almon-babbitt",
@@ -6530,7 +8675,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "alpheus-cutler",
@@ -6548,7 +8696,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "amaleki",
@@ -6568,7 +8719,12 @@
       "father": "Abinadom"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Omni",
+      "Words of Mormon",
+      "Mosiah"
+    ]
   },
   {
     "id": "amaron",
@@ -6589,7 +8745,10 @@
       "brother": "Chemish"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Omni"
+    ]
   },
   {
     "id": "amasa",
@@ -6607,7 +8766,13 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Samuel",
+      "1 Kings",
+      "1 Chronicles",
+      "2 Chronicles"
+    ]
   },
   {
     "id": "amasa-lyman",
@@ -6626,7 +8791,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "amgid",
@@ -6644,7 +8812,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "aminadab",
@@ -6662,7 +8833,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Helaman"
+    ]
   },
   {
     "id": "aminadi",
@@ -6682,7 +8856,10 @@
       "descendant": "Amulek"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "amlici",
@@ -6700,7 +8877,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "ammah-bom",
@@ -6718,7 +8898,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "ammaron",
@@ -6738,7 +8921,11 @@
       "brother": "Amos"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "4 Nephi",
+      "Mormon"
+    ]
   },
   {
     "id": "ammon-expedition",
@@ -6758,7 +8945,10 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Mosiah"
+    ]
   },
   {
     "id": "amnigaddah",
@@ -6776,7 +8966,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "amnor",
@@ -6794,7 +8987,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "amoron-bom",
@@ -6812,7 +9008,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Moroni"
+    ]
   },
   {
     "id": "amos-son-of-amos",
@@ -6833,7 +9032,10 @@
       "brother": "ammaron"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "4 Nephi"
+    ]
   },
   {
     "id": "amos-davies",
@@ -6851,7 +9053,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "amplias",
@@ -6871,7 +9076,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "amram",
@@ -6894,7 +9102,13 @@
       "daughter": "miriam"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Exodus",
+      "Numbers",
+      "1 Chronicles",
+      "Ezra"
+    ]
   },
   {
     "id": "amulon",
@@ -6913,7 +9127,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Mosiah",
+      "Alma"
+    ]
   },
   {
     "id": "andronicus",
@@ -6931,7 +9149,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "anna-prophetess",
@@ -6951,7 +9172,10 @@
       "father": "Phanuel"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Luke"
+    ]
   },
   {
     "id": "antiomno",
@@ -6969,7 +9193,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "antionah",
@@ -6987,7 +9214,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "antipus",
@@ -7005,7 +9235,10 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "apelles",
@@ -7023,7 +9256,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "apollos",
@@ -7041,7 +9277,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts",
+      "1 Corinthians",
+      "Titus"
+    ]
   },
   {
     "id": "apphia",
@@ -7061,7 +9302,10 @@
       "possible husband": "philemon"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Philemon"
+    ]
   },
   {
     "id": "aquila",
@@ -7081,7 +9325,13 @@
       "wife": "Priscilla"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts",
+      "Romans",
+      "1 Corinthians",
+      "2 Timothy"
+    ]
   },
   {
     "id": "araunah",
@@ -7099,7 +9349,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Samuel",
+      "1 Chronicles",
+      "2 Chronicles"
+    ]
   },
   {
     "id": "archeantus",
@@ -7117,7 +9372,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Moroni"
+    ]
   },
   {
     "id": "archelaus",
@@ -7137,7 +9395,10 @@
       "father": "herod-the-great"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Matthew"
+    ]
   },
   {
     "id": "archippus",
@@ -7155,7 +9416,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Colossians",
+      "Philemon"
+    ]
   },
   {
     "id": "aretas",
@@ -7175,7 +9440,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Corinthians"
+    ]
   },
   {
     "id": "aristobulus",
@@ -7193,7 +9461,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "artemas",
@@ -7211,7 +9482,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Titus"
+    ]
   },
   {
     "id": "asa-dodds",
@@ -7229,7 +9503,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "asahel",
@@ -7250,7 +9527,13 @@
       "brother2": "abishai"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Samuel",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra"
+    ]
   },
   {
     "id": "asenath",
@@ -7272,7 +9555,10 @@
       "son2": "ephraim"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis"
+    ]
   },
   {
     "id": "asher",
@@ -7293,7 +9579,19 @@
       "mother": "Zilpah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "1 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezekiel"
+    ]
   },
   {
     "id": "ashpenaz",
@@ -7311,7 +9609,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Daniel"
+    ]
   },
   {
     "id": "asyncritus",
@@ -7329,7 +9630,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "barabbas",
@@ -7347,7 +9651,13 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John"
+    ]
   },
   {
     "id": "barak",
@@ -7366,7 +9676,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Judges",
+      "Hebrews"
+    ]
   },
   {
     "id": "barzillai",
@@ -7382,7 +9696,13 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Samuel",
+      "1 Kings",
+      "Ezra",
+      "Nehemiah"
+    ]
   },
   {
     "id": "bethuel",
@@ -7404,7 +9724,11 @@
       "son": "laban-ot"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "1 Chronicles"
+    ]
   },
   {
     "id": "bezalel",
@@ -7422,7 +9746,13 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Exodus",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra"
+    ]
   },
   {
     "id": "bigthan",
@@ -7442,7 +9772,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Esther"
+    ]
   },
   {
     "id": "blastus",
@@ -7460,7 +9793,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "burr-riggs",
@@ -7478,7 +9814,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "cainan-pogp",
@@ -7501,7 +9840,11 @@
       "father": "enos-pogp"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants",
+      "Moses"
+    ]
   },
   {
     "id": "calves-wilson",
@@ -7519,7 +9862,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "carpus",
@@ -7537,7 +9883,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Timothy"
+    ]
   },
   {
     "id": "catherine-smith",
@@ -7559,7 +9908,8 @@
       "mother": "lucy-mack-smith"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": []
   },
   {
     "id": "cezoram",
@@ -7577,7 +9927,10 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Helaman"
+    ]
   },
   {
     "id": "charles-anthon",
@@ -7597,7 +9950,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Joseph Smith—History"
+    ]
   },
   {
     "id": "charles-c-rich",
@@ -7616,7 +9972,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "chemish",
@@ -7637,7 +9996,10 @@
       "son": "Abinadom"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Omni"
+    ]
   },
   {
     "id": "chilion",
@@ -7657,7 +10019,10 @@
       "wife": "orpah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ruth"
+    ]
   },
   {
     "id": "chloe",
@@ -7675,7 +10040,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Corinthians"
+    ]
   },
   {
     "id": "chuza",
@@ -7695,7 +10063,10 @@
       "wife": "joanna"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Luke"
+    ]
   },
   {
     "id": "claudia",
@@ -7713,7 +10084,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Timothy"
+    ]
   },
   {
     "id": "claudius-caesar",
@@ -7733,7 +10107,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "clement",
@@ -7751,7 +10128,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Philippians"
+    ]
   },
   {
     "id": "cohor",
@@ -7771,7 +10151,10 @@
       "father": "noah-jaredite"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "com-jaredite",
@@ -7791,7 +10174,10 @@
       "father": "coriantum-jaredite"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "coriantor",
@@ -7812,7 +10198,10 @@
       "son": "ether"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "coriantum-jaredite",
@@ -7833,7 +10222,10 @@
       "son": "com-jaredite"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "coriantumr-nephite",
@@ -7853,7 +10245,10 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Helaman"
+    ]
   },
   {
     "id": "corihor-jaredite",
@@ -7875,7 +10270,10 @@
       "son": "noah-jaredite"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "corom",
@@ -7896,7 +10294,10 @@
       "son": "kish-jaredite"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "crescens",
@@ -7914,7 +10315,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Timothy"
+    ]
   },
   {
     "id": "crispus",
@@ -7933,7 +10337,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts",
+      "1 Corinthians"
+    ]
   },
   {
     "id": "cumenihah",
@@ -7951,7 +10359,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Mormon"
+    ]
   },
   {
     "id": "cushan-rishathaim",
@@ -7969,7 +10380,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Judges"
+    ]
   },
   {
     "id": "cyrenius",
@@ -7989,7 +10403,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Luke"
+    ]
   },
   {
     "id": "damaris",
@@ -8007,7 +10424,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "dan",
@@ -8028,7 +10448,25 @@
       "mother": "Bilhah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Leviticus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "1 Samuel",
+      "2 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Jeremiah",
+      "Ezekiel",
+      "Amos"
+    ]
   },
   {
     "id": "daniel-miles",
@@ -8046,7 +10484,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "daniel-stanton",
@@ -8064,7 +10505,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "dathan",
@@ -8082,7 +10526,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Numbers",
+      "Deuteronomy",
+      "Psalms"
+    ]
   },
   {
     "id": "daughter-of-jared",
@@ -8100,7 +10549,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "david-dort",
@@ -8118,7 +10570,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "david-fullmer",
@@ -8136,7 +10591,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "demetrius-3-john",
@@ -8154,7 +10612,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "3 John"
+    ]
   },
   {
     "id": "dinah",
@@ -8179,7 +10640,10 @@
       ]
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis"
+    ]
   },
   {
     "id": "dionysius-areopagite",
@@ -8198,7 +10662,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "doeg",
@@ -8218,7 +10685,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Samuel"
+    ]
   },
   {
     "id": "don-carlos-smith",
@@ -8243,7 +10713,10 @@
       "mother": "lucy-mack-smith"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Joseph Smith—History"
+    ]
   },
   {
     "id": "dorcas",
@@ -8263,7 +10736,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "drusilla",
@@ -8283,7 +10759,10 @@
       "husband": "felix"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "dunbar-wilson",
@@ -8301,7 +10780,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "eden-smith",
@@ -8319,7 +10801,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "edson-fuller",
@@ -8337,7 +10822,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "egyptus-pogp",
@@ -8357,7 +10845,10 @@
       "husband": "ham"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Abraham"
+    ]
   },
   {
     "id": "elah-king-of-israel",
@@ -8377,7 +10868,10 @@
       "father": "baasha"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Kings"
+    ]
   },
   {
     "id": "eldad",
@@ -8395,7 +10889,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Numbers"
+    ]
   },
   {
     "id": "elimelech",
@@ -8415,7 +10912,10 @@
       "son2": "chilion"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ruth"
+    ]
   },
   {
     "id": "thomas-marsh-wife",
@@ -8431,7 +10931,8 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": []
   },
   {
     "id": "elkanah",
@@ -8455,7 +10956,13 @@
       "son": "Samuel"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Exodus",
+      "1 Samuel",
+      "1 Chronicles",
+      "2 Chronicles"
+    ]
   },
   {
     "id": "elymas",
@@ -8476,7 +10983,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "emer-jaredite",
@@ -8497,7 +11007,10 @@
       "son": "coriantum-jaredite"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "emer-harris",
@@ -8517,7 +11030,10 @@
       "brother": "martin-harris"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "emron",
@@ -8535,7 +11051,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Moroni"
+    ]
   },
   {
     "id": "enoch-cainite",
@@ -8555,7 +11074,11 @@
       "father": "cain"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Moses"
+    ]
   },
   {
     "id": "enos-pogp",
@@ -8577,7 +11100,13 @@
       "son": "cainan-pogp"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Luke",
+      "Doctrine and Covenants",
+      "Moses"
+    ]
   },
   {
     "id": "enosh",
@@ -8599,7 +11128,12 @@
       "father": "seth"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "1 Chronicles",
+      "Moses"
+    ]
   },
   {
     "id": "epaenetus",
@@ -8617,7 +11151,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "ephron",
@@ -8637,7 +11174,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Joshua"
+    ]
   },
   {
     "id": "er",
@@ -8656,7 +11197,12 @@
       "wife": "tamar"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Numbers",
+      "1 Chronicles"
+    ]
   },
   {
     "id": "erastus",
@@ -8675,7 +11221,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts",
+      "Romans",
+      "2 Timothy"
+    ]
   },
   {
     "id": "erastus-snow",
@@ -8693,7 +11244,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "esrom",
@@ -8713,7 +11267,10 @@
       "father": "omer-jaredite"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "ethem-jaredite",
@@ -8734,7 +11291,10 @@
       "son": "moron-jaredite"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "eubulus",
@@ -8752,7 +11312,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Timothy"
+    ]
   },
   {
     "id": "eunice",
@@ -8773,7 +11336,10 @@
       "son": "timothy"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Timothy"
+    ]
   },
   {
     "id": "euodias",
@@ -8793,7 +11359,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Philippians"
+    ]
   },
   {
     "id": "ezias",
@@ -8811,7 +11380,10 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Helaman"
+    ]
   },
   {
     "id": "ezra-booth",
@@ -8829,7 +11401,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "ezra-t-benson",
@@ -8847,7 +11422,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "ezra-thayre",
@@ -8865,7 +11443,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "fortunatus",
@@ -8883,7 +11464,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Corinthians"
+    ]
   },
   {
     "id": "frederick-g-williams",
@@ -8902,7 +11486,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "gad",
@@ -8923,7 +11510,20 @@
       "mother": "Zilpah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "1 Samuel",
+      "2 Samuel",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Jeremiah",
+      "Ezekiel"
+    ]
   },
   {
     "id": "gad-prophet",
@@ -8942,7 +11542,12 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Samuel",
+      "2 Samuel",
+      "1 Chronicles"
+    ]
   },
   {
     "id": "gaius",
@@ -8961,7 +11566,13 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts",
+      "Romans",
+      "1 Corinthians",
+      "3 John"
+    ]
   },
   {
     "id": "gaius-3-john",
@@ -8979,7 +11590,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "3 John"
+    ]
   },
   {
     "id": "george-miller",
@@ -8997,7 +11611,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "george-w-harris",
@@ -9015,7 +11632,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "gershom",
@@ -9034,7 +11654,13 @@
       "mother": "zipporah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Exodus",
+      "Judges",
+      "1 Chronicles",
+      "Ezra"
+    ]
   },
   {
     "id": "geshem",
@@ -9053,7 +11679,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Nehemiah"
+    ]
   },
   {
     "id": "gid-bom",
@@ -9071,7 +11700,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma",
+      "Helaman"
+    ]
   },
   {
     "id": "giddianhi",
@@ -9089,7 +11722,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "3 Nephi"
+    ]
   },
   {
     "id": "giddonah-bom",
@@ -9109,7 +11745,10 @@
       "son": "amulek"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "gideon-carter",
@@ -9127,7 +11766,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "gidgiddonah",
@@ -9145,7 +11787,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Mormon"
+    ]
   },
   {
     "id": "gilgah",
@@ -9165,7 +11810,10 @@
       "father": "jared-bom"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "gilgal-bom",
@@ -9183,7 +11831,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "3 Nephi",
+      "Mormon",
+      "Ether"
+    ]
   },
   {
     "id": "habakkuk",
@@ -9201,7 +11854,10 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Habakkuk"
+    ]
   },
   {
     "id": "haggai",
@@ -9219,7 +11875,11 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ezra",
+      "Haggai"
+    ]
   },
   {
     "id": "hagoth",
@@ -9237,7 +11897,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "ham",
@@ -9264,7 +11927,14 @@
       "son": "Canaan"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "1 Chronicles",
+      "Psalms",
+      "Moses",
+      "Abraham"
+    ]
   },
   {
     "id": "hamor",
@@ -9284,7 +11954,12 @@
       "son": "shechem-son-of-hamor"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Joshua",
+      "Judges"
+    ]
   },
   {
     "id": "hanani",
@@ -9302,7 +11977,14 @@
       "brother": "nehemiah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah"
+    ]
   },
   {
     "id": "hananiah-false-prophet",
@@ -9320,7 +12002,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Jeremiah"
+    ]
   },
   {
     "id": "haran-abrahams-brother",
@@ -9340,7 +12025,10 @@
       "brother": "abraham"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis"
+    ]
   },
   {
     "id": "haran-pogp",
@@ -9362,7 +12050,10 @@
       "daughter": "milcah-pogp"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Abraham"
+    ]
   },
   {
     "id": "harbonah",
@@ -9382,7 +12073,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Esther"
+    ]
   },
   {
     "id": "harvey-whitlock",
@@ -9400,7 +12094,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "hearthom-jaredite",
@@ -9420,7 +12117,10 @@
       "father": "lib-jaredite"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "hegai",
@@ -9440,7 +12140,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Esther"
+    ]
   },
   {
     "id": "helem",
@@ -9458,7 +12161,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Mosiah"
+    ]
   },
   {
     "id": "helorum",
@@ -9482,7 +12188,10 @@
       ]
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Mosiah"
+    ]
   },
   {
     "id": "hem",
@@ -9500,7 +12209,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Mosiah",
+      "3 Nephi"
+    ]
   },
   {
     "id": "heman-basset",
@@ -9518,7 +12231,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "henry-sherwood",
@@ -9536,7 +12252,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "henry-herriman",
@@ -9554,7 +12273,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "hermas",
@@ -9572,7 +12294,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "hermes",
@@ -9590,7 +12315,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "hermogenes",
@@ -9608,7 +12336,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Timothy"
+    ]
   },
   {
     "id": "herodias",
@@ -9629,7 +12360,12 @@
       "daughter": "Salome"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke"
+    ]
   },
   {
     "id": "herodion",
@@ -9647,7 +12383,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "heth-jaredite",
@@ -9667,7 +12406,10 @@
       "son": "shez-jaredite"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "himni",
@@ -9693,7 +12435,11 @@
       ]
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Mosiah",
+      "Alma"
+    ]
   },
   {
     "id": "hiram-craftsman",
@@ -9713,7 +12459,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Kings",
+      "2 Chronicles"
+    ]
   },
   {
     "id": "hiram-page",
@@ -9732,7 +12482,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "hobab",
@@ -9752,7 +12505,11 @@
       "father": "jethro"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Numbers",
+      "Judges"
+    ]
   },
   {
     "id": "hophni",
@@ -9772,7 +12529,10 @@
       "father": "eli"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Samuel"
+    ]
   },
   {
     "id": "hur",
@@ -9790,7 +12550,16 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Exodus",
+      "Numbers",
+      "Joshua",
+      "1 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Nehemiah"
+    ]
   },
   {
     "id": "hushai",
@@ -9810,7 +12579,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Samuel",
+      "1 Kings",
+      "1 Chronicles"
+    ]
   },
   {
     "id": "hymenaeus",
@@ -9828,7 +12602,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Timothy",
+      "2 Timothy"
+    ]
   },
   {
     "id": "ichabod",
@@ -9846,7 +12624,10 @@
       "father": "phinehas-son-of-eli"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Samuel"
+    ]
   },
   {
     "id": "irad",
@@ -9867,7 +12648,10 @@
       "son": "mahujael"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Moses"
+    ]
   },
   {
     "id": "isaac-galland",
@@ -9886,7 +12670,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "isaac-hale",
@@ -9906,7 +12693,10 @@
       "daughter": "emma-smith"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Joseph Smith—History"
+    ]
   },
   {
     "id": "isaac-morley",
@@ -9924,7 +12714,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "isabel",
@@ -9942,7 +12735,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "isaiah-bom",
@@ -9960,7 +12756,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "3 Nephi"
+    ]
   },
   {
     "id": "ishmael-son-of-nethaniah",
@@ -9976,7 +12775,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings",
+      "Jeremiah"
+    ]
   },
   {
     "id": "issachar",
@@ -9997,7 +12800,19 @@
       "mother": "Leah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "1 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezekiel"
+    ]
   },
   {
     "id": "ittai",
@@ -10017,7 +12832,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Samuel"
+    ]
   },
   {
     "id": "jabal",
@@ -10037,7 +12855,10 @@
       "father": "lamech-cainite"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis"
+    ]
   },
   {
     "id": "jacob-scott",
@@ -10055,7 +12876,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "jacom",
@@ -10075,7 +12899,10 @@
       "father": "jared-bom"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "jael",
@@ -10095,7 +12922,10 @@
       "husband": "Heber"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Judges"
+    ]
   },
   {
     "id": "james-covill",
@@ -10115,7 +12945,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "james-foster",
@@ -10133,7 +12966,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "japheth",
@@ -10157,7 +12993,11 @@
       ]
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "1 Chronicles"
+    ]
   },
   {
     "id": "jared-ot",
@@ -10180,7 +13020,13 @@
       "son": "Enoch"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "1 Chronicles",
+      "Doctrine and Covenants",
+      "Moses"
+    ]
   },
   {
     "id": "jared-carter",
@@ -10198,7 +13044,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "jarom",
@@ -10219,7 +13068,11 @@
       "son": "Omni"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Jarom",
+      "Omni"
+    ]
   },
   {
     "id": "jason-of-thessalonica",
@@ -10237,7 +13090,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts",
+      "Romans"
+    ]
   },
   {
     "id": "jehoahaz-king-of-israel",
@@ -10257,7 +13114,11 @@
       "father": "jehu"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings",
+      "2 Chronicles"
+    ]
   },
   {
     "id": "jehoahaz-king-of-judah",
@@ -10279,7 +13140,15 @@
       "father": "josiah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Jeremiah"
+    ]
   },
   {
     "id": "jehosheba",
@@ -10301,7 +13170,11 @@
       "husband": "jehoiada"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings",
+      "2 Chronicles"
+    ]
   },
   {
     "id": "jeneum",
@@ -10319,7 +13192,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Mormon"
+    ]
   },
   {
     "id": "jephthah",
@@ -10340,7 +13216,11 @@
       "father": "Gilead"
     },
     "speakerType": "leader",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Judges",
+      "1 Samuel"
+    ]
   },
   {
     "id": "jeremiah-bom",
@@ -10358,7 +13238,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Nephi"
+    ]
   },
   {
     "id": "jesse-baker",
@@ -10376,7 +13259,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "justus-of-colossae",
@@ -10396,7 +13282,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Colossians"
+    ]
   },
   {
     "id": "joel",
@@ -10416,7 +13305,15 @@
       "father": "Pethuel"
     },
     "speakerType": "prophet",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Samuel",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Joel"
+    ]
   },
   {
     "id": "johanan-son-of-kareah",
@@ -10436,7 +13333,15 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Jeremiah"
+    ]
   },
   {
     "id": "john-a-hicks",
@@ -10454,7 +13359,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "john-c-bennett",
@@ -10472,7 +13380,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "john-corrill",
@@ -10490,7 +13401,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "john-e-page",
@@ -10508,7 +13422,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "john-murdock",
@@ -10526,7 +13443,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "john-snider",
@@ -10544,7 +13464,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "john-whitmer",
@@ -10565,7 +13488,10 @@
       "brother": "David Whitmer"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "jonas-bom",
@@ -10583,7 +13509,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "3 Nephi"
+    ]
   },
   {
     "id": "joseph-son-of-lehi",
@@ -10613,7 +13542,11 @@
       ]
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Nephi",
+      "2 Nephi"
+    ]
   },
   {
     "id": "joseph-barsabas",
@@ -10634,7 +13567,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "joseph-knight-sr",
@@ -10657,7 +13593,10 @@
       "son": "newel-knight"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "joseph-wakefield",
@@ -10675,7 +13614,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "joseph-young",
@@ -10695,7 +13637,10 @@
       "brother": "brigham-young"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "joseph-of-arimathea",
@@ -10713,7 +13658,13 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John"
+    ]
   },
   {
     "id": "joses-brother-of-jesus",
@@ -10733,7 +13684,11 @@
       "brother": "jesus-christ"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Matthew",
+      "Mark"
+    ]
   },
   {
     "id": "josiah-butterfield",
@@ -10751,7 +13706,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "josiah-stoal",
@@ -10772,7 +13730,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Joseph Smith—History"
+    ]
   },
   {
     "id": "jotham-king-of-judah",
@@ -10793,7 +13754,12 @@
       "son": "ahaz"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings",
+      "2 Chronicles",
+      "Isaiah"
+    ]
   },
   {
     "id": "jotham-son-of-gideon",
@@ -10812,7 +13778,13 @@
       "brother": "abimelech-son-of-gideon"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Judges",
+      "2 Kings",
+      "2 Chronicles",
+      "Isaiah"
+    ]
   },
   {
     "id": "jubal",
@@ -10832,7 +13804,10 @@
       "father": "lamech-cainite"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis"
+    ]
   },
   {
     "id": "judas-of-damascus",
@@ -10850,7 +13825,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "judas-barsabas",
@@ -10869,7 +13847,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "judas-of-galilee",
@@ -10887,7 +13868,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "julia",
@@ -10905,7 +13889,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "junia",
@@ -10923,7 +13910,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "kib",
@@ -10947,7 +13937,10 @@
       ]
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "kim-jaredite",
@@ -10968,7 +13961,10 @@
       "son": "levi-jaredite"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "kimnor",
@@ -10988,7 +13984,10 @@
       "son": "akish"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "kish-jaredite",
@@ -11009,7 +14008,10 @@
       "son": "lib-jaredite"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "kishkumen",
@@ -11027,7 +14029,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Helaman",
+      "3 Nephi"
+    ]
   },
   {
     "id": "kumen-bom",
@@ -11045,7 +14051,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "3 Nephi"
+    ]
   },
   {
     "id": "kumenonhi-bom",
@@ -11063,7 +14072,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "3 Nephi"
+    ]
   },
   {
     "id": "lachoneus",
@@ -11082,7 +14094,10 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "3 Nephi"
+    ]
   },
   {
     "id": "lamah",
@@ -11100,7 +14115,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Mormon"
+    ]
   },
   {
     "id": "lamech-ot",
@@ -11122,7 +14140,12 @@
       "son": "Noah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "1 Chronicles",
+      "Moses"
+    ]
   },
   {
     "id": "lamech-cainite",
@@ -11138,7 +14161,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Moses"
+    ]
   },
   {
     "id": "lehi-military",
@@ -11158,7 +14185,10 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "lehonti",
@@ -11176,7 +14206,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "leman-copley",
@@ -11194,7 +14227,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "levi-jaredite",
@@ -11215,7 +14251,10 @@
       "son": "corom"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "levi-hancock",
@@ -11236,7 +14275,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "lib-jaredite",
@@ -11254,7 +14296,10 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "limhah",
@@ -11272,7 +14317,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Mormon"
+    ]
   },
   {
     "id": "limher",
@@ -11290,7 +14338,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "linus",
@@ -11308,7 +14359,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Timothy"
+    ]
   },
   {
     "id": "lois",
@@ -11329,7 +14383,10 @@
       "grandson": "timothy"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Timothy"
+    ]
   },
   {
     "id": "lucius-of-cyrene",
@@ -11348,7 +14405,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "luke-johnson",
@@ -11368,7 +14428,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "luram",
@@ -11386,7 +14449,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Moroni"
+    ]
   },
   {
     "id": "lydia",
@@ -11404,7 +14470,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "lyman-e-johnson",
@@ -11422,7 +14491,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "lyman-wight",
@@ -11440,7 +14512,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "lysanias",
@@ -11458,7 +14533,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Luke"
+    ]
   },
   {
     "id": "mahah",
@@ -11478,7 +14556,10 @@
       "father": "jared-bom"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "mahalaleel",
@@ -11501,7 +14582,11 @@
       "father": "cainan-pogp"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants",
+      "Moses"
+    ]
   },
   {
     "id": "maher-shalal-hash-baz",
@@ -11519,7 +14604,10 @@
       "father": "isaiah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Isaiah"
+    ]
   },
   {
     "id": "mahijah",
@@ -11537,7 +14625,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Moses"
+    ]
   },
   {
     "id": "mahlon",
@@ -11557,7 +14648,10 @@
       "wife": "ruth"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ruth"
+    ]
   },
   {
     "id": "mahujael",
@@ -11578,7 +14672,10 @@
       "son": "methusael"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Moses"
+    ]
   },
   {
     "id": "major-ashley",
@@ -11596,7 +14693,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "malchus",
@@ -11614,7 +14714,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "John"
+    ]
   },
   {
     "id": "manaen",
@@ -11633,7 +14736,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "manoah",
@@ -11653,7 +14759,10 @@
       "son": "samson"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Judges"
+    ]
   },
   {
     "id": "mary-mother-of-mark",
@@ -11673,7 +14782,10 @@
       "son": "mark"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "mary-of-rome",
@@ -11691,7 +14803,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "mary-wife-of-cleophas",
@@ -11713,7 +14828,10 @@
       "husband": "cleophas"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "John"
+    ]
   },
   {
     "id": "mathoni-bom",
@@ -11733,7 +14851,10 @@
       "brother": "Mathonihah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "3 Nephi"
+    ]
   },
   {
     "id": "mathonihah-bom",
@@ -11753,7 +14874,10 @@
       "brother": "Mathoni"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "3 Nephi"
+    ]
   },
   {
     "id": "matthias",
@@ -11771,7 +14895,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "medad",
@@ -11789,7 +14916,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Numbers"
+    ]
   },
   {
     "id": "menahem",
@@ -11809,7 +14939,10 @@
       "son": "pekahiah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings"
+    ]
   },
   {
     "id": "merab",
@@ -11829,7 +14962,10 @@
       "father": "saul-king"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Samuel"
+    ]
   },
   {
     "id": "mesha",
@@ -11847,7 +14983,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "2 Kings",
+      "1 Chronicles"
+    ]
   },
   {
     "id": "meshach",
@@ -11867,7 +15008,13 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Exodus",
+      "Leviticus",
+      "Nehemiah",
+      "Daniel"
+    ]
   },
   {
     "id": "methusael",
@@ -11888,7 +15035,10 @@
       "son": "lamech-ot"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Moses"
+    ]
   },
   {
     "id": "methuselah",
@@ -11912,7 +15062,13 @@
       "grandson": "Noah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "1 Chronicles",
+      "Doctrine and Covenants",
+      "Moses"
+    ]
   },
   {
     "id": "micah-of-ephraim",
@@ -11928,7 +15084,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Judges"
+    ]
   },
   {
     "id": "micah-welton",
@@ -11946,7 +15105,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "michal",
@@ -11967,7 +15129,12 @@
       "husband": "David"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Samuel",
+      "2 Samuel",
+      "1 Chronicles"
+    ]
   },
   {
     "id": "milcah",
@@ -11988,7 +15155,10 @@
       "father": "haran-abrahams-brother"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis"
+    ]
   },
   {
     "id": "milcah-pogp",
@@ -12009,7 +15179,10 @@
       "father": "haran-pogp"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Abraham"
+    ]
   },
   {
     "id": "mnason",
@@ -12027,7 +15200,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "morianton-jaredite",
@@ -12045,7 +15221,10 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "moriantum",
@@ -12065,7 +15244,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "moron-jaredite",
@@ -12086,7 +15268,10 @@
       "son": "coriantor"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "mulek",
@@ -12106,7 +15291,12 @@
       "father": "Zedekiah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Mosiah",
+      "Alma",
+      "Helaman"
+    ]
   },
   {
     "id": "muloki",
@@ -12124,7 +15314,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "naamah-antediluvian",
@@ -12143,7 +15336,10 @@
       "brother": "tubal-cain"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis"
+    ]
   },
   {
     "id": "naamah-pogp",
@@ -12165,7 +15361,10 @@
       "brother": "tubal-cain"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Moses"
+    ]
   },
   {
     "id": "naaman",
@@ -12184,7 +15383,14 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Numbers",
+      "2 Kings",
+      "1 Chronicles",
+      "Luke"
+    ]
   },
   {
     "id": "nabal",
@@ -12202,7 +15408,11 @@
       "wife": "abigail"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Samuel",
+      "2 Samuel"
+    ]
   },
   {
     "id": "nadab-king-of-israel",
@@ -12222,7 +15432,10 @@
       "father": "jeroboam"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Kings"
+    ]
   },
   {
     "id": "nahor-abrahams-brother",
@@ -12244,7 +15457,10 @@
       "brother": "abraham"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis"
+    ]
   },
   {
     "id": "nahor-pogp",
@@ -12265,7 +15481,10 @@
       "wife": "milcah-pogp"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Abraham"
+    ]
   },
   {
     "id": "nahum",
@@ -12283,7 +15502,10 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Nahum"
+    ]
   },
   {
     "id": "naphtali",
@@ -12304,7 +15526,22 @@
       "mother": "Bilhah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Psalms",
+      "Isaiah",
+      "Ezekiel"
+    ]
   },
   {
     "id": "narcissus",
@@ -12322,7 +15559,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "nathanael-dc",
@@ -12340,7 +15580,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "nebuzaradan",
@@ -12358,7 +15601,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings",
+      "Jeremiah"
+    ]
   },
   {
     "id": "nephihah",
@@ -12378,7 +15625,10 @@
       "son": "Pahoran"
     },
     "speakerType": "leader",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "nereus",
@@ -12396,7 +15646,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "neum",
@@ -12414,7 +15667,10 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Nephi"
+    ]
   },
   {
     "id": "newel-k-whitney",
@@ -12432,7 +15688,10 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "newel-knight",
@@ -12450,7 +15709,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "nimrah",
@@ -12470,7 +15732,10 @@
       "father": "akish"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "noah-jaredite",
@@ -12491,7 +15756,10 @@
       "son": "cohor"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "noah-packard",
@@ -12509,7 +15777,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "leman-copley-northrop",
@@ -12527,7 +15798,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "nymphas",
@@ -12547,7 +15821,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Colossians"
+    ]
   },
   {
     "id": "obadiah",
@@ -12565,7 +15842,15 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Obadiah"
+    ]
   },
   {
     "id": "obed",
@@ -12587,7 +15872,13 @@
       "son": "jesse"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ruth",
+      "2 Samuel",
+      "1 Chronicles",
+      "2 Chronicles"
+    ]
   },
   {
     "id": "oholiab",
@@ -12607,7 +15898,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Exodus"
+    ]
   },
   {
     "id": "olympas",
@@ -12625,7 +15919,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "omner",
@@ -12651,7 +15948,11 @@
       ]
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Mosiah",
+      "Alma"
+    ]
   },
   {
     "id": "omni",
@@ -12672,7 +15973,11 @@
       "son": "Amaron"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Jarom",
+      "Omni"
+    ]
   },
   {
     "id": "onan",
@@ -12690,7 +15995,12 @@
       "father": "judah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Numbers",
+      "1 Chronicles"
+    ]
   },
   {
     "id": "onesiphorus",
@@ -12708,7 +16018,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Timothy"
+    ]
   },
   {
     "id": "orihah",
@@ -12728,7 +16041,10 @@
       "father": "Jared"
     },
     "speakerType": "leader",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "orpah",
@@ -12746,7 +16062,10 @@
       "mother-in-law": "naomi"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ruth"
+    ]
   },
   {
     "id": "orson-spencer",
@@ -12764,7 +16083,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "paanchi",
@@ -12784,7 +16106,10 @@
       "father": "pahoran"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Helaman"
+    ]
   },
   {
     "id": "pachus-bom",
@@ -12802,7 +16127,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "pacumeni",
@@ -12822,7 +16150,10 @@
       "father": "pahoran"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Helaman"
+    ]
   },
   {
     "id": "pagag",
@@ -12842,7 +16173,10 @@
       "father": "brother-of-jared"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "paltiel",
@@ -12860,7 +16194,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Numbers"
+    ]
   },
   {
     "id": "pashhur",
@@ -12878,7 +16215,13 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Jeremiah"
+    ]
   },
   {
     "id": "patrobas",
@@ -12896,7 +16239,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "pekah",
@@ -12914,7 +16260,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings",
+      "2 Chronicles",
+      "Isaiah"
+    ]
   },
   {
     "id": "pekahiah",
@@ -12934,7 +16285,10 @@
       "father": "menahem"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings"
+    ]
   },
   {
     "id": "peninnah",
@@ -12952,7 +16306,10 @@
       "husband": "elkanah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Samuel"
+    ]
   },
   {
     "id": "persis",
@@ -12970,7 +16327,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "peter-haws",
@@ -12988,7 +16348,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "peter-whitmer-jr",
@@ -13012,7 +16375,10 @@
       ]
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "philemon",
@@ -13030,7 +16396,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Philemon"
+    ]
   },
   {
     "id": "philetus",
@@ -13048,7 +16417,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Timothy"
+    ]
   },
   {
     "id": "philip-burroughs",
@@ -13066,7 +16438,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "philologus",
@@ -13084,7 +16459,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "phinehas-son-of-eli",
@@ -13105,7 +16483,10 @@
       "brother": "hophni"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Samuel"
+    ]
   },
   {
     "id": "phlegon",
@@ -13123,7 +16504,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "phygellus",
@@ -13141,7 +16525,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Timothy"
+    ]
   },
   {
     "id": "potiphera",
@@ -13163,7 +16550,10 @@
       "daughter": "asenath"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis"
+    ]
   },
   {
     "id": "priscilla",
@@ -13185,7 +16575,13 @@
       "husband": "Aquila"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts",
+      "Romans",
+      "1 Corinthians",
+      "2 Timothy"
+    ]
   },
   {
     "id": "publius",
@@ -13203,7 +16599,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "pudens",
@@ -13221,7 +16620,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Timothy"
+    ]
   },
   {
     "id": "quartus",
@@ -13239,7 +16641,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "rabshakeh",
@@ -13257,7 +16662,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Isaiah"
+    ]
   },
   {
     "id": "raphael-dc",
@@ -13275,7 +16683,10 @@
     ],
     "family": {},
     "speakerType": "divine",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "reuben",
@@ -13296,7 +16707,17 @@
       "mother": "Leah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "1 Chronicles",
+      "Ezekiel"
+    ]
   },
   {
     "id": "reynolds-cahoon",
@@ -13314,7 +16735,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "rezin",
@@ -13332,7 +16756,13 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings",
+      "Ezra",
+      "Nehemiah",
+      "Isaiah"
+    ]
   },
   {
     "id": "riplakish",
@@ -13350,7 +16780,10 @@
     ],
     "family": {},
     "speakerType": "leader",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "rizpah",
@@ -13366,7 +16799,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Samuel"
+    ]
   },
   {
     "id": "robert-thompson",
@@ -13384,7 +16820,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "robert-foster",
@@ -13402,7 +16841,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "rufus",
@@ -13423,7 +16865,11 @@
       "brother": "alexander-son-of-simon"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Mark",
+      "Romans"
+    ]
   },
   {
     "id": "ruggles-eames",
@@ -13441,7 +16887,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "salome-daughter-of-herodias",
@@ -13459,7 +16908,8 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": []
   },
   {
     "id": "samuel-bent",
@@ -13477,7 +16927,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "samuel-rolfe",
@@ -13495,7 +16948,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "samuel-smith",
@@ -13523,7 +16979,10 @@
       "mother": "Lucy Mack Smith"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "samuel-williams",
@@ -13541,7 +17000,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "sceva",
@@ -13559,7 +17021,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "seantum",
@@ -13579,7 +17044,10 @@
       "brother": "seezoram"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Helaman"
+    ]
   },
   {
     "id": "secundus",
@@ -13597,7 +17065,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "seezoram",
@@ -13617,7 +17088,10 @@
       "brother": "seantum"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Helaman"
+    ]
   },
   {
     "id": "selah-griffin",
@@ -13635,7 +17109,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "sergius-paulus",
@@ -13653,7 +17130,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "servant-girl-of-naaman",
@@ -13671,7 +17151,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings"
+    ]
   },
   {
     "id": "seth",
@@ -13695,7 +17178,12 @@
       "son": "Enos"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Doctrine and Covenants",
+      "Moses"
+    ]
   },
   {
     "id": "seth-jaredite",
@@ -13715,7 +17203,10 @@
       "son": "ahah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "seymour-brunson",
@@ -13733,7 +17224,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "shadrach-roundy",
@@ -13751,7 +17245,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "shallum-king-of-israel",
@@ -13769,7 +17266,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings"
+    ]
   },
   {
     "id": "shalmaneser",
@@ -13787,7 +17287,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings"
+    ]
   },
   {
     "id": "shaphan",
@@ -13807,7 +17310,13 @@
       "son": "ahikam"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings",
+      "2 Chronicles",
+      "Jeremiah",
+      "Ezekiel"
+    ]
   },
   {
     "id": "shared-jaredite",
@@ -13825,7 +17334,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "shear-jashub",
@@ -13843,7 +17355,10 @@
       "father": "isaiah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Isaiah"
+    ]
   },
   {
     "id": "sheba-son-of-bichri",
@@ -13863,7 +17378,25 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Joshua",
+      "Judges",
+      "1 Samuel",
+      "2 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Nehemiah",
+      "Job",
+      "Psalms",
+      "Isaiah",
+      "Jeremiah",
+      "Ezekiel",
+      "Amos"
+    ]
   },
   {
     "id": "shechem-son-of-hamor",
@@ -13883,7 +17416,18 @@
       "father": "hamor"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Numbers",
+      "Joshua",
+      "Judges",
+      "1 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Psalms",
+      "Jeremiah"
+    ]
   },
   {
     "id": "shelah-son-of-judah",
@@ -13901,7 +17445,12 @@
       "father": "judah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Numbers",
+      "1 Chronicles"
+    ]
   },
   {
     "id": "shem",
@@ -13927,7 +17476,13 @@
       ]
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "1 Chronicles",
+      "Doctrine and Covenants",
+      "Moses"
+    ]
   },
   {
     "id": "shemnon-bom",
@@ -13945,7 +17500,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "3 Nephi"
+    ]
   },
   {
     "id": "shez-jaredite",
@@ -13966,7 +17524,10 @@
       "son": "riplakish"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "shiblom-bom",
@@ -13984,7 +17545,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Mormon",
+      "Ether"
+    ]
   },
   {
     "id": "shiblom-jaredite",
@@ -14002,7 +17567,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "shiblon",
@@ -14026,7 +17594,11 @@
       ]
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma",
+      "Ether"
+    ]
   },
   {
     "id": "shishak",
@@ -14046,7 +17618,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Kings",
+      "2 Chronicles"
+    ]
   },
   {
     "id": "shiz",
@@ -14064,7 +17640,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ether"
+    ]
   },
   {
     "id": "sidney-gilbert",
@@ -14085,7 +17664,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "silas",
@@ -14106,7 +17688,14 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts",
+      "2 Corinthians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Peter"
+    ]
   },
   {
     "id": "simeon",
@@ -14127,7 +17716,18 @@
       "mother": "Leah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezekiel"
+    ]
   },
   {
     "id": "simeon-temple",
@@ -14145,7 +17745,10 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Luke"
+    ]
   },
   {
     "id": "simeon-niger",
@@ -14166,7 +17769,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "simeon-carter",
@@ -14184,7 +17790,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "simon-brother-of-jesus",
@@ -14204,7 +17813,11 @@
       "brother": "jesus-christ"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Matthew",
+      "Mark"
+    ]
   },
   {
     "id": "simon-the-leper",
@@ -14222,7 +17835,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Matthew",
+      "Mark"
+    ]
   },
   {
     "id": "simon-the-zealot",
@@ -14242,7 +17859,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Matthew",
+      "Mark"
+    ]
   },
   {
     "id": "simonds-ryder",
@@ -14260,7 +17881,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "solomon-hancock",
@@ -14278,7 +17902,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "solomon-humphrey",
@@ -14296,7 +17923,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "sopater",
@@ -14316,7 +17946,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts",
+      "Romans"
+    ]
   },
   {
     "id": "sophronia-smith",
@@ -14338,7 +17972,8 @@
       "mother": "lucy-mack-smith"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": []
   },
   {
     "id": "sosthenes",
@@ -14357,7 +17992,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts",
+      "1 Corinthians"
+    ]
   },
   {
     "id": "stachys",
@@ -14375,7 +18014,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "stephanas",
@@ -14393,7 +18035,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Corinthians"
+    ]
   },
   {
     "id": "stephen-burnett",
@@ -14411,7 +18056,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "susanna-disciple",
@@ -14429,7 +18077,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Luke"
+    ]
   },
   {
     "id": "sylvester-smith",
@@ -14447,7 +18098,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "syntyche",
@@ -14465,7 +18119,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Philippians"
+    ]
   },
   {
     "id": "tamar",
@@ -14490,7 +18147,16 @@
       ]
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Judges",
+      "Ruth",
+      "2 Samuel",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezekiel"
+    ]
   },
   {
     "id": "tattenai",
@@ -14508,7 +18174,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Ezra"
+    ]
   },
   {
     "id": "teomner",
@@ -14526,7 +18195,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "terah",
@@ -14546,7 +18218,12 @@
       "son": "abraham"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Joshua",
+      "1 Chronicles"
+    ]
   },
   {
     "id": "tertius",
@@ -14564,7 +18241,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "tertullus",
@@ -14583,7 +18263,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "theudas",
@@ -14601,7 +18284,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "thomas-b-marsh",
@@ -14619,7 +18305,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "thomas-grover",
@@ -14637,7 +18326,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "tiberius-caesar",
@@ -14657,7 +18349,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Luke"
+    ]
   },
   {
     "id": "tiglath-pileser",
@@ -14677,7 +18372,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings",
+      "1 Chronicles",
+      "Isaiah"
+    ]
   },
   {
     "id": "timothy-bom",
@@ -14697,7 +18397,10 @@
       "brother": "Nephi (3 Nephi disciple)"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "3 Nephi"
+    ]
   },
   {
     "id": "titius-justus",
@@ -14717,7 +18420,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "titus",
@@ -14736,7 +18442,13 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Corinthians",
+      "Galatians",
+      "2 Timothy",
+      "Titus"
+    ]
   },
   {
     "id": "titus-billings",
@@ -14754,7 +18466,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "trophimus",
@@ -14772,7 +18487,11 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts",
+      "2 Timothy"
+    ]
   },
   {
     "id": "tryphena",
@@ -14790,7 +18509,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "tryphosa",
@@ -14808,7 +18530,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "tubal-cain",
@@ -14828,7 +18553,10 @@
       "father": "lamech-cainite"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis"
+    ]
   },
   {
     "id": "tubaloth",
@@ -14848,7 +18576,10 @@
       "father": "ammoron"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Helaman"
+    ]
   },
   {
     "id": "tychicus",
@@ -14867,7 +18598,14 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts",
+      "Ephesians",
+      "Colossians",
+      "2 Timothy",
+      "Titus"
+    ]
   },
   {
     "id": "tyrannus",
@@ -14885,7 +18623,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Acts"
+    ]
   },
   {
     "id": "urbanus",
@@ -14905,7 +18646,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Romans"
+    ]
   },
   {
     "id": "vienna-jaques",
@@ -14923,7 +18667,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "vinson-knight",
@@ -14941,7 +18688,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "w-w-phelps",
@@ -14962,7 +18712,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "warren-cowdery",
@@ -14984,7 +18737,10 @@
       "brother": "oliver-cowdery"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "wheeler-baldwin",
@@ -15002,7 +18758,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "willard-richards",
@@ -15021,7 +18780,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "william-carter",
@@ -15039,7 +18801,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "william-huntington",
@@ -15057,7 +18822,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "william-marks",
@@ -15075,7 +18843,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "william-mclellin",
@@ -15095,7 +18866,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "zebedee",
@@ -15116,7 +18890,13 @@
       "son2": "john-apostle"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John"
+    ]
   },
   {
     "id": "zebedee-coltrin",
@@ -15134,7 +18914,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "zebulun",
@@ -15155,7 +18938,20 @@
       "mother": "Leah"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Numbers",
+      "Deuteronomy",
+      "Joshua",
+      "Judges",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Psalms",
+      "Isaiah",
+      "Ezekiel"
+    ]
   },
   {
     "id": "zechariah-king-of-israel",
@@ -15175,7 +18971,10 @@
       "father": "jeroboam-ii"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings"
+    ]
   },
   {
     "id": "zedekiah-bom",
@@ -15193,7 +18992,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Nephi"
+    ]
   },
   {
     "id": "zelophehad",
@@ -15209,7 +19011,12 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Numbers",
+      "Joshua",
+      "1 Chronicles"
+    ]
   },
   {
     "id": "zemnarihah",
@@ -15227,7 +19034,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "3 Nephi"
+    ]
   },
   {
     "id": "zenas",
@@ -15246,7 +19056,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Titus"
+    ]
   },
   {
     "id": "zenephi",
@@ -15264,7 +19077,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Moroni"
+    ]
   },
   {
     "id": "zenock",
@@ -15283,7 +19099,13 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Nephi",
+      "Alma",
+      "Helaman",
+      "3 Nephi"
+    ]
   },
   {
     "id": "zephaniah",
@@ -15301,7 +19123,14 @@
     ],
     "family": {},
     "speakerType": "prophet",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Kings",
+      "1 Chronicles",
+      "Jeremiah",
+      "Zephaniah",
+      "Zechariah"
+    ]
   },
   {
     "id": "zera-pulsipher",
@@ -15319,7 +19148,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "zeram",
@@ -15337,7 +19169,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Alma"
+    ]
   },
   {
     "id": "zeresh",
@@ -15355,7 +19190,10 @@
       "husband": "haman"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Esther"
+    ]
   },
   {
     "id": "zeruiah",
@@ -15378,7 +19216,13 @@
       "brother": "david"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "1 Samuel",
+      "2 Samuel",
+      "1 Kings",
+      "1 Chronicles"
+    ]
   },
   {
     "id": "ziba",
@@ -15396,7 +19240,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "2 Samuel"
+    ]
   },
   {
     "id": "ziba-peterson",
@@ -15414,7 +19261,10 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Doctrine and Covenants"
+    ]
   },
   {
     "id": "zillah",
@@ -15436,7 +19286,10 @@
       "daughter": "naamah-pogp"
     },
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Moses"
+    ]
   },
   {
     "id": "zimri-king",
@@ -15454,6 +19307,13 @@
     ],
     "family": {},
     "speakerType": "other",
-    "tier": 4
+    "tier": 4,
+    "books": [
+      "Numbers",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "Jeremiah"
+    ]
   }
 ]

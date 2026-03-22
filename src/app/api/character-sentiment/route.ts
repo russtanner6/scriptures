@@ -6,25 +6,35 @@ export async function GET(request: NextRequest) {
   const params = request.nextUrl.searchParams;
   const name = params.get("name");
   const aliasesParam = params.get("aliases");
+  const booksParam = params.get("books");
 
   if (!name) {
     return NextResponse.json({ error: "name parameter required" }, { status: 400 });
   }
 
   const aliases = aliasesParam ? aliasesParam.split(",").filter(Boolean) : [];
+  const books = booksParam ? booksParam.split(",").map((b) => b.trim()).filter(Boolean) : [];
   const searchTerms = [name, ...aliases].filter(Boolean);
   const escaped = searchTerms.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
   const pattern = new RegExp(`\\b(${escaped.join("|")})\\b`, "i");
 
   const db = await getDb();
 
-  // Fetch all verses (same query as character-mentions)
-  const stmt = db.prepare(
-    `SELECT v.text
+  // Build SQL — scope to specific books if provided for accuracy
+  let sql = `SELECT v.text
      FROM verses v
      JOIN books b ON v.book_id = b.id
-     JOIN volumes vol ON b.volume_id = vol.id`
-  );
+     JOIN volumes vol ON b.volume_id = vol.id`;
+
+  if (books.length > 0) {
+    const placeholders = books.map(() => "?").join(", ");
+    sql += ` WHERE b.name IN (${placeholders})`;
+  }
+
+  const stmt = db.prepare(sql);
+  if (books.length > 0) {
+    stmt.bind(books);
+  }
 
   // Aggregate scores across all mention verses
   const totals: Record<string, number> = {};
@@ -40,7 +50,6 @@ export async function GET(request: NextRequest) {
       mentionCount++;
       const result = scoreText(row.text);
       totalWords += result.wordCount;
-      // Accumulate raw normalized scores (per 1k words for each verse)
       for (const cat of SENTIMENT_CATEGORIES) {
         totals[cat.id] += result.scores[cat.id];
       }

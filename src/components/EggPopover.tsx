@@ -257,16 +257,22 @@ export default function EggPopover({
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              color: parchment.textMuted,
+              color: lightMode ? "#5a5040" : "#b8b0a4",
               textDecoration: "underline",
-              textDecorationColor: `${parchment.textMuted}50`,
+              textDecorationColor: lightMode ? "#5a504040" : "#b8b0a440",
               textUnderlineOffset: "2px",
               transition: "color 0.15s",
             }}
             onMouseEnter={(e) => { e.currentTarget.style.color = "#2563EB"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.color = parchment.textMuted; }}
+            onMouseLeave={(e) => { e.currentTarget.style.color = lightMode ? "#5a5040" : "#b8b0a4"; }}
           >
             {egg.source}
+            {/* External link icon */}
+            <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: "4px", verticalAlign: "middle", opacity: 0.7 }}>
+              <path d="M5 1H1v10h10V7" />
+              <path d="M7 1h4v4" />
+              <path d="M11 1L5 7" />
+            </svg>
           </a>
         </div>
       </div>

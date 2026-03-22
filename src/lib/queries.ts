@@ -829,7 +829,8 @@ export interface CharacterMentionStats {
 
 export async function getCharacterMentions(
   name: string,
-  aliases: string[]
+  aliases: string[],
+  books?: string[]
 ): Promise<CharacterMentionStats> {
   const db = await getDb();
 
@@ -839,7 +840,22 @@ export async function getCharacterMentions(
   const escaped = searchTerms.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
   const pattern = new RegExp(`\\b(${escaped.join("|")})\\b`, "i");
 
-  // Fetch all verses with book/volume info (ordered by canonical order)
+  // Build SQL query — scope to specific books if provided for accuracy
+  let sql = `SELECT v.book_id, b.name as book_name, vol.abbrev,
+            v.chapter, v.verse, v.text,
+            vol.display_order as vol_order, b.display_order as book_order
+     FROM verses v
+     JOIN books b ON v.book_id = b.id
+     JOIN volumes vol ON b.volume_id = vol.id`;
+
+  if (books && books.length > 0) {
+    const placeholders = books.map(() => "?").join(", ");
+    sql += ` WHERE b.name IN (${placeholders})`;
+  }
+
+  sql += ` ORDER BY vol.display_order, b.display_order, v.chapter, v.verse`;
+
+  // Fetch verses (scoped to character's books if available)
   const allVerses = execToObjects<{
     book_id: number;
     book_name: string;
@@ -849,16 +865,7 @@ export async function getCharacterMentions(
     text: string;
     vol_order: number;
     book_order: number;
-  }>(
-    db,
-    `SELECT v.book_id, b.name as book_name, vol.abbrev,
-            v.chapter, v.verse, v.text,
-            vol.display_order as vol_order, b.display_order as book_order
-     FROM verses v
-     JOIN books b ON v.book_id = b.id
-     JOIN volumes vol ON b.volume_id = vol.id
-     ORDER BY vol.display_order, b.display_order, v.chapter, v.verse`
-  );
+  }>(db, sql, books && books.length > 0 ? books : undefined);
 
   // Filter matching verses
   const matches: (typeof allVerses[0])[] = [];

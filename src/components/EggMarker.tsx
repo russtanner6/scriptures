@@ -22,13 +22,13 @@ export default function EggMarker({
       style={{
         display: "inline-flex",
         alignItems: "center",
-        gap: "3px",
-        padding: "2px 7px",
-        borderRadius: "4px",
+        gap: "4px",
+        padding: "3px 9px",
+        borderRadius: "5px",
         border: `1px solid ${color}35`,
         background: lightMode ? `${color}10` : `${color}15`,
         color,
-        fontSize: "0.6rem",
+        fontSize: "0.68rem",
         fontWeight: 600,
         fontFamily: "inherit",
         textTransform: "uppercase",
@@ -37,7 +37,7 @@ export default function EggMarker({
         flexShrink: 0,
         marginLeft: "0",
         lineHeight: 1,
-        height: "18px",
+        height: "22px",
         transition: "all 0.15s",
         verticalAlign: "middle",
       }}
@@ -50,9 +50,10 @@ export default function EggMarker({
         e.currentTarget.style.transform = "scale(1)";
       }}
     >
-      <svg width="8" height="8" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M8 2C5 2 3 5 3 9c0 3 2 5 5 5s5-2 5-5c0-4-2-7-5-7z" />
-        <path d="M6 8h4M8 6v4" opacity="0.5" />
+      {/* Egg on its side icon */}
+      <svg width="12" height="10" viewBox="0 0 14 10" fill="currentColor" opacity="0.85">
+        <ellipse cx="7" cy="5" rx="7" ry="4.5" fill="none" stroke="currentColor" strokeWidth="1.2" />
+        <ellipse cx="5.5" cy="5" rx="3" ry="3.2" fill="currentColor" opacity="0.15" />
       </svg>
       EGG
       {count > 1 && (
@@ -61,15 +62,15 @@ export default function EggMarker({
             display: "inline-flex",
             alignItems: "center",
             justifyContent: "center",
-            minWidth: "14px",
-            height: "14px",
-            borderRadius: "7px",
+            minWidth: "16px",
+            height: "16px",
+            borderRadius: "8px",
             background: color,
             color: lightMode ? "#fff" : "#1a1a21",
-            fontSize: "0.5rem",
+            fontSize: "0.55rem",
             fontWeight: 700,
             lineHeight: 1,
-            padding: "0 3px",
+            padding: "0 4px",
             marginLeft: "1px",
           }}
         >

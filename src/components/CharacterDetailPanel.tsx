@@ -74,7 +74,8 @@ export default function CharacterDetailPanel({
     setMentionsLoading(true);
     setSentimentScores(null);
     const aliases = character.aliases.join(",");
-    const qp = `name=${encodeURIComponent(character.name)}${aliases ? `&aliases=${encodeURIComponent(aliases)}` : ""}`;
+    const books = character.books?.join(",") || "";
+    const qp = `name=${encodeURIComponent(character.name)}${aliases ? `&aliases=${encodeURIComponent(aliases)}` : ""}${books ? `&books=${encodeURIComponent(books)}` : ""}`;
     fetch(`/api/character-mentions?${qp}`)
       .then((r) => r.json())
       .then((data) => { setMentions(data); setMentionsLoading(false); })

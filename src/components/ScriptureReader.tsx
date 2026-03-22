@@ -660,21 +660,19 @@ export default function ScriptureReader() {
           </mark>
         );
       } else if (seg.kind === "egg") {
-        // Context Egg keyword with glint animation
-        const delayIndex = chapterEggs.indexOf(seg.egg);
+        // Context Egg keyword — clickable but no shimmer animation
         elements.push(
           <span
             key={`egg${i}`}
-            className="egg-keyword-glint"
-            style={{
-              "--egg-delay": `${delayIndex * 7}s`,
-              "--egg-glint-color": lightMode ? "rgba(218, 180, 60, 0.25)" : "rgba(245, 168, 35, 0.2)",
-              "--egg-hover-color": lightMode ? "rgba(218, 180, 60, 0.15)" : "rgba(245, 168, 35, 0.12)",
-            } as React.CSSProperties}
             role="button"
             tabIndex={0}
             onClick={(e) => { e.stopPropagation(); setActiveEggs([seg.egg]); }}
             onKeyDown={(e) => { if (e.key === "Enter") { e.stopPropagation(); setActiveEggs([seg.egg]); } }}
+            style={{
+              cursor: "pointer",
+              borderRadius: "2px",
+              padding: "1px 2px",
+            }}
           >
             {segText}
           </span>
