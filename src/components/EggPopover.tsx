@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { ContextEgg } from "@/lib/types";
 import { useBackToClose } from "@/lib/useBackToClose";
 
@@ -13,18 +13,25 @@ const CATEGORY_COLORS: Record<string, string> = {
 };
 
 export default function EggPopover({
-  egg,
+  eggs,
   lightMode,
   isMobile,
   onClose,
 }: {
-  egg: ContextEgg;
+  eggs: ContextEgg[];
   lightMode: boolean;
   isMobile: boolean;
   onClose: () => void;
 }) {
   const ref = useRef<HTMLDivElement>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
   useBackToClose(onClose);
+
+  // Reset index when eggs change
+  useEffect(() => { setCurrentIndex(0); }, [eggs]);
+
+  const egg = eggs[currentIndex];
+  const total = eggs.length;
 
   // Click outside to close
   useEffect(() => {
@@ -43,14 +50,26 @@ export default function EggPopover({
     };
   }, [onClose]);
 
-  // Escape to close
+  // Escape to close, arrow keys to navigate
   useEffect(() => {
     const handle = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
+      if (total > 1) {
+        if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+          e.preventDefault();
+          setCurrentIndex((i) => (i + 1) % total);
+        }
+        if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+          e.preventDefault();
+          setCurrentIndex((i) => (i - 1 + total) % total);
+        }
+      }
     };
     document.addEventListener("keydown", handle);
     return () => document.removeEventListener("keydown", handle);
-  }, [onClose]);
+  }, [onClose, total]);
+
+  if (!egg) return null;
 
   const catColor = CATEGORY_COLORS[egg.category] || "#888";
 
@@ -60,6 +79,20 @@ export default function EggPopover({
     text: lightMode ? "#3d3625" : "#e0ddd6",
     textMuted: lightMode ? "#7a7060" : "#9a9590",
     titleColor: lightMode ? "#2a2418" : "#f0ece4",
+  };
+
+  const navBtnStyle: React.CSSProperties = {
+    background: "none",
+    border: `1px solid ${parchment.border}`,
+    borderRadius: "6px",
+    color: parchment.text,
+    fontSize: "0.8rem",
+    fontWeight: 600,
+    cursor: "pointer",
+    fontFamily: "inherit",
+    padding: "4px 10px",
+    lineHeight: 1,
+    transition: "all 0.15s",
   };
 
   return (
@@ -126,6 +159,43 @@ export default function EggPopover({
         >
           ✕
         </button>
+
+        {/* Pagination indicator (only when multiple eggs) */}
+        {total > 1 && (
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              marginBottom: "10px",
+            }}
+          >
+            <button
+              onClick={() => setCurrentIndex((i) => (i - 1 + total) % total)}
+              style={navBtnStyle}
+              aria-label="Previous egg"
+            >
+              ‹ Prev
+            </button>
+            <span
+              style={{
+                fontSize: "0.72rem",
+                fontWeight: 600,
+                color: parchment.textMuted,
+                letterSpacing: "0.03em",
+              }}
+            >
+              {currentIndex + 1} of {total}
+            </span>
+            <button
+              onClick={() => setCurrentIndex((i) => (i + 1) % total)}
+              style={navBtnStyle}
+              aria-label="Next egg"
+            >
+              Next ›
+            </button>
+          </div>
+        )}
 
         {/* Category badge */}
         <span

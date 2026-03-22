@@ -1,15 +1,16 @@
 import type { ContextEgg } from "@/lib/types";
 
 export default function EggMarker({
-  egg,
+  eggs,
   lightMode,
   onClick,
 }: {
-  egg: ContextEgg;
+  eggs: ContextEgg[];
   lightMode: boolean;
   onClick: () => void;
 }) {
   const color = lightMode ? "#B8860B" : "#F5A623";
+  const count = eggs.length;
 
   return (
     <button
@@ -17,7 +18,7 @@ export default function EggMarker({
         e.stopPropagation();
         onClick();
       }}
-      title={egg.title}
+      title={count === 1 ? eggs[0].title : `${count} context eggs`}
       style={{
         display: "inline-flex",
         alignItems: "center",
@@ -54,6 +55,27 @@ export default function EggMarker({
         <path d="M6 8h4M8 6v4" opacity="0.5" />
       </svg>
       EGG
+      {count > 1 && (
+        <span
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            justifyContent: "center",
+            minWidth: "14px",
+            height: "14px",
+            borderRadius: "7px",
+            background: color,
+            color: lightMode ? "#fff" : "#1a1a21",
+            fontSize: "0.5rem",
+            fontWeight: 700,
+            lineHeight: 1,
+            padding: "0 3px",
+            marginLeft: "1px",
+          }}
+        >
+          {count}
+        </span>
+      )}
     </button>
   );
 }

@@ -106,7 +106,7 @@ export default function ScriptureReader() {
     return true;
   });
   const [chapterEggs, setChapterEggs] = useState<ContextEgg[]>([]);
-  const [activeEgg, setActiveEgg] = useState<ContextEgg | null>(null);
+  const [activeEggs, setActiveEggs] = useState<ContextEgg[]>([]);
 
   // Character panel
   const [allCharacters, setAllCharacters] = useState<ScriptureCharacter[]>([]);
@@ -376,7 +376,7 @@ export default function ScriptureReader() {
       setChapterResources([]);
       setChapterEggs([]);
       setActiveResourcePanel(null);
-      setActiveEgg(null);
+      setActiveEggs([]);
       // Load speakers for this chapter
       setChapterSpeakers([]);
       const bookNameForApi = data.bookName || "";
@@ -673,8 +673,8 @@ export default function ScriptureReader() {
             } as React.CSSProperties}
             role="button"
             tabIndex={0}
-            onClick={(e) => { e.stopPropagation(); setActiveEgg(seg.egg); }}
-            onKeyDown={(e) => { if (e.key === "Enter") { e.stopPropagation(); setActiveEgg(seg.egg); } }}
+            onClick={(e) => { e.stopPropagation(); setActiveEggs([seg.egg]); }}
+            onKeyDown={(e) => { if (e.key === "Enter") { e.stopPropagation(); setActiveEggs([seg.egg]); } }}
           >
             {segText}
           </span>
@@ -1752,15 +1752,20 @@ export default function ScriptureReader() {
                           />
                         ));
                       })()}
-                      {/* Context Egg markers */}
-                      {showContextEggs && chapterEggs.filter((e) => e.verse === v.verse).map((egg) => (
-                        <EggMarker
-                          key={`egg-${egg.id}`}
-                          egg={egg}
-                          lightMode={lightMode}
-                          onClick={() => { setActiveVerse(null); setActiveEgg(egg); }}
-                        />
-                      ))}
+                      {/* Context Egg marker (single pill per verse with count badge) */}
+                      {(() => {
+                        if (!showContextEggs) return null;
+                        const verseEggs = chapterEggs.filter((e) => e.verse === v.verse);
+                        if (verseEggs.length === 0) return null;
+                        return (
+                          <EggMarker
+                            key={`egg-v${v.verse}`}
+                            eggs={verseEggs}
+                            lightMode={lightMode}
+                            onClick={() => { setActiveVerse(null); setActiveEggs(verseEggs); }}
+                          />
+                        );
+                      })()}
                     </div>
                   )}
                   </div>
@@ -2087,12 +2092,12 @@ export default function ScriptureReader() {
         )}
 
         {/* Context Egg Popover */}
-        {activeEgg && (
+        {activeEggs.length > 0 && (
           <EggPopover
-            egg={activeEgg}
+            eggs={activeEggs}
             lightMode={lightMode}
             isMobile={isMobile}
-            onClose={() => setActiveEgg(null)}
+            onClose={() => setActiveEggs([])}
           />
         )}
 
