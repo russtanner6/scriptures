@@ -166,7 +166,7 @@ export default function ScripturePanel({
     : bookName;
 
   // Mobile: leave a sliver (48px) to show the page behind
-  const panelWidth = isMobile ? "calc(100vw - 48px)" : "min(100vw, 480px)";
+  const panelWidth = isMobile ? "calc(100vw - 48px)" : "min(85vw, 530px)";
 
   return (
     <>

@@ -137,7 +137,7 @@ export default function LocationDetailPanel({
     return "#8b5cf6";
   })();
 
-  const panelWidth = isMobile ? "calc(100vw - 48px)" : "min(100vw, 520px)";
+  const panelWidth = isMobile ? "calc(100vw - 48px)" : "min(85vw, 570px)";
   const hasMap = location.knownLocation && location.lat != null && location.lng != null;
 
   const typeIcon = LOCATION_TYPE_ICONS[location.locationType] || "\u{1F4CD}";

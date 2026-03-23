@@ -169,7 +169,7 @@ export default function CharacterDetailPanel({
     }
   }
 
-  const panelWidth = isMobile ? "calc(100vw - 48px)" : "min(100vw, 520px)";
+  const panelWidth = isMobile ? "calc(100vw - 48px)" : "min(85vw, 570px)";
   const hasPortrait = !!character.portraitUrl;
 
   return (

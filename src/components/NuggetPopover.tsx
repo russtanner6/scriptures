@@ -70,7 +70,7 @@ export default function NuggetPopover({
   const titleColor = lightMode ? "#2a2418" : "#f0ece4";
   const border = lightMode ? "#d4c9a8" : "#3a3a48";
 
-  const panelWidth = isMobile ? "100vw" : "400px";
+  const panelWidth = isMobile ? "100vw" : "min(85vw, 440px)";
 
   return (
     <>

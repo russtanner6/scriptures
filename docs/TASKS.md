@@ -55,6 +55,14 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 
 ## Completed (Recent)
 
+- [x] EGG → NUGGET rename — all components, API, data file, CSS, analytics, types renamed. Gold gem icon. *(Session 15)*
+- [x] Nugget popup → right-side slide-in panel (consistent with Resources/People/Locations) *(Session 15)*
+- [x] Pill labels: singular/plural with count in parentheses — VIDEO/VIDEOS (3), NUGGET/NUGGETS (2) *(Session 15)*
+- [x] Jesus Christ portrait added + "Jesus" alias added for speaker matching *(Session 15)*
+- [x] Mary of Bethany aliases added ("Mary, sister of Martha") to fix wrong Mary matching *(Session 15)*
+- [x] Speaker portrait theology-mode fix: divine OT speakers show Jesus portrait, not God the Father *(Session 15)*
+- [x] Descriptor split handles parentheses: "Jesus Christ (Jehovah)" → line 1 + line 2 *(Session 15)*
+- [x] All slide-out panels widened ~10% with 85vw max cap *(Session 15)*
 - [x] Speaker labels: name first, descriptor on line two (not bold). "MARY, SISTER OF MARTHA" → "MARY" (bold) + "sister of Martha" (smaller line 2) *(Session 15)*
 - [x] Group speakers hidden — only show individuals with dedicated character profiles. Groups like "Jews who had been with Mary and Martha", "Disciples" no longer show speaker labels *(Session 15)*
 - [x] People pill in Chapter Insights → scrolls to first speaking verse instead of opening character panel *(Session 15)*
