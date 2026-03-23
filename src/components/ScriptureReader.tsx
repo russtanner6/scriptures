@@ -392,6 +392,58 @@ export default function ScriptureReader() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Handle URL param changes (e.g., navigating from character panel verse links while already on /scriptures)
+  const searchParamsBookId = searchParams.get("bookId");
+  const searchParamsChapter = searchParams.get("chapter");
+  const searchParamsVerse = searchParams.get("verse");
+  useEffect(() => {
+    if (!searchParamsBookId || !searchParamsChapter || volumes.length === 0) return;
+    const bid = Number(searchParamsBookId);
+    const ch = Number(searchParamsChapter);
+    // Skip if already on this chapter (but handle verse scroll)
+    if (bid === selectedBookId && ch === selectedChapter) {
+      if (searchParamsVerse) {
+        setTimeout(() => {
+          const el = document.getElementById(`verse-${searchParamsVerse}`);
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth", block: "center" });
+            el.style.transition = "background 0.3s";
+            el.style.background = "rgba(59, 130, 246, 0.15)";
+            setTimeout(() => { el.style.background = ""; }, 2500);
+          }
+        }, 400);
+      }
+      return;
+    }
+    // Navigate to the new chapter
+    for (const vol of volumes) {
+      const book = vol.books.find((b) => b.id === bid);
+      if (book) {
+        const clampedCh = Math.max(1, Math.min(ch, book.chapterCount));
+        setSelectedVolume(vol.abbrev);
+        setSelectedBookId(bid);
+        setSelectedBookName(book.name);
+        setSelectedChapter(clampedCh);
+        setChapterCount(book.chapterCount);
+        loadChapter(bid, clampedCh);
+        // Verse scroll after chapter loads
+        if (searchParamsVerse) {
+          setTimeout(() => {
+            const el = document.getElementById(`verse-${searchParamsVerse}`);
+            if (el) {
+              el.scrollIntoView({ behavior: "smooth", block: "center" });
+              el.style.transition = "background 0.3s";
+              el.style.background = "rgba(59, 130, 246, 0.15)";
+              setTimeout(() => { el.style.background = ""; }, 2500);
+            }
+          }, 1200);
+        }
+        break;
+      }
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParamsBookId, searchParamsChapter, searchParamsVerse, volumes]);
+
   // Fetch chapter verses
   const loadChapter = useCallback(async (bookId: number, chapter: number) => {
     setIsLoading(true);
@@ -2293,6 +2345,11 @@ export default function ScriptureReader() {
         </div>
       </div>
     );
+  }
+
+  // If URL has deep-link params but data hasn't loaded yet, show nothing (prevents volume picker flash)
+  if (searchParams.get("bookId") && searchParams.get("chapter")) {
+    return <div style={{ minHeight: "100vh" }} />;
   }
 
   // ── VOLUME PICKER VIEW ──
