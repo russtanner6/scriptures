@@ -1139,48 +1139,40 @@ export default function ScriptureReader() {
             )}
           </div>
 
-          <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "2px" : "6px" }}>
-            {/* Search — leftmost in top bar (both mobile + desktop) */}
-            <button
-              onClick={() => {
-                if (searchOpen) {
-                  setSearchOpen(false);
-                  setSearchTerm("");
-                } else {
-                  setSearchOpen(true);
-                  setTimeout(() => searchInputRef.current?.focus(), 150);
-                }
-              }}
-              title="Search in chapter"
+          <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "6px" : "10px" }}>
+            {/* Search — navigates to site-wide search */}
+            <a
+              href="/search"
+              title="Search scriptures"
               style={{
                 background: "none",
                 border: "none",
-                color: searchOpen ? bar.text : bar.textSecondary,
+                color: "#fff",
                 cursor: "pointer",
-                width: "38px",
-                height: "38px",
+                width: "36px",
+                height: "36px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                transition: "color 0.15s",
+                textDecoration: "none",
               }}
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="11" cy="11" r="8" />
                 <line x1="21" y1="21" x2="16.65" y2="16.65" />
               </svg>
-            </button>
-            {/* Font size (both mobile + desktop) */}
+            </a>
+            {/* Font size */}
             <button
               onClick={cycleFontSize}
               title="Change font size"
               style={{
                 background: "none",
                 border: "none",
-                color: bar.textSecondary,
+                color: "#fff",
                 cursor: "pointer",
-                width: "38px",
-                height: "38px",
+                width: "36px",
+                height: "36px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -1199,22 +1191,22 @@ export default function ScriptureReader() {
               style={{
                 background: "none",
                 border: "none",
-                width: "38px",
-                height: "38px",
+                width: "36px",
+                height: "36px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 cursor: "pointer",
                 transition: "all 0.15s",
-                color: bar.textSecondary,
+                color: "#fff",
               }}
             >
               {lightMode ? (
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
                 </svg>
               ) : (
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="5" />
                   <line x1="12" y1="1" x2="12" y2="3" />
                   <line x1="12" y1="21" x2="12" y2="23" />
@@ -1235,17 +1227,19 @@ export default function ScriptureReader() {
                 background: "none",
                 border: "none",
                 cursor: "pointer",
-                padding: "4px 0",
+                width: "36px",
+                height: "36px",
                 display: "flex",
                 flexDirection: "column",
-                alignItems: "flex-end",
+                alignItems: "center",
+                justifyContent: "center",
                 gap: "4px",
-                color: bar.textSecondary,
+                color: "#fff",
               }}
             >
-              <span style={{ display: "block", width: "12px", height: "1.5px", background: "#fefefe", borderRadius: "1px" }} />
-              <span style={{ display: "block", width: "18px", height: "1.5px", background: "#fefefe", borderRadius: "1px" }} />
-              <span style={{ display: "block", width: "15px", height: "1.5px", background: "#fefefe", borderRadius: "1px" }} />
+              <span style={{ display: "block", width: "18px", height: "1.5px", background: "#fff", borderRadius: "1px" }} />
+              <span style={{ display: "block", width: "18px", height: "1.5px", background: "#fff", borderRadius: "1px" }} />
+              <span style={{ display: "block", width: "18px", height: "1.5px", background: "#fff", borderRadius: "1px" }} />
             </button>
           </div>
         </div>
