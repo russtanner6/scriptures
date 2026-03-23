@@ -174,7 +174,8 @@
     "id": "captain-moroni",
     "name": "Captain Moroni",
     "aliases": [
-      "Moroni, son of unnamed"
+      "Moroni, son of unnamed",
+      "Moroni"
     ],
     "bio": "Chief captain of the Nephite armies, appointed at age twenty-five. He was a brilliant military strategist who fortified Nephite cities and led them through years of war against the Lamanites and the dissenter Amalickiah. He created the 'title of liberty' to rally his people. Mormon wrote that if all men had been like Moroni, the powers of hell would have been shaken forever.",
     "era": "Book of Mormon - Middle",
@@ -2578,7 +2579,9 @@
   {
     "id": "samuel-the-lamanite",
     "name": "Samuel the Lamanite",
-    "aliases": [],
+    "aliases": [
+      "Samuel"
+    ],
     "bio": "A Lamanite prophet who stood on the walls of Zarahemla and prophesied to the Nephites around 6 BC. He prophesied signs of Christ's birth (a day, a night, and a day without darkness; a new star) and signs of his death (three days of darkness, earthquakes). He could not be hit by arrows or stones and escaped over the wall when the people tried to seize him.",
     "era": "Book of Mormon - Late",
     "timePeriod": "c. 6 BC",
@@ -2914,7 +2917,9 @@
   {
     "id": "abimelech-gerar",
     "name": "Abimelech (king of Gerar)",
-    "aliases": [],
+    "aliases": [
+      "Abimelech"
+    ],
     "bio": "King of Gerar who took Sarah into his household, not knowing she was Abraham's wife. God warned him in a dream, and he returned Sarah, rebuking Abraham. He later made a covenant with Abraham at Beersheba.",
     "era": "Patriarchal",
     "timePeriod": "c. 2050 BC",
@@ -2935,7 +2940,9 @@
   {
     "id": "abimelech-son-of-gideon",
     "name": "Abimelech (son of Gideon)",
-    "aliases": [],
+    "aliases": [
+      "Abimelech"
+    ],
     "bio": "Son of Gideon by a concubine from Shechem. He killed seventy of his brothers to seize power, though Jotham the youngest escaped. He destroyed Shechem when it rebelled, then died when a woman dropped a millstone on his head.",
     "era": "Judges",
     "timePeriod": "c. 1150 BC",
@@ -3139,7 +3146,9 @@
   {
     "id": "ahaziah-king-of-israel",
     "name": "Ahaziah (king of Israel)",
-    "aliases": [],
+    "aliases": [
+      "Ahaziah"
+    ],
     "bio": "Son of Ahab and Jezebel who reigned two years. He fell through a lattice and was injured, then sent messengers to inquire of Baal-zebub. Elijah intercepted them and prophesied Ahaziah's death.",
     "era": "Divided Kingdom",
     "timePeriod": "c. 853–852 BC",
@@ -3211,7 +3220,9 @@
   {
     "id": "alvin-smith",
     "name": "Alvin Smith",
-    "aliases": [],
+    "aliases": [
+      "Alvin"
+    ],
     "bio": "Eldest brother of Joseph Smith who died in 1823 before the Restoration. Joseph Smith saw him in the celestial kingdom in a vision recorded in D&C 137, leading to the doctrine that those who would have received the gospel had they lived shall be heirs of the celestial kingdom.",
     "era": "Restoration",
     "timePeriod": "1798–1823",
@@ -3332,7 +3343,9 @@
   {
     "id": "ananias-high-priest",
     "name": "Ananias (high priest)",
-    "aliases": [],
+    "aliases": [
+      "Ananias"
+    ],
     "bio": "The high priest who commanded those standing near Paul to strike him on the mouth during his trial before the Sanhedrin. He later traveled to Caesarea with an orator named Tertullus to accuse Paul before Governor Felix.",
     "era": "New Testament",
     "timePeriod": "c. AD 47–59",
@@ -3353,7 +3366,9 @@
   {
     "id": "ananias-of-jerusalem",
     "name": "Ananias (of Jerusalem)",
-    "aliases": [],
+    "aliases": [
+      "Ananias"
+    ],
     "bio": "A member of the early Jerusalem church who, with his wife Sapphira, sold a possession but secretly kept back part of the price while claiming to give it all. He fell dead when Peter exposed the lie.",
     "era": "New Testament",
     "timePeriod": "c. AD 30–35",
@@ -3427,7 +3442,9 @@
   {
     "id": "antipas-of-pergamum",
     "name": "Antipas (of Pergamum)",
-    "aliases": [],
+    "aliases": [
+      "Antipas"
+    ],
     "bio": "Called by Christ 'my faithful martyr' in Revelation 2:13, who was killed in Pergamum 'where Satan's seat is.' He held fast to Christ's name and did not deny the faith.",
     "era": "New Testament",
     "timePeriod": "c. AD 90",
@@ -3637,7 +3654,10 @@
   {
     "id": "bathsheba",
     "name": "Bathsheba",
-    "aliases": [],
+    "aliases": [
+      "Bath-sheba",
+      "Bathsheba"
+    ],
     "bio": "Wife of Uriah the Hittite and later wife of King David, who saw her bathing and committed adultery with her. David arranged Uriah's death in battle to conceal the affair. After the death of their first child, she bore Solomon, who became king of Israel. She later advocated for Solomon's succession.",
     "era": "United Monarchy",
     "timePeriod": "c. 1000 BC",
@@ -4160,7 +4180,9 @@
   {
     "id": "demetrius-silversmith",
     "name": "Demetrius (silversmith)",
-    "aliases": [],
+    "aliases": [
+      "Demetrius"
+    ],
     "bio": "A silversmith in Ephesus who made silver shrines for the goddess Diana. He incited a riot against Paul by arguing that Paul's preaching threatened their trade and Diana's temple.",
     "era": "New Testament",
     "timePeriod": "c. AD 55",
@@ -4929,7 +4951,9 @@
   {
     "id": "herod-agrippa-i",
     "name": "Herod Agrippa I",
-    "aliases": [],
+    "aliases": [
+      "Herod"
+    ],
     "bio": "Grandson of Herod the Great who killed the apostle James with the sword and imprisoned Peter. He was struck down by an angel and eaten by worms because he accepted the people's worship as a god.",
     "era": "New Testament",
     "timePeriod": "c. 10 BC – AD 44",
@@ -4952,7 +4976,9 @@
   {
     "id": "herod-antipas",
     "name": "Herod Antipas",
-    "aliases": [],
+    "aliases": [
+      "Herod"
+    ],
     "bio": "Son of Herod the Great, tetrarch of Galilee during Jesus' ministry. He had John the Baptist beheaded at the request of his stepdaughter Salome, prompted by Herodias. Jesus was sent to him by Pilate for questioning before the crucifixion, but Herod mocked Jesus and returned him to Pilate.",
     "era": "New Testament",
     "timePeriod": "c. 20 BC – c. AD 39",
@@ -4979,7 +5005,9 @@
   {
     "id": "herod-the-great",
     "name": "Herod the Great",
-    "aliases": [],
+    "aliases": [
+      "Herod"
+    ],
     "bio": "King of Judea under Rome who rebuilt the Temple in Jerusalem but was known for cruelty and paranoia. He ordered the slaughter of male children in Bethlehem after learning from the wise men that a new 'king of the Jews' had been born. He died shortly after Jesus' birth.",
     "era": "New Testament",
     "timePeriod": "c. 73–4 BC",
@@ -5036,7 +5064,9 @@
   {
     "id": "hiram-king-of-tyre",
     "name": "Hiram (king of Tyre)",
-    "aliases": [],
+    "aliases": [
+      "Hiram"
+    ],
     "bio": "King of Tyre who was a friend and ally of both David and Solomon. He supplied cedar and cypress wood and skilled laborers for building David's palace and Solomon's temple.",
     "era": "United Monarchy",
     "timePeriod": "c. 980–947 BC",
@@ -5083,7 +5113,9 @@
   {
     "id": "hoshea-king-of-israel",
     "name": "Hoshea (king of Israel)",
-    "aliases": [],
+    "aliases": [
+      "Hoshea"
+    ],
     "bio": "The last king of Israel who reigned nine years. He conspired against and killed King Pekah. He stopped paying tribute to Assyria and sought Egyptian aid, leading to Samaria's destruction.",
     "era": "Divided Kingdom",
     "timePeriod": "c. 732–722 BC",
@@ -5258,7 +5290,8 @@
     "id": "jehoash-king-of-israel",
     "name": "Jehoash (king of Israel)",
     "aliases": [
-      "Joash of Israel"
+      "Joash of Israel",
+      "Jehoash"
     ],
     "bio": "Son of Jehoahaz who visited Elisha on his deathbed. Elisha told him to strike the ground with arrows; he struck only three times, limiting his victories over Aram. He defeated Amaziah of Judah and broke down Jerusalem's walls.",
     "era": "Divided Kingdom",
@@ -5345,7 +5378,8 @@
     "id": "jehoram-king-of-judah",
     "name": "Jehoram (king of Judah)",
     "aliases": [
-      "Joram of Judah"
+      "Joram of Judah",
+      "Jehoram"
     ],
     "bio": "King of Judah who married Ahab's daughter Athaliah. He killed all his brothers and walked in the ways of the kings of Israel. Elijah sent him a letter prophesying disease, and he died of a bowel illness.",
     "era": "Divided Kingdom",
@@ -5457,7 +5491,9 @@
   {
     "id": "jeroboam-ii",
     "name": "Jeroboam II",
-    "aliases": [],
+    "aliases": [
+      "Jeroboam"
+    ],
     "bio": "King of Israel who reigned 41 years and restored Israel's borders from Lebo-hamath to the Sea of the Arabah. Despite his political success, he continued the sins of Jeroboam son of Nebat. Amos and Hosea prophesied during his reign.",
     "era": "Divided Kingdom",
     "timePeriod": "c. 793–753 BC",
@@ -5483,7 +5519,8 @@
     "id": "jeshua-high-priest",
     "name": "Jeshua (high priest)",
     "aliases": [
-      "Joshua son of Jehozadak"
+      "Joshua son of Jehozadak",
+      "Jeshua"
     ],
     "bio": "High priest who returned from exile with Zerubbabel. He helped rebuild the altar and lay the temple foundation. In Zechariah's vision, Satan accused him before God, and the LORD rebuked Satan and gave Jeshua clean garments.",
     "era": "Post-Exile",
@@ -5736,7 +5773,8 @@
     "id": "joram-king-of-israel",
     "name": "Joram (king of Israel)",
     "aliases": [
-      "Jehoram of Israel"
+      "Jehoram of Israel",
+      "Joram"
     ],
     "bio": "Son of Ahab who reigned over Israel. He allied with Jehoshaphat against Moab and consulted Elisha. He was wounded fighting Hazael at Ramoth-gilead and killed by Jehu.",
     "era": "Divided Kingdom",
@@ -5762,7 +5800,10 @@
   {
     "id": "joseph-smith-sr",
     "name": "Joseph Smith Sr.",
-    "aliases": [],
+    "aliases": [
+      "Joseph Smith, Sen.",
+      "Joseph Smith, Senior"
+    ],
     "bio": "Father of the Prophet Joseph Smith and one of the Eight Witnesses of the Book of Mormon. He was the first Patriarch of the Church. He supported his son's prophetic calling from the earliest days and served faithfully until his death in 1840.",
     "era": "Restoration",
     "timePeriod": "1771–1840",
@@ -5791,7 +5832,9 @@
   {
     "id": "joseph-of-nazareth",
     "name": "Joseph of Nazareth",
-    "aliases": [],
+    "aliases": [
+      "Joseph"
+    ],
     "bio": "Husband of Mary and legal father of Jesus. A righteous carpenter descended from King David, he was warned in a dream by an angel not to put Mary away. He took his family to Egypt to escape Herod's slaughter of the innocents and later settled in Nazareth.",
     "era": "New Testament",
     "timePeriod": "c. 30 BC – c. AD 18",
@@ -6463,7 +6506,8 @@
     "id": "medium-of-endor",
     "name": "Medium of Endor",
     "aliases": [
-      "Witch of Endor"
+      "Witch of Endor",
+      "the woman"
     ],
     "bio": "A woman at Endor who practiced necromancy. On the eve of his final battle, Saul disguised himself and asked her to summon Samuel's spirit. She called up Samuel, who prophesied Saul's death.",
     "era": "United Monarchy",
@@ -6593,7 +6637,9 @@
   {
     "id": "mosiah-i",
     "name": "Mosiah I",
-    "aliases": [],
+    "aliases": [
+      "Mosiah"
+    ],
     "bio": "A Nephite king who led a group of righteous Nephites out of the land of Nephi to the land of Zarahemla, where they joined with the people of Zarahemla (Mulekites). He became king over both peoples and was the father of King Benjamin.",
     "era": "Book of Mormon - Middle",
     "timePeriod": "c. 200 BC",
@@ -7520,7 +7566,8 @@
     "id": "simon-the-sorcerer",
     "name": "Simon (the sorcerer)",
     "aliases": [
-      "Simon Magus"
+      "Simon Magus",
+      "Simon"
     ],
     "bio": "A sorcerer in Samaria who amazed the people and claimed to be someone great. After believing and being baptized, he offered the apostles money for the power to confer the Holy Ghost, and was sharply rebuked by Peter.",
     "era": "New Testament",
@@ -7788,7 +7835,9 @@
   {
     "id": "widow-of-zarephath",
     "name": "Widow of Zarephath",
-    "aliases": [],
+    "aliases": [
+      "the widow"
+    ],
     "bio": "A Sidonian widow preparing a final meal during a famine when Elijah asked for food first, promising her flour and oil would not run out. Her son died and Elijah raised him back to life.",
     "era": "Divided Kingdom",
     "timePeriod": "c. 870 BC",

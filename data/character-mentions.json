@@ -560,11 +560,34 @@
     }
   },
   "captain-moroni": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 162,
+    "byVolume": {
+      "BoM": 162
+    },
+    "byBook": [
+      {
+        "bookId": 75,
+        "bookName": "Alma",
+        "volumeAbbrev": "BoM",
+        "count": 162
+      }
+    ],
+    "firstMention": {
+      "bookId": 75,
+      "bookName": "Alma",
+      "volumeAbbrev": "BoM",
+      "chapter": 43,
+      "verse": 16,
+      "text": "Now, the leader of the Nephites, or the man who had been appointed to be the chief captain over the Nephites--now the chief captain took the command of all the armies of the Nephites--and his name was Moroni;"
+    },
+    "lastMention": {
+      "bookId": 75,
+      "bookName": "Alma",
+      "volumeAbbrev": "BoM",
+      "chapter": 63,
+      "verse": 3,
+      "text": "And it came to pass that Moroni died also. And thus ended the thirty and sixth year of the reign of the judges."
+    }
   },
   "david": {
     "totalMentions": 915,
@@ -9204,16 +9227,16 @@
     }
   },
   "samuel-the-lamanite": {
-    "totalMentions": 1,
+    "totalMentions": 2,
     "byVolume": {
-      "BoM": 1
+      "BoM": 2
     },
     "byBook": [
       {
         "bookId": 79,
         "bookName": "Mormon",
         "volumeAbbrev": "BoM",
-        "count": 1
+        "count": 2
       }
     ],
     "firstMention": {
@@ -9228,9 +9251,9 @@
       "bookId": 79,
       "bookName": "Mormon",
       "volumeAbbrev": "BoM",
-      "chapter": 1,
-      "verse": 19,
-      "text": "And it came to pass that there were sorceries, and witchcrafts, and magics; and the power of the evil one was wrought upon all the face of the land, even unto the fulfilling of all the words of Abinadi, and also Samuel the Lamanite."
+      "chapter": 2,
+      "verse": 10,
+      "text": "And it came to pass that the Nephites began to repent of their iniquity, and began to cry even as had been prophesied by Samuel the prophet; for behold no man could keep that which was his own, for the thieves, and the robbers, and the murderers, and the magic art, and the witchcraft which was in the land."
     }
   },
   "sarah": {
@@ -10280,18 +10303,70 @@
     }
   },
   "abimelech-gerar": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 23,
+    "byVolume": {
+      "OT": 23
+    },
+    "byBook": [
+      {
+        "bookId": 1,
+        "bookName": "Genesis",
+        "volumeAbbrev": "OT",
+        "count": 23
+      }
+    ],
+    "firstMention": {
+      "bookId": 1,
+      "bookName": "Genesis",
+      "volumeAbbrev": "OT",
+      "chapter": 20,
+      "verse": 2,
+      "text": "And Abraham said of Sarah his wife, She is my sister: and Abimelech king of Gerar sent, and took Sarah."
+    },
+    "lastMention": {
+      "bookId": 1,
+      "bookName": "Genesis",
+      "volumeAbbrev": "OT",
+      "chapter": 26,
+      "verse": 26,
+      "text": "Then Abimelech went to him from Gerar, and Ahuzzath one of his friends, and Phichol the chief captain of his army."
+    }
   },
   "abimelech-son-of-gideon": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 37,
+    "byVolume": {
+      "OT": 37
+    },
+    "byBook": [
+      {
+        "bookId": 7,
+        "bookName": "Judges",
+        "volumeAbbrev": "OT",
+        "count": 36
+      },
+      {
+        "bookId": 10,
+        "bookName": "2 Samuel",
+        "volumeAbbrev": "OT",
+        "count": 1
+      }
+    ],
+    "firstMention": {
+      "bookId": 7,
+      "bookName": "Judges",
+      "volumeAbbrev": "OT",
+      "chapter": 8,
+      "verse": 31,
+      "text": "And his concubine that was in Shechem, she also bare him a son, whose name he called Abimelech."
+    },
+    "lastMention": {
+      "bookId": 10,
+      "bookName": "2 Samuel",
+      "volumeAbbrev": "OT",
+      "chapter": 11,
+      "verse": 21,
+      "text": "Who smote Abimelech the son of Jerubbesheth?  did not a woman cast a piece of a millstone upon him from the wall, that he died in Thebez?  why went ye nigh the wall?  then say thou, Thy servant Uriah the Hittite is dead also."
+    }
   },
   "abish": {
     "totalMentions": 1,
@@ -10594,11 +10669,46 @@
     }
   },
   "ahaziah-king-of-israel": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 29,
+    "byVolume": {
+      "OT": 29
+    },
+    "byBook": [
+      {
+        "bookId": 11,
+        "bookName": "1 Kings",
+        "volumeAbbrev": "OT",
+        "count": 3
+      },
+      {
+        "bookId": 12,
+        "bookName": "2 Kings",
+        "volumeAbbrev": "OT",
+        "count": 17
+      },
+      {
+        "bookId": 14,
+        "bookName": "2 Chronicles",
+        "volumeAbbrev": "OT",
+        "count": 9
+      }
+    ],
+    "firstMention": {
+      "bookId": 11,
+      "bookName": "1 Kings",
+      "volumeAbbrev": "OT",
+      "chapter": 22,
+      "verse": 40,
+      "text": "So Ahab slept with his fathers; and Ahaziah his son reigned in his stead."
+    },
+    "lastMention": {
+      "bookId": 14,
+      "bookName": "2 Chronicles",
+      "volumeAbbrev": "OT",
+      "chapter": 22,
+      "verse": 11,
+      "text": "But Jehoshabeath, the daughter of the king, took Joash the son of Ahaziah, and stole him from among the king's sons that were slain, and put him and his nurse in a bedchamber.  So Jehoshabeath, the daughter of king Jehoram, the wife of Jehoiada the priest, (for she was the sister of Ahaziah,) hid him from Athaliah, so that she slew him not."
+    }
   },
   "ahijah-prophet": {
     "totalMentions": 5,
@@ -10673,11 +10783,34 @@
     }
   },
   "alvin-smith": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 1,
+    "byVolume": {
+      "D&C": 1
+    },
+    "byBook": [
+      {
+        "bookId": 82,
+        "bookName": "D&C 137",
+        "volumeAbbrev": "D&C",
+        "count": 1
+      }
+    ],
+    "firstMention": {
+      "bookId": 82,
+      "bookName": "D&C",
+      "volumeAbbrev": "D&C",
+      "chapter": 137,
+      "verse": 5,
+      "text": "I saw Father Adam and Abraham; and my father and my mother; my brother Alvin, that has long since slept;"
+    },
+    "lastMention": {
+      "bookId": 82,
+      "bookName": "D&C",
+      "volumeAbbrev": "D&C",
+      "chapter": 137,
+      "verse": 5,
+      "text": "I saw Father Adam and Abraham; and my father and my mother; my brother Alvin, that has long since slept;"
+    }
   },
   "amalickiah": {
     "totalMentions": 55,
@@ -10824,18 +10957,64 @@
     }
   },
   "ananias-high-priest": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 10,
+    "byVolume": {
+      "NT": 10
+    },
+    "byBook": [
+      {
+        "bookId": 44,
+        "bookName": "Acts",
+        "volumeAbbrev": "NT",
+        "count": 10
+      }
+    ],
+    "firstMention": {
+      "bookId": 44,
+      "bookName": "Acts",
+      "volumeAbbrev": "NT",
+      "chapter": 5,
+      "verse": 1,
+      "text": "BUT a certain man named Ananias, with Sapphira his wife, sold a possession,"
+    },
+    "lastMention": {
+      "bookId": 44,
+      "bookName": "Acts",
+      "volumeAbbrev": "NT",
+      "chapter": 24,
+      "verse": 1,
+      "text": "AND after five days Ananias the high priest descended with the elders, and with a certain orator named Tertullus, who informed the governor against Paul."
+    }
   },
   "ananias-of-jerusalem": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 10,
+    "byVolume": {
+      "NT": 10
+    },
+    "byBook": [
+      {
+        "bookId": 44,
+        "bookName": "Acts",
+        "volumeAbbrev": "NT",
+        "count": 10
+      }
+    ],
+    "firstMention": {
+      "bookId": 44,
+      "bookName": "Acts",
+      "volumeAbbrev": "NT",
+      "chapter": 5,
+      "verse": 1,
+      "text": "BUT a certain man named Ananias, with Sapphira his wife, sold a possession,"
+    },
+    "lastMention": {
+      "bookId": 44,
+      "bookName": "Acts",
+      "volumeAbbrev": "NT",
+      "chapter": 24,
+      "verse": 1,
+      "text": "AND after five days Ananias the high priest descended with the elders, and with a certain orator named Tertullus, who informed the governor against Paul."
+    }
   },
   "andrew": {
     "totalMentions": 12,
@@ -10922,11 +11101,34 @@
     }
   },
   "antipas-of-pergamum": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 1,
+    "byVolume": {
+      "NT": 1
+    },
+    "byBook": [
+      {
+        "bookId": 66,
+        "bookName": "Revelation",
+        "volumeAbbrev": "NT",
+        "count": 1
+      }
+    ],
+    "firstMention": {
+      "bookId": 66,
+      "bookName": "Revelation",
+      "volumeAbbrev": "NT",
+      "chapter": 2,
+      "verse": 13,
+      "text": "I know thy works, and where thou dwellest, even where Satan's seat is: and thou holdest fast my name, and hast not denied my faith, even in those days wherein Antipas was my faithful martyr, who was slain among you, where Satan dwelleth."
+    },
+    "lastMention": {
+      "bookId": 66,
+      "bookName": "Revelation",
+      "volumeAbbrev": "NT",
+      "chapter": 2,
+      "verse": 13,
+      "text": "I know thy works, and where thou dwellest, even where Satan's seat is: and thou holdest fast my name, and hast not denied my faith, even in those days wherein Antipas was my faithful martyr, who was slain among you, where Satan dwelleth."
+    }
   },
   "aristarchus": {
     "totalMentions": 5,
@@ -11302,11 +11504,40 @@
     }
   },
   "bathsheba": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 10,
+    "byVolume": {
+      "OT": 10
+    },
+    "byBook": [
+      {
+        "bookId": 10,
+        "bookName": "2 Samuel",
+        "volumeAbbrev": "OT",
+        "count": 2
+      },
+      {
+        "bookId": 11,
+        "bookName": "1 Kings",
+        "volumeAbbrev": "OT",
+        "count": 8
+      }
+    ],
+    "firstMention": {
+      "bookId": 10,
+      "bookName": "2 Samuel",
+      "volumeAbbrev": "OT",
+      "chapter": 11,
+      "verse": 3,
+      "text": "And David sent and enquired after the woman.  And one said, Is not this Bath-sheba, the daughter of Eliam, the wife of Uriah the Hittite?"
+    },
+    "lastMention": {
+      "bookId": 11,
+      "bookName": "1 Kings",
+      "volumeAbbrev": "OT",
+      "chapter": 2,
+      "verse": 19,
+      "text": "Bath-sheba therefore went unto king Solomon, to speak unto him for Adonijah.  And the king rose up to meet her, and bowed himself unto her, and sat down on his throne, and caused a seat to be set for the king's mother; and she sat on his right hand."
+    }
   },
   "ben-hadad": {
     "totalMentions": 26,
@@ -12152,11 +12383,34 @@
     }
   },
   "demetrius-silversmith": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 2,
+    "byVolume": {
+      "NT": 2
+    },
+    "byBook": [
+      {
+        "bookId": 44,
+        "bookName": "Acts",
+        "volumeAbbrev": "NT",
+        "count": 2
+      }
+    ],
+    "firstMention": {
+      "bookId": 44,
+      "bookName": "Acts",
+      "volumeAbbrev": "NT",
+      "chapter": 19,
+      "verse": 24,
+      "text": "For a certain man named Demetrius, a silversmith, which made silver shrines for Diana, brought no small gain unto the craftsmen;"
+    },
+    "lastMention": {
+      "bookId": 44,
+      "bookName": "Acts",
+      "volumeAbbrev": "NT",
+      "chapter": 19,
+      "verse": 38,
+      "text": "Wherefore if Demetrius, and the craftsmen which are with him, have a matter against any man, the law is open, and there are deputies: let them implead one another."
+    }
   },
   "diotrephes": {
     "totalMentions": 1,
@@ -13554,25 +13808,118 @@
     }
   },
   "herod-agrippa-i": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 9,
+    "byVolume": {
+      "NT": 9
+    },
+    "byBook": [
+      {
+        "bookId": 44,
+        "bookName": "Acts",
+        "volumeAbbrev": "NT",
+        "count": 9
+      }
+    ],
+    "firstMention": {
+      "bookId": 44,
+      "bookName": "Acts",
+      "volumeAbbrev": "NT",
+      "chapter": 4,
+      "verse": 27,
+      "text": "For of a truth against thy holy child Jesus, whom thou hast anointed, both Herod, and Pontius Pilate, with the Gentiles, and the people of Israel, were gathered together,"
+    },
+    "lastMention": {
+      "bookId": 44,
+      "bookName": "Acts",
+      "volumeAbbrev": "NT",
+      "chapter": 23,
+      "verse": 35,
+      "text": "I will hear thee, said he, when thine accusers are also come. And he commanded him to be kept in Herod's judgment hall."
+    }
   },
   "herod-antipas": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 41,
+    "byVolume": {
+      "NT": 41
+    },
+    "byBook": [
+      {
+        "bookId": 40,
+        "bookName": "Matthew",
+        "volumeAbbrev": "NT",
+        "count": 12
+      },
+      {
+        "bookId": 41,
+        "bookName": "Mark",
+        "volumeAbbrev": "NT",
+        "count": 8
+      },
+      {
+        "bookId": 42,
+        "bookName": "Luke",
+        "volumeAbbrev": "NT",
+        "count": 12
+      },
+      {
+        "bookId": 44,
+        "bookName": "Acts",
+        "volumeAbbrev": "NT",
+        "count": 9
+      }
+    ],
+    "firstMention": {
+      "bookId": 40,
+      "bookName": "Matthew",
+      "volumeAbbrev": "NT",
+      "chapter": 2,
+      "verse": 1,
+      "text": "NOW when Jesus was born in Bethlehem of Judaea in the days of Herod the king, behold, there came wise men from the east to Jerusalem,"
+    },
+    "lastMention": {
+      "bookId": 44,
+      "bookName": "Acts",
+      "volumeAbbrev": "NT",
+      "chapter": 23,
+      "verse": 35,
+      "text": "I will hear thee, said he, when thine accusers are also come. And he commanded him to be kept in Herod's judgment hall."
+    }
   },
   "herod-the-great": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 24,
+    "byVolume": {
+      "NT": 24
+    },
+    "byBook": [
+      {
+        "bookId": 40,
+        "bookName": "Matthew",
+        "volumeAbbrev": "NT",
+        "count": 12
+      },
+      {
+        "bookId": 42,
+        "bookName": "Luke",
+        "volumeAbbrev": "NT",
+        "count": 12
+      }
+    ],
+    "firstMention": {
+      "bookId": 40,
+      "bookName": "Matthew",
+      "volumeAbbrev": "NT",
+      "chapter": 2,
+      "verse": 1,
+      "text": "NOW when Jesus was born in Bethlehem of Judaea in the days of Herod the king, behold, there came wise men from the east to Jerusalem,"
+    },
+    "lastMention": {
+      "bookId": 42,
+      "bookName": "Luke",
+      "volumeAbbrev": "NT",
+      "chapter": 23,
+      "verse": 15,
+      "text": "No, nor yet Herod: for I sent you to him; and, lo, nothing worthy of death is done unto him."
+    }
   },
   "hezekiah": {
     "totalMentions": 117,
@@ -13659,11 +14006,40 @@
     }
   },
   "hiram-king-of-tyre": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 18,
+    "byVolume": {
+      "OT": 18
+    },
+    "byBook": [
+      {
+        "bookId": 10,
+        "bookName": "2 Samuel",
+        "volumeAbbrev": "OT",
+        "count": 1
+      },
+      {
+        "bookId": 11,
+        "bookName": "1 Kings",
+        "volumeAbbrev": "OT",
+        "count": 17
+      }
+    ],
+    "firstMention": {
+      "bookId": 10,
+      "bookName": "2 Samuel",
+      "volumeAbbrev": "OT",
+      "chapter": 5,
+      "verse": 11,
+      "text": "And Hiram king of Tyre sent messengers to David, and cedar trees, and carpenters, and masons: and they built David an house."
+    },
+    "lastMention": {
+      "bookId": 11,
+      "bookName": "1 Kings",
+      "volumeAbbrev": "OT",
+      "chapter": 10,
+      "verse": 22,
+      "text": "For the king had at sea a navy of Tharshish with the navy of Hiram: once in three years came the navy of Tharshish, bringing gold, and silver, ivory, and apes, and peacocks."
+    }
   },
   "hosea": {
     "totalMentions": 2,
@@ -13696,11 +14072,34 @@
     }
   },
   "hoshea-king-of-israel": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 8,
+    "byVolume": {
+      "OT": 8
+    },
+    "byBook": [
+      {
+        "bookId": 12,
+        "bookName": "2 Kings",
+        "volumeAbbrev": "OT",
+        "count": 8
+      }
+    ],
+    "firstMention": {
+      "bookId": 12,
+      "bookName": "2 Kings",
+      "volumeAbbrev": "OT",
+      "chapter": 15,
+      "verse": 30,
+      "text": "And Hoshea the son of Elah made a conspiracy against Pekah the son of Remaliah, and smote him, and slew him, and reigned in his stead, in the twentieth year of Jotham the son of Uzziah."
+    },
+    "lastMention": {
+      "bookId": 12,
+      "bookName": "2 Kings",
+      "volumeAbbrev": "OT",
+      "chapter": 18,
+      "verse": 10,
+      "text": "And at the end of three years they took it: even in the sixth year of Hezekiah, that is the ninth year of Hoshea king of Israel, Samaria was taken."
+    }
   },
   "ishmael-ot": {
     "totalMentions": 20,
@@ -13913,11 +14312,34 @@
     }
   },
   "jehoash-king-of-israel": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 16,
+    "byVolume": {
+      "OT": 16
+    },
+    "byBook": [
+      {
+        "bookId": 12,
+        "bookName": "2 Kings",
+        "volumeAbbrev": "OT",
+        "count": 16
+      }
+    ],
+    "firstMention": {
+      "bookId": 12,
+      "bookName": "2 Kings",
+      "volumeAbbrev": "OT",
+      "chapter": 11,
+      "verse": 21,
+      "text": "Seven years old was Jehoash when he began to reign."
+    },
+    "lastMention": {
+      "bookId": 12,
+      "bookName": "2 Kings",
+      "volumeAbbrev": "OT",
+      "chapter": 14,
+      "verse": 17,
+      "text": "And Amaziah the son of Joash king of Judah lived after the death of Jehoash son of Jehoahaz king of Israel fifteen years."
+    }
   },
   "jehoiada": {
     "totalMentions": 49,
@@ -14052,11 +14474,46 @@
     }
   },
   "jehoram-king-of-judah": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 21,
+    "byVolume": {
+      "OT": 21
+    },
+    "byBook": [
+      {
+        "bookId": 11,
+        "bookName": "1 Kings",
+        "volumeAbbrev": "OT",
+        "count": 1
+      },
+      {
+        "bookId": 12,
+        "bookName": "2 Kings",
+        "volumeAbbrev": "OT",
+        "count": 8
+      },
+      {
+        "bookId": 14,
+        "bookName": "2 Chronicles",
+        "volumeAbbrev": "OT",
+        "count": 12
+      }
+    ],
+    "firstMention": {
+      "bookId": 11,
+      "bookName": "1 Kings",
+      "volumeAbbrev": "OT",
+      "chapter": 22,
+      "verse": 50,
+      "text": "And Jehoshaphat slept with his fathers, and was buried with his fathers in the city of David his father: and Jehoram his son reigned in his stead."
+    },
+    "lastMention": {
+      "bookId": 14,
+      "bookName": "2 Chronicles",
+      "volumeAbbrev": "OT",
+      "chapter": 22,
+      "verse": 11,
+      "text": "But Jehoshabeath, the daughter of the king, took Joash the son of Ahaziah, and stole him from among the king's sons that were slain, and put him and his nurse in a bedchamber.  So Jehoshabeath, the daughter of king Jehoram, the wife of Jehoiada the priest, (for she was the sister of Ahaziah,) hid him from Athaliah, so that she slew him not."
+    }
   },
   "jehoshaphat": {
     "totalMentions": 76,
@@ -14233,18 +14690,82 @@
     }
   },
   "jeroboam-ii": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 28,
+    "byVolume": {
+      "OT": 28
+    },
+    "byBook": [
+      {
+        "bookId": 12,
+        "bookName": "2 Kings",
+        "volumeAbbrev": "OT",
+        "count": 23
+      },
+      {
+        "bookId": 28,
+        "bookName": "Hosea",
+        "volumeAbbrev": "OT",
+        "count": 1
+      },
+      {
+        "bookId": 30,
+        "bookName": "Amos",
+        "volumeAbbrev": "OT",
+        "count": 4
+      }
+    ],
+    "firstMention": {
+      "bookId": 12,
+      "bookName": "2 Kings",
+      "volumeAbbrev": "OT",
+      "chapter": 3,
+      "verse": 3,
+      "text": "Nevertheless he cleaved unto the sins of Jeroboam the son of Nebat, which made Israel to sin; he departed not therefrom."
+    },
+    "lastMention": {
+      "bookId": 30,
+      "bookName": "Amos",
+      "volumeAbbrev": "OT",
+      "chapter": 7,
+      "verse": 11,
+      "text": "For thus Amos saith, Jeroboam shall die by the sword, and Israel shall surely be led away captive out of their own land."
+    }
   },
   "jeshua-high-priest": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 28,
+    "byVolume": {
+      "OT": 28
+    },
+    "byBook": [
+      {
+        "bookId": 15,
+        "bookName": "Ezra",
+        "volumeAbbrev": "OT",
+        "count": 11
+      },
+      {
+        "bookId": 16,
+        "bookName": "Nehemiah",
+        "volumeAbbrev": "OT",
+        "count": 17
+      }
+    ],
+    "firstMention": {
+      "bookId": 15,
+      "bookName": "Ezra",
+      "volumeAbbrev": "OT",
+      "chapter": 2,
+      "verse": 2,
+      "text": "Which came with Zerubbabel: Jeshua, Nehemiah, Seraiah, Reelaiah, Mordecai, Bilshan, Mispar, Bigvai, Rehum, Baanah.  The number of the men of the people of Israel:"
+    },
+    "lastMention": {
+      "bookId": 16,
+      "bookName": "Nehemiah",
+      "volumeAbbrev": "OT",
+      "chapter": 12,
+      "verse": 26,
+      "text": "These were in the days of Joiakim the son of Jeshua, the son of Jozadak, and in the days of Nehemiah the governor, and of Ezra the priest, the scribe."
+    }
   },
   "jesse": {
     "totalMentions": 52,
@@ -14702,11 +15223,40 @@
     }
   },
   "joram-king-of-israel": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 18,
+    "byVolume": {
+      "OT": 18
+    },
+    "byBook": [
+      {
+        "bookId": 12,
+        "bookName": "2 Kings",
+        "volumeAbbrev": "OT",
+        "count": 16
+      },
+      {
+        "bookId": 14,
+        "bookName": "2 Chronicles",
+        "volumeAbbrev": "OT",
+        "count": 2
+      }
+    ],
+    "firstMention": {
+      "bookId": 12,
+      "bookName": "2 Kings",
+      "volumeAbbrev": "OT",
+      "chapter": 8,
+      "verse": 16,
+      "text": "And in the fifth year of Joram the son of Ahab king of Israel, Jehoshaphat being then king of Judah, Jehoram the son of Jehoshaphat king of Judah began to reign."
+    },
+    "lastMention": {
+      "bookId": 14,
+      "bookName": "2 Chronicles",
+      "volumeAbbrev": "OT",
+      "chapter": 22,
+      "verse": 7,
+      "text": "And the destruction of Ahaziah was of God by coming to Joram: for when he was come, he went out with Jehoram against Jehu the son of Nimshi, whom the LORD had anointed to cut off the house of Ahab."
+    }
   },
   "joseph-smith-sr": {
     "totalMentions": 0,
@@ -14716,11 +15266,46 @@
     "lastMention": null
   },
   "joseph-of-nazareth": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 24,
+    "byVolume": {
+      "NT": 24
+    },
+    "byBook": [
+      {
+        "bookId": 40,
+        "bookName": "Matthew",
+        "volumeAbbrev": "NT",
+        "count": 9
+      },
+      {
+        "bookId": 42,
+        "bookName": "Luke",
+        "volumeAbbrev": "NT",
+        "count": 11
+      },
+      {
+        "bookId": 43,
+        "bookName": "John",
+        "volumeAbbrev": "NT",
+        "count": 4
+      }
+    ],
+    "firstMention": {
+      "bookId": 40,
+      "bookName": "Matthew",
+      "volumeAbbrev": "NT",
+      "chapter": 1,
+      "verse": 16,
+      "text": "And Jacob begat Joseph the husband of Mary, of whom was born Jesus, who is called Christ."
+    },
+    "lastMention": {
+      "bookId": 43,
+      "bookName": "John",
+      "volumeAbbrev": "NT",
+      "chapter": 19,
+      "verse": 38,
+      "text": "And after this Joseph of Arimathaea, being a disciple of Jesus, but secretly for fear of the Jews, besought Pilate that he might take away the body of Jesus: and Pilate gave him leave. He came therefore, and took the body of Jesus."
+    }
   },
   "josiah": {
     "totalMentions": 48,
@@ -15989,11 +16574,34 @@
     }
   },
   "medium-of-endor": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 11,
+    "byVolume": {
+      "OT": 11
+    },
+    "byBook": [
+      {
+        "bookId": 9,
+        "bookName": "1 Samuel",
+        "volumeAbbrev": "OT",
+        "count": 11
+      }
+    ],
+    "firstMention": {
+      "bookId": 9,
+      "bookName": "1 Samuel",
+      "volumeAbbrev": "OT",
+      "chapter": 1,
+      "verse": 18,
+      "text": "And she said, Let thine handmaid find grace in thy sight. So the woman went her way, and did eat, and her countenance was no more sad."
+    },
+    "lastMention": {
+      "bookId": 9,
+      "bookName": "1 Samuel",
+      "volumeAbbrev": "OT",
+      "chapter": 28,
+      "verse": 24,
+      "text": "And the woman had a fat calf in the house; and she hasted, and killed it, and took flour, and kneaded it, and did bake unleavened bread thereof:"
+    }
   },
   "micah": {
     "totalMentions": 28,
@@ -16194,11 +16802,34 @@
     }
   },
   "mosiah-i": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 9,
+    "byVolume": {
+      "BoM": 9
+    },
+    "byBook": [
+      {
+        "bookId": 72,
+        "bookName": "Omni",
+        "volumeAbbrev": "BoM",
+        "count": 9
+      }
+    ],
+    "firstMention": {
+      "bookId": 72,
+      "bookName": "Omni",
+      "volumeAbbrev": "BoM",
+      "chapter": 0,
+      "verse": 12,
+      "text": "Behold, I am Amaleki, the son of Abinadom. Behold, I will speak unto you somewhat concerning Mosiah, who was made king over the land of Zarahemla; for behold, he being warned of the Lord that he should flee out of the land of Nephi, and as many as would hearken unto the voice of the Lord should also depart out of the land with him, into the wilderness--"
+    },
+    "lastMention": {
+      "bookId": 72,
+      "bookName": "Omni",
+      "volumeAbbrev": "BoM",
+      "chapter": 0,
+      "verse": 23,
+      "text": "Behold, I, Amaleki, was born in the days of Mosiah; and I have lived to see his death; and Benjamin, his son, reigneth in his stead."
+    }
   },
   "naomi": {
     "totalMentions": 20,
@@ -17718,11 +18349,34 @@
     "lastMention": null
   },
   "simon-the-sorcerer": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 12,
+    "byVolume": {
+      "NT": 12
+    },
+    "byBook": [
+      {
+        "bookId": 44,
+        "bookName": "Acts",
+        "volumeAbbrev": "NT",
+        "count": 12
+      }
+    ],
+    "firstMention": {
+      "bookId": 44,
+      "bookName": "Acts",
+      "volumeAbbrev": "NT",
+      "chapter": 1,
+      "verse": 13,
+      "text": "And when they were come in, they went up into an upper room, where abode both Peter, and James, and John, and Andrew, Philip, and Thomas, Bartholomew, and Matthew, James the son of Alphaeus, and Simon Zelotes, and Judas the brother of James."
+    },
+    "lastMention": {
+      "bookId": 44,
+      "bookName": "Acts",
+      "volumeAbbrev": "NT",
+      "chapter": 11,
+      "verse": 13,
+      "text": "And he shewed us how he had seen an angel in his house, which stood and said unto him, Send men to Joppa, and call for Simon, whose surname is Peter;"
+    }
   },
   "sisera": {
     "totalMentions": 19,
@@ -18175,11 +18829,34 @@
     }
   },
   "widow-of-zarephath": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 2,
+    "byVolume": {
+      "OT": 2
+    },
+    "byBook": [
+      {
+        "bookId": 11,
+        "bookName": "1 Kings",
+        "volumeAbbrev": "OT",
+        "count": 2
+      }
+    ],
+    "firstMention": {
+      "bookId": 11,
+      "bookName": "1 Kings",
+      "volumeAbbrev": "OT",
+      "chapter": 17,
+      "verse": 10,
+      "text": "So he arose and went to Zarephath.  And when he came to the gate of the city, behold, the widow woman was there gathering of sticks: and he called to her, and said, Fetch me, I pray thee, a little water in a vessel, that I may drink."
+    },
+    "lastMention": {
+      "bookId": 11,
+      "bookName": "1 Kings",
+      "volumeAbbrev": "OT",
+      "chapter": 17,
+      "verse": 20,
+      "text": "And he cried unto the LORD, and said, O LORD my God, hast thou also brought evil upon the widow with whom I sojourn, by slaying her son?"
+    }
   },
   "wilford-woodruff": {
     "totalMentions": 4,
