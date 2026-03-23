@@ -15,7 +15,13 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 
 - [~] **"Found in X verses" link in CharacterDetailPanel** — Clicking the verse count should close the character panel and open a scripture verse panel showing all mention verses for that character, with the character name highlighted. Similar to how word search opens a verse slider. *(Requested: Session 14)*
 
-- [ ] **Desktop header revamp for scripture reader** — Remove tree logo from top center when on a chapter. Replace with chapter/section dropdown (currently in footer). Top-left "Book + Chapter" becomes back-navigation: clicking goes up one level (to volume book list). Volume book list screen shows "VOLUMES" in top-left which goes back to volume picker. *(Requested: Session 14)*
+- [x] **Desktop header revamp for scripture reader** — Tree logo replaced with chapter selector in top center. Back-navigation hierarchy: Reading → Chapter grid → Book list → Volume picker. URLs reflect each level. Bottom bar cleaned up (just prev/next arrows). Mobile swipe for chapter navigation. *(Session 15)*
+
+- [ ] **SEO-friendly scripture URLs** — Change from `?bookId=42&chapter=11` to `/scriptures/new-testament/john/11`. Human-readable, search-engine-friendly paths. Requires Next.js dynamic route segments. *(Requested: Session 15)*
+
+- [ ] **SSR for scripture content** — Server-side render base verse text so search engines can index all 41,995 verses. Interactive features (speakers, nuggets, entity links) hydrate client-side. *(Requested: Session 15)*
+
+- [ ] **Progress bar on footer bar** — Move the reading progress gradient bar from the top of the page to the top of the bottom nav bar (above the prev/next arrows). *(Requested: Session 15)*
 
 - [ ] **Verse selection / multi-select mode** — Clicking a verse number on desktop (or long-press on mobile) activates selection mode. The clicked verse gets a checkbox, all other verse numbers become checkboxes too. User can check any number of verses (non-sequential). Purpose: attach notes, tags, and files to a verse selection. Clicking outside clears all checkboxes back to verse numbers. Ultimately stored in Firebase user profile. **Phase 1:** just the checkbox UI + selection state. **Phase 2:** notes/tags/files UI. **Phase 3:** Firebase persistence. *(Requested: Session 14)*
 

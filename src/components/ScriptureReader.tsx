@@ -1056,20 +1056,6 @@ export default function ScriptureReader() {
           transition: "background 0.3s ease, color 0.3s ease",
         }}
       >
-        {/* Reading progress bar — volume color gradient */}
-        <div
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            height: "3px",
-            width: `${scrollProgress * 100}%`,
-            background: "linear-gradient(90deg, #DC2F4B 0%, #E8532C 25%, #F57B20 50%, #F5A623 75%, #F5C829 100%)",
-            zIndex: 100,
-            transition: "width 0.1s linear",
-          }}
-        />
-
         {/* Top bar */}
         <div
           style={{
@@ -2108,6 +2094,15 @@ export default function ScriptureReader() {
             paddingBottom: "env(safe-area-inset-bottom, 0px)",
           }}
         >
+          {/* Reading progress bar — volume color gradient */}
+          <div
+            style={{
+              height: "3px",
+              width: `${scrollProgress * 100}%`,
+              background: "linear-gradient(90deg, #DC2F4B 0%, #E8532C 25%, #F57B20 50%, #F5A623 75%, #F5C829 100%)",
+              transition: "width 0.1s linear",
+            }}
+          />
           {/* Main controls row */}
           <div style={{
             padding: isMobile ? "6px 12px" : "8px 20px",
