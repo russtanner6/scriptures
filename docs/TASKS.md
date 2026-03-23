@@ -105,3 +105,8 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 6. **Session closes unexpectedly** → next session has the full picture
 
 **This file is committed to git and pushed to GitHub with every session.**
+
+## Sitemap Maintenance (MANDATORY)
+
+The sitemap at `src/app/sitemap.ts` auto-generates `/sitemap.xml` with all URLs.
+**Every session must check:** If any changes were made that affect URLs (new pages, renamed routes, new scripture sections, new tools), verify the sitemap includes them. The sitemap reads from the SQLite database for scripture pages, so adding new books/volumes (e.g., Apocrypha) will auto-include them once in the DB. Static pages must be added manually to the `entries` array in `sitemap.ts`.
