@@ -1014,6 +1014,55 @@ export default function ScriptureReader() {
 
   const mt = getModalTheme(lightMode);
 
+  // Shared dark nav bar for all scripture views (volume/book/chapter picker + reading)
+  const scriptureNavBar = (leftContent: React.ReactNode) => (
+    <div
+      style={{
+        background: "rgba(17, 17, 22, 0.95)",
+        backdropFilter: "blur(12px)",
+        WebkitBackdropFilter: "blur(12px)",
+        borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
+        padding: isMobile ? "10px 16px" : "12px 24px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+      }}
+    >
+      <div style={{ display: "flex", alignItems: "center", gap: "8px", minWidth: 0, flex: 1 }}>
+        {leftContent}
+      </div>
+      <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "6px" : "10px" }}>
+        <a href="/search" title="Search scriptures" style={{ color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", width: "36px", height: "36px", textDecoration: "none" }}>
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
+        </a>
+        <button onClick={toggleLightMode} title={lightMode ? "Dark mode" : "Light mode"} style={{ background: "none", border: "none", width: "36px", height: "36px", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", color: "#fff" }}>
+          {lightMode ? (
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
+          ) : (
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5" /><line x1="12" y1="1" x2="12" y2="3" /><line x1="12" y1="21" x2="12" y2="23" /><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" /><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" /><line x1="1" y1="12" x2="3" y2="12" /><line x1="21" y1="12" x2="23" y2="12" /><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" /><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" /></svg>
+          )}
+        </button>
+        <button onClick={() => setMenuOpen(true)} title="Menu" style={{ background: "none", border: "none", width: "36px", height: "36px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "4px", cursor: "pointer", color: "#fff" }}>
+          <span style={{ display: "block", width: "18px", height: "1.5px", background: "#fff", borderRadius: "1px" }} />
+          <span style={{ display: "block", width: "18px", height: "1.5px", background: "#fff", borderRadius: "1px" }} />
+          <span style={{ display: "block", width: "18px", height: "1.5px", background: "#fff", borderRadius: "1px" }} />
+        </button>
+      </div>
+    </div>
+  );
+
+  // Wrapper for non-reading scripture views (volume/book/chapter picker)
+  const scripturePageWrapper = (navLeft: React.ReactNode, content: React.ReactNode) => (
+    <div style={{ minHeight: "100vh", background: "var(--bg-gradient)", display: "flex", flexDirection: "column" }}>
+      {scriptureNavBar(navLeft)}
+      <div style={{ flex: 1, maxWidth: "1200px", width: "100%", margin: "0 auto", padding: isMobile ? "24px 16px" : "32px 32px" }}>
+        {content}
+      </div>
+      {/* NavMenu */}
+      <NavMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
+    </div>
+  );
+
   // ── READING VIEW ──
   if (selectedChapter !== null && selectedBookId !== null && selectedVolume) {
     const volColor = VOLUME_COLORS[selectedVolume] || "#3B82F6";
@@ -2272,39 +2321,21 @@ export default function ScriptureReader() {
     const isDC = selectedVolume === "D&C";
     const chapterWord = isDC ? "Section" : "Chapter";
 
-    return (
-      <div>
-        {/* Top nav — "← Volume Name" to go back to book list */}
-        <div style={{ marginBottom: "24px", display: "flex", alignItems: "center", gap: "8px" }}>
-          <button
-            onClick={() => {
-              setSelectedBookId(null);
-              setSelectedBookName(null);
-              setChapterCount(0);
-              window.history.replaceState({}, "", `/scriptures?volume=${selectedVolume}`);
-            }}
-            style={{
-              background: "none",
-              border: "none",
-              color: "var(--text)",
-              cursor: "pointer",
-              fontSize: "0.88rem",
-              fontWeight: 600,
-              fontFamily: "inherit",
-              padding: 0,
-              display: "flex",
-              alignItems: "center",
-              gap: "4px",
-            }}
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="15 18 9 12 15 6" />
-            </svg>
-            {volumes.find((v) => v.abbrev === selectedVolume)?.name || selectedVolume}
-          </button>
-        </div>
-
-        <h2
+    return scripturePageWrapper(
+      <button
+        onClick={() => {
+          setSelectedBookId(null);
+          setSelectedBookName(null);
+          setChapterCount(0);
+          window.history.replaceState({}, "", `/scriptures?volume=${selectedVolume}`);
+        }}
+        style={{ background: "none", border: "none", color: "#f0f0f0", cursor: "pointer", padding: "6px 4px", display: "flex", alignItems: "center", gap: "4px", fontFamily: "inherit", fontSize: "0.88rem", fontWeight: 600, whiteSpace: "nowrap" }}
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
+        {volumes.find((v) => v.abbrev === selectedVolume)?.name || selectedVolume}
+      </button>,
+      <>
+        <h1
           style={{
             fontSize: "1.4rem",
             fontWeight: 700,
@@ -2313,7 +2344,7 @@ export default function ScriptureReader() {
           }}
         >
           <span style={{ color: volColor }}>{selectedBookName}</span>
-        </h2>
+        </h1>
         <p style={{ color: "var(--text-secondary)", fontSize: "0.92rem", marginBottom: "24px" }}>
           {chapterCount} {isDC ? (chapterCount === 1 ? "section" : "sections") : (chapterCount === 1 ? "chapter" : "chapters")}
         </p>
@@ -2361,7 +2392,7 @@ export default function ScriptureReader() {
             );
           })}
         </div>
-      </div>
+      </>
     );
   }
 
@@ -2370,34 +2401,16 @@ export default function ScriptureReader() {
     const vol = volumes.find((v) => v.abbrev === selectedVolume);
     const volColor = VOLUME_COLORS[selectedVolume] || "#3B82F6";
 
-    return (
-      <div>
-        {/* Back to volumes */}
-        <div style={{ marginBottom: "24px", display: "flex", alignItems: "center", gap: "8px" }}>
-          <button
-            onClick={() => { setSelectedVolume(null); window.history.replaceState({}, "", "/scriptures"); }}
-            style={{
-              background: "none",
-              border: "none",
-              color: "var(--text)",
-              cursor: "pointer",
-              fontSize: "0.88rem",
-              fontWeight: 600,
-              fontFamily: "inherit",
-              padding: 0,
-              display: "flex",
-              alignItems: "center",
-              gap: "4px",
-            }}
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="15 18 9 12 15 6" />
-            </svg>
-            Volumes
-          </button>
-        </div>
-
-        <h2
+    return scripturePageWrapper(
+      <button
+        onClick={() => { setSelectedVolume(null); window.history.replaceState({}, "", "/scriptures"); }}
+        style={{ background: "none", border: "none", color: "#f0f0f0", cursor: "pointer", padding: "6px 4px", display: "flex", alignItems: "center", gap: "4px", fontFamily: "inherit", fontSize: "0.88rem", fontWeight: 600, whiteSpace: "nowrap" }}
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
+        Volumes
+      </button>,
+      <>
+        <h1
           style={{
             fontSize: "1.4rem",
             fontWeight: 700,
@@ -2406,7 +2419,7 @@ export default function ScriptureReader() {
           }}
         >
           <span style={{ color: volColor }}>{vol?.name}</span>
-        </h2>
+        </h1>
         <p style={{ color: "var(--text-secondary)", fontSize: "0.92rem", marginBottom: "24px" }}>
           Select a book to start reading.
         </p>
@@ -2504,7 +2517,7 @@ export default function ScriptureReader() {
             </button>
           ))}
         </div>
-      </div>
+      </>
     );
   }
 
@@ -2514,9 +2527,12 @@ export default function ScriptureReader() {
   }
 
   // ── VOLUME PICKER VIEW ──
-  return (
-    <div>
-      <div style={{ marginBottom: "40px", marginTop: "20px", textAlign: "center" }}>
+  return scripturePageWrapper(
+    <a href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none", opacity: 0.7 }} title="Home">
+      <img src="/tree-logo.svg" alt="Home" style={{ height: "22px", width: "auto", filter: "invert(1) brightness(1)" }} />
+    </a>,
+    <>
+      <div style={{ marginBottom: "40px", textAlign: "center" }}>
         <h1
           style={{
             fontSize: "1.6rem",
@@ -2613,6 +2629,6 @@ export default function ScriptureReader() {
           );
         })}
       </div>
-    </div>
+    </>
   );
 }

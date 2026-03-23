@@ -1698,7 +1698,8 @@
     "tier": 2,
     "books": [
       "Doctrine and Covenants"
-    ]
+    ],
+    "portraitUrl": "/characters/brigham-young_compressed.jpg"
   },
   {
     "id": "brother-of-jared",
@@ -2510,7 +2511,8 @@
     "tier": 2,
     "books": [
       "Doctrine and Covenants"
-    ]
+    ],
+    "portraitUrl": "/characters/oliver-cowdery_compressed.jpg"
   },
   {
     "id": "ruth",
