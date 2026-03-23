@@ -34,6 +34,8 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 
 ### LOW PRIORITY / FUTURE
 
+- [ ] **General Conference Talk Archive** — Full archive of LDS General Conference talks. Details TBD — user will specify scope, search features, and integration approach in a future session. Likely uses the same engine (search, heatmap, word frequency) applied to conference talks instead of scripture. *(Requested: Session 15)*
+
 - [ ] **Pre-computation audit** — Chapter stats, topic similarity, word cloud top-N. *(Session 14)*
 - [ ] **ParallelPassagesTool update** — Not updated to new search panel pattern. *(ROADMAP.md)*
 - [ ] **More character portraits** — 49 prompts ready in `~/Desktop/Character Portrait Prompts.md`. *(Session 15)*
