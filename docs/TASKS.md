@@ -9,84 +9,89 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 
 ## Active / Requested Tasks (Priority Order)
 
-### 1. SCRIPTURE READER UI CONSISTENCY
-- [ ] **Consistent top bar across all scripture views** — Volume picker, book list, and chapter grid currently use the default site Header. They should all use the same dark bar as the reading view (with search link, font size, theme toggle, hamburger — no "MENU" text). Same visual language throughout the entire `/scriptures` experience. *(Requested: Session 15)*
-- [x] **Desktop header revamp** — Tree logo → chapter selector in top center. Back-navigation hierarchy: Reading → Chapter grid → Book list → Volume picker. URLs reflect each level. Bottom bar cleaned up. Mobile swipe. *(Session 15)*
-- [x] **Progress bar moved to bottom bar** — Gradient bar now at top of bottom nav bar instead of top of page. *(Session 15)*
-- [ ] **Proper H1/H2 heading hierarchy for SEO** — Audit all pages for correct semantic heading tags. Currently some pages may use h2 where h1 is needed, or skip levels. *(Requested: Session 15)*
+### NEXT SESSION — START HERE
 
-### 2. SEO & DISCOVERABILITY
-- [ ] **SEO-friendly scripture URLs** — Change from `?bookId=42&chapter=11` to `/scriptures/new-testament/john/11`. Human-readable, search-engine-friendly paths. Next.js dynamic route segments `[volume]/[book]/[chapter]`. Also update volume/book URLs: `/scriptures/new-testament`, `/scriptures/new-testament/john`. *(Requested: Session 15)*
-- [ ] **SSR for scripture content** — Server-side render base verse text so search engines can index all 41,995 verses. Interactive features (speakers, nuggets, entity links) hydrate client-side. Won't break any existing functionality — just adds pre-rendered HTML. *(Requested: Session 15)*
+- [ ] **Apocrypha as a "Library" collection** — Add KJV Apocrypha (14 books: 1 Esdras, 2 Esdras, Tobit, Judith, Additions to Esther, Wisdom, Sirach, Baruch, Prayer of Azariah, Susanna, Bel and the Dragon, Prayer of Manasses, 1 Maccabees, 2 Maccabees). **Data source:** `https://api.getbible.net/v2/kjva/{book_number}/{chapter}.json` — confirmed available in JSON. **Implementation plan:**
+  1. Create `scripts/build-apocrypha.ts` to fetch all 14 books from the API and build verse data
+  2. Add to SQLite as a separate "Apocrypha" volume (or parallel table) — NOT mixed with canonical 5 volumes
+  3. Add "Apocrypha" as a 6th option in the scripture reader with distinct visual treatment (different accent color, "non-canonical" banner/badge)
+  4. Opt-in: doesn't appear in default searches/charts/word frequency unless explicitly selected
+  5. Add Apocrypha characters to `data/characters.json` (Judith, Tobit, Mattathias, Judas Maccabeus, etc.)
+  6. Rebuild mention stats after adding characters
+  7. Add intro/landing for Apocrypha referencing D&C 91 ("many things contained therein that are true")
+  *(Requested: Session 15)*
 
-### 3. APOCRYPHA LIBRARY
-- [ ] **Apocrypha as a "Library" collection** — Add KJV Apocrypha (~14-18 books) as a separate non-canonical collection. NOT a 6th volume. Same engine (reader, search, heatmap, narrative arc) but with distinct visual treatment (different accent color, "non-canonical" banner). Opt-in — doesn't appear in default searches/charts. Intro page referencing D&C 91. KJV Apocrypha text is public domain. Separate SQLite table or DB file, same verse schema. **Includes expanding the people database** with Apocrypha characters (Judith, Tobit, Maccabees, etc.). *(Requested: Session 15)*
+- [ ] **Verse selection / multi-select mode** — **Phase 1 (UI only):** On desktop, verse numbers become clickable on hover. Clicking one activates selection mode: that verse gets a checkbox, all other verse numbers become checkboxes. Can check any number of non-sequential verses. Clicking outside clears all checkboxes back to verse numbers. On mobile: long-press a verse to activate selection mode. **Phase 2:** Attach notes, tags, files to selections. **Phase 3:** Firebase persistence. *(Requested: Session 14)*
 
-### 4. VERSE SELECTION / MULTI-SELECT
-- [ ] **Verse selection / multi-select mode** — **Phase 1 (this session):** Clicking a verse number on desktop (hover effect) activates selection mode. Clicked verse gets a checkbox, all other verse numbers become checkboxes too. Can check any number of non-sequential verses. Clicking outside clears all checkboxes. On mobile: long-press a verse to activate. **Phase 2:** notes/tags/files UI for selections. **Phase 3:** Firebase persistence. *(Requested: Session 14)*
+### OTHER PENDING
 
-### 5. OTHER PENDING
-- [ ] **Character Relationship Visualizer** — Full-screen interactive relationship web from Characters page. Two modes: Kinship (tree/fan) and Social (force-directed). `RelationshipWeb.tsx` already exists. *(Requested: Session 12)*
-- [~] **"Found in X verses" link** — Inline expand works. Original spec was slide-out panel showing all mention verses. *(Requested: Session 14)*
-- [ ] **Chiasmus improvements** — Specs lost when session closed. **NEEDS USER INPUT.** *(Lost: ~Session 13)*
-- [ ] **More Context Nuggets** — 1,096 → ~1,500. Gaps: Psalms, Isaiah, Jeremiah. *(Requested: Session 12)*
-- [ ] **Accent color #2563EB → #2CC1E8** — Done in src/ files. Need to audit CLAUDE.md, any remaining component files, and constants.ts for stale references. *(Session 15)*
+- [ ] **H1/H2 heading hierarchy audit** — Check all pages for proper semantic heading tags for SEO. Scripture pages now use h1 (Session 15), but other tool pages may skip levels. *(Requested: Session 15)*
+- [ ] **Character Relationship Visualizer** — Full-screen force-directed graph from Characters page. `RelationshipWeb.tsx` exists with basic graph. *(Requested: Session 12)*
+- [~] **"Found in X verses" link** — Inline expand works. Original spec was slide-out panel. *(Session 14)*
+- [ ] **Chiasmus improvements** — Specs lost. **NEEDS USER INPUT.** *(Session 13)*
+- [ ] **More Context Nuggets** — 1,096 → ~1,500. Gaps: Psalms, Isaiah, Jeremiah. *(Session 12)*
+- [ ] **Consistent scripture nav bar styling** — The dark top bar works but the volume picker/book list/chapter grid views don't have the same visual background treatment as the reading view (different bg gradient). Minor polish. *(Noted: Session 15)*
 
 ### LOW PRIORITY / FUTURE
-- [ ] **Pre-computation audit** — Chapter stats, topic similarity, word cloud top-N could be pre-built. *(Session 14)*
+
+- [ ] **Pre-computation audit** — Chapter stats, topic similarity, word cloud top-N. *(Session 14)*
 - [ ] **ParallelPassagesTool update** — Not updated to new search panel pattern. *(ROADMAP.md)*
 - [ ] **More character portraits** — 49 prompts ready in `~/Desktop/Character Portrait Prompts.md`. *(Session 15)*
 - [ ] **PWA conversion** — Manifest, service worker, offline. *(ROADMAP.md)*
 - [ ] **Modern language for D&C + PoGP** — OT/NT/BoM done. *(ROADMAP.md)*
-- [ ] **Firebase Auth + user accounts** — Saved searches, reading progress sync, cross-device. *(ROADMAP.md)*
+- [ ] **Firebase Auth + user accounts** — Saved searches, reading progress sync. *(ROADMAP.md)*
 
 ---
 
 ## Known Bugs / Issues
 
-- [ ] 403 overlapping verse ranges in Bible speaker data (different speakers claim same verses) *(Session 9)*
-- [ ] verseEnd=200 sentinels still in speaker data file (capped at runtime) *(Session 9)*
-- [ ] Mobile hamburger menu links may not work *(reported Session 8)*
+- [ ] 403 overlapping verse ranges in Bible speaker data *(Session 9)*
+- [ ] verseEnd=200 sentinels still in speaker data file *(Session 9)*
+- [ ] Mobile hamburger menu links may not work *(Session 8)*
 
 ---
 
-## Completed (Session 15)
+## Completed (Session 15) — 30+ items
 
-- [x] Speaker labels: name first, descriptor on line two (commas + parentheses)
+**Scripture Reader UI:**
+- [x] Consistent dark nav bar across all scripture views (volume/book/chapter picker + reading)
+- [x] Desktop header: tree logo → chapter selector in top center, back-nav hierarchy
+- [x] Chapter grid view added (Volumes → Books → **Chapters** → Reading)
+- [x] Bottom bar: chapter selector removed (moved to top), just prev/next arrows
+- [x] Progress bar moved from top of page to top of bottom bar
+- [x] Mobile swipe left/right for chapter navigation
+- [x] Volume picker: centered h1, clean layout
+- [x] Top-right icons: all white, equal spacing, search → site-wide /search
+- [x] Footer sticky to bottom (flexbox layout)
+
+**SEO & Discoverability:**
+- [x] SEO-friendly URLs: `/scriptures/new-testament/john/11` (was `?bookId=43&chapter=11`)
+- [x] Legacy URL auto-redirect to new format
+- [x] SSR verse text: hidden server-rendered content for search engine indexing
+- [x] Dynamic metadata: page titles + descriptions per chapter
+- [x] Dynamic XML sitemap: 1,688 URLs for Google Search Console
+- [x] Proper h1 tags on scripture views
+
+**Speaker & People System:**
+- [x] Speaker labels: name line 1, descriptor line 2 (commas + parentheses)
 - [x] Group speakers hidden (only individuals with character profiles)
-- [x] People pill click → scroll to first speaking verse
-- [x] EGG → NUGGET rename (all files, components, API, CSS, analytics)
+- [x] People pill → scroll to first speaking verse
+- [x] Speaker portrait: theology-mode aware (divine OT → Jesus portrait)
+- [x] 28 characters fixed with scripture-text aliases (Mary of Bethany, Captain Moroni, etc.)
+- [x] Theology mode removed — site always LDS
+- [x] Portraits added: Jesus Christ, Holy Ghost, Brigham Young, Oliver Cowdery, Satan
+
+**Nugget System (formerly "Eggs"):**
+- [x] EGG → NUGGET full rename (components, API, data, CSS, analytics)
 - [x] Nugget popup → right-side slide-in panel
 - [x] Pill labels: singular/plural with count in parentheses
-- [x] Jesus Christ portrait + "Jesus" alias
-- [x] Holy Ghost portrait added
-- [x] Speaker portrait theology-mode fix (divine OT → Jesus portrait)
-- [x] Mary of Bethany aliases + 28 character mention audit (scripture-text aliases)
-- [x] Theology mode removed — site always LDS
-- [x] All slide-out panels widened ~10% (85vw max)
-- [x] Top-right icons: all white, equal spacing, search → site-wide
-- [x] Desktop header: chapter selector top center, back navigation hierarchy
-- [x] Chapter grid view added (between book list and reading)
-- [x] Bottom bar: removed redundant chapter selector, just prev/next arrows
-- [x] Mobile swipe left/right for chapter navigation
-- [x] Volume picker: centered text, h1, more spacing
-- [x] Footer sticky to bottom (flexbox)
-- [x] Accent blue #2563EB → #2CC1E8
-- [x] Progress bar moved from top of page to top of bottom bar
 - [x] Nugget panel: inline source icon + 25% separator line
+
+**Other:**
+- [x] Accent blue #2563EB → #2CC1E8
+- [x] All slide-out panels widened ~10% (85vw max)
 - [x] Midjourney portrait prompts file rebuilt (49 characters)
-- [x] Pilate, Thomas, Abimelech aliases fixed
-- [x] docs/TASKS.md persistent task tracker created
-
-## Completed (Sessions 13-14)
-
-- [x] Context Eggs expanded to 1,096 + domain isolation
-- [x] Reader layout unified + entity linking + accent color unified
-- [x] First/Last Mention mobile tap fix
-- [x] Role descriptions removed, tone radar hidden
-- [x] Speaker circles clickable, theology-mode character mapping
-- [x] GA4 tracking, SEO heading fix, volume tooltip, useBackToClose
-- [x] User Preferences System, Location directory, Character database (757)
+- [x] docs/TASKS.md persistent task tracker created and maintained
 
 ---
 
