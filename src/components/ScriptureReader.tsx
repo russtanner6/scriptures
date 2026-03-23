@@ -66,6 +66,9 @@ export default function ScriptureReader() {
   const [showReadToast, setShowReadToast] = useState(false);
   // (streak counter removed)
 
+  // Mobile swipe for chapter navigation
+  const swipeRef = useRef<{ startX: number; startY: number } | null>(null);
+
   // In-chapter search
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
@@ -359,6 +362,27 @@ export default function ScriptureReader() {
         const urlBookId = searchParams.get("bookId");
         const urlChapter = searchParams.get("chapter");
         const urlVerse = searchParams.get("verse");
+        // Deep link: ?volume=XX (show book list for that volume)
+        const urlVolume = searchParams.get("volume");
+        if (urlVolume && !searchParams.get("bookId")) {
+          const vol = vols.find((v) => v.abbrev === urlVolume);
+          if (vol) setSelectedVolume(vol.abbrev);
+        }
+        // Deep link: ?volume=XX&bookId=YY (show chapter grid for that book)
+        if (urlVolume && searchParams.get("bookId") && !searchParams.get("chapter")) {
+          const bid = Number(searchParams.get("bookId"));
+          for (const vol of vols) {
+            const book = vol.books.find((b) => b.id === bid);
+            if (book) {
+              setSelectedVolume(vol.abbrev);
+              setSelectedBookId(bid);
+              setSelectedBookName(book.name);
+              setChapterCount(book.chapterCount);
+              break;
+            }
+          }
+        }
+        // Deep link: ?bookId=X&chapter=Y&verse=Z (full reading view)
         if (urlBookId && urlChapter) {
           const bid = Number(urlBookId);
           let ch = Number(urlChapter);
@@ -604,6 +628,21 @@ export default function ScriptureReader() {
       }
     }
   }, [selectedBookId, selectedChapter, selectedVolume, selectedBookName, chapterCount, goToChapter, getAdjacentBookInfo]);
+
+  // Mobile swipe handlers for chapter navigation
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    swipeRef.current = { startX: e.touches[0].clientX, startY: e.touches[0].clientY };
+  }, []);
+  const handleTouchEnd = useCallback((e: React.TouchEvent) => {
+    if (!swipeRef.current) return;
+    const dx = e.changedTouches[0].clientX - swipeRef.current.startX;
+    const dy = e.changedTouches[0].clientY - swipeRef.current.startY;
+    swipeRef.current = null;
+    if (Math.abs(dx) > 80 && Math.abs(dx) > Math.abs(dy) * 2) {
+      if (dx < 0) goToNextChapter();
+      else goToPrevChapter();
+    }
+  }, [goToNextChapter, goToPrevChapter]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -1006,6 +1045,8 @@ export default function ScriptureReader() {
     return (
       <div
         ref={scrollContainerRef}
+        onTouchStart={isMobile ? handleTouchStart : undefined}
+        onTouchEnd={isMobile ? handleTouchEnd : undefined}
         style={{
           position: "fixed",
           inset: 0,
@@ -1097,7 +1138,7 @@ export default function ScriptureReader() {
               onClick={() => {
                 setSelectedChapter(null);
                 setVerses([]);
-                window.history.replaceState({}, "", "/scriptures");
+                window.history.replaceState({}, "", `/scriptures?volume=${selectedVolume}&bookId=${selectedBookId}`);
               }}
               style={{
                 background: "none",
@@ -2093,49 +2134,8 @@ export default function ScriptureReader() {
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="miter"><polyline points="15 18 9 12 15 6" /></svg>
             </button>
 
-            {/* Center: chapter label (selector moved to top bar on desktop) */}
-            <div style={{ position: "relative", display: "flex", alignItems: "center" }}>
-              {isMobile ? (
-                <>
-                  <select
-                    value={selectedChapter ?? 1}
-                    onChange={(e) => {
-                      const ch = Number(e.target.value);
-                      if (selectedVolume && selectedBookId && selectedBookName) {
-                        goToChapter(selectedVolume, selectedBookId, selectedBookName, ch, chapterCount);
-                      }
-                    }}
-                    style={{
-                      background: "none",
-                      border: "none",
-                      color: bar.text,
-                      padding: "6px 20px 6px 4px",
-                      fontSize: "0.85rem",
-                      fontWeight: 600,
-                      fontFamily: "inherit",
-                      cursor: "pointer",
-                      outline: "none",
-                      WebkitAppearance: "none",
-                      appearance: "none",
-                      textAlign: "center",
-                    }}
-                  >
-                    {Array.from({ length: chapterCount }, (_, i) => i + 1).map((ch) => (
-                      <option key={ch} value={ch} style={{ background: "#1a1a22", color: "#f0f0f0" }}>
-                        {isDC ? `Section ${ch}` : `Chapter ${ch}`}
-                      </option>
-                    ))}
-                  </select>
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke={bar.textMuted} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ position: "absolute", right: "2px", pointerEvents: "none" }}>
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
-                </>
-              ) : (
-                <span style={{ fontSize: "0.85rem", fontWeight: 600, color: bar.textMuted }}>
-                  {isDC ? `Section ${selectedChapter}` : `Chapter ${selectedChapter}`}
-                </span>
-              )}
-            </div>
+            {/* Spacer */}
+            <div style={{ flex: 1 }} />
 
             {/* Next */}
             <button
@@ -2271,36 +2271,135 @@ export default function ScriptureReader() {
     );
   }
 
-  // ── BOOK/CHAPTER PICKER VIEW ──
+  // ── CHAPTER GRID VIEW (book selected, no chapter yet) ──
+  if (selectedVolume && selectedBookId && selectedBookName && !selectedChapter) {
+    const volColor = VOLUME_COLORS[selectedVolume] || "#3B82F6";
+    const isDC = selectedVolume === "D&C";
+    const chapterWord = isDC ? "Section" : "Chapter";
+
+    return (
+      <div>
+        {/* Top nav — "← Volume Name" to go back to book list */}
+        <div style={{ marginBottom: "24px", display: "flex", alignItems: "center", gap: "8px" }}>
+          <button
+            onClick={() => {
+              setSelectedBookId(null);
+              setSelectedBookName(null);
+              setChapterCount(0);
+              window.history.replaceState({}, "", `/scriptures?volume=${selectedVolume}`);
+            }}
+            style={{
+              background: "none",
+              border: "none",
+              color: "var(--text)",
+              cursor: "pointer",
+              fontSize: "0.88rem",
+              fontWeight: 600,
+              fontFamily: "inherit",
+              padding: 0,
+              display: "flex",
+              alignItems: "center",
+              gap: "4px",
+            }}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+            {volumes.find((v) => v.abbrev === selectedVolume)?.name || selectedVolume}
+          </button>
+        </div>
+
+        <h2
+          style={{
+            fontSize: "1.4rem",
+            fontWeight: 700,
+            color: "var(--text)",
+            marginBottom: "6px",
+          }}
+        >
+          <span style={{ color: volColor }}>{selectedBookName}</span>
+        </h2>
+        <p style={{ color: "var(--text-secondary)", fontSize: "0.92rem", marginBottom: "24px" }}>
+          {chapterCount} {isDC ? (chapterCount === 1 ? "section" : "sections") : (chapterCount === 1 ? "chapter" : "chapters")}
+        </p>
+
+        {/* Chapter grid */}
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: `repeat(auto-fill, minmax(${isMobile ? "56px" : "64px"}, 1fr))`,
+            gap: "8px",
+          }}
+        >
+          {Array.from({ length: chapterCount }, (_, i) => i + 1).map((ch) => {
+            const isRead = typeof window !== "undefined" && localStorage.getItem(`read-${selectedBookId}-${ch}`) === "true";
+            return (
+              <button
+                key={ch}
+                onClick={() => {
+                  goToChapter(selectedVolume, selectedBookId, selectedBookName, ch, chapterCount);
+                }}
+                style={{
+                  background: isRead ? `${volColor}18` : "var(--surface)",
+                  border: isRead ? `1.5px solid ${volColor}50` : "1px solid var(--border)",
+                  borderRadius: "8px",
+                  padding: isMobile ? "12px 0" : "14px 0",
+                  textAlign: "center",
+                  cursor: "pointer",
+                  fontFamily: "inherit",
+                  fontSize: "0.88rem",
+                  fontWeight: 600,
+                  color: isRead ? volColor : "var(--text)",
+                  transition: "all 0.15s",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = volColor;
+                  e.currentTarget.style.background = `${volColor}15`;
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = isRead ? `${volColor}50` : "var(--border)";
+                  e.currentTarget.style.background = isRead ? `${volColor}18` : "var(--surface)";
+                }}
+              >
+                {ch}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  // ── BOOK LIST VIEW (volume selected, no book yet) ──
   if (selectedVolume) {
     const vol = volumes.find((v) => v.abbrev === selectedVolume);
     const volColor = VOLUME_COLORS[selectedVolume] || "#3B82F6";
 
     return (
       <div>
-        {/* Breadcrumb */}
+        {/* Back to volumes */}
         <div style={{ marginBottom: "24px", display: "flex", alignItems: "center", gap: "8px" }}>
           <button
-            onClick={() => setSelectedVolume(null)}
+            onClick={() => { setSelectedVolume(null); window.history.replaceState({}, "", "/scriptures"); }}
             style={{
               background: "none",
               border: "none",
-              color: "var(--accent)",
+              color: "var(--text)",
               cursor: "pointer",
               fontSize: "0.88rem",
-              fontWeight: 500,
+              fontWeight: 600,
               fontFamily: "inherit",
               padding: 0,
-              textDecoration: "underline",
-              textUnderlineOffset: "3px",
+              display: "flex",
+              alignItems: "center",
+              gap: "4px",
             }}
           >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
             Volumes
           </button>
-          <span style={{ color: "var(--text-muted)", fontSize: "0.85rem" }}>›</span>
-          <span style={{ color: volColor, fontSize: "0.88rem", fontWeight: 600 }}>
-            {vol?.name}
-          </span>
         </div>
 
         <h2
@@ -2329,7 +2428,16 @@ export default function ScriptureReader() {
             <button
               key={book.id}
               onClick={() => {
-                goToChapter(selectedVolume, book.id, book.name, 1, book.chapterCount);
+                // For single-chapter books, go straight to reading
+                if (book.chapterCount === 1) {
+                  goToChapter(selectedVolume, book.id, book.name, 1, 1);
+                } else {
+                  // Show chapter grid for this book
+                  setSelectedBookId(book.id);
+                  setSelectedBookName(book.name);
+                  setChapterCount(book.chapterCount);
+                  window.history.replaceState({}, "", `/scriptures?volume=${selectedVolume}&bookId=${book.id}`);
+                }
               }}
               style={{
                 background: "var(--surface)",
@@ -2413,20 +2521,19 @@ export default function ScriptureReader() {
   // ── VOLUME PICKER VIEW ──
   return (
     <div>
-      <div style={{ marginBottom: "24px" }}>
-        <h2
+      <div style={{ marginBottom: "40px", marginTop: "20px", textAlign: "center" }}>
+        <h1
           style={{
-            fontSize: "1.4rem",
+            fontSize: "1.6rem",
             fontWeight: 700,
             color: "var(--text)",
-            marginBottom: "6px",
+            marginBottom: "10px",
           }}
         >
           Read the Scriptures
-        </h2>
-        <p style={{ color: "var(--text-secondary)", fontSize: isMobile ? "0.85rem" : "0.92rem" }}>
-          Choose a volume to begin reading. Navigate through books and chapters
-          with a clean, focused reading experience.
+        </h1>
+        <p style={{ color: "var(--text)", fontSize: isMobile ? "0.88rem" : "0.95rem", opacity: 0.85 }}>
+          Choose a volume to begin reading.
         </p>
       </div>
 
@@ -2442,7 +2549,7 @@ export default function ScriptureReader() {
           return (
             <button
               key={vol.id}
-              onClick={() => setSelectedVolume(vol.abbrev)}
+              onClick={() => { setSelectedVolume(vol.abbrev); window.history.replaceState({}, "", `/scriptures?volume=${vol.abbrev}`); }}
               style={{
                 background: "var(--surface)",
                 border: "1px solid var(--border)",
