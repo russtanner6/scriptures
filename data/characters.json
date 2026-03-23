@@ -7108,7 +7108,9 @@
   {
     "id": "pontius-pilate",
     "name": "Pontius Pilate",
-    "aliases": [],
+    "aliases": [
+      "Pilate"
+    ],
     "bio": "Roman governor of Judea who presided over the trial of Jesus. Despite declaring he found no fault in Jesus, he yielded to the crowd's demands and sentenced him to crucifixion. He symbolically washed his hands to declare his innocence of Jesus' blood.",
     "era": "New Testament",
     "timePeriod": "c. AD 26–36 (tenure as governor)",
@@ -7632,7 +7634,8 @@
     "name": "Thomas",
     "aliases": [
       "Didymus",
-      "Doubting Thomas"
+      "Doubting Thomas",
+      "Thomas, called Didymus"
     ],
     "bio": "One of the original twelve apostles, known for doubting Jesus' resurrection until he could see and touch the wounds. When he saw the risen Lord, he exclaimed, 'My Lord and my God!' He also showed courage when he said, 'Let us also go, that we may die with him,' when Jesus planned to return to Judea.",
     "era": "New Testament",
