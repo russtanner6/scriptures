@@ -2,7 +2,7 @@ import { getDb } from "./db";
 import type { Volume, FrequencyResult, BookStat } from "./types";
 
 // Helper: sql.js exec returns [{columns, values}] — convert to objects
-function execToObjects<T>(db: import("sql.js").Database, sql: string, params?: (string | number)[]): T[] {
+export function execToObjects<T>(db: import("sql.js").Database, sql: string, params?: (string | number)[]): T[] {
   const stmt = db.prepare(sql);
   if (params && params.length > 0) {
     stmt.bind(params);
