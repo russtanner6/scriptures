@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useBackToClose } from "@/lib/useBackToClose";
 import type { ScriptureCharacter } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
@@ -44,10 +44,15 @@ export default function CharacterDetailPanel({
   onSelectCharacter: (c: ScriptureCharacter) => void;
 }) {
   const { isVolumeVisible } = usePreferencesContext();
+  const router = useRouter();
   const [isVisible, setIsVisible] = useState(false);
   const [mentions, setMentions] = useState<MentionStats | null>(null);
   const [mentionsLoading, setMentionsLoading] = useState(false);
   const [sentimentScores, setSentimentScores] = useState<Record<string, number> | null>(null);
+  const [showVerses, setShowVerses] = useState(false);
+  const [verseList, setVerseList] = useState<{ bookId: number; bookName: string; volumeAbbrev: string; chapter: number; verse: number; text: string }[]>([]);
+  const [versesLoading, setVersesLoading] = useState(false);
+  const [verseSearchTerms, setVerseSearchTerms] = useState<string[]>([]);
   const isMobile = useIsMobile();
   const panelRef = useRef<HTMLDivElement>(null);
   const touchStartX = useRef(0);
@@ -74,6 +79,9 @@ export default function CharacterDetailPanel({
     setMentions(null);
     setMentionsLoading(true);
     setSentimentScores(null);
+    setShowVerses(false);
+    setVerseList([]);
+    setVerseSearchTerms([]);
     // Fast path: use pre-computed id; fall back to name/aliases/books
     const aliases = character.aliases.join(",");
     const books = character.books?.join(",") || "";
@@ -83,10 +91,11 @@ export default function CharacterDetailPanel({
       .then((r) => r.json())
       .then((data) => { setMentions(data); setMentionsLoading(false); })
       .catch(() => setMentionsLoading(false));
-    fetch(`/api/character-sentiment?${fallbackQp}`)
-      .then((r) => r.json())
-      .then((data) => { if (data.scores) setSentimentScores(data.scores); })
-      .catch(() => {});
+    // Tone Profile radar hidden — needs semantic understanding to be useful. Preserving fetch for future re-enable.
+    // fetch(`/api/character-sentiment?${fallbackQp}`)
+    //   .then((r) => r.json())
+    //   .then((data) => { if (data.scores) setSentimentScores(data.scores); })
+    //   .catch(() => {});
   }, [character.id, character.name, character.aliases]);
 
   const handleKeyDown = useCallback(
@@ -283,7 +292,7 @@ export default function CharacterDetailPanel({
             {/* Name overlay on portrait */}
             <div style={{
               position: "absolute",
-              bottom: "16px",
+              bottom: "10px",
               left: isMobile ? "16px" : "24px",
               right: "16px",
               zIndex: 2,
@@ -292,20 +301,11 @@ export default function CharacterDetailPanel({
                 fontSize: isMobile ? "1.5rem" : "1.8rem",
                 fontWeight: 700,
                 color: "#fff",
-                marginBottom: "6px",
+                marginBottom: "0",
                 textShadow: "0 2px 8px rgba(0,0,0,0.4)",
               }}>
                 {character.name}
               </h2>
-              <div style={{
-                fontSize: "0.85rem",
-                color: "rgba(255,255,255,0.85)",
-                fontWeight: 500,
-                textShadow: "0 1px 4px rgba(0,0,0,0.4)",
-                textTransform: "capitalize",
-              }}>
-                {character.roles.join(" · ")}
-              </div>
             </div>
           </div>
         ) : (
@@ -342,14 +342,6 @@ export default function CharacterDetailPanel({
               }}>
                 {character.name}
               </h2>
-              <div style={{
-                fontSize: "0.82rem",
-                color: color,
-                fontWeight: 600,
-                textTransform: "capitalize",
-              }}>
-                {character.roles.join(" · ")}
-              </div>
             </div>
           </div>
         )}
@@ -432,10 +424,103 @@ export default function CharacterDetailPanel({
                 <div style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>Searching scriptures...</div>
               ) : mentions && mentions.totalMentions > 0 ? (
                 <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
-                  {/* Total count */}
-                  <div style={{ fontSize: "0.82rem", color: "var(--text-secondary)" }}>
-                    Found in <strong style={{ color: "var(--text)" }}>{mentions.totalMentions.toLocaleString()}</strong> verse{mentions.totalMentions !== 1 ? "s" : ""}
-                  </div>
+                  {/* Total count — clickable to show verses */}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (showVerses) { setShowVerses(false); return; }
+                      setShowVerses(true);
+                      if (verseList.length > 0) return; // already loaded
+                      setVersesLoading(true);
+                      const aliases = character.aliases.join(",");
+                      const books = character.books?.join(",") || "";
+                      const qp = `name=${encodeURIComponent(character.name)}${aliases ? `&aliases=${encodeURIComponent(aliases)}` : ""}${books ? `&books=${encodeURIComponent(books)}` : ""}&limit=500`;
+                      fetch(`/api/character-verses?${qp}`)
+                        .then((r) => r.json())
+                        .then((data) => {
+                          setVerseList(data.verses || []);
+                          setVerseSearchTerms(data.searchTerms || [character.name]);
+                          setVersesLoading(false);
+                        })
+                        .catch(() => setVersesLoading(false));
+                    }}
+                    style={{
+                      fontSize: "0.82rem",
+                      color: "var(--text-secondary)",
+                      background: "none",
+                      border: "none",
+                      padding: 0,
+                      cursor: "pointer",
+                      textAlign: "left",
+                    }}
+                  >
+                    Found in <strong style={{ color: "var(--accent)", textDecoration: "underline", textUnderlineOffset: "2px" }}>{mentions.totalMentions.toLocaleString()} verse{mentions.totalMentions !== 1 ? "s" : ""}</strong>
+                    <span style={{ fontSize: "0.7rem", marginLeft: "6px", color: "var(--text-muted)" }}>{showVerses ? "▲" : "▼"}</span>
+                  </button>
+
+                  {/* Expandable verse list */}
+                  {showVerses && (
+                    <div style={{
+                      maxHeight: "400px",
+                      overflowY: "auto",
+                      borderRadius: "8px",
+                      background: "rgba(255,255,255,0.02)",
+                      border: "1px solid var(--border)",
+                    }}>
+                      {versesLoading ? (
+                        <div style={{ padding: "16px", fontSize: "0.78rem", color: "var(--text-muted)", textAlign: "center" }}>Loading verses...</div>
+                      ) : verseList.length === 0 ? (
+                        <div style={{ padding: "16px", fontSize: "0.78rem", color: "var(--text-muted)", textAlign: "center" }}>No verses found</div>
+                      ) : (
+                        verseList.filter((v) => isVolumeVisible(v.volumeAbbrev)).map((v, i) => {
+                          // Highlight search terms in verse text
+                          const highlightRegex = verseSearchTerms.length > 0
+                            ? new RegExp(`\\b(${verseSearchTerms.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})\\b`, "gi")
+                            : null;
+                          const parts = highlightRegex ? v.text.split(highlightRegex) : [v.text];
+                          const refColor = VOLUME_COLORS[v.volumeAbbrev] || "var(--accent)";
+                          const chapterStr = v.chapter > 0 ? `${v.chapter}:${v.verse}` : `${v.verse}`;
+                          return (
+                            <button
+                              key={`${v.bookId}-${v.chapter}-${v.verse}-${i}`}
+                              type="button"
+                              onClick={() => {
+                                onClose();
+                                router.push(`/scriptures?bookId=${v.bookId}${v.chapter > 0 ? `&chapter=${v.chapter}` : ""}&verse=${v.verse}`);
+                              }}
+                              style={{
+                                display: "block",
+                                width: "100%",
+                                padding: "10px 14px",
+                                borderBottom: "1px solid var(--border)",
+                                background: "none",
+                                border: "none",
+                                borderBottomStyle: "solid",
+                                borderBottomWidth: "1px",
+                                borderBottomColor: "var(--border)",
+                                textAlign: "left",
+                                cursor: "pointer",
+                                transition: "background 0.1s",
+                              }}
+                              onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.05)")}
+                              onMouseLeave={(e) => (e.currentTarget.style.background = "none")}
+                            >
+                              <div style={{ fontSize: "0.68rem", fontWeight: 600, color: refColor, marginBottom: "3px" }}>
+                                {v.bookName} {chapterStr}
+                              </div>
+                              <div style={{ fontSize: "0.76rem", color: "var(--text-secondary)", lineHeight: 1.5, display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" as const, overflow: "hidden" }}>
+                                {parts.map((part, j) =>
+                                  highlightRegex && highlightRegex.test(part)
+                                    ? <mark key={j} style={{ background: `${refColor}30`, color: "var(--text)", borderRadius: "2px", padding: "0 1px" }}>{part}</mark>
+                                    : <span key={j}>{part}</span>
+                                )}
+                              </div>
+                            </button>
+                          );
+                        })
+                      )}
+                    </div>
+                  )}
 
                   {/* Volume heatmap bar */}
                   <div>
@@ -515,7 +600,7 @@ export default function CharacterDetailPanel({
                     </div>
                   )}
 
-                  {/* Tone Radar */}
+                  {/* Tone Radar — HIDDEN: needs semantic understanding to be meaningful. Code preserved for future use.
                   {sentimentScores && (() => {
                     const hasData = SENTIMENT_CATEGORIES.some((c) => sentimentScores[c.id] > 0);
                     if (!hasData) return null;
@@ -575,7 +660,7 @@ export default function CharacterDetailPanel({
                         </div>
                       </div>
                     );
-                  })()}
+                  })()} */}
 
                   {/* First & Last Mention */}
                   <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginTop: "8px" }}>
@@ -583,17 +668,25 @@ export default function CharacterDetailPanel({
                       const m = mentions.firstMention;
                       const refColor = VOLUME_COLORS[m.volumeAbbrev] || "var(--accent)";
                       const chapterStr = m.chapter > 0 ? `${m.chapter}:${m.verse}` : `${m.verse}`;
+                      const url = `/scriptures?bookId=${m.bookId}${m.chapter > 0 ? `&chapter=${m.chapter}` : ""}&verse=${m.verse}`;
                       return (
-                        <Link
-                          href={`/scriptures?bookId=${m.bookId}${m.chapter > 0 ? `&chapter=${m.chapter}` : ""}&verse=${m.verse}`}
-                          onClick={() => analytics.personMentionClick(character.id, "first")}
+                        <button
+                          type="button"
+                          onClick={() => {
+                            analytics.personMentionClick(character.id, "first");
+                            onClose();
+                            router.push(url);
+                          }}
                           style={{
                             display: "block",
+                            width: "100%",
                             padding: "10px 14px",
                             borderRadius: "10px",
                             background: "rgba(255,255,255,0.03)",
                             border: "1px solid var(--border)",
                             textDecoration: "none",
+                            textAlign: "left",
+                            cursor: "pointer",
                             transition: "all 0.15s",
                           }}
                         >
@@ -611,7 +704,7 @@ export default function CharacterDetailPanel({
                               Read <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4.5 2L8.5 6L4.5 10"/></svg>
                             </span>
                           </div>
-                        </Link>
+                        </button>
                       );
                     })()}
 
@@ -622,17 +715,25 @@ export default function CharacterDetailPanel({
                       const m = mentions.lastMention!;
                       const refColor = VOLUME_COLORS[m.volumeAbbrev] || "var(--accent)";
                       const chapterStr = m.chapter > 0 ? `${m.chapter}:${m.verse}` : `${m.verse}`;
+                      const url = `/scriptures?bookId=${m.bookId}${m.chapter > 0 ? `&chapter=${m.chapter}` : ""}&verse=${m.verse}`;
                       return (
-                        <Link
-                          href={`/scriptures?bookId=${m.bookId}${m.chapter > 0 ? `&chapter=${m.chapter}` : ""}&verse=${m.verse}`}
-                          onClick={() => analytics.personMentionClick(character.id, "last")}
+                        <button
+                          type="button"
+                          onClick={() => {
+                            analytics.personMentionClick(character.id, "last");
+                            onClose();
+                            router.push(url);
+                          }}
                           style={{
                             display: "block",
+                            width: "100%",
                             padding: "10px 14px",
                             borderRadius: "10px",
                             background: "rgba(255,255,255,0.03)",
                             border: "1px solid var(--border)",
                             textDecoration: "none",
+                            textAlign: "left",
+                            cursor: "pointer",
                             transition: "all 0.15s",
                           }}
                         >
@@ -650,7 +751,7 @@ export default function CharacterDetailPanel({
                               Read <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4.5 2L8.5 6L4.5 10"/></svg>
                             </span>
                           </div>
-                        </Link>
+                        </button>
                       );
                     })()}
                   </div>

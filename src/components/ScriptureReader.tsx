@@ -190,15 +190,54 @@ export default function ScriptureReader() {
     if (char) setSelectedCharacter(char);
   }, [allCharacters]);
 
-  // Helper: open character panel by speaker name (fuzzy match)
-  const openCharacterByName = useCallback((speakerName: string) => {
+  // Helper: open character panel by speaker name (fuzzy match with theology-mode awareness)
+  const openCharacterByName = useCallback((speakerName: string, speakerType?: string) => {
     const nameLower = speakerName.toLowerCase();
-    const char = allCharacters.find(
-      (c) => c.name.toLowerCase() === nameLower ||
-             c.aliases.some((a) => a.toLowerCase() === nameLower)
-    );
+    // For divine speakers in OT with LDS theology, "God"/"LORD" = Jesus Christ — check BEFORE exact match
+    const isDivineOT = speakerType === "divine" && theologyMode === "lds" &&
+      (selectedVolume === "OT" || !selectedVolume);
+    const SPEAKER_MAP: Record<string, string[]> = {
+      "god": isDivineOT ? ["jesus christ"] : ["god the father"],
+      "lord": ["jesus christ"],
+      "the lord": ["jesus christ"],
+      "the lord god": isDivineOT ? ["jesus christ"] : ["god the father"],
+      "jesus": ["jesus christ", "jesus of nazareth"],
+      "jesus christ (jehovah)": ["jesus christ"],
+      "christ": ["jesus christ"],
+      "holy ghost": ["holy ghost", "holy spirit"],
+      "spirit of the lord": ["holy ghost"],
+      "satan": ["satan", "lucifer"],
+      "the serpent": ["satan", "lucifer", "serpent"],
+      "serpent": ["satan", "lucifer", "serpent"],
+    };
+    // Try SPEAKER_MAP first for known speaker names (avoids wrong alias matches)
+    let char: ScriptureCharacter | undefined;
+    const candidates = SPEAKER_MAP[nameLower];
+    if (candidates) {
+      for (const cand of candidates) {
+        char = allCharacters.find(
+          (c) => c.name.toLowerCase() === cand ||
+                 c.aliases.some((a) => a.toLowerCase() === cand)
+        );
+        if (char) break;
+      }
+    }
+    if (!char) {
+      // Exact match on name or alias
+      char = allCharacters.find(
+        (c) => c.name.toLowerCase() === nameLower ||
+               c.aliases.some((a) => a.toLowerCase() === nameLower)
+      );
+    }
+    if (!char) {
+      // Partial match: speaker name starts with or is contained in character name
+      char = allCharacters.find(
+        (c) => c.name.toLowerCase().startsWith(nameLower) ||
+               nameLower.startsWith(c.name.toLowerCase())
+      );
+    }
     if (char) setSelectedCharacter(char);
-  }, [allCharacters]);
+  }, [allCharacters, theologyMode, selectedVolume]);
 
   // Helper: find character portrait URL by speaker name
   const getCharacterPortrait = useCallback((speakerName: string): string | null => {
@@ -1572,13 +1611,13 @@ export default function ScriptureReader() {
                   {verseSpeaker && showSpeakers ? (
                     <div
                       style={{
-                        width: isMobile ? "24px" : "30px",
+                        width: isMobile ? "34px" : "30px",
                         flexShrink: 0,
                         display: "flex",
                         alignItems: "flex-start",
                         justifyContent: "center",
                         paddingTop: isFirstOfSpeakerSpan ? "4px" : "0",
-                        paddingRight: isMobile ? "4px" : "6px",
+                        paddingRight: isMobile ? "8px" : "6px",
                         position: "relative",
                       }}
                     >
@@ -1598,7 +1637,7 @@ export default function ScriptureReader() {
                           }}>
                             {/* Portrait / avatar circle — closest to scripture (right side on desktop via row-reverse) */}
                             <button
-                              onClick={() => openCharacterByName(verseSpeaker.speaker)}
+                              onClick={() => openCharacterByName(verseSpeaker.speaker, verseSpeaker.speakerType)}
                               title={verseSpeakerDisplayName || verseSpeaker.speaker}
                               style={{
                                 background: portrait ? "none" : `${speakerColor || "#888"}25`,
@@ -1634,9 +1673,10 @@ export default function ScriptureReader() {
                                 </svg>
                               )}
                             </button>
-                            {/* Desktop: horizontal name label extending left */}
+                            {/* Desktop: horizontal name label extending left — also clickable */}
                             {!isMobile && (
-                              <span
+                              <button
+                                onClick={() => openCharacterByName(verseSpeaker.speaker, verseSpeaker.speakerType)}
                                 style={{
                                   fontSize: "0.58rem",
                                   fontWeight: 700,
@@ -1645,10 +1685,14 @@ export default function ScriptureReader() {
                                   color: speakerColor || undefined,
                                   lineHeight: 1,
                                   opacity: 0.9,
+                                  background: "none",
+                                  border: "none",
+                                  padding: 0,
+                                  cursor: "pointer",
                                 }}
                               >
                                 {verseSpeakerDisplayName || verseSpeaker.speaker}
-                              </span>
+                              </button>
                             )}
                           </div>
                         );

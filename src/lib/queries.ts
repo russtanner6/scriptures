@@ -949,3 +949,48 @@ export async function getRandomVerse(): Promise<{
     volumeAbbrev: r.abbrev,
   };
 }
+
+/** Return actual verse texts mentioning a character (name + aliases). */
+export async function getCharacterVerses(
+  name: string,
+  aliases: string[],
+  books?: string[],
+  limit = 200,
+): Promise<{ total: number; verses: CharacterMention[]; searchTerms: string[] }> {
+  const db = await getDb();
+  const searchTerms = [name, ...aliases].filter(Boolean);
+  const escaped = searchTerms.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  const pattern = new RegExp(`\\b(${escaped.join("|")})\\b`, "i");
+
+  let sql = `SELECT v.book_id, b.name as book_name, vol.abbrev,
+            v.chapter, v.verse, v.text
+     FROM verses v
+     JOIN books b ON v.book_id = b.id
+     JOIN volumes vol ON b.volume_id = vol.id`;
+  if (books && books.length > 0) {
+    const placeholders = books.map(() => "?").join(", ");
+    sql += ` WHERE b.name IN (${placeholders})`;
+  }
+  sql += ` ORDER BY vol.display_order, b.display_order, v.chapter, v.verse`;
+
+  const allVerses = execToObjects<{
+    book_id: number; book_name: string; abbrev: string;
+    chapter: number; verse: number; text: string;
+  }>(db, sql, books && books.length > 0 ? books : undefined);
+
+  const matches: CharacterMention[] = [];
+  for (const v of allVerses) {
+    if (pattern.test(v.text)) {
+      matches.push({
+        bookId: v.book_id,
+        bookName: displayName(v.book_name),
+        volumeAbbrev: v.abbrev,
+        chapter: v.chapter,
+        verse: v.verse,
+        text: v.text,
+      });
+      if (matches.length >= limit) break;
+    }
+  }
+  return { total: matches.length, verses: matches, searchTerms };
+}
