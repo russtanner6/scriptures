@@ -330,10 +330,25 @@ export default function ChapterInsights({
                 {chapterChars.map((c) => {
                   const spk = getSpeakerInfo(c.name, c.aliases || []);
                   const isSpeaker = !!spk;
+                  // Find first verse this character speaks in (for scroll-to)
+                  const firstSpeakingVerse = isSpeaker ? (() => {
+                    const namesToCheck = [c.name, ...(c.aliases || [])].map(n => n.toLowerCase());
+                    const match = speakers.find(s =>
+                      namesToCheck.some(n => s.speaker.toLowerCase() === n || s.speaker.toLowerCase().startsWith(n + ","))
+                    );
+                    return match?.verseStart || null;
+                  })() : null;
                   return (
                     <button
                       key={c.id}
-                      onClick={() => { analytics.insightsPersonClick(c.name, bookName, chapter || 0); onSelectCharacter?.(c.id); }}
+                      onClick={() => {
+                        analytics.insightsPersonClick(c.name, bookName, chapter || 0);
+                        if (firstSpeakingVerse && onScrollToVerse) {
+                          onScrollToVerse(firstSpeakingVerse);
+                        } else {
+                          onSelectCharacter?.(c.id);
+                        }
+                      }}
                       style={{
                         display: "flex",
                         alignItems: "center",

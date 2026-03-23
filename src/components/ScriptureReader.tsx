@@ -249,6 +249,28 @@ export default function ScriptureReader() {
     return char?.portraitUrl || null;
   }, [allCharacters]);
 
+  // Helper: check if a speaker has a dedicated character profile
+  const speakerHasProfile = useCallback((speakerName: string, speakerType?: string): boolean => {
+    const nameLower = speakerName.toLowerCase();
+    // Divine/narrator types always have profiles (God, Jesus, etc.)
+    if (speakerType === "divine" || speakerType === "narrator") return true;
+    // Check exact name or alias match
+    const exact = allCharacters.some(
+      (c) => c.name.toLowerCase() === nameLower ||
+             c.aliases.some((a: string) => a.toLowerCase() === nameLower)
+    );
+    if (exact) return true;
+    // Check base name before comma (e.g., "Mary" from "Mary, sister of Martha")
+    if (nameLower.includes(",")) {
+      const baseName = nameLower.split(",")[0].trim();
+      return allCharacters.some(
+        (c) => c.name.toLowerCase() === baseName ||
+               c.aliases.some((a: string) => a.toLowerCase() === baseName)
+      );
+    }
+    return false;
+  }, [allCharacters]);
+
   // Load preferences from localStorage
   useEffect(() => {
     const savedLight = localStorage.getItem("reader-light-mode");
@@ -1632,9 +1654,12 @@ export default function ScriptureReader() {
               // Tone overlay for this verse
               const verseTone = showToneOverlay ? verseToneMap.get(v.verse) : null;
               // Speaker attribution for this verse
-              const verseSpeaker = showSpeakers
+              const verseSpeakerRaw = showSpeakers
                 ? chapterSpeakers.find((s) => v.verse >= s.verseStart && v.verse <= s.verseEnd)
                 : null;
+              // Only show speakers who have a dedicated character profile (no groups)
+              const verseSpeaker = verseSpeakerRaw && speakerHasProfile(verseSpeakerRaw.speaker, verseSpeakerRaw.speakerType)
+                ? verseSpeakerRaw : null;
               const isFirstOfSpeakerSpan = verseSpeaker && v.verse === verseSpeaker.verseStart;
               const verseSpeakerDisplayName = verseSpeaker ? displaySpeakerName(verseSpeaker.speaker, verseSpeaker.speakerType, selectedVolume || "") : null;
               const speakerColor = verseSpeakerDisplayName ? (speakerColorMap.get(verseSpeakerDisplayName) || "#888") : null;
@@ -1726,26 +1751,37 @@ export default function ScriptureReader() {
                               )}
                             </button>
                             {/* Desktop: horizontal name label extending left — also clickable */}
-                            {!isMobile && (
-                              <button
-                                onClick={() => openCharacterByName(verseSpeaker.speaker, verseSpeaker.speakerType)}
-                                style={{
-                                  fontSize: "0.58rem",
-                                  fontWeight: 700,
-                                  letterSpacing: "0.06em",
-                                  textTransform: "uppercase",
-                                  color: speakerColor || undefined,
-                                  lineHeight: 1,
-                                  opacity: 0.9,
-                                  background: "none",
-                                  border: "none",
-                                  padding: 0,
-                                  cursor: "pointer",
-                                }}
-                              >
-                                {verseSpeakerDisplayName || verseSpeaker.speaker}
-                              </button>
-                            )}
+                            {!isMobile && (() => {
+                              const fullName = verseSpeakerDisplayName || verseSpeaker.speaker;
+                              const commaIdx = fullName.indexOf(",");
+                              const primaryName = commaIdx > 0 ? fullName.substring(0, commaIdx) : fullName;
+                              const descriptor = commaIdx > 0 ? fullName.substring(commaIdx + 1).trim() : null;
+                              return (
+                                <button
+                                  onClick={() => openCharacterByName(verseSpeaker.speaker, verseSpeaker.speakerType)}
+                                  style={{
+                                    fontSize: "0.58rem",
+                                    letterSpacing: "0.06em",
+                                    color: speakerColor || undefined,
+                                    lineHeight: 1.3,
+                                    opacity: 0.9,
+                                    background: "none",
+                                    border: "none",
+                                    padding: 0,
+                                    cursor: "pointer",
+                                    textAlign: "right",
+                                  }}
+                                >
+                                  <span style={{ fontWeight: 700, textTransform: "uppercase" }}>{primaryName}</span>
+                                  {descriptor && (
+                                    <>
+                                      <br />
+                                      <span style={{ fontWeight: 400, fontSize: "0.5rem", opacity: 0.7, textTransform: "none" }}>{descriptor}</span>
+                                    </>
+                                  )}
+                                </button>
+                              );
+                            })()}
                           </div>
                         );
                       })()}

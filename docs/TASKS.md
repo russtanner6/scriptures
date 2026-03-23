@@ -15,11 +15,15 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 
 - [~] **"Found in X verses" link in CharacterDetailPanel** — Clicking the verse count should close the character panel and open a scripture verse panel showing all mention verses for that character, with the character name highlighted. Similar to how word search opens a verse slider. *(Requested: Session 14)*
 
+- [ ] **Desktop header revamp for scripture reader** — Remove tree logo from top center when on a chapter. Replace with chapter/section dropdown (currently in footer). Top-left "Book + Chapter" becomes back-navigation: clicking goes up one level (to volume book list). Volume book list screen shows "VOLUMES" in top-left which goes back to volume picker. *(Requested: Session 14)*
+
 - [ ] **Verse selection / multi-select mode** — Clicking a verse number on desktop (or long-press on mobile) activates selection mode. The clicked verse gets a checkbox, all other verse numbers become checkboxes too. User can check any number of verses (non-sequential). Purpose: attach notes, tags, and files to a verse selection. Clicking outside clears all checkboxes back to verse numbers. Ultimately stored in Firebase user profile. **Phase 1:** just the checkbox UI + selection state. **Phase 2:** notes/tags/files UI. **Phase 3:** Firebase persistence. *(Requested: Session 14)*
 
 - [ ] **Chiasmus improvements** — User had notes/specs for chiasmus tool improvements that were lost when a session closed unexpectedly. **NEEDS USER INPUT to re-specify.** *(Lost: ~Session 13)*
 
-- [ ] **More Context Eggs** — Currently 1,096 eggs. Target ~1,500 (2-3 per chapter average). Biggest gaps: Psalms (~50 more of 150 chapters), Isaiah (~15 more of 66), Jeremiah (~15 more of 52). Rules: additive language, domain isolation, scholarly sources. *(Requested: Session 12)*
+- [ ] **More Context Nuggets** — Currently 1,096. Target ~1,500 (2-3 per chapter average). Biggest gaps: Psalms (~50 more of 150 chapters), Isaiah (~15 more of 66), Jeremiah (~15 more of 52). Rules: additive language, domain isolation, scholarly sources. *(Requested: Session 12)*
+
+- [ ] **Rename EGG → NUGGET everywhere** — "EGG" pills → "NUGGET" pills with gold nugget icon. Change label, icon, component names (EggMarker→NuggetMarker, EggPopover→NuggetPopover), toggle label in reader layers, CLAUDE.md references. "Nugget of truth" framing vs hidden Easter Egg. *(Requested: Session 15)*
 
 ### MEDIUM PRIORITY
 
@@ -51,6 +55,9 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 
 ## Completed (Recent)
 
+- [x] Speaker labels: name first, descriptor on line two (not bold). "MARY, SISTER OF MARTHA" → "MARY" (bold) + "sister of Martha" (smaller line 2) *(Session 15)*
+- [x] Group speakers hidden — only show individuals with dedicated character profiles. Groups like "Jews who had been with Mary and Martha", "Disciples" no longer show speaker labels *(Session 15)*
+- [x] People pill in Chapter Insights → scrolls to first speaking verse instead of opening character panel *(Session 15)*
 - [x] First/Last Mention mobile tap fix — `<Link>` → `<button>` + `router.push()` + `onClose()` *(Session 14)*
 - [x] Removed role descriptions below character names in CharacterDetailPanel (both portrait + no-portrait variants) *(Session 14)*
 - [x] Tone Profile radar hidden in CharacterDetailPanel — needs semantic understanding to be useful (code + API fetch preserved, commented out) *(Session 14)*
