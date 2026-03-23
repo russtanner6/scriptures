@@ -263,13 +263,12 @@ export default function NuggetPopover({
           </p>
 
           {/* Source — linked to Google search */}
+          <div style={{ width: "25%", height: "1px", background: border, margin: "12px 0" }} />
           <div
             style={{
               fontSize: "0.78rem",
               fontStyle: "italic",
               lineHeight: 1.4,
-              borderTop: `1px solid ${border}`,
-              paddingTop: "12px",
             }}
           >
             <a
@@ -283,12 +282,13 @@ export default function NuggetPopover({
                 textDecorationColor: lightMode ? "#5a504040" : "#b8b0a440",
                 textUnderlineOffset: "2px",
                 transition: "color 0.15s",
+                display: "inline",
               }}
               onMouseEnter={(e) => { e.currentTarget.style.color = "#2563EB"; }}
               onMouseLeave={(e) => { e.currentTarget.style.color = lightMode ? "#5a5040" : "#b8b0a4"; }}
             >
               {nugget.source}
-              <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: "4px", verticalAlign: "middle", opacity: 0.7 }}>
+              <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: "4px", verticalAlign: "middle", opacity: 0.7, display: "inline" }}>
                 <path d="M5 1H1v10h10V7" />
                 <path d="M7 1h4v4" />
                 <path d="M11 1L5 7" />
