@@ -284,7 +284,7 @@ export default function NuggetPopover({
                 transition: "color 0.15s",
                 display: "inline",
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.color = "#2563EB"; }}
+              onMouseEnter={(e) => { e.currentTarget.style.color = "#2CC1E8"; }}
               onMouseLeave={(e) => { e.currentTarget.style.color = lightMode ? "#5a5040" : "#b8b0a4"; }}
             >
               {nugget.source}

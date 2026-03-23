@@ -909,7 +909,7 @@ export default function ScriptureReader() {
                 verticalAlign: "middle",
                 marginRight: "3px",
                 marginTop: "-2px",
-                border: "1.5px solid #2563EB",
+                border: "1.5px solid #2CC1E8",
                 flexShrink: 0,
               }}>
                 <img src={portrait} alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
@@ -922,7 +922,7 @@ export default function ScriptureReader() {
                 width: "16px",
                 height: "16px",
                 borderRadius: "50%",
-                background: "#2563EB",
+                background: "#2CC1E8",
                 verticalAlign: "middle",
                 marginRight: "3px",
                 marginTop: "-2px",
@@ -941,7 +941,7 @@ export default function ScriptureReader() {
                 width: "16px",
                 height: "16px",
                 borderRadius: "50%",
-                background: "#2563EB",
+                background: "#2CC1E8",
                 verticalAlign: "middle",
                 marginRight: "3px",
                 marginTop: "-2px",

@@ -11,8 +11,8 @@
   --text: #f0f0f0;
   --text-secondary: #9ca3af;
   --text-muted: #6b7280;
-  --accent: #2563EB;
-  --accent-soft: rgba(37, 99, 235, 0.12);
+  --accent: #2CC1E8;
+  --accent-soft: rgba(44, 193, 232, 0.12);
   --emerald: #10b981;
   --emerald-soft: rgba(16, 185, 129, 0.1);
   --violet: #8b5cf6;
@@ -67,6 +67,8 @@ body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.6;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-bottom: env(safe-area-inset-bottom, 0px); /* iOS safe area */
@@ -109,8 +111,10 @@ body::before {
   position: relative;
   z-index: 1;
   max-width: 1360px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 32px;
+  flex: 1;
 }
 
 /* Header */

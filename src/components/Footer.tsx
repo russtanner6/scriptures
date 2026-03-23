@@ -35,7 +35,7 @@ export default function Footer() {
       style={{
         borderTop: "1px solid rgba(255,255,255,0.08)",
         background: "rgba(0, 0, 0, 0.35)",
-        marginTop: "64px",
+        marginTop: "auto",
       }}
     >
       {/* Main footer content */}
