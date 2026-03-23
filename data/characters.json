@@ -780,6 +780,7 @@
     "id": "jesus-christ",
     "name": "Jesus Christ",
     "aliases": [
+      "Jesus",
       "Jehovah",
       "Messiah",
       "Savior",
@@ -6432,7 +6433,10 @@
   {
     "id": "mary-of-bethany",
     "name": "Mary of Bethany",
-    "aliases": [],
+    "aliases": [
+      "Mary, sister of Martha",
+      "sister of Martha"
+    ],
     "bio": "Sister of Martha and Lazarus who lived in Bethany. She sat at Jesus' feet to learn while Martha served, prompting Jesus to say she had chosen 'the good part.' She anointed Jesus' feet with expensive ointment and wiped them with her hair before his final Passover.",
     "era": "New Testament",
     "timePeriod": "c. 1st century AD",
