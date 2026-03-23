@@ -1,8 +1,5 @@
-export type TheologyMode = "lds" | "traditional";
-
 export interface UserPreferences {
   visibleVolumes: Record<string, boolean>;
-  theologyMode: TheologyMode;
 }
 
 const STORAGE_KEY = "scripture-preferences";
@@ -11,7 +8,6 @@ const VOLUME_ABBREVS = ["OT", "NT", "BoM", "D&C", "PoGP"] as const;
 
 const DEFAULTS: UserPreferences = {
   visibleVolumes: { OT: true, NT: true, BoM: true, "D&C": true, PoGP: true },
-  theologyMode: "lds",
 };
 
 export function getPreferences(): UserPreferences {
@@ -29,10 +25,7 @@ export function getPreferences(): UserPreferences {
         }
       }
     }
-    return {
-      visibleVolumes,
-      theologyMode: stored.theologyMode === "traditional" ? "traditional" : "lds",
-    };
+    return { visibleVolumes };
   } catch {
     return DEFAULTS;
   }
@@ -45,10 +38,6 @@ export function setPreferences(prefs: UserPreferences): void {
 
 export function isVolumeVisible(abbrev: string): boolean {
   return getPreferences().visibleVolumes[abbrev] !== false;
-}
-
-export function getTheologyMode(): TheologyMode {
-  return getPreferences().theologyMode;
 }
 
 export function getVisibleVolumeAbbrevs(): string[] {
@@ -65,23 +54,21 @@ export function canDisableVolume(abbrev: string): boolean {
 }
 
 /**
- * Map speaker names based on theology mode.
- * In LDS mode, divine speakers in OT are labeled as Jesus Christ (Jehovah).
+ * Map speaker names — divine speakers in OT are labeled as Jesus Christ (Jehovah).
  */
 export function getDisplaySpeakerName(
   speaker: string,
   speakerType: string,
-  volumeAbbrev: string,
-  theologyMode: TheologyMode
+  volumeAbbrev: string
 ): string {
-  if (theologyMode === "lds" && speakerType === "divine") {
+  if (speakerType === "divine") {
     // OT: God/LORD/Jesus → Jesus Christ (Jehovah)
     if (volumeAbbrev === "OT") {
       if (speaker === "God" || speaker === "LORD" || speaker === "The LORD" || speaker === "Jesus") {
         return "Jesus Christ (Jehovah)";
       }
     }
-    // D&C: "God" in divine speech is also Jesus Christ in LDS theology
+    // D&C: "God" in divine speech is also Jesus Christ
     if (volumeAbbrev === "D&C" && speaker === "God") {
       return "Jesus Christ";
     }

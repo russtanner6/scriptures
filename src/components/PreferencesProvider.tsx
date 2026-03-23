@@ -3,7 +3,6 @@
 import { createContext, useContext, useState, useEffect, useMemo, useCallback, type ReactNode } from "react";
 import {
   type UserPreferences,
-  type TheologyMode,
   getPreferences,
   setPreferences as savePreferences,
   getDisplaySpeakerName,
@@ -14,7 +13,6 @@ interface PreferencesContextValue {
   setPrefs: (p: UserPreferences) => void;
   isVolumeVisible: (abbrev: string) => boolean;
   visibleVolumeAbbrevs: string[];
-  theologyMode: TheologyMode;
   displaySpeakerName: (speaker: string, speakerType: string, volumeAbbrev: string) => string;
   hydrated: boolean;
 }
@@ -48,8 +46,8 @@ export function PreferencesProvider({ children }: { children: ReactNode }) {
 
   const displaySpeakerName = useCallback(
     (speaker: string, speakerType: string, volumeAbbrev: string) =>
-      getDisplaySpeakerName(speaker, speakerType, volumeAbbrev, prefs.theologyMode),
-    [prefs.theologyMode]
+      getDisplaySpeakerName(speaker, speakerType, volumeAbbrev),
+    []
   );
 
   const value = useMemo<PreferencesContextValue>(
@@ -58,7 +56,6 @@ export function PreferencesProvider({ children }: { children: ReactNode }) {
       setPrefs,
       isVolumeVisible,
       visibleVolumeAbbrevs,
-      theologyMode: prefs.theologyMode,
       displaySpeakerName,
       hydrated,
     }),

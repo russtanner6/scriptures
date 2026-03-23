@@ -222,9 +222,6 @@ export const analytics = {
   settingsVolumeToggle: (volume: string, visible: boolean) =>
     trackEvent("settings_volume_toggle", { volume, visible }),
 
-  /** Theology mode changed */
-  settingsTheologyMode: (mode: string) =>
-    trackEvent("settings_theology_mode", { mode }),
 
   // ── Engagement ──────────────────────────────────────────
 

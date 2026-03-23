@@ -3700,13 +3700,13 @@
     }
   },
   "jesus-christ": {
-    "totalMentions": 9775,
+    "totalMentions": 10472,
     "byVolume": {
       "OT": 6096,
-      "NT": 1121,
-      "BoM": 1636,
-      "D&C": 747,
-      "PoGP": 175
+      "NT": 1722,
+      "BoM": 1715,
+      "D&C": 760,
+      "PoGP": 179
     },
     "byBook": [
       {
@@ -3929,37 +3929,37 @@
         "bookId": 40,
         "bookName": "Matthew",
         "volumeAbbrev": "NT",
-        "count": 97
+        "count": 249
       },
       {
         "bookId": 41,
         "bookName": "Mark",
         "volumeAbbrev": "NT",
-        "count": 28
+        "count": 116
       },
       {
         "bookId": 42,
         "bookName": "Luke",
         "volumeAbbrev": "NT",
-        "count": 114
+        "count": 202
       },
       {
         "bookId": 43,
         "bookName": "John",
         "volumeAbbrev": "NT",
-        "count": 75
+        "count": 299
       },
       {
         "bookId": 44,
         "bookName": "Acts",
         "volumeAbbrev": "NT",
-        "count": 123
+        "count": 152
       },
       {
         "bookId": 45,
         "bookName": "Romans",
         "volumeAbbrev": "NT",
-        "count": 92
+        "count": 93
       },
       {
         "bookId": 46,
@@ -3971,7 +3971,7 @@
         "bookId": 47,
         "bookName": "2 Corinthians",
         "volumeAbbrev": "NT",
-        "count": 66
+        "count": 68
       },
       {
         "bookId": 48,
@@ -3983,25 +3983,25 @@
         "bookId": 49,
         "bookName": "Ephesians",
         "volumeAbbrev": "NT",
-        "count": 60
+        "count": 61
       },
       {
         "bookId": 50,
         "bookName": "Philippians",
         "volumeAbbrev": "NT",
-        "count": 46
+        "count": 47
       },
       {
         "bookId": 51,
         "bookName": "Colossians",
         "volumeAbbrev": "NT",
-        "count": 31
+        "count": 32
       },
       {
         "bookId": 52,
         "bookName": "1 Thessalonians",
         "volumeAbbrev": "NT",
-        "count": 26
+        "count": 28
       },
       {
         "bookId": 53,
@@ -4037,7 +4037,7 @@
         "bookId": 58,
         "bookName": "Hebrews",
         "volumeAbbrev": "NT",
-        "count": 33
+        "count": 41
       },
       {
         "bookId": 59,
@@ -4079,7 +4079,7 @@
         "bookId": 66,
         "bookName": "Revelation",
         "volumeAbbrev": "NT",
-        "count": 32
+        "count": 36
       },
       {
         "bookId": 67,
@@ -4091,13 +4091,13 @@
         "bookId": 68,
         "bookName": "2 Nephi",
         "volumeAbbrev": "BoM",
-        "count": 297
+        "count": 299
       },
       {
         "bookId": 69,
         "bookName": "Jacob",
         "volumeAbbrev": "BoM",
-        "count": 75
+        "count": 76
       },
       {
         "bookId": 70,
@@ -4133,7 +4133,7 @@
         "bookId": 75,
         "bookName": "Alma",
         "volumeAbbrev": "BoM",
-        "count": 313
+        "count": 314
       },
       {
         "bookId": 76,
@@ -4145,31 +4145,31 @@
         "bookId": 77,
         "bookName": "3 Nephi",
         "volumeAbbrev": "BoM",
-        "count": 113
+        "count": 172
       },
       {
         "bookId": 78,
         "bookName": "4 Nephi",
         "volumeAbbrev": "BoM",
-        "count": 17
+        "count": 24
       },
       {
         "bookId": 79,
         "bookName": "Mormon",
         "volumeAbbrev": "BoM",
-        "count": 73
+        "count": 77
       },
       {
         "bookId": 80,
         "bookName": "Ether",
         "volumeAbbrev": "BoM",
-        "count": 117
+        "count": 121
       },
       {
         "bookId": 81,
         "bookName": "Moroni",
         "volumeAbbrev": "BoM",
-        "count": 64
+        "count": 65
       },
       {
         "bookId": 82,
@@ -4277,7 +4277,7 @@
         "bookId": 82,
         "bookName": "D&C 21",
         "volumeAbbrev": "D&C",
-        "count": 6
+        "count": 7
       },
       {
         "bookId": 82,
@@ -4385,7 +4385,7 @@
         "bookId": 82,
         "bookName": "D&C 50",
         "volumeAbbrev": "D&C",
-        "count": 7
+        "count": 9
       },
       {
         "bookId": 82,
@@ -4541,7 +4541,7 @@
         "bookId": 82,
         "bookName": "D&C 76",
         "volumeAbbrev": "D&C",
-        "count": 23
+        "count": 29
       },
       {
         "bookId": 82,
@@ -4715,7 +4715,7 @@
         "bookId": 82,
         "bookName": "D&C 107",
         "volumeAbbrev": "D&C",
-        "count": 13
+        "count": 14
       },
       {
         "bookId": 82,
@@ -4833,6 +4833,12 @@
       },
       {
         "bookId": 82,
+        "bookName": "D&C 129",
+        "volumeAbbrev": "D&C",
+        "count": 1
+      },
+      {
+        "bookId": 82,
         "bookName": "D&C 130",
         "volumeAbbrev": "D&C",
         "count": 4
@@ -4859,7 +4865,7 @@
         "bookId": 82,
         "bookName": "D&C 136",
         "volumeAbbrev": "D&C",
-        "count": 11
+        "count": 12
       },
       {
         "bookId": 82,
@@ -4871,7 +4877,7 @@
         "bookId": 82,
         "bookName": "D&C 138",
         "volumeAbbrev": "D&C",
-        "count": 26
+        "count": 27
       },
       {
         "bookId": 83,
@@ -4889,7 +4895,7 @@
         "bookId": 85,
         "bookName": "Joseph Smith—Matthew",
         "volumeAbbrev": "PoGP",
-        "count": 9
+        "count": 13
       },
       {
         "bookId": 86,
@@ -15947,11 +15953,40 @@
     }
   },
   "mary-of-bethany": {
-    "totalMentions": 0,
-    "byVolume": {},
-    "byBook": [],
-    "firstMention": null,
-    "lastMention": null
+    "totalMentions": 30,
+    "byVolume": {
+      "NT": 30
+    },
+    "byBook": [
+      {
+        "bookId": 42,
+        "bookName": "Luke",
+        "volumeAbbrev": "NT",
+        "count": 16
+      },
+      {
+        "bookId": 43,
+        "bookName": "John",
+        "volumeAbbrev": "NT",
+        "count": 14
+      }
+    ],
+    "firstMention": {
+      "bookId": 42,
+      "bookName": "Luke",
+      "volumeAbbrev": "NT",
+      "chapter": 1,
+      "verse": 27,
+      "text": "To a virgin espoused to a man whose name was Joseph, of the house of David; and the virgin's name was Mary."
+    },
+    "lastMention": {
+      "bookId": 43,
+      "bookName": "John",
+      "volumeAbbrev": "NT",
+      "chapter": 20,
+      "verse": 18,
+      "text": "Mary Magdalene came and told the disciples that she had seen the Lord, and that he had spoken these things unto her."
+    }
   },
   "medium-of-endor": {
     "totalMentions": 0,
@@ -17073,28 +17108,28 @@
     }
   },
   "pontius-pilate": {
-    "totalMentions": 4,
+    "totalMentions": 24,
     "byVolume": {
-      "NT": 4
+      "NT": 24
     },
     "byBook": [
       {
         "bookId": 40,
         "bookName": "Matthew",
         "volumeAbbrev": "NT",
-        "count": 1
+        "count": 8
       },
       {
         "bookId": 42,
         "bookName": "Luke",
         "volumeAbbrev": "NT",
-        "count": 1
+        "count": 12
       },
       {
         "bookId": 44,
         "bookName": "Acts",
         "volumeAbbrev": "NT",
-        "count": 1
+        "count": 3
       },
       {
         "bookId": 54,

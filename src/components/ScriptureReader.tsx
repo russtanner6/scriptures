@@ -32,7 +32,7 @@ interface ReaderVerse {
 }
 
 export default function ScriptureReader() {
-  const { isVolumeVisible, displaySpeakerName, theologyMode } = usePreferencesContext();
+  const { isVolumeVisible, displaySpeakerName } = usePreferencesContext();
   const router = useRouter();
   const searchParams = useSearchParams();
   const isMobile = useIsMobile();
@@ -194,7 +194,7 @@ export default function ScriptureReader() {
   const openCharacterByName = useCallback((speakerName: string, speakerType?: string) => {
     const nameLower = speakerName.toLowerCase();
     // For divine speakers in OT with LDS theology, "God"/"LORD" = Jesus Christ — check BEFORE exact match
-    const isDivineOT = speakerType === "divine" && theologyMode === "lds" &&
+    const isDivineOT = speakerType === "divine" &&
       (selectedVolume === "OT" || !selectedVolume);
     const SPEAKER_MAP: Record<string, string[]> = {
       "god": isDivineOT ? ["jesus christ"] : ["god the father"],
@@ -237,13 +237,13 @@ export default function ScriptureReader() {
       );
     }
     if (char) setSelectedCharacter(char);
-  }, [allCharacters, theologyMode, selectedVolume]);
+  }, [allCharacters, selectedVolume]);
 
   // Helper: find character portrait URL by speaker name (theology-mode aware)
   const getCharacterPortrait = useCallback((speakerName: string, speakerType?: string): string | null => {
     const nameLower = speakerName.toLowerCase();
     // For divine speakers in OT with LDS theology, "God"/"LORD" = Jesus Christ
-    const isDivineOT = speakerType === "divine" && theologyMode === "lds" &&
+    const isDivineOT = speakerType === "divine" &&
       (selectedVolume === "OT" || !selectedVolume);
     if (isDivineOT && (nameLower === "god" || nameLower === "lord" || nameLower === "the lord" || nameLower === "the lord god")) {
       const jesus = allCharacters.find((c) => c.name.toLowerCase() === "jesus christ");
@@ -254,7 +254,7 @@ export default function ScriptureReader() {
              c.aliases.some((a) => a.toLowerCase() === nameLower)
     );
     return char?.portraitUrl || null;
-  }, [allCharacters, theologyMode, selectedVolume]);
+  }, [allCharacters, selectedVolume]);
 
   // Helper: check if a speaker has a dedicated character profile
   const speakerHasProfile = useCallback((speakerName: string, speakerType?: string): boolean => {
@@ -390,9 +390,7 @@ export default function ScriptureReader() {
                     .then((r) => r.json())
                     .then((nuggetData) => {
                       const filtered = (nuggetData.nuggets || []) as ContextNugget[];
-                      // Domain isolation: hide Restoration-category nuggets if LDS volumes are toggled off
-                      const ldsVisible = isVolumeVisible("BoM") || isVolumeVisible("D&C") || isVolumeVisible("PoGP");
-                      setChapterNuggets(ldsVisible ? filtered : filtered.filter((e) => e.category !== "Restoration"));
+                      setChapterNuggets(filtered);
                     })
                     .catch(() => {});
                   fetch(`/api/speakers?book=${encodeURIComponent(bookNameForApi)}&chapter=${ch}`)
@@ -510,9 +508,7 @@ export default function ScriptureReader() {
         const nuggetResp = await fetch(`/api/context-nuggets?book=${encodeURIComponent(bookNameForApi)}&chapter=${chapter}`);
         const nuggetData = await nuggetResp.json();
         const filtered = (nuggetData.nuggets || []) as ContextNugget[];
-        // Domain isolation: hide Restoration-category nuggets if LDS volumes are toggled off
-        const ldsVisible = isVolumeVisible("BoM") || isVolumeVisible("D&C") || isVolumeVisible("PoGP");
-        setChapterNuggets(ldsVisible ? filtered : filtered.filter((e) => e.category !== "Restoration"));
+        setChapterNuggets(filtered);
       } catch {}
       try {
         const spkResp = await fetch(`/api/speakers?book=${encodeURIComponent(bookNameForApi)}&chapter=${chapter}`);
