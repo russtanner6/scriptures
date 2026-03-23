@@ -1,16 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
 import { promises as fs } from "fs";
 import path from "path";
-import type { ContextEgg } from "@/lib/types";
+import type { ContextNugget } from "@/lib/types";
 
-let cachedEggs: ContextEgg[] | null = null;
+let cachedNuggets: ContextNugget[] | null = null;
 
-async function loadEggs(): Promise<ContextEgg[]> {
-  if (cachedEggs) return cachedEggs;
-  const filePath = path.join(process.cwd(), "data", "context-eggs.json");
+async function loadNuggets(): Promise<ContextNugget[]> {
+  if (cachedNuggets) return cachedNuggets;
+  const filePath = path.join(process.cwd(), "data", "context-nuggets.json");
   const raw = await fs.readFile(filePath, "utf-8");
-  cachedEggs = JSON.parse(raw) as ContextEgg[];
-  return cachedEggs;
+  cachedNuggets = JSON.parse(raw) as ContextNugget[];
+  return cachedNuggets;
 }
 
 export async function GET(request: NextRequest) {
@@ -25,10 +25,10 @@ export async function GET(request: NextRequest) {
     );
   }
 
-  const eggs = await loadEggs();
-  const filtered = eggs.filter(
+  const nuggets = await loadNuggets();
+  const filtered = nuggets.filter(
     (e) => e.book === book && e.chapter === Number(chapter)
   );
 
-  return NextResponse.json({ eggs: filtered });
+  return NextResponse.json({ nuggets: filtered });
 }

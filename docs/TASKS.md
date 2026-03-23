@@ -23,7 +23,7 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 
 - [ ] **More Context Nuggets** — Currently 1,096. Target ~1,500 (2-3 per chapter average). Biggest gaps: Psalms (~50 more of 150 chapters), Isaiah (~15 more of 66), Jeremiah (~15 more of 52). Rules: additive language, domain isolation, scholarly sources. *(Requested: Session 12)*
 
-- [ ] **Rename EGG → NUGGET everywhere** — "EGG" pills → "NUGGET" pills with gold nugget icon. Change label, icon, component names (EggMarker→NuggetMarker, EggPopover→NuggetPopover), toggle label in reader layers, CLAUDE.md references. "Nugget of truth" framing vs hidden Easter Egg. *(Requested: Session 15)*
+- [x] **Rename EGG → NUGGET everywhere** — "EGG" pills → "NUGGET" pills with gold nugget icon. Component renames, API route, data file, CSS classes, analytics events, types. *(Session 15)*
 
 ### MEDIUM PRIORITY
 

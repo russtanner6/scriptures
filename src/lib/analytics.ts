@@ -118,23 +118,23 @@ export const analytics = {
   speakerTimelineClick: (speaker: string, verse: number) =>
     trackEvent("speaker_timeline_click", { speaker, verse }),
 
-  // ── Context Eggs ────────────────────────────────────────
+  // ── Context Nuggets ────────────────────────────────────────
 
-  /** Egg pill clicked on a verse */
-  eggPillClick: (eggId: string, book: string, chapter: number, verse: number, category: string) =>
-    trackEvent("egg_pill_click", { egg_id: eggId, book, chapter, verse, category }),
+  /** Nugget pill clicked on a verse */
+  nuggetPillClick: (nuggetId: string, book: string, chapter: number, verse: number, category: string) =>
+    trackEvent("nugget_pill_click", { nugget_id: nuggetId, book, chapter, verse, category }),
 
-  /** Egg keyword clicked in verse text */
-  eggKeywordClick: (eggId: string, keyword: string) =>
-    trackEvent("egg_keyword_click", { egg_id: eggId, keyword }),
+  /** Nugget keyword clicked in verse text */
+  nuggetKeywordClick: (nuggetId: string, keyword: string) =>
+    trackEvent("nugget_keyword_click", { nugget_id: nuggetId, keyword }),
 
-  /** Egg source citation link clicked */
-  eggSourceClick: (eggId: string, source: string) =>
-    trackEvent("egg_source_click", { egg_id: eggId, source: source.slice(0, 100) }),
+  /** Nugget source citation link clicked */
+  nuggetSourceClick: (nuggetId: string, source: string) =>
+    trackEvent("nugget_source_click", { nugget_id: nuggetId, source: source.slice(0, 100) }),
 
-  /** Navigate between eggs in multi-egg popover */
-  eggNavigate: (direction: "prev" | "next") =>
-    trackEvent("egg_navigate", { direction }),
+  /** Navigate between nuggets in multi-nugget popover */
+  nuggetNavigate: (direction: "prev" | "next") =>
+    trackEvent("nugget_navigate", { direction }),
 
   // ── People & Locations ──────────────────────────────────
 

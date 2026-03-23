@@ -80,16 +80,16 @@ export interface Resource {
   tags?: string[];
 }
 
-// ── Context Eggs ──
-export type EggCategory = "Linguistic" | "Historical" | "Cultural" | "Literary" | "Restoration";
+// ── Context Nuggets ──
+export type NuggetCategory = "Linguistic" | "Historical" | "Cultural" | "Literary" | "Restoration";
 
-export interface ContextEgg {
+export interface ContextNugget {
   id: string;
   book: string;
   chapter: number;
   verse: number;
   keyword: string;
-  category: EggCategory;
+  category: NuggetCategory;
   title: string;
   insight: string;
   source: string;

@@ -19,9 +19,9 @@ import { modalStyles as mStyles, getModalTheme } from "@/lib/modal-styles";
 import { getAnnotationsForChapter } from "@/lib/annotations";
 import { useIsMobile } from "@/lib/useIsMobile";
 import { getVerseDominantTone, type SentimentCategory } from "@/lib/sentiment-lexicon";
-import type { ContextEgg } from "@/lib/types";
-import EggMarker from "./EggMarker";
-import EggPopover from "./EggPopover";
+import type { ContextNugget } from "@/lib/types";
+import NuggetMarker from "./NuggetMarker";
+import NuggetPopover from "./NuggetPopover";
 import { analytics } from "@/lib/analytics";
 
 interface ReaderVerse {
@@ -98,16 +98,16 @@ export default function ScriptureReader() {
     return false;
   });
 
-  // Context Eggs layer
-  const [showContextEggs, setShowContextEggs] = useState(() => {
+  // Context Nuggets layer
+  const [showContextNuggets, setShowContextNuggets] = useState(() => {
     if (typeof window !== "undefined") {
-      const saved = localStorage.getItem("reader-show-context-eggs");
+      const saved = localStorage.getItem("reader-show-context-nuggets");
       return saved === null ? true : saved === "true"; // default ON
     }
     return true;
   });
-  const [chapterEggs, setChapterEggs] = useState<ContextEgg[]>([]);
-  const [activeEggs, setActiveEggs] = useState<ContextEgg[]>([]);
+  const [chapterNuggets, setChapterNuggets] = useState<ContextNugget[]>([]);
+  const [activeNuggets, setActiveNuggets] = useState<ContextNugget[]>([]);
 
   // Character panel
   const [allCharacters, setAllCharacters] = useState<ScriptureCharacter[]>([]);
@@ -136,24 +136,24 @@ export default function ScriptureReader() {
   const hasModernText = verses.some((v) => v.text_modern);
   const hasNarration = !!chapterNarration;
 
-  // Per-verse egg keyword positions (memoized — must be after readingMode)
-  const eggKeywordMap = useMemo(() => {
-    if (!showContextEggs || chapterEggs.length === 0) return new Map<number, Array<{ start: number; end: number; egg: ContextEgg }>>();
-    const map = new Map<number, Array<{ start: number; end: number; egg: ContextEgg }>>();
-    for (const egg of chapterEggs) {
-      const verse = verses.find((v) => v.verse === egg.verse);
+  // Per-verse nugget keyword positions (memoized — must be after readingMode)
+  const nuggetKeywordMap = useMemo(() => {
+    if (!showContextNuggets || chapterNuggets.length === 0) return new Map<number, Array<{ start: number; end: number; nugget: ContextNugget }>>();
+    const map = new Map<number, Array<{ start: number; end: number; nugget: ContextNugget }>>();
+    for (const nug of chapterNuggets) {
+      const verse = verses.find((v) => v.verse === nug.verse);
       if (!verse) continue;
       const text = readingMode === "modern" && verse.text_modern ? verse.text_modern : verse.text;
-      const escaped = egg.keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const escaped = nug.keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
       const regex = new RegExp(`\\b${escaped}\\b`, "i");
       const match = regex.exec(text);
       if (match) {
-        if (!map.has(egg.verse)) map.set(egg.verse, []);
-        map.get(egg.verse)!.push({ start: match.index, end: match.index + match[0].length, egg });
+        if (!map.has(nug.verse)) map.set(nug.verse, []);
+        map.get(nug.verse)!.push({ start: match.index, end: match.index + match[0].length, nugget: nug });
       }
     }
     return map;
-  }, [chapterEggs, verses, showContextEggs, readingMode]);
+  }, [chapterNuggets, verses, showContextNuggets, readingMode]);
 
   // Reading mode help popup
   const [showReadingModeHelp, setShowReadingModeHelp] = useState(false);
@@ -379,13 +379,13 @@ export default function ScriptureReader() {
                     .then((r) => r.json())
                     .then((resData) => setChapterResources(resData.resources || []))
                     .catch(() => {});
-                  fetch(`/api/context-eggs?book=${encodeURIComponent(bookNameForApi)}&chapter=${ch}`)
+                  fetch(`/api/context-nuggets?book=${encodeURIComponent(bookNameForApi)}&chapter=${ch}`)
                     .then((r) => r.json())
-                    .then((eggData) => {
-                      const eggs = (eggData.eggs || []) as ContextEgg[];
-                      // Domain isolation: hide Restoration-category eggs if LDS volumes are toggled off
+                    .then((nuggetData) => {
+                      const filtered = (nuggetData.nuggets || []) as ContextNugget[];
+                      // Domain isolation: hide Restoration-category nuggets if LDS volumes are toggled off
                       const ldsVisible = isVolumeVisible("BoM") || isVolumeVisible("D&C") || isVolumeVisible("PoGP");
-                      setChapterEggs(ldsVisible ? eggs : eggs.filter((e) => e.category !== "Restoration"));
+                      setChapterNuggets(ldsVisible ? filtered : filtered.filter((e) => e.category !== "Restoration"));
                     })
                     .catch(() => {});
                   fetch(`/api/speakers?book=${encodeURIComponent(bookNameForApi)}&chapter=${ch}`)
@@ -486,11 +486,11 @@ export default function ScriptureReader() {
       // Load annotations for this chapter
       const annotations = getAnnotationsForChapter(bookId, chapter);
       setAnnotatedVerses(new Set(annotations.map((a) => a.verse)));
-      // Load resources + eggs for this chapter
+      // Load resources + nuggets for this chapter
       setChapterResources([]);
-      setChapterEggs([]);
+      setChapterNuggets([]);
       setActiveResourcePanel(null);
-      setActiveEggs([]);
+      setActiveNuggets([]);
       // Load speakers for this chapter
       setChapterSpeakers([]);
       const bookNameForApi = data.bookName || "";
@@ -500,12 +500,12 @@ export default function ScriptureReader() {
         setChapterResources(resData.resources || []);
       } catch {}
       try {
-        const eggResp = await fetch(`/api/context-eggs?book=${encodeURIComponent(bookNameForApi)}&chapter=${chapter}`);
-        const eggData = await eggResp.json();
-        const eggs = (eggData.eggs || []) as ContextEgg[];
-        // Domain isolation: hide Restoration-category eggs if LDS volumes are toggled off
+        const nuggetResp = await fetch(`/api/context-nuggets?book=${encodeURIComponent(bookNameForApi)}&chapter=${chapter}`);
+        const nuggetData = await nuggetResp.json();
+        const filtered = (nuggetData.nuggets || []) as ContextNugget[];
+        // Domain isolation: hide Restoration-category nuggets if LDS volumes are toggled off
         const ldsVisible = isVolumeVisible("BoM") || isVolumeVisible("D&C") || isVolumeVisible("PoGP");
-        setChapterEggs(ldsVisible ? eggs : eggs.filter((e) => e.category !== "Restoration"));
+        setChapterNuggets(ldsVisible ? filtered : filtered.filter((e) => e.category !== "Restoration"));
       } catch {}
       try {
         const spkResp = await fetch(`/api/speakers?book=${encodeURIComponent(bookNameForApi)}&chapter=${chapter}`);
@@ -713,16 +713,16 @@ export default function ScriptureReader() {
     const volHighlightColor = selectedVolume ? VOLUME_COLORS[selectedVolume] || "#3B82F6" : "#3B82F6";
     const verseEntityMap = verseNumber ? firstMentions.get(verseNumber) : undefined;
 
-    // Egg keywords for this verse
-    const verseEggs = (showContextEggs && verseNumber) ? eggKeywordMap.get(verseNumber) : undefined;
+    // Nugget keywords for this verse
+    const verseNuggets = (showContextNuggets && verseNumber) ? nuggetKeywordMap.get(verseNumber) : undefined;
 
-    // If no highlights, entity links, or egg keywords, return plain text
-    if (!activeHighlight && !verseEntityMap?.size && !verseEggs?.length) return text;
+    // If no highlights, entity links, or nugget keywords, return plain text
+    if (!activeHighlight && !verseEntityMap?.size && !verseNuggets?.length) return text;
 
-    // Build a list of annotated ranges: entity links + search highlights + egg keywords
+    // Build a list of annotated ranges: entity links + search highlights + nugget keywords
     type Segment = { start: number; end: number; kind: "entity"; entry: EntityEntry }
       | { start: number; end: number; kind: "highlight" }
-      | { start: number; end: number; kind: "egg"; egg: ContextEgg };
+      | { start: number; end: number; kind: "nugget"; nugget: ContextNugget };
     const segments: Segment[] = [];
 
     // Entity first-mention segments
@@ -746,17 +746,17 @@ export default function ScriptureReader() {
       }
     }
 
-    // Egg keyword segments (lowest priority)
-    if (verseEggs) {
-      for (const e of verseEggs) {
-        segments.push({ start: e.start, end: e.end, kind: "egg", egg: e.egg });
+    // Nugget keyword segments (lowest priority)
+    if (verseNuggets) {
+      for (const e of verseNuggets) {
+        segments.push({ start: e.start, end: e.end, kind: "nugget", nugget: e.nugget });
       }
     }
 
     if (segments.length === 0) return text;
 
-    // Sort: entity > highlight > egg priority at same position
-    const kindPriority = { entity: 0, highlight: 1, egg: 2 };
+    // Sort: entity > highlight > nugget priority at same position
+    const kindPriority = { entity: 0, highlight: 1, nugget: 2 };
     segments.sort((a, b) => a.start - b.start || kindPriority[a.kind] - kindPriority[b.kind]);
 
     // Remove overlapping segments (earlier/longer wins)
@@ -792,15 +792,15 @@ export default function ScriptureReader() {
             {segText}
           </mark>
         );
-      } else if (seg.kind === "egg") {
-        // Context Egg keyword — clickable but no shimmer animation
+      } else if (seg.kind === "nugget") {
+        // Context Nugget keyword — clickable but no shimmer animation
         elements.push(
           <span
-            key={`egg${i}`}
+            key={`nugget${i}`}
             role="button"
             tabIndex={0}
-            onClick={(e) => { e.stopPropagation(); analytics.eggKeywordClick(seg.egg.id || "", seg.egg.keyword); setActiveEggs([seg.egg]); }}
-            onKeyDown={(e) => { if (e.key === "Enter") { e.stopPropagation(); analytics.eggKeywordClick(seg.egg.id || "", seg.egg.keyword); setActiveEggs([seg.egg]); } }}
+            onClick={(e) => { e.stopPropagation(); analytics.nuggetKeywordClick(seg.nugget.id || "", seg.nugget.keyword); setActiveNuggets([seg.nugget]); }}
+            onKeyDown={(e) => { if (e.key === "Enter") { e.stopPropagation(); analytics.nuggetKeywordClick(seg.nugget.id || "", seg.nugget.keyword); setActiveNuggets([seg.nugget]); } }}
             style={{
               cursor: "pointer",
               borderRadius: "2px",
@@ -1424,14 +1424,14 @@ export default function ScriptureReader() {
                     </span>
                   </button>
                 )}
-                {/* Context Eggs toggle */}
-                {chapterEggs.length > 0 && (
+                {/* Context Nuggets toggle */}
+                {chapterNuggets.length > 0 && (
                   <button
                     onClick={() => {
-                      const next = !showContextEggs;
-                      setShowContextEggs(next);
-                      localStorage.setItem("reader-show-context-eggs", String(next));
-                      analytics.layerToggle("context-eggs", next);
+                      const next = !showContextNuggets;
+                      setShowContextNuggets(next);
+                      localStorage.setItem("reader-show-context-nuggets", String(next));
+                      analytics.layerToggle("context-nuggets", next);
                     }}
                     style={{
                       display: "inline-flex",
@@ -1439,11 +1439,11 @@ export default function ScriptureReader() {
                       gap: "4px",
                       padding: "7px 12px",
                       borderRadius: "8px",
-                      border: `1px solid ${showContextEggs ? `${toggleAccent}50` : theme.border}`,
-                      background: showContextEggs
+                      border: `1px solid ${showContextNuggets ? `${toggleAccent}50` : theme.border}`,
+                      background: showContextNuggets
                         ? `${toggleAccent}18`
                         : lightMode ? "rgba(0,0,0,0.03)" : "rgba(255,255,255,0.04)",
-                      color: showContextEggs ? toggleAccent : theme.textMuted,
+                      color: showContextNuggets ? toggleAccent : theme.textMuted,
                       fontSize: "0.68rem",
                       fontWeight: 600,
                       cursor: "pointer",
@@ -1457,7 +1457,7 @@ export default function ScriptureReader() {
                     </svg>
                     Context
                     <span style={{ fontSize: "0.6rem", opacity: 0.7 }}>
-                      ({chapterEggs.length})
+                      ({chapterNuggets.length})
                     </span>
                   </button>
                 )}
@@ -1753,9 +1753,13 @@ export default function ScriptureReader() {
                             {/* Desktop: horizontal name label extending left — also clickable */}
                             {!isMobile && (() => {
                               const fullName = verseSpeakerDisplayName || verseSpeaker.speaker;
+                              // Split name from descriptor: comma ("Mary, sister of Martha") or parens ("Jesus Christ (Jehovah)")
                               const commaIdx = fullName.indexOf(",");
-                              const primaryName = commaIdx > 0 ? fullName.substring(0, commaIdx) : fullName;
-                              const descriptor = commaIdx > 0 ? fullName.substring(commaIdx + 1).trim() : null;
+                              const parenIdx = fullName.indexOf("(");
+                              const splitIdx = commaIdx > 0 ? commaIdx : (parenIdx > 0 ? parenIdx : -1);
+                              const primaryName = splitIdx > 0 ? fullName.substring(0, splitIdx).trim() : fullName;
+                              const descriptorRaw = splitIdx > 0 ? fullName.substring(splitIdx + (commaIdx > 0 ? 1 : 0)).trim() : null;
+                              const descriptor = descriptorRaw?.replace(/[()]/g, "").trim() || null;
                               return (
                                 <button
                                   onClick={() => openCharacterByName(verseSpeaker.speaker, verseSpeaker.speakerType)}
@@ -1776,7 +1780,7 @@ export default function ScriptureReader() {
                                   {descriptor && (
                                     <>
                                       <br />
-                                      <span style={{ fontWeight: 400, fontSize: "0.5rem", opacity: 0.7, textTransform: "none" }}>{descriptor}</span>
+                                      <span style={{ fontWeight: 400, fontSize: "0.52rem", opacity: 0.7, textTransform: "uppercase" }}>{descriptor}</span>
                                     </>
                                   )}
                                 </button>
@@ -1852,7 +1856,7 @@ export default function ScriptureReader() {
                     {renderVerseText(readingMode === "modern" && v.text_modern ? v.text_modern : v.text, v.verse)}
                   </span>
                   {/* Pills row — below verse text */}
-                  {(verseStartResources.length > 0 || (showContextEggs && chapterEggs.some((e) => e.verse === v.verse))) && (
+                  {(verseStartResources.length > 0 || (showContextNuggets && chapterNuggets.some((e) => e.verse === v.verse))) && (
                     <div style={{ display: "flex", flexWrap: "wrap", gap: "5px", marginTop: "4px", marginLeft: "2px" }}>
                       {/* Resource markers — one pill per resource type */}
                       {verseStartResources.length > 0 && (() => {
@@ -1878,17 +1882,17 @@ export default function ScriptureReader() {
                           />
                         ));
                       })()}
-                      {/* Context Egg marker (single pill per verse with count badge) */}
+                      {/* Context Nugget marker (single pill per verse with count badge) */}
                       {(() => {
-                        if (!showContextEggs) return null;
-                        const verseEggs = chapterEggs.filter((e) => e.verse === v.verse);
-                        if (verseEggs.length === 0) return null;
+                        if (!showContextNuggets) return null;
+                        const verseNuggets = chapterNuggets.filter((e) => e.verse === v.verse);
+                        if (verseNuggets.length === 0) return null;
                         return (
-                          <EggMarker
-                            key={`egg-v${v.verse}`}
-                            eggs={verseEggs}
+                          <NuggetMarker
+                            key={`nugget-v${v.verse}`}
+                            nuggets={verseNuggets}
                             lightMode={lightMode}
-                            onClick={() => { analytics.eggPillClick(verseEggs[0]?.id || "", selectedBookName || "", selectedChapter || 0, v.verse, verseEggs[0]?.category || ""); setActiveVerse(null); setActiveEggs(verseEggs); }}
+                            onClick={() => { analytics.nuggetPillClick(verseNuggets[0]?.id || "", selectedBookName || "", selectedChapter || 0, v.verse, verseNuggets[0]?.category || ""); setActiveVerse(null); setActiveNuggets(verseNuggets); }}
                           />
                         );
                       })()}
@@ -2217,13 +2221,13 @@ export default function ScriptureReader() {
           />
         )}
 
-        {/* Context Egg Popover */}
-        {activeEggs.length > 0 && (
-          <EggPopover
-            eggs={activeEggs}
+        {/* Context Nugget Popover */}
+        {activeNuggets.length > 0 && (
+          <NuggetPopover
+            nuggets={activeNuggets}
             lightMode={lightMode}
             isMobile={isMobile}
-            onClose={() => setActiveEggs([])}
+            onClose={() => setActiveNuggets([])}
           />
         )}
 

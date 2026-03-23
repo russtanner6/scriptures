@@ -1,16 +1,16 @@
-import type { ContextEgg } from "@/lib/types";
+import type { ContextNugget } from "@/lib/types";
 
-export default function EggMarker({
-  eggs,
+export default function NuggetMarker({
+  nuggets,
   lightMode,
   onClick,
 }: {
-  eggs: ContextEgg[];
+  nuggets: ContextNugget[];
   lightMode: boolean;
   onClick: () => void;
 }) {
   const color = lightMode ? "#B8860B" : "#F5A623";
-  const count = eggs.length;
+  const count = nuggets.length;
 
   return (
     <button
@@ -18,7 +18,7 @@ export default function EggMarker({
         e.stopPropagation();
         onClick();
       }}
-      title={count === 1 ? eggs[0].title : `${count} context eggs`}
+      title={count === 1 ? nuggets[0].title : `${count} nuggets`}
       style={{
         display: "inline-flex",
         alignItems: "center",
@@ -50,12 +50,12 @@ export default function EggMarker({
         e.currentTarget.style.transform = "scale(1)";
       }}
     >
-      {/* Egg on its side icon */}
-      <svg width="12" height="10" viewBox="0 0 14 10" fill="currentColor" opacity="0.85">
-        <ellipse cx="7" cy="5" rx="7" ry="4.5" fill="none" stroke="currentColor" strokeWidth="1.2" />
-        <ellipse cx="5.5" cy="5" rx="3" ry="3.2" fill="currentColor" opacity="0.15" />
+      {/* Gold nugget icon */}
+      <svg width="12" height="11" viewBox="0 0 14 12" fill="currentColor" opacity="0.85">
+        <path d="M3 11L0 5L3 1h8l3 4-3 6H3z" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round" />
+        <path d="M0 5h14M3 1l2 4-2 6M11 1l-2 4 2 6" fill="none" stroke="currentColor" strokeWidth="0.8" opacity="0.4" />
       </svg>
-      EGG
+      NUGGET
       {count > 1 && (
         <span
           style={{

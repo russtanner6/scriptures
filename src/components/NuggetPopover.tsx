@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import type { ContextEgg } from "@/lib/types";
+import type { ContextNugget } from "@/lib/types";
 import { useBackToClose } from "@/lib/useBackToClose";
 import { analytics } from "@/lib/analytics";
 
@@ -13,13 +13,13 @@ const CATEGORY_COLORS: Record<string, string> = {
   Restoration: "#06B6D4",
 };
 
-export default function EggPopover({
-  eggs,
+export default function NuggetPopover({
+  nuggets,
   lightMode,
   isMobile,
   onClose,
 }: {
-  eggs: ContextEgg[];
+  nuggets: ContextNugget[];
   lightMode: boolean;
   isMobile: boolean;
   onClose: () => void;
@@ -29,10 +29,10 @@ export default function EggPopover({
   useBackToClose(onClose);
 
   // Reset index when eggs change
-  useEffect(() => { setCurrentIndex(0); }, [eggs]);
+  useEffect(() => { setCurrentIndex(0); }, [nuggets]);
 
-  const egg = eggs[currentIndex];
-  const total = eggs.length;
+  const nugget = nuggets[currentIndex];
+  const total = nuggets.length;
 
   // Click outside to close
   useEffect(() => {
@@ -70,9 +70,9 @@ export default function EggPopover({
     return () => document.removeEventListener("keydown", handle);
   }, [onClose, total]);
 
-  if (!egg) return null;
+  if (!nugget) return null;
 
-  const catColor = CATEGORY_COLORS[egg.category] || "#888";
+  const catColor = CATEGORY_COLORS[nugget.category] || "#888";
 
   const parchment = {
     bg: lightMode ? "#f5f0e6" : "#2a2a35",
@@ -137,7 +137,7 @@ export default function EggPopover({
             : "0 8px 32px rgba(0,0,0,0.5)",
           padding: "20px 22px",
           overflowY: "auto",
-          animation: isMobile ? "slideUp 0.25s ease-out" : "eggPopIn 0.2s ease-out",
+          animation: isMobile ? "slideUp 0.25s ease-out" : "nuggetPopIn 0.2s ease-out",
         }}
       >
         {/* Close button */}
@@ -172,9 +172,9 @@ export default function EggPopover({
             }}
           >
             <button
-              onClick={() => { analytics.eggNavigate("prev"); setCurrentIndex((i) => (i - 1 + total) % total); }}
+              onClick={() => { analytics.nuggetNavigate("prev"); setCurrentIndex((i) => (i - 1 + total) % total); }}
               style={navBtnStyle}
-              aria-label="Previous egg"
+              aria-label="Previous nugget"
             >
               ‹ Prev
             </button>
@@ -189,9 +189,9 @@ export default function EggPopover({
               {currentIndex + 1} of {total}
             </span>
             <button
-              onClick={() => { analytics.eggNavigate("next"); setCurrentIndex((i) => (i + 1) % total); }}
+              onClick={() => { analytics.nuggetNavigate("next"); setCurrentIndex((i) => (i + 1) % total); }}
               style={navBtnStyle}
-              aria-label="Next egg"
+              aria-label="Next nugget"
             >
               Next ›
             </button>
@@ -214,7 +214,7 @@ export default function EggPopover({
             marginBottom: "10px",
           }}
         >
-          {egg.category}
+          {nugget.category}
         </span>
 
         {/* Title */}
@@ -228,7 +228,7 @@ export default function EggPopover({
             paddingRight: "20px",
           }}
         >
-          {egg.title}
+          {nugget.title}
         </h3>
 
         {/* Insight */}
@@ -240,7 +240,7 @@ export default function EggPopover({
             margin: "0 0 14px",
           }}
         >
-          {egg.insight}
+          {nugget.insight}
         </p>
 
         {/* Source — linked to Google search */}
@@ -254,10 +254,10 @@ export default function EggPopover({
           }}
         >
           <a
-            href={`https://www.google.com/search?q=${encodeURIComponent(egg.source)}`}
+            href={`https://www.google.com/search?q=${encodeURIComponent(nugget.source)}`}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => analytics.eggSourceClick(egg.id || "", egg.source)}
+            onClick={() => analytics.nuggetSourceClick(nugget.id || "", nugget.source)}
             style={{
               color: lightMode ? "#5a5040" : "#b8b0a4",
               textDecoration: "underline",
@@ -268,7 +268,7 @@ export default function EggPopover({
             onMouseEnter={(e) => { e.currentTarget.style.color = "#2563EB"; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = lightMode ? "#5a5040" : "#b8b0a4"; }}
           >
-            {egg.source}
+            {nugget.source}
             {/* External link icon */}
             <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: "4px", verticalAlign: "middle", opacity: 0.7 }}>
               <path d="M5 1H1v10h10V7" />

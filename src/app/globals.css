@@ -255,7 +255,7 @@ body::before {
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes eggPopIn {
+@keyframes nuggetPopIn {
   from { opacity: 0; transform: translate(-50%, -50%) scale(0.95); }
   to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 }
@@ -473,8 +473,8 @@ footer a:hover {
   }
 }
 
-/* ── Context Egg Glint Animation ── */
-@keyframes eggGlint {
+/* ── Context Nugget Glint Animation ── */
+@keyframes nuggetGlint {
   0%, 7% {
     background-position: -100% 0;
   }
@@ -486,27 +486,27 @@ footer a:hover {
   }
 }
 
-.egg-keyword-glint {
+.nugget-keyword-glint {
   background-image: linear-gradient(
     120deg,
     transparent 0%,
     transparent 30%,
-    var(--egg-glint-color, rgba(218, 180, 60, 0.25)) 50%,
+    var(--nugget-glint-color, rgba(218, 180, 60, 0.25)) 50%,
     transparent 70%,
     transparent 100%
   );
   background-size: 200% 100%;
   background-position: 200% 0;
-  animation: eggGlint 30s ease-in-out infinite;
-  animation-delay: var(--egg-delay, 0s);
+  animation: nuggetGlint 30s ease-in-out infinite;
+  animation-delay: var(--nugget-delay, 0s);
   border-radius: 2px;
   cursor: pointer;
   padding: 1px 2px;
   transition: background-color 0.2s;
 }
 
-.egg-keyword-glint:hover {
-  background-color: var(--egg-hover-color, rgba(218, 180, 60, 0.15));
+.nugget-keyword-glint:hover {
+  background-color: var(--nugget-hover-color, rgba(218, 180, 60, 0.15));
 }
 
 /* Dark mode glint colors — applied via inline style vars in the component */
