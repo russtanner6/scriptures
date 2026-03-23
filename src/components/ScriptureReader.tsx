@@ -239,15 +239,22 @@ export default function ScriptureReader() {
     if (char) setSelectedCharacter(char);
   }, [allCharacters, theologyMode, selectedVolume]);
 
-  // Helper: find character portrait URL by speaker name
-  const getCharacterPortrait = useCallback((speakerName: string): string | null => {
+  // Helper: find character portrait URL by speaker name (theology-mode aware)
+  const getCharacterPortrait = useCallback((speakerName: string, speakerType?: string): string | null => {
     const nameLower = speakerName.toLowerCase();
+    // For divine speakers in OT with LDS theology, "God"/"LORD" = Jesus Christ
+    const isDivineOT = speakerType === "divine" && theologyMode === "lds" &&
+      (selectedVolume === "OT" || !selectedVolume);
+    if (isDivineOT && (nameLower === "god" || nameLower === "lord" || nameLower === "the lord" || nameLower === "the lord god")) {
+      const jesus = allCharacters.find((c) => c.name.toLowerCase() === "jesus christ");
+      return jesus?.portraitUrl || null;
+    }
     const char = allCharacters.find(
       (c) => c.name.toLowerCase() === nameLower ||
              c.aliases.some((a) => a.toLowerCase() === nameLower)
     );
     return char?.portraitUrl || null;
-  }, [allCharacters]);
+  }, [allCharacters, theologyMode, selectedVolume]);
 
   // Helper: check if a speaker has a dedicated character profile
   const speakerHasProfile = useCallback((speakerName: string, speakerType?: string): boolean => {
@@ -1699,7 +1706,7 @@ export default function ScriptureReader() {
                       }}
                     >
                       {isFirstOfSpeakerSpan && verseSpeaker && (() => {
-                        const portrait = getCharacterPortrait(verseSpeaker.speaker);
+                        const portrait = getCharacterPortrait(verseSpeaker.speaker, verseSpeaker.speakerType);
                         const avatarSize = isMobile ? 26 : 28;
                         return (
                           <div style={{
