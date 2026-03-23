@@ -55,28 +55,7 @@ export default function NuggetMarker({
         <path d="M3 11L0 5L3 1h8l3 4-3 6H3z" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round" />
         <path d="M0 5h14M3 1l2 4-2 6M11 1l-2 4 2 6" fill="none" stroke="currentColor" strokeWidth="0.8" opacity="0.4" />
       </svg>
-      NUGGET
-      {count > 1 && (
-        <span
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            justifyContent: "center",
-            minWidth: "16px",
-            height: "16px",
-            borderRadius: "8px",
-            background: color,
-            color: lightMode ? "#fff" : "#1a1a21",
-            fontSize: "0.55rem",
-            fontWeight: 700,
-            lineHeight: 1,
-            padding: "0 4px",
-            marginLeft: "1px",
-          }}
-        >
-          {count}
-        </span>
-      )}
+      {count > 1 ? `NUGGETS (${count})` : "NUGGET"}
     </button>
   );
 }
