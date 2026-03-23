@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef, useMemo } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams, usePathname } from "next/navigation";
+import { VOLUME_SLUG_TO_ABBREV, VOLUME_ABBREV_TO_SLUG, bookNameToSlug, slugToBookSearch, scriptureUrl } from "@/lib/scripture-slugs";
 import type { Volume, Resource, SpeakerAttribution, SpeakerType, ScriptureCharacter, ScriptureLocation } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
 import { getVerseUrl } from "@/lib/scripture-urls";
@@ -35,6 +36,7 @@ export default function ScriptureReader() {
   const { isVolumeVisible, displaySpeakerName } = usePreferencesContext();
   const router = useRouter();
   const searchParams = useSearchParams();
+  const pathname = usePathname();
   const isMobile = useIsMobile();
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
@@ -358,31 +360,96 @@ export default function ScriptureReader() {
         const vols: Volume[] = data.volumes.filter((v: Volume) => isVolumeVisible(v.abbrev));
         setVolumes(vols);
 
-        // Deep link: ?bookId=X&chapter=Y&verse=Z
+        // Parse URL: try new path format first, then fall back to query params
+        // Path format: /scriptures/old-testament/genesis/1
+        const pathParts = pathname.replace(/^\/scriptures\/?/, "").split("/").filter(Boolean);
+        const pathVolSlug = pathParts[0] || null;
+        const pathBookSlug = pathParts[1] || null;
+        const pathChapter = pathParts[2] ? Number(pathParts[2]) : null;
+        const urlVerse = searchParams.get("verse");
+
+        // Resolve from path slugs
+        const pathVolAbbrev = pathVolSlug ? VOLUME_SLUG_TO_ABBREV[pathVolSlug] : null;
+
+        // Legacy query param support
         const urlBookId = searchParams.get("bookId");
         const urlChapter = searchParams.get("chapter");
-        const urlVerse = searchParams.get("verse");
-        // Deep link: ?volume=XX (show book list for that volume)
         const urlVolume = searchParams.get("volume");
-        if (urlVolume && !searchParams.get("bookId")) {
-          const vol = vols.find((v) => v.abbrev === urlVolume);
+
+        // Path-based: /scriptures/old-testament (volume only)
+        if (pathVolAbbrev && !pathBookSlug) {
+          const vol = vols.find((v) => v.abbrev === pathVolAbbrev);
           if (vol) setSelectedVolume(vol.abbrev);
         }
-        // Deep link: ?volume=XX&bookId=YY (show chapter grid for that book)
-        if (urlVolume && searchParams.get("bookId") && !searchParams.get("chapter")) {
-          const bid = Number(searchParams.get("bookId"));
-          for (const vol of vols) {
-            const book = vol.books.find((b) => b.id === bid);
+        // Path-based: /scriptures/old-testament/genesis (book, no chapter)
+        if (pathVolAbbrev && pathBookSlug && !pathChapter) {
+          const vol = vols.find((v) => v.abbrev === pathVolAbbrev);
+          if (vol) {
+            const searchName = slugToBookSearch(pathBookSlug);
+            const book = vol.books.find((b) => b.name.toLowerCase() === searchName || bookNameToSlug(b.name) === pathBookSlug);
             if (book) {
               setSelectedVolume(vol.abbrev);
-              setSelectedBookId(bid);
+              setSelectedBookId(book.id);
               setSelectedBookName(book.name);
               setChapterCount(book.chapterCount);
-              break;
             }
           }
         }
-        // Deep link: ?bookId=X&chapter=Y&verse=Z (full reading view)
+        // Path-based: /scriptures/old-testament/genesis/1 (full reading)
+        // Convert to legacy query params format for consistent loading
+        if (pathVolAbbrev && pathBookSlug && pathChapter) {
+          const vol = vols.find((v) => v.abbrev === pathVolAbbrev);
+          if (vol) {
+            const searchName = slugToBookSearch(pathBookSlug);
+            const book = vol.books.find((b) => b.name.toLowerCase() === searchName || bookNameToSlug(b.name) === pathBookSlug);
+            if (book) {
+              // Use the same loading logic as legacy params below
+              const bid = book.id;
+              const ch = Math.max(1, Math.min(pathChapter, book.chapterCount));
+              setSelectedVolume(vol.abbrev);
+              setSelectedBookId(bid);
+              setSelectedBookName(book.name);
+              setSelectedChapter(ch);
+              setChapterCount(book.chapterCount);
+              const params = new URLSearchParams({ bookId: String(bid), chapter: String(ch) });
+              fetch(`/api/chapter?${params}`)
+                .then((r) => r.json())
+                .then((chData) => {
+                  setVerses(chData.verses || []);
+                  setChapterNarration(chData.narration || null);
+                  const annotations = getAnnotationsForChapter(bid, ch);
+                  setAnnotatedVerses(new Set(annotations.map((a: { verse: number }) => a.verse)));
+                  const bookNameForApi = chData.bookName || book.name;
+                  fetch(`/api/resources?book=${encodeURIComponent(bookNameForApi)}&chapter=${ch}`)
+                    .then((r) => r.json())
+                    .then((resData) => setChapterResources(resData.resources || []))
+                    .catch(() => {});
+                  fetch(`/api/context-nuggets?book=${encodeURIComponent(bookNameForApi)}&chapter=${ch}`)
+                    .then((r) => r.json())
+                    .then((nuggetData) => {
+                      const filtered = (nuggetData.nuggets || []) as ContextNugget[];
+                      setChapterNuggets(filtered);
+                    })
+                    .catch(() => {});
+                  fetch(`/api/speakers?book=${encodeURIComponent(bookNameForApi)}&chapter=${ch}`)
+                    .then((r) => r.json())
+                    .then((spkData) => setChapterSpeakers(spkData.speakers || []))
+                    .catch(() => {});
+                });
+              return; // Skip legacy param handling
+            }
+          }
+        }
+        // Legacy: ?volume=XX (show book list)
+        if (!pathVolSlug && urlVolume && !urlBookId) {
+          const vol = vols.find((v) => v.abbrev === urlVolume);
+          if (vol) {
+            setSelectedVolume(vol.abbrev);
+            // Redirect to new URL format
+            window.history.replaceState({}, "", scriptureUrl(vol.abbrev));
+          }
+        }
+        // Legacy: ?bookId=X&chapter=Y (full reading) — redirect to new format
         if (urlBookId && urlChapter) {
           const bid = Number(urlBookId);
           let ch = Number(urlChapter);
@@ -395,6 +462,8 @@ export default function ScriptureReader() {
               setSelectedBookName(book.name);
               setSelectedChapter(ch);
               setChapterCount(book.chapterCount);
+              // Redirect old URL to new SEO-friendly format
+              window.history.replaceState({}, "", scriptureUrl(vol.abbrev, book.name, ch));
               const params = new URLSearchParams({ bookId: String(bid), chapter: String(ch) });
               fetch(`/api/chapter?${params}`)
                 .then((r) => r.json())
@@ -560,7 +629,7 @@ export default function ScriptureReader() {
       setChapterCount(bookChapterCount);
       loadChapter(bookId, chapter);
       // Update URL for bookmarking/sharing (without full navigation)
-      const url = `/scriptures?bookId=${bookId}&chapter=${chapter}${highlightWord ? `&highlight=${encodeURIComponent(highlightWord)}` : ""}`;
+      const url = `${scriptureUrl(volAbbrev, bookName, chapter)}${highlightWord ? `?highlight=${encodeURIComponent(highlightWord)}` : ""}`;
       window.history.replaceState({}, "", url);
       // Scroll to top of reading container
       if (scrollContainerRef.current) {
@@ -1173,7 +1242,7 @@ export default function ScriptureReader() {
               onClick={() => {
                 setSelectedChapter(null);
                 setVerses([]);
-                window.history.replaceState({}, "", `/scriptures?volume=${selectedVolume}&bookId=${selectedBookId}`);
+                window.history.replaceState({}, "", scriptureUrl(selectedVolume, selectedBookName || ""));
               }}
               style={{
                 background: "none",
@@ -2327,7 +2396,7 @@ export default function ScriptureReader() {
           setSelectedBookId(null);
           setSelectedBookName(null);
           setChapterCount(0);
-          window.history.replaceState({}, "", `/scriptures?volume=${selectedVolume}`);
+          window.history.replaceState({}, "", scriptureUrl(selectedVolume));
         }}
         style={{ background: "none", border: "none", color: "#f0f0f0", cursor: "pointer", padding: "6px 4px", display: "flex", alignItems: "center", gap: "4px", fontFamily: "inherit", fontSize: "0.88rem", fontWeight: 600, whiteSpace: "nowrap" }}
       >
@@ -2404,6 +2473,7 @@ export default function ScriptureReader() {
     return scripturePageWrapper(
       <button
         onClick={() => { setSelectedVolume(null); window.history.replaceState({}, "", "/scriptures"); }}
+
         style={{ background: "none", border: "none", color: "#f0f0f0", cursor: "pointer", padding: "6px 4px", display: "flex", alignItems: "center", gap: "4px", fontFamily: "inherit", fontSize: "0.88rem", fontWeight: 600, whiteSpace: "nowrap" }}
       >
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
@@ -2444,7 +2514,7 @@ export default function ScriptureReader() {
                   setSelectedBookId(book.id);
                   setSelectedBookName(book.name);
                   setChapterCount(book.chapterCount);
-                  window.history.replaceState({}, "", `/scriptures?volume=${selectedVolume}&bookId=${book.id}`);
+                  window.history.replaceState({}, "", scriptureUrl(selectedVolume, book.name));
                 }
               }}
               style={{
@@ -2522,7 +2592,8 @@ export default function ScriptureReader() {
   }
 
   // If URL has deep-link params but data hasn't loaded yet, show nothing (prevents volume picker flash)
-  if (searchParams.get("bookId") && searchParams.get("chapter")) {
+  const pathSegments = pathname.replace(/^\/scriptures\/?/, "").split("/").filter(Boolean);
+  if ((searchParams.get("bookId") && searchParams.get("chapter")) || pathSegments.length >= 3) {
     return <div style={{ minHeight: "100vh" }} />;
   }
 
@@ -2560,7 +2631,7 @@ export default function ScriptureReader() {
           return (
             <button
               key={vol.id}
-              onClick={() => { setSelectedVolume(vol.abbrev); window.history.replaceState({}, "", `/scriptures?volume=${vol.abbrev}`); }}
+              onClick={() => { setSelectedVolume(vol.abbrev); window.history.replaceState({}, "", scriptureUrl(vol.abbrev)); }}
               style={{
                 background: "var(--surface)",
                 border: "1px solid var(--border)",
