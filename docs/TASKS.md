@@ -35,6 +35,8 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 
 ### LOW PRIORITY / FUTURE
 
+- [ ] **Apocrypha as a "Library" collection** — Add the KJV Apocrypha (~14-18 books: Tobit, Judith, Wisdom of Solomon, Sirach, Baruch, 1-2 Maccabees, etc.) as a separate non-canonical collection. NOT a 6th volume — a separate "Library" or "Study Resources" section. Uses the same engine (reader, search, heatmap, narrative arc) but with distinct visual treatment (different accent color, "non-canonical" banner). Opt-in — doesn't appear in default searches/charts. Intro page referencing D&C 91 ("many things contained therein that are true"). KJV Apocrypha text is public domain. Separate SQLite table or DB file, same verse schema. *(Requested: Session 15)*
+
 - [ ] **Reader UI polish** — Chapter narrations, resource pill simplification, bottom bar controls, mobile scripture panel, chart horizontal scroll *(ROADMAP.md)*
 - [ ] **More character portraits** — Only ~40 of 757 characters have portraits *(ROADMAP.md)*
 - [ ] **PWA conversion** — Progressive web app with manifest, service worker, offline support *(ROADMAP.md)*

@@ -1045,7 +1045,7 @@ export default function ScriptureReader() {
             justifyContent: "space-between",
           }}
         >
-          {/* Tree logo — centered, links to home */}
+          {/* Center: chapter/section selector (moved from bottom bar) */}
           {!isMobile && (
             <div style={{
               position: "absolute",
@@ -1055,29 +1055,44 @@ export default function ScriptureReader() {
               justifyContent: "center",
               pointerEvents: "none",
             }}>
-              <a
-                href="/"
-                title="Home"
-                style={{
-                  background: "none",
-                  border: "none",
-                  cursor: "pointer",
-                  padding: "4px",
-                  opacity: 0.6,
-                  transition: "opacity 0.15s",
-                  display: "flex",
-                  alignItems: "center",
-                  pointerEvents: "auto",
-                  textDecoration: "none",
-                }}
-                onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.6"; }}
-              >
-                <img src="/tree-logo.svg" alt="Home" style={{ height: "22px", width: "auto" }} />
-              </a>
+              <div style={{ position: "relative", display: "flex", alignItems: "center", pointerEvents: "auto" }}>
+                <select
+                  value={selectedChapter ?? 1}
+                  onChange={(e) => {
+                    const ch = Number(e.target.value);
+                    if (selectedVolume && selectedBookId && selectedBookName) {
+                      goToChapter(selectedVolume, selectedBookId, selectedBookName, ch, chapterCount);
+                    }
+                  }}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    color: bar.text,
+                    padding: "6px 22px 6px 6px",
+                    fontSize: "0.85rem",
+                    fontWeight: 600,
+                    fontFamily: "inherit",
+                    cursor: "pointer",
+                    outline: "none",
+                    WebkitAppearance: "none",
+                    appearance: "none",
+                    textAlign: "center",
+                  }}
+                >
+                  {Array.from({ length: chapterCount }, (_, i) => i + 1).map((ch) => (
+                    <option key={ch} value={ch} style={{ background: "#1a1a22", color: "#f0f0f0" }}>
+                      {isDC ? `Section ${ch}` : `Chapter ${ch}`}
+                    </option>
+                  ))}
+                </select>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke={bar.textMuted} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ position: "absolute", right: "4px", pointerEvents: "none" }}>
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </div>
             </div>
           )}
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", minWidth: 0, flex: 1, overflow: "hidden" }}>
+          {/* Left: back button + book name (clicking goes back to book list) */}
+          <div style={{ display: "flex", alignItems: "center", gap: "8px", minWidth: 0, flex: 1, overflow: "hidden" }}>
             <button
               onClick={() => {
                 setSelectedChapter(null);
@@ -1089,42 +1104,39 @@ export default function ScriptureReader() {
                 border: "none",
                 color: bar.textSecondary,
                 cursor: "pointer",
-                padding: "6px 8px",
+                padding: "6px 4px",
                 display: "flex",
                 alignItems: "center",
+                gap: "4px",
+                whiteSpace: "nowrap",
               }}
               title="Back to book list"
             >
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="15 18 9 12 15 6" />
               </svg>
-            </button>
-            <div style={{ minWidth: 0 }}>
-              <h1
-                style={{
-                  fontSize: isMobile ? "0.85rem" : "0.95rem",
-                  fontWeight: 700,
-                  color: bar.text,
-                  whiteSpace: "nowrap",
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                  margin: 0,
-                }}
-              >
+              <span style={{
+                fontSize: isMobile ? "0.82rem" : "0.88rem",
+                fontWeight: 600,
+                color: bar.text,
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+              }}>
                 {selectedBookName}
-              </h1>
-              <div
-                style={{
-                  fontSize: "0.68rem",
-                  fontWeight: 600,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.1em",
-                  color: bar.textMuted,
-                }}
-              >
+              </span>
+            </button>
+            {/* Mobile: show chapter label next to book name */}
+            {isMobile && (
+              <div style={{
+                fontSize: "0.65rem",
+                fontWeight: 600,
+                textTransform: "uppercase",
+                letterSpacing: "0.1em",
+                color: bar.textMuted,
+              }}>
                 {chapterLabel}
               </div>
-            </div>
+            )}
           </div>
 
           <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "2px" : "6px" }}>
@@ -2087,40 +2099,49 @@ export default function ScriptureReader() {
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="miter"><polyline points="15 18 9 12 15 6" /></svg>
             </button>
 
-            {/* Center: chapter selector (both mobile + desktop) */}
+            {/* Center: chapter label (selector moved to top bar on desktop) */}
             <div style={{ position: "relative", display: "flex", alignItems: "center" }}>
-              <select
-                value={selectedChapter}
-                onChange={(e) => {
-                  const ch = Number(e.target.value);
-                  goToChapter(selectedVolume, selectedBookId, selectedBookName || "", ch, chapterCount);
-                  }}
-                  style={{
-                    background: "none",
-                    border: "none",
-                    color: bar.text,
-                    padding: "6px 20px 6px 4px",
-                    fontSize: "0.85rem",
-                    fontWeight: 600,
-                    fontFamily: "inherit",
-                    cursor: "pointer",
-                    outline: "none",
-                    WebkitAppearance: "none",
-                    appearance: "none",
-                    textAlign: "center",
-                  }}
-                >
-                  {Array.from({ length: chapterCount }, (_, i) => i + 1).map((ch) => (
-                    <option key={ch} value={ch} style={{ background: "#1a1a22", color: "#f0f0f0" }}>
-                      {isDC ? `Section ${ch}` : `Chapter ${ch}`}
-                    </option>
-                  ))}
-                </select>
-                {/* Dropdown chevron indicator */}
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke={bar.textMuted} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ position: "absolute", right: "2px", pointerEvents: "none" }}>
-                  <polyline points="6 9 12 15 18 9" />
-                </svg>
-              </div>
+              {isMobile ? (
+                <>
+                  <select
+                    value={selectedChapter ?? 1}
+                    onChange={(e) => {
+                      const ch = Number(e.target.value);
+                      if (selectedVolume && selectedBookId && selectedBookName) {
+                        goToChapter(selectedVolume, selectedBookId, selectedBookName, ch, chapterCount);
+                      }
+                    }}
+                    style={{
+                      background: "none",
+                      border: "none",
+                      color: bar.text,
+                      padding: "6px 20px 6px 4px",
+                      fontSize: "0.85rem",
+                      fontWeight: 600,
+                      fontFamily: "inherit",
+                      cursor: "pointer",
+                      outline: "none",
+                      WebkitAppearance: "none",
+                      appearance: "none",
+                      textAlign: "center",
+                    }}
+                  >
+                    {Array.from({ length: chapterCount }, (_, i) => i + 1).map((ch) => (
+                      <option key={ch} value={ch} style={{ background: "#1a1a22", color: "#f0f0f0" }}>
+                        {isDC ? `Section ${ch}` : `Chapter ${ch}`}
+                      </option>
+                    ))}
+                  </select>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke={bar.textMuted} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ position: "absolute", right: "2px", pointerEvents: "none" }}>
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </>
+              ) : (
+                <span style={{ fontSize: "0.85rem", fontWeight: 600, color: bar.textMuted }}>
+                  {isDC ? `Section ${selectedChapter}` : `Chapter ${selectedChapter}`}
+                </span>
+              )}
+            </div>
 
             {/* Next */}
             <button
