@@ -87,6 +87,67 @@ export default function ScriptureReader() {
   // Annotations — track which verses in current chapter have notes
   const [annotatedVerses, setAnnotatedVerses] = useState<Set<number>>(new Set());
 
+  // Verse multi-select
+  const [selectedVerses, setSelectedVerses] = useState<Set<number>>(new Set());
+  const [selectionMode, setSelectionMode] = useState(false);
+  const longPressTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Clear selection when chapter changes
+  useEffect(() => {
+    setSelectedVerses(new Set());
+    setSelectionMode(false);
+  }, [selectedChapter, selectedBookId]);
+
+  const toggleVerseSelection = useCallback((verseNum: number) => {
+    setSelectedVerses((prev) => {
+      const next = new Set(prev);
+      if (next.has(verseNum)) {
+        next.delete(verseNum);
+        if (next.size === 0) setSelectionMode(false);
+      } else {
+        next.add(verseNum);
+      }
+      return next;
+    });
+    if (!selectionMode) setSelectionMode(true);
+  }, [selectionMode]);
+
+  const clearSelection = useCallback(() => {
+    setSelectedVerses(new Set());
+    setSelectionMode(false);
+  }, []);
+
+  const copySelectedVerses = useCallback(() => {
+    const sorted = [...selectedVerses].sort((a, b) => a - b);
+    const texts = sorted.map((vn) => {
+      const v = verses.find((vv) => vv.verse === vn);
+      return v ? `${vn} ${v.text}` : "";
+    }).filter(Boolean);
+    const header = `${selectedBookName} ${selectedChapter}`;
+    const full = `${header}\n${texts.join("\n")}`;
+    navigator.clipboard.writeText(full).catch(() => {});
+  }, [selectedVerses, verses, selectedBookName, selectedChapter]);
+
+  const bookmarkSelectedVerses = useCallback(() => {
+    const sorted = [...selectedVerses].sort((a, b) => a - b);
+    for (const vn of sorted) {
+      const v = verses.find((vv) => vv.verse === vn);
+      if (v && selectedBookId && selectedChapter && selectedBookName && selectedVolume) {
+        const { addBookmark } = require("@/lib/bookmarks");
+        addBookmark({
+          bookId: selectedBookId,
+          chapter: selectedChapter,
+          verse: vn,
+          bookName: selectedBookName,
+          volumeAbbrev: selectedVolume,
+          text: v.text.slice(0, 100),
+          createdAt: new Date().toISOString(),
+        });
+      }
+    }
+    clearSelection();
+  }, [selectedVerses, verses, selectedBookId, selectedChapter, selectedBookName, selectedVolume, clearSelection]);
+
   // Resource layer
   const [showResources, setShowResources] = useState(true);
   const [chapterResources, setChapterResources] = useState<Resource[]>([]);
@@ -1959,6 +2020,7 @@ export default function ScriptureReader() {
               const speakerSpanLength = verseSpeaker
                 ? verseSpeaker.verseEnd - verseSpeaker.verseStart + 1
                 : 0;
+              const isSelected = selectedVerses.has(v.verse);
               return (
                 <div
                   key={v.verse}
@@ -1969,6 +2031,9 @@ export default function ScriptureReader() {
                     position: "relative",
                     display: "flex",
                     alignItems: "stretch",
+                    background: isSelected ? `${volColor}12` : undefined,
+                    borderRadius: isSelected ? "6px" : undefined,
+                    transition: "background 0.15s ease",
                   }}
                 >
                   {/* Speaker label — horizontal on desktop, circle-only on mobile */}
@@ -2104,13 +2169,63 @@ export default function ScriptureReader() {
                     }}
                   >
                   <span
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      toggleVerseSelection(v.verse);
+                    }}
+                    onTouchStart={() => {
+                      if (!selectionMode) {
+                        longPressTimerRef.current = setTimeout(() => {
+                          toggleVerseSelection(v.verse);
+                        }, 500);
+                      }
+                    }}
+                    onTouchEnd={() => {
+                      if (longPressTimerRef.current) {
+                        clearTimeout(longPressTimerRef.current);
+                        longPressTimerRef.current = null;
+                      }
+                    }}
+                    onTouchMove={() => {
+                      if (longPressTimerRef.current) {
+                        clearTimeout(longPressTimerRef.current);
+                        longPressTimerRef.current = null;
+                      }
+                    }}
                     style={{
                       fontSize: "0.82rem",
                       fontWeight: 700,
-                      color: theme.verseNum,
+                      color: selectedVerses.has(v.verse) ? volColor : theme.verseNum,
                       marginRight: "6px",
+                      cursor: "pointer",
+                      userSelect: "none",
+                      WebkitUserSelect: "none",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "3px",
                     }}
+                    title={selectionMode ? "Click to select/deselect" : "Click to select verse"}
                   >
+                    {selectionMode ? (
+                      <span style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        width: "14px",
+                        height: "14px",
+                        borderRadius: "3px",
+                        border: selectedVerses.has(v.verse) ? `2px solid ${volColor}` : `2px solid ${lightMode ? "rgba(0,0,0,0.25)" : "rgba(255,255,255,0.25)"}`,
+                        background: selectedVerses.has(v.verse) ? volColor : "transparent",
+                        flexShrink: 0,
+                        transition: "all 0.15s",
+                      }}>
+                        {selectedVerses.has(v.verse) && (
+                          <svg width="8" height="8" viewBox="0 0 10 10" fill="none">
+                            <path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                          </svg>
+                        )}
+                      </span>
+                    ) : null}
                     {v.verse}
                   </span>
                   {annotatedVerses.has(v.verse) && (
@@ -2483,6 +2598,86 @@ export default function ScriptureReader() {
               }
             }}
           />
+        )}
+
+        {/* Verse Selection Toolbar */}
+        {selectionMode && selectedVerses.size > 0 && (
+          <div
+            style={{
+              position: "fixed",
+              bottom: isMobile ? "60px" : "24px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
+              padding: "8px 16px",
+              borderRadius: "12px",
+              background: lightMode ? "rgba(255,255,255,0.95)" : "rgba(30,30,38,0.95)",
+              backdropFilter: "blur(12px)",
+              WebkitBackdropFilter: "blur(12px)",
+              border: `1px solid ${lightMode ? "rgba(0,0,0,0.1)" : "rgba(255,255,255,0.12)"}`,
+              boxShadow: "0 4px 20px rgba(0,0,0,0.3)",
+              zIndex: 300,
+              animation: "fadeIn 0.2s ease",
+            }}
+          >
+            <span style={{
+              fontSize: "0.78rem",
+              fontWeight: 600,
+              color: volColor,
+              marginRight: "4px",
+            }}>
+              {selectedVerses.size} verse{selectedVerses.size !== 1 ? "s" : ""}
+            </span>
+            <button
+              onClick={copySelectedVerses}
+              style={{
+                background: `${volColor}15`,
+                border: `1px solid ${volColor}40`,
+                borderRadius: "8px",
+                padding: "6px 12px",
+                fontSize: "0.75rem",
+                fontWeight: 600,
+                color: volColor,
+                cursor: "pointer",
+                fontFamily: "inherit",
+              }}
+            >
+              Copy
+            </button>
+            <button
+              onClick={bookmarkSelectedVerses}
+              style={{
+                background: `${volColor}15`,
+                border: `1px solid ${volColor}40`,
+                borderRadius: "8px",
+                padding: "6px 12px",
+                fontSize: "0.75rem",
+                fontWeight: 600,
+                color: volColor,
+                cursor: "pointer",
+                fontFamily: "inherit",
+              }}
+            >
+              Bookmark
+            </button>
+            <button
+              onClick={clearSelection}
+              style={{
+                background: "none",
+                border: "none",
+                padding: "6px 8px",
+                fontSize: "0.82rem",
+                color: lightMode ? "rgba(0,0,0,0.5)" : "rgba(255,255,255,0.5)",
+                cursor: "pointer",
+                fontFamily: "inherit",
+              }}
+              title="Clear selection"
+            >
+              ✕
+            </button>
+          </div>
         )}
 
         {/* Context Nugget Popover */}
