@@ -1317,10 +1317,22 @@ export default function ScriptureReader() {
           <div style={{ display: "flex", alignItems: "center", gap: "8px", minWidth: 0, flex: 1, overflow: "hidden" }}>
             <button
               onClick={() => {
-                setSelectedChapter(null);
-                setVerses([]);
-                if (selectedVolume && selectedBookName) {
-                  window.history.pushState({}, "", scriptureUrl(selectedVolume, selectedBookName));
+                // For single-chapter books, skip the chapter grid and go back to book list
+                if (chapterCount <= 1) {
+                  setSelectedChapter(null);
+                  setSelectedBookId(null);
+                  setSelectedBookName(null);
+                  setChapterCount(0);
+                  setVerses([]);
+                  if (selectedVolume) {
+                    window.history.pushState({}, "", scriptureUrl(selectedVolume));
+                  }
+                } else {
+                  setSelectedChapter(null);
+                  setVerses([]);
+                  if (selectedVolume && selectedBookName) {
+                    window.history.pushState({}, "", scriptureUrl(selectedVolume, selectedBookName));
+                  }
                 }
               }}
               style={{
@@ -1334,7 +1346,7 @@ export default function ScriptureReader() {
                 gap: "4px",
                 whiteSpace: "nowrap",
               }}
-              title="Back to chapter list"
+              title={chapterCount <= 1 ? "Back to book list" : "Back to chapter list"}
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="15 18 9 12 15 6" />
@@ -1346,7 +1358,7 @@ export default function ScriptureReader() {
                 overflow: "hidden",
                 textOverflow: "ellipsis",
               }}>
-                {selectedBookName}
+                {chapterCount <= 1 ? (volumes.find(v => v.abbrev === selectedVolume)?.name || selectedBookName) : selectedBookName}
               </span>
             </button>
             {/* Mobile: show chapter label next to book name */}
@@ -2471,11 +2483,35 @@ export default function ScriptureReader() {
 
     return scripturePageWrapper(
       <button
-        onClick={() => window.history.back()}
+        onClick={() => {
+          const vol = volumes.find((v) => v.abbrev === selectedVolume);
+          const isSingleBookVolume = vol && vol.books.length === 1;
+          if (isSingleBookVolume) {
+            // Single-book volume (D&C): go straight back to volume picker (skip useless 1-item book list)
+            setSelectedVolume(null);
+            setSelectedBookId(null);
+            setSelectedBookName(null);
+            setSelectedChapter(null);
+            setChapterCount(0);
+            setVerses([]);
+            window.history.pushState({}, "", "/scriptures");
+          } else {
+            // Multi-book volume: go back to book list
+            setSelectedBookId(null);
+            setSelectedBookName(null);
+            setSelectedChapter(null);
+            setChapterCount(0);
+            setVerses([]);
+            window.history.pushState({}, "", scriptureUrl(selectedVolume));
+          }
+        }}
         style={{ background: "none", border: "none", color: "#f0f0f0", cursor: "pointer", padding: "6px 4px", display: "flex", alignItems: "center", gap: "4px", fontFamily: "inherit", fontSize: "0.88rem", fontWeight: 600, whiteSpace: "nowrap" }}
       >
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
-        {volumes.find((v) => v.abbrev === selectedVolume)?.name || selectedVolume}
+        {(() => {
+          const vol = volumes.find((v) => v.abbrev === selectedVolume);
+          return vol && vol.books.length === 1 ? "Volumes" : (vol?.name || selectedVolume);
+        })()}
       </button>,
       <>
         <div style={{ marginBottom: "24px", textAlign: "center" }}>
@@ -2548,7 +2584,15 @@ export default function ScriptureReader() {
 
     return scripturePageWrapper(
       <button
-        onClick={() => window.history.back()}
+        onClick={() => {
+          setSelectedVolume(null);
+          setSelectedBookId(null);
+          setSelectedBookName(null);
+          setSelectedChapter(null);
+          setChapterCount(0);
+          setVerses([]);
+          window.history.pushState({}, "", "/scriptures");
+        }}
         style={{ background: "none", border: "none", color: "#f0f0f0", cursor: "pointer", padding: "6px 4px", display: "flex", alignItems: "center", gap: "4px", fontFamily: "inherit", fontSize: "0.88rem", fontWeight: 600, whiteSpace: "nowrap" }}
       >
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
@@ -2706,7 +2750,19 @@ export default function ScriptureReader() {
           return (
             <button
               key={vol.id}
-              onClick={() => { setSelectedVolume(vol.abbrev); window.history.pushState({}, "", scriptureUrl(vol.abbrev)); }}
+              onClick={() => {
+                setSelectedVolume(vol.abbrev);
+                // Single-book volumes (D&C): skip book list, go straight to section/chapter grid
+                if (vol.books.length === 1) {
+                  const book = vol.books[0];
+                  setSelectedBookId(book.id);
+                  setSelectedBookName(book.name);
+                  setChapterCount(book.chapterCount);
+                  window.history.pushState({}, "", scriptureUrl(vol.abbrev, book.name));
+                } else {
+                  window.history.pushState({}, "", scriptureUrl(vol.abbrev));
+                }
+              }}
               style={{
                 background: `linear-gradient(180deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.03) 100%)`,
                 border: "1px solid rgba(255, 255, 255, 0.12)",
