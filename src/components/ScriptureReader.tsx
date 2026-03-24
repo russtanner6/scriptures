@@ -1823,6 +1823,7 @@ export default function ScriptureReader() {
                       overflowY: "auto",
                       boxShadow: "-4px 0 24px rgba(0,0,0,0.3)",
                       padding: isMobile ? "24px 20px" : "32px 28px",
+                      textAlign: "left",
                       animation: "slideInRight 0.25s ease",
                     }}
                   >
