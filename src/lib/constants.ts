@@ -4,6 +4,7 @@ export const VOLUME_COLORS: Record<string, string> = {
   BoM: "#F57B20",     // orange
   "D&C": "#F5A623",   // amber
   PoGP: "#F5C829",    // golden yellow
+  Apoc: "#8E7CC3",    // muted purple (non-canonical)
 };
 
 export const VOLUME_COLORS_SOFT: Record<string, string> = {
@@ -12,6 +13,7 @@ export const VOLUME_COLORS_SOFT: Record<string, string> = {
   BoM: "rgba(245,123,32,0.1)",
   "D&C": "rgba(245,166,35,0.1)",
   PoGP: "rgba(245,200,41,0.1)",
+  Apoc: "rgba(142,124,195,0.1)",
 };
 
 // Short names for tight spaces (tabs, pills, chart labels)
@@ -21,6 +23,7 @@ export const VOLUME_SHORT_NAMES: Record<string, string> = {
   "Book of Mormon": "Book of Mormon",
   "D&C": "D&C",
   "Pearl of Great Price": "Pearl of Great Price",
+  "Apocrypha": "Apocrypha",
 };
 
 // Abbreviated names for very tight spaces (mobile tabs, stat cards)
@@ -30,6 +33,7 @@ export const VOLUME_ABBREV_NAMES: Record<string, string> = {
   "Book of Mormon": "BoM",
   "D&C": "D&C",
   "Pearl of Great Price": "PoGP",
+  "Apocrypha": "Apoc",
 };
 
 // Get a compact display name — uses abbreviation for Pearl of Great Price

@@ -59,7 +59,7 @@ export default function Footer() {
             }}
           >
             <img
-              src="/tree-logo.svg"
+              src="/logo-full.svg"
               alt=""
               style={{
                 height: "24px",

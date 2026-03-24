@@ -10,6 +10,7 @@ export const VOLUME_SLUG_TO_ABBREV: Record<string, string> = {
   "book-of-mormon": "BoM",
   "d-and-c": "D&C",
   "pearl-of-great-price": "PoGP",
+  "apocrypha": "Apoc",
 };
 
 export const VOLUME_ABBREV_TO_SLUG: Record<string, string> = {
@@ -18,6 +19,7 @@ export const VOLUME_ABBREV_TO_SLUG: Record<string, string> = {
   "BoM": "book-of-mormon",
   "D&C": "d-and-c",
   "PoGP": "pearl-of-great-price",
+  "Apoc": "apocrypha",
 };
 
 /** Convert a book name to a URL slug: "1 Samuel" → "1-samuel", "Joseph Smith—Matthew" → "joseph-smith-matthew" */

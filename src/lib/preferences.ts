@@ -4,10 +4,10 @@ export interface UserPreferences {
 
 const STORAGE_KEY = "scripture-preferences";
 
-const VOLUME_ABBREVS = ["OT", "NT", "BoM", "D&C", "PoGP"] as const;
+const VOLUME_ABBREVS = ["OT", "NT", "BoM", "D&C", "PoGP", "Apoc"] as const;
 
 const DEFAULTS: UserPreferences = {
-  visibleVolumes: { OT: true, NT: true, BoM: true, "D&C": true, PoGP: true },
+  visibleVolumes: { OT: true, NT: true, BoM: true, "D&C": true, PoGP: true, Apoc: false },
 };
 
 export function getPreferences(): UserPreferences {

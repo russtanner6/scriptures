@@ -1235,7 +1235,7 @@ export default function ScriptureReader() {
       <div style={{ position: "absolute", left: "50%", transform: "translateX(-50%)", display: "flex", alignItems: "center" }}>
         {centerContent || (
           <a href="/" title="Home" style={{ display: "flex", alignItems: "center" }}>
-            <img src="/tree-logo.svg" alt="Scripture Explorer" style={{ height: "24px", width: "auto" }} />
+            <img src="/logo-full.svg" alt="Scripture Explorer" style={{ height: "24px", width: "auto" }} />
           </a>
         )}
       </div>

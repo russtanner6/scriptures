@@ -102,4 +102,20 @@ export const BOOK_ORDER: BookEntry[] = [
   { volume: "Pearl of Great Price", volumeAbbrev: "PoGP", book: "Joseph Smith\u2014Matthew", filename: "Pearl_of_Great_Price_-_Joseph_Smith_Matthew.md" },
   { volume: "Pearl of Great Price", volumeAbbrev: "PoGP", book: "Joseph Smith\u2014History", filename: "Pearl_of_Great_Price_-_Joseph_Smith_History.md" },
   { volume: "Pearl of Great Price", volumeAbbrev: "PoGP", book: "Articles of Faith", filename: "Pearl_of_Great_Price_-_The_Articles_of_Faith.md" },
+
+  // Apocrypha (14 books — opt-in, non-canonical)
+  { volume: "Apocrypha", volumeAbbrev: "Apoc", book: "1 Esdras", filename: "Apocrypha_-_1_Esdras.md" },
+  { volume: "Apocrypha", volumeAbbrev: "Apoc", book: "2 Esdras", filename: "Apocrypha_-_2_Esdras.md" },
+  { volume: "Apocrypha", volumeAbbrev: "Apoc", book: "Tobit", filename: "Apocrypha_-_Tobit.md" },
+  { volume: "Apocrypha", volumeAbbrev: "Apoc", book: "Judith", filename: "Apocrypha_-_Judith.md" },
+  { volume: "Apocrypha", volumeAbbrev: "Apoc", book: "Additions to Esther", filename: "Apocrypha_-_Additions_to_Esther.md" },
+  { volume: "Apocrypha", volumeAbbrev: "Apoc", book: "Wisdom", filename: "Apocrypha_-_Wisdom.md" },
+  { volume: "Apocrypha", volumeAbbrev: "Apoc", book: "Sirach", filename: "Apocrypha_-_Sirach.md" },
+  { volume: "Apocrypha", volumeAbbrev: "Apoc", book: "Baruch", filename: "Apocrypha_-_Baruch.md" },
+  { volume: "Apocrypha", volumeAbbrev: "Apoc", book: "Prayer of Azariah", filename: "Apocrypha_-_Prayer_of_Azariah.md" },
+  { volume: "Apocrypha", volumeAbbrev: "Apoc", book: "Susanna", filename: "Apocrypha_-_Susanna.md" },
+  { volume: "Apocrypha", volumeAbbrev: "Apoc", book: "Bel and the Dragon", filename: "Apocrypha_-_Bel_and_the_Dragon.md" },
+  { volume: "Apocrypha", volumeAbbrev: "Apoc", book: "Prayer of Manasses", filename: "Apocrypha_-_Prayer_of_Manasses.md" },
+  { volume: "Apocrypha", volumeAbbrev: "Apoc", book: "1 Maccabees", filename: "Apocrypha_-_1_Maccabees.md" },
+  { volume: "Apocrypha", volumeAbbrev: "Apoc", book: "2 Maccabees", filename: "Apocrypha_-_2_Maccabees.md" },
 ];

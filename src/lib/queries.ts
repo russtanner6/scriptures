@@ -426,6 +426,7 @@ export async function getBookIdBySlug(
     bom: ["Book of Mormon"],
     dc: ["Doctrine and Covenants", "D&C"],
     pogp: ["Pearl of Great Price"],
+    apoc: ["Apocrypha"],
   };
 
   const volumeNames = volumeMap[volumeAbbrev.toLowerCase()];
