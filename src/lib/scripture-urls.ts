@@ -196,7 +196,9 @@ export function parseScriptureReferences(text: string): ScriptureRefSegment[] {
 
     const bookName = match[1];
     const chapter = parseInt(match[2], 10);
-    const url = getInternalScriptureUrl(bookName, chapter);
+    const verse = match[3] ? parseInt(match[3], 10) : null;
+    const baseUrl = getInternalScriptureUrl(bookName, chapter);
+    const url = baseUrl ? (verse ? `${baseUrl}?verse=${verse}` : baseUrl) : null;
 
     if (url) {
       segments.push({ type: "ref", text: match[0], url });
