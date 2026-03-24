@@ -1316,7 +1316,13 @@ export default function ScriptureReader() {
           {/* Left: back button + book name (clicking goes back to book list) */}
           <div style={{ display: "flex", alignItems: "center", gap: "8px", minWidth: 0, flex: 1, overflow: "hidden" }}>
             <button
-              onClick={() => window.history.back()}
+              onClick={() => {
+                setSelectedChapter(null);
+                setVerses([]);
+                if (selectedVolume && selectedBookName) {
+                  window.history.pushState({}, "", scriptureUrl(selectedVolume, selectedBookName));
+                }
+              }}
               style={{
                 background: "none",
                 border: "none",
@@ -1328,7 +1334,7 @@ export default function ScriptureReader() {
                 gap: "4px",
                 whiteSpace: "nowrap",
               }}
-              title="Back to book list"
+              title="Back to chapter list"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="15 18 9 12 15 6" />
@@ -1455,9 +1461,9 @@ export default function ScriptureReader() {
                 color: "#fff",
               }}
             >
-              <span style={{ display: "block", width: "18px", height: "1.5px", background: "#fff", borderRadius: "1px" }} />
-              <span style={{ display: "block", width: "18px", height: "1.5px", background: "#fff", borderRadius: "1px" }} />
-              <span style={{ display: "block", width: "18px", height: "1.5px", background: "#fff", borderRadius: "1px" }} />
+              <span style={{ display: "block", width: "14px", height: "1.5px", background: "#fff", borderRadius: "1px", marginLeft: "auto" }} />
+              <span style={{ display: "block", width: "20px", height: "1.5px", background: "#fff", borderRadius: "1px" }} />
+              <span style={{ display: "block", width: "16px", height: "1.5px", background: "#fff", borderRadius: "1px", marginLeft: "auto" }} />
             </button>
           </div>
         </div>

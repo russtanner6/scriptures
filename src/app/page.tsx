@@ -335,35 +335,38 @@ export default function HomePage() {
           )}
 
           {/* Featured Nugget */}
-          {nugget && (
-            <div style={{
-              background: "linear-gradient(135deg, rgba(245,166,35,0.08), rgba(245,200,41,0.04))",
-              border: "1px solid rgba(245,166,35,0.2)",
-              borderRadius: "14px",
-              padding: "16px",
-              marginBottom: "16px",
-            }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
-                <span style={{ fontSize: "0.55rem", fontWeight: 700, padding: "2px 8px", borderRadius: "4px", background: `${CATEGORY_COLORS[nugget.category] || "#F5A623"}20`, color: CATEGORY_COLORS[nugget.category] || "#F5A623", textTransform: "uppercase", letterSpacing: "0.08em" }}>
-                  {nugget.category}
-                </span>
-                <span style={{ fontSize: "0.55rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "#F5A623" }}>
-                  Did you know?
-                </span>
-              </div>
-              <div style={{ fontSize: "0.88rem", fontWeight: 600, color: "var(--text)", marginBottom: "8px" }}>{nugget.title}</div>
-              <p style={{ fontSize: "0.78rem", color: "var(--text-secondary)", lineHeight: 1.6, margin: "0 0 10px", display: "-webkit-box", WebkitLineClamp: 4, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
-                {nugget.insight}
-              </p>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <span style={{ fontSize: "0.65rem", color: "var(--text-muted)" }}>{nugget.book} {nugget.chapter}:{nugget.verse}</span>
-                {nuggetLink && (
-                  <Link href={nuggetLink} style={{ fontSize: "0.72rem", color: "#F5A623", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+          {nugget && nuggetLink && (
+            <Link href={nuggetLink} style={{ textDecoration: "none", display: "block", marginBottom: "16px" }}>
+              <div style={{
+                background: "linear-gradient(135deg, rgba(245,166,35,0.08), rgba(245,200,41,0.04))",
+                border: "1px solid rgba(245,166,35,0.2)",
+                borderRadius: "14px",
+                padding: "16px",
+                transition: "all 0.2s",
+              }}
+                onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(245,166,35,0.4)"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(245,166,35,0.2)"; }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                  <span style={{ fontSize: "0.55rem", fontWeight: 700, padding: "2px 8px", borderRadius: "4px", background: `${CATEGORY_COLORS[nugget.category] || "#F5A623"}20`, color: CATEGORY_COLORS[nugget.category] || "#F5A623", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+                    {nugget.category}
+                  </span>
+                  <span style={{ fontSize: "0.55rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "#F5A623" }}>
+                    Did you know?
+                  </span>
+                </div>
+                <div style={{ fontSize: "0.88rem", fontWeight: 600, color: "var(--text)", marginBottom: "8px" }}>{nugget.title}</div>
+                <p style={{ fontSize: "0.78rem", color: "var(--text-secondary)", lineHeight: 1.6, margin: "0 0 10px", display: "-webkit-box", WebkitLineClamp: 4, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+                  {nugget.insight}
+                </p>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <span style={{ fontSize: "0.65rem", color: "var(--text-muted)" }}>{nugget.book} {nugget.chapter}:{nugget.verse}</span>
+                  <span style={{ fontSize: "0.72rem", color: "#F5A623" }}>
                     Read in context →
-                  </Link>
-                )}
+                  </span>
+                </div>
               </div>
-            </div>
+            </Link>
           )}
 
           {/* Remaining tools */}
@@ -433,34 +436,38 @@ export default function HomePage() {
           {/* ── COLUMN 2: Nugget + People ── */}
           <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
             {/* Featured Nugget — at top of column */}
-            {nugget && (
-              <div style={{
-                background: "linear-gradient(135deg, rgba(245,166,35,0.08), rgba(245,200,41,0.04))",
-                border: "1px solid rgba(245,166,35,0.2)",
-                borderRadius: "14px",
-                padding: "16px",
-              }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
-                  <span style={{ fontSize: "0.55rem", fontWeight: 700, padding: "2px 8px", borderRadius: "4px", background: `${CATEGORY_COLORS[nugget.category] || "#F5A623"}20`, color: CATEGORY_COLORS[nugget.category] || "#F5A623", textTransform: "uppercase", letterSpacing: "0.08em" }}>
-                    {nugget.category}
-                  </span>
-                  <span style={{ fontSize: "0.55rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "#F5A623" }}>
-                    Did you know?
-                  </span>
-                </div>
-                <div style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--text)", marginBottom: "8px" }}>{nugget.title}</div>
-                <p style={{ fontSize: "0.78rem", color: "var(--text-secondary)", lineHeight: 1.6, margin: "0 0 10px", display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
-                  {nugget.insight}
-                </p>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ fontSize: "0.65rem", color: "var(--text-muted)" }}>{nugget.book} {nugget.chapter}:{nugget.verse}</span>
-                  {nuggetLink && (
-                    <Link href={nuggetLink} style={{ fontSize: "0.72rem", color: "#F5A623", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+            {nugget && nuggetLink && (
+              <Link href={nuggetLink} style={{ textDecoration: "none", display: "block" }}>
+                <div style={{
+                  background: "linear-gradient(135deg, rgba(245,166,35,0.08), rgba(245,200,41,0.04))",
+                  border: "1px solid rgba(245,166,35,0.2)",
+                  borderRadius: "14px",
+                  padding: "16px",
+                  transition: "all 0.2s",
+                }}
+                  onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(245,166,35,0.4)"; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(245,166,35,0.2)"; }}
+                >
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                    <span style={{ fontSize: "0.55rem", fontWeight: 700, padding: "2px 8px", borderRadius: "4px", background: `${CATEGORY_COLORS[nugget.category] || "#F5A623"}20`, color: CATEGORY_COLORS[nugget.category] || "#F5A623", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+                      {nugget.category}
+                    </span>
+                    <span style={{ fontSize: "0.55rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "#F5A623" }}>
+                      Did you know?
+                    </span>
+                  </div>
+                  <div style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--text)", marginBottom: "8px" }}>{nugget.title}</div>
+                  <p style={{ fontSize: "0.78rem", color: "var(--text-secondary)", lineHeight: 1.6, margin: "0 0 10px", display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+                    {nugget.insight}
+                  </p>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span style={{ fontSize: "0.65rem", color: "var(--text-muted)" }}>{nugget.book} {nugget.chapter}:{nugget.verse}</span>
+                    <span style={{ fontSize: "0.72rem", color: "#F5A623" }}>
                       Read in context →
-                    </Link>
-                  )}
+                    </span>
+                  </div>
                 </div>
-              </div>
+              </Link>
             )}
 
             {/* Spotlight Character */}
