@@ -184,7 +184,9 @@ export default function VersePopover({
         style={{
           position: "fixed",
           inset: 0,
-          background: "rgba(0,0,0,0.3)",
+          background: "rgba(0,0,0,0.6)",
+          backdropFilter: "blur(4px)",
+          WebkitBackdropFilter: "blur(4px)",
           zIndex: 200,
         }}
       />

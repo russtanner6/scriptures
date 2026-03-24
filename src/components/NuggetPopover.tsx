@@ -81,10 +81,12 @@ export default function NuggetPopover({
         style={{
           position: "fixed",
           inset: 0,
-          background: "rgba(0,0,0,0.3)",
+          background: "rgba(0,0,0,0.6)",
+          backdropFilter: "blur(4px)",
+          WebkitBackdropFilter: "blur(4px)",
           zIndex: 9998,
           opacity: isVisible ? 1 : 0,
-          transition: "opacity 0.2s ease",
+          transition: "opacity 0.3s ease",
         }}
       />
 
