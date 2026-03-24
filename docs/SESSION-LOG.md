@@ -57,11 +57,19 @@
 - Add Apocrypha (14 books, 5717 verses), fix logo, add portraits
 - Replace logo with tree-only icon at 28px everywhere
 
+### Additional commits (continued session)
+- Fix 6 nuggets flagged by accuracy audit (50 checked, 42 accurate, 8 issues, 6 fixed)
+- Add Apocrypha toggle in Settings page with D&C 91 reference
+- Add Apocrypha non-canonical banner in scripture reader
+- Use definitive se-logo.svg (user-provided), delete old logos
+- Fix heading hierarchy in Settings page (h3 → h2)
+- Export NUGGET-GUIDE.md + context-nuggets.json to Desktop for Gemini
+- Add Pharaoh + Joseph Smith portraits
+
 ### Pending
-- Nugget accuracy audit (background agent running — results pending)
 - Apocrypha characters not yet added to characters.json
-- Apocrypha settings page toggle with D&C 91 reference
-- Non-canonical badge in scripture reader for Apocrypha
+- Verse select Phase 2 (notes/tags on selections)
+- Character Relationship Visualizer
 
 ---
 
