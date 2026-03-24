@@ -1,5 +1,28 @@
 # Scripture Explorer — Session Log
 
+## 2026-03-23 — Session 16: Header Standardization + Chiasmus Rework + Preset Buttons + UI Polish
+
+### What was done
+- **Header.tsx rewrite** — Replaced old header with dark nav bar matching scripture reader style. Tree logo (no text) centered, links to home. Hamburger menu right side with staggered-width lines. Consistent across all tool pages.
+- **Home page** — "SCRIPTURE EXPLORER" h1 in caps with white subtitle, uses new header bar.
+- **Scripture nav bar** — Added centered tree logo linking to home for volume picker, book list, and chapter grid views. Reading view keeps chapter selector in center instead.
+- **Tool page consistency** — All tool pages now use `<Header />` from the page file, not from within the tool component. Removed internal Header/page-container from SentimentArcTool, ParallelPassagesTool, TopicMapTool. Added Header to sentiment, parallel, topics page files.
+- **Preset search buttons** — WordFrequencyTool, NarrativeArcTool, and HeatmapTool empty states now show clickable preset term buttons. Narrative Arc has 6 multi-term presets (Faith vs. Works, Grace & Mercy, etc.). Heatmap and Word Search have 6 single-term presets.
+- **Backdrop blur standardization** — All slide-in panels (ScripturePanel, ResourcePanel, WordExplorerPanel) now use consistent blur(4px) backdrop, matching CharacterDetailPanel and LocationDetailPanel.
+- **Hamburger menu consistency** — Staggered-width lines (14/20/16px) used everywhere. No MENU text in scripture reader nav. Consistent with Header component.
+- **Chiasmus page complete rework** — Replaced algorithmic detector with curated catalog of 40 documented chiastic structures. Three categories: Verified (23), Probable (15), Possible/Incidental (2). Coverage: OT 13, NT 10, BoM 13, D&C 1, PoGP 3. Card grid UI with volume filter pills. Slide-in detail panel showing full A–B–C…C'–B'–A' structure with scholar attribution and source citations.
+- **Chiasmus data** — `data/chiasmus-catalog.json` and `public/data/chiasmus-catalog.json` with complete structure data for each pattern. Sources: Welch, Wenham, Lund, Boyd & Edwards, Boys, BYU Studies, ScriptureCentral.
+
+### Key technical details
+- Header.tsx: sticky, dark background `rgba(17,17,22,0.95)` with blur, z-index 50
+- scriptureNavBar: added `centerContent` parameter, defaults to logo when no center content passed
+- Preset buttons use `initialSearchDone.current = true` + `setTerms()`/`setWord()` to trigger the existing auto-search effect
+- ChiasmusTool: client-side fetch of `/data/chiasmus-catalog.json`, no API route needed
+
+### 3 commits pushed to GitHub
+
+---
+
 ## 2026-03-21 — Session 12: Sentiment + Tone + Radar + Context Eggs (800) + Relationship Web
 
 ### What was done

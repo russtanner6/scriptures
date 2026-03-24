@@ -28,9 +28,7 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 - [ ] **H1/H2 heading hierarchy audit** — Check all pages for proper semantic heading tags for SEO. Scripture pages now use h1 (Session 15), but other tool pages may skip levels. *(Requested: Session 15)*
 - [ ] **Character Relationship Visualizer** — Full-screen force-directed graph from Characters page. `RelationshipWeb.tsx` exists with basic graph. *(Requested: Session 12)*
 - [~] **"Found in X verses" link** — Inline expand works. Original spec was slide-out panel. *(Session 14)*
-- [ ] **Chiasmus improvements** — Specs lost. **NEEDS USER INPUT.** *(Session 13)*
 - [ ] **More Context Nuggets** — 1,096 → ~1,500. Gaps: Psalms, Isaiah, Jeremiah. *(Session 12)*
-- [ ] **Consistent scripture nav bar styling** — The dark top bar works but the volume picker/book list/chapter grid views don't have the same visual background treatment as the reading view (different bg gradient). Minor polish. *(Noted: Session 15)*
 
 ### LOW PRIORITY / FUTURE
 
@@ -50,6 +48,35 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 - [ ] 403 overlapping verse ranges in Bible speaker data *(Session 9)*
 - [ ] verseEnd=200 sentinels still in speaker data file *(Session 9)*
 - [ ] Mobile hamburger menu links may not work *(Session 8)*
+
+---
+
+## Completed (Session 16)
+
+**Header & Navigation:**
+- [x] Header.tsx rewrite: dark nav bar, tree logo centered linking to home, hamburger right
+- [x] Home page: "SCRIPTURE EXPLORER" h1 in caps, white subtitle, new header bar
+- [x] Scripture nav pages: centered logo linking to home (volume picker, book list, chapter grid)
+- [x] Consistent header bar height/style across ALL pages (tools and scripture nav)
+- [x] Hamburger menu: staggered-width lines everywhere, no MENU text in scriptures
+- [x] Tool page consistency: Header from page file, removed internal Header from 3 tool components
+
+**Search Experience:**
+- [x] Preset search buttons on Word Search, Narrative Arc, and Heatmap empty states
+- [x] Narrative Arc: 6 multi-term presets (Faith vs. Works, Grace & Mercy, etc.)
+- [x] Heatmap + Word Search: 6 single-term presets (faith, covenant, repent, etc.)
+
+**Chiasmus Page Rework:**
+- [x] Complete rewrite from algorithmic detector to curated catalog
+- [x] 40 documented chiastic structures (23 verified, 15 probable, 2 possible)
+- [x] Coverage: OT 13, NT 10, BoM 13, D&C 1, PoGP 3
+- [x] Card grid UI with volume filter pills and category sections
+- [x] Slide-in detail panel with full A–B–C…C'–B'–A' structure visualization
+- [x] Scholar attribution and source citations (Welch, Wenham, Lund, etc.)
+
+**UI Polish:**
+- [x] Backdrop blur standardized to blur(4px) on all slide-in panels
+- [x] Consistent scripture nav bar styling (logo in center for nav views)
 
 ---
 

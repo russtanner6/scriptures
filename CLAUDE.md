@@ -51,7 +51,7 @@ src/
 │   ├── wordcloud/     # Word cloud visualization per book/chapter/volume
 │   ├── sentiment/     # Sentiment/tone arc across books (NEW)
 │   ├── parallel/      # Side-by-side parallel passage comparison (NEW)
-│   ├── chiasmus/      # Chiasmus (ABBA pattern) detector (NEW)
+│   ├── chiasmus/      # Chiasmus catalog — 40 documented chiastic structures with card UI
 │   ├── topics/        # Topic map — find thematically similar chapters (NEW)
 │   ├── timeline/      # Historical timeline (SHELVED — removed from nav, code preserved)
 │   ├── settings/      # User preferences (volume visibility, theology mode)
@@ -66,7 +66,7 @@ src/
 │   ├── HeatmapTool.tsx        # Theme heatmap with arc toggle per volume
 │   ├── SentimentArcTool.tsx   # Sentiment/tone arc with 7 categories (NEW)
 │   ├── ParallelPassagesTool.tsx # Side-by-side passage comparison with diff (NEW)
-│   ├── ChiasmusTool.tsx       # Chiasmus pattern detector with visual display (NEW)
+│   ├── ChiasmusTool.tsx       # Chiasmus catalog — 40 curated patterns with card grid + detail panel
 │   ├── TopicMapTool.tsx       # Find thematically similar chapters (NEW)
 │   ├── TimelineTool.tsx       # Historical timeline (SHELVED — code preserved)
 │   ├── PreferencesProvider.tsx # React context for user preferences (volume visibility, theology mode)
@@ -98,7 +98,7 @@ src/
 │   ├── EggMarker.tsx           # Inline amber/gold pill for Context Eggs (follows ResourceMarker pattern)
 │   ├── EggPopover.tsx          # Parchment/slate popover for scholarly insights (bottom sheet on mobile)
 │   ├── RelationshipWeb.tsx     # Full-screen force-directed character relationship graph
-│   ├── Header.tsx             # Site header with tree logo + hamburger menu (showSubtitle prop)
+│   ├── Header.tsx             # Dark nav bar: tree logo centered (links to home) + hamburger right. Consistent across all pages.
 │   └── NavMenu.tsx            # Slide-in nav with sections (Analyze/Discover/Read)
 ├── lib/
 │   ├── db.ts                  # sql.js initialization
@@ -116,7 +116,7 @@ src/
 │   ├── relationship-graph.ts   # Build relationship graphs from character family data (nodes, links, subgraph BFS)
 │   ├── useBackToClose.ts      # Hook: mobile back-button closes panels instead of navigating away
 │   └── modal-styles.ts        # Shared popup/modal styling tokens
-data/                          # scriptures.db + sql-wasm.wasm + parallel-passages.json + timeline.json + resources.json + speakers.json + characters.json + locations.json + web-bible.json + context-eggs.json
+data/                          # scriptures.db + sql-wasm.wasm + parallel-passages.json + timeline.json + resources.json + speakers.json + characters.json + locations.json + web-bible.json + context-eggs.json + chiasmus-catalog.json
 scripts/                       # build-db.ts, book-order.ts, build-speakers.ts, build-speakers-lds.ts, merge-speakers.ts, add-modern-text.ts
 ```
 
@@ -213,7 +213,7 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 - **VersePopover** — Tap verse → popover with reference, word count, key words, copy, bookmark, and personal notes.
 - **SentimentArcTool** — Multi-volume sentiment analysis with category toggles and Chart.js line charts.
 - **ParallelPassagesTool** — Side-by-side passage comparison with word-level diff highlighting.
-- **ChiasmusTool** — Chiasmus pattern detection with visual bracket display and volume scanning.
+- **ChiasmusTool** — Curated catalog of 40 documented chiastic structures. Card grid with volume filters, three categories (Verified/Probable/Possible), slide-in detail panel with full A–B–C structure. Data from `public/data/chiasmus-catalog.json`.
 - **TopicMapTool** — Chapter similarity finder using cosine similarity on word vectors.
 - **TimelineTool** — Historical timeline (SHELVED — code preserved, removed from nav).
 - **FilterDropdown** — Reusable collapsible dropdown trigger for filter groups (Volumes, Options, Categories). Used by search-bar tools.
