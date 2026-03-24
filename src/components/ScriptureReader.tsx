@@ -228,6 +228,28 @@ export default function ScriptureReader() {
   // Search term highlight (when arriving from ScripturePanel)
   const highlightWord = searchParams.get("highlight") || null;
 
+  // Scroll to a specific verse when ?verse=N is in the URL (after verses render)
+  const pendingVerseScroll = searchParams.get("verse");
+  const verseScrollDone = useRef<string | null>(null);
+  useEffect(() => {
+    if (!pendingVerseScroll || verses.length === 0) return;
+    // Don't re-scroll if we already handled this verse+chapter combo
+    const key = `${selectedBookId}-${selectedChapter}-${pendingVerseScroll}`;
+    if (verseScrollDone.current === key) return;
+    // Wait for DOM to render verses
+    const timer = setTimeout(() => {
+      const el = document.getElementById(`verse-${pendingVerseScroll}`);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+        el.style.transition = "background 0.3s";
+        el.style.background = "rgba(59, 130, 246, 0.15)";
+        setTimeout(() => { el.style.background = ""; }, 2500);
+        verseScrollDone.current = key;
+      }
+    }, 150);
+    return () => clearTimeout(timer);
+  }, [pendingVerseScroll, verses, selectedBookId, selectedChapter]);
+
   // Font size map
   const fontSizes = [
     { body: isMobile ? "0.92rem" : "0.95rem", label: "A" },
@@ -323,12 +345,11 @@ export default function ScriptureReader() {
     return char?.portraitUrl || null;
   }, [allCharacters, selectedVolume]);
 
-  // Helper: check if a speaker has a dedicated character profile
-  const speakerHasProfile = useCallback((speakerName: string, speakerType?: string): boolean => {
+  // Helper: check if a speaker has a dedicated character profile.
+  // Only show speaker labels for people who exist in characters.json.
+  const speakerHasProfile = useCallback((speakerName: string, _speakerType?: string): boolean => {
     const nameLower = speakerName.toLowerCase();
-    // Divine/narrator types always have profiles (God, Jesus, etc.)
-    if (speakerType === "divine" || speakerType === "narrator") return true;
-    // Check exact name or alias match
+    // Check exact name or alias match against the character database
     const exact = allCharacters.some(
       (c) => c.name.toLowerCase() === nameLower ||
              c.aliases.some((a: string) => a.toLowerCase() === nameLower)
@@ -552,19 +573,7 @@ export default function ScriptureReader() {
                     .then((r) => r.json())
                     .then((spkData) => setChapterSpeakers(spkData.speakers || []))
                     .catch(() => {});
-                  // Scroll to specific verse if provided
-                  if (urlVerse) {
-                    setTimeout(() => {
-                      const el = document.getElementById(`verse-${urlVerse}`);
-                      if (el) {
-                        el.scrollIntoView({ behavior: "smooth", block: "center" });
-                        // Brief highlight flash
-                        el.style.transition = "background 0.3s";
-                        el.style.background = `rgba(59, 130, 246, 0.15)`;
-                        setTimeout(() => { el.style.background = ""; }, 2500);
-                      }
-                    }, 400);
-                  }
+                  // Verse scroll handled by useEffect watching pendingVerseScroll
                 });
               break;
             }

@@ -285,7 +285,7 @@
     ],
     "description": "One of the four rivers of Eden and the northeastern boundary of the Promised Land. Major river of Mesopotamia running through Babylon.",
     "lat": 34.35,
-    "lng": 38.0,
+    "lng": 38,
     "region": "Mesopotamia",
     "locationType": "river",
     "volumes": [
@@ -440,8 +440,7 @@
       "Jebus",
       "Zion",
       "City of David",
-      "Salem",
-      "Holy City"
+      "Salem"
     ],
     "description": "Capital of ancient Israel and Judah, site of Solomon's Temple and the Second Temple. Central to the ministry, crucifixion, and resurrection of Jesus Christ.",
     "lat": 31.7683,
@@ -721,7 +720,7 @@
     ],
     "description": "Body of water miraculously parted by God through Moses, allowing the Israelites to escape Egypt while Pharaoh's army was drowned.",
     "lat": 27.5,
-    "lng": 34.0,
+    "lng": 34,
     "region": "Egypt",
     "locationType": "sea",
     "volumes": [
@@ -1248,7 +1247,7 @@
     "aliases": [],
     "description": "Region in central Asia Minor where Paul established churches. He wrote the Epistle to the Galatians defending justification by faith.",
     "lat": 39.5,
-    "lng": 32.0,
+    "lng": 32,
     "region": "Asia Minor",
     "locationType": "region",
     "volumes": [
@@ -1694,8 +1693,8 @@
       "Macedon"
     ],
     "description": "Roman province in northern Greece. Paul received a vision calling him here. Churches at Philippi, Thessalonica, and Berea were in Macedonia.",
-    "lat": 41.0,
-    "lng": 22.0,
+    "lat": 41,
+    "lng": 22,
     "region": "Greece",
     "locationType": "region",
     "volumes": [
@@ -1753,8 +1752,8 @@
       "Sea of the Philistines"
     ],
     "description": "The large sea forming the western boundary of the Promised Land.",
-    "lat": 35.0,
-    "lng": 18.0,
+    "lat": 35,
+    "lng": 18,
     "region": "Other",
     "locationType": "sea",
     "volumes": [
@@ -2539,7 +2538,7 @@
     "name": "Achaia",
     "aliases": [],
     "description": "Roman province in southern Greece, with Corinth as its capital. Paul spent 18 months here.",
-    "lat": 38.0,
+    "lat": 38,
     "lng": 22.5,
     "region": "Greece",
     "locationType": "region",
@@ -2724,8 +2723,8 @@
     "name": "Arabia",
     "aliases": [],
     "description": "Vast peninsula south and east of Israel. Paul went to Arabia after his conversion before returning to Damascus.",
-    "lat": 24.0,
-    "lng": 45.0,
+    "lat": 24,
+    "lng": 45,
     "region": "Arabia",
     "locationType": "region",
     "volumes": [
@@ -2819,7 +2818,7 @@
     "aliases": [],
     "description": "Fertile region east of the Sea of Galilee. Israel defeated King Og of Bashan before entering the Promised Land.",
     "lat": 32.9,
-    "lng": 36.0,
+    "lng": 36,
     "region": "Transjordan",
     "locationType": "region",
     "volumes": [
@@ -3000,7 +2999,7 @@
     "aliases": [],
     "description": "City on the Euphrates where Nebuchadnezzar defeated Pharaoh Necho in 605 BC, establishing Babylonian dominance.",
     "lat": 36.835,
-    "lng": 38.0,
+    "lng": 38,
     "region": "Syria",
     "locationType": "city",
     "volumes": [
@@ -3258,7 +3257,7 @@
     ],
     "description": "Port city at the head of the Gulf of Aqaba from which Solomon launched ships to Ophir for gold trade.",
     "lat": 29.55,
-    "lng": 35.0,
+    "lng": 35,
     "region": "Israel",
     "locationType": "city",
     "volumes": [
@@ -3497,8 +3496,8 @@
       "Edom"
     ],
     "description": "Region south of Judea, homeland of Esau's descendants. The Herods were of Idumean descent.",
-    "lat": 31.0,
-    "lng": 35.0,
+    "lat": 31,
+    "lng": 35,
     "region": "Transjordan",
     "locationType": "region",
     "volumes": [
@@ -4433,7 +4432,7 @@
     ],
     "description": "City of refuge east of the Jordan. Ahab was killed in battle here. Jehu was anointed king here.",
     "lat": 32.55,
-    "lng": 36.0,
+    "lng": 36,
     "region": "Transjordan",
     "locationType": "city",
     "volumes": [
@@ -4934,7 +4933,7 @@
       "Desert of Shur"
     ],
     "description": "Desert region east of Egypt that the Israelites entered immediately after crossing the Red Sea.",
-    "lat": 30.0,
+    "lat": 30,
     "lng": 33.5,
     "region": "Arabia",
     "locationType": "desert",
@@ -4953,7 +4952,7 @@
       "Desert of Sin"
     ],
     "description": "Desert region between Elim and Sinai where God first provided manna and quail to feed the Israelites during the Exodus.",
-    "lat": 29.0,
+    "lat": 29,
     "lng": 33.5,
     "region": "Arabia",
     "locationType": "desert",
