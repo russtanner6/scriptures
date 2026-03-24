@@ -20,11 +20,12 @@ export const VOLUME_ABBREV_TO_SLUG: Record<string, string> = {
   "PoGP": "pearl-of-great-price",
 };
 
-/** Convert a book name to a URL slug: "1 Samuel" → "1-samuel", "Song of Solomon" → "song-of-solomon" */
+/** Convert a book name to a URL slug: "1 Samuel" → "1-samuel", "Joseph Smith—Matthew" → "joseph-smith-matthew" */
 export function bookNameToSlug(name: string): string {
   return name
     .toLowerCase()
     .replace(/&/g, "and")
+    .replace(/[\u2014\u2013]/g, "-")  // em-dash and en-dash → hyphen
     .replace(/[^a-z0-9\s-]/g, "")
     .replace(/\s+/g, "-")
     .replace(/-+/g, "-")

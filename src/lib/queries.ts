@@ -452,8 +452,11 @@ export async function getBookIdBySlug(
     volIds
   );
 
+  // Normalize a book name for matching: replace em/en-dashes and hyphens with spaces
+  const normalizeName = (n: string) => n.toLowerCase().replace(/[\u2014\u2013-]/g, " ").replace(/[^a-z0-9\s]/g, "").replace(/\s+/g, " ").trim();
+
   // Match by normalized name
-  const match = books.find(b => b.name.toLowerCase().replace(/-/g, " ") === slugNormalized)
+  const match = books.find(b => normalizeName(b.name) === slugNormalized)
     || books.find(b => b.name.toLowerCase().replace(/\s+/g, "-") === bookSlug.toLowerCase());
 
   if (!match) return null;
