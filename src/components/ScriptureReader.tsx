@@ -2454,8 +2454,10 @@ export default function ScriptureReader() {
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="miter"><polyline points="15 18 9 12 15 6" /></svg>
             </button>
 
-            {/* Spacer */}
-            <div style={{ flex: 1 }} />
+            {/* Center logo — links to home */}
+            <a href="/" title="Home" style={{ flex: 1, display: "flex", justifyContent: "center", alignItems: "center" }}>
+              <img src="/logo.svg" alt="Home" style={{ height: "20px", width: "auto", opacity: 0.4 }} />
+            </a>
 
             {/* Next */}
             <button
