@@ -1,5 +1,70 @@
 # Scripture Explorer — Session Log
 
+## 2026-03-24 — Session 18: Apocrypha, Verse Select, Scripture Links, UI Fixes
+
+### What was done
+
+**Chapter Insights Fix:**
+- Removed all generic/anonymous speaker pills from "People in this Chapter" (e.g., "Father Of Demon-Possessed Boy", "Man, Still Another", "Disciples"). Only named characters from characters.json now appear.
+
+**Scripture Reference Hyperlinking:**
+- New `LinkedScriptureText` component + `parseScriptureReferences()` utility
+- Scripture references (Genesis 1:1, Alma 32:21, D&C 76) in nugget insights, character bios, and location descriptions are now clickable links to the internal reader
+
+**Hamburger Icon Consistency:**
+- Created shared `HamburgerIcon.tsx` component (single source of truth: 14/20/16px staggered lines)
+- Replaced all inline hamburger implementations in Header.tsx and ScriptureReader.tsx
+
+**Backdrop Blur:**
+- Added `backdropFilter: blur(4px)` to NuggetPopover and VersePopover overlays
+- All 8 slide-out panels now consistently blur background content
+
+**Chapter-Level Resources:**
+- Made `verseStart`/`verseEnd` optional in Resource interface
+- Chapter-level resources (no verse range) display as banner row above verses
+- Added 2 sample chapter-level resources (Genesis 1, Matthew 5)
+
+**Verse Multi-Select (Phase 1):**
+- Click verse number to enter selection mode (desktop), long-press on mobile
+- Checkboxes appear on all verse numbers in selection mode
+- Selected verses get subtle highlight background
+- Floating toolbar at bottom: Copy, Bookmark, Clear
+- Selection clears when chapter changes
+
+**Apocrypha (14 Books, 5717 Verses):**
+- Fetched from api.getbible.net/v2/kjva/ — 14 books with full text
+- Added as 6th volume "Apocrypha" (abbrev: Apoc, color: #8E7CC3 purple)
+- Default visibility: OFF (opt-in via Settings)
+- Updated book-order.ts, constants.ts, preferences.ts, queries.ts, scripture-slugs.ts
+- Books: 1-2 Esdras, Tobit, Judith, Additions to Esther, Wisdom, Sirach, Baruch, Prayer of Azariah, Susanna, Bel and the Dragon, Prayer of Manasses, 1-2 Maccabees
+
+**Logo Fix:**
+- Replaced tree-logo.svg and logo-full.svg with user-provided Tree.svg (tree icon only, no text)
+- Standardized logo height to 28px on all pages
+- White fill for dark backgrounds, matches favicon
+
+**Portraits:**
+- Added Pharaoh portrait (pharaoh_compressed.jpg)
+- Updated Joseph Smith portrait (joseph-smith_compressed.jpg)
+
+### Commits
+- Remove generic speakers from chapter insights
+- Add scripture reference hyperlinking in slide-out panels
+- Unify hamburger icon via shared HamburgerIcon component
+- Add backdrop blur to NuggetPopover and VersePopover
+- Add chapter-level resources support
+- Add verse multi-select mode (Phase 1)
+- Add Apocrypha (14 books, 5717 verses), fix logo, add portraits
+- Replace logo with tree-only icon at 28px everywhere
+
+### Pending
+- Nugget accuracy audit (background agent running — results pending)
+- Apocrypha characters not yet added to characters.json
+- Apocrypha settings page toggle with D&C 91 reference
+- Non-canonical badge in scripture reader for Apocrypha
+
+---
+
 ## 2026-03-24 — Session 17: Home Page Redesign, Parallel Removal, Stats Viz, Site Audit
 
 ### What was done

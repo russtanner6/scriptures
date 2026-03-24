@@ -11,23 +11,18 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 
 ### NEXT SESSION — START HERE
 
-- [ ] **Nugget accuracy audit** — Verify ALL 1,139 context nuggets for factual accuracy. Each nugget cites a scholarly source — cross-check claims against those sources via web search. Flag any that are speculative, exaggerated, or unsupported. Priority: the 50 newest nuggets (added Session 17) haven't been manually verified. Also verify Hebrew/Greek translations, archaeological claims, and historical dates. *(Requested: Session 17)*
-
-- [ ] **Chapter-level resources** — Distinguish between videos/links/nuggets that apply to entire chapters/sections vs. single verses. Need a mechanism for showing chapter-wide resources (e.g., a BibleProject overview video for Genesis, a scholarly article about Alma 36). Currently all resources are verse-attached. Need: data model for chapter-level vs. verse-level resources, UI for chapter-wide resources (maybe a banner/section at the top of the chapter, or a dedicated tab in the Insights panel), and migration of any existing resources that should be chapter-level. *(Requested: Session 17)*
+- [~] **Nugget accuracy audit** — Verify ALL 1,139 context nuggets for factual accuracy. Background agent ran in Session 18 — check results and apply fixes. *(Requested: Session 17)*
 
 - [ ] **Firebase integration** — Set up Firebase for real user accounts. Auth (email/password + Google SSO), Firestore for user data (bookmarks, reading progress, annotations, preferences). This replaces localStorage with persistent cloud storage. *(Requested: Session 17)*
 
-- [ ] **Apocrypha as a "Library" collection** — Add KJV Apocrypha (14 books: 1 Esdras, 2 Esdras, Tobit, Judith, Additions to Esther, Wisdom, Sirach, Baruch, Prayer of Azariah, Susanna, Bel and the Dragon, Prayer of Manasses, 1 Maccabees, 2 Maccabees). **Data source:** `https://api.getbible.net/v2/kjva/{book_number}/{chapter}.json` — confirmed available in JSON. **Implementation plan:**
-  1. Create `scripts/build-apocrypha.ts` to fetch all 14 books from the API and build verse data
-  2. Add to SQLite as a separate "Apocrypha" volume (or parallel table) — NOT mixed with canonical 5 volumes
-  3. Add "Apocrypha" as a 6th option in the scripture reader with distinct visual treatment (different accent color, "non-canonical" banner/badge)
-  4. Opt-in: doesn't appear in default searches/charts/word frequency unless explicitly selected
-  5. Add Apocrypha characters to `data/characters.json` (Judith, Tobit, Mattathias, Judas Maccabeus, etc.)
-  6. Rebuild mention stats after adding characters
-  7. Add intro/landing for Apocrypha referencing D&C 91 ("many things contained therein that are true")
-  *(Requested: Session 15)*
+- [~] **Apocrypha follow-up** — Data and volume added (Session 18). Still needed:
+  - Add Apocrypha characters to `data/characters.json` (Judith, Tobit, Mattathias, Judas Maccabeus, etc.)
+  - Add Apocrypha toggle in Settings page with D&C 91 reference
+  - Add "non-canonical" badge in scripture reader for Apocrypha chapters
+  - Add Apocrypha intro/landing page
+  *(Requested: Session 15, partially done Session 18)*
 
-- [ ] **Verse selection / multi-select mode** — **Phase 1 (UI only):** On desktop, verse numbers become clickable on hover. Clicking one activates selection mode: that verse gets a checkbox, all other verse numbers become checkboxes. Can check any number of non-sequential verses. Clicking outside clears all checkboxes back to verse numbers. On mobile: long-press a verse to activate selection mode. **Phase 2:** Attach notes, tags, files to selections. **Phase 3:** Firebase persistence. *(Requested: Session 14)*
+- [ ] **Verse selection Phase 2** — Phase 1 done (Session 18). Phase 2: Attach notes, tags, files to selections. Phase 3: Firebase persistence. *(Requested: Session 14)*
 
 ### OTHER PENDING
 
