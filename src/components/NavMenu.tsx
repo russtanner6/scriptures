@@ -50,7 +50,6 @@ const SECTIONS: NavSection[] = [
   {
     title: "Discover",
     items: [
-      { href: "/parallel", label: "Parallel Passages", svgIcon: "/parallel.svg", description: "Side-by-side comparison" },
       { href: "/chiasmus", label: "Chiasmus Detector", svgIcon: "/chiasmus.svg", description: "Mirror patterns (ABBA)" },
       { href: "/topics", label: "Topic Map", svgIcon: "/topics.svg", description: "Find similar chapters" },
     ],

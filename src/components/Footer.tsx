@@ -13,7 +13,6 @@ const TOOL_LINKS = [
 ];
 
 const DISCOVER_LINKS = [
-  { href: "/parallel", label: "Parallel Passages" },
   { href: "/chiasmus", label: "Chiasmus Detector" },
   { href: "/scriptures", label: "Scripture Reader" },
   { href: "/people", label: "People" },
