@@ -75,8 +75,8 @@ function ToolCard({ tool, isMobile }: { tool: typeof TOOLS[0]; isMobile: boolean
       href={tool.href}
       onClick={() => analytics.homeToolCardClick(tool.name)}
       style={{
-        background: "var(--surface)",
-        border: "1px solid var(--border)",
+        background: "linear-gradient(180deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.03) 100%)",
+        border: "1px solid rgba(255,255,255,0.12)",
         borderRadius: "12px",
         padding: isMobile ? "14px 12px" : "16px 14px",
         textDecoration: "none",
@@ -86,23 +86,23 @@ function ToolCard({ tool, isMobile }: { tool: typeof TOOLS[0]; isMobile: boolean
         gap: "8px",
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = "rgba(255,255,255,0.2)";
+        e.currentTarget.style.borderColor = "rgba(255,255,255,0.25)";
         e.currentTarget.style.transform = "translateY(-2px)";
         e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.3)";
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = "var(--border)";
+        e.currentTarget.style.borderColor = "rgba(255,255,255,0.12)";
         e.currentTarget.style.transform = "translateY(0)";
         e.currentTarget.style.boxShadow = "none";
       }}
     >
-      <div style={{ width: "30px", height: "30px", borderRadius: "8px", background: "rgba(255,255,255,0.04)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <img src={tool.svgIcon} alt="" style={{ width: "15px", height: "15px", filter: "invert(1) brightness(0.7)" }} />
+      <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+        <div style={{ width: "26px", height: "26px", borderRadius: "6px", background: "rgba(255,255,255,0.06)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+          <img src={tool.svgIcon} alt="" style={{ width: "13px", height: "13px", filter: "invert(1) brightness(0.7)" }} />
+        </div>
+        <div style={{ fontSize: "0.8rem", fontWeight: 700, color: "var(--text)" }}>{tool.name}</div>
       </div>
-      <div>
-        <div style={{ fontSize: "0.8rem", fontWeight: 700, color: "var(--text)", marginBottom: "3px" }}>{tool.name}</div>
-        <div style={{ fontSize: "0.68rem", color: "var(--text-muted)", lineHeight: 1.4 }}>{tool.description}</div>
-      </div>
+      <div style={{ fontSize: "0.68rem", color: "var(--text-muted)", lineHeight: 1.4 }}>{tool.description}</div>
     </Link>
   );
 }
@@ -430,8 +430,39 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* ── COLUMN 2: People + Nugget ── */}
+          {/* ── COLUMN 2: Nugget + People ── */}
           <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
+            {/* Featured Nugget — at top of column */}
+            {nugget && (
+              <div style={{
+                background: "linear-gradient(135deg, rgba(245,166,35,0.08), rgba(245,200,41,0.04))",
+                border: "1px solid rgba(245,166,35,0.2)",
+                borderRadius: "14px",
+                padding: "16px",
+              }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+                  <span style={{ fontSize: "0.55rem", fontWeight: 700, padding: "2px 8px", borderRadius: "4px", background: `${CATEGORY_COLORS[nugget.category] || "#F5A623"}20`, color: CATEGORY_COLORS[nugget.category] || "#F5A623", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+                    {nugget.category}
+                  </span>
+                  <span style={{ fontSize: "0.55rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "#F5A623" }}>
+                    Did you know?
+                  </span>
+                </div>
+                <div style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--text)", marginBottom: "8px" }}>{nugget.title}</div>
+                <p style={{ fontSize: "0.78rem", color: "var(--text-secondary)", lineHeight: 1.6, margin: "0 0 10px", display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+                  {nugget.insight}
+                </p>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <span style={{ fontSize: "0.65rem", color: "var(--text-muted)" }}>{nugget.book} {nugget.chapter}:{nugget.verse}</span>
+                  {nuggetLink && (
+                    <Link href={nuggetLink} style={{ fontSize: "0.72rem", color: "#F5A623", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+                      Read in context →
+                    </Link>
+                  )}
+                </div>
+              </div>
+            )}
+
             {/* Spotlight Character */}
             {spotlightChar && (
               <Link href={`/people?person=${spotlightChar.id}`} onClick={() => analytics.homeSpotlightClick(spotlightChar.id)} style={{ display: "block", textDecoration: "none" }}>
@@ -490,37 +521,6 @@ export default function HomePage() {
                 Explore all 757 people →
               </Link>
             </div>
-
-            {/* Featured Nugget */}
-            {nugget && (
-              <div style={{
-                background: "linear-gradient(135deg, rgba(245,166,35,0.08), rgba(245,200,41,0.04))",
-                border: "1px solid rgba(245,166,35,0.2)",
-                borderRadius: "14px",
-                padding: "16px",
-              }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
-                  <span style={{ fontSize: "0.55rem", fontWeight: 700, padding: "2px 8px", borderRadius: "4px", background: `${CATEGORY_COLORS[nugget.category] || "#F5A623"}20`, color: CATEGORY_COLORS[nugget.category] || "#F5A623", textTransform: "uppercase", letterSpacing: "0.08em" }}>
-                    {nugget.category}
-                  </span>
-                  <span style={{ fontSize: "0.55rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "#F5A623" }}>
-                    Did you know?
-                  </span>
-                </div>
-                <div style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--text)", marginBottom: "8px" }}>{nugget.title}</div>
-                <p style={{ fontSize: "0.78rem", color: "var(--text-secondary)", lineHeight: 1.6, margin: "0 0 10px", display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
-                  {nugget.insight}
-                </p>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ fontSize: "0.65rem", color: "var(--text-muted)" }}>{nugget.book} {nugget.chapter}:{nugget.verse}</span>
-                  {nuggetLink && (
-                    <Link href={nuggetLink} style={{ fontSize: "0.72rem", color: "#F5A623", textDecoration: "underline", textUnderlineOffset: "3px" }}>
-                      Read in context →
-                    </Link>
-                  )}
-                </div>
-              </div>
-            )}
           </div>
 
           {/* ── COLUMN 3: Stats + Random Verse ── */}
