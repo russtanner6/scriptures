@@ -190,7 +190,7 @@ export default function HomePage() {
         const withPortraits = chars.filter((c) => c.portraitUrl);
         const shuffled = withPortraits.sort(() => Math.random() - 0.5);
         setSpotlightChar(shuffled[0] || null);
-        setFeaturedChars(shuffled.slice(1, 11)); // 10 for carousel
+        setFeaturedChars(shuffled.slice(1, 21)); // 20 for carousel (portraits only)
         setGenderCounts({
           male: chars.filter((c) => c.gender === "male").length,
           female: chars.filter((c) => c.gender === "female").length,
