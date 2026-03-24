@@ -108,7 +108,7 @@ function ToolCard({ tool, isMobile }: { tool: typeof TOOLS[0]; isMobile: boolean
 }
 
 // ─── SVG Ring Chart ───
-function RingChart({ value, max, label, color, size = 72, strokeWidth = 6 }: { value: number; max: number; label: string; color: string; size?: number; strokeWidth?: number }) {
+function RingChart({ value, max, label, color, size = 72, strokeWidth = 6, fontSize: fs }: { value: number; max: number; label: string; color: string; size?: number; strokeWidth?: number; fontSize?: string }) {
   const animatedVal = useCounter(value);
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
@@ -116,16 +116,18 @@ function RingChart({ value, max, label, color, size = 72, strokeWidth = 6 }: { v
   const dashOffset = circumference * (1 - progress);
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
-      <svg width={size} height={size} style={{ transform: "rotate(-90deg)" }}>
-        <circle cx={size / 2} cy={size / 2} r={radius} fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth={strokeWidth} />
-        <circle cx={size / 2} cy={size / 2} r={radius} fill="none" stroke={color} strokeWidth={strokeWidth}
-          strokeDasharray={circumference} strokeDashoffset={dashOffset} strokeLinecap="round"
-          style={{ transition: "stroke-dashoffset 1.5s cubic-bezier(0.16, 1, 0.3, 1)" }} />
-      </svg>
-      <div style={{ fontSize: "0.88rem", fontWeight: 700, color: "var(--text)", marginTop: "-" + (size / 2 + 10) + "px", position: "relative", top: (size / 2 - 6) + "px" }}>
-        {animatedVal.toLocaleString()}
+      <div style={{ position: "relative", width: size, height: size }}>
+        <svg width={size} height={size} style={{ transform: "rotate(-90deg)", display: "block" }}>
+          <circle cx={size / 2} cy={size / 2} r={radius} fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth={strokeWidth} />
+          <circle cx={size / 2} cy={size / 2} r={radius} fill="none" stroke={color} strokeWidth={strokeWidth}
+            strokeDasharray={circumference} strokeDashoffset={dashOffset} strokeLinecap="round"
+            style={{ transition: "stroke-dashoffset 1.5s cubic-bezier(0.16, 1, 0.3, 1)" }} />
+        </svg>
+        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", fontSize: fs || "0.82rem", fontWeight: 700, color: "var(--text)" }}>
+          {animatedVal.toLocaleString()}
+        </div>
       </div>
-      <div style={{ fontSize: "0.58rem", color: "var(--text-muted)", fontWeight: 500, textAlign: "center", marginTop: "2px" }}>{label}</div>
+      <div style={{ fontSize: "0.58rem", color: "var(--text-muted)", fontWeight: 500, textAlign: "center" }}>{label}</div>
     </div>
   );
 }
@@ -404,10 +406,10 @@ export default function HomePage() {
         {/* Hero */}
         <div style={{ textAlign: "center", marginTop: "48px", marginBottom: "44px" }}>
           <h1 style={{ fontSize: "2.2rem", fontWeight: 800, color: "var(--text)", letterSpacing: "0.08em", marginBottom: "12px", textTransform: "uppercase" }}>
-            Scripture Explorer
+            LDS Scripture Explorer
           </h1>
           <p style={{ fontSize: "1.1rem", color: "#ffffff", maxWidth: "680px", margin: "0 auto", lineHeight: 1.6 }}>
-            Search, analyze, and read {bookStats.totalVerses ? bookStats.totalVerses.toLocaleString() : "41,995"} verses across all five volumes of scripture.
+            Search, analyze, and read {bookStats.totalVerses ? bookStats.totalVerses.toLocaleString() : "41,995"} verses across all five volumes of the LDS scripture canon.
           </p>
         </div>
 
@@ -526,21 +528,18 @@ export default function HomePage() {
 
             {bookStats.totalVerses > 0 && (
               <>
-                {/* Big number hero */}
+                {/* Total words — big animated number with ring charts */}
                 <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "14px", padding: "18px 16px", textAlign: "center" }}>
-                  <div style={{ fontSize: "0.55rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.14em", color: "var(--text-muted)", marginBottom: "8px" }}>
-                    By the Numbers
-                  </div>
-                  {/* Ring charts */}
-                  <div style={{ display: "flex", justifyContent: "space-around", marginBottom: "14px" }}>
-                    <RingChart value={bookStats.totalVerses} max={50000} label="Verses" color="#3B82F6" size={76} strokeWidth={6} />
-                    <RingChart value={bookStats.totalChapters} max={2000} label="Chapters" color="#10B981" size={76} strokeWidth={6} />
-                    <RingChart value={bookStats.totalBooks} max={100} label="Books" color="#A78BFA" size={76} strokeWidth={6} />
-                  </div>
-                  <div style={{ fontSize: "1.2rem", fontWeight: 800, color: "var(--text)", letterSpacing: "-0.02em" }}>
+                  <div style={{ fontSize: "1.4rem", fontWeight: 800, color: "var(--text)", letterSpacing: "-0.02em", marginBottom: "2px" }}>
                     {animatedTotalWords.toLocaleString()}
                   </div>
-                  <div style={{ fontSize: "0.6rem", color: "var(--text-muted)" }}>total words across 5 volumes</div>
+                  <div style={{ fontSize: "0.6rem", color: "var(--text-muted)", marginBottom: "16px" }}>total words across 5 volumes</div>
+                  {/* Ring charts row */}
+                  <div style={{ display: "flex", justifyContent: "space-around" }}>
+                    <RingChart value={bookStats.totalVerses} max={50000} label="Verses" color="#3B82F6" size={70} strokeWidth={5} fontSize="0.72rem" />
+                    <RingChart value={bookStats.totalChapters} max={2000} label="Chapters" color="#10B981" size={70} strokeWidth={5} fontSize="0.72rem" />
+                    <RingChart value={bookStats.totalBooks} max={100} label="Books" color="#A78BFA" size={70} strokeWidth={5} fontSize="0.72rem" />
+                  </div>
                 </div>
 
                 {/* Volume comparison bars */}
@@ -553,34 +552,52 @@ export default function HomePage() {
                   ))}
                 </div>
 
-                {/* Gender + People ring */}
+                {/* People + Places stats */}
                 <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "14px", padding: "14px 16px" }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
-                    <RingChart value={genderCounts.male} max={genderCounts.male + genderCounts.female} label="Men" color="#3B82F6" size={60} strokeWidth={5} />
-                    <div style={{ flex: 1 }}>
-                      <div style={{ fontSize: "0.88rem", fontWeight: 700, color: "var(--text)" }}>
+                  <div style={{ display: "flex", gap: "12px" }}>
+                    {/* People mini ring */}
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                      <RingChart value={genderCounts.male} max={genderCounts.male + genderCounts.female} label="" color="#3B82F6" size={52} strokeWidth={4} fontSize="0.65rem" />
+                    </div>
+                    <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                      <div style={{ fontSize: "0.82rem", fontWeight: 700, color: "var(--text)", marginBottom: "4px" }}>
                         {(genderCounts.male + genderCounts.female).toLocaleString()} People
                       </div>
-                      <div style={{ fontSize: "0.65rem", color: "var(--text-muted)", lineHeight: 1.5, marginTop: "4px" }}>
-                        {genderCounts.male} men ({Math.round(genderCounts.male / (genderCounts.male + genderCounts.female) * 100)}%) · {genderCounts.female} women ({Math.round(genderCounts.female / (genderCounts.male + genderCounts.female) * 100)}%)
+                      <div style={{ fontSize: "0.62rem", color: "var(--text-muted)", lineHeight: 1.5 }}>
+                        {genderCounts.male} men · {genderCounts.female} women
                       </div>
-                      <div style={{ fontSize: "0.65rem", color: "var(--text-muted)", marginTop: "2px" }}>
+                      <div style={{ fontSize: "0.62rem", color: "var(--text-muted)" }}>
                         {locationCount} named locations
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Fun facts */}
-                <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "14px", padding: "14px 16px" }}>
-                  <div style={{ fontSize: "0.6rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "8px" }}>
-                    Did You Know?
+                {/* Fun facts — visual stat cards */}
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px" }}>
+                  <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "10px", padding: "12px", textAlign: "center" }}>
+                    <div style={{ fontSize: "0.95rem", fontWeight: 800, color: "#10B981", marginBottom: "2px" }}>
+                      {bookStats.longestBook}
+                    </div>
+                    <div style={{ fontSize: "0.55rem", color: "var(--text-muted)" }}>Longest Book</div>
                   </div>
-                  <div style={{ fontSize: "0.7rem", color: "var(--text-secondary)", lineHeight: 1.7 }}>
-                    <div style={{ marginBottom: "4px" }}>📖 Longest book: <strong style={{ color: "var(--text)" }}>{bookStats.longestBook}</strong></div>
-                    <div style={{ marginBottom: "4px" }}>📄 Shortest book: <strong style={{ color: "var(--text)" }}>{bookStats.shortestBook}</strong></div>
-                    <div style={{ marginBottom: "4px" }}>✏️ ~{(bookStats.totalWords * 4.5 / 1000000).toFixed(1)}M letters estimated</div>
-                    <div>🕐 Spans ~4,000 years of history</div>
+                  <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "10px", padding: "12px", textAlign: "center" }}>
+                    <div style={{ fontSize: "0.95rem", fontWeight: 800, color: "#F59E0B", marginBottom: "2px" }}>
+                      {bookStats.shortestBook}
+                    </div>
+                    <div style={{ fontSize: "0.55rem", color: "var(--text-muted)" }}>Shortest Book</div>
+                  </div>
+                  <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "10px", padding: "12px", textAlign: "center" }}>
+                    <div style={{ fontSize: "0.95rem", fontWeight: 800, color: "#A78BFA", marginBottom: "2px" }}>
+                      ~{(bookStats.totalWords * 4.5 / 1000000).toFixed(1)}M
+                    </div>
+                    <div style={{ fontSize: "0.55rem", color: "var(--text-muted)" }}>Est. Letters</div>
+                  </div>
+                  <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "10px", padding: "12px", textAlign: "center" }}>
+                    <div style={{ fontSize: "0.95rem", fontWeight: 800, color: "#F43F5E", marginBottom: "2px" }}>
+                      ~4,000
+                    </div>
+                    <div style={{ fontSize: "0.55rem", color: "var(--text-muted)" }}>Years of History</div>
                   </div>
                 </div>
               </>
