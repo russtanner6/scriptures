@@ -289,29 +289,8 @@ export default function ChapterInsights({
             animation: "fadeIn 0.3s ease",
           }}
         >
-          {/* People in this Chapter — merged with speaker indicators */}
-          {(chapterChars.length > 0 || speakerMap.size > 0) && (() => {
-            // Find speakers NOT matched to any character (generic roles like "elders", "women of Bethlehem")
-            const matchedSpeakerNames = new Set<string>();
-            chapterChars.forEach((c) => {
-              const spk = getSpeakerInfo(c.name, c.aliases || []);
-              if (spk) {
-                // Find the actual speaker name in the map
-                const namesToCheck = [c.name, ...(c.aliases || [])];
-                for (const n of namesToCheck) {
-                  if (speakerMap.has(n)) { matchedSpeakerNames.add(n); break; }
-                  for (const [sn] of speakerMap) {
-                    if (sn.toLowerCase() === n.toLowerCase()) { matchedSpeakerNames.add(sn); break; }
-                  }
-                }
-              }
-            });
-            const unmatchedSpeakers = Array.from(speakerMap.entries())
-              .filter(([name]) => !matchedSpeakerNames.has(name));
-
-            // Title-case helper for generic speaker names
-            const titleCase = (s: string) => s.replace(/\b\w/g, (c) => c.toUpperCase());
-
+          {/* People in this Chapter — only show named characters from the database */}
+          {chapterChars.length > 0 && (() => {
             return (
             <div>
               <div
@@ -420,59 +399,6 @@ export default function ChapterInsights({
                     </button>
                   );
                 })}
-                {/* Unmatched speakers — generic roles not in character database */}
-                {unmatchedSpeakers.map(([name, info]) => (
-                  <div
-                    key={`speaker-${name}`}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "7px",
-                      padding: "4px 10px 4px 4px",
-                      borderRadius: "20px",
-                      background: theme.pillBg,
-                      border: `2.5px solid ${info.color}`,
-                      fontFamily: "inherit",
-                    }}
-                    title={`${titleCase(name)} — speaks in ${info.verseCount} verse${info.verseCount !== 1 ? "s" : ""}`}
-                  >
-                    <div
-                      style={{
-                        width: "26px",
-                        height: "26px",
-                        borderRadius: "50%",
-                        background: `${info.color}25`,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        fontSize: "0.62rem",
-                        fontWeight: 700,
-                        color: info.color,
-                      }}
-                    >
-                      {name.charAt(0).toUpperCase()}
-                    </div>
-                    <span
-                      style={{
-                        fontSize: "0.74rem",
-                        fontWeight: 600,
-                        color: info.color,
-                      }}
-                    >
-                      {titleCase(name)}
-                    </span>
-                    <span
-                      style={{
-                        fontSize: "0.68rem",
-                        fontWeight: 700,
-                        color: info.color,
-                        opacity: 0.8,
-                      }}
-                    >
-                      {info.verseCount}
-                    </span>
-                  </div>
-                ))}
               </div>
               {/* Speaker legend hint */}
               {speakers.length > 0 && (
