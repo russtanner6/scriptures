@@ -11,22 +11,27 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 
 ### NEXT SESSION — START HERE
 
-- [~] **Nugget accuracy audit** — Verify ALL 1,139 context nuggets for factual accuracy. Background agent ran in Session 18 — check results and apply fixes. *(Requested: Session 17)*
+- [ ] **Global styling standardization** — ALL tool pages need consistent centered h1 titles, centered white subtitles, consistent font sizes, spacing, and border-radius. Full audit done in Session 18 — all pages use left-aligned titles but should be centered like the home page. Affects: WordFrequency, NarrativeArc, Heatmap, WordCloud, Sentiment, Chiasmus, TopicMap, CharacterDirectory, LocationDirectory, BookmarksList. *(Requested: Session 18)*
 
-- [ ] **Firebase integration** — Set up Firebase for real user accounts. Auth (email/password + Google SSO), Firestore for user data (bookmarks, reading progress, annotations, preferences). This replaces localStorage with persistent cloud storage. *(Requested: Session 17)*
+- [ ] **Chiasmus data audit** — Verify the 40 chiasmus entries, especially BoM ones. User suspects most BoM chiasms are NOT verified/accepted by mainstream scholars. Research online and re-categorize accurately (Verified vs Probable vs Possible). May need to downgrade many BoM entries. *(Requested: Session 18)*
 
-- [~] **Apocrypha follow-up** — Data and volume added (Session 18). Still needed:
-  - Add Apocrypha characters to `data/characters.json` (Judith, Tobit, Mattathias, Judas Maccabeus, etc.)
-  - Add Apocrypha toggle in Settings page with D&C 91 reference
-  - Add "non-canonical" badge in scripture reader for Apocrypha chapters
+- [~] **Funny Stories tool** — Data file created with 21 original synopses (`data/funny-stories.json`). Still needed: page at `/funny-stories`, API route, in-reader laughing icon pills on funny story verses, nav menu entry, home page card. User wants volume-categorized list. Never duplicate stories. Synopses must be original. *(Requested: Session 18)*
+
+- [ ] **Convert remaining modals to slide-outs** — MethodologyModal (used on all search tools) and ExportChartModal/ExportHtmlModal should be slide-in panels, not centered popups. All info panels site-wide should use the slide-out pattern. *(Requested: Session 18)*
+
+- [x] **Nugget accuracy audit** — 50 checked, 6 fixed. NUGGET-GUIDE.md + context-nuggets.json exported to Desktop for Gemini. Remaining ~1089 need Gemini verification. *(Session 18)*
+
+- [ ] **Firebase integration** — Set up Firebase for real user accounts. Auth (email/password + Google SSO), Firestore for user data (bookmarks, reading progress, annotations, preferences). *(Requested: Session 17)*
+
+- [~] **Apocrypha follow-up** — Volume added (14 books, 5717 verses), Settings toggle done, non-canonical badge done. Still needed:
+  - Add Apocrypha characters to `data/characters.json`
   - Add Apocrypha intro/landing page
-  *(Requested: Session 15, partially done Session 18)*
+  *(Requested: Session 15, mostly done Session 18)*
 
-- [ ] **Verse selection Phase 2** — Phase 1 done (Session 18). Phase 2: Attach notes, tags, files to selections. Phase 3: Firebase persistence. *(Requested: Session 14)*
+- [ ] **Verse selection Phase 2** — Phase 1 done (Session 18). Phase 2: Attach notes, tags, files to selections. *(Requested: Session 14)*
 
 ### OTHER PENDING
 
-- [ ] **H1/H2 heading hierarchy audit** — Check all pages for proper semantic heading tags for SEO. Scripture pages now use h1 (Session 15), but other tool pages may skip levels. *(Requested: Session 15)*
 - [ ] **Character Relationship Visualizer** — Full-screen force-directed graph from Characters page. `RelationshipWeb.tsx` exists with basic graph. *(Requested: Session 12)*
 - [~] **"Found in X verses" link** — Inline expand works. Original spec was slide-out panel. *(Session 14)*
 - [ ] **More Context Nuggets** — 1,096 → ~1,500. Gaps: Psalms, Isaiah, Jeremiah. *(Session 12)*
