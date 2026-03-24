@@ -2608,9 +2608,7 @@ export default function ScriptureReader() {
 
   // ── VOLUME PICKER VIEW ──
   return scripturePageWrapper(
-    <a href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none", opacity: 0.7 }} title="Home">
-      <img src="/tree-logo.svg" alt="Home" style={{ height: "22px", width: "auto", filter: "invert(1) brightness(1)" }} />
-    </a>,
+    <span />,
     <>
       <div style={{ marginBottom: "40px", textAlign: "center" }}>
         <h1
