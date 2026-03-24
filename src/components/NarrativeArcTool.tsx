@@ -797,27 +797,59 @@ export default function NarrativeArcTool() {
           );
         })}
 
-      {/* Empty state */}
+      {/* Empty state with preset buttons */}
       {results.length === 0 && !isLoading && (
         <div
           style={{
             textAlign: "center",
-            padding: "80px 20px",
+            padding: "60px 20px",
             color: "var(--text-muted)",
           }}
         >
-          <div style={{ fontSize: "1.1rem", fontWeight: 500 }}>
-            Add search terms and click Go
+          <div style={{ fontSize: "1rem", fontWeight: 500, marginBottom: "20px" }}>
+            Try one of these comparisons to get started
           </div>
-          <div
-            style={{
-              fontSize: "0.88rem",
-              marginTop: "8px",
-              color: "var(--text-muted)",
-            }}
-          >
-            Try comparing &quot;faith&quot;, &quot;repentance&quot;, and
-            &quot;grace&quot; across all volumes
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", justifyContent: "center", maxWidth: "600px", margin: "0 auto" }}>
+            {[
+              { label: "Faith vs. Works", terms: ["faith", "works"] },
+              { label: "Grace & Mercy", terms: ["grace", "mercy", "forgiveness"] },
+              { label: "Love & Charity", terms: ["love", "charity", "compassion"] },
+              { label: "War & Peace", terms: ["war", "peace", "battle"] },
+              { label: "Sin & Repentance", terms: ["sin", "repentance", "forgive"] },
+              { label: "Covenant & Promise", terms: ["covenant", "promise", "oath"] },
+            ].map((preset) => (
+              <button
+                key={preset.label}
+                onClick={() => {
+                  setTerms(preset.terms);
+                  initialSearchDone.current = true;
+                }}
+                style={{
+                  padding: "8px 18px",
+                  borderRadius: "20px",
+                  border: "1px solid rgba(255,255,255,0.15)",
+                  background: "rgba(255,255,255,0.04)",
+                  color: "var(--text-secondary)",
+                  fontSize: "0.85rem",
+                  fontWeight: 500,
+                  cursor: "pointer",
+                  transition: "all 0.2s",
+                  fontFamily: "inherit",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "rgba(59,130,246,0.15)";
+                  e.currentTarget.style.borderColor = "rgba(59,130,246,0.4)";
+                  e.currentTarget.style.color = "#60A5FA";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "rgba(255,255,255,0.04)";
+                  e.currentTarget.style.borderColor = "rgba(255,255,255,0.15)";
+                  e.currentTarget.style.color = "var(--text-secondary)";
+                }}
+              >
+                {preset.label}
+              </button>
+            ))}
           </div>
         </div>
       )}

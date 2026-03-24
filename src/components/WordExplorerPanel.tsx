@@ -180,7 +180,9 @@ export default function WordExplorerPanel({
         style={{
           position: "fixed",
           inset: 0,
-          background: "rgba(0,0,0,0.4)",
+          background: "rgba(0,0,0,0.5)",
+          backdropFilter: "blur(4px)",
+          WebkitBackdropFilter: "blur(4px)",
           zIndex: 200,
           animation: "fadeIn 0.2s ease",
         }}

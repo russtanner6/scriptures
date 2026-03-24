@@ -1084,7 +1084,7 @@ export default function ScriptureReader() {
   const mt = getModalTheme(lightMode);
 
   // Shared dark nav bar for all scripture views (volume/book/chapter picker + reading)
-  const scriptureNavBar = (leftContent: React.ReactNode) => (
+  const scriptureNavBar = (leftContent: React.ReactNode, centerContent?: React.ReactNode) => (
     <div
       style={{
         background: "rgba(17, 17, 22, 0.95)",
@@ -1095,10 +1095,19 @@ export default function ScriptureReader() {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
+        position: "relative",
       }}
     >
       <div style={{ display: "flex", alignItems: "center", gap: "8px", minWidth: 0, flex: 1 }}>
         {leftContent}
+      </div>
+      {/* Center: logo or chapter selector */}
+      <div style={{ position: "absolute", left: "50%", transform: "translateX(-50%)", display: "flex", alignItems: "center" }}>
+        {centerContent || (
+          <a href="/" title="Home" style={{ display: "flex", alignItems: "center" }}>
+            <img src="/tree-logo.svg" alt="Scripture Explorer" style={{ height: "24px", width: "auto" }} />
+          </a>
+        )}
       </div>
       <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "6px" : "10px" }}>
         <a href="/search" title="Search scriptures" style={{ color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", width: "36px", height: "36px", textDecoration: "none" }}>
@@ -1112,9 +1121,9 @@ export default function ScriptureReader() {
           )}
         </button>
         <button onClick={() => setMenuOpen(true)} title="Menu" style={{ background: "none", border: "none", width: "36px", height: "36px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "4px", cursor: "pointer", color: "#fff" }}>
-          <span style={{ display: "block", width: "18px", height: "1.5px", background: "#fff", borderRadius: "1px" }} />
-          <span style={{ display: "block", width: "18px", height: "1.5px", background: "#fff", borderRadius: "1px" }} />
-          <span style={{ display: "block", width: "18px", height: "1.5px", background: "#fff", borderRadius: "1px" }} />
+          <span style={{ display: "block", width: "14px", height: "1.5px", background: "#fff", borderRadius: "1px", marginLeft: "auto" }} />
+          <span style={{ display: "block", width: "20px", height: "1.5px", background: "#fff", borderRadius: "1px" }} />
+          <span style={{ display: "block", width: "16px", height: "1.5px", background: "#fff", borderRadius: "1px", marginLeft: "auto" }} />
         </button>
       </div>
     </div>

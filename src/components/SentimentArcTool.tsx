@@ -15,7 +15,6 @@ import { Line } from "react-chartjs-2";
 import type { Volume } from "@/lib/types";
 import { VOLUME_COLORS, getContrastText } from "@/lib/constants";
 import { SENTIMENT_CATEGORIES } from "@/lib/sentiment-lexicon";
-import Header from "./Header";
 import DashboardCard from "./DashboardCard";
 import ChartHints from "./ChartHints";
 import ScripturePanel from "./ScripturePanel";
@@ -151,9 +150,7 @@ export default function SentimentArcTool() {
   };
 
   return (
-    <div className="page-container">
-      <Header />
-
+    <div>
       {/* Search panel — two-column layout */}
       <div className="search-panel" style={{ marginBottom: "24px" }}>
         <div style={{ display: "flex", gap: isMobile ? "16px" : "24px", flexDirection: isMobile ? "column" : "row", alignItems: "flex-start" }}>

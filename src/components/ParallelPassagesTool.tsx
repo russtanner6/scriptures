@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import { VOLUME_COLORS } from "@/lib/constants";
-import Header from "./Header";
 import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./MethodologyModal";
 import { useIsMobile } from "@/lib/useIsMobile";
 
@@ -113,9 +112,7 @@ export default function ParallelPassagesTool() {
   const activePair = detail?.pairs[activePairIdx];
 
   return (
-    <div className="page-container">
-      <Header />
-
+    <div>
       {/* Selection panel */}
       <div className="search-panel" style={{ marginBottom: "24px" }}>
         <h1 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>

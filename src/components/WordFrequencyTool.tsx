@@ -1049,28 +1049,52 @@ export default function WordFrequencyTool() {
         </>
       )}
 
-      {/* Empty state */}
+      {/* Empty state with preset buttons */}
       {!results && !isLoading && (
         <div
           style={{
             textAlign: "center",
-            padding: "80px 20px",
+            padding: "60px 20px",
             color: "var(--text-muted)",
           }}
         >
-          <div style={{ fontSize: "1.1rem", fontWeight: 500 }}>
-            Enter a word or phrase above to analyze its frequency across the
-            scriptures
+          <div style={{ fontSize: "1rem", fontWeight: 500, marginBottom: "20px" }}>
+            Try one of these searches to get started
           </div>
-          <div
-            style={{
-              fontSize: "0.88rem",
-              marginTop: "8px",
-              color: "var(--text-muted)",
-            }}
-          >
-            Try &quot;Jesus&quot;, &quot;faith&quot;, &quot;covenant&quot;, or
-            &quot;repent&quot;
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", justifyContent: "center", maxWidth: "500px", margin: "0 auto" }}>
+            {["Jesus", "faith", "covenant", "repent", "love", "prayer"].map((preset) => (
+              <button
+                key={preset}
+                onClick={() => {
+                  setWord(preset);
+                  initialSearchDone.current = true;
+                }}
+                style={{
+                  padding: "8px 18px",
+                  borderRadius: "20px",
+                  border: "1px solid rgba(255,255,255,0.15)",
+                  background: "rgba(255,255,255,0.04)",
+                  color: "var(--text-secondary)",
+                  fontSize: "0.85rem",
+                  fontWeight: 500,
+                  cursor: "pointer",
+                  transition: "all 0.2s",
+                  fontFamily: "inherit",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "rgba(59,130,246,0.15)";
+                  e.currentTarget.style.borderColor = "rgba(59,130,246,0.4)";
+                  e.currentTarget.style.color = "#60A5FA";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "rgba(255,255,255,0.04)";
+                  e.currentTarget.style.borderColor = "rgba(255,255,255,0.15)";
+                  e.currentTarget.style.color = "var(--text-secondary)";
+                }}
+              >
+                {preset}
+              </button>
+            ))}
           </div>
         </div>
       )}

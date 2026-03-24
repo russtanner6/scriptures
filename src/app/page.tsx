@@ -143,41 +143,31 @@ export default function HomePage() {
 
   return (
     <div className="page-container">
-      <Header variant="home" />
+      <Header />
 
       {/* Hero */}
       <div style={{
         textAlign: "center",
-        marginTop: isMobile ? "8px" : "40px",
+        marginTop: isMobile ? "24px" : "48px",
         marginBottom: isMobile ? "28px" : "48px",
       }}>
         <h1
           style={{
-            fontSize: isMobile ? "1.6rem" : "2.4rem",
+            fontSize: isMobile ? "1.5rem" : "2.2rem",
             fontWeight: 800,
             color: "var(--text)",
-            letterSpacing: "-0.025em",
-            marginBottom: "14px",
+            letterSpacing: "0.08em",
+            marginBottom: "12px",
             lineHeight: 1.15,
+            textTransform: "uppercase",
           }}
         >
-          Explore the Scriptures
-          <br />
-          <span
-            style={{
-              background: "linear-gradient(135deg, #DC2F4B, #E8532C, #F57B20, #F5A623, #F5C829)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-            }}
-          >
-            Like Never Before
-          </span>
+          Scripture Explorer
         </h1>
         <p
           style={{
-            fontSize: isMobile ? "0.9rem" : "1.05rem",
-            color: "var(--text-secondary)",
+            fontSize: isMobile ? "0.95rem" : "1.1rem",
+            color: "#ffffff",
             maxWidth: "680px",
             margin: "0 auto",
             lineHeight: 1.6,

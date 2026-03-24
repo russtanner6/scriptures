@@ -5,72 +5,123 @@ import Link from "next/link";
 import NavMenu from "./NavMenu";
 
 export default function Header({
-  showSubtitle = false,
-  variant = "default",
+  showMenuLabel = false,
 }: {
-  showSubtitle?: boolean;
-  variant?: "home" | "default";
+  showMenuLabel?: boolean;
 }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="header-wrapper">
-      {/* Hamburger menu — fixed to viewport top-right */}
-      <button
-        className="hamburger-btn"
-        type="button"
-        title="Menu"
-        onClick={() => setMenuOpen(true)}
+    <>
+      <div
         style={{
-          position: "fixed",
-          left: "auto",
-          right: "24px",
-          top: "20px",
-          transform: "none",
-          flexDirection: "row",
+          background: "rgba(17, 17, 22, 0.95)",
+          backdropFilter: "blur(12px)",
+          WebkitBackdropFilter: "blur(12px)",
+          borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
+          padding: "10px 16px",
+          display: "flex",
           alignItems: "center",
-          gap: "10px",
+          justifyContent: "space-between",
+          position: "sticky",
+          top: 0,
           zIndex: 50,
+          width: "100%",
         }}
       >
-        <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
-          <span className="hamburger-line" style={{ width: "14px", marginLeft: "auto" }} />
-          <span className="hamburger-line" style={{ width: "22px" }} />
-          <span className="hamburger-line" style={{ width: "18px", marginLeft: "auto" }} />
-        </div>
-        <span className="hamburger-label" style={{ fontSize: "0.6rem", fontWeight: 600, letterSpacing: "0.12em", color: "#ffffff", textTransform: "uppercase" }}>Menu</span>
-      </button>
+        {/* Left spacer for balance */}
+        <div style={{ width: "36px", height: "36px", flexShrink: 0 }} />
+
+        {/* Center: logo links to home */}
+        <Link
+          href="/"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            textDecoration: "none",
+          }}
+        >
+          <img
+            src="/tree-logo.svg"
+            alt="Scripture Explorer"
+            style={{ height: "28px", width: "auto" }}
+          />
+        </Link>
+
+        {/* Right: hamburger menu */}
+        <button
+          type="button"
+          title="Menu"
+          onClick={() => setMenuOpen(true)}
+          style={{
+            background: "none",
+            border: "none",
+            width: "36px",
+            height: "36px",
+            display: "flex",
+            flexDirection: showMenuLabel ? "row" : "column",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: showMenuLabel ? "8px" : "4px",
+            cursor: "pointer",
+            color: "#fff",
+            padding: 0,
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "4px",
+              alignItems: "flex-end",
+            }}
+          >
+            <span
+              style={{
+                display: "block",
+                width: "14px",
+                height: "1.5px",
+                background: "#fff",
+                borderRadius: "1px",
+              }}
+            />
+            <span
+              style={{
+                display: "block",
+                width: "20px",
+                height: "1.5px",
+                background: "#fff",
+                borderRadius: "1px",
+              }}
+            />
+            <span
+              style={{
+                display: "block",
+                width: "16px",
+                height: "1.5px",
+                background: "#fff",
+                borderRadius: "1px",
+              }}
+            />
+          </div>
+          {showMenuLabel && (
+            <span
+              style={{
+                fontSize: "0.55rem",
+                fontWeight: 600,
+                letterSpacing: "0.12em",
+                color: "#ffffff",
+                textTransform: "uppercase",
+              }}
+            >
+              Menu
+            </span>
+          )}
+        </button>
+      </div>
 
       <NavMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
-
-      <div className="header-title" style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100%", margin: 0 }}>
-        <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
-          {variant === "home" ? (
-            <img
-              src="/logo-full.svg"
-              alt="Scripture Explorer"
-              style={{ height: "56px", width: "auto", maxWidth: "min(400px, 70vw)" }}
-            />
-          ) : (
-            <img
-              src="/tree-logo.svg"
-              alt="Scripture Explorer"
-              style={{ height: "44px", width: "auto" }}
-            />
-          )}
-        </Link>
-      </div>
-      {showSubtitle && (
-        <div className="header-subtitle">
-          Search and analyze word frequencies across the LDS Standard Works.{" "}
-          <strong style={{ color: "var(--text)", fontWeight: 700 }}>
-            41,995
-          </strong>{" "}
-          verses across{" "}
-          <strong style={{ color: "var(--text)", fontWeight: 700 }}>87</strong>{" "}
-          books.
-        </div>
-      )}
-    </div>
+    </>
   );
 }

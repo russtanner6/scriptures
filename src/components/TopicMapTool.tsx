@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import type { Volume } from "@/lib/types";
 import { VOLUME_COLORS } from "@/lib/constants";
-import Header from "./Header";
 import { SectionLabel } from "./VolumeCheckboxes";
 import MethodologyModal, { MethodSection, MethodNote, MethodLink } from "./MethodologyModal";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
@@ -67,9 +66,7 @@ export default function TopicMapTool() {
   const selectedVol = volumes.find((v) => v.id === selectedVolume);
 
   return (
-    <div className="page-container">
-      <Header />
-
+    <div>
       {/* Selection panel */}
       <div className="search-panel" style={{ marginBottom: "24px" }}>
         <h1 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
