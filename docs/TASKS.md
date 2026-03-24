@@ -11,6 +11,8 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 
 ### NEXT SESSION — START HERE
 
+- [ ] **Nugget accuracy audit** — Verify ALL 1,139 context nuggets for factual accuracy. Each nugget cites a scholarly source — cross-check claims against those sources via web search. Flag any that are speculative, exaggerated, or unsupported. Priority: the 50 newest nuggets (added Session 17) haven't been manually verified. Also verify Hebrew/Greek translations, archaeological claims, and historical dates. *(Requested: Session 17)*
+
 - [ ] **Chapter-level resources** — Distinguish between videos/links/nuggets that apply to entire chapters/sections vs. single verses. Need a mechanism for showing chapter-wide resources (e.g., a BibleProject overview video for Genesis, a scholarly article about Alma 36). Currently all resources are verse-attached. Need: data model for chapter-level vs. verse-level resources, UI for chapter-wide resources (maybe a banner/section at the top of the chapter, or a dedicated tab in the Insights panel), and migration of any existing resources that should be chapter-level. *(Requested: Session 17)*
 
 - [ ] **Firebase integration** — Set up Firebase for real user accounts. Auth (email/password + Google SSO), Firestore for user data (bookmarks, reading progress, annotations, preferences). This replaces localStorage with persistent cloud storage. *(Requested: Session 17)*
