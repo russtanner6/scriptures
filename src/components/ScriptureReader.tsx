@@ -14,6 +14,7 @@ import ResourceMarker, { getResourceTypeColor } from "./ResourceMarker";
 import ResourcePanel from "./ResourcePanel";
 import WordExplorerPanel from "./WordExplorerPanel";
 import NavMenu from "./NavMenu";
+import HamburgerIcon from "./HamburgerIcon";
 import { markChapterRead, isChapterRead, getReadChaptersForBook, getVolumeProgress } from "@/lib/reading-progress";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { modalStyles as mStyles, getModalTheme } from "@/lib/modal-styles";
@@ -1188,10 +1189,8 @@ export default function ScriptureReader() {
             <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5" /><line x1="12" y1="1" x2="12" y2="3" /><line x1="12" y1="21" x2="12" y2="23" /><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" /><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" /><line x1="1" y1="12" x2="3" y2="12" /><line x1="21" y1="12" x2="23" y2="12" /><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" /><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" /></svg>
           )}
         </button>
-        <button onClick={() => setMenuOpen(true)} title="Menu" style={{ background: "none", border: "none", width: "36px", height: "36px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "4px", cursor: "pointer", color: "#fff" }}>
-          <span style={{ display: "block", width: "14px", height: "1.5px", background: "#fff", borderRadius: "1px", marginLeft: "auto" }} />
-          <span style={{ display: "block", width: "20px", height: "1.5px", background: "#fff", borderRadius: "1px" }} />
-          <span style={{ display: "block", width: "16px", height: "1.5px", background: "#fff", borderRadius: "1px", marginLeft: "auto" }} />
+        <button onClick={() => setMenuOpen(true)} title="Menu" style={{ background: "none", border: "none", width: "36px", height: "36px", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", color: "#fff", padding: 0 }}>
+          <HamburgerIcon />
         </button>
       </div>
     </div>
@@ -1466,16 +1465,13 @@ export default function ScriptureReader() {
                 width: "36px",
                 height: "36px",
                 display: "flex",
-                flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
-                gap: "4px",
                 color: "#fff",
+                padding: 0,
               }}
             >
-              <span style={{ display: "block", width: "14px", height: "1.5px", background: "#fff", borderRadius: "1px", marginLeft: "auto" }} />
-              <span style={{ display: "block", width: "20px", height: "1.5px", background: "#fff", borderRadius: "1px" }} />
-              <span style={{ display: "block", width: "16px", height: "1.5px", background: "#fff", borderRadius: "1px", marginLeft: "auto" }} />
+              <HamburgerIcon />
             </button>
           </div>
         </div>

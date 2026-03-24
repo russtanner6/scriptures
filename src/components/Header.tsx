@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import NavMenu from "./NavMenu";
+import HamburgerIcon from "./HamburgerIcon";
 
 export default function Header({
   showMenuLabel = false,
@@ -69,42 +70,7 @@ export default function Header({
             padding: 0,
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "4px",
-              alignItems: "flex-end",
-            }}
-          >
-            <span
-              style={{
-                display: "block",
-                width: "14px",
-                height: "1.5px",
-                background: "#fff",
-                borderRadius: "1px",
-              }}
-            />
-            <span
-              style={{
-                display: "block",
-                width: "20px",
-                height: "1.5px",
-                background: "#fff",
-                borderRadius: "1px",
-              }}
-            />
-            <span
-              style={{
-                display: "block",
-                width: "16px",
-                height: "1.5px",
-                background: "#fff",
-                borderRadius: "1px",
-              }}
-            />
-          </div>
+          <HamburgerIcon />
           {showMenuLabel && (
             <span
               style={{
