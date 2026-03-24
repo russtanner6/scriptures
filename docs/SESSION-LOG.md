@@ -1,5 +1,63 @@
 # Scripture Explorer — Session Log
 
+## 2026-03-24 — Session 17: Home Page Redesign, Parallel Removal, Stats Viz, Site Audit
+
+### What was done
+
+**Home Page Redesign:**
+- 3-column desktop layout: Tools (left), People spotlight (center), Scripture stats (right)
+- SVG ring charts with animated counters (verses, chapters, books)
+- Volume word-count bar comparison (OT dominates at 609K words)
+- Gender breakdown ring chart (89% men / 11% women of 757 people)
+- Featured Nugget card ("Did you know?") with category badge and link to scripture
+- People spotlight with auto-sliding carousel (10 characters, advances every 3s)
+- Fun facts: longest book (Alma), shortest (3 John), ~5.4M letters, 4000-year span
+- D&C excluded from longest/shortest book (it's a collection of sections)
+- Curated mobile layout: Scriptures+People → featured people → 4 tools → stats → nugget → remaining tools → verse
+
+**Removed Parallel Passages:**
+- Deleted page, component, API route, SVG icon
+- Removed from nav menu, footer, sitemap
+- Cleaned all documentation references
+
+**New API:**
+- `/api/random-nugget` — returns single random scholarly insight
+
+**Scripture Card Styling:**
+- Volume cards: straight top color border (not rounded), gradient background
+- Book cards: subtle gradient (0.06 → 0.02 opacity)
+- Chapter grid cells: matching gradient treatment
+
+**Mobile Chart Scroll Fix:**
+- Disabled pan on mobile for all 4 chart tools (NarrativeArc, WordFrequency, Heatmap, SentimentArc)
+- Added touch-action: pan-y to chart containers so vertical scroll works when touching charts
+- Pinch zoom still available for detailed exploration
+
+**Browser Back/Forward Navigation:**
+- pushState for forward nav (volume → book → chapter)
+- popstate listener syncs React state from URL on browser back/forward
+- UI back buttons use history.back() for proper integration
+
+**Header Improvements:**
+- Full-width header on ALL pages (rendered outside page-container)
+- White centered h1 headings for volume/book/chapter views
+- Removed duplicate logo on scripture volume picker
+
+**Full Site Audit:**
+- Page-by-page screenshots on desktop (1440px) and mobile (375px)
+- Verified: header consistency, no Parallel Passages anywhere, footer links correct
+- All 10+ pages checked: home, search, narrative-arc, heatmap, wordcloud, sentiment, chiasmus, topics, people, locations, scriptures
+- Nav menu verified clean
+
+### Pending (from user requests)
+- Logo: user says "wrong/old tree logo" — needs clarification on which file to use
+- More context nuggets (research agent running)
+- YouTube video spreadsheet (research agent running)
+- Light/dark toggle for scripture nav cards (picker views always dark currently)
+- More creative interactive tools for scriptures
+
+---
+
 ## 2026-03-23 — Session 16: Header Standardization + Chiasmus Rework + Preset Buttons + UI Polish
 
 ### What was done
