@@ -107,25 +107,41 @@ function ToolCard({ tool, isMobile }: { tool: typeof TOOLS[0]; isMobile: boolean
   );
 }
 
-// ─── Stat Pill Component ───
-function StatPill({ label, value, suffix, icon }: { label: string; value: number; suffix?: string; icon: string }) {
-  const count = useCounter(value);
+// ─── SVG Ring Chart ───
+function RingChart({ value, max, label, color, size = 72, strokeWidth = 6 }: { value: number; max: number; label: string; color: string; size?: number; strokeWidth?: number }) {
+  const animatedVal = useCounter(value);
+  const radius = (size - strokeWidth) / 2;
+  const circumference = 2 * Math.PI * radius;
+  const progress = max > 0 ? animatedVal / max : 0;
+  const dashOffset = circumference * (1 - progress);
   return (
-    <div style={{
-      background: "rgba(255,255,255,0.03)",
-      border: "1px solid rgba(255,255,255,0.08)",
-      borderRadius: "10px",
-      padding: "12px 14px",
-      display: "flex",
-      alignItems: "center",
-      gap: "10px",
-    }}>
-      <span style={{ fontSize: "1.1rem" }}>{icon}</span>
-      <div>
-        <div style={{ fontSize: "1rem", fontWeight: 700, color: "var(--text)", letterSpacing: "-0.02em" }}>
-          {count.toLocaleString()}{suffix || ""}
-        </div>
-        <div style={{ fontSize: "0.62rem", color: "var(--text-muted)", fontWeight: 500 }}>{label}</div>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
+      <svg width={size} height={size} style={{ transform: "rotate(-90deg)" }}>
+        <circle cx={size / 2} cy={size / 2} r={radius} fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth={strokeWidth} />
+        <circle cx={size / 2} cy={size / 2} r={radius} fill="none" stroke={color} strokeWidth={strokeWidth}
+          strokeDasharray={circumference} strokeDashoffset={dashOffset} strokeLinecap="round"
+          style={{ transition: "stroke-dashoffset 1.5s cubic-bezier(0.16, 1, 0.3, 1)" }} />
+      </svg>
+      <div style={{ fontSize: "0.88rem", fontWeight: 700, color: "var(--text)", marginTop: "-" + (size / 2 + 10) + "px", position: "relative", top: (size / 2 - 6) + "px" }}>
+        {animatedVal.toLocaleString()}
+      </div>
+      <div style={{ fontSize: "0.58rem", color: "var(--text-muted)", fontWeight: 500, textAlign: "center", marginTop: "2px" }}>{label}</div>
+    </div>
+  );
+}
+
+// ─── Horizontal Bar ───
+function StatBar({ label, value, max, color }: { label: string; value: number; max: number; color: string }) {
+  const animatedVal = useCounter(value);
+  const pct = max > 0 ? (animatedVal / max) * 100 : 0;
+  return (
+    <div style={{ marginBottom: "6px" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "3px" }}>
+        <span style={{ fontSize: "0.65rem", color: "var(--text-secondary)", fontWeight: 500 }}>{label}</span>
+        <span style={{ fontSize: "0.65rem", color: "var(--text)", fontWeight: 700 }}>{animatedVal.toLocaleString()}</span>
+      </div>
+      <div style={{ height: "5px", borderRadius: "3px", background: "rgba(255,255,255,0.06)", overflow: "hidden" }}>
+        <div style={{ height: "100%", borderRadius: "3px", background: color, width: `${Math.min(pct, 100)}%`, transition: "width 1.5s cubic-bezier(0.16, 1, 0.3, 1)" }} />
       </div>
     </div>
   );
@@ -134,13 +150,25 @@ function StatPill({ label, value, suffix, icon }: { label: string; value: number
 export default function HomePage() {
   const isMobile = useIsMobile();
   const { isVolumeVisible } = usePreferencesContext();
+  // Top-level animated counter for total words (hooks must be at top level)
   const [randomVerse, setRandomVerse] = useState<RandomVerse | null>(null);
   const [featuredChars, setFeaturedChars] = useState<ScriptureCharacter[]>([]);
   const [spotlightChar, setSpotlightChar] = useState<ScriptureCharacter | null>(null);
   const [nugget, setNugget] = useState<ContextNugget | null>(null);
-  const [bookStats, setBookStats] = useState<{ totalVerses: number; totalWords: number; totalChapters: number; totalBooks: number; longestBook: string; shortestBook: string }>({ totalVerses: 0, totalWords: 0, totalChapters: 0, totalBooks: 0, longestBook: "", shortestBook: "" });
+  const [bookStats, setBookStats] = useState<{ totalVerses: number; totalWords: number; totalChapters: number; totalBooks: number; longestBook: string; shortestBook: string; volumeWords: Record<string, number> }>({ totalVerses: 0, totalWords: 0, totalChapters: 0, totalBooks: 0, longestBook: "", shortestBook: "", volumeWords: {} });
   const [genderCounts, setGenderCounts] = useState<{ male: number; female: number }>({ male: 0, female: 0 });
   const [locationCount, setLocationCount] = useState(0);
+  const animatedTotalWords = useCounter(bookStats.totalWords);
+  const [carouselIdx, setCarouselIdx] = useState(0);
+
+  // Auto-advance people carousel every 3 seconds
+  useEffect(() => {
+    if (featuredChars.length <= 3) return;
+    const timer = setInterval(() => {
+      setCarouselIdx((prev) => (prev + 1) % (featuredChars.length - 2));
+    }, 3000);
+    return () => clearInterval(timer);
+  }, [featuredChars.length]);
 
   // Fetch all home page data on mount
   useEffect(() => {
@@ -160,7 +188,7 @@ export default function HomePage() {
         const withPortraits = chars.filter((c) => c.portraitUrl);
         const shuffled = withPortraits.sort(() => Math.random() - 0.5);
         setSpotlightChar(shuffled[0] || null);
-        setFeaturedChars(shuffled.slice(1, 4));
+        setFeaturedChars(shuffled.slice(1, 11)); // 10 for carousel
         setGenderCounts({
           male: chars.filter((c) => c.gender === "male").length,
           female: chars.filter((c) => c.gender === "female").length,
@@ -173,7 +201,12 @@ export default function HomePage() {
       .then((r) => r.json())
       .then((data) => {
         const bs: BookStat[] = data.stats || [];
-        const sorted = [...bs].sort((a, b) => b.wordCount - a.wordCount);
+        // Exclude D&C from longest/shortest — it's a collection of sections, not a single book
+        const realBooks = bs.filter((b) => b.volumeAbbrev !== "D&C");
+        const sorted = [...realBooks].sort((a, b) => b.wordCount - a.wordCount);
+        // Volume-level word counts
+        const volumeWords: Record<string, number> = {};
+        bs.forEach((b) => { volumeWords[b.volumeAbbrev] = (volumeWords[b.volumeAbbrev] || 0) + b.wordCount; });
         setBookStats({
           totalVerses: bs.reduce((s, b) => s + b.verseCount, 0),
           totalWords: bs.reduce((s, b) => s + b.wordCount, 0),
@@ -181,6 +214,7 @@ export default function HomePage() {
           totalBooks: bs.length,
           longestBook: sorted[0]?.bookName || "",
           shortestBook: sorted[sorted.length - 1]?.bookName || "",
+          volumeWords,
         });
       })
       .catch(() => {});
@@ -279,20 +313,22 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Scripture Stats */}
+          {/* Scripture Stats — compact mobile version */}
           {bookStats.totalVerses > 0 && (
-            <div style={{ marginBottom: "16px" }}>
-              <div style={{ fontSize: "0.65rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)", marginBottom: "10px" }}>
+            <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "14px", padding: "16px", marginBottom: "16px" }}>
+              <div style={{ fontSize: "0.65rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)", marginBottom: "12px" }}>
                 By the Numbers
               </div>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px" }}>
-                <StatPill icon="📖" value={bookStats.totalVerses} label="Verses" />
-                <StatPill icon="✍️" value={bookStats.totalWords} label="Words" />
-                <StatPill icon="📚" value={bookStats.totalChapters} label="Chapters" />
-                <StatPill icon="👤" value={genderCounts.male + genderCounts.female} label="Named People" />
-                <StatPill icon="📍" value={locationCount} label="Places" />
-                <StatPill icon="📕" value={bookStats.totalBooks} label="Books" />
+              {/* Ring charts row */}
+              <div style={{ display: "flex", justifyContent: "space-around", marginBottom: "16px" }}>
+                <RingChart value={bookStats.totalVerses} max={50000} label="Verses" color="#3B82F6" size={64} strokeWidth={5} />
+                <RingChart value={bookStats.totalChapters} max={2000} label="Chapters" color="#10B981" size={64} strokeWidth={5} />
+                <RingChart value={genderCounts.male + genderCounts.female} max={1000} label="People" color="#F59E0B" size={64} strokeWidth={5} />
               </div>
+              {/* Volume bars */}
+              {VOLUME_ORDER.filter(v => bookStats.volumeWords[v]).map((v) => (
+                <StatBar key={v} label={v} value={bookStats.volumeWords[v] || 0} max={Math.max(...Object.values(bookStats.volumeWords))} color={VOLUME_COLORS[v] || "#888"} />
+              ))}
             </div>
           )}
 
@@ -422,20 +458,27 @@ export default function HomePage() {
               </Link>
             )}
 
-            {/* 3 Featured People */}
+            {/* Featured People — auto-sliding carousel */}
             {featuredChars.length > 0 && (
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "8px" }}>
-                {featuredChars.slice(0, 3).map((c) => (
-                  <Link key={c.id} href={`/people?person=${c.id}`} style={{ textDecoration: "none", textAlign: "center", transition: "transform 0.2s" }}
-                    onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-2px)"; }}
-                    onMouseLeave={(e) => { e.currentTarget.style.transform = "translateY(0)"; }}
-                  >
-                    <div style={{ width: "100%", aspectRatio: "1", borderRadius: "10px", overflow: "hidden", marginBottom: "4px", border: "1px solid var(--border)" }}>
-                      <img src={c.portraitUrl} alt={c.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%" }} loading="lazy" />
-                    </div>
-                    <div style={{ fontSize: "0.6rem", fontWeight: 600, color: "var(--text-secondary)", lineHeight: 1.2 }}>{c.name}</div>
-                  </Link>
-                ))}
+              <div style={{ overflow: "hidden", borderRadius: "10px" }}>
+                <div style={{
+                  display: "flex",
+                  gap: "8px",
+                  transition: "transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)",
+                  transform: `translateX(-${carouselIdx * (100 / 3 + 2.7)}%)`,
+                }}>
+                  {featuredChars.map((c) => (
+                    <Link key={c.id} href={`/people?person=${c.id}`} style={{ textDecoration: "none", textAlign: "center", flex: "0 0 calc(33.33% - 6px)", transition: "transform 0.2s" }}
+                      onMouseEnter={(e) => { e.currentTarget.style.transform = "scale(1.03)"; }}
+                      onMouseLeave={(e) => { e.currentTarget.style.transform = "scale(1)"; }}
+                    >
+                      <div style={{ width: "100%", aspectRatio: "1", borderRadius: "10px", overflow: "hidden", marginBottom: "4px", border: "1px solid var(--border)" }}>
+                        <img src={c.portraitUrl} alt={c.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%" }} loading="lazy" />
+                      </div>
+                      <div style={{ fontSize: "0.6rem", fontWeight: 600, color: "var(--text-secondary)", lineHeight: 1.2 }}>{c.name}</div>
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
 
@@ -479,30 +522,65 @@ export default function HomePage() {
           </div>
 
           {/* ── COLUMN 3: Stats + Random Verse ── */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-            <div style={{ fontSize: "0.65rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)", marginBottom: "2px" }}>
-              By the Numbers
-            </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
 
             {bookStats.totalVerses > 0 && (
               <>
-                <StatPill icon="📖" value={bookStats.totalVerses} label="Verses across 5 volumes" />
-                <StatPill icon="✍️" value={bookStats.totalWords} label="Total words" />
-                <StatPill icon="📚" value={bookStats.totalChapters} label="Chapters" />
-                <StatPill icon="📕" value={bookStats.totalBooks} label="Books" />
-                <StatPill icon="👤" value={genderCounts.male + genderCounts.female} label={`People (${genderCounts.male + genderCounts.female > 0 ? Math.round(genderCounts.male / (genderCounts.male + genderCounts.female) * 100) : 0}% men)`} />
-                <StatPill icon="📍" value={locationCount} label="Named locations" />
-
-                {/* Text stats */}
-                <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "10px", padding: "12px 14px" }}>
-                  <div style={{ fontSize: "0.72rem", fontWeight: 600, color: "var(--text)", marginBottom: "6px" }}>
-                    📊 Fun Facts
+                {/* Big number hero */}
+                <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "14px", padding: "18px 16px", textAlign: "center" }}>
+                  <div style={{ fontSize: "0.55rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.14em", color: "var(--text-muted)", marginBottom: "8px" }}>
+                    By the Numbers
                   </div>
-                  <div style={{ fontSize: "0.68rem", color: "var(--text-secondary)", lineHeight: 1.7 }}>
-                    <div>Longest book: <strong style={{ color: "var(--text)" }}>{bookStats.longestBook}</strong></div>
-                    <div>Shortest book: <strong style={{ color: "var(--text)" }}>{bookStats.shortestBook}</strong></div>
-                    <div>~{Math.round(bookStats.totalWords * 4.5 / 1000000 * 10) / 10}M letters estimated</div>
-                    <div>5 volumes spanning ~4,000 years</div>
+                  {/* Ring charts */}
+                  <div style={{ display: "flex", justifyContent: "space-around", marginBottom: "14px" }}>
+                    <RingChart value={bookStats.totalVerses} max={50000} label="Verses" color="#3B82F6" size={76} strokeWidth={6} />
+                    <RingChart value={bookStats.totalChapters} max={2000} label="Chapters" color="#10B981" size={76} strokeWidth={6} />
+                    <RingChart value={bookStats.totalBooks} max={100} label="Books" color="#A78BFA" size={76} strokeWidth={6} />
+                  </div>
+                  <div style={{ fontSize: "1.2rem", fontWeight: 800, color: "var(--text)", letterSpacing: "-0.02em" }}>
+                    {animatedTotalWords.toLocaleString()}
+                  </div>
+                  <div style={{ fontSize: "0.6rem", color: "var(--text-muted)" }}>total words across 5 volumes</div>
+                </div>
+
+                {/* Volume comparison bars */}
+                <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "14px", padding: "14px 16px" }}>
+                  <div style={{ fontSize: "0.6rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "10px" }}>
+                    Words by Volume
+                  </div>
+                  {VOLUME_ORDER.filter(v => bookStats.volumeWords[v]).map((v) => (
+                    <StatBar key={v} label={v} value={bookStats.volumeWords[v] || 0} max={Math.max(...Object.values(bookStats.volumeWords))} color={VOLUME_COLORS[v] || "#888"} />
+                  ))}
+                </div>
+
+                {/* Gender + People ring */}
+                <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "14px", padding: "14px 16px" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
+                    <RingChart value={genderCounts.male} max={genderCounts.male + genderCounts.female} label="Men" color="#3B82F6" size={60} strokeWidth={5} />
+                    <div style={{ flex: 1 }}>
+                      <div style={{ fontSize: "0.88rem", fontWeight: 700, color: "var(--text)" }}>
+                        {(genderCounts.male + genderCounts.female).toLocaleString()} People
+                      </div>
+                      <div style={{ fontSize: "0.65rem", color: "var(--text-muted)", lineHeight: 1.5, marginTop: "4px" }}>
+                        {genderCounts.male} men ({Math.round(genderCounts.male / (genderCounts.male + genderCounts.female) * 100)}%) · {genderCounts.female} women ({Math.round(genderCounts.female / (genderCounts.male + genderCounts.female) * 100)}%)
+                      </div>
+                      <div style={{ fontSize: "0.65rem", color: "var(--text-muted)", marginTop: "2px" }}>
+                        {locationCount} named locations
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Fun facts */}
+                <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "14px", padding: "14px 16px" }}>
+                  <div style={{ fontSize: "0.6rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "8px" }}>
+                    Did You Know?
+                  </div>
+                  <div style={{ fontSize: "0.7rem", color: "var(--text-secondary)", lineHeight: 1.7 }}>
+                    <div style={{ marginBottom: "4px" }}>📖 Longest book: <strong style={{ color: "var(--text)" }}>{bookStats.longestBook}</strong></div>
+                    <div style={{ marginBottom: "4px" }}>📄 Shortest book: <strong style={{ color: "var(--text)" }}>{bookStats.shortestBook}</strong></div>
+                    <div style={{ marginBottom: "4px" }}>✏️ ~{(bookStats.totalWords * 4.5 / 1000000).toFixed(1)}M letters estimated</div>
+                    <div>🕐 Spans ~4,000 years of history</div>
                   </div>
                 </div>
               </>
