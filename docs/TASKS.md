@@ -11,6 +11,10 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 
 ### NEXT SESSION — START HERE
 
+- [ ] **Chapter-level resources** — Distinguish between videos/links/nuggets that apply to entire chapters/sections vs. single verses. Need a mechanism for showing chapter-wide resources (e.g., a BibleProject overview video for Genesis, a scholarly article about Alma 36). Currently all resources are verse-attached. Need: data model for chapter-level vs. verse-level resources, UI for chapter-wide resources (maybe a banner/section at the top of the chapter, or a dedicated tab in the Insights panel), and migration of any existing resources that should be chapter-level. *(Requested: Session 17)*
+
+- [ ] **Firebase integration** — Set up Firebase for real user accounts. Auth (email/password + Google SSO), Firestore for user data (bookmarks, reading progress, annotations, preferences). This replaces localStorage with persistent cloud storage. *(Requested: Session 17)*
+
 - [ ] **Apocrypha as a "Library" collection** — Add KJV Apocrypha (14 books: 1 Esdras, 2 Esdras, Tobit, Judith, Additions to Esther, Wisdom, Sirach, Baruch, Prayer of Azariah, Susanna, Bel and the Dragon, Prayer of Manasses, 1 Maccabees, 2 Maccabees). **Data source:** `https://api.getbible.net/v2/kjva/{book_number}/{chapter}.json` — confirmed available in JSON. **Implementation plan:**
   1. Create `scripts/build-apocrypha.ts` to fetch all 14 books from the API and build verse data
   2. Add to SQLite as a separate "Apocrypha" volume (or parallel table) — NOT mixed with canonical 5 volumes

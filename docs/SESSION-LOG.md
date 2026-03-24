@@ -33,10 +33,20 @@
 - Added touch-action: pan-y to chart containers so vertical scroll works when touching charts
 - Pinch zoom still available for detailed exploration
 
-**Browser Back/Forward Navigation:**
-- pushState for forward nav (volume → book → chapter)
-- popstate listener syncs React state from URL on browser back/forward
-- UI back buttons use history.back() for proper integration
+**Scripture Navigation — Complete Fix:**
+- ROOT CAUSE: Back buttons used `window.history.back()` (browser history = unpredictable) instead of setting React state (deterministic). Caused loops like AoF Ch1 → AoF grid → "PoGP" → back to Ch1.
+- ALL back buttons now use explicit state transitions (zero uses of history.back() remain):
+  - Reading → Chapter grid: `setSelectedChapter(null)` + push book URL
+  - Reading (single-chapter book) → Book list: skip chapter grid entirely
+  - Chapter grid → Book list: `setSelectedBookId(null)` + push volume URL
+  - Chapter grid (single-book volume like D&C) → Volume picker: skip book list entirely
+  - Book list → Volume picker: full state reset + push `/scriptures`
+- D&C volume click auto-skips to section grid (no useless 1-item book list)
+- Single-chapter book back button shows volume name (not book name)
+- All state resets clear ALL downstream state (verses, book, chapter) to prevent stale data
+- pushState for forward nav, popstate listener syncs React state from URL on browser back/forward
+- **13 single-chapter books fixed**: chapter=0 → chapter=1 in DB (237 verses across OT/NT/BoM/PoGP)
+- **Em-dash slug fix**: "Joseph Smith—Matthew" → "joseph-smith-matthew" (was "joseph-smithmatthew")
 
 **Header Improvements:**
 - Full-width header on ALL pages (rendered outside page-container)
