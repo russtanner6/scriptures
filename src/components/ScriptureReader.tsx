@@ -153,8 +153,8 @@ export default function ScriptureReader() {
   const [chapterResources, setChapterResources] = useState<Resource[]>([]);
   const [activeResourcePanel, setActiveResourcePanel] = useState<{ resources: Resource[]; index: number } | null>(null);
 
-  // Speaker attribution layer
-  const [showSpeakers, setShowSpeakers] = useState(true);
+  // Speaker attribution layer (always on — toggle hidden from user)
+  const [showSpeakers] = useState(true);
   const [chapterSpeakers, setChapterSpeakers] = useState<SpeakerAttribution[]>([]);
 
   // Tone overlay layer
@@ -165,14 +165,8 @@ export default function ScriptureReader() {
     return false;
   });
 
-  // Context Nuggets layer
-  const [showContextNuggets, setShowContextNuggets] = useState(() => {
-    if (typeof window !== "undefined") {
-      const saved = localStorage.getItem("reader-show-context-nuggets");
-      return saved === null ? true : saved === "true"; // default ON
-    }
-    return true;
-  });
+  // Context Nuggets layer (always on — toggle hidden from user)
+  const [showContextNuggets] = useState(true);
   const [chapterNuggets, setChapterNuggets] = useState<ContextNugget[]>([]);
   const [activeNuggets, setActiveNuggets] = useState<ContextNugget[]>([]);
 
@@ -374,8 +368,7 @@ export default function ScriptureReader() {
     if (savedFont) setFontSize(Number(savedFont));
     const savedResources = localStorage.getItem("reader-show-resources");
     if (savedResources === "false") setShowResources(false);
-    const savedSpeakers = localStorage.getItem("reader-show-speakers");
-    if (savedSpeakers === "false") setShowSpeakers(false);
+    // Speakers always on — localStorage restore removed
     const savedMode = localStorage.getItem("reader-reading-mode");
     if (savedMode === "modern" || savedMode === "narration") setReadingMode(savedMode);
   }, []);
@@ -1665,39 +1658,7 @@ export default function ScriptureReader() {
             return (
             <div style={{ marginBottom: "36px", textAlign: "center" }}>
               <div style={{ display: "flex", alignItems: "stretch", gap: "8px", flexWrap: "wrap", justifyContent: "center" }}>
-                {chapterSpeakers.length > 0 && (
-                  <button
-                    onClick={() => {
-                      const next = !showSpeakers;
-                      setShowSpeakers(next);
-                      localStorage.setItem("reader-show-speakers", String(next));
-                      analytics.layerToggle("speakers", next);
-                    }}
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "4px",
-                      padding: "7px 12px",
-                      borderRadius: "8px",
-                      border: `1px solid ${showSpeakers ? `${toggleAccent}50` : theme.border}`,
-                      background: showSpeakers
-                        ? `${toggleAccent}18`
-                        : lightMode ? "rgba(0,0,0,0.03)" : "rgba(255,255,255,0.04)",
-                      color: showSpeakers ? toggleAccent : theme.textMuted,
-                      fontSize: "0.68rem",
-                      fontWeight: 600,
-                      cursor: "pointer",
-                      fontFamily: "inherit",
-                      transition: "all 0.2s",
-                    }}
-                  >
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                      <circle cx="12" cy="7" r="4" />
-                    </svg>
-                    Speakers
-                  </button>
-                )}
+                {/* Speakers toggle hidden — always on. Preserved for future re-enable. */}
                 {chapterResources.length > 0 && (
                   <button
                     onClick={() => {
@@ -1735,43 +1696,7 @@ export default function ScriptureReader() {
                     </span>
                   </button>
                 )}
-                {/* Context Nuggets toggle */}
-                {chapterNuggets.length > 0 && (
-                  <button
-                    onClick={() => {
-                      const next = !showContextNuggets;
-                      setShowContextNuggets(next);
-                      localStorage.setItem("reader-show-context-nuggets", String(next));
-                      analytics.layerToggle("context-nuggets", next);
-                    }}
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "4px",
-                      padding: "7px 12px",
-                      borderRadius: "8px",
-                      border: `1px solid ${showContextNuggets ? `${toggleAccent}50` : theme.border}`,
-                      background: showContextNuggets
-                        ? `${toggleAccent}18`
-                        : lightMode ? "rgba(0,0,0,0.03)" : "rgba(255,255,255,0.04)",
-                      color: showContextNuggets ? toggleAccent : theme.textMuted,
-                      fontSize: "0.68rem",
-                      fontWeight: 600,
-                      cursor: "pointer",
-                      fontFamily: "inherit",
-                      transition: "all 0.2s",
-                    }}
-                  >
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M12 3C8 3 5 7 5 13c0 4 3 8 7 8s7-4 7-8c0-6-3-10-7-10z" />
-                      <path d="M9 13h6" opacity="0.5" />
-                    </svg>
-                    Context
-                    <span style={{ fontSize: "0.6rem", opacity: 0.7 }}>
-                      ({chapterNuggets.length})
-                    </span>
-                  </button>
-                )}
+                {/* Context Nuggets toggle hidden — always on. Preserved for future re-enable. */}
                 {/* Tone overlay toggle — removed (not useful enough to show) */}
                 {/* Three-way reading mode sliding toggle */}
                 {(hasModernText || hasNarration) && (() => {
