@@ -47,9 +47,9 @@ export default function SettingsPanel() {
       </div>
 
       <section style={{ marginBottom: "36px" }}>
-        <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "var(--text)", marginBottom: "4px" }}>
+        <h2 style={{ fontSize: "1.05rem", fontWeight: 700, color: "var(--text)", marginBottom: "4px" }}>
           Volume Visibility
-        </h3>
+        </h2>
         <p style={{ color: "var(--text-muted)", fontSize: "0.82rem", marginBottom: "16px", lineHeight: 1.5 }}>
           Choose which scripture volumes appear across the site. This only affects your
           view&mdash;you can turn any volume back on anytime. Bookmarks and notes for hidden
@@ -117,9 +117,9 @@ export default function SettingsPanel() {
 
       {/* Apocrypha — separate section */}
       <section style={{ marginBottom: "36px" }}>
-        <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "var(--text)", marginBottom: "4px" }}>
+        <h2 style={{ fontSize: "1.05rem", fontWeight: 700, color: "var(--text)", marginBottom: "4px" }}>
           Apocrypha
-        </h3>
+        </h2>
         <p style={{ color: "var(--text-muted)", fontSize: "0.82rem", marginBottom: "16px", lineHeight: 1.5 }}>
           The KJV Apocrypha — 14 inter-testamental books included in the original 1611 King James Bible.
           Not part of the standard LDS canon, but referenced in D&amp;C 91: &ldquo;There are many things
