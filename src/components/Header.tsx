@@ -44,7 +44,7 @@ export default function Header({
           }}
         >
           <img
-            src="/logo-full.svg"
+            src="/logo.svg"
             alt="Scripture Explorer"
             style={{ height: "28px", width: "auto" }}
           />

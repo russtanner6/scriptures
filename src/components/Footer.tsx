@@ -59,10 +59,10 @@ export default function Footer() {
             }}
           >
             <img
-              src="/logo-full.svg"
+              src="/logo.svg"
               alt=""
               style={{
-                height: "24px",
+                height: "28px",
                 width: "auto",
                 opacity: 0.4,
                 filter: "grayscale(100%)",
