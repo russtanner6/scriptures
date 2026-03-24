@@ -11,11 +11,13 @@ export const metadata: Metadata = {
 
 export default function WordCloudPage() {
   return (
-    <div className="page-container">
+    <>
       <Header />
-      <Suspense fallback={<div style={{ padding: "40px", textAlign: "center", color: "var(--text-muted)" }}>Loading...</div>}>
-        <WordCloudTool />
-      </Suspense>
-    </div>
+      <div className="page-container">
+        <Suspense fallback={<div style={{ padding: "40px", textAlign: "center", color: "var(--text-muted)" }}>Loading...</div>}>
+          <WordCloudTool />
+        </Suspense>
+      </div>
+    </>
   );
 }

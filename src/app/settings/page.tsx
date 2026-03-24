@@ -9,9 +9,11 @@ export const metadata: Metadata = {
 
 export default function SettingsPage() {
   return (
-    <div className="page-container">
+    <>
       <Header />
-      <SettingsPanel />
-    </div>
+      <div className="page-container">
+        <SettingsPanel />
+      </div>
+    </>
   );
 }

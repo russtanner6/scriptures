@@ -9,9 +9,11 @@ export const metadata: Metadata = {
 
 export default function BookmarksPage() {
   return (
-    <div className="page-container">
+    <>
       <Header />
-      <BookmarksList />
-    </div>
+      <div className="page-container">
+        <BookmarksList />
+      </div>
+    </>
   );
 }

@@ -142,9 +142,9 @@ export default function HomePage() {
   };
 
   return (
-    <div className="page-container">
+    <>
       <Header />
-
+    <div className="page-container">
       {/* Hero */}
       <div style={{
         textAlign: "center",
@@ -527,5 +527,6 @@ export default function HomePage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

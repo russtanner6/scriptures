@@ -512,6 +512,7 @@ export default function ScriptureReader() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+
   // Handle URL param changes (e.g., navigating from character panel verse links while already on /scriptures)
   const searchParamsBookId = searchParams.get("bookId");
   const searchParamsChapter = searchParams.get("chapter");
@@ -628,9 +629,9 @@ export default function ScriptureReader() {
       setSelectedChapter(chapter);
       setChapterCount(bookChapterCount);
       loadChapter(bookId, chapter);
-      // Update URL for bookmarking/sharing (without full navigation)
+      // Update URL for bookmarking/sharing — pushState for forward nav, replaceState for chapter changes
       const url = `${scriptureUrl(volAbbrev, bookName, chapter)}${highlightWord ? `?highlight=${encodeURIComponent(highlightWord)}` : ""}`;
-      window.history.replaceState({}, "", url);
+      window.history.pushState({}, "", url);
       // Scroll to top of reading container
       if (scrollContainerRef.current) {
         scrollContainerRef.current.scrollTo(0, 0);
@@ -638,6 +639,73 @@ export default function ScriptureReader() {
     },
     [loadChapter, highlightWord]
   );
+
+  // Handle browser back/forward buttons
+  useEffect(() => {
+    const handlePopState = () => {
+      const path = window.location.pathname;
+      const parts = path.replace(/^\/scriptures\/?/, "").split("/").filter(Boolean);
+      const volSlug = parts[0] || null;
+      const bookSlug = parts[1] || null;
+      const chapter = parts[2] ? Number(parts[2]) : null;
+      const volAbbrev = volSlug ? VOLUME_SLUG_TO_ABBREV[volSlug] : null;
+
+      if (!volSlug || !path.startsWith("/scriptures")) {
+        setSelectedVolume(null);
+        setSelectedBookId(null);
+        setSelectedBookName(null);
+        setSelectedChapter(null);
+        setChapterCount(0);
+        setVerses([]);
+        return;
+      }
+
+      if (volAbbrev && !bookSlug) {
+        setSelectedVolume(volAbbrev);
+        setSelectedBookId(null);
+        setSelectedBookName(null);
+        setSelectedChapter(null);
+        setChapterCount(0);
+        setVerses([]);
+        return;
+      }
+
+      if (volAbbrev && bookSlug && !chapter) {
+        const vol = volumes.find((v) => v.abbrev === volAbbrev);
+        if (vol) {
+          const book = vol.books.find((b) => bookNameToSlug(b.name) === bookSlug || b.name.toLowerCase() === slugToBookSearch(bookSlug));
+          if (book) {
+            setSelectedVolume(volAbbrev);
+            setSelectedBookId(book.id);
+            setSelectedBookName(book.name);
+            setChapterCount(book.chapterCount);
+            setSelectedChapter(null);
+            setVerses([]);
+          }
+        }
+        return;
+      }
+
+      if (volAbbrev && bookSlug && chapter) {
+        const vol = volumes.find((v) => v.abbrev === volAbbrev);
+        if (vol) {
+          const book = vol.books.find((b) => bookNameToSlug(b.name) === bookSlug || b.name.toLowerCase() === slugToBookSearch(bookSlug));
+          if (book) {
+            const ch = Math.max(1, Math.min(chapter, book.chapterCount));
+            setSelectedVolume(volAbbrev);
+            setSelectedBookId(book.id);
+            setSelectedBookName(book.name);
+            setSelectedChapter(ch);
+            setChapterCount(book.chapterCount);
+            loadChapter(book.id, ch);
+          }
+        }
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, [volumes, loadChapter]);
 
   const toggleLightMode = () => {
     setLightMode((prev) => {
@@ -1248,11 +1316,7 @@ export default function ScriptureReader() {
           {/* Left: back button + book name (clicking goes back to book list) */}
           <div style={{ display: "flex", alignItems: "center", gap: "8px", minWidth: 0, flex: 1, overflow: "hidden" }}>
             <button
-              onClick={() => {
-                setSelectedChapter(null);
-                setVerses([]);
-                window.history.replaceState({}, "", scriptureUrl(selectedVolume, selectedBookName || ""));
-              }}
+              onClick={() => window.history.back()}
               style={{
                 background: "none",
                 border: "none",
@@ -2401,31 +2465,28 @@ export default function ScriptureReader() {
 
     return scripturePageWrapper(
       <button
-        onClick={() => {
-          setSelectedBookId(null);
-          setSelectedBookName(null);
-          setChapterCount(0);
-          window.history.replaceState({}, "", scriptureUrl(selectedVolume));
-        }}
+        onClick={() => window.history.back()}
         style={{ background: "none", border: "none", color: "#f0f0f0", cursor: "pointer", padding: "6px 4px", display: "flex", alignItems: "center", gap: "4px", fontFamily: "inherit", fontSize: "0.88rem", fontWeight: 600, whiteSpace: "nowrap" }}
       >
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
         {volumes.find((v) => v.abbrev === selectedVolume)?.name || selectedVolume}
       </button>,
       <>
-        <h1
-          style={{
-            fontSize: "1.4rem",
-            fontWeight: 700,
-            color: "var(--text)",
-            marginBottom: "6px",
-          }}
-        >
-          <span style={{ color: volColor }}>{selectedBookName}</span>
-        </h1>
-        <p style={{ color: "var(--text-secondary)", fontSize: "0.92rem", marginBottom: "24px" }}>
-          {chapterCount} {isDC ? (chapterCount === 1 ? "section" : "sections") : (chapterCount === 1 ? "chapter" : "chapters")}
-        </p>
+        <div style={{ marginBottom: "24px", textAlign: "center" }}>
+          <h1
+            style={{
+              fontSize: "1.6rem",
+              fontWeight: 700,
+              color: "#fff",
+              marginBottom: "10px",
+            }}
+          >
+            {selectedBookName}
+          </h1>
+          <p style={{ color: "var(--text)", fontSize: "0.95rem", opacity: 0.85 }}>
+            {chapterCount} {isDC ? (chapterCount === 1 ? "section" : "sections") : (chapterCount === 1 ? "chapter" : "chapters")}
+          </p>
+        </div>
 
         {/* Chapter grid */}
         <div
@@ -2444,8 +2505,8 @@ export default function ScriptureReader() {
                   goToChapter(selectedVolume, selectedBookId, selectedBookName, ch, chapterCount);
                 }}
                 style={{
-                  background: isRead ? `${volColor}18` : "var(--surface)",
-                  border: isRead ? `1.5px solid ${volColor}50` : "1px solid var(--border)",
+                  background: isRead ? `${volColor}18` : "rgba(255, 255, 255, 0.05)",
+                  border: isRead ? `1.5px solid ${volColor}50` : "1px solid rgba(255, 255, 255, 0.12)",
                   borderRadius: "8px",
                   padding: isMobile ? "12px 0" : "14px 0",
                   textAlign: "center",
@@ -2461,8 +2522,8 @@ export default function ScriptureReader() {
                   e.currentTarget.style.background = `${volColor}15`;
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = isRead ? `${volColor}50` : "var(--border)";
-                  e.currentTarget.style.background = isRead ? `${volColor}18` : "var(--surface)";
+                  e.currentTarget.style.borderColor = isRead ? `${volColor}50` : "rgba(255, 255, 255, 0.12)";
+                  e.currentTarget.style.background = isRead ? `${volColor}18` : "rgba(255, 255, 255, 0.05)";
                 }}
               >
                 {ch}
@@ -2481,27 +2542,28 @@ export default function ScriptureReader() {
 
     return scripturePageWrapper(
       <button
-        onClick={() => { setSelectedVolume(null); window.history.replaceState({}, "", "/scriptures"); }}
-
+        onClick={() => window.history.back()}
         style={{ background: "none", border: "none", color: "#f0f0f0", cursor: "pointer", padding: "6px 4px", display: "flex", alignItems: "center", gap: "4px", fontFamily: "inherit", fontSize: "0.88rem", fontWeight: 600, whiteSpace: "nowrap" }}
       >
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
         Volumes
       </button>,
       <>
-        <h1
-          style={{
-            fontSize: "1.4rem",
-            fontWeight: 700,
-            color: "var(--text)",
-            marginBottom: "6px",
-          }}
-        >
-          <span style={{ color: volColor }}>{vol?.name}</span>
-        </h1>
-        <p style={{ color: "var(--text-secondary)", fontSize: "0.92rem", marginBottom: "24px" }}>
-          Select a book to start reading.
-        </p>
+        <div style={{ marginBottom: "24px", textAlign: "center" }}>
+          <h1
+            style={{
+              fontSize: "1.6rem",
+              fontWeight: 700,
+              color: "#fff",
+              marginBottom: "10px",
+            }}
+          >
+            {vol?.name}
+          </h1>
+          <p style={{ color: "var(--text)", fontSize: "0.95rem", opacity: 0.85 }}>
+            Select a book to start reading.
+          </p>
+        </div>
 
         {/* Book list */}
         <div
@@ -2523,12 +2585,12 @@ export default function ScriptureReader() {
                   setSelectedBookId(book.id);
                   setSelectedBookName(book.name);
                   setChapterCount(book.chapterCount);
-                  window.history.replaceState({}, "", scriptureUrl(selectedVolume, book.name));
+                  window.history.pushState({}, "", scriptureUrl(selectedVolume, book.name));
                 }
               }}
               style={{
-                background: "var(--surface)",
-                border: "1px solid var(--border)",
+                background: "rgba(255, 255, 255, 0.05)",
+                border: "1px solid rgba(255, 255, 255, 0.12)",
                 borderRadius: "10px",
                 padding: "16px 20px",
                 textAlign: "left",
@@ -2544,8 +2606,8 @@ export default function ScriptureReader() {
                 e.currentTarget.style.background = `${volColor}10`;
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = "var(--border)";
-                e.currentTarget.style.background = "var(--surface)";
+                e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.12)";
+                e.currentTarget.style.background = "rgba(255, 255, 255, 0.05)";
               }}
             >
               <div>
@@ -2638,10 +2700,10 @@ export default function ScriptureReader() {
           return (
             <button
               key={vol.id}
-              onClick={() => { setSelectedVolume(vol.abbrev); window.history.replaceState({}, "", scriptureUrl(vol.abbrev)); }}
+              onClick={() => { setSelectedVolume(vol.abbrev); window.history.pushState({}, "", scriptureUrl(vol.abbrev)); }}
               style={{
-                background: "var(--surface)",
-                border: "1px solid var(--border)",
+                background: "rgba(255, 255, 255, 0.05)",
+                border: "1px solid rgba(255, 255, 255, 0.12)",
                 borderRadius: "12px",
                 padding: "24px",
                 textAlign: "left",
@@ -2657,7 +2719,7 @@ export default function ScriptureReader() {
                 e.currentTarget.style.boxShadow = `0 8px 24px ${color}20`;
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = "var(--border)";
+                e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.12)";
                 e.currentTarget.style.transform = "translateY(0)";
                 e.currentTarget.style.boxShadow = "none";
               }}
