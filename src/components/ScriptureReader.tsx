@@ -1942,6 +1942,31 @@ export default function ScriptureReader() {
             </div>
           )}
 
+          {/* Non-canonical banner for Apocrypha */}
+          {!isLoading && selectedVolume === "Apoc" && (
+            <div style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
+              padding: "10px 14px",
+              marginBottom: "16px",
+              borderRadius: "8px",
+              border: `1px solid ${lightMode ? "rgba(142,124,195,0.3)" : "rgba(142,124,195,0.2)"}`,
+              background: lightMode ? "rgba(142,124,195,0.08)" : "rgba(142,124,195,0.06)",
+            }}>
+              <span style={{
+                fontSize: "0.65rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em",
+                color: "#8E7CC3", background: "rgba(142,124,195,0.2)", padding: "2px 6px", borderRadius: "4px",
+                flexShrink: 0,
+              }}>
+                Apocrypha
+              </span>
+              <span style={{ fontSize: "0.78rem", color: lightMode ? "rgba(0,0,0,0.55)" : "rgba(255,255,255,0.55)", lineHeight: 1.4 }}>
+                Not part of the standard canon. Included in the original 1611 KJV.
+              </span>
+            </div>
+          )}
+
           {/* Chapter-level resources banner (resources without verseStart) */}
           {!isLoading && showResources && (() => {
             const chapterLevelRes = chapterResources.filter((r) => r.verseStart == null);
