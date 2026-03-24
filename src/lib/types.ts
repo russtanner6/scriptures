@@ -75,8 +75,8 @@ export interface Resource {
   thumbnailUrl?: string;
   book: string;
   chapter: number;
-  verseStart: number;
-  verseEnd: number;
+  verseStart?: number;  // omit for chapter-level resources
+  verseEnd?: number;    // omit for chapter-level resources
   tags?: string[];
 }
 

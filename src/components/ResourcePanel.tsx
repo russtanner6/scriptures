@@ -50,8 +50,10 @@ export default function ResourcePanel({
 
   const typeColor = getResourceTypeColor(resource.type);
   const embedUrl = resource.type === "video" ? youtubeEmbedUrl(resource.url) : null;
-  const verseLabel =
-    resource.verseStart === resource.verseEnd
+  const isChapterLevel = resource.verseStart == null;
+  const verseLabel = isChapterLevel
+    ? `${bookName} ${resource.chapter} (entire chapter)`
+    : resource.verseStart === resource.verseEnd
       ? `${bookName} ${resource.chapter}:${resource.verseStart}`
       : `${bookName} ${resource.chapter}:${resource.verseStart}-${resource.verseEnd}`;
 
@@ -405,9 +407,11 @@ export default function ResourcePanel({
               Covers {verseLabel}
             </div>
             <div style={{ fontSize: "0.78rem", color: textSecondary, lineHeight: 1.5 }}>
-              {resource.verseStart === resource.verseEnd
-                ? "This resource relates to a single verse."
-                : `This resource covers ${resource.verseEnd - resource.verseStart + 1} verses.`}
+              {isChapterLevel
+                ? "This resource covers the entire chapter."
+                : resource.verseStart === resource.verseEnd
+                  ? "This resource relates to a single verse."
+                  : `This resource covers ${(resource.verseEnd ?? 0) - (resource.verseStart ?? 0) + 1} verses.`}
             </div>
           </div>
         </div>

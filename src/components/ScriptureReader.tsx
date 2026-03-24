@@ -1881,16 +1881,62 @@ export default function ScriptureReader() {
             </div>
           )}
 
+          {/* Chapter-level resources banner (resources without verseStart) */}
+          {!isLoading && showResources && (() => {
+            const chapterLevelRes = chapterResources.filter((r) => r.verseStart == null);
+            if (chapterLevelRes.length === 0) return null;
+            return (
+              <div style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "8px",
+                padding: "12px 0",
+                marginBottom: "8px",
+                borderBottom: `1px solid ${lightMode ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"}`,
+              }}>
+                {chapterLevelRes.map((r) => {
+                  const typeColor = r.type === "video" ? "#8b5cf6" : r.type === "article" ? "#3B82F6" : "#10B981";
+                  return (
+                    <button
+                      key={r.id}
+                      onClick={() => setActiveResourcePanel({ resources: chapterLevelRes, index: chapterLevelRes.indexOf(r) })}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "6px",
+                        padding: "6px 12px",
+                        borderRadius: "8px",
+                        border: `1px solid ${typeColor}40`,
+                        background: `${typeColor}10`,
+                        cursor: "pointer",
+                        fontFamily: "inherit",
+                        transition: "all 0.15s",
+                      }}
+                    >
+                      <span style={{ fontSize: "0.7rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.04em", color: typeColor }}>
+                        {r.type === "video" ? "▶" : r.type === "article" ? "📄" : "📎"} {r.type}
+                      </span>
+                      <span style={{ fontSize: "0.78rem", fontWeight: 500, color: lightMode ? "#333" : "rgba(255,255,255,0.85)" }}>
+                        {r.title}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            );
+          })()}
+
           {/* Verse-by-verse mode (original or modern) */}
           {!isLoading && readingMode !== "narration" &&
             verses.map((v) => {
               // External URL available if needed: getVerseUrl(selectedBookName || "", v.chapter, v.verse)
               // Resource layer: find resources that START at this verse, and resources that COVER this verse
+              // Only verse-level resources (those with verseStart defined)
               const verseStartResources = showResources
-                ? chapterResources.filter((r) => r.verseStart === v.verse)
+                ? chapterResources.filter((r) => r.verseStart != null && r.verseStart === v.verse)
                 : [];
               const verseCoveredBy = showResources
-                ? chapterResources.filter((r) => v.verse >= r.verseStart && v.verse <= r.verseEnd)
+                ? chapterResources.filter((r) => r.verseStart != null && r.verseEnd != null && v.verse >= r.verseStart && v.verse <= r.verseEnd)
                 : [];
               // Tone overlay for this verse
               const verseTone = showToneOverlay ? verseToneMap.get(v.verse) : null;
