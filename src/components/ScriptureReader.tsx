@@ -1796,60 +1796,90 @@ export default function ScriptureReader() {
                 )}
               </div>
 
-              {/* Reading mode help popup */}
+              {/* Reading mode help — slide-in panel */}
               {showReadingModeHelp && (
-                <div
-                  onClick={() => setShowReadingModeHelp(false)}
-                  style={mStyles.backdrop}
-                >
+                <>
                   <div
-                    onClick={(e) => e.stopPropagation()}
-                    style={{ ...mStyles.panel(isMobile), ...mt.panelColors }}
+                    onClick={() => setShowReadingModeHelp(false)}
+                    style={{
+                      position: "fixed",
+                      inset: 0,
+                      background: "rgba(0,0,0,0.6)",
+                      backdropFilter: "blur(4px)",
+                      WebkitBackdropFilter: "blur(4px)",
+                      zIndex: 200,
+                    }}
+                  />
+                  <div
+                    style={{
+                      position: "fixed",
+                      top: 0,
+                      right: 0,
+                      bottom: 0,
+                      width: isMobile ? "85vw" : "420px",
+                      maxWidth: "90vw",
+                      background: lightMode ? "#faf9f5" : "#1a1a21",
+                      zIndex: 201,
+                      overflowY: "auto",
+                      boxShadow: "-4px 0 24px rgba(0,0,0,0.3)",
+                      padding: isMobile ? "24px 20px" : "32px 28px",
+                      animation: "slideInRight 0.25s ease",
+                    }}
                   >
                     <button
                       onClick={() => setShowReadingModeHelp(false)}
-                      style={{ ...mStyles.closeButton, color: mt.closeColor }}
+                      style={{
+                        position: "absolute",
+                        top: "16px",
+                        right: "16px",
+                        background: "none",
+                        border: "none",
+                        fontSize: "1.2rem",
+                        cursor: "pointer",
+                        color: lightMode ? "#888" : "rgba(255,255,255,0.5)",
+                        padding: "4px",
+                      }}
                     >
                       ✕
                     </button>
-                    <h3 style={{ ...mStyles.title, color: mt.title }}>
+                    <h3 style={{ fontSize: "1.1rem", fontWeight: 700, color: lightMode ? "#1a1a1a" : "var(--text)", marginBottom: "20px" }}>
                       Reading Modes
                     </h3>
-                    <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
+                    <div style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
                       <div>
-                        <div style={{ ...mStyles.sectionTitle, color: mt.title }}>
+                        <div style={{ fontSize: "0.85rem", fontWeight: 700, color: lightMode ? "#333" : "var(--text)", marginBottom: "6px" }}>
                           Original
                         </div>
-                        <p style={{ ...mStyles.body, color: mt.body }}>
+                        <p style={{ fontSize: "0.85rem", color: lightMode ? "#555" : "rgba(255,255,255,0.7)", lineHeight: 1.6, margin: 0 }}>
                           The standard scripture text as published — King James Version for the Bible, and the original 1981 edition text for the Book of Mormon.
                         </p>
                       </div>
                       {hasModernText && (
                         <div>
-                          <div style={{ ...mStyles.sectionTitle, color: mt.title }}>
+                          <div style={{ fontSize: "0.85rem", fontWeight: 700, color: lightMode ? "#333" : "var(--text)", marginBottom: "6px" }}>
                             Modern
                           </div>
-                          <p style={{ ...mStyles.body, color: mt.body }}>
-                            A verse-by-verse modern English translation designed to be clear and accessible while preserving the original meaning, names, and structure. Old Testament and New Testament use the World English Bible (WEB), a public-domain modern translation. Book of Mormon modern text was carefully generated using AI with strict 1:1 verse alignment and proper-noun preservation, then audited for accuracy.
+                          <p style={{ fontSize: "0.85rem", color: lightMode ? "#555" : "rgba(255,255,255,0.7)", lineHeight: 1.6, margin: 0 }}>
+                            A verse-by-verse modern English translation. OT/NT use the World English Bible (WEB), a public-domain modern translation. BoM modern text was generated using AI with strict 1:1 verse alignment, then audited for accuracy.
                           </p>
                         </div>
                       )}
                       {hasNarration && (
                         <div>
-                          <div style={{ ...mStyles.sectionTitle, color: mt.title }}>
+                          <div style={{ fontSize: "0.85rem", fontWeight: 700, color: lightMode ? "#333" : "var(--text)", marginBottom: "6px" }}>
                             Narration
                           </div>
-                          <p style={{ ...mStyles.body, color: mt.body }}>
-                            A chapter-level prose summary that retells the events, teachings, and themes of the chapter in a flowing narrative style. Useful for getting an overview before diving into the verses, or for reviewing what a chapter covers.
+                          <p style={{ fontSize: "0.85rem", color: lightMode ? "#555" : "rgba(255,255,255,0.7)", lineHeight: 1.6, margin: 0 }}>
+                            A chapter-level prose summary that retells events and themes in a flowing narrative. Useful for getting an overview before studying the verses.
                           </p>
                         </div>
                       )}
                     </div>
-                    <p style={{ ...mStyles.footnote, color: mt.muted, borderTop: `1px solid ${mt.divider}` }}>
-                      Modern and Narration modes are supplementary tools to aid understanding. They are not official scripture and should not be used as doctrinal sources. Always refer to the Original text for study and teaching.
+                    <p style={{ fontSize: "0.78rem", color: lightMode ? "#888" : "rgba(255,255,255,0.4)", lineHeight: 1.5, marginTop: "20px", paddingTop: "16px", borderTop: `1px solid ${lightMode ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"}` }}>
+                      Modern and Narration modes are supplementary tools. They are not official scripture and should not be used as doctrinal sources.
                     </p>
                   </div>
-                </div>
+                </>
               )}
 
             </div>
