@@ -2505,7 +2505,7 @@ export default function ScriptureReader() {
                   goToChapter(selectedVolume, selectedBookId, selectedBookName, ch, chapterCount);
                 }}
                 style={{
-                  background: isRead ? `${volColor}18` : "rgba(255, 255, 255, 0.05)",
+                  background: isRead ? `${volColor}18` : "linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%)",
                   border: isRead ? `1.5px solid ${volColor}50` : "1px solid rgba(255, 255, 255, 0.12)",
                   borderRadius: "8px",
                   padding: isMobile ? "12px 0" : "14px 0",
@@ -2523,7 +2523,7 @@ export default function ScriptureReader() {
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.borderColor = isRead ? `${volColor}50` : "rgba(255, 255, 255, 0.12)";
-                  e.currentTarget.style.background = isRead ? `${volColor}18` : "rgba(255, 255, 255, 0.05)";
+                  e.currentTarget.style.background = isRead ? `${volColor}18` : "linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%)";
                 }}
               >
                 {ch}
@@ -2589,7 +2589,7 @@ export default function ScriptureReader() {
                 }
               }}
               style={{
-                background: "rgba(255, 255, 255, 0.05)",
+                background: "linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%)",
                 border: "1px solid rgba(255, 255, 255, 0.12)",
                 borderRadius: "10px",
                 padding: "16px 20px",
@@ -2607,7 +2607,7 @@ export default function ScriptureReader() {
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.12)";
-                e.currentTarget.style.background = "rgba(255, 255, 255, 0.05)";
+                e.currentTarget.style.background = "linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%)";
               }}
             >
               <div>
@@ -2702,39 +2702,29 @@ export default function ScriptureReader() {
               key={vol.id}
               onClick={() => { setSelectedVolume(vol.abbrev); window.history.pushState({}, "", scriptureUrl(vol.abbrev)); }}
               style={{
-                background: "rgba(255, 255, 255, 0.05)",
+                background: `linear-gradient(180deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.03) 100%)`,
                 border: "1px solid rgba(255, 255, 255, 0.12)",
-                borderRadius: "12px",
+                borderTop: `3px solid ${color}`,
+                borderRadius: "0 0 12px 12px",
                 padding: "24px",
                 textAlign: "left",
                 cursor: "pointer",
                 fontFamily: "inherit",
                 transition: "all 0.2s",
-                position: "relative",
-                overflow: "hidden",
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.borderColor = color;
+                e.currentTarget.style.borderTopColor = color;
                 e.currentTarget.style.transform = "translateY(-2px)";
                 e.currentTarget.style.boxShadow = `0 8px 24px ${color}20`;
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.12)";
+                e.currentTarget.style.borderTopColor = color;
                 e.currentTarget.style.transform = "translateY(0)";
                 e.currentTarget.style.boxShadow = "none";
               }}
             >
-              {/* Color accent bar */}
-              <div
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  height: "3px",
-                  background: color,
-                }}
-              />
               <div
                 style={{
                   fontSize: "1.1rem",

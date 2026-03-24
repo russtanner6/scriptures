@@ -539,7 +539,7 @@ export default function NarrativeArcTool() {
 
                 return (
               <>
-              <div style={isMobile ? { overflowX: "auto", WebkitOverflowScrolling: "touch", marginTop: "8px" } : { marginTop: "8px" }}>
+              <div style={isMobile ? { overflowX: "auto", WebkitOverflowScrolling: "touch", marginTop: "8px", touchAction: "pan-y" } : { marginTop: "8px" }}>
               <div style={{ position: "relative", height: isMobile ? "350px" : "540px", ...(isMobile ? { width: `${Math.max(600, allLabels.length * 28)}px`, minWidth: "100%" } : {}) }} onDoubleClick={() => thisChartRef.current?.resetZoom()}>
                 <Line
                   key={`${vol.id}-${zoomReady}`}
@@ -651,7 +651,7 @@ export default function NarrativeArcTool() {
                         formatter: (value: number) => value.toLocaleString(),
                       },
                       zoom: (isMobile
-                        ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true, threshold: 10 }, drag: { enabled: false }, mode: "x" }, pan: { enabled: true, mode: "x", threshold: 10 }, limits: { x: { minRange: 8 } } }
+                        ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true, threshold: 10 }, drag: { enabled: false }, mode: "x" }, pan: { enabled: false }, limits: { x: { minRange: 8 } } }
                         : {
                           zoom: { wheel: { enabled: true, speed: 0.05, modifierKey: "alt" }, pinch: { enabled: true, threshold: 10 }, drag: { enabled: false }, mode: "x" },
                           pan: { enabled: true, mode: "x", threshold: 10 },

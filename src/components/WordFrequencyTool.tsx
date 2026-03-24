@@ -862,7 +862,7 @@ export default function WordFrequencyTool() {
                     </div>
                   )}
 
-                  <div style={isMobile ? { overflowX: "auto", WebkitOverflowScrolling: "touch", margin: "0 -16px", padding: "0 16px" } : {}}>
+                  <div style={isMobile ? { overflowX: "auto", WebkitOverflowScrolling: "touch", margin: "0 -16px", padding: "0 16px", touchAction: "pan-y" } : {}}>
                   <div className={`chart-container-tall${isMobile ? " chart-touch-container" : ""}`} style={isMobile ? { width: `${Math.max(600, arcData.length * 28)}px`, minWidth: "100%" } : {}} onDoubleClick={() => arcChartRef.current?.resetZoom()}>
                     <Line
                       ref={arcChartRef}
@@ -930,7 +930,7 @@ export default function WordFrequencyTool() {
                                 formatter: (value: number) => value.toLocaleString(),
                               } as any,
                           zoom: (isMobile
-                            ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true, threshold: 10 }, drag: { enabled: false }, mode: "x" }, pan: { enabled: true, mode: "x", threshold: 10 }, limits: { x: { minRange: 8 } } }
+                            ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true, threshold: 10 }, drag: { enabled: false }, mode: "x" }, pan: { enabled: false }, limits: { x: { minRange: 8 } } }
                             : {
                               zoom: {
                                 wheel: { enabled: true, speed: 0.05, modifierKey: "alt" },

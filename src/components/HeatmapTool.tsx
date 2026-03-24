@@ -567,7 +567,7 @@ export default function HeatmapTool() {
                         overflow: "hidden",
                         transition: "opacity 0.3s ease, max-height 0.3s ease",
                       }}>
-                      <div style={isMobile ? { overflowX: "auto", WebkitOverflowScrolling: "touch" } : {}}>
+                      <div style={isMobile ? { overflowX: "auto", WebkitOverflowScrolling: "touch", touchAction: "pan-y" } : {}}>
                       <div style={{ position: "relative", height: isMobile ? "350px" : "480px", ...(isMobile ? { width: `${Math.max(600, arcLabels.length * 28)}px`, minWidth: "100%" } : {}) }} onDoubleClick={() => thisChartRef.current?.resetZoom()}>
                         <Line
                           key={`${abbrev}-${zoomReady}`}
@@ -651,7 +651,7 @@ export default function HeatmapTool() {
                                 formatter: (value: number) => value.toLocaleString(),
                               },
                               zoom: (isMobile
-                                ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true, threshold: 10 }, drag: { enabled: false }, mode: "x" }, pan: { enabled: true, mode: "x", threshold: 10 }, limits: { x: { minRange: 8 } } }
+                                ? { zoom: { wheel: { enabled: false }, pinch: { enabled: true, threshold: 10 }, drag: { enabled: false }, mode: "x" }, pan: { enabled: false }, limits: { x: { minRange: 8 } } }
                                 : {
                                   zoom: { wheel: { enabled: true, speed: 0.05, modifierKey: "alt" }, pinch: { enabled: true, threshold: 10 }, drag: { enabled: false }, mode: "x" },
                                   pan: { enabled: true, mode: "x", threshold: 10 },

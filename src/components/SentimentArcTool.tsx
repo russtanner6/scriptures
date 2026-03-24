@@ -290,7 +290,7 @@ export default function SentimentArcTool() {
             >
               <ChartHints isMobile={isMobile} />
               <div
-                style={{ height: isMobile ? "300px" : "420px", position: "relative" }}
+                style={{ height: isMobile ? "300px" : "420px", position: "relative", ...(isMobile ? { touchAction: "pan-y" } : {}) }}
                 onDoubleClick={() => {
                   const chart = (chartRef as any)?.current;
                   if (chart?.resetZoom) chart.resetZoom();
@@ -342,7 +342,7 @@ export default function SentimentArcTool() {
                       },
                       datalabels: { display: false },
                       zoom: {
-                        pan: { enabled: isMobile, mode: "x", threshold: 10 },
+                        pan: { enabled: false },
                         zoom: {
                           wheel: { enabled: !isMobile, modifierKey: "alt" },
                           pinch: { enabled: isMobile, threshold: 10 },
