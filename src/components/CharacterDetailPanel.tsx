@@ -8,6 +8,7 @@ import { VOLUME_COLORS } from "@/lib/constants";
 import VolumeTooltip from "./VolumeTooltip";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { useIsMobile } from "@/lib/useIsMobile";
+import { LinkedScriptureText } from "./LinkedScriptureText";
 import { analytics } from "@/lib/analytics";
 import { SENTIMENT_CATEGORIES } from "@/lib/sentiment-lexicon";
 import {
@@ -383,7 +384,7 @@ export default function CharacterDetailPanel({
               lineHeight: 1.75,
               margin: 0,
             }}>
-              {character.bio}
+              <LinkedScriptureText text={character.bio} />
             </p>
           </div>
 

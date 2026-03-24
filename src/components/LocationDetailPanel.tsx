@@ -9,6 +9,7 @@ import VolumeTooltip from "./VolumeTooltip";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { useIsMobile } from "@/lib/useIsMobile";
 import { analytics } from "@/lib/analytics";
+import { LinkedScriptureText } from "./LinkedScriptureText";
 
 const VOLUME_ORDER = ["OT", "NT", "BoM", "D&C", "PoGP"];
 
@@ -401,7 +402,7 @@ export default function LocationDetailPanel({
                 lineHeight: 1.75,
                 margin: 0,
               }}>
-                {location.description}
+                <LinkedScriptureText text={location.description} />
               </p>
             </div>
           )}

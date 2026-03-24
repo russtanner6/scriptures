@@ -1,3 +1,5 @@
+import { VOLUME_ABBREV_TO_SLUG, bookNameToSlug } from "./scripture-slugs";
+
 // Maps book names to churchofjesuschrist.org URL slugs
 // URL format: https://www.churchofjesuschrist.org/study/scriptures/{volume}/{slug}/{chapter}?lang=eng#p{verse}
 
@@ -113,4 +115,102 @@ export function getVerseUrl(
   const chapterNum = chapter === 0 ? 1 : chapter;
 
   return `https://www.churchofjesuschrist.org/study/scriptures/${entry.volume}/${entry.slug}/${chapterNum}?lang=eng#p${verse}`;
+}
+
+// --- Internal scripture reference linking ---
+
+// Map BOOK_URL_MAP volume codes to our internal volume abbreviations
+const VOLUME_CODE_TO_ABBREV: Record<string, string> = {
+  ot: "OT",
+  nt: "NT",
+  bofm: "BoM",
+  "dc-testament": "D&C",
+  pgp: "PoGP",
+};
+
+// Additional book name variants that appear in text but differ from BOOK_URL_MAP keys
+const BOOK_NAME_ALIASES: Record<string, string> = {
+  Psalm: "Psalms",
+  "Song of Songs": "Song of Solomon",
+  Revelation: "Revelation",
+  Rev: "Revelation",
+  "JS\u2014H": "Joseph Smith\u2014History",
+  "JS\u2014M": "Joseph Smith\u2014Matthew",
+};
+
+/**
+ * Get internal app URL for a book name + chapter.
+ * Returns `/scriptures/{volume-slug}/{book-slug}/{chapter}` or null if book not found.
+ */
+export function getInternalScriptureUrl(bookName: string, chapter: number): string | null {
+  const resolved = BOOK_NAME_ALIASES[bookName] || bookName;
+  const entry = BOOK_URL_MAP[resolved];
+  if (!entry) return null;
+  const volAbbrev = VOLUME_CODE_TO_ABBREV[entry.volume];
+  if (!volAbbrev) return null;
+  const volSlug = VOLUME_ABBREV_TO_SLUG[volAbbrev];
+  if (!volSlug) return null;
+  const bSlug = bookNameToSlug(resolved);
+  return `/scriptures/${volSlug}/${bSlug}/${chapter}`;
+}
+
+/**
+ * Parse text and return segments with scripture references identified.
+ * Each segment is either plain text or a scripture reference with a URL.
+ */
+export interface ScriptureRefSegment {
+  type: "text" | "ref";
+  text: string;
+  url?: string;
+}
+
+export function parseScriptureReferences(text: string): ScriptureRefSegment[] {
+  // Build book name alternation — longest names first to prevent partial matches
+  const allBookNames = [
+    ...Object.keys(BOOK_URL_MAP),
+    ...Object.keys(BOOK_NAME_ALIASES),
+  ].sort((a, b) => b.length - a.length);
+
+  // Escape special chars for regex
+  const escaped = allBookNames.map((n) =>
+    n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+  );
+  const bookPattern = escaped.join("|");
+
+  // Match: BookName chapter:verse(-verse)? or BookName chapter
+  // Examples: Genesis 1:1, Psalm 121:2, D&C 76:22-24, Alma 32, 1 Nephi 1:1-4
+  const refRegex = new RegExp(
+    `(?:(?<=\\s|^|\\(|;|,)|^)(${bookPattern})\\s+(\\d+)(?::(\\d+)(?:[\\u2013\\u2014-](\\d+))?)?(?=\\s|$|[.,;:)\\u2019'"])`,
+    "g"
+  );
+
+  const segments: ScriptureRefSegment[] = [];
+  let lastIndex = 0;
+
+  for (const match of text.matchAll(refRegex)) {
+    const matchStart = match.index!;
+    // Add preceding text
+    if (matchStart > lastIndex) {
+      segments.push({ type: "text", text: text.slice(lastIndex, matchStart) });
+    }
+
+    const bookName = match[1];
+    const chapter = parseInt(match[2], 10);
+    const url = getInternalScriptureUrl(bookName, chapter);
+
+    if (url) {
+      segments.push({ type: "ref", text: match[0], url });
+    } else {
+      segments.push({ type: "text", text: match[0] });
+    }
+
+    lastIndex = matchStart + match[0].length;
+  }
+
+  // Add remaining text
+  if (lastIndex < text.length) {
+    segments.push({ type: "text", text: text.slice(lastIndex) });
+  }
+
+  return segments.length > 0 ? segments : [{ type: "text", text }];
 }

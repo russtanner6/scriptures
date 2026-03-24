@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import type { ContextNugget } from "@/lib/types";
 import { useBackToClose } from "@/lib/useBackToClose";
 import { analytics } from "@/lib/analytics";
+import { LinkedScriptureText } from "./LinkedScriptureText";
 
 const CATEGORY_COLORS: Record<string, string> = {
   Linguistic: "#3B82F6",
@@ -259,7 +260,7 @@ export default function NuggetPopover({
               margin: "0 0 16px",
             }}
           >
-            {nugget.insight}
+            <LinkedScriptureText text={nugget.insight} linkColor="#2CC1E8" />
           </p>
 
           {/* Source — linked to Google search */}
