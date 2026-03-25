@@ -19013,5 +19013,807 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 4
+  },
+  {
+    "book": "Daniel",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 8,
+        "reason": "Daniel purposed in his heart that he would not defile himself with the king's meat."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 20,
+        "reason": "Daniel's hymn of praise declaring God changes times and seasons, removes and sets up kings."
+      },
+      {
+        "verse": 44,
+        "reason": "The prophecy of God's kingdom that shall never be destroyed—the stone cut without hands."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "The bold declaration of faith: our God is able to deliver us from the fiery furnace."
+      },
+      {
+        "verse": 25,
+        "reason": "Nebuchadnezzar sees a fourth figure in the furnace like the Son of God."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "Nebuchadnezzar declares God's kingdom is everlasting and his dominion from generation to generation."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 27,
+        "reason": "TEKEL: Thou art weighed in the balances, and art found wanting."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "Daniel prayed three times a day as was his custom, despite the king's decree."
+      },
+      {
+        "verse": 22,
+        "reason": "God sent his angel and shut the lions' mouths."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 13,
+        "reason": "The vision of one like the Son of man coming with the clouds of heaven to the Ancient of days."
+      },
+      {
+        "verse": 14,
+        "reason": "He was given dominion, glory, and a kingdom that all peoples and nations should serve him."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 8,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "To the Lord our God belong mercies and forgivenesses, though we have rebelled against him."
+      },
+      {
+        "verse": 24,
+        "reason": "The seventy weeks prophecy pointing to the Messiah."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 10,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 11,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "Many that sleep in the dust of the earth shall awake—a key Old Testament resurrection text."
+      },
+      {
+        "verse": 3,
+        "reason": "They that be wise shall shine as the brightness of the firmament."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Job",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 21,
+        "reason": "'The LORD gave, and the LORD hath taken away; blessed be the name of the LORD' — one of the most quoted verses on suffering."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "Job's response to his wife: 'shall we receive good at the hand of God, and shall we not receive evil?'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "'Let the day perish wherein I was born' — the iconic opening of Job's lament."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "Eliphaz's core argument: 'who ever perished, being innocent?'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "'Happy is the man whom God correcteth' — the doctrine of divine chastening."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "Job's grief is heavier than the sand of the sea — a vivid image of overwhelming sorrow."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "'What is man, that thou shouldest magnify him?' — a bitter counterpoint to Psalm 8."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 8,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 33,
+        "reason": "Job longs for a 'daysman' (mediator) to arbitrate between him and God — foreshadowing Christ."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 10,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 11,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "'Ask now the beasts, and they shall teach thee' — nature testifies of God's hand."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 15,
+        "reason": "'Though he slay me, yet will I trust in him' — a defining statement of faith under trial."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "'If a man die, shall he live again?' — the great question of resurrection."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 15,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 19,
+        "reason": "'My witness is in heaven, and my record is on high' — Job's appeal to a heavenly advocate."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 17,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 18,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 19,
+    "verses": [
+      {
+        "verse": 25,
+        "reason": "'I know that my redeemer liveth' — one of the most powerful messianic declarations in the Old Testament."
+      },
+      {
+        "verse": 26,
+        "reason": "'In my flesh shall I see God' — a profound statement of belief in bodily resurrection."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 20,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 21,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 22,
+    "verses": [
+      {
+        "verse": 21,
+        "reason": "'Acquaint now thyself with him, and be at peace' — Eliphaz's appeal, ironic given his false accusations."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 23,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "'When he hath tried me, I shall come forth as gold' — faith refined through testing."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 24,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 25,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 26,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "'He hangeth the earth upon nothing' — a remarkable cosmological statement for the ancient world."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 27,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "'Till I die I will not remove mine integrity from me' — Job's unwavering moral resolve."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 28,
+    "verses": [
+      {
+        "verse": 28,
+        "reason": "'The fear of the Lord, that is wisdom; and to depart from evil is understanding' — the poem's climactic conclusion."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 29,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 30,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 31,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "'I made a covenant with mine eyes' — Job's commitment to moral purity."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 32,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 33,
+    "verses": [
+      {
+        "verse": 23,
+        "reason": "'A messenger, an interpreter, one among a thousand' — Elihu's description of a divine mediator."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 34,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 35,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 36,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 37,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "'Stand still, and consider the wondrous works of God' — a call to contemplative worship."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 38,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "'Where wast thou when I laid the foundations of the earth?' — God's opening challenge from the whirlwind."
+      },
+      {
+        "verse": 7,
+        "reason": "'When the morning stars sang together, and all the sons of God shouted for joy' — the premortal celebration."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 39,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 40,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "'Behold, I am vile; what shall I answer thee? I will lay mine hand upon my mouth' — Job's first humble response."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 41,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 42,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "'I have heard of thee by the hearing of the ear: but now mine eye seeth thee' — Job's transformation from theology to theophany."
+      },
+      {
+        "verse": 10,
+        "reason": "'The LORD turned the captivity of Job, when he prayed for his friends' — restoration through intercession."
+      },
+      {
+        "verse": 12,
+        "reason": "'The LORD blessed the latter end of Job more than his beginning' — double restoration."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "'Vanity of vanities'—the thesis statement of the entire book."
+      },
+      {
+        "verse": 18,
+        "reason": "'In much wisdom is much grief'—a paradox on the burden of knowledge."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 24,
+        "reason": "First of several refrains that enjoyment of labor is from the hand of God."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "'To every thing there is a season'—one of the most quoted passages in all of scripture."
+      },
+      {
+        "verse": 11,
+        "reason": "God has set eternity in the hearts of men, yet they cannot fathom His work from beginning to end."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "'Two are better than one'—a beloved teaching on the value of companionship."
+      },
+      {
+        "verse": 12,
+        "reason": "'A threefold cord is not quickly broken'—widely applied to marriage and covenant relationships."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "'Let thy words be few'—a call to reverent restraint in the presence of God."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 6,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "Warns against longing for 'the good old days,' declaring it is not wisdom to do so."
+      },
+      {
+        "verse": 20,
+        "reason": "'There is not a just man upon earth, that doeth good, and sinneth not'—universal sinfulness."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 8,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "'Whatsoever thy hand findeth to do, do it with thy might'—a call to diligent action."
+      },
+      {
+        "verse": 11,
+        "reason": "'The race is not to the swift'—a meditation on the unpredictability of life."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 10,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 11,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "'Cast thy bread upon the waters'—a proverb on generosity and faith in uncertain outcomes."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "'The spirit shall return unto God who gave it'—a key verse on the nature of the soul."
+      },
+      {
+        "verse": 13,
+        "reason": "'Fear God, and keep his commandments: for this is the whole duty of man'—the book's ultimate conclusion."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
   }
 ]

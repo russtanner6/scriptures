@@ -14202,5 +14202,665 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 4
+  },
+  {
+    "book": "Daniel",
+    "chapter": 1,
+    "era": "Babylonian Captivity",
+    "approxDate": "c. 605 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "era": "Babylonian Captivity",
+    "approxDate": "c. 603 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "era": "Babylonian Captivity",
+    "approxDate": "c. 600 BC",
+    "setting": "Plain of Dura, Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 4,
+    "era": "Babylonian Captivity",
+    "approxDate": "c. 570 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "era": "Babylonian Captivity",
+    "approxDate": "c. 539 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "era": "Persian Period",
+    "approxDate": "c. 539 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 7,
+    "era": "Babylonian Captivity",
+    "approxDate": "c. 553 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 8,
+    "era": "Babylonian Captivity",
+    "approxDate": "c. 551 BC",
+    "setting": "Shushan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 9,
+    "era": "Persian Period",
+    "approxDate": "c. 538 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 10,
+    "era": "Persian Period",
+    "approxDate": "c. 536 BC",
+    "setting": "Bank of the Tigris River",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 11,
+    "era": "Persian Period",
+    "approxDate": "c. 536 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 12,
+    "era": "Persian Period",
+    "approxDate": "c. 536 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Job",
+    "chapter": 1,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 2,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 3,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 4,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 5,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 6,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 7,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 8,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 9,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 10,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 11,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 12,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 13,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 14,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 15,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 16,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 17,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 18,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 19,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 20,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 21,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 22,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 23,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 24,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 25,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 26,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 27,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 28,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 29,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 30,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 31,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 32,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 33,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 34,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 35,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 36,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 37,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 38,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 39,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 40,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 41,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 42,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000-1500 BC",
+    "setting": "Land of Uz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 1,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 2,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 3,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 4,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 5,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 6,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 7,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 8,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 9,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 10,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 11,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 12,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
   }
 ]

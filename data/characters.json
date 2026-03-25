@@ -20781,5 +20781,53 @@
       "OT"
     ],
     "tier": 4
+  },
+  {
+    "id": "phinehas-son-of-eleazar",
+    "name": "Phinehas",
+    "description": "Son of Eleazar and grandson of Aaron who stopped a plague by executing an Israelite man and Midianite woman at Baal-peor, earning an everlasting covenant of priesthood.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 3
+  },
+  {
+    "id": "eleazar-priest",
+    "name": "Eleazar",
+    "description": "Third son of Aaron who succeeded him as high priest and served during the conquest of Canaan under Joshua.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 3
+  },
+  {
+    "id": "arioch",
+    "name": "Arioch",
+    "description": "Captain of the king's guard under Nebuchadnezzar who was commanded to destroy the wise men of Babylon but brought Daniel before the king instead.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "belshazzar",
+    "name": "Belshazzar",
+    "description": "Last king of Babylon who saw the handwriting on the wall during a sacrilegious feast and was slain the night Babylon fell to the Persians.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 3
+  },
+  {
+    "id": "abed-nego",
+    "name": "Abed-nego",
+    "description": "One of Daniel's three companions who was cast into the fiery furnace for refusing to worship Nebuchadnezzar's golden image and emerged unharmed.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 3,
+    "aliases": [
+      "Abednego"
+    ]
   }
 ]

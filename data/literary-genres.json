@@ -12423,5 +12423,594 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 4
+  },
+  {
+    "book": "Daniel",
+    "chapter": 1,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "genre": "narrative",
+    "subgenre": "apocalyptic",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 4,
+    "genre": "narrative",
+    "subgenre": "royal decree",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 7,
+    "genre": "prophecy",
+    "subgenre": "apocalyptic",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 8,
+    "genre": "prophecy",
+    "subgenre": "apocalyptic",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 9,
+    "genre": "prophecy",
+    "subgenre": "prayer",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 10,
+    "genre": "prophecy",
+    "subgenre": "apocalyptic",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 11,
+    "genre": "prophecy",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 12,
+    "genre": "prophecy",
+    "subgenre": "apocalyptic",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Job",
+    "chapter": 1,
+    "genre": "narrative",
+    "subgenre": "prologue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 2,
+    "genre": "narrative",
+    "subgenre": "prologue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 3,
+    "genre": "poetry",
+    "subgenre": "lament",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 4,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 5,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 6,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 7,
+    "genre": "poetry",
+    "subgenre": "lament",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 8,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 9,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 10,
+    "genre": "poetry",
+    "subgenre": "lament",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 11,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 12,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 13,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 14,
+    "genre": "poetry",
+    "subgenre": "lament",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 15,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 16,
+    "genre": "poetry",
+    "subgenre": "lament",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 17,
+    "genre": "poetry",
+    "subgenre": "lament",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 18,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 19,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 20,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 21,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 22,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 23,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 24,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 25,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 26,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 27,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 28,
+    "genre": "poetry",
+    "subgenre": "wisdom poem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 29,
+    "genre": "poetry",
+    "subgenre": "monologue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 30,
+    "genre": "poetry",
+    "subgenre": "lament",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 31,
+    "genre": "poetry",
+    "subgenre": "oath",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 32,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 33,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 34,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 35,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 36,
+    "genre": "poetry",
+    "subgenre": "dialogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 37,
+    "genre": "poetry",
+    "subgenre": "hymn",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 38,
+    "genre": "poetry",
+    "subgenre": "theophany",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 39,
+    "genre": "poetry",
+    "subgenre": "theophany",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 40,
+    "genre": "poetry",
+    "subgenre": "theophany",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 41,
+    "genre": "poetry",
+    "subgenre": "theophany",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 42,
+    "genre": "narrative",
+    "subgenre": "epilogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 1,
+    "genre": "wisdom literature",
+    "subgenre": "wisdom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 2,
+    "genre": "wisdom literature",
+    "subgenre": "wisdom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 3,
+    "genre": "wisdom literature",
+    "subgenre": "wisdom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 4,
+    "genre": "wisdom literature",
+    "subgenre": "wisdom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 5,
+    "genre": "wisdom literature",
+    "subgenre": "wisdom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 6,
+    "genre": "wisdom literature",
+    "subgenre": "wisdom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 7,
+    "genre": "wisdom literature",
+    "subgenre": "wisdom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 8,
+    "genre": "wisdom literature",
+    "subgenre": "wisdom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 9,
+    "genre": "wisdom literature",
+    "subgenre": "wisdom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 10,
+    "genre": "wisdom literature",
+    "subgenre": "wisdom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 11,
+    "genre": "wisdom literature",
+    "subgenre": "wisdom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 12,
+    "genre": "wisdom literature",
+    "subgenre": "wisdom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
   }
 ]

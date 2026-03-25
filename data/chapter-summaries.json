@@ -11448,5 +11448,533 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 4
+  },
+  {
+    "book": "Daniel",
+    "chapter": 1,
+    "summary": "Daniel and three companions are taken captive to Babylon; they refuse the king's food, are blessed with wisdom, and excel above all the magicians.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "summary": "Nebuchadnezzar dreams of a great image; Daniel receives the interpretation from God, revealing successive world kingdoms and an everlasting divine kingdom.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "summary": "Nebuchadnezzar erects a golden image; Shadrach, Meshach, and Abed-nego refuse to worship it and are cast into a fiery furnace but delivered by God.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 4,
+    "summary": "Nebuchadnezzar recounts his dream of a great tree; Daniel interprets it as the king's coming humiliation, which is fulfilled until he acknowledges God's sovereignty.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "summary": "At Belshazzar's feast, a hand writes on the wall; Daniel interprets the message as divine judgment, and that night Belshazzar is slain and Darius takes the kingdom.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "summary": "Daniel's rivals conspire to have him thrown into the lions' den for praying to God; he is miraculously preserved, and Darius decrees reverence for Daniel's God.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 7,
+    "summary": "Daniel sees a vision of four great beasts, the Ancient of Days on his throne, and one like the Son of Man receiving an everlasting dominion.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 8,
+    "summary": "Daniel sees the vision of the ram and the he-goat, symbolizing the Medo-Persian and Greek empires; Gabriel explains the vision and its timing.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 9,
+    "summary": "Daniel prays a confession for Israel's sins; Gabriel appears and reveals the prophecy of the seventy weeks concerning the coming of the Messiah.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 10,
+    "summary": "Daniel fasts and mourns for three weeks; a glorious heavenly messenger appears and describes the spiritual warfare delaying his arrival.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 11,
+    "summary": "A detailed prophecy of wars between the kings of the north and south, the desecration of the sanctuary, and the persecution of the faithful.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 12,
+    "summary": "Michael shall stand up for Israel; the dead shall be resurrected; Daniel is told to seal the book and is promised he shall stand in his lot at the end of days.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Job",
+    "chapter": 1,
+    "summary": "Job is introduced as a blameless and upright man; Satan challenges God that Job's righteousness is due to his blessings, and God permits Satan to destroy Job's possessions and children.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 2,
+    "summary": "Satan smites Job with painful boils from head to foot; his wife tells him to curse God and die, but Job refuses. Three friends arrive and sit in silence for seven days.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 3,
+    "summary": "Job breaks his silence and curses the day of his birth, wishing he had never been born or had died at birth, longing for the rest of death.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 4,
+    "summary": "Eliphaz begins the first cycle of debate, appealing to a mysterious night vision and arguing that the innocent do not perish — only the wicked suffer.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 5,
+    "summary": "Eliphaz continues, urging Job to seek God and accept His chastening, promising that God wounds but also heals and that restoration awaits the penitent.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 6,
+    "summary": "Job responds with deep anguish, saying his grief is heavier than the sand of the sea, and accuses his friends of being unreliable like seasonal streams.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 7,
+    "summary": "Job compares human life to hard service and a weaver's shuttle, then turns his complaint directly to God, asking why He will not leave him alone.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 8,
+    "summary": "Bildad enters the debate, insisting God does not pervert justice, suggesting Job's children died for their own sin, and urging Job to seek God for restoration.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 9,
+    "summary": "Job acknowledges God's overwhelming wisdom and power but despairs that no mortal can contend with God or find a fair hearing in His court.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 10,
+    "summary": "Job pours out his complaint to God, questioning why God formed him only to crush him, and pleads for a brief respite before death.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 11,
+    "summary": "Zophar sharply rebukes Job, insisting that God is exacting less than Job deserves, and calls on Job to put away iniquity and find peace.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 12,
+    "summary": "Job responds sarcastically that his friends are not the only wise men, then describes God's inscrutable sovereign power that overturns nations and counselors.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 13,
+    "summary": "Job rebukes his friends as worthless physicians who speak falsely for God, then boldly declares he will argue his case directly before the Almighty.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 14,
+    "summary": "Job reflects on the brevity and frailty of human life, comparing man to a flower that fades, and longs for hope of renewal beyond the grave.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 15,
+    "summary": "Eliphaz's second speech accuses Job of undermining piety with his words and paints a vivid picture of the restless torment of the wicked.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 16,
+    "summary": "Job calls his friends miserable comforters and describes God's assault on him in vivid imagery — torn, shaken, shattered — yet appeals to his witness in heaven.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 17,
+    "summary": "Job's spirit is broken and his hope is gone; he sees the grave as his only house and finds no understanding among his companions.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 18,
+    "summary": "Bildad's second speech describes the fate of the wicked in terrifying detail — snares, disease, death, and being forgotten from the earth.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 19,
+    "summary": "Job cries out against his friends' cruelty and God's persecution, but rises to a climactic declaration that his Redeemer lives and he shall see God in the flesh.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 20,
+    "summary": "Zophar's second speech argues that the triumph of the wicked is short-lived and God will force them to disgorge their ill-gotten wealth.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 21,
+    "summary": "Job challenges his friends' theology by pointing out that the wicked often live long, prosper, and die in ease, contradicting their doctrine of retribution.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 22,
+    "summary": "Eliphaz's third speech accuses Job of specific sins — stripping the naked, withholding water, oppressing widows — and urges him to return to God for restoration.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 23,
+    "summary": "Job yearns to find God and lay his case before Him, confident he would be acquitted, but God is hidden and Job trembles before His inscrutable will.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 24,
+    "summary": "Job catalogs the injustices of the world — the wicked oppress the poor, steal, murder — and questions why God does not set times of judgment.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 25,
+    "summary": "Bildad's brief third speech declares God's dominion and purity, arguing that even the moon and stars are not pure in His sight, much less mortal man.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 26,
+    "summary": "Job describes God's majestic power over creation — the shades tremble beneath the waters, He stretches the north over the void and hangs the earth on nothing.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 27,
+    "summary": "Job swears by the living God that he will maintain his integrity and never admit the friends are right, then describes the hopelessness of the wicked.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 28,
+    "summary": "A magnificent wisdom poem: humanity mines precious stones from the earth's depths, but true wisdom cannot be bought — it is found only through the fear of the Lord.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 29,
+    "summary": "Job nostalgically recalls his former days of honor and prosperity, when the elders rose in his presence and the blessing of the dying rested on him.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 30,
+    "summary": "Job contrasts his former glory with present misery — mocked by the lowest of society, afflicted in body, crying out to God with no answer.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 31,
+    "summary": "Job's great oath of innocence: he systematically denies every possible sin — lust, falsehood, oppression, greed, idolatry — and invites God's judgment if guilty.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 32,
+    "summary": "Young Elihu, angry that the three friends could not answer Job, and that Job justified himself rather than God, begins his speeches with passionate urgency.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 33,
+    "summary": "Elihu argues that God speaks to humanity through dreams and suffering to preserve their souls, and describes an angelic mediator who can ransom the afflicted.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 34,
+    "summary": "Elihu defends God's absolute justice, insisting that the Almighty cannot do wickedness and governs all creation with perfect equity and impartiality.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 35,
+    "summary": "Elihu argues that human righteousness or wickedness does not profit or diminish God — it affects other mortals — and that the afflicted must wait on God.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 36,
+    "summary": "Elihu extols God's justice toward the afflicted, warning that discipline is meant to open ears to instruction, then turns to praise God's greatness in nature.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 37,
+    "summary": "Elihu describes God's awesome power displayed in thunder, lightning, snow, and ice, concluding that the Almighty is beyond human understanding and worthy of reverent fear.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 38,
+    "summary": "God answers Job from the whirlwind with a series of unanswerable questions about creation — the earth's foundations, the sea, dawn, snow, stars, and storms.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 39,
+    "summary": "God continues questioning Job about the wild animals He governs — mountain goats, wild donkeys, the wild ox, the ostrich, the horse, the hawk, and the eagle.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 40,
+    "summary": "God challenges Job to respond; Job humbly covers his mouth. God then describes the mighty Behemoth, demonstrating His power over the greatest of land creatures.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 41,
+    "summary": "God describes the fearsome Leviathan in elaborate detail — its impenetrable armor, fiery breath, and unconquerable strength — showing none can stand before its Maker.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 42,
+    "summary": "Job repents in dust and ashes, God rebukes the three friends for not speaking rightly, and Job is restored with twice his former possessions and ten new children.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 1,
+    "summary": "The Preacher introduces the theme of vanity, observing that all human labor is futile under the sun, that nothing is new, and that wisdom itself brings sorrow.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 2,
+    "summary": "Solomon recounts his experiment with pleasure, building projects, wealth, and wisdom, concluding that all is vanity and that enjoyment of labor is a gift from God.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 3,
+    "summary": "A famous poem declares a time for every purpose under heaven; God has set eternity in the human heart, yet mortals cannot comprehend the full scope of His work.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 4,
+    "summary": "Observations on oppression, envy, and the futility of solitary toil lead to the conclusion that companionship and contentment surpass endless striving.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 5,
+    "summary": "Warns against rash vows and the love of money; the laborer's sleep is sweet, but riches bring anxiety, and enjoyment of one's portion is God's gift.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 6,
+    "summary": "Laments the tragedy of a man whom God gives wealth and honor but not the ability to enjoy them, declaring that desire is never satisfied.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 7,
+    "summary": "A collection of wisdom sayings: sorrow is better than laughter, patience better than pride; the chapter warns against extremes and acknowledges the universality of sin.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 8,
+    "summary": "Counsels respect for authority and trust in God's timing; though sinners may delay punishment, it will surely come, and the righteous should enjoy life as God's gift.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 9,
+    "summary": "Death comes to all alike; the living should eat, drink, and work with zeal, for there is no knowledge or work in the grave, and time and chance happen to everyone.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 10,
+    "summary": "Proverbial contrasts between wisdom and folly: a little folly outweighs great wisdom, and careless words and lazy hands bring ruin.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 11,
+    "summary": "Encourages generosity and bold action in the face of uncertainty; rejoice in youth but remember that God will bring every deed into judgment.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 12,
+    "summary": "An allegorical description of old age and death concludes with the ultimate charge: fear God and keep his commandments, for this is the whole duty of man.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
   }
 ]

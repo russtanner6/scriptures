@@ -17357,5 +17357,833 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 4
+  },
+  {
+    "book": "Daniel",
+    "chapter": 1,
+    "topics": [
+      "obedience",
+      "word of wisdom",
+      "divine favor",
+      "faithfulness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "topics": [
+      "revelation",
+      "kingdoms",
+      "second coming",
+      "prophecy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "topics": [
+      "faith",
+      "courage",
+      "deliverance",
+      "idolatry"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 4,
+    "topics": [
+      "pride",
+      "humility",
+      "sovereignty",
+      "repentance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "topics": [
+      "judgment",
+      "accountability",
+      "sacrilege"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "topics": [
+      "prayer",
+      "faithfulness",
+      "deliverance",
+      "missionary work"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 7,
+    "topics": [
+      "second coming",
+      "kingdoms",
+      "divine authority",
+      "prophecy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 8,
+    "topics": [
+      "prophecy",
+      "desolation",
+      "angelic ministry"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 9,
+    "topics": [
+      "repentance",
+      "atonement",
+      "messianic prophecy",
+      "prayer"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 10,
+    "topics": [
+      "fasting",
+      "revelation",
+      "spiritual warfare",
+      "angelic ministry"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 11,
+    "topics": [
+      "prophecy",
+      "warfare",
+      "tribulation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 12,
+    "topics": [
+      "resurrection",
+      "last days",
+      "eternal life",
+      "sealing"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 27
+  },
+  {
+    "book": "Job",
+    "chapter": 1,
+    "topics": [
+      "agency",
+      "adversity",
+      "faith",
+      "premortal life"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 2,
+    "topics": [
+      "integrity",
+      "adversity",
+      "agency",
+      "perseverance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 3,
+    "topics": [
+      "mortality",
+      "suffering",
+      "agency"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 4,
+    "topics": [
+      "revelation",
+      "judgment",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 5,
+    "topics": [
+      "repentance",
+      "divine discipline",
+      "restoration",
+      "faith"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 6,
+    "topics": [
+      "compassion",
+      "adversity",
+      "friendship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 7,
+    "topics": [
+      "mortality",
+      "prayer",
+      "suffering"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 8,
+    "topics": [
+      "justice",
+      "repentance",
+      "faith"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 9,
+    "topics": [
+      "justice",
+      "divine power",
+      "atonement"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 10,
+    "topics": [
+      "creation",
+      "mortality",
+      "prayer"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 11,
+    "topics": [
+      "repentance",
+      "divine wisdom",
+      "justice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 12,
+    "topics": [
+      "divine sovereignty",
+      "wisdom",
+      "humility"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 13,
+    "topics": [
+      "faith",
+      "integrity",
+      "prayer"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 14,
+    "topics": [
+      "resurrection",
+      "mortality",
+      "hope",
+      "plan of salvation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 15,
+    "topics": [
+      "accountability",
+      "judgment",
+      "pride"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 16,
+    "topics": [
+      "adversity",
+      "atonement",
+      "witness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 17,
+    "topics": [
+      "death",
+      "adversity",
+      "hope"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 18,
+    "topics": [
+      "judgment",
+      "accountability",
+      "justice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 19,
+    "topics": [
+      "resurrection",
+      "redeemer",
+      "atonement",
+      "testimony"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 20,
+    "topics": [
+      "judgment",
+      "accountability",
+      "justice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 21,
+    "topics": [
+      "justice",
+      "divine sovereignty",
+      "mortality"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 22,
+    "topics": [
+      "repentance",
+      "false accusation",
+      "prayer",
+      "restoration"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 23,
+    "topics": [
+      "faith",
+      "prayer",
+      "testing",
+      "divine will"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 24,
+    "topics": [
+      "justice",
+      "agency",
+      "accountability",
+      "mercy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 25,
+    "topics": [
+      "divine sovereignty",
+      "humility",
+      "atonement"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 26,
+    "topics": [
+      "creation",
+      "divine power",
+      "revelation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 27,
+    "topics": [
+      "integrity",
+      "judgment",
+      "righteousness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 28,
+    "topics": [
+      "wisdom",
+      "fear of the lord",
+      "revelation",
+      "knowledge"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 29,
+    "topics": [
+      "charity",
+      "stewardship",
+      "community",
+      "blessings"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 30,
+    "topics": [
+      "adversity",
+      "humility",
+      "suffering"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 31,
+    "topics": [
+      "integrity",
+      "chastity",
+      "charity",
+      "self-examination"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 32,
+    "topics": [
+      "revelation",
+      "holy ghost",
+      "wisdom",
+      "youth"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 33,
+    "topics": [
+      "revelation",
+      "atonement",
+      "mediator",
+      "repentance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 34,
+    "topics": [
+      "justice",
+      "divine sovereignty",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 35,
+    "topics": [
+      "divine transcendence",
+      "prayer",
+      "patience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 36,
+    "topics": [
+      "divine discipline",
+      "mercy",
+      "repentance",
+      "creation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 37,
+    "topics": [
+      "creation",
+      "divine power",
+      "reverence",
+      "humility"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 38,
+    "topics": [
+      "creation",
+      "divine sovereignty",
+      "humility",
+      "premortal life"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 39,
+    "topics": [
+      "creation",
+      "providence",
+      "divine care"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 40,
+    "topics": [
+      "humility",
+      "repentance",
+      "divine power"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 41,
+    "topics": [
+      "divine power",
+      "creation",
+      "sovereignty"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Job",
+    "chapter": 42,
+    "topics": [
+      "repentance",
+      "restoration",
+      "forgiveness",
+      "blessings",
+      "prayer"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 18
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 1,
+    "topics": [
+      "vanity of the world",
+      "wisdom",
+      "mortality"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 2,
+    "topics": [
+      "stewardship",
+      "pleasure",
+      "agency",
+      "mortality"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 3,
+    "topics": [
+      "sovereignty of god",
+      "plan of salvation",
+      "eternity",
+      "mortality"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 4,
+    "topics": [
+      "compassion",
+      "companionship",
+      "humility"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 5,
+    "topics": [
+      "prayer",
+      "reverence",
+      "stewardship",
+      "contentment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 6,
+    "topics": [
+      "gratitude",
+      "mortality",
+      "stewardship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 7,
+    "topics": [
+      "wisdom",
+      "patience",
+      "humility",
+      "repentance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 8,
+    "topics": [
+      "obedience",
+      "justice",
+      "faith",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 9,
+    "topics": [
+      "mortality",
+      "diligence",
+      "agency",
+      "enjoyment of life"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 10,
+    "topics": [
+      "wisdom",
+      "self-mastery",
+      "speech",
+      "leadership"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 11,
+    "topics": [
+      "charity",
+      "faith",
+      "judgment",
+      "youth"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 12,
+    "topics": [
+      "fear of god",
+      "commandments",
+      "judgment",
+      "resurrection"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 21
   }
 ]

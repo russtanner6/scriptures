@@ -131,8 +131,8 @@ User wants this as a progressive web app. Add manifest, service worker, offline 
 
 ## Tier 4 — Advanced / Premium Features
 
-### Kid Mode
-A child-friendly scripture reading experience for kids (ages 4-10) or parents reading with young children. The goal: make scripture accessible to children without parents needing to simplify on the fly.
+### Mom Mode (Kid-Friendly Scriptures)
+A child-friendly scripture reading experience for kids (ages 4-10) or parents reading with young children. Called "Mom Mode" — a fun, relatable name that captures the use case of a parent making scripture time easy. The goal: make scripture accessible to children without parents needing to simplify on the fly.
 
 **Core concept:**
 - **Simplified narrative text** — Every chapter rewritten in simple, age-appropriate language (narrative/story format, not verse-by-verse). Short sentences, common vocabulary, concrete descriptions.
