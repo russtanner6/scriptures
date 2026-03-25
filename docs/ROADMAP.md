@@ -17,8 +17,7 @@ Built to house the **full LDS canon** (OT, NT, Book of Mormon, D&C, Pearl of Gre
 - **Narrative Arc Explorer** (`/narrative-arc`) — multi-term comparison (up to 6), all 5 volumes, deep linking
 - **Theme Heatmap** (`/heatmap`) — single-word heatmap across all volumes with heatmap/arc toggle per module
 - **Word Cloud** (`/wordcloud`) — interactive tag cloud per book/chapter/volume
-- **Sentiment Arc** (`/sentiment`) — emotional tone across books, 7 categories
-- **Parallel Passages** (`/parallel`) — side-by-side comparison with word-level diff
+- **Sentiment Explorer** (`/sentiment`) — theological sentiment analysis with 4 categories (Exaltation/Glory, Covenant Peace, Admonition/Justice, Trial/Contrition), cascading drill-down, weighted valence scoring, LLM-scored chapter data (in progress)
 - **Chiasmus Detector** (`/chiasmus`) — ABBA pattern detection with visual display
 - **Topic Map** (`/topics`) — chapter similarity finder via cosine similarity
 
@@ -34,10 +33,13 @@ Built to house the **full LDS canon** (OT, NT, Book of Mormon, D&C, Pearl of Gre
 - **Verse Deep Linking** — `?verse=N` scrolls to specific verse with highlight flash
 - **UI Polish** — cream light theme, lighter dark theme, gradient progress bar, centered tree logo, always-dark bars, sliding reading mode toggle, shared modal system
 
-### People
-- **Character Directory** (`/characters`) — 302 named individuals with bios, family trees, portraits (~40 with portraits)
-- **CharacterDetailPanel** — slide-in panel with bio, aliases, scripture mention heatmap, first/last mention links, volume pills with tooltips
+### People & Places
+- **Character Directory** (`/characters`) — 757 named individuals with bios, family trees, portraits (~40 with portraits)
+- **CharacterDetailPanel** — slide-in panel with bio, aliases, scripture mention heatmap, first/last mention links, volume pills with tooltips, tone radar chart
 - **"People in this Chapter"** — Chapter Insights shows characters found via speaker matching + text scanning, wired to detail panel
+- **Location Directory** (`/locations`) — 333 named places with descriptions, coordinates (183 known), search, filters
+- **LocationDetailPanel** — slide-in panel with OpenStreetMap embed, mention stats, volume heatmap, Google Maps link
+- **Entity Linking** — ScriptureReader auto-hyperlinks first mention of each person/place per chapter
 
 ### Infrastructure
 - **Scripture Panel** — right-side slider showing matching verses when clicking any chart data point
@@ -51,54 +53,28 @@ Built to house the **full LDS canon** (OT, NT, Book of Mormon, D&C, Pearl of Gre
 ### Data
 - **Speaker Attribution Data** — 7,631 entries across 82 books (Bible + BoM/D&C/PoGP)
 - **Modern Translations** — 37,699 verses (OT/NT via WEB, BoM via Claude-generated)
-- **Character Database** — 302 characters with bios, aliases, family relationships, portraits
+- **Character Database** — 757 characters with bios, aliases, family relationships, portraits
+- **Location Database** — 333 scripture locations with descriptions, coordinates, aliases
+- **Context Eggs** — ~930+ scholarly insights across all volumes (5 categories)
+- **LLM Chapter Sentiments** — `data/chapter-sentiments.json` (~1,460 of 1,764 scored via Claude Sonnet 4.5, gaps being filled via Gemini)
 - **Resource Seed Data** — `data/resources.json`
-- **Parallel Passages** — `data/parallel-passages.json`
+- **Chiasmus Catalog** — 40 documented chiastic structures with scholar attribution
 
 ---
 
 ## Up Next — Immediate Priorities
 
-### 1. User Preferences System (APPROVED — BUILD NEXT)
-**A settings system that lets users customize their scripture experience based on their faith tradition.**
+### 1. Wire Sentiment Explorer to LLM Data
+`data/chapter-sentiments.json` has ~1,460 of 1,764 chapters scored by Claude Sonnet 4.5. User filling ~264 gaps via Gemini. Once complete, switch Sentiment Explorer from keyword lexicon to LLM-scored data for much higher quality results.
 
-**Two settings:**
+### 2. Mood Match Feature
+Use LLM sentiment data to recommend chapters matching user's emotional state. "I'm feeling anxious" → chapters scored high on Covenant Peace. Could integrate with reading streaks to suggest counterbalance chapters.
 
-**Volume Visibility** — "Which volumes do I want to see?"
-- 5 toggle switches (OT, NT, BoM, D&C, PoGP), all on by default
-- When a volume is off: disappears from navigation, search results, characters, speakers, charts — everything
-- Data is preserved: bookmarks, notes, annotations stay and reappear when toggled back on
-- Filter layer, not deletion
+### 3. Word Explorer Completion
+Cascading dropdowns (same drill-down pattern as Sentiment Explorer), redirects from old routes (/search, /narrative-arc, /heatmap), nav/footer/home page updates.
 
-**Old Testament Theology** — "Who is the LORD in the Old Testament?"
-- Option A: "LDS / Latter-day Saint" — LORD/Jehovah = Jesus Christ (premortal). Default.
-- Option B: "Traditional Christian" — LORD/God = God / the Trinity.
-- Only affects OT speaker attributions and character associations
-- NT/BoM/D&C/PoGP unaffected
-
-**Implementation:**
-- Phase 1 (now): `localStorage` preferences with React context (`PreferencesProvider`)
-- Phase 2 (with accounts): Migrate to Firebase user profile, sync across devices
-- Settings page (`/settings`) accessible from nav menu
-- Future: onboarding screen for first-time visitors
-
-**Architecture:**
-```
-src/lib/preferences.ts
-├── getPreferences() / setPreferences()  → localStorage
-├── usePreferences()                     → React hook
-├── isVolumeVisible(abbrev)              → volume filter check
-└── getTheologyMode()                    → "lds" | "traditional"
-```
-
-### 2. OT Speaker Theology Mapping
-Build the actual data mapping for LORD/God → "Jesus Christ (Jehovah)" in OT contexts for LDS mode. Requires careful analysis of each OT "God"/"LORD" speaker entry to determine correct attribution per LDS doctrine.
-
-### 3. Speaker Data QA
-Verify accuracy of BoM/D&C/PoGP speakers in `speakers.json`. Known issues: some auto-generated entries may have incorrect attributions.
-
-### 4. ParallelPassagesTool Search Panel Update
-Last tool not updated to the new search panel pattern. Needs dark theme CSS variables and consistent layout.
+### 4. Speaker Data QA
+Gemini processing the full speakers.json. Waiting for corrected file. Key fixes: prophetic book misattributions (God → prophet name), remove generic/anonymous entries.
 
 ---
 
@@ -195,14 +171,16 @@ User wants this as a progressive web app. Add manifest, service worker, offline 
 ---
 
 ## Priority Order
-1. **User Preferences System** — volume visibility + OT theology mode (approved, ready to build)
-2. **OT Speaker Theology Mapping** — LORD/God → Jesus Christ data for LDS mode
-3. **Speaker Data QA** — verify BoM/D&C/PoGP accuracy
-4. **Reader UI polish** — narrations, resource pills, bottom bar, mobile panels
-5. **More character portraits**
-6. **PWA conversion**
-7. **ParallelPassagesTool update**
-8. **Firebase Auth + Saved Searches**
-9. **Reading Plans**
-10. **Cross-Reference Explorer**
-11. **Chapter Summaries**
+1. **Wire Sentiment Explorer to LLM data** — switch from keyword lexicon to chapter-sentiments.json
+2. **Mood Match feature** — chapter recommendations by emotional state
+3. **Word Explorer completion** — cascading dropdowns, old route redirects, nav updates
+4. **Speaker Data QA** — verify BoM/D&C/PoGP accuracy (Gemini audit in progress)
+5. **People database audit** — remove generic/anonymous entries
+6. **Funny Stories tool** — page UI + in-reader pills (data done)
+7. **Reader UI polish** — narrations, resource pills, bottom bar, mobile panels
+8. **More character portraits**
+9. **PWA conversion**
+10. **Firebase Auth + Saved Searches**
+11. **Reading Plans**
+12. **Cross-Reference Explorer**
+13. **Chapter Summaries**

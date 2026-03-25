@@ -1,5 +1,74 @@
 # Scripture Explorer — Session Log
 
+## 2026-03-25 — Session 19: Sentiment Revamp, LLM Scoring, Heading Standardization
+
+### What was done
+
+**Sentiment Analysis Complete Revamp:**
+- Rewrote sentiment lexicon from 7 categories to 4 theological categories:
+  - Exaltation & Glory (gold #FFD700)
+  - Covenant Peace (teal #20B2AA)
+  - Admonition & Justice (crimson #DC143C)
+  - Trial & Contrition (indigo #4B0082)
+- 200+ weighted words with LDS-specific overrides (pride=-3.8, fear=+0.5, wo=-3.5, grace=+3.8)
+- Weighted valence scoring: S = Σw / √n (replaces simple keyword counting)
+- 5-verse SMA smoothing function added
+- Updated sentiment API with 4 drill-down levels: volumes, books, chapters, verses
+- Rewrote SentimentArcTool with cascading dropdown navigation (Volume → Book → Chapter)
+- Removed verse-level chart (too noisy for keyword matching)
+- Replaced "Drill Into" pills with `<select>` dropdowns
+- Renamed from "Sentiment Arc" to "Sentiment Explorer"
+
+**LLM-Scored Chapter Sentiments:**
+- Built `scripts/score-chapters.ts` to score all 1,764 chapters via Claude API
+- Ran through Claude Sonnet 4.5 — scored ~1,460 chapters successfully
+- User filling remaining ~264 gaps through Gemini chat using SENTIMENT-SCORING-GUIDE.md
+- Data stored in `data/chapter-sentiments.json`
+- Calibration validated: Psalm 23=Peace, Psalm 150=Exaltation, Isaiah 1=Admonition, Lamentations 1=Contrition, Helaman 13=Admonition, Job 3=Contrition, John 14=Peace, Revelation 4=Exaltation
+- NOTE: Sentiment Explorer not yet wired to use this JSON data — still using keyword lexicon. Wiring needed after gaps filled.
+
+**Word Explorer:**
+- Volume-level chart changed from bars to shaded curve (Line chart with fill)
+- Book and chapter levels already had curves
+
+**Heading Standardization:**
+- All tool page h1 headings now centered, 1.8rem desktop / 1.4rem mobile, fontWeight 800, letterSpacing 0.02em
+- Fixed: WordCloud, Chiasmus, TopicMap, CharacterDirectory, LocationDirectory, BookmarksList, SettingsPanel
+- Added 24px top padding to `.page-container` globally
+
+**Speakers/Context Always On:**
+- Speaker labels and Context Eggs toggles hidden from user — always enabled
+- Code preserved for future re-enable if needed
+
+### Commits
+- Rewrite sentiment lexicon: 4 categories, weighted valence, 200+ words
+- Update sentiment API with 4 drill-down levels
+- Rewrite Sentiment Arc as drill-down Sentiment Explorer
+- Standardize headings across all tool pages
+
+### Pending (for next session)
+- Wire Sentiment Explorer to use `data/chapter-sentiments.json` (after user fills ~264 gaps via Gemini)
+- Mood Match feature (find chapters matching emotional state using sentiment data)
+- Methodology sidebar for sentiment scoring explanation
+- Word Explorer cascading dropdowns (same pattern as Sentiment Explorer)
+- Word Explorer redirects from old routes + nav/footer/home updates
+- Funny Stories page UI + in-reader pills
+- Speaker data audit/cleanup (Gemini processing)
+- People database audit (remove generic/anonymous entries)
+- API key rotation needed (exposed in chat)
+
+### Creative Ideas Noted for Future
+- Emotional Journey Map (flowing river visualization)
+- Mood Match Reader (recommend chapters by emotional state)
+- Tone Comparison (radar charts per book)
+- Chapter Character Sentiment (cross-reference with character data)
+- Sentiment Heatmap (color grid of every chapter)
+- Emotional Bookends (chapters that arc from lament to praise)
+- Reading Streak Integration (suggest counterbalance chapters)
+- Verse-of-the-Day by Mood
+
+---
+
 ## 2026-03-24 — Session 18: Apocrypha, Verse Select, Scripture Links, UI Fixes
 
 ### What was done

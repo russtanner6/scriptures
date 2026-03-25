@@ -50,22 +50,20 @@ src/
 │   ├── heatmap/       # Theme heatmap with heatmap/arc toggle per volume
 │   ├── wordcloud/     # Word cloud visualization per book/chapter/volume
 │   ├── sentiment/     # Sentiment/tone arc across books (NEW)
-│   ├── parallel/      # Side-by-side parallel passage comparison (NEW)
 │   ├── chiasmus/      # Chiasmus catalog — 40 documented chiastic structures with card UI
 │   ├── topics/        # Topic map — find thematically similar chapters (NEW)
 │   ├── timeline/      # Historical timeline (SHELVED — removed from nav, code preserved)
 │   ├── settings/      # User preferences (volume visibility, Apocrypha toggle)
 │   ├── read/          # Scripture reader (volume → book → chapter)
 │   ├── bookmarks/     # Saved verse bookmarks
-│   ├── characters/    # Character directory page (757 people)
+│   ├── people/        # Character directory page (757 people)
 │   ├── locations/     # Location directory page (333 places)
-│   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats, word-cloud, chapter-stats, random-verse, sentiment, parallel-passages, chiasmus, topic-similarity, chapter-characters, characters, character-mentions, character-sentiment, locations, location-mentions, resources)
+│   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats, word-cloud, chapter-stats, random-verse, sentiment, chiasmus, topic-similarity, chapter-characters, characters, character-mentions, character-sentiment, character-verses, locations, location-mentions, resources, speakers, random-nugget, context-nuggets)
 ├── components/
 │   ├── WordFrequencyTool.tsx  # Main search interface (wheel zoom desktop, swipe mobile)
 │   ├── NarrativeArcTool.tsx   # Multi-term narrative arc (wheel zoom desktop, swipe mobile)
 │   ├── HeatmapTool.tsx        # Theme heatmap with arc toggle per volume
-│   ├── SentimentArcTool.tsx   # Sentiment/tone arc with 7 categories (NEW)
-│   ├── ParallelPassagesTool.tsx # Side-by-side passage comparison with diff (NEW)
+│   ├── SentimentArcTool.tsx   # Sentiment Explorer: 4 theological categories, cascading dropdowns (Volume → Book → Chapter)
 │   ├── ChiasmusTool.tsx       # Chiasmus catalog — 40 curated patterns with card grid + detail panel
 │   ├── TopicMapTool.tsx       # Find thematically similar chapters (NEW)
 │   ├── TimelineTool.tsx       # Historical timeline (SHELVED — code preserved)
@@ -95,8 +93,8 @@ src/
 │   ├── WordExplorerPanel.tsx   # Slide-up panel for in-context word frequency exploration (book/volume/all)
 │   ├── WordCloudTool.tsx      # Interactive word cloud per book/chapter/volume
 │   ├── HorizontalBarList.tsx  # Bar chart component
-│   ├── EggMarker.tsx           # Inline amber/gold pill for Context Eggs (follows ResourceMarker pattern)
-│   ├── EggPopover.tsx          # Parchment/slate popover for scholarly insights (bottom sheet on mobile)
+│   ├── NuggetMarker.tsx         # Inline amber/gold pill for Context Nuggets (follows ResourceMarker pattern)
+│   ├── NuggetPopover.tsx        # Parchment/slate popover for scholarly insights (bottom sheet on mobile)
 │   ├── RelationshipWeb.tsx     # Full-screen force-directed character relationship graph
 │   ├── Header.tsx             # Dark nav bar: tree logo centered (links to home) + hamburger right. Consistent across all pages.
 │   └── NavMenu.tsx            # Slide-in nav with sections (Analyze/Discover/Read)
@@ -110,7 +108,7 @@ src/
 │   ├── annotations.ts         # Personal verse notes CRUD (localStorage) (NEW)
 │   ├── reading-progress.ts    # Reading streaks + chapter completion tracking (localStorage)
 │   ├── scripture-urls.ts      # Verse reference URL builder
-│   ├── sentiment-lexicon.ts   # 7 tone categories with word lists, negation handling, per-1k-word normalization, verse-level tone detection
+│   ├── sentiment-lexicon.ts   # 4 theological categories (Exaltation/Glory, Covenant Peace, Admonition/Justice, Trial/Contrition), 200+ weighted words, LDS overrides, valence scoring S=Σw/√n, 5-verse SMA smoothing
 │   ├── chiasmus-detector.ts   # Chiasmus (ABBA pattern) detection algorithm
 │   ├── useIsMobile.ts         # Shared debounced responsive hook (replaces 15 inline duplicates)
 │   ├── relationship-graph.ts   # Build relationship graphs from character family data (nodes, links, subgraph BFS)
@@ -119,8 +117,8 @@ src/
 │   ├── HamburgerIcon.tsx        # Shared hamburger menu icon (single source of truth for all pages)
 │   ├── LinkedScriptureText.tsx  # Auto-links scripture references in text (used in nuggets, bios, locations)
 │   └── ...
-data/                          # scriptures.db + sql-wasm.wasm + resources.json + speakers.json + characters.json + locations.json + context-nuggets.json + chiasmus-catalog.json + funny-stories.json
-scripts/                       # build-db.ts, book-order.ts, build-speakers.ts, build-speakers-lds.ts, merge-speakers.ts, add-modern-text.ts, build-apocrypha.ts, add-apocrypha.ts
+data/                          # scriptures.db + sql-wasm.wasm + resources.json + speakers.json + characters.json + locations.json + context-nuggets.json + chiasmus-catalog.json + funny-stories.json + chapter-sentiments.json (LLM-scored, in progress)
+scripts/                       # build-db.ts, book-order.ts, build-speakers.ts, build-speakers-lds.ts, merge-speakers.ts, add-modern-text.ts, build-apocrypha.ts, add-apocrypha.ts, score-chapters.ts (Claude API sentiment scorer)
 ```
 
 ## Global Design Rules
@@ -196,18 +194,18 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 
 ## Pages
 1. **Home** (`/`) — Landing page with gradient hero, 6 core tool cards + 4 discovery tool cards, random verse, recent searches. Site-wide Footer component.
-2. **Word Explorer** (`/word-explorer`) — Unified word frequency tool (replaces old Word Search, Narrative Arc, and Heatmap). 3-level drill-down: Volumes → Books → Chapters. Multi-term comparison (up to 6). Term-colored bars. Deep linking (`?word=faith` or `?terms=faith,grace`). Verse references at book/chapter levels. Old routes (/search, /narrative-arc, /heatmap) will redirect here.
+2. **Word Explorer** (`/word-explorer`) — Unified word frequency tool (replaces old Word Search, Narrative Arc, and Heatmap). 3-level drill-down: Volumes → Books → Chapters. Multi-term comparison (up to 6). Volume-level uses shaded curve (Line chart with fill); book/chapter levels also use curves. Deep linking (`?word=faith` or `?terms=faith,grace`). Verse references at book/chapter levels. Old routes (/search, /narrative-arc, /heatmap) will redirect here.
 3. **Word Search** (`/search`) — LEGACY, being replaced by Word Explorer. Redirects pending.
 4. **Narrative Arc** (`/narrative-arc`) — LEGACY, being replaced by Word Explorer. Redirects pending.
 5. **Theme Heatmap** (`/heatmap`) — LEGACY, being replaced by Word Explorer. Redirects pending.
 5. **Word Cloud** (`/wordcloud`) — Interactive tag cloud. Single-column flow layout (no search bar). Volume → Book → Chapter. Deep linking.
-6. **Sentiment Arc** (`/sentiment`) — Emotional tone across books. Two-column search panel with FilterDropdowns. 7 categories.
-7. **Parallel Passages** (`/parallel`) — Side-by-side comparison of parallel texts. Word-level diff highlighting. ⚠️ NOT yet updated with new search panel pattern.
-8. **Chiasmus Detector** (`/chiasmus`) — Find ABBA mirror patterns. Single-column flow layout (picker-style). Scan entire volume.
-9. **Topic Map** (`/topics`) — Chapter similarity finder. Single-column flow layout (picker-style). Cosine similarity.
-10. **Timeline** (`/timeline`) — SHELVED. Code preserved but removed from nav/footer/home page.
-11. **Scripture Reader** (`/read`) — Full reading experience with light/dark mode, font size, keyboard nav, reading progress, Chapter Insights, verse popover, annotations, Word Explorer panel, modern language toggle (OT/NT only). Reading streaks. Cream light theme (#f8f6f1), lighter dark theme (#1a1a21), gradient progress bar, centered tree logo.
-12. **Bookmarks** (`/bookmarks`) — Saved verses grouped by volume.
+6. **Sentiment Explorer** (`/sentiment`) — Theological sentiment analysis with cascading drill-down (Volume → Book → Chapter via `<select>` dropdowns). 4 categories: Exaltation & Glory (gold #FFD700), Covenant Peace (teal #20B2AA), Admonition & Justice (crimson #DC143C), Trial & Contrition (indigo #4B0082). Weighted valence scoring with LDS-specific overrides. 5-verse SMA smoothing. Currently uses keyword lexicon; LLM-scored data (`data/chapter-sentiments.json`) pending wiring after gap-filling.
+7. **Chiasmus Detector** (`/chiasmus`) — Find ABBA mirror patterns. Single-column flow layout (picker-style). Scan entire volume.
+8. **Topic Map** (`/topics`) — Chapter similarity finder. Single-column flow layout (picker-style). Cosine similarity.
+9. **Timeline** (`/timeline`) — SHELVED. Code preserved but removed from nav/footer/home page.
+10. **Scripture Reader** (`/read`) — Full reading experience with light/dark mode, font size, keyboard nav, reading progress, Chapter Insights, verse popover, annotations, Word Explorer panel, modern language toggle (OT/NT only). Reading streaks. Cream light theme (#f8f6f1), lighter dark theme (#1a1a21), gradient progress bar, centered tree logo.
+11. **Bookmarks** (`/bookmarks`) — Saved verses grouped by volume.
+12. **People** (`/people`) — Character directory: 757 named individuals. Search, filter by volume/tier. Character cards with portraits, bios, volume pills. Clicking opens CharacterDetailPanel.
 13. **Locations** (`/locations`) — Location directory: 333 named places across all volumes. Search, filter by volume/type/region. Location cards with type emoji, volume pills, significance. Clicking opens LocationDetailPanel with OpenStreetMap embed (for known locations), mention stats, volume heatmap, top books, Google Maps link.
 14. **Settings** (`/settings`) — User preferences: volume visibility toggles (color-coded, 5 canonical + Apocrypha section with D&C 91 reference). Changes save immediately to localStorage. Accessible from nav menu. No theology mode toggle — site is always LDS-centric.
 
@@ -216,13 +214,12 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 - **ChapterInsights** — Collapsible panel in reader: collapsed bar (verse count + 3 stacked portraits + people count + "INSIGHTS"), expanded (People pills with speaker-colored borders + verse count, Speaker Timeline color-coded bar with trough styling, Key Themes in neutral colors). Click timeline to jump to verse. Key themes trigger WordExplorerPanel.
 - **WordExplorerPanel** — Slide-up panel for in-context word frequency exploration. Three scopes (book/volume/all), horizontal bar chart, current chapter highlighted, "go deeper" links. Triggered from ChapterInsights.
 - **VersePopover** — Tap verse → popover with reference, word count, key words, copy, bookmark, and personal notes.
-- **SentimentArcTool** — Multi-volume sentiment analysis with category toggles and Chart.js line charts.
-- **ParallelPassagesTool** — Side-by-side passage comparison with word-level diff highlighting.
+- **SentimentArcTool** — Sentiment Explorer with 4 theological categories and cascading dropdown navigation (Volume → Book → Chapter). Shaded area charts. No verse-level chart (too noisy for keyword matching).
 - **ChiasmusTool** — Curated catalog of 40 documented chiastic structures. Card grid with volume filters, three categories (Verified/Probable/Possible), slide-in detail panel with full A–B–C structure. Data from `public/data/chiasmus-catalog.json`.
 - **TopicMapTool** — Chapter similarity finder using cosine similarity on word vectors.
 - **TimelineTool** — Historical timeline (SHELVED — code preserved, removed from nav).
 - **FilterDropdown** — Reusable collapsible dropdown trigger for filter groups (Volumes, Options, Categories). Used by search-bar tools.
-- **Footer** — Site-wide footer: brand, nav links (Analyze/Discover), external resources, copyright.
+- **Footer** — Site-wide footer: brand, nav links (Analyze/Discover), external resources, copyright. NOTE: Footer still shows "Sentiment Arc" label — needs updating to "Sentiment Explorer".
 - **VolumeCheckboxes** — Shared: `VolumeCheckboxes` (14px custom checkboxes), `CategoryPills` (toggle pills), `SectionLabel` (0.65rem uppercase labels).
 - **MethodologyModal** — Shared: `MethodologyModal`, `MethodSection`, `MethodNote`, `MethodLink` for "How this works" modals.
 - **BookmarksList** — Bookmarks page component with volume grouping.
@@ -234,7 +231,8 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 
 ### Search Panel Patterns
 Two layout patterns exist depending on whether the tool has a search bar:
-- **Two-column (search-bar tools):** Left column = title, description, search bar. Right column = FilterDropdown components (Volumes, Options). Used by: WordFrequencyTool, NarrativeArcTool, HeatmapTool, SentimentArcTool.
+- **Two-column (search-bar tools):** Left column = title, description, search bar. Right column = FilterDropdown components (Volumes, Options). Used by: WordFrequencyTool, NarrativeArcTool, HeatmapTool.
+- **Cascading dropdown (drill-down tools):** `<select>` dropdowns for Volume → Book → Chapter navigation. Used by: SentimentArcTool (Sentiment Explorer).
 - **Single-column flow (picker tools):** Title/description at top, then horizontal-flow selectors (volume pills → book → chapter). Used by: WordCloudTool, ChiasmusTool, TopicMapTool.
 - All search panels use `.search-panel` class: max-width 900px, centered with `margin: auto`, `overflow: visible` (needed for dropdown panels).
 
@@ -249,14 +247,16 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - `/api/chapter-stats` — Chapter-level stats: word count, verse count, unique words, top words, key themes (TF-IDF), verse density
 - `/api/random-verse` — Single random verse with book/volume context (for landing page)
 - `/api/book-stats` — Word/verse counts per book
-- `/api/sentiment` — Sentiment scores per chapter for a volume (uses sentiment-lexicon.ts)
-- `/api/parallel-passages` — List passage groups or fetch verse pairs with texts for comparison
+- `/api/sentiment` — Sentiment scores with 4 drill-down levels: volumes, books, chapters, verses. Uses sentiment-lexicon.ts (4 theological categories, weighted valence). Will switch to LLM-scored data once `data/chapter-sentiments.json` gaps are filled.
 - `/api/chiasmus` — Detect chiastic patterns in a chapter (uses chiasmus-detector.ts)
 - `/api/topic-similarity` — Find thematically similar chapters via cosine similarity
 - `/api/resources` — Fetch linked resources (videos, articles, PDFs) for a book+chapter
 - `/api/locations` — All 333 scripture locations from locations.json
-- `/api/character-sentiment` — Sentiment scores for a character's mention verses (7 categories, averaged per-1k-words)
-- `/api/context-eggs` — Scholarly backstory insights for a book+chapter (from context-eggs.json)
+- `/api/character-sentiment` — Sentiment scores for a character's mention verses (4 categories, averaged per-1k-words)
+- `/api/character-verses` — Verse texts for a character's mentions
+- `/api/context-nuggets` — Scholarly backstory insights for a book+chapter (from context-nuggets.json)
+- `/api/random-nugget` — Single random context nugget (for landing page or discovery)
+- `/api/speakers` — Speaker data for a book+chapter
 - `/api/location-mentions` — Mention stats for a location (reuses getCharacterMentions)
 
 ## Key Patterns
@@ -277,4 +277,6 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - **useBackToClose:** Shared hook for mobile back-button panel close. Pushes history state, listens for popstate. Used by all slide-in panels and modals.
 - **User Preferences System:** `PreferencesProvider` context wraps the app (in layout.tsx). All components use `usePreferencesContext()` to get `isVolumeVisible()`, `displaySpeakerName()`. New tools/features MUST call `usePreferencesContext()` and filter volumes accordingly. Preferences stored in localStorage as abbreviation keys (OT, NT, BoM, D&C, PoGP, Apoc). Merge-with-defaults pattern ensures forward compatibility. Apocrypha defaults to OFF.
 - **Always LDS-centric:** Theology mode toggle was removed in Session 15. Site always uses LDS perspective — divine OT speakers show as "Jesus Christ (Jehovah)". No dual-mode switching.
+- **Sentiment system:** 4 theological categories replacing original 7: Exaltation & Glory, Covenant Peace, Admonition & Justice, Trial & Contrition. Weighted valence scoring (S = Σw / √n) with 200+ words including LDS-specific overrides (pride=-3.8, grace=+3.8, wo=-3.5, fear=+0.5). 5-verse SMA smoothing. `scripts/score-chapters.ts` scores chapters via Claude API; ~1,460 of 1,764 chapters scored, remaining ~264 being filled via Gemini. Data in `data/chapter-sentiments.json`. Calibrated against known passages (Psalm 23=Peace, Isaiah 1=Admonition, etc.). Not yet wired into Sentiment Explorer UI -- still using keyword lexicon until gaps filled.
+- **Heading standardization:** All tool page h1 headings: centered, 1.8rem desktop / 1.4rem mobile, fontWeight 800, letterSpacing 0.02em. Applied to: WordCloud, Chiasmus, TopicMap, CharacterDirectory, LocationDirectory, BookmarksList, SettingsPanel. 24px top padding on `.page-container` globally.
 - **Modern language:** `text_modern` column in verses table. OT+NT populated with World English Bible (WEB, public domain) via `add-modern-text.ts`. 31,095/31,102 verses matched (99.98%). BoM/D&C/PoGP not yet available. Toggle shows in Layers section only when modern text exists for the chapter.
