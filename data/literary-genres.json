@@ -6448,5 +6448,703 @@
     "volumeAbbrev": "D&C",
     "volumeName": "Doctrine and Covenants",
     "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 61,
+    "genre": "revelation",
+    "subgenre": "travel instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 62,
+    "genre": "revelation",
+    "subgenre": "reassurance",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 63,
+    "genre": "prophecy",
+    "subgenre": "warning and promise",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 64,
+    "genre": "revelation",
+    "subgenre": "doctrinal instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 65,
+    "genre": "prophecy",
+    "subgenre": "kingdom declaration",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 66,
+    "genre": "revelation",
+    "subgenre": "personal counsel",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 67,
+    "genre": "revelation",
+    "subgenre": "challenge and promise",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 68,
+    "genre": "revelation",
+    "subgenre": "doctrinal instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 69,
+    "genre": "revelation",
+    "subgenre": "administrative instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 70,
+    "genre": "revelation",
+    "subgenre": "administrative instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 71,
+    "genre": "revelation",
+    "subgenre": "missionary instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 72,
+    "genre": "revelation",
+    "subgenre": "administrative instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 73,
+    "genre": "revelation",
+    "subgenre": "administrative instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 74,
+    "genre": "revelation",
+    "subgenre": "scriptural exposition",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 75,
+    "genre": "revelation",
+    "subgenre": "missionary assignments",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 76,
+    "genre": "vision",
+    "subgenre": "apocalyptic vision",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 77,
+    "genre": "revelation",
+    "subgenre": "scriptural Q&A",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 78,
+    "genre": "revelation",
+    "subgenre": "economic instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 79,
+    "genre": "revelation",
+    "subgenre": "missionary call",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 80,
+    "genre": "revelation",
+    "subgenre": "missionary call",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 81,
+    "genre": "revelation",
+    "subgenre": "calling and commission",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 82,
+    "genre": "revelation",
+    "subgenre": "covenant instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 83,
+    "genre": "revelation",
+    "subgenre": "welfare instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 84,
+    "genre": "revelation",
+    "subgenre": "doctrinal exposition",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 85,
+    "genre": "revelation",
+    "subgenre": "prophetic warning",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 86,
+    "genre": "revelation",
+    "subgenre": "parable interpretation",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 87,
+    "genre": "prophecy",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 88,
+    "genre": "revelation",
+    "subgenre": "comprehensive doctrinal discourse",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 89,
+    "genre": "revelation",
+    "subgenre": "health code",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 90,
+    "genre": "revelation",
+    "subgenre": "administrative and doctrinal",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 91,
+    "genre": "revelation",
+    "subgenre": "guidance on scripture",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 92,
+    "genre": "revelation",
+    "subgenre": "administrative instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 93,
+    "genre": "revelation",
+    "subgenre": "philosophical-doctrinal exposition",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 94,
+    "genre": "revelation",
+    "subgenre": "building instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 95,
+    "genre": "revelation",
+    "subgenre": "rebuke and building instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 96,
+    "genre": "revelation",
+    "subgenre": "administrative instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 97,
+    "genre": "revelation",
+    "subgenre": "mixed praise and warning",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 98,
+    "genre": "revelation",
+    "subgenre": "law of war and peace",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 99,
+    "genre": "revelation",
+    "subgenre": "missionary call",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 100,
+    "genre": "revelation",
+    "subgenre": "reassurance",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 101,
+    "genre": "revelation",
+    "subgenre": "theodicy and parable",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 102,
+    "genre": "historical record",
+    "subgenre": "meeting minutes",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 103,
+    "genre": "revelation",
+    "subgenre": "military call",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 104,
+    "genre": "revelation",
+    "subgenre": "economic instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 105,
+    "genre": "revelation",
+    "subgenre": "corrective instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 106,
+    "genre": "revelation",
+    "subgenre": "personal call",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 107,
+    "genre": "revelation",
+    "subgenre": "priesthood exposition",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 108,
+    "genre": "revelation",
+    "subgenre": "personal counsel",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 109,
+    "genre": "prayer",
+    "subgenre": "temple dedication",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 110,
+    "genre": "vision",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 111,
+    "genre": "revelation",
+    "subgenre": "reassurance",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 112,
+    "genre": "revelation",
+    "subgenre": "apostolic commission",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 113,
+    "genre": "revelation",
+    "subgenre": "scriptural Q&A",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 114,
+    "genre": "revelation",
+    "subgenre": "missionary call",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 115,
+    "genre": "revelation",
+    "subgenre": "naming and designation",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 116,
+    "genre": "revelation",
+    "subgenre": "sacred site designation",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 117,
+    "genre": "revelation",
+    "subgenre": "rebuke and commendation",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 118,
+    "genre": "revelation",
+    "subgenre": "apostolic appointment",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 119,
+    "genre": "revelation",
+    "subgenre": "financial law",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 120,
+    "genre": "revelation",
+    "subgenre": "administrative instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 121,
+    "genre": "prayer",
+    "subgenre": "lament and divine response",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 122,
+    "genre": "revelation",
+    "subgenre": "divine comfort",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 123,
+    "genre": "epistle",
+    "subgenre": "call to action",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 124,
+    "genre": "revelation",
+    "subgenre": "comprehensive church instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 125,
+    "genre": "revelation",
+    "subgenre": "administrative instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 126,
+    "genre": "revelation",
+    "subgenre": "personal counsel",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 127,
+    "genre": "epistle",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 128,
+    "genre": "epistle",
+    "subgenre": "doctrinal discourse",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 129,
+    "genre": "revelation",
+    "subgenre": "doctrinal instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 130,
+    "genre": "revelation",
+    "subgenre": "miscellaneous instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 131,
+    "genre": "revelation",
+    "subgenre": "doctrinal instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 132,
+    "genre": "revelation",
+    "subgenre": "covenant law",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 133,
+    "genre": "prophecy",
+    "subgenre": "apocalyptic",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 134,
+    "genre": "declaration",
+    "subgenre": "political philosophy",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 135,
+    "genre": "historical record",
+    "subgenre": "martyrdom account",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 136,
+    "genre": "revelation",
+    "subgenre": "organizational instruction",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 137,
+    "genre": "vision",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 138,
+    "genre": "vision",
+    "subgenre": "doctrinal vision",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
   }
 ]
