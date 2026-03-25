@@ -3878,5 +3878,13 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 53
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "summary": "John writes to Gaius to commend his hospitality toward traveling brethren, contrasts his faithfulness with the rebellion of Diotrephes, and recommends Demetrius.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 64
   }
 ]

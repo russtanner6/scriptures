@@ -2528,5 +2528,27 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 53
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verse": 4,
+    "crossReference": "2 John 1:4",
+    "type": "parallel",
+    "note": "John uses nearly identical language to express joy in those walking in truth.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 64
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verse": 11,
+    "crossReference": "Alma 41:14",
+    "type": "parallel",
+    "note": "Both passages emphasize that doing good is associated with God while evil leads to a loss of spiritual sight.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 64
   }
 ]

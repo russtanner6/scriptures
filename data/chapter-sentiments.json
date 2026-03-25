@@ -6303,5 +6303,18 @@
     "contrition": 3,
     "dominant": "admonition",
     "rationale": "Paul delivers practical and firm instructions concerning industriousness, rebuking idleness and disorderly conduct within the church."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "3 John",
+    "bookId": 64,
+    "chapter": 1,
+    "exaltation": 2,
+    "peace": 8,
+    "admonition": 5,
+    "contrition": 0,
+    "dominant": "peace",
+    "rationale": "John expresses deep joy over his spiritual children walking in truth and commends Gaius for his charity, though he includes a stern warning regarding the prideful behavior of Diotrephes."
   }
 ]

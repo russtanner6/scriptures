@@ -4848,5 +4848,15 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 53
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "era": "Apostolic",
+    "approxDate": "c. AD 90",
+    "setting": "A personal letter from John the Apostle in Ephesus to a faithful member named Gaius, addressing local church tensions and the support of missionaries.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 64
   }
 ]

@@ -4225,5 +4225,14 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 53
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "genre": "epistle",
+    "subgenre": "personal letter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 64
   }
 ]
