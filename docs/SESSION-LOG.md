@@ -91,6 +91,14 @@
 
 **Total: 762 characters (was 757 at session start)**
 
+### PICKUP INSTRUCTIONS FOR NEXT SESSION
+**3 Apocrypha books have Gemini data that was pasted but NOT YET processed into data files:**
+1. **2 Esdras** (16 chapters) — Background agent may have completed this. CHECK first: `node -e "const d=JSON.parse(require('fs').readFileSync('data/chapter-sentiments.json','utf8')).filter(x=>x.bookName==='2 Esdras').length;console.log('2 Esdras entries:',d)"`
+2. **2 Maccabees** (15 chapters) — Gemini data was pasted in chat but never written to files. The raw data is in the session conversation only. **User will need to re-send from Gemini or re-paste.**
+3. **Additions to Esther** (7 chapters) — Same as above. **User will need to re-send.**
+
+**After processing those 3, continue with remaining Apocrypha books, then OT, NT, D&C.**
+
 ### Books Remaining
 **OT (39):** Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Song of Solomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi
 **NT (27):** Matthew, Mark, Luke, John, Acts, Romans, 1 Corinthians, 2 Corinthians, Galatians, Ephesians, Philippians, Colossians, 1 Thessalonians, 2 Thessalonians, 1 Timothy, 2 Timothy, Titus, Philemon, Hebrews, James, 1 Peter, 2 Peter, 1 John, 2 John, 3 John, Jude, Revelation
