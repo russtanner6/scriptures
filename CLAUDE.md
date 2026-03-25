@@ -1,7 +1,7 @@
 # Scripture Explorer — Project Guide
 
 ## What is this?
-A Next.js web app for searching and exploring scriptures with interactive visualizations, verse modals, and volume-based filtering. Volumes: Old Testament, New Testament, Book of Mormon, D&C, Pearl of Great Price.
+A Next.js web app for searching and exploring scriptures with interactive visualizations, verse modals, and volume-based filtering. Volumes: Old Testament, New Testament, Book of Mormon, D&C, Pearl of Great Price, Apocrypha (opt-in). Built from an LDS perspective — always LDS-centric (no dual theology mode).
 
 **Domain:** scripturexplorer.com (hosted on Vercel)
 
@@ -54,7 +54,7 @@ src/
 │   ├── chiasmus/      # Chiasmus catalog — 40 documented chiastic structures with card UI
 │   ├── topics/        # Topic map — find thematically similar chapters (NEW)
 │   ├── timeline/      # Historical timeline (SHELVED — removed from nav, code preserved)
-│   ├── settings/      # User preferences (volume visibility, theology mode)
+│   ├── settings/      # User preferences (volume visibility, Apocrypha toggle)
 │   ├── read/          # Scripture reader (volume → book → chapter)
 │   ├── bookmarks/     # Saved verse bookmarks
 │   ├── characters/    # Character directory page (757 people)
@@ -69,8 +69,8 @@ src/
 │   ├── ChiasmusTool.tsx       # Chiasmus catalog — 40 curated patterns with card grid + detail panel
 │   ├── TopicMapTool.tsx       # Find thematically similar chapters (NEW)
 │   ├── TimelineTool.tsx       # Historical timeline (SHELVED — code preserved)
-│   ├── PreferencesProvider.tsx # React context for user preferences (volume visibility, theology mode)
-│   ├── SettingsPanel.tsx      # Settings page UI: volume toggles + OT interpretation radio
+│   ├── PreferencesProvider.tsx # React context for user preferences (volume visibility)
+│   ├── SettingsPanel.tsx      # Settings page UI: volume toggles + Apocrypha section
 │   ├── FilterDropdown.tsx     # Reusable collapsible dropdown for filter groups (Volumes, Options, etc.)
 │   ├── Footer.tsx             # Site-wide footer (copyright, nav links, resources)
 │   ├── VolumeCheckboxes.tsx   # Shared: VolumeCheckboxes, CategoryPills, SectionLabel components
@@ -105,7 +105,7 @@ src/
 │   ├── queries.ts             # Database queries + displayName() + getChapterStats() + getRandomVerse()
 │   ├── types.ts               # TypeScript interfaces
 │   ├── constants.ts           # Volume colors, contrast text, compactVolumeName()
-│   ├── preferences.ts         # User preferences CRUD (localStorage): volume visibility, theology mode, speaker name mapping
+│   ├── preferences.ts         # User preferences CRUD (localStorage): volume visibility (6 volumes incl. Apocrypha)
 │   ├── bookmarks.ts           # Bookmark CRUD (localStorage)
 │   ├── annotations.ts         # Personal verse notes CRUD (localStorage) (NEW)
 │   ├── reading-progress.ts    # Reading streaks + chapter completion tracking (localStorage)
@@ -116,8 +116,11 @@ src/
 │   ├── relationship-graph.ts   # Build relationship graphs from character family data (nodes, links, subgraph BFS)
 │   ├── useBackToClose.ts      # Hook: mobile back-button closes panels instead of navigating away
 │   └── modal-styles.ts        # Shared popup/modal styling tokens
-data/                          # scriptures.db + sql-wasm.wasm + parallel-passages.json + timeline.json + resources.json + speakers.json + characters.json + locations.json + web-bible.json + context-eggs.json + chiasmus-catalog.json
-scripts/                       # build-db.ts, book-order.ts, build-speakers.ts, build-speakers-lds.ts, merge-speakers.ts, add-modern-text.ts
+│   ├── HamburgerIcon.tsx        # Shared hamburger menu icon (single source of truth for all pages)
+│   ├── LinkedScriptureText.tsx  # Auto-links scripture references in text (used in nuggets, bios, locations)
+│   └── ...
+data/                          # scriptures.db + sql-wasm.wasm + resources.json + speakers.json + characters.json + locations.json + context-nuggets.json + chiasmus-catalog.json + funny-stories.json
+scripts/                       # build-db.ts, book-order.ts, build-speakers.ts, build-speakers-lds.ts, merge-speakers.ts, add-modern-text.ts, build-apocrypha.ts, add-apocrypha.ts
 ```
 
 ## Global Design Rules
@@ -156,6 +159,7 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 | BoM | Orange | #F57B20 |
 | D&C | Amber | #F5A623 |
 | PoGP | Golden yellow | #F5C829 |
+| Apoc | Muted purple | #8E7CC3 |
 
 ### UI Patterns
 - **Buttons:** "Go" (not "Analyze") for all search/action buttons.
@@ -170,7 +174,7 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 - **Search bar glow:** All search bars use `search-bar-glow` CSS class — subtle blue border pulse, 2.5s delay after page load, runs once.
 - **View toggles:** Heatmap modules have heatmap/arc toggle buttons (separate rounded pills, no borders, using `/heatmap.svg` and `/narrative-arc.svg` icons). Smooth fade transition (0.3s) between views.
 - **Single-book volumes (D&C):** Plot by section/chapter instead of book. Sparse x-axis labels (every 10th). Smaller point radius. Tooltip shows "Section N".
-- **Audience:** Built for the full LDS canon, but not all users are LDS. Volume visibility settings (future) will let users permanently hide volumes they don't want (e.g., hide BoM/D&C/PoGP for Bible-only users). See `docs/ROADMAP.md` for details.
+- **Audience:** Built from an LDS perspective. Volume visibility settings let users hide volumes they don't want (e.g., hide BoM/D&C/PoGP for Bible-only users). Apocrypha is opt-in (OFF by default).
 - **Chart legends:** Use `pointStyle: "rectRounded"` (not circles/ovals). Adequate spacing from chart top.
 - **Nav menu:** Slides in from the RIGHT side of the screen.
 - **DashboardCard:** Supports `headerExtra` prop for inline links/actions next to the description.
@@ -204,7 +208,7 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 11. **Scripture Reader** (`/read`) — Full reading experience with light/dark mode, font size, keyboard nav, reading progress, Chapter Insights, verse popover, annotations, Word Explorer panel, modern language toggle (OT/NT only). Reading streaks. Cream light theme (#f8f6f1), lighter dark theme (#1a1a21), gradient progress bar, centered tree logo.
 12. **Bookmarks** (`/bookmarks`) — Saved verses grouped by volume.
 13. **Locations** (`/locations`) — Location directory: 333 named places across all volumes. Search, filter by volume/type/region. Location cards with type emoji, volume pills, significance. Clicking opens LocationDetailPanel with OpenStreetMap embed (for known locations), mention stats, volume heatmap, top books, Google Maps link.
-14. **Settings** (`/settings`) — User preferences: volume visibility toggles (color-coded, descriptions), OT interpretation mode (LDS/Traditional). Changes save immediately to localStorage. Accessible from nav menu.
+14. **Settings** (`/settings`) — User preferences: volume visibility toggles (color-coded, 5 canonical + Apocrypha section with D&C 91 reference). Changes save immediately to localStorage. Accessible from nav menu. No theology mode toggle — site is always LDS-centric.
 
 ## Key Components
 - **ScripturePanel** — Right-side slider panel showing matching verses when clicking chart data points.
@@ -262,7 +266,7 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - Results clear when volume selection changes
 - Deep linking: URL params updated on search, read on mount
 - Single-book volume detection: `vol.books.length === 1` triggers chapter-level plotting
-- **Speaker data:** Bible speakers from Clear-Bible/speaker-quotations (6,913 entries). BoM/D&C/PoGP from `build-speakers-lds.ts` (718 entries, text-pattern analysis + explicit chapter overrides). Merged via `merge-speakers.ts`. 7,631 total across 82 books. QA'd against 26 key chapters. Each "other" speaker gets unique color from 10-color palette (not shared).
+- **Speaker data:** Bible speakers from Clear-Bible/speaker-quotations (6,011 entries — being audited by Gemini for quality). BoM/D&C/PoGP from `build-speakers-lds.ts` (718 entries, hand-curated). Speaker labels only show for named characters in characters.json — generic/anonymous speakers are filtered out. Speakers and Context Nuggets are always on (toggles hidden from user). Known issue: prophetic books wrongly attribute "God" as speaker instead of the prophet (Gemini audit in progress).
 - **Character data:** `data/characters.json` — 757 named individuals with bios, aliases, family relationships, portraits (~40 of 71 prominent), volumes, tiers (1-4). Tiers 1-2 are "prominent" (71 people). `/api/chapter-characters` finds characters per chapter via speaker matching + whole-word text scanning with volume-aware deduplication.
 - **Location data:** `data/locations.json` — 333 named scripture locations with descriptions, coordinates (183 known), aliases, region, type, era, significance, tiers. BoM locations have `knownLocation: false`. D&C/PoGP real-world sites have GPS coordinates. `/api/locations` serves all, `/api/location-mentions` reuses character mention search for text scanning.
 - **Entity linking:** ScriptureReader auto-links first mentions of people and places in each chapter. Builds regex from all character/location names+aliases (longest first), tracks first occurrence per entity per chapter. Blue underline (2px, #2563EB) with inline icons: circular portrait for people (40 have photos, others get person silhouette in blue circle), map pin in blue circle for locations. Clicking opens CharacterDetailPanel or LocationDetailPanel.
@@ -270,6 +274,6 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - **D&C section-level mentions:** `getCharacterMentions()` in queries.ts aggregates D&C by section (not whole book) to prevent D&C from dominating "Most Mentioned In" charts.
 - **VolumeTooltip:** Reusable component wrapping volume abbreviation pills/badges. Shows full name on hover (600ms delay). Applied to CharacterDetailPanel, CharacterDirectory, home page.
 - **useBackToClose:** Shared hook for mobile back-button panel close. Pushes history state, listens for popstate. Used by all slide-in panels and modals.
-- **User Preferences System:** `PreferencesProvider` context wraps the app (in layout.tsx). All components use `usePreferencesContext()` to get `isVolumeVisible()`, `displaySpeakerName()`, `theologyMode`. New tools/features MUST call `usePreferencesContext()` and filter volumes accordingly. Preferences stored in localStorage as abbreviation keys. Merge-with-defaults pattern ensures forward compatibility.
-- **Theology mode:** When `theologyMode === "lds"` and volume is OT and speaker type is "divine", God/LORD/The LORD → "Jesus Christ (Jehovah)". Applied in ChapterInsights and ScriptureReader speaker maps.
+- **User Preferences System:** `PreferencesProvider` context wraps the app (in layout.tsx). All components use `usePreferencesContext()` to get `isVolumeVisible()`, `displaySpeakerName()`. New tools/features MUST call `usePreferencesContext()` and filter volumes accordingly. Preferences stored in localStorage as abbreviation keys (OT, NT, BoM, D&C, PoGP, Apoc). Merge-with-defaults pattern ensures forward compatibility. Apocrypha defaults to OFF.
+- **Always LDS-centric:** Theology mode toggle was removed in Session 15. Site always uses LDS perspective — divine OT speakers show as "Jesus Christ (Jehovah)". No dual-mode switching.
 - **Modern language:** `text_modern` column in verses table. OT+NT populated with World English Bible (WEB, public domain) via `add-modern-text.ts`. 31,095/31,102 verses matched (99.98%). BoM/D&C/PoGP not yet available. Toggle shows in Layers section only when modern text exists for the chapter.
