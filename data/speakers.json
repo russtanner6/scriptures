@@ -28205,5 +28205,345 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 39
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 1,
+    "startVerse": 1,
+    "endVerse": 7,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 1,
+    "startVerse": 8,
+    "endVerse": 19,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 1,
+    "startVerse": 22,
+    "endVerse": 33,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 2,
+    "startVerse": 1,
+    "endVerse": 22,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 3,
+    "startVerse": 1,
+    "endVerse": 35,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 4,
+    "startVerse": 1,
+    "endVerse": 27,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 5,
+    "startVerse": 1,
+    "endVerse": 23,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 6,
+    "startVerse": 1,
+    "endVerse": 35,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 7,
+    "startVerse": 1,
+    "endVerse": 27,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 8,
+    "startVerse": 1,
+    "endVerse": 36,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 9,
+    "startVerse": 1,
+    "endVerse": 18,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 10,
+    "startVerse": 1,
+    "endVerse": 32,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 11,
+    "startVerse": 1,
+    "endVerse": 31,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 12,
+    "startVerse": 1,
+    "endVerse": 28,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 13,
+    "startVerse": 1,
+    "endVerse": 25,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 14,
+    "startVerse": 1,
+    "endVerse": 35,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 15,
+    "startVerse": 1,
+    "endVerse": 33,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 16,
+    "startVerse": 1,
+    "endVerse": 33,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 17,
+    "startVerse": 1,
+    "endVerse": 28,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 18,
+    "startVerse": 1,
+    "endVerse": 24,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 19,
+    "startVerse": 1,
+    "endVerse": 29,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 20,
+    "startVerse": 1,
+    "endVerse": 30,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 21,
+    "startVerse": 1,
+    "endVerse": 31,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 22,
+    "startVerse": 1,
+    "endVerse": 29,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 23,
+    "startVerse": 1,
+    "endVerse": 35,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 24,
+    "startVerse": 1,
+    "endVerse": 34,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 25,
+    "startVerse": 1,
+    "endVerse": 28,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 26,
+    "startVerse": 1,
+    "endVerse": 28,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 27,
+    "startVerse": 1,
+    "endVerse": 27,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 28,
+    "startVerse": 1,
+    "endVerse": 28,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 29,
+    "startVerse": 1,
+    "endVerse": 27,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 30,
+    "startVerse": 1,
+    "endVerse": 33,
+    "speaker": "Agur",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 31,
+    "startVerse": 1,
+    "endVerse": 9,
+    "speaker": "Lemuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 31,
+    "startVerse": 10,
+    "endVerse": 31,
+    "speaker": "Lemuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
   }
 ]

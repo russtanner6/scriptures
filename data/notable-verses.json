@@ -16589,5 +16589,491 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 39
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "'The fear of the LORD is the beginning of knowledge' — the foundational motto of the entire book."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "'For the LORD giveth wisdom: out of his mouth cometh knowledge and understanding.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "'Trust in the LORD with all thine heart' — one of the most memorized verses in all scripture."
+      },
+      {
+        "verse": 6,
+        "reason": "'In all thy ways acknowledge him, and he shall direct thy paths.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 18,
+        "reason": "'The path of the just is as the shining light, that shineth more and more unto the perfect day.'"
+      },
+      {
+        "verse": 23,
+        "reason": "'Keep thy heart with all diligence; for out of it are the issues of life.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "Warning that the strange woman's lips drip as honeycomb but her end is bitter as wormwood."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 16,
+        "reason": "'These six things doth the LORD hate: yea, seven are an abomination' — the famous list of seven sins."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 7,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 22,
+        "reason": "Wisdom declares 'The LORD possessed me in the beginning of his way, before his works of old' — key to premortal existence discussions."
+      },
+      {
+        "verse": 30,
+        "reason": "'Then I was by him, as one brought up with him: and I was daily his delight.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "'The fear of the LORD is the beginning of wisdom' — restates the book's central theme."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 10,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "'Hatred stirreth up strifes: but love covereth all sins.'"
+      },
+      {
+        "verse": 22,
+        "reason": "'The blessing of the LORD, it maketh rich, and he addeth no sorrow with it.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 11,
+    "verses": [
+      {
+        "verse": 24,
+        "reason": "'There is that scattereth, and yet increaseth' — the paradox of generous giving."
+      },
+      {
+        "verse": 30,
+        "reason": "'The fruit of the righteous is a tree of life; and he that winneth souls is wise.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "'A righteous man regardeth the life of his beast' — early teaching on kindness to animals."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "'Hope deferred maketh the heart sick: but when the desire cometh, it is a tree of life.'"
+      },
+      {
+        "verse": 24,
+        "reason": "'He that spareth his rod hateth his son: but he that loveth him chasteneth him betimes.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "'There is a way which seemeth right unto a man, but the end thereof are the ways of death.'"
+      },
+      {
+        "verse": 34,
+        "reason": "'Righteousness exalteth a nation: but sin is a reproach to any people.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 15,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "'A soft answer turneth away wrath: but grievous words stir up anger.'"
+      },
+      {
+        "verse": 3,
+        "reason": "'The eyes of the LORD are in every place, beholding the evil and the good.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "'Commit thy works unto the LORD, and thy thoughts shall be established.'"
+      },
+      {
+        "verse": 18,
+        "reason": "'Pride goeth before destruction, and an haughty spirit before a fall.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 17,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "'A friend loveth at all times, and a brother is born for adversity.'"
+      },
+      {
+        "verse": 22,
+        "reason": "'A merry heart doeth good like a medicine: but a broken spirit drieth the bones.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 18,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "'The name of the LORD is a strong tower: the righteous runneth into it, and is safe.'"
+      },
+      {
+        "verse": 24,
+        "reason": "'There is a friend that sticketh closer than a brother.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 19,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "'He that hath pity upon the poor lendeth unto the LORD; and that which he hath given will he pay him again.'"
+      },
+      {
+        "verse": 21,
+        "reason": "'There are many devices in a man's heart; nevertheless the counsel of the LORD, that shall stand.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 20,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "'Wine is a mocker, strong drink is raging: and whosoever is deceived thereby is not wise.'"
+      },
+      {
+        "verse": 27,
+        "reason": "'The spirit of man is the candle of the LORD, searching all the inward parts of the belly.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 21,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "'The king's heart is in the hand of the LORD, as the rivers of water: he turneth it whithersoever he will.'"
+      },
+      {
+        "verse": 3,
+        "reason": "'To do justice and judgment is more acceptable to the LORD than sacrifice.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 22,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "'A good name is rather to be chosen than great riches.'"
+      },
+      {
+        "verse": 6,
+        "reason": "'Train up a child in the way he should go: and when he is old, he will not depart from it.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 23,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "'For as he thinketh in his heart, so is he.'"
+      },
+      {
+        "verse": 23,
+        "reason": "'Buy the truth, and sell it not; also wisdom, and instruction, and understanding.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 24,
+    "verses": [
+      {
+        "verse": 16,
+        "reason": "'For a just man falleth seven times, and riseth up again: but the wicked shall fall into mischief.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 25,
+    "verses": [
+      {
+        "verse": 11,
+        "reason": "'A word fitly spoken is like apples of gold in pictures of silver.'"
+      },
+      {
+        "verse": 21,
+        "reason": "'If thine enemy be hungry, give him bread to eat' — quoted by Paul in Romans 12:20."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 26,
+    "verses": [
+      {
+        "verse": 11,
+        "reason": "'As a dog returneth to his vomit, so a fool returneth to his folly.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 27,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "'Faithful are the wounds of a friend; but the kisses of an enemy are deceitful.'"
+      },
+      {
+        "verse": 17,
+        "reason": "'Iron sharpeneth iron; so a man sharpeneth the countenance of his friend.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 28,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "'The wicked flee when no man pursueth: but the righteous are bold as a lion.'"
+      },
+      {
+        "verse": 13,
+        "reason": "'He that covereth his sins shall not prosper: but whoso confesseth and forsaketh them shall have mercy.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 29,
+    "verses": [
+      {
+        "verse": 15,
+        "reason": "'The rod and reproof give wisdom: but a child left to himself bringeth his mother to shame.'"
+      },
+      {
+        "verse": 18,
+        "reason": "'Where there is no vision, the people perish: but he that keepeth the law, happy is he.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 30,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "'Every word of God is pure: he is a shield unto them that put their trust in him.'"
+      },
+      {
+        "verse": 8,
+        "reason": "'Give me neither poverty nor riches; feed me with food convenient for me.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 31,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "'Who can find a virtuous woman? for her price is far above rubies.'"
+      },
+      {
+        "verse": 30,
+        "reason": "'Favour is deceitful, and beauty is vain: but a woman that feareth the LORD, she shall be praised.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
   }
 ]

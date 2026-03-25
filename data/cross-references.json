@@ -5938,5 +5938,148 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 39
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 1,
+    "verse": 7,
+    "crossReference": "Psalm 111:10",
+    "type": "parallel",
+    "note": "The fear of the LORD is the beginning of knowledge/wisdom — a shared foundational principle.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 3,
+    "verse": 5,
+    "crossReference": "Jeremiah 17:7",
+    "type": "parallel",
+    "note": "Trust in the Lord with all thine heart parallels blessed is the man that trusteth in the Lord.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 3,
+    "verse": 11,
+    "crossReference": "Hebrews 12:5-6",
+    "type": "parallel",
+    "note": "Quoted in Hebrews regarding the Lord's chastening of those he loves.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 3,
+    "verse": 34,
+    "crossReference": "James 4:6",
+    "type": "parallel",
+    "note": "God resists the proud but gives grace to the humble — quoted directly by James.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 8,
+    "verse": 22,
+    "crossReference": "John 1:1-3",
+    "type": "parallel",
+    "note": "Wisdom's presence at creation parallels the Word being with God in the beginning.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 8,
+    "verse": 35,
+    "crossReference": "John 14:6",
+    "type": "parallel",
+    "note": "Finding wisdom finds life, paralleling Christ as the way, the truth, and the life.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 11,
+    "verse": 30,
+    "crossReference": "Revelation 22:2",
+    "type": "parallel",
+    "note": "The fruit of the righteous is a tree of life, echoing the tree of life in Revelation.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 15,
+    "verse": 1,
+    "crossReference": "James 1:19-20",
+    "type": "parallel",
+    "note": "A soft answer turns away wrath parallels being slow to anger in James.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 16,
+    "verse": 18,
+    "crossReference": "Obadiah 1:3",
+    "type": "parallel",
+    "note": "Pride goes before destruction parallels Edom's pride leading to downfall.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 22,
+    "verse": 6,
+    "crossReference": "Doctrine and Covenants 68:25",
+    "type": "parallel",
+    "note": "Training a child in the way he should go parallels the commandment to teach children the gospel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 25,
+    "verse": 21,
+    "crossReference": "Romans 12:20",
+    "type": "parallel",
+    "note": "If thine enemy hunger feed him — quoted directly by Paul.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 29,
+    "verse": 18,
+    "crossReference": "Amos 8:11",
+    "type": "parallel",
+    "note": "Where there is no vision the people perish parallels the famine of hearing the word of the Lord.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 31,
+    "verse": 10,
+    "crossReference": "Ruth 3:11",
+    "type": "parallel",
+    "note": "The virtuous woman description parallels Boaz calling Ruth a virtuous woman.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
   }
 ]

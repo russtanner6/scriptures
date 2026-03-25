@@ -14745,5 +14745,382 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 39
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 1,
+    "topics": [
+      "wisdom",
+      "fear of God",
+      "obedience",
+      "consequences of sin"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 2,
+    "topics": [
+      "revelation",
+      "protection",
+      "discernment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 3,
+    "topics": [
+      "trust in God",
+      "divine discipline",
+      "tithing",
+      "creation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 4,
+    "topics": [
+      "parental counsel",
+      "agency",
+      "light of Christ"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 5,
+    "topics": [
+      "chastity",
+      "marriage",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 6,
+    "topics": [
+      "industry",
+      "honesty",
+      "chastity"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 7,
+    "topics": [
+      "chastity",
+      "temptation",
+      "moral agency"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 8,
+    "topics": [
+      "premortal existence",
+      "creation",
+      "wisdom",
+      "eternal life"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 9,
+    "topics": [
+      "fear of God",
+      "agency",
+      "wisdom"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 10,
+    "topics": [
+      "righteousness",
+      "diligence",
+      "integrity"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 11,
+    "topics": [
+      "honesty",
+      "charity",
+      "humility"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 12,
+    "topics": [
+      "truthfulness",
+      "industry",
+      "kindness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 13,
+    "topics": [
+      "discipline",
+      "stewardship",
+      "parenting"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 14,
+    "topics": [
+      "fear of God",
+      "compassion",
+      "discernment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 15,
+    "topics": [
+      "prayer",
+      "omniscience of God",
+      "meekness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 16,
+    "topics": [
+      "sovereignty of God",
+      "humility",
+      "agency"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 17,
+    "topics": [
+      "friendship",
+      "charity",
+      "self-mastery"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 18,
+    "topics": [
+      "name of God",
+      "power of words",
+      "friendship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 19,
+    "topics": [
+      "fear of God",
+      "charity",
+      "parenting"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 20,
+    "topics": [
+      "word of wisdom",
+      "honesty",
+      "divine guidance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 21,
+    "topics": [
+      "sovereignty of God",
+      "obedience",
+      "justice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 22,
+    "topics": [
+      "parenting",
+      "stewardship",
+      "care for the poor"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 23,
+    "topics": [
+      "word of wisdom",
+      "truth",
+      "honoring parents"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 24,
+    "topics": [
+      "perseverance",
+      "justice",
+      "industry"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 25,
+    "topics": [
+      "self-mastery",
+      "charity",
+      "patience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 26,
+    "topics": [
+      "wisdom",
+      "accountability",
+      "honesty"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 27,
+    "topics": [
+      "friendship",
+      "stewardship",
+      "preparation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 28,
+    "topics": [
+      "repentance",
+      "integrity",
+      "faith"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 29,
+    "topics": [
+      "revelation",
+      "discipline",
+      "justice",
+      "courage"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 30,
+    "topics": [
+      "humility",
+      "contentment",
+      "honesty"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 31,
+    "topics": [
+      "virtue",
+      "industry",
+      "fear of God",
+      "family"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 20
   }
 ]
