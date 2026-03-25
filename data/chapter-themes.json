@@ -5028,5 +5028,233 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 90
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 1,
+    "themes": [
+      "Righteousness",
+      "Omniscience",
+      "Life and Death"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 2,
+    "themes": [
+      "Nihilism",
+      "Persecution",
+      "Wickedness"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 3,
+    "themes": [
+      "Immortality",
+      "Peace",
+      "Testing"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 4,
+    "themes": [
+      "Virtue",
+      "Premature Death",
+      "Fruitfulness"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 5,
+    "themes": [
+      "Final Judgment",
+      "Vindication",
+      "Divine Armor"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 6,
+    "themes": [
+      "Governance",
+      "Accountability",
+      "Seeking Wisdom"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 7,
+    "themes": [
+      "Nature of Wisdom",
+      "Humanity",
+      "Light"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 8,
+    "themes": [
+      "Virtue",
+      "Counsel",
+      "Prudence"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 9,
+    "themes": [
+      "Prayer",
+      "Holy Spirit",
+      "Mortal Limitation"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 10,
+    "themes": [
+      "Providence",
+      "History",
+      "Deliverance"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 11,
+    "themes": [
+      "Divine Mercy",
+      "Proportional Justice",
+      "Love of God"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 12,
+    "themes": [
+      "Clemency",
+      "Patience",
+      "Repentance"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 13,
+    "themes": [
+      "Idolatry",
+      "Nature Worship",
+      "Folly"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 14,
+    "themes": [
+      "Origin of Evil",
+      "Moral Corruption",
+      "Vanity"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 15,
+    "themes": [
+      "True God",
+      "Mortality",
+      "Clay Imagery"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 16,
+    "themes": [
+      "Plagues",
+      "Manna",
+      "Divine Mercy"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 17,
+    "themes": [
+      "Darkness",
+      "Fear",
+      "Conscience"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 18,
+    "themes": [
+      "Passover",
+      "Logos (Word)",
+      "Judgment"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 19,
+    "themes": [
+      "Redemption",
+      "Creation",
+      "Miracles"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
   }
 ]

@@ -4741,5 +4741,234 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 90
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 1,
+    "topics": [
+      "Spirit of the Lord",
+      "Truth",
+      "Righteousness"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 2,
+    "topics": [
+      "Agency",
+      "Fall of Man",
+      "Wickedness"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 3,
+    "topics": [
+      "Life after Death",
+      "Immortality",
+      "Trials"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 4,
+    "topics": [
+      "Virtue",
+      "Grace",
+      "Judgment"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 5,
+    "topics": [
+      "Salvation",
+      "Creation as Armor",
+      "Judgment"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 6,
+    "topics": [
+      "Accountability",
+      "Sovereignty of God",
+      "Seeking Wisdom"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 7,
+    "topics": [
+      "Light of Christ",
+      "Attributes of Wisdom",
+      "Revelation"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 8,
+    "topics": [
+      "Prudence",
+      "Justice",
+      "Temperance",
+      "Fortitude"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 9,
+    "topics": [
+      "Holy Spirit",
+      "Prayer",
+      "Creation"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 10,
+    "topics": [
+      "Prophets",
+      "History",
+      "Deliverance"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 11,
+    "topics": [
+      "Mercy",
+      "Repentance",
+      "Love of God"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 12,
+    "topics": [
+      "Patience of God",
+      "Justice",
+      "Agency"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 13,
+    "topics": [
+      "Idolatry",
+      "Creation",
+      "Nature"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 14,
+    "topics": [
+      "Sexual Immorality",
+      "Idolatry",
+      "Corruption"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 15,
+    "topics": [
+      "Immortality",
+      "Knowing God",
+      "Grace"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 16,
+    "topics": [
+      "Manna",
+      "Healing",
+      "Word of God"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 17,
+    "topics": [
+      "Fear",
+      "Spirit of Darkness",
+      "Conscience"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 18,
+    "topics": [
+      "Passover",
+      "Logos",
+      "Priesthood"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 19,
+    "topics": [
+      "Miracles",
+      "Creation",
+      "God's Assistance"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
   }
 ]

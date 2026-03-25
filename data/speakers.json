@@ -5428,5 +5428,35 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 90
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 7,
+    "startVerse": 1,
+    "endVerse": 30,
+    "speaker": "Solomon",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 8,
+    "startVerse": 1,
+    "endVerse": 21,
+    "speaker": "Solomon",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 9,
+    "startVerse": 1,
+    "endVerse": 18,
+    "speaker": "Solomon",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
   }
 ]

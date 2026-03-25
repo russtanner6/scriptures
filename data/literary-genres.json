@@ -3541,5 +3541,176 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 90
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 1,
+    "genre": "wisdom literature",
+    "subgenre": "protreptic (exhortation)",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 2,
+    "genre": "diatribe",
+    "subgenre": "philosophical critique",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 3,
+    "genre": "consolation literature",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 4,
+    "genre": "encomium (praise of virtue)",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 5,
+    "genre": "apocalyptic vision",
+    "subgenre": "judgment narrative",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 6,
+    "genre": "instruction",
+    "subgenre": "royal advice",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 7,
+    "genre": "autobiographical encomium",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 8,
+    "genre": "didactic poetry",
+    "subgenre": "personification",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 9,
+    "genre": "liturgical prayer",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 10,
+    "genre": "historical midrash",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 11,
+    "genre": "theological discourse",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 12,
+    "genre": "theodicy (defense of god's justice)",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 13,
+    "genre": "polemic against idolatry",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 14,
+    "genre": "etiological narrative",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 15,
+    "genre": "polemic",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 16,
+    "genre": "comparative midrash",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 17,
+    "genre": "descriptive prose",
+    "subgenre": "pathos",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 18,
+    "genre": "historical narrative",
+    "subgenre": "poetry",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 19,
+    "genre": "doxology",
+    "subgenre": "summary",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
   }
 ]

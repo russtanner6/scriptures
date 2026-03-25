@@ -1945,5 +1945,82 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 90
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 2,
+    "verse": 12,
+    "crossReference": "Matthew 27:43",
+    "type": "parallel",
+    "note": "Striking parallel to the mockery of Jesus Christ on the cross regarding being the Son of God.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 3,
+    "verse": 1,
+    "crossReference": "D&C 42:46",
+    "type": "parallel",
+    "note": "The peaceful state of the righteous after death.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 5,
+    "verse": 17,
+    "crossReference": "Ephesians 6:11-17",
+    "type": "parallel",
+    "note": "The Armor of God imagery used to describe divine attributes turned to military purpose.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 7,
+    "verse": 25,
+    "crossReference": "Hebrews 1:3",
+    "type": "parallel",
+    "note": "Description of Christ (Wisdom) as the brightness of God's glory and the express image of His person.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 9,
+    "verse": 15,
+    "crossReference": "2 Corinthians 5:1-4",
+    "type": "parallel",
+    "note": "The concept of the mortal body as a tabernacle or burden that weighs down the soul.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 16,
+    "verse": 7,
+    "crossReference": "Numbers 21:8-9",
+    "type": "parallel",
+    "note": "Refers to the brazen serpent as a sign of salvation where healing comes from looking toward God.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 16,
+    "verse": 20,
+    "crossReference": "Exodus 16:14-15",
+    "type": "parallel",
+    "note": "Refers to the gift of Manna as angels' food.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
   }
 ]

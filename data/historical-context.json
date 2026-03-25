@@ -4088,5 +4088,195 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 90
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 1,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "Reflects the Jewish Hellenistic environment of Alexandria (c. 1st Century BC) addressing universal ethics.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 2,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "Likely responds to Epicurean or skeptical Greek philosophies prevalent in the Hellenistic period.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 3,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "Addresses the reality of Jewish martyrdom and persecution under foreign rule.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 4,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "Reflects the common Hellenistic concern with the meaning of a short life vs. a long life.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 5,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "Uses military imagery common in the Roman and Hellenistic eras to describe God's intervention.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 6,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "A Mirror for Princes text, common in ancient literature, advising rulers on virtue.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 7,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "Utilizes the persona of Solomon, the archetype of wisdom in the Jewish tradition.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 8,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "Adapts Greek philosophical terms (the four cardinal virtues: temperance, prudence, justice, fortitude).",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 9,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "Reflects the dualistic thought (corruptible body vs. soul) common in Platonism, filtered through Jewish faith.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 10,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "A Midrashic retelling of Genesis and Exodus narratives.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 11,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "Reflects Jewish theological attempts to reconcile the plagues of Egypt with a merciful God.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 12,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "Explains the Conquest of Canaan in a way that emphasizes God's justice and opportunity for repentance.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 13,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "A classic Jewish polemic against Hellenistic and Egyptian polytheism.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 14,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "Links the history of idolatry to the divinization of dead relatives and kings (Euhemerism).",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 15,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "Critiques the Egyptian practice of animal worship and the manufacturing of idols.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 16,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "Reflects the Jewish liturgical and educational focus on the Exodus events.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 17,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "A psychological interpretation of the ninth plague of Egypt.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 18,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "Portrays the Word (Logos) as an active agent, bridge-building toward later New Testament concepts.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 19,
+    "era": "Intertestamental",
+    "approxDate": "c. 1st Century B.C.",
+    "setting": "Summarizes the Exodus as a new creation, where the elements are rearranged for Israel's sake.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
   }
 ]

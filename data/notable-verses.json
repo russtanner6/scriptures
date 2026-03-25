@@ -5192,5 +5192,511 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 90
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 4,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 7,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 13,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 12,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 18,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 23,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 24,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 4,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 7,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 9,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 7,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 13,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 14,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 4,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 5,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 17,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 12,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 24,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 7,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 22,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 25,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 26,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 27,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 7,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 21,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 10,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 15,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 17,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 10,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 10,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 17,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 21,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 11,
+    "verses": [
+      {
+        "verse": 16,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 23,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 24,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 26,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 2,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 10,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 18,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 5,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 10,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 3,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 12,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 27,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 15,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 3,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 7,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 12,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 20,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 26,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 17,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 11,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 18,
+    "verses": [
+      {
+        "verse": 4,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 13,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 15,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
+  },
+  {
+    "book": "Wisdom",
+    "chapter": 19,
+    "verses": [
+      {
+        "verse": 6,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 18,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 22,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 93
   }
 ]
