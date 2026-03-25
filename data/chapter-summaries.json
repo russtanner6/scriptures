@@ -2590,5 +2590,13 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 95
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "summary": "Daniel exposes the deception of the priests of Bel, destroys a great dragon worshipped by the Babylonians, and is miraculously fed by Habakkuk while being protected in a lions' den.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
   }
 ]

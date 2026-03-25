@@ -3595,5 +3595,24 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 95
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 5,
+        "text": "Then said Daniel, Because I may not worship idols made with hands, but the living God, who hath created the heaven and the earth, and hath sovereignty over all flesh.",
+        "reason": "A quintessential statement of faith distinguishing the living God from man-made objects."
+      },
+      {
+        "verse": 38,
+        "text": "And Daniel said, Thou hast remembered me, O God: neither hast thou forsaken them that seek thee and love thee.",
+        "reason": "Expresses a fundamental doctrine of God's constant watchcare over His faithful servants."
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
   }
 ]

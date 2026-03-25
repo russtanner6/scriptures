@@ -3984,5 +3984,19 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 95
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "themes": [
+      "idolatry",
+      "divine protection",
+      "miracles",
+      "discernment",
+      "sovereignty"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
   }
 ]

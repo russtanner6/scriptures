@@ -3761,5 +3761,19 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 95
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "topics": [
+      "trust in god",
+      "faith",
+      "miracles",
+      "judgment",
+      "worship"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
   }
 ]

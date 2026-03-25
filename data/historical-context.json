@@ -3238,5 +3238,15 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 95
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "era": "Post-exile",
+    "approxDate": "c. 538 B.C.",
+    "setting": "Babylon, under the reign of Cyrus the Persian",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
   }
 ]

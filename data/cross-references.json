@@ -1648,5 +1648,38 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 95
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "verse": 31,
+    "crossReference": "Daniel 6:16",
+    "type": "parallel",
+    "note": "This serves as a second account of Daniel being cast into a den of lions for his faith.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "verse": 5,
+    "crossReference": "D&C 1:16",
+    "type": "allusion",
+    "note": "Both passages contrast the worship of man-made idols with the worship of the living God.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "verse": 38,
+    "crossReference": "Psalm 9:10",
+    "type": "allusion",
+    "note": "Daniel's prayer echoes the theme that the Lord does not forsake those who seek Him.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
   }
 ]

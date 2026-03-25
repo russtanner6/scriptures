@@ -4708,5 +4708,175 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 95
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Cyrus",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Daniel",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Cyrus",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "Daniel",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "startVerse": 8,
+    "endVerse": 9,
+    "speaker": "Cyrus",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Cyrus",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Cyrus",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "Daniel",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "Cyrus",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "Cyrus",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "startVerse": 24,
+    "endVerse": 25,
+    "speaker": "Daniel",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "startVerse": 26,
+    "endVerse": 26,
+    "speaker": "Cyrus",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "startVerse": 27,
+    "endVerse": 27,
+    "speaker": "Daniel",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "startVerse": 34,
+    "endVerse": 35,
+    "speaker": "Habakkuk",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "startVerse": 37,
+    "endVerse": 37,
+    "speaker": "Habakkuk",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "startVerse": 38,
+    "endVerse": 38,
+    "speaker": "Daniel",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
+  },
+  {
+    "book": "Bel and the Dragon",
+    "chapter": 1,
+    "startVerse": 41,
+    "endVerse": 41,
+    "speaker": "Cyrus",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 98
   }
 ]

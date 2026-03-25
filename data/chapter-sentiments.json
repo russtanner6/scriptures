@@ -4210,5 +4210,18 @@
     "contrition": 3,
     "dominant": "admonition",
     "rationale": "A satirical and sharp warning against the vanity of idols, emphasizing their helplessness compared to the living God."
+  },
+  {
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookName": "Bel and the Dragon",
+    "bookId": 98,
+    "chapter": 1,
+    "exaltation": 8,
+    "peace": 6,
+    "admonition": 9,
+    "contrition": 3,
+    "dominant": "admonition",
+    "rationale": "The chapter serves as a sharp polemic against idolatry, exposing the fraud of Bel's priests, followed by a miraculous deliverance that exalts the living God."
   }
 ]
