@@ -4852,5 +4852,44 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 94
+  },
+  {
+    "book": "Susanna",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 22,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 23,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 35,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 42,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 44,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 60,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 97
   }
 ]

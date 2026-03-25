@@ -1879,5 +1879,27 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 94
+  },
+  {
+    "book": "Susanna",
+    "chapter": 1,
+    "verse": 23,
+    "crossReference": "Genesis 39:9",
+    "type": "parallel",
+    "note": "Susanna's refusal to sin against God mirrors Joseph's response to Potiphar's wife.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 97
+  },
+  {
+    "book": "Susanna",
+    "chapter": 1,
+    "verse": 62,
+    "crossReference": "Deuteronomy 19:18-19",
+    "type": "parallel",
+    "note": "The execution of the elders follows the Mosaic law that a false witness receives the punishment they intended for the accused.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 97
   }
 ]

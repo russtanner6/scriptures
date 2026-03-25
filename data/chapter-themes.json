@@ -4846,5 +4846,19 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 94
+  },
+  {
+    "book": "Susanna",
+    "chapter": 1,
+    "themes": [
+      "Integrity",
+      "Divine Vindication",
+      "False Witness",
+      "Virtue",
+      "Wisdom of Youth"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 97
   }
 ]

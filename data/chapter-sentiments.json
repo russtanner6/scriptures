@@ -5120,5 +5120,18 @@
     "contrition": 7,
     "dominant": "exaltation",
     "rationale": "A prayer of thanksgiving for deliverance and a final autobiographical poem on the search for wisdom."
+  },
+  {
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookName": "Susanna",
+    "bookId": 97,
+    "chapter": 1,
+    "exaltation": 6,
+    "peace": 8,
+    "admonition": 4,
+    "contrition": 7,
+    "dominant": "peace",
+    "rationale": "The narrative centers on Susanna's unwavering trust in God and the eventual peace brought by divine vindication despite the threat of death."
   }
 ]

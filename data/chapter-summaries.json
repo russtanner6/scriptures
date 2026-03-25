@@ -3150,5 +3150,13 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 94
+  },
+  {
+    "book": "Susanna",
+    "chapter": 1,
+    "summary": "Susanna, a righteous woman in Babylon, is falsely accused of adultery by two lustful elders after she rejects their advances; God inspires the young Daniel to expose their contradictory testimonies, saving Susanna.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 97
   }
 ]

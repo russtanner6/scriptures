@@ -3938,5 +3938,15 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 94
+  },
+  {
+    "book": "Susanna",
+    "chapter": 1,
+    "era": "Exile",
+    "approxDate": "c. 6th Century B.C.",
+    "setting": "Set during the Babylonian Captivity, illustrating the legal struggles and social life of the Jewish Diaspora in Babylon.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 97
   }
 ]

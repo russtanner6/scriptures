@@ -5178,5 +5178,95 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 94
+  },
+  {
+    "book": "Susanna",
+    "chapter": 1,
+    "startVerse": 22,
+    "endVerse": 23,
+    "speaker": "Susanna",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 97
+  },
+  {
+    "book": "Susanna",
+    "chapter": 1,
+    "startVerse": 42,
+    "endVerse": 43,
+    "speaker": "Susanna",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 97
+  },
+  {
+    "book": "Susanna",
+    "chapter": 1,
+    "startVerse": 51,
+    "endVerse": 51,
+    "speaker": "Daniel",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 97
+  },
+  {
+    "book": "Susanna",
+    "chapter": 1,
+    "startVerse": 52,
+    "endVerse": 53,
+    "speaker": "Daniel",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 97
+  },
+  {
+    "book": "Susanna",
+    "chapter": 1,
+    "startVerse": 54,
+    "endVerse": 54,
+    "speaker": "Daniel",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 97
+  },
+  {
+    "book": "Susanna",
+    "chapter": 1,
+    "startVerse": 55,
+    "endVerse": 55,
+    "speaker": "Daniel",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 97
+  },
+  {
+    "book": "Susanna",
+    "chapter": 1,
+    "startVerse": 56,
+    "endVerse": 57,
+    "speaker": "Daniel",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 97
+  },
+  {
+    "book": "Susanna",
+    "chapter": 1,
+    "startVerse": 58,
+    "endVerse": 58,
+    "speaker": "Daniel",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 97
+  },
+  {
+    "book": "Susanna",
+    "chapter": 1,
+    "startVerse": 59,
+    "endVerse": 59,
+    "speaker": "Daniel",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 97
   }
 ]

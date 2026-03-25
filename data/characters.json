@@ -20120,5 +20120,41 @@
     "tier": 4,
     "family": {},
     "portrait": null
+  },
+  {
+    "id": "susanna",
+    "name": "Susanna",
+    "bio": "The protagonist; daughter of Chelcias and wife of Joacim, known for her beauty, righteousness, and refusal to sin against God even under threat of death.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "joacim-susanna",
+    "name": "Joacim",
+    "bio": "A wealthy and honorable Jew living in Babylon, the husband of Susanna.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "chelcias",
+    "name": "Chelcias",
+    "bio": "The father of Susanna, noted for being a righteous man who taught his daughter according to the Law of Moses.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
   }
 ]
