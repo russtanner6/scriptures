@@ -5610,5 +5610,43 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 63
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 1,
+    "topics": [
+      "calling and election",
+      "godhood",
+      "revelation",
+      "prophecy"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 2,
+    "topics": [
+      "apostasy",
+      "judgment",
+      "temptation"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 3,
+    "topics": [
+      "second coming",
+      "creation",
+      "grace",
+      "longsuffering"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
   }
 ]

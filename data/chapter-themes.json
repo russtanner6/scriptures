@@ -5922,5 +5922,47 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 63
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 1,
+    "themes": [
+      "divine nature",
+      "calling and election",
+      "revelation",
+      "prophecy",
+      "priesthood"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 2,
+    "themes": [
+      "apostasy",
+      "false prophets",
+      "judgment",
+      "temptation",
+      "deliverance"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 3,
+    "themes": [
+      "second coming",
+      "longsuffering",
+      "restoration of the earth",
+      "grace",
+      "scripture"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
   }
 ]

@@ -6590,5 +6590,62 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 63
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 4,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 10,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 21,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 9,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 8,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 18,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
   }
 ]

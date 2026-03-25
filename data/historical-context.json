@@ -4788,5 +4788,35 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 63
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 1,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-68",
+    "setting": "Peter writing from Rome shortly before his martyrdom.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 2,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-68",
+    "setting": "Peter writing from Rome shortly before his martyrdom.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 3,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-68",
+    "setting": "Peter writing from Rome shortly before his martyrdom.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
   }
 ]

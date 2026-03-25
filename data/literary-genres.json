@@ -4171,5 +4171,32 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 63
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 1,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 2,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 3,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
   }
 ]

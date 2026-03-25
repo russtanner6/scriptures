@@ -3830,5 +3830,29 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 63
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 1,
+    "summary": "Peter exhorts the Saints to develop Christlike attributes and to make their calling and election sure, sharing his eyewitness testimony of the Mount of Transfiguration.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 2,
+    "summary": "Peter warns against false teachers who bring damnable heresies, using the examples of Noah and Lot to demonstrate that God knows how to deliver the godly and punish the unjust.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 3,
+    "summary": "Peter teaches that scoffers will come in the last days questioning the Lord's return, explains that one day is as a thousand years to the Lord, and encourages the Saints to grow in grace.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
   }
 ]

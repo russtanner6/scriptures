@@ -2451,5 +2451,49 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 63
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 1,
+    "verse": 10,
+    "crossReference": "D&C 131:5",
+    "type": "parallel",
+    "note": "Connects Peter's exhortation to make calling and election sure with Joseph Smith's teachings on the more sure word of prophecy.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 1,
+    "verse": 17,
+    "crossReference": "Matthew 17:5",
+    "type": "parallel",
+    "note": "A parallel account of the Father's voice at the Transfiguration.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 3,
+    "verse": 8,
+    "crossReference": "Abraham 3:4",
+    "type": "parallel",
+    "note": "Reflects the measurement of time in Kolob, where one day is as a thousand years.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 3,
+    "verse": 10,
+    "crossReference": "D&C 101:25",
+    "type": "parallel",
+    "note": "Both passages describe the elements melting and the earth being renewed at Christ's coming.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 61
   }
 ]

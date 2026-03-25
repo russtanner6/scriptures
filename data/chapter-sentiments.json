@@ -6225,5 +6225,44 @@
     "contrition": 2,
     "dominant": "peace",
     "rationale": "John expresses great joy in the Saints' faithfulness and emphasizes the comfort found in love and truth, while providing a protective warning against deceivers."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "2 Peter",
+    "bookId": 61,
+    "chapter": 1,
+    "exaltation": 8,
+    "peace": 9,
+    "admonition": 5,
+    "contrition": 3,
+    "dominant": "peace",
+    "rationale": "Peter provides a peaceful and exalting exhortation to the Saints to partake of the divine nature and make their calling and election sure."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "2 Peter",
+    "bookId": 61,
+    "chapter": 2,
+    "exaltation": 2,
+    "peace": 3,
+    "admonition": 9,
+    "contrition": 6,
+    "dominant": "admonition",
+    "rationale": "This chapter is a stern warning against false teachers and the severe consequences of turning away from the holy commandment."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "2 Peter",
+    "bookId": 61,
+    "chapter": 3,
+    "exaltation": 6,
+    "peace": 8,
+    "admonition": 7,
+    "contrition": 4,
+    "dominant": "peace",
+    "rationale": "Peter offers comfort regarding the Lord's longsuffering and the promise of a new heaven and earth, while urging vigilance against scoffers."
   }
 ]
