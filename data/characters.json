@@ -20679,5 +20679,62 @@
       "OT"
     ],
     "tier": 3
+  },
+  {
+    "id": "ish-bosheth",
+    "name": "Ish-bosheth",
+    "description": "Son of Saul who was made king over Israel by Abner after Saul's death, later assassinated.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4,
+    "aliases": [
+      "Ishbosheth"
+    ]
+  },
+  {
+    "id": "mephibosheth",
+    "name": "Mephibosheth",
+    "description": "Lame son of Jonathan whom David showed kindness to for his father's sake, restoring Saul's land.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "amnon",
+    "name": "Amnon",
+    "description": "David's firstborn son who violated his half-sister Tamar and was later murdered by Absalom.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "jonadab",
+    "name": "Jonadab",
+    "description": "David's nephew, a crafty advisor who helped Amnon plot against Tamar.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "ahimaaz",
+    "name": "Ahimaaz",
+    "description": "Son of Zadok the priest who served as a messenger bringing news to David during Absalom's rebellion.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "cushi",
+    "name": "Cushi",
+    "description": "A messenger sent by Joab to inform David of the victory and Absalom's death.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
   }
 ]

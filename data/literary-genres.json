@@ -7844,5 +7844,539 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 9
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 1,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 2,
+    "genre": "narrative",
+    "subgenre": "diplomatic correspondence",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 3,
+    "genre": "narrative",
+    "subgenre": "architectural record",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 4,
+    "genre": "narrative",
+    "subgenre": "architectural record",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 5,
+    "genre": "narrative",
+    "subgenre": "liturgical",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 6,
+    "genre": "narrative",
+    "subgenre": "prayer",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 7,
+    "genre": "narrative",
+    "subgenre": "theophany",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 8,
+    "genre": "historical record",
+    "subgenre": "administrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 9,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 10,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 11,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 12,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 13,
+    "genre": "narrative",
+    "subgenre": "sermon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 14,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 15,
+    "genre": "narrative",
+    "subgenre": "prophetic oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 16,
+    "genre": "narrative",
+    "subgenre": "prophetic rebuke",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 17,
+    "genre": "historical record",
+    "subgenre": "administrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 18,
+    "genre": "narrative",
+    "subgenre": "prophetic confrontation",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 19,
+    "genre": "narrative",
+    "subgenre": "judicial reform",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 20,
+    "genre": "narrative",
+    "subgenre": "prayer",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 21,
+    "genre": "narrative",
+    "subgenre": "prophetic letter",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 22,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 23,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 24,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 25,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 26,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 27,
+    "genre": "narrative",
+    "subgenre": "royal summary",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 28,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 29,
+    "genre": "narrative",
+    "subgenre": "liturgical",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 30,
+    "genre": "narrative",
+    "subgenre": "liturgical",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 31,
+    "genre": "historical record",
+    "subgenre": "administrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 32,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 33,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 34,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 35,
+    "genre": "narrative",
+    "subgenre": "liturgical",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 36,
+    "genre": "narrative",
+    "subgenre": "chronicle summary",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 1,
+    "genre": "narrative",
+    "subgenre": "prophetic confrontation",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 2,
+    "genre": "narrative",
+    "subgenre": "prophetic succession",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 3,
+    "genre": "narrative",
+    "subgenre": "military campaign",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 4,
+    "genre": "narrative",
+    "subgenre": "miracle stories",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 5,
+    "genre": "narrative",
+    "subgenre": "miracle story",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 6,
+    "genre": "narrative",
+    "subgenre": "miracle stories",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 7,
+    "genre": "narrative",
+    "subgenre": "deliverance story",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 8,
+    "genre": "narrative",
+    "subgenre": "royal chronicle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 9,
+    "genre": "narrative",
+    "subgenre": "coup account",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 10,
+    "genre": "narrative",
+    "subgenre": "purge account",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 11,
+    "genre": "narrative",
+    "subgenre": "restoration account",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 12,
+    "genre": "narrative",
+    "subgenre": "royal chronicle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 13,
+    "genre": "narrative",
+    "subgenre": "royal chronicle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 14,
+    "genre": "narrative",
+    "subgenre": "royal chronicle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 15,
+    "genre": "historical record",
+    "subgenre": "royal chronicle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 16,
+    "genre": "narrative",
+    "subgenre": "royal chronicle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 17,
+    "genre": "narrative",
+    "subgenre": "theological commentary",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 18,
+    "genre": "narrative",
+    "subgenre": "siege account",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 19,
+    "genre": "narrative",
+    "subgenre": "prayer and prophecy",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 20,
+    "genre": "narrative",
+    "subgenre": "prophetic sign story",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 21,
+    "genre": "historical record",
+    "subgenre": "royal chronicle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 22,
+    "genre": "narrative",
+    "subgenre": "reform account",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 23,
+    "genre": "narrative",
+    "subgenre": "reform account",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 24,
+    "genre": "historical record",
+    "subgenre": "fall account",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 25,
+    "genre": "narrative",
+    "subgenre": "destruction account",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
   }
 ]

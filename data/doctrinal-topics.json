@@ -10853,5 +10853,767 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 9
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 1,
+    "topics": [
+      "wisdom",
+      "prayer",
+      "humility",
+      "divine gifts"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 2,
+    "topics": [
+      "temple",
+      "service",
+      "divine greatness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 3,
+    "topics": [
+      "temple",
+      "holiness",
+      "sacred space"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 4,
+    "topics": [
+      "temple",
+      "ordinances",
+      "sacred craftsmanship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 5,
+    "topics": [
+      "glory of God",
+      "worship",
+      "temple",
+      "unity"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 6,
+    "topics": [
+      "prayer",
+      "repentance",
+      "forgiveness",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 7,
+    "topics": [
+      "repentance",
+      "covenant",
+      "obedience",
+      "temple"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 8,
+    "topics": [
+      "obedience",
+      "worship",
+      "stewardship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 9,
+    "topics": [
+      "wisdom",
+      "blessing",
+      "prosperity"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 10,
+    "topics": [
+      "pride",
+      "counsel",
+      "agency",
+      "consequences"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 11,
+    "topics": [
+      "obedience",
+      "gathering",
+      "faithfulness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 12,
+    "topics": [
+      "apostasy",
+      "humility",
+      "repentance",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 13,
+    "topics": [
+      "priesthood",
+      "covenant",
+      "faithfulness",
+      "divine aid"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 14,
+    "topics": [
+      "faith",
+      "prayer",
+      "divine deliverance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 15,
+    "topics": [
+      "seeking God",
+      "covenant renewal",
+      "prophets"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 16,
+    "topics": [
+      "trust in God",
+      "prophetic rebuke",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 17,
+    "topics": [
+      "righteous leadership",
+      "teaching the gospel",
+      "stewardship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 18,
+    "topics": [
+      "prophecy",
+      "discernment",
+      "false prophets",
+      "agency"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 19,
+    "topics": [
+      "justice",
+      "fear of God",
+      "righteous judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 20,
+    "topics": [
+      "prayer",
+      "faith",
+      "praise",
+      "divine deliverance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 21,
+    "topics": [
+      "judgment",
+      "prophetic warning",
+      "covenant unfaithfulness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 22,
+    "topics": [
+      "wicked counsel",
+      "judgment",
+      "preservation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 23,
+    "topics": [
+      "covenant renewal",
+      "priesthood",
+      "restoration"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 24,
+    "topics": [
+      "temple",
+      "apostasy",
+      "prophetic martyrdom",
+      "ingratitude"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 25,
+    "topics": [
+      "obedience",
+      "idolatry",
+      "pride",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 26,
+    "topics": [
+      "faithfulness",
+      "priesthood authority",
+      "presumption",
+      "consequences"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 27,
+    "topics": [
+      "obedience",
+      "stewardship",
+      "faithfulness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 28,
+    "topics": [
+      "idolatry",
+      "judgment",
+      "apostasy",
+      "mercy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 29,
+    "topics": [
+      "temple",
+      "repentance",
+      "restoration",
+      "priesthood"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 30,
+    "topics": [
+      "Passover",
+      "unity",
+      "mercy",
+      "gathering of israel"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 31,
+    "topics": [
+      "tithes",
+      "stewardship",
+      "consecration"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 32,
+    "topics": [
+      "faith",
+      "trust in God",
+      "deliverance",
+      "humility"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 33,
+    "topics": [
+      "repentance",
+      "mercy",
+      "restoration",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 34,
+    "topics": [
+      "scripture",
+      "covenant renewal",
+      "obedience",
+      "reform"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 35,
+    "topics": [
+      "Passover",
+      "obedience",
+      "sacrifice",
+      "mourning"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 36,
+    "topics": [
+      "judgment",
+      "exile",
+      "restoration",
+      "prophecy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 1,
+    "topics": [
+      "judgment",
+      "idolatry",
+      "prophetic authority"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 2,
+    "topics": [
+      "translation",
+      "priesthood",
+      "prophetic succession",
+      "miracles"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 3,
+    "topics": [
+      "revelation",
+      "war",
+      "alliance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 4,
+    "topics": [
+      "miracles",
+      "faith",
+      "mercy",
+      "provision"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 5,
+    "topics": [
+      "healing",
+      "obedience",
+      "humility",
+      "honesty"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 6,
+    "topics": [
+      "spiritual discernment",
+      "divine protection",
+      "faith"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 7,
+    "topics": [
+      "deliverance",
+      "faith",
+      "prophecy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 8,
+    "topics": [
+      "prophecy",
+      "wickedness",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 9,
+    "topics": [
+      "anointing",
+      "judgment",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 10,
+    "topics": [
+      "zeal",
+      "obedience",
+      "judgment",
+      "idolatry"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 11,
+    "topics": [
+      "covenant",
+      "restoration",
+      "Davidic lineage"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 12,
+    "topics": [
+      "temple",
+      "stewardship",
+      "faithfulness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 13,
+    "topics": [
+      "repentance",
+      "mercy",
+      "prophetic power"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 14,
+    "topics": [
+      "pride",
+      "humility",
+      "prophecy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 15,
+    "topics": [
+      "judgment",
+      "apostasy",
+      "consequences"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 16,
+    "topics": [
+      "idolatry",
+      "apostasy",
+      "temple desecration"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 17,
+    "topics": [
+      "covenant broken",
+      "judgment",
+      "scattering of israel",
+      "idolatry"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 18,
+    "topics": [
+      "faith",
+      "obedience",
+      "reformation",
+      "trust in God"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 19,
+    "topics": [
+      "prayer",
+      "deliverance",
+      "sovereignty of God"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 20,
+    "topics": [
+      "healing",
+      "prayer",
+      "pride",
+      "prophecy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 21,
+    "topics": [
+      "apostasy",
+      "judgment",
+      "innocent blood"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 22,
+    "topics": [
+      "scripture",
+      "repentance",
+      "humility",
+      "prophecy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 23,
+    "topics": [
+      "reformation",
+      "covenant",
+      "obedience",
+      "Passover"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 24,
+    "topics": [
+      "judgment",
+      "captivity",
+      "consequences"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 25,
+    "topics": [
+      "destruction",
+      "exile",
+      "judgment",
+      "hope"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
   }
 ]

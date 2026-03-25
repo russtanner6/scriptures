@@ -8892,5 +8892,615 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 9
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 1,
+    "era": "United Monarchy",
+    "approxDate": "c. 970 BC",
+    "setting": "Gibeon and Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 2,
+    "era": "United Monarchy",
+    "approxDate": "c. 967 BC",
+    "setting": "Jerusalem and Tyre",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 3,
+    "era": "United Monarchy",
+    "approxDate": "c. 966 BC",
+    "setting": "Mount Moriah, Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 4,
+    "era": "United Monarchy",
+    "approxDate": "c. 966-959 BC",
+    "setting": "Jerusalem temple",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 5,
+    "era": "United Monarchy",
+    "approxDate": "c. 959 BC",
+    "setting": "Jerusalem temple",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 6,
+    "era": "United Monarchy",
+    "approxDate": "c. 959 BC",
+    "setting": "Jerusalem temple",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 7,
+    "era": "United Monarchy",
+    "approxDate": "c. 959 BC",
+    "setting": "Jerusalem temple",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 8,
+    "era": "United Monarchy",
+    "approxDate": "c. 959-930 BC",
+    "setting": "Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 9,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 10,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 930 BC",
+    "setting": "Shechem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 11,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 930-927 BC",
+    "setting": "Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 12,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 925 BC",
+    "setting": "Judah and Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 13,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 913-910 BC",
+    "setting": "Judah and Israel border",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 14,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 910-895 BC",
+    "setting": "Judah and the Negev",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 15,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 895 BC",
+    "setting": "Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 16,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 895-870 BC",
+    "setting": "Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 17,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 872-853 BC",
+    "setting": "Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 18,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 853 BC",
+    "setting": "Ramoth-gilead",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 19,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 853-848 BC",
+    "setting": "Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 20,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 853 BC",
+    "setting": "Judah, wilderness of Tekoa",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 21,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 848-841 BC",
+    "setting": "Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 22,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 841 BC",
+    "setting": "Judah and Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 23,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 835 BC",
+    "setting": "Jerusalem temple",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 24,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 835-796 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 25,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 796-767 BC",
+    "setting": "Judah, Edom, and Beth-shemesh",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 26,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 792-740 BC",
+    "setting": "Judah and Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 27,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 750-735 BC",
+    "setting": "Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 28,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 735-715 BC",
+    "setting": "Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 29,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 715 BC",
+    "setting": "Jerusalem temple",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 30,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 715 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 31,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 715 BC",
+    "setting": "Judah and Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 32,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 701 BC",
+    "setting": "Judah and Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 33,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 697-642 BC",
+    "setting": "Judah and Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 34,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 640-609 BC",
+    "setting": "Judah and Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 35,
+    "era": "Divided Monarchy",
+    "approxDate": "c. 622-609 BC",
+    "setting": "Jerusalem and Megiddo",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 36,
+    "era": "Exile",
+    "approxDate": "c. 609-538 BC",
+    "setting": "Jerusalem and Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 14
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 1,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 853 BC",
+    "setting": "Samaria",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 2,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 852 BC",
+    "setting": "Gilgal, Bethel, Jericho, and the Jordan River",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 3,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 850 BC",
+    "setting": "Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 4,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 849-840 BC",
+    "setting": "Shunem, Gilgal, and Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 5,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 845 BC",
+    "setting": "Damascus and Samaria",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 6,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 845-840 BC",
+    "setting": "Dothan and Samaria",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 7,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 840 BC",
+    "setting": "Samaria",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 8,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 843-841 BC",
+    "setting": "Damascus and Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 9,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 841 BC",
+    "setting": "Ramoth-gilead and Jezreel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 10,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 841-814 BC",
+    "setting": "Samaria and Jezreel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 11,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 841-835 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 12,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 835-796 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 13,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 814-782 BC",
+    "setting": "Samaria",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 14,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 796-753 BC",
+    "setting": "Jerusalem and Samaria",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 15,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 767-732 BC",
+    "setting": "Jerusalem and Samaria",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 16,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 735-716 BC",
+    "setting": "Jerusalem and Damascus",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 17,
+    "era": "Divided Kingdom / Fall of Israel",
+    "approxDate": "c. 722 BC",
+    "setting": "Samaria and Assyria",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 18,
+    "era": "Kingdom of Judah",
+    "approxDate": "c. 715-701 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 19,
+    "era": "Kingdom of Judah",
+    "approxDate": "c. 701 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 20,
+    "era": "Kingdom of Judah",
+    "approxDate": "c. 701-686 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 21,
+    "era": "Kingdom of Judah",
+    "approxDate": "c. 697-642 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 22,
+    "era": "Kingdom of Judah",
+    "approxDate": "c. 622 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 23,
+    "era": "Kingdom of Judah",
+    "approxDate": "c. 622-609 BC",
+    "setting": "Jerusalem and Megiddo",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 24,
+    "era": "Kingdom of Judah",
+    "approxDate": "c. 609-597 BC",
+    "setting": "Jerusalem and Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 25,
+    "era": "Kingdom of Judah / Exile",
+    "approxDate": "c. 588-561 BC",
+    "setting": "Jerusalem and Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 12
   }
 ]
