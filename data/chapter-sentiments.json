@@ -7372,5 +7372,365 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": null
+  },
+  {
+    "chapter": 1,
+    "sentiment": "Peace",
+    "justification": "The chapter is filled with angelic annunciations and songs of praise regarding the coming of John the Baptist and Jesus Christ.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 2,
+    "sentiment": "Peace",
+    "justification": "The birth of the Savior and His early recognition in the temple emphasize joy and the fulfillment of God's promises.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 3,
+    "sentiment": "Admonition",
+    "justification": "John the Baptist delivers a stern message of repentance and warns of the coming judgment for those who do not bring forth fruit.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 4,
+    "sentiment": "Admonition",
+    "justification": "Jesus faces temptation from Satan and rejection from His own people in Nazareth, highlighting the conflict between His mission and the world.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 5,
+    "sentiment": "Peace",
+    "justification": "Jesus demonstrates His power to heal and forgive, while calling His first disciples to follow Him in a spirit of hope.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 6,
+    "sentiment": "Admonition",
+    "justification": "Jesus delivers a series of woes alongside the beatitudes and instructs His disciples on the high requirements of the Law of Love.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 7,
+    "sentiment": "Peace",
+    "justification": "The chapter focuses on Jesus' compassion as He heals a centurion's servant, raises a widow's son, and forgives a repentant woman.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 8,
+    "sentiment": "Peace",
+    "justification": "Jesus uses parables and miracles to reveal the power of faith and the word of God, bringing relief and life to those in need.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 9,
+    "sentiment": "Admonition",
+    "justification": "Jesus prepares His disciples for His suffering and sets high standards for discipleship, rebuking those who are not fully committed.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 10,
+    "sentiment": "Peace",
+    "justification": "Jesus sends out the Seventy and teaches the priority of service and devotion through the parable of the Good Samaritan and His visit to Mary and Martha.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 11,
+    "sentiment": "Admonition",
+    "justification": "Jesus gives strong rebukes to the Pharisees and lawyers for their hypocrisy and warns of the spiritual state of their generation.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 12,
+    "sentiment": "Admonition",
+    "justification": "Jesus warns against the covetousness of the rich fool and exhorts His followers to be prepared and watchful for His return.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 13,
+    "sentiment": "Admonition",
+    "justification": "The Savior calls for universal repentance and laments over Jerusalem's unwillingness to be gathered and protected.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 14,
+    "sentiment": "Admonition",
+    "justification": "Jesus teaches humility at a feast and explains the absolute sacrifice required to be His disciple.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 15,
+    "sentiment": "Peace",
+    "justification": "The parables of the lost sheep, coin, and son illustrate God's boundless mercy and the joy in heaven over one sinner who repents.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 16,
+    "sentiment": "Admonition",
+    "justification": "Jesus teaches on the stewardship of worldly wealth and the eternal consequences of neglecting the poor through parables.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 17,
+    "sentiment": "Admonition",
+    "justification": "Jesus provides instructions on forgiveness and faith, while warning of the suddenness of the coming of the Son of Man.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 18,
+    "sentiment": "Admonition",
+    "justification": "Through parables and personal encounters, Jesus emphasizes the necessity of persistent prayer, humility, and the danger of riches.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 19,
+    "sentiment": "Peace",
+    "justification": "The conversion of Zacchaeus and the triumphal entry into Jerusalem signify the recognition of Jesus as the King and Savior.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 20,
+    "sentiment": "Admonition",
+    "justification": "Jesus engages in sharp doctrinal disputes with religious leaders who challenge His authority and question His teachings on the resurrection.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 21,
+    "sentiment": "Admonition",
+    "justification": "Jesus prophesies of future tribulations, the destruction of Jerusalem, and the signs of the times, calling for vigilance.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 22,
+    "sentiment": "Admonition",
+    "justification": "The account of the Last Supper, betrayal, and Gethsemane depicts the Savior's intense suffering and the failure of His disciples.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 23,
+    "sentiment": "Admonition",
+    "justification": "The narrative of the trial, crucifixion, and death of Jesus emphasizes the injustice of His treatment and the gravity of His sacrifice.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 24,
+    "sentiment": "Peace",
+    "justification": "The Resurrection account, appearances on the road to Emmaus, and the ascension bring a profound sense of hope and victory over death.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 1,
+    "sentiment": "Peace",
+    "justification": "The chapter begins with the preparation for and commencement of Jesus' ministry, characterized by His baptism, divine approval, and the exercise of power over illness and spirits.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 2,
+    "sentiment": "Admonition",
+    "justification": "Jesus faces rising opposition from religious leaders over His authority to forgive sins and His Sabbath practices.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 3,
+    "sentiment": "Admonition",
+    "justification": "Conflict intensifies as Jesus rebukes the hardness of hearts in the synagogue and refutes the blasphemous charge that His power comes from Beelzebub.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 4,
+    "sentiment": "Peace",
+    "justification": "Jesus uses parables to reveal the mysteries of the kingdom and demonstrates His divine power by calming a life-threatening storm.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 5,
+    "sentiment": "Peace",
+    "justification": "The chapter highlights the Savior's immense compassion and power as He restores life, health, and sanity to those in desperate need.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 6,
+    "sentiment": "Admonition",
+    "justification": "Jesus is rejected in His hometown and warns His apostles of the consequences for those who reject their message, set against the tragic death of John the Baptist.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 7,
+    "sentiment": "Admonition",
+    "justification": "Jesus delivers a stern rebuke to the Pharisees for prioritizing man-made traditions over God's commandments.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 8,
+    "sentiment": "Admonition",
+    "justification": "Jesus warns against spiritual blindness, rebukes Peter for failing to understand the divine plan, and sets forth the rigorous requirements of discipleship.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 9,
+    "sentiment": "Peace",
+    "justification": "The glory of the Transfiguration provides a sacred witness of Christ's divinity, followed by His compassionate healing of a suffering child.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 10,
+    "sentiment": "Admonition",
+    "justification": "Jesus provides direct, challenging instructions on marriage, riches, and the necessity of humble service.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 11,
+    "sentiment": "Admonition",
+    "justification": "The triumphal entry is followed by the symbolic cursing of the fig tree and the authoritative cleansing of the temple.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 12,
+    "sentiment": "Admonition",
+    "justification": "Jesus silences His detractors through brilliant doctrinal responses and condemns the hypocrisy of the scribes.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 13,
+    "sentiment": "Admonition",
+    "justification": "The Savior provides a sobering prophecy of future tribulations and the destruction of the temple, urging His followers to be vigilant.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 14,
+    "sentiment": "Admonition",
+    "justification": "The narrative shifts to the solemn events of the Last Supper, the betrayal in Gethsemane, and the Savior's arrest and trials.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 15,
+    "sentiment": "Admonition",
+    "justification": "The crucifixion account depicts the gravity of the Savior's sacrifice and the injustice of His condemnation by the world.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 16,
+    "sentiment": "Peace",
+    "justification": "The record concludes with the victory of the Resurrection and the commissioning of the apostles to spread the gospel to the world.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
   }
 ]

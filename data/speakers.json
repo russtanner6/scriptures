@@ -8104,5 +8104,2930 @@
     "speaker": "enoch",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 13,
+    "endVerse": 17,
+    "speaker": "gabriel",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "zacharias",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 19,
+    "endVerse": 20,
+    "speaker": "gabriel",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 25,
+    "endVerse": 25,
+    "speaker": "elisabeth",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "gabriel",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 30,
+    "endVerse": 33,
+    "speaker": "gabriel",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 34,
+    "endVerse": 34,
+    "speaker": "mary-mother-of-jesus",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 35,
+    "endVerse": 37,
+    "speaker": "gabriel",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 38,
+    "endVerse": 38,
+    "speaker": "mary-mother-of-jesus",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 42,
+    "endVerse": 45,
+    "speaker": "elisabeth",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 46,
+    "endVerse": 55,
+    "speaker": "mary-mother-of-jesus",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 60,
+    "endVerse": 60,
+    "speaker": "elisabeth",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 68,
+    "endVerse": 79,
+    "speaker": "zacharias",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "startVerse": 29,
+    "endVerse": 32,
+    "speaker": "simeon-temple",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "startVerse": 34,
+    "endVerse": 35,
+    "speaker": "simeon-temple",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "startVerse": 48,
+    "endVerse": 48,
+    "speaker": "mary-mother-of-jesus",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "startVerse": 49,
+    "endVerse": 49,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "startVerse": 7,
+    "endVerse": 9,
+    "speaker": "john-the-baptist",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "john-the-baptist",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "john-the-baptist",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "john-the-baptist",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "startVerse": 16,
+    "endVerse": 17,
+    "speaker": "john-the-baptist",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "god-the-father",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "satan",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "startVerse": 6,
+    "endVerse": 7,
+    "speaker": "satan",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "startVerse": 9,
+    "endVerse": 11,
+    "speaker": "satan",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "startVerse": 18,
+    "endVerse": 19,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "startVerse": 23,
+    "endVerse": 27,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "startVerse": 35,
+    "endVerse": 35,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "startVerse": 43,
+    "endVerse": 43,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "peter",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "peter",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 22,
+    "endVerse": 24,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 27,
+    "endVerse": 27,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 31,
+    "endVerse": 32,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 34,
+    "endVerse": 39,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "startVerse": 3,
+    "endVerse": 5,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "startVerse": 20,
+    "endVerse": 49,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "startVerse": 22,
+    "endVerse": 28,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "startVerse": 31,
+    "endVerse": 35,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "startVerse": 40,
+    "endVerse": 42,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "startVerse": 44,
+    "endVerse": 48,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "startVerse": 50,
+    "endVerse": 50,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 10,
+    "endVerse": 18,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 25,
+    "endVerse": 25,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 30,
+    "endVerse": 30,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 39,
+    "endVerse": 39,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 45,
+    "endVerse": 45,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 46,
+    "endVerse": 46,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 48,
+    "endVerse": 48,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 50,
+    "endVerse": 50,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 52,
+    "endVerse": 52,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 54,
+    "endVerse": 54,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 3,
+    "endVerse": 5,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "peter",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 22,
+    "endVerse": 27,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 33,
+    "endVerse": 33,
+    "speaker": "peter",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 35,
+    "endVerse": 35,
+    "speaker": "god-the-father",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 41,
+    "endVerse": 41,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 44,
+    "endVerse": 44,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 48,
+    "endVerse": 48,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 50,
+    "endVerse": 50,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 55,
+    "endVerse": 56,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 58,
+    "endVerse": 58,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 60,
+    "endVerse": 60,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 62,
+    "endVerse": 62,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 2,
+    "endVerse": 12,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 18,
+    "endVerse": 24,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 26,
+    "endVerse": 26,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 30,
+    "endVerse": 37,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 40,
+    "endVerse": 40,
+    "speaker": "martha",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 41,
+    "endVerse": 42,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "startVerse": 2,
+    "endVerse": 13,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "startVerse": 17,
+    "endVerse": 26,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "startVerse": 29,
+    "endVerse": 36,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "startVerse": 39,
+    "endVerse": 52,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "startVerse": 2,
+    "endVerse": 12,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "startVerse": 16,
+    "endVerse": 21,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "startVerse": 22,
+    "endVerse": 40,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "startVerse": 42,
+    "endVerse": 53,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "startVerse": 54,
+    "endVerse": 59,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "startVerse": 2,
+    "endVerse": 5,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "startVerse": 6,
+    "endVerse": 9,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "startVerse": 15,
+    "endVerse": 16,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "startVerse": 18,
+    "endVerse": 19,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "startVerse": 20,
+    "endVerse": 21,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "startVerse": 24,
+    "endVerse": 30,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "startVerse": 32,
+    "endVerse": 35,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 8,
+    "endVerse": 11,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 12,
+    "endVerse": 14,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 16,
+    "endVerse": 24,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 26,
+    "endVerse": 35,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "startVerse": 4,
+    "endVerse": 7,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "startVerse": 8,
+    "endVerse": 10,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "startVerse": 11,
+    "endVerse": 32,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "startVerse": 1,
+    "endVerse": 8,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "startVerse": 9,
+    "endVerse": 13,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "startVerse": 19,
+    "endVerse": 31,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 17,
+    "startVerse": 1,
+    "endVerse": 4,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 17,
+    "startVerse": 6,
+    "endVerse": 10,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 17,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 17,
+    "startVerse": 17,
+    "endVerse": 19,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 17,
+    "startVerse": 20,
+    "endVerse": 37,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "startVerse": 2,
+    "endVerse": 8,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "startVerse": 10,
+    "endVerse": 14,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "startVerse": 16,
+    "endVerse": 17,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "startVerse": 19,
+    "endVerse": 22,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "startVerse": 24,
+    "endVerse": 25,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "startVerse": 27,
+    "endVerse": 27,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "startVerse": 29,
+    "endVerse": 33,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "startVerse": 41,
+    "endVerse": 41,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "startVerse": 42,
+    "endVerse": 42,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 19,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 19,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "zacchaeus",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 19,
+    "startVerse": 9,
+    "endVerse": 10,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 19,
+    "startVerse": 12,
+    "endVerse": 27,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 19,
+    "startVerse": 30,
+    "endVerse": 31,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 19,
+    "startVerse": 40,
+    "endVerse": 40,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 19,
+    "startVerse": 42,
+    "endVerse": 44,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 20,
+    "startVerse": 3,
+    "endVerse": 4,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 20,
+    "startVerse": 8,
+    "endVerse": 16,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 20,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 20,
+    "startVerse": 23,
+    "endVerse": 25,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 20,
+    "startVerse": 34,
+    "endVerse": 38,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 20,
+    "startVerse": 41,
+    "endVerse": 44,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 20,
+    "startVerse": 46,
+    "endVerse": 47,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 21,
+    "startVerse": 3,
+    "endVerse": 4,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 21,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 21,
+    "startVerse": 8,
+    "endVerse": 36,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 10,
+    "endVerse": 12,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 15,
+    "endVerse": 22,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 25,
+    "endVerse": 32,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 33,
+    "endVerse": 33,
+    "speaker": "peter",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 34,
+    "endVerse": 34,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 35,
+    "endVerse": 37,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 38,
+    "endVerse": 38,
+    "speaker": "peter",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 38,
+    "endVerse": 38,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 40,
+    "endVerse": 40,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 42,
+    "endVerse": 42,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 46,
+    "endVerse": 46,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 48,
+    "endVerse": 48,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 51,
+    "endVerse": 51,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 52,
+    "endVerse": 53,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 60,
+    "endVerse": 60,
+    "speaker": "peter",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 67,
+    "endVerse": 68,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "startVerse": 70,
+    "endVerse": 70,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 23,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 23,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "pontius-pilate",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 23,
+    "startVerse": 14,
+    "endVerse": 16,
+    "speaker": "pontius-pilate",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 23,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "pontius-pilate",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 23,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "pontius-pilate",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 23,
+    "startVerse": 28,
+    "endVerse": 31,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 23,
+    "startVerse": 34,
+    "endVerse": 34,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 23,
+    "startVerse": 43,
+    "endVerse": 43,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 23,
+    "startVerse": 46,
+    "endVerse": 46,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 24,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 24,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "cleopas",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 24,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 24,
+    "startVerse": 19,
+    "endVerse": 24,
+    "speaker": "cleopas",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 24,
+    "startVerse": 25,
+    "endVerse": 26,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 24,
+    "startVerse": 36,
+    "endVerse": 36,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 24,
+    "startVerse": 38,
+    "endVerse": 39,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 24,
+    "startVerse": 41,
+    "endVerse": 41,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 24,
+    "startVerse": 44,
+    "endVerse": 44,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 24,
+    "startVerse": 46,
+    "endVerse": 49,
+    "speaker": "jesus-christ",
+    "book": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 7,
+    "endVerse": 8,
+    "speaker": "john-the-baptist",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "god-the-father",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 25,
+    "endVerse": 25,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 38,
+    "endVerse": 38,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 41,
+    "endVerse": 41,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "startVerse": 44,
+    "endVerse": 44,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "startVerse": 8,
+    "endVerse": 11,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "startVerse": 19,
+    "endVerse": 22,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "startVerse": 25,
+    "endVerse": 28,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "startVerse": 3,
+    "endVerse": 5,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "startVerse": 23,
+    "endVerse": 29,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "startVerse": 33,
+    "endVerse": 35,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "startVerse": 3,
+    "endVerse": 9,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "startVerse": 11,
+    "endVerse": 32,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "startVerse": 35,
+    "endVerse": 35,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "startVerse": 39,
+    "endVerse": 40,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 8,
+    "endVerse": 9,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "jairus",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 30,
+    "endVerse": 30,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 34,
+    "endVerse": 34,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 36,
+    "endVerse": 36,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 39,
+    "endVerse": 39,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "startVerse": 41,
+    "endVerse": 41,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "startVerse": 8,
+    "endVerse": 11,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "herod-antipas",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "startVerse": 22,
+    "endVerse": 23,
+    "speaker": "herod-antipas",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "startVerse": 31,
+    "endVerse": 31,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "startVerse": 37,
+    "endVerse": 38,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "startVerse": 50,
+    "endVerse": 50,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "startVerse": 6,
+    "endVerse": 15,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "startVerse": 18,
+    "endVerse": 23,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "startVerse": 27,
+    "endVerse": 27,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "startVerse": 29,
+    "endVerse": 29,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "startVerse": 34,
+    "endVerse": 34,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 2,
+    "endVerse": 3,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 17,
+    "endVerse": 21,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 27,
+    "endVerse": 27,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 29,
+    "endVerse": 29,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 29,
+    "endVerse": 29,
+    "speaker": "peter",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 31,
+    "endVerse": 31,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 33,
+    "endVerse": 33,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "startVerse": 34,
+    "endVerse": 38,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "peter",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "god-the-father",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 12,
+    "endVerse": 13,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 25,
+    "endVerse": 25,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 29,
+    "endVerse": 29,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 31,
+    "endVerse": 31,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 35,
+    "endVerse": 35,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 37,
+    "endVerse": 37,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "startVerse": 39,
+    "endVerse": 50,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 5,
+    "endVerse": 9,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 11,
+    "endVerse": 12,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 14,
+    "endVerse": 15,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 18,
+    "endVerse": 19,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 23,
+    "endVerse": 25,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 27,
+    "endVerse": 27,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "peter",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 29,
+    "endVerse": 31,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 33,
+    "endVerse": 34,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 36,
+    "endVerse": 36,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 38,
+    "endVerse": 38,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 39,
+    "endVerse": 40,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 42,
+    "endVerse": 45,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 49,
+    "endVerse": 49,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 51,
+    "endVerse": 51,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "startVerse": 52,
+    "endVerse": 52,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "startVerse": 2,
+    "endVerse": 3,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "peter",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "startVerse": 22,
+    "endVerse": 26,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "startVerse": 29,
+    "endVerse": 30,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "startVerse": 33,
+    "endVerse": 33,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "startVerse": 1,
+    "endVerse": 11,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "startVerse": 24,
+    "endVerse": 27,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "startVerse": 29,
+    "endVerse": 31,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "startVerse": 34,
+    "endVerse": 34,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "startVerse": 35,
+    "endVerse": 37,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "startVerse": 38,
+    "endVerse": 40,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "startVerse": 43,
+    "endVerse": 44,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "startVerse": 5,
+    "endVerse": 37,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 6,
+    "endVerse": 9,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 13,
+    "endVerse": 15,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 20,
+    "endVerse": 21,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 24,
+    "endVerse": 25,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 27,
+    "endVerse": 28,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 29,
+    "endVerse": 29,
+    "speaker": "peter",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 30,
+    "endVerse": 30,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 31,
+    "endVerse": 31,
+    "speaker": "peter",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 32,
+    "endVerse": 32,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 34,
+    "endVerse": 34,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 36,
+    "endVerse": 36,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 37,
+    "endVerse": 38,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 41,
+    "endVerse": 42,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 48,
+    "endVerse": 49,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 62,
+    "endVerse": 62,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 68,
+    "endVerse": 68,
+    "speaker": "peter",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "startVerse": 71,
+    "endVerse": 71,
+    "speaker": "peter",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "pontius-pilate",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "pontius-pilate",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "pontius-pilate",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "pontius-pilate",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "pontius-pilate",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "startVerse": 34,
+    "endVerse": 34,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "startVerse": 15,
+    "endVerse": 18,
+    "speaker": "jesus-christ",
+    "book": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
   }
 ]

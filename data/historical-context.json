@@ -5672,5 +5672,285 @@
     "bookName": "Jude",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "context": "Introduces the priestly service in the Jerusalem Temple and the historical setting of the reign of Herod the Great.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "context": "Reflects the Roman administration of Judea through the census of Caesar Augustus and the Jewish laws concerning circumcision and purification.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "context": "Contextualizes the ministry of John the Baptist within the political landscape of Roman governors and tetrarchs like Pontius Pilate and Herod Antipas.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "context": "Illustrates the synagogue culture of Nazareth and Capernaum where Jesus began His public teaching.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "context": "Highlights the socio-economic environment of Galilean fishermen and the religious tension regarding the authority to forgive sins.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "context": "Depicts the rising conflict between Jesus and the Pharisees over oral traditions surrounding the Sabbath.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "context": "Shows the interaction between Jewish society and Roman centurions, as well as the cultural practices of mourning and hospitality.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "context": "Illustrates the geographical reach of Jesus' ministry across the Sea of Galilee into the region of the Gadarenes.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "context": "Marks the transition of Jesus' focus from public miracles in Galilee toward the private preparation of His apostles for His death in Jerusalem.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "context": "Introduces the office of the Seventy and the ethnic tension between Jews and Samaritans through the famous parable.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "context": "Reflects the common Jewish practices of prayer and the legalistic burdens imposed by the scribes and lawyers.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "context": "Addresses the universal human anxiety over physical needs and the specific Jewish expectations of the Messiah's kingdom.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "context": "Mentions contemporary political tragedies (Galileans killed by Pilate) and the religious controversy of healing in the synagogue.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "context": "Highlights the social hierarchies and table etiquette of 1st-century Jewish formal meals.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "context": "Reflects the pastoral and domestic life of Judea through the imagery of sheep, coins, and family inheritance.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "context": "Deals with the financial management practices of the time and the Jewish belief in Abraham's bosom as a place in the spirit world.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 17,
+    "context": "Depicts the social isolation of lepers and the travel routes through Samaria toward Jerusalem.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "context": "Illustrates the judicial system through the widow and the judge, and the religious self-perception of Pharisees vs. Publicans.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 19,
+    "context": "Focuses on the taxation system in Jericho and the traditional Messianic expectations during the Triumphal Entry.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 20,
+    "context": "Reflects the theological divide between the Pharisees (believing in resurrection) and the Sadducees (denying it) in the Temple precinct.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 21,
+    "context": "Details the grandeur of the Second Temple and the political unrest that would lead to the Roman-Jewish War.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "context": "Centers on the Passover festival and the legal proceedings of the Sanhedrin during the arrest of Jesus.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 23,
+    "context": "Depicts the Roman methods of execution and the jurisdictional interaction between Pilate and Herod Antipas.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 24,
+    "context": "Provides geographical details of Emmaus and Bethany, while emphasizing the physical nature of the resurrected body to counter early docetic ideas.",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "context": "Reflects the 1st-century Jewish practice of ritual immersion (mikveh) and the cultural role of the synagogue as a place of instruction.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "context": "Illustrates the socio-religious tension between Jesus' inclusive ministry and the strict legalistic interpretations of the scribes and Pharisees.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "context": "Introduces the Herodians, a political group supporting the dynasty of Herod, who conspired with religious leaders against Jesus.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "context": "The parables draw on the agrarian life of Galilee, using common agricultural imagery familiar to the Savior's audience.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "context": "The region of the Gadarenes was part of the Decapolis, a predominantly Gentile area, explaining the presence of a large herd of swine.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "context": "Recounts the political intrigue and domestic corruption of the court of Herod Antipas, leading to the execution of John the Baptist.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "context": "Details specific Jewish traditions of ritual handwashing and the practice of Corban, which Jesus identified as a loophole used to neglect parental care.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "context": "The ministry moves into the region of Caesarea Philippi, a site of significant Roman and Hellenistic religious influence.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "context": "The Transfiguration is understood in LDS theology as the occasion where priesthood keys were conferred upon Peter, James, and John.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "context": "Reflects the debate among Jewish schools of thought (Shammai vs. Hillel) regarding the grounds for divorce.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "context": "Describes the Triumphal Entry during the Passover season, a time of heightened Messianic expectation and Roman military presence in Jerusalem.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "context": "Highlights the theological divide between Pharisees (believing in resurrection) and Sadducees (denying it) and the burden of Roman taxation.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "context": "The prophecy of the temple's destruction refers to the grand structures built by Herod the Great, which were later destroyed by the Romans in 70 AD.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "context": "Centers on the Passover feast and the judicial procedures of the Sanhedrin under the high priest's leadership.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "context": "Depicts the Roman legal process under Pontius Pilate and the brutal efficiency of Roman crucifixion as a deterrent for political rebels.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "context": "Records the early Christian witness of the Resurrection, challenging both Jewish and Roman narratives concerning the death of Jesus.",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
   }
 ]

@@ -4981,5 +4981,285 @@
     "bookName": "Jude",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "genre": "Gospel / Narrative",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "genre": "Gospel / Narrative",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "genre": "Gospel / Narrative",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "genre": "Gospel / Narrative",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "genre": "Gospel / Narrative",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "genre": "Gospel / Discourse",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "genre": "Gospel / Narrative",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "genre": "Gospel / Narrative",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "genre": "Gospel / Narrative",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "genre": "Gospel / Narrative",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "genre": "Gospel / Discourse",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "genre": "Gospel / Discourse",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "genre": "Gospel / Narrative",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "genre": "Gospel / Narrative",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "genre": "Gospel / Discourse",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "genre": "Gospel / Discourse",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 17,
+    "genre": "Gospel / Narrative",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "genre": "Gospel / Narrative",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 19,
+    "genre": "Gospel / Narrative",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 20,
+    "genre": "Gospel / Discourse",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 21,
+    "genre": "Gospel / Discourse",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "genre": "Gospel / Narrative",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 23,
+    "genre": "Gospel / Narrative",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 24,
+    "genre": "Gospel / Narrative",
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "genre": "Gospel / Narrative",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "genre": "Gospel / Narrative",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "genre": "Gospel / Narrative",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "genre": "Gospel / Parable",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "genre": "Gospel / Narrative",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "genre": "Gospel / Narrative",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "genre": "Gospel / Narrative",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "genre": "Gospel / Narrative",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "genre": "Gospel / Narrative",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "genre": "Gospel / Narrative",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "genre": "Gospel / Narrative",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "genre": "Gospel / Discourse",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "genre": "Gospel / Prophecy",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "genre": "Gospel / Narrative",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "genre": "Gospel / Narrative",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "genre": "Gospel / Narrative",
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
   }
 ]

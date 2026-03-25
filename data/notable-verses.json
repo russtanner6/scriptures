@@ -8152,5 +8152,621 @@
     "bookName": "Jude",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "verses": [
+      {
+        "number": 37,
+        "text": "For with God nothing shall be impossible."
+      },
+      {
+        "number": 76,
+        "text": "And thou, child, shalt be called the prophet of the Highest: for thou shalt go before the face of the Lord to prepare his ways;"
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "verses": [
+      {
+        "number": 10,
+        "text": "And the angel said unto them, Fear not: for, behold, I bring you good tidings of great joy, which shall be to all people."
+      },
+      {
+        "number": 49,
+        "text": "And he said unto them, How is it that ye sought me? wist ye not that I must be about my Father's business?"
+      },
+      {
+        "number": 52,
+        "text": "And Jesus increased in wisdom and stature, and in favour with God and man."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "verses": [
+      {
+        "number": 16,
+        "text": "John answered, saying unto them all, I indeed baptize you with water; but one mightier than I cometh... he shall baptize you with the Holy Ghost and with fire:"
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "verses": [
+      {
+        "number": 4,
+        "text": "And Jesus answered him, saying, It is written, That man shall not live by bread alone, but by every word of God."
+      },
+      {
+        "number": 18,
+        "text": "The Spirit of the Lord is upon me, because he hath anointed me to preach the gospel to the poor;"
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "verses": [
+      {
+        "number": 32,
+        "text": "I came not to call the righteous, but sinners to repentance."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "verses": [
+      {
+        "number": 31,
+        "text": "And as ye would that men should do to you, do ye also to them likewise."
+      },
+      {
+        "number": 48,
+        "text": "He is like a man which built an house, and digged deep, and laid the foundation on a rock:"
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "verses": [
+      {
+        "number": 47,
+        "text": "Wherefore I say unto thee, Her sins, which are many, are forgiven; for she loved much: but to whom little is forgiven, the same loveth little."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "verses": [
+      {
+        "number": 15,
+        "text": "But that on the good ground are they, which in an honest and good heart, having heard the word, keep it, and bring forth fruit with patience."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "verses": [
+      {
+        "number": 23,
+        "text": "And he said to them all, If any man will come after me, let him deny himself, and take up his cross daily, and follow me."
+      },
+      {
+        "number": 62,
+        "text": "And Jesus said unto him, No man, having put his hand to the plough, and looking back, is fit for the kingdom of God."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "verses": [
+      {
+        "number": 27,
+        "text": "He answering said, Thou shalt love the Lord thy God with all thy heart... and thy neighbour as thyself."
+      },
+      {
+        "number": 42,
+        "text": "But one thing is needful: and Mary hath chosen that good part, which shall not be taken away from her."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "verses": [
+      {
+        "number": 9,
+        "text": "And I say unto you, Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "verses": [
+      {
+        "number": 31,
+        "text": "But rather seek ye the kingdom of God; and all these things shall be added unto you."
+      },
+      {
+        "number": 48,
+        "text": "For unto whomsoever much is given, of him shall be much required:"
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "verses": [
+      {
+        "number": 34,
+        "text": "O Jerusalem, Jerusalem... how often would I have gathered thy children together, as a hen doth gather her brood under her wings, and ye would not!"
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "verses": [
+      {
+        "number": 11,
+        "text": "For whosoever exalteth himself shall be abased; and he that humbleth himself shall be exalted."
+      },
+      {
+        "number": 27,
+        "text": "And whosoever doth not bear his cross, and come after me, cannot be my disciple."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "verses": [
+      {
+        "number": 7,
+        "text": "I say unto you, that likewise joy shall be in heaven over one sinner that repenteth, more than over ninety and nine just persons, which need no repentance."
+      },
+      {
+        "number": 24,
+        "text": "For this my son was dead, and is alive again; he was lost, and is found. And they began to be merry."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "verses": [
+      {
+        "number": 13,
+        "text": "No servant can serve two masters: for either he will hate the one, and love the other... Ye cannot serve God and mammon."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 17,
+    "verses": [
+      {
+        "number": 21,
+        "text": "Neither shall they say, Lo here! or, lo there! for, behold, the kingdom of God is within you."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "verses": [
+      {
+        "number": 1,
+        "text": "And he spake a parable unto them to this end, that men ought always to pray, and not to faint;"
+      },
+      {
+        "number": 27,
+        "text": "And he said, The things which are impossible with men are possible with God."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 19,
+    "verses": [
+      {
+        "number": 10,
+        "text": "For the Son of man is come to seek and to save that which was lost."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 20,
+    "verses": [
+      {
+        "number": 25,
+        "text": "And he said unto them, Render therefore unto Caesar the things which be Caesar's, and unto God the things which be God's."
+      },
+      {
+        "number": 38,
+        "text": "For he is not a God of the dead, but of the living: for all live unto him."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 21,
+    "verses": [
+      {
+        "number": 3,
+        "text": "And he said, Of a truth I say unto you, that this poor widow hath cast in more than they all:"
+      },
+      {
+        "number": 33,
+        "text": "Heaven and earth shall pass away: but my words shall not pass away."
+      },
+      {
+        "number": 36,
+        "text": "Watch ye therefore, and pray always, that ye may be accounted worthy to escape all these things..."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "verses": [
+      {
+        "number": 19,
+        "text": "And he took bread, and gave thanks, and brake it, and gave unto them, saying, This is my body which is given for you: this do in remembrance of me."
+      },
+      {
+        "number": 42,
+        "text": "Saying, Father, if thou be willing, remove this cup from me: nevertheless not my will, but thine, be done."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 23,
+    "verses": [
+      {
+        "number": 34,
+        "text": "Then said Jesus, Father, forgive them; for they know not what they do."
+      },
+      {
+        "number": 43,
+        "text": "And Jesus said unto him, Verily I say unto thee, To day shalt thou be with me in paradise."
+      },
+      {
+        "number": 46,
+        "text": "And when Jesus had cried with a loud voice, he said, Father, into thy hands I commend my spirit: and having said thus, he gave up the ghost."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 24,
+    "verses": [
+      {
+        "number": 32,
+        "text": "And they said one to another, Did not our heart burn within us, while he talked with us by the way, and while he opened to us the scriptures?"
+      },
+      {
+        "number": 39,
+        "text": "Behold my hands and my feet, that it is I myself: handle me, and see; for a spirit hath not flesh and bones, as ye see me have."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "verses": [
+      {
+        "number": 11,
+        "text": "And there came a voice from heaven, saying, Thou art my beloved Son, in whom I am well pleased."
+      },
+      {
+        "number": 17,
+        "text": "And Jesus said unto them, Come ye after me, and I will make you to become fishers of men."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "verses": [
+      {
+        "number": 10,
+        "text": "But that ye may know that the Son of man hath power on earth to forgive sins..."
+      },
+      {
+        "number": 27,
+        "text": "And he said unto them, The sabbath was made for man, and not man for the sabbath:"
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "verses": [
+      {
+        "number": 24,
+        "text": "And if a kingdom be divided against itself, that kingdom cannot stand."
+      },
+      {
+        "number": 35,
+        "text": "For whosoever shall do the will of God, the same is my brother, and my sister, and mother."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "verses": [
+      {
+        "number": 20,
+        "text": "And these are they which are sown on good ground; such as hear the word, and receive it, and bring forth fruit..."
+      },
+      {
+        "number": 39,
+        "text": "And he arose, and rebuked the wind, and said unto the sea, Peace, be still."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "verses": [
+      {
+        "number": 34,
+        "text": "And he said unto her, Daughter, thy faith hath made thee whole; go in peace, and be whole of thy plague."
+      },
+      {
+        "number": 36,
+        "text": "As soon as Jesus heard the word that was spoken, he saith unto the ruler of the synagogue, Be not afraid, only believe."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "verses": [
+      {
+        "number": 4,
+        "text": "But Jesus said unto them, A prophet is not without honour, but in his own country, and among his own kin, and in his own house."
+      },
+      {
+        "number": 50,
+        "text": "Be of good cheer: it is I; be not afraid."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "verses": [
+      {
+        "number": 7,
+        "text": "Howbeit in vain do they worship me, teaching for doctrines the commandments of men."
+      },
+      {
+        "number": 21,
+        "text": "For from within, out of the heart of men, proceed evil thoughts..."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "verses": [
+      {
+        "number": 34,
+        "text": "Whosoever will come after me, let him deny himself, and take up his cross, and follow me."
+      },
+      {
+        "number": 36,
+        "text": "For what shall it profit a man, if he shall gain the whole world, and lose his own soul?"
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "verses": [
+      {
+        "number": 7,
+        "text": "And there was a cloud that overshadowed them: and a voice came out of the cloud, saying, This is my beloved Son: hear him."
+      },
+      {
+        "number": 24,
+        "text": "And straightway the father of the child cried out, and said with tears, Lord, I believe; help thou mine unbelief."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "verses": [
+      {
+        "number": 9,
+        "text": "What therefore God hath joined together, let not man put asunder."
+      },
+      {
+        "number": 15,
+        "text": "Verily I say unto you, Whosoever shall not receive the kingdom of God as a little child, he shall not enter therein."
+      },
+      {
+        "number": 45,
+        "text": "For even the Son of man came not to be ministered unto, but to minister, and to give his life a ransom for many."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "verses": [
+      {
+        "number": 24,
+        "text": "Therefore I say unto you, What things soever ye desire, when ye pray, believe that ye receive them, and ye shall have them."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "verses": [
+      {
+        "number": 17,
+        "text": "And Jesus answering said unto them, Render to Caesar the things that are Caesar's, and to God the things that are God's."
+      },
+      {
+        "number": 30,
+        "text": "And thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind, and with all thy strength..."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "verses": [
+      {
+        "number": 13,
+        "text": "And ye shall be hated of all men for my name's sake: but he that shall endure unto the end, the same shall be saved."
+      },
+      {
+        "number": 31,
+        "text": "Heaven and earth shall pass away: but my words shall not pass away."
+      },
+      {
+        "number": 37,
+        "text": "And what I say unto you I say unto all, Watch."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "verses": [
+      {
+        "number": 22,
+        "text": "And as they did eat, Jesus took bread, and blessed, and brake it, and gave to them, and said, Take, eat: this is my body."
+      },
+      {
+        "number": 36,
+        "text": "And he said, Abba, Father, all things are possible unto thee; take away this cup from me: nevertheless not what I will, but what thou wilt."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "verses": [
+      {
+        "number": 39,
+        "text": "And when the centurion, which stood over against him, saw that he so cried out, and gave up the ghost, he said, Truly this man was the Son of God."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "verses": [
+      {
+        "number": 6,
+        "text": "And he saith unto them, Be not affrighted: Ye seek Jesus of Nazareth, which was crucified: he is risen; he is not here..."
+      },
+      {
+        "number": 16,
+        "text": "He that believeth and is baptized shall be saved; but he that believeth not shall be damned."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
   }
 ]

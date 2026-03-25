@@ -2943,5 +2943,327 @@
     "bookName": "Jude",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "references": [
+      {
+        "book": "Doctrine and Covenants",
+        "chapter": 84,
+        "verse": "27-28",
+        "justification": "Explains the preparatory nature of the Aaronic Priesthood which John the Baptist was sent to restore."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "references": [
+      {
+        "book": "Joseph Smith Translation, Luke",
+        "chapter": 2,
+        "verse": "46",
+        "justification": "Clarifies that Jesus was not just listening to the doctors but that they were hearing and asking Him questions."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "references": [
+      {
+        "book": "Moses",
+        "chapter": 6,
+        "verse": "52",
+        "justification": "Parallels John's teaching on the necessity of baptism by water and the Spirit."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "references": [
+      {
+        "book": "Isaiah",
+        "chapter": 61,
+        "verse": "1-2",
+        "justification": "The messianic prophecy that Jesus explicitly quotes and claims to fulfill in Nazareth."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "references": [
+      {
+        "book": "3 Nephi",
+        "chapter": 12,
+        "verse": "1-48",
+        "justification": "The resurrected Savior gives a similar sermon at the temple in Bountiful."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "references": [
+      {
+        "book": "Alma",
+        "chapter": 34,
+        "verse": "15",
+        "justification": "Amulek teaches how mercy can satisfy the demands of justice, illustrated in the forgiveness of the woman."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "references": [
+      {
+        "book": "Doctrine and Covenants",
+        "chapter": 63,
+        "verse": "20-21",
+        "justification": "Reveals that the earth will be transfigured like the Savior was on the mount."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "references": [
+      {
+        "book": "Doctrine and Covenants",
+        "chapter": 107,
+        "verse": "25",
+        "justification": "Defines the office of the Seventy in the modern church, patterned after the mission in Luke 10."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "references": [
+      {
+        "book": "3 Nephi",
+        "chapter": 10,
+        "verse": "4-6",
+        "justification": "The Lord uses the same imagery of a hen gathering her chickens when speaking to the Nephites."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "references": [
+      {
+        "book": "Doctrine and Covenants",
+        "chapter": 18,
+        "verse": "13",
+        "justification": "Confirms that the Lord's joy is great in the soul that repenteth."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "references": [
+      {
+        "book": "2 Nephi",
+        "chapter": 32,
+        "verse": "8-9",
+        "justification": "Nephi exhorts us to pray always and not faint, echoing the Savior's parable."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 20,
+    "references": [
+      {
+        "book": "Doctrine and Covenants",
+        "chapter": 132,
+        "verse": "15-16",
+        "justification": "Clarifies the Savior's teaching on marriage in the resurrection."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 21,
+    "references": [
+      {
+        "book": "Joseph Smith—Matthew",
+        "chapter": 1,
+        "verse": "1-55",
+        "justification": "Joseph Smith's inspired revision of the parallel prophecy in Matthew provides extensive detail on the signs of the times."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "references": [
+      {
+        "book": "Doctrine and Covenants",
+        "chapter": 19,
+        "verse": "16-19",
+        "justification": "The Savior's personal description of the suffering in Gethsemane which Luke records as drops of blood."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 23,
+    "references": [
+      {
+        "book": "Alma",
+        "chapter": 7,
+        "verse": "11-13",
+        "justification": "Alma prophesies of the specific physical and spiritual pains the Savior would take upon Himself."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 24,
+    "references": [
+      {
+        "book": "3 Nephi",
+        "chapter": 11,
+        "verse": "14-15",
+        "justification": "Parallels the witness of the resurrected body where disciples felt the wounds in His hands and feet."
+      }
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "references": [
+      {
+        "book": "Isaiah",
+        "chapter": 40,
+        "verse": "3",
+        "justification": "Mark explicitly identifies John the Baptist as the fulfillment of this prophecy."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "references": [
+      {
+        "book": "Doctrine and Covenants",
+        "chapter": 42,
+        "verse": "44",
+        "justification": "The practice of anointing the sick with oil is confirmed in modern revelation."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "references": [
+      {
+        "book": "Doctrine and Covenants",
+        "chapter": 63,
+        "verse": "21",
+        "justification": "Modern revelation confirms the Transfiguration and explains its significance."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "references": [
+      {
+        "book": "Doctrine and Covenants",
+        "chapter": 132,
+        "verse": "19",
+        "justification": "Expands on the teaching that marriage joined by God is intended to endure beyond mortality."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "references": [
+      {
+        "book": "Joseph Smith—Matthew",
+        "chapter": 1,
+        "verse": "1-55",
+        "justification": "Joseph Smith's inspired revision provides extensive detail on the signs of the times."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "references": [
+      {
+        "book": "Doctrine and Covenants",
+        "chapter": 19,
+        "verse": "16-19",
+        "justification": "The Savior's personal description of the suffering in Gethsemane."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "references": [
+      {
+        "book": "Mormon",
+        "chapter": 9,
+        "verse": "22-24",
+        "justification": "Moroni records the same instructions and promises regarding the signs that follow those who believe."
+      }
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
   }
 ]

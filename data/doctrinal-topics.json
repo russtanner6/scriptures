@@ -6739,5 +6739,472 @@
     "bookName": "Jude",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "topics": [
+      "Priesthood",
+      "Revelation",
+      "Christ's Divinity",
+      "Prophecy"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "topics": [
+      "Atonement",
+      "Messiah",
+      "Spiritual Growth",
+      "Ordinances"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "topics": [
+      "Baptism",
+      "Repentance",
+      "Lineage",
+      "Accountability"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "topics": [
+      "Agency",
+      "Mission of Christ",
+      "Priesthood Power",
+      "Temptation"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "topics": [
+      "Forgiveness",
+      "Faith",
+      "Discipleship",
+      "Healing"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "topics": [
+      "Apostleship",
+      "Charity",
+      "Judgment",
+      "Sabbath"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "topics": [
+      "Faith",
+      "Resurrection",
+      "Mercy",
+      "Forgiveness"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "topics": [
+      "Word of God",
+      "Faith",
+      "Resurrection",
+      "Priesthood Power"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "topics": [
+      "Priesthood Keys",
+      "Sacrifice",
+      "Discipleship",
+      "Transfiguration"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "topics": [
+      "Priesthood Offices",
+      "Charity",
+      "Service",
+      "Missionary Work"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "topics": [
+      "Prayer",
+      "Holy Ghost",
+      "Integrity",
+      "Opposition"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "topics": [
+      "Stewardship",
+      "Second Coming",
+      "Faith",
+      "Watchfulness"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "topics": [
+      "Repentance",
+      "Gathering of Israel",
+      "Sabbath",
+      "Mercy"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "topics": [
+      "Humility",
+      "Sacrifice",
+      "Covenants",
+      "Discipleship"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "topics": [
+      "Repentance",
+      "Plan of Redemption",
+      "Charity",
+      "Mercy"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "topics": [
+      "Stewardship",
+      "Spirit World",
+      "Accountability",
+      "Eternity"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 17,
+    "topics": [
+      "Faith",
+      "Gratitude",
+      "Signs of the Times",
+      "Forgiveness"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "topics": [
+      "Prayer",
+      "Celestial Kingdom",
+      "Healing",
+      "Faith"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 19,
+    "topics": [
+      "Stewardship",
+      "Redemption",
+      "Temple",
+      "Kingship"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 20,
+    "topics": [
+      "Priesthood Authority",
+      "Resurrection",
+      "Celestial Marriage",
+      "Judgment"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 21,
+    "topics": [
+      "Second Coming",
+      "Signs of the Times",
+      "Sacrifice",
+      "Watchfulness"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 22,
+    "topics": [
+      "Sacrament",
+      "Infinite Atonement",
+      "Discipleship",
+      "Priesthood Power"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 23,
+    "topics": [
+      "Sacrifice of Christ",
+      "Spirit World",
+      "Forgiveness",
+      "Atonement"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 24,
+    "topics": [
+      "Resurrection",
+      "Physical Bodies",
+      "Mission of Christ",
+      "Holy Ghost"
+    ],
+    "bookName": "Luke",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "topics": [
+      "Baptism",
+      "Authority",
+      "Mission of Christ"
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "topics": [
+      "Forgiveness",
+      "Sabbath",
+      "Discipleship"
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "topics": [
+      "Apostleship",
+      "Unpardonable Sin",
+      "Family Relations"
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "topics": [
+      "Revelation",
+      "Faith",
+      "Word of God"
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "topics": [
+      "Resurrection",
+      "Priesthood Power",
+      "Healing"
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "topics": [
+      "Priesthood Administration",
+      "Miracles",
+      "Rejection"
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "topics": [
+      "Integrity",
+      "Tradition",
+      "Agency"
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "topics": [
+      "Atonement",
+      "Spiritual Rebirth",
+      "Discipleship"
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "topics": [
+      "Transfiguration",
+      "Priesthood Keys",
+      "Humility"
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "topics": [
+      "Celestial Marriage",
+      "Celestial Kingdom",
+      "Riches",
+      "Service"
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "topics": [
+      "Faith",
+      "Prayer",
+      "Temple Ordinances"
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "topics": [
+      "Resurrection",
+      "Godhead",
+      "Charity",
+      "Stewardship"
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "topics": [
+      "Second Coming",
+      "Signs of the Times",
+      "Watchfulness"
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "topics": [
+      "Sacrament",
+      "Infinite Atonement",
+      "Gethsemane"
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "topics": [
+      "Atonement",
+      "Crucifixion",
+      "Justice",
+      "Mercy"
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "topics": [
+      "Resurrection",
+      "Great Commission",
+      "Gifts of the Spirit"
+    ],
+    "bookName": "Mark",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
   }
 ]
