@@ -3158,5 +3158,117 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 97
+  },
+  {
+    "book": "Tobit",
+    "chapter": 1,
+    "summary": "Tobit, a righteous man of the tribe of Naphtali, recounts his faithfulness in Israel and his subsequent captivity in Nineveh, where he continues to perform acts of charity and almsgiving.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 2,
+    "summary": "Tobit buries a murdered Jew on the feast of Pentecost, but afterward becomes blind due to bird droppings while sleeping; he endures his wife Anna's mocking regarding his righteousness.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 3,
+    "summary": "Grieved by his blindness, Tobit prays for death; simultaneously, in Media, Sarah daughter of Raguel also prays for death because she is falsely accused of murdering seven husbands killed by the demon Asmodeus.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 4,
+    "summary": "Believing he will die, Tobit gives extensive ethical instructions to his son Tobias, emphasizing the spiritual importance of almsgiving and moral purity.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 5,
+    "summary": "Tobias seeks a guide for his journey to Rages; the angel Raphael appears in the likeness of a man named Azarias and is hired to lead Tobias to the money Tobit left in trust.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 6,
+    "summary": "During the journey, Tobias catches a large fish; Raphael instructs him to keep the heart, liver, and gall for medicinal and exorcism purposes, and tells him he must marry Sarah.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 7,
+    "summary": "Tobias and Raphael arrive at Raguel's home; Tobias identifies himself and asks for Sarah's hand in marriage, which Raguel grants with both joy and apprehension.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 8,
+    "summary": "On the wedding night, Tobias uses the fish's liver and heart to drive away the demon Asmodeus; he and Sarah pray together, and Raguel praises God for their safety.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 9,
+    "summary": "Raphael travels to Rages to collect the money from Gabael and brings him back to attend the wedding festivities at Raguel's house.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 10,
+    "summary": "Tobit and Anna grow increasingly anxious as the time for Tobias's return passes; despite Raguel's pleas to stay, Tobias insists on returning to his parents.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 11,
+    "summary": "Tobias returns home and uses the fish gall to restore his father's sight; Tobit rejoices and welcomes his daughter-in-law Sarah to Nineveh.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 12,
+    "summary": "When Tobit and Tobias offer to pay their guide, Raphael reveals his identity as one of the seven holy angels who present the prayers of the saints before God.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 13,
+    "summary": "Tobit writes a prayer of rejoicing, prophesying the scattering and gathering of Israel and the future rebuilding of Jerusalem in gold and precious stones.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 14,
+    "summary": "Tobit lives to an old age and, before dying, counsels his family to flee Nineveh for Media, prophesying the fulfillment of Jonah's warnings and the eventual restoration of the temple.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
   }
 ]

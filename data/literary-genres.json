@@ -3415,5 +3415,131 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 97
+  },
+  {
+    "book": "Tobit",
+    "chapter": 1,
+    "genre": "wisdom narrative",
+    "subgenre": "diaspora tale",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 2,
+    "genre": "didactic narrative",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 3,
+    "genre": "lament",
+    "subgenre": "prayer",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 4,
+    "genre": "wisdom literature",
+    "subgenre": "paternal testament",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 5,
+    "genre": "adventure",
+    "subgenre": "folktale",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 6,
+    "genre": "instructional narrative",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 7,
+    "genre": "social narrative",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 8,
+    "genre": "exorcism tale",
+    "subgenre": "liturgical poetry",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 9,
+    "genre": "prose narrative",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 10,
+    "genre": "domestic drama",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 11,
+    "genre": "healing narrative",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 12,
+    "genre": "angelic epiphany",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 13,
+    "genre": "hymn of praise",
+    "subgenre": "prophetic poetry",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 14,
+    "genre": "paternal testament",
+    "subgenre": "prophecy",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
   }
 ]

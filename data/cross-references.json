@@ -1901,5 +1901,49 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 97
+  },
+  {
+    "book": "Tobit",
+    "chapter": 4,
+    "verse": 7,
+    "crossReference": "Mosiah 4:16-26",
+    "type": "parallel",
+    "note": "Strong parallels in the doctrinal emphasis on almsgiving and caring for the poor as a spiritual necessity.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 8,
+    "verse": 5,
+    "crossReference": "D&C 42:22",
+    "type": "parallel",
+    "note": "Parallels regarding the sanctity and purpose of the marriage relationship.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 12,
+    "verse": 15,
+    "crossReference": "Revelation 8:3-4",
+    "type": "parallel",
+    "note": "Common imagery of angels presenting the prayers of the saints before the throne of God.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 13,
+    "verse": 16,
+    "crossReference": "Revelation 21:18-21",
+    "type": "parallel",
+    "note": "Descriptions of the New Jerusalem built with gold and precious stones.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
   }
 ]

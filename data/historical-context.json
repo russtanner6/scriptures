@@ -3948,5 +3948,145 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 97
+  },
+  {
+    "book": "Tobit",
+    "chapter": 1,
+    "era": "Exile",
+    "approxDate": "c. 8th-6th Century B.C.",
+    "setting": "Reflects the Assyrian deportation of the Northern Kingdom (Naphtali) in the 8th Century BC.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 2,
+    "era": "Exile",
+    "approxDate": "c. 8th-6th Century B.C.",
+    "setting": "Illustrates the dangers and ritual requirements for Jews living under Sennacherib and Esarhaddon.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 3,
+    "era": "Exile",
+    "approxDate": "c. 8th-6th Century B.C.",
+    "setting": "Provides a window into Jewish life in Media (Ecbatana) during the Diaspora.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 4,
+    "era": "Exile",
+    "approxDate": "c. 8th-6th Century B.C.",
+    "setting": "Reflects the sapiential (wisdom) traditions common in Second Temple Jewish literature.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 5,
+    "era": "Exile",
+    "approxDate": "c. 8th-6th Century B.C.",
+    "setting": "Shows the geography of the ancient Near East and the role of professional guides in travel.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 6,
+    "era": "Exile",
+    "approxDate": "c. 8th-6th Century B.C.",
+    "setting": "Reflects folk-medicine and beliefs about the spiritual properties of natural objects in antiquity.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 7,
+    "era": "Exile",
+    "approxDate": "c. 8th-6th Century B.C.",
+    "setting": "Documents ancient Jewish marriage customs and the importance of tribal endogamy.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 8,
+    "era": "Exile",
+    "approxDate": "c. 8th-6th Century B.C.",
+    "setting": "Combines ritual exorcism with liturgical prayer in a domestic setting.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 9,
+    "era": "Exile",
+    "approxDate": "c. 8th-6th Century B.C.",
+    "setting": "Highlights the importance of social and financial trust (suretyship) within the Diaspora community.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 10,
+    "era": "Exile",
+    "approxDate": "c. 8th-6th Century B.C.",
+    "setting": "Portrays the emotional life of Jewish parents in the Diaspora and the duty of children to return.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 11,
+    "era": "Exile",
+    "approxDate": "c. 8th-6th Century B.C.",
+    "setting": "The restoration of sight as a sign of divine favor, a common motif in scripture.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 12,
+    "era": "Exile",
+    "approxDate": "c. 8th-6th Century B.C.",
+    "setting": "Develops the angelology of the Second Temple period, specifically the role of intercessory angels.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 13,
+    "era": "Exile",
+    "approxDate": "c. 8th-6th Century B.C.",
+    "setting": "Shares the exilic hope for the gathering of Israel and the beautification of the Temple.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
+  },
+  {
+    "book": "Tobit",
+    "chapter": 14,
+    "era": "Exile",
+    "approxDate": "c. 8th-6th Century B.C.",
+    "setting": "Anticipates the fall of Nineveh (612 BC) and the subsequent Persian period restoration.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 90
   }
 ]

@@ -20156,5 +20156,104 @@
     "tier": 4,
     "family": {},
     "portrait": null
+  },
+  {
+    "id": "tobit",
+    "name": "Tobit",
+    "bio": "A righteous man of the tribe of Naphtali, living in captivity in Nineveh, known for his almsgiving and burial of the dead.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 3,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "anna-tobit",
+    "name": "Anna",
+    "bio": "The wife of Tobit and mother of Tobias.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "tobias",
+    "name": "Tobias",
+    "bio": "The son of Tobit and Anna, who undergoes a journey to Media guided by the angel Raphael.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 3,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "sarah-raguel",
+    "name": "Sarah",
+    "bio": "The daughter of Raguel in Media, afflicted by a demon but later healed and married to Tobias.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "raguel",
+    "name": "Raguel",
+    "bio": "A kinsman of Tobit living in Ecbatana, the father of Sarah.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "asmodeus",
+    "name": "Asmodeus",
+    "bio": "An evil spirit or demon who killed Sarah's seven husbands and was later banished by Tobias.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "angel-raphael",
+    "name": "Angel Raphael",
+    "bio": "One of the seven holy angels who presents the prayers of the saints; he disguised himself as Azarias to guide Tobias.",
+    "aliases": [
+      "Azarias",
+      "Raphael"
+    ],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 3,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "edna",
+    "name": "Edna",
+    "bio": "The wife of Raguel and mother of Sarah.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
   }
 ]
