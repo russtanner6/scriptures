@@ -4778,5 +4778,15 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 47
+  },
+  {
+    "book": "2 John",
+    "chapter": 1,
+    "era": "Apostolic",
+    "approxDate": "c. AD 90-95",
+    "setting": "Written by John, likely from Ephesus, to the elect lady to strengthen them against growing gnostic-style heresies.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 63
   }
 ]

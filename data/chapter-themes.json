@@ -5907,5 +5907,20 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 47
+  },
+  {
+    "book": "2 John",
+    "chapter": 1,
+    "themes": [
+      "truth",
+      "love",
+      "commandments",
+      "apostasy",
+      "antichrist",
+      "doctrine of Christ"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 63
   }
 ]

@@ -6212,5 +6212,18 @@
     "contrition": 5,
     "dominant": "admonition",
     "rationale": "The final chapter urges self-examination and perfection, concluding with a prayer for the communion of the Holy Ghost."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "2 John",
+    "bookId": 63,
+    "chapter": 1,
+    "exaltation": 7,
+    "peace": 8,
+    "admonition": 6,
+    "contrition": 2,
+    "dominant": "peace",
+    "rationale": "John expresses great joy in the Saints' faithfulness and emphasizes the comfort found in love and truth, while providing a protective warning against deceivers."
   }
 ]

@@ -5596,5 +5596,19 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 47
+  },
+  {
+    "book": "2 John",
+    "chapter": 1,
+    "topics": [
+      "love",
+      "commandments",
+      "apostasy",
+      "atonement",
+      "godhead"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 63
   }
 ]

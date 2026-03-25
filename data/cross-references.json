@@ -2418,5 +2418,38 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 47
+  },
+  {
+    "book": "2 John",
+    "chapter": 1,
+    "verse": 6,
+    "crossReference": "John 14:15",
+    "type": "parallel",
+    "note": "Both passages define love for God as the keeping of His commandments.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 63
+  },
+  {
+    "book": "2 John",
+    "chapter": 1,
+    "verse": 7,
+    "crossReference": "1 John 4:2-3",
+    "type": "parallel",
+    "note": "John provides the same criteria for discerning the spirit of antichrist: the denial of Christ's physical manifestation.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 63
+  },
+  {
+    "book": "2 John",
+    "chapter": 1,
+    "verse": 9,
+    "crossReference": "2 Nephi 31:21",
+    "type": "parallel",
+    "note": "Both texts emphasize the necessity of following the doctrine of Christ to attain salvation.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 63
   }
 ]

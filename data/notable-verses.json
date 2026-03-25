@@ -6566,5 +6566,29 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 47
+  },
+  {
+    "book": "2 John",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 4,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 6,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 9,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 63
   }
 ]

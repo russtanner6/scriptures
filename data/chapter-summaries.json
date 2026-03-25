@@ -3822,5 +3822,13 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 47
+  },
+  {
+    "book": "2 John",
+    "chapter": 1,
+    "summary": "John rejoices that the elect lady and her children are walking in truth, exhorts them to love one another, and warns against deceivers who deny that Jesus Christ came in the flesh.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 63
   }
 ]
