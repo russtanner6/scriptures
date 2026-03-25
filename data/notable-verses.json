@@ -6270,5 +6270,94 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 52
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 15,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 5,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 16,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 12,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 8,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 10,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 12,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
   }
 ]

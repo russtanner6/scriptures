@@ -5965,5 +5965,83 @@
     "contrition": 3,
     "dominant": "peace",
     "rationale": "Paul provides encouraging exhortations to prepare for the Lord's return with vigilance, prayer, and gratitude."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 Timothy",
+    "bookId": 54,
+    "chapter": 1,
+    "exaltation": 8,
+    "peace": 7,
+    "admonition": 5,
+    "contrition": 6,
+    "dominant": "exaltation",
+    "rationale": "Paul expresses deep gratitude and exaltation for Christ's mercy in calling him, while also providing necessary admonition against false doctrines and fables."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 Timothy",
+    "bookId": 54,
+    "chapter": 2,
+    "exaltation": 6,
+    "peace": 9,
+    "admonition": 4,
+    "contrition": 3,
+    "dominant": "peace",
+    "rationale": "The chapter focuses on the peaceable life found through prayer for all men and the comfort of Christ as the mediator between God and man."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 Timothy",
+    "bookId": 54,
+    "chapter": 3,
+    "exaltation": 7,
+    "peace": 8,
+    "admonition": 3,
+    "contrition": 2,
+    "dominant": "peace",
+    "rationale": "Paul outlines the orderly requirements for priesthood leadership, culminating in an exaltation of the mystery of godliness and Christ's manifestation."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 Timothy",
+    "bookId": 54,
+    "chapter": 4,
+    "exaltation": 5,
+    "peace": 7,
+    "admonition": 9,
+    "contrition": 3,
+    "dominant": "admonition",
+    "rationale": "A strong warning against latter-day apostasy is balanced with encouraging counsel for Timothy to be an example of the believers."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 Timothy",
+    "bookId": 54,
+    "chapter": 5,
+    "exaltation": 4,
+    "peace": 8,
+    "admonition": 6,
+    "contrition": 4,
+    "dominant": "peace",
+    "rationale": "Provides compassionate and practical instructions for the care of widows and the proper respect for elders within the church community."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 Timothy",
+    "bookId": 54,
+    "chapter": 6,
+    "exaltation": 6,
+    "peace": 7,
+    "admonition": 9,
+    "contrition": 4,
+    "dominant": "admonition",
+    "rationale": "Paul delivers sharp admonitions against materialism and the love of money, urging Timothy to fight the good fight of faith."
   }
 ]

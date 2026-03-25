@@ -2297,5 +2297,49 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 52
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 2,
+    "verse": 5,
+    "crossReference": "D&C 76:69",
+    "type": "parallel",
+    "note": "Both passages identify Jesus as the mediator of the new covenant.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 4,
+    "verse": 1,
+    "crossReference": "D&C 1:15",
+    "type": "parallel",
+    "note": "Both references describe the conditions of apostasy in the latter days.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 4,
+    "verse": 12,
+    "crossReference": "Moroni 7:45",
+    "type": "parallel",
+    "note": "Attributes of a believer—charity, faith, and purity—are reinforced.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "verse": 10,
+    "crossReference": "Jacob 2:18",
+    "type": "contrast",
+    "note": "Paul warns of the love of money, while Jacob provides the proper perspective on seeking riches for the intent to do good.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
   }
 ]

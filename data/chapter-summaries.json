@@ -3670,5 +3670,53 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 52
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 1,
+    "summary": "Paul instructs Timothy to oppose false teachings and fables, emphasizing that the purpose of the commandment is charity, and recounts his own conversion as a witness of Christ's mercy.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 2,
+    "summary": "Paul exhorts the Saints to pray for all people and leaders, teaching that Christ is the sole mediator between God and men, and provides instructions on modest apparel and worship.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 3,
+    "summary": "Paul details the strict qualifications for the offices of bishop and deacon, emphasizing their need to be blameless, and describes the church as the pillar and ground of the truth.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 4,
+    "summary": "Paul warns of a coming apostasy where many will depart from the faith and encourages Timothy to nourish himself in the word and be a righteous example of the believers.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 5,
+    "summary": "Paul provides guidelines for church discipline and social welfare, specifically regarding the support of widows and the sustaining of elders who rule well.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "summary": "Paul warns against the spiritual dangers of greed and materialism, stating that the love of money is the root of all evil, and charges Timothy to fight the good fight of faith.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
   }
 ]

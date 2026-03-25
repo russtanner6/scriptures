@@ -3991,5 +3991,59 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 52
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 1,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 2,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 3,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 4,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 5,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
   }
 ]

@@ -4588,5 +4588,65 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 52
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 1,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-65",
+    "setting": "Paul writing to Timothy who is overseeing the church in Ephesus.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 2,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-65",
+    "setting": "Guidance on communal prayer and conduct within the early Christian assemblies.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 3,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-65",
+    "setting": "Establishment of formal qualifications for local church officers (Bishops and Deacons).",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 4,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-65",
+    "setting": "A warning against early gnostic-like tendencies regarding asceticism.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 5,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-65",
+    "setting": "Refinement of the church's internal welfare system and protocols for elders.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-65",
+    "setting": "Counsel for Christians navigating social structures and wealth in the Roman Empire.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
   }
 ]

@@ -20255,5 +20255,17 @@
     "tier": 4,
     "family": {},
     "portrait": null
+  },
+  {
+    "id": "alexander-blasphemer",
+    "name": "Alexander",
+    "bio": "Mentioned alongside Hymenaeus for making shipwreck of his faith and being delivered unto Satan.",
+    "aliases": [],
+    "volumes": [
+      "NT"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
   }
 ]

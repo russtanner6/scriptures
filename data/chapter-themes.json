@@ -5654,5 +5654,89 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 52
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 1,
+    "themes": [
+      "mercy",
+      "pure heart",
+      "sound doctrine",
+      "grace",
+      "conversion"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 2,
+    "themes": [
+      "prayer",
+      "mediator",
+      "modesty",
+      "submission",
+      "salvation"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 3,
+    "themes": [
+      "bishopric",
+      "deacons",
+      "priesthood",
+      "mystery of godliness",
+      "leadership"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 4,
+    "themes": [
+      "apostasy",
+      "example",
+      "scripture study",
+      "spiritual gifts",
+      "doctrine"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 5,
+    "themes": [
+      "widows",
+      "elders",
+      "family responsibility",
+      "compassion",
+      "justice"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "themes": [
+      "contentment",
+      "greed",
+      "materialism",
+      "faith",
+      "eternal life"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 54
   }
 ]
