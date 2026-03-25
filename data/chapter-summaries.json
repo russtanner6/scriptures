@@ -3630,5 +3630,45 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 60
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "summary": "Paul praises the Thessalonian Saints for their work of faith and labor of love, noting how their conversion from idols has become a known example to believers throughout the region.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 2,
+    "summary": "Paul describes his sincere and gentle missionary service among the Thessalonians, comparing his care for them to that of a nursing mother, and rejoices in their steadfastness despite persecution.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 3,
+    "summary": "Paul explains that he sent Timothy to strengthen the church and expresses his great relief and comfort upon hearing that the Thessalonians remain firm in their faith and love.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "summary": "Paul exhorts the Saints to walk in holiness and abstain from immorality, while also providing doctrine and comfort concerning the resurrection and the return of Jesus Christ.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "summary": "Paul teaches the Saints to watch for the Lord's coming as a thief in the night and gives final instructions on prayer, gratitude, and respecting priesthood leadership.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
   }
 ]

@@ -2242,5 +2242,60 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 60
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "verse": 10,
+    "crossReference": "D&C 45:44",
+    "type": "parallel",
+    "note": "Both passages speak of the anticipation of the Savior's return from heaven.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "verse": 16,
+    "crossReference": "Matthew 24:31",
+    "type": "parallel",
+    "note": "Description of the Lord's descent with the sound of a trump to gather the elect.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "verse": 17,
+    "crossReference": "D&C 45:45",
+    "type": "parallel",
+    "note": "Prophecy of the Saints being caught up to meet the Lord at His coming.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verse": 2,
+    "crossReference": "2 Peter 3:10",
+    "type": "allusion",
+    "note": "The specific imagery of the day of the Lord coming as a thief in the night.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verse": 17,
+    "crossReference": "Alma 34:27",
+    "type": "parallel",
+    "note": "Both texts emphasize the necessity of praying without ceasing in all circumstances.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
   }
 ]

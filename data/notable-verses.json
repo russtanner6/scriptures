@@ -6197,5 +6197,78 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 60
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 10,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 2,
+    "verses": [],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 3,
+    "verses": [],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 3,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 16,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 17,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 18,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 22,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
   }
 ]

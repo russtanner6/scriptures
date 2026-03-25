@@ -4538,5 +4538,55 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 60
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "era": "Apostolic",
+    "approxDate": "c. AD 51",
+    "setting": "Written by Paul from Corinth to the Saints in Thessalonica.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 2,
+    "era": "Apostolic",
+    "approxDate": "c. AD 51",
+    "setting": "Written by Paul from Corinth to the Saints in Thessalonica.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 3,
+    "era": "Apostolic",
+    "approxDate": "c. AD 51",
+    "setting": "Written by Paul from Corinth to the Saints in Thessalonica.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "era": "Apostolic",
+    "approxDate": "c. AD 51",
+    "setting": "Written by Paul from Corinth to the Saints in Thessalonica.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "era": "Apostolic",
+    "approxDate": "c. AD 51",
+    "setting": "Written by Paul from Corinth to the Saints in Thessalonica.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
   }
 ]

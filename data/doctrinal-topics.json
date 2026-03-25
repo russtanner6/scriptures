@@ -5297,5 +5297,70 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 60
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "topics": [
+      "faith",
+      "missionary work",
+      "grace",
+      "election"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 2,
+    "topics": [
+      "missionary work",
+      "love",
+      "gospel",
+      "apostles"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 3,
+    "topics": [
+      "faith",
+      "charity",
+      "comfort",
+      "endurance"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "topics": [
+      "sanctification",
+      "chastity",
+      "resurrection",
+      "second coming"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "topics": [
+      "second coming",
+      "prayer",
+      "priesthood",
+      "holy ghost"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
   }
 ]

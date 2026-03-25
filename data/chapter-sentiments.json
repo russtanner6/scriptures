@@ -5900,5 +5900,70 @@
     "contrition": 4,
     "dominant": "peace",
     "rationale": "The concluding chapter offers comforting exhortations to elders and the youth to remain humble and vigilant under God's care."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 Thessalonians",
+    "bookId": 52,
+    "chapter": 1,
+    "exaltation": 7,
+    "peace": 9,
+    "admonition": 0,
+    "contrition": 2,
+    "dominant": "peace",
+    "rationale": "Paul expresses profound gratitude and joy for the Thessalonians' work of faith and their exemplary conversion to the gospel."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 Thessalonians",
+    "bookId": 52,
+    "chapter": 2,
+    "exaltation": 6,
+    "peace": 9,
+    "admonition": 2,
+    "contrition": 5,
+    "dominant": "peace",
+    "rationale": "Paul recounts his gentle and sacrificial service among the Saints, emphasizing the deep bond of love and his desire to see them."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 Thessalonians",
+    "bookId": 52,
+    "chapter": 3,
+    "exaltation": 6,
+    "peace": 9,
+    "admonition": 2,
+    "contrition": 4,
+    "dominant": "peace",
+    "rationale": "The chapter focuses on the comfort and joy Paul receives from Timothy's good report concerning the steadfast faith of the Thessalonians."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 Thessalonians",
+    "bookId": 52,
+    "chapter": 4,
+    "exaltation": 7,
+    "peace": 9,
+    "admonition": 5,
+    "contrition": 3,
+    "dominant": "peace",
+    "rationale": "While offering instructions on holiness, the chapter culminates in a comforting message regarding the hope of the resurrection."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 Thessalonians",
+    "bookId": 52,
+    "chapter": 5,
+    "exaltation": 7,
+    "peace": 8,
+    "admonition": 6,
+    "contrition": 3,
+    "dominant": "peace",
+    "rationale": "Paul provides encouraging exhortations to prepare for the Lord's return with vigilance, prayer, and gratitude."
   }
 ]

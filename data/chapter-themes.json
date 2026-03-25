@@ -5584,5 +5584,75 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 60
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "themes": [
+      "conversion",
+      "faith",
+      "example",
+      "missionary work",
+      "election"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 2,
+    "themes": [
+      "apostleship",
+      "love",
+      "persecution",
+      "gospel",
+      "sincerity"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 3,
+    "themes": [
+      "friendship",
+      "faith",
+      "steadfastness",
+      "comfort",
+      "charity"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "themes": [
+      "sanctification",
+      "chastity",
+      "resurrection",
+      "hope",
+      "second coming"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "themes": [
+      "second coming",
+      "prayer",
+      "gratitude",
+      "vigilance",
+      "church leadership"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 52
   }
 ]
