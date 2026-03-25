@@ -21,8 +21,6 @@ import { Line } from "react-chartjs-2";
 ChartJS.register(CategoryScale, LinearScale, LineElement, PointElement, Filler, Tooltip, Legend);
 ChartJS.defaults.color = "#9ca3af";
 
-type DrillLevel = "volumes" | "books" | "chapters" | "verses";
-
 interface VolumeSentiment {
   volumeId: number;
   volumeName: string;
@@ -57,93 +55,140 @@ interface VerseSentiment {
   text: string;
 }
 
+// Shared dropdown style
+const selectStyle: React.CSSProperties = {
+  padding: "8px 32px 8px 12px",
+  borderRadius: "8px",
+  border: "1px solid var(--border)",
+  background: "var(--surface)",
+  color: "var(--text)",
+  fontSize: "0.85rem",
+  fontFamily: "inherit",
+  fontWeight: 600,
+  cursor: "pointer",
+  appearance: "none",
+  backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E")`,
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "right 10px center",
+  minWidth: "140px",
+};
+
 export default function SentimentArcTool() {
   const { isVolumeVisible } = usePreferencesContext();
   const isMobile = useIsMobile();
 
-  // Data state
+  // Data
   const [volumeData, setVolumeData] = useState<VolumeSentiment[]>([]);
   const [bookData, setBookData] = useState<BookSentiment[]>([]);
   const [chapterData, setChapterData] = useState<ChapterSentiment[]>([]);
   const [verseData, setVerseData] = useState<VerseSentiment[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  // Drill-down state
-  const [drillLevel, setDrillLevel] = useState<DrillLevel>("volumes");
-  const [selectedVolume, setSelectedVolume] = useState<{ id: number; name: string; abbrev: string } | null>(null);
-  const [selectedBook, setSelectedBook] = useState<{ id: number; name: string } | null>(null);
-  const [selectedChapter, setSelectedChapter] = useState<number | null>(null);
+  // Selections
+  const [selectedVolumeIdx, setSelectedVolumeIdx] = useState<number>(0);
+  const [selectedBookIdx, setSelectedBookIdx] = useState<number>(-1); // -1 = not selected
+  const [selectedChapterIdx, setSelectedChapterIdx] = useState<number>(-1);
 
   // Category toggles
   const [activeCategories, setActiveCategories] = useState<Set<string>>(
     new Set(SENTIMENT_CATEGORIES.map((c) => c.id))
   );
 
-  // Load volume-level data on mount
+  // Current derived state
+  const selectedVolume = volumeData[selectedVolumeIdx] || null;
+  const selectedBook = selectedBookIdx >= 0 ? bookData[selectedBookIdx] : null;
+  const selectedChapter = selectedChapterIdx >= 0 ? chapterData[selectedChapterIdx] : null;
+
+  // What level of chart are we showing?
+  const chartLevel = selectedChapterIdx >= 0 ? "verses" : selectedBookIdx >= 0 ? "chapters" : "books";
+
+  // Load volumes on mount, then auto-load first volume's books
   useEffect(() => {
     setIsLoading(true);
     fetch("/api/sentiment?level=volumes")
       .then((r) => r.json())
       .then((data) => {
-        setVolumeData((data.volumes || []).filter((v: VolumeSentiment) => isVolumeVisible(v.volumeAbbrev)));
+        const vols = (data.volumes || []).filter((v: VolumeSentiment) => isVolumeVisible(v.volumeAbbrev));
+        setVolumeData(vols);
         setIsLoading(false);
+        // Auto-load first volume's books
+        if (vols.length > 0) {
+          loadBooks(vols[0].volumeId);
+        }
       })
       .catch(() => setIsLoading(false));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isVolumeVisible]);
 
-  // Drill into volume
-  const drillToVolume = useCallback(async (vol: VolumeSentiment) => {
-    setSelectedVolume({ id: vol.volumeId, name: vol.volumeName, abbrev: vol.volumeAbbrev });
-    setDrillLevel("books");
+  // Load books for a volume
+  const loadBooks = useCallback(async (volumeId: number) => {
     setIsLoading(true);
+    setBookData([]);
+    setChapterData([]);
+    setVerseData([]);
+    setSelectedBookIdx(-1);
+    setSelectedChapterIdx(-1);
     try {
-      const res = await fetch(`/api/sentiment?level=books&volumeId=${vol.volumeId}`);
+      const res = await fetch(`/api/sentiment?level=books&volumeId=${volumeId}`);
       const data = await res.json();
       setBookData(data.books || []);
     } catch { setBookData([]); }
     setIsLoading(false);
   }, []);
 
-  // Drill into book
-  const drillToBook = useCallback(async (book: BookSentiment) => {
-    setSelectedBook({ id: book.bookId, name: book.bookName });
-    setDrillLevel("chapters");
+  // Load chapters for a book
+  const loadChapters = useCallback(async (bookId: number) => {
     setIsLoading(true);
+    setChapterData([]);
+    setVerseData([]);
+    setSelectedChapterIdx(-1);
     try {
-      const res = await fetch(`/api/sentiment?level=chapters&bookId=${book.bookId}`);
+      const res = await fetch(`/api/sentiment?level=chapters&bookId=${bookId}`);
       const data = await res.json();
       setChapterData(data.chapters || []);
     } catch { setChapterData([]); }
     setIsLoading(false);
   }, []);
 
-  // Drill into chapter
-  const drillToChapter = useCallback(async (ch: ChapterSentiment) => {
-    setSelectedChapter(ch.chapter);
-    setDrillLevel("verses");
+  // Load verses for a chapter (no chart — just list)
+  const loadVerses = useCallback(async (bookId: number, chapter: number) => {
     setIsLoading(true);
     try {
-      const res = await fetch(`/api/sentiment?level=verses&bookId=${ch.bookId}&chapter=${ch.chapter}`);
+      const res = await fetch(`/api/sentiment?level=verses&bookId=${bookId}&chapter=${chapter}`);
       const data = await res.json();
       setVerseData(data.verses || []);
     } catch { setVerseData([]); }
     setIsLoading(false);
   }, []);
 
-  // Go back
-  const goBack = () => {
-    if (drillLevel === "verses") {
-      setDrillLevel("chapters");
-      setSelectedChapter(null);
-      setVerseData([]);
-    } else if (drillLevel === "chapters") {
-      setDrillLevel("books");
-      setSelectedBook(null);
+  // Volume changed
+  const handleVolumeChange = (idx: number) => {
+    setSelectedVolumeIdx(idx);
+    const vol = volumeData[idx];
+    if (vol) loadBooks(vol.volumeId);
+  };
+
+  // Book changed
+  const handleBookChange = (idx: number) => {
+    setSelectedBookIdx(idx);
+    if (idx >= 0) {
+      const book = bookData[idx];
+      if (book) loadChapters(book.bookId);
+    } else {
       setChapterData([]);
-    } else if (drillLevel === "books") {
-      setDrillLevel("volumes");
-      setSelectedVolume(null);
-      setBookData([]);
+      setVerseData([]);
+      setSelectedChapterIdx(-1);
+    }
+  };
+
+  // Chapter changed
+  const handleChapterChange = (idx: number) => {
+    setSelectedChapterIdx(idx);
+    if (idx >= 0 && selectedBook) {
+      const ch = chapterData[idx];
+      if (ch) loadVerses(ch.bookId, ch.chapter);
+    } else {
+      setVerseData([]);
     }
   };
 
@@ -160,18 +205,18 @@ export default function SentimentArcTool() {
     });
   };
 
-  // Get current volume color
-  const volColor = selectedVolume ? (VOLUME_COLORS[selectedVolume.abbrev] || "#888") : "#FFD700";
+  // Volume color
+  const volColor = selectedVolume ? (VOLUME_COLORS[selectedVolume.volumeAbbrev] || "#888") : "#FFD700";
 
   // Build verse URL
   const getVerseUrl = (verse: VerseSentiment) => {
     if (!selectedVolume || !selectedBook || !selectedChapter) return "#";
-    const volSlug = VOLUME_ABBREV_TO_SLUG[selectedVolume.abbrev];
-    const bookSlug = bookNameToSlug(selectedBook.name);
-    return `/scriptures/${volSlug}/${bookSlug}/${selectedChapter}?verse=${verse.verse}`;
+    const volSlug = VOLUME_ABBREV_TO_SLUG[selectedVolume.volumeAbbrev];
+    const bookSlug = bookNameToSlug(selectedBook.bookName);
+    return `/scriptures/${volSlug}/${bookSlug}/${selectedChapter.chapter}?verse=${verse.verse}`;
   };
 
-  // Chart options shared across levels
+  // Chart options
   const baseChartOptions = useMemo(() => ({
     responsive: true,
     maintainAspectRatio: false,
@@ -219,19 +264,53 @@ export default function SentimentArcTool() {
       }));
   };
 
+  // Current chart data
+  const chartData = useMemo(() => {
+    if (chartLevel === "books" && bookData.length > 0) {
+      return {
+        labels: bookData.map((b) => b.bookName),
+        datasets: buildDatasets(
+          bookData.map((b) => b.bookName),
+          Object.fromEntries(
+            SENTIMENT_CATEGORIES.map((cat) => [
+              cat.id,
+              bookData.map((b) => b.scores[cat.id] || 0),
+            ])
+          )
+        ),
+      };
+    }
+    if (chartLevel === "chapters" && chapterData.length > 0) {
+      return {
+        labels: chapterData.map((c) => `${c.chapter}`),
+        datasets: buildDatasets(
+          chapterData.map((c) => `${c.chapter}`),
+          Object.fromEntries(
+            SENTIMENT_CATEGORIES.map((cat) => [
+              cat.id,
+              chapterData.map((c) => c.scores[cat.id] || 0),
+            ])
+          )
+        ),
+      };
+    }
+    return null;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [chartLevel, bookData, chapterData, activeCategories]);
+
   return (
     <div style={{ paddingBottom: "60px" }}>
       {/* Header */}
-      <div style={{ maxWidth: "700px", margin: "0 auto", textAlign: "center", marginBottom: "32px" }}>
+      <div style={{ maxWidth: "700px", margin: "0 auto", textAlign: "center", marginBottom: "24px" }}>
         <h1 style={{ fontSize: isMobile ? "1.4rem" : "1.8rem", fontWeight: 800, color: "var(--text)", marginBottom: "8px", letterSpacing: "0.02em" }}>
           Sentiment Explorer
         </h1>
-        <p style={{ fontSize: "0.88rem", color: "var(--text-secondary)", marginBottom: "24px", lineHeight: 1.5 }}>
-          Explore the emotional tone of scripture — from exaltation and peace to admonition and contrition. Drill down from volumes to individual verses.
+        <p style={{ fontSize: "0.88rem", color: "var(--text-secondary)", marginBottom: "20px", lineHeight: 1.5 }}>
+          Explore the emotional tone of scripture. Select a volume, then drill into books and chapters.
         </p>
 
         {/* Category toggles */}
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", justifyContent: "center", marginBottom: "16px" }}>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", justifyContent: "center", marginBottom: "20px" }}>
           {SENTIMENT_CATEGORIES.map((cat) => {
             const active = activeCategories.has(cat.id);
             return (
@@ -257,6 +336,50 @@ export default function SentimentArcTool() {
             );
           })}
         </div>
+
+        {/* Cascading dropdowns */}
+        <div style={{ display: "flex", gap: "10px", justifyContent: "center", flexWrap: "wrap" }}>
+          {/* Volume dropdown */}
+          <select
+            value={selectedVolumeIdx}
+            onChange={(e) => handleVolumeChange(Number(e.target.value))}
+            style={{ ...selectStyle, borderColor: `${volColor}60` }}
+          >
+            {volumeData.map((vol, i) => (
+              <option key={vol.volumeId} value={i}>{vol.volumeName}</option>
+            ))}
+          </select>
+
+          {/* Book dropdown */}
+          {bookData.length > 0 && (
+            <select
+              value={selectedBookIdx}
+              onChange={(e) => handleBookChange(Number(e.target.value))}
+              style={selectStyle}
+            >
+              <option value={-1}>— All Books —</option>
+              {bookData.map((book, i) => (
+                <option key={book.bookId} value={i}>{book.bookName}</option>
+              ))}
+            </select>
+          )}
+
+          {/* Chapter dropdown (only when book selected) */}
+          {selectedBookIdx >= 0 && chapterData.length > 0 && (
+            <select
+              value={selectedChapterIdx}
+              onChange={(e) => handleChapterChange(Number(e.target.value))}
+              style={selectStyle}
+            >
+              <option value={-1}>— All {selectedVolume?.volumeAbbrev === "D&C" ? "Sections" : "Chapters"} —</option>
+              {chapterData.map((ch, i) => (
+                <option key={ch.chapter} value={i}>
+                  {selectedVolume?.volumeAbbrev === "D&C" ? "Section" : "Chapter"} {ch.chapter}
+                </option>
+              ))}
+            </select>
+          )}
+        </div>
       </div>
 
       {/* Loading */}
@@ -266,317 +389,141 @@ export default function SentimentArcTool() {
         </div>
       )}
 
-      {/* Breadcrumb */}
-      {drillLevel !== "volumes" && (
-        <div style={{ maxWidth: "900px", margin: "0 auto 16px", display: "flex", alignItems: "center", gap: "8px" }}>
-          <button
-            onClick={goBack}
-            style={{
-              background: "none",
-              border: "1px solid var(--border)",
-              borderRadius: "8px",
-              padding: "6px 12px",
-              color: "var(--text-secondary)",
-              fontSize: "0.78rem",
-              fontWeight: 600,
-              cursor: "pointer",
-              fontFamily: "inherit",
-            }}
-          >
-            ← Back
-          </button>
-          <span style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>
-            {selectedVolume?.name}
-            {selectedBook && ` → ${selectedBook.name}`}
-            {selectedChapter && ` → Chapter ${selectedChapter}`}
-          </span>
+      {/* Chart (book or chapter level only — no verse chart) */}
+      {!isLoading && chartData && chartLevel !== "verses" && (
+        <div style={{ maxWidth: "900px", margin: "0 auto", marginBottom: "32px" }}>
+          <div style={{ height: isMobile ? "300px" : "400px" }}>
+            <Line
+              data={chartData}
+              options={{
+                ...baseChartOptions,
+                scales: {
+                  ...baseChartOptions.scales,
+                  x: {
+                    ...baseChartOptions.scales.x,
+                    ...(chartLevel === "chapters" ? {
+                      title: { display: true, text: selectedVolume?.volumeAbbrev === "D&C" ? "Section" : "Chapter", color: "#9ca3af" },
+                      ticks: {
+                        font: { size: 10 },
+                        callback: function (val: string | number, index: number, ticks: unknown[]) {
+                          const total = (ticks as unknown[]).length;
+                          if (total <= 20) return val;
+                          if (index === 0 || index === total - 1 || index === Math.floor(total / 2)) return val;
+                          if (total > 50 && index % 10 === 0) return val;
+                          if (total <= 50 && index % 5 === 0) return val;
+                          return "";
+                        },
+                      },
+                    } : {
+                      ticks: { maxRotation: 90, minRotation: 45, font: { size: isMobile ? 9 : 11 } },
+                    }),
+                  },
+                },
+              }}
+            />
+          </div>
+
+          {/* Top/bottom chapters (only at chapter level) */}
+          {chartLevel === "chapters" && chapterData.length > 3 && (
+            <div style={{ display: "flex", gap: "24px", flexWrap: "wrap", justifyContent: "center", marginTop: "20px" }}>
+              {(() => {
+                const sorted = [...chapterData].sort((a, b) => b.compositeScore - a.compositeScore);
+                const top3 = sorted.slice(0, 3);
+                const bottom3 = sorted.slice(-3).reverse();
+                return (
+                  <>
+                    <div>
+                      <div style={{ fontSize: "0.7rem", fontWeight: 600, textTransform: "uppercase", color: "#FFD700", marginBottom: "6px" }}>Most Positive</div>
+                      {top3.map((ch) => (
+                        <button
+                          key={ch.chapter}
+                          onClick={() => {
+                            const idx = chapterData.findIndex((c) => c.chapter === ch.chapter);
+                            handleChapterChange(idx);
+                          }}
+                          style={{ display: "block", background: "none", border: "none", color: "var(--text-secondary)", fontSize: "0.78rem", cursor: "pointer", fontFamily: "inherit", padding: "2px 0" }}
+                        >
+                          {selectedVolume?.volumeAbbrev === "D&C" ? "Section" : "Chapter"} {ch.chapter} ({ch.compositeScore > 0 ? "+" : ""}{ch.compositeScore})
+                        </button>
+                      ))}
+                    </div>
+                    <div>
+                      <div style={{ fontSize: "0.7rem", fontWeight: 600, textTransform: "uppercase", color: "#4B0082", marginBottom: "6px" }}>Most Intense</div>
+                      {bottom3.map((ch) => (
+                        <button
+                          key={ch.chapter}
+                          onClick={() => {
+                            const idx = chapterData.findIndex((c) => c.chapter === ch.chapter);
+                            handleChapterChange(idx);
+                          }}
+                          style={{ display: "block", background: "none", border: "none", color: "var(--text-secondary)", fontSize: "0.78rem", cursor: "pointer", fontFamily: "inherit", padding: "2px 0" }}
+                        >
+                          {selectedVolume?.volumeAbbrev === "D&C" ? "Section" : "Chapter"} {ch.chapter} ({ch.compositeScore > 0 ? "+" : ""}{ch.compositeScore})
+                        </button>
+                      ))}
+                    </div>
+                  </>
+                );
+              })()}
+            </div>
+          )}
         </div>
       )}
 
-      {/* ── LEVEL 1: Volume Overview ── */}
-      {!isLoading && drillLevel === "volumes" && volumeData.length > 0 && (
-        <div style={{ maxWidth: "900px", margin: "0 auto", marginBottom: "32px" }}>
-          {/* Drill-down pills */}
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", justifyContent: "center", marginBottom: "20px" }}>
-            <span style={{ fontSize: "0.72rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--text-muted)", alignSelf: "center", marginRight: "4px" }}>
-              Drill into:
-            </span>
-            {volumeData.map((vol) => (
-              <button
-                key={vol.volumeId}
-                onClick={() => drillToVolume(vol)}
+      {/* Verse list (chapter selected — no chart, just references) */}
+      {!isLoading && chartLevel === "verses" && verseData.length > 0 && (
+        <div style={{ maxWidth: "700px", margin: "0 auto", marginBottom: "32px" }}>
+          <div style={{ textAlign: "center", marginBottom: "16px", fontSize: "0.82rem", color: "var(--text-muted)" }}>
+            {verseData.length} verses in {selectedBook?.bookName} {selectedChapter?.chapter}
+          </div>
+          {verseData.map((v) => {
+            const dominant = (() => {
+              let best = { id: "", score: 0 };
+              for (const cat of SENTIMENT_CATEGORIES) {
+                if ((v.scores[cat.id] || 0) > best.score) {
+                  best = { id: cat.id, score: v.scores[cat.id] };
+                }
+              }
+              return best.id ? SENTIMENT_CATEGORIES.find((c) => c.id === best.id) : null;
+            })();
+
+            return (
+              <a
+                key={v.verse}
+                href={getVerseUrl(v)}
                 style={{
-                  padding: "6px 14px",
+                  display: "block",
+                  padding: "10px 14px",
+                  marginBottom: "6px",
                   borderRadius: "8px",
-                  border: `1px solid ${VOLUME_COLORS[vol.volumeAbbrev]}50`,
-                  background: `${VOLUME_COLORS[vol.volumeAbbrev]}15`,
-                  color: VOLUME_COLORS[vol.volumeAbbrev],
-                  fontSize: "0.78rem",
-                  fontWeight: 600,
-                  cursor: "pointer",
-                  fontFamily: "inherit",
+                  background: "var(--surface)",
+                  border: `1px solid ${dominant ? `${dominant.color}30` : "var(--border)"}`,
+                  borderLeft: dominant ? `3px solid ${dominant.color}` : undefined,
+                  textDecoration: "none",
                   transition: "all 0.15s",
                 }}
               >
-                {vol.volumeName}
-              </button>
-            ))}
-          </div>
-
-          <div style={{ height: isMobile ? "280px" : "360px" }}>
-            <Line
-              data={{
-                labels: volumeData.map((v) => v.volumeAbbrev),
-                datasets: buildDatasets(
-                  volumeData.map((v) => v.volumeAbbrev),
-                  Object.fromEntries(
-                    SENTIMENT_CATEGORIES.map((cat) => [
-                      cat.id,
-                      volumeData.map((v) => v.scores[cat.id] || 0),
-                    ])
-                  )
-                ),
-              }}
-              options={baseChartOptions}
-            />
-          </div>
-        </div>
-      )}
-
-      {/* ── LEVEL 2: Book Drill-Down ── */}
-      {!isLoading && drillLevel === "books" && bookData.length > 0 && (
-        <div style={{ maxWidth: "900px", margin: "0 auto", marginBottom: "32px" }}>
-          {/* Book pills */}
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", justifyContent: "center", marginBottom: "20px" }}>
-            <span style={{ fontSize: "0.72rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--text-muted)", alignSelf: "center", marginRight: "4px" }}>
-              Drill into:
-            </span>
-            {bookData.map((book) => (
-              <button
-                key={book.bookId}
-                onClick={() => drillToBook(book)}
-                style={{
-                  padding: "4px 10px",
-                  borderRadius: "6px",
-                  border: `1px solid ${volColor}30`,
-                  background: "transparent",
-                  color: "var(--text-secondary)",
-                  fontSize: "0.72rem",
-                  cursor: "pointer",
-                  fontFamily: "inherit",
-                }}
-              >
-                {book.bookName}
-              </button>
-            ))}
-          </div>
-
-          <div style={{ height: isMobile ? "300px" : "400px" }}>
-            <Line
-              data={{
-                labels: bookData.map((b) => b.bookName),
-                datasets: buildDatasets(
-                  bookData.map((b) => b.bookName),
-                  Object.fromEntries(
-                    SENTIMENT_CATEGORIES.map((cat) => [
-                      cat.id,
-                      bookData.map((b) => b.scores[cat.id] || 0),
-                    ])
-                  )
-                ),
-              }}
-              options={{
-                ...baseChartOptions,
-                scales: {
-                  ...baseChartOptions.scales,
-                  x: {
-                    ...baseChartOptions.scales.x,
-                    ticks: { ...baseChartOptions.scales.x.ticks, maxRotation: 90, minRotation: 45 },
-                  },
-                },
-              }}
-            />
-          </div>
-        </div>
-      )}
-
-      {/* ── LEVEL 3: Chapter Drill-Down ── */}
-      {!isLoading && drillLevel === "chapters" && chapterData.length > 0 && (
-        <div style={{ maxWidth: "900px", margin: "0 auto", marginBottom: "32px" }}>
-          <div style={{ height: isMobile ? "280px" : "360px", marginBottom: "24px" }}>
-            <Line
-              data={{
-                labels: chapterData.map((c) => `${c.chapter}`),
-                datasets: buildDatasets(
-                  chapterData.map((c) => `${c.chapter}`),
-                  Object.fromEntries(
-                    SENTIMENT_CATEGORIES.map((cat) => [
-                      cat.id,
-                      chapterData.map((c) => c.scores[cat.id] || 0),
-                    ])
-                  )
-                ),
-              }}
-              options={{
-                ...baseChartOptions,
-                scales: {
-                  ...baseChartOptions.scales,
-                  x: {
-                    ...baseChartOptions.scales.x,
-                    title: { display: true, text: selectedVolume?.abbrev === "D&C" ? "Section" : "Chapter", color: "#9ca3af" },
-                    ticks: {
-                      font: { size: 10 },
-                      callback: function (val: string | number, index: number, ticks: unknown[]) {
-                        const total = (ticks as unknown[]).length;
-                        if (total <= 20) return val;
-                        if (index === 0 || index === total - 1 || index === Math.floor(total / 2)) return val;
-                        if (total > 50 && index % 10 === 0) return val;
-                        if (total <= 50 && index % 5 === 0) return val;
-                        return "";
-                      },
-                    },
-                  },
-                },
-                onClick: (_event: unknown, elements: unknown[]) => {
-                  const els = elements as { index: number }[];
-                  if (els.length > 0) {
-                    const ch = chapterData[els[0].index];
-                    if (ch) drillToChapter(ch);
-                  }
-                },
-              }}
-            />
-          </div>
-
-          {/* Top sentiment chapters */}
-          <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", justifyContent: "center" }}>
-            {(() => {
-              const sorted = [...chapterData].sort((a, b) => b.compositeScore - a.compositeScore);
-              const top3 = sorted.slice(0, 3);
-              const bottom3 = sorted.slice(-3).reverse();
-              return (
-                <>
-                  <div>
-                    <div style={{ fontSize: "0.7rem", fontWeight: 600, textTransform: "uppercase", color: "#FFD700", marginBottom: "6px" }}>Most Positive</div>
-                    {top3.map((ch) => (
-                      <button key={ch.chapter} onClick={() => drillToChapter(ch)} style={{ display: "block", background: "none", border: "none", color: "var(--text-secondary)", fontSize: "0.78rem", cursor: "pointer", fontFamily: "inherit", padding: "2px 0" }}>
-                        {ch.bookName} {ch.chapter} ({ch.compositeScore > 0 ? "+" : ""}{ch.compositeScore})
-                      </button>
-                    ))}
-                  </div>
-                  <div>
-                    <div style={{ fontSize: "0.7rem", fontWeight: 600, textTransform: "uppercase", color: "#4B0082", marginBottom: "6px" }}>Most Intense</div>
-                    {bottom3.map((ch) => (
-                      <button key={ch.chapter} onClick={() => drillToChapter(ch)} style={{ display: "block", background: "none", border: "none", color: "var(--text-secondary)", fontSize: "0.78rem", cursor: "pointer", fontFamily: "inherit", padding: "2px 0" }}>
-                        {ch.bookName} {ch.chapter} ({ch.compositeScore > 0 ? "+" : ""}{ch.compositeScore})
-                      </button>
-                    ))}
-                  </div>
-                </>
-              );
-            })()}
-          </div>
-        </div>
-      )}
-
-      {/* ── LEVEL 4: Verse Drill-Down ── */}
-      {!isLoading && drillLevel === "verses" && verseData.length > 0 && (
-        <div style={{ maxWidth: "900px", margin: "0 auto", marginBottom: "32px" }}>
-          <div style={{ height: isMobile ? "240px" : "300px", marginBottom: "24px" }}>
-            <Line
-              data={{
-                labels: verseData.map((v) => `${v.verse}`),
-                datasets: [{
-                  label: "Smoothed Sentiment",
-                  data: verseData.map((v) => v.smoothedScore),
-                  borderColor: "#FFD700",
-                  backgroundColor: (context: { chart: ChartJS; dataIndex: number }) => {
-                    const chart = context.chart;
-                    const { ctx, chartArea } = chart;
-                    if (!chartArea) return "rgba(255,215,0,0.1)";
-                    const gradient = ctx.createLinearGradient(0, chartArea.top, 0, chartArea.bottom);
-                    gradient.addColorStop(0, "rgba(255, 215, 0, 0.3)");
-                    gradient.addColorStop(0.5, "rgba(255, 215, 0, 0.05)");
-                    gradient.addColorStop(1, "rgba(75, 0, 130, 0.3)");
-                    return gradient;
-                  },
-                  fill: true,
-                  tension: 0.4,
-                  pointRadius: 1,
-                  pointHoverRadius: 4,
-                  borderWidth: 2,
-                }],
-              }}
-              options={{
-                ...baseChartOptions,
-                scales: {
-                  ...baseChartOptions.scales,
-                  x: {
-                    ...baseChartOptions.scales.x,
-                    title: { display: true, text: "Verse", color: "#9ca3af" },
-                    ticks: {
-                      font: { size: 9 },
-                      callback: function (val: string | number, index: number, ticks: unknown[]) {
-                        const total = (ticks as unknown[]).length;
-                        if (index === 0 || index === total - 1 || index === Math.floor(total / 2)) return val;
-                        return "";
-                      },
-                    },
-                  },
-                },
-              }}
-            />
-          </div>
-
-          {/* Verse list */}
-          <div style={{ maxWidth: "700px", margin: "0 auto" }}>
-            {verseData.map((v) => {
-              const dominant = (() => {
-                let best = { id: "", score: 0 };
-                for (const cat of SENTIMENT_CATEGORIES) {
-                  if ((v.scores[cat.id] || 0) > best.score) {
-                    best = { id: cat.id, score: v.scores[cat.id] };
-                  }
-                }
-                return best.id ? SENTIMENT_CATEGORIES.find((c) => c.id === best.id) : null;
-              })();
-
-              return (
-                <a
-                  key={v.verse}
-                  href={getVerseUrl(v)}
-                  style={{
-                    display: "block",
-                    padding: "10px 14px",
-                    marginBottom: "6px",
-                    borderRadius: "8px",
-                    background: "var(--surface)",
-                    border: `1px solid ${dominant ? `${dominant.color}30` : "var(--border)"}`,
-                    borderLeft: dominant ? `3px solid ${dominant.color}` : undefined,
-                    textDecoration: "none",
-                    transition: "all 0.15s",
-                  }}
-                >
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "4px" }}>
-                    <span style={{ fontSize: "0.75rem", fontWeight: 700, color: dominant?.color || "var(--text-muted)" }}>
-                      Verse {v.verse}
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "4px" }}>
+                  <span style={{ fontSize: "0.75rem", fontWeight: 700, color: dominant?.color || "var(--text-muted)" }}>
+                    Verse {v.verse}
+                  </span>
+                  {dominant && (
+                    <span style={{ fontSize: "0.65rem", color: dominant.color, opacity: 0.7 }}>
+                      {dominant.label}
                     </span>
-                    <span style={{ fontSize: "0.68rem", color: "var(--text-muted)" }}>
-                      {v.compositeScore > 0 ? "+" : ""}{v.compositeScore}
-                    </span>
-                  </div>
-                  <div style={{ fontSize: "0.82rem", color: "var(--text-secondary)", lineHeight: 1.5 }}>
-                    {v.text}{v.text.length >= 150 ? "..." : ""}
-                  </div>
-                </a>
-              );
-            })}
-          </div>
+                  )}
+                </div>
+                <div style={{ fontSize: "0.82rem", color: "var(--text-secondary)", lineHeight: 1.5 }}>
+                  {v.text}{v.text.length >= 150 ? "..." : ""}
+                </div>
+              </a>
+            );
+          })}
         </div>
       )}
 
       {/* Empty state */}
-      {!isLoading && drillLevel === "volumes" && volumeData.length === 0 && (
+      {!isLoading && volumeData.length === 0 && (
         <div style={{ textAlign: "center", padding: "60px", color: "var(--text-muted)" }}>
           No sentiment data available. Enable volumes in Settings.
         </div>
