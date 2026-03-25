@@ -189,7 +189,7 @@ export default function LocationDirectory() {
     <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
       {/* Page header */}
       <div style={{ marginBottom: "28px", textAlign: "center" }}>
-        <h1 style={{ fontSize: "1.6rem", fontWeight: 700, color: "var(--text)", marginBottom: "8px" }}>
+        <h1 style={{ fontSize: isMobile ? "1.4rem" : "1.8rem", fontWeight: 800, color: "var(--text)", marginBottom: "8px", letterSpacing: "0.02em" }}>
           Places of the Scriptures
         </h1>
         <p style={{ color: "var(--text-secondary)", fontSize: isMobile ? "0.85rem" : "0.95rem", maxWidth: "500px", margin: "0 auto 14px" }}>

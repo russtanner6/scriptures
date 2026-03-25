@@ -18,7 +18,7 @@ export default function SentimentPage() {
             borderTop: "1px solid var(--border)",
           }}
         >
-          Emotional tone analysis across scripture books &bull; 7 sentiment
+          Emotional tone analysis across scripture books &bull; 4 sentiment
           categories &bull; Scripture Explorer
         </div>
       </div>

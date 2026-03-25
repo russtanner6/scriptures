@@ -143,20 +143,8 @@ export default function WordCloudTool() {
   return (
     <div>
       {/* Selection panel */}
-      <div className="search-panel" style={{ marginBottom: "24px" }}>
-        <h1 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
-          <img
-            src="/word-cloud.svg"
-            alt=""
-            style={{
-              display: "inline-block",
-              width: isMobile ? "18px" : "22px",
-              height: isMobile ? "18px" : "22px",
-              verticalAlign: "middle",
-              marginRight: "8px",
-              filter: "invert(1) brightness(0.85)",
-            }}
-          />
+      <div className="search-panel" style={{ marginBottom: "24px", textAlign: "center" }}>
+        <h1 style={{ fontSize: isMobile ? "1.4rem" : "1.8rem", fontWeight: 800, color: "var(--text)", marginBottom: "8px", lineHeight: 1.2, letterSpacing: "0.02em" }}>
           Word Cloud
         </h1>
         <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", marginBottom: "16px", lineHeight: 1.4 }}>

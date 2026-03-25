@@ -89,8 +89,8 @@ export default function ChiasmusTool() {
   return (
     <div>
       {/* Header area */}
-      <div className="search-panel" style={{ marginBottom: "24px" }}>
-        <h1 style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px", lineHeight: 1.2 }}>
+      <div className="search-panel" style={{ marginBottom: "24px", textAlign: "center" }}>
+        <h1 style={{ fontSize: isMobile ? "1.4rem" : "1.8rem", fontWeight: 800, color: "var(--text)", marginBottom: "8px", lineHeight: 1.2, letterSpacing: "0.02em" }}>
           Chiasmus in Scripture
         </h1>
         <p style={{ fontSize: "0.82rem", color: "var(--text-secondary)", marginBottom: "16px", lineHeight: 1.5 }}>

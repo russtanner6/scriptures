@@ -1,6 +1,7 @@
 "use client";
 
 import { usePreferencesContext } from "@/components/PreferencesProvider";
+import { useIsMobile } from "@/lib/useIsMobile";
 import { VOLUME_COLORS } from "@/lib/constants";
 import { canDisableVolume } from "@/lib/preferences";
 import { analytics } from "@/lib/analytics";
@@ -21,6 +22,7 @@ const APOCRYPHA = {
 
 export default function SettingsPanel() {
   const { prefs, setPrefs, isVolumeVisible } = usePreferencesContext();
+  const isMobile = useIsMobile();
 
   const toggleVolume = (abbrev: string) => {
     const currentlyVisible = isVolumeVisible(abbrev);
@@ -37,8 +39,8 @@ export default function SettingsPanel() {
 
   return (
     <div style={{ maxWidth: "640px", margin: "0 auto" }}>
-      <div style={{ marginBottom: "32px" }}>
-        <h1 style={{ fontSize: "1.4rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px" }}>
+      <div style={{ marginBottom: "32px", textAlign: "center" }}>
+        <h1 style={{ fontSize: isMobile ? "1.4rem" : "1.8rem", fontWeight: 800, color: "var(--text)", marginBottom: "8px", letterSpacing: "0.02em" }}>
           Settings
         </h1>
         <p style={{ color: "var(--text-secondary)", fontSize: "0.92rem" }}>

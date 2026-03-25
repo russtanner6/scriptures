@@ -35,13 +35,14 @@ export default function BookmarksList() {
 
   return (
     <div>
-      <div style={{ marginBottom: "24px" }}>
+      <div style={{ marginBottom: "24px", textAlign: "center" }}>
         <h1
           style={{
-            fontSize: "1.4rem",
-            fontWeight: 700,
+            fontSize: isMobile ? "1.4rem" : "1.8rem",
+            fontWeight: 800,
             color: "var(--text)",
-            marginBottom: "6px",
+            marginBottom: "8px",
+            letterSpacing: "0.02em",
           }}
         >
           Bookmarks
