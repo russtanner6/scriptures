@@ -6408,5 +6408,197 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 44
+  },
+  {
+    "book": "Colossians",
+    "chapter": 1,
+    "themes": [
+      "Christology",
+      "Preeminence of Christ",
+      "Gospel Growth"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 2,
+    "themes": [
+      "Spiritual Maturity",
+      "Freedom from Legalism",
+      "Christian Philosophy"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 3,
+    "themes": [
+      "The New Man",
+      "Family Relations",
+      "Consecration"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 4,
+    "themes": [
+      "Fellowship",
+      "Prayer",
+      "Ministry Stewardship"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "themes": [
+      "Election",
+      "Redemption",
+      "Sealing of the Spirit"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "themes": [
+      "Grace",
+      "Reconciliation",
+      "Unity of Jew and Gentile"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 3,
+    "themes": [
+      "Mystery of the Gospel",
+      "Prayer",
+      "Love of Christ"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "themes": [
+      "Church Organization",
+      "Unity",
+      "Spiritual Gifts"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 5,
+    "themes": [
+      "Walk in Light",
+      "Marriage Covenant",
+      "Imitation of God"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 6,
+    "themes": [
+      "Family Duties",
+      "Armor of God",
+      "Spiritual Warfare"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Galatians",
+    "chapter": 1,
+    "themes": [
+      "Apostolic Authority",
+      "True Gospel",
+      "False Teachers"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 2,
+    "themes": [
+      "Justification by Faith",
+      "Confrontation at Antioch",
+      "Law vs. Grace"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "themes": [
+      "Abrahamic Covenant",
+      "Law as Schoolmaster",
+      "Faith and Promise"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 4,
+    "themes": [
+      "Adoption as Children",
+      "Allegory of Hagar and Sarah",
+      "Freedom in Christ"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 5,
+    "themes": [
+      "Liberty in Christ",
+      "Fruit of the Spirit",
+      "Works of the Flesh"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 6,
+    "themes": [
+      "Bearing Burdens",
+      "Sowing and Reaping",
+      "New Creation"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
   }
 ]

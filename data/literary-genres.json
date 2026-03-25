@@ -4522,5 +4522,148 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 44
+  },
+  {
+    "book": "Colossians",
+    "chapter": 1,
+    "genre": "Epistle",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 2,
+    "genre": "Epistle",
+    "subgenre": "Polemic",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 3,
+    "genre": "Epistle",
+    "subgenre": "Paraenesis",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 4,
+    "genre": "Epistle",
+    "subgenre": "Closing Salutations",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "genre": "Epistle",
+    "subgenre": "Doxology",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "genre": "Epistle",
+    "subgenre": "Theological Exposition",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 3,
+    "genre": "Epistle",
+    "subgenre": "Prayer",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "genre": "Epistle",
+    "subgenre": "Paraenesis",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 5,
+    "genre": "Epistle",
+    "subgenre": "Household Code",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 6,
+    "genre": "Epistle",
+    "subgenre": "Military Metaphor",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Galatians",
+    "chapter": 1,
+    "genre": "Epistle",
+    "subgenre": "Apologetic",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 2,
+    "genre": "Epistle",
+    "subgenre": "Autobiographical Narrative",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "genre": "Epistle",
+    "subgenre": "Theological Argument",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 4,
+    "genre": "Epistle",
+    "subgenre": "Allegory",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 5,
+    "genre": "Epistle",
+    "subgenre": "Paraenesis",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 6,
+    "genre": "Epistle",
+    "subgenre": "Closing Exhortation",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
   }
 ]

@@ -4142,5 +4142,133 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 44
+  },
+  {
+    "book": "Colossians",
+    "chapter": 1,
+    "summary": "Paul celebrates the supremacy of Christ as creator and reconciler, encouraging the Colossians to remain grounded in faith and the hope of the gospel.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 2,
+    "summary": "Paul warns against being misled by hollow philosophy and legalistic traditions, affirming that believers are complete in Christ through baptism and his triumph over spiritual powers.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 3,
+    "summary": "Paul exhorts the Colossians to put off the old self and put on the new, living in love, peace, and holiness in all family and social relationships.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 4,
+    "summary": "Paul sends personal greetings and final instructions, urging prayer, wisdom in speech, and faithful ministry from his fellow workers.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "summary": "Paul praises God for the spiritual blessings bestowed on believers through Christ, including election, redemption, and the sealing of the Holy Spirit.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "summary": "Paul teaches that salvation comes by grace through faith, and that Christ has broken down the wall between Jew and Gentile, creating one new people of God.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 3,
+    "summary": "Paul reveals the mystery of the gospel entrusted to him and prays that the Ephesians may comprehend the breadth and depth of Christ's love.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "summary": "Paul urges the Ephesians to walk worthy of their calling in unity, describes the organization of the church through apostles, prophets, and teachers, and warns against the old way of life.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 5,
+    "summary": "Paul commands believers to walk in love and light, avoid all forms of immorality, and models marriage as a sacred symbol of Christ's relationship with the church.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 6,
+    "summary": "Paul instructs children, parents, servants, and masters in their duties, then calls all believers to put on the whole armor of God for spiritual warfare.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Galatians",
+    "chapter": 1,
+    "summary": "Paul defends his apostolic authority and rebukes the Galatians for so quickly deserting the true gospel for a distorted version promoted by false teachers.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 2,
+    "summary": "Paul recounts his confrontation with Peter at Antioch and declares that a person is justified by faith in Jesus Christ, not by works of the law.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "summary": "Paul argues from the example of Abraham that the promise of righteousness comes through faith, and that the law served as a schoolmaster to bring Israel to Christ.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 4,
+    "summary": "Paul uses the allegory of Hagar and Sarah to contrast the bondage of the law with the freedom of the covenant promise fulfilled in Christ.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 5,
+    "summary": "Paul proclaims liberty in Christ, warns against using freedom as license for the flesh, and describes the fruit of the Spirit as evidence of a covenant life.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 6,
+    "summary": "Paul encourages the Galatians to bear one another's burdens, sow to the Spirit rather than the flesh, and glory only in the cross of Jesus Christ.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
   }
 ]

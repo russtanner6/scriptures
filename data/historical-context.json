@@ -5178,5 +5178,165 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 44
+  },
+  {
+    "book": "Colossians",
+    "chapter": 1,
+    "era": "Apostolic",
+    "approxDate": "c. AD 60-62",
+    "setting": "Written from prison (likely Rome) to the church at Colossae, a small city in the Lycus Valley of Asia Minor.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 2,
+    "era": "Apostolic",
+    "approxDate": "c. AD 60-62",
+    "setting": "Paul addresses the Colossian heresy — a syncretic blend of Jewish legalism, pagan philosophy, and proto-gnostic asceticism threatening the young church.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 3,
+    "era": "Apostolic",
+    "approxDate": "c. AD 60-62",
+    "setting": "Practical instruction for Gentile converts navigating new Christian ethics within Greco-Roman household structures.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 4,
+    "era": "Apostolic",
+    "approxDate": "c. AD 60-62",
+    "setting": "Paul coordinates ministry from prison, connecting the Colossian, Laodicean, and broader Asian churches through shared messengers.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "era": "Apostolic",
+    "approxDate": "c. AD 60-62",
+    "setting": "Written from prison (likely Rome) as a circular letter to the church at Ephesus and possibly other churches in Asia Minor.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "era": "Apostolic",
+    "approxDate": "c. AD 60-62",
+    "setting": "Paul addresses a mixed congregation of Jewish and Gentile believers navigating their new shared identity in Christ.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 3,
+    "era": "Apostolic",
+    "approxDate": "c. AD 60-62",
+    "setting": "Paul writes from imprisonment, reflecting on his unique calling to reveal the mystery of Gentile inclusion in God's plan.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "era": "Apostolic",
+    "approxDate": "c. AD 60-62",
+    "setting": "Paul addresses the organizational structure of the early church and the challenge of maintaining unity amid diverse spiritual gifts.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 5,
+    "era": "Apostolic",
+    "approxDate": "c. AD 60-62",
+    "setting": "Paul addresses Greco-Roman cultural norms around marriage and morality, reframing them through the lens of Christ's relationship with the church.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 6,
+    "era": "Apostolic",
+    "approxDate": "c. AD 60-62",
+    "setting": "Paul uses Roman military imagery familiar to his audience to describe spiritual preparedness in a hostile pagan environment.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Galatians",
+    "chapter": 1,
+    "era": "Apostolic",
+    "approxDate": "c. AD 48-55",
+    "setting": "Paul writes urgently to the churches of Galatia (central Asia Minor) where Judaizing teachers are compelling Gentile converts to adopt Mosaic law.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 2,
+    "era": "Apostolic",
+    "approxDate": "c. AD 48-55",
+    "setting": "Paul recounts events at the Jerusalem Council and the subsequent incident at Antioch where Peter withdrew from Gentile fellowship under pressure.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "era": "Apostolic",
+    "approxDate": "c. AD 48-55",
+    "setting": "Paul engages Jewish scriptural arguments about the Abrahamic covenant and the temporary role of the Mosaic law in salvation history.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 4,
+    "era": "Apostolic",
+    "approxDate": "c. AD 48-55",
+    "setting": "Paul uses rabbinic-style allegory of Hagar and Sarah, familiar to his opponents, to argue for freedom from the law.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 5,
+    "era": "Apostolic",
+    "approxDate": "c. AD 48-55",
+    "setting": "Paul addresses the practical question facing Galatian converts: what does ethical living look like without the law as a guide?",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 6,
+    "era": "Apostolic",
+    "approxDate": "c. AD 48-55",
+    "setting": "Paul closes with personal remarks, writing in his own hand (large letters), emphasizing the cross over circumcision.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
   }
 ]

@@ -6084,5 +6084,197 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 44
+  },
+  {
+    "book": "Colossians",
+    "chapter": 1,
+    "topics": [
+      "Creation",
+      "Redemption",
+      "The Godhead"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 2,
+    "topics": [
+      "Baptism",
+      "Law of Moses",
+      "Atonement of Jesus Christ"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 3,
+    "topics": [
+      "Sanctification",
+      "Charity",
+      "Resurrection"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 4,
+    "topics": [
+      "Missionary Work",
+      "Grace",
+      "Priesthood Service"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "topics": [
+      "Foreordination",
+      "Redemption",
+      "Holy Ghost"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "topics": [
+      "Grace",
+      "Salvation",
+      "Unity"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 3,
+    "topics": [
+      "Mystery of Godliness",
+      "Prayer",
+      "Love of God"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "topics": [
+      "Priesthood Offices",
+      "Unity of the Faith",
+      "Spiritual Gifts"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 5,
+    "topics": [
+      "Chastity",
+      "Marriage",
+      "Light of Christ"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 6,
+    "topics": [
+      "Obedience",
+      "Armor of God",
+      "Spiritual Warfare"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Galatians",
+    "chapter": 1,
+    "topics": [
+      "Apostleship",
+      "True Gospel",
+      "Revelation"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 2,
+    "topics": [
+      "Justification",
+      "Faith in Christ",
+      "Law of Moses"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "topics": [
+      "Abrahamic Covenant",
+      "Faith",
+      "Law as Schoolmaster"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 4,
+    "topics": [
+      "Adoption",
+      "Covenant",
+      "Freedom in Christ"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 5,
+    "topics": [
+      "Liberty",
+      "Fruit of the Spirit",
+      "Temperance"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 6,
+    "topics": [
+      "Service",
+      "Sowing and Reaping",
+      "New Creature in Christ"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
   }
 ]

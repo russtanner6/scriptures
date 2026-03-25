@@ -2638,5 +2638,126 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 44
+  },
+  {
+    "book": "Colossians",
+    "chapter": 1,
+    "verse": 16,
+    "crossReference": "Moses 1:33",
+    "type": "parallel",
+    "note": "Christ as creator of all things parallels the Pearl of Great Price account of God creating worlds without number.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 2,
+    "verse": 12,
+    "crossReference": "D&C 76:51",
+    "type": "parallel",
+    "note": "Burial and resurrection through baptism parallels the covenant of obedience described in the vision of the celestial kingdom.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 3,
+    "verse": 2,
+    "crossReference": "D&C 43:34",
+    "type": "parallel",
+    "note": "Setting affections on things above echoes the command to lift up hearts and be glad.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Colossians",
+    "chapter": 4,
+    "verse": 6,
+    "crossReference": "D&C 63:64",
+    "type": "parallel",
+    "note": "Speaking with grace seasoned with salt parallels the instruction to let speech be seasoned with wisdom.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 51
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "verse": 10,
+    "crossReference": "D&C 128:18",
+    "type": "parallel",
+    "note": "The gathering together of all things in Christ parallels the welding link connecting dispensations described in D&C.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "verse": 20,
+    "crossReference": "Articles of Faith 1:6",
+    "type": "parallel",
+    "note": "The church built upon the foundation of apostles and prophets directly parallels the sixth Article of Faith on church organization.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "verse": 11,
+    "crossReference": "D&C 107:23",
+    "type": "parallel",
+    "note": "The offices of apostles, prophets, evangelists, pastors, and teachers parallel the priesthood offices described in D&C.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 49
+  },
+  {
+    "book": "Galatians",
+    "chapter": 2,
+    "verse": 16,
+    "crossReference": "2 Nephi 25:23",
+    "type": "parallel",
+    "note": "Justification by faith in Christ rather than works of the law parallels the Book of Mormon teaching that we are saved by grace after all we can do.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "verse": 24,
+    "crossReference": "Mosiah 13:27-30",
+    "type": "parallel",
+    "note": "The law as a schoolmaster to bring Israel to Christ parallels Abinadi's teaching that the law of Moses was given to point toward Christ.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 5,
+    "verse": 22,
+    "crossReference": "Alma 32:28",
+    "type": "parallel",
+    "note": "The fruit of the Spirit parallels Alma's seed metaphor where good fruit grows from a seed of faith nourished by the word.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
+  },
+  {
+    "book": "Galatians",
+    "chapter": 6,
+    "verse": 7,
+    "crossReference": "Alma 41:10",
+    "type": "parallel",
+    "note": "Whatsoever a man soweth, that shall he also reap parallels the law of restoration — wickedness never was happiness.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 48
   }
 ]
