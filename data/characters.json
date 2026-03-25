@@ -13802,32 +13802,6 @@
     ]
   },
   {
-    "id": "jotham-king-of-judah",
-    "name": "Jotham (king of Judah)",
-    "aliases": [],
-    "bio": "King of Judah who did what was right in the eyes of the LORD but did not enter the temple. He built the Upper Gate of the temple and fortified cities. He became mighty because he ordered his ways before the LORD.",
-    "era": "Divided Kingdom",
-    "timePeriod": "c. 750–735 BC",
-    "roles": [
-      "king"
-    ],
-    "gender": "male",
-    "volumes": [
-      "OT"
-    ],
-    "family": {
-      "father": "uzziah",
-      "son": "ahaz"
-    },
-    "speakerType": "other",
-    "tier": 4,
-    "books": [
-      "2 Kings",
-      "2 Chronicles",
-      "Isaiah"
-    ]
-  },
-  {
     "id": "jotham-son-of-gideon",
     "name": "Jotham (son of Gideon)",
     "aliases": [],
@@ -19381,5 +19355,570 @@
       "1 Chronicles",
       "Jeremiah"
     ]
+  },
+  {
+    "id": "amoz",
+    "name": "Amoz",
+    "aliases": [],
+    "bio": "The father of the prophet Isaiah.",
+    "era": "Divided Kingdom",
+    "timePeriod": "c. 8th century BC",
+    "roles": [
+      "parent"
+    ],
+    "gender": "male",
+    "volumes": [
+      "OT",
+      "BoM"
+    ],
+    "family": {
+      "children": [
+        "Isaiah"
+      ]
+    },
+    "speakerType": "other",
+    "tier": 4,
+    "books": [
+      "Isaiah",
+      "2 Nephi"
+    ]
+  },
+  {
+    "id": "remaliah",
+    "name": "Remaliah",
+    "aliases": [],
+    "bio": "The father of Pekah, king of Israel, who conspired with Syria against Judah during the Syro-Ephraimite War.",
+    "era": "Divided Kingdom",
+    "timePeriod": "c. 8th century BC",
+    "roles": [
+      "parent"
+    ],
+    "gender": "male",
+    "volumes": [
+      "OT",
+      "BoM"
+    ],
+    "family": {
+      "children": [
+        "Pekah"
+      ]
+    },
+    "speakerType": "other",
+    "tier": 4,
+    "books": [
+      "2 Kings",
+      "Isaiah",
+      "2 Nephi"
+    ]
+  },
+  {
+    "id": "jeberechiah",
+    "name": "Jeberechiah",
+    "aliases": [],
+    "bio": "The father of Zechariah, one of the faithful witnesses called by Isaiah to verify his prophecy regarding Maher-shalal-hash-baz.",
+    "era": "Divided Kingdom",
+    "timePeriod": "c. 8th century BC",
+    "roles": [
+      "parent"
+    ],
+    "gender": "male",
+    "volumes": [
+      "OT",
+      "BoM"
+    ],
+    "family": {},
+    "speakerType": "other",
+    "tier": 4,
+    "books": [
+      "Isaiah",
+      "2 Nephi"
+    ]
+  },
+  {
+    "id": "tabeal",
+    "name": "Tabeal",
+    "aliases": [
+      "Tabeel"
+    ],
+    "bio": "An individual whose unnamed son was proposed as a puppet king of Judah by the Syrian-Israelite coalition during the Syro-Ephraimite War.",
+    "era": "Divided Kingdom",
+    "timePeriod": "c. 735 BC",
+    "roles": [
+      "parent"
+    ],
+    "gender": "male",
+    "volumes": [
+      "OT",
+      "BoM"
+    ],
+    "family": {},
+    "speakerType": "other",
+    "tier": 4,
+    "books": [
+      "Isaiah",
+      "2 Nephi"
+    ]
+  },
+  {
+    "id": "jotham-king-judah",
+    "name": "Jotham (king of Judah)",
+    "aliases": [],
+    "bio": "King of Judah, son of Uzziah. His son Ahaz succeeded him during the Syro-Ephraimite crisis.",
+    "era": "Divided Kingdom",
+    "timePeriod": "c. 750-735 BC",
+    "roles": [
+      "king"
+    ],
+    "gender": "male",
+    "volumes": [
+      "OT",
+      "BoM"
+    ],
+    "family": {
+      "father": "Uzziah",
+      "children": [
+        "Ahaz"
+      ]
+    },
+    "speakerType": "other",
+    "tier": 4,
+    "books": [
+      "2 Kings",
+      "2 Chronicles",
+      "Isaiah",
+      "2 Nephi"
+    ]
+  },
+  {
+    "id": "aaron-lamanite-king",
+    "name": "Aaron (Lamanite king)",
+    "aliases": [],
+    "bio": "The king of the Lamanites who led an army of forty and four thousand against Mormon and was defeated.",
+    "era": "Nephite decline",
+    "timePeriod": "c. AD 330",
+    "roles": [
+      "king"
+    ],
+    "gender": "male",
+    "volumes": [
+      "BoM"
+    ],
+    "family": {},
+    "speakerType": "other",
+    "tier": 4,
+    "books": [
+      "Mormon"
+    ]
+  },
+  {
+    "id": "elkenah-priest",
+    "name": "Priest of Elkenah",
+    "aliases": [],
+    "bio": "The idolatrous priest in Chaldea who attempted to sacrifice Abraham on the altar before being struck down by Jehovah.",
+    "era": "Patriarchal period",
+    "timePeriod": "c. 2000 BC",
+    "roles": [
+      "priest"
+    ],
+    "gender": "male",
+    "volumes": [
+      "PoGP"
+    ],
+    "family": {},
+    "speakerType": "other",
+    "tier": 4,
+    "books": [
+      "Abraham"
+    ]
+  },
+  {
+    "id": "sisinnes",
+    "name": "Sisinnes",
+    "aliases": [],
+    "bio": "Governor of Syria and Phenice who questioned the Jews about rebuilding the temple.",
+    "era": "Post-exile",
+    "timePeriod": "c. 520 BC",
+    "roles": [
+      "governor"
+    ],
+    "gender": "male",
+    "volumes": [
+      "Apoc"
+    ],
+    "family": {},
+    "speakerType": "other",
+    "tier": 4,
+    "books": [
+      "1 Esdras"
+    ]
+  },
+  {
+    "id": "sathrabuzanes",
+    "name": "Sathrabuzanes",
+    "aliases": [],
+    "bio": "A companion of Sisinnes who opposed the building of the temple.",
+    "era": "Post-exile",
+    "timePeriod": "c. 520 BC",
+    "roles": [
+      "official"
+    ],
+    "gender": "male",
+    "volumes": [
+      "Apoc"
+    ],
+    "family": {},
+    "speakerType": "other",
+    "tier": 4,
+    "books": [
+      "1 Esdras"
+    ]
+  },
+  {
+    "id": "belemus",
+    "name": "Belemus",
+    "aliases": [],
+    "bio": "An official who wrote to Artaxerxes to stop the Jews from building.",
+    "era": "Post-exile",
+    "timePeriod": "c. 520 BC",
+    "roles": [
+      "official"
+    ],
+    "gender": "male",
+    "volumes": [
+      "Apoc"
+    ],
+    "family": {},
+    "speakerType": "other",
+    "tier": 4,
+    "books": [
+      "1 Esdras"
+    ]
+  },
+  {
+    "id": "rehum-esdras",
+    "name": "Rehum",
+    "aliases": [],
+    "bio": "The chancellor who wrote against the Jews to Artaxerxes.",
+    "era": "Post-exile",
+    "timePeriod": "c. 520 BC",
+    "roles": [
+      "chancellor"
+    ],
+    "gender": "male",
+    "volumes": [
+      "Apoc"
+    ],
+    "family": {},
+    "speakerType": "other",
+    "tier": 4,
+    "books": [
+      "1 Esdras"
+    ]
+  },
+  {
+    "id": "artaxerxes",
+    "name": "Artaxerxes",
+    "aliases": [],
+    "bio": "King of Persia who authorized Ezra to lead a group of Jews back to Jerusalem and granted him authority to enforce the Law of Moses.",
+    "era": "Post-exile",
+    "timePeriod": "c. 465-424 BC",
+    "roles": [
+      "king"
+    ],
+    "gender": "male",
+    "volumes": [
+      "OT",
+      "Apoc"
+    ],
+    "family": {},
+    "speakerType": "other",
+    "tier": 3,
+    "books": [
+      "Ezra",
+      "Nehemiah",
+      "1 Esdras"
+    ]
+  },
+  {
+    "id": "zerubbabel",
+    "name": "Zerubbabel",
+    "aliases": [],
+    "bio": "A descendant of King David who led the first group of Jewish exiles back to Jerusalem and oversaw the rebuilding of the temple.",
+    "era": "Post-exile",
+    "timePeriod": "c. 538-515 BC",
+    "roles": [
+      "governor",
+      "leader"
+    ],
+    "gender": "male",
+    "volumes": [
+      "OT",
+      "Apoc"
+    ],
+    "family": {},
+    "speakerType": "other",
+    "tier": 2,
+    "books": [
+      "Ezra",
+      "Haggai",
+      "Zechariah",
+      "1 Esdras"
+    ]
+  },
+  {
+    "id": "darius",
+    "name": "Darius",
+    "aliases": [
+      "Darius I",
+      "Darius the Great"
+    ],
+    "bio": "King of Persia who confirmed Cyrus's decree and authorized the completion of the second temple in Jerusalem.",
+    "era": "Post-exile",
+    "timePeriod": "c. 522-486 BC",
+    "roles": [
+      "king"
+    ],
+    "gender": "male",
+    "volumes": [
+      "OT",
+      "Apoc"
+    ],
+    "family": {},
+    "speakerType": "other",
+    "tier": 3,
+    "books": [
+      "Ezra",
+      "Haggai",
+      "Zechariah",
+      "Daniel",
+      "1 Esdras"
+    ]
+  },
+  {
+    "id": "antiochus-epiphanes",
+    "name": "Antiochus Epiphanes",
+    "aliases": [
+      "Antiochus IV"
+    ],
+    "bio": "Seleucid king who persecuted the Jews and desecrated the temple.",
+    "era": "Intertestamental",
+    "timePeriod": "175-164 BC",
+    "roles": [
+      "king"
+    ],
+    "gender": "male",
+    "volumes": [
+      "Apoc"
+    ],
+    "tier": 2,
+    "books": [
+      "1 Maccabees",
+      "2 Maccabees"
+    ],
+    "family": {},
+    "speakerType": "other"
+  },
+  {
+    "id": "mattathias",
+    "name": "Mattathias",
+    "aliases": [],
+    "bio": "Priest who started the Maccabean revolt against the Seleucid Empire.",
+    "era": "Intertestamental",
+    "timePeriod": "167-166 BC",
+    "roles": [
+      "priest",
+      "revolutionary"
+    ],
+    "gender": "male",
+    "volumes": [
+      "Apoc"
+    ],
+    "tier": 2,
+    "books": [
+      "1 Maccabees"
+    ],
+    "family": {},
+    "speakerType": "other"
+  },
+  {
+    "id": "judas-maccabeus",
+    "name": "Judas Maccabeus",
+    "aliases": [
+      "Judas the Hammer"
+    ],
+    "bio": "Son of Mattathias and primary leader of the revolt.",
+    "era": "Intertestamental",
+    "timePeriod": "166-160 BC",
+    "roles": [
+      "military leader"
+    ],
+    "gender": "male",
+    "volumes": [
+      "Apoc"
+    ],
+    "tier": 1,
+    "books": [
+      "1 Maccabees",
+      "2 Maccabees"
+    ],
+    "family": {},
+    "speakerType": "other"
+  },
+  {
+    "id": "jonathan-maccabee",
+    "name": "Jonathan",
+    "aliases": [
+      "Jonathan Maccabee"
+    ],
+    "bio": "Son of Mattathias who succeeded Judas as leader and high priest.",
+    "era": "Intertestamental",
+    "timePeriod": "160-143 BC",
+    "roles": [
+      "high priest",
+      "leader"
+    ],
+    "gender": "male",
+    "volumes": [
+      "Apoc"
+    ],
+    "tier": 2,
+    "books": [
+      "1 Maccabees"
+    ],
+    "family": {},
+    "speakerType": "other"
+  },
+  {
+    "id": "simon-maccabee",
+    "name": "Simon",
+    "aliases": [
+      "Simon Maccabee"
+    ],
+    "bio": "Son of Mattathias who secured Judean independence.",
+    "era": "Intertestamental",
+    "timePeriod": "143-135 BC",
+    "roles": [
+      "high priest",
+      "leader"
+    ],
+    "gender": "male",
+    "volumes": [
+      "Apoc"
+    ],
+    "tier": 2,
+    "books": [
+      "1 Maccabees"
+    ],
+    "family": {},
+    "speakerType": "other"
+  },
+  {
+    "id": "alexander-balas",
+    "name": "Alexander Balas",
+    "aliases": [],
+    "bio": "Claimant to the Seleucid throne who befriended Jonathan.",
+    "era": "Intertestamental",
+    "timePeriod": "150-145 BC",
+    "roles": [
+      "king"
+    ],
+    "gender": "male",
+    "volumes": [
+      "Apoc"
+    ],
+    "tier": 4,
+    "books": [
+      "1 Maccabees"
+    ],
+    "family": {},
+    "speakerType": "other"
+  },
+  {
+    "id": "demetrius-seleucid",
+    "name": "Demetrius",
+    "aliases": [
+      "Demetrius I Soter"
+    ],
+    "bio": "Seleucid king who struggled against Judas and Jonathan.",
+    "era": "Intertestamental",
+    "timePeriod": "162-150 BC",
+    "roles": [
+      "king"
+    ],
+    "gender": "male",
+    "volumes": [
+      "Apoc"
+    ],
+    "tier": 3,
+    "books": [
+      "1 Maccabees"
+    ],
+    "family": {},
+    "speakerType": "other"
+  },
+  {
+    "id": "trypho",
+    "name": "Trypho",
+    "aliases": [],
+    "bio": "General who treacherously captured Jonathan and usurped the throne.",
+    "era": "Intertestamental",
+    "timePeriod": "143-138 BC",
+    "roles": [
+      "general",
+      "usurper"
+    ],
+    "gender": "male",
+    "volumes": [
+      "Apoc"
+    ],
+    "tier": 3,
+    "books": [
+      "1 Maccabees"
+    ],
+    "family": {},
+    "speakerType": "other"
+  },
+  {
+    "id": "nicanor-seleucid",
+    "name": "Nicanor",
+    "aliases": [],
+    "bio": "Seleucid general defeated by Judas Maccabeus.",
+    "era": "Intertestamental",
+    "timePeriod": "161 BC",
+    "roles": [
+      "general"
+    ],
+    "gender": "male",
+    "volumes": [
+      "Apoc"
+    ],
+    "tier": 4,
+    "books": [
+      "1 Maccabees",
+      "2 Maccabees"
+    ],
+    "family": {},
+    "speakerType": "other"
+  },
+  {
+    "id": "alcimus",
+    "name": "Alcimus",
+    "aliases": [],
+    "bio": "Hellenizing high priest who opposed the Maccabees.",
+    "era": "Intertestamental",
+    "timePeriod": "162-159 BC",
+    "roles": [
+      "high priest"
+    ],
+    "gender": "male",
+    "volumes": [
+      "Apoc"
+    ],
+    "tier": 4,
+    "books": [
+      "1 Maccabees"
+    ],
+    "family": {},
+    "speakerType": "other"
   }
 ]

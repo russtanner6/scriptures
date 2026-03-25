@@ -1,0 +1,1050 @@
+[
+  {
+    "book": "1 Nephi",
+    "chapter": 1,
+    "verse": 1,
+    "crossReference": "Jeremiah 1:4-10",
+    "type": "parallel",
+    "note": "Lehi's prophetic calling parallels Jeremiah's commission as a prophet to the nations."
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 1,
+    "verse": 8,
+    "crossReference": "Isaiah 6:1-8",
+    "type": "parallel",
+    "note": "Lehi's throne-room vision parallels Isaiah's vision of the Lord on His throne."
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 3,
+    "verse": 7,
+    "crossReference": "Hebrews 11:8",
+    "type": "allusion",
+    "note": "Nephi's faith to go and do echoes Abraham's faith to obey without knowing the destination."
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 4,
+    "verse": 13,
+    "crossReference": "John 11:50",
+    "type": "typology",
+    "note": "The principle that one man should die to save a nation parallels Caiaphas's unwitting prophecy about Christ."
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 5,
+    "verse": 14,
+    "crossReference": "Genesis 37:28",
+    "type": "parallel",
+    "note": "Lehi discovers his descent from Joseph who was sold into Egypt."
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 8,
+    "verse": 10,
+    "crossReference": "Revelation 22:1-2",
+    "type": "typology",
+    "note": "The Tree of Life imagery connects to John's apocalyptic vision of the tree bearing twelve fruits."
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 11,
+    "verse": 18,
+    "crossReference": "Luke 1:26-38",
+    "type": "fulfillment",
+    "note": "Nephi's vision of the virgin bearing the Son of God is fulfilled in the annunciation to Mary."
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 13,
+    "verse": 26,
+    "crossReference": "2 Nephi 29:3-10",
+    "type": "allusion",
+    "note": "The loss of plain and precious truths is elaborated further in Nephi's later writings."
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 14,
+    "verse": 10,
+    "crossReference": "Revelation 17:1-6",
+    "type": "parallel",
+    "note": "The great and abominable church parallels the whore of Babylon in John's Revelation."
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 17,
+    "verse": 26,
+    "crossReference": "Exodus 14:21-22",
+    "type": "allusion",
+    "note": "Nephi recounts the parting of the Red Sea to chasten his brothers' lack of faith."
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 19,
+    "verse": 10,
+    "crossReference": "Alma 33:10-15",
+    "type": "allusion",
+    "note": "Alma later quotes the same prophet Zenos on prayer and the Atonement."
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 20,
+    "verse": 1,
+    "crossReference": "Isaiah 48",
+    "type": "quotation",
+    "note": "Nephi quotes Isaiah 48 nearly verbatim from the brass plates."
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 21,
+    "verse": 1,
+    "crossReference": "Isaiah 49",
+    "type": "quotation",
+    "note": "Nephi quotes Isaiah 49, the prophecy of the Lord's servant and Israel's gathering."
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 22,
+    "verse": 15,
+    "crossReference": "3 Nephi 21:1-7",
+    "type": "allusion",
+    "note": "Nephi's millennial prophecy connects to Christ's own words to the Nephites about the last days."
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 2,
+    "verse": 11,
+    "crossReference": "Alma 42:1-13",
+    "type": "allusion",
+    "note": "Alma's discourse on justice and mercy expands the Fall/Atonement framework Lehi introduces here."
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 2,
+    "verse": 25,
+    "crossReference": "Moses 5:10-11",
+    "type": "parallel",
+    "note": "Adam and Eve's declaration of joy in the Fall parallels Lehi's teaching that men exist to have joy."
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 3,
+    "verse": 7,
+    "crossReference": "D&C 1:17-23",
+    "type": "fulfillment",
+    "note": "The prophecy of a choice seer is fulfilled in Joseph Smith's calling as described in D&C."
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 9,
+    "verse": 7,
+    "crossReference": "Alma 34:8-16",
+    "type": "allusion",
+    "note": "Amulek's teaching on the infinite and eternal sacrifice echoes Jacob's discourse on the infinite atonement."
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 21,
+    "verse": 1,
+    "crossReference": "D&C 113:1-6",
+    "type": "fulfillment",
+    "note": "Joseph Smith provides the inspired interpretation of the stem of Jesse and the root of Jesse."
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 25,
+    "verse": 23,
+    "crossReference": "Ephesians 2:8-9",
+    "type": "parallel",
+    "note": "The relationship between grace and works is a central doctrinal connection between Nephi and Paul."
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 27,
+    "verse": 23,
+    "crossReference": "Joseph Smith-History 1:63-65",
+    "type": "fulfillment",
+    "note": "The encounter with the learned man (Martin Harris and Charles Anthon) fulfills this prophecy."
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 28,
+    "verse": 21,
+    "crossReference": "1 Nephi 14:3-17",
+    "type": "allusion",
+    "note": "Nephi's earlier vision of the great and abominable church connects to these latter-day deceptions."
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 31,
+    "verse": 13,
+    "crossReference": "3 Nephi 11:31-41",
+    "type": "parallel",
+    "note": "Christ personally teaches the same doctrine of Christ that Nephi outlines here."
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 32,
+    "verse": 3,
+    "crossReference": "Alma 31:5",
+    "type": "allusion",
+    "note": "Alma later echoes the principle that the word of God has more power than the sword."
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 1,
+    "verse": 13,
+    "crossReference": "Luke 2:1-14",
+    "type": "parallel",
+    "note": "The sign of Christ's birth parallels the nativity account in Luke."
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 8,
+    "verse": 17,
+    "crossReference": "Matthew 27:45-54",
+    "type": "parallel",
+    "note": "The destructions in the Americas coincide with the crucifixion events in Jerusalem."
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 11,
+    "verse": 14,
+    "crossReference": "John 20:19-29",
+    "type": "parallel",
+    "note": "Christ invites people to feel His wounds, paralleling His appearance to Thomas."
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 12,
+    "verse": 1,
+    "crossReference": "Matthew 5",
+    "type": "quotation",
+    "note": "Christ delivers the Sermon at the Temple, closely paralleling the Sermon on the Mount."
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 13,
+    "verse": 1,
+    "crossReference": "Matthew 6",
+    "type": "quotation",
+    "note": "Continuation of the Sermon paralleling Matthew 6 on prayer and fasting."
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 14,
+    "verse": 1,
+    "crossReference": "Matthew 7",
+    "type": "quotation",
+    "note": "Conclusion of the Sermon paralleling Matthew 7 on judgment and foundations."
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 15,
+    "verse": 17,
+    "crossReference": "John 10:16",
+    "type": "fulfillment",
+    "note": "Christ identifies the Nephites as the 'other sheep' He spoke of in John."
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 20,
+    "verse": 22,
+    "crossReference": "Genesis 12:3",
+    "type": "fulfillment",
+    "note": "The Abrahamic covenant that all families of the earth shall be blessed."
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 22,
+    "verse": 1,
+    "crossReference": "Isaiah 54",
+    "type": "quotation",
+    "note": "Christ quotes Isaiah 54 on the expansion and peace of Zion."
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 24,
+    "verse": 1,
+    "crossReference": "Malachi 3",
+    "type": "quotation",
+    "note": "Christ commands the Nephites to record Malachi 3 on tithing and the Lord's messenger."
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 25,
+    "verse": 5,
+    "crossReference": "D&C 2",
+    "type": "fulfillment",
+    "note": "The promise of Elijah is fulfilled in Moroni's visit to Joseph Smith and the Kirtland Temple."
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 27,
+    "verse": 8,
+    "crossReference": "D&C 115:4",
+    "type": "parallel",
+    "note": "The naming of Christ's Church is reiterated in the modern-day revelation."
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 28,
+    "verse": 7,
+    "crossReference": "John 21:20-23",
+    "type": "parallel",
+    "note": "The desire of the Three Nephites parallels the tradition about John the Beloved."
+  },
+  {
+    "book": "4 Nephi",
+    "chapter": 1,
+    "verse": 3,
+    "crossReference": "Acts 2:44-45",
+    "type": "parallel",
+    "note": "The Nephite Zion society of 'all things common' parallels the early Christian church in Jerusalem."
+  },
+  {
+    "book": "4 Nephi",
+    "chapter": 1,
+    "verse": 17,
+    "crossReference": "2 Nephi 26:33",
+    "type": "allusion",
+    "note": "The elimination of all -ites fulfills Nephi's teaching that God invites all to come unto Him regardless of distinction."
+  },
+  {
+    "book": "4 Nephi",
+    "chapter": 1,
+    "verse": 48,
+    "crossReference": "Mormon 1:1-5",
+    "type": "parallel",
+    "note": "Ammaron instructs Mormon to retrieve the records, directly connecting to the opening of the book of Mormon."
+  },
+  {
+    "book": "Omni",
+    "chapter": 1,
+    "verse": 14,
+    "crossReference": "Mosiah 25:2",
+    "type": "parallel",
+    "note": "The discovery of the people of Zarahemla and the Mulekite population is further detailed in Mosiah."
+  },
+  {
+    "book": "Omni",
+    "chapter": 1,
+    "verse": 20,
+    "crossReference": "Ether 13:20-21",
+    "type": "parallel",
+    "note": "Coriantumr's discovery connects the Jaredite civilization to the Nephite record."
+  },
+  {
+    "book": "Enos",
+    "chapter": 1,
+    "verse": 4,
+    "crossReference": "Alma 34:17-27",
+    "type": "allusion",
+    "note": "Amulek's detailed teaching on prayer echoes Enos's model of persistent, heartfelt supplication."
+  },
+  {
+    "book": "Enos",
+    "chapter": 1,
+    "verse": 8,
+    "crossReference": "Ether 12:6",
+    "type": "allusion",
+    "note": "The witness received after the trial of faith parallels Moroni's teaching on faith preceding evidence."
+  },
+  {
+    "book": "Enos",
+    "chapter": 1,
+    "verse": 5,
+    "crossReference": "Moroni 10:4-5",
+    "type": "allusion",
+    "note": "The promise of receiving truth through sincere prayer connects to Moroni's closing invitation."
+  },
+  {
+    "book": "Enos",
+    "chapter": 1,
+    "verse": 13,
+    "crossReference": "D&C 18:10-13",
+    "type": "parallel",
+    "note": "The worth of souls and the joy of bringing them to Christ parallels Enos's expanding circle of concern."
+  },
+  {
+    "book": "Words of Mormon",
+    "chapter": 1,
+    "verse": 3,
+    "crossReference": "1 Nephi 9:5",
+    "type": "parallel",
+    "note": "Nephi's original statement about making the small plates for a wise purpose is fulfilled in Mormon's discovery."
+  },
+  {
+    "book": "Words of Mormon",
+    "chapter": 1,
+    "verse": 7,
+    "crossReference": "D&C 10",
+    "type": "fulfillment",
+    "note": "The Lord's wise purpose for the small plates is revealed when the 116 lost pages are replaced by this record."
+  },
+  {
+    "book": "Words of Mormon",
+    "chapter": 1,
+    "verse": 12,
+    "crossReference": "Mosiah 1:1",
+    "type": "parallel",
+    "note": "Mormon's bridge narrative connects directly to the opening of Mosiah and King Benjamin's reign."
+  },
+  {
+    "book": "Jacob",
+    "chapter": 2,
+    "verse": 17,
+    "crossReference": "Mosiah 4:16-26",
+    "type": "allusion",
+    "note": "King Benjamin's sermon on caring for the poor expands Jacob's teaching to think of brethren as yourselves."
+  },
+  {
+    "book": "Jacob",
+    "chapter": 2,
+    "verse": 19,
+    "crossReference": "D&C 42:30",
+    "type": "parallel",
+    "note": "The law of consecration echoes Jacob's teaching to seek the kingdom of God before riches."
+  },
+  {
+    "book": "Jacob",
+    "chapter": 4,
+    "verse": 14,
+    "crossReference": "Romans 11:25",
+    "type": "parallel",
+    "note": "Paul's teaching on Israel's blindness parallels Jacob's concept of looking beyond the mark."
+  },
+  {
+    "book": "Jacob",
+    "chapter": 5,
+    "verse": 3,
+    "crossReference": "Isaiah 5",
+    "type": "parallel",
+    "note": "Isaiah's vineyard parable uses similar imagery of God's care for Israel and their failure to produce good fruit."
+  },
+  {
+    "book": "Jacob",
+    "chapter": 5,
+    "verse": 3,
+    "crossReference": "Romans 11",
+    "type": "parallel",
+    "note": "Paul's olive tree metaphor of grafting Gentiles into Israel parallels Zenos's allegory directly."
+  },
+  {
+    "book": "Jacob",
+    "chapter": 7,
+    "verse": 6,
+    "crossReference": "Alma 30",
+    "type": "parallel",
+    "note": "Korihor's confrontation with Alma mirrors the Sherem-Jacob encounter as a pattern of anti-Christ opposition."
+  },
+  {
+    "book": "Ether",
+    "chapter": 1,
+    "verse": 33,
+    "crossReference": "Genesis 11:1-9",
+    "type": "parallel",
+    "note": "The Tower of Babel account parallels the Jaredite departure narrative."
+  },
+  {
+    "book": "Ether",
+    "chapter": 2,
+    "verse": 16,
+    "crossReference": "Genesis 6:14-16",
+    "type": "typology",
+    "note": "The barge construction echoes Noah's ark as a vessel of divine deliverance."
+  },
+  {
+    "book": "Ether",
+    "chapter": 3,
+    "verse": 15,
+    "crossReference": "D&C 130:1",
+    "type": "parallel",
+    "note": "The pre-mortal Christ appearing in bodily form connects to the doctrine that God has a tangible body."
+  },
+  {
+    "book": "Ether",
+    "chapter": 6,
+    "verse": 9,
+    "crossReference": "1 Nephi 18:8-23",
+    "type": "parallel",
+    "note": "The Jaredite ocean crossing parallels the Lehite voyage in pattern and purpose."
+  },
+  {
+    "book": "Ether",
+    "chapter": 8,
+    "verse": 18,
+    "crossReference": "Moses 5:29-31",
+    "type": "allusion",
+    "note": "Secret combinations are traced back to Cain's covenant with Satan."
+  },
+  {
+    "book": "Ether",
+    "chapter": 8,
+    "verse": 23,
+    "crossReference": "Helaman 6:26-30",
+    "type": "parallel",
+    "note": "The Gadianton robbers followed the same pattern of secret oaths from Cain."
+  },
+  {
+    "book": "Ether",
+    "chapter": 12,
+    "verse": 6,
+    "crossReference": "Hebrews 11",
+    "type": "parallel",
+    "note": "The faith chapter in Ether parallels and complements the faith chapter in Hebrews."
+  },
+  {
+    "book": "Ether",
+    "chapter": 12,
+    "verse": 27,
+    "crossReference": "D&C 121:45-46",
+    "type": "allusion",
+    "note": "The promise that weakness becomes strength through grace connects to the promise of the Holy Ghost's constant companionship."
+  },
+  {
+    "book": "Ether",
+    "chapter": 13,
+    "verse": 10,
+    "crossReference": "Revelation 21:1-2",
+    "type": "parallel",
+    "note": "The New Jerusalem prophecy parallels John's vision in Revelation."
+  },
+  {
+    "book": "Ether",
+    "chapter": 15,
+    "verse": 19,
+    "crossReference": "Mormon 6:1-15",
+    "type": "parallel",
+    "note": "The final Jaredite battle at Ramah/Cumorah foreshadows the final Nephite battle at the same location."
+  },
+  {
+    "book": "Jarom",
+    "chapter": 1,
+    "verse": 9,
+    "crossReference": "2 Nephi 1:20",
+    "type": "allusion",
+    "note": "The 'inasmuch as ye keep the commandments ye shall prosper' promise is reiterated."
+  },
+  {
+    "book": "Helaman",
+    "chapter": 5,
+    "verse": 12,
+    "crossReference": "2 Nephi 31:17",
+    "type": "allusion",
+    "note": "Building on the rock of the Redeemer connects to the baptismal covenant in 2 Nephi."
+  },
+  {
+    "book": "Helaman",
+    "chapter": 8,
+    "verse": 15,
+    "crossReference": "John 3:14-15",
+    "type": "parallel",
+    "note": "Nephi cites Moses lifting up the serpent as a type of Christ, as does Jesus to Nicodemus."
+  },
+  {
+    "book": "Helaman",
+    "chapter": 10,
+    "verse": 5,
+    "crossReference": "Matthew 16:19",
+    "type": "parallel",
+    "note": "The sealing power given to Nephi parallels the keys given to Peter."
+  },
+  {
+    "book": "Helaman",
+    "chapter": 12,
+    "verse": 7,
+    "crossReference": "Psalm 103:14",
+    "type": "allusion",
+    "note": "Mormon's commentary on man's frailty echoes the Psalmist's 'He knoweth our frame.'"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 13,
+    "verse": 33,
+    "crossReference": "Matthew 23:29-39",
+    "type": "parallel",
+    "note": "Samuel's rebuke about rejecting prophets mirrors Jesus's lament over Jerusalem."
+  },
+  {
+    "book": "Helaman",
+    "chapter": 14,
+    "verse": 2,
+    "crossReference": "Matthew 2:1-2",
+    "type": "parallel",
+    "note": "The new star at Christ's birth parallels the star followed by the Wise Men."
+  },
+  {
+    "book": "Mormon",
+    "chapter": 1,
+    "verse": 2,
+    "crossReference": "4 Nephi 1:47-49",
+    "type": "parallel",
+    "note": "Ammaron's charge to Mormon directly follows the record-keeping chain from 4 Nephi."
+  },
+  {
+    "book": "Mormon",
+    "chapter": 2,
+    "verse": 13,
+    "crossReference": "2 Corinthians 7:10",
+    "type": "parallel",
+    "note": "The sorrowing of the damned vs godly sorrow parallels Paul's teaching on true repentance."
+  },
+  {
+    "book": "Mormon",
+    "chapter": 3,
+    "verse": 15,
+    "crossReference": "Romans 12:19",
+    "type": "allusion",
+    "note": "Mormon's refusal to lead connects to the principle that vengeance belongs to the Lord."
+  },
+  {
+    "book": "Mormon",
+    "chapter": 6,
+    "verse": 17,
+    "crossReference": "Ether 15:11",
+    "type": "parallel",
+    "note": "Mormon's lament at Cumorah echoes the final Jaredite destruction at the same location."
+  },
+  {
+    "book": "Mormon",
+    "chapter": 7,
+    "verse": 8,
+    "crossReference": "1 Nephi 13:38-41",
+    "type": "allusion",
+    "note": "Mormon's testimony of the Bible and Book of Mormon working together fulfills Nephi's vision."
+  },
+  {
+    "book": "Mormon",
+    "chapter": 8,
+    "verse": 35,
+    "crossReference": "2 Nephi 28",
+    "type": "parallel",
+    "note": "Moroni's description of latter-day pride echoes Nephi's earlier prophecies of the last days."
+  },
+  {
+    "book": "Mormon",
+    "chapter": 9,
+    "verse": 9,
+    "crossReference": "Hebrews 13:8",
+    "type": "parallel",
+    "note": "The unchangeable nature of God parallels the Hebrews declaration of Christ's consistency."
+  },
+  {
+    "book": "Moroni",
+    "chapter": 2,
+    "verse": 2,
+    "crossReference": "3 Nephi 18:36-37",
+    "type": "parallel",
+    "note": "Moroni records the words Christ spoke about conferring the Holy Ghost."
+  },
+  {
+    "book": "Moroni",
+    "chapter": 4,
+    "verse": 3,
+    "crossReference": "D&C 20:77",
+    "type": "parallel",
+    "note": "The sacramental prayer is repeated verbatim in modern revelation."
+  },
+  {
+    "book": "Moroni",
+    "chapter": 5,
+    "verse": 2,
+    "crossReference": "D&C 20:79",
+    "type": "parallel",
+    "note": "The prayer on the wine is repeated verbatim in D&C."
+  },
+  {
+    "book": "Moroni",
+    "chapter": 7,
+    "verse": 45,
+    "crossReference": "1 Corinthians 13",
+    "type": "parallel",
+    "note": "Mormon's discourse on charity closely parallels Paul's chapter on love."
+  },
+  {
+    "book": "Moroni",
+    "chapter": 8,
+    "verse": 12,
+    "crossReference": "D&C 137:10",
+    "type": "parallel",
+    "note": "The salvation of little children is confirmed in Joseph Smith's celestial vision."
+  },
+  {
+    "book": "Moroni",
+    "chapter": 10,
+    "verse": 8,
+    "crossReference": "1 Corinthians 12",
+    "type": "parallel",
+    "note": "Moroni's list of spiritual gifts parallels Paul's enumeration."
+  },
+  {
+    "book": "Moroni",
+    "chapter": 10,
+    "verse": 8,
+    "crossReference": "D&C 46",
+    "type": "parallel",
+    "note": "The modern revelation on spiritual gifts expands on Moroni's and Paul's teachings."
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 2,
+    "verse": 17,
+    "crossReference": "Matthew 25:34-40",
+    "type": "parallel",
+    "note": "Benjamin's teaching on serving God through service to others parallels Christ's sheep and goats parable."
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 3,
+    "verse": 5,
+    "crossReference": "Luke 2:1-14",
+    "type": "parallel",
+    "note": "The angel's description of Christ's birth parallels Luke's nativity account."
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 8,
+    "verse": 17,
+    "crossReference": "D&C 107:92",
+    "type": "parallel",
+    "note": "The role of a seer as described by Ammon is confirmed in modern revelation."
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 13,
+    "verse": 11,
+    "crossReference": "Exodus 20",
+    "type": "quotation",
+    "note": "Abinadi quotes the Ten Commandments directly from the brass plates."
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 14,
+    "verse": 1,
+    "crossReference": "Isaiah 53",
+    "type": "quotation",
+    "note": "Abinadi quotes Isaiah 53 on the suffering servant."
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 15,
+    "verse": 1,
+    "crossReference": "D&C 93:3-4",
+    "type": "parallel",
+    "note": "Abinadi's Christology connects to the modern revelation on the nature of Christ."
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 18,
+    "verse": 8,
+    "crossReference": "D&C 20:37",
+    "type": "parallel",
+    "note": "The baptismal covenant at the Waters of Mormon parallels the modern baptismal requirements."
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 24,
+    "verse": 14,
+    "crossReference": "Alma 31:38",
+    "type": "allusion",
+    "note": "The Lord easing burdens connects to Alma's later prayer for strength under affliction."
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 27,
+    "verse": 25,
+    "crossReference": "Alma 36",
+    "type": "parallel",
+    "note": "Alma the Younger's conversion account is retold in greater detail in Alma 36."
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 29,
+    "verse": 25,
+    "crossReference": "Alma 1",
+    "type": "parallel",
+    "note": "The reign of judges begins in Alma 1 with the immediate challenges Alma faces."
+  },
+  {
+    "book": "Alma",
+    "chapter": 5,
+    "verse": 14,
+    "crossReference": "Mosiah 27:24",
+    "type": "allusion",
+    "note": "Alma refers to his own conversion and spiritual rebirth."
+  },
+  {
+    "book": "Alma",
+    "chapter": 7,
+    "verse": 11,
+    "crossReference": "Isaiah 53:4",
+    "type": "fulfillment",
+    "note": "Prophecy of Christ bearing our griefs and sorrows."
+  },
+  {
+    "book": "Alma",
+    "chapter": 11,
+    "verse": 43,
+    "crossReference": "1 Corinthians 15:22",
+    "type": "parallel",
+    "note": "Universal nature of the resurrection."
+  },
+  {
+    "book": "Alma",
+    "chapter": 13,
+    "verse": 3,
+    "crossReference": "Genesis 14:18",
+    "type": "parallel",
+    "note": "The account of Melchizedek as a high priest."
+  },
+  {
+    "book": "Alma",
+    "chapter": 32,
+    "verse": 21,
+    "crossReference": "Hebrews 11:1",
+    "type": "parallel",
+    "note": "The definition of faith parallels Paul's formulation."
+  },
+  {
+    "book": "Alma",
+    "chapter": 37,
+    "verse": 6,
+    "crossReference": "1 Nephi 16:10",
+    "type": "allusion",
+    "note": "The Liahona's original description and discovery."
+  },
+  {
+    "book": "Alma",
+    "chapter": 42,
+    "verse": 22,
+    "crossReference": "2 Nephi 2:13",
+    "type": "allusion",
+    "note": "The necessity of opposition and the law in the plan of redemption."
+  },
+  {
+    "book": "Abraham",
+    "chapter": 1,
+    "verse": 1,
+    "crossReference": "Genesis 12:1",
+    "type": "parallel",
+    "note": "The call of Abraham to leave his country."
+  },
+  {
+    "book": "Abraham",
+    "chapter": 2,
+    "verse": 9,
+    "crossReference": "Galatians 3:29",
+    "type": "fulfillment",
+    "note": "Those who are Christ's are Abraham's seed and heirs."
+  },
+  {
+    "book": "Abraham",
+    "chapter": 3,
+    "verse": 22,
+    "crossReference": "D&C 93:29",
+    "type": "parallel",
+    "note": "Intelligence was not created or made."
+  },
+  {
+    "book": "Abraham",
+    "chapter": 4,
+    "verse": 1,
+    "crossReference": "Genesis 1:1",
+    "type": "parallel",
+    "note": "Parallel creation account."
+  },
+  {
+    "book": "Joseph Smith—History",
+    "chapter": 1,
+    "verse": 17,
+    "crossReference": "James 1:5",
+    "type": "fulfillment",
+    "note": "Joseph Smith's prayer fulfills James's invitation to ask of God."
+  },
+  {
+    "book": "Joseph Smith—History",
+    "chapter": 1,
+    "verse": 68,
+    "crossReference": "D&C 13:1",
+    "type": "parallel",
+    "note": "The recorded words of John the Baptist when conferring the Aaronic Priesthood."
+  },
+  {
+    "book": "Joseph Smith—History",
+    "chapter": 1,
+    "verse": 36,
+    "crossReference": "Malachi 4:5-6",
+    "type": "quotation",
+    "note": "Prophecy of Elijah's return quoted by Moroni with slight variations."
+  },
+  {
+    "book": "Joseph Smith—Matthew",
+    "chapter": 1,
+    "verse": 1,
+    "crossReference": "Matthew 24",
+    "type": "parallel",
+    "note": "Joseph Smith—Matthew is a more correct translation and expansion of Matthew 24."
+  },
+  {
+    "book": "Joseph Smith—Matthew",
+    "chapter": 1,
+    "verse": 31,
+    "crossReference": "D&C 45:16-75",
+    "type": "parallel",
+    "note": "The Lord gives a similar revelation concerning the signs of His coming to Joseph Smith in 1831."
+  },
+  {
+    "book": "Joseph Smith—Matthew",
+    "chapter": 1,
+    "verse": 10,
+    "crossReference": "D&C 1:17-18",
+    "type": "allusion",
+    "note": "References the abomination of desolation spoken of by Daniel the prophet."
+  },
+  {
+    "book": "Moses",
+    "chapter": 1,
+    "verse": 39,
+    "crossReference": "D&C 76:40-42",
+    "type": "parallel",
+    "note": "Both passages describe Christ as the means of salvation and the purpose of God's work."
+  },
+  {
+    "book": "Moses",
+    "chapter": 2,
+    "verse": 1,
+    "crossReference": "Genesis 1:1",
+    "type": "quotation",
+    "note": "Moses 2 is the revealed restoration of the Genesis creation account."
+  },
+  {
+    "book": "Moses",
+    "chapter": 4,
+    "verse": 1,
+    "crossReference": "Abraham 3:27-28",
+    "type": "parallel",
+    "note": "Both texts describe the premortal council and Satan's rebellion."
+  },
+  {
+    "book": "Moses",
+    "chapter": 6,
+    "verse": 51,
+    "crossReference": "2 Nephi 2:22-25",
+    "type": "allusion",
+    "note": "Links the Fall of Adam to the necessary conditions for human existence and joy."
+  },
+  {
+    "book": "Moses",
+    "chapter": 7,
+    "verse": 18,
+    "crossReference": "4 Nephi 1:15-17",
+    "type": "parallel",
+    "note": "Describes a society living in a Zion-like state of unity and peace."
+  },
+  {
+    "book": "Articles of Faith",
+    "chapter": 1,
+    "verse": 1,
+    "crossReference": "D&C 20:17-19",
+    "type": "parallel",
+    "note": "Both passages define the nature of the Godhead."
+  },
+  {
+    "book": "Articles of Faith",
+    "chapter": 1,
+    "verse": 4,
+    "crossReference": "2 Nephi 31:13-17",
+    "type": "parallel",
+    "note": "Nephi outlines the same first principles and ordinances."
+  },
+  {
+    "book": "Articles of Faith",
+    "chapter": 1,
+    "verse": 10,
+    "crossReference": "D&C 45:64-71",
+    "type": "parallel",
+    "note": "Expands on the gathering of Israel and the New Jerusalem."
+  },
+  {
+    "book": "1 Esdras",
+    "chapter": 1,
+    "verse": 1,
+    "crossReference": "2 Chronicles 35:1",
+    "type": "parallel",
+    "note": "Both texts describe Josiah's Passover celebration."
+  },
+  {
+    "book": "1 Esdras",
+    "chapter": 2,
+    "verse": 1,
+    "crossReference": "Ezra 1:1",
+    "type": "quotation",
+    "note": "Opening verses are nearly identical regarding Cyrus's decree."
+  },
+  {
+    "book": "1 Esdras",
+    "chapter": 5,
+    "verse": 1,
+    "crossReference": "Ezra 2:1",
+    "type": "parallel",
+    "note": "Both provide lists of Jewish families returning from captivity."
+  },
+  {
+    "book": "1 Esdras",
+    "chapter": 8,
+    "verse": 1,
+    "crossReference": "Ezra 7:1",
+    "type": "parallel",
+    "note": "Introduces Ezra and his genealogy."
+  },
+  {
+    "book": "1 Esdras",
+    "chapter": 9,
+    "verse": 37,
+    "crossReference": "Nehemiah 8:1",
+    "type": "parallel",
+    "note": "Both describe the public reading of the Law."
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 1,
+    "verse": 54,
+    "crossReference": "Daniel 11:31",
+    "type": "fulfillment",
+    "note": "Antiochus setting up the abomination of desolation fulfills Daniel's prophecy."
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 2,
+    "verse": 26,
+    "crossReference": "Numbers 25:7-8",
+    "type": "allusion",
+    "note": "Mattathias's zeal compared to Phinehas."
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 3,
+    "verse": 18,
+    "crossReference": "1 Samuel 14:6",
+    "type": "allusion",
+    "note": "Trust in God to deliver the many by the few echoes Jonathan's faith."
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 4,
+    "verse": 59,
+    "crossReference": "John 10:22",
+    "type": "allusion",
+    "note": "The NT mentions the Feast of Dedication established here."
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 14,
+    "verse": 12,
+    "crossReference": "Micah 4:4",
+    "type": "parallel",
+    "note": "Every man under his vine and fig tree mirrors the prophetic vision of peace."
+  }
+]

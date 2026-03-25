@@ -1,0 +1,1544 @@
+[
+  {
+    "book": "1 Nephi",
+    "chapter": 1,
+    "genre": "vision"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 2,
+    "genre": "narrative"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 3,
+    "genre": "narrative"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 4,
+    "genre": "narrative"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 5,
+    "genre": "narrative"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 6,
+    "genre": "narrative",
+    "subgenre": "prologue"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 7,
+    "genre": "narrative"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 8,
+    "genre": "vision"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 9,
+    "genre": "narrative",
+    "subgenre": "editorial"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 10,
+    "genre": "prophecy"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 11,
+    "genre": "vision"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 12,
+    "genre": "vision"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 13,
+    "genre": "vision"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 14,
+    "genre": "vision"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 15,
+    "genre": "sermon"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 16,
+    "genre": "narrative"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 17,
+    "genre": "narrative",
+    "subgenre": "discourse"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 18,
+    "genre": "narrative"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 19,
+    "genre": "prophecy"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 20,
+    "genre": "prophecy",
+    "subgenre": "poetry"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 21,
+    "genre": "prophecy",
+    "subgenre": "poetry"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 22,
+    "genre": "sermon"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 1,
+    "genre": "sermon",
+    "subgenre": "farewell discourse"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 2,
+    "genre": "sermon",
+    "subgenre": "theological discourse"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 3,
+    "genre": "blessing"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 4,
+    "genre": "psalm"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 5,
+    "genre": "narrative"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 6,
+    "genre": "sermon"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 7,
+    "genre": "prophecy",
+    "subgenre": "poetry"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 8,
+    "genre": "prophecy",
+    "subgenre": "poetry"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 9,
+    "genre": "sermon",
+    "subgenre": "theological discourse"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 10,
+    "genre": "prophecy"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 11,
+    "genre": "narrative",
+    "subgenre": "prologue"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 12,
+    "genre": "prophecy",
+    "subgenre": "poetry"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 13,
+    "genre": "prophecy",
+    "subgenre": "poetry"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 14,
+    "genre": "prophecy",
+    "subgenre": "poetry"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 15,
+    "genre": "parable",
+    "subgenre": "song"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 16,
+    "genre": "vision"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 17,
+    "genre": "prophecy"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 18,
+    "genre": "prophecy",
+    "subgenre": "poetry"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 19,
+    "genre": "prophecy",
+    "subgenre": "poetry"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 20,
+    "genre": "prophecy",
+    "subgenre": "poetry"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 21,
+    "genre": "prophecy",
+    "subgenre": "apocalyptic"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 22,
+    "genre": "hymn"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 23,
+    "genre": "prophecy",
+    "subgenre": "poetry"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 24,
+    "genre": "prophecy",
+    "subgenre": "proverb"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 25,
+    "genre": "prophecy",
+    "subgenre": "commentary"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 26,
+    "genre": "prophecy"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 27,
+    "genre": "prophecy",
+    "subgenre": "apocalyptic"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 28,
+    "genre": "prophecy",
+    "subgenre": "warning"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 29,
+    "genre": "prophecy"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 30,
+    "genre": "prophecy",
+    "subgenre": "commentary"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 31,
+    "genre": "sermon",
+    "subgenre": "doctrinal treatise"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 32,
+    "genre": "sermon"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 33,
+    "genre": "narrative",
+    "subgenre": "testimony"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 1,
+    "genre": "narrative"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 2,
+    "genre": "historical record"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 3,
+    "genre": "narrative",
+    "subgenre": "epistle"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 4,
+    "genre": "military record"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 5,
+    "genre": "narrative",
+    "subgenre": "editorial"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 6,
+    "genre": "narrative"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 7,
+    "genre": "narrative"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 8,
+    "genre": "narrative",
+    "subgenre": "apocalyptic"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 9,
+    "genre": "sermon"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 10,
+    "genre": "narrative"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 11,
+    "genre": "narrative",
+    "subgenre": "theophany"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 12,
+    "genre": "sermon"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 13,
+    "genre": "sermon"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 14,
+    "genre": "sermon"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 15,
+    "genre": "sermon"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 16,
+    "genre": "prophecy"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 17,
+    "genre": "narrative"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 18,
+    "genre": "narrative",
+    "subgenre": "ritual"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 19,
+    "genre": "narrative",
+    "subgenre": "prayer"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 20,
+    "genre": "prophecy"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 21,
+    "genre": "prophecy",
+    "subgenre": "apocalyptic"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 22,
+    "genre": "prophecy",
+    "subgenre": "poetry"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 23,
+    "genre": "narrative"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 24,
+    "genre": "prophecy",
+    "subgenre": "poetry"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 25,
+    "genre": "prophecy",
+    "subgenre": "poetry"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 26,
+    "genre": "narrative",
+    "subgenre": "editorial"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 27,
+    "genre": "sermon"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 28,
+    "genre": "narrative"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 29,
+    "genre": "sermon",
+    "subgenre": "warning"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 30,
+    "genre": "prophecy"
+  },
+  {
+    "book": "4 Nephi",
+    "chapter": 1,
+    "genre": "historical record",
+    "subgenre": "abridgment"
+  },
+  {
+    "book": "Omni",
+    "chapter": 1,
+    "genre": "historical record",
+    "subgenre": "memoir"
+  },
+  {
+    "book": "Enos",
+    "chapter": 1,
+    "genre": "narrative",
+    "subgenre": "spiritual autobiography"
+  },
+  {
+    "book": "Words of Mormon",
+    "chapter": 1,
+    "genre": "narrative",
+    "subgenre": "editorial bridge"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 1,
+    "genre": "narrative",
+    "subgenre": "memoir"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 2,
+    "genre": "sermon"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 3,
+    "genre": "sermon"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 4,
+    "genre": "sermon",
+    "subgenre": "theological discourse"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 5,
+    "genre": "parable",
+    "subgenre": "allegory"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 6,
+    "genre": "sermon",
+    "subgenre": "exhortation"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 7,
+    "genre": "narrative"
+  },
+  {
+    "book": "Ether",
+    "chapter": 1,
+    "genre": "genealogy",
+    "subgenre": "prologue"
+  },
+  {
+    "book": "Ether",
+    "chapter": 2,
+    "genre": "narrative"
+  },
+  {
+    "book": "Ether",
+    "chapter": 3,
+    "genre": "vision",
+    "subgenre": "theophany"
+  },
+  {
+    "book": "Ether",
+    "chapter": 4,
+    "genre": "prophecy",
+    "subgenre": "commentary"
+  },
+  {
+    "book": "Ether",
+    "chapter": 5,
+    "genre": "narrative",
+    "subgenre": "instruction"
+  },
+  {
+    "book": "Ether",
+    "chapter": 6,
+    "genre": "narrative"
+  },
+  {
+    "book": "Ether",
+    "chapter": 7,
+    "genre": "historical record"
+  },
+  {
+    "book": "Ether",
+    "chapter": 8,
+    "genre": "narrative",
+    "subgenre": "warning"
+  },
+  {
+    "book": "Ether",
+    "chapter": 9,
+    "genre": "historical record"
+  },
+  {
+    "book": "Ether",
+    "chapter": 10,
+    "genre": "historical record"
+  },
+  {
+    "book": "Ether",
+    "chapter": 11,
+    "genre": "historical record"
+  },
+  {
+    "book": "Ether",
+    "chapter": 12,
+    "genre": "sermon",
+    "subgenre": "theological discourse"
+  },
+  {
+    "book": "Ether",
+    "chapter": 13,
+    "genre": "prophecy"
+  },
+  {
+    "book": "Ether",
+    "chapter": 14,
+    "genre": "military record"
+  },
+  {
+    "book": "Ether",
+    "chapter": 15,
+    "genre": "narrative",
+    "subgenre": "tragedy"
+  },
+  {
+    "book": "Jarom",
+    "chapter": 1,
+    "genre": "historical record",
+    "subgenre": "memoir"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 1,
+    "genre": "military record"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 2,
+    "genre": "historical record"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 3,
+    "genre": "historical record"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 4,
+    "genre": "historical record"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 5,
+    "genre": "narrative",
+    "subgenre": "miracle"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 6,
+    "genre": "historical record"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 7,
+    "genre": "prophecy",
+    "subgenre": "lamentation"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 8,
+    "genre": "sermon"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 9,
+    "genre": "narrative"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 10,
+    "genre": "narrative",
+    "subgenre": "theophany"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 11,
+    "genre": "historical record"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 12,
+    "genre": "sermon",
+    "subgenre": "editorial"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 13,
+    "genre": "prophecy",
+    "subgenre": "warning"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 14,
+    "genre": "prophecy",
+    "subgenre": "apocalyptic"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 15,
+    "genre": "sermon"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 16,
+    "genre": "narrative"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 1,
+    "genre": "narrative",
+    "subgenre": "memoir"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 2,
+    "genre": "military record"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 3,
+    "genre": "sermon"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 4,
+    "genre": "military record"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 5,
+    "genre": "narrative",
+    "subgenre": "memoir"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 6,
+    "genre": "lament"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 7,
+    "genre": "sermon"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 8,
+    "genre": "prophecy",
+    "subgenre": "commentary"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 9,
+    "genre": "sermon",
+    "subgenre": "theological discourse"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 1,
+    "genre": "narrative",
+    "subgenre": "memoir"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 2,
+    "genre": "narrative",
+    "subgenre": "protocol"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 3,
+    "genre": "narrative",
+    "subgenre": "protocol"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 4,
+    "genre": "prayer"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 5,
+    "genre": "prayer"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 6,
+    "genre": "narrative",
+    "subgenre": "ecclesiastical code"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 7,
+    "genre": "sermon"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 8,
+    "genre": "epistle"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 9,
+    "genre": "epistle",
+    "subgenre": "lamentation"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 10,
+    "genre": "sermon",
+    "subgenre": "farewell"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 1,
+    "genre": "sermon",
+    "subgenre": "farewell"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 2,
+    "genre": "sermon"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 3,
+    "genre": "vision",
+    "subgenre": "discourse"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 4,
+    "genre": "sermon"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 5,
+    "genre": "covenant document"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 6,
+    "genre": "historical record"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 7,
+    "genre": "narrative"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 8,
+    "genre": "sermon"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 9,
+    "genre": "narrative",
+    "subgenre": "memoir"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 10,
+    "genre": "military record"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 11,
+    "genre": "narrative"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 12,
+    "genre": "prophecy",
+    "subgenre": "warning"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 13,
+    "genre": "sermon",
+    "subgenre": "defense"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 14,
+    "genre": "prophecy",
+    "subgenre": "poetry"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 15,
+    "genre": "sermon",
+    "subgenre": "theological"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 16,
+    "genre": "prophecy"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 17,
+    "genre": "narrative"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 18,
+    "genre": "narrative",
+    "subgenre": "liturgical"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 19,
+    "genre": "narrative"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 20,
+    "genre": "military record"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 21,
+    "genre": "historical record"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 22,
+    "genre": "narrative"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 23,
+    "genre": "narrative"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 24,
+    "genre": "narrative"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 25,
+    "genre": "narrative"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 26,
+    "genre": "narrative",
+    "subgenre": "ecclesiastical"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 27,
+    "genre": "narrative"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 28,
+    "genre": "historical record"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 29,
+    "genre": "sermon",
+    "subgenre": "political treatise"
+  },
+  {
+    "book": "Alma",
+    "chapter": 1,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 2,
+    "genre": "military record"
+  },
+  {
+    "book": "Alma",
+    "chapter": 3,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 4,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 5,
+    "genre": "sermon"
+  },
+  {
+    "book": "Alma",
+    "chapter": 6,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 7,
+    "genre": "sermon",
+    "subgenre": "prophecy"
+  },
+  {
+    "book": "Alma",
+    "chapter": 8,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 9,
+    "genre": "sermon"
+  },
+  {
+    "book": "Alma",
+    "chapter": 10,
+    "genre": "sermon"
+  },
+  {
+    "book": "Alma",
+    "chapter": 11,
+    "genre": "sermon",
+    "subgenre": "dialogue"
+  },
+  {
+    "book": "Alma",
+    "chapter": 12,
+    "genre": "sermon"
+  },
+  {
+    "book": "Alma",
+    "chapter": 13,
+    "genre": "sermon",
+    "subgenre": "discourse"
+  },
+  {
+    "book": "Alma",
+    "chapter": 14,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 15,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 16,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 17,
+    "genre": "narrative",
+    "subgenre": "missionary"
+  },
+  {
+    "book": "Alma",
+    "chapter": 18,
+    "genre": "narrative",
+    "subgenre": "dialogue"
+  },
+  {
+    "book": "Alma",
+    "chapter": 19,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 20,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 21,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 22,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 23,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 24,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 25,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 26,
+    "genre": "psalm"
+  },
+  {
+    "book": "Alma",
+    "chapter": 27,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 28,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 29,
+    "genre": "psalm"
+  },
+  {
+    "book": "Alma",
+    "chapter": 30,
+    "genre": "dialogue"
+  },
+  {
+    "book": "Alma",
+    "chapter": 31,
+    "genre": "narrative",
+    "subgenre": "prayer"
+  },
+  {
+    "book": "Alma",
+    "chapter": 32,
+    "genre": "sermon",
+    "subgenre": "parable"
+  },
+  {
+    "book": "Alma",
+    "chapter": 33,
+    "genre": "sermon"
+  },
+  {
+    "book": "Alma",
+    "chapter": 34,
+    "genre": "sermon"
+  },
+  {
+    "book": "Alma",
+    "chapter": 35,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 36,
+    "genre": "narrative",
+    "subgenre": "autobiography"
+  },
+  {
+    "book": "Alma",
+    "chapter": 37,
+    "genre": "sermon",
+    "subgenre": "instruction"
+  },
+  {
+    "book": "Alma",
+    "chapter": 38,
+    "genre": "sermon",
+    "subgenre": "instruction"
+  },
+  {
+    "book": "Alma",
+    "chapter": 39,
+    "genre": "sermon",
+    "subgenre": "rebuke"
+  },
+  {
+    "book": "Alma",
+    "chapter": 40,
+    "genre": "sermon",
+    "subgenre": "discourse"
+  },
+  {
+    "book": "Alma",
+    "chapter": 41,
+    "genre": "sermon",
+    "subgenre": "discourse"
+  },
+  {
+    "book": "Alma",
+    "chapter": 42,
+    "genre": "sermon",
+    "subgenre": "discourse"
+  },
+  {
+    "book": "Alma",
+    "chapter": 43,
+    "genre": "military record"
+  },
+  {
+    "book": "Alma",
+    "chapter": 44,
+    "genre": "military record",
+    "subgenre": "dialogue"
+  },
+  {
+    "book": "Alma",
+    "chapter": 45,
+    "genre": "prophecy"
+  },
+  {
+    "book": "Alma",
+    "chapter": 46,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 47,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 48,
+    "genre": "narrative",
+    "subgenre": "portrait"
+  },
+  {
+    "book": "Alma",
+    "chapter": 49,
+    "genre": "military record"
+  },
+  {
+    "book": "Alma",
+    "chapter": 50,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 51,
+    "genre": "military record"
+  },
+  {
+    "book": "Alma",
+    "chapter": 52,
+    "genre": "military record"
+  },
+  {
+    "book": "Alma",
+    "chapter": 53,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 54,
+    "genre": "epistle"
+  },
+  {
+    "book": "Alma",
+    "chapter": 55,
+    "genre": "military record"
+  },
+  {
+    "book": "Alma",
+    "chapter": 56,
+    "genre": "epistle",
+    "subgenre": "military report"
+  },
+  {
+    "book": "Alma",
+    "chapter": 57,
+    "genre": "epistle",
+    "subgenre": "military report"
+  },
+  {
+    "book": "Alma",
+    "chapter": 58,
+    "genre": "epistle",
+    "subgenre": "military report"
+  },
+  {
+    "book": "Alma",
+    "chapter": 59,
+    "genre": "narrative"
+  },
+  {
+    "book": "Alma",
+    "chapter": 60,
+    "genre": "epistle",
+    "subgenre": "rebuke"
+  },
+  {
+    "book": "Alma",
+    "chapter": 61,
+    "genre": "epistle"
+  },
+  {
+    "book": "Alma",
+    "chapter": 62,
+    "genre": "military record"
+  },
+  {
+    "book": "Alma",
+    "chapter": 63,
+    "genre": "narrative"
+  },
+  {
+    "book": "Abraham",
+    "chapter": 1,
+    "genre": "narrative",
+    "subgenre": "autobiography"
+  },
+  {
+    "book": "Abraham",
+    "chapter": 2,
+    "genre": "narrative",
+    "subgenre": "autobiography"
+  },
+  {
+    "book": "Abraham",
+    "chapter": 3,
+    "genre": "vision",
+    "subgenre": "cosmology"
+  },
+  {
+    "book": "Abraham",
+    "chapter": 4,
+    "genre": "narrative",
+    "subgenre": "creation"
+  },
+  {
+    "book": "Abraham",
+    "chapter": 5,
+    "genre": "narrative",
+    "subgenre": "creation"
+  },
+  {
+    "book": "Joseph Smith—History",
+    "chapter": 1,
+    "genre": "narrative",
+    "subgenre": "sacred history"
+  },
+  {
+    "book": "Joseph Smith—Matthew",
+    "chapter": 1,
+    "genre": "prophecy",
+    "subgenre": "apocalyptic"
+  },
+  {
+    "book": "Moses",
+    "chapter": 1,
+    "genre": "vision",
+    "subgenre": "theophany"
+  },
+  {
+    "book": "Moses",
+    "chapter": 2,
+    "genre": "narrative",
+    "subgenre": "cosmogony"
+  },
+  {
+    "book": "Moses",
+    "chapter": 3,
+    "genre": "narrative",
+    "subgenre": "origin story"
+  },
+  {
+    "book": "Moses",
+    "chapter": 4,
+    "genre": "narrative",
+    "subgenre": "theological tragedy"
+  },
+  {
+    "book": "Moses",
+    "chapter": 5,
+    "genre": "historical record",
+    "subgenre": "biographical narrative"
+  },
+  {
+    "book": "Moses",
+    "chapter": 6,
+    "genre": "prophecy",
+    "subgenre": "sermon"
+  },
+  {
+    "book": "Moses",
+    "chapter": 7,
+    "genre": "vision",
+    "subgenre": "apocalyptic vision"
+  },
+  {
+    "book": "Moses",
+    "chapter": 8,
+    "genre": "narrative",
+    "subgenre": "prophetic warning"
+  },
+  {
+    "book": "Articles of Faith",
+    "chapter": 1,
+    "genre": "covenant document",
+    "subgenre": "declaration of belief"
+  },
+  {
+    "book": "1 Esdras",
+    "chapter": 1,
+    "genre": "historical record",
+    "subgenre": "chronicle"
+  },
+  {
+    "book": "1 Esdras",
+    "chapter": 2,
+    "genre": "historical record",
+    "subgenre": "decree"
+  },
+  {
+    "book": "1 Esdras",
+    "chapter": 3,
+    "genre": "court narrative",
+    "subgenre": "dialogue"
+  },
+  {
+    "book": "1 Esdras",
+    "chapter": 4,
+    "genre": "court narrative",
+    "subgenre": "sermon"
+  },
+  {
+    "book": "1 Esdras",
+    "chapter": 5,
+    "genre": "genealogy",
+    "subgenre": "list"
+  },
+  {
+    "book": "1 Esdras",
+    "chapter": 6,
+    "genre": "historical record",
+    "subgenre": "correspondence"
+  },
+  {
+    "book": "1 Esdras",
+    "chapter": 7,
+    "genre": "historical record",
+    "subgenre": "liturgical record"
+  },
+  {
+    "book": "1 Esdras",
+    "chapter": 8,
+    "genre": "historical record",
+    "subgenre": "prayer"
+  },
+  {
+    "book": "1 Esdras",
+    "chapter": 9,
+    "genre": "historical record",
+    "subgenre": "reformation narrative"
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 1,
+    "genre": "historical record",
+    "subgenre": "tragedy"
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 2,
+    "genre": "narrative",
+    "subgenre": "epic"
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 3,
+    "genre": "narrative",
+    "subgenre": "military history"
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 4,
+    "genre": "narrative",
+    "subgenre": "liturgical record"
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 5,
+    "genre": "historical record",
+    "subgenre": "chronicle"
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 6,
+    "genre": "historical record",
+    "subgenre": "military history"
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 7,
+    "genre": "historical record",
+    "subgenre": "biography"
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 8,
+    "genre": "historical record",
+    "subgenre": "treaty"
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 9,
+    "genre": "narrative",
+    "subgenre": "lament"
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 10,
+    "genre": "historical record",
+    "subgenre": "correspondence"
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 11,
+    "genre": "historical record",
+    "subgenre": "chronicle"
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 12,
+    "genre": "historical record",
+    "subgenre": "diplomatic letter"
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 13,
+    "genre": "historical record",
+    "subgenre": "chronicle"
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 14,
+    "genre": "historical record",
+    "subgenre": "eulogy"
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 15,
+    "genre": "historical record",
+    "subgenre": "decree"
+  },
+  {
+    "book": "1 Maccabees",
+    "chapter": 16,
+    "genre": "historical record",
+    "subgenre": "tragedy"
+  }
+]

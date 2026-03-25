@@ -1,5 +1,106 @@
 # Scripture Explorer — Session Log
 
+## 2026-03-25 — Session 20: Gemini 10-Output Pipeline — Fresh Start
+
+### What was done
+
+**Gemini Scoring Guide Rewrite:**
+- Expanded from sentiment-only to **10 analysis outputs per book**: Sentiment, Speakers, Missing Characters, Summaries, Themes, Cross-References, Doctrinal Topics, Historical Context, Literary Genres, Notable Verses
+- Rewrote guide with **strict completeness requirements** — every chapter MUST have an entry in 7 of 10 outputs (no cherry-picking "important" chapters)
+- Added validation checklist: "Count your entries before submitting"
+- Added per-book prompt template with explicit chapter count
+- Added "no group speakers" rule — speakers must be individual named people only
+- Guide location: `~/Desktop/GEMINI-SCORING-GUIDE.md`
+
+**Clean Data Reset:**
+- Wiped ALL old data and started fresh (old Claude API sentiment scores + old Bible speaker data discarded)
+- Created 7 new data files: `chapter-summaries.json`, `chapter-themes.json`, `cross-references.json`, `doctrinal-topics.json`, `historical-context.json`, `literary-genres.json`, `notable-verses.json`
+- Old speaker backups preserved in `data/backups/`
+
+**Books Completed (via Gemini → Claude Code pipeline):**
+
+| Book | Volume | Chapters | All 10 outputs | Notes |
+|------|--------|----------|----------------|-------|
+| 1 Nephi | BoM | 22 | Yes | All "missing" characters were already in DB |
+| 2 Nephi | BoM | 33 | Yes | Skipped Seraphim (group). Elohim mapped to "God the Father". Added 5 missing OT characters (Amoz, Remaliah, Jotham king of Judah, Jeberechiah, Tabeal). |
+| 3 Nephi | BoM | 30 | Yes | Jacob (secret comb leader) already in DB. God the Father correctly tagged for 11:3,7. |
+| 4 Nephi | BoM | 1 | Yes | No speakers (all narration). Amos (son of Nephi) already in DB. |
+| Omni | BoM | 1 | Yes | 5 speakers (5 authors). Sentiment: contrition=8 highest but peace chosen as dominant (concluding tone). |
+| Enos | BoM | 1 | Yes | Contrition=10 dominant (prayer wrestle). 4 direct responses from Jesus Christ. |
+| Words of Mormon | BoM | 1 | Yes | Mormon narrating. Key cross-ref: D&C 10 (116 lost pages). |
+| Jacob | BoM | 7 | Yes | Zenos allegory (ch 5). Sherem anti-Christ pattern (ch 7). All speakers valid. |
+| Ether | BoM | 15 | Yes | Pre-mortal Christ vision (ch 3). Gemini sent speaker IDs instead of names — mapped correctly. All flagged missing chars already in DB. |
+| Jarom | BoM | 1 | Yes | Admonition=9 dominant. Single speaker (Jarom). |
+| Helaman | BoM | 16 | Yes | Samuel the Lamanite (ch 13-15). Sealing power (ch 10). All speakers valid. |
+| Mormon | BoM | 9 | Yes | Added Aaron (Lamanite king) to DB. Sorrowing of the damned (ch 2). Cumorah lament (ch 6). |
+| Moroni | BoM | 10 | Yes | Sacramental prayers (ch 4-5). Faith/hope/charity (ch 7). Moroni's promise (ch 10). |
+| Mosiah | BoM | 29 | Yes | King Benjamin's address (ch 2-5). Abinadi (ch 11-17). Waters of Mormon (ch 18). Alma conversion (ch 27). Skipped 3 group speakers. |
+| Alma | BoM | 63 | Yes | Largest book. Ammonihah (ch 8-16), Lamanite mission (ch 17-27), Zoramites (ch 31-35), Alma to sons (ch 36-42), war chapters (ch 43-63). Added Priest of Elkenah to DB. |
+| Abraham | PoGP | 5 | Yes | Pre-mortal vision (ch 3), Creation (ch 4-5). Added Priest of Elkenah. |
+| Joseph Smith—History | PoGP | 1 | Yes | First Vision, Moroni, Aaronic Priesthood. John the Baptist already in DB. |
+| Joseph Smith—Matthew | PoGP | 1 | Yes | Second Coming prophecy. Single speaker (Jesus Christ). |
+| Moses | PoGP | 8 | Yes | All 10 outputs in single Gemini block. 59 speaker entries. God the Father (ch 1), Zion (ch 7). |
+| Articles of Faith | PoGP | 1 | Yes | No speakers. Declaration of belief format. |
+| 1 Esdras | Apoc | 9 | Yes | Added 7 characters (Sisinnes, Sathrabuzanes, Belemus, Rehum, Artaxerxes, Zerubbabel, Darius). |
+
+**Data File Totals After This Session:**
+- `chapter-sentiments.json`: 264 entries
+- `speakers.json`: 353 entries
+- `chapter-summaries.json`: 255 entries
+- `chapter-themes.json`: 255 entries
+- `cross-references.json`: 121 entries
+- `doctrinal-topics.json`: 255 entries
+- `historical-context.json`: 255 entries
+- `literary-genres.json`: 255 entries
+- `notable-verses.json`: 255 entries
+- `characters.json`: 763 people (+7 from pipeline: 5 OT figures + Aaron Lamanite king + Priest of Elkenah)
+- `characters.json`: 761 people (+5 from Gemini pipeline)
+
+### Pipeline Process
+1. User feeds book text + guide to Gemini
+2. Gemini returns 10 labeled JSON arrays
+3. User pastes each array into Claude Code
+4. Claude Code enriches (adds volumeAbbrev/volumeName/bookId for sentiment) and appends to data files
+5. **After every book, Claude Code MUST:**
+   - Run completeness audit (count entries per output vs expected chapter count)
+   - Spot-check sentiment accuracy against known passages
+   - Verify all speaker names exist in characters.json (name or alias)
+   - Verify MISSING_CHARACTERS are genuinely missing (Gemini frequently flags people who ARE in the DB)
+   - Add any truly missing characters to characters.json
+   - Update this session log with the book's completion status
+   - Update CLAUDE.md data file totals and pipeline progress
+6. **Only move to the next book after the audit passes**
+
+### Pending (for next session)
+- Continue Gemini pipeline: 2 Nephi → through all remaining books (101 total)
+- Wire Sentiment Explorer to use `chapter-sentiments.json` (after enough books scored)
+- Build API routes for new data types (summaries, themes, cross-refs, etc.)
+- Build UI for new data in ScriptureReader (chapter summary, themes, cross-refs, notable verses)
+- Wire historical context and literary genre into reader/insights
+- Consider renaming `characters.json` → `people.json` to match site labeling
+
+### Characters Added During Pipeline
+| Name | ID | Source Book | Notes |
+|------|-----|------------|-------|
+| Amoz | amoz | 2 Nephi (Isaiah) | Father of Isaiah |
+| Remaliah | remaliah | 2 Nephi (Isaiah) | Father of Pekah |
+| Jeberechiah | jeberechiah | 2 Nephi (Isaiah) | Father of Zechariah the witness |
+| Tabeal | tabeal | 2 Nephi (Isaiah) | Father of proposed puppet king |
+| Jotham (king of Judah) | jotham-king-judah | 2 Nephi (Isaiah) | Son of Uzziah, father of Ahaz |
+| Aaron (Lamanite king) | aaron-lamanite-king | Mormon | Led 44,000 against Mormon |
+
+**Total: 762 characters (was 757 at session start)**
+
+### Books Remaining
+**OT (39):** Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Song of Solomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi
+**NT (27):** Matthew, Mark, Luke, John, Acts, Romans, 1 Corinthians, 2 Corinthians, Galatians, Ephesians, Philippians, Colossians, 1 Thessalonians, 2 Thessalonians, 1 Timothy, 2 Timothy, Titus, Philemon, Hebrews, James, 1 Peter, 2 Peter, 1 John, 2 John, 3 John, Jude, Revelation
+**BoM (14 remaining):** 2 Nephi, Jacob, Enos, Jarom, Omni, Words of Mormon, Mosiah, Alma, Helaman, 3 Nephi, 4 Nephi, Mormon, Ether, Moroni
+**D&C (1):** Doctrine and Covenants (138 sections)
+**PoGP (5):** Moses, Abraham, Joseph Smith—Matthew, Joseph Smith—History, Articles of Faith
+**Apocrypha (15):** All books
+
+---
+
 ## 2026-03-25 — Session 19: Sentiment Revamp, LLM Scoring, Heading Standardization
 
 ### What was done

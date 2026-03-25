@@ -1,0 +1,5746 @@
+[
+  {
+    "book": "1 Nephi",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 20,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 1,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 2,
+    "verseStart": 2,
+    "verseEnd": 18,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 2,
+    "verseStart": 19,
+    "verseEnd": 24,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 31,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 10,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 4,
+    "verseStart": 11,
+    "verseEnd": 13,
+    "speaker": "The Spirit",
+    "speakerType": "divine"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 4,
+    "verseStart": 14,
+    "verseEnd": 38,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 5,
+    "verseStart": 1,
+    "verseEnd": 22,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 7,
+    "verseStart": 1,
+    "verseEnd": 1,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 7,
+    "verseStart": 2,
+    "verseEnd": 22,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 8,
+    "verseStart": 1,
+    "verseEnd": 38,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 9,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 10,
+    "verseStart": 1,
+    "verseEnd": 22,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 11,
+    "verseStart": 1,
+    "verseEnd": 1,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 11,
+    "verseStart": 2,
+    "verseEnd": 8,
+    "speaker": "The Spirit",
+    "speakerType": "divine"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 11,
+    "verseStart": 9,
+    "verseEnd": 34,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 11,
+    "verseStart": 35,
+    "verseEnd": 36,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 12,
+    "verseStart": 1,
+    "verseEnd": 23,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 13,
+    "verseStart": 1,
+    "verseEnd": 23,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 13,
+    "verseStart": 24,
+    "verseEnd": 37,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 13,
+    "verseStart": 38,
+    "verseEnd": 42,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 14,
+    "verseStart": 1,
+    "verseEnd": 30,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 15,
+    "verseStart": 1,
+    "verseEnd": 36,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 16,
+    "verseStart": 1,
+    "verseEnd": 8,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 16,
+    "verseStart": 9,
+    "verseEnd": 9,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 16,
+    "verseStart": 10,
+    "verseEnd": 24,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 16,
+    "verseStart": 25,
+    "verseEnd": 26,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 16,
+    "verseStart": 27,
+    "verseEnd": 38,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 16,
+    "verseStart": 39,
+    "verseEnd": 39,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 17,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 17,
+    "verseStart": 7,
+    "verseEnd": 9,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 17,
+    "verseStart": 10,
+    "verseEnd": 52,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 17,
+    "verseStart": 53,
+    "verseEnd": 53,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 17,
+    "verseStart": 54,
+    "verseEnd": 55,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 18,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 18,
+    "verseStart": 5,
+    "verseEnd": 5,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 18,
+    "verseStart": 6,
+    "verseEnd": 25,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 19,
+    "verseStart": 1,
+    "verseEnd": 15,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 19,
+    "verseStart": 16,
+    "verseEnd": 17,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 19,
+    "verseStart": 18,
+    "verseEnd": 24,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 20,
+    "verseStart": 1,
+    "verseEnd": 14,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 20,
+    "verseStart": 15,
+    "verseEnd": 22,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 21,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 21,
+    "verseStart": 7,
+    "verseEnd": 26,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "1 Nephi",
+    "chapter": 22,
+    "verseStart": 1,
+    "verseEnd": 31,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 1,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 1,
+    "verseStart": 2,
+    "verseEnd": 32,
+    "speaker": "Lehi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 30,
+    "speaker": "Lehi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Lehi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 3,
+    "verseStart": 7,
+    "verseEnd": 25,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 4,
+    "verseStart": 3,
+    "verseEnd": 11,
+    "speaker": "Lehi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 4,
+    "verseStart": 12,
+    "verseEnd": 35,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 5,
+    "verseStart": 1,
+    "verseEnd": 21,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 5,
+    "verseStart": 22,
+    "verseEnd": 25,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 5,
+    "verseStart": 26,
+    "verseEnd": 29,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 5,
+    "verseStart": 30,
+    "verseEnd": 30,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 5,
+    "verseStart": 31,
+    "verseEnd": 34,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 5,
+    "speaker": "Jacob",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 6,
+    "verseStart": 6,
+    "verseEnd": 7,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 6,
+    "verseStart": 8,
+    "verseEnd": 16,
+    "speaker": "Jacob",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 6,
+    "verseStart": 17,
+    "verseEnd": 18,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 7,
+    "verseStart": 1,
+    "verseEnd": 11,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 8,
+    "verseStart": 1,
+    "verseEnd": 25,
+    "speaker": "Jacob",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 9,
+    "verseStart": 1,
+    "verseEnd": 54,
+    "speaker": "Jacob",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 10,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Jacob",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 10,
+    "verseStart": 7,
+    "verseEnd": 19,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 10,
+    "verseStart": 20,
+    "verseEnd": 25,
+    "speaker": "Jacob",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 11,
+    "verseStart": 1,
+    "verseEnd": 8,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 12,
+    "verseStart": 1,
+    "verseEnd": 22,
+    "speaker": "Isaiah",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 13,
+    "verseStart": 1,
+    "verseEnd": 26,
+    "speaker": "Isaiah",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 14,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Isaiah",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 15,
+    "verseStart": 1,
+    "verseEnd": 30,
+    "speaker": "Isaiah",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 16,
+    "verseStart": 1,
+    "verseEnd": 13,
+    "speaker": "Isaiah",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 17,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "speaker": "Isaiah",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 17,
+    "verseStart": 3,
+    "verseEnd": 25,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 18,
+    "verseStart": 1,
+    "verseEnd": 22,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 19,
+    "verseStart": 1,
+    "verseEnd": 21,
+    "speaker": "Isaiah",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 20,
+    "verseStart": 1,
+    "verseEnd": 23,
+    "speaker": "Isaiah",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 20,
+    "verseStart": 24,
+    "verseEnd": 34,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 21,
+    "verseStart": 1,
+    "verseEnd": 16,
+    "speaker": "Isaiah",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 22,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Isaiah",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 23,
+    "verseStart": 1,
+    "verseEnd": 22,
+    "speaker": "Isaiah",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 24,
+    "verseStart": 1,
+    "verseEnd": 32,
+    "speaker": "Isaiah",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 25,
+    "verseStart": 1,
+    "verseEnd": 30,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 26,
+    "verseStart": 1,
+    "verseEnd": 16,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 26,
+    "verseStart": 17,
+    "verseEnd": 33,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 27,
+    "verseStart": 1,
+    "verseEnd": 32,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 27,
+    "verseStart": 33,
+    "verseEnd": 35,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 28,
+    "verseStart": 1,
+    "verseEnd": 29,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 28,
+    "verseStart": 30,
+    "verseEnd": 32,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 29,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 29,
+    "verseStart": 4,
+    "verseEnd": 14,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 30,
+    "verseStart": 1,
+    "verseEnd": 18,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 31,
+    "verseStart": 1,
+    "verseEnd": 21,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 32,
+    "verseStart": 1,
+    "verseEnd": 9,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "2 Nephi",
+    "chapter": 33,
+    "verseStart": 1,
+    "verseEnd": 15,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 19,
+    "speaker": "Jacob",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 22,
+    "speaker": "Jacob",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 2,
+    "verseStart": 23,
+    "verseEnd": 33,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 2,
+    "verseStart": 34,
+    "verseEnd": 35,
+    "speaker": "Jacob",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 14,
+    "speaker": "Jacob",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 18,
+    "speaker": "Jacob",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 5,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "speaker": "Jacob",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 5,
+    "verseStart": 3,
+    "verseEnd": 3,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 5,
+    "verseStart": 4,
+    "verseEnd": 77,
+    "speaker": "Jacob",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 13,
+    "speaker": "Jacob",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Jacob",
+    "chapter": 7,
+    "verseStart": 1,
+    "verseEnd": 27,
+    "speaker": "Jacob",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Enos",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 9,
+    "speaker": "Enos",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Enos",
+    "chapter": 1,
+    "verseStart": 10,
+    "verseEnd": 10,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Enos",
+    "chapter": 1,
+    "verseStart": 11,
+    "verseEnd": 11,
+    "speaker": "Enos",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Enos",
+    "chapter": 1,
+    "verseStart": 12,
+    "verseEnd": 16,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Enos",
+    "chapter": 1,
+    "verseStart": 17,
+    "verseEnd": 17,
+    "speaker": "Enos",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Enos",
+    "chapter": 1,
+    "verseStart": 18,
+    "verseEnd": 18,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Enos",
+    "chapter": 1,
+    "verseStart": 19,
+    "verseEnd": 27,
+    "speaker": "Enos",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Jarom",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 15,
+    "speaker": "Jarom",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Omni",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "speaker": "Omni",
+    "speakerType": "other"
+  },
+  {
+    "book": "Omni",
+    "chapter": 1,
+    "verseStart": 4,
+    "verseEnd": 8,
+    "speaker": "Amaron",
+    "speakerType": "other"
+  },
+  {
+    "book": "Omni",
+    "chapter": 1,
+    "verseStart": 9,
+    "verseEnd": 9,
+    "speaker": "Chemish",
+    "speakerType": "other"
+  },
+  {
+    "book": "Omni",
+    "chapter": 1,
+    "verseStart": 10,
+    "verseEnd": 11,
+    "speaker": "Abinadom",
+    "speakerType": "other"
+  },
+  {
+    "book": "Omni",
+    "chapter": 1,
+    "verseStart": 12,
+    "verseEnd": 30,
+    "speaker": "Amaleki",
+    "speakerType": "other"
+  },
+  {
+    "book": "Words of Mormon",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 18,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 18,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 41,
+    "speaker": "King Benjamin",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 23,
+    "speaker": "King Benjamin",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 3,
+    "verseStart": 24,
+    "verseEnd": 27,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 30,
+    "speaker": "King Benjamin",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 5,
+    "verseStart": 1,
+    "verseEnd": 15,
+    "speaker": "King Benjamin",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 7,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 7,
+    "verseStart": 1,
+    "verseEnd": 33,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 8,
+    "verseStart": 1,
+    "verseEnd": 12,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 8,
+    "verseStart": 13,
+    "verseEnd": 21,
+    "speaker": "Ammon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 9,
+    "verseStart": 1,
+    "verseEnd": 19,
+    "speaker": "Zeniff",
+    "speakerType": "other"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 10,
+    "verseStart": 1,
+    "verseEnd": 22,
+    "speaker": "Zeniff",
+    "speakerType": "other"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 11,
+    "verseStart": 1,
+    "verseEnd": 19,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 11,
+    "verseStart": 20,
+    "verseEnd": 25,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 11,
+    "verseStart": 26,
+    "verseEnd": 29,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 12,
+    "verseStart": 1,
+    "verseEnd": 1,
+    "speaker": "Abinadi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 12,
+    "verseStart": 2,
+    "verseEnd": 8,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 12,
+    "verseStart": 9,
+    "verseEnd": 37,
+    "speaker": "Abinadi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 13,
+    "verseStart": 1,
+    "verseEnd": 35,
+    "speaker": "Abinadi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 14,
+    "verseStart": 1,
+    "verseEnd": 12,
+    "speaker": "Abinadi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 15,
+    "verseStart": 1,
+    "verseEnd": 31,
+    "speaker": "Abinadi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 16,
+    "verseStart": 1,
+    "verseEnd": 15,
+    "speaker": "Abinadi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 17,
+    "verseStart": 1,
+    "verseEnd": 8,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 17,
+    "verseStart": 9,
+    "verseEnd": 20,
+    "speaker": "Abinadi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 18,
+    "verseStart": 1,
+    "verseEnd": 12,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 18,
+    "verseStart": 13,
+    "verseEnd": 17,
+    "speaker": "Spirit of the Lord",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 18,
+    "verseStart": 18,
+    "verseEnd": 35,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 19,
+    "verseStart": 1,
+    "verseEnd": 29,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 20,
+    "verseStart": 1,
+    "verseEnd": 26,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 21,
+    "verseStart": 1,
+    "verseEnd": 36,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 22,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 22,
+    "verseStart": 5,
+    "verseEnd": 16,
+    "speaker": "Gideon",
+    "speakerType": "other"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 23,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 23,
+    "verseStart": 7,
+    "verseEnd": 11,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 23,
+    "verseStart": 12,
+    "verseEnd": 39,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 24,
+    "verseStart": 1,
+    "verseEnd": 12,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 24,
+    "verseStart": 13,
+    "verseEnd": 14,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 24,
+    "verseStart": 15,
+    "verseEnd": 15,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 24,
+    "verseStart": 16,
+    "verseEnd": 17,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 24,
+    "verseStart": 18,
+    "verseEnd": 22,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 24,
+    "verseStart": 23,
+    "verseEnd": 23,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 24,
+    "verseStart": 24,
+    "verseEnd": 25,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 25,
+    "verseStart": 1,
+    "verseEnd": 24,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 26,
+    "verseStart": 1,
+    "verseEnd": 11,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 26,
+    "verseStart": 12,
+    "verseEnd": 13,
+    "speaker": "King Mosiah",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 26,
+    "verseStart": 14,
+    "verseEnd": 32,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 26,
+    "verseStart": 33,
+    "verseEnd": 39,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 27,
+    "verseStart": 1,
+    "verseEnd": 24,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 27,
+    "verseStart": 25,
+    "verseEnd": 31,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 27,
+    "verseStart": 32,
+    "verseEnd": 37,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 28,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 28,
+    "verseStart": 7,
+    "verseEnd": 7,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 28,
+    "verseStart": 8,
+    "verseEnd": 20,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mosiah",
+    "chapter": 29,
+    "verseStart": 1,
+    "verseEnd": 47,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 11,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 1,
+    "verseStart": 12,
+    "verseEnd": 33,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 38,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 27,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 20,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 5,
+    "verseStart": 1,
+    "verseEnd": 49,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 5,
+    "verseStart": 50,
+    "verseEnd": 52,
+    "speaker": "The Spirit",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Alma",
+    "chapter": 5,
+    "verseStart": 53,
+    "verseEnd": 62,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 8,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 7,
+    "verseStart": 1,
+    "verseEnd": 13,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 7,
+    "verseStart": 14,
+    "verseEnd": 22,
+    "speaker": "The Spirit",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Alma",
+    "chapter": 7,
+    "verseStart": 23,
+    "verseEnd": 27,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 8,
+    "verseStart": 1,
+    "verseEnd": 16,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 8,
+    "verseStart": 17,
+    "verseEnd": 17,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Alma",
+    "chapter": 8,
+    "verseStart": 18,
+    "verseEnd": 28,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 8,
+    "verseStart": 29,
+    "verseEnd": 31,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Alma",
+    "chapter": 8,
+    "verseStart": 32,
+    "verseEnd": 32,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 9,
+    "verseStart": 1,
+    "verseEnd": 34,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 10,
+    "verseStart": 1,
+    "verseEnd": 32,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 11,
+    "verseStart": 1,
+    "verseEnd": 21,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 11,
+    "verseStart": 22,
+    "verseEnd": 22,
+    "speaker": "Spirit of the Lord",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Alma",
+    "chapter": 11,
+    "verseStart": 23,
+    "verseEnd": 46,
+    "speaker": "Amulek",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 12,
+    "verseStart": 1,
+    "verseEnd": 37,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 13,
+    "verseStart": 1,
+    "verseEnd": 31,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 14,
+    "verseStart": 1,
+    "verseEnd": 11,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 14,
+    "verseStart": 12,
+    "verseEnd": 12,
+    "speaker": "Amulek",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 14,
+    "verseStart": 13,
+    "verseEnd": 29,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 15,
+    "verseStart": 1,
+    "verseEnd": 19,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 16,
+    "verseStart": 1,
+    "verseEnd": 21,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 17,
+    "verseStart": 1,
+    "verseEnd": 10,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 17,
+    "verseStart": 11,
+    "verseEnd": 11,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Alma",
+    "chapter": 17,
+    "verseStart": 12,
+    "verseEnd": 22,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 17,
+    "verseStart": 23,
+    "verseEnd": 39,
+    "speaker": "Ammon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 18,
+    "verseStart": 1,
+    "verseEnd": 14,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 18,
+    "verseStart": 15,
+    "verseEnd": 43,
+    "speaker": "Ammon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 19,
+    "verseStart": 1,
+    "verseEnd": 8,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 19,
+    "verseStart": 9,
+    "verseEnd": 36,
+    "speaker": "Ammon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 20,
+    "verseStart": 1,
+    "verseEnd": 1,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 20,
+    "verseStart": 2,
+    "verseEnd": 2,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Alma",
+    "chapter": 20,
+    "verseStart": 3,
+    "verseEnd": 4,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 20,
+    "verseStart": 5,
+    "verseEnd": 30,
+    "speaker": "Ammon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 21,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 21,
+    "verseStart": 7,
+    "verseEnd": 23,
+    "speaker": "Aaron",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 22,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 22,
+    "verseStart": 4,
+    "verseEnd": 5,
+    "speaker": "Aaron",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 22,
+    "verseStart": 6,
+    "verseEnd": 9,
+    "speaker": "Ammon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 22,
+    "verseStart": 10,
+    "verseEnd": 35,
+    "speaker": "Aaron",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 23,
+    "verseStart": 1,
+    "verseEnd": 18,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 24,
+    "verseStart": 1,
+    "verseEnd": 30,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 25,
+    "verseStart": 1,
+    "verseEnd": 17,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 26,
+    "verseStart": 1,
+    "verseEnd": 10,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 26,
+    "verseStart": 11,
+    "verseEnd": 37,
+    "speaker": "Ammon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 27,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 27,
+    "verseStart": 7,
+    "verseEnd": 7,
+    "speaker": "Ammon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 27,
+    "verseStart": 8,
+    "verseEnd": 8,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Alma",
+    "chapter": 27,
+    "verseStart": 9,
+    "verseEnd": 10,
+    "speaker": "Ammon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 27,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Alma",
+    "chapter": 27,
+    "verseStart": 13,
+    "verseEnd": 14,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 27,
+    "verseStart": 15,
+    "verseEnd": 30,
+    "speaker": "Ammon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 28,
+    "verseStart": 1,
+    "verseEnd": 14,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 29,
+    "verseStart": 1,
+    "verseEnd": 17,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 30,
+    "verseStart": 1,
+    "verseEnd": 31,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 30,
+    "verseStart": 32,
+    "verseEnd": 60,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 31,
+    "verseStart": 1,
+    "verseEnd": 38,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 32,
+    "verseStart": 1,
+    "verseEnd": 43,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 33,
+    "verseStart": 1,
+    "verseEnd": 23,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 34,
+    "verseStart": 1,
+    "verseEnd": 41,
+    "speaker": "Amulek",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 35,
+    "verseStart": 1,
+    "verseEnd": 16,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 36,
+    "verseStart": 1,
+    "verseEnd": 30,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 37,
+    "verseStart": 1,
+    "verseEnd": 47,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 38,
+    "verseStart": 1,
+    "verseEnd": 15,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 39,
+    "verseStart": 1,
+    "verseEnd": 19,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 40,
+    "verseStart": 1,
+    "verseEnd": 26,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 41,
+    "verseStart": 1,
+    "verseEnd": 15,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 42,
+    "verseStart": 1,
+    "verseEnd": 31,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 43,
+    "verseStart": 1,
+    "verseEnd": 54,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 44,
+    "verseStart": 1,
+    "verseEnd": 24,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 45,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 45,
+    "verseStart": 3,
+    "verseEnd": 3,
+    "speaker": "Helaman",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 45,
+    "verseStart": 4,
+    "verseEnd": 15,
+    "speaker": "Alma",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 45,
+    "verseStart": 16,
+    "verseEnd": 16,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Alma",
+    "chapter": 45,
+    "verseStart": 17,
+    "verseEnd": 24,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 46,
+    "verseStart": 1,
+    "verseEnd": 22,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 46,
+    "verseStart": 23,
+    "verseEnd": 41,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 47,
+    "verseStart": 1,
+    "verseEnd": 36,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 48,
+    "verseStart": 1,
+    "verseEnd": 25,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 49,
+    "verseStart": 1,
+    "verseEnd": 30,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 50,
+    "verseStart": 1,
+    "verseEnd": 40,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 51,
+    "verseStart": 1,
+    "verseEnd": 37,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 52,
+    "verseStart": 1,
+    "verseEnd": 40,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 53,
+    "verseStart": 1,
+    "verseEnd": 23,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 54,
+    "verseStart": 1,
+    "verseEnd": 24,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 55,
+    "verseStart": 1,
+    "verseEnd": 35,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 56,
+    "verseStart": 1,
+    "verseEnd": 57,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 57,
+    "verseStart": 1,
+    "verseEnd": 36,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 58,
+    "verseStart": 1,
+    "verseEnd": 41,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 59,
+    "verseStart": 1,
+    "verseEnd": 13,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 60,
+    "verseStart": 1,
+    "verseEnd": 32,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 60,
+    "verseStart": 33,
+    "verseEnd": 33,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Alma",
+    "chapter": 60,
+    "verseStart": 34,
+    "verseEnd": 36,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 61,
+    "verseStart": 1,
+    "verseEnd": 21,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 62,
+    "verseStart": 1,
+    "verseEnd": 52,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Alma",
+    "chapter": 63,
+    "verseStart": 1,
+    "verseEnd": 17,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 34,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 7,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 2,
+    "verseStart": 8,
+    "verseEnd": 14,
+    "speaker": "Helaman",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 37,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 26,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 5,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 5,
+    "verseStart": 5,
+    "verseEnd": 8,
+    "speaker": "Helaman",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 5,
+    "verseStart": 9,
+    "verseEnd": 9,
+    "speaker": "King Benjamin",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 5,
+    "verseStart": 10,
+    "verseEnd": 52,
+    "speaker": "Amulek",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 41,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 7,
+    "verseStart": 1,
+    "verseEnd": 22,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 7,
+    "verseStart": 23,
+    "verseEnd": 29,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 8,
+    "verseStart": 1,
+    "verseEnd": 28,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 9,
+    "verseStart": 1,
+    "verseEnd": 20,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 9,
+    "verseStart": 21,
+    "verseEnd": 41,
+    "speaker": "Nephi",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 10,
+    "verseStart": 1,
+    "verseEnd": 10,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 10,
+    "verseStart": 11,
+    "verseEnd": 14,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 10,
+    "verseStart": 15,
+    "verseEnd": 19,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 11,
+    "verseStart": 1,
+    "verseEnd": 38,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 12,
+    "verseStart": 1,
+    "verseEnd": 26,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 13,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "speaker": "Samuel the Lamanite",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 13,
+    "verseStart": 3,
+    "verseEnd": 3,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 13,
+    "verseStart": 4,
+    "verseEnd": 7,
+    "speaker": "Samuel the Lamanite",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 13,
+    "verseStart": 8,
+    "verseEnd": 24,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 13,
+    "verseStart": 25,
+    "verseEnd": 39,
+    "speaker": "Samuel the Lamanite",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 14,
+    "verseStart": 1,
+    "verseEnd": 31,
+    "speaker": "Samuel the Lamanite",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 15,
+    "verseStart": 1,
+    "verseEnd": 15,
+    "speaker": "Samuel the Lamanite",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 15,
+    "verseStart": 16,
+    "verseEnd": 17,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Helaman",
+    "chapter": 16,
+    "verseStart": 1,
+    "verseEnd": 25,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 11,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 1,
+    "verseStart": 12,
+    "verseEnd": 14,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 1,
+    "verseStart": 15,
+    "verseEnd": 30,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 19,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 20,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 3,
+    "verseStart": 21,
+    "verseEnd": 26,
+    "speaker": "Gidgiddoni",
+    "speakerType": "other"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 33,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 5,
+    "verseStart": 1,
+    "verseEnd": 26,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 30,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 7,
+    "verseStart": 1,
+    "verseEnd": 26,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 8,
+    "verseStart": 1,
+    "verseEnd": 25,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 9,
+    "verseStart": 1,
+    "verseEnd": 14,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 9,
+    "verseStart": 15,
+    "verseEnd": 22,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 10,
+    "verseStart": 1,
+    "verseEnd": 19,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 11,
+    "verseStart": 1,
+    "verseEnd": 12,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 11,
+    "verseStart": 13,
+    "verseEnd": 14,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 11,
+    "verseStart": 15,
+    "verseEnd": 20,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 11,
+    "verseStart": 21,
+    "verseEnd": 23,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 11,
+    "verseStart": 24,
+    "verseEnd": 41,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 12,
+    "verseStart": 1,
+    "verseEnd": 48,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 13,
+    "verseStart": 1,
+    "verseEnd": 34,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 14,
+    "verseStart": 1,
+    "verseEnd": 27,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 15,
+    "verseStart": 1,
+    "verseEnd": 24,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 16,
+    "verseStart": 1,
+    "verseEnd": 20,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 17,
+    "verseStart": 1,
+    "verseEnd": 25,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 18,
+    "verseStart": 1,
+    "verseEnd": 39,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 19,
+    "verseStart": 1,
+    "verseEnd": 36,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 20,
+    "verseStart": 1,
+    "verseEnd": 37,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 20,
+    "verseStart": 38,
+    "verseEnd": 46,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 21,
+    "verseStart": 1,
+    "verseEnd": 29,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 22,
+    "verseStart": 1,
+    "verseEnd": 17,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 23,
+    "verseStart": 1,
+    "verseEnd": 14,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 24,
+    "verseStart": 1,
+    "verseEnd": 18,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 25,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 26,
+    "verseStart": 1,
+    "verseEnd": 11,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 26,
+    "verseStart": 12,
+    "verseEnd": 21,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 27,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 27,
+    "verseStart": 4,
+    "verseEnd": 27,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 27,
+    "verseStart": 28,
+    "verseEnd": 33,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 28,
+    "verseStart": 1,
+    "verseEnd": 23,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 28,
+    "verseStart": 24,
+    "verseEnd": 40,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 29,
+    "verseStart": 1,
+    "verseEnd": 9,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "3 Nephi",
+    "chapter": 30,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "4 Nephi",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 49,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 19,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 29,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 13,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 3,
+    "verseStart": 14,
+    "verseEnd": 15,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 3,
+    "verseStart": 16,
+    "verseEnd": 22,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 23,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 5,
+    "verseStart": 1,
+    "verseEnd": 24,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 22,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 7,
+    "verseStart": 1,
+    "verseEnd": 10,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 8,
+    "verseStart": 1,
+    "verseEnd": 19,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 8,
+    "verseStart": 20,
+    "verseEnd": 41,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Mormon",
+    "chapter": 9,
+    "verseStart": 1,
+    "verseEnd": 37,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 43,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 14,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 2,
+    "verseStart": 15,
+    "verseEnd": 17,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Ether",
+    "chapter": 2,
+    "verseStart": 18,
+    "verseEnd": 19,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 2,
+    "verseStart": 20,
+    "verseEnd": 20,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Ether",
+    "chapter": 2,
+    "verseStart": 21,
+    "verseEnd": 22,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 2,
+    "verseStart": 23,
+    "verseEnd": 25,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Ether",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 3,
+    "verseStart": 7,
+    "verseEnd": 13,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Ether",
+    "chapter": 3,
+    "verseStart": 14,
+    "verseEnd": 16,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Ether",
+    "chapter": 3,
+    "verseStart": 17,
+    "verseEnd": 20,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 3,
+    "verseStart": 21,
+    "verseEnd": 27,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Ether",
+    "chapter": 3,
+    "verseStart": 28,
+    "verseEnd": 28,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 5,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 4,
+    "verseStart": 6,
+    "verseEnd": 19,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Ether",
+    "chapter": 5,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 30,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 7,
+    "verseStart": 1,
+    "verseEnd": 27,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 8,
+    "verseStart": 1,
+    "verseEnd": 26,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 9,
+    "verseStart": 1,
+    "verseEnd": 19,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 9,
+    "verseStart": 20,
+    "verseEnd": 22,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Ether",
+    "chapter": 9,
+    "verseStart": 23,
+    "verseEnd": 35,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 10,
+    "verseStart": 1,
+    "verseEnd": 34,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 11,
+    "verseStart": 1,
+    "verseEnd": 23,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 12,
+    "verseStart": 1,
+    "verseEnd": 25,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 12,
+    "verseStart": 26,
+    "verseEnd": 28,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Ether",
+    "chapter": 12,
+    "verseStart": 29,
+    "verseEnd": 36,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 12,
+    "verseStart": 37,
+    "verseEnd": 37,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Ether",
+    "chapter": 12,
+    "verseStart": 38,
+    "verseEnd": 41,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 13,
+    "verseStart": 1,
+    "verseEnd": 31,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 14,
+    "verseStart": 1,
+    "verseEnd": 31,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 15,
+    "verseStart": 1,
+    "verseEnd": 32,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Ether",
+    "chapter": 15,
+    "verseStart": 33,
+    "verseEnd": 34,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 2,
+    "verseStart": 3,
+    "verseEnd": 3,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 5,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 9,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 7,
+    "verseStart": 1,
+    "verseEnd": 1,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 7,
+    "verseStart": 2,
+    "verseEnd": 48,
+    "speaker": "Mormon",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 8,
+    "verseStart": 1,
+    "verseEnd": 30,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 9,
+    "verseStart": 1,
+    "verseEnd": 26,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moroni",
+    "chapter": 10,
+    "verseStart": 1,
+    "verseEnd": 34,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 39,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 20,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 7,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 5,
+    "verseStart": 1,
+    "verseEnd": 35,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 23,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 6,
+    "verseStart": 24,
+    "verseEnd": 24,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 6,
+    "verseStart": 25,
+    "verseEnd": 26,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 6,
+    "verseStart": 27,
+    "verseEnd": 27,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 6,
+    "verseStart": 28,
+    "verseEnd": 37,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 7,
+    "verseStart": 1,
+    "verseEnd": 8,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 8,
+    "verseStart": 1,
+    "verseEnd": 12,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 9,
+    "verseStart": 1,
+    "verseEnd": 14,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 10,
+    "verseStart": 1,
+    "verseEnd": 28,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 10,
+    "verseStart": 29,
+    "verseEnd": 56,
+    "speaker": "Satan",
+    "speakerType": "other"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 10,
+    "verseStart": 57,
+    "verseEnd": 69,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 10,
+    "verseStart": 70,
+    "verseEnd": 70,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 11,
+    "verseStart": 1,
+    "verseEnd": 30,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 12,
+    "verseStart": 1,
+    "verseEnd": 9,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 13,
+    "verseStart": 1,
+    "verseEnd": 1,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 14,
+    "verseStart": 1,
+    "verseEnd": 11,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 15,
+    "verseStart": 1,
+    "verseEnd": 5,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 15,
+    "verseStart": 6,
+    "verseEnd": 6,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 16,
+    "verseStart": 1,
+    "verseEnd": 5,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 16,
+    "verseStart": 6,
+    "verseEnd": 6,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 17,
+    "verseStart": 1,
+    "verseEnd": 9,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 18,
+    "verseStart": 1,
+    "verseEnd": 8,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 18,
+    "verseStart": 9,
+    "verseEnd": 16,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 18,
+    "verseStart": 17,
+    "verseEnd": 30,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 18,
+    "verseStart": 31,
+    "verseEnd": 31,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 18,
+    "verseStart": 32,
+    "verseEnd": 47,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 19,
+    "verseStart": 1,
+    "verseEnd": 41,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 20,
+    "verseStart": 1,
+    "verseEnd": 84,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 21,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 21,
+    "verseStart": 7,
+    "verseEnd": 12,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 22,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 23,
+    "verseStart": 1,
+    "verseEnd": 7,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 24,
+    "verseStart": 1,
+    "verseEnd": 19,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 25,
+    "verseStart": 1,
+    "verseEnd": 16,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 26,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 27,
+    "verseStart": 1,
+    "verseEnd": 18,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 28,
+    "verseStart": 1,
+    "verseEnd": 8,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 28,
+    "verseStart": 9,
+    "verseEnd": 9,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 28,
+    "verseStart": 10,
+    "verseEnd": 16,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 29,
+    "verseStart": 1,
+    "verseEnd": 28,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 29,
+    "verseStart": 29,
+    "verseEnd": 29,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 29,
+    "verseStart": 30,
+    "verseEnd": 35,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 29,
+    "verseStart": 36,
+    "verseEnd": 50,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 30,
+    "verseStart": 1,
+    "verseEnd": 11,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 31,
+    "verseStart": 1,
+    "verseEnd": 13,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 32,
+    "verseStart": 1,
+    "verseEnd": 5,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 33,
+    "verseStart": 1,
+    "verseEnd": 18,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 34,
+    "verseStart": 1,
+    "verseEnd": 12,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 35,
+    "verseStart": 1,
+    "verseEnd": 21,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 35,
+    "verseStart": 22,
+    "verseEnd": 22,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 35,
+    "verseStart": 23,
+    "verseEnd": 27,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 36,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 36,
+    "verseStart": 4,
+    "verseEnd": 4,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 36,
+    "verseStart": 5,
+    "verseEnd": 8,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 37,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 38,
+    "verseStart": 1,
+    "verseEnd": 12,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 38,
+    "verseStart": 13,
+    "verseEnd": 34,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 38,
+    "verseStart": 35,
+    "verseEnd": 42,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 39,
+    "verseStart": 1,
+    "verseEnd": 24,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 40,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 41,
+    "verseStart": 1,
+    "verseEnd": 12,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 42,
+    "verseStart": 1,
+    "verseEnd": 17,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 42,
+    "verseStart": 18,
+    "verseEnd": 28,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 42,
+    "verseStart": 29,
+    "verseEnd": 93,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 43,
+    "verseStart": 1,
+    "verseEnd": 35,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 44,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 45,
+    "verseStart": 1,
+    "verseEnd": 17,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 45,
+    "verseStart": 18,
+    "verseEnd": 27,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 45,
+    "verseStart": 28,
+    "verseEnd": 59,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 45,
+    "verseStart": 60,
+    "verseEnd": 63,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 45,
+    "verseStart": 64,
+    "verseEnd": 75,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 46,
+    "verseStart": 1,
+    "verseEnd": 33,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 47,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 48,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 49,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 49,
+    "verseStart": 5,
+    "verseEnd": 27,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 49,
+    "verseStart": 28,
+    "verseEnd": 28,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 50,
+    "verseStart": 1,
+    "verseEnd": 5,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 50,
+    "verseStart": 6,
+    "verseEnd": 46,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 51,
+    "verseStart": 1,
+    "verseEnd": 20,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 52,
+    "verseStart": 1,
+    "verseEnd": 43,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 52,
+    "verseStart": 44,
+    "verseEnd": 44,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 53,
+    "verseStart": 1,
+    "verseEnd": 7,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 54,
+    "verseStart": 1,
+    "verseEnd": 10,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 55,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 56,
+    "verseStart": 1,
+    "verseEnd": 13,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 56,
+    "verseStart": 14,
+    "verseEnd": 20,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 57,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 57,
+    "verseStart": 3,
+    "verseEnd": 14,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 57,
+    "verseStart": 15,
+    "verseEnd": 16,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 58,
+    "verseStart": 1,
+    "verseEnd": 29,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 58,
+    "verseStart": 30,
+    "verseEnd": 33,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 58,
+    "verseStart": 34,
+    "verseEnd": 34,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 58,
+    "verseStart": 35,
+    "verseEnd": 65,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 59,
+    "verseStart": 1,
+    "verseEnd": 24,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 60,
+    "verseStart": 1,
+    "verseEnd": 11,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 60,
+    "verseStart": 12,
+    "verseEnd": 12,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 60,
+    "verseStart": 13,
+    "verseEnd": 17,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 61,
+    "verseStart": 1,
+    "verseEnd": 1,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 61,
+    "verseStart": 2,
+    "verseEnd": 12,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 61,
+    "verseStart": 13,
+    "verseEnd": 13,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 61,
+    "verseStart": 14,
+    "verseEnd": 17,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 61,
+    "verseStart": 18,
+    "verseEnd": 19,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 61,
+    "verseStart": 20,
+    "verseEnd": 32,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 61,
+    "verseStart": 33,
+    "verseEnd": 34,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 61,
+    "verseStart": 35,
+    "verseEnd": 35,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 61,
+    "verseStart": 36,
+    "verseEnd": 39,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 62,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 62,
+    "verseStart": 4,
+    "verseEnd": 9,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 63,
+    "verseStart": 1,
+    "verseEnd": 18,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 63,
+    "verseStart": 19,
+    "verseEnd": 21,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 63,
+    "verseStart": 22,
+    "verseEnd": 23,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 63,
+    "verseStart": 24,
+    "verseEnd": 26,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 63,
+    "verseStart": 27,
+    "verseEnd": 66,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 64,
+    "verseStart": 1,
+    "verseEnd": 43,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 65,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 66,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 66,
+    "verseStart": 4,
+    "verseEnd": 4,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 66,
+    "verseStart": 5,
+    "verseEnd": 12,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 66,
+    "verseStart": 13,
+    "verseEnd": 13,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 67,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 67,
+    "verseStart": 4,
+    "verseEnd": 4,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 67,
+    "verseStart": 5,
+    "verseEnd": 14,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 68,
+    "verseStart": 1,
+    "verseEnd": 12,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 68,
+    "verseStart": 13,
+    "verseEnd": 31,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 68,
+    "verseStart": 32,
+    "verseEnd": 35,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 69,
+    "verseStart": 1,
+    "verseEnd": 8,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 70,
+    "verseStart": 1,
+    "verseEnd": 1,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 70,
+    "verseStart": 2,
+    "verseEnd": 18,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 71,
+    "verseStart": 1,
+    "verseEnd": 11,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 72,
+    "verseStart": 1,
+    "verseEnd": 1,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 72,
+    "verseStart": 2,
+    "verseEnd": 15,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 72,
+    "verseStart": 16,
+    "verseEnd": 19,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 72,
+    "verseStart": 20,
+    "verseEnd": 26,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 73,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 74,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 74,
+    "verseStart": 3,
+    "verseEnd": 7,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 75,
+    "verseStart": 1,
+    "verseEnd": 12,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 75,
+    "verseStart": 13,
+    "verseEnd": 36,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 76,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 76,
+    "verseStart": 5,
+    "verseEnd": 21,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 76,
+    "verseStart": 22,
+    "verseEnd": 30,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 76,
+    "verseStart": 31,
+    "verseEnd": 79,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 76,
+    "verseStart": 80,
+    "verseEnd": 100,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 76,
+    "verseStart": 101,
+    "verseEnd": 119,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 77,
+    "verseStart": 1,
+    "verseEnd": 15,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 78,
+    "verseStart": 1,
+    "verseEnd": 22,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 79,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 80,
+    "verseStart": 1,
+    "verseEnd": 5,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 81,
+    "verseStart": 1,
+    "verseEnd": 7,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 82,
+    "verseStart": 1,
+    "verseEnd": 21,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 82,
+    "verseStart": 22,
+    "verseEnd": 24,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 83,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 84,
+    "verseStart": 1,
+    "verseEnd": 34,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 84,
+    "verseStart": 35,
+    "verseEnd": 120,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 85,
+    "verseStart": 1,
+    "verseEnd": 12,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 86,
+    "verseStart": 1,
+    "verseEnd": 11,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 87,
+    "verseStart": 1,
+    "verseEnd": 8,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 88,
+    "verseStart": 1,
+    "verseEnd": 141,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 89,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 89,
+    "verseStart": 4,
+    "verseEnd": 21,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 90,
+    "verseStart": 1,
+    "verseEnd": 11,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 90,
+    "verseStart": 12,
+    "verseEnd": 25,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 90,
+    "verseStart": 26,
+    "verseEnd": 37,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 91,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 92,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 93,
+    "verseStart": 1,
+    "verseEnd": 20,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 93,
+    "verseStart": 21,
+    "verseEnd": 39,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 93,
+    "verseStart": 40,
+    "verseEnd": 42,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 93,
+    "verseStart": 43,
+    "verseEnd": 43,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 93,
+    "verseStart": 44,
+    "verseEnd": 46,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 93,
+    "verseStart": 47,
+    "verseEnd": 49,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 93,
+    "verseStart": 50,
+    "verseEnd": 53,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 94,
+    "verseStart": 1,
+    "verseEnd": 16,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 94,
+    "verseStart": 17,
+    "verseEnd": 17,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 95,
+    "verseStart": 1,
+    "verseEnd": 17,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 96,
+    "verseStart": 1,
+    "verseEnd": 9,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 97,
+    "verseStart": 1,
+    "verseEnd": 20,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 97,
+    "verseStart": 21,
+    "verseEnd": 28,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 98,
+    "verseStart": 1,
+    "verseEnd": 13,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 98,
+    "verseStart": 14,
+    "verseEnd": 27,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 98,
+    "verseStart": 28,
+    "verseEnd": 31,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 98,
+    "verseStart": 32,
+    "verseEnd": 48,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 99,
+    "verseStart": 1,
+    "verseEnd": 5,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 99,
+    "verseStart": 6,
+    "verseEnd": 7,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 99,
+    "verseStart": 8,
+    "verseEnd": 8,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 100,
+    "verseStart": 1,
+    "verseEnd": 12,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 100,
+    "verseStart": 13,
+    "verseEnd": 13,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 100,
+    "verseStart": 14,
+    "verseEnd": 17,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 101,
+    "verseStart": 1,
+    "verseEnd": 42,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 101,
+    "verseStart": 43,
+    "verseEnd": 54,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 101,
+    "verseStart": 55,
+    "verseEnd": 101,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 102,
+    "verseStart": 1,
+    "verseEnd": 34,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 103,
+    "verseStart": 1,
+    "verseEnd": 40,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 104,
+    "verseStart": 1,
+    "verseEnd": 18,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 104,
+    "verseStart": 19,
+    "verseEnd": 19,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 104,
+    "verseStart": 20,
+    "verseEnd": 46,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 104,
+    "verseStart": 47,
+    "verseEnd": 50,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 104,
+    "verseStart": 51,
+    "verseEnd": 86,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 105,
+    "verseStart": 1,
+    "verseEnd": 19,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 105,
+    "verseStart": 20,
+    "verseEnd": 20,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 105,
+    "verseStart": 21,
+    "verseEnd": 41,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 106,
+    "verseStart": 1,
+    "verseEnd": 8,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 107,
+    "verseStart": 1,
+    "verseEnd": 100,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 108,
+    "verseStart": 1,
+    "verseEnd": 8,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 109,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 109,
+    "verseStart": 3,
+    "verseEnd": 5,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 109,
+    "verseStart": 6,
+    "verseEnd": 9,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 109,
+    "verseStart": 10,
+    "verseEnd": 80,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 110,
+    "verseStart": 1,
+    "verseEnd": 16,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 111,
+    "verseStart": 1,
+    "verseEnd": 11,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 112,
+    "verseStart": 1,
+    "verseEnd": 34,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 113,
+    "verseStart": 1,
+    "verseEnd": 1,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 113,
+    "verseStart": 2,
+    "verseEnd": 10,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 114,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 115,
+    "verseStart": 1,
+    "verseEnd": 19,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 116,
+    "verseStart": 1,
+    "verseEnd": 1,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 117,
+    "verseStart": 1,
+    "verseEnd": 16,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 118,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 119,
+    "verseStart": 1,
+    "verseEnd": 7,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 120,
+    "verseStart": 1,
+    "verseEnd": 1,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 121,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 121,
+    "verseStart": 7,
+    "verseEnd": 46,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 122,
+    "verseStart": 1,
+    "verseEnd": 9,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 123,
+    "verseStart": 1,
+    "verseEnd": 17,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 124,
+    "verseStart": 1,
+    "verseEnd": 145,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 125,
+    "verseStart": 1,
+    "verseEnd": 1,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 125,
+    "verseStart": 2,
+    "verseEnd": 4,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 126,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 127,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 127,
+    "verseStart": 4,
+    "verseEnd": 12,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 128,
+    "verseStart": 1,
+    "verseEnd": 14,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 128,
+    "verseStart": 15,
+    "verseEnd": 25,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 129,
+    "verseStart": 1,
+    "verseEnd": 9,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 130,
+    "verseStart": 1,
+    "verseEnd": 23,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 131,
+    "verseStart": 1,
+    "verseEnd": 8,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 132,
+    "verseStart": 1,
+    "verseEnd": 66,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 133,
+    "verseStart": 1,
+    "verseEnd": 14,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 133,
+    "verseStart": 15,
+    "verseEnd": 51,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 133,
+    "verseStart": 52,
+    "verseEnd": 56,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 133,
+    "verseStart": 57,
+    "verseEnd": 74,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 134,
+    "verseStart": 1,
+    "verseEnd": 12,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 135,
+    "verseStart": 1,
+    "verseEnd": 7,
+    "speaker": "John Taylor",
+    "speakerType": "other"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 136,
+    "verseStart": 1,
+    "verseEnd": 34,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 136,
+    "verseStart": 35,
+    "verseEnd": 36,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 136,
+    "verseStart": 37,
+    "verseEnd": 42,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 137,
+    "verseStart": 1,
+    "verseEnd": 10,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 138,
+    "verseStart": 1,
+    "verseEnd": 45,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 138,
+    "verseStart": 46,
+    "verseEnd": 60,
+    "speaker": "Moroni",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "speaker": "Moses",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 1,
+    "verseStart": 3,
+    "verseEnd": 7,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moses",
+    "chapter": 1,
+    "verseStart": 8,
+    "verseEnd": 11,
+    "speaker": "Moses",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 1,
+    "verseStart": 12,
+    "verseEnd": 14,
+    "speaker": "Satan",
+    "speakerType": "other"
+  },
+  {
+    "book": "Moses",
+    "chapter": 1,
+    "verseStart": 15,
+    "verseEnd": 17,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moses",
+    "chapter": 1,
+    "verseStart": 18,
+    "verseEnd": 30,
+    "speaker": "Moses",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 1,
+    "verseStart": 31,
+    "verseEnd": 35,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moses",
+    "chapter": 1,
+    "verseStart": 36,
+    "verseEnd": 36,
+    "speaker": "Moses",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 1,
+    "verseStart": 37,
+    "verseEnd": 42,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moses",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 31,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moses",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 25,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moses",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 32,
+    "speaker": "Moses",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 5,
+    "verseStart": 1,
+    "verseEnd": 12,
+    "speaker": "Moses",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 5,
+    "verseStart": 13,
+    "verseEnd": 21,
+    "speaker": "Satan",
+    "speakerType": "other"
+  },
+  {
+    "book": "Moses",
+    "chapter": 5,
+    "verseStart": 22,
+    "verseEnd": 27,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moses",
+    "chapter": 5,
+    "verseStart": 28,
+    "verseEnd": 28,
+    "speaker": "Moses",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 5,
+    "verseStart": 29,
+    "verseEnd": 33,
+    "speaker": "Satan",
+    "speakerType": "other"
+  },
+  {
+    "book": "Moses",
+    "chapter": 5,
+    "verseStart": 34,
+    "verseEnd": 35,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moses",
+    "chapter": 5,
+    "verseStart": 36,
+    "verseEnd": 39,
+    "speaker": "Moses",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 5,
+    "verseStart": 40,
+    "verseEnd": 59,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moses",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 26,
+    "speaker": "Enoch",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 6,
+    "verseStart": 27,
+    "verseEnd": 36,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moses",
+    "chapter": 6,
+    "verseStart": 37,
+    "verseEnd": 52,
+    "speaker": "Enoch",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 6,
+    "verseStart": 53,
+    "verseEnd": 61,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moses",
+    "chapter": 6,
+    "verseStart": 62,
+    "verseEnd": 68,
+    "speaker": "Enoch",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 7,
+    "verseStart": 1,
+    "verseEnd": 5,
+    "speaker": "Enoch",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 7,
+    "verseStart": 6,
+    "verseEnd": 11,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moses",
+    "chapter": 7,
+    "verseStart": 12,
+    "verseEnd": 19,
+    "speaker": "Enoch",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 7,
+    "verseStart": 20,
+    "verseEnd": 27,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moses",
+    "chapter": 7,
+    "verseStart": 28,
+    "verseEnd": 31,
+    "speaker": "Enoch",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 7,
+    "verseStart": 32,
+    "verseEnd": 44,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moses",
+    "chapter": 7,
+    "verseStart": 45,
+    "verseEnd": 54,
+    "speaker": "Enoch",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 7,
+    "verseStart": 55,
+    "verseEnd": 64,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moses",
+    "chapter": 7,
+    "verseStart": 65,
+    "verseEnd": 69,
+    "speaker": "Enoch",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 8,
+    "verseStart": 1,
+    "verseEnd": 14,
+    "speaker": "Moses",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 8,
+    "verseStart": 15,
+    "verseEnd": 15,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moses",
+    "chapter": 8,
+    "verseStart": 16,
+    "verseEnd": 16,
+    "speaker": "Moses",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 8,
+    "verseStart": 17,
+    "verseEnd": 19,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Moses",
+    "chapter": 8,
+    "verseStart": 20,
+    "verseEnd": 29,
+    "speaker": "Moses",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Moses",
+    "chapter": 8,
+    "verseStart": 30,
+    "verseEnd": 30,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Abraham",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 31,
+    "speaker": "Abraham",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Abraham",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 21,
+    "speaker": "Abraham",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Abraham",
+    "chapter": 2,
+    "verseStart": 22,
+    "verseEnd": 24,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Abraham",
+    "chapter": 2,
+    "verseStart": 25,
+    "verseEnd": 25,
+    "speaker": "Abraham",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Abraham",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "speaker": "Abraham",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Abraham",
+    "chapter": 3,
+    "verseStart": 3,
+    "verseEnd": 10,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Abraham",
+    "chapter": 3,
+    "verseStart": 11,
+    "verseEnd": 14,
+    "speaker": "Abraham",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Abraham",
+    "chapter": 3,
+    "verseStart": 15,
+    "verseEnd": 28,
+    "speaker": "God",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Abraham",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 31,
+    "speaker": "Abraham",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Abraham",
+    "chapter": 5,
+    "verseStart": 1,
+    "verseEnd": 21,
+    "speaker": "Abraham",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Joseph Smith—Matthew",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 55,
+    "speaker": "Jesus Christ",
+    "speakerType": "divine"
+  },
+  {
+    "book": "Joseph Smith—History",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 75,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  },
+  {
+    "book": "Articles of Faith",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 13,
+    "speaker": "Joseph Smith",
+    "speakerType": "prophet"
+  }
+]
