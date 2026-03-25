@@ -2165,5 +2165,82 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 62
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verse": 16,
+    "crossReference": "Leviticus 11:44",
+    "type": "quotation",
+    "note": "Peter quotes the Old Testament command to be holy.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verse": 24,
+    "crossReference": "Isaiah 40:6-8",
+    "type": "quotation",
+    "note": "Quotation regarding the transience of flesh and endurance of the Word.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "verse": 7,
+    "crossReference": "Psalm 118:22",
+    "type": "quotation",
+    "note": "The prophecy of the rejected stone becoming the head of the corner.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "verse": 9,
+    "crossReference": "Exodus 19:6",
+    "type": "quotation",
+    "note": "Reference to Israel being a kingdom of priests.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 3,
+    "verse": 18,
+    "crossReference": "D&C 138",
+    "type": "parallel",
+    "note": "LDS revelation expanding on Christ's ministry in the spirit world.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 4,
+    "verse": 8,
+    "crossReference": "Proverbs 10:12",
+    "type": "allusion",
+    "note": "The principle that love covers a multitude of sins.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 5,
+    "verse": 5,
+    "crossReference": "Proverbs 3:34",
+    "type": "quotation",
+    "note": "Peter cites the teaching that God gives grace to the humble.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
   }
 ]

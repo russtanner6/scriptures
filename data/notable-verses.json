@@ -6077,5 +6077,125 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 62
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 7,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 16,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 19,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 9,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 21,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 24,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 18,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 19,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 21,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 6,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 8,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 12,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 4,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 7,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 8,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
   }
 ]

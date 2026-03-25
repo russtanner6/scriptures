@@ -3590,5 +3590,45 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 62
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "summary": "Peter teaches that through Christ's resurrection, believers have a lively hope and an incorruptible inheritance, encouraging them to be holy in all their conduct as God is holy.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "summary": "Believers are described as a chosen generation and a royal priesthood, called to follow Christ's example of suffering while submitting to earthly authorities for the Lord's sake.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 3,
+    "summary": "Peter provides instructions for husbands and wives and explains that Christ suffered for sins to bring us to God, including preaching to the spirits in prison.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 4,
+    "summary": "Saints are exhorted to arm themselves with the mind of Christ, exercise charity, and rejoice in suffering as they face fiery trials for their faith in Him.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 5,
+    "summary": "Peter counsels the elders to lead the flock with a ready mind and encourages all believers to be humble and vigilant against the devil's temptations.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
   }
 ]

@@ -3901,5 +3901,50 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 62
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "genre": "epistle",
+    "subgenre": "",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "genre": "epistle",
+    "subgenre": "",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 3,
+    "genre": "epistle",
+    "subgenre": "",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 4,
+    "genre": "epistle",
+    "subgenre": "",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 5,
+    "genre": "epistle",
+    "subgenre": "",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
   }
 ]

@@ -4488,5 +4488,55 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 62
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "era": "Apostolic",
+    "approxDate": "c. AD 62-64",
+    "setting": "Peter addresses the strangers scattered across various Roman provinces in Asia Minor (modern-day Turkey).",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "era": "Apostolic",
+    "approxDate": "c. AD 62-64",
+    "setting": "The imagery of lively stones highlights the early Christian shift from physical Jewish temple worship to a communal spiritual identity.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 3,
+    "era": "Apostolic",
+    "approxDate": "c. AD 62-64",
+    "setting": "Peter's mention of spirits in prison provides an apostolic foundation for Christ's ministry between His death and resurrection.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 4,
+    "era": "Apostolic",
+    "approxDate": "c. AD 62-64",
+    "setting": "The fiery trial mentioned likely refers to localized persecutions of Christians under the Roman Empire.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 5,
+    "era": "Apostolic",
+    "approxDate": "c. AD 62-64",
+    "setting": "Peter's reference to Babylon is widely understood as a code name for Rome, where he likely composed the letter.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 60
   }
 ]

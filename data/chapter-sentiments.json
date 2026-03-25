@@ -5835,5 +5835,70 @@
     "contrition": 3,
     "dominant": "peace",
     "rationale": "Emphasizes the power of faith to overcome the world and the absolute certainty provided by the witnesses of the Godhead."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 Peter",
+    "bookId": 60,
+    "chapter": 1,
+    "exaltation": 8,
+    "peace": 9,
+    "admonition": 2,
+    "contrition": 4,
+    "dominant": "peace",
+    "rationale": "The chapter emphasizes the profound hope and incorruptible inheritance believers possess through the resurrection of Jesus Christ."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 Peter",
+    "bookId": 60,
+    "chapter": 2,
+    "exaltation": 7,
+    "peace": 8,
+    "admonition": 3,
+    "contrition": 4,
+    "dominant": "peace",
+    "rationale": "It focuses on the identity of believers as a chosen people and Christ as the foundational chief corner stone."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 Peter",
+    "bookId": 60,
+    "chapter": 3,
+    "exaltation": 6,
+    "peace": 8,
+    "admonition": 3,
+    "contrition": 5,
+    "dominant": "peace",
+    "rationale": "The text provides comforting instructions for domestic life and highlights Christ's redemptive work for both the living and the dead."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 Peter",
+    "bookId": 60,
+    "chapter": 4,
+    "exaltation": 6,
+    "peace": 7,
+    "admonition": 4,
+    "contrition": 8,
+    "dominant": "contrition",
+    "rationale": "The primary focus is on enduring suffering and fiery trials with the same mind and patience as Jesus Christ."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 Peter",
+    "bookId": 60,
+    "chapter": 5,
+    "exaltation": 7,
+    "peace": 9,
+    "admonition": 3,
+    "contrition": 4,
+    "dominant": "peace",
+    "rationale": "The concluding chapter offers comforting exhortations to elders and the youth to remain humble and vigilant under God's care."
   }
 ]
