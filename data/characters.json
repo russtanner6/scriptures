@@ -20772,5 +20772,14 @@
       "OT"
     ],
     "tier": 4
+  },
+  {
+    "id": "balaams-donkey",
+    "name": "Balaam's Donkey",
+    "description": "The donkey who saw the angel of the Lord blocking the road and spoke to Balaam, asking why he had been struck three times. The only talking animal in scripture besides the serpent.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
   }
 ]

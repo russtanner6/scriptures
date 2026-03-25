@@ -6323,5 +6323,82 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 19
+  },
+  {
+    "book": "Numbers",
+    "chapter": 6,
+    "verse": 24,
+    "crossReference": "Psalm 67:1",
+    "type": "parallel",
+    "note": "The Aaronic blessing echoed in the psalmist's plea for God's face to shine upon His people.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 14,
+    "verse": 18,
+    "crossReference": "Exodus 34:6-7",
+    "type": "parallel",
+    "note": "Moses quotes God's self-declaration of mercy and justice from the golden calf incident.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 21,
+    "verse": 9,
+    "crossReference": "John 3:14-15",
+    "type": "fulfillment",
+    "note": "Jesus explicitly compares the bronze serpent lifted up by Moses to His own crucifixion.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 24,
+    "verse": 17,
+    "crossReference": "Matthew 2:2",
+    "type": "fulfillment",
+    "note": "Balaam's prophecy of a Star out of Jacob is connected to the star at Christ's birth.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 25,
+    "verse": 11,
+    "crossReference": "Psalm 106:30-31",
+    "type": "parallel",
+    "note": "Phinehas' zealous act is praised and counted to him for righteousness.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 27,
+    "verse": 17,
+    "crossReference": "Matthew 9:36",
+    "type": "parallel",
+    "note": "Moses' concern that Israel not be as sheep without a shepherd echoed by Jesus.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 35,
+    "verse": 25,
+    "crossReference": "Hebrews 6:18",
+    "type": "parallel",
+    "note": "The city of refuge as a type of the refuge believers find in Christ.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
   }
 ]

@@ -16922,5 +16922,440 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 19
+  },
+  {
+    "book": "Numbers",
+    "chapter": 1,
+    "topics": [
+      "obedience",
+      "organization",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 2,
+    "topics": [
+      "order",
+      "divine presence",
+      "community"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 3,
+    "topics": [
+      "priesthood",
+      "consecration",
+      "firstborn"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 4,
+    "topics": [
+      "priesthood",
+      "stewardship",
+      "holiness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 5,
+    "topics": [
+      "purity",
+      "restitution",
+      "justice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 6,
+    "topics": [
+      "consecration",
+      "blessing",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 7,
+    "topics": [
+      "sacrifice",
+      "dedication",
+      "generosity"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 8,
+    "topics": [
+      "purification",
+      "priesthood",
+      "service"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 9,
+    "topics": [
+      "passover",
+      "guidance",
+      "revelation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 10,
+    "topics": [
+      "revelation",
+      "faith",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 11,
+    "topics": [
+      "murmuring",
+      "judgment",
+      "leadership"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 12,
+    "topics": [
+      "humility",
+      "authority",
+      "repentance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 13,
+    "topics": [
+      "faith",
+      "fear",
+      "promise"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 14,
+    "topics": [
+      "rebellion",
+      "intercession",
+      "mercy",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 15,
+    "topics": [
+      "offerings",
+      "sabbath",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "topics": [
+      "rebellion",
+      "priesthood",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 17,
+    "topics": [
+      "priesthood",
+      "confirmation",
+      "authority"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 18,
+    "topics": [
+      "tithes",
+      "priesthood",
+      "service"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 19,
+    "topics": [
+      "purification",
+      "atonement",
+      "holiness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "topics": [
+      "disobedience",
+      "consequences",
+      "faith"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 21,
+    "topics": [
+      "faith",
+      "healing",
+      "typology",
+      "atonement"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "topics": [
+      "sovereignty",
+      "obedience",
+      "prophecy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "topics": [
+      "blessing",
+      "sovereignty",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 24,
+    "topics": [
+      "messianic prophecy",
+      "sovereignty",
+      "blessing"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 25,
+    "topics": [
+      "idolatry",
+      "zeal",
+      "covenant",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 26,
+    "topics": [
+      "inheritance",
+      "covenant",
+      "promise"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 27,
+    "topics": [
+      "inheritance",
+      "justice",
+      "succession"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 28,
+    "topics": [
+      "sacrifice",
+      "worship",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 29,
+    "topics": [
+      "atonement",
+      "feasts",
+      "worship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 30,
+    "topics": [
+      "vows",
+      "integrity",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 31,
+    "topics": [
+      "justice",
+      "purification",
+      "warfare"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 32,
+    "topics": [
+      "commitment",
+      "promise",
+      "unity"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 33,
+    "topics": [
+      "remembrance",
+      "obedience",
+      "inheritance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 34,
+    "topics": [
+      "inheritance",
+      "promise",
+      "boundaries"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 35,
+    "topics": [
+      "refuge",
+      "justice",
+      "mercy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 36,
+    "topics": [
+      "inheritance",
+      "obedience",
+      "order"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
   }
 ]

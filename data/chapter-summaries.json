@@ -11160,5 +11160,293 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 19
+  },
+  {
+    "book": "Numbers",
+    "chapter": 1,
+    "summary": "God commands Moses to take a census of all men twenty years and older able to go to war, numbering 603,550 from twelve tribes; the Levites are exempted.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 2,
+    "summary": "The twelve tribes are assigned specific positions around the tabernacle for encampment and marching order, with Judah leading in the east.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 3,
+    "summary": "The Levites are numbered and assigned to the three clans of Gershon, Kohath, and Merari, each with specific tabernacle duties; they replace the firstborn.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 4,
+    "summary": "A census of Levitical men aged 30-50 assigns the Kohathites, Gershonites, and Merarites their specific duties in transporting the tabernacle.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 5,
+    "summary": "Laws are given for removing the unclean from camp, making restitution for wrongs, and the ritual for testing a wife suspected of unfaithfulness.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 6,
+    "summary": "The Nazirite vow of consecration is detailed, and Moses is given the priestly blessing: 'The LORD bless thee, and keep thee.'",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 7,
+    "summary": "The twelve tribal leaders each bring identical offerings over twelve days for the dedication of the altar, totaling a vast amount of silver, gold, and animals.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 8,
+    "summary": "Aaron lights the lampstand; the Levites are ceremonially purified through sprinkling, shaving, and sacrifice, then formally presented for tabernacle service.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 9,
+    "summary": "Israel observes the Passover in the wilderness; provision is made for those unable to keep it on time; God's cloud guides the camp's movements.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 10,
+    "summary": "Two silver trumpets are made for assembling the camp and sounding alarms; Israel departs Sinai in ordered march for the first time.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 11,
+    "summary": "The people complain and crave meat; God sends quail but strikes the camp with a plague; Moses appoints seventy elders to share the burden of leadership.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 12,
+    "summary": "Miriam and Aaron challenge Moses' authority; God affirms Moses as unique among prophets, and Miriam is struck with leprosy for seven days.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 13,
+    "summary": "Twelve spies explore Canaan for forty days; they report a land of abundance but ten of them terrify the people with tales of giants.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 14,
+    "summary": "Israel rebels and wants to return to Egypt; Moses intercedes; God pardons but decrees that the faithless generation will die in the wilderness over forty years.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 15,
+    "summary": "Laws for grain and drink offerings in the promised land are given; a man is stoned for gathering sticks on the Sabbath; fringes are commanded.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "summary": "Korah, Dathan, and Abiram lead a rebellion; the earth swallows the rebels, fire consumes 250 incense offerers, and a plague kills 14,700 more.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 17,
+    "summary": "Twelve rods are placed before the LORD; Aaron's rod alone buds, blossoms, and produces almonds, confirming God's choice of the Levitical priesthood.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 18,
+    "summary": "God defines the duties of priests and Levites at the tabernacle and establishes their support through tithes, offerings, and the firstborn redemption.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 19,
+    "summary": "The ordinance of the red heifer is given for purification from contact with the dead, establishing water of separation for the camp's ritual cleanness.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "summary": "Miriam dies at Kadesh; Moses strikes the rock instead of speaking to it, forfeiting his entry to the promised land; Aaron dies on Mount Hor.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 21,
+    "summary": "Israel defeats Arad, is punished by fiery serpents for murmuring and healed by looking at a bronze serpent, then conquers Sihon and Og.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "summary": "Balak king of Moab hires Balaam to curse Israel; God warns Balaam through visions and through his own donkey, who sees the angel and speaks.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "summary": "Balaam delivers two oracles from Balak's altars, each time blessing Israel instead of cursing them, declaring God's irrevocable favor.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 24,
+    "summary": "Balaam pronounces two more blessings on Israel, including the messianic prophecy of a Star and Sceptre rising from Jacob, then departs.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 25,
+    "summary": "Israelite men sin with Moabite women at Baal-peor; a plague kills 24,000 until Phinehas' zealous act earns his family a covenant of perpetual priesthood.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 26,
+    "summary": "A second census of the new generation counts 601,730 fighting men; the land is to be divided proportionally among the tribes.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 27,
+    "summary": "The daughters of Zelophehad receive a ruling allowing daughters to inherit; God tells Moses to ascend Mount Abarim and commissions Joshua as his successor.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 28,
+    "summary": "Detailed laws for the daily, Sabbath, new moon, and Passover offerings are restated as Israel prepares to enter the promised land.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 29,
+    "summary": "Offerings for the Feast of Trumpets, Day of Atonement, and the eight days of the Feast of Tabernacles are prescribed.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 30,
+    "summary": "Laws governing vows are given: a man's vow is binding; a woman's vow may be confirmed or annulled by her father or husband.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 31,
+    "summary": "Israel wages war against Midian, slaying the five kings and Balaam; the spoil is purified and divided among the soldiers, congregation, and Levites.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 32,
+    "summary": "The tribes of Reuben, Gad, and half-Manasseh request the lands east of Jordan and agree to fight alongside their brethren before settling.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 33,
+    "summary": "A complete itinerary of Israel's forty-two camping stations from Egypt to the plains of Moab is recorded, with instructions to drive out Canaan's inhabitants.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 34,
+    "summary": "God defines the precise boundaries of the promised land on all four sides and names the tribal leaders who will oversee the land's division.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 35,
+    "summary": "Forty-eight Levitical cities are designated, including six cities of refuge; laws distinguishing murder from manslaughter are established.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 36,
+    "summary": "A supplemental ruling requires Zelophehad's daughters to marry within their tribe so that tribal inheritances remain intact across generations.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
   }
 ]

@@ -28755,5 +28755,1615 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 19
+  },
+  {
+    "book": "Numbers",
+    "chapter": 1,
+    "startVerse": 1,
+    "endVerse": 4,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 2,
+    "startVerse": 1,
+    "endVerse": 2,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 3,
+    "startVerse": 5,
+    "endVerse": 10,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 3,
+    "startVerse": 11,
+    "endVerse": 13,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 3,
+    "startVerse": 40,
+    "endVerse": 41,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 3,
+    "startVerse": 44,
+    "endVerse": 48,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 4,
+    "startVerse": 1,
+    "endVerse": 15,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 4,
+    "startVerse": 17,
+    "endVerse": 20,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 4,
+    "startVerse": 21,
+    "endVerse": 28,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 5,
+    "startVerse": 1,
+    "endVerse": 4,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 5,
+    "startVerse": 5,
+    "endVerse": 10,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 5,
+    "startVerse": 11,
+    "endVerse": 31,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 6,
+    "startVerse": 1,
+    "endVerse": 21,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 6,
+    "startVerse": 22,
+    "endVerse": 27,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 7,
+    "startVerse": 4,
+    "endVerse": 5,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 7,
+    "startVerse": 89,
+    "endVerse": 89,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 8,
+    "startVerse": 1,
+    "endVerse": 4,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 8,
+    "startVerse": 5,
+    "endVerse": 22,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 8,
+    "startVerse": 23,
+    "endVerse": 26,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 9,
+    "startVerse": 1,
+    "endVerse": 5,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 9,
+    "startVerse": 6,
+    "endVerse": 7,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 9,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 9,
+    "startVerse": 9,
+    "endVerse": 14,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 10,
+    "startVerse": 1,
+    "endVerse": 10,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 10,
+    "startVerse": 29,
+    "endVerse": 29,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 10,
+    "startVerse": 30,
+    "endVerse": 30,
+    "speaker": "Hobab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 10,
+    "startVerse": 31,
+    "endVerse": 32,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 10,
+    "startVerse": 35,
+    "endVerse": 35,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 10,
+    "startVerse": 36,
+    "endVerse": 36,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 11,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 11,
+    "startVerse": 4,
+    "endVerse": 6,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 11,
+    "startVerse": 11,
+    "endVerse": 15,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 11,
+    "startVerse": 16,
+    "endVerse": 20,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 11,
+    "startVerse": 21,
+    "endVerse": 22,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 11,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 11,
+    "startVerse": 27,
+    "endVerse": 27,
+    "speaker": "Joshua",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 11,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "Joshua",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 11,
+    "startVerse": 29,
+    "endVerse": 29,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 12,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Aaron",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 12,
+    "startVerse": 4,
+    "endVerse": 9,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 12,
+    "startVerse": 11,
+    "endVerse": 12,
+    "speaker": "Aaron",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 12,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 12,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 13,
+    "startVerse": 1,
+    "endVerse": 2,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 13,
+    "startVerse": 17,
+    "endVerse": 20,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 13,
+    "startVerse": 27,
+    "endVerse": 29,
+    "speaker": "Caleb",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 13,
+    "startVerse": 30,
+    "endVerse": 30,
+    "speaker": "Caleb",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 13,
+    "startVerse": 31,
+    "endVerse": 33,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 14,
+    "startVerse": 2,
+    "endVerse": 3,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 14,
+    "startVerse": 6,
+    "endVerse": 9,
+    "speaker": "Caleb",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 14,
+    "startVerse": 11,
+    "endVerse": 12,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 14,
+    "startVerse": 13,
+    "endVerse": 19,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 14,
+    "startVerse": 20,
+    "endVerse": 35,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 14,
+    "startVerse": 40,
+    "endVerse": 40,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 14,
+    "startVerse": 41,
+    "endVerse": 43,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 15,
+    "startVerse": 1,
+    "endVerse": 16,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 15,
+    "startVerse": 17,
+    "endVerse": 21,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 15,
+    "startVerse": 35,
+    "endVerse": 36,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 15,
+    "startVerse": 37,
+    "endVerse": 41,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Dathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "startVerse": 5,
+    "endVerse": 7,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "startVerse": 8,
+    "endVerse": 11,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "startVerse": 12,
+    "endVerse": 14,
+    "speaker": "Dathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "startVerse": 16,
+    "endVerse": 17,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "startVerse": 20,
+    "endVerse": 21,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "startVerse": 23,
+    "endVerse": 24,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "startVerse": 26,
+    "endVerse": 27,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "startVerse": 28,
+    "endVerse": 30,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "startVerse": 41,
+    "endVerse": 41,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "startVerse": 44,
+    "endVerse": 45,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "startVerse": 46,
+    "endVerse": 46,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 17,
+    "startVerse": 1,
+    "endVerse": 5,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 17,
+    "startVerse": 10,
+    "endVerse": 11,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 17,
+    "startVerse": 12,
+    "endVerse": 13,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 18,
+    "startVerse": 1,
+    "endVerse": 7,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 18,
+    "startVerse": 8,
+    "endVerse": 19,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 18,
+    "startVerse": 20,
+    "endVerse": 24,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 18,
+    "startVerse": 25,
+    "endVerse": 32,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 19,
+    "startVerse": 1,
+    "endVerse": 10,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 19,
+    "startVerse": 11,
+    "endVerse": 22,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "startVerse": 3,
+    "endVerse": 5,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "startVerse": 7,
+    "endVerse": 8,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "startVerse": 14,
+    "endVerse": 16,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "startVerse": 23,
+    "endVerse": 26,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 21,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 21,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 21,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 21,
+    "startVerse": 8,
+    "endVerse": 9,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 21,
+    "startVerse": 17,
+    "endVerse": 18,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 21,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 21,
+    "startVerse": 34,
+    "endVerse": 34,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "startVerse": 4,
+    "endVerse": 6,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "startVerse": 10,
+    "endVerse": 11,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "startVerse": 18,
+    "endVerse": 19,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "Balaam's Donkey",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "startVerse": 29,
+    "endVerse": 29,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "startVerse": 30,
+    "endVerse": 30,
+    "speaker": "Balaam's Donkey",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "startVerse": 34,
+    "endVerse": 35,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "startVerse": 38,
+    "endVerse": 38,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "startVerse": 1,
+    "endVerse": 2,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "startVerse": 7,
+    "endVerse": 10,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "startVerse": 15,
+    "endVerse": 16,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "startVerse": 18,
+    "endVerse": 24,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "startVerse": 25,
+    "endVerse": 25,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "startVerse": 26,
+    "endVerse": 26,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "startVerse": 27,
+    "endVerse": 27,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "startVerse": 29,
+    "endVerse": 30,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 24,
+    "startVerse": 3,
+    "endVerse": 9,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 24,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 24,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 24,
+    "startVerse": 12,
+    "endVerse": 13,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 24,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 24,
+    "startVerse": 15,
+    "endVerse": 24,
+    "speaker": "Balaam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 25,
+    "startVerse": 4,
+    "endVerse": 5,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 25,
+    "startVerse": 10,
+    "endVerse": 13,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 26,
+    "startVerse": 1,
+    "endVerse": 4,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 26,
+    "startVerse": 52,
+    "endVerse": 56,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 27,
+    "startVerse": 3,
+    "endVerse": 4,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 27,
+    "startVerse": 6,
+    "endVerse": 11,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 27,
+    "startVerse": 12,
+    "endVerse": 14,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 27,
+    "startVerse": 15,
+    "endVerse": 17,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 27,
+    "startVerse": 18,
+    "endVerse": 21,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 28,
+    "startVerse": 1,
+    "endVerse": 2,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 30,
+    "startVerse": 1,
+    "endVerse": 2,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 31,
+    "startVerse": 1,
+    "endVerse": 2,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 31,
+    "startVerse": 3,
+    "endVerse": 4,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 31,
+    "startVerse": 14,
+    "endVerse": 18,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 31,
+    "startVerse": 21,
+    "endVerse": 24,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 31,
+    "startVerse": 25,
+    "endVerse": 30,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 32,
+    "startVerse": 2,
+    "endVerse": 5,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 32,
+    "startVerse": 6,
+    "endVerse": 15,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 32,
+    "startVerse": 16,
+    "endVerse": 19,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 32,
+    "startVerse": 20,
+    "endVerse": 24,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 32,
+    "startVerse": 25,
+    "endVerse": 27,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 32,
+    "startVerse": 29,
+    "endVerse": 30,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 33,
+    "startVerse": 50,
+    "endVerse": 56,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 34,
+    "startVerse": 1,
+    "endVerse": 15,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 34,
+    "startVerse": 16,
+    "endVerse": 29,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 35,
+    "startVerse": 1,
+    "endVerse": 8,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 35,
+    "startVerse": 9,
+    "endVerse": 34,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 36,
+    "startVerse": 5,
+    "endVerse": 9,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 36,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Moses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
   }
 ]

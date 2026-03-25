@@ -18634,5 +18634,384 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 19
+  },
+  {
+    "book": "Numbers",
+    "chapter": 1,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 2,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 3,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 4,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 5,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 24,
+        "reason": "The priestly blessing: 'The LORD bless thee, and keep thee'—one of the most quoted blessings in all scripture."
+      },
+      {
+        "verse": 25,
+        "reason": "'The LORD make his face shine upon thee, and be gracious unto thee'—central to Jewish and Christian liturgy."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 7,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 8,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 9,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 10,
+    "verses": [
+      {
+        "verse": 35,
+        "reason": "Moses' invocation when the ark set forward, calling upon God to scatter His enemies."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 11,
+    "verses": [
+      {
+        "verse": 29,
+        "reason": "Moses' wish that all the LORD's people were prophets—a vision of universal spiritual gifts."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "The famous declaration that Moses was the meekest man on the face of the earth."
+      },
+      {
+        "verse": 6,
+        "reason": "God distinguishes Moses from other prophets, speaking to him mouth to mouth rather than in visions."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 30,
+        "reason": "Caleb's bold declaration to go up at once and possess the land, a model of faith."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 18,
+        "reason": "Moses' intercession quoting God's own character of mercy—longsuffering and forgiving iniquity."
+      },
+      {
+        "verse": 9,
+        "reason": "Joshua and Caleb urge the people not to fear because 'the LORD is with us.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 15,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 32,
+        "reason": "The earth opens her mouth and swallows Korah's rebels—one of the most dramatic judgments in the Bible."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 17,
+    "verses": [
+      {
+        "verse": 8,
+        "reason": "Aaron's rod buds, blossoms, and yields almonds overnight—a miraculous confirmation of priesthood."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 18,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 19,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "God's solemn verdict that Moses and Aaron will not lead Israel into the promised land because of unbelief."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 21,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "The bronze serpent—a powerful type of Christ's atonement, directly referenced by Jesus in John 3:14."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "verses": [
+      {
+        "verse": 28,
+        "reason": "The LORD opens the mouth of Balaam's donkey—one of only two animals to speak in the Bible."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "verses": [
+      {
+        "verse": 19,
+        "reason": "'God is not a man, that he should lie'—a foundational declaration of divine faithfulness."
+      },
+      {
+        "verse": 23,
+        "reason": "Declares that there is no enchantment or divination against Jacob when God is with them."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 24,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "The messianic prophecy: 'There shall come a Star out of Jacob, and a Sceptre shall rise out of Israel.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 25,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 26,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 27,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "Moses' prayer that Israel not be as sheep without a shepherd—language later echoed by Jesus."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 28,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 29,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 30,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 31,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 32,
+    "verses": [
+      {
+        "verse": 23,
+        "reason": "'Be sure your sin will find you out'—a universally quoted warning on accountability."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 33,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 34,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 35,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
+  },
+  {
+    "book": "Numbers",
+    "chapter": 36,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 4
   }
 ]
