@@ -2440,7 +2440,7 @@
     "bookId": 84
   },
   {
-    "book": "Joseph Smith—History",
+    "book": "Joseph Smith\u2014History",
     "chapter": 1,
     "era": "Restoration",
     "approxDate": "1805-1829",
@@ -2450,7 +2450,7 @@
     "bookId": 86
   },
   {
-    "book": "Joseph Smith—Matthew",
+    "book": "Joseph Smith\u2014Matthew",
     "chapter": 1,
     "era": "Ministry of Christ",
     "approxDate": "c. AD 33",
@@ -5194,7 +5194,7 @@
     "chapter": 2,
     "era": "Apostolic",
     "approxDate": "c. AD 60-62",
-    "setting": "Paul addresses the Colossian heresy — a syncretic blend of Jewish legalism, pagan philosophy, and proto-gnostic asceticism threatening the young church.",
+    "setting": "Paul addresses the Colossian heresy \u2014 a syncretic blend of Jewish legalism, pagan philosophy, and proto-gnostic asceticism threatening the young church.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 51
@@ -5952,5 +5952,335 @@
     "bookName": "Mark",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 1,
+    "era": "Life of Christ",
+    "approxDate": "c. 5-4 BC",
+    "setting": "Bethlehem / Nazareth",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "era": "Life of Christ",
+    "approxDate": "c. 5-4 BC",
+    "setting": "Bethlehem / Egypt / Nazareth",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 3,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 27",
+    "setting": "Jordan River wilderness",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 4,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 27",
+    "setting": "Judean wilderness / Galilee",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 28",
+    "setting": "Mount near Capernaum",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 28",
+    "setting": "Mount near Capernaum",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 7,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 28",
+    "setting": "Mount near Capernaum",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 8,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 28",
+    "setting": "Galilee / Sea of Galilee",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 9,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 28",
+    "setting": "Capernaum and surroundings",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 10,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 28-29",
+    "setting": "Galilee",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 11,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 28-29",
+    "setting": "Galilee",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 12,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 28-29",
+    "setting": "Galilee",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 13,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 28-29",
+    "setting": "Sea of Galilee",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 14,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 29",
+    "setting": "Galilee / Sea of Galilee",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 15,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 29",
+    "setting": "Galilee / Tyre and Sidon region",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 16,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 29",
+    "setting": "Caesarea Philippi",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 17,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 29",
+    "setting": "Mount of Transfiguration",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 18,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 29",
+    "setting": "Capernaum",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 19,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 30",
+    "setting": "Judea beyond Jordan",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 20,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 30",
+    "setting": "Road to Jerusalem",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 21,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 30",
+    "setting": "Jerusalem / Temple",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 30",
+    "setting": "Jerusalem / Temple",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 23,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 30",
+    "setting": "Jerusalem / Temple",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 24,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 30",
+    "setting": "Mount of Olives",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 25,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 30",
+    "setting": "Mount of Olives",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 26,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 30",
+    "setting": "Jerusalem / Gethsemane",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 30",
+    "setting": "Jerusalem / Golgotha",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "era": "Life of Christ",
+    "approxDate": "c. AD 30",
+    "setting": "Jerusalem / Galilee",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "era": "Pauline epistles",
+    "approxDate": "c. AD 60-62",
+    "setting": "Rome (Paul's imprisonment)",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "era": "Pauline epistles",
+    "approxDate": "c. AD 60-62",
+    "setting": "Rome (Paul's imprisonment)",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 2,
+    "era": "Pauline epistles",
+    "approxDate": "c. AD 60-62",
+    "setting": "Rome (Paul's imprisonment)",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "era": "Pauline epistles",
+    "approxDate": "c. AD 60-62",
+    "setting": "Rome (Paul's imprisonment)",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "era": "Pauline epistles",
+    "approxDate": "c. AD 60-62",
+    "setting": "Rome (Paul's imprisonment)",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
   }
 ]

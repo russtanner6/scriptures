@@ -2058,7 +2058,7 @@
     "bookId": 84
   },
   {
-    "book": "Joseph Smith—History",
+    "book": "Joseph Smith\u2014History",
     "chapter": 1,
     "genre": "narrative",
     "subgenre": "sacred history",
@@ -2067,7 +2067,7 @@
     "bookId": 86
   },
   {
-    "book": "Joseph Smith—Matthew",
+    "book": "Joseph Smith\u2014Matthew",
     "chapter": 1,
     "genre": "prophecy",
     "subgenre": "apocalyptic",
@@ -5261,5 +5261,286 @@
     "bookName": "Mark",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 1,
+    "genre": "genealogy",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "genre": "narrative",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 3,
+    "genre": "narrative",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 4,
+    "genre": "narrative",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "genre": "discourse",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "subgenre": "sermon"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "genre": "discourse",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "subgenre": "sermon"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 7,
+    "genre": "discourse",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "subgenre": "sermon"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 8,
+    "genre": "narrative",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "subgenre": "miracle"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 9,
+    "genre": "narrative",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "subgenre": "miracle"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 10,
+    "genre": "discourse",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "subgenre": "commission"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 11,
+    "genre": "discourse",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 12,
+    "genre": "discourse",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "subgenre": "controversy"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 13,
+    "genre": "parable",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 14,
+    "genre": "narrative",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "subgenre": "miracle"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 15,
+    "genre": "discourse",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "subgenre": "controversy"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 16,
+    "genre": "narrative",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 17,
+    "genre": "narrative",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "subgenre": "theophany"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 18,
+    "genre": "discourse",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "subgenre": "parable"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 19,
+    "genre": "discourse",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 20,
+    "genre": "parable",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 21,
+    "genre": "narrative",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "genre": "discourse",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "subgenre": "controversy"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 23,
+    "genre": "discourse",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "subgenre": "prophetic woe"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 24,
+    "genre": "prophecy",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "subgenre": "apocalyptic"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 25,
+    "genre": "parable",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 26,
+    "genre": "narrative",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "subgenre": "passion"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "genre": "narrative",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "subgenre": "passion"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "genre": "narrative",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "subgenre": "resurrection"
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "genre": "epistle",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "genre": "epistle",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 2,
+    "genre": "epistle",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "genre": "epistle",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "genre": "epistle",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
   }
 ]

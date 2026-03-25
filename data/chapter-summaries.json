@@ -1114,7 +1114,7 @@
   {
     "book": "Moroni",
     "chapter": 3,
-    "summary": "The procedure for ordaining priests and teachers is outlined — by the laying on of hands by those holding authority, in the name of Christ.",
+    "summary": "The procedure for ordaining priests and teachers is outlined \u2014 by the laying on of hands by those holding authority, in the name of Christ.",
     "volumeAbbrev": "BoM",
     "volumeName": "Book of Mormon",
     "bookId": 81
@@ -1146,7 +1146,7 @@
   {
     "book": "Moroni",
     "chapter": 7,
-    "summary": "Mormon's sermon on discerning good from evil, the necessity of faith for miracles, and the vital roles of hope and charity — the pure love of Christ.",
+    "summary": "Mormon's sermon on discerning good from evil, the necessity of faith for miracles, and the vital roles of hope and charity \u2014 the pure love of Christ.",
     "volumeAbbrev": "BoM",
     "volumeName": "Book of Mormon",
     "bookId": 81
@@ -1730,7 +1730,7 @@
   {
     "book": "Alma",
     "chapter": 41,
-    "summary": "Alma teaches the law of restoration — we are restored to the state of our desires, whether good or evil.",
+    "summary": "Alma teaches the law of restoration \u2014 we are restored to the state of our desires, whether good or evil.",
     "volumeAbbrev": "BoM",
     "volumeName": "Book of Mormon",
     "bookId": 75
@@ -1952,7 +1952,7 @@
     "bookId": 84
   },
   {
-    "book": "Joseph Smith—History",
+    "book": "Joseph Smith\u2014History",
     "chapter": 1,
     "summary": "Joseph Smith recounts the religious confusion of his youth, the First Vision, Moroni's visits, obtaining the gold plates, and the restoration of the Aaronic Priesthood by John the Baptist.",
     "volumeAbbrev": "PoGP",
@@ -1960,7 +1960,7 @@
     "bookId": 86
   },
   {
-    "book": "Joseph Smith—Matthew",
+    "book": "Joseph Smith\u2014Matthew",
     "chapter": 1,
     "summary": "Jesus foretells the destruction of Jerusalem and the signs of His Second Coming, warning His disciples to watch and be prepared for the great tribulations of the last days.",
     "volumeAbbrev": "PoGP",
@@ -4848,5 +4848,269 @@
     "bookName": "Mark",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 1,
+    "summary": "The chapter highlights the fulfillment of prophecy through the Savior's birth and the angelic reassurance given to Joseph regarding Mary's divine conception.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "summary": "While the arrival of the wise men is peaceful, the chapter is dominated by Herod's murderous intent, the slaughter of the innocents, and the necessary flight into Egypt.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 3,
+    "summary": "John the Baptist delivers a stern call to repentance and warns of the coming judgment, preparing the way for Jesus' baptism and divine approval.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 4,
+    "summary": "Jesus faces intense personal temptation from Satan in the wilderness and begins His ministry with a clear call for the people to repent.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "summary": "Jesus delivers the Sermon on the Mount, providing authoritative and challenging instructions that elevate the Law of Moses to a higher spiritual standard.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "summary": "The Savior instructs His disciples to shift their focus from outward show and worldly treasures to secret devotion and the kingdom of God.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 7,
+    "summary": "Jesus concludes His sermon with warnings against judgment, false prophets, and the importance of building one's life on a firm spiritual foundation.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 8,
+    "summary": "The chapter focuses on Jesus' power and compassion through a series of miracles, including healing a leper, a centurion's servant, and calming a great storm.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 9,
+    "summary": "Jesus continues to manifest His divine authority by forgiving sins, healing the sick, and raising the dead, demonstrating His mission to heal both body and spirit.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 10,
+    "summary": "Jesus commissions the Twelve Apostles, providing them with strict instructions and sobering warnings about the persecutions they will face in His name.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 11,
+    "summary": "Jesus upbraids the cities that rejected His miracles but concludes with a peaceful invitation for the heavy-laden to find rest in Him.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 12,
+    "summary": "Jesus engages in sharp disputes with the Pharisees regarding the Sabbath and the source of His power, warning against the unpardonable sin.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 13,
+    "summary": "Jesus teaches the mysteries of the kingdom through parables, explaining that spiritual understanding is a gift to the faithful while the wicked remain in darkness.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 14,
+    "summary": "Despite the tragic death of John the Baptist, the chapter highlights Jesus' miraculous provision for the five thousand and His power over the elements.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 15,
+    "summary": "Jesus rebukes the Pharisees for their hypocrisy and man-made traditions, then demonstrates His mercy by healing the daughter of a faithful Gentile woman.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 16,
+    "summary": "This chapter contains Peter's foundational confession of Christ and the Savior's promise to build His church and bestow the keys of the kingdom.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 17,
+    "summary": "The Transfiguration provides a sacred and glorious witness of Christ's divinity to His lead apostles, strengthening them for the trials ahead.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 18,
+    "summary": "Jesus teaches the importance of humility through the example of a child and provides profound lessons on forgiveness and the value of every soul.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 19,
+    "summary": "Jesus provides direct and challenging teachings on the sanctity of marriage and the difficulty for those who trust in riches to enter the kingdom of heaven.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 20,
+    "summary": "Through parables and personal instruction, Jesus rebukes the desire for status and emphasizes that true greatness in His kingdom comes through service.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 21,
+    "summary": "Jesus enters Jerusalem with Messianic authority, cleanses the temple, and uses parables to condemn the Jewish leaders for their rejection of God's messengers.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "summary": "The Savior silences His detractors with brilliant responses regarding tribute, the resurrection, and the great commandment, revealing their spiritual blindness.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 23,
+    "summary": "Jesus delivers a blistering public rebuke of the scribes and Pharisees, pronouncing woes upon them for their hypocrisy and spiritual corruption.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 24,
+    "summary": "Jesus prophesies the destruction of Jerusalem and the signs of His Second Coming, warning His followers to be prepared and watchful for these tribulations.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 25,
+    "summary": "Through parables of judgment and stewardship, Jesus emphasizes the absolute necessity of being spiritually prepared and actively serving others to enter His kingdom.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 26,
+    "summary": "The narrative turns to the solemn events of the Last Supper, the intense suffering in Gethsemane, and the Savior's arrest and trial before the high priest.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "summary": "The chapter details the Savior's trial before Pilate, His crucifixion, and the fulfillment of the infinite sacrifice amidst mockery and suffering.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "summary": "The account of the Resurrection and the Great Commission brings a sense of ultimate victory, hope, and the continuing presence of the Savior with His disciples.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "summary": "Paul, writing from prison, intercedes with Philemon on behalf of Onesimus, a runaway slave who has become a believer, urging Philemon to receive him back as a beloved brother in Christ.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "summary": "Paul expresses deep love and gratitude for the Philippian saints, sharing his confidence that his imprisonment has furthered the gospel and expressing his desire to be with Christ.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 2,
+    "summary": "Paul exhorts the saints to unity and humility, pointing to the supreme example of Christ's self-emptying, and urges them to work out their salvation with fear and trembling.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "summary": "Paul warns against false teachers and recounts his own conversion, pressing forward toward the mark and urging the saints to follow his example.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "summary": "Paul encourages the saints to rejoice always, to be anxious for nothing, and to think on virtuous things, expressing gratitude for their generous support of his ministry.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
   }
 ]

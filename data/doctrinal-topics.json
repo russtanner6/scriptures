@@ -2809,7 +2809,7 @@
     "bookId": 84
   },
   {
-    "book": "Joseph Smith—History",
+    "book": "Joseph Smith\u2014History",
     "chapter": 1,
     "topics": [
       "godhead",
@@ -2823,7 +2823,7 @@
     "bookId": 86
   },
   {
-    "book": "Joseph Smith—Matthew",
+    "book": "Joseph Smith\u2014Matthew",
     "chapter": 1,
     "topics": [
       "second coming",
@@ -7206,5 +7206,404 @@
     "bookName": "Mark",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 1,
+    "topics": [
+      "Jesus Christ",
+      "Prophecy",
+      "Lineage"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "topics": [
+      "Providence",
+      "Prophecy",
+      "Protection"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 3,
+    "topics": [
+      "Repentance",
+      "Baptism",
+      "Holy Ghost"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 4,
+    "topics": [
+      "Temptation",
+      "Agency",
+      "Repentance"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "topics": [
+      "Commandments",
+      "Perfection",
+      "Charity"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "topics": [
+      "Prayer",
+      "Fasting",
+      "Faith"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 7,
+    "topics": [
+      "Judgment",
+      "Obedience",
+      "Discernment"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 8,
+    "topics": [
+      "Faith",
+      "Miracles",
+      "Power of God"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 9,
+    "topics": [
+      "Forgiveness",
+      "Healing",
+      "Priesthood"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 10,
+    "topics": [
+      "Apostleship",
+      "Persecution",
+      "Testimony"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 11,
+    "topics": [
+      "Testimony",
+      "Rest",
+      "Grace"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 12,
+    "topics": [
+      "Sabbath",
+      "Holy Ghost",
+      "Accountability"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 13,
+    "topics": [
+      "Parables",
+      "Kingdom of God",
+      "Spiritual knowledge"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 14,
+    "topics": [
+      "Miracles",
+      "Faith",
+      "Prayer"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 15,
+    "topics": [
+      "Hypocrisy",
+      "Commandments",
+      "Faith"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 16,
+    "topics": [
+      "Revelation",
+      "Priesthood keys",
+      "Discipleship"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 17,
+    "topics": [
+      "Transfiguration",
+      "Glory of God",
+      "Faith"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 18,
+    "topics": [
+      "Humility",
+      "Forgiveness",
+      "Charity"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 19,
+    "topics": [
+      "Marriage",
+      "Sacrifice",
+      "Eternal life"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 20,
+    "topics": [
+      "Service",
+      "Humility",
+      "Grace"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 21,
+    "topics": [
+      "Authority",
+      "Judgment",
+      "Prophecy"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "topics": [
+      "Resurrection",
+      "Commandments",
+      "Covenant"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 23,
+    "topics": [
+      "Hypocrisy",
+      "Accountability",
+      "Prophets"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 24,
+    "topics": [
+      "Second Coming",
+      "Signs of the times",
+      "Watchfulness"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 25,
+    "topics": [
+      "Preparedness",
+      "Stewardship",
+      "Final Judgment"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 26,
+    "topics": [
+      "Atonement",
+      "Sacrament",
+      "Sacrifice"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "topics": [
+      "Atonement",
+      "Suffering",
+      "Redemption"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "topics": [
+      "Resurrection",
+      "Missionary work",
+      "Authority"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "topics": [
+      "Charity",
+      "Atonement",
+      "Spiritual Rebirth",
+      "Fellowship"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "topics": [
+      "Faith",
+      "Missionary work",
+      "Suffering for Christ"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 2,
+    "topics": [
+      "Humility",
+      "Jesus Christ",
+      "Salvation",
+      "Obedience"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "topics": [
+      "Conversion",
+      "Resurrection",
+      "Enduring to the end"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "topics": [
+      "Peace",
+      "Virtue",
+      "Gratitude",
+      "Self-reliance"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
   }
 ]

@@ -2938,7 +2938,7 @@
     "bookId": 84
   },
   {
-    "book": "Joseph Smith—History",
+    "book": "Joseph Smith\u2014History",
     "chapter": 1,
     "themes": [
       "restoration",
@@ -2951,7 +2951,7 @@
     "bookId": 86
   },
   {
-    "book": "Joseph Smith—Matthew",
+    "book": "Joseph Smith\u2014Matthew",
     "chapter": 1,
     "themes": [
       "second coming",
@@ -7577,5 +7577,403 @@
     "bookName": "Mark",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament"
+  },
+  {
+    "book": "Matthew",
+    "chapter": 1,
+    "themes": [
+      "Messianic prophecy",
+      "Divine lineage",
+      "Angelic revelation"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "themes": [
+      "Gentile worship",
+      "Divine protection",
+      "Fulfillment of prophecy"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 3,
+    "themes": [
+      "Repentance",
+      "Baptism",
+      "Divine approval"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 4,
+    "themes": [
+      "Temptation",
+      "Spiritual warfare",
+      "Beginning of ministry"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "themes": [
+      "Higher law",
+      "Beatitudes",
+      "Sermon on the Mount"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "themes": [
+      "Secret devotion",
+      "Lord's Prayer",
+      "Treasures in heaven"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 7,
+    "themes": [
+      "Judgment",
+      "False prophets",
+      "Building on the rock"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 8,
+    "themes": [
+      "Healing miracles",
+      "Faith",
+      "Power over nature"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 9,
+    "themes": [
+      "Forgiveness of sins",
+      "Healing",
+      "Calling of disciples"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 10,
+    "themes": [
+      "Apostolic commission",
+      "Persecution",
+      "Discipleship"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 11,
+    "themes": [
+      "Witness of John",
+      "Condemnation of cities",
+      "Rest for the weary"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 12,
+    "themes": [
+      "Sabbath controversies",
+      "Blasphemy against the Spirit",
+      "Signs refused"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 13,
+    "themes": [
+      "Parables of the kingdom",
+      "Spiritual understanding",
+      "Hidden truths"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 14,
+    "themes": [
+      "Martyrdom of John",
+      "Feeding the five thousand",
+      "Walking on water"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 15,
+    "themes": [
+      "Hypocrisy",
+      "Tradition vs commandment",
+      "Gentile faith"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 16,
+    "themes": [
+      "Peter's confession",
+      "Keys of the kingdom",
+      "Taking up the cross"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 17,
+    "themes": [
+      "Transfiguration",
+      "Divine witness",
+      "Faith and prayer"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 18,
+    "themes": [
+      "Humility",
+      "Forgiveness",
+      "Value of the individual"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 19,
+    "themes": [
+      "Marriage",
+      "Riches and the kingdom",
+      "Sacrifice and reward"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 20,
+    "themes": [
+      "Service",
+      "Parable of the laborers",
+      "True greatness"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 21,
+    "themes": [
+      "Triumphal entry",
+      "Temple cleansing",
+      "Rejection of leaders"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "themes": [
+      "Render unto Caesar",
+      "Resurrection debate",
+      "Great commandment"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 23,
+    "themes": [
+      "Woes to Pharisees",
+      "Hypocrisy condemned",
+      "Prophetic lament"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 24,
+    "themes": [
+      "Signs of the times",
+      "Second Coming",
+      "Watchfulness"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 25,
+    "themes": [
+      "Preparedness",
+      "Stewardship",
+      "Final judgment"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 26,
+    "themes": [
+      "Last Supper",
+      "Gethsemane",
+      "Betrayal and arrest"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "themes": [
+      "Trial and crucifixion",
+      "Atonement",
+      "Suffering and sacrifice"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "themes": [
+      "Resurrection",
+      "Great Commission",
+      "Victory over death"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "themes": [
+      "Forgiveness",
+      "Brotherhood",
+      "Conversion",
+      "Intercession",
+      "Restitution"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "themes": [
+      "Gratitude",
+      "Imprisonment for Christ",
+      "Gospel advancement"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 2,
+    "themes": [
+      "Humility",
+      "Kenosis of Christ",
+      "Obedience"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "themes": [
+      "Warning against false teachers",
+      "Pressing forward",
+      "Heavenly citizenship"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "themes": [
+      "Rejoicing",
+      "Peace of God",
+      "Contentment"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
   }
 ]
