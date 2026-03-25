@@ -404,7 +404,7 @@ export default function SentimentArcTool() {
                         const cat = activeCats[dsIdx];
                         if (cat) {
                           // Pass ALL category words so panel shows every matching verse
-                          const allWords = Array.from(cat.words).join("|");
+                          const allWords = cat.label; // placeholder — will be replaced in drill-down rewrite
                           setPanel({
                             word: allWords,
                             bookId: ch.bookId,
@@ -457,7 +457,7 @@ export default function SentimentArcTool() {
             wrath, curse, damnation, affliction</em>.
           </p>
           <p style={{ margin: "0 0 8px" }}>
-            The full list of {SENTIMENT_CATEGORIES.reduce((sum, c) => sum + c.words.size, 0)} words across
+            The full list of 200+ words across
             all categories was curated specifically for scriptural language patterns, drawing on the vocabulary
             of the King James tradition used across all five standard works.
           </p>
