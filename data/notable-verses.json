@@ -11,7 +11,10 @@
         "verse": 20,
         "reason": "Establishes the theme: God's tender mercies toward the faithful."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
@@ -25,7 +28,10 @@
         "verse": 20,
         "reason": "The foundational promise: inasmuch as ye keep my commandments, ye shall prosper."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
@@ -35,7 +41,10 @@
         "verse": 7,
         "reason": "The most quoted verse in the Book of Mormon — 'I will go and do.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
@@ -49,12 +58,18 @@
         "verse": 13,
         "reason": "'It is better that one man should perish than that a nation should dwindle in unbelief.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 5,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
@@ -64,12 +79,18 @@
         "verse": 4,
         "reason": "Nephi's stated intent: to persuade men to come unto the God of Abraham."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 7,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
@@ -79,12 +100,18 @@
         "verse": 10,
         "reason": "Description of the Tree of Life whose fruit is 'most sweet, above all.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 9,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
@@ -98,7 +125,10 @@
         "verse": 19,
         "reason": "'He that diligently seeketh shall find' — promise of revelation."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
@@ -112,12 +142,18 @@
         "verse": 22,
         "reason": "The Tree of Life is identified as the love of God."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 12,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
@@ -131,7 +167,10 @@
         "verse": 40,
         "reason": "Summary of the Lamb's doctrine: all men must come unto Him to be saved."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
@@ -141,7 +180,10 @@
         "verse": 10,
         "reason": "'There are save two churches only' — the Church of the Lamb and the church of the devil."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
@@ -151,7 +193,10 @@
         "verse": 24,
         "reason": "The word of God (rod of iron) can overcome the fiery darts of the adversary."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
@@ -161,7 +206,10 @@
         "verse": 29,
         "reason": "'By small means the Lord can bring about great things' — the Liahona lesson."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
@@ -175,12 +223,18 @@
         "verse": 45,
         "reason": "Nephi rebukes his brothers: 'He hath spoken unto you in a still small voice.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 18,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
@@ -190,12 +244,18 @@
         "verse": 9,
         "reason": "Prophecy of the Messiah yielding Himself to be smitten and scourged."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 20,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
@@ -205,7 +265,10 @@
         "verse": 15,
         "reason": "'Can a woman forget her sucking child? Yea, they may forget, yet will I not forget thee.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
@@ -215,7 +278,10 @@
         "verse": 31,
         "reason": "'Ye need not suppose that the righteous are lost' — closing assurance."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "2 Nephi",
@@ -225,7 +291,10 @@
         "verse": 13,
         "reason": "'Awake, my sons; put on the armor of righteousness' — Lehi's powerful exhortation."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -239,7 +308,10 @@
         "verse": 25,
         "reason": "'Adam fell that men might be; and men are, that they might have joy.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -249,7 +321,10 @@
         "verse": 15,
         "reason": "Prophecy of the choice seer named Joseph, a clear reference to Joseph Smith."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -263,7 +338,10 @@
         "verse": 34,
         "reason": "'I will not put my trust in the arm of flesh' — Nephi's resolve to trust God."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -273,22 +351,34 @@
         "verse": 27,
         "reason": "'We lived after the manner of happiness' — a concise summary of Nephite aspiration."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 6,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 7,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 8,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -306,7 +396,10 @@
         "verse": 39,
         "reason": "'To be spiritually-minded is life eternal' — a key doctrinal principle."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -320,7 +413,10 @@
         "verse": 24,
         "reason": "'Reconcile yourselves to the will of God, and not to the will of the devil.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -330,32 +426,50 @@
         "verse": 4,
         "reason": "'All things which have been given of God... are the typifying of him' — Christ in all things."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 12,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 13,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 14,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 15,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 16,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -365,12 +479,18 @@
         "verse": 14,
         "reason": "'A virgin shall conceive, and shall bear a son, and shall call his name Immanuel.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 18,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -380,12 +500,18 @@
         "verse": 6,
         "reason": "'His name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 20,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -395,7 +521,10 @@
         "verse": 6,
         "reason": "'The wolf also shall dwell with the lamb' — iconic Millennial imagery."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -405,12 +534,18 @@
         "verse": 2,
         "reason": "'The Lord JEHOVAH is my strength and my song; he also has become my salvation.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 23,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -420,7 +555,10 @@
         "verse": 12,
         "reason": "'How art thou fallen from heaven, O Lucifer, son of the morning!'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -434,7 +572,10 @@
         "verse": 26,
         "reason": "'We talk of Christ, we rejoice in Christ, we preach of Christ.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -444,7 +585,10 @@
         "verse": 33,
         "reason": "'He inviteth them all to come unto him... black and white, bond and free.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -454,7 +598,10 @@
         "verse": 26,
         "reason": "'I will proceed to do a marvelous work among this people.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -464,7 +611,10 @@
         "verse": 21,
         "reason": "'The devil cheateth their souls, and leadeth them away carefully down to hell.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -474,12 +624,18 @@
         "verse": 3,
         "reason": "'A Bible! A Bible! We have got a Bible' — the Lord's rebuke of scripture-rejecters."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 30,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -489,7 +645,10 @@
         "verse": 20,
         "reason": "'Press forward with a steadfastness in Christ... feasting upon the word of Christ, and endure to the end.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -499,7 +658,10 @@
         "verse": 3,
         "reason": "'Feast upon the words of Christ; for the words of Christ will tell you all things what ye should do.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
@@ -509,7 +671,10 @@
         "verse": 10,
         "reason": "'If ye believe not in these words, believe in Christ' — Nephi's final appeal."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "3 Nephi",
@@ -519,22 +684,34 @@
         "verse": 13,
         "reason": "The voice of Christ to Nephi: 'On this night shall the sign be given.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 2,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 3,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 4,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
@@ -544,22 +721,34 @@
         "verse": 13,
         "reason": "Mormon's personal declaration: 'I am a disciple of Jesus Christ.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 6,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 7,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 8,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
@@ -573,7 +762,10 @@
         "verse": 20,
         "reason": "'Offer for a sacrifice unto me a broken heart and a contrite spirit.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
@@ -583,7 +775,10 @@
         "verse": 6,
         "reason": "Christ's lament: 'How oft would I have gathered you as a hen gathereth her chickens.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
@@ -601,7 +796,10 @@
         "verse": 27,
         "reason": "The Father, Son, and Holy Ghost are one — foundational Godhead statement."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
@@ -611,7 +809,10 @@
         "verse": 48,
         "reason": "'Be perfect even as I, or your Father who is in heaven is perfect.' — with 'I' added post-resurrection."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
@@ -621,7 +822,10 @@
         "verse": 33,
         "reason": "'Seek ye first the kingdom of God and his righteousness.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
@@ -631,7 +835,10 @@
         "verse": 7,
         "reason": "'Ask, and it shall be given unto you; seek, and ye shall find.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
@@ -641,12 +848,18 @@
         "verse": 9,
         "reason": "'I am the law, and the light. Look unto me, and endure to the end.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 16,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
@@ -660,22 +873,34 @@
         "verse": 21,
         "reason": "Christ blesses the children and angels minister to them in encircling fire."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 18,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 19,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 20,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
@@ -685,7 +910,10 @@
         "verse": 1,
         "reason": "The coming forth of the Book of Mormon as the sign of the gathering."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
@@ -695,7 +923,10 @@
         "verse": 10,
         "reason": "'My kindness shall not depart from thee, neither shall the covenant of my peace be removed.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
@@ -705,7 +936,10 @@
         "verse": 1,
         "reason": "'Search these things diligently; for great are the words of Isaiah.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
@@ -715,7 +949,10 @@
         "verse": 10,
         "reason": "'Bring ye all the tithes... and prove me now herewith' — the tithing promise."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
@@ -729,12 +966,18 @@
         "verse": 6,
         "reason": "'He shall turn the heart of the fathers to the children' — foundation of temple work."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 26,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
@@ -748,22 +991,34 @@
         "verse": 27,
         "reason": "'What manner of men ought ye to be? Even as I am.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 28,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 29,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 30,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "4 Nephi",
@@ -789,7 +1044,10 @@
         "verse": 17,
         "reason": "No robbers, murderers, Lamanites, or any manner of -ites — total unity."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 78
   },
   {
     "book": "Omni",
@@ -803,7 +1061,10 @@
         "verse": 26,
         "reason": "'Offer your whole souls as an offering unto him' — the ultimate call to consecration."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 72
   },
   {
     "book": "Enos",
@@ -825,7 +1086,10 @@
         "verse": 27,
         "reason": "'I shall see his face with pleasure' — Enos's testimony of the joy of redemption."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 70
   },
   {
     "book": "Words of Mormon",
@@ -839,7 +1103,10 @@
         "verse": 18,
         "reason": "King Benjamin labored 'with all the might of his body and the faculty of his whole soul' — model of consecrated leadership."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 73
   },
   {
     "book": "Jacob",
@@ -849,7 +1116,10 @@
         "verse": 19,
         "reason": "Jacob magnifies his office to teach 'with all diligence' — model of priesthood responsibility."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 69
   },
   {
     "book": "Jacob",
@@ -863,7 +1133,10 @@
         "verse": 18,
         "reason": "'Before ye seek for riches, seek ye for the kingdom of God.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 69
   },
   {
     "book": "Jacob",
@@ -873,7 +1146,10 @@
         "verse": 1,
         "reason": "'Look unto God with firmness of mind, and pray unto him with exceeding faith' — comfort to the pure in heart."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 69
   },
   {
     "book": "Jacob",
@@ -887,7 +1163,10 @@
         "verse": 14,
         "reason": "'They looked beyond the mark' — the Jews' rejection of Christ's plainness."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 69
   },
   {
     "book": "Jacob",
@@ -897,7 +1176,10 @@
         "verse": 47,
         "reason": "'What could I have done more for my vineyard?' — the Lord's lament over His people."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 69
   },
   {
     "book": "Jacob",
@@ -907,7 +1189,10 @@
         "verse": 5,
         "reason": "'Cleave unto God as he cleaveth unto you' — the reciprocal nature of divine love."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 69
   },
   {
     "book": "Jacob",
@@ -917,7 +1202,10 @@
         "verse": 12,
         "reason": "'I truly had seen angels, and they had ministered unto me' — Jacob's personal witness against Sherem."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 69
   },
   {
     "book": "Ether",
@@ -927,7 +1215,10 @@
         "verse": 43,
         "reason": "The Lord's promise: 'I will go before thee into a land which is choice above all the lands of the earth.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
@@ -941,7 +1232,10 @@
         "verse": 15,
         "reason": "'My Spirit will not always strive with man' — warning against neglecting God."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
@@ -955,7 +1249,10 @@
         "verse": 15,
         "reason": "Christ reveals His pre-mortal spirit body: 'I am he who was prepared from the foundation of the world.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
@@ -965,12 +1262,18 @@
         "verse": 12,
         "reason": "'Whatsoever thing persuadeth men to do good is of me' — a key test for discerning truth."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 5,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
@@ -980,12 +1283,18 @@
         "verse": 12,
         "reason": "They 'did sing praises unto the Lord' while being tossed by the sea — faith in adversity."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 7,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
@@ -999,22 +1308,34 @@
         "verse": 25,
         "reason": "'Suffer not that these murderous combinations shall get above you' — call to vigilance."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 9,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 10,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 11,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
@@ -1032,7 +1353,10 @@
         "verse": 27,
         "reason": "'I give unto men weakness that they may be humble... my grace is sufficient' — the most quoted verse in Ether."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
@@ -1042,17 +1366,26 @@
         "verse": 10,
         "reason": "Prophecy of the New Jerusalem to be built upon the Americas."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 14,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 15,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Jarom",
@@ -1066,12 +1399,18 @@
         "verse": 12,
         "reason": "The Nephites prospered 'inasmuch as they kept the commandments' — the conditional promise."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 71
   },
   {
     "book": "Helaman",
     "chapter": 1,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
@@ -1081,7 +1420,10 @@
         "verse": 13,
         "reason": "'In the end of this book ye shall see that this Gadianton did prove the overthrow of the Nephite people.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
@@ -1091,12 +1433,18 @@
         "verse": 35,
         "reason": "'The sanctification cometh because of their yielding their hearts unto God.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 4,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
@@ -1106,27 +1454,42 @@
         "verse": 12,
         "reason": "'It is upon the rock of our Redeemer... that ye must build your foundation' — the most quoted verse in Helaman."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 6,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 7,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 8,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 9,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
@@ -1140,12 +1503,18 @@
         "verse": 5,
         "reason": "'All things shall be done unto thee according to thy word' — the sealing power granted."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 11,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
@@ -1155,7 +1524,10 @@
         "verse": 3,
         "reason": "'Except the Lord doth chasten his people... they will not remember him.' — Mormon's central thesis."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
@@ -1165,7 +1537,10 @@
         "verse": 38,
         "reason": "'Ye have sought for happiness in doing iniquity, which thing is contrary to the nature of that righteousness which is in our great and Eternal Head.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
@@ -1175,17 +1550,26 @@
         "verse": 30,
         "reason": "'Ye are free; ye are permitted to act for yourselves' — a key statement on agency."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 15,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 16,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Mormon",
@@ -1195,7 +1579,10 @@
         "verse": 15,
         "reason": "'I did endeavor to preach... but my mouth was shut' — Mormon forbidden to preach to the rebellious."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Mormon",
@@ -1205,7 +1592,10 @@
         "verse": 13,
         "reason": "'Their sorrowing was not unto repentance... but it was rather the sorrowing of the damned.' — defining false repentance."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Mormon",
@@ -1215,17 +1605,26 @@
         "verse": 12,
         "reason": "'I did utterly refuse from this time forth to be a commander' — Mormon's moral stand."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Mormon",
     "chapter": 4,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Mormon",
     "chapter": 5,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Mormon",
@@ -1239,7 +1638,10 @@
         "verse": 22,
         "reason": "'O that ye had repented before this great destruction had come upon you.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Mormon",
@@ -1249,7 +1651,10 @@
         "verse": 5,
         "reason": "'Know ye that ye must come to the knowledge of your fathers, and repent of all your sins and iniquities.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Mormon",
@@ -1263,7 +1668,10 @@
         "verse": 37,
         "reason": "'Why do ye adorn yourselves with that which hath no life, and yet suffer the hungry... to pass by you?'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Mormon",
@@ -1277,7 +1685,10 @@
         "verse": 21,
         "reason": "'Whoso believeth in Christ, doubting nothing, whatsoever he shall ask the Father... it shall be granted.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Moroni",
@@ -1287,17 +1698,26 @@
         "verse": 3,
         "reason": "I will not deny the Christ."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
     "chapter": 2,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
     "chapter": 3,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
@@ -1307,7 +1727,10 @@
         "verse": 3,
         "reason": "The sacramental prayer on the bread — used verbatim in the modern LDS church."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
@@ -1317,12 +1740,18 @@
         "verse": 2,
         "reason": "The sacramental prayer on the wine/water — used verbatim in the modern LDS church."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
     "chapter": 6,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
@@ -1340,7 +1769,10 @@
         "verse": 47,
         "reason": "Charity is the pure love of Christ, and it endureth forever."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
@@ -1354,7 +1786,10 @@
         "verse": 12,
         "reason": "Little children are alive in Christ."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
@@ -1364,7 +1799,10 @@
         "verse": 25,
         "reason": "My son, be faithful in Christ; and may the grace of God rest upon you forever."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
@@ -1382,12 +1820,18 @@
         "verse": 32,
         "reason": "Come unto Christ, and be perfected in him — the final invitation."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Mosiah",
     "chapter": 1,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
@@ -1397,7 +1841,10 @@
         "verse": 17,
         "reason": "'When ye are in the service of your fellow beings ye are only in the service of your God' — one of the most quoted BoM verses."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
@@ -1411,7 +1858,10 @@
         "verse": 19,
         "reason": "'The natural man is an enemy to God... unless he yields to the enticings of the Holy Spirit.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
@@ -1421,7 +1871,10 @@
         "verse": 9,
         "reason": "'Believe in God; believe that he is, and that he created all things.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
@@ -1431,17 +1884,26 @@
         "verse": 2,
         "reason": "'We have no more disposition to do evil, but to do good continually.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 6,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 7,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
@@ -1451,37 +1913,58 @@
         "verse": 17,
         "reason": "'A seer can know of things which are past, and also of things which are to come.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 9,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 10,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 11,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 12,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 13,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 14,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
@@ -1491,7 +1974,10 @@
         "verse": 1,
         "reason": "'God himself shall come down among the children of men' — Abinadi's Christological statement."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
@@ -1501,12 +1987,18 @@
         "verse": 9,
         "reason": "'He is the light and the life of the world; yea, a light that is endless, that can never be darkened.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 17,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
@@ -1520,32 +2012,50 @@
         "verse": 9,
         "reason": "'Stand as witnesses of God at all times and in all things, and in all places.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 19,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 20,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 21,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 22,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 23,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
@@ -1555,17 +2065,26 @@
         "verse": 14,
         "reason": "'I will also ease the burdens which are put upon your shoulders' — the Lord's promise in bondage."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 25,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 26,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
@@ -1575,7 +2094,10 @@
         "verse": 25,
         "reason": "'All mankind must be born again... changed from their carnal and fallen state.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
@@ -1585,32 +2107,50 @@
         "verse": 3,
         "reason": "'They could not bear that any human soul should perish' — the missionary motivation."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 29,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Alma",
     "chapter": 1,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 2,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 3,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 4,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
@@ -1620,12 +2160,18 @@
         "verse": 14,
         "reason": "'Have ye spiritually been born of God? Have ye received his image in your countenances?'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 6,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
@@ -1635,32 +2181,50 @@
         "verse": 11,
         "reason": "'He shall go forth, suffering pains and afflictions and temptations of every kind' — Christ succoring His people."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 8,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 9,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 10,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 11,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 12,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
@@ -1670,47 +2234,74 @@
         "verse": 3,
         "reason": "'Called and prepared from the foundation of the world according to the foreknowledge of God' — foreordination."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 14,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 15,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 16,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 17,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 18,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 19,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 20,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 21,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
@@ -1720,22 +2311,34 @@
         "verse": 18,
         "reason": "'I will give away all my sins to know thee' — Lamoni's father's prayer of total surrender."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 23,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 24,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 25,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
@@ -1745,17 +2348,26 @@
         "verse": 12,
         "reason": "'I know that I am nothing; as to my strength I am weak; therefore I will boast of my God.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 27,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 28,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
@@ -1765,17 +2377,26 @@
         "verse": 1,
         "reason": "'O that I were an angel, and could have the wish of mine heart' — Alma's missionary desire."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 30,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 31,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
@@ -1785,12 +2406,18 @@
         "verse": 21,
         "reason": "'Faith is not to have a perfect knowledge of things; therefore if ye have faith ye hope for things which are not seen, which are true.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 33,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
@@ -1800,12 +2427,18 @@
         "verse": 10,
         "reason": "'It must be an infinite and eternal sacrifice' — Amulek on the Atonement."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 35,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
@@ -1815,7 +2448,10 @@
         "verse": 19,
         "reason": "'I could remember my pains no more; yea, I was harrowed up by the memory of my sins no more' — Alma's conversion."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
@@ -1825,7 +2461,10 @@
         "verse": 6,
         "reason": "'By small and simple things are great things brought to pass.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
@@ -1835,7 +2474,10 @@
         "verse": 12,
         "reason": "'Bridle all your passions, that ye may be filled with love.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
@@ -1845,12 +2487,18 @@
         "verse": 5,
         "reason": "'These things are an abomination in the sight of the Lord; yea, most abominable above all sins save...'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 40,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
@@ -1860,27 +2508,42 @@
         "verse": 10,
         "reason": "'Wickedness never was happiness.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 42,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 43,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 44,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 45,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
@@ -1890,12 +2553,18 @@
         "verse": 12,
         "reason": "'In memory of our God, our religion, and freedom, and our peace, our wives, and our children' — Title of Liberty."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 47,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
@@ -1905,42 +2574,66 @@
         "verse": 17,
         "reason": "'If all men had been like unto Moroni, the very powers of hell would have been shaken forever.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 49,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 50,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 51,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 52,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 53,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 54,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 55,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
@@ -1950,27 +2643,42 @@
         "verse": 47,
         "reason": "'They had been taught by their mothers, that if they did not doubt, God would deliver them.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 57,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 58,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 59,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 60,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
@@ -1980,17 +2688,26 @@
         "verse": 9,
         "reason": "'It mattereth not; I am not angry, but do rejoice in the greatness of your heart' — Pahoran's humble response."
       }
-    ]
+    ],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 62,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 63,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Abraham",
@@ -2000,7 +2717,10 @@
         "verse": 2,
         "reason": "'I sought for the blessings of the fathers' — Abraham's righteous desire for the priesthood."
       }
-    ]
+    ],
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 84
   },
   {
     "book": "Abraham",
@@ -2010,7 +2730,10 @@
         "verse": 9,
         "reason": "The Abrahamic covenant: 'I will make of thee a great nation.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 84
   },
   {
     "book": "Abraham",
@@ -2020,7 +2743,10 @@
         "verse": 22,
         "reason": "'The intelligences that were organized before the world was; among all these there were many of the noble and great ones.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 84
   },
   {
     "book": "Abraham",
@@ -2030,7 +2756,10 @@
         "verse": 1,
         "reason": "'The Gods, organized and formed the heavens and the earth' — plural Godhead in creation."
       }
-    ]
+    ],
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 84
   },
   {
     "book": "Abraham",
@@ -2040,7 +2769,10 @@
         "verse": 7,
         "reason": "'The Gods formed man from the dust of the ground, and took his spirit and put it into him.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 84
   },
   {
     "book": "Joseph Smith—History",
@@ -2058,7 +2790,10 @@
         "verse": 68,
         "reason": "'Upon you my fellow servants... I confer the Priesthood of Aaron' — John the Baptist restoring the Aaronic Priesthood."
       }
-    ]
+    ],
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 86
   },
   {
     "book": "Joseph Smith—Matthew",
@@ -2076,7 +2811,10 @@
         "verse": 49,
         "reason": "The central admonition: be ye also ready, for in such an hour as ye think not, the Son of Man cometh."
       }
-    ]
+    ],
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 85
   },
   {
     "book": "Moses",
@@ -2086,7 +2824,10 @@
         "verse": 39,
         "reason": "'This is my work and my glory — to bring to pass the immortality and eternal life of man.' The most important verse in the PoGP."
       }
-    ]
+    ],
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 83
   },
   {
     "book": "Moses",
@@ -2096,12 +2837,18 @@
         "verse": 27,
         "reason": "'I, God, created man in mine own image' — foundational verse on man's divine origin."
       }
-    ]
+    ],
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 83
   },
   {
     "book": "Moses",
     "chapter": 3,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 83
   },
   {
     "book": "Moses",
@@ -2111,7 +2858,10 @@
         "verse": 2,
         "reason": "Christ's submission: 'Father, thy will be done, and the glory be thine forever.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 83
   },
   {
     "book": "Moses",
@@ -2121,7 +2871,10 @@
         "verse": 11,
         "reason": "Eve's declaration: 'Were it not for our transgression we never should have known good and evil, and the joy of our redemption.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 83
   },
   {
     "book": "Moses",
@@ -2131,7 +2884,10 @@
         "verse": 63,
         "reason": "'All things bear record of me' — the symbolic nature of the physical world as witness of Christ."
       }
-    ]
+    ],
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 83
   },
   {
     "book": "Moses",
@@ -2141,12 +2897,18 @@
         "verse": 18,
         "reason": "'They were of one heart and one mind, and dwelt in righteousness; and there was no poor among them' — the definition of Zion."
       }
-    ]
+    ],
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 83
   },
   {
     "book": "Moses",
     "chapter": 8,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 83
   },
   {
     "book": "Articles of Faith",
@@ -2164,22 +2926,34 @@
         "verse": 13,
         "reason": "The personal code of conduct: 'If there is anything virtuous, lovely, or of good report or praiseworthy, we seek after these things.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 87
   },
   {
     "book": "1 Esdras",
     "chapter": 1,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Esdras",
     "chapter": 2,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Esdras",
     "chapter": 3,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Esdras",
@@ -2193,37 +2967,58 @@
         "verse": 40,
         "reason": "'Blessed be the God of truth' — conclusion of Zerubbabel's winning speech."
       }
-    ]
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Esdras",
     "chapter": 5,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Esdras",
     "chapter": 6,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Esdras",
     "chapter": 7,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Esdras",
     "chapter": 8,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Esdras",
     "chapter": 9,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Maccabees",
     "chapter": 1,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
@@ -2233,7 +3028,10 @@
         "verse": 22,
         "reason": "'We will not hearken to the king's words, to go from our religion' — religious resistance."
       }
-    ]
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
@@ -2243,57 +3041,90 @@
         "verse": 19,
         "reason": "'Victory standeth not in the multitude of an host; but strength cometh from heaven.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 4,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 5,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 6,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 7,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 8,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 9,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 10,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 11,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 12,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 13,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
@@ -2303,16 +3134,182 @@
         "verse": 12,
         "reason": "'Every man sat under his vine and fig tree, and there was none to fray them.'"
       }
-    ]
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 15,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 16,
-    "verses": []
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 1,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 2,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 3,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 11,
+        "text": "How should thy vessel then be able to comprehend the way of the Highest?",
+        "reason": "A fundamental teaching on the inability of the finite mind to fully grasp the infinite."
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 5,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 6,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 32,
+        "text": "And the earth shall restore those that are asleep in her, and so shall the dust those that dwell in silence, and the secret places shall deliver those souls that were committed unto them.",
+        "reason": "A clear and poetic description of the resurrection."
+      },
+      {
+        "verse": 118,
+        "text": "O thou Adam, what hast thou done? for though it was thou that sinned, thou art not fallen alone, but we all that come of thee.",
+        "reason": "A poignant lament on the universal effects of the Fall."
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 8,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 9,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 10,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 11,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 12,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 40,
+        "text": "Those are the ten tribes, which were carried away prisoners out of their own land in the time of Osea the king, whom Salmanasar the king of Assyria led away captive, and he carried them over the waters, and so came they into another land.",
+        "reason": "Foundational text for the LDS interest in the lost ten tribes."
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 45,
+        "text": "And it came to pass, when the forty days were fulfilled, that the Highest spake, saying, The first that thou hast written publish openly, that the worthy and unworthy may read it: But keep the seventy last, that thou mayest deliver them only to such as be wise among the people: For in them is the spring of understanding, the fountain of wisdom, and the stream of knowledge.",
+        "reason": "Supports the concept of sacred records reserved for the faithful."
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 15,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 16,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
   }
 ]

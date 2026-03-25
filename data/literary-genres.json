@@ -2,1543 +2,2527 @@
   {
     "book": "1 Nephi",
     "chapter": 1,
-    "genre": "vision"
+    "genre": "vision",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 2,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 3,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 4,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 5,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 6,
     "genre": "narrative",
-    "subgenre": "prologue"
+    "subgenre": "prologue",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 7,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 8,
-    "genre": "vision"
+    "genre": "vision",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 9,
     "genre": "narrative",
-    "subgenre": "editorial"
+    "subgenre": "editorial",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 10,
-    "genre": "prophecy"
+    "genre": "prophecy",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 11,
-    "genre": "vision"
+    "genre": "vision",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 12,
-    "genre": "vision"
+    "genre": "vision",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 13,
-    "genre": "vision"
+    "genre": "vision",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 14,
-    "genre": "vision"
+    "genre": "vision",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 15,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 16,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 17,
     "genre": "narrative",
-    "subgenre": "discourse"
+    "subgenre": "discourse",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 18,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 19,
-    "genre": "prophecy"
+    "genre": "prophecy",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 20,
     "genre": "prophecy",
-    "subgenre": "poetry"
+    "subgenre": "poetry",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 21,
     "genre": "prophecy",
-    "subgenre": "poetry"
+    "subgenre": "poetry",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "1 Nephi",
     "chapter": 22,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 67
   },
   {
     "book": "2 Nephi",
     "chapter": 1,
     "genre": "sermon",
-    "subgenre": "farewell discourse"
+    "subgenre": "farewell discourse",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 2,
     "genre": "sermon",
-    "subgenre": "theological discourse"
+    "subgenre": "theological discourse",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 3,
-    "genre": "blessing"
+    "genre": "blessing",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 4,
-    "genre": "psalm"
+    "genre": "psalm",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 5,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 6,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 7,
     "genre": "prophecy",
-    "subgenre": "poetry"
+    "subgenre": "poetry",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 8,
     "genre": "prophecy",
-    "subgenre": "poetry"
+    "subgenre": "poetry",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 9,
     "genre": "sermon",
-    "subgenre": "theological discourse"
+    "subgenre": "theological discourse",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 10,
-    "genre": "prophecy"
+    "genre": "prophecy",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 11,
     "genre": "narrative",
-    "subgenre": "prologue"
+    "subgenre": "prologue",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 12,
     "genre": "prophecy",
-    "subgenre": "poetry"
+    "subgenre": "poetry",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 13,
     "genre": "prophecy",
-    "subgenre": "poetry"
+    "subgenre": "poetry",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 14,
     "genre": "prophecy",
-    "subgenre": "poetry"
+    "subgenre": "poetry",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 15,
     "genre": "parable",
-    "subgenre": "song"
+    "subgenre": "song",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 16,
-    "genre": "vision"
+    "genre": "vision",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 17,
-    "genre": "prophecy"
+    "genre": "prophecy",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 18,
     "genre": "prophecy",
-    "subgenre": "poetry"
+    "subgenre": "poetry",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 19,
     "genre": "prophecy",
-    "subgenre": "poetry"
+    "subgenre": "poetry",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 20,
     "genre": "prophecy",
-    "subgenre": "poetry"
+    "subgenre": "poetry",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 21,
     "genre": "prophecy",
-    "subgenre": "apocalyptic"
+    "subgenre": "apocalyptic",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 22,
-    "genre": "hymn"
+    "genre": "hymn",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 23,
     "genre": "prophecy",
-    "subgenre": "poetry"
+    "subgenre": "poetry",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 24,
     "genre": "prophecy",
-    "subgenre": "proverb"
+    "subgenre": "proverb",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 25,
     "genre": "prophecy",
-    "subgenre": "commentary"
+    "subgenre": "commentary",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 26,
-    "genre": "prophecy"
+    "genre": "prophecy",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 27,
     "genre": "prophecy",
-    "subgenre": "apocalyptic"
+    "subgenre": "apocalyptic",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 28,
     "genre": "prophecy",
-    "subgenre": "warning"
+    "subgenre": "warning",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 29,
-    "genre": "prophecy"
+    "genre": "prophecy",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 30,
     "genre": "prophecy",
-    "subgenre": "commentary"
+    "subgenre": "commentary",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 31,
     "genre": "sermon",
-    "subgenre": "doctrinal treatise"
+    "subgenre": "doctrinal treatise",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 32,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "2 Nephi",
     "chapter": 33,
     "genre": "narrative",
-    "subgenre": "testimony"
+    "subgenre": "testimony",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 68
   },
   {
     "book": "3 Nephi",
     "chapter": 1,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 2,
-    "genre": "historical record"
+    "genre": "historical record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 3,
     "genre": "narrative",
-    "subgenre": "epistle"
+    "subgenre": "epistle",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 4,
-    "genre": "military record"
+    "genre": "military record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 5,
     "genre": "narrative",
-    "subgenre": "editorial"
+    "subgenre": "editorial",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 6,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 7,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 8,
     "genre": "narrative",
-    "subgenre": "apocalyptic"
+    "subgenre": "apocalyptic",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 9,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 10,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 11,
     "genre": "narrative",
-    "subgenre": "theophany"
+    "subgenre": "theophany",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 12,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 13,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 14,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 15,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 16,
-    "genre": "prophecy"
+    "genre": "prophecy",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 17,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 18,
     "genre": "narrative",
-    "subgenre": "ritual"
+    "subgenre": "ritual",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 19,
     "genre": "narrative",
-    "subgenre": "prayer"
+    "subgenre": "prayer",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 20,
-    "genre": "prophecy"
+    "genre": "prophecy",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 21,
     "genre": "prophecy",
-    "subgenre": "apocalyptic"
+    "subgenre": "apocalyptic",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 22,
     "genre": "prophecy",
-    "subgenre": "poetry"
+    "subgenre": "poetry",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 23,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 24,
     "genre": "prophecy",
-    "subgenre": "poetry"
+    "subgenre": "poetry",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 25,
     "genre": "prophecy",
-    "subgenre": "poetry"
+    "subgenre": "poetry",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 26,
     "genre": "narrative",
-    "subgenre": "editorial"
+    "subgenre": "editorial",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 27,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 28,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 29,
     "genre": "sermon",
-    "subgenre": "warning"
+    "subgenre": "warning",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "3 Nephi",
     "chapter": 30,
-    "genre": "prophecy"
+    "genre": "prophecy",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 77
   },
   {
     "book": "4 Nephi",
     "chapter": 1,
     "genre": "historical record",
-    "subgenre": "abridgment"
+    "subgenre": "abridgment",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 78
   },
   {
     "book": "Omni",
     "chapter": 1,
     "genre": "historical record",
-    "subgenre": "memoir"
+    "subgenre": "memoir",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 72
   },
   {
     "book": "Enos",
     "chapter": 1,
     "genre": "narrative",
-    "subgenre": "spiritual autobiography"
+    "subgenre": "spiritual autobiography",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 70
   },
   {
     "book": "Words of Mormon",
     "chapter": 1,
     "genre": "narrative",
-    "subgenre": "editorial bridge"
+    "subgenre": "editorial bridge",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 73
   },
   {
     "book": "Jacob",
     "chapter": 1,
     "genre": "narrative",
-    "subgenre": "memoir"
+    "subgenre": "memoir",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 69
   },
   {
     "book": "Jacob",
     "chapter": 2,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 69
   },
   {
     "book": "Jacob",
     "chapter": 3,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 69
   },
   {
     "book": "Jacob",
     "chapter": 4,
     "genre": "sermon",
-    "subgenre": "theological discourse"
+    "subgenre": "theological discourse",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 69
   },
   {
     "book": "Jacob",
     "chapter": 5,
     "genre": "parable",
-    "subgenre": "allegory"
+    "subgenre": "allegory",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 69
   },
   {
     "book": "Jacob",
     "chapter": 6,
     "genre": "sermon",
-    "subgenre": "exhortation"
+    "subgenre": "exhortation",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 69
   },
   {
     "book": "Jacob",
     "chapter": 7,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 69
   },
   {
     "book": "Ether",
     "chapter": 1,
     "genre": "genealogy",
-    "subgenre": "prologue"
+    "subgenre": "prologue",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 2,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 3,
     "genre": "vision",
-    "subgenre": "theophany"
+    "subgenre": "theophany",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 4,
     "genre": "prophecy",
-    "subgenre": "commentary"
+    "subgenre": "commentary",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 5,
     "genre": "narrative",
-    "subgenre": "instruction"
+    "subgenre": "instruction",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 6,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 7,
-    "genre": "historical record"
+    "genre": "historical record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 8,
     "genre": "narrative",
-    "subgenre": "warning"
+    "subgenre": "warning",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 9,
-    "genre": "historical record"
+    "genre": "historical record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 10,
-    "genre": "historical record"
+    "genre": "historical record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 11,
-    "genre": "historical record"
+    "genre": "historical record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 12,
     "genre": "sermon",
-    "subgenre": "theological discourse"
+    "subgenre": "theological discourse",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 13,
-    "genre": "prophecy"
+    "genre": "prophecy",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 14,
-    "genre": "military record"
+    "genre": "military record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Ether",
     "chapter": 15,
     "genre": "narrative",
-    "subgenre": "tragedy"
+    "subgenre": "tragedy",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 80
   },
   {
     "book": "Jarom",
     "chapter": 1,
     "genre": "historical record",
-    "subgenre": "memoir"
+    "subgenre": "memoir",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 71
   },
   {
     "book": "Helaman",
     "chapter": 1,
-    "genre": "military record"
+    "genre": "military record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 2,
-    "genre": "historical record"
+    "genre": "historical record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 3,
-    "genre": "historical record"
+    "genre": "historical record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 4,
-    "genre": "historical record"
+    "genre": "historical record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 5,
     "genre": "narrative",
-    "subgenre": "miracle"
+    "subgenre": "miracle",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 6,
-    "genre": "historical record"
+    "genre": "historical record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 7,
     "genre": "prophecy",
-    "subgenre": "lamentation"
+    "subgenre": "lamentation",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 8,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 9,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 10,
     "genre": "narrative",
-    "subgenre": "theophany"
+    "subgenre": "theophany",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 11,
-    "genre": "historical record"
+    "genre": "historical record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 12,
     "genre": "sermon",
-    "subgenre": "editorial"
+    "subgenre": "editorial",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 13,
     "genre": "prophecy",
-    "subgenre": "warning"
+    "subgenre": "warning",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 14,
     "genre": "prophecy",
-    "subgenre": "apocalyptic"
+    "subgenre": "apocalyptic",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 15,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Helaman",
     "chapter": 16,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 76
   },
   {
     "book": "Mormon",
     "chapter": 1,
     "genre": "narrative",
-    "subgenre": "memoir"
+    "subgenre": "memoir",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Mormon",
     "chapter": 2,
-    "genre": "military record"
+    "genre": "military record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Mormon",
     "chapter": 3,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Mormon",
     "chapter": 4,
-    "genre": "military record"
+    "genre": "military record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Mormon",
     "chapter": 5,
     "genre": "narrative",
-    "subgenre": "memoir"
+    "subgenre": "memoir",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Mormon",
     "chapter": 6,
-    "genre": "lament"
+    "genre": "lament",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Mormon",
     "chapter": 7,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Mormon",
     "chapter": 8,
     "genre": "prophecy",
-    "subgenre": "commentary"
+    "subgenre": "commentary",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Mormon",
     "chapter": 9,
     "genre": "sermon",
-    "subgenre": "theological discourse"
+    "subgenre": "theological discourse",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 79
   },
   {
     "book": "Moroni",
     "chapter": 1,
     "genre": "narrative",
-    "subgenre": "memoir"
+    "subgenre": "memoir",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
     "chapter": 2,
     "genre": "narrative",
-    "subgenre": "protocol"
+    "subgenre": "protocol",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
     "chapter": 3,
     "genre": "narrative",
-    "subgenre": "protocol"
+    "subgenre": "protocol",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
     "chapter": 4,
-    "genre": "prayer"
+    "genre": "prayer",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
     "chapter": 5,
-    "genre": "prayer"
+    "genre": "prayer",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
     "chapter": 6,
     "genre": "narrative",
-    "subgenre": "ecclesiastical code"
+    "subgenre": "ecclesiastical code",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
     "chapter": 7,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
     "chapter": 8,
-    "genre": "epistle"
+    "genre": "epistle",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
     "chapter": 9,
     "genre": "epistle",
-    "subgenre": "lamentation"
+    "subgenre": "lamentation",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Moroni",
     "chapter": 10,
     "genre": "sermon",
-    "subgenre": "farewell"
+    "subgenre": "farewell",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 81
   },
   {
     "book": "Mosiah",
     "chapter": 1,
     "genre": "sermon",
-    "subgenre": "farewell"
+    "subgenre": "farewell",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 2,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 3,
     "genre": "vision",
-    "subgenre": "discourse"
+    "subgenre": "discourse",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 4,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 5,
-    "genre": "covenant document"
+    "genre": "covenant document",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 6,
-    "genre": "historical record"
+    "genre": "historical record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 7,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 8,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 9,
     "genre": "narrative",
-    "subgenre": "memoir"
+    "subgenre": "memoir",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 10,
-    "genre": "military record"
+    "genre": "military record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 11,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 12,
     "genre": "prophecy",
-    "subgenre": "warning"
+    "subgenre": "warning",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 13,
     "genre": "sermon",
-    "subgenre": "defense"
+    "subgenre": "defense",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 14,
     "genre": "prophecy",
-    "subgenre": "poetry"
+    "subgenre": "poetry",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 15,
     "genre": "sermon",
-    "subgenre": "theological"
+    "subgenre": "theological",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 16,
-    "genre": "prophecy"
+    "genre": "prophecy",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 17,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 18,
     "genre": "narrative",
-    "subgenre": "liturgical"
+    "subgenre": "liturgical",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 19,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 20,
-    "genre": "military record"
+    "genre": "military record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 21,
-    "genre": "historical record"
+    "genre": "historical record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 22,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 23,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 24,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 25,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 26,
     "genre": "narrative",
-    "subgenre": "ecclesiastical"
+    "subgenre": "ecclesiastical",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 27,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 28,
-    "genre": "historical record"
+    "genre": "historical record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Mosiah",
     "chapter": 29,
     "genre": "sermon",
-    "subgenre": "political treatise"
+    "subgenre": "political treatise",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 74
   },
   {
     "book": "Alma",
     "chapter": 1,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 2,
-    "genre": "military record"
+    "genre": "military record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 3,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 4,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 5,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 6,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 7,
     "genre": "sermon",
-    "subgenre": "prophecy"
+    "subgenre": "prophecy",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 8,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 9,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 10,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 11,
     "genre": "sermon",
-    "subgenre": "dialogue"
+    "subgenre": "dialogue",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 12,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 13,
     "genre": "sermon",
-    "subgenre": "discourse"
+    "subgenre": "discourse",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 14,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 15,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 16,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 17,
     "genre": "narrative",
-    "subgenre": "missionary"
+    "subgenre": "missionary",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 18,
     "genre": "narrative",
-    "subgenre": "dialogue"
+    "subgenre": "dialogue",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 19,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 20,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 21,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 22,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 23,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 24,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 25,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 26,
-    "genre": "psalm"
+    "genre": "psalm",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 27,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 28,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 29,
-    "genre": "psalm"
+    "genre": "psalm",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 30,
-    "genre": "dialogue"
+    "genre": "dialogue",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 31,
     "genre": "narrative",
-    "subgenre": "prayer"
+    "subgenre": "prayer",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 32,
     "genre": "sermon",
-    "subgenre": "parable"
+    "subgenre": "parable",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 33,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 34,
-    "genre": "sermon"
+    "genre": "sermon",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 35,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 36,
     "genre": "narrative",
-    "subgenre": "autobiography"
+    "subgenre": "autobiography",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 37,
     "genre": "sermon",
-    "subgenre": "instruction"
+    "subgenre": "instruction",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 38,
     "genre": "sermon",
-    "subgenre": "instruction"
+    "subgenre": "instruction",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 39,
     "genre": "sermon",
-    "subgenre": "rebuke"
+    "subgenre": "rebuke",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 40,
     "genre": "sermon",
-    "subgenre": "discourse"
+    "subgenre": "discourse",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 41,
     "genre": "sermon",
-    "subgenre": "discourse"
+    "subgenre": "discourse",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 42,
     "genre": "sermon",
-    "subgenre": "discourse"
+    "subgenre": "discourse",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 43,
-    "genre": "military record"
+    "genre": "military record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 44,
     "genre": "military record",
-    "subgenre": "dialogue"
+    "subgenre": "dialogue",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 45,
-    "genre": "prophecy"
+    "genre": "prophecy",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 46,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 47,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 48,
     "genre": "narrative",
-    "subgenre": "portrait"
+    "subgenre": "portrait",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 49,
-    "genre": "military record"
+    "genre": "military record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 50,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 51,
-    "genre": "military record"
+    "genre": "military record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 52,
-    "genre": "military record"
+    "genre": "military record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 53,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 54,
-    "genre": "epistle"
+    "genre": "epistle",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 55,
-    "genre": "military record"
+    "genre": "military record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 56,
     "genre": "epistle",
-    "subgenre": "military report"
+    "subgenre": "military report",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 57,
     "genre": "epistle",
-    "subgenre": "military report"
+    "subgenre": "military report",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 58,
     "genre": "epistle",
-    "subgenre": "military report"
+    "subgenre": "military report",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 59,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 60,
     "genre": "epistle",
-    "subgenre": "rebuke"
+    "subgenre": "rebuke",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 61,
-    "genre": "epistle"
+    "genre": "epistle",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 62,
-    "genre": "military record"
+    "genre": "military record",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Alma",
     "chapter": 63,
-    "genre": "narrative"
+    "genre": "narrative",
+    "volumeAbbrev": "BoM",
+    "volumeName": "Book of Mormon",
+    "bookId": 75
   },
   {
     "book": "Abraham",
     "chapter": 1,
     "genre": "narrative",
-    "subgenre": "autobiography"
+    "subgenre": "autobiography",
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 84
   },
   {
     "book": "Abraham",
     "chapter": 2,
     "genre": "narrative",
-    "subgenre": "autobiography"
+    "subgenre": "autobiography",
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 84
   },
   {
     "book": "Abraham",
     "chapter": 3,
     "genre": "vision",
-    "subgenre": "cosmology"
+    "subgenre": "cosmology",
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 84
   },
   {
     "book": "Abraham",
     "chapter": 4,
     "genre": "narrative",
-    "subgenre": "creation"
+    "subgenre": "creation",
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 84
   },
   {
     "book": "Abraham",
     "chapter": 5,
     "genre": "narrative",
-    "subgenre": "creation"
+    "subgenre": "creation",
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 84
   },
   {
     "book": "Joseph Smith—History",
     "chapter": 1,
     "genre": "narrative",
-    "subgenre": "sacred history"
+    "subgenre": "sacred history",
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 86
   },
   {
     "book": "Joseph Smith—Matthew",
     "chapter": 1,
     "genre": "prophecy",
-    "subgenre": "apocalyptic"
+    "subgenre": "apocalyptic",
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 85
   },
   {
     "book": "Moses",
     "chapter": 1,
     "genre": "vision",
-    "subgenre": "theophany"
+    "subgenre": "theophany",
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 83
   },
   {
     "book": "Moses",
     "chapter": 2,
     "genre": "narrative",
-    "subgenre": "cosmogony"
+    "subgenre": "cosmogony",
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 83
   },
   {
     "book": "Moses",
     "chapter": 3,
     "genre": "narrative",
-    "subgenre": "origin story"
+    "subgenre": "origin story",
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 83
   },
   {
     "book": "Moses",
     "chapter": 4,
     "genre": "narrative",
-    "subgenre": "theological tragedy"
+    "subgenre": "theological tragedy",
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 83
   },
   {
     "book": "Moses",
     "chapter": 5,
     "genre": "historical record",
-    "subgenre": "biographical narrative"
+    "subgenre": "biographical narrative",
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 83
   },
   {
     "book": "Moses",
     "chapter": 6,
     "genre": "prophecy",
-    "subgenre": "sermon"
+    "subgenre": "sermon",
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 83
   },
   {
     "book": "Moses",
     "chapter": 7,
     "genre": "vision",
-    "subgenre": "apocalyptic vision"
+    "subgenre": "apocalyptic vision",
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 83
   },
   {
     "book": "Moses",
     "chapter": 8,
     "genre": "narrative",
-    "subgenre": "prophetic warning"
+    "subgenre": "prophetic warning",
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 83
   },
   {
     "book": "Articles of Faith",
     "chapter": 1,
     "genre": "covenant document",
-    "subgenre": "declaration of belief"
+    "subgenre": "declaration of belief",
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 87
   },
   {
     "book": "1 Esdras",
     "chapter": 1,
     "genre": "historical record",
-    "subgenre": "chronicle"
+    "subgenre": "chronicle",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Esdras",
     "chapter": 2,
     "genre": "historical record",
-    "subgenre": "decree"
+    "subgenre": "decree",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Esdras",
     "chapter": 3,
     "genre": "court narrative",
-    "subgenre": "dialogue"
+    "subgenre": "dialogue",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Esdras",
     "chapter": 4,
     "genre": "court narrative",
-    "subgenre": "sermon"
+    "subgenre": "sermon",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Esdras",
     "chapter": 5,
     "genre": "genealogy",
-    "subgenre": "list"
+    "subgenre": "list",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Esdras",
     "chapter": 6,
     "genre": "historical record",
-    "subgenre": "correspondence"
+    "subgenre": "correspondence",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Esdras",
     "chapter": 7,
     "genre": "historical record",
-    "subgenre": "liturgical record"
+    "subgenre": "liturgical record",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Esdras",
     "chapter": 8,
     "genre": "historical record",
-    "subgenre": "prayer"
+    "subgenre": "prayer",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Esdras",
     "chapter": 9,
     "genre": "historical record",
-    "subgenre": "reformation narrative"
+    "subgenre": "reformation narrative",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 88
   },
   {
     "book": "1 Maccabees",
     "chapter": 1,
     "genre": "historical record",
-    "subgenre": "tragedy"
+    "subgenre": "tragedy",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 2,
     "genre": "narrative",
-    "subgenre": "epic"
+    "subgenre": "epic",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 3,
     "genre": "narrative",
-    "subgenre": "military history"
+    "subgenre": "military history",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 4,
     "genre": "narrative",
-    "subgenre": "liturgical record"
+    "subgenre": "liturgical record",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 5,
     "genre": "historical record",
-    "subgenre": "chronicle"
+    "subgenre": "chronicle",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 6,
     "genre": "historical record",
-    "subgenre": "military history"
+    "subgenre": "military history",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 7,
     "genre": "historical record",
-    "subgenre": "biography"
+    "subgenre": "biography",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 8,
     "genre": "historical record",
-    "subgenre": "treaty"
+    "subgenre": "treaty",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 9,
     "genre": "narrative",
-    "subgenre": "lament"
+    "subgenre": "lament",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 10,
     "genre": "historical record",
-    "subgenre": "correspondence"
+    "subgenre": "correspondence",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 11,
     "genre": "historical record",
-    "subgenre": "chronicle"
+    "subgenre": "chronicle",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 12,
     "genre": "historical record",
-    "subgenre": "diplomatic letter"
+    "subgenre": "diplomatic letter",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 13,
     "genre": "historical record",
-    "subgenre": "chronicle"
+    "subgenre": "chronicle",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 14,
     "genre": "historical record",
-    "subgenre": "eulogy"
+    "subgenre": "eulogy",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 15,
     "genre": "historical record",
-    "subgenre": "decree"
+    "subgenre": "decree",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
   },
   {
     "book": "1 Maccabees",
     "chapter": 16,
     "genre": "historical record",
-    "subgenre": "tragedy"
+    "subgenre": "tragedy",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 100
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 1,
+    "genre": "prophecy",
+    "subgenre": "reproach",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 2,
+    "genre": "prophecy",
+    "subgenre": "consolation",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 3,
+    "genre": "prayer",
+    "subgenre": "lament",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 4,
+    "genre": "dialogue",
+    "subgenre": "wisdom literature",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 5,
+    "genre": "vision",
+    "subgenre": "apocalyptic discourse",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 6,
+    "genre": "dialogue",
+    "subgenre": "eschatological discourse",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 7,
+    "genre": "dialogue",
+    "subgenre": "theodicy",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 8,
+    "genre": "prayer",
+    "subgenre": "intercession",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 9,
+    "genre": "narrative",
+    "subgenre": "symbolic vision",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 10,
+    "genre": "vision",
+    "subgenre": "interpretation",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 11,
+    "genre": "vision",
+    "subgenre": "apocalyptic vision",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 12,
+    "genre": "vision",
+    "subgenre": "interpretation",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 13,
+    "genre": "vision",
+    "subgenre": "apocalyptic vision",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 14,
+    "genre": "narrative",
+    "subgenre": "commissioning",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 15,
+    "genre": "prophecy",
+    "subgenre": "judgment oration",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
+  },
+  {
+    "book": "2 Esdras",
+    "chapter": 16,
+    "genre": "prophecy",
+    "subgenre": "admonition",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 89
   }
 ]

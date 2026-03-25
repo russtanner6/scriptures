@@ -19920,5 +19920,17 @@
     ],
     "family": {},
     "speakerType": "other"
+  },
+  {
+    "id": "uriel",
+    "name": "Uriel",
+    "bio": "The archangel sent to answer Ezra's questions and deliver divine revelations throughout the visions of 2 Esdras.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 3,
+    "family": {},
+    "portrait": null
   }
 ]
