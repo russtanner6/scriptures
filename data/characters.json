@@ -20090,5 +20090,35 @@
     "tier": 4,
     "family": {},
     "portrait": null
+  },
+  {
+    "id": "jesus-son-of-sirach",
+    "name": "Jesus son of Sirach",
+    "bio": "The author and narrator of the book of Sirach, a Jewish scribe who collected wisdom in Jerusalem.",
+    "aliases": [
+      "Ben Sira",
+      "Ecclesiasticus"
+    ],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 3,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "simon-high-priest-ii",
+    "name": "Simon the High Priest",
+    "bio": "Likely Simon II (the Just), described as a great high priest who fortified the temple and the city and whose appearance in temple ritual is praised extensively.",
+    "aliases": [
+      "Simon the Just",
+      "Simon II"
+    ],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
   }
 ]

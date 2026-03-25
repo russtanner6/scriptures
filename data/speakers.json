@@ -5058,5 +5058,125 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 99
+  },
+  {
+    "book": "Sirach",
+    "chapter": 2,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 5,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 5,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 5,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 5,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 11,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 11,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 11,
+    "startVerse": 24,
+    "endVerse": 24,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 15,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 15,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 16,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 24,
+    "startVerse": 3,
+    "endVerse": 22,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
   }
 ]

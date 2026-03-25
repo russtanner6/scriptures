@@ -2947,5 +2947,464 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 99
+  },
+  {
+    "book": "Sirach",
+    "chapter": 1,
+    "genre": "wisdom literature",
+    "subgenre": "didactic poetry",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 2,
+    "genre": "instruction",
+    "subgenre": "exhortation",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 3,
+    "genre": "didactic poetry",
+    "subgenre": "ethical precepts",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 4,
+    "genre": "personification poetry",
+    "subgenre": "didactic prose",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 5,
+    "genre": "prophetic warning",
+    "subgenre": "proverbial wisdom",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 6,
+    "genre": "proverbial wisdom",
+    "subgenre": "instruction",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 7,
+    "genre": "ethical precepts",
+    "subgenre": "didactic prose",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 8,
+    "genre": "instruction",
+    "subgenre": "prudence literature",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 9,
+    "genre": "didactic prose",
+    "subgenre": "ethical warning",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 10,
+    "genre": "political wisdom",
+    "subgenre": "theodicy",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 11,
+    "genre": "proverbial wisdom",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 12,
+    "genre": "instruction",
+    "subgenre": "didactic prose",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 13,
+    "genre": "social critique",
+    "subgenre": "proverbial wisdom",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 14,
+    "genre": "beatitude",
+    "subgenre": "didactic poetry",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 15,
+    "genre": "theological discourse",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 16,
+    "genre": "historical retrospective",
+    "subgenre": "theodicy",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 17,
+    "genre": "didactic poetry",
+    "subgenre": "theological discourse",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 18,
+    "genre": "hymn of praise",
+    "subgenre": "didactic prose",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 19,
+    "genre": "proverbial wisdom",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 20,
+    "genre": "instructional aphorisms",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 21,
+    "genre": "wisdom poetry",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 22,
+    "genre": "didactic poetry",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 23,
+    "genre": "liturgical prayer",
+    "subgenre": "ethical precepts",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 24,
+    "genre": "autobiographical personification (self-praise of wisdom)",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 25,
+    "genre": "numerical proverbs",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 26,
+    "genre": "wisdom poetry",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 27,
+    "genre": "didactic aphorisms",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 28,
+    "genre": "ethical exhortation",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 29,
+    "genre": "didactic instruction",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 30,
+    "genre": "didactic prose",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 31,
+    "genre": "proverbial wisdom",
+    "subgenre": "etiquette",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 32,
+    "genre": "ethical instruction",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 33,
+    "genre": "theological discourse",
+    "subgenre": "instruction",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 34,
+    "genre": "critique",
+    "subgenre": "theological discourse",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 35,
+    "genre": "ethical precepts",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 36,
+    "genre": "prayer",
+    "subgenre": "petition",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 37,
+    "genre": "prudential advice",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 38,
+    "genre": "encomium (praise of physicians)",
+    "subgenre": "didactic poetry",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 39,
+    "genre": "hymn",
+    "subgenre": "didactic discourse",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 40,
+    "genre": "wisdom lament",
+    "subgenre": "didactic poetry",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 41,
+    "genre": "didactic poetry",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 42,
+    "genre": "instruction",
+    "subgenre": "hymn",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 43,
+    "genre": "nature hymn",
+    "subgenre": "visionary revelation",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 44,
+    "genre": "historical encomium (praise of famous men)",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 45,
+    "genre": "historical encomium",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 46,
+    "genre": "historical encomium",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 47,
+    "genre": "historical encomium",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 48,
+    "genre": "historical encomium",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 49,
+    "genre": "historical encomium",
+    "subgenre": "",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 50,
+    "genre": "liturgical description",
+    "subgenre": "national blessing",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 51,
+    "genre": "thanksgiving prayer",
+    "subgenre": "alphabetical acrostic (auctobiographical)",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
   }
 ]

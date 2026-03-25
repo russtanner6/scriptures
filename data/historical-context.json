@@ -3428,5 +3428,515 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 99
+  },
+  {
+    "book": "Sirach",
+    "chapter": 1,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Written c. 180 BC during the Hellenistic period, emphasizing traditional Jewish values against Greek influence.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 2,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Reflects the trials of a community under foreign rule, looking back to the generations of the Exodus and Patriarchs for strength.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 3,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Reinforces the core commandment of the Decalogue (Honoring Parents) within a Second Temple social framework.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 4,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Reflects the economic disparities of Jerusalem in the 2nd Century BC and the Jewish tradition of charity.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 5,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Addresses the temptations of wealth and political security during the period of Seleucid administration.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 6,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Mirrors the educational traditions of the Jewish scribe (Sofer) in late antiquity.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 7,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Documents the social structure of the time, including the high status and support required for the Aaronic priesthood.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 8,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Provides insight into the political caution required when dealing with mighty men (likely Seleucid officials).",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 9,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Illustrates the moral challenges and social life (singing, banquets) of urban Hellenistic Jerusalem.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 10,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Explains the translation of kingdoms through the lens of God's sovereignty, relevant to the rise and fall of Near Eastern empires.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 11,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Reflects the precarious nature of social status in the Hellenistic world, where fortunes changed rapidly.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 12,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Highlights the sectarian tension and distrust of those deemed sinners or enemies in late Second Temple Judaism.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 13,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "A critique of the social stratification between the urban elite and the rural or pious poor in Judea.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 14,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Addresses the Jewish concept of Sheol (the grave) as a place where the dead do not seek dainties.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 15,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "A philosophical defense of the Torah and free will, potentially countering Hellenistic fatalism or Stoicism.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 16,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Uses Old Testament narratives (Giants, Lot, Pharaoh) to establish the continuity of God's judgment.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 17,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Connects the creation of man with the specific heritage given to Israel as the Lord's portion.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 18,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Reflects Second Temple theology regarding the vast difference between the Eternal Creator and mortal man.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 19,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Critiques the behaviors common in Hellenistic banquets and the risks of unchecked information exchange.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 20,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Provides a window into the rhetorical training and social expectations of a wise Jew in the 2nd century BC.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 21,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Reflects the architectural features (stairs, gates) and social settings of ancient Jerusalem.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 22,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Highlights the high value placed on family honor and the protection of the paternal estate in Jewish society.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 23,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Addresses the ritual and legal concerns regarding swearing and the sanctity of marriage in Jewish law.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 24,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Key text for understanding Wisdom theology (Sapiential) which later influenced New Testament Christology.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 25,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Reflects the traditional social observations of the elders in a communal Jewish culture.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 26,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Documents gender roles and domestic expectations in pre-Maccabean Israel.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 27,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Provides historical insight into the ethics of trade and the marketplace in an urban center like Jerusalem.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 28,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Reflects the moral urgency of communal harmony during times of foreign political pressure.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 29,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Outlines the practical application of Mosaic law regarding loans and charity in a 2nd century context.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 30,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Documents child-rearing practices and the high value of paternal authority in ancient Judaism.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 31,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Insights into the diet and social customs of Jewish banquets, including the consumption of wine.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 32,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Illustrates the protocol and social hierarchies at formal Jewish meals.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 33,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Uses the potter metaphor (common in Jeremiah and Isaiah) to explain divine providence during the intertestamental period.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 34,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Addresses the popular but potentially misleading role of dreams in the religious life of the time.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 35,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Emphasizes the prophetic priority of justice over empty ritual, a core theme of Jewish piety.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 36,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "A prayer expressing the nationalistic hope for the restoration of the twelve tribes and the end of foreign rule.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 37,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Highlights the importance of the advisor and the scribe in the Hellenistic Jewish educational system.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 38,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "One of the few ancient texts to explicitly reconcile the religious role of God with the professional role of the physician.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 39,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Defines the ideal Scribe as a scholar of the Law, contrasting with manual laborers and craftsmen.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 40,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Reflects the universal human experience of labor and anxiety, grounded in the Jewish understanding of the Fall.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 41,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Reflects the societal importance of legacy and name before the widespread development of belief in personal resurrection.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 42,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Reflects the patriarchal concerns regarding daughters and the oversight of a household.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 43,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Uses the terminology of contemporary astronomy to describe the sun, moon, and the seasons within a monotheistic framework.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 44,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "A panegyric of the fathers, reinforcing Jewish identity through a summarized history of the lineage from Enoch to the Patriarchs.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 45,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Strong emphasis on the legitimacy and glory of the Zadokite/Aaronic priesthood, central to Second Temple life.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 46,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Recalls the period of the Conquest and the early Judges as the foundation of the nation's strength.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 47,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Analyzes the United Monarchy, praising the establishment of the temple and Davidic dynasty while mourning its later split.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 48,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Recounts the Northern prophets and the miraculous deliverance of Jerusalem under Hezekiah.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 49,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Celebrates the last reformers and the early Persian-period restoration figures like Nehemiah.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 50,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "Likely refers to Simon II (the Just), providing a rare contemporary description of temple ritual and the High Priest's status.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 51,
+    "era": "Intertestamental",
+    "approxDate": "c. 180 B.C.",
+    "setting": "The author (Jesus son of Sirach) provides a personal conclusion, detailing his own training and the school (Beth Midrash) he founded.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
   }
 ]

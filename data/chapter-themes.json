@@ -4234,5 +4234,617 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 99
+  },
+  {
+    "book": "Sirach",
+    "chapter": 1,
+    "themes": [
+      "Source of Wisdom",
+      "Fear of the Lord",
+      "Obedience"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 2,
+    "themes": [
+      "Endurance",
+      "Patience",
+      "Trust in God"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 3,
+    "themes": [
+      "Honor Parents",
+      "Humility",
+      "Almsgiving"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 4,
+    "themes": [
+      "Charity",
+      "Wisdom's Discipline",
+      "Truth"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 5,
+    "themes": [
+      "Presumption",
+      "Repentance",
+      "Sincerity"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 6,
+    "themes": [
+      "Friendship",
+      "Wisdom's Yoke",
+      "Instruction"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 7,
+    "themes": [
+      "Avoiding Sin",
+      "Domestic Duty",
+      "Reverence for Priests"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 8,
+    "themes": [
+      "Prudence",
+      "Social Conduct",
+      "Tradition"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 9,
+    "themes": [
+      "Chastity",
+      "Bad Company",
+      "Law of God"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 10,
+    "themes": [
+      "Governance",
+      "Pride",
+      "Equality before God"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 11,
+    "themes": [
+      "Divine Sovereignty",
+      "Humility",
+      "Trust in Providence"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 12,
+    "themes": [
+      "Selective Charity",
+      "Enemies",
+      "Vengeance"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 13,
+    "themes": [
+      "Wealth and Poverty",
+      "Pride",
+      "Social Danger"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 14,
+    "themes": [
+      "Speech",
+      "Envy",
+      "Mortality"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 15,
+    "themes": [
+      "Agency",
+      "God's Justice",
+      "Truth"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 16,
+    "themes": [
+      "Historical Judgment",
+      "God's Omniscience",
+      "Retribution"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 17,
+    "themes": [
+      "Creation",
+      "Agency",
+      "Repentance"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 18,
+    "themes": [
+      "God's Majesty",
+      "Divine Patience",
+      "Self-Examination"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 19,
+    "themes": [
+      "Self-Control",
+      "Discretion",
+      "False Wisdom"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 20,
+    "themes": [
+      "Speech and Silence",
+      "Lying",
+      "Folly"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 21,
+    "themes": [
+      "Fleeing Sin",
+      "Wisdom vs Folly",
+      "Speech"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 22,
+    "themes": [
+      "Sloth",
+      "Family Sorrow",
+      "Friendship"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 23,
+    "themes": [
+      "Prayer",
+      "Profanity",
+      "Chastity"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 24,
+    "themes": [
+      "Nature of Wisdom",
+      "Covenant",
+      "Instruction"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 25,
+    "themes": [
+      "Old Age",
+      "Marriage",
+      "Wickedness"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 26,
+    "themes": [
+      "Marriage",
+      "Virtue",
+      "Household Management"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 27,
+    "themes": [
+      "Honesty",
+      "Speech",
+      "Secret Revealing"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 28,
+    "themes": [
+      "Forgiveness",
+      "Slander",
+      "Anger"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 29,
+    "themes": [
+      "Lending",
+      "Alms",
+      "Hospitality"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 30,
+    "themes": [
+      "Parenting",
+      "Health",
+      "Gladness"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 31,
+    "themes": [
+      "Greed",
+      "Temperance",
+      "Social Etiquette"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 32,
+    "themes": [
+      "Etiquette",
+      "Fear of the Lord",
+      "Instruction"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 33,
+    "themes": [
+      "God's Sovereignty",
+      "Governance",
+      "Authority"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 34,
+    "themes": [
+      "Dreams",
+      "Hope",
+      "Righteous Sacrifice"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 35,
+    "themes": [
+      "Sacrifice",
+      "Justice",
+      "Prayer of the Poor"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 36,
+    "themes": [
+      "Israel's Restoration",
+      "Prayer",
+      "Discernment"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 37,
+    "themes": [
+      "Friendship",
+      "Counsel",
+      "Temperance"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 38,
+    "themes": [
+      "Medicine",
+      "Craftsmanship",
+      "Mourning"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 39,
+    "themes": [
+      "The Scribe",
+      "God's Goodness",
+      "Creation"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 40,
+    "themes": [
+      "Human Misery",
+      "Blessings",
+      "Fear of the Lord"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 41,
+    "themes": [
+      "Death",
+      "Shame",
+      "Good Name"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 42,
+    "themes": [
+      "Honesty",
+      "Family Integrity",
+      "God's Omniscience"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 43,
+    "themes": [
+      "Nature",
+      "God's Power",
+      "Visionary Praise"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 44,
+    "themes": [
+      "Heritage",
+      "Ancestry",
+      "Covenant Fathers"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 45,
+    "themes": [
+      "Priesthood",
+      "Law",
+      "Zeal"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 46,
+    "themes": [
+      "Faithfulness",
+      "Courage",
+      "Prophetic Spirit"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 47,
+    "themes": [
+      "Repentance",
+      "Dynasty",
+      "Fall of Solomon"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 48,
+    "themes": [
+      "Miracles",
+      "Righteous Kings",
+      "Prophecy"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 49,
+    "themes": [
+      "Reformation",
+      "Restoration",
+      "Memorials"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 50,
+    "themes": [
+      "High Priesthood",
+      "Temple Worship",
+      "National Blessing"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 51,
+    "themes": [
+      "Deliverance",
+      "Search for Wisdom",
+      "Thanksgiving"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
   }
 ]

@@ -3808,5 +3808,1049 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 99
+  },
+  {
+    "book": "Sirach",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 14,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 18,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 5,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 10,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 11,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 3,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 12,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 18,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 21,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 10,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 11,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 28,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 7,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 11,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 14,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 16,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 18,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 37,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 17,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 27,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 35,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 36,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 5,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 9,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 8,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 10,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 10,
+    "verses": [
+      {
+        "verse": 7,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 12,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 24,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 11,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 14,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 21,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 10,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 15,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 19,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 17,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 15,
+    "verses": [
+      {
+        "verse": 14,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 16,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 17,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 12,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 17,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 26,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 17,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 24,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 27,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 18,
+    "verses": [
+      {
+        "verse": 8,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 10,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 13,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 19,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 20,
+    "verses": [
+      {
+        "verse": 18,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 21,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 2,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 22,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 23,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 18,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 24,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 9,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 20,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 25,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 26,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 13,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 27,
+    "verses": [
+      {
+        "verse": 5,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 28,
+    "verses": [
+      {
+        "verse": 2,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 29,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 11,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 30,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 21,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 31,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 27,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 32,
+    "verses": [
+      {
+        "verse": 14,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 33,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 13,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 34,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 13,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 35,
+    "verses": [
+      {
+        "verse": 17,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 36,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 11,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 37,
+    "verses": [
+      {
+        "verse": 12,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 38,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 24,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 39,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 33,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 34,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 40,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 27,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 41,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 12,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 42,
+    "verses": [
+      {
+        "verse": 15,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 18,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 43,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 11,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 27,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 44,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 16,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 45,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 6,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 23,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 46,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 11,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 47,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 8,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 12,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 48,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 12,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 17,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 49,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 13,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 50,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 22,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 23,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 51,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 13,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 23,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
   }
 ]

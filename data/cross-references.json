@@ -1802,5 +1802,82 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 99
+  },
+  {
+    "book": "Sirach",
+    "chapter": 1,
+    "verse": 14,
+    "crossReference": "Proverbs 1:7",
+    "type": "parallel",
+    "note": "Shared wisdom theme regarding the Fear of the Lord as the beginning of knowledge.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 2,
+    "verse": 5,
+    "crossReference": "D&C 101:4",
+    "type": "parallel",
+    "note": "Refinement theme (gold tried in the fire) as a reason for trials.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 15,
+    "verse": 14,
+    "crossReference": "2 Nephi 2:27",
+    "type": "parallel",
+    "note": "Core doctrine of moral agency and the choice between life and death.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 24,
+    "verse": 1,
+    "crossReference": "John 1:1",
+    "type": "allusion",
+    "note": "Logos/Wisdom theology regarding the pre-mortal role of the Word in creation.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 28,
+    "verse": 2,
+    "crossReference": "D&C 64:9",
+    "type": "parallel",
+    "note": "Mandate to forgive others to be forgiven by God.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 35,
+    "verse": 17,
+    "crossReference": "Mosiah 4:24",
+    "type": "parallel",
+    "note": "God's special attention to the prayer and status of the poor.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
+  },
+  {
+    "book": "Sirach",
+    "chapter": 50,
+    "verse": 1,
+    "crossReference": "Exodus 28",
+    "type": "parallel",
+    "note": "Descriptions of the beauty and liturgical function of the Aaronic priestly garments.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 94
   }
 ]
