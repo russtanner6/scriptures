@@ -11615,5 +11615,296 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 12
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 1,
+    "topics": [
+      "mourning",
+      "honor",
+      "loyalty"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 2,
+    "topics": [
+      "anointing",
+      "revelation",
+      "warfare"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "topics": [
+      "justice",
+      "mourning",
+      "leadership"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 4,
+    "topics": [
+      "justice",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 5,
+    "topics": [
+      "kingship",
+      "revelation",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 6,
+    "topics": [
+      "reverence",
+      "worship",
+      "holiness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 7,
+    "topics": [
+      "covenant",
+      "prophecy",
+      "humility",
+      "temple"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 8,
+    "topics": [
+      "consecration",
+      "sovereignty",
+      "justice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 9,
+    "topics": [
+      "covenant",
+      "mercy",
+      "charity"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 10,
+    "topics": [
+      "honor",
+      "judgment",
+      "warfare"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 11,
+    "topics": [
+      "temptation",
+      "sin",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 12,
+    "topics": [
+      "repentance",
+      "prophetic authority",
+      "mercy",
+      "consequences"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "topics": [
+      "justice",
+      "sin",
+      "consequences"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "topics": [
+      "reconciliation",
+      "wisdom",
+      "mercy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 15,
+    "topics": [
+      "humility",
+      "trust in God",
+      "rebellion"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 16,
+    "topics": [
+      "patience",
+      "faith",
+      "counsel"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 17,
+    "topics": [
+      "providence",
+      "counsel",
+      "faith"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "topics": [
+      "consequences",
+      "obedience",
+      "grief"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "topics": [
+      "forgiveness",
+      "restoration",
+      "mercy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 20,
+    "topics": [
+      "loyalty",
+      "wisdom",
+      "leadership"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 21,
+    "topics": [
+      "atonement",
+      "justice",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 22,
+    "topics": [
+      "praise",
+      "deliverance",
+      "faith",
+      "salvation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 23,
+    "topics": [
+      "prophecy",
+      "valor",
+      "faithfulness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "topics": [
+      "repentance",
+      "sacrifice",
+      "mercy",
+      "atonement"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
   }
 ]

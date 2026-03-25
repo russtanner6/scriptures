@@ -8378,5 +8378,205 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 12
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 1,
+    "genre": "narrative",
+    "subgenre": "lament",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 2,
+    "genre": "narrative",
+    "subgenre": "military record",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 4,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 5,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 6,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 7,
+    "genre": "narrative",
+    "subgenre": "prophecy",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 8,
+    "genre": "narrative",
+    "subgenre": "military record",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 9,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 10,
+    "genre": "narrative",
+    "subgenre": "military record",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 11,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 12,
+    "genre": "narrative",
+    "subgenre": "parable",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 15,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 16,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 17,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 20,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 21,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 22,
+    "genre": "narrative",
+    "subgenre": "psalm",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 23,
+    "genre": "narrative",
+    "subgenre": "prophecy",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
   }
 ]

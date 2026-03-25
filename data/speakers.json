@@ -20025,5 +20025,1685 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 12
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 1,
+    "startVerse": 3,
+    "endVerse": 4,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 1,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 1,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 1,
+    "startVerse": 14,
+    "endVerse": 16,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 1,
+    "startVerse": 19,
+    "endVerse": 27,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 2,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 2,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 2,
+    "startVerse": 4,
+    "endVerse": 6,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 2,
+    "startVerse": 20,
+    "endVerse": 21,
+    "speaker": "Abner",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 2,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "Asahel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 2,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "Abner",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 2,
+    "startVerse": 26,
+    "endVerse": 26,
+    "speaker": "Abner",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 2,
+    "startVerse": 27,
+    "endVerse": 27,
+    "speaker": "Joab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "Ish-bosheth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Abner",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "Abner",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "Abner",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "startVerse": 17,
+    "endVerse": 18,
+    "speaker": "Abner",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "Abner",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "startVerse": 24,
+    "endVerse": 25,
+    "speaker": "Joab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "startVerse": 28,
+    "endVerse": 29,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "startVerse": 31,
+    "endVerse": 31,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "startVerse": 33,
+    "endVerse": 34,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "startVerse": 38,
+    "endVerse": 39,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 4,
+    "startVerse": 9,
+    "endVerse": 12,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 5,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 5,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 5,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 5,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 5,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 5,
+    "startVerse": 23,
+    "endVerse": 24,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 6,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 6,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "Michal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 6,
+    "startVerse": 21,
+    "endVerse": 22,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 7,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 7,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Nathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 7,
+    "startVerse": 5,
+    "endVerse": 16,
+    "speaker": "Nathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 7,
+    "startVerse": 18,
+    "endVerse": 29,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 9,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 9,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Ziba",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 9,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 9,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Ziba",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 9,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Ziba",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 9,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Mephibosheth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 9,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 9,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Mephibosheth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 9,
+    "startVerse": 9,
+    "endVerse": 10,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 9,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Ziba",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 10,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 10,
+    "startVerse": 11,
+    "endVerse": 12,
+    "speaker": "Joab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 11,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Bathsheba",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 11,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 11,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 11,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Uriah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 11,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Uriah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 11,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 11,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 11,
+    "startVerse": 25,
+    "endVerse": 25,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 12,
+    "startVerse": 1,
+    "endVerse": 4,
+    "speaker": "Nathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 12,
+    "startVerse": 5,
+    "endVerse": 6,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 12,
+    "startVerse": 7,
+    "endVerse": 12,
+    "speaker": "Nathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 12,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 12,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Nathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 12,
+    "startVerse": 22,
+    "endVerse": 23,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Jonadab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Jonadab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Amnon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Amnon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Amnon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Amnon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "startVerse": 12,
+    "endVerse": 13,
+    "speaker": "Tamar",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Amnon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "Tamar",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Amnon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "Absalom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "startVerse": 25,
+    "endVerse": 25,
+    "speaker": "Absalom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "startVerse": 26,
+    "endVerse": 26,
+    "speaker": "Absalom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "startVerse": 28,
+    "endVerse": 29,
+    "speaker": "Absalom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "startVerse": 32,
+    "endVerse": 33,
+    "speaker": "Jonadab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "startVerse": 4,
+    "endVerse": 7,
+    "speaker": "Joab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "startVerse": 24,
+    "endVerse": 24,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "startVerse": 30,
+    "endVerse": 30,
+    "speaker": "Absalom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "startVerse": 32,
+    "endVerse": 32,
+    "speaker": "Absalom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 15,
+    "startVerse": 2,
+    "endVerse": 4,
+    "speaker": "Absalom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 15,
+    "startVerse": 7,
+    "endVerse": 8,
+    "speaker": "Absalom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 15,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 15,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 15,
+    "startVerse": 19,
+    "endVerse": 20,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 15,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "Ittai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 15,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 15,
+    "startVerse": 25,
+    "endVerse": 26,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 15,
+    "startVerse": 33,
+    "endVerse": 34,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 15,
+    "startVerse": 35,
+    "endVerse": 36,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 16,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Ziba",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 16,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 16,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Ziba",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 16,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 16,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Abishai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 16,
+    "startVerse": 10,
+    "endVerse": 12,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 16,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "Absalom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 16,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "Ahithophel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 17,
+    "startVerse": 1,
+    "endVerse": 3,
+    "speaker": "Ahithophel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 17,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Absalom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 17,
+    "startVerse": 7,
+    "endVerse": 13,
+    "speaker": "Hushai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 17,
+    "startVerse": 15,
+    "endVerse": 16,
+    "speaker": "Hushai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 17,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "Ahimaaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Joab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 12,
+    "endVerse": 13,
+    "speaker": "Joab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Joab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "Ahimaaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "Joab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "Ahimaaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "Joab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "Ahimaaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 25,
+    "endVerse": 25,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "Ahimaaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 29,
+    "endVerse": 29,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 29,
+    "endVerse": 29,
+    "speaker": "Ahimaaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 31,
+    "endVerse": 31,
+    "speaker": "Cushi",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 32,
+    "endVerse": 32,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 32,
+    "endVerse": 32,
+    "speaker": "Cushi",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "startVerse": 33,
+    "endVerse": 33,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "startVerse": 1,
+    "endVerse": 2,
+    "speaker": "Joab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "startVerse": 5,
+    "endVerse": 7,
+    "speaker": "Joab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "startVerse": 19,
+    "endVerse": 20,
+    "speaker": "Shimei",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "Abishai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "startVerse": 22,
+    "endVerse": 23,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "startVerse": 24,
+    "endVerse": 24,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "startVerse": 26,
+    "endVerse": 28,
+    "speaker": "Mephibosheth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "startVerse": 29,
+    "endVerse": 29,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "startVerse": 30,
+    "endVerse": 30,
+    "speaker": "Mephibosheth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "startVerse": 33,
+    "endVerse": 33,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "startVerse": 34,
+    "endVerse": 37,
+    "speaker": "Barzillai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "startVerse": 38,
+    "endVerse": 39,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 20,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Sheba",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 20,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 20,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 20,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Joab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 20,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Joab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 21,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 21,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 21,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 21,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 22,
+    "startVerse": 2,
+    "endVerse": 51,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 23,
+    "startVerse": 1,
+    "endVerse": 7,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Joab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "startVerse": 12,
+    "endVerse": 13,
+    "speaker": "Gad",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Gad",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "Araunah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "Araunah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "Araunah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "startVerse": 24,
+    "endVerse": 24,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
   }
 ]

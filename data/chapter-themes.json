@@ -12159,5 +12159,316 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 12
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 1,
+    "themes": [
+      "grief",
+      "loyalty",
+      "honor",
+      "lament"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 2,
+    "themes": [
+      "civil war",
+      "anointing",
+      "division",
+      "loyalty"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "themes": [
+      "betrayal",
+      "murder",
+      "mourning",
+      "political alliance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 4,
+    "themes": [
+      "assassination",
+      "justice",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 5,
+    "themes": [
+      "kingship",
+      "divine guidance",
+      "unity",
+      "conquest"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 6,
+    "themes": [
+      "worship",
+      "reverence",
+      "holiness",
+      "celebration"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 7,
+    "themes": [
+      "covenant",
+      "eternal promises",
+      "humility",
+      "prophecy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 8,
+    "themes": [
+      "conquest",
+      "sovereignty",
+      "dedication",
+      "divine protection"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 9,
+    "themes": [
+      "covenant loyalty",
+      "mercy",
+      "kindness",
+      "grace"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 10,
+    "themes": [
+      "honor",
+      "warfare",
+      "diplomacy",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 11,
+    "themes": [
+      "temptation",
+      "adultery",
+      "deception",
+      "moral failure"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 12,
+    "themes": [
+      "repentance",
+      "prophetic rebuke",
+      "consequences",
+      "mercy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "themes": [
+      "violence",
+      "revenge",
+      "family dysfunction",
+      "justice delayed"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "themes": [
+      "exile",
+      "reconciliation",
+      "manipulation",
+      "wisdom"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 15,
+    "themes": [
+      "rebellion",
+      "betrayal",
+      "flight",
+      "humility"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 16,
+    "themes": [
+      "slander",
+      "cursing",
+      "deception",
+      "counsel"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 17,
+    "themes": [
+      "counsel",
+      "espionage",
+      "providence",
+      "suicide"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "themes": [
+      "battle",
+      "death",
+      "grief",
+      "disobedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "themes": [
+      "restoration",
+      "mercy",
+      "reconciliation",
+      "political tension"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 20,
+    "themes": [
+      "rebellion",
+      "loyalty",
+      "wisdom",
+      "swift justice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 21,
+    "themes": [
+      "bloodguilt",
+      "atonement",
+      "famine",
+      "justice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 22,
+    "themes": [
+      "deliverance",
+      "praise",
+      "divine power",
+      "thanksgiving"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 23,
+    "themes": [
+      "last words",
+      "valor",
+      "mighty men",
+      "faithfulness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "themes": [
+      "pride",
+      "plague",
+      "repentance",
+      "sacrifice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
   }
 ]

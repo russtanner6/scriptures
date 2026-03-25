@@ -7688,5 +7688,197 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 12
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 1,
+    "summary": "David learns of Saul and Jonathan's deaths, executes the Amalekite messenger, and composes a lament for the fallen.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 2,
+    "summary": "David is anointed king of Judah at Hebron while Ish-bosheth rules Israel; civil war begins with the battle at Gibeon where Asahel is killed.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "summary": "Abner defects from Ish-bosheth to David but is killed by Joab; David publicly mourns Abner to prove his innocence.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 4,
+    "summary": "Ish-bosheth is assassinated by Rechab and Baanah; David executes them for murdering an innocent man.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 5,
+    "summary": "All Israel anoints David king at Hebron; he captures Jerusalem as his capital and defeats the Philistines twice with divine direction.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 6,
+    "summary": "David brings the Ark to Jerusalem with celebration; Uzzah is struck dead for touching it, and Michal despises David for dancing.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 7,
+    "summary": "David desires to build a temple, but God through Nathan establishes the Davidic Covenant, promising an everlasting throne; David prays in humility.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 8,
+    "summary": "David defeats the Philistines, Moabites, Syrians, and Edomites, expanding his kingdom and dedicating the spoils to the Lord.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 9,
+    "summary": "David shows kindness to Mephibosheth, son of Jonathan, restoring Saul's lands and granting him a permanent place at the royal table.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 10,
+    "summary": "The Ammonites humiliate David's ambassadors; Joab and Abishai defeat the combined Ammonite-Syrian forces in battle.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 11,
+    "summary": "David commits adultery with Bathsheba, fails to cover his sin through Uriah, and arranges Uriah's death in battle.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 12,
+    "summary": "Nathan confronts David with the parable of the ewe lamb; David repents, the child dies, and Solomon is born to Bathsheba.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "summary": "Amnon violates his half-sister Tamar; Absalom waits two years then has Amnon killed at a feast and flees to Geshur.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "summary": "Joab uses the wise woman of Tekoa to persuade David to recall Absalom from exile, though Absalom remains barred from the king's presence.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 15,
+    "summary": "Absalom conspires to steal the kingdom through four years of political manipulation; David flees Jerusalem weeping over the Mount of Olives.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 16,
+    "summary": "Ziba brings provisions and slanders Mephibosheth; Shimei curses David; Absalom enters Jerusalem and follows Ahithophel's counsel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 17,
+    "summary": "Hushai defeats Ahithophel's counsel to attack David immediately; Ahithophel hangs himself and David escapes across the Jordan.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "summary": "David's forces defeat Absalom's army in the forest of Ephraim; Joab kills Absalom, and David mourns bitterly for his son.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "summary": "Joab rebukes David's mourning; David returns to Jerusalem, pardons Shimei, and navigates disputes among Judah and Israel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 20,
+    "summary": "Sheba leads a revolt against David; Joab pursues him, and the wise woman of Abel delivers Sheba's head to end the rebellion.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 21,
+    "summary": "A three-year famine is traced to Saul's bloodguilt against the Gibeonites; David delivers Saul's descendants, and wars with Philistine giants follow.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 22,
+    "summary": "David's great psalm of deliverance, praising God as his rock, fortress, and shield who delivered him from all his enemies.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 23,
+    "summary": "David's last prophetic words and the catalog of his mighty men with their legendary feats of valor and loyalty.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "summary": "David numbers the people against Joab's counsel; God sends a plague as judgment, and David purchases Araunah's threshingfloor to build an altar.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
   }
 ]

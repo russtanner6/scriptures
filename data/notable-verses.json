@@ -13476,5 +13476,291 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 12
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 19,
+        "reason": "Beginning of David's lament: 'The beauty of Israel is slain upon thy high places.'"
+      },
+      {
+        "verse": 26,
+        "reason": "David's tribute to Jonathan: 'Thy love to me was wonderful, passing the love of women.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 2,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 38,
+        "reason": "David declares 'a prince and a great man is fallen this day in Israel' regarding Abner."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 4,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "David went on, and grew great, and the LORD God of hosts was with him."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "David dances before the LORD with all his might—iconic image of exuberant worship."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "Promise that God will establish the seed after David and his kingdom forever."
+      },
+      {
+        "verse": 22,
+        "reason": "David's prayer: 'There is none like thee, neither is there any God beside thee.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 8,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "David shows kindness for Jonathan's sake—a model of covenant loyalty."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 10,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 11,
+    "verses": [
+      {
+        "verse": 27,
+        "reason": "The turning point: 'the thing that David had done displeased the LORD.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "Nathan's confrontation: 'Thou art the man'—one of scripture's most dramatic moments."
+      },
+      {
+        "verse": 13,
+        "reason": "David's immediate confession: 'I have sinned against the LORD.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "The metaphor of spilt water: 'Neither doth God respect any person: yet doth he devise means, that his banished be not expelled from him.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 15,
+    "verses": [
+      {
+        "verse": 26,
+        "reason": "David's submission: 'Let him do to me as seemeth good unto him.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 16,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 17,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "verses": [
+      {
+        "verse": 33,
+        "reason": "David's anguished cry: 'O my son Absalom, my son, my son Absalom!'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 20,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 21,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 22,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "'The LORD is my rock, and my fortress, and my deliverer'—foundational declaration of trust."
+      },
+      {
+        "verse": 31,
+        "reason": "'As for God, his way is perfect; the word of the LORD is tried.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 23,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "David's last words: 'The Spirit of the LORD spake by me, and his word was in my tongue.'"
+      },
+      {
+        "verse": 5,
+        "reason": "David affirms God has made an everlasting covenant with him, ordered in all things."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "David chooses to fall into God's hands: 'Let us fall now into the hand of the LORD; for his mercies are great.'"
+      },
+      {
+        "verse": 24,
+        "reason": "David refuses free offerings: 'Neither will I offer burnt offerings unto the LORD my God of that which doth cost me nothing.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
   }
 ]

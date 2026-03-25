@@ -5014,5 +5014,104 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 12
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 1,
+    "verse": 18,
+    "crossReference": "Joshua 10:13",
+    "type": "allusion",
+    "note": "References the book of Jasher, also cited in Joshua's account of the sun standing still.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 5,
+    "verse": 2,
+    "crossReference": "1 Chronicles 11:2",
+    "type": "parallel",
+    "note": "The anointing of David as shepherd and captain over Israel is recorded in both accounts.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 7,
+    "verse": 12,
+    "crossReference": "Acts 2:30",
+    "type": "fulfillment",
+    "note": "Peter cites this Davidic covenant promise as fulfilled in the resurrection of Christ.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 7,
+    "verse": 14,
+    "crossReference": "Hebrews 1:5",
+    "type": "quotation",
+    "note": "Quoted in the New Testament regarding the divine Sonship of Christ.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 11,
+    "verse": 4,
+    "crossReference": "Matthew 1:6",
+    "type": "allusion",
+    "note": "Matthew's genealogy of Jesus deliberately mentions Bathsheba as 'her that had been the wife of Uriah.'",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 12,
+    "verse": 13,
+    "crossReference": "Psalm 51:1",
+    "type": "parallel",
+    "note": "Psalm 51 is David's penitential psalm composed after Nathan's confrontation.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 22,
+    "verse": 2,
+    "crossReference": "Psalm 18:2",
+    "type": "parallel",
+    "note": "This psalm is virtually identical to Psalm 18, David's song of deliverance.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 23,
+    "verse": 2,
+    "crossReference": "2 Peter 1:21",
+    "type": "parallel",
+    "note": "David testifies the Spirit of the Lord spoke by him, illustrating how holy men spoke as moved by the Holy Ghost.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "verse": 24,
+    "crossReference": "1 Chronicles 21:24",
+    "type": "parallel",
+    "note": "David's refusal to offer burnt offerings without cost is recorded in both accounts.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 10
   }
 ]

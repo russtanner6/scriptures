@@ -20736,5 +20736,14 @@
       "OT"
     ],
     "tier": 4
+  },
+  {
+    "id": "eliakim-steward",
+    "name": "Eliakim",
+    "description": "Son of Hilkiah, palace steward under Hezekiah who replaced Shebna and negotiated with Rabshakeh during the Assyrian siege.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
   }
 ]
