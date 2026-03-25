@@ -5738,5 +5738,174 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 54
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 1,
+    "themes": [
+      "comfort",
+      "tribulation",
+      "sincerity",
+      "promises of God"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 2,
+    "themes": [
+      "forgiveness",
+      "charity",
+      "victory in Christ",
+      "Satan's devices"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 3,
+    "themes": [
+      "New Covenant",
+      "Spirit vs. Letter",
+      "Glory",
+      "Moses' Veil"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 4,
+    "themes": [
+      "ministry",
+      "light vs. darkness",
+      "endurance",
+      "eternal glory"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 5,
+    "themes": [
+      "resurrection",
+      "judgment seat",
+      "reconciliation",
+      "new creature"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 6,
+    "themes": [
+      "grace",
+      "ministry",
+      "purity",
+      "temple of God"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 7,
+    "themes": [
+      "godly sorrow",
+      "repentance",
+      "joy",
+      "comfort"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 8,
+    "themes": [
+      "charity",
+      "generosity",
+      "example of Christ",
+      "stewardship"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 9,
+    "themes": [
+      "giving",
+      "bountiful reaping",
+      "gratitude",
+      "grace"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 10,
+    "themes": [
+      "apostolic authority",
+      "spiritual warfare",
+      "humility",
+      "obedience"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 11,
+    "themes": [
+      "false doctrine",
+      "persecution",
+      "simplicity in Christ",
+      "endurance"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 12,
+    "themes": [
+      "visions",
+      "celestial glory",
+      "weakness",
+      "grace"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 13,
+    "themes": [
+      "self-examination",
+      "perfection",
+      "peace",
+      "unity"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
   }
 ]

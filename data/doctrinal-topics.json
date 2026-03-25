@@ -5440,5 +5440,161 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 54
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 1,
+    "topics": [
+      "comfort",
+      "Holy Ghost",
+      "Atonement"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 2,
+    "topics": [
+      "forgiveness",
+      "charity",
+      "priesthood authority"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 3,
+    "topics": [
+      "New Covenant",
+      "Spirit",
+      "Moses",
+      "Glory"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 4,
+    "topics": [
+      "resurrection",
+      "eternal life",
+      "faith"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 5,
+    "topics": [
+      "resurrection",
+      "Atonement",
+      "judgment",
+      "reconciliation"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 6,
+    "topics": [
+      "sanctification",
+      "covenants",
+      "temple"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 7,
+    "topics": [
+      "repentance",
+      "godly sorrow",
+      "joy"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 8,
+    "topics": [
+      "charity",
+      "grace",
+      "stewardship"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 9,
+    "topics": [
+      "charity",
+      "faith",
+      "gratitude"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 10,
+    "topics": [
+      "priesthood authority",
+      "discernment"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 11,
+    "topics": [
+      "apostasy",
+      "discernment",
+      "endurance"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 12,
+    "topics": [
+      "visions",
+      "celestial kingdom",
+      "grace"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 13,
+    "topics": [
+      "faith",
+      "Godhead"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
   }
 ]

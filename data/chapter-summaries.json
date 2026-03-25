@@ -3718,5 +3718,109 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 54
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 1,
+    "summary": "Paul testifies of God's comfort during tribulations and explains that his delayed visit to Corinth was intended to spare the Saints unnecessary grief.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 2,
+    "summary": "Paul exhorts the Saints to forgive a repentant offender and describes his restless spirit until he could meet with Titus to hear of their well-being.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 3,
+    "summary": "Paul contrasts the ministration of the Spirit with the letter of the Law of Moses, teaching that the veil is done away in Christ, bringing liberty.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 4,
+    "summary": "Paul describes the trials of the ministry as light afflictions that work for an eternal weight of glory, looking toward unseen and eternal things.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 5,
+    "summary": "Paul discusses the resurrection and the ministry of reconciliation, declaring that through Christ's atonement, individuals become new creatures.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 6,
+    "summary": "Paul exhorts the Saints to receive not the grace of God in vain and to live as temples of the living God, avoiding unrighteous partnerships.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 7,
+    "summary": "Paul rejoices in the comfort brought by Titus and explains that godly sorrow leads to repentance and salvation, while the sorrow of the world leads to death.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 8,
+    "summary": "Paul encourages generous giving for the poor Saints in Jerusalem, citing the grace of the Lord Jesus Christ, who became poor so we might be rich.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 9,
+    "summary": "Paul emphasizes that God loves a cheerful giver and promises that those who sow bountifully will also reap bountifully in spiritual and temporal blessings.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 10,
+    "summary": "Paul defends his apostolic calling and authority, explaining that he fights spiritual battles to bring every thought into obedience to Christ.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 11,
+    "summary": "Paul warns against false teachers who corrupt the simplicity of Christ and recounts his own extensive persecutions and labors as a true apostle.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 12,
+    "summary": "Paul describes being caught up to the third heaven and explains how his thorn in the flesh keeps him humble, for God's strength is perfect in weakness.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 13,
+    "summary": "Paul concludes by urging the Corinthians to examine their own faith and to remain in unity and peace, offering a final apostolic blessing.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
   }
 ]

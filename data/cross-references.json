@@ -2341,5 +2341,82 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 54
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 1,
+    "verse": 22,
+    "crossReference": "Ephesians 1:13-14",
+    "type": "parallel",
+    "note": "Both speak of being sealed with the Holy Spirit of promise as an earnest of our inheritance.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 4,
+    "verse": 17,
+    "crossReference": "D&C 121:7-8",
+    "type": "parallel",
+    "note": "The Lord's promise to Joseph Smith that small moments of affliction are but for a moment and will be for his good.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 5,
+    "verse": 10,
+    "crossReference": "Alma 11:43-44",
+    "type": "parallel",
+    "note": "Both describe the reality of all people standing before the bar of God to be judged for their works.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 7,
+    "verse": 10,
+    "crossReference": "Alma 42:29",
+    "type": "parallel",
+    "note": "Alma explains to Corianton that only godly sorrow for sin can bring about the repentance that leads to salvation.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 11,
+    "verse": 14,
+    "crossReference": "D&C 129:8",
+    "type": "parallel",
+    "note": "Joseph Smith explains how to discern if a messenger is from God or is Satan appearing as an angel of light.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 12,
+    "verse": 2,
+    "crossReference": "D&C 76",
+    "type": "parallel",
+    "note": "Paul's reference to the third heaven corresponds to the vision of the degrees of glory given to Joseph Smith and Sidney Rigdon.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 12,
+    "verse": 9,
+    "crossReference": "Ether 12:27",
+    "type": "parallel",
+    "note": "Moroni records that the Lord makes weak things become strong through His grace, echoing Paul's experience with his thorn in the flesh.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
   }
 ]

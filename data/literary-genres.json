@@ -4045,5 +4045,122 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 54
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 1,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 2,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 3,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 4,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 5,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 6,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 7,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 8,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 9,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 10,
+    "genre": "epistle",
+    "subgenre": "polemical",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 11,
+    "genre": "epistle",
+    "subgenre": "autobiographical",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 12,
+    "genre": "epistle",
+    "subgenre": "apocalyptic",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 13,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
   }
 ]

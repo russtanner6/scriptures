@@ -4648,5 +4648,135 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 54
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 1,
+    "era": "Apostolic",
+    "approxDate": "c. AD 55-57",
+    "setting": "Paul writing from Macedonia to the church in Corinth after a period of severe trials in Asia.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 2,
+    "era": "Apostolic",
+    "approxDate": "c. AD 55-57",
+    "setting": "Paul explains his change of plans and addresses the outcome of a previous disciplinary matter in Corinth.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 3,
+    "era": "Apostolic",
+    "approxDate": "c. AD 55-57",
+    "setting": "Paul addresses the contrast between the waning Law of Moses and the enduring glory of the Gospel.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 4,
+    "era": "Apostolic",
+    "approxDate": "c. AD 55-57",
+    "setting": "Paul defends the sincerity of his ministry against critics while acknowledging his physical frailty.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 5,
+    "era": "Apostolic",
+    "approxDate": "c. AD 55-57",
+    "setting": "Paul articulates the heavenly motivations for his missionary labors and the reality of the post-mortal life.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 6,
+    "era": "Apostolic",
+    "approxDate": "c. AD 55-57",
+    "setting": "Paul details the hardships he has endured to prove his faithfulness as a minister of God.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 7,
+    "era": "Apostolic",
+    "approxDate": "c. AD 55-57",
+    "setting": "Titus joins Paul in Macedonia with encouraging news of the Corinthians' positive response to Paul's letters.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 8,
+    "era": "Apostolic",
+    "approxDate": "c. AD 55-57",
+    "setting": "Paul encourages the collection for the poor Saints in Jerusalem, using the Macedonian churches as a model.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 9,
+    "era": "Apostolic",
+    "approxDate": "c. AD 55-57",
+    "setting": "Paul finalizes instructions for the relief fund, emphasizing the spiritual importance of generosity.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 10,
+    "era": "Apostolic",
+    "approxDate": "c. AD 55-57",
+    "setting": "Paul directly addresses challenges to his apostolic authority by super-apostles in Corinth.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 11,
+    "era": "Apostolic",
+    "approxDate": "c. AD 55-57",
+    "setting": "Paul lists his apostolic credentials through his sufferings, illustrating the cost of his devotion.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 12,
+    "era": "Apostolic",
+    "approxDate": "c. AD 55-57",
+    "setting": "Paul refers to visions given fourteen years prior to validate his authority and describes his constant spiritual refining.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 13,
+    "era": "Apostolic",
+    "approxDate": "c. AD 55-57",
+    "setting": "Paul prepares for his third visit to Corinth, warning those who continue in sin and exhorting the faithful.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 47
   }
 ]
