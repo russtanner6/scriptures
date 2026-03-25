@@ -3614,5 +3614,151 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 98
+  },
+  {
+    "book": "Judith",
+    "chapter": 1,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 2,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 3,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 4,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 5,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 6,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 7,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 14,
+        "text": "For ye cannot find the depth of the heart of man, neither can ye perceive the things that he thinketh: then how can ye search out God, that hath made all these things, and know his mind, or comprehend his purpose?",
+        "reason": "A powerful statement on the inscrutability of God's wisdom and the error of testing Him."
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 11,
+        "text": "For thy power standeth not in multitude, nor thy might in strong men: for thou art a God of the afflicted, an helper of the oppressed, an upholder of the weak, a protector of the forlorn, a saviour of them that are without hope.",
+        "reason": "A beautiful description of God's character as the champion of the vulnerable."
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 10,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 11,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 12,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 18,
+        "text": "Then said Ozias unto her, O daughter, blessed art thou of the most high God above all the women upon the earth; and blessed be the Lord God, which hath created the heavens and the earth, which hath directed thee to the cutting off of the head of the chief of our enemies.",
+        "reason": "A blessing that emphasizes Judith's unique role in the salvation of Israel."
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 14,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 15,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 16,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
   }
 ]

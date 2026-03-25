@@ -2785,5 +2785,149 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 98
+  },
+  {
+    "book": "Judith",
+    "chapter": 1,
+    "genre": "historical record",
+    "subgenre": "epic chronicle",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 2,
+    "genre": "historical record",
+    "subgenre": "military narrative",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 3,
+    "genre": "narrative",
+    "subgenre": "political tragedy",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 4,
+    "genre": "narrative",
+    "subgenre": "religious drama",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 5,
+    "genre": "dialogue",
+    "subgenre": "historical summary",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 6,
+    "genre": "narrative",
+    "subgenre": "court narrative",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 7,
+    "genre": "narrative",
+    "subgenre": "siege narrative",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 8,
+    "genre": "dialogue",
+    "subgenre": "theological debate",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 9,
+    "genre": "prayer",
+    "subgenre": "lamentation",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 10,
+    "genre": "narrative",
+    "subgenre": "heroic journey",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 11,
+    "genre": "dialogue",
+    "subgenre": "courtly intrigue",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 12,
+    "genre": "narrative",
+    "subgenre": "domestic drama",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 13,
+    "genre": "narrative",
+    "subgenre": "climax",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 14,
+    "genre": "narrative",
+    "subgenre": "military record",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 15,
+    "genre": "historical record",
+    "subgenre": "victory report",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 16,
+    "genre": "hymn",
+    "subgenre": "victory song",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
   }
 ]

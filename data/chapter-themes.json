@@ -3998,5 +3998,213 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 98
+  },
+  {
+    "book": "Judith",
+    "chapter": 1,
+    "themes": [
+      "power",
+      "pride",
+      "war",
+      "judgment"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 2,
+    "themes": [
+      "conquest",
+      "sovereignty",
+      "destruction",
+      "military might"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 3,
+    "themes": [
+      "fear",
+      "submission",
+      "idolatry",
+      "blasphemy"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 4,
+    "themes": [
+      "faith",
+      "prayer",
+      "fasting",
+      "fortification"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 5,
+    "themes": [
+      "divine protection",
+      "covenant",
+      "history",
+      "warning"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 6,
+    "themes": [
+      "anger",
+      "rejection",
+      "hospitality",
+      "courage"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 7,
+    "themes": [
+      "trials",
+      "despair",
+      "thirst",
+      "deliverance"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 8,
+    "themes": [
+      "faith",
+      "rebuke",
+      "priesthood",
+      "leadership"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 9,
+    "themes": [
+      "humility",
+      "prayer",
+      "justice",
+      "womanhood"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 10,
+    "themes": [
+      "beauty",
+      "wisdom",
+      "strategy",
+      "deception"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 11,
+    "themes": [
+      "cunning",
+      "wit",
+      "deceit",
+      "influence"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 12,
+    "themes": [
+      "purity",
+      "devotion",
+      "temptation",
+      "feast"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 13,
+    "themes": [
+      "victory",
+      "miracles",
+      "beheading",
+      "deliverance"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 14,
+    "themes": [
+      "panic",
+      "attack",
+      "judgment",
+      "bravery"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 15,
+    "themes": [
+      "praise",
+      "blessing",
+      "unity",
+      "victory"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 16,
+    "themes": [
+      "thanksgiving",
+      "hymn",
+      "honor",
+      "legacy"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
   }
 ]

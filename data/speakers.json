@@ -4878,5 +4878,165 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 98
+  },
+  {
+    "book": "Judith",
+    "chapter": 1,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Nebuchadnezzar",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 2,
+    "startVerse": 5,
+    "endVerse": 13,
+    "speaker": "Nebuchadnezzar",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 5,
+    "startVerse": 5,
+    "endVerse": 21,
+    "speaker": "Achior",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 6,
+    "startVerse": 2,
+    "endVerse": 9,
+    "speaker": "Holofernes",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 6,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Achior",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 8,
+    "startVerse": 11,
+    "endVerse": 27,
+    "speaker": "Judith",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 8,
+    "startVerse": 28,
+    "endVerse": 31,
+    "speaker": "Ozias",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 8,
+    "startVerse": 32,
+    "endVerse": 34,
+    "speaker": "Judith",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 9,
+    "startVerse": 2,
+    "endVerse": 14,
+    "speaker": "Judith",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 10,
+    "startVerse": 12,
+    "endVerse": 13,
+    "speaker": "Judith",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 11,
+    "startVerse": 1,
+    "endVerse": 4,
+    "speaker": "Holofernes",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 11,
+    "startVerse": 5,
+    "endVerse": 19,
+    "speaker": "Judith",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 13,
+    "startVerse": 14,
+    "endVerse": 15,
+    "speaker": "Judith",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 13,
+    "startVerse": 18,
+    "endVerse": 20,
+    "speaker": "Ozias",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 14,
+    "startVerse": 1,
+    "endVerse": 4,
+    "speaker": "Judith",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 16,
+    "startVerse": 1,
+    "endVerse": 17,
+    "speaker": "Judith",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
   }
 ]

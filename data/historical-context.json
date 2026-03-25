@@ -3248,5 +3248,165 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 98
+  },
+  {
+    "book": "Judith",
+    "chapter": 1,
+    "era": "Intertestamental",
+    "approxDate": "c. 6th Century B.C.",
+    "setting": "Nineveh",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 2,
+    "era": "Intertestamental",
+    "approxDate": "c. 6th Century B.C.",
+    "setting": "The Assyrian Empire",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 3,
+    "era": "Intertestamental",
+    "approxDate": "c. 6th Century B.C.",
+    "setting": "The Mediterranean coast",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 4,
+    "era": "Intertestamental",
+    "approxDate": "c. 6th Century B.C.",
+    "setting": "The mountains of Judea",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 5,
+    "era": "Intertestamental",
+    "approxDate": "c. 6th Century B.C.",
+    "setting": "The Assyrian war camp",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 6,
+    "era": "Intertestamental",
+    "approxDate": "c. 6th Century B.C.",
+    "setting": "The city of Bethulia",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 7,
+    "era": "Intertestamental",
+    "approxDate": "c. 6th Century B.C.",
+    "setting": "The valley of Bethulia",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 8,
+    "era": "Intertestamental",
+    "approxDate": "c. 6th Century B.C.",
+    "setting": "Judith's house in Bethulia",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 9,
+    "era": "Intertestamental",
+    "approxDate": "c. 6th Century B.C.",
+    "setting": "Bethulia",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 10,
+    "era": "Intertestamental",
+    "approxDate": "c. 6th Century B.C.",
+    "setting": "The Assyrian camp",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 11,
+    "era": "Intertestamental",
+    "approxDate": "c. 6th Century B.C.",
+    "setting": "Holofernes' tent",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 12,
+    "era": "Intertestamental",
+    "approxDate": "c. 6th Century B.C.",
+    "setting": "Holofernes' tent",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 13,
+    "era": "Intertestamental",
+    "approxDate": "c. 6th Century B.C.",
+    "setting": "Holofernes' tent and Bethulia",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 14,
+    "era": "Intertestamental",
+    "approxDate": "c. 6th Century B.C.",
+    "setting": "Bethulia",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 15,
+    "era": "Intertestamental",
+    "approxDate": "c. 6th Century B.C.",
+    "setting": "The valley of Bethulia",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 16,
+    "era": "Intertestamental",
+    "approxDate": "c. 6th Century B.C.",
+    "setting": "Jerusalem and Bethulia",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
   }
 ]

@@ -1681,5 +1681,60 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 98
+  },
+  {
+    "book": "Judith",
+    "chapter": 4,
+    "verse": 9,
+    "crossReference": "Joel 2:12-13",
+    "type": "parallel",
+    "note": "Both texts emphasize the turning to God through fasting and sackcloth during times of crisis.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 5,
+    "verse": 17,
+    "crossReference": "2 Nephi 1:7",
+    "type": "parallel",
+    "note": "Achior's statement about prosperity contingent on righteousness matches the promise given to the Nephites.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 9,
+    "verse": 2,
+    "crossReference": "Genesis 34:25",
+    "type": "allusion",
+    "note": "Judith references the zeal of Simeon and Levi in avenging the defilement of their sister Dinah.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 13,
+    "verse": 8,
+    "crossReference": "Judges 4:21",
+    "type": "typology",
+    "note": "The beheading of Holofernes by Judith is a literary and thematic parallel to Jael killing Sisera.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
+  },
+  {
+    "book": "Judith",
+    "chapter": 13,
+    "verse": 15,
+    "crossReference": "1 Samuel 17:51",
+    "type": "parallel",
+    "note": "Both Judith and David use the enemy's own sword to decapitate their respective oppressors.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 91
   }
 ]

@@ -20018,5 +20018,77 @@
     "tier": 4,
     "family": {},
     "portrait": null
+  },
+  {
+    "id": "judith",
+    "name": "Judith",
+    "bio": "A pious widow of Bethulia who delivered Israel by beheading Holofernes.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 3,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "holofernes",
+    "name": "Holofernes",
+    "bio": "The chief captain of Nebuchadnezzar's army who besieged Bethulia.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "achior",
+    "name": "Achior",
+    "bio": "Captain of the Ammonites who warned Holofernes and later joined the house of Israel.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "ozias",
+    "name": "Ozias",
+    "bio": "The governor of Bethulia during the Assyrian siege.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "arphaxad-mede",
+    "name": "Arphaxad",
+    "bio": "A king of the Medes defeated by Nebuchadnezzar.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "bagoas",
+    "name": "Bagoas",
+    "bio": "The eunuch and servant of Holofernes.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
   }
 ]
