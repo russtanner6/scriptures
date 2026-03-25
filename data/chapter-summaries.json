@@ -2366,5 +2366,125 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 89
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 1,
+    "summary": "The Jews of Jerusalem write to their brethren in Egypt, urging them to keep the Feast of Tabernacles and recounting God's preservation of the temple's sacred fire.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 2,
+    "summary": "Historical records describe how Jeremiah hid the tabernacle and the ark, and how Nehemiah and Judas collected sacred books for a new library.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 3,
+    "summary": "King Seleucus sends Heliodorus to seize the temple treasury, but a terrifying heavenly vision strikes Heliodorus down and protects the sacred funds.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 4,
+    "summary": "Jason usurps the high priesthood through bribery and introduces Greek customs, leading to the murder of the righteous Onias and general moral decay.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 5,
+    "summary": "False rumors of the king's death lead to internal strife, prompting Antiochus to invade Jerusalem, massacre the inhabitants, and loot the temple sanctuary.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 6,
+    "summary": "Antiochus enforces pagan worship and the desecration of the temple, highlighted by the steadfast martyrdom of the elderly scribe Eleazar.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 7,
+    "summary": "A mother and her seven sons endure gruesome torture and execution for refusing to eat forbidden meat, testifying of their faith in a literal resurrection.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 8,
+    "summary": "Judas Maccabeus rallies six thousand men, defeats the massive armies of Nicanor and Gorgias, and distributes the spoils among the afflicted and the poor.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 9,
+    "summary": "While fleeing after a defeat, King Antiochus Epiphanes is struck with a painful internal disease and dies in the mountains after a desperate, late repentance.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 10,
+    "summary": "Judas cleanses the temple and restores the altar, then proceeds to defeat the Idumeans and Timothy's forces with the help of heavenly protectors.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 11,
+    "summary": "The governor Lysias invades Judea but is routed by Judas at Beth-zur, leading to a diplomatic exchange and a formal peace agreement.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 12,
+    "summary": "After winning several battles, Judas discovers that fallen Jewish soldiers had carried forbidden idols, prompting him to offer a sin offering for the dead.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 13,
+    "summary": "The young king Antiochus Eupator invades with a massive army, but after a skirmish at Modin, he agrees to terms of peace with the Jews.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 14,
+    "summary": "The traitor Alcimus plots with Nicanor, who initially befriends Judas but is later ordered to arrest him, leading to the noble death of Razis.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 15,
+    "summary": "Judas sees a vision of Jeremiah the prophet and defeats Nicanor in a final decisive battle, resulting in the establishment of a yearly festival.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
   }
 ]

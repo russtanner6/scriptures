@@ -1494,5 +1494,49 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 89
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 7,
+    "verse": 9,
+    "crossReference": "Alma 40:23",
+    "type": "parallel",
+    "note": "Both texts emphasize the literal nature of the resurrection of the body.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 10,
+    "verse": 1,
+    "crossReference": "1 Maccabees 4:36",
+    "type": "parallel",
+    "note": "Both books record the cleansing of the temple by Judas Maccabeus.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 12,
+    "verse": 43,
+    "crossReference": "D&C 128:5",
+    "type": "allusion",
+    "note": "The practice of offering for the dead relates to the LDS doctrine of work for the dead.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 15,
+    "verse": 14,
+    "crossReference": "D&C 138:38-49",
+    "type": "allusion",
+    "note": "The vision of deceased prophets looking after the living parallels the LDS view of the spirit world.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
   }
 ]

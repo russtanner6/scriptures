@@ -2958,5 +2958,155 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 89
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 1,
+    "era": "Intertestamental",
+    "approxDate": "c. 124 B.C.",
+    "setting": "Jerusalem and Egypt",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 2,
+    "era": "Intertestamental",
+    "approxDate": "c. 124 B.C.",
+    "setting": "The archives of Jerusalem",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 3,
+    "era": "Intertestamental",
+    "approxDate": "c. 178 B.C.",
+    "setting": "The Temple in Jerusalem",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 4,
+    "era": "Intertestamental",
+    "approxDate": "175-170 B.C.",
+    "setting": "Jerusalem and Antioch",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 5,
+    "era": "Intertestamental",
+    "approxDate": "168 B.C.",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 6,
+    "era": "Intertestamental",
+    "approxDate": "167 B.C.",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 7,
+    "era": "Intertestamental",
+    "approxDate": "167 B.C.",
+    "setting": "Antioch or Jerusalem",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 8,
+    "era": "Intertestamental",
+    "approxDate": "166 B.C.",
+    "setting": "The Judean wilderness",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 9,
+    "era": "Intertestamental",
+    "approxDate": "164 B.C.",
+    "setting": "Ecbatana and the mountains of Persia",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 10,
+    "era": "Intertestamental",
+    "approxDate": "164-163 B.C.",
+    "setting": "The Temple and Idumea",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 11,
+    "era": "Intertestamental",
+    "approxDate": "163 B.C.",
+    "setting": "Beth-zur",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 12,
+    "era": "Intertestamental",
+    "approxDate": "163 B.C.",
+    "setting": "Joppa, Jamnia, and Caspin",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 13,
+    "era": "Intertestamental",
+    "approxDate": "162 B.C.",
+    "setting": "Modin and Beth-zur",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 14,
+    "era": "Intertestamental",
+    "approxDate": "161 B.C.",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 15,
+    "era": "Intertestamental",
+    "approxDate": "161 B.C.",
+    "setting": "Adasa, near Jerusalem",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
   }
 ]

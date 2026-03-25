@@ -19932,5 +19932,77 @@
     "tier": 3,
     "family": {},
     "portrait": null
+  },
+  {
+    "id": "heliodorus",
+    "name": "Heliodorus",
+    "bio": "The treasurer of Seleucus IV who was prevented by a vision from robbing the temple.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "onias-high-priest",
+    "name": "Onias",
+    "bio": "The pious High Priest who was eventually murdered through the intrigue of Menelaus.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "eleazar-martyr",
+    "name": "Eleazar",
+    "bio": "An elderly scribe who chose martyrdom over violating the law of God.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "lysias-seleucid",
+    "name": "Lysias",
+    "bio": "A Seleucid general and regent who fought against and later made peace with the Jews.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "mother-seven-brothers",
+    "name": "Mother of the Seven Brothers",
+    "bio": "An unnamed woman who encouraged her seven sons to accept martyrdom for their faith.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "razis",
+    "name": "Razis",
+    "bio": "An elder of Jerusalem who died by suicide to avoid falling into the hands of the enemy.",
+    "aliases": [],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
   }
 ]

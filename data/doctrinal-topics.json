@@ -3433,5 +3433,179 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 89
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 1,
+    "topics": [
+      "temple",
+      "prayer",
+      "ordinances"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 2,
+    "topics": [
+      "scriptures",
+      "revelation"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 3,
+    "topics": [
+      "justice",
+      "miracles"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 4,
+    "topics": [
+      "apostasy",
+      "priesthood"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 5,
+    "topics": [
+      "persecution",
+      "trials"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 6,
+    "topics": [
+      "obedience",
+      "sacrifice",
+      "faithfulness"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 7,
+    "topics": [
+      "resurrection",
+      "atonement",
+      "faith",
+      "hope"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 8,
+    "topics": [
+      "grace",
+      "mercy",
+      "service"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 9,
+    "topics": [
+      "pride",
+      "repentance",
+      "justice"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 10,
+    "topics": [
+      "temple",
+      "worship",
+      "faith"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 11,
+    "topics": [
+      "mercy",
+      "miracles"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 12,
+    "topics": [
+      "resurrection",
+      "atonement",
+      "ordinances"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 13,
+    "topics": [
+      "trust in god",
+      "priesthood"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 14,
+    "topics": [
+      "sacrifice",
+      "trials"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 15,
+    "topics": [
+      "visions",
+      "prophecy",
+      "victory"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
   }
 ]

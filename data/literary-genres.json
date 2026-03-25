@@ -2524,5 +2524,140 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 89
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 1,
+    "genre": "epistle",
+    "subgenre": "festal letter",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 2,
+    "genre": "historical record",
+    "subgenre": "preface",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 3,
+    "genre": "narrative",
+    "subgenre": "miracle story",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 4,
+    "genre": "historical record",
+    "subgenre": "biographical tragedy",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 5,
+    "genre": "historical record",
+    "subgenre": "martyrology",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 6,
+    "genre": "narrative",
+    "subgenre": "martyrology",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 7,
+    "genre": "narrative",
+    "subgenre": "martyrology",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 8,
+    "genre": "historical record",
+    "subgenre": "military history",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 9,
+    "genre": "historical record",
+    "subgenre": "tragedy",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 10,
+    "genre": "historical record",
+    "subgenre": "chronicle",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 11,
+    "genre": "historical record",
+    "subgenre": "diplomatic record",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 12,
+    "genre": "historical record",
+    "subgenre": "military history",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 13,
+    "genre": "historical record",
+    "subgenre": "chronicle",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 14,
+    "genre": "historical record",
+    "subgenre": "tragedy",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 15,
+    "genre": "historical record",
+    "subgenre": "eulogy",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
   }
 ]

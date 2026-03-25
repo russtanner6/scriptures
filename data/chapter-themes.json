@@ -3620,5 +3620,200 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 89
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 1,
+    "themes": [
+      "temple",
+      "festivals",
+      "prayer",
+      "tradition"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 2,
+    "themes": [
+      "scripture",
+      "records",
+      "preservation",
+      "holiness"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 3,
+    "themes": [
+      "miracles",
+      "divine protection",
+      "temple",
+      "justice"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 4,
+    "themes": [
+      "apostasy",
+      "corruption",
+      "priesthood",
+      "hellenization"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 5,
+    "themes": [
+      "persecution",
+      "sacrilege",
+      "judgment",
+      "suffering"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 6,
+    "themes": [
+      "martyrdom",
+      "integrity",
+      "law of god",
+      "faithfulness"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 7,
+    "themes": [
+      "resurrection",
+      "courage",
+      "family",
+      "atonement"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 8,
+    "themes": [
+      "deliverance",
+      "victory",
+      "mercy",
+      "charity"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 9,
+    "themes": [
+      "pride",
+      "judgment",
+      "repentance",
+      "sovereignty"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 10,
+    "themes": [
+      "temple",
+      "restoration",
+      "divine aid",
+      "war"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 11,
+    "themes": [
+      "peace",
+      "diplomacy",
+      "miracles",
+      "restoration"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 12,
+    "themes": [
+      "resurrection",
+      "atonement",
+      "prayer for the dead",
+      "war"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 13,
+    "themes": [
+      "sovereignty",
+      "covenant",
+      "peace",
+      "priesthood"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 14,
+    "themes": [
+      "betrayal",
+      "sacrifice",
+      "leadership",
+      "honesty"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
+  },
+  {
+    "book": "2 Maccabees",
+    "chapter": 15,
+    "themes": [
+      "visions",
+      "victory",
+      "temple",
+      "prophecy"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 101
   }
 ]
