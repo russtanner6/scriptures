@@ -14445,5 +14445,3745 @@
     "volumeAbbrev": "D&C",
     "volumeName": "Doctrine and Covenants",
     "bookId": 82
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 4,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Jabez",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 10,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 11,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 11,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 11,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 12,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 13,
+    "startVerse": 2,
+    "endVerse": 3,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 13,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 14,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 14,
+    "startVerse": 14,
+    "endVerse": 15,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 15,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 15,
+    "startVerse": 12,
+    "endVerse": 13,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 16,
+    "startVerse": 8,
+    "endVerse": 36,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 17,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 17,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Nathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 17,
+    "startVerse": 4,
+    "endVerse": 14,
+    "speaker": "Nathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 17,
+    "startVerse": 16,
+    "endVerse": 27,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 19,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 19,
+    "startVerse": 12,
+    "endVerse": 13,
+    "speaker": "Joab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Joab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "startVerse": 11,
+    "endVerse": 12,
+    "speaker": "Gad",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "Araunah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "startVerse": 24,
+    "endVerse": 24,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 22,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 22,
+    "startVerse": 7,
+    "endVerse": 16,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 22,
+    "startVerse": 18,
+    "endVerse": 19,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 28,
+    "startVerse": 2,
+    "endVerse": 10,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 28,
+    "startVerse": 20,
+    "endVerse": 21,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 29,
+    "startVerse": 1,
+    "endVerse": 5,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 29,
+    "startVerse": 10,
+    "endVerse": 19,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 29,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Adonijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "startVerse": 11,
+    "endVerse": 14,
+    "speaker": "Nathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "startVerse": 17,
+    "endVerse": 21,
+    "speaker": "Bathsheba",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "startVerse": 24,
+    "endVerse": 27,
+    "speaker": "Nathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "startVerse": 28,
+    "endVerse": 31,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "startVerse": 31,
+    "endVerse": 31,
+    "speaker": "Bathsheba",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "startVerse": 32,
+    "endVerse": 35,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "startVerse": 36,
+    "endVerse": 37,
+    "speaker": "Benaiah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "startVerse": 42,
+    "endVerse": 42,
+    "speaker": "Adonijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "startVerse": 52,
+    "endVerse": 52,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "startVerse": 2,
+    "endVerse": 9,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "startVerse": 13,
+    "endVerse": 14,
+    "speaker": "Bathsheba",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "startVerse": 14,
+    "endVerse": 16,
+    "speaker": "Adonijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "Bathsheba",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "startVerse": 17,
+    "endVerse": 18,
+    "speaker": "Adonijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "startVerse": 19,
+    "endVerse": 20,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "Bathsheba",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "startVerse": 22,
+    "endVerse": 24,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "startVerse": 26,
+    "endVerse": 26,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "startVerse": 30,
+    "endVerse": 30,
+    "speaker": "Joab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "startVerse": 31,
+    "endVerse": 33,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "startVerse": 36,
+    "endVerse": 38,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "startVerse": 38,
+    "endVerse": 38,
+    "speaker": "Shimei",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "startVerse": 42,
+    "endVerse": 45,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 3,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 3,
+    "startVerse": 6,
+    "endVerse": 9,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 3,
+    "startVerse": 11,
+    "endVerse": 14,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 3,
+    "startVerse": 23,
+    "endVerse": 27,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 5,
+    "startVerse": 2,
+    "endVerse": 6,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 5,
+    "startVerse": 8,
+    "endVerse": 9,
+    "speaker": "Hiram",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 8,
+    "startVerse": 15,
+    "endVerse": 21,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 8,
+    "startVerse": 23,
+    "endVerse": 53,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 8,
+    "startVerse": 56,
+    "endVerse": 61,
+    "speaker": "Solomon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 9,
+    "startVerse": 3,
+    "endVerse": 9,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 9,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Hiram",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 10,
+    "startVerse": 6,
+    "endVerse": 9,
+    "speaker": "Sheba",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 11,
+    "startVerse": 11,
+    "endVerse": 13,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 11,
+    "startVerse": 21,
+    "endVerse": 22,
+    "speaker": "Hadad",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 11,
+    "startVerse": 31,
+    "endVerse": 39,
+    "speaker": "Ahijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 12,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Rehoboam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 12,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Rehoboam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 12,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Rehoboam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 12,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Rehoboam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 12,
+    "startVerse": 24,
+    "endVerse": 24,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 12,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "Jeroboam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 13,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Jeroboam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 13,
+    "startVerse": 6,
+    "endVerse": 7,
+    "speaker": "Jeroboam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 14,
+    "startVerse": 2,
+    "endVerse": 3,
+    "speaker": "Jeroboam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 14,
+    "startVerse": 5,
+    "endVerse": 16,
+    "speaker": "Ahijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 17,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 17,
+    "startVerse": 2,
+    "endVerse": 4,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 17,
+    "startVerse": 8,
+    "endVerse": 9,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 17,
+    "startVerse": 10,
+    "endVerse": 11,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 17,
+    "startVerse": 13,
+    "endVerse": 14,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 17,
+    "startVerse": 19,
+    "endVerse": 21,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 17,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Ahab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "Obadiah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "startVerse": 9,
+    "endVerse": 14,
+    "speaker": "Obadiah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Ahab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "startVerse": 18,
+    "endVerse": 19,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "startVerse": 21,
+    "endVerse": 25,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "startVerse": 27,
+    "endVerse": 27,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "startVerse": 30,
+    "endVerse": 30,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "startVerse": 34,
+    "endVerse": 34,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "startVerse": 36,
+    "endVerse": 37,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "startVerse": 40,
+    "endVerse": 41,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "startVerse": 43,
+    "endVerse": 44,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Jezebel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "startVerse": 11,
+    "endVerse": 13,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "startVerse": 15,
+    "endVerse": 18,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "Elisha",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 20,
+    "startVerse": 2,
+    "endVerse": 3,
+    "speaker": "Ben-hadad",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 20,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Ahab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 20,
+    "startVerse": 5,
+    "endVerse": 6,
+    "speaker": "Ben-hadad",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 20,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "Ahab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 20,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Ahab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 20,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Ben-hadad",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 20,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Ahab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 20,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "Ben-hadad",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 20,
+    "startVerse": 34,
+    "endVerse": 34,
+    "speaker": "Ben-hadad",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Ahab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Naboth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Jezebel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Ahab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "Jezebel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Jezebel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "startVerse": 17,
+    "endVerse": 19,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "Ahab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "startVerse": 20,
+    "endVerse": 24,
+    "speaker": "Elijah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "startVerse": 28,
+    "endVerse": 29,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "startVerse": 3,
+    "endVerse": 4,
+    "speaker": "Ahab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "startVerse": 4,
+    "endVerse": 5,
+    "speaker": "Jehoshaphat",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "startVerse": 7,
+    "endVerse": 8,
+    "speaker": "Jehoshaphat",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "startVerse": 8,
+    "endVerse": 9,
+    "speaker": "Ahab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "startVerse": 14,
+    "endVerse": 15,
+    "speaker": "Micaiah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "startVerse": 15,
+    "endVerse": 16,
+    "speaker": "Ahab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Micaiah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Ahab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "startVerse": 19,
+    "endVerse": 23,
+    "speaker": "Micaiah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "startVerse": 25,
+    "endVerse": 25,
+    "speaker": "Micaiah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "startVerse": 26,
+    "endVerse": 27,
+    "speaker": "Ahab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "Micaiah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "startVerse": 30,
+    "endVerse": 30,
+    "speaker": "Ahab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "startVerse": 31,
+    "endVerse": 31,
+    "speaker": "Ben-hadad",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "startVerse": 34,
+    "endVerse": 34,
+    "speaker": "Ahab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 1,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Elkanah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 1,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Hannah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 1,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Eli",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 1,
+    "startVerse": 15,
+    "endVerse": 16,
+    "speaker": "Hannah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 1,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Eli",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 1,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Hannah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 1,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "Elkanah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 1,
+    "startVerse": 26,
+    "endVerse": 28,
+    "speaker": "Hannah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 2,
+    "startVerse": 1,
+    "endVerse": 10,
+    "speaker": "Hannah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 2,
+    "startVerse": 23,
+    "endVerse": 25,
+    "speaker": "Eli",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Eli",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Eli",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Eli",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "startVerse": 11,
+    "endVerse": 14,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "Eli",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Eli",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Eli",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 8,
+    "startVerse": 7,
+    "endVerse": 9,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 8,
+    "startVerse": 11,
+    "endVerse": 18,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 8,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 8,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 9,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Kish",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 9,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 9,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 9,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 9,
+    "startVerse": 15,
+    "endVerse": 16,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 9,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 9,
+    "startVerse": 19,
+    "endVerse": 20,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 9,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 9,
+    "startVerse": 23,
+    "endVerse": 24,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 9,
+    "startVerse": 27,
+    "endVerse": 27,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 10,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 10,
+    "startVerse": 2,
+    "endVerse": 8,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 10,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 10,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 10,
+    "startVerse": 18,
+    "endVerse": 19,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 10,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 10,
+    "startVerse": 24,
+    "endVerse": 24,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 11,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Nahash",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 11,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 11,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 11,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 11,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 12,
+    "startVerse": 1,
+    "endVerse": 5,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 12,
+    "startVerse": 6,
+    "endVerse": 17,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 12,
+    "startVerse": 20,
+    "endVerse": 25,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 13,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 13,
+    "startVerse": 11,
+    "endVerse": 12,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 13,
+    "startVerse": 13,
+    "endVerse": 14,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "startVerse": 8,
+    "endVerse": 10,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "startVerse": 18,
+    "endVerse": 19,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "startVerse": 29,
+    "endVerse": 30,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "startVerse": 33,
+    "endVerse": 34,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "startVerse": 36,
+    "endVerse": 36,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "startVerse": 38,
+    "endVerse": 38,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "startVerse": 39,
+    "endVerse": 39,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "startVerse": 40,
+    "endVerse": 40,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "startVerse": 41,
+    "endVerse": 41,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "startVerse": 42,
+    "endVerse": 42,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "startVerse": 43,
+    "endVerse": 43,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "startVerse": 44,
+    "endVerse": 44,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "startVerse": 1,
+    "endVerse": 3,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "startVerse": 10,
+    "endVerse": 11,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "startVerse": 16,
+    "endVerse": 19,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "startVerse": 20,
+    "endVerse": 21,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "startVerse": 22,
+    "endVerse": 23,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "startVerse": 24,
+    "endVerse": 25,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "startVerse": 26,
+    "endVerse": 26,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "startVerse": 30,
+    "endVerse": 30,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "startVerse": 32,
+    "endVerse": 32,
+    "speaker": "Agag",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "startVerse": 32,
+    "endVerse": 33,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "startVerse": 2,
+    "endVerse": 3,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "startVerse": 8,
+    "endVerse": 11,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Jesse",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "startVerse": 8,
+    "endVerse": 10,
+    "speaker": "Goliath",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "startVerse": 26,
+    "endVerse": 26,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "Eliab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "startVerse": 29,
+    "endVerse": 30,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "startVerse": 32,
+    "endVerse": 32,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "startVerse": 33,
+    "endVerse": 33,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "startVerse": 34,
+    "endVerse": 37,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "startVerse": 37,
+    "endVerse": 37,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "startVerse": 39,
+    "endVerse": 39,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "startVerse": 43,
+    "endVerse": 44,
+    "speaker": "Goliath",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "startVerse": 45,
+    "endVerse": 47,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "startVerse": 55,
+    "endVerse": 55,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "startVerse": 55,
+    "endVerse": 55,
+    "speaker": "Abner",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "startVerse": 56,
+    "endVerse": 56,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "startVerse": 58,
+    "endVerse": 58,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "startVerse": 58,
+    "endVerse": 58,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 18,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 18,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 18,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 18,
+    "startVerse": 21,
+    "endVerse": 22,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 18,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 18,
+    "startVerse": 25,
+    "endVerse": 25,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 18,
+    "startVerse": 26,
+    "endVerse": 26,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 19,
+    "startVerse": 4,
+    "endVerse": 5,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 19,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 19,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Michal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 19,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Michal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 19,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 19,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 19,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Michal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 19,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "startVerse": 5,
+    "endVerse": 8,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "startVerse": 11,
+    "endVerse": 15,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "startVerse": 18,
+    "endVerse": 23,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "startVerse": 27,
+    "endVerse": 27,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "startVerse": 28,
+    "endVerse": 29,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "startVerse": 30,
+    "endVerse": 31,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "startVerse": 32,
+    "endVerse": 32,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "startVerse": 36,
+    "endVerse": 37,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "startVerse": 40,
+    "endVerse": 40,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "startVerse": 42,
+    "endVerse": 42,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 21,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Ahimelech",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 21,
+    "startVerse": 2,
+    "endVerse": 3,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 21,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Ahimelech",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 21,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 21,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 21,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Ahimelech",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 21,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 21,
+    "startVerse": 14,
+    "endVerse": 15,
+    "speaker": "Achish",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Gad",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "startVerse": 7,
+    "endVerse": 8,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "startVerse": 9,
+    "endVerse": 10,
+    "speaker": "Doeg",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "Ahimelech",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "startVerse": 14,
+    "endVerse": 15,
+    "speaker": "Ahimelech",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "startVerse": 16,
+    "endVerse": 17,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "startVerse": 22,
+    "endVerse": 23,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 23,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 23,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 23,
+    "startVerse": 9,
+    "endVerse": 12,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 23,
+    "startVerse": 11,
+    "endVerse": 12,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 23,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Jonathan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 23,
+    "startVerse": 21,
+    "endVerse": 23,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 24,
+    "startVerse": 6,
+    "endVerse": 7,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 24,
+    "startVerse": 8,
+    "endVerse": 15,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 24,
+    "startVerse": 16,
+    "endVerse": 21,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "startVerse": 5,
+    "endVerse": 8,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "startVerse": 10,
+    "endVerse": 11,
+    "speaker": "Nabal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "Abigail",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "startVerse": 24,
+    "endVerse": 31,
+    "speaker": "Abigail",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "startVerse": 32,
+    "endVerse": 35,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "startVerse": 39,
+    "endVerse": 39,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "startVerse": 41,
+    "endVerse": 41,
+    "speaker": "Abigail",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "startVerse": 41,
+    "endVerse": 41,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Abishai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "startVerse": 9,
+    "endVerse": 11,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Abner",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "startVerse": 15,
+    "endVerse": 16,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "startVerse": 17,
+    "endVerse": 20,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "startVerse": 22,
+    "endVerse": 24,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "startVerse": 25,
+    "endVerse": 25,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 27,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 27,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 27,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Achish",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Achish",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Achish",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "startVerse": 16,
+    "endVerse": 19,
+    "speaker": "Samuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 29,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Achish",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 29,
+    "startVerse": 6,
+    "endVerse": 7,
+    "speaker": "Achish",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 29,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 29,
+    "startVerse": 9,
+    "endVerse": 10,
+    "speaker": "Achish",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 30,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 30,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 30,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 30,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 30,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 30,
+    "startVerse": 23,
+    "endVerse": 25,
+    "speaker": "David",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 31,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Saul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
   }
 ]

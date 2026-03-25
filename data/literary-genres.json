@@ -7146,5 +7146,703 @@
     "volumeAbbrev": "D&C",
     "volumeName": "Doctrine and Covenants",
     "bookId": 82
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 1,
+    "genre": "genealogy",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 2,
+    "genre": "genealogy",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 3,
+    "genre": "genealogy",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 4,
+    "genre": "genealogy",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 5,
+    "genre": "genealogy",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 6,
+    "genre": "genealogy",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 7,
+    "genre": "genealogy",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 8,
+    "genre": "genealogy",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 9,
+    "genre": "genealogy",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 10,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 11,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 12,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 13,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 14,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 15,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 16,
+    "genre": "narrative",
+    "subgenre": "psalm",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 17,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 18,
+    "genre": "narrative",
+    "subgenre": "military record",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 19,
+    "genre": "narrative",
+    "subgenre": "military record",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 20,
+    "genre": "narrative",
+    "subgenre": "military record",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 22,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 23,
+    "genre": "historical record",
+    "subgenre": "administrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 24,
+    "genre": "historical record",
+    "subgenre": "administrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 25,
+    "genre": "historical record",
+    "subgenre": "administrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 26,
+    "genre": "historical record",
+    "subgenre": "administrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 27,
+    "genre": "historical record",
+    "subgenre": "administrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 28,
+    "genre": "narrative",
+    "subgenre": "sermon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 29,
+    "genre": "narrative",
+    "subgenre": "prayer",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "genre": "narrative",
+    "subgenre": "succession narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "genre": "narrative",
+    "subgenre": "royal testament",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 3,
+    "genre": "narrative",
+    "subgenre": "wisdom narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 4,
+    "genre": "historical record",
+    "subgenre": "administrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 5,
+    "genre": "narrative",
+    "subgenre": "diplomatic correspondence",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 6,
+    "genre": "historical record",
+    "subgenre": "architectural description",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 7,
+    "genre": "historical record",
+    "subgenre": "architectural description",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 8,
+    "genre": "narrative",
+    "subgenre": "prayer",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 9,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 10,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 11,
+    "genre": "narrative",
+    "subgenre": "prophetic judgment",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 12,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 13,
+    "genre": "narrative",
+    "subgenre": "prophetic narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 14,
+    "genre": "narrative",
+    "subgenre": "prophetic oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 15,
+    "genre": "historical record",
+    "subgenre": "royal chronicle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 16,
+    "genre": "historical record",
+    "subgenre": "royal chronicle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 17,
+    "genre": "narrative",
+    "subgenre": "prophetic narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "genre": "narrative",
+    "subgenre": "prophetic narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "genre": "narrative",
+    "subgenre": "theophany",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 20,
+    "genre": "narrative",
+    "subgenre": "war narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "genre": "narrative",
+    "subgenre": "prophetic judgment",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "genre": "narrative",
+    "subgenre": "prophetic narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 1,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 2,
+    "genre": "narrative",
+    "subgenre": "song/prayer",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "genre": "narrative",
+    "subgenre": "prophetic call",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 4,
+    "genre": "narrative",
+    "subgenre": "military record",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 5,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 6,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 7,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 8,
+    "genre": "narrative",
+    "subgenre": "prophetic warning",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 9,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 10,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 11,
+    "genre": "narrative",
+    "subgenre": "military record",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 12,
+    "genre": "narrative",
+    "subgenre": "sermon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 13,
+    "genre": "narrative",
+    "subgenre": "military record",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "genre": "narrative",
+    "subgenre": "military record",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "genre": "narrative",
+    "subgenre": "prophetic judgment",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "genre": "narrative",
+    "subgenre": "heroic account",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 18,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 19,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 21,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 23,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 24,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 27,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 29,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 30,
+    "genre": "narrative",
+    "subgenre": "military record",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 31,
+    "genre": "narrative",
+    "subgenre": "military record",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
   }
 ]

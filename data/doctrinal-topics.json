@@ -9839,5 +9839,1019 @@
     "volumeAbbrev": "D&C",
     "volumeName": "Doctrine and Covenants",
     "bookId": 82
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 1,
+    "topics": [
+      "posterity",
+      "creation",
+      "lineage",
+      "inheritance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 2,
+    "topics": [
+      "covenant",
+      "lineage",
+      "posterity"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 3,
+    "topics": [
+      "kingship",
+      "posterity",
+      "continuity"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 4,
+    "topics": [
+      "prayer",
+      "faith",
+      "blessing"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 5,
+    "topics": [
+      "faithfulness",
+      "judgment",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 6,
+    "topics": [
+      "priesthood",
+      "temple",
+      "service"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 7,
+    "topics": [
+      "posterity",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 8,
+    "topics": [
+      "lineage",
+      "identity"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 9,
+    "topics": [
+      "gathering of israel",
+      "temple",
+      "stewardship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 10,
+    "topics": [
+      "obedience",
+      "judgment",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 11,
+    "topics": [
+      "leadership",
+      "unity",
+      "anointing"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 12,
+    "topics": [
+      "unity",
+      "faithfulness",
+      "gathering"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 13,
+    "topics": [
+      "reverence",
+      "priesthood",
+      "obedience",
+      "holiness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 14,
+    "topics": [
+      "revelation",
+      "sovereignty",
+      "faith"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 15,
+    "topics": [
+      "priesthood",
+      "reverence",
+      "worship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 16,
+    "topics": [
+      "praise",
+      "thanksgiving",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 17,
+    "topics": [
+      "covenant",
+      "prophecy",
+      "humility"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 18,
+    "topics": [
+      "justice",
+      "consecration"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 19,
+    "topics": [
+      "honor",
+      "judgment",
+      "war"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 20,
+    "topics": [
+      "valor",
+      "war"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "topics": [
+      "repentance",
+      "sacrifice",
+      "mercy",
+      "atonement"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 22,
+    "topics": [
+      "temple",
+      "sacrifice",
+      "preparation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 23,
+    "topics": [
+      "priesthood",
+      "temple",
+      "service"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 24,
+    "topics": [
+      "priesthood",
+      "sacred order"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 25,
+    "topics": [
+      "praise",
+      "worship",
+      "prophecy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 26,
+    "topics": [
+      "stewardship",
+      "service"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 27,
+    "topics": [
+      "stewardship",
+      "government"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 28,
+    "topics": [
+      "revelation",
+      "commandments",
+      "temple",
+      "agency"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 29,
+    "topics": [
+      "sacrifice",
+      "charity",
+      "praise",
+      "stewardship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "topics": [
+      "succession",
+      "authority",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "topics": [
+      "justice",
+      "obedience",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 3,
+    "topics": [
+      "wisdom",
+      "revelation",
+      "humility",
+      "prayer"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 4,
+    "topics": [
+      "prosperity",
+      "stewardship",
+      "wisdom"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 5,
+    "topics": [
+      "temple",
+      "cooperation",
+      "preparation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 6,
+    "topics": [
+      "temple",
+      "holiness",
+      "covenant",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 7,
+    "topics": [
+      "temple",
+      "craftsmanship",
+      "dedication"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 8,
+    "topics": [
+      "prayer",
+      "covenant",
+      "repentance",
+      "temple",
+      "forgiveness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 9,
+    "topics": [
+      "obedience",
+      "covenant",
+      "judgment",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 10,
+    "topics": [
+      "wisdom",
+      "prosperity",
+      "testimony"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 11,
+    "topics": [
+      "apostasy",
+      "judgment",
+      "idolatry",
+      "consequences of sin"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 12,
+    "topics": [
+      "division",
+      "pride",
+      "idolatry",
+      "foolishness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 13,
+    "topics": [
+      "obedience",
+      "prophetic authority",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 14,
+    "topics": [
+      "prophecy",
+      "judgment",
+      "idolatry"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 15,
+    "topics": [
+      "faithfulness",
+      "reform",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 16,
+    "topics": [
+      "wickedness",
+      "judgment",
+      "idolatry"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 17,
+    "topics": [
+      "faith",
+      "miracles",
+      "divine provision",
+      "resurrection"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "topics": [
+      "true worship",
+      "faith",
+      "miracles",
+      "repentance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "topics": [
+      "revelation",
+      "still small voice",
+      "prophetic calling",
+      "comfort"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 20,
+    "topics": [
+      "divine aid",
+      "obedience",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "topics": [
+      "justice",
+      "covetousness",
+      "judgment",
+      "repentance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "topics": [
+      "prophecy",
+      "truth",
+      "agency",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 1,
+    "topics": [
+      "prayer",
+      "faith",
+      "dedication",
+      "covenants"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 2,
+    "topics": [
+      "praise",
+      "judgment",
+      "priesthood",
+      "pride"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "topics": [
+      "revelation",
+      "calling",
+      "prophecy",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 4,
+    "topics": [
+      "judgment",
+      "consequences",
+      "apostasy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 5,
+    "topics": [
+      "sovereignty",
+      "judgment",
+      "idolatry"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 6,
+    "topics": [
+      "reverence",
+      "holiness",
+      "repentance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 7,
+    "topics": [
+      "repentance",
+      "prayer",
+      "deliverance",
+      "faith"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 8,
+    "topics": [
+      "agency",
+      "obedience",
+      "worldliness",
+      "consequences"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 9,
+    "topics": [
+      "revelation",
+      "calling",
+      "providence"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 10,
+    "topics": [
+      "anointing",
+      "gifts of the Spirit",
+      "prophecy",
+      "kingship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 11,
+    "topics": [
+      "courage",
+      "leadership",
+      "mercy",
+      "unity"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 12,
+    "topics": [
+      "integrity",
+      "faithfulness",
+      "accountability",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 13,
+    "topics": [
+      "obedience",
+      "priesthood",
+      "patience",
+      "consequences"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "topics": [
+      "faith",
+      "courage",
+      "rash vows",
+      "deliverance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "topics": [
+      "obedience",
+      "sacrifice",
+      "repentance",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "topics": [
+      "anointing",
+      "divine calling",
+      "discernment",
+      "gifts of the Spirit"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "topics": [
+      "faith",
+      "courage",
+      "trust in God",
+      "miracles"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 18,
+    "topics": [
+      "friendship",
+      "covenants",
+      "envy",
+      "loyalty"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 19,
+    "topics": [
+      "persecution",
+      "loyalty",
+      "divine protection"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "topics": [
+      "covenants",
+      "friendship",
+      "loyalty",
+      "sacrifice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 21,
+    "topics": [
+      "mercy",
+      "law",
+      "survival"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "topics": [
+      "refuge",
+      "persecution",
+      "justice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 23,
+    "topics": [
+      "revelation",
+      "guidance",
+      "faith",
+      "friendship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 24,
+    "topics": [
+      "mercy",
+      "restraint",
+      "trust in God",
+      "forgiveness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "topics": [
+      "wisdom",
+      "justice",
+      "temperance",
+      "intervention"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "topics": [
+      "mercy",
+      "trust in God",
+      "restraint"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 27,
+    "topics": [
+      "exile",
+      "compromise",
+      "survival"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "topics": [
+      "necromancy",
+      "judgment",
+      "consequences",
+      "apostasy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 29,
+    "topics": [
+      "providence",
+      "protection"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 30,
+    "topics": [
+      "revelation",
+      "leadership",
+      "generosity",
+      "justice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 31,
+    "topics": [
+      "consequences",
+      "death",
+      "loyalty",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
   }
 ]

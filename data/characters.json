@@ -20451,5 +20451,233 @@
     "tier": 4,
     "family": {},
     "portrait": null
+  },
+  {
+    "id": "jabez",
+    "name": "Jabez",
+    "description": "A man of Judah who prayed for God to enlarge his territory and keep him from evil.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "amasai",
+    "name": "Amasai",
+    "description": "Chief of David's captains who declared loyalty to David, moved by the Spirit.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "benaiah",
+    "name": "Benaiah",
+    "description": "Son of Jehoiada, one of David's mighty men and captain of the bodyguard, later served Solomon.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 3
+  },
+  {
+    "id": "micaiah",
+    "name": "Micaiah",
+    "description": "A prophet of the Lord who warned Ahab against going to battle at Ramoth-gilead.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "naboth",
+    "name": "Naboth",
+    "description": "A Jezreelite who was murdered by Jezebel's plot so Ahab could seize his vineyard.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "hadad-edomite",
+    "name": "Hadad",
+    "description": "An Edomite prince who became an adversary to Solomon after being raised in Egypt.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "shimei-benjamite",
+    "name": "Shimei",
+    "description": "A Benjamite who cursed David during Absalom's rebellion and was later executed by Solomon.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "agag",
+    "name": "Agag",
+    "description": "King of the Amalekites whom Saul wrongly spared and Samuel later executed.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "eliab",
+    "name": "Eliab",
+    "description": "David's eldest brother who rebuked him at the Valley of Elah for coming to see the battle.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "kish",
+    "name": "Kish",
+    "description": "Father of King Saul, a Benjamite of wealth and standing.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "abishai",
+    "name": "Abishai",
+    "description": "Son of Zeruiah, David's nephew and one of his most loyal warriors.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "abner",
+    "name": "Abner",
+    "description": "Commander of Saul's army and cousin of Saul who later supported Ishbosheth.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 3
+  },
+  {
+    "id": "nahash",
+    "name": "Nahash",
+    "description": "King of the Ammonites who besieged Jabesh-gilead and was defeated by Saul.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "huram-king-of-tyre",
+    "name": "Huram",
+    "description": "King of Tyre who provided materials and craftsmen for Solomon's Temple construction.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4,
+    "aliases": [
+      "Hiram"
+    ]
+  },
+  {
+    "id": "shemaiah-prophet",
+    "name": "Shemaiah",
+    "description": "A prophet who forbade Rehoboam from warring against the northern tribes after the kingdom divided.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "jahaziel",
+    "name": "Jahaziel",
+    "description": "A Levite upon whom the Spirit came, who prophesied victory for Jehoshaphat against the Moabite-Ammonite coalition.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "oded",
+    "name": "Oded",
+    "description": "A prophet in Samaria who persuaded the northern Israelites to release their Judahite captives during Ahaz's reign.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "sennacherib",
+    "name": "Sennacherib",
+    "description": "King of Assyria who invaded Judah during Hezekiah's reign and whose army was destroyed by an angel of the Lord.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 3
+  },
+  {
+    "id": "huldah",
+    "name": "Huldah",
+    "description": "A prophetess consulted by Josiah's officials after the book of the law was found in the Temple.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "queen-of-sheba",
+    "name": "Queen of Sheba",
+    "description": "A foreign queen who visited Solomon to test his wisdom with hard questions and was astonished by his kingdom.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 3
+  },
+  {
+    "id": "gehazi",
+    "name": "Gehazi",
+    "description": "Servant of the prophet Elisha who was cursed with leprosy for greedily accepting gifts from Naaman.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "hilkiah",
+    "name": "Hilkiah",
+    "description": "High priest during Josiah's reign who discovered the Book of the Law in the Temple.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "gedaliah",
+    "name": "Gedaliah",
+    "description": "Governor of Judah appointed by Nebuchadnezzar after the fall of Jerusalem, later assassinated.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "jehonadab",
+    "name": "Jehonadab",
+    "description": "Son of Rechab who joined Jehu in his campaign to destroy Baal worship in Israel.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "athaliah",
+    "name": "Athaliah",
+    "description": "Daughter of Ahab and Jezebel who seized the throne of Judah and attempted to destroy the royal line.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 3
   }
 ]

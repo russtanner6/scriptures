@@ -8072,5 +8072,825 @@
     "volumeAbbrev": "D&C",
     "volumeName": "Doctrine and Covenants",
     "bookId": 82
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 1,
+    "era": "Creation / Patriarchal",
+    "approxDate": "n/a",
+    "setting": "Ancient Near East",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 2,
+    "era": "Patriarchal / United Monarchy",
+    "approxDate": "c. 1800-1000 BC",
+    "setting": "Canaan / Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 3,
+    "era": "United Monarchy / Exile",
+    "approxDate": "c. 1000-500 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 4,
+    "era": "Patriarchal / Monarchy",
+    "approxDate": "c. 1800-800 BC",
+    "setting": "Canaan / Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 5,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 722 BC",
+    "setting": "East of Jordan River",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 6,
+    "era": "Exodus / Monarchy",
+    "approxDate": "c. 1446-1000 BC",
+    "setting": "Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 7,
+    "era": "Monarchy",
+    "approxDate": "c. 1000 BC",
+    "setting": "Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 8,
+    "era": "Monarchy",
+    "approxDate": "c. 1050 BC",
+    "setting": "Benjamin territory",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 9,
+    "era": "Post-exile",
+    "approxDate": "c. 538 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 10,
+    "era": "United Monarchy",
+    "approxDate": "c. 1010 BC",
+    "setting": "Mount Gilboa",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 11,
+    "era": "United Monarchy",
+    "approxDate": "c. 1010 BC",
+    "setting": "Hebron and Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 12,
+    "era": "United Monarchy",
+    "approxDate": "c. 1010-1000 BC",
+    "setting": "Ziklag and Hebron",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 13,
+    "era": "United Monarchy",
+    "approxDate": "c. 1000 BC",
+    "setting": "Kirjath-jearim to Perez-uzza",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 14,
+    "era": "United Monarchy",
+    "approxDate": "c. 1000 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 15,
+    "era": "United Monarchy",
+    "approxDate": "c. 1000 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 16,
+    "era": "United Monarchy",
+    "approxDate": "c. 1000 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 17,
+    "era": "United Monarchy",
+    "approxDate": "c. 1000 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 18,
+    "era": "United Monarchy",
+    "approxDate": "c. 1000-980 BC",
+    "setting": "Syria, Moab, and Edom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 19,
+    "era": "United Monarchy",
+    "approxDate": "c. 995 BC",
+    "setting": "Ammon and Syria",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 20,
+    "era": "United Monarchy",
+    "approxDate": "c. 990 BC",
+    "setting": "Rabbah and Philistia",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "era": "United Monarchy",
+    "approxDate": "c. 975 BC",
+    "setting": "Jerusalem, Ornan's threshingfloor",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 22,
+    "era": "United Monarchy",
+    "approxDate": "c. 970 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 23,
+    "era": "United Monarchy",
+    "approxDate": "c. 970 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 24,
+    "era": "United Monarchy",
+    "approxDate": "c. 970 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 25,
+    "era": "United Monarchy",
+    "approxDate": "c. 970 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 26,
+    "era": "United Monarchy",
+    "approxDate": "c. 970 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 27,
+    "era": "United Monarchy",
+    "approxDate": "c. 970 BC",
+    "setting": "Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 28,
+    "era": "United Monarchy",
+    "approxDate": "c. 970 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 29,
+    "era": "United Monarchy",
+    "approxDate": "c. 970 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "era": "United Monarchy",
+    "approxDate": "c. 970 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "era": "United Monarchy",
+    "approxDate": "c. 970 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 3,
+    "era": "United Monarchy",
+    "approxDate": "c. 967 BC",
+    "setting": "Gibeon and Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 4,
+    "era": "United Monarchy",
+    "approxDate": "c. 965 BC",
+    "setting": "Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 5,
+    "era": "United Monarchy",
+    "approxDate": "c. 966 BC",
+    "setting": "Jerusalem and Tyre",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 6,
+    "era": "United Monarchy",
+    "approxDate": "c. 966-959 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 7,
+    "era": "United Monarchy",
+    "approxDate": "c. 959-946 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 8,
+    "era": "United Monarchy",
+    "approxDate": "c. 959 BC",
+    "setting": "Jerusalem, the Temple",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 9,
+    "era": "United Monarchy",
+    "approxDate": "c. 946 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 10,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 11,
+    "era": "United Monarchy",
+    "approxDate": "c. 940-930 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 12,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 930 BC",
+    "setting": "Shechem and Bethel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 13,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 930 BC",
+    "setting": "Bethel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 14,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 930-910 BC",
+    "setting": "Tirzah and Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 15,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 913-886 BC",
+    "setting": "Judah and Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 16,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 886-874 BC",
+    "setting": "Israel (Tirzah, Samaria)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 17,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 870 BC",
+    "setting": "Gilead, Brook Cherith, Zarephath",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 868 BC",
+    "setting": "Mount Carmel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 868 BC",
+    "setting": "Beersheba, Mount Horeb (Sinai)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 20,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 857 BC",
+    "setting": "Samaria and Aphek",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 855 BC",
+    "setting": "Jezreel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 853 BC",
+    "setting": "Samaria and Ramoth-gilead",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 1,
+    "era": "Period of the Judges",
+    "approxDate": "c. 1100 BC",
+    "setting": "Shiloh (tabernacle)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 2,
+    "era": "Period of the Judges",
+    "approxDate": "c. 1100 BC",
+    "setting": "Shiloh",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "era": "Period of the Judges",
+    "approxDate": "c. 1090 BC",
+    "setting": "Shiloh (tabernacle)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 4,
+    "era": "Period of the Judges",
+    "approxDate": "c. 1085 BC",
+    "setting": "Ebenezer / Aphek",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 5,
+    "era": "Period of the Judges",
+    "approxDate": "c. 1085 BC",
+    "setting": "Philistine cities (Ashdod, Gath, Ekron)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 6,
+    "era": "Period of the Judges",
+    "approxDate": "c. 1085 BC",
+    "setting": "Beth-shemesh",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 7,
+    "era": "Period of the Judges",
+    "approxDate": "c. 1065 BC",
+    "setting": "Mizpeh",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 8,
+    "era": "Transition to Monarchy",
+    "approxDate": "c. 1052 BC",
+    "setting": "Ramah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 9,
+    "era": "Transition to Monarchy",
+    "approxDate": "c. 1050 BC",
+    "setting": "Land of Zuph",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 10,
+    "era": "United Monarchy",
+    "approxDate": "c. 1050 BC",
+    "setting": "Mizpeh",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 11,
+    "era": "United Monarchy",
+    "approxDate": "c. 1050 BC",
+    "setting": "Jabesh-gilead / Gilgal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 12,
+    "era": "United Monarchy",
+    "approxDate": "c. 1050 BC",
+    "setting": "Gilgal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 13,
+    "era": "United Monarchy",
+    "approxDate": "c. 1048 BC",
+    "setting": "Gilgal / Michmash",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "era": "United Monarchy",
+    "approxDate": "c. 1048 BC",
+    "setting": "Michmash",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "era": "United Monarchy",
+    "approxDate": "c. 1028 BC",
+    "setting": "Amalek / Gilgal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "era": "United Monarchy",
+    "approxDate": "c. 1025 BC",
+    "setting": "Bethlehem / Gibeah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "era": "United Monarchy",
+    "approxDate": "c. 1024 BC",
+    "setting": "Valley of Elah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 18,
+    "era": "United Monarchy",
+    "approxDate": "c. 1023 BC",
+    "setting": "Gibeah / Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 19,
+    "era": "United Monarchy",
+    "approxDate": "c. 1022 BC",
+    "setting": "Gibeah / Ramah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "era": "United Monarchy",
+    "approxDate": "c. 1022 BC",
+    "setting": "Gibeah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 21,
+    "era": "United Monarchy",
+    "approxDate": "c. 1021 BC",
+    "setting": "Nob / Gath",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "era": "United Monarchy",
+    "approxDate": "c. 1021 BC",
+    "setting": "Cave of Adullam / Nob",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 23,
+    "era": "United Monarchy",
+    "approxDate": "c. 1020 BC",
+    "setting": "Keilah / Wilderness of Ziph",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 24,
+    "era": "United Monarchy",
+    "approxDate": "c. 1018 BC",
+    "setting": "En-gedi",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "era": "United Monarchy",
+    "approxDate": "c. 1017 BC",
+    "setting": "Wilderness of Paran / Carmel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "era": "United Monarchy",
+    "approxDate": "c. 1016 BC",
+    "setting": "Wilderness of Ziph",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 27,
+    "era": "United Monarchy",
+    "approxDate": "c. 1015 BC",
+    "setting": "Ziklag (Philistia)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "era": "United Monarchy",
+    "approxDate": "c. 1010 BC",
+    "setting": "Endor",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 29,
+    "era": "United Monarchy",
+    "approxDate": "c. 1010 BC",
+    "setting": "Aphek",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 30,
+    "era": "United Monarchy",
+    "approxDate": "c. 1010 BC",
+    "setting": "Ziklag",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 31,
+    "era": "United Monarchy",
+    "approxDate": "c. 1010 BC",
+    "setting": "Mount Gilboa",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
   }
 ]

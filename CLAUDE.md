@@ -294,7 +294,14 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - **VolumeTooltip:** Reusable component wrapping volume abbreviation pills/badges. Shows full name on hover (600ms delay). Applied to CharacterDetailPanel, CharacterDirectory, home page.
 - **useBackToClose:** Shared hook for mobile back-button panel close. Pushes history state, listens for popstate. Used by all slide-in panels and modals.
 - **User Preferences System:** `PreferencesProvider` context wraps the app (in layout.tsx). All components use `usePreferencesContext()` to get `isVolumeVisible()`, `displaySpeakerName()`. New tools/features MUST call `usePreferencesContext()` and filter volumes accordingly. Preferences stored in localStorage as abbreviation keys (OT, NT, BoM, D&C, PoGP, Apoc). Merge-with-defaults pattern ensures forward compatibility. Apocrypha defaults to OFF.
-- **Always LDS-centric:** Theology mode toggle was removed in Session 15. Site always uses LDS perspective — divine OT speakers show as "Jesus Christ (Jehovah)". No dual-mode switching.
+- **Always LDS-centric:** Theology mode toggle was removed in Session 15. Site always uses LDS perspective. No dual-mode switching.
+- **Speaker display names by volume:** Data files always store "Jesus Christ" for divine speech (consistent internal ID). But the **UI display** must be context-aware:
+  - **OT:** Show "Jehovah" (not "Jesus Christ") — the pre-mortal Christ spoke as Jehovah in OT contexts
+  - **NT:** Show "Jesus Christ" or "Jesus" as appropriate
+  - **BoM:** Show "Jesus Christ" (He identifies Himself by that name in 3 Nephi)
+  - **D&C:** Show "Jesus Christ" (standard D&C revelatory voice)
+  - **PoGP:** Show "Jehovah" for Moses/Abraham contexts, "Jesus Christ" for JSH
+  - The `displaySpeakerName()` function in PreferencesProvider should handle this volume-based mapping
 - **Sentiment system:** 4 theological categories: Exaltation & Glory, Covenant Peace, Admonition & Justice, Trial & Contrition. Old Claude API scores wiped — being rebuilt via Gemini pipeline with higher quality. Keyword lexicon still in `sentiment-lexicon.ts` as fallback. `data/chapter-sentiments.json` enriched with volumeAbbrev/volumeName/bookId per entry. Not yet wired into Sentiment Explorer UI — still using keyword lexicon until enough books are scored via Gemini.
 - **Heading standardization:** All tool page h1 headings: centered, 1.8rem desktop / 1.4rem mobile, fontWeight 800, letterSpacing 0.02em. Applied to: WordCloud, Chiasmus, TopicMap, CharacterDirectory, LocationDirectory, BookmarksList, SettingsPanel. 24px top padding on `.page-container` globally.
 - **Modern language:** `text_modern` column in verses table. OT+NT populated with World English Bible (WEB, public domain) via `add-modern-text.ts`. 31,095/31,102 verses matched (99.98%). BoM/D&C/PoGP not yet available. Toggle shows in Layers section only when modern text exists for the chapter.

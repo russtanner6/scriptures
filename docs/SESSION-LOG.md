@@ -1,5 +1,58 @@
 # Scripture Explorer — Session Log
 
+## 2026-03-25 — Session 22: D&C Complete (Claude Code) + OT Books Begin (Gemini)
+
+### What was done
+
+**D&C 138/138 sections — ALL COMPLETE (Claude Code generated, no Gemini):**
+- All 10 pipeline outputs for every section: sentiment, speakers, summaries, themes, cross-references, doctrinal topics, historical context, literary genres, notable verses
+- Merge script created (`scripts/merge-dc-batch.js`) for batch processing
+- 7 batch files: dc-batch-1.json through dc-batch-7.json
+
+**OT books started via Gemini pipeline:**
+- 1 Chronicles (29 chapters) — merged
+- 1 Kings (22 chapters) — in progress
+- 1 Samuel (31 chapters) — in progress
+- 2 Chronicles (36 chapters) — in progress
+
+**Characters added:** Jabez, Amasai, Benaiah, Micaiah, Naboth, Hadad, Shimei, Agag, Eliab, Kish, Abishai, Abner, Nahash, Huram, Shemaiah, Jahaziel, Oded, Sennacherib, Huldah, Queen of Sheba → 842 total
+
+**Gemini Scoring Guide rewritten** (`~/Desktop/GEMINI-SCORING-GUIDE.md`):
+- Added "COMMON MISTAKES TO AVOID" table
+- Explicit format enforcement for all 10 outputs
+- Fixed all issues from first Gemini attempt (wrong sentiment format, single themes, missing fields)
+
+### User decisions logged this session
+
+1. **Speaker display names:** Data files keep "Jesus Christ" internally, but UI must show "Jehovah" for OT divine speech, "Jesus Christ" for NT/BoM/D&C. Added to CLAUDE.md under "Speaker display names by volume" rule. The `displaySpeakerName()` function needs to implement this volume-based mapping.
+
+2. **Group speaker audit needed:** All speaker data across ALL volumes needs an audit to remove group speakers (e.g., "Servants of Achish", "People of Israel", "Elders"). Only individual named speakers should remain. Exception: "Legion" (demonic entity, kept per user request). This audit should happen after all OT books are processed.
+
+3. **Gemini can batch D&C sections** but struggled with format compliance. Claude Code ended up doing all 138 D&C sections directly — faster and more accurate.
+
+### PICKUP INSTRUCTIONS FOR NEXT SESSION
+
+**Current focus: Gemini 10-Output Pipeline for OT — nothing else until all scriptures are scored.**
+
+**Pipeline completion:**
+- Book of Mormon: 15/15 COMPLETE
+- Pearl of Great Price: 5/5 COMPLETE
+- Apocrypha: 14/14 COMPLETE
+- New Testament: 27/27 COMPLETE
+- D&C: 138/138 COMPLETE
+- Old Testament: 4/39 IN PROGRESS (1 Chr, 1 Kings, 1 Samuel, 2 Chr)
+
+**Remaining OT books (35):** Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 2 Samuel, 2 Kings, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Song of Solomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi
+
+**After pipeline is complete:**
+1. Run full speaker audit — remove all group speakers across all volumes (keep only individual named people + Legion)
+2. Wire Sentiment Explorer to use chapter-sentiments.json
+3. Build API routes for new data types (summaries, themes, cross-refs, etc.)
+4. Build UI in ScriptureReader for summaries/themes/cross-refs/notable verses
+5. Implement `displaySpeakerName()` volume-based mapping (Jehovah for OT, Jesus Christ for NT/BoM/D&C)
+
+---
+
 ## 2026-03-25 — Session 21: Complete NT via Gemini Pipeline + D&C File Split
 
 ### What was done

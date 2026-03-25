@@ -6544,5 +6544,661 @@
     "volumeAbbrev": "D&C",
     "volumeName": "Doctrine and Covenants",
     "bookId": 82
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 1,
+    "summary": "The genealogical record from Adam to Noah, through the sons of Japheth, Ham, and Shem, and the descendants of Abraham, Esau, and the kings of Edom.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 2,
+    "summary": "Provides the genealogy of the sons of Israel, focusing specifically on the lineage of Judah, including the ancestors of Caleb and David.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 3,
+    "summary": "Traces the royal lineage of King David, listing his sons born in Hebron and Jerusalem, followed by the line of Solomon through the exile and beyond.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 4,
+    "summary": "Details the descendants of Judah and Simeon, including the account of Jabez and his prayer for divine blessing and protection.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 5,
+    "summary": "Records the genealogies of the trans-Jordanian tribes (Reuben, Gad, and half-Manasseh), their military exploits, and their eventual exile to Assyria.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 6,
+    "summary": "Focuses on the genealogy of Levi, specifically the high priestly line and the families of the singers, and lists the cities assigned to the Levites.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 7,
+    "summary": "Details the genealogies of Issachar, Benjamin, Naphtali, Manasseh, Ephraim, and Asher, documenting their families and military strength.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 8,
+    "summary": "Provides a second, more detailed genealogy of the tribe of Benjamin, highlighting the family of Saul, the first king of Israel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 9,
+    "summary": "Lists those who returned to Jerusalem from the Babylonian captivity, including the priests, Levites, and temple servants, and repeats Saul's genealogy.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 10,
+    "summary": "Narrates the final battle of Saul against the Philistines at Mount Gilboa, his death, and the transition of the kingdom to David.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 11,
+    "summary": "All Israel gathers to make David king at Hebron; David captures Jerusalem and a list of his mighty men and their valiant deeds is provided.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 12,
+    "summary": "Lists the warriors from various tribes who joined David at Ziklag and Hebron, describing them as expert soldiers who came with a perfect heart to make him king.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 13,
+    "summary": "David attempts to bring the Ark of the Covenant to Jerusalem; however, the effort is halted when Uzza dies for touching the Ark.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 14,
+    "summary": "David receives help from Hiram of Tyre, expands his family in Jerusalem, and wins two significant battles against the Philistines through divine direction.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 15,
+    "summary": "David organizes the Levites and priests to properly carry the Ark to Jerusalem with music and singing, leading to its successful placement in a tent.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 16,
+    "summary": "The Ark is set in place; David offers sacrifices and delivers a psalm of thanksgiving, and he appoints Levites to minister before the Ark continually.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 17,
+    "summary": "David desires to build a permanent temple, but God, through Nathan, establishes the Davidic Covenant, promising to establish his son's throne forever.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 18,
+    "summary": "David expands his empire by defeating the Philistines, Moabites, Syrians, and Edomites, dedicating the spoils of war to the Lord.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 19,
+    "summary": "The Ammonites insult David's messengers, leading to a war where Joab and Abishai defeat the combined forces of Ammon and Syria.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 20,
+    "summary": "Joab besieges and destroys Rabbah while David takes the king's crown; additionally, three battles against Philistine giants are recorded.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "summary": "David sins by numbering Israel, prompting a choice of three punishments; he chooses the pestilence and later purchases Ornan's threshingfloor for an altar.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 22,
+    "summary": "David identifies the site for the future temple, gathers materials, and charges Solomon and the leaders of Israel to build the house of the Lord.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 23,
+    "summary": "David makes Solomon king and organizes the 38,000 Levites into divisions for temple service, judges, porters, and musicians.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 24,
+    "summary": "The divisions of the priests (descendants of Aaron) are determined by lot into twenty-four courses, and the remaining Levites are organized similarly.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 25,
+    "summary": "David and his captains appoint the sons of Asaph, Heman, and Jeduthun to lead the temple music and prophesy with musical instruments.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 26,
+    "summary": "Outlines the divisions of the gatekeepers (porters), the treasurers of the temple, and the officers and judges assigned to the outward business.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 27,
+    "summary": "Lists the monthly military divisions, the tribal leaders of Israel, and the various officers in charge of David's personal properties.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 28,
+    "summary": "David assembles Israel's leaders, explains God's choice of Solomon, and gives Solomon the patterns for the temple that he received by the Spirit.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 29,
+    "summary": "David and the people contribute to the temple; David offers a prayer of praise, Solomon is anointed king, and David dies in a good old age.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "summary": "Aging King David confirms Solomon as his successor after Adonijah attempts to seize the throne, with Nathan and Bathsheba intervening.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "summary": "David gives Solomon his final charge and dies; Solomon secures his kingdom by dealing with Adonijah, Joab, and Shimei.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 3,
+    "summary": "Solomon asks God for wisdom and receives it along with riches and honor; he demonstrates his wisdom by judging between two women claiming the same child.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 4,
+    "summary": "Solomon's administrators, provisions, and dominion are described, along with his unparalleled wisdom and literary accomplishments.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 5,
+    "summary": "Solomon makes an alliance with Hiram of Tyre to obtain materials and labor for building the temple of the Lord.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 6,
+    "summary": "Solomon builds the temple over seven years with detailed descriptions of its structure, dimensions, and God's conditional promise.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 7,
+    "summary": "Solomon builds his own palace over thirteen years and commissions elaborate bronze furnishings for the temple through Hiram the craftsman.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 8,
+    "summary": "Solomon dedicates the temple with the Ark of the Covenant, offering a lengthy prayer of supplication and blessing upon all Israel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 9,
+    "summary": "God appears to Solomon a second time with promises and warnings; Solomon's building projects and dealings with Hiram are recorded.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 10,
+    "summary": "The Queen of Sheba visits Solomon, marvels at his wisdom and wealth, and the extent of Solomon's riches is described.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 11,
+    "summary": "Solomon's foreign wives turn his heart to other gods; the Lord raises adversaries and Ahijah prophesies the division of the kingdom.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 12,
+    "summary": "Rehoboam's harshness causes the northern tribes to revolt under Jeroboam, who then establishes idol worship at Dan and Bethel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 13,
+    "summary": "A prophet from Judah prophesies against Jeroboam's altar but is later killed by a lion for disobeying God's command.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 14,
+    "summary": "Ahijah prophesies the destruction of Jeroboam's dynasty; Rehoboam reigns in Judah amid spiritual decline and Egyptian invasion.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 15,
+    "summary": "Abijam and Asa reign in Judah while Nadab and Baasha reign in Israel, with ongoing war between the two kingdoms.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 16,
+    "summary": "A succession of wicked kings rules Israel—Baasha, Elah, Zimri, Omri—culminating in Ahab who introduces Baal worship.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 17,
+    "summary": "Elijah declares a drought, is fed by ravens at the brook Cherith, then sustains a widow at Zarephath and raises her son from the dead.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "summary": "Elijah challenges the prophets of Baal on Mount Carmel; fire falls from heaven, the people return to God, and rain comes after three years.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "summary": "Elijah flees Jezebel's threat, is ministered to by an angel, encounters God in a still small voice, and anoints Elisha as his successor.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 20,
+    "summary": "Israel defeats Syria twice through prophetic guidance, but Ahab is condemned for making a treaty with Ben-hadad instead of executing judgment.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "summary": "Jezebel arranges Naboth's murder so Ahab can take his vineyard; Elijah pronounces divine judgment on Ahab and his house.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "summary": "Micaiah prophesies Ahab's death despite the lies of false prophets; Ahab is killed at Ramoth-gilead and Jehoshaphat returns safely.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 1,
+    "summary": "Hannah, barren and grieving, prays fervently at the tabernacle and vows to dedicate her son to the Lord; Eli blesses her, and she bears Samuel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 2,
+    "summary": "Hannah offers a prophetic song of praise; Eli's wicked sons abuse their priestly office, and a man of God prophesies judgment on Eli's house.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "summary": "The Lord calls young Samuel in the night and reveals the coming judgment against Eli's family; Samuel is established as a prophet in Israel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 4,
+    "summary": "Israel is defeated by the Philistines, the Ark of the Covenant is captured, and Eli and his sons Hophni and Phinehas die.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 5,
+    "summary": "The Ark is placed in the temple of Dagon, which falls before it; the Lord afflicts the Philistines with tumors in every city that holds the Ark.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 6,
+    "summary": "The Philistines return the Ark to Israel on a new cart with guilt offerings; men of Beth-shemesh are struck for looking into it.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 7,
+    "summary": "Samuel calls Israel to repentance; they fast and pray at Mizpeh, and God delivers them from the Philistines with thunder.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 8,
+    "summary": "Israel demands a king like the other nations; Samuel warns them of the consequences, but the Lord instructs him to grant their request.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 9,
+    "summary": "Saul, searching for his father's lost donkeys, is led to Samuel, who privately anoints him as the future king of Israel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 10,
+    "summary": "Samuel publicly presents Saul as king; the Spirit of God comes upon Saul and he prophesies among the prophets.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 11,
+    "summary": "Saul rallies Israel and defeats the Ammonites at Jabesh-gilead; the kingdom is renewed and Saul is confirmed as king at Gilgal.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 12,
+    "summary": "Samuel delivers his farewell address, testifying of his integrity, recounting God's deliverance, and warning Israel to serve the Lord faithfully.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 13,
+    "summary": "Saul unlawfully offers a sacrifice while waiting for Samuel; Samuel rebukes him and declares his kingdom will not continue.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "summary": "Jonathan and his armor-bearer rout a Philistine garrison by faith; Saul's rash oath nearly costs Jonathan's life.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "summary": "Saul disobeys God's command to utterly destroy Amalek; Samuel declares 'to obey is better than sacrifice' and announces Saul's rejection as king.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "summary": "Samuel anoints David as king; the Spirit of the Lord comes upon David, while an evil spirit troubles Saul, who summons David as a musician.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "summary": "David, a young shepherd, defeats the Philistine giant Goliath with a sling and a stone, trusting in the name of the Lord.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 18,
+    "summary": "David and Jonathan form a covenant of friendship; David's military successes provoke Saul's jealousy, and Saul attempts to kill him.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 19,
+    "summary": "Saul seeks to kill David; Jonathan intercedes, Michal helps David escape, and Saul himself prophesies at Naioth in Ramah.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "summary": "Jonathan and David make a covenant of friendship; Jonathan warns David of Saul's intent to kill him, and they part in sorrow.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 21,
+    "summary": "David flees to Nob where Ahimelech gives him the showbread and Goliath's sword, then escapes to Achish king of Gath.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "summary": "David gathers a following at the cave of Adullam; Saul orders Doeg to massacre the priests of Nob for helping David.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 23,
+    "summary": "David saves Keilah from the Philistines; Saul pursues David in the wilderness, but Jonathan strengthens David's faith in God.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 24,
+    "summary": "David spares Saul's life in the cave at En-gedi, cutting only his robe; Saul weeps and acknowledges David's righteousness.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "summary": "Nabal insults David's men; Abigail intervenes with wisdom and provisions, preventing bloodshed; Nabal dies and David marries Abigail.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "summary": "David again spares Saul's life, taking his spear and water jug; Saul confesses his error and blesses David.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 27,
+    "summary": "David escapes to Philistine territory and lives at Ziklag under Achish, raiding Israel's enemies while deceiving Achish about his targets.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "summary": "Saul, terrified before battle, consults the medium at Endor; Samuel's spirit foretells Saul's defeat and death.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 29,
+    "summary": "The Philistine lords distrust David and send him away from the battle against Israel; Achish dismisses him reluctantly.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 30,
+    "summary": "David pursues and defeats the Amalekites who raided Ziklag, recovering all captives and spoil, and establishes a law for dividing plunder.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 31,
+    "summary": "Saul and his three sons are killed in battle against the Philistines on Mount Gilboa; the men of Jabesh-gilead recover their bodies.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
   }
 ]

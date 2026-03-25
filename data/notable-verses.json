@@ -11804,5 +11804,986 @@
     "volumeAbbrev": "D&C",
     "volumeName": "Doctrine and Covenants",
     "bookId": 82
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "Establishes the beginning of the genealogical record with Adam."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "Lists the twelve sons of Israel, foundational to the tribal identity."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 3,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "The prayer of Jabez for divine blessing and protection—widely memorized."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 20,
+        "reason": "Attributes military victory to crying unto God and putting trust in Him."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 6,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 7,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 8,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 9,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 10,
+    "verses": [
+      {
+        "verse": 13,
+        "reason": "States Saul died for his transgression and for seeking counsel from a familiar spirit."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 11,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "The anointing of David as king over Israel according to the word of the LORD."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 32,
+        "reason": "Describes the men of Issachar who had understanding of the times—frequently quoted on discernment."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "The death of Uzza, illustrating the necessity of following divine order."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "David perceives the LORD has confirmed him king for the sake of Israel."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 15,
+    "verses": [
+      {
+        "verse": 13,
+        "reason": "David acknowledges the breach because they sought God not after the due order."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 29,
+        "reason": "Exhortation to give the LORD glory and worship in the beauty of holiness."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 17,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "Promise that David's son will build a house and God will establish his throne forever."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 18,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "Summary of David's reign, executing judgment and justice among all his people."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 19,
+    "verses": [
+      {
+        "verse": 13,
+        "reason": "Joab's encouraging words to behave valiantly for the people and the cities of God."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 20,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "verses": [
+      {
+        "verse": 24,
+        "reason": "David's refusal to offer burnt offerings without cost—showing the principle of genuine sacrifice."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 22,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "Prophecy of Solomon as a man of rest who would give peace to Israel."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 23,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 24,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 25,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "Mentions that the musicians were appointed to prophesy with their instruments."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 26,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 27,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 28,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "David's charge to Solomon to serve God with a perfect heart and willing mind."
+      },
+      {
+        "verse": 20,
+        "reason": "'Be strong and of good courage, and do it: fear not, nor be dismayed.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 29,
+    "verses": [
+      {
+        "verse": 11,
+        "reason": "A powerful declaration of God's greatness, power, glory, victory, and majesty—echoed in the Lord's Prayer."
+      },
+      {
+        "verse": 14,
+        "reason": "'All things come of thee, and of thine own have we given thee'—the principle of stewardship."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 13
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 30,
+        "reason": "David's oath to Bathsheba confirming Solomon as his successor—the pivotal moment of succession."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "David's charge to Solomon to be strong and keep God's commandments—a famous deathbed exhortation."
+      },
+      {
+        "verse": 3,
+        "reason": "Promise that obedience will bring prosperity in all endeavors."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "Solomon's request for an understanding heart to judge the people—a model of righteous prayer."
+      },
+      {
+        "verse": 12,
+        "reason": "God grants Solomon a wise and understanding heart unlike any before or after."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 29,
+        "reason": "God gave Solomon wisdom and understanding exceeding great, as the sand on the sea shore."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 5,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "God's conditional promise that He will dwell among Israel if Solomon walks in His statutes."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 7,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 27,
+        "reason": "Solomon's acknowledgment that heaven and earth cannot contain God, much less the temple."
+      },
+      {
+        "verse": 46,
+        "reason": "The declaration that there is no man who does not sin—a foundational statement on human nature."
+      },
+      {
+        "verse": 56,
+        "reason": "Praise that not one word of God's good promises has failed."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "God hallows the temple and promises His name and heart will be there perpetually."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 10,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "The Queen of Sheba declares the half was not told regarding Solomon's wisdom and prosperity."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 11,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "Solomon's heart was turned after other gods and was not perfect as David's—a warning about apostasy."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 16,
+        "reason": "The cry of rebellion: 'What portion have we in David?' that splits the kingdom permanently."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 13,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 14,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 15,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 30,
+        "reason": "Ahab did more evil in the sight of the LORD than all the kings before him."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 17,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "Elijah's promise that the barrel of meal and cruse of oil shall not fail—a paradigm of divine provision."
+      },
+      {
+        "verse": 22,
+        "reason": "The Lord heard Elijah's voice and the child's soul came into him again—a dramatic resurrection."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "verses": [
+      {
+        "verse": 21,
+        "reason": "Elijah's challenge: 'How long halt ye between two opinions?'—a call to decisive commitment."
+      },
+      {
+        "verse": 38,
+        "reason": "The fire of the LORD fell and consumed the burnt sacrifice—the climactic moment on Carmel."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "verses": [
+      {
+        "verse": 11,
+        "reason": "God was not in the wind, earthquake, or fire—anticipating the still small voice revelation."
+      },
+      {
+        "verse": 12,
+        "reason": "After the fire a still small voice—one of the most quoted descriptions of divine communication."
+      },
+      {
+        "verse": 18,
+        "reason": "Seven thousand in Israel who have not bowed to Baal—a remnant of the faithful."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 20,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "Naboth's refusal to sell his inheritance—a declaration of covenant fidelity to ancestral land."
+      },
+      {
+        "verse": 20,
+        "reason": "Elijah's confrontation: 'Hast thou killed, and also taken possession?'—a model of prophetic boldness."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "Micaiah's declaration: 'What the LORD saith unto me, that will I speak'—unwavering prophetic integrity."
+      },
+      {
+        "verse": 17,
+        "reason": "Micaiah's vision of Israel scattered as sheep without a shepherd—prophetic imagery echoed by Jesus."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 11
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 27,
+        "reason": "Hannah testifies that God answered her specific prayer for a child."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "'There is none holy as the LORD' — foundational declaration of God's uniqueness."
+      },
+      {
+        "verse": 30,
+        "reason": "'Them that honour me I will honour' — a widely quoted principle of divine reciprocity."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "Eli teaches Samuel the proper response to God's call: 'Speak, LORD; for thy servant heareth.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 21,
+        "reason": "Ichabod — 'The glory is departed from Israel' — a powerful symbol of spiritual loss."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 5,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 6,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "Samuel sets up the Ebenezer stone: 'Hitherto hath the LORD helped us.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "The Lord tells Samuel that Israel has rejected Him, not Samuel, as king."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 9,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 10,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 11,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 24,
+        "reason": "'Only fear the LORD, and serve him in truth with all your heart' — Samuel's final plea."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "'The LORD hath sought him a man after his own heart' — prophecy pointing to David."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "Jonathan's declaration of faith: 'There is no restraint to the LORD to save by many or by few.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "verses": [
+      {
+        "verse": 22,
+        "reason": "'To obey is better than sacrifice' — one of the most quoted verses in all scripture."
+      },
+      {
+        "verse": 23,
+        "reason": "'Rebellion is as the sin of witchcraft' — equating disobedience with idolatry."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "'The LORD looketh on the heart' — foundational teaching on divine judgment by inward character."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "verses": [
+      {
+        "verse": 45,
+        "reason": "David confronts Goliath in the name of the Lord of hosts — iconic declaration of faith."
+      },
+      {
+        "verse": 47,
+        "reason": "'The battle is the LORD's' — a principle of divine deliverance."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 18,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "'The soul of Jonathan was knit with the soul of David' — the model of covenant friendship."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 19,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "verses": [
+      {
+        "verse": 42,
+        "reason": "Jonathan and David part with the covenant: 'The LORD be between me and thee... for ever.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 21,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 23,
+    "verses": [
+      {
+        "verse": 16,
+        "reason": "'Jonathan... strengthened his hand in God' — the essence of true friendship."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 24,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "David's refusal to harm the Lord's anointed — a principle of reverence for divine authority."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "verses": [
+      {
+        "verse": 32,
+        "reason": "David praises Abigail's wisdom that kept him from shedding blood in anger."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 27,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 29,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 30,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "'David encouraged himself in the LORD his God' — a model for spiritual resilience in crisis."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 31,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 9
   }
 ]
