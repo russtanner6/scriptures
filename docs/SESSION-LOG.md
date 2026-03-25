@@ -1,5 +1,73 @@
 # Scripture Explorer — Session Log
 
+## 2026-03-25 — Session 21: Complete NT via Gemini Pipeline + D&C File Split
+
+### What was done
+
+**Completed ALL remaining NT books (10 books, 136 chapters):**
+
+| Book | Chapters | Speakers | Cross-Refs | Notes |
+|------|----------|----------|------------|-------|
+| John | 21 | 191 | 5 | 16 unique speakers. All MISSING_CHARACTERS unnamed. |
+| Jude | 1 | 3 | 3 | Jude, Michael, Enoch. Added Korah to characters.json. |
+| Luke | 24 | 194 | 16 | 14 unique speakers incl. Gabriel, Zacharias, Elisabeth, Cleopas. |
+| Mark | 16 | 131 | 7 | Herod Antipas, Jairus among speakers. |
+| Matthew | 28 | 174 | 12 | Added Legion as character per user request. Filtered unnamed group speakers. |
+| Philemon | 1 | 1 | 3 | Paul only speaker. Added Onesimus to characters.json. |
+| Philippians | 4 | 4 | 2 | Paul only speaker. |
+| Revelation | 22 | 19 | 10 | John the Apostle, Jesus Christ, God the Father. |
+| Romans | 16 | 18 | 7 | Paul + Tertius (16:22). Added Sosipater to characters.json. |
+| Titus | 3 | 3 | 3 | Paul only speaker. |
+
+**Characters added:** Korah (OT rebel), Legion (demonic entity per user), Onesimus (Philemon's slave), Sosipater (Paul's kinsman) → 822 total
+
+**Data file totals after this session:**
+- `chapter-sentiments.json`: 688 entries (BoM 239, PoGP 16, Apoc 173, NT 260)
+- `speakers.json`: 1,374 entries
+- `chapter-summaries.json`: 688 entries
+- `chapter-themes.json`: 688 entries
+- `cross-references.json`: 325 entries
+- `doctrinal-topics.json`: 688 entries
+- `historical-context.json`: 688 entries
+- `literary-genres.json`: 688 entries
+- `notable-verses.json`: 688 entries
+- `characters.json`: 822 people
+
+**Pipeline completion:**
+- Book of Mormon: 15/15 COMPLETE
+- Pearl of Great Price: 5/5 COMPLETE
+- Apocrypha: 14/14 COMPLETE
+- New Testament: 27/27 COMPLETE (260 chapters)
+- Old Testament: 0/39 NOT STARTED
+- D&C: 0/138 NOT STARTED
+
+**D&C file split:** Split `Doctrine and Covenants.txt` into 138 individual `Section N.txt` files in `/Users/rmt-mac-studio/Desktop/Scripture-Books/D&C/`. Each file contains only verses (no chapter/section headers).
+
+### Commits
+- Add John (21ch) + Jude (1ch) — all Gemini outputs, add Korah to characters
+- Add Luke (24ch) + Mark (16ch) — all Gemini outputs
+- Add Matthew (28ch) + Philemon (1ch) + Philippians (4ch) — all Gemini outputs
+- Add Revelation (22ch) + Romans (16ch) + Titus (3ch) — all Gemini outputs, add Sosipater
+
+### PICKUP INSTRUCTIONS FOR NEXT SESSION
+
+**Current focus: Gemini 10-Output Pipeline — nothing else until all scriptures are scored.**
+
+**Volumes remaining:**
+1. **OT (39 books, ~929 chapters):** Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Song of Solomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi
+2. **D&C (138 sections):** Individual section files already split at `/Users/rmt-mac-studio/Desktop/Scripture-Books/D&C/Section N.txt`
+
+**Pipeline process:**
+1. User feeds book text to Gemini → Gemini returns 10 JSON arrays
+2. User pastes to Claude Code → Claude Code enriches and appends to data files
+3. After EVERY book: completeness audit, speaker validation, git commit+push
+4. Only named individual speakers — no groups, no unnamed people
+5. Characters flagged as MISSING must be genuinely named individuals not already in DB
+
+**After pipeline is complete:** Wire Sentiment Explorer to use chapter-sentiments.json, build API routes for new data types, build UI in ScriptureReader for summaries/themes/cross-refs/notable verses.
+
+---
+
 ## 2026-03-25 — Session 20: Gemini 10-Output Pipeline — Fresh Start
 
 ### What was done
