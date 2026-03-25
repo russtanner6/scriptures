@@ -3886,5 +3886,37 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 64
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 1,
+    "summary": "Paul encourages Timothy to stir up his spiritual gifts and maintain a bold testimony of Christ, expressing gratitude for Timothy's heritage and highlighting the loyal service of Onesiphorus.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 2,
+    "summary": "Paul instructs Timothy to endure hardship like a good soldier and stay focused on the gospel, warning against contention and apostasy and urging him to flee youthful lusts.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 3,
+    "summary": "Paul describes the spiritual corruption of the last days, warning that many will have a form of godliness but deny its power, and emphasizes that the holy scriptures provide essential wisdom.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 4,
+    "summary": "Facing his final days, Paul charges Timothy to preach the word diligently, shares his confidence in his eternal reward, and sends greetings to various fellow saints.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
   }
 ]

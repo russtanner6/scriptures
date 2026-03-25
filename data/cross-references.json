@@ -2550,5 +2550,38 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 64
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 3,
+    "verse": 8,
+    "crossReference": "Exodus 7",
+    "type": "allusion",
+    "note": "The reference to Jannes and Jambres links to the Exodus account of the Egyptian magicians who withstood Moses.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 3,
+    "verse": 1,
+    "crossReference": "1 Nephi 14",
+    "type": "parallel",
+    "note": "Descriptions of the last days mirror Book of Mormon prophecies.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 3,
+    "verse": 1,
+    "crossReference": "D&C 1",
+    "type": "parallel",
+    "note": "Both describe spiritual conditions of the latter days and the need for restoration.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
   }
 ]

@@ -4234,5 +4234,41 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 64
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 1,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 2,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 3,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 4,
+    "genre": "epistle",
+    "subgenre": "pastoral",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
   }
 ]

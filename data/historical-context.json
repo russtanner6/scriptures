@@ -4858,5 +4858,45 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 64
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 1,
+    "era": "Apostolic",
+    "approxDate": "c. AD 66-67",
+    "setting": "Written by Paul from a Roman prison during his second and final imprisonment.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 2,
+    "era": "Apostolic",
+    "approxDate": "c. AD 66-67",
+    "setting": "Paul writes as an aged apostle nearing the end of his life, passing leadership responsibilities to Timothy.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 3,
+    "era": "Apostolic",
+    "approxDate": "c. AD 66-67",
+    "setting": "Reflects the growing pressure of Roman persecution and the internal threat of false teachings within the early church.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 4,
+    "era": "Apostolic",
+    "approxDate": "c. AD 66-67",
+    "setting": "Written shortly before Paul's martyrdom, likely under Emperor Nero, marking his final recorded words.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
   }
 ]

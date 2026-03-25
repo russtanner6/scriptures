@@ -20267,5 +20267,29 @@
     "tier": 4,
     "family": {},
     "portrait": null
+  },
+  {
+    "id": "jannes",
+    "name": "Jannes",
+    "bio": "One of the Egyptian magicians who withstood Moses.",
+    "aliases": [],
+    "volumes": [
+      "NT"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "jambres",
+    "name": "Jambres",
+    "bio": "One of the Egyptian magicians who withstood Moses.",
+    "aliases": [],
+    "volumes": [
+      "NT"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
   }
 ]

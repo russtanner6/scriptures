@@ -5700,5 +5700,53 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 64
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 1,
+    "topics": [
+      "The Gift of the Holy Ghost",
+      "Grace",
+      "Apostolic Authority"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 2,
+    "topics": [
+      "The Resurrection",
+      "Priesthood Preparedness",
+      "Covenants"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 3,
+    "topics": [
+      "The Last Days",
+      "Divine Inspiration of Scripture",
+      "The Great Apostasy"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 4,
+    "topics": [
+      "Judgment",
+      "Eternal Life",
+      "The Second Coming"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 55
   }
 ]

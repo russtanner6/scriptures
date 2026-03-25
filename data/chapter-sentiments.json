@@ -6316,5 +6316,57 @@
     "contrition": 0,
     "dominant": "peace",
     "rationale": "John expresses deep joy over his spiritual children walking in truth and commends Gaius for his charity, though he includes a stern warning regarding the prideful behavior of Diotrephes."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "2 Timothy",
+    "bookId": 55,
+    "chapter": 1,
+    "exaltation": 8,
+    "peace": 9,
+    "admonition": 4,
+    "contrition": 3,
+    "dominant": "peace",
+    "rationale": "Paul expresses deep affection for Timothy and gratitude for his sincere faith, focusing on the peace found through the Spirit despite imprisonment."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "2 Timothy",
+    "bookId": 55,
+    "chapter": 2,
+    "exaltation": 6,
+    "peace": 5,
+    "admonition": 8,
+    "contrition": 4,
+    "dominant": "admonition",
+    "rationale": "Paul uses metaphors of soldiers and athletes to encourage endurance, warning against vain babblings and apostasy."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "2 Timothy",
+    "bookId": 55,
+    "chapter": 3,
+    "exaltation": 4,
+    "peace": 3,
+    "admonition": 9,
+    "contrition": 5,
+    "dominant": "admonition",
+    "rationale": "Heavy admonition regarding the perilous times of the last days, urging Timothy to rely on the safety of the holy scriptures."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "2 Timothy",
+    "bookId": 55,
+    "chapter": 4,
+    "exaltation": 9,
+    "peace": 7,
+    "admonition": 6,
+    "contrition": 4,
+    "dominant": "exaltation",
+    "rationale": "Paul offers a triumphant final testimony as he faces martyrdom, looking forward to a crown of righteousness."
   }
 ]
