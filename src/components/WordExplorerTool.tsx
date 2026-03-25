@@ -477,6 +477,33 @@ export default function WordExplorerTool() {
       {/* ── LEVEL 1: Volume Chart ── */}
       {hasResults && drillLevel === "volumes" && (
         <div style={{ maxWidth: "900px", margin: "0 auto", marginBottom: "32px" }}>
+          {/* Volume pills — click to drill down */}
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", justifyContent: "center", marginBottom: "20px" }}>
+            <span style={{ fontSize: "0.72rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--text-muted)", alignSelf: "center", marginRight: "4px" }}>
+              Drill into:
+            </span>
+            {getVolumeTotals(termData[0].results).map((vol) => (
+              <button
+                key={vol.abbrev}
+                onClick={() => drillToVolume(vol.abbrev)}
+                style={{
+                  padding: "6px 14px",
+                  borderRadius: "8px",
+                  border: `1px solid ${VOLUME_COLORS[vol.abbrev]}50`,
+                  background: `${VOLUME_COLORS[vol.abbrev]}15`,
+                  color: VOLUME_COLORS[vol.abbrev],
+                  fontSize: "0.78rem",
+                  fontWeight: 600,
+                  cursor: "pointer",
+                  fontFamily: "inherit",
+                  transition: "all 0.15s",
+                }}
+              >
+                {vol.name} ({vol.count.toLocaleString()})
+              </button>
+            ))}
+          </div>
+
           <div style={{ height: isMobile ? "280px" : "360px", marginBottom: "24px" }}>
             <Bar
               data={{
@@ -493,9 +520,9 @@ export default function WordExplorerTool() {
                       const match = termVols.find((tv) => tv.abbrev === v.abbrev);
                       return match?.count || 0;
                     }),
-                    backgroundColor: vols.map((v) => VOLUME_COLORS[v.abbrev] || "#888"),
-                    borderColor: vols.map((v) => VOLUME_COLORS[v.abbrev] || "#888"),
-                    borderWidth: termData.length > 1 ? 2 : 0,
+                    backgroundColor: td.color,
+                    borderColor: td.color,
+                    borderWidth: 0,
                     borderRadius: 6,
                   };
                 }),
@@ -521,30 +548,6 @@ export default function WordExplorerTool() {
                 layout: { padding: { top: 30 } },
               }}
             />
-          </div>
-
-          {/* Volume pills — click to drill down */}
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", justifyContent: "center" }}>
-            {getVolumeTotals(termData[0].results).map((vol) => (
-              <button
-                key={vol.abbrev}
-                onClick={() => drillToVolume(vol.abbrev)}
-                style={{
-                  padding: "8px 16px",
-                  borderRadius: "8px",
-                  border: `1px solid ${VOLUME_COLORS[vol.abbrev]}50`,
-                  background: `${VOLUME_COLORS[vol.abbrev]}15`,
-                  color: VOLUME_COLORS[vol.abbrev],
-                  fontSize: "0.82rem",
-                  fontWeight: 600,
-                  cursor: "pointer",
-                  fontFamily: "inherit",
-                  transition: "all 0.15s",
-                }}
-              >
-                {vol.name} ({vol.count.toLocaleString()})
-              </button>
-            ))}
           </div>
 
           {/* Total stats */}
