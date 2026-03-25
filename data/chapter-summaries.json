@@ -5440,5 +5440,485 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": null
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 1,
+    "summary": "The Lord introduces the Doctrine and Covenants as His preface, warning all inhabitants of the earth to repent and heed His servants' voices before His Second Coming.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 2,
+    "summary": "The angel Moroni quotes a modified Malachi prophecy about Elijah returning to restore priesthood sealing power and turn the hearts of children to their fathers.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 3,
+    "summary": "The Lord rebukes Joseph Smith for fearing man more than God after the 116 manuscript pages were lost, but assures him God's work cannot be frustrated.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 4,
+    "summary": "A revelation to Joseph Smith Sr. calling him to serve God with all his heart, might, mind, and strength in the marvelous work of restoration.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 5,
+    "summary": "The Lord promises three witnesses will see the gold plates, warns Martin Harris to humble himself, and foretells judgments upon the unbelieving.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 6,
+    "summary": "The Lord confirms Oliver Cowdery's spiritual witness, grants him the gift of translation, and invites him to look unto Christ in every thought.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 7,
+    "summary": "A translated parchment reveals that John the Beloved asked for and received power over death to remain on earth and bring souls to Christ.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 8,
+    "summary": "The Lord teaches Oliver Cowdery about the spirit of revelation—knowledge given to mind and heart by the Holy Ghost—and grants him the gift of Aaron.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 9,
+    "summary": "The Lord explains to Oliver Cowdery that translation requires studying it out in one's mind before asking God, and counsels patience.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 10,
+    "summary": "The Lord reveals Satan's plot to discredit the Book of Mormon through the altered 116 pages and commands Joseph to translate the small plates of Nephi instead.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 11,
+    "summary": "The Lord counsels Hyrum Smith to wait and study the scriptures before preaching, promising that the Spirit will enlighten his mind and fill his soul with joy.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 12,
+    "summary": "A revelation to Joseph Knight Sr. calling him to the work of restoration, requiring humility, love, faith, and charity to assist.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 13,
+    "summary": "John the Baptist confers the Aaronic Priesthood upon Joseph Smith and Oliver Cowdery, granting the keys of baptism, repentance, and ministering of angels.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 14,
+    "summary": "The Lord calls David Whitmer to assist in the restoration, promising eternal life through faithfulness and declaring the fulness of the gospel.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 15,
+    "summary": "The Lord tells John Whitmer that the most valuable thing he can do is declare repentance and bring souls unto Christ.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 16,
+    "summary": "The Lord gives Peter Whitmer Jr. the same counsel as his brother John: the most valuable work is declaring repentance and bringing souls to Christ.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 17,
+    "summary": "The Lord promises the Three Witnesses that through faith they will view the gold plates, breastplate, sword of Laban, Urim and Thummim, and Liahona.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 18,
+    "summary": "The Lord declares the great worth of souls, establishes the doctrine of repentance and baptism, and commands Oliver Cowdery and David Whitmer to select the Twelve Apostles.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 19,
+    "summary": "Jesus Christ reveals the meaning of eternal punishment, describes His agonizing suffering in Gethsemane, and commands Martin Harris to repent and fund the Book of Mormon printing.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 20,
+    "summary": "The foundational articles of the Church establish doctrines of the Godhead, baptism, and sacrament, and define the duties of elders, priests, teachers, and deacons.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 21,
+    "summary": "The Lord designates Joseph Smith as a seer, translator, prophet, and apostle, commanding the church to receive his words as if from God's own mouth.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 22,
+    "summary": "The Lord declares that all old covenants and prior baptisms are done away, requiring everyone to be baptized anew under the restored gospel.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 23,
+    "summary": "Brief individual revelations to Oliver Cowdery, Hyrum Smith, Samuel Smith, Joseph Smith Sr., and Joseph Knight Sr. with personal counsel and callings.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 24,
+    "summary": "The Lord outlines the duties of Joseph Smith and Oliver Cowdery as traveling ministers, including preaching, confirming churches, and traveling without purse or scrip.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 25,
+    "summary": "The Lord calls Emma Smith an elect lady, counsels her to comfort Joseph, compile a hymn book, and delight in the song of the heart.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 26,
+    "summary": "The Lord instructs the saints to study scriptures and establishes the principle that all things in the church shall be done by common consent.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 27,
+    "summary": "The Lord teaches that the intent of the sacrament matters more than the substance, then names the ancient prophets and apostles who restored priesthood keys.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 28,
+    "summary": "The Lord establishes that only Joseph Smith receives commandments for the church, corrects the Hiram Page seer stone incident, and sends Oliver to the Lamanites.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 29,
+    "summary": "Christ reveals sweeping prophecies of the Second Coming, the Millennium, and final judgment, then teaches about the Fall, agency, and the innocence of little children.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 30,
+    "summary": "Personal corrections and missionary assignments to David Whitmer, Peter Whitmer Jr., and John Whitmer, with David rebuked for fearing man over God.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 31,
+    "summary": "The Lord calls Thomas B. Marsh to preach the gospel, blesses his family, and counsels patience in afflictions and meekness in governing his household.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 32,
+    "summary": "The Lord calls Parley P. Pratt and Ziba Peterson to join Oliver Cowdery and Peter Whitmer Jr. on the mission to the Lamanites.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 33,
+    "summary": "The Lord calls Ezra Thayre and Northrop Sweet to preach repentance in the eleventh hour, declaring the field white to harvest and the Bridegroom coming quickly.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 34,
+    "summary": "The Lord calls young Orson Pratt to preach repentance and prepare the way for the Second Coming, promising to be with him until Christ returns.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 35,
+    "summary": "The Lord calls Sidney Rigdon to write for Joseph Smith and preach the gospel, comparing him to John the Baptist in preparing the way for the Restoration.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 36,
+    "summary": "The Lord forgives Edward Partridge and calls him to preach, commanding that all who embrace the calling be ordained and sent forth among the nations.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 37,
+    "summary": "The Lord commands Joseph Smith and the church to stop translating and gather to Ohio for their safety against enemies.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 38,
+    "summary": "Christ declares His omniscience, warns of secret enemies, promises a land of inheritance in Ohio with endowment of power, and commands equality and care for the poor.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 39,
+    "summary": "The Lord calls James Covill, a longtime Baptist minister, to be baptized, receive the Holy Ghost, and preach the fulness of the gospel in Ohio.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 40,
+    "summary": "The Lord reveals that James Covill broke his covenant because Satan tempted him with fear of persecution and the cares of the world.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 41,
+    "summary": "The Lord commands the elders to assemble and receive His law, calls Edward Partridge as the first bishop of the church, and compares him to Nathanael.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 42,
+    "summary": "The Lord gives the comprehensive law of the church including moral commandments, the law of consecration, instructions on healing, church discipline, and the New Jerusalem.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 43,
+    "summary": "The Lord establishes that only Joseph Smith receives revelations for the church, then prophesies the Second Coming with thunders, earthquakes, and the Millennium.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 44,
+    "summary": "The Lord commands the elders to gather from all directions for a conference, promising to pour out His Spirit and instructing them to care for the poor.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 45,
+    "summary": "Christ recounts His Olivet prophecy of Jerusalem's destruction and Second Coming signs, then reveals the New Jerusalem as a land of peace and refuge for the saints.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 46,
+    "summary": "The Lord teaches about the gifts of the Spirit—knowledge, faith, healing, miracles, prophecy, tongues, and discernment—given for the benefit of all who love Him.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 47,
+    "summary": "The Lord appoints John Whitmer to keep the church record and history continually, relieving Oliver Cowdery for other duties.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 48,
+    "summary": "The Lord instructs the Ohio saints to share lands with eastern converts, save money, and prepare to purchase land for the future city of Zion.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 49,
+    "summary": "The Lord sends missionaries to the Shakers, correcting false doctrines about celibacy, diet, and Christ's return, and affirming that marriage is ordained of God.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 50,
+    "summary": "The Lord teaches elders to discern true and false spirits, declaring that which edifies is of God and that light grows brighter unto the perfect day.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 51,
+    "summary": "The Lord instructs Bishop Partridge on organizing consecration—equal portions, property deeds, a storehouse—so the saints may be one and deal honestly.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 52,
+    "summary": "The Lord assigns missionary companionships for the journey to Missouri and gives a pattern for recognizing the Spirit through contrition, meekness, and edification.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 53,
+    "summary": "The Lord calls Sidney Gilbert to be ordained an elder, serve as the church's purchasing agent, and journey with Joseph Smith to Missouri.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 54,
+    "summary": "The Lord addresses broken covenants among the Thompson saints, commanding them to flee to Missouri and pronouncing woe upon the covenant-breakers.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 55,
+    "summary": "The Lord calls William W. Phelps to be baptized, ordained an elder, and assist Oliver Cowdery with the church's printing and school materials.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 56,
+    "summary": "The Lord revokes and reassigns missionary callings, rebukes Ezra Thayre for pride, and pronounces woes upon both the greedy rich and the covetous poor.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 57,
+    "summary": "The Lord designates Independence, Missouri as the center place of Zion, identifies the temple site, and assigns roles for land purchasing and printing.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 58,
+    "summary": "The Lord promises blessings after tribulation, teaches that men should be anxiously engaged in good causes of their own free will, and gives instructions for Zion.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 59,
+    "summary": "The Lord commands Sabbath observance with a broken heart and contrite spirit, promising the faithful the fulness of the earth for food, raiment, and joy.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 60,
+    "summary": "The Lord rebukes elders who hide their talents out of fear, then gives travel instructions for the return journey from Missouri through St. Louis.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
   }
 ]

@@ -8097,5 +8097,774 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": null
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 1,
+    "topics": [
+      "second coming",
+      "commandments",
+      "repentance",
+      "covenant",
+      "restoration"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 2,
+    "topics": [
+      "temple",
+      "priesthood",
+      "sealing",
+      "gathering of israel"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 3,
+    "topics": [
+      "obedience",
+      "repentance",
+      "faith",
+      "mercy"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 4,
+    "topics": [
+      "missionary work",
+      "faith",
+      "charity",
+      "service"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 5,
+    "topics": [
+      "testimony",
+      "faith",
+      "humility",
+      "obedience"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 6,
+    "topics": [
+      "revelation",
+      "holy ghost",
+      "faith",
+      "obedience",
+      "zion"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 7,
+    "topics": [
+      "eternal life",
+      "ministry",
+      "translated beings"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 8,
+    "topics": [
+      "revelation",
+      "holy ghost",
+      "faith",
+      "spiritual gifts"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 9,
+    "topics": [
+      "revelation",
+      "prayer",
+      "faith",
+      "obedience"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 10,
+    "topics": [
+      "faith",
+      "obedience",
+      "jesus christ",
+      "repentance"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 11,
+    "topics": [
+      "holy ghost",
+      "obedience",
+      "faith",
+      "scriptures"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 12,
+    "topics": [
+      "faith",
+      "charity",
+      "service",
+      "zion"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 13,
+    "topics": [
+      "priesthood",
+      "baptism",
+      "repentance"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 14,
+    "topics": [
+      "eternal life",
+      "faith",
+      "holy ghost",
+      "testimony"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 15,
+    "topics": [
+      "missionary work",
+      "repentance",
+      "faith"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 16,
+    "topics": [
+      "missionary work",
+      "repentance",
+      "faith"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 17,
+    "topics": [
+      "testimony",
+      "faith",
+      "grace"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 18,
+    "topics": [
+      "repentance",
+      "baptism",
+      "missionary work",
+      "jesus christ",
+      "apostles"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 19,
+    "topics": [
+      "atonement",
+      "repentance",
+      "judgment",
+      "prayer",
+      "missionary work"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 20,
+    "topics": [
+      "baptism",
+      "sacrament",
+      "priesthood",
+      "church organization",
+      "godhead"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 21,
+    "topics": [
+      "prophecy",
+      "revelation",
+      "obedience",
+      "zion"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 22,
+    "topics": [
+      "baptism",
+      "covenant",
+      "restoration"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 23,
+    "topics": [
+      "personal revelation",
+      "missionary work",
+      "humility",
+      "prayer"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 24,
+    "topics": [
+      "priesthood",
+      "missionary work",
+      "endurance",
+      "faith"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 25,
+    "topics": [
+      "worship",
+      "covenant",
+      "holy ghost",
+      "service"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 26,
+    "topics": [
+      "scriptures",
+      "church organization",
+      "faith"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 27,
+    "topics": [
+      "sacrament",
+      "priesthood",
+      "dispensation",
+      "spiritual gifts"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 28,
+    "topics": [
+      "revelation",
+      "church organization",
+      "obedience",
+      "missionary work"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 29,
+    "topics": [
+      "second coming",
+      "plan of salvation",
+      "fall of adam",
+      "agency",
+      "resurrection",
+      "judgment"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 30,
+    "topics": [
+      "obedience",
+      "missionary work",
+      "repentance"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 31,
+    "topics": [
+      "missionary work",
+      "faith",
+      "endurance",
+      "family"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 32,
+    "topics": [
+      "missionary work",
+      "obedience",
+      "faith"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 33,
+    "topics": [
+      "repentance",
+      "baptism",
+      "second coming",
+      "holy ghost"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 34,
+    "topics": [
+      "second coming",
+      "missionary work",
+      "faith",
+      "repentance"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 35,
+    "topics": [
+      "restoration",
+      "holy ghost",
+      "prophecy",
+      "zion"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 36,
+    "topics": [
+      "missionary work",
+      "repentance",
+      "priesthood"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 37,
+    "topics": [
+      "gathering of israel",
+      "obedience"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 38,
+    "topics": [
+      "gathering of israel",
+      "consecration",
+      "equality",
+      "endurance",
+      "zion"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 39,
+    "topics": [
+      "baptism",
+      "holy ghost",
+      "missionary work",
+      "gathering of israel"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 40,
+    "topics": [
+      "apostasy",
+      "obedience",
+      "sin"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 41,
+    "topics": [
+      "church organization",
+      "bishop",
+      "obedience",
+      "commandments"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 42,
+    "topics": [
+      "consecration",
+      "commandments",
+      "healing",
+      "church organization",
+      "chastity"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 43,
+    "topics": [
+      "revelation",
+      "second coming",
+      "repentance",
+      "judgment"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 44,
+    "topics": [
+      "conference",
+      "holy ghost",
+      "service"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 45,
+    "topics": [
+      "second coming",
+      "gathering of israel",
+      "zion",
+      "jesus christ",
+      "judgment"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 46,
+    "topics": [
+      "spiritual gifts",
+      "holy ghost",
+      "faith",
+      "discernment"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 47,
+    "topics": [
+      "record keeping",
+      "stewardship"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 48,
+    "topics": [
+      "gathering of israel",
+      "zion",
+      "stewardship"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 49,
+    "topics": [
+      "marriage",
+      "stewardship",
+      "second coming",
+      "creation"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 50,
+    "topics": [
+      "holy ghost",
+      "discernment",
+      "light",
+      "truth"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 51,
+    "topics": [
+      "consecration",
+      "equality",
+      "stewardship"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 52,
+    "topics": [
+      "missionary work",
+      "holy ghost",
+      "obedience"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 53,
+    "topics": [
+      "ordination",
+      "stewardship",
+      "endurance"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 54,
+    "topics": [
+      "covenant",
+      "obedience",
+      "gathering of israel"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 55,
+    "topics": [
+      "priesthood",
+      "education",
+      "missionary work"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 56,
+    "topics": [
+      "pride",
+      "judgment",
+      "obedience",
+      "repentance"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 57,
+    "topics": [
+      "zion",
+      "temple",
+      "gathering of israel",
+      "stewardship"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 58,
+    "topics": [
+      "agency",
+      "obedience",
+      "zion",
+      "repentance",
+      "judgment"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 59,
+    "topics": [
+      "sabbath",
+      "worship",
+      "sacrifice",
+      "gratitude",
+      "commandments"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 60,
+    "topics": [
+      "missionary work",
+      "accountability",
+      "fear of man"
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
   }
 ]

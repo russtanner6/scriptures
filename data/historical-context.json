@@ -6692,5 +6692,605 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": null
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 1,
+    "era": "Restoration",
+    "approxDate": "c. November 1831",
+    "setting": "Hiram, Ohio — given at a special conference of elders",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 2,
+    "era": "Restoration",
+    "approxDate": "c. September 1823",
+    "setting": "Manchester, New York — spoken by Moroni during his visit to Joseph Smith",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 3,
+    "era": "Restoration",
+    "approxDate": "c. July 1828",
+    "setting": "Harmony, Pennsylvania — after loss of 116 manuscript pages",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 4,
+    "era": "Restoration",
+    "approxDate": "c. February 1829",
+    "setting": "Harmony, Pennsylvania — revelation to Joseph Smith Sr.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 5,
+    "era": "Restoration",
+    "approxDate": "c. March 1829",
+    "setting": "Harmony, Pennsylvania — regarding Martin Harris and the Three Witnesses",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 6,
+    "era": "Restoration",
+    "approxDate": "c. April 1829",
+    "setting": "Harmony, Pennsylvania — revelation to Oliver Cowdery upon his arrival",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 7,
+    "era": "Restoration",
+    "approxDate": "c. April 1829",
+    "setting": "Harmony, Pennsylvania — translated from a parchment by Joseph and Oliver",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 8,
+    "era": "Restoration",
+    "approxDate": "c. April 1829",
+    "setting": "Harmony, Pennsylvania — during the translation of the Book of Mormon",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 9,
+    "era": "Restoration",
+    "approxDate": "c. April 1829",
+    "setting": "Harmony, Pennsylvania — after Oliver's failed attempt to translate",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 10,
+    "era": "Restoration",
+    "approxDate": "c. Summer 1828",
+    "setting": "Harmony, Pennsylvania — the Lord's solution to the lost manuscript pages",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 11,
+    "era": "Restoration",
+    "approxDate": "c. May 1829",
+    "setting": "Harmony, Pennsylvania — revelation to Hyrum Smith",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 12,
+    "era": "Restoration",
+    "approxDate": "c. May 1829",
+    "setting": "Harmony, Pennsylvania — revelation to Joseph Knight Sr.",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 13,
+    "era": "Restoration",
+    "approxDate": "c. May 15, 1829",
+    "setting": "Along the Susquehanna River near Harmony, Pennsylvania",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 14,
+    "era": "Restoration",
+    "approxDate": "c. June 1829",
+    "setting": "Fayette, New York — at the Peter Whitmer Sr. farm",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 15,
+    "era": "Restoration",
+    "approxDate": "c. June 1829",
+    "setting": "Fayette, New York — at the Peter Whitmer Sr. farm",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 16,
+    "era": "Restoration",
+    "approxDate": "c. June 1829",
+    "setting": "Fayette, New York — at the Peter Whitmer Sr. farm",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 17,
+    "era": "Restoration",
+    "approxDate": "c. June 1829",
+    "setting": "Fayette, New York — prior to the Three Witnesses experience",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 18,
+    "era": "Restoration",
+    "approxDate": "c. June 1829",
+    "setting": "Fayette, New York — revelation on the organization of the Church",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 19,
+    "era": "Restoration",
+    "approxDate": "c. March 1830",
+    "setting": "Manchester, New York — commandment to Martin Harris regarding the Book of Mormon printing",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 20,
+    "era": "Restoration",
+    "approxDate": "c. April 6, 1830",
+    "setting": "Fayette, New York — the day the Church of Christ was formally organized",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 21,
+    "era": "Restoration",
+    "approxDate": "c. April 6, 1830",
+    "setting": "Fayette, New York — day the Church was organized",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 22,
+    "era": "Restoration",
+    "approxDate": "c. April 1830",
+    "setting": "Manchester, New York — addressing former Baptists seeking entry",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 23,
+    "era": "Restoration",
+    "approxDate": "c. April 1830",
+    "setting": "Manchester, New York — personal revelations to five individuals",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 24,
+    "era": "Restoration",
+    "approxDate": "c. July 1830",
+    "setting": "Harmony, Pennsylvania — during early persecution",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 25,
+    "era": "Restoration",
+    "approxDate": "c. July 1830",
+    "setting": "Harmony, Pennsylvania — revelation to Emma Smith",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 26,
+    "era": "Restoration",
+    "approxDate": "c. July 1830",
+    "setting": "Harmony, Pennsylvania — between conferences",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 27,
+    "era": "Restoration",
+    "approxDate": "c. August 1830",
+    "setting": "Harmony, Pennsylvania — during preparation for the sacrament",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 28,
+    "era": "Restoration",
+    "approxDate": "c. September 1830",
+    "setting": "Fayette, New York — addressing the Hiram Page seer stone incident",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 29,
+    "era": "Restoration",
+    "approxDate": "c. September 1830",
+    "setting": "Fayette, New York — given before a conference of elders",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 30,
+    "era": "Restoration",
+    "approxDate": "c. September 1830",
+    "setting": "Fayette, New York — after the conference",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 31,
+    "era": "Restoration",
+    "approxDate": "c. September 1830",
+    "setting": "Fayette, New York — shortly after Thomas B. Marsh's baptism",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 32,
+    "era": "Restoration",
+    "approxDate": "c. October 1830",
+    "setting": "Near Fayette, New York — calling missionaries to the Lamanites",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 33,
+    "era": "Restoration",
+    "approxDate": "c. October 1830",
+    "setting": "Fayette, New York — calling Ezra Thayre and Northrop Sweet",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 34,
+    "era": "Restoration",
+    "approxDate": "c. November 1830",
+    "setting": "Fayette, New York — calling 19-year-old Orson Pratt",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 35,
+    "era": "Restoration",
+    "approxDate": "c. December 1830",
+    "setting": "Fayette, New York — shortly after Sidney Rigdon's arrival from Ohio",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 36,
+    "era": "Restoration",
+    "approxDate": "c. December 1830",
+    "setting": "Near Fayette, New York — calling Edward Partridge",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 37,
+    "era": "Restoration",
+    "approxDate": "c. December 1830",
+    "setting": "Fayette, New York — commanding the move to Ohio",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 38,
+    "era": "Restoration",
+    "approxDate": "c. January 2, 1831",
+    "setting": "Fayette, New York — at a conference of the church",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 39,
+    "era": "Restoration",
+    "approxDate": "c. January 1831",
+    "setting": "Fayette, New York — calling Baptist minister James Covill",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 40,
+    "era": "Restoration",
+    "approxDate": "c. January 1831",
+    "setting": "Fayette, New York — after James Covill's rejection",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 41,
+    "era": "Restoration",
+    "approxDate": "c. February 4, 1831",
+    "setting": "Kirtland, Ohio — early organization of the Ohio church",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 42,
+    "era": "Restoration",
+    "approxDate": "c. February 9, 1831",
+    "setting": "Kirtland, Ohio — the saints assembled as commanded",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 43,
+    "era": "Restoration",
+    "approxDate": "c. February 1831",
+    "setting": "Kirtland, Ohio — addressing confusion over false revelations",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 44,
+    "era": "Restoration",
+    "approxDate": "c. February 1831",
+    "setting": "Kirtland, Ohio — calling a general conference",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 45,
+    "era": "Restoration",
+    "approxDate": "c. March 7, 1831",
+    "setting": "Kirtland, Ohio — during growing opposition and confusion",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 46,
+    "era": "Restoration",
+    "approxDate": "c. March 8, 1831",
+    "setting": "Kirtland, Ohio — addressing false spiritual manifestations",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 47,
+    "era": "Restoration",
+    "approxDate": "c. March 8, 1831",
+    "setting": "Kirtland, Ohio — appointing a church historian",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 48,
+    "era": "Restoration",
+    "approxDate": "c. March 1831",
+    "setting": "Kirtland, Ohio — preparing for eastern converts' arrival",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 49,
+    "era": "Restoration",
+    "approxDate": "c. March 1831",
+    "setting": "Kirtland, Ohio — mission to the Shaker community at North Union",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 50,
+    "era": "Restoration",
+    "approxDate": "c. May 1831",
+    "setting": "Kirtland, Ohio — addressing bizarre spiritual manifestations among converts",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 51,
+    "era": "Restoration",
+    "approxDate": "c. May 1831",
+    "setting": "Thompson, Ohio — organizing consecration for Colesville saints",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 52,
+    "era": "Restoration",
+    "approxDate": "c. June 7, 1831",
+    "setting": "Kirtland, Ohio — at the fourth general conference",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 53,
+    "era": "Restoration",
+    "approxDate": "c. June 1831",
+    "setting": "Kirtland, Ohio — calling Sidney Gilbert for Missouri",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 54,
+    "era": "Restoration",
+    "approxDate": "c. June 1831",
+    "setting": "Kirtland, Ohio — after Leman Copley violated land agreements in Thompson",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 55,
+    "era": "Restoration",
+    "approxDate": "c. June 1831",
+    "setting": "Kirtland, Ohio — calling W. W. Phelps shortly after his arrival",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 56,
+    "era": "Restoration",
+    "approxDate": "c. June 1831",
+    "setting": "Kirtland, Ohio — addressing disobedience and revised assignments",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 57,
+    "era": "Restoration",
+    "approxDate": "c. July 20, 1831",
+    "setting": "Independence, Jackson County, Missouri — identifying the center place of Zion",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 58,
+    "era": "Restoration",
+    "approxDate": "c. August 1, 1831",
+    "setting": "Independence, Missouri — instructions for building up Zion",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 59,
+    "era": "Restoration",
+    "approxDate": "c. August 7, 1831",
+    "setting": "Zion, Jackson County, Missouri — the day after the temple site was dedicated",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 60,
+    "era": "Restoration",
+    "approxDate": "c. August 8, 1831",
+    "setting": "Independence, Missouri — instructions for the return journey east",
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
   }
 ]

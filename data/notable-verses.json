@@ -9922,5 +9922,905 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": null
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 38,
+        "reason": "One of the most cited D&C verses: the Lord's voice and His servants' voice are the same."
+      },
+      {
+        "verse": 37,
+        "reason": "Command to 'search these commandments'—often used to encourage personal scripture study."
+      },
+      {
+        "verse": 30,
+        "reason": "Declares the restored church as 'the only true and living church upon the face of the whole earth.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "The promise of Elijah's return to restore priesthood keys—foundational to LDS temple work."
+      },
+      {
+        "verse": 2,
+        "reason": "Hearts of children turning to fathers—the doctrinal basis for family history and temple ordinances."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "'The works, and the designs, and the purposes of God cannot be frustrated'—often quoted on divine sovereignty."
+      },
+      {
+        "verse": 7,
+        "reason": "'You should not have feared man more than God'—a lasting lesson on moral courage."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "The most frequently quoted missionary scripture: 'serve him with all your heart, might, mind and strength.'"
+      },
+      {
+        "verse": 4,
+        "reason": "'The field is white already to harvest'—iconic missionary imagery."
+      },
+      {
+        "verse": 6,
+        "reason": "The list of Christlike attributes: faith, virtue, knowledge, temperance, patience, godliness, charity, humility, diligence."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "Poetic imagery of the church 'coming forth out of the wilderness—clear as the moon, and fair as the sun.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 36,
+        "reason": "'Look unto me in every thought; doubt not, fear not'—widely memorized and shared."
+      },
+      {
+        "verse": 7,
+        "reason": "'Seek not for riches but for wisdom'—a foundational principle on righteous priorities."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "John the Beloved's request: 'Lord, give unto me power over death, that I may live and bring souls unto thee.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "Classic description of revelation: 'I will tell you in your mind and in your heart, by the Holy Ghost.'"
+      },
+      {
+        "verse": 3,
+        "reason": "'This is the spirit of revelation'—defining how God communicates with His children."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 8,
+        "reason": "The most quoted verse on personal revelation: 'you must study it out in your mind' then ask, and 'your bosom shall burn within you.'"
+      },
+      {
+        "verse": 9,
+        "reason": "'A stupor of thought'—the counterpart to the burning bosom, widely taught in LDS settings."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 10,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "'Pray always, that you may come off conqueror'—frequently used in lessons on prayer and spiritual resilience."
+      },
+      {
+        "verse": 67,
+        "reason": "Succinct definition of Christ's church: 'whosoever repenteth and cometh unto me, the same is my church.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 11,
+    "verses": [
+      {
+        "verse": 21,
+        "reason": "'Seek not to declare my word, but first seek to obtain my word'—frequently cited counsel on spiritual preparation before teaching."
+      },
+      {
+        "verse": 13,
+        "reason": "Promise that the Spirit 'shall enlighten your mind' and 'fill your soul with joy.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 8,
+        "reason": "'No one can assist in this work except he shall be humble and full of love, having faith, hope, and charity.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "The entire verse records the restoration of the Aaronic Priesthood—one of the most significant events of the Restoration."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "'Eternal life, which gift is the greatest of all the gifts of God'—foundational teaching on the highest reward."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 15,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "'The thing which will be of the most worth unto you will be to declare repentance'—defining the priority of missionary service."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "Same declaration as Section 15—the most valuable thing is bringing souls to Christ through declaring repentance."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 17,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "Promise to the Three Witnesses that they would view the plates, sword of Laban, Urim and Thummim, and Liahona."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 18,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "'Remember the worth of souls is great in the sight of God'—perhaps the most quoted D&C verse."
+      },
+      {
+        "verse": 15,
+        "reason": "'If it so be that you should labor all your days... and bring, save it be one soul unto me, how great shall be your joy.'"
+      },
+      {
+        "verse": 16,
+        "reason": "'How great will be your joy if you should bring many souls unto me!'—completing the worth-of-souls teaching."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 19,
+    "verses": [
+      {
+        "verse": 18,
+        "reason": "Christ's firsthand description of Gethsemane suffering: 'to tremble because of pain, and to bleed at every pore.'"
+      },
+      {
+        "verse": 16,
+        "reason": "'I, God, have suffered these things for all, that they might not suffer if they would repent.'"
+      },
+      {
+        "verse": 23,
+        "reason": "'Learn of me, and listen to my words; walk in the meekness of my Spirit, and you shall have peace in me.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 20,
+    "verses": [
+      {
+        "verse": 77,
+        "reason": "The sacrament bread prayer—recited weekly in every LDS sacrament meeting worldwide."
+      },
+      {
+        "verse": 79,
+        "reason": "The sacrament water prayer—the companion ordinance prayer used in every LDS meeting."
+      },
+      {
+        "verse": 37,
+        "reason": "Defines baptismal qualifications: broken hearts, contrite spirits, willingness to take Christ's name."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 21,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "'For his word ye shall receive, as if from mine own mouth'—foundational principle of prophetic authority in the LDS Church."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 22,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "Declares all prior baptisms invalid under the new covenant—establishing the necessity of restored priesthood authority."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 23,
+    "verses": [],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 24,
+    "verses": [
+      {
+        "verse": 8,
+        "reason": "'Be patient in afflictions, for thou shalt have many; but endure them, for, lo, I am with thee, even unto the end of thy days.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 25,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "'For my soul delighteth in the song of the heart; yea, the song of the righteous is a prayer unto me'—foundational verse on sacred music in LDS worship."
+      },
+      {
+        "verse": 3,
+        "reason": "Emma called 'an elect lady, whom I have called'—the origin of the Relief Society's scriptural identity."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 26,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "'All things shall be done by common consent in the church'—the principle governing LDS church governance."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 27,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "Names the dispensation heads—Moroni, Elias, Elijah, Michael, Peter, James, John—who restored priesthood keys."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 28,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "'No one shall be appointed to receive commandments and revelations in this church excepting my servant Joseph Smith'—establishing the principle of a single presiding prophet."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 29,
+    "verses": [
+      {
+        "verse": 46,
+        "reason": "'Little children are redeemed from the foundation of the world through mine Only Begotten'—key verse on the innocence and salvation of children."
+      },
+      {
+        "verse": 39,
+        "reason": "'If they never should have bitter they could not know the sweet'—classic statement of the necessity of opposition."
+      },
+      {
+        "verse": 36,
+        "reason": "Satan and a third of heaven's hosts cast out for rebellion—key verse on the pre-mortal war in heaven."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 30,
+    "verses": [],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 31,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "'Be patient in afflictions, revile not against those that revile. Govern your house in meekness, and be steadfast.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 32,
+    "verses": [],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 33,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "'Having your lamps trimmed and burning, and oil with you, that you may be ready at the coming of the Bridegroom'—parable of the ten virgins applied."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 34,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "'The time is soon at hand that I shall come in a cloud with power and great glory'—vivid Second Coming declaration."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 35,
+    "verses": [
+      {
+        "verse": 27,
+        "reason": "'Fear not, little flock, the kingdom is yours until I come'—echoes Luke 12:32 with Restoration context."
+      },
+      {
+        "verse": 13,
+        "reason": "'I call upon the weak things of the world, those who are unlearned and despised, to thrash the nations by the power of my Spirit.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 36,
+    "verses": [
+      {
+        "verse": 8,
+        "reason": "'I am Jesus Christ, the Son of God; wherefore, gird up your loins and I will suddenly come to my temple.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 37,
+    "verses": [],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 38,
+    "verses": [
+      {
+        "verse": 27,
+        "reason": "'I say unto you, be one; and if ye are not one ye are not mine'—among the most quoted D&C verses on unity."
+      },
+      {
+        "verse": 30,
+        "reason": "'If ye are prepared ye shall not fear'—widely quoted counsel on spiritual and temporal readiness."
+      },
+      {
+        "verse": 32,
+        "reason": "Promise to be 'endowed with power from on high' in Ohio—foreshadowing the Kirtland Temple endowment."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 39,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "Clear definition of the gospel: repentance, baptism by water, then the baptism of fire and the Holy Ghost."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 40,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "'He received the word with gladness, but straightway Satan tempted him'—a compact lesson on the fragility of new conversion."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 41,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "'He that receiveth my law and doeth it, the same is my disciple'—clear definition of true discipleship."
+      },
+      {
+        "verse": 11,
+        "reason": "Edward Partridge compared to 'Nathanael of old, in whom there is no guile'—rare individual commendation."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 42,
+    "verses": [
+      {
+        "verse": 22,
+        "reason": "'Thou shalt love thy wife with all thy heart, and shalt cleave unto her and none else'—foundational marriage commandment."
+      },
+      {
+        "verse": 61,
+        "reason": "'Thou shalt ask, and thou shalt receive revelation upon revelation, knowledge upon knowledge'—progressive revelation promise."
+      },
+      {
+        "verse": 30,
+        "reason": "'Thou wilt remember the poor, and consecrate of thy properties for their support'—the law of consecration."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 43,
+    "verses": [
+      {
+        "verse": 34,
+        "reason": "'Let the solemnities of eternity rest upon your minds'—a unique and powerful phrase frequently quoted."
+      },
+      {
+        "verse": 25,
+        "reason": "The Lord's lament listing every way He has called upon the nations—voice, thunders, earthquakes, pestilence, mercy."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 44,
+    "verses": [],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 45,
+    "verses": [
+      {
+        "verse": 57,
+        "reason": "'They that are wise and have received the truth, and have taken the Holy Spirit for their guide, and have not been deceived'—the wise virgins defined."
+      },
+      {
+        "verse": 52,
+        "reason": "'These wounds are the wounds with which I was wounded in the house of my friends'—Christ's poignant revelation to the Jews at His return."
+      },
+      {
+        "verse": 66,
+        "reason": "'And it shall be called the New Jerusalem, a land of peace, a city of refuge, a place of safety for the saints.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 46,
+    "verses": [
+      {
+        "verse": 13,
+        "reason": "'To some it is given by the Holy Ghost to know that Jesus Christ is the Son of God'—the first and primary spiritual gift."
+      },
+      {
+        "verse": 14,
+        "reason": "'To others it is given to believe on their words'—validating those who rely on the testimony of others."
+      },
+      {
+        "verse": 11,
+        "reason": "'For all have not every gift given unto them; for there are many gifts, and to every man is given a gift by the Spirit of God.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 47,
+    "verses": [],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 48,
+    "verses": [],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 49,
+    "verses": [
+      {
+        "verse": 15,
+        "reason": "'Whoso forbiddeth to marry is not ordained of God, for marriage is ordained of God unto man'—clear declaration on the divine nature of marriage."
+      },
+      {
+        "verse": 24,
+        "reason": "'Before the great day of the Lord shall come, Jacob shall flourish in the wilderness, and the Lamanites shall blossom as the rose.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 50,
+    "verses": [
+      {
+        "verse": 24,
+        "reason": "'That which is of God is light; and he that receiveth light, and continueth in God, receiveth more light; and that light groweth brighter and brighter until the perfect day.'"
+      },
+      {
+        "verse": 23,
+        "reason": "'That which doth not edify is not of God, and is darkness'—a simple, powerful test for discerning truth."
+      },
+      {
+        "verse": 41,
+        "reason": "'Fear not, little children, for you are mine, and I have overcome the world'—tender reassurance from Christ."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 51,
+    "verses": [
+      {
+        "verse": 19,
+        "reason": "'Whoso is found a faithful, a just, and a wise steward shall enter into the joy of his Lord, and shall inherit eternal life.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 52,
+    "verses": [
+      {
+        "verse": 15,
+        "reason": "'He that prayeth, whose spirit is contrite, the same is accepted of me if he obey mine ordinances'—a pattern for spiritual authenticity."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 53,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "'He only is saved who endureth unto the end'—concise restatement of a fundamental gospel principle."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 54,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "'Be patient in tribulation until I come; and, behold, I come quickly, and my reward is with me.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 55,
+    "verses": [],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 56,
+    "verses": [
+      {
+        "verse": 16,
+        "reason": "Powerful woe to the rich: 'your riches will canker your souls... The harvest is past, the summer is ended, and my soul is not saved!'"
+      },
+      {
+        "verse": 18,
+        "reason": "'Blessed are the poor who are pure in heart, whose hearts are broken, and whose spirits are contrite, for they shall see the kingdom of God.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 57,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "'This is the land of promise, and the place for the city of Zion'—the revelation designating Independence, Missouri."
+      },
+      {
+        "verse": 3,
+        "reason": "'The place which is now called Independence is the center place; and a spot for the temple is lying westward.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 58,
+    "verses": [
+      {
+        "verse": 27,
+        "reason": "'Men should be anxiously engaged in a good cause, and do many things of their own free will, and bring to pass much righteousness'—one of the most quoted D&C verses on agency."
+      },
+      {
+        "verse": 26,
+        "reason": "'It is not meet that I should command in all things; for he that is compelled in all things, the same is a slothful and not a wise servant.'"
+      },
+      {
+        "verse": 42,
+        "reason": "'He who has repented of his sins, the same is forgiven, and I, the Lord, remember them no more.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 59,
+    "verses": [
+      {
+        "verse": 8,
+        "reason": "'Thou shalt offer a sacrifice unto the Lord thy God in righteousness, even that of a broken heart and a contrite spirit.'"
+      },
+      {
+        "verse": 9,
+        "reason": "'Thou shalt go to the house of prayer and offer up thy sacraments upon my holy day'—the Sabbath day commandment."
+      },
+      {
+        "verse": 19,
+        "reason": "'For food and for raiment, for taste and for smell, to strengthen the body and to enliven the soul'—celebrates earth's bounty."
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
+  },
+  {
+    "book": "Doctrine and Covenants",
+    "chapter": 60,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "'They hide the talent which I have given unto them, because of the fear of man. Wo unto such'—stern warning against suppressing one's testimony.'"
+      }
+    ],
+    "volumeAbbrev": "D&C",
+    "volumeName": "Doctrine and Covenants",
+    "bookId": 82
   }
 ]
