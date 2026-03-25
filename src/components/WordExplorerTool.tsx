@@ -505,7 +505,7 @@ export default function WordExplorerTool() {
           </div>
 
           <div style={{ height: isMobile ? "280px" : "360px", marginBottom: "24px" }}>
-            <Bar
+            <Line
               data={{
                 labels: (() => {
                   const vols = getVolumeTotals(termData[0].results);
@@ -520,10 +520,13 @@ export default function WordExplorerTool() {
                       const match = termVols.find((tv) => tv.abbrev === v.abbrev);
                       return match?.count || 0;
                     }),
-                    backgroundColor: td.color,
                     borderColor: td.color,
-                    borderWidth: 0,
-                    borderRadius: 6,
+                    backgroundColor: `${td.color}20`,
+                    fill: termData.length === 1,
+                    tension: 0.4,
+                    pointRadius: 4,
+                    pointHoverRadius: 6,
+                    borderWidth: 2,
                   };
                 }),
               }}
