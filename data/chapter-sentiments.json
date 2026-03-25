@@ -22358,5 +22358,70 @@
     "contrition": 0,
     "dominant": "peace",
     "rationale": "API error — needs re-scoring"
+  },
+  {
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookName": "Sirach",
+    "bookId": 94,
+    "chapter": 49,
+    "exaltation": 0,
+    "peace": 0,
+    "admonition": 0,
+    "contrition": 0,
+    "dominant": "peace",
+    "rationale": "API error — needs re-scoring"
+  },
+  {
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookName": "Sirach",
+    "bookId": 94,
+    "chapter": 50,
+    "exaltation": 0,
+    "peace": 0,
+    "admonition": 0,
+    "contrition": 0,
+    "dominant": "peace",
+    "rationale": "API error — needs re-scoring"
+  },
+  {
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookName": "Sirach",
+    "bookId": 94,
+    "chapter": 51,
+    "exaltation": 0,
+    "peace": 0,
+    "admonition": 0,
+    "contrition": 0,
+    "dominant": "peace",
+    "rationale": "API error — needs re-scoring"
+  },
+  {
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookName": "Baruch",
+    "bookId": 95,
+    "chapter": 1,
+    "exaltation": 0,
+    "peace": 0,
+    "admonition": 0,
+    "contrition": 0,
+    "dominant": "peace",
+    "rationale": "API error — needs re-scoring"
+  },
+  {
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookName": "Baruch",
+    "bookId": 95,
+    "chapter": 2,
+    "exaltation": 0,
+    "peace": 0,
+    "admonition": 0,
+    "contrition": 0,
+    "dominant": "peace",
+    "rationale": "API error — needs re-scoring"
   }
 ]
