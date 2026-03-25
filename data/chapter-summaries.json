@@ -1114,7 +1114,7 @@
   {
     "book": "Moroni",
     "chapter": 3,
-    "summary": "The procedure for ordaining priests and teachers is outlined \u2014 by the laying on of hands by those holding authority, in the name of Christ.",
+    "summary": "The procedure for ordaining priests and teachers is outlined — by the laying on of hands by those holding authority, in the name of Christ.",
     "volumeAbbrev": "BoM",
     "volumeName": "Book of Mormon",
     "bookId": 81
@@ -1146,7 +1146,7 @@
   {
     "book": "Moroni",
     "chapter": 7,
-    "summary": "Mormon's sermon on discerning good from evil, the necessity of faith for miracles, and the vital roles of hope and charity \u2014 the pure love of Christ.",
+    "summary": "Mormon's sermon on discerning good from evil, the necessity of faith for miracles, and the vital roles of hope and charity — the pure love of Christ.",
     "volumeAbbrev": "BoM",
     "volumeName": "Book of Mormon",
     "bookId": 81
@@ -1730,7 +1730,7 @@
   {
     "book": "Alma",
     "chapter": 41,
-    "summary": "Alma teaches the law of restoration \u2014 we are restored to the state of our desires, whether good or evil.",
+    "summary": "Alma teaches the law of restoration — we are restored to the state of our desires, whether good or evil.",
     "volumeAbbrev": "BoM",
     "volumeName": "Book of Mormon",
     "bookId": 75
@@ -1952,7 +1952,7 @@
     "bookId": 84
   },
   {
-    "book": "Joseph Smith\u2014History",
+    "book": "Joseph Smith—History",
     "chapter": 1,
     "summary": "Joseph Smith recounts the religious confusion of his youth, the First Vision, Moroni's visits, obtaining the gold plates, and the restoration of the Aaronic Priesthood by John the Baptist.",
     "volumeAbbrev": "PoGP",
@@ -1960,7 +1960,7 @@
     "bookId": 86
   },
   {
-    "book": "Joseph Smith\u2014Matthew",
+    "book": "Joseph Smith—Matthew",
     "chapter": 1,
     "summary": "Jesus foretells the destruction of Jerusalem and the signs of His Second Coming, warning His disciples to watch and be prepared for the great tribulations of the last days.",
     "volumeAbbrev": "PoGP",
@@ -5109,6 +5109,334 @@
     "book": "Philippians",
     "chapter": 4,
     "summary": "Paul encourages the saints to rejoice always, to be anxious for nothing, and to think on virtuous things, expressing gratitude for their generous support of his ministry.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "summary": "John records his vision of the glorified Jesus Christ on the isle of Patmos. The Savior appears amidst seven golden candlesticks, holding seven stars, and commands John to write his visions to the seven churches in Asia.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "summary": "Jesus delivers specific messages to the churches in Ephesus, Smyrna, Pergamos, and Thyatira. He commends their labors, rebukes their failings (such as losing first love or following false doctrine), and promises rewards to those who overcome.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "summary": "The Savior addresses the churches in Sardis, Philadelphia, and Laodicea. He warns against spiritual death and lukewarmness, commends those who keep His word, and invites all to open the door and sup with Him.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "summary": "John is caught up to heaven and sees the throne of God surrounded by a rainbow. He describes twenty-four elders and four beasts who cease not to worship the Almighty, the Creator of all things.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "summary": "John sees a book sealed with seven seals in the hand of Him on the throne. Only the Lamb (Jesus Christ) is found worthy to open the seals, sparking a universal chorus of praise for His redemptive sacrifice.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 6,
+    "summary": "The Lamb opens the first six seals, revealing visions of conquest, war, famine, death, the souls of martyrs, and a great earthquake. These represent various epochs and judgments throughout the earth's history.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 7,
+    "summary": "Four angels hold back the winds while 144,000 of the tribes of Israel are sealed. John then sees a countless multitude from every nation, clothed in white, who have come out of great tribulation and are served by God.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 8,
+    "summary": "The opening of the seventh seal begins with silence in heaven. Seven angels receive trumpets. The first four sound, bringing destruction to the trees, sea, rivers, and celestial bodies, accompanied by a warning of woes.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 9,
+    "summary": "The fifth and sixth trumpets sound, releasing demonic locusts to torment men and a massive army that slays a third of mankind. Despite these plagues, the survivors refuse to repent of their idolatry and wickedness.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 10,
+    "summary": "A mighty angel with a little book appears and declares that time shall be no longer. John is commanded to eat the book, which is sweet in his mouth but bitter in his belly, symbolizing his mission to many nations.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 11,
+    "summary": "John measures the temple. Two witnesses prophesy and are slain in Jerusalem, only to be resurrected after three days. The seventh trumpet sounds, announcing that the kingdoms of this world are become the kingdoms of Christ.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 12,
+    "summary": "John sees a woman clothed with the sun who gives birth to a child. The dragon tries to devour the child but is cast out of heaven by Michael. The dragon then persecutes the woman and her seed on the earth.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 13,
+    "summary": "A beast rises from the sea with seven heads and ten horns, followed by a second beast from the earth that performs wonders and requires all to receive a mark (666) to buy or sell, deceiving many through power.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 14,
+    "summary": "The Lamb stands on Mount Sion with the 144,000. Three angels announce the restoration of the gospel, the fall of Babylon, and the judgment upon the beast's followers. The Son of man reaps the harvest of the earth.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 15,
+    "summary": "John sees those who have overcome the beast singing the song of Moses and the Lamb. Seven angels emerge from the heavenly temple, having the seven last plagues, and receive seven golden vials full of the wrath of God.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 16,
+    "summary": "The angels pour out their vials, causing sores, turning the sea and rivers to blood, scorching men with heat, and bringing darkness. The final vial leads to a great earthquake and the gathering for the battle of Armageddon.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 17,
+    "summary": "An angel shows John the judgment of the great harlot, Babylon, who sits upon a scarlet beast. The beast and the ten kings represent worldly powers that will eventually destroy the harlot before being overcome by the Lamb.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 18,
+    "summary": "A mighty angel announces the total fall of Babylon. The kings and merchants of the earth lament the loss of her luxury and commerce. God's people are commanded to come out of her to avoid her plagues and destruction.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 19,
+    "summary": "Heaven rejoices over the judgment of the harlot and the marriage of the Lamb. Jesus Christ, as the Word of God, returns on a white horse with the armies of heaven to destroy the beast and the false prophet.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 20,
+    "summary": "Satan is bound for a thousand years during the Millennium. After a final brief rebellion, he is cast into the lake of fire. All the dead are then judged before the great white throne according to their works recorded in the books.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "summary": "John sees a new heaven and a new earth, and the holy city, New Jerusalem, descending from God. He describes its jasper walls and pearly gates, declaring that God will dwell with His people and wipe away all tears.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "summary": "The angel shows John the river and tree of life in the city. John is warned not to worship the angel and not to seal the prophecy. The Lord Jesus Christ promises to come quickly and invites all to partake of the water of life freely.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "summary": "Paul introduces himself as an apostle called to preach the gospel. He declares the gospel is God's power unto salvation and exposes the wickedness of those who reject God, describing their descent into idolatry and moral corruption.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 2,
+    "summary": "Paul argues that God judges all people impartially. Both Jews who have the law and Gentiles who follow their conscience will be judged by the same standard — the condition of their hearts, not outward observance alone.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "summary": "Paul proves that all — both Jews and Gentiles — are under sin and that no one is justified by the works of the law. Righteousness comes through faith in Jesus Christ, for all have sinned and fall short of God's glory.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 4,
+    "summary": "Paul uses Abraham as the supreme example of justification by faith, not by works. Abraham believed God, and it was counted to him for righteousness — a pattern for all who believe in Christ's resurrection.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "summary": "Paul teaches that through Christ's atonement, believers are justified and have peace with God. As Adam's transgression brought death to all, so Christ's sacrifice brings the free gift of grace and eternal life to all.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "summary": "Paul asks whether believers should continue in sin that grace may abound. He emphatically answers no — those baptized into Christ have died to sin and should walk in newness of life, serving righteousness.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 7,
+    "summary": "Paul explains that the law reveals sin but cannot save. He describes the painful inner conflict of knowing the good but being unable to do it, concluding that deliverance comes only through Jesus Christ.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "summary": "Paul declares there is no condemnation for those in Christ Jesus. He teaches that the Spirit gives life, that believers are joint-heirs with Christ, and that nothing can separate the faithful from God's love.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 9,
+    "summary": "Paul expresses deep sorrow over Israel's unbelief. He affirms God's sovereignty in choosing to whom He extends mercy, using the examples of Jacob and Esau and the potter's authority over the clay.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 10,
+    "summary": "Paul declares that salvation is available to all who confess with their mouth and believe in their heart. He emphasizes the necessity of preaching, for faith cometh by hearing the word of God.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 11,
+    "summary": "Paul assures that God has not cast away His people Israel. Using the olive tree allegory, he teaches that Gentile believers are grafted in and warns against boasting, for God's gifts and calling are irrevocable.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "summary": "Paul urges believers to present their bodies as living sacrifices and be transformed by the renewing of their minds. He outlines the use of spiritual gifts, genuine love, humility, and overcoming evil with good.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "summary": "Paul commands submission to governing authorities as ordained of God. He urges believers to love one another (fulfilling the law), put off works of darkness, and put on the armour of light, for salvation is near.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 14,
+    "summary": "Paul addresses disputes over food and holy days, teaching that the kingdom of God is not about these things but about righteousness, peace, and joy. He warns against judging others and causing them to stumble.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 15,
+    "summary": "Paul encourages mutual acceptance and glorifying God with one voice. He summarizes his ministry to the Gentiles, shares his travel plans to visit Rome and Spain, and requests their prayers.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 16,
+    "summary": "Paul commends Phoebe and greets many saints in Rome by name. Tertius adds his own greeting as the scribe. Paul warns against those who cause divisions and closes with a doxology praising God's eternal wisdom.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 1,
+    "summary": "Paul greets Titus and reminds him of his assignment in Crete: to set things in order and ordain elders in every city. He outlines the qualifications for bishops and warns against deceivers, especially those of the circumcision.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 2,
+    "summary": "Paul instructs Titus to teach sound doctrine to different groups — aged men, aged women, young women, young men, and servants. He grounds all behavior in the grace of God, which teaches us to live soberly and righteously.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 3,
+    "summary": "Paul urges Titus to remind the Saints to be subject to authorities, to be gentle, and to avoid foolish controversies. He declares that God saved us by His mercy through the washing of regeneration and the Holy Ghost.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": null

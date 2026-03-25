@@ -2440,7 +2440,7 @@
     "bookId": 84
   },
   {
-    "book": "Joseph Smith\u2014History",
+    "book": "Joseph Smith—History",
     "chapter": 1,
     "era": "Restoration",
     "approxDate": "1805-1829",
@@ -2450,7 +2450,7 @@
     "bookId": 86
   },
   {
-    "book": "Joseph Smith\u2014Matthew",
+    "book": "Joseph Smith—Matthew",
     "chapter": 1,
     "era": "Ministry of Christ",
     "approxDate": "c. AD 33",
@@ -5194,7 +5194,7 @@
     "chapter": 2,
     "era": "Apostolic",
     "approxDate": "c. AD 60-62",
-    "setting": "Paul addresses the Colossian heresy \u2014 a syncretic blend of Jewish legalism, pagan philosophy, and proto-gnostic asceticism threatening the young church.",
+    "setting": "Paul addresses the Colossian heresy — a syncretic blend of Jewish legalism, pagan philosophy, and proto-gnostic asceticism threatening the young church.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 51
@@ -6279,6 +6279,416 @@
     "era": "Pauline epistles",
     "approxDate": "c. AD 60-62",
     "setting": "Rome (Paul's imprisonment)",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "Written by John while exiled on the island of Patmos during a period of intense Roman persecution, likely under Emperor Domitian.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "Addresses the specific geographical and cultural challenges facing Christian congregations in the Roman province of Asia Minor.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "Reflects the socio-economic environment of cities like Laodicea, known for their wealth, banking, and medical advancements.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "Draws on ancient temple imagery and the divine council motif common in Near Eastern and Israelite literature.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "Utilizes the legal practice of sealed scrolls (wills or deeds) which required specific authority to open.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 6,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "The imagery of the four horsemen reflects the common historical plagues of the Roman world: military conquest, civil war, famine, and pestilence.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 7,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "Echoes the ritual and cultural expectations of the gathering of the scattered tribes of Israel.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 8,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "Trumpets were used in ancient Israel for gathering, alarm, and temple ritual, signaling a divine call to attention.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 9,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "The description of the locust-like army may reflect the terrifying border raids and military tech of the 1st-century East.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 10,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "Relates to the biblical tradition of prophets (like Ezekiel) being commissioned through the eating of a scroll.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 11,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "Mentions the city where also our Lord was crucified, identifying Jerusalem as a central stage for final events.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 12,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "The War in Heaven is contextualized in LDS theology as the pre-mortal conflict over agency and the Plan of Salvation.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 13,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "The mark of the beast and the number 666 are often linked to the political and economic pressures of the Roman imperial cult.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 14,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "The angel with the everlasting gospel is a pivotal historical marker in the LDS narrative of the Restoration.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 15,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "The Song of Moses celebrates Israel's deliverance from Egypt, here used as a pattern for the final deliverance of the Saints.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 16,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "The location of Armageddon (Har Megiddo) was a historic site of numerous decisive battles in Israel's history.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 17,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "Babylon was the historic enemy of Jerusalem, used here as a code for Rome and for all worldly systems that oppose God.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 18,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "The catalog of goods (v. 12-13) reflects the vast Mediterranean trade network that enriched the Roman Empire at the expense of others.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 19,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "The marriage supper imagery draws from Jewish wedding customs where the groom's return is the climax of the celebration.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 20,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "The concept of a Millennium (a thousand-year peace) is a foundational expectation in the Latter-day Saint view of the future.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "The description of the city uses the same measurements and materials (gold, gems) associated with the Holy of Holies in the Temple.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "era": "Early Church",
+    "approxDate": "c. AD 95",
+    "setting": "The closing warnings against adding or taking away from the prophecy were standard literary formulas for protecting sacred texts.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "era": "Pauline Epistles",
+    "approxDate": "c. AD 57",
+    "setting": "Written by Paul from Corinth around AD 57, this epistle addresses a church he had not yet visited, establishing his doctrinal credentials.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 2,
+    "era": "Pauline Epistles",
+    "approxDate": "c. AD 57",
+    "setting": "Reflects the tension in Rome between Jewish and Gentile Christians regarding the role of the Mosaic law in the new covenant.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "era": "Pauline Epistles",
+    "approxDate": "c. AD 57",
+    "setting": "Paul's argument draws heavily on Old Testament scripture, demonstrating mastery of the Jewish legal and prophetic tradition.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 4,
+    "era": "Pauline Epistles",
+    "approxDate": "c. AD 57",
+    "setting": "Abraham was revered by Jews, proselytes, and God-fearers alike in Rome, making him a unifying example for Paul's mixed audience.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "era": "Pauline Epistles",
+    "approxDate": "c. AD 57",
+    "setting": "The Adam-Christ typology was central to early Christian theology and is foundational to the LDS understanding of the Fall and Atonement.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "era": "Pauline Epistles",
+    "approxDate": "c. AD 57",
+    "setting": "Early Christian baptism by immersion symbolized death, burial, and resurrection — a practice Paul assumed his Roman readers understood.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 7,
+    "era": "Pauline Epistles",
+    "approxDate": "c. AD 57",
+    "setting": "Paul's description of the inner struggle may reflect both personal experience and a rhetorical style common in Greco-Roman moral philosophy.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "era": "Pauline Epistles",
+    "approxDate": "c. AD 57",
+    "setting": "The promise of no condemnation was especially meaningful to a community living under the shadow of Roman imperial judgment.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 9,
+    "era": "Pauline Epistles",
+    "approxDate": "c. AD 57",
+    "setting": "Paul's anguish over Israel reflects the deep division between the early Church and the synagogue in the mid-first century.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 10,
+    "era": "Pauline Epistles",
+    "approxDate": "c. AD 57",
+    "setting": "The emphasis on preaching and hearing reflects the oral culture of the ancient world, where literacy was limited and public proclamation was key.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 11,
+    "era": "Pauline Epistles",
+    "approxDate": "c. AD 57",
+    "setting": "The olive tree was a well-known symbol of Israel. Paul's grafting metaphor would have resonated with both Jewish and agricultural audiences.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "era": "Pauline Epistles",
+    "approxDate": "c. AD 57",
+    "setting": "The ethical exhortations mirror the household codes and moral instruction common in both Jewish wisdom and Greco-Roman philosophy.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "era": "Pauline Epistles",
+    "approxDate": "c. AD 57",
+    "setting": "The command to submit to authorities was written under Nero's early, relatively peaceful reign, before the great persecution.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 14,
+    "era": "Pauline Epistles",
+    "approxDate": "c. AD 57",
+    "setting": "The 'weak' and 'strong' likely reflect real tensions in the Roman church over Jewish food laws and Sabbath observance.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 15,
+    "era": "Pauline Epistles",
+    "approxDate": "c. AD 57",
+    "setting": "Paul's mention of Spain reveals his ambitious missionary strategy to reach the western edge of the known Roman world.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 16,
+    "era": "Pauline Epistles",
+    "approxDate": "c. AD 57",
+    "setting": "The long list of personal greetings reveals a remarkably diverse and interconnected early Christian network across the Mediterranean.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 1,
+    "era": "Pastoral Epistles",
+    "approxDate": "c. AD 63-65",
+    "setting": "Crete was known in antiquity for moral looseness; even a Cretan prophet admitted his own people were liars and gluttons.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 2,
+    "era": "Pastoral Epistles",
+    "approxDate": "c. AD 63-65",
+    "setting": "The household instructions (Haustafel) mirror Greco-Roman social expectations, adapted here to a Christian framework.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 3,
+    "era": "Pastoral Epistles",
+    "approxDate": "c. AD 63-65",
+    "setting": "The emphasis on submission to rulers may reflect the precarious social position of Christians in the Roman province of Crete.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": null

@@ -2058,7 +2058,7 @@
     "bookId": 84
   },
   {
-    "book": "Joseph Smith\u2014History",
+    "book": "Joseph Smith—History",
     "chapter": 1,
     "genre": "narrative",
     "subgenre": "sacred history",
@@ -2067,7 +2067,7 @@
     "bookId": 86
   },
   {
-    "book": "Joseph Smith\u2014Matthew",
+    "book": "Joseph Smith—Matthew",
     "chapter": 1,
     "genre": "prophecy",
     "subgenre": "apocalyptic",
@@ -5539,6 +5539,375 @@
     "book": "Philippians",
     "chapter": 4,
     "genre": "epistle",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "genre": "Apocalyptic",
+    "subgenre": "Epistle",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "genre": "Apocalyptic",
+    "subgenre": "Epistle",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "genre": "Apocalyptic",
+    "subgenre": "Epistle",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "genre": "Apocalyptic",
+    "subgenre": "Vision",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "genre": "Apocalyptic",
+    "subgenre": "Vision",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 6,
+    "genre": "Apocalyptic",
+    "subgenre": "Vision",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 7,
+    "genre": "Apocalyptic",
+    "subgenre": "Vision",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 8,
+    "genre": "Apocalyptic",
+    "subgenre": "Vision",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 9,
+    "genre": "Apocalyptic",
+    "subgenre": "Vision",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 10,
+    "genre": "Apocalyptic",
+    "subgenre": "Vision",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 11,
+    "genre": "Apocalyptic",
+    "subgenre": "Prophecy",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 12,
+    "genre": "Apocalyptic",
+    "subgenre": "Mythic-Narrative",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 13,
+    "genre": "Apocalyptic",
+    "subgenre": "Vision",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 14,
+    "genre": "Apocalyptic",
+    "subgenre": "Vision",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 15,
+    "genre": "Apocalyptic",
+    "subgenre": "Vision",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 16,
+    "genre": "Apocalyptic",
+    "subgenre": "Vision",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 17,
+    "genre": "Apocalyptic",
+    "subgenre": "Vision",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 18,
+    "genre": "Apocalyptic",
+    "subgenre": "Lament",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 19,
+    "genre": "Apocalyptic",
+    "subgenre": "Narrative",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 20,
+    "genre": "Apocalyptic",
+    "subgenre": "Narrative",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "genre": "Apocalyptic",
+    "subgenre": "Description",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "genre": "Apocalyptic",
+    "subgenre": "Epilogue",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "genre": "Epistle",
+    "subgenre": "Theological Treatise",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 2,
+    "genre": "Epistle",
+    "subgenre": "Theological Argument",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "genre": "Epistle",
+    "subgenre": "Theological Argument",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 4,
+    "genre": "Epistle",
+    "subgenre": "Midrash",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "genre": "Epistle",
+    "subgenre": "Theological Treatise",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "genre": "Epistle",
+    "subgenre": "Ethical Exhortation",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 7,
+    "genre": "Epistle",
+    "subgenre": "Autobiographical Reflection",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "genre": "Epistle",
+    "subgenre": "Theological Climax",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 9,
+    "genre": "Epistle",
+    "subgenre": "Theological Lament",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 10,
+    "genre": "Epistle",
+    "subgenre": "Exhortation",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 11,
+    "genre": "Epistle",
+    "subgenre": "Allegory",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "genre": "Epistle",
+    "subgenre": "Paraenesis",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "genre": "Epistle",
+    "subgenre": "Paraenesis",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 14,
+    "genre": "Epistle",
+    "subgenre": "Pastoral Counsel",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 15,
+    "genre": "Epistle",
+    "subgenre": "Travelogue",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 16,
+    "genre": "Epistle",
+    "subgenre": "Personal Greetings",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 1,
+    "genre": "Epistle",
+    "subgenre": "Pastoral Instruction",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 2,
+    "genre": "Epistle",
+    "subgenre": "Paraenesis",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 3,
+    "genre": "Epistle",
+    "subgenre": "Theological Summary",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": null

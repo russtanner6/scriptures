@@ -2890,7 +2890,7 @@
     "endVerse": 19
   },
   {
-    "book": "Joseph Smith\u2014History",
+    "book": "Joseph Smith—History",
     "chapter": 1,
     "speaker": "God the Father",
     "volumeAbbrev": "PoGP",
@@ -2900,7 +2900,7 @@
     "endVerse": 17
   },
   {
-    "book": "Joseph Smith\u2014History",
+    "book": "Joseph Smith—History",
     "chapter": 1,
     "speaker": "Jesus Christ",
     "volumeAbbrev": "PoGP",
@@ -2910,7 +2910,7 @@
     "endVerse": 20
   },
   {
-    "book": "Joseph Smith\u2014History",
+    "book": "Joseph Smith—History",
     "chapter": 1,
     "speaker": "Moroni",
     "volumeAbbrev": "PoGP",
@@ -2920,7 +2920,7 @@
     "endVerse": 49
   },
   {
-    "book": "Joseph Smith\u2014History",
+    "book": "Joseph Smith—History",
     "chapter": 1,
     "speaker": "John the Baptist",
     "volumeAbbrev": "PoGP",
@@ -2930,7 +2930,7 @@
     "endVerse": 72
   },
   {
-    "book": "Joseph Smith\u2014Matthew",
+    "book": "Joseph Smith—Matthew",
     "chapter": 1,
     "speaker": "Jesus Christ",
     "volumeAbbrev": "PoGP",
@@ -12645,5 +12645,405 @@
     "bookId": null,
     "startVerse": 1,
     "endVerse": 23
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "speaker": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 7
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 8,
+    "endVerse": 8
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "speaker": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 9,
+    "endVerse": 10
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 11,
+    "endVerse": 11
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "speaker": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 12,
+    "endVerse": 16
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 17,
+    "endVerse": 20
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 29
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 22
+  },
+  {
+    "book": "Revelation",
+    "chapter": 7,
+    "speaker": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 14,
+    "endVerse": 14
+  },
+  {
+    "book": "Revelation",
+    "chapter": 10,
+    "speaker": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 9,
+    "endVerse": 9
+  },
+  {
+    "book": "Revelation",
+    "chapter": 11,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 3,
+    "endVerse": 12
+  },
+  {
+    "book": "Revelation",
+    "chapter": 16,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 15,
+    "endVerse": 15
+  },
+  {
+    "book": "Revelation",
+    "chapter": 18,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 4,
+    "endVerse": 20
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "speaker": "God the Father",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 5,
+    "endVerse": 8
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 7,
+    "endVerse": 7
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "speaker": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 8,
+    "endVerse": 8
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 12,
+    "endVerse": 16
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 18,
+    "endVerse": 20
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "speaker": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 20,
+    "endVerse": 21
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 32
+  },
+  {
+    "book": "Romans",
+    "chapter": 2,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 29
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 31
+  },
+  {
+    "book": "Romans",
+    "chapter": 4,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 25
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 21
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 23
+  },
+  {
+    "book": "Romans",
+    "chapter": 7,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 25
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 39
+  },
+  {
+    "book": "Romans",
+    "chapter": 9,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 33
+  },
+  {
+    "book": "Romans",
+    "chapter": 10,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 21
+  },
+  {
+    "book": "Romans",
+    "chapter": 11,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 36
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 21
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 14
+  },
+  {
+    "book": "Romans",
+    "chapter": 14,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 23
+  },
+  {
+    "book": "Romans",
+    "chapter": 15,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 33
+  },
+  {
+    "book": "Romans",
+    "chapter": 16,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 21
+  },
+  {
+    "book": "Romans",
+    "chapter": 16,
+    "speaker": "Tertius",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 22,
+    "endVerse": 22
+  },
+  {
+    "book": "Romans",
+    "chapter": 16,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 23,
+    "endVerse": 27
+  },
+  {
+    "book": "Titus",
+    "chapter": 1,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 16
+  },
+  {
+    "book": "Titus",
+    "chapter": 2,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 15
+  },
+  {
+    "book": "Titus",
+    "chapter": 3,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null,
+    "startVerse": 1,
+    "endVerse": 15
   }
 ]

@@ -20413,5 +20413,43 @@
       "father": "izhar"
     },
     "portrait": null
+  },
+  {
+    "id": "legion",
+    "name": "Legion",
+    "aliases": [],
+    "bio": "A collective entity of unclean spirits possessing a man in the country of the Gadarenes (Gergesenes). When Jesus asked the spirit its name, it replied \"My name is Legion: for we are many.\" Jesus cast the spirits into a herd of swine which rushed into the sea.",
+    "volumes": [
+      "NT"
+    ],
+    "tier": 3,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "onesimus",
+    "name": "Onesimus",
+    "aliases": [],
+    "bio": "A runaway slave belonging to Philemon of Colossae who encountered Paul during his Roman imprisonment and was converted to the gospel. Paul wrote the Epistle to Philemon interceding on his behalf, asking that Onesimus be received back not as a servant but as a brother in Christ.",
+    "volumes": [
+      "NT"
+    ],
+    "tier": 3,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "sosipater",
+    "name": "Sosipater",
+    "aliases": [
+      "Sopater"
+    ],
+    "bio": "A kinsman of Paul mentioned in the closing greetings of the Epistle to the Romans (16:21). Possibly the same as Sopater of Berea who accompanied Paul on his journey to Jerusalem (Acts 20:4).",
+    "volumes": [
+      "NT"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
   }
 ]

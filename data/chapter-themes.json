@@ -2938,7 +2938,7 @@
     "bookId": 84
   },
   {
-    "book": "Joseph Smith\u2014History",
+    "book": "Joseph Smith—History",
     "chapter": 1,
     "themes": [
       "restoration",
@@ -2951,7 +2951,7 @@
     "bookId": 86
   },
   {
-    "book": "Joseph Smith\u2014Matthew",
+    "book": "Joseph Smith—Matthew",
     "chapter": 1,
     "themes": [
       "second coming",
@@ -7971,6 +7971,539 @@
       "Rejoicing",
       "Peace of God",
       "Contentment"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "themes": [
+      "Revelation",
+      "Priesthood Authority",
+      "The Godhead",
+      "Witnessing"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "themes": [
+      "Endurance",
+      "Apostasy",
+      "Repentance",
+      "Reward of the Faithful"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "themes": [
+      "Integrity",
+      "Preparedness",
+      "Overcoming",
+      "Relationship with Christ"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "themes": [
+      "God's Glory",
+      "Creation",
+      "Celestial Order",
+      "Worship"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "themes": [
+      "Atonement",
+      "Redemption",
+      "Worthiness",
+      "Sacrifice"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 6,
+    "themes": [
+      "Signs of the Times",
+      "Justice",
+      "Tribulation",
+      "God's Wrath"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 7,
+    "themes": [
+      "Gathering of Israel",
+      "Sealing",
+      "Divine Protection",
+      "Sanctification"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 8,
+    "themes": [
+      "Judgment",
+      "Prayer",
+      "Physical Destruction",
+      "Preparation"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 9,
+    "themes": [
+      "Spiritual Darkness",
+      "Warfare",
+      "Hardness of Heart",
+      "Divine Decree"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 10,
+    "themes": [
+      "Restoration",
+      "Missionary Work",
+      "Prophecy",
+      "Commitment"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 11,
+    "themes": [
+      "Testimony",
+      "Resurrection",
+      "Kingship",
+      "Victory"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 12,
+    "themes": [
+      "Pre-mortal Life",
+      "War in Heaven",
+      "Agency",
+      "Satanic Opposition"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 13,
+    "themes": [
+      "Deception",
+      "Idolatry",
+      "Tyranny",
+      "Endurance of Saints"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 14,
+    "themes": [
+      "Restoration",
+      "Judgment",
+      "Purity",
+      "Harvest"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 15,
+    "themes": [
+      "Victory",
+      "Justice",
+      "Ordinances",
+      "Divine Glory"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 16,
+    "themes": [
+      "Consequences of Sin",
+      "Final Battle",
+      "God's Power",
+      "Hardness of Heart"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 17,
+    "themes": [
+      "Worldliness",
+      "Apostasy",
+      "Deception",
+      "Divine Justice"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 18,
+    "themes": [
+      "Materialism",
+      "Judgment",
+      "Separation from the World",
+      "Lamentation"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 19,
+    "themes": [
+      "Second Coming",
+      "Marriage Covenant",
+      "Triumph",
+      "Judgment"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 20,
+    "themes": [
+      "Millennium",
+      "Resurrection",
+      "Accountability",
+      "Final Judgment"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "themes": [
+      "Celestial Kingdom",
+      "New Creation",
+      "Peace",
+      "God's Dwelling"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "themes": [
+      "Eternal Life",
+      "Invitation",
+      "Fulfillment",
+      "Sacredness of Scripture"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "themes": [
+      "Gospel Power",
+      "Apostasy",
+      "God's Wrath",
+      "Idolatry"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 2,
+    "themes": [
+      "Impartial Judgment",
+      "Conscience",
+      "Hypocrisy",
+      "Heart Religion"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "themes": [
+      "Universal Sinfulness",
+      "Justification by Faith",
+      "Grace",
+      "The Law"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 4,
+    "themes": [
+      "Faith",
+      "Covenant Promises",
+      "Abraham",
+      "Imputed Righteousness"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "themes": [
+      "Atonement",
+      "Grace",
+      "Peace with God",
+      "Adam and Christ"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "themes": [
+      "Baptism",
+      "Death to Sin",
+      "Newness of Life",
+      "Obedience"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 7,
+    "themes": [
+      "The Law",
+      "Inner Conflict",
+      "Sin",
+      "Deliverance through Christ"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "themes": [
+      "No Condemnation",
+      "Holy Spirit",
+      "Joint-Heirs",
+      "God's Love"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 9,
+    "themes": [
+      "God's Sovereignty",
+      "Election",
+      "Israel",
+      "Mercy"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 10,
+    "themes": [
+      "Confession",
+      "Faith",
+      "Preaching the Gospel",
+      "Universality of Salvation"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 11,
+    "themes": [
+      "Olive Tree",
+      "Grafting",
+      "Israel's Future",
+      "God's Mercy"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "themes": [
+      "Living Sacrifice",
+      "Spiritual Gifts",
+      "Charity",
+      "Overcoming Evil"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "themes": [
+      "Civil Obedience",
+      "Love",
+      "Armour of Light",
+      "Urgency"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 14,
+    "themes": [
+      "Judging Others",
+      "Conscience",
+      "Liberty",
+      "Edification"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 15,
+    "themes": [
+      "Unity",
+      "Hope",
+      "Gentile Mission",
+      "Prayer"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 16,
+    "themes": [
+      "Fellowship",
+      "Greetings",
+      "Warning against Division",
+      "Doxology"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 1,
+    "themes": [
+      "Priesthood Leadership",
+      "Sound Doctrine",
+      "Apostasy",
+      "Qualifications for Ministry"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 2,
+    "themes": [
+      "Godly Living",
+      "Grace",
+      "Self-Discipline",
+      "Example"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 3,
+    "themes": [
+      "Mercy",
+      "Good Works",
+      "Obedience",
+      "Regeneration"
     ],
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",

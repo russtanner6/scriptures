@@ -1177,7 +1177,7 @@
     "bookId": 84
   },
   {
-    "book": "Joseph Smith\u2014History",
+    "book": "Joseph Smith—History",
     "chapter": 1,
     "verse": 17,
     "crossReference": "James 1:5",
@@ -1188,7 +1188,7 @@
     "bookId": 86
   },
   {
-    "book": "Joseph Smith\u2014History",
+    "book": "Joseph Smith—History",
     "chapter": 1,
     "verse": 68,
     "crossReference": "D&C 13:1",
@@ -1199,7 +1199,7 @@
     "bookId": 86
   },
   {
-    "book": "Joseph Smith\u2014History",
+    "book": "Joseph Smith—History",
     "chapter": 1,
     "verse": 36,
     "crossReference": "Malachi 4:5-6",
@@ -1210,18 +1210,18 @@
     "bookId": 86
   },
   {
-    "book": "Joseph Smith\u2014Matthew",
+    "book": "Joseph Smith—Matthew",
     "chapter": 1,
     "verse": 1,
     "crossReference": "Matthew 24",
     "type": "parallel",
-    "note": "Joseph Smith\u2014Matthew is a more correct translation and expansion of Matthew 24.",
+    "note": "Joseph Smith—Matthew is a more correct translation and expansion of Matthew 24.",
     "volumeAbbrev": "PoGP",
     "volumeName": "Pearl of Great Price",
     "bookId": 85
   },
   {
-    "book": "Joseph Smith\u2014Matthew",
+    "book": "Joseph Smith—Matthew",
     "chapter": 1,
     "verse": 31,
     "crossReference": "D&C 45:16-75",
@@ -1232,7 +1232,7 @@
     "bookId": 85
   },
   {
-    "book": "Joseph Smith\u2014Matthew",
+    "book": "Joseph Smith—Matthew",
     "chapter": 1,
     "verse": 10,
     "crossReference": "D&C 1:17-18",
@@ -2029,7 +2029,7 @@
     "verse": 14,
     "crossReference": "Mosiah 3:19",
     "type": "parallel",
-    "note": "The Natural Man \u2014 both passages teach about the natural man's inability to receive spiritual things.",
+    "note": "The Natural Man — both passages teach about the natural man's inability to receive spiritual things.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 46
@@ -2040,7 +2040,7 @@
     "verse": 9,
     "crossReference": "D&C 76:10",
     "type": "parallel",
-    "note": "Glory of the faithful \u2014 unimaginable things God has prepared for those who love Him.",
+    "note": "Glory of the faithful — unimaginable things God has prepared for those who love Him.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 46
@@ -2051,7 +2051,7 @@
     "verse": 16,
     "crossReference": "D&C 93:35",
     "type": "parallel",
-    "note": "Body as temple \u2014 the Spirit of God dwells in the Saints.",
+    "note": "Body as temple — the Spirit of God dwells in the Saints.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 46
@@ -2062,7 +2062,7 @@
     "verse": 23,
     "crossReference": "3 Nephi 18:1-11",
     "type": "parallel",
-    "note": "Institution of the Sacrament \u2014 parallel accounts of the Lord's Supper.",
+    "note": "Institution of the Sacrament — parallel accounts of the Lord's Supper.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 46
@@ -2073,7 +2073,7 @@
     "verse": 11,
     "crossReference": "Moses 3:18-24",
     "type": "parallel",
-    "note": "Creation of woman \u2014 neither man nor woman is complete without the other in the Lord.",
+    "note": "Creation of woman — neither man nor woman is complete without the other in the Lord.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 46
@@ -2084,7 +2084,7 @@
     "verse": 29,
     "crossReference": "D&C 128:1-18",
     "type": "parallel",
-    "note": "Baptism for the dead \u2014 the primary biblical evidence for proxy ordinances.",
+    "note": "Baptism for the dead — the primary biblical evidence for proxy ordinances.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 46
@@ -2095,7 +2095,7 @@
     "verse": 40,
     "crossReference": "D&C 76:50-112",
     "type": "parallel",
-    "note": "Degrees of Glory \u2014 celestial, terrestrial, and telestial kingdoms.",
+    "note": "Degrees of Glory — celestial, terrestrial, and telestial kingdoms.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 46
@@ -2106,7 +2106,7 @@
     "verse": 22,
     "crossReference": "Alma 11:42-45",
     "type": "parallel",
-    "note": "Universal resurrection \u2014 as in Adam all die, so in Christ shall all be made alive.",
+    "note": "Universal resurrection — as in Adam all die, so in Christ shall all be made alive.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 46
@@ -2326,7 +2326,7 @@
     "verse": 12,
     "crossReference": "Moroni 7:45",
     "type": "parallel",
-    "note": "Attributes of a believer\u2014charity, faith, and purity\u2014are reinforced.",
+    "note": "Attributes of a believer—charity, faith, and purity—are reinforced.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 54
@@ -2755,7 +2755,7 @@
     "verse": 7,
     "crossReference": "Alma 41:10",
     "type": "parallel",
-    "note": "Whatsoever a man soweth, that shall he also reap parallels the law of restoration \u2014 wickedness never was happiness.",
+    "note": "Whatsoever a man soweth, that shall he also reap parallels the law of restoration — wickedness never was happiness.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 48
@@ -2819,7 +2819,7 @@
     "book": "James",
     "chapter": 1,
     "verse": 5,
-    "crossReference": "Joseph Smith\u2014History 1:11-13",
+    "crossReference": "Joseph Smith—History 1:11-13",
     "type": "parallel",
     "note": "Joseph Smith's foundational experience in the Sacred Grove was prompted by reading James 1:5.",
     "volumeAbbrev": "NT",
@@ -3116,7 +3116,7 @@
     "chapter": 21,
     "references": [
       {
-        "book": "Joseph Smith\u2014Matthew",
+        "book": "Joseph Smith—Matthew",
         "chapter": 1,
         "verse": "1-55",
         "justification": "Joseph Smith's inspired revision of the parallel prophecy in Matthew provides extensive detail on the signs of the times."
@@ -3228,7 +3228,7 @@
     "chapter": 13,
     "references": [
       {
-        "book": "Joseph Smith\u2014Matthew",
+        "book": "Joseph Smith—Matthew",
         "chapter": 1,
         "verse": "1-55",
         "justification": "Joseph Smith's inspired revision provides extensive detail on the signs of the times."
@@ -3369,7 +3369,7 @@
     "book": "Matthew",
     "chapter": 24,
     "verse": 30,
-    "crossReference": "Joseph Smith\u2014Matthew 1:36",
+    "crossReference": "Joseph Smith—Matthew 1:36",
     "type": "parallel",
     "note": "Joseph Smith's inspired revision of the Olivet discourse clarifies the signs of the Second Coming.",
     "volumeAbbrev": "NT",
@@ -3415,7 +3415,7 @@
     "verse": 16,
     "crossReference": "Galatians 3:28",
     "type": "parallel",
-    "note": "In Christ there is neither bond nor free \u2014 the theological basis for Paul's appeal.",
+    "note": "In Christ there is neither bond nor free — the theological basis for Paul's appeal.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": null
@@ -3449,6 +3449,226 @@
     "crossReference": "Articles of Faith 1:13",
     "type": "parallel",
     "note": "The thirteenth Article of Faith directly echoes Paul's admonition to seek after virtuous, lovely, and praiseworthy things.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verse": 7,
+    "crossReference": "D&C 76:20-24",
+    "type": "parallel",
+    "note": "Both passages describe the glorified, resurrected Christ appearing to prophets.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "verse": 6,
+    "crossReference": "D&C 77:1-5",
+    "type": "commentary",
+    "note": "D&C 77 provides direct, revealed answers to John's questions about the symbols in Revelation 4.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "verse": 1,
+    "crossReference": "D&C 77:6-7",
+    "type": "commentary",
+    "note": "The sealed book is identified as containing God's will and the history of the earth in its seven thousand years.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 7,
+    "verse": 4,
+    "crossReference": "D&C 77:11",
+    "type": "commentary",
+    "note": "The 144,000 are identified as high priests ordained to administer the everlasting gospel.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 10,
+    "verse": 2,
+    "crossReference": "D&C 77:14",
+    "type": "commentary",
+    "note": "The little book John ate is identified as a mission to gather Israel in the last days.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 12,
+    "verse": 7,
+    "crossReference": "Moses 4:1-4",
+    "type": "parallel",
+    "note": "Moses provides the pre-mortal context for Satan's rebellion and the War in Heaven.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 14,
+    "verse": 6,
+    "crossReference": "D&C 133:36-39",
+    "type": "parallel",
+    "note": "Both passages describe the angel flying through the midst of heaven with the everlasting gospel.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 19,
+    "verse": 7,
+    "crossReference": "D&C 132:19",
+    "type": "doctrinal",
+    "note": "The marriage of the Lamb is illuminated by the doctrine of celestial/eternal marriage.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 20,
+    "verse": 4,
+    "crossReference": "D&C 101:26-34",
+    "type": "parallel",
+    "note": "Both describe conditions during the Millennium, including peace and the binding of Satan.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "verse": 2,
+    "crossReference": "Ether 13:1-12",
+    "type": "parallel",
+    "note": "Ether's vision of the New Jerusalem parallels John's, identifying it as a holy city for the righteous.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "verse": 17,
+    "crossReference": "Habakkuk 2:4",
+    "type": "quotation",
+    "note": "Paul quotes Habakkuk's declaration that the just shall live by faith as the thesis of his epistle.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "verse": 23,
+    "crossReference": "2 Nephi 2:21",
+    "type": "parallel",
+    "note": "Both passages teach the universal fallen state of mankind and the necessity of divine grace.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "verse": 12,
+    "crossReference": "Moses 6:48-62",
+    "type": "parallel",
+    "note": "Both passages explain the Fall of Adam and its effects upon all humanity, with redemption through Christ.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verse": 17,
+    "crossReference": "D&C 76:58-60",
+    "type": "parallel",
+    "note": "Joint-heirs with Christ inherit the celestial kingdom, receiving all that the Father hath.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 10,
+    "verse": 17,
+    "crossReference": "Alma 32:21-43",
+    "type": "parallel",
+    "note": "Both passages develop the relationship between faith, hearing the word, and spiritual growth.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 11,
+    "verse": 17,
+    "crossReference": "Jacob 5:1-77",
+    "type": "parallel",
+    "note": "The Allegory of the Olive Tree in Jacob is the most extensive parallel to Paul's olive tree metaphor.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verse": 1,
+    "crossReference": "Moroni 10:32",
+    "type": "parallel",
+    "note": "Both passages call believers to consecrate themselves wholly to God through Christ's grace.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 1,
+    "verse": 7,
+    "crossReference": "D&C 121:41-44",
+    "type": "parallel",
+    "note": "Both passages describe the character qualifications and righteous conduct required of priesthood leaders.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 2,
+    "verse": 11,
+    "crossReference": "2 Nephi 25:23",
+    "type": "parallel",
+    "note": "Both teach that salvation comes through grace, with the expectation of faithful effort on the believer's part.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 3,
+    "verse": 5,
+    "crossReference": "Mosiah 27:24-28",
+    "type": "parallel",
+    "note": "Both passages describe the spiritual rebirth and transformation that comes through God's mercy, not man's merit.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": null

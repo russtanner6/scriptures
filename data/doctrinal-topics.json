@@ -2809,7 +2809,7 @@
     "bookId": 84
   },
   {
-    "book": "Joseph Smith\u2014History",
+    "book": "Joseph Smith—History",
     "chapter": 1,
     "topics": [
       "godhead",
@@ -2823,7 +2823,7 @@
     "bookId": 86
   },
   {
-    "book": "Joseph Smith\u2014Matthew",
+    "book": "Joseph Smith—Matthew",
     "chapter": 1,
     "topics": [
       "second coming",
@@ -7601,6 +7601,498 @@
       "Virtue",
       "Gratitude",
       "Self-reliance"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "topics": [
+      "Godhead",
+      "Priesthood Keys",
+      "Revelation"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "topics": [
+      "Apostasy",
+      "Endurance",
+      "Repentance"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "topics": [
+      "Integrity",
+      "Celestial Kingdom",
+      "Atonement"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "topics": [
+      "Creation",
+      "Worship",
+      "Celestial Kingdom"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "topics": [
+      "At-one-ment",
+      "Redemption",
+      "Jesus Christ as Creator"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 6,
+    "topics": [
+      "Signs of the Times",
+      "Justice",
+      "Tribulation"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 7,
+    "topics": [
+      "Gathering of Israel",
+      "Sealing",
+      "Ordinances"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 8,
+    "topics": [
+      "Judgment",
+      "Prayer",
+      "Elements"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 9,
+    "topics": [
+      "Agency",
+      "Idolatry",
+      "Spiritual Warfare"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 10,
+    "topics": [
+      "Restoration",
+      "Missionary Work",
+      "Personal Revelation"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 11,
+    "topics": [
+      "Testimony",
+      "Priesthood Power",
+      "Second Coming"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 12,
+    "topics": [
+      "Pre-mortal Life",
+      "Agency",
+      "War in Heaven"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 13,
+    "topics": [
+      "Deception",
+      "Oppression",
+      "Endurance"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 14,
+    "topics": [
+      "Restoration of the Gospel",
+      "Judgment",
+      "Charity"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 15,
+    "topics": [
+      "Celestial Order",
+      "Victory",
+      "God's Attributes"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 16,
+    "topics": [
+      "Justice",
+      "Armageddon",
+      "Second Coming"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 17,
+    "topics": [
+      "Apostasy",
+      "Worldliness",
+      "Corruption"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 18,
+    "topics": [
+      "Accountability",
+      "Materialism",
+      "Separation"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 19,
+    "topics": [
+      "Second Coming",
+      "Covenants",
+      "Judgment"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 20,
+    "topics": [
+      "Millennium",
+      "Resurrection",
+      "Final Judgment"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "topics": [
+      "Exaltation",
+      "Celestial Kingdom",
+      "Creation"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "topics": [
+      "Eternal Life",
+      "Agency",
+      "Invitation to Christ"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "topics": [
+      "Gospel",
+      "Apostleship",
+      "Apostasy"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 2,
+    "topics": [
+      "Judgment",
+      "Agency",
+      "Accountability"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "topics": [
+      "Justification",
+      "Grace",
+      "Atonement"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 4,
+    "topics": [
+      "Faith",
+      "Covenant",
+      "Imputed Righteousness"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "topics": [
+      "Atonement",
+      "Fall of Adam",
+      "Grace"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "topics": [
+      "Baptism",
+      "Sanctification",
+      "Obedience"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 7,
+    "topics": [
+      "The Law",
+      "Natural Man",
+      "Redemption"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "topics": [
+      "Holy Ghost",
+      "Adoption",
+      "Eternal Life"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 9,
+    "topics": [
+      "Foreordination",
+      "Agency",
+      "God's Sovereignty"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 10,
+    "topics": [
+      "Missionary Work",
+      "Faith",
+      "Confession"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 11,
+    "topics": [
+      "Gathering of Israel",
+      "Restoration",
+      "Mercy"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "topics": [
+      "Consecration",
+      "Charity",
+      "Spiritual Gifts"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "topics": [
+      "Law of the Land",
+      "Love",
+      "Second Coming"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 14,
+    "topics": [
+      "Charity",
+      "Conscience",
+      "Agency"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 15,
+    "topics": [
+      "Unity",
+      "Hope",
+      "Ministry"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Romans",
+    "chapter": 16,
+    "topics": [
+      "Fellowship",
+      "Watchfulness",
+      "God's Glory"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 1,
+    "topics": [
+      "Priesthood",
+      "Church Organization",
+      "Apostasy"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 2,
+    "topics": [
+      "Grace",
+      "Sanctification",
+      "Obedience"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "book": "Titus",
+    "chapter": 3,
+    "topics": [
+      "Mercy",
+      "Baptism",
+      "Good Works"
     ],
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
