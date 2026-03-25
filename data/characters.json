@@ -20763,5 +20763,14 @@
       "OT"
     ],
     "tier": 4
+  },
+  {
+    "id": "agur",
+    "name": "Agur",
+    "description": "Son of Jakeh, author of Proverbs 30, known for his humble confession of limited understanding and his numerical proverbs.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
   }
 ]

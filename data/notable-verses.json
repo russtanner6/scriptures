@@ -17075,5 +17075,1564 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 20
+  },
+  {
+    "book": "Psalms",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "Blessed is the man that walketh not in the counsel of the ungodly — a foundational wisdom text."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "Thou art my Son; this day have I begotten thee — a key messianic declaration."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "Thou, O Lord, art a shield for me; my glory, and the lifter up of mine head."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 8,
+        "reason": "I will both lay me down in peace, and sleep: for thou, Lord, only makest me dwell in safety."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "My voice shalt thou hear in the morning, O Lord; in the morning will I direct my prayer."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 6,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 7,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "What is man, that thou art mindful of him? A profound question on human dignity."
+      },
+      {
+        "verse": 5,
+        "reason": "Thou hast made him a little lower than the angels and crowned him with glory."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 9,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 10,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 11,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 12,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 13,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "The fool hath said in his heart, There is no God — a widely quoted declaration."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 15,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 11,
+        "reason": "In thy presence is fulness of joy; at thy right hand there are pleasures for evermore."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 17,
+    "verses": [
+      {
+        "verse": 8,
+        "reason": "Keep me as the apple of the eye, hide me under the shadow of thy wings."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 18,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "The Lord is my rock, and my fortress, and my deliverer — a classic declaration of trust."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 19,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "The heavens declare the glory of God; and the firmament sheweth his handywork."
+      },
+      {
+        "verse": 14,
+        "reason": "Let the words of my mouth, and the meditation of my heart, be acceptable in thy sight."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 20,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 21,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 22,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "My God, my God, why hast thou forsaken me? — Jesus quoted this from the cross."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 23,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "The Lord is my shepherd; I shall not want — perhaps the most memorized verse in the Bible."
+      },
+      {
+        "verse": 4,
+        "reason": "Yea, though I walk through the valley of the shadow of death, I will fear no evil."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 24,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "The earth is the Lord's, and the fulness thereof — a foundational declaration of divine ownership."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 25,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 26,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 27,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "The Lord is my light and my salvation; whom shall I fear?"
+      },
+      {
+        "verse": 4,
+        "reason": "One thing have I desired of the Lord, that will I seek after; that I may dwell in the house of the Lord."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 28,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 29,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 30,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "Weeping may endure for a night, but joy cometh in the morning."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 31,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "Into thine hand I commit my spirit — Jesus' last words from the cross."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 32,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "Blessed is he whose transgression is forgiven, whose sin is covered."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 33,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 34,
+    "verses": [
+      {
+        "verse": 8,
+        "reason": "O taste and see that the Lord is good: blessed is the man that trusteth in him."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 35,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 36,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "For with thee is the fountain of life: in thy light shall we see light."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 37,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "Delight thyself also in the Lord; and he shall give thee the desires of thine heart."
+      },
+      {
+        "verse": 5,
+        "reason": "Commit thy way unto the Lord; trust also in him; and he shall bring it to pass."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 38,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 39,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 40,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 41,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 42,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "As the hart panteth after the water brooks, so panteth my soul after thee, O God."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 43,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 44,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 45,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 46,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "God is our refuge and strength, a very present help in trouble."
+      },
+      {
+        "verse": 10,
+        "reason": "Be still, and know that I am God — one of the most quoted verses in the Bible."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 47,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 48,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 49,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 50,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 51,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "Create in me a clean heart, O God; and renew a right spirit within me."
+      },
+      {
+        "verse": 17,
+        "reason": "A broken and a contrite heart, O God, thou wilt not despise."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 52,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 53,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 54,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 55,
+    "verses": [
+      {
+        "verse": 22,
+        "reason": "Cast thy burden upon the Lord, and he shall sustain thee."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 56,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "What time I am afraid, I will trust in thee."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 57,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 58,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 59,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 60,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 61,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "Lead me to the rock that is higher than I."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 62,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "Truly my soul waiteth upon God: from him cometh my salvation."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 63,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "Because thy lovingkindness is better than life, my lips shall praise thee."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 64,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 65,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 66,
+    "verses": [
+      {
+        "verse": 18,
+        "reason": "If I regard iniquity in my heart, the Lord will not hear me."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 67,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 68,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 69,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "The zeal of thine house hath eaten me up — quoted when Jesus cleansed the temple."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 70,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 71,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 72,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 73,
+    "verses": [
+      {
+        "verse": 25,
+        "reason": "Whom have I in heaven but thee? And there is none upon earth that I desire beside thee."
+      },
+      {
+        "verse": 26,
+        "reason": "My flesh and my heart faileth: but God is the strength of my heart, and my portion for ever."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 74,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 75,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 76,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 77,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 78,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 79,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 80,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 81,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 82,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "I have said, Ye are gods; and all of you are children of the most High — quoted by Jesus in John 10:34."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 83,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 84,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "A day in thy courts is better than a thousand. I had rather be a doorkeeper in the house of my God."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 85,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "Mercy and truth are met together; righteousness and peace have kissed each other."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 86,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 87,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 88,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 89,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 90,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "So teach us to number our days, that we may apply our hearts unto wisdom."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 91,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 92,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 93,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 94,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 95,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "To day if ye will hear his voice, harden not your heart — quoted extensively in Hebrews."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 96,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 97,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 98,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 99,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 100,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "Know ye that the Lord he is God: it is he that hath made us, and not we ourselves."
+      },
+      {
+        "verse": 5,
+        "reason": "For the Lord is good; his mercy is everlasting; and his truth endureth to all generations."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 101,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 102,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 103,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "Bless the Lord, O my soul: and all that is within me, bless his holy name."
+      },
+      {
+        "verse": 12,
+        "reason": "As far as the east is from the west, so far hath he removed our transgressions from us."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 104,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 105,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 106,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 107,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "O give thanks unto the Lord, for he is good: for his mercy endureth for ever."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 108,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 109,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 110,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "The LORD said unto my Lord, Sit thou at my right hand — the most-quoted OT verse in the NT."
+      },
+      {
+        "verse": 4,
+        "reason": "Thou art a priest for ever after the order of Melchizedek — central to the epistle to the Hebrews."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 111,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "The fear of the Lord is the beginning of wisdom — echoing the Proverbs."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 112,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 113,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 114,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 115,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 116,
+    "verses": [
+      {
+        "verse": 15,
+        "reason": "Precious in the sight of the Lord is the death of his saints."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 117,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 118,
+    "verses": [
+      {
+        "verse": 22,
+        "reason": "The stone which the builders refused is become the head stone of the corner."
+      },
+      {
+        "verse": 24,
+        "reason": "This is the day which the Lord hath made; we will rejoice and be glad in it."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 119,
+    "verses": [
+      {
+        "verse": 105,
+        "reason": "Thy word is a lamp unto my feet, and a light unto my path."
+      },
+      {
+        "verse": 11,
+        "reason": "Thy word have I hid in mine heart, that I might not sin against thee."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 120,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 121,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "I will lift up mine eyes unto the hills, from whence cometh my help."
+      },
+      {
+        "verse": 2,
+        "reason": "My help cometh from the Lord, which made heaven and earth."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 122,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "Pray for the peace of Jerusalem: they shall prosper that love thee."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 123,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 124,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 125,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 126,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "They that sow in tears shall reap in joy."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 127,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "Except the Lord build the house, they labour in vain that build it."
+      },
+      {
+        "verse": 3,
+        "reason": "Lo, children are an heritage of the Lord: and the fruit of the womb is his reward."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 128,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 129,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 130,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "Out of the depths have I cried unto thee, O Lord — the famous De Profundis."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 131,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 132,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 133,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "How good and how pleasant it is for brethren to dwell together in unity!"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 134,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 135,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 136,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "O give thanks unto the Lord; for he is good: for his mercy endureth for ever."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 137,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "By the rivers of Babylon, there we sat down, yea, we wept, when we remembered Zion."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 138,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 139,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "I am fearfully and wonderfully made: marvellous are thy works."
+      },
+      {
+        "verse": 23,
+        "reason": "Search me, O God, and know my heart: try me, and know my thoughts."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 140,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 141,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "Set a watch, O Lord, before my mouth; keep the door of my lips."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 142,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 143,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 144,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 145,
+    "verses": [
+      {
+        "verse": 18,
+        "reason": "The Lord is nigh unto all them that call upon him, to all that call upon him in truth."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 146,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 147,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "He healeth the broken in heart, and bindeth up their wounds."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 148,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 149,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 150,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "Let every thing that hath breath praise the Lord. Praise ye the Lord — the grand closing of the Psalter."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
   }
 ]

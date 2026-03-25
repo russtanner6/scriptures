@@ -28545,5 +28545,215 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 20
+  },
+  {
+    "book": "Psalms",
+    "chapter": 2,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 2,
+    "startVerse": 7,
+    "endVerse": 9,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 12,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 46,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 50,
+    "startVerse": 5,
+    "endVerse": 15,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 50,
+    "startVerse": 16,
+    "endVerse": 23,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 60,
+    "startVerse": 6,
+    "endVerse": 8,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 75,
+    "startVerse": 2,
+    "endVerse": 5,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 81,
+    "startVerse": 6,
+    "endVerse": 16,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 82,
+    "startVerse": 2,
+    "endVerse": 7,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 87,
+    "startVerse": 4,
+    "endVerse": 6,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 89,
+    "startVerse": 3,
+    "endVerse": 4,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 89,
+    "startVerse": 19,
+    "endVerse": 37,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 91,
+    "startVerse": 14,
+    "endVerse": 16,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 95,
+    "startVerse": 8,
+    "endVerse": 11,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 105,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 108,
+    "startVerse": 7,
+    "endVerse": 9,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 110,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 110,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 132,
+    "startVerse": 11,
+    "endVerse": 12,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
+  },
+  {
+    "book": "Psalms",
+    "chapter": 132,
+    "startVerse": 14,
+    "endVerse": 18,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 19
   }
 ]
