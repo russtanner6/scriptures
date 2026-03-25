@@ -10802,5 +10802,775 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 2
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "era": "Creation",
+    "approxDate": "n/a",
+    "setting": "The heavens and the earth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 2,
+    "era": "Creation",
+    "approxDate": "n/a",
+    "setting": "Garden of Eden",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 3,
+    "era": "Creation / Fall",
+    "approxDate": "n/a",
+    "setting": "Garden of Eden",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 4,
+    "era": "Antediluvian",
+    "approxDate": "n/a",
+    "setting": "East of Eden",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 5,
+    "era": "Antediluvian",
+    "approxDate": "n/a",
+    "setting": "Ancient Near East",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 6,
+    "era": "Antediluvian",
+    "approxDate": "n/a",
+    "setting": "Ancient Near East",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 7,
+    "era": "Antediluvian / Flood",
+    "approxDate": "c. 2350 BC (traditional)",
+    "setting": "The earth / the ark",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 8,
+    "era": "Flood",
+    "approxDate": "c. 2350 BC (traditional)",
+    "setting": "Mount Ararat region",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 9,
+    "era": "Post-Flood",
+    "approxDate": "c. 2350 BC (traditional)",
+    "setting": "Near East",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 10,
+    "era": "Post-Flood",
+    "approxDate": "c. 2300-2100 BC",
+    "setting": "Ancient Near East",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 11,
+    "era": "Post-Flood / Patriarchal",
+    "approxDate": "c. 2200-2000 BC",
+    "setting": "Shinar (Babel) / Ur of the Chaldees",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 12,
+    "era": "Patriarchal",
+    "approxDate": "c. 2091 BC",
+    "setting": "Ur, Haran, Canaan, Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 13,
+    "era": "Patriarchal",
+    "approxDate": "c. 2090 BC",
+    "setting": "Canaan (Bethel, Hebron)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 14,
+    "era": "Patriarchal",
+    "approxDate": "c. 2085 BC",
+    "setting": "Valley of Siddim, Salem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 15,
+    "era": "Patriarchal",
+    "approxDate": "c. 2081 BC",
+    "setting": "Canaan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 16,
+    "era": "Patriarchal",
+    "approxDate": "c. 2080 BC",
+    "setting": "Canaan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 17,
+    "era": "Patriarchal",
+    "approxDate": "c. 2067 BC",
+    "setting": "Canaan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 18,
+    "era": "Patriarchal",
+    "approxDate": "c. 2067 BC",
+    "setting": "Plains of Mamre, near Hebron",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 19,
+    "era": "Patriarchal",
+    "approxDate": "c. 2067 BC",
+    "setting": "Sodom, Zoar",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 20,
+    "era": "Patriarchal",
+    "approxDate": "c. 2067 BC",
+    "setting": "Gerar",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 21,
+    "era": "Patriarchal",
+    "approxDate": "c. 2066 BC",
+    "setting": "Beer-sheba",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 22,
+    "era": "Patriarchal",
+    "approxDate": "c. 2054 BC",
+    "setting": "Mount Moriah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 23,
+    "era": "Patriarchal",
+    "approxDate": "c. 2030 BC",
+    "setting": "Hebron (Kirjath-arba)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 24,
+    "era": "Patriarchal",
+    "approxDate": "c. 2026 BC",
+    "setting": "Canaan, Mesopotamia (Nahor)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 25,
+    "era": "Patriarchal",
+    "approxDate": "c. 2006 BC",
+    "setting": "Canaan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 26,
+    "era": "Patriarchal",
+    "approxDate": "c. 2000 BC",
+    "setting": "Gerar, Beer-sheba",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 27,
+    "era": "Patriarchal",
+    "approxDate": "c. 1990 BC",
+    "setting": "Beer-sheba",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 28,
+    "era": "Patriarchal",
+    "approxDate": "c. 1990 BC",
+    "setting": "Bethel (Luz)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 29,
+    "era": "Patriarchal",
+    "approxDate": "c. 1990 BC",
+    "setting": "Haran (Paddan-aram)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 30,
+    "era": "Patriarchal",
+    "approxDate": "c. 1983 BC",
+    "setting": "Haran (Paddan-aram)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 31,
+    "era": "Patriarchal",
+    "approxDate": "c. 1977 BC",
+    "setting": "Haran to Gilead",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 32,
+    "era": "Patriarchal",
+    "approxDate": "c. 1977 BC",
+    "setting": "Mahanaim, Peniel (Jabbok River)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 33,
+    "era": "Patriarchal",
+    "approxDate": "c. 1977 BC",
+    "setting": "Near Shechem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 34,
+    "era": "Patriarchal",
+    "approxDate": "c. 1975 BC",
+    "setting": "Shechem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 35,
+    "era": "Patriarchal",
+    "approxDate": "c. 1974 BC",
+    "setting": "Bethel, Ephrath (Bethlehem), Hebron",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 36,
+    "era": "Patriarchal",
+    "approxDate": "c. 1950 BC",
+    "setting": "Mount Seir (Edom)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 37,
+    "era": "Patriarchal",
+    "approxDate": "c. 1898 BC",
+    "setting": "Hebron, Dothan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 38,
+    "era": "Patriarchal",
+    "approxDate": "c. 1895 BC",
+    "setting": "Adullam, Timnath",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 39,
+    "era": "Patriarchal",
+    "approxDate": "c. 1898-1886 BC",
+    "setting": "Egypt (Potiphar's house)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 40,
+    "era": "Patriarchal",
+    "approxDate": "c. 1886 BC",
+    "setting": "Egypt (prison)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 41,
+    "era": "Patriarchal",
+    "approxDate": "c. 1885 BC",
+    "setting": "Egypt (Pharaoh's court)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 42,
+    "era": "Patriarchal",
+    "approxDate": "c. 1878 BC",
+    "setting": "Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 43,
+    "era": "Patriarchal",
+    "approxDate": "c. 1877 BC",
+    "setting": "Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 44,
+    "era": "Patriarchal",
+    "approxDate": "c. 1877 BC",
+    "setting": "Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 45,
+    "era": "Patriarchal",
+    "approxDate": "c. 1877 BC",
+    "setting": "Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 46,
+    "era": "Patriarchal",
+    "approxDate": "c. 1876 BC",
+    "setting": "Beer-sheba, Goshen (Egypt)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 47,
+    "era": "Patriarchal",
+    "approxDate": "c. 1876-1859 BC",
+    "setting": "Goshen (Egypt)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 48,
+    "era": "Patriarchal",
+    "approxDate": "c. 1859 BC",
+    "setting": "Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 49,
+    "era": "Patriarchal",
+    "approxDate": "c. 1859 BC",
+    "setting": "Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 50,
+    "era": "Patriarchal",
+    "approxDate": "c. 1859-1805 BC",
+    "setting": "Egypt, Canaan (Machpelah)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 1,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai, Tabernacle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 2,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai, Tabernacle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 3,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai, Tabernacle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 4,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai, Tabernacle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 5,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai, Tabernacle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 6,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai, Tabernacle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 7,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai, Tabernacle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 8,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Tabernacle entrance",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 9,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Tabernacle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 10,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Tabernacle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 11,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai, Tabernacle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 12,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai, Tabernacle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 13,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai, Tabernacle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 14,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai, Tabernacle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 15,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai, Tabernacle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 16,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Tabernacle, Holy of Holies",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 17,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai, Tabernacle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 18,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 19,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 20,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 21,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 22,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 23,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 24,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Camp of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 25,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 26,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 27,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
   }
 ]

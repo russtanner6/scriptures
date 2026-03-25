@@ -9514,5 +9514,661 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 2
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "genre": "narrative",
+    "subgenre": "creation account",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 2,
+    "genre": "narrative",
+    "subgenre": "creation account",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 3,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 4,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 5,
+    "genre": "genealogy",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 6,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 7,
+    "genre": "narrative",
+    "subgenre": "flood account",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 8,
+    "genre": "narrative",
+    "subgenre": "flood account",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 9,
+    "genre": "narrative",
+    "subgenre": "covenant",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 10,
+    "genre": "genealogy",
+    "subgenre": "table of nations",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 11,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 12,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 13,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 14,
+    "genre": "narrative",
+    "subgenre": "military record",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 15,
+    "genre": "narrative",
+    "subgenre": "covenant",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 16,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 17,
+    "genre": "narrative",
+    "subgenre": "covenant",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 18,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 19,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 20,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 21,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 22,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 23,
+    "genre": "narrative",
+    "subgenre": "legal transaction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 24,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 25,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 26,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 27,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 28,
+    "genre": "narrative",
+    "subgenre": "vision",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 29,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 30,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 31,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 32,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 33,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 34,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 35,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 36,
+    "genre": "genealogy",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 37,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 38,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 39,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 40,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 41,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 42,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 43,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 44,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 45,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 46,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 47,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 48,
+    "genre": "narrative",
+    "subgenre": "blessing",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 49,
+    "genre": "poetry",
+    "subgenre": "prophetic blessing",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 50,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 1,
+    "genre": "law",
+    "subgenre": "ritual instruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 2,
+    "genre": "law",
+    "subgenre": "ritual instruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 3,
+    "genre": "law",
+    "subgenre": "ritual instruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 4,
+    "genre": "law",
+    "subgenre": "ritual instruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 5,
+    "genre": "law",
+    "subgenre": "ritual instruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 6,
+    "genre": "law",
+    "subgenre": "ritual instruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 7,
+    "genre": "law",
+    "subgenre": "ritual instruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 8,
+    "genre": "narrative",
+    "subgenre": "ritual narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 9,
+    "genre": "narrative",
+    "subgenre": "ritual narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 10,
+    "genre": "narrative",
+    "subgenre": "judgment narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 11,
+    "genre": "law",
+    "subgenre": "dietary law",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 12,
+    "genre": "law",
+    "subgenre": "purity law",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 13,
+    "genre": "law",
+    "subgenre": "purity law",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 14,
+    "genre": "law",
+    "subgenre": "purity law",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 15,
+    "genre": "law",
+    "subgenre": "purity law",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 16,
+    "genre": "law",
+    "subgenre": "ritual instruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 17,
+    "genre": "law",
+    "subgenre": "holiness code",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 18,
+    "genre": "law",
+    "subgenre": "holiness code",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 19,
+    "genre": "law",
+    "subgenre": "holiness code",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 20,
+    "genre": "law",
+    "subgenre": "holiness code",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 21,
+    "genre": "law",
+    "subgenre": "holiness code",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 22,
+    "genre": "law",
+    "subgenre": "holiness code",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 23,
+    "genre": "law",
+    "subgenre": "liturgical calendar",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 24,
+    "genre": "law",
+    "subgenre": "case law",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 25,
+    "genre": "law",
+    "subgenre": "economic law",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 26,
+    "genre": "law",
+    "subgenre": "covenant blessings and curses",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 27,
+    "genre": "law",
+    "subgenre": "votive law",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
   }
 ]

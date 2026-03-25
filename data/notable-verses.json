@@ -15156,5 +15156,847 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 2
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "The foundational opening of the Bible establishing God as Creator."
+      },
+      {
+        "verse": 27,
+        "reason": "God created man in his own image — foundational to the doctrine of divine nature."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 24,
+        "reason": "The institution of marriage — quoted by Jesus, Paul, and in temple theology."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 15,
+        "reason": "The protevangelium — the first messianic prophecy promising the seed of the woman will crush the serpent."
+      },
+      {
+        "verse": 19,
+        "reason": "'Dust thou art, and unto dust shalt thou return' — the mortality of mankind."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "Cain's infamous reply: 'Am I my brother's keeper?' — a universal question of moral responsibility."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 24,
+        "reason": "'Enoch walked with God: and he was not; for God took him' — the translation of Enoch."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 8,
+        "reason": "'But Noah found grace in the eyes of the LORD' — the first mention of grace in scripture."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 7,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 22,
+        "reason": "God's promise that seedtime, harvest, and the seasons will never cease."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 13,
+        "reason": "The rainbow covenant — God's sign that He will never again destroy the earth by flood."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 10,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 11,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "The foundational Abrahamic covenant promise: 'I will make of thee a great nation.'"
+      },
+      {
+        "verse": 3,
+        "reason": "'In thee shall all families of the earth be blessed' — the universal scope of the Abrahamic covenant."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 13,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 18,
+        "reason": "The introduction of Melchizedek, king of Salem and priest of the most high God — a type of Christ."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 15,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "'He believed in the LORD; and he counted it to him for righteousness' — the paradigm of faith."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 16,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 17,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "The renaming of Abram to Abraham — 'father of many nations.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 18,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "'Is any thing too hard for the LORD?' — a declaration of God's unlimited power."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 19,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 20,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 21,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 22,
+    "verses": [
+      {
+        "verse": 8,
+        "reason": "'God will provide himself a lamb' — Abraham's prophetic statement of the Atonement."
+      },
+      {
+        "verse": 14,
+        "reason": "Abraham names the place Jehovah-jireh — 'The LORD will provide.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 23,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 24,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 25,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 26,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 27,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 28,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "Jacob's ladder — a vision of the connection between heaven and earth with ascending and descending angels."
+      },
+      {
+        "verse": 17,
+        "reason": "'This is none other but the house of God, and this is the gate of heaven.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 29,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 30,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 31,
+    "verses": [
+      {
+        "verse": 49,
+        "reason": "The Mizpah benediction: 'The LORD watch between me and thee, when we are absent one from another.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 32,
+    "verses": [
+      {
+        "verse": 28,
+        "reason": "Jacob receives the name Israel — 'for as a prince hast thou power with God and with men.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 33,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 34,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 35,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 36,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 37,
+    "verses": [
+      {
+        "verse": 19,
+        "reason": "The brothers call Joseph 'this dreamer' — encapsulating the jealousy that drives the Joseph narrative."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 38,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 39,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "Joseph's refusal of Potiphar's wife: 'How then can I do this great wickedness, and sin against God?'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 40,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 41,
+    "verses": [
+      {
+        "verse": 16,
+        "reason": "Joseph credits God, not himself, for the interpretation of dreams."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 42,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 43,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 44,
+    "verses": [
+      {
+        "verse": 33,
+        "reason": "Judah offers himself as a slave in Benjamin's place — a powerful act of self-sacrifice."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 45,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "Joseph tells his brothers God sent him ahead to preserve life — the theology of divine providence."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 46,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 47,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 48,
+    "verses": [
+      {
+        "verse": 16,
+        "reason": "Jacob invokes 'the Angel which redeemed me' to bless Ephraim and Manasseh."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 49,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "The Shiloh prophecy — 'The sceptre shall not depart from Judah' — a key messianic text."
+      },
+      {
+        "verse": 22,
+        "reason": "Joseph is a fruitful bough — the basis for LDS teachings on Joseph's posterity in the Americas."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 50,
+    "verses": [
+      {
+        "verse": 20,
+        "reason": "'Ye thought evil against me; but God meant it unto good' — the definitive statement of divine providence."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 1,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 2,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 3,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 4,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 5,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 13,
+        "reason": "The fire shall ever be burning upon the altar; it shall never go out — symbolizing perpetual devotion."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 7,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "Moses pours anointing oil on Aaron's head, consecrating him as high priest."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 24,
+        "reason": "Fire comes out from before the Lord and consumes the offering, and all the people shout and fall on their faces."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 10,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "Nadab and Abihu are consumed by fire from the Lord for offering strange fire."
+      },
+      {
+        "verse": 3,
+        "reason": "Moses declares: I will be sanctified in them that come nigh me, and before all the people I will be glorified."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 11,
+    "verses": [
+      {
+        "verse": 45,
+        "reason": "I am the Lord that bringeth you up out of Egypt to be your God: ye shall therefore be holy, for I am holy."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 12,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 13,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 14,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 15,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 30,
+        "reason": "On this day shall the priest make an atonement for you, to cleanse you, that ye may be clean from all your sins before the Lord."
+      },
+      {
+        "verse": 21,
+        "reason": "The scapegoat carries all the iniquities of Israel into the wilderness — a powerful type of Christ."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 17,
+    "verses": [
+      {
+        "verse": 11,
+        "reason": "The life of the flesh is in the blood — foundational to the doctrine of atonement through blood sacrifice."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 18,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 19,
+    "verses": [
+      {
+        "verse": 18,
+        "reason": "Thou shalt love thy neighbour as thyself — the second great commandment, quoted by Christ."
+      },
+      {
+        "verse": 2,
+        "reason": "Ye shall be holy: for I the Lord your God am holy — the defining call of the holiness code."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 20,
+    "verses": [
+      {
+        "verse": 26,
+        "reason": "Ye shall be holy unto me: for I the Lord am holy, and have severed you from other people."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 21,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 22,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 23,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "The sabbath of rest established as a holy convocation — foundational to the sacred calendar."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 24,
+    "verses": [
+      {
+        "verse": 20,
+        "reason": "Breach for breach, eye for eye, tooth for tooth — the lex talionis principle of proportional justice."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 25,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "Proclaim liberty throughout all the land — inscribed on the Liberty Bell and a type of ultimate redemption."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 26,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "I will walk among you, and will be your God, and ye shall be my people — the essence of the covenant relationship."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 27,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
   }
 ]

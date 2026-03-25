@@ -8728,5 +8728,621 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 2
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "summary": "God creates the heavens and earth in six days — light, sky, land, vegetation, sun and moon, sea creatures, animals, and mankind in His image — and declares all of it very good.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 2,
+    "summary": "God rests on the seventh day, forms Adam from the dust and places him in the Garden of Eden, then creates Eve from Adam's rib as his companion.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 3,
+    "summary": "The serpent deceives Eve; Adam and Eve eat the forbidden fruit, receive curses and consequences, and are cast out of the Garden of Eden.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 4,
+    "summary": "Cain kills his brother Abel out of jealousy over God's acceptance of Abel's offering; Cain is cursed to be a fugitive, and the chapter traces his descendants.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 5,
+    "summary": "The genealogical record from Adam to Noah, noting the long lifespans of the patriarchs and the translation of Enoch who walked with God.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 6,
+    "summary": "Wickedness fills the earth and God determines to destroy all flesh by a flood; Noah finds grace and is commanded to build an ark.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 7,
+    "summary": "Noah, his family, and the animals enter the ark; the Flood covers the earth for forty days and all living things outside the ark perish.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 8,
+    "summary": "The floodwaters recede, the ark rests on Mount Ararat, Noah sends out a raven and a dove, and upon leaving the ark he offers a burnt offering to God.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 9,
+    "summary": "God blesses Noah and establishes the rainbow covenant never to flood the earth again; Noah plants a vineyard, and Ham's transgression leads to the cursing of Canaan.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 10,
+    "summary": "The Table of Nations records the descendants of Shem, Ham, and Japheth and how the nations were divided across the earth after the Flood.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 11,
+    "summary": "The people build the Tower of Babel and God confounds their language and scatters them; the genealogy from Shem to Abram is recorded.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 12,
+    "summary": "God calls Abram to leave his country with promises of a great nation and blessing; Abram journeys to Canaan and then to Egypt, where he deceives Pharaoh about Sarai.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 13,
+    "summary": "Abram and Lot separate due to the size of their herds; Lot chooses the plain of Jordan, and God reaffirms His covenant promises to Abram.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 14,
+    "summary": "Abram rescues Lot from captivity after the battle of the kings, and Melchizedek, king of Salem and priest of the most high God, blesses Abram and receives tithes.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 15,
+    "summary": "God makes a formal covenant with Abram, promising him innumerable posterity and the land of Canaan; Abram believes God and it is counted to him for righteousness.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 16,
+    "summary": "Sarai gives her handmaid Hagar to Abram; Hagar conceives and flees from Sarai's harshness, but the angel of the Lord sends her back with a promise about Ishmael.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 17,
+    "summary": "God establishes the covenant of circumcision, renames Abram to Abraham and Sarai to Sarah, and promises that Sarah will bear a son named Isaac.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 18,
+    "summary": "Three heavenly visitors announce the birth of Isaac to Abraham and Sarah; Abraham intercedes with God for the city of Sodom.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 19,
+    "summary": "Two angels rescue Lot from Sodom before God destroys Sodom and Gomorrah with fire and brimstone; Lot's wife looks back and becomes a pillar of salt.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 20,
+    "summary": "Abraham sojourns in Gerar and tells Abimelech that Sarah is his sister; God warns Abimelech in a dream and the matter is resolved.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 21,
+    "summary": "Isaac is born to Abraham and Sarah; Hagar and Ishmael are sent away but preserved by God; Abraham and Abimelech make a covenant at Beer-sheba.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 22,
+    "summary": "God commands Abraham to offer Isaac as a sacrifice; Abraham obeys, and at the last moment God provides a ram and reaffirms the covenant blessings.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 23,
+    "summary": "Sarah dies at age 127 and Abraham purchases the cave of Machpelah from Ephron the Hittite as a burial place for her.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 24,
+    "summary": "Abraham sends his servant to find a wife for Isaac; the servant is divinely guided to Rebekah, who returns with him and marries Isaac.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 25,
+    "summary": "Abraham dies and is buried at Machpelah; Ishmael's descendants are listed; Rebekah bears twins Esau and Jacob, and Esau sells his birthright.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 26,
+    "summary": "God reaffirms the Abrahamic covenant with Isaac; Isaac prospers in Gerar despite disputes over wells and makes a covenant with Abimelech.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 27,
+    "summary": "Jacob, guided by Rebekah, deceives the aging Isaac and receives the firstborn blessing; Esau is filled with hatred and plans to kill Jacob.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 28,
+    "summary": "Isaac sends Jacob to Laban; at Bethel Jacob dreams of a ladder reaching to heaven with angels, and God renews the Abrahamic covenant with him.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 29,
+    "summary": "Jacob arrives at Laban's household, works seven years for Rachel but is given Leah first; he marries Rachel also, and Leah begins bearing sons.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 30,
+    "summary": "The birth rivalry between Rachel and Leah continues through handmaids and mandrakes; Jacob prospers through a livestock agreement with Laban.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 31,
+    "summary": "Jacob flees from Laban with his family and flocks; Laban pursues, and after a tense confrontation they make a covenant at Mizpah.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 32,
+    "summary": "Jacob prepares to meet Esau, sends gifts ahead, and wrestles with a divine being through the night, receiving the new name Israel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 33,
+    "summary": "Jacob and Esau meet and reconcile peacefully; Jacob settles near Shechem and builds an altar.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 34,
+    "summary": "Shechem defiles Dinah; Simeon and Levi avenge her by deceiving and slaughtering the men of the city, bringing trouble upon Jacob's household.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 35,
+    "summary": "God directs Jacob to return to Bethel where the covenant is reaffirmed; Rachel dies giving birth to Benjamin, and Isaac dies at age 180.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 36,
+    "summary": "The genealogical record of Esau's descendants and the chiefs and kings of Edom who settled in Mount Seir.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 37,
+    "summary": "Joseph reports his prophetic dreams to his family; his jealous brothers sell him to Midianite traders, and he is taken to Egypt.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 38,
+    "summary": "Judah's son Er dies and his brother Onan refuses his duty; Tamar disguises herself and conceives twins Perez and Zerah by Judah.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 39,
+    "summary": "Joseph prospers in the house of Potiphar by God's blessing but is falsely accused by Potiphar's wife and imprisoned.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 40,
+    "summary": "Joseph correctly interprets the dreams of Pharaoh's butler and baker while in prison; the butler is restored but forgets Joseph.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 41,
+    "summary": "Joseph interprets Pharaoh's dreams of seven years of plenty followed by seven years of famine and is elevated to rule over all Egypt.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 42,
+    "summary": "Joseph's brothers come to Egypt to buy grain; Joseph recognizes them, tests them, and keeps Simeon as hostage until they bring Benjamin.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 43,
+    "summary": "The brothers return to Egypt with Benjamin; Joseph hosts them at a feast and is overcome with emotion at seeing his youngest brother.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 44,
+    "summary": "Joseph plants his silver cup in Benjamin's sack to test his brothers; Judah delivers an impassioned plea offering himself in Benjamin's place.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 45,
+    "summary": "Joseph reveals his identity to his brothers, weeps with them, and sends them to bring Jacob to Egypt, declaring God sent him ahead to preserve life.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 46,
+    "summary": "God reassures Jacob in a vision at Beer-sheba; Jacob's entire family travels to Egypt and is reunited with Joseph in Goshen.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 47,
+    "summary": "Jacob's family settles in Goshen; Joseph administers Egypt through the famine; Jacob makes Joseph swear to bury him in the land of Canaan.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 48,
+    "summary": "Jacob adopts and blesses Joseph's sons Ephraim and Manasseh, deliberately crossing his hands to give the greater blessing to the younger Ephraim.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 49,
+    "summary": "Jacob gathers his twelve sons and delivers prophetic blessings and pronouncements over each tribe, including the messianic promise to Judah.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 50,
+    "summary": "Jacob is embalmed and buried in the cave of Machpelah; Joseph reassures his brothers of forgiveness, and Joseph dies in Egypt at age 110.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 1,
+    "summary": "The Lord instructs Moses on the proper procedure for burnt offerings of cattle, sheep, goats, and birds as a sweet savour.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 2,
+    "summary": "Laws for the meat (grain) offering of fine flour with oil and frankincense, including baked, pan, and firstfruits variations.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 3,
+    "summary": "Regulations for peace offerings from the herd and the flock, with instructions on the fat and blood prohibitions.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 4,
+    "summary": "The sin offering is established for unintentional sins by the priest, the whole congregation, a ruler, and a common person.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 5,
+    "summary": "Trespass offerings for various offenses including touching unclean things, rash oaths, and sins requiring restitution.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 6,
+    "summary": "Further laws on trespass offerings with restitution, and priestly instructions for the burnt offering, meat offering, and sin offering.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 7,
+    "summary": "Laws for the trespass offering and peace offering, including the wave breast and heave shoulder for priests, and prohibitions on fat and blood.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 8,
+    "summary": "Moses consecrates Aaron and his sons as priests, washing, clothing, and anointing them, and offering sacrifices for their ordination.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 9,
+    "summary": "Aaron offers his first sacrifices as high priest; the glory of the Lord appears, and fire from the Lord consumes the offering.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 10,
+    "summary": "Nadab and Abihu offer strange fire before the Lord and are killed; Moses instructs the remaining priests on proper conduct and mourning.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 11,
+    "summary": "Dietary laws distinguishing clean and unclean animals, fish, birds, and creeping things, with the charge to be holy as God is holy.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 12,
+    "summary": "Laws of purification for a woman after childbirth, with prescribed offerings for her cleansing.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 13,
+    "summary": "Detailed instructions for the priest to diagnose and manage leprosy and other skin diseases, including quarantine procedures.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 14,
+    "summary": "The ritual for cleansing a healed leper involving two birds, cedar wood, scarlet, and hyssop, plus offerings for atonement and restoration.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 15,
+    "summary": "Laws regarding ceremonial uncleanness from bodily discharges for both men and women, with prescribed purification rituals.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 16,
+    "summary": "The Day of Atonement (Yom Kippur): Aaron enters the Holy of Holies with blood, the scapegoat bears Israel's sins into the wilderness.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 17,
+    "summary": "All sacrifices must be brought to the tabernacle; the life of the flesh is in the blood, and eating blood is strictly prohibited.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 18,
+    "summary": "Prohibitions against sexual immorality, incest, and the abominations of the Canaanites, with warnings of the land vomiting out its inhabitants.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 19,
+    "summary": "The holiness code: love thy neighbour as thyself, honor parents, keep the sabbath, leave gleanings for the poor, and practice just weights.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 20,
+    "summary": "Penalties for Molech worship, consulting familiar spirits, cursing parents, and various sexual sins; a call to separate and be holy.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 21,
+    "summary": "Holiness requirements for priests regarding mourning, marriage, and physical qualifications for those who offer the bread of God.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 22,
+    "summary": "Rules for priestly cleanness when handling holy things, and requirements that all offerings to the Lord must be without blemish.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 23,
+    "summary": "The feasts of the Lord: Sabbath, Passover, Unleavened Bread, Firstfruits, Pentecost, Trumpets, Day of Atonement, and Tabernacles.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 24,
+    "summary": "Instructions for the lamp and showbread; an Israelite blasphemes and is stoned; the law of an eye for an eye is established.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 25,
+    "summary": "The sabbatical year (every 7th) and the Jubilee (every 50th): land rest, liberty for servants, and economic restoration through redemption.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 26,
+    "summary": "Blessings promised for obedience (rain, peace, plenty) and curses for disobedience (disease, famine, exile), with a promise to remember the covenant.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 27,
+    "summary": "Laws for the valuation and redemption of persons, animals, houses, and fields dedicated to the Lord by vow.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 3
   }
 ]
