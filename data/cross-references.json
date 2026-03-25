@@ -1736,5 +1736,38 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 91
+  },
+  {
+    "book": "Prayer of Azariah",
+    "chapter": 1,
+    "verse": 1,
+    "crossReference": "Daniel 3:23",
+    "type": "parallel",
+    "note": "This book is an addition to the narrative of the three Hebrews in the fiery furnace found in Daniel.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 96
+  },
+  {
+    "book": "Prayer of Azariah",
+    "chapter": 1,
+    "verse": 4,
+    "crossReference": "Nehemiah 9:33",
+    "type": "parallel",
+    "note": "Both passages acknowledge God's justice in punishing Israel for their disobedience.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 96
+  },
+  {
+    "book": "Prayer of Azariah",
+    "chapter": 1,
+    "verse": 35,
+    "crossReference": "Psalm 148:1",
+    "type": "allusion",
+    "note": "The 'Song of the Three Holy Children' parallels the structure and themes of Psalm 148, calling all creation to praise God.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 96
   }
 ]

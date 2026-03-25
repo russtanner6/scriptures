@@ -2726,5 +2726,13 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 91
+  },
+  {
+    "book": "Prayer of Azariah",
+    "chapter": 1,
+    "summary": "While standing in a fiery furnace, Azariah confesses the sins of Israel and pleads for mercy, followed by a celebratory song of praise joined by his two companions.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 96
   }
 ]

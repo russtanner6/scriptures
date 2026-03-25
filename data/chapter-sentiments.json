@@ -4431,5 +4431,18 @@
     "contrition": 2,
     "dominant": "exaltation",
     "rationale": "Judith leads a song of praise to the Lord, and her life concludes in peace and honor as a hero of her people."
+  },
+  {
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookName": "Prayer of Azariah",
+    "bookId": 96,
+    "chapter": 1,
+    "exaltation": 9,
+    "peace": 6,
+    "admonition": 5,
+    "contrition": 8,
+    "dominant": "exaltation",
+    "rationale": "The chapter begins with deep contrition and confession of national sin but concludes with a massive, rhythmic hymn of exaltation and praise for all of God's creations."
   }
 ]

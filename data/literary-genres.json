@@ -2929,5 +2929,14 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 91
+  },
+  {
+    "book": "Prayer of Azariah",
+    "chapter": 1,
+    "genre": "prayer",
+    "subgenre": "liturgical hymn",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 96
   }
 ]

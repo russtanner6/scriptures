@@ -3408,5 +3408,15 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 91
+  },
+  {
+    "book": "Prayer of Azariah",
+    "chapter": 1,
+    "era": "Exile",
+    "approxDate": "c. 586 B.C.",
+    "setting": "Inside the fiery furnace in Babylon",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 96
   }
 ]

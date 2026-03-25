@@ -3760,5 +3760,29 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 91
+  },
+  {
+    "book": "Prayer of Azariah",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 4,
+        "text": "For thou art righteous in all the things that thou hast done to us: yea, true are all thy works, thy ways are right, and all thy judgments truth.",
+        "reason": "A profound acknowledgment of divine justice even in the midst of extreme trial."
+      },
+      {
+        "verse": 17,
+        "text": "Like as in the burnt offerings of rams and bullocks, and like as in ten thousands of fat lambs: so let our sacrifice be in thy sight this day, and grant that we may wholly go after thee: for they shall not be confounded that put their trust in thee.",
+        "reason": "Reflects the doctrine that a broken heart and contrite spirit are the true sacrifices required by God."
+      },
+      {
+        "verse": 35,
+        "text": "O all ye works of the Lord, bless ye the Lord: praise and exalt him above all for ever.",
+        "reason": "The opening refrain of one of the most famous hymns of praise in the Apocrypha."
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 96
   }
 ]
