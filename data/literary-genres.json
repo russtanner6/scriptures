@@ -2659,5 +2659,68 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 101
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 10,
+    "genre": "dialogue",
+    "subgenre": "interpretation",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 11,
+    "genre": "vision",
+    "subgenre": "apocalyptic vision",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 12,
+    "genre": "narrative",
+    "subgenre": "court narrative",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 13,
+    "genre": "prayer",
+    "subgenre": "decree and supplication",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 14,
+    "genre": "prayer",
+    "subgenre": "lamentation",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 15,
+    "genre": "narrative",
+    "subgenre": "dramatic scene",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 16,
+    "genre": "historical record",
+    "subgenre": "decree",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
   }
 ]

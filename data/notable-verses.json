@@ -3449,5 +3449,79 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 101
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 10,
+    "verses": [
+      {
+        "verse": 9,
+        "text": "And my nation is this Israel, which cried to God, and were saved: for the Lord hath saved his people, and the Lord hath delivered us from all those evils, and God hath wrought signs and great wonders, which have not been done among the Gentiles.",
+        "reason": "Summarizes the miraculous nature of the Jews' survival."
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 11,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 12,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 9,
+        "text": "O Lord, Lord, the King Almighty: for the whole world is in thy power, and if thou hast appointed to save Israel, there is no man that can gainsay thee.",
+        "reason": "A powerful declaration of God's omnipotence and control over history."
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 3,
+        "text": "O my Lord, thou only art our King: help me, desolate woman, which have no helper but thee.",
+        "reason": "Expresses the core theme of total reliance upon God in times of extreme trial."
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 15,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 16,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
   }
 ]

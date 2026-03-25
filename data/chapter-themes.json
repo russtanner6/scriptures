@@ -3815,5 +3815,96 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 101
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 10,
+    "themes": [
+      "divine providence",
+      "fulfillment of prophecy",
+      "interpretation",
+      "deliverance"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 11,
+    "themes": [
+      "visions",
+      "symbolism",
+      "faithfulness",
+      "prophecy"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 12,
+    "themes": [
+      "loyalty",
+      "justice",
+      "conspiracy",
+      "service"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 13,
+    "themes": [
+      "sovereignty of god",
+      "humility",
+      "prayer",
+      "persecution"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 14,
+    "themes": [
+      "fasting",
+      "supplication",
+      "national survival",
+      "faith"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 15,
+    "themes": [
+      "courage",
+      "divine intervention",
+      "favor",
+      "mercy"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 16,
+    "themes": [
+      "religious freedom",
+      "justice",
+      "reversal of fortune",
+      "gratitude"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
   }
 ]

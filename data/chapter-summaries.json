@@ -2486,5 +2486,61 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 101
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 10,
+    "summary": "Mordecai interprets his previous dream, realizing that the little fountain and the two dragons represent the events and people involved in the Jews' deliverance.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 11,
+    "summary": "Mordecai, a Jewish official in the Persian court, has a symbolic dream involving dragons, darkness, and a small spring that grows into a great river.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 12,
+    "summary": "Mordecai uncovers a plot by two eunuchs to assassinate the king, reports them, and is officially recorded in the king's chronicles for his loyalty.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 13,
+    "summary": "The text provides the specific wording of the king's decree against the Jews, followed by Mordecai's humble prayer acknowledging God's absolute sovereignty.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 14,
+    "summary": "Queen Esther strips off her royal robes, fasts, and offers a soul-stirring prayer to God, pleading for strength and the salvation of Israel.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 15,
+    "summary": "Esther bravely enters the king's presence uninvited and faints from fear, but God softens the king's heart, and he lovingly reassures her of her safety.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 16,
+    "summary": "King Artaxerxes issues a new decree denouncing the treachery of Aman and commanding his subjects to help the Jews celebrate their deliverance.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
   }
 ]

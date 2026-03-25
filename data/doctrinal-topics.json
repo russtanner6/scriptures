@@ -3607,5 +3607,86 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 101
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 10,
+    "topics": [
+      "revelation",
+      "trust in god",
+      "prophecy"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 11,
+    "topics": [
+      "revelation",
+      "prophecy"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 12,
+    "topics": [
+      "service",
+      "justice"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 13,
+    "topics": [
+      "prayer",
+      "humility",
+      "godhead"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 14,
+    "topics": [
+      "prayer",
+      "fasting",
+      "faith"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 15,
+    "topics": [
+      "trust in god",
+      "miracles"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 16,
+    "topics": [
+      "justice",
+      "agency",
+      "commandments"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
   }
 ]

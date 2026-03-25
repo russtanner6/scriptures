@@ -20004,5 +20004,19 @@
     "tier": 4,
     "family": {},
     "portrait": null
+  },
+  {
+    "id": "aman-haman",
+    "name": "Aman",
+    "bio": "The king's chief minister (Haman) who plotted to destroy the Jewish people.",
+    "aliases": [
+      "Haman"
+    ],
+    "volumes": [
+      "Apocrypha"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
   }
 ]

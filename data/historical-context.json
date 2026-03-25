@@ -3108,5 +3108,75 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 101
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 10,
+    "era": "Post-exile",
+    "approxDate": "c. 470 B.C.",
+    "setting": "Shushan (Susa), the Persian capital",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 11,
+    "era": "Post-exile",
+    "approxDate": "c. 480 B.C.",
+    "setting": "The city of Shushan",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 12,
+    "era": "Post-exile",
+    "approxDate": "c. 480 B.C.",
+    "setting": "The palace at Shushan",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 13,
+    "era": "Post-exile",
+    "approxDate": "c. 474 B.C.",
+    "setting": "The Persian Empire",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 14,
+    "era": "Post-exile",
+    "approxDate": "c. 474 B.C.",
+    "setting": "Esther's private quarters in the palace",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 15,
+    "era": "Post-exile",
+    "approxDate": "c. 474 B.C.",
+    "setting": "The royal throne room at Shushan",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 16,
+    "era": "Post-exile",
+    "approxDate": "c. 473 B.C.",
+    "setting": "The Persian Empire",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
   }
 ]

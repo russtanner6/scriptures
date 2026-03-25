@@ -1538,5 +1538,60 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 101
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 10,
+    "verse": 9,
+    "crossReference": "Esther 8:16",
+    "type": "parallel",
+    "note": "Refers to the light and joy that came to the Jews after their deliverance.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 13,
+    "verse": 9,
+    "crossReference": "Psalm 115:3",
+    "type": "parallel",
+    "note": "Both texts emphasize that God does whatever He pleases because of His supreme power.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 14,
+    "verse": 3,
+    "crossReference": "Ether 12:27",
+    "type": "allusion",
+    "note": "Esther's recognition of her weakness and need for God's grace parallels the themes of humility in the Book of Mormon.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 15,
+    "verse": 8,
+    "crossReference": "Proverbs 21:1",
+    "type": "typology",
+    "note": "The king's heart being turned by God is a literal example of the proverb.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
+  },
+  {
+    "book": "Additions to Esther",
+    "chapter": 16,
+    "verse": 16,
+    "crossReference": "Esther 8:11",
+    "type": "parallel",
+    "note": "The formal record of the king's decree allowing the Jews to defend themselves.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 92
   }
 ]
