@@ -4665,5 +4665,167 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 48
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 1,
+    "genre": "treatise",
+    "subgenre": "theological discourse",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 2,
+    "genre": "treatise",
+    "subgenre": "exhortation",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 3,
+    "genre": "treatise",
+    "subgenre": "exhortation",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 4,
+    "genre": "theological discourse",
+    "subgenre": "",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 5,
+    "genre": "theological discourse",
+    "subgenre": "",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 6,
+    "genre": "exhortation",
+    "subgenre": "warning",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "genre": "scriptural commentary",
+    "subgenre": "midrash",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 8,
+    "genre": "theological discourse",
+    "subgenre": "",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "genre": "theological discourse",
+    "subgenre": "",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "genre": "exhortation",
+    "subgenre": "",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "genre": "historical encomium",
+    "subgenre": "",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "genre": "exhortation",
+    "subgenre": "",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "genre": "epistle",
+    "subgenre": "closing salutations",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "genre": "epistle",
+    "subgenre": "",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "genre": "epistle",
+    "subgenre": "",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "genre": "epistle",
+    "subgenre": "",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 4,
+    "genre": "epistle",
+    "subgenre": "",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "genre": "epistle",
+    "subgenre": "",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
   }
 ]

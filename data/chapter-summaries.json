@@ -4270,5 +4270,149 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 48
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 1,
+    "summary": "Paul declares that God has spoken through His Son, describing Christ as the heir of all things and the express image of God's person, noting His superiority over all angels.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 2,
+    "summary": "The Saints are warned not to let the gospel slip away. Christ took on a mortal body to experience death and become a merciful High Priest who can succour the tempted.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 3,
+    "summary": "Paul compares Jesus to Moses, showing that while Moses was a faithful servant, Christ is the Son over the house. He warns against falling into unbelief.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 4,
+    "summary": "Paul teaches that the promise of entering God's rest remains for the faithful. The word of God is quick and powerful, and Christ understands our weaknesses.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 5,
+    "summary": "Paul explains that a high priest must be called of God as was Aaron. He identifies Christ as a Priest forever after the order of Melchizedek and rebukes spiritual immaturity.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 6,
+    "summary": "The Saints are urged to leave behind basic principles and go on unto perfection. Paul warns against apostasy and emphasizes the immutability of God's promise.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "summary": "Paul discusses Melchizedek, to whom Abraham paid tithes, arguing that the Levitical Priesthood has been replaced by the Melchizedek Priesthood held eternally by Christ.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 8,
+    "summary": "Christ is the minister of the true tabernacle in heaven. The first covenant was found faulty, and God has established a new covenant written in hearts and minds.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "summary": "The rituals of the first tabernacle are contrasted with Christ's mediation. He entered the holy place once with His own blood to obtain eternal redemption.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "summary": "Paul argues that the Law of Moses was only a shadow. Christ's sacrifice was offered once for all. The Saints are told to hold fast and not cast away their confidence.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "summary": "Faith is defined as the substance of things hoped for. Paul lists the faithful acts of Abel, Enoch, Noah, Abraham, Sarah, Moses, and others who looked for a heavenly city.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "summary": "The Saints are encouraged to run the race with patience, looking unto Jesus. The Lord chastens those He loves. They have come to the city of the living God.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "summary": "Paul gives final exhortations regarding brotherly love, marriage, and obedience. Jesus Christ is the same yesterday, today, and forever.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "summary": "James encourages the scattered tribes to find joy in trials and seek wisdom from God in faith, teaching that true religion involves being doers of the word and serving the needy.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "summary": "James condemns showing partiality to the rich and argues that faith is made perfect through works, citing Abraham and Rahab as examples.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "summary": "James discourses on the power and danger of the tongue, contrasting divine wisdom as pure and peaceable with earthly, sensual wisdom.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 4,
+    "summary": "James identifies the source of conflict as lust and worldliness, declaring that friendship with the world is enmity with God, and inviting the saints to humble themselves.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "summary": "James warns the oppressive rich, exhorts the saints to patience until the Second Coming, and provides a pattern for healing the sick through anointing and prayer.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
   }
 ]

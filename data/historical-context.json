@@ -5338,5 +5338,185 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 48
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 1,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-68",
+    "setting": "Written to Jewish converts facing intense pressure to return to traditional Judaism and the Law of Moses.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 2,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-68",
+    "setting": "The author addresses the great salvation first spoken by the Lord and confirmed by those who heard Him.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 3,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-68",
+    "setting": "Refers to the provocation in the wilderness, citing the forty-year wandering of Israel after the Exodus.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 4,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-68",
+    "setting": "Draws on the Genesis Sabbath and Israel's failure to enter Canaan as a type of spiritual rest.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 5,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-68",
+    "setting": "Refers to the established Jewish order of the High Priest (descended from Aaron) to contrast it with Christ.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 6,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-68",
+    "setting": "Reflects a time when early Saints were tempted to turn away from the enlightenment they had received.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-68",
+    "setting": "Examines the meeting between Abraham and Melchizedek in Genesis 14, justifying a priesthood outside of Levi.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 8,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-68",
+    "setting": "Quotes extensively from Jeremiah 31, the primary Old Testament prophecy of a New Covenant.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-68",
+    "setting": "Provides a detailed description of the Second Temple (or Tabernacle) layout, including the Holy of Holies.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-68",
+    "setting": "Likely written before AD 70, as it speaks of sacrifices being offered year by year in the present tense.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-68",
+    "setting": "A survey of Israelite history designed to bolster the courage of persecuted Christians.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-68",
+    "setting": "Contrasts the terrifying physical manifestations at Mount Sinai with the spiritual peace of the New Jerusalem.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "era": "Apostolic",
+    "approxDate": "c. AD 64-68",
+    "setting": "Mentions the liberation of Timothy and sends greetings from they of Italy, suggesting a Roman context.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "era": "Apostolic",
+    "approxDate": "c. AD 45-50",
+    "setting": "Written to Christian converts of Jewish descent (the twelve tribes) living in the Diaspora, likely in the mid-1st century AD.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "era": "Apostolic",
+    "approxDate": "c. AD 45-50",
+    "setting": "Addresses early Christian congregations struggling with socio-economic class distinctions.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "era": "Apostolic",
+    "approxDate": "c. AD 45-50",
+    "setting": "Reflects the internal community dynamics and the significant influence of teachers and leaders in the early Church.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 4,
+    "era": "Apostolic",
+    "approxDate": "c. AD 45-50",
+    "setting": "Deals with internal disputes and the influence of Hellenistic worldly values on the early Christian communities.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "era": "Apostolic",
+    "approxDate": "c. AD 45-50",
+    "setting": "Provides instructions on the use of consecrated oil and the role of elders (priesthood) in the healing of the sick.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
   }
 ]

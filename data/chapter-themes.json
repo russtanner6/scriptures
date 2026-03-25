@@ -6600,5 +6600,228 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 48
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 1,
+    "themes": [
+      "The Preeminence of Christ",
+      "Angels vs. the Son",
+      "Divine Lineage"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 2,
+    "themes": [
+      "Salvation",
+      "Mortality of Christ",
+      "Succouring the Tempted"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 3,
+    "themes": [
+      "Hardening of Hearts",
+      "Faithfulness",
+      "Rest of the Lord"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 4,
+    "themes": [
+      "Entering God's Rest",
+      "Throne of Grace",
+      "The Living Word"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 5,
+    "themes": [
+      "Melchizedek Priesthood",
+      "Called of God",
+      "Spiritual Maturity"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 6,
+    "themes": [
+      "Perfection",
+      "Apostasy",
+      "Hope as an Anchor"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "themes": [
+      "Tithing",
+      "Eternal Priesthood",
+      "The Order of Melchizedek"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 8,
+    "themes": [
+      "The New Covenant",
+      "True Tabernacle",
+      "Inward Religion"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "themes": [
+      "The Atonement",
+      "Sacrifice",
+      "Ordinances of the Sanctuary"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "themes": [
+      "Persistence",
+      "Shadow vs. Reality",
+      "Judgment"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "themes": [
+      "The Power of Faith",
+      "Ancient Prophets",
+      "Heavenly Inheritance"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "themes": [
+      "Divine Chastening",
+      "Endurance",
+      "Mount Sion"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "themes": [
+      "Brotherly Love",
+      "Christian Conduct",
+      "Unchanging Savior"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "themes": [
+      "Trials",
+      "Patience",
+      "Wisdom",
+      "Prayer",
+      "Pure Religion"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "themes": [
+      "Respect of Persons",
+      "The Royal Law",
+      "Faith and Works",
+      "Justification"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "themes": [
+      "Self-Control",
+      "Communication",
+      "Divine Wisdom",
+      "Peace"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 4,
+    "themes": [
+      "Humility",
+      "Worldliness",
+      "Repentance",
+      "Submission"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "themes": [
+      "Second Coming",
+      "Patience",
+      "Healing",
+      "Priesthood",
+      "Fervent Prayer"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
   }
 ]

@@ -7462,5 +7462,327 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 48
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 3,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 14,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 3,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 18,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 12,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 12,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 16,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 4,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 6,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 19,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 3,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 10,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 22,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 28,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "verses": [
+      {
+        "verse": 25,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 35,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "verses": [
+      {
+        "verse": 1,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 6,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 2,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 9,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 2,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 8,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 58
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 5,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 22,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 27,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 17,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 26,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 17,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 7,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 17,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 14,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 16,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 59
   }
 ]
