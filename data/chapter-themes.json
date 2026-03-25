@@ -6072,5 +6072,341 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 55
+  },
+  {
+    "book": "Acts",
+    "chapter": 1,
+    "themes": [
+      "Apostolic Succession",
+      "Ascension",
+      "Divine Authority"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "themes": [
+      "Holy Ghost",
+      "Pentecost",
+      "Unity"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 3,
+    "themes": [
+      "Healing",
+      "Priesthood Power",
+      "Restitution"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 4,
+    "themes": [
+      "Boldness",
+      "Opposition",
+      "Shared Property"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "themes": [
+      "Integrity",
+      "Divine Justice",
+      "Miracles"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 6,
+    "themes": [
+      "Service",
+      "Office of Deacon",
+      "Persecution"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 7,
+    "themes": [
+      "Martyrdom",
+      "Israelite History",
+      "Visions"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 8,
+    "themes": [
+      "Missionary Work",
+      "Gift of the Holy Ghost",
+      "Inclusion"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "themes": [
+      "Conversion",
+      "Visions",
+      "Power of Prayer"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 10,
+    "themes": [
+      "Revelation",
+      "Gentile Inclusion",
+      "Divine Guidance"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 11,
+    "themes": [
+      "Church Policy",
+      "Unity",
+      "Dispensation of Mercy"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 12,
+    "themes": [
+      "Deliverance",
+      "Divine Judgment",
+      "Faithful Prayer"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 13,
+    "themes": [
+      "Setting Apart",
+      "Gospel to Gentiles",
+      "Opposition"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 14,
+    "themes": [
+      "Endurance",
+      "Priesthood Ordinances",
+      "Miracles"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 15,
+    "themes": [
+      "Church Councils",
+      "Doctrine vs. Tradition",
+      "Grace"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "themes": [
+      "Inspiration",
+      "Conversion",
+      "Joy in Trials"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 17,
+    "themes": [
+      "Nature of God",
+      "Resurrection",
+      "Preaching to Philosophers"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 18,
+    "themes": [
+      "Strengthening the Saints",
+      "Support in Ministry",
+      "Providence"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 19,
+    "themes": [
+      "Priesthood Authority",
+      "Victory over Idolatry",
+      "Growth"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 20,
+    "themes": [
+      "Sacred Warnings",
+      "Apostasy",
+      "Pastoral Care"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 21,
+    "themes": [
+      "Commitment",
+      "Legal Oppression",
+      "Patience"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 22,
+    "themes": [
+      "Testimony",
+      "Personal Revelation",
+      "Lineage and Status"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 23,
+    "themes": [
+      "Integrity",
+      "Divine Comfort",
+      "Providence"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 24,
+    "themes": [
+      "Resurrection",
+      "Judgment to Come",
+      "Legal Defense"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 25,
+    "themes": [
+      "Divine Protection",
+      "Legal Appeal",
+      "Consistency"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 26,
+    "themes": [
+      "Conversion",
+      "Prophetic Fulfillment",
+      "Persuasion"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 27,
+    "themes": [
+      "Faith in Crisis",
+      "Visions",
+      "Divine Preservation"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 28,
+    "themes": [
+      "Fulfillment of Mission",
+      "Healing",
+      "Unfolding Kingdom"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
   }
 ]

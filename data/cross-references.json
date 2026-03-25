@@ -2583,5 +2583,60 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 55
+  },
+  {
+    "book": "Acts",
+    "chapter": 1,
+    "verse": 22,
+    "crossReference": "D&C 20:38",
+    "type": "parallel",
+    "note": "Duty of Elders is to be ordained as witnesses of the resurrection.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "verse": 38,
+    "crossReference": "2 Nephi 31:17",
+    "type": "parallel",
+    "note": "The doctrine of Christ regarding baptism and the gift of the Holy Ghost.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 3,
+    "verse": 21,
+    "crossReference": "D&C 121:31",
+    "type": "parallel",
+    "note": "Regarding the restitution of all things spoken of by the mouth of prophets.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 10,
+    "verse": 34,
+    "crossReference": "Moroni 8:12",
+    "type": "parallel",
+    "note": "God is no respecter of persons; he is the same yesterday, today, and forever.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 17,
+    "verse": 28,
+    "crossReference": "D&C 93:23",
+    "type": "parallel",
+    "note": "Mankind being the offspring of God; intelligence not created or made.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
   }
 ]

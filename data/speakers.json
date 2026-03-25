@@ -5458,5 +5458,905 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 93
+  },
+  {
+    "book": "Acts",
+    "chapter": 1,
+    "startVerse": 4,
+    "endVerse": 5,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 1,
+    "startVerse": 7,
+    "endVerse": 8,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 1,
+    "startVerse": 16,
+    "endVerse": 22,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "startVerse": 14,
+    "endVerse": 36,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "startVerse": 38,
+    "endVerse": 40,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 3,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 3,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 3,
+    "startVerse": 12,
+    "endVerse": 26,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 4,
+    "startVerse": 8,
+    "endVerse": 12,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 4,
+    "startVerse": 19,
+    "endVerse": 20,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "startVerse": 3,
+    "endVerse": 4,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Sapphira",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "startVerse": 29,
+    "endVerse": 32,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "startVerse": 35,
+    "endVerse": 39,
+    "speaker": "Gamaliel",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 7,
+    "startVerse": 2,
+    "endVerse": 53,
+    "speaker": "Stephen",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 7,
+    "startVerse": 56,
+    "endVerse": 56,
+    "speaker": "Stephen",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 7,
+    "startVerse": 59,
+    "endVerse": 59,
+    "speaker": "Stephen",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 7,
+    "startVerse": 60,
+    "endVerse": 60,
+    "speaker": "Stephen",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 8,
+    "startVerse": 20,
+    "endVerse": 23,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 8,
+    "startVerse": 30,
+    "endVerse": 30,
+    "speaker": "Philip",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 8,
+    "startVerse": 35,
+    "endVerse": 35,
+    "speaker": "Philip",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "startVerse": 5,
+    "endVerse": 6,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Ananias (of Damascus)",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "startVerse": 11,
+    "endVerse": 12,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "startVerse": 13,
+    "endVerse": 14,
+    "speaker": "Ananias (of Damascus)",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "startVerse": 15,
+    "endVerse": 16,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Ananias (of Damascus)",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 10,
+    "startVerse": 4,
+    "endVerse": 6,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 10,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 10,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 10,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 10,
+    "startVerse": 30,
+    "endVerse": 33,
+    "speaker": "Cornelius",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 10,
+    "startVerse": 34,
+    "endVerse": 43,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 11,
+    "startVerse": 5,
+    "endVerse": 17,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 11,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "Agabus",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 12,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 12,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 13,
+    "startVerse": 10,
+    "endVerse": 11,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 13,
+    "startVerse": 16,
+    "endVerse": 41,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 13,
+    "startVerse": 46,
+    "endVerse": 47,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 14,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 14,
+    "startVerse": 15,
+    "endVerse": 17,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 15,
+    "startVerse": 7,
+    "endVerse": 11,
+    "speaker": "Peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 15,
+    "startVerse": 13,
+    "endVerse": 21,
+    "speaker": "James, brother of Jesus",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "startVerse": 31,
+    "endVerse": 31,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 17,
+    "startVerse": 22,
+    "endVerse": 31,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 18,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 18,
+    "startVerse": 9,
+    "endVerse": 10,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 18,
+    "startVerse": 14,
+    "endVerse": 15,
+    "speaker": "Gallio",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 18,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 19,
+    "startVerse": 2,
+    "endVerse": 4,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 19,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 19,
+    "startVerse": 25,
+    "endVerse": 27,
+    "speaker": "Demetrius (silversmith)",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 20,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 20,
+    "startVerse": 18,
+    "endVerse": 35,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 21,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Agabus",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 21,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 21,
+    "startVerse": 39,
+    "endVerse": 39,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 22,
+    "startVerse": 3,
+    "endVerse": 21,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 22,
+    "startVerse": 25,
+    "endVerse": 25,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 22,
+    "startVerse": 27,
+    "endVerse": 27,
+    "speaker": "Claudius Lysias",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 22,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "Claudius Lysias",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 23,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 23,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 23,
+    "startVerse": 5,
+    "endVerse": 6,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 23,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 23,
+    "startVerse": 26,
+    "endVerse": 30,
+    "speaker": "Claudius Lysias",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 24,
+    "startVerse": 2,
+    "endVerse": 8,
+    "speaker": "Tertullus",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 24,
+    "startVerse": 10,
+    "endVerse": 21,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 24,
+    "startVerse": 25,
+    "endVerse": 25,
+    "speaker": "Felix",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 25,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 25,
+    "startVerse": 10,
+    "endVerse": 11,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 25,
+    "startVerse": 14,
+    "endVerse": 21,
+    "speaker": "Festus",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 25,
+    "startVerse": 24,
+    "endVerse": 27,
+    "speaker": "Festus",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 26,
+    "startVerse": 2,
+    "endVerse": 23,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 26,
+    "startVerse": 25,
+    "endVerse": 27,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 26,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "Agrippa",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 26,
+    "startVerse": 29,
+    "endVerse": 29,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 27,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 27,
+    "startVerse": 21,
+    "endVerse": 26,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 27,
+    "startVerse": 31,
+    "endVerse": 31,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 27,
+    "startVerse": 33,
+    "endVerse": 34,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 28,
+    "startVerse": 17,
+    "endVerse": 20,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 28,
+    "startVerse": 25,
+    "endVerse": 28,
+    "speaker": "Paul",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
   }
 ]

@@ -6814,5 +6814,397 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 55
+  },
+  {
+    "book": "Acts",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 8,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 38,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 19,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 12,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 29,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 4,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 55,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 20,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 6,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 10,
+    "verses": [
+      {
+        "verse": 34,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 11,
+    "verses": [
+      {
+        "verse": 26,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 5,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 48,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 22,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 15,
+    "verses": [
+      {
+        "verse": 11,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 31,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 17,
+    "verses": [
+      {
+        "verse": 28,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 18,
+    "verses": [
+      {
+        "verse": 9,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 19,
+    "verses": [
+      {
+        "verse": 15,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 20,
+    "verses": [
+      {
+        "verse": 28,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 21,
+    "verses": [
+      {
+        "verse": 13,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 22,
+    "verses": [
+      {
+        "verse": 16,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 23,
+    "verses": [
+      {
+        "verse": 11,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 24,
+    "verses": [
+      {
+        "verse": 25,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 25,
+    "verses": [
+      {
+        "verse": 11,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 26,
+    "verses": [
+      {
+        "verse": 28,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 27,
+    "verses": [
+      {
+        "verse": 25,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 28,
+    "verses": [
+      {
+        "verse": 31,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
   }
 ]

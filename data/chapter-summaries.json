@@ -3918,5 +3918,229 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 55
+  },
+  {
+    "book": "Acts",
+    "chapter": 1,
+    "summary": "The risen Lord instructs the Apostles for forty days, promises the Holy Ghost, and ascends into heaven. Matthias is chosen by revelation and lot to replace Judas Iscariot.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "summary": "The Holy Ghost descends on the day of Pentecost; Peter preaches the first public discourse on the mission of Jesus Christ; about three thousand souls are baptized.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 3,
+    "summary": "Peter and John heal a lame man at the Temple gate; Peter testifies that Jesus is the Christ and calls the people to repentance and the restitution of all things.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 4,
+    "summary": "Peter and John are arrested and testify before the Sanhedrin; the Saints pray for boldness and the place is shaken; the believers live in total unity and shared substance.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "summary": "Ananias and Sapphira lie to the Holy Ghost and perish; the Apostles perform many miracles and are imprisoned but delivered by an angel; Gamaliel advises the council.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 6,
+    "summary": "Seven men are called to assist the Apostles; Stephen, one of the seven, works miracles and is brought before the council on false charges of blasphemy.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 7,
+    "summary": "Stephen recounts Israel's history of rejecting prophets and rebukes the council; he sees Jesus standing at the right hand of God and is stoned to death as Saul watches.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 8,
+    "summary": "Persecution scatters the Saints; Philip preaches in Samaria and baptizes Simon the sorcerer; Peter and John confer the Holy Ghost; Philip instructs and baptizes an Ethiopian eunuch.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "summary": "Saul is converted on the road to Damascus after a vision of Jesus; Ananias baptizes him; Saul begins preaching and escapes a plot; Peter heals Aeneas and raises Dorcas.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 10,
+    "summary": "Cornelius receives a vision; Peter sees a vision of a sheet and is taught that no man is unclean; Peter preaches to Cornelius's household and the Holy Ghost falls on them.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 11,
+    "summary": "Peter defends his actions with the Gentiles to the leaders in Jerusalem; the church grows in Antioch where disciples are first called Christians; Agabus prophesies of a famine.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 12,
+    "summary": "Herod kills James and imprisons Peter; an angel delivers Peter from prison; Herod accepts the people's worship as a god and is struck down by an angel and dies.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 13,
+    "summary": "Saul (now Paul) and Barnabas are set apart for mission; they travel to Cyprus and Pisidia; Paul preaches to Jews and Gentiles; many believe, but opposition arises.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 14,
+    "summary": "Paul and Barnabas perform miracles in Lystra and are mistaken for gods; Paul is later stoned but survives; they ordain elders in every church and return to Antioch.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 15,
+    "summary": "The Jerusalem Council deliberates on whether Gentile converts must be circumcised; Peter and James lead the decision to waive the law of Moses; Paul and Barnabas part ways.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "summary": "Paul and Silas travel through Phrygia and Galatia; Timothy joins them; Paul receives the Macedonian call; they are imprisoned in Philippi but the jailer and his house are converted.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 17,
+    "summary": "Paul preaches in Thessalonica and Berea; he is brought to Athens and delivers his famous sermon at Mars Hill regarding the Unknown God and the resurrection.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 18,
+    "summary": "Paul labors in Corinth with Aquila and Priscilla; the Lord comforts him in a vision; he returns to Antioch; Apollos is instructed by Priscilla and Aquila and preaches boldly.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 19,
+    "summary": "Paul confers the Holy Ghost on twelve men in Ephesus; he works special miracles and the word grows; a riot ensues as the silversmith Demetrius fears for the trade of Diana.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 20,
+    "summary": "Paul travels to Macedonia and Greece; he raises Eutychus from the dead in Troas; he meets with the Ephesian elders at Miletus, warning of future apostasy and bidding farewell.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 21,
+    "summary": "Paul journeys to Jerusalem despite warnings; he meets with James and the elders; a mob seizes him in the temple; he is rescued by Roman soldiers and given leave to speak.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 22,
+    "summary": "Paul recounts his conversion and mission to the Gentiles before the Jewish mob; they demand his death; Paul avoids a scourging by declaring his Roman citizenship.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 23,
+    "summary": "Paul testifies before the Sanhedrin; a conspiracy to kill him is revealed; the chief captain sends Paul under heavy guard to Governor Felix in Caesarea for safety.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 24,
+    "summary": "Paul is accused before Felix by Tertullus; Paul defends his faith in the resurrection; Felix keeps Paul in prison for two years, hoping for a bribe.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 25,
+    "summary": "Festus succeeds Felix; Paul appeals to Caesar to avoid a trial in Jerusalem; King Agrippa and Bernice arrive, and Festus asks Agrippa to hear Paul's case.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 26,
+    "summary": "Paul delivers a comprehensive defense before Agrippa, recounting his vision and mission; Agrippa is almost persuaded but Paul is sent to Rome because of his appeal.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 27,
+    "summary": "Paul and other prisoners sail for Italy; a great storm shipwrecks them at Melita (Malta); Paul assures the crew of their safety through a vision from an angel.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 28,
+    "summary": "On Malta, Paul is bitten by a snake but unhurt and heals the sick; they reach Rome; Paul is held in his own house and preaches the kingdom of God for two years.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
   }
 ]

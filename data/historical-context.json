@@ -4898,5 +4898,285 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 55
+  },
+  {
+    "book": "Acts",
+    "chapter": 1,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Set in Jerusalem shortly after the Resurrection; highlights the geographical starting point for the world-wide mission.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "The Feast of Pentecost was a major Jewish pilgrimage festival, drawing Jews from across the Roman Empire to Jerusalem.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 3,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "The Beautiful gate and Solomon's porch were prominent locations within the second Temple complex.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 4,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Describes the early conflict between the Nazarenes and the Sadducean leadership of the Sanhedrin.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Gamaliel was a renowned Pharisaic teacher and member of the Sanhedrin, respected for his wisdom and moderation.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 6,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "The tension between Grecians (Hellenistic Jews) and Hebrews (Judean Jews) within the early Christian community.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 7,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Stephen's discourse is the longest in Acts and summarizes the standard prophetic critique of Israel's history.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 8,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Samaria had been a center of religious tension with Jerusalem for centuries; the Ethiopian eunuch represents the outer reach of the known world.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "The road to Damascus was a major trade route connecting Judea with the provinces of the North.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 10,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Caesarea was the Roman administrative capital of Judea and home to the Italian cohort.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 11,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Antioch was the third largest city in the Roman Empire and became the base for the Gentile mission.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 12,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Herod Agrippa I ruled Judea AD 41-44; his death is also recorded by the historian Josephus.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 13,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "The practice of setting apart by the laying on of hands for specific missions is established here.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 14,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Lystra was a Roman colony in the province of Galatia; the locals worshipped Zeus and Hermes.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 15,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "The Jerusalem Council (c. AD 49) was the first major internal policy crisis of the Christian church.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Philippi was a leading city of Macedonia and a Roman colony, enjoying special status under Roman law.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 17,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Athens was the intellectual capital of the ancient world; the Areopagus was its most prestigious judicial council.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 18,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Corinth was a major commercial hub; the mention of Gallio (proconsul AD 51-52) provides a firm date for Paul's visit.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 19,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Ephesus was home to the Temple of Artemis (Diana), one of the seven wonders of the ancient world.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 20,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Paul's journey reflects the end of his third missionary journey as he rushes to reach Jerusalem for Pentecost.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 21,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Jerusalem was under high tension due to Zealot activity and Roman oppression during the late 50s AD.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 22,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Roman citizenship conferred specific legal protections, including the right to a trial and immunity from scourging without conviction.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 23,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "The Sanhedrin was the supreme Jewish court, but under Roman rule, its power to execute capital punishment was limited.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 24,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Antonius Felix was the Roman procurator of Judea (c. AD 52-59); he was known for being both effective and corrupt.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 25,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Porcius Festus succeeded Felix; the appeal to Caesar meant the case would be heard in Rome by the Emperor's court.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 26,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Herod Agrippa II was the last of the Herodian rulers; he had oversight of the Temple and a deep knowledge of Jewish law.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 27,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Provides a detailed account of ancient Mediterranean seafaring and the dangers of the autumn Euroclydon winds.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
+  },
+  {
+    "book": "Acts",
+    "chapter": 28,
+    "era": "Apostolic",
+    "approxDate": "c. AD 33-62",
+    "setting": "Rome was the capital of the Empire; Paul lived in his own hired house under house arrest for two years.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 44
   }
 ]

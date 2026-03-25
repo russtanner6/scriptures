@@ -20291,5 +20291,110 @@
     "tier": 4,
     "family": {},
     "portrait": null
+  },
+  {
+    "id": "gamaliel",
+    "name": "Gamaliel",
+    "bio": "A renowned Pharisaic teacher and member of the Sanhedrin who counseled moderation toward the apostles.",
+    "aliases": [],
+    "volumes": [
+      "NT"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "ananias-of-damascus",
+    "name": "Ananias (of Damascus)",
+    "bio": "A disciple in Damascus who baptized Saul after his conversion on the road to Damascus.",
+    "aliases": [
+      "Ananias"
+    ],
+    "volumes": [
+      "NT"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "felix",
+    "name": "Felix",
+    "bio": "Roman procurator of Judea who kept Paul imprisoned for two years hoping for a bribe.",
+    "aliases": [
+      "Antonius Felix"
+    ],
+    "volumes": [
+      "NT"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "festus",
+    "name": "Festus",
+    "bio": "Roman procurator who succeeded Felix and sent Paul to Rome after his appeal to Caesar.",
+    "aliases": [
+      "Porcius Festus"
+    ],
+    "volumes": [
+      "NT"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "herod-agrippa-ii",
+    "name": "Agrippa",
+    "bio": "The last of the Herodian rulers, before whom Paul made his defense and was almost persuaded.",
+    "aliases": [
+      "Herod Agrippa II",
+      "Agrippa II"
+    ],
+    "volumes": [
+      "NT"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "simon-the-tanner",
+    "name": "Simon the Tanner",
+    "bio": "A man in Joppa with whom Peter stayed.",
+    "aliases": [],
+    "volumes": [
+      "NT"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "rhoda",
+    "name": "Rhoda",
+    "bio": "A damsel who answered the door when Peter was miraculously freed from prison.",
+    "aliases": [],
+    "volumes": [
+      "NT"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
+  },
+  {
+    "id": "eutychus",
+    "name": "Eutychus",
+    "bio": "A young man in Troas who fell from a window during Paul's sermon and was raised from the dead.",
+    "aliases": [],
+    "volumes": [
+      "NT"
+    ],
+    "tier": 4,
+    "family": {},
+    "portrait": null
   }
 ]
