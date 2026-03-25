@@ -5698,5 +5698,274 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 93
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 10,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 18,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 9,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 11,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 14,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 6,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 16,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 20,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 7,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 19,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 14,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 6,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 24,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 10,
+    "verses": [
+      {
+        "verse": 13,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 11,
+    "verses": [
+      {
+        "verse": 11,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 28,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 3,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 27,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 4,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 13,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 33,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "verses": [
+      {
+        "verse": 20,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 29,
+        "text": "",
+        "reason": ""
+      },
+      {
+        "verse": 40,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 13,
+        "text": "",
+        "reason": ""
+      }
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
   }
 ]

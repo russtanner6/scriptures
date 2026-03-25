@@ -4970,5 +4970,212 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 93
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 1,
+    "topics": [
+      "Unity",
+      "Jesus Christ",
+      "God's Wisdom",
+      "Called to be Saints"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 2,
+    "topics": [
+      "Revelation",
+      "The Holy Ghost",
+      "Natural Man",
+      "Hidden Wisdom"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 3,
+    "topics": [
+      "Agency",
+      "Priesthood Ministry",
+      "The Temple",
+      "Rewards for Labor"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 4,
+    "topics": [
+      "Stewardship",
+      "Judgment",
+      "Apostleship",
+      "Fatherhood in the Gospel"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 5,
+    "topics": [
+      "Church Discipline",
+      "Excommunication",
+      "Law of Chastity",
+      "Repentance"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 6,
+    "topics": [
+      "Judgment of Angels",
+      "Sanctification",
+      "The Resurrection of the Body",
+      "Moral Purity"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 7,
+    "topics": [
+      "Marriage",
+      "Celibacy",
+      "Eternal Families",
+      "Missionary Work"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 8,
+    "topics": [
+      "Charity",
+      "Idolatry",
+      "Agency",
+      "Stumblingblocks"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 9,
+    "topics": [
+      "Apostleship",
+      "Preaching the Gospel",
+      "Self-Discipline",
+      "Service"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 10,
+    "topics": [
+      "Baptism",
+      "The Sacrament",
+      "Temptation",
+      "Covenant Examples"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 11,
+    "topics": [
+      "Priesthood Authority",
+      "The Sacrament",
+      "Marriage Equality in the Lord",
+      "Church Order"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 12,
+    "topics": [
+      "Spiritual Gifts",
+      "The Body of Christ",
+      "Unity",
+      "The Holy Ghost"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 13,
+    "topics": [
+      "Charity",
+      "The Pure Love of Christ",
+      "Eternal Attributes",
+      "Faith and Hope"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 14,
+    "topics": [
+      "Prophecy",
+      "Gift of Tongues",
+      "Edification",
+      "Worship Order"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "topics": [
+      "The Resurrection",
+      "Baptism for the Dead",
+      "Degrees of Glory",
+      "Plan of Salvation"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 16,
+    "topics": [
+      "Tithing and Offerings",
+      "Fellowship",
+      "Preparation for Second Coming"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
   }
 ]

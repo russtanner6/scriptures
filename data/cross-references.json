@@ -2022,5 +2022,93 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 93
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 2,
+    "verse": 14,
+    "crossReference": "Mosiah 3:19",
+    "type": "parallel",
+    "note": "The Natural Man — both passages teach about the natural man's inability to receive spiritual things.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 2,
+    "verse": 9,
+    "crossReference": "D&C 76:10",
+    "type": "parallel",
+    "note": "Glory of the faithful — unimaginable things God has prepared for those who love Him.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 3,
+    "verse": 16,
+    "crossReference": "D&C 93:35",
+    "type": "parallel",
+    "note": "Body as temple — the Spirit of God dwells in the Saints.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 11,
+    "verse": 23,
+    "crossReference": "3 Nephi 18:1-11",
+    "type": "parallel",
+    "note": "Institution of the Sacrament — parallel accounts of the Lord's Supper.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 11,
+    "verse": 11,
+    "crossReference": "Moses 3:18-24",
+    "type": "parallel",
+    "note": "Creation of woman — neither man nor woman is complete without the other in the Lord.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "verse": 29,
+    "crossReference": "D&C 128:1-18",
+    "type": "parallel",
+    "note": "Baptism for the dead — the primary biblical evidence for proxy ordinances.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "verse": 40,
+    "crossReference": "D&C 76:50-112",
+    "type": "parallel",
+    "note": "Degrees of Glory — celestial, terrestrial, and telestial kingdoms.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "verse": 22,
+    "crossReference": "Alma 11:42-45",
+    "type": "parallel",
+    "note": "Universal resurrection — as in Adam all die, so in Christ shall all be made alive.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
   }
 ]

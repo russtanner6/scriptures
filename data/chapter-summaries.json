@@ -3422,5 +3422,133 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 93
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 1,
+    "summary": "Paul greets the Saints in Corinth and addresses the contentions and divisions among them, rebuking their tendency to follow individual leaders rather than focusing on Christ.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 2,
+    "summary": "Paul explains that he came not with eloquent speech but in a demonstration of the Spirit, teaching that the things of God are revealed only by the Spirit and that the natural man cannot receive them.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 3,
+    "summary": "Paul identifies the Corinthians as carnal because of their strife, explains that he and Apollos are laborers together with God, and warns that everyone must build upon the foundation of Christ.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 4,
+    "summary": "Paul describes the apostles as stewards of the mysteries of God, contrasts the arrogance of the Corinthians with the trials of the apostles, and writes as a father to warn them.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 5,
+    "summary": "Paul rebukes the church for tolerating a severe sin among them, commands them to deliver the person to Satan, and uses the analogy of leaven to teach about the corruption of sin.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 6,
+    "summary": "Paul condemns the Saints for taking legal disputes before secular courts, warns that the unrighteous will not inherit the kingdom, and teaches that the body is the temple of the Holy Ghost.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 7,
+    "summary": "Paul provides counsel regarding marriage, celibacy, and missionary service, encouraging faithfulness within marriage and emphasizing that keeping God's commandments is paramount.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 8,
+    "summary": "Paul addresses the issue of eating food offered to idols, teaching that while an idol is nothing, Saints should avoid exercising their liberty in ways that become a stumblingblock to others.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 9,
+    "summary": "Paul defends his rights as an apostle while explaining his choice to labor for free, uses the analogy of a runner to illustrate the discipline required to obtain an incorruptible crown.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 10,
+    "summary": "Paul uses the history of Israel in the wilderness as a warning against idolatry and temptation, teaching that God provides a way to escape every temptation.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 11,
+    "summary": "Paul discusses order in the church regarding head coverings, then strongly rebukes the Corinthians for improper conduct during the Sacrament, warning that unworthy partaking brings condemnation.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 12,
+    "summary": "Paul teaches about the diversity of spiritual gifts given by the same Spirit, using the analogy of the human body to show that every member is necessary and there should be no division.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 13,
+    "summary": "Paul declares that even the greatest spiritual gifts are nothing without charity, describes charity as long-suffering and kind, and identifies it as the greatest of faith, hope, and charity.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 14,
+    "summary": "Paul prioritizes prophecy over speaking in tongues because it edifies the church, provides rules for order in worship, and emphasizes that God is not the author of confusion.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "summary": "Paul provides a comprehensive defense of the resurrection, mentions baptism for the dead, details the nature of the resurrected body and the different degrees of glory.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 16,
+    "summary": "Paul gives instructions for the collection of funds for the Saints in Jerusalem, shares his travel plans, and concludes with personal greetings and a final exhortation to stand fast.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
   }
 ]

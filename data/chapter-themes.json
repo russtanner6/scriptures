@@ -5256,5 +5256,213 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 93
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 1,
+    "themes": [
+      "Unity in Christ",
+      "Wisdom of God vs. Wisdom of Man",
+      "The Power of the Cross",
+      "Apostolic Greeting"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 2,
+    "themes": [
+      "Revelation",
+      "The Holy Ghost",
+      "Spiritually Discerned Truth",
+      "The Natural Man"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 3,
+    "themes": [
+      "Spiritual Maturity",
+      "Laborers with God",
+      "The Foundation of Christ",
+      "The Body as a Temple"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 4,
+    "themes": [
+      "Priesthood Stewardship",
+      "Faithfulness",
+      "Apostolic Suffering",
+      "Warning and Correction"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 5,
+    "themes": [
+      "Church Discipline",
+      "Fornication",
+      "Leaven as Symbol of Sin",
+      "Excommunication"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 6,
+    "themes": [
+      "Legal Disputes among Saints",
+      "Inheritance of the Kingdom",
+      "The Sanctified Life",
+      "The Sacredness of the Body"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 7,
+    "themes": [
+      "Marriage and Celibacy",
+      "Missionary Devotion",
+      "Faithfulness in Callings",
+      "Chastity"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 8,
+    "themes": [
+      "Christian Liberty",
+      "Avoidance of Stumblingblocks",
+      "Charity vs. Knowledge",
+      "Idolatry"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 9,
+    "themes": [
+      "Apostolic Authority",
+      "Self-Denial for the Gospel",
+      "Missionary Sacrifice",
+      "Endurance"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 10,
+    "themes": [
+      "Warning from History",
+      "Sacrament Covenant",
+      "Overcoming Temptation",
+      "Fleeing Idolatry"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 11,
+    "themes": [
+      "Priesthood Order",
+      "The Sacrament",
+      "Covenant Conduct",
+      "Unity at the Lord's Table"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 12,
+    "themes": [
+      "Spiritual Gifts",
+      "The Body of Christ",
+      "Unity in Diversity",
+      "Purpose of Gifts"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 13,
+    "themes": [
+      "Charity",
+      "The Pure Love of Christ",
+      "Enduring Faith and Hope",
+      "Maturity in Christ"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 14,
+    "themes": [
+      "Prophecy and Tongues",
+      "Edification of the Church",
+      "Order in Worship",
+      "Clarity of Doctrine"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "themes": [
+      "The Resurrection",
+      "Baptism for the Dead",
+      "Degrees of Glory",
+      "Victory over Death"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 16,
+    "themes": [
+      "Service to the Saints",
+      "Apostolic Travel",
+      "Christian Fellowship",
+      "Final Exhortations"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 46
   }
 ]
