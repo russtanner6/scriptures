@@ -20396,5 +20396,22 @@
     "tier": 4,
     "family": {},
     "portrait": null
+  },
+  {
+    "id": "korah",
+    "name": "Korah",
+    "aliases": [
+      "Core"
+    ],
+    "bio": "A Levite who led a rebellion against Moses and Aaron in the wilderness, challenging their authority. He and his followers were swallowed by the earth as divine judgment. Referenced in Jude as an example of those who perish through rebellion.",
+    "volumes": [
+      "OT",
+      "NT"
+    ],
+    "tier": 3,
+    "family": {
+      "father": "izhar"
+    },
+    "portrait": null
   }
 ]

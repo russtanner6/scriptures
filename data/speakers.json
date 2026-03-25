@@ -6358,5 +6358,1751 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 44
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "john-the-baptist",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "startVerse": 19,
+    "endVerse": 36,
+    "speaker": "john-the-baptist",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "startVerse": 38,
+    "endVerse": 39,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "startVerse": 41,
+    "endVerse": 41,
+    "speaker": "andrew",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "startVerse": 42,
+    "endVerse": 43,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "startVerse": 45,
+    "endVerse": 45,
+    "speaker": "philip-apostle",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "startVerse": 46,
+    "endVerse": 46,
+    "speaker": "bartholomew",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "startVerse": 46,
+    "endVerse": 46,
+    "speaker": "philip-apostle",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "startVerse": 47,
+    "endVerse": 48,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "startVerse": 48,
+    "endVerse": 49,
+    "speaker": "bartholomew",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "startVerse": 50,
+    "endVerse": 51,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 2,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "mary-mother-of-jesus",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 2,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 2,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "mary-mother-of-jesus",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 2,
+    "startVerse": 7,
+    "endVerse": 8,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 2,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 2,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 3,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "nicodemus",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 3,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 3,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "nicodemus",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 3,
+    "startVerse": 5,
+    "endVerse": 8,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 3,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "nicodemus",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 3,
+    "startVerse": 10,
+    "endVerse": 21,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 3,
+    "startVerse": 27,
+    "endVerse": 36,
+    "speaker": "john-the-baptist",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "startVerse": 13,
+    "endVerse": 14,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "startVerse": 17,
+    "endVerse": 18,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "startVerse": 21,
+    "endVerse": 24,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "startVerse": 26,
+    "endVerse": 26,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "startVerse": 32,
+    "endVerse": 32,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "startVerse": 34,
+    "endVerse": 38,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "startVerse": 48,
+    "endVerse": 48,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "startVerse": 50,
+    "endVerse": 50,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 5,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 5,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 5,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 5,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 5,
+    "startVerse": 19,
+    "endVerse": 47,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "philip-apostle",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "startVerse": 8,
+    "endVerse": 9,
+    "speaker": "andrew",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "startVerse": 26,
+    "endVerse": 27,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "startVerse": 29,
+    "endVerse": 29,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "startVerse": 32,
+    "endVerse": 33,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "startVerse": 35,
+    "endVerse": 35,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "startVerse": 37,
+    "endVerse": 40,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "startVerse": 43,
+    "endVerse": 51,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "startVerse": 53,
+    "endVerse": 58,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "startVerse": 61,
+    "endVerse": 65,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "startVerse": 67,
+    "endVerse": 67,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "startVerse": 68,
+    "endVerse": 69,
+    "speaker": "peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "startVerse": 70,
+    "endVerse": 70,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 7,
+    "startVerse": 6,
+    "endVerse": 8,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 7,
+    "startVerse": 16,
+    "endVerse": 19,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 7,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 7,
+    "startVerse": 22,
+    "endVerse": 24,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 7,
+    "startVerse": 28,
+    "endVerse": 29,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 7,
+    "startVerse": 33,
+    "endVerse": 34,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 7,
+    "startVerse": 37,
+    "endVerse": 38,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 7,
+    "startVerse": 51,
+    "endVerse": 51,
+    "speaker": "nicodemus",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "startVerse": 10,
+    "endVerse": 11,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "startVerse": 14,
+    "endVerse": 18,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "startVerse": 23,
+    "endVerse": 26,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "startVerse": 28,
+    "endVerse": 29,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "startVerse": 31,
+    "endVerse": 32,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "startVerse": 34,
+    "endVerse": 47,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "startVerse": 49,
+    "endVerse": 51,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "startVerse": 54,
+    "endVerse": 56,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "startVerse": 58,
+    "endVerse": 58,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 9,
+    "startVerse": 3,
+    "endVerse": 5,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 9,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 9,
+    "startVerse": 35,
+    "endVerse": 35,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 9,
+    "startVerse": 37,
+    "endVerse": 37,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 9,
+    "startVerse": 39,
+    "endVerse": 39,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 9,
+    "startVerse": 41,
+    "endVerse": 41,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 10,
+    "startVerse": 1,
+    "endVerse": 18,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 10,
+    "startVerse": 25,
+    "endVerse": 30,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 10,
+    "startVerse": 32,
+    "endVerse": 32,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 10,
+    "startVerse": 34,
+    "endVerse": 38,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 9,
+    "endVerse": 11,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 14,
+    "endVerse": 15,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "thomas",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 21,
+    "endVerse": 22,
+    "speaker": "martha",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 24,
+    "endVerse": 24,
+    "speaker": "martha",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 25,
+    "endVerse": 26,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 27,
+    "endVerse": 27,
+    "speaker": "martha",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 32,
+    "endVerse": 32,
+    "speaker": "mary-of-bethany",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 34,
+    "endVerse": 34,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 39,
+    "endVerse": 39,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 39,
+    "endVerse": 39,
+    "speaker": "martha",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 40,
+    "endVerse": 40,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 41,
+    "endVerse": 42,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 43,
+    "endVerse": 43,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "startVerse": 49,
+    "endVerse": 50,
+    "speaker": "caiaphas",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "startVerse": 4,
+    "endVerse": 5,
+    "speaker": "judas-iscariot",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "startVerse": 7,
+    "endVerse": 8,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "philip-apostle",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "andrew",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "startVerse": 23,
+    "endVerse": 27,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "startVerse": 30,
+    "endVerse": 32,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "startVerse": 35,
+    "endVerse": 36,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "startVerse": 44,
+    "endVerse": 50,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "startVerse": 10,
+    "endVerse": 11,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "startVerse": 12,
+    "endVerse": 21,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "startVerse": 26,
+    "endVerse": 27,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "startVerse": 31,
+    "endVerse": 35,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "startVerse": 36,
+    "endVerse": 36,
+    "speaker": "peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "startVerse": 36,
+    "endVerse": 36,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "startVerse": 37,
+    "endVerse": 37,
+    "speaker": "peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "startVerse": 38,
+    "endVerse": 38,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "startVerse": 1,
+    "endVerse": 4,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "thomas",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "startVerse": 6,
+    "endVerse": 7,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "philip-apostle",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "startVerse": 9,
+    "endVerse": 21,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "judas-son-of-james",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "startVerse": 23,
+    "endVerse": 31,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 15,
+    "startVerse": 1,
+    "endVerse": 27,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 16,
+    "startVerse": 1,
+    "endVerse": 33,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 17,
+    "startVerse": 1,
+    "endVerse": 26,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "startVerse": 4,
+    "endVerse": 5,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "startVerse": 20,
+    "endVerse": 21,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "startVerse": 25,
+    "endVerse": 25,
+    "speaker": "peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "startVerse": 27,
+    "endVerse": 27,
+    "speaker": "peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "startVerse": 29,
+    "endVerse": 29,
+    "speaker": "pontius-pilate",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "startVerse": 31,
+    "endVerse": 31,
+    "speaker": "pontius-pilate",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "startVerse": 33,
+    "endVerse": 33,
+    "speaker": "pontius-pilate",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "startVerse": 34,
+    "endVerse": 34,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "startVerse": 35,
+    "endVerse": 35,
+    "speaker": "pontius-pilate",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "startVerse": 36,
+    "endVerse": 36,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "startVerse": 37,
+    "endVerse": 37,
+    "speaker": "pontius-pilate",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "startVerse": 37,
+    "endVerse": 37,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "startVerse": 38,
+    "endVerse": 39,
+    "speaker": "pontius-pilate",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "startVerse": 4,
+    "endVerse": 5,
+    "speaker": "pontius-pilate",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "pontius-pilate",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "startVerse": 9,
+    "endVerse": 10,
+    "speaker": "pontius-pilate",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "startVerse": 14,
+    "endVerse": 15,
+    "speaker": "pontius-pilate",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "pontius-pilate",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "startVerse": 26,
+    "endVerse": 27,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "startVerse": 30,
+    "endVerse": 30,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "mary-magdalene",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "mary-magdalene",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "mary-magdalene",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "mary-magdalene",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "startVerse": 21,
+    "endVerse": 23,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "startVerse": 25,
+    "endVerse": 25,
+    "speaker": "thomas",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "startVerse": 26,
+    "endVerse": 27,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "thomas",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "startVerse": 29,
+    "endVerse": 29,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "startVerse": 18,
+    "endVerse": 19,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "peter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "jesus-christ",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "startVerse": 1,
+    "endVerse": 25,
+    "speaker": "jude-brother-of-jesus",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "michael",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "startVerse": 14,
+    "endVerse": 15,
+    "speaker": "enoch",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
   }
 ]

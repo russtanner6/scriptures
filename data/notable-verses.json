@@ -7784,5 +7784,373 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 59
+  },
+  {
+    "chapter": 1,
+    "verses": [
+      {
+        "number": 1,
+        "text": "In the beginning was the Word, and the Word was with God, and the Word was God."
+      },
+      {
+        "number": 14,
+        "text": "And the Word was made flesh, and dwelt among us... full of grace and truth."
+      },
+      {
+        "number": 29,
+        "text": "Behold the Lamb of God, which taketh away the sin of the world."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "verses": [
+      {
+        "number": 11,
+        "text": "This beginning of miracles did Jesus in Cana of Galilee, and manifested forth his glory."
+      },
+      {
+        "number": 19,
+        "text": "Jesus answered and said unto them, Destroy this temple, and in three days I will raise it up."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "verses": [
+      {
+        "number": 5,
+        "text": "Jesus answered, Verily, verily, I say unto thee, Except a man be born of water and of the Spirit, he cannot enter into the kingdom of God."
+      },
+      {
+        "number": 16,
+        "text": "For God so loved the world, that he gave his only begotten Son..."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "verses": [
+      {
+        "number": 14,
+        "text": "But whosoever drinketh of the water that I shall give him shall never thirst."
+      },
+      {
+        "number": 24,
+        "text": "God is a Spirit: and they that worship him must worship him in spirit and in truth."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "verses": [
+      {
+        "number": 25,
+        "text": "Verily, verily, I say unto you, The hour is coming, and now is, when the dead shall hear the voice of the Son of God: and they that hear shall live."
+      },
+      {
+        "number": 39,
+        "text": "Search the scriptures; for in them ye think ye have eternal life: and they are they which testify of me."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "verses": [
+      {
+        "number": 35,
+        "text": "And Jesus said unto them, I am the bread of life: he that cometh to me shall never hunger."
+      },
+      {
+        "number": 68,
+        "text": "Then Simon Peter answered him, Lord, to whom shall we go? thou hast the words of eternal life."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "verses": [
+      {
+        "number": 17,
+        "text": "If any man will do his will, he shall know of the doctrine, whether it be of God, or whether I speak of myself."
+      },
+      {
+        "number": 24,
+        "text": "Judge not according to the appearance, but judge righteous judgment."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "verses": [
+      {
+        "number": 12,
+        "text": "Then spake Jesus again unto them, saying, I am the light of the world: he that followeth me shall not walk in darkness."
+      },
+      {
+        "number": 32,
+        "text": "And ye shall know the truth, and the truth shall make you free."
+      },
+      {
+        "number": 58,
+        "text": "Jesus said unto them, Verily, verily, I say unto you, Before Abraham was, I am."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "verses": [
+      {
+        "number": 4,
+        "text": "I must work the works of him that sent me, while it is day: the night cometh, when no man can work."
+      },
+      {
+        "number": 25,
+        "text": "One thing I know, that, whereas I was blind, now I see."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "verses": [
+      {
+        "number": 11,
+        "text": "I am the good shepherd: the good shepherd giveth his life for the sheep."
+      },
+      {
+        "number": 16,
+        "text": "And other sheep I have, which are not of this fold: them also I must bring..."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "verses": [
+      {
+        "number": 25,
+        "text": "Jesus said unto her, I am the resurrection, and the life: he that believeth in me, though he were dead, yet shall he live."
+      },
+      {
+        "number": 35,
+        "text": "Jesus wept."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "verses": [
+      {
+        "number": 32,
+        "text": "And I, if I be lifted up from the earth, will draw all men unto me."
+      },
+      {
+        "number": 43,
+        "text": "For they loved the praise of men more than the praise of God."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "verses": [
+      {
+        "number": 15,
+        "text": "For I have given you an example, that ye should do as I have done to you."
+      },
+      {
+        "number": 34,
+        "text": "A new commandment I give unto you, That ye love one another; as I have loved you..."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "verses": [
+      {
+        "number": 6,
+        "text": "Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me."
+      },
+      {
+        "number": 15,
+        "text": "If ye love me, keep my commandments."
+      },
+      {
+        "number": 27,
+        "text": "Peace I leave with you, my peace I give unto you..."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "verses": [
+      {
+        "number": 5,
+        "text": "I am the vine, ye are the branches... for without me ye can do nothing."
+      },
+      {
+        "number": 13,
+        "text": "Greater love hath no man than this, that a man lay down his life for his friends."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "verses": [
+      {
+        "number": 13,
+        "text": "Howbeit when he, the Spirit of truth, is come, he will guide you into all truth."
+      },
+      {
+        "number": 33,
+        "text": "In the world ye shall have tribulation: but be of good cheer; I have overcome the world."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 17,
+    "verses": [
+      {
+        "number": 3,
+        "text": "And this is life eternal, that they might know thee the only true God, and Jesus Christ, whom thou hast sent."
+      },
+      {
+        "number": 21,
+        "text": "That they all may be one; as thou, Father, art in me, and I in thee..."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "verses": [
+      {
+        "number": 36,
+        "text": "Jesus answered, My kingdom is not of this world."
+      },
+      {
+        "number": 37,
+        "text": "To this end was I born, and for this cause came I into the world, that I should bear witness unto the truth."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 19,
+    "verses": [
+      {
+        "number": 26,
+        "text": "When Jesus therefore saw his mother, and the disciple standing by, whom he loved, he saith unto his mother, Woman, behold thy son!"
+      },
+      {
+        "number": 30,
+        "text": "When Jesus therefore had received the vinegar, he said, It is finished: and he bowed his head, and gave up the ghost."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 20,
+    "verses": [
+      {
+        "number": 21,
+        "text": "Then said Jesus to them again, Peace be unto you: as my Father hath sent me, even so send I you."
+      },
+      {
+        "number": 29,
+        "text": "Jesus saith unto him, Thomas, because thou hast seen me, thou hast believed: blessed are they that have not seen, and yet have believed."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 21,
+    "verses": [
+      {
+        "number": 15,
+        "text": "He saith unto him, Feed my lambs."
+      },
+      {
+        "number": 25,
+        "text": "And there are also many other things which Jesus did... I suppose that even the world itself could not contain the books that should be written."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "verses": [
+      {
+        "number": 3,
+        "text": "Beloved... it was needful for me to write unto you, and exhort you that ye should earnestly contend for the faith which was once delivered unto the saints."
+      },
+      {
+        "number": 6,
+        "text": "And the angels which kept not their first estate, but left their own habitation, he hath reserved in everlasting chains under darkness unto the judgment of the great day."
+      },
+      {
+        "number": 24,
+        "text": "Now unto him that is able to keep you from falling, and to present you faultless before the presence of his glory with exceeding joy,"
+      }
+    ],
+    "bookName": "Jude",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
   }
 ]

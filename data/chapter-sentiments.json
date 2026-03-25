@@ -7174,5 +7174,203 @@
     "contrition": 4,
     "dominant": "admonition",
     "rationale": "Begins with a warning to the wicked rich and transitions into instructions for patience and prayer."
+  },
+  {
+    "chapter": 1,
+    "sentiment": "Peace",
+    "justification": "The chapter opens with a profound declaration of the Savior's divine identity and role as the Light and Life of the world.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 2,
+    "sentiment": "Peace",
+    "justification": "Jesus manifests His glory through His first miracle at a wedding and asserts His authority by cleansing the temple.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 3,
+    "sentiment": "Admonition",
+    "justification": "Jesus provides direct instruction to Nicodemus on the necessity of being born again and clarifies the source of salvation.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 4,
+    "sentiment": "Peace",
+    "justification": "The Savior offers living water to a Samaritan woman and heals a nobleman's son, demonstrating His universal reach and power.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 5,
+    "sentiment": "Admonition",
+    "justification": "Jesus rebukes the Jewish leaders for their focus on the letter of the law over the spirit and testifies of His relationship with the Father.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 6,
+    "sentiment": "Admonition",
+    "justification": "After feeding the five thousand, Jesus gives a challenging discourse on being the Bread of Life, separating true disciples from followers of convenience.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 7,
+    "sentiment": "Admonition",
+    "justification": "Amidst public murmuring and opposition, Jesus testifies of His doctrine and invites those who thirst to come unto Him.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 8,
+    "sentiment": "Admonition",
+    "justification": "Jesus delivers powerful rebukes to His accusers, declaring His pre-mortal identity with the statement Before Abraham was, I am.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 9,
+    "sentiment": "Peace",
+    "justification": "The healing of the man born blind serves as a powerful witness of Christ's light, contrasting with the spiritual blindness of the Pharisees.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 10,
+    "sentiment": "Peace",
+    "justification": "Jesus describes Himself as the Good Shepherd who knows His sheep and lays down His life for them.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 11,
+    "sentiment": "Peace",
+    "justification": "The raising of Lazarus from the dead serves as the ultimate pre-resurrection manifestation of Jesus as the Resurrection and the Life.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 12,
+    "sentiment": "Admonition",
+    "justification": "Jesus enters Jerusalem triumphantly but warns that the hour of His sacrifice has come and calls for belief in the Light.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 13,
+    "sentiment": "Peace",
+    "justification": "In the intimacy of the Last Supper, Jesus washes the disciples' feet and gives them a new commandment to love one another.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 14,
+    "sentiment": "Peace",
+    "justification": "Jesus comforts His disciples with the promise of the Comforter and clarifies His role as the only way to the Father.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 15,
+    "sentiment": "Peace",
+    "justification": "The Savior uses the allegory of the Vine and the Branches to emphasize the necessity of abiding in His love and word.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 16,
+    "sentiment": "Peace",
+    "justification": "Jesus prepares the apostles for His departure, promising that their sorrow will be turned into joy through the Holy Ghost.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 17,
+    "sentiment": "Peace",
+    "justification": "The Intercessory Prayer is a sacred communication between the Son and the Father regarding the sanctification and unity of the Saints.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 18,
+    "sentiment": "Admonition",
+    "justification": "The account of Jesus' arrest and trials emphasizes His majesty and submission to the Father's will despite betrayal and denial.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 19,
+    "sentiment": "Admonition",
+    "justification": "The crucifixion account depicts the fulfillment of prophecy and the Savior's final mortal acts of love and completion.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 20,
+    "sentiment": "Peace",
+    "justification": "The Resurrection account, from the empty tomb to the appearances to Mary and the apostles, brings a profound sense of hope and victory.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 21,
+    "sentiment": "Peace",
+    "justification": "The resurrected Lord restores Peter and gives the final charge to feed my sheep, concluding the Gospel on a note of pastoral care.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
+  },
+  {
+    "chapter": 1,
+    "sentiment": "Admonition",
+    "justification": "Jude delivers a sharp rebuke to ungodly men who have crept into the church, using historical examples of rebellion and judgment to warn the saints.",
+    "bookName": "Jude",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": null
   }
 ]

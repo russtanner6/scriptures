@@ -5518,5 +5518,159 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 59
+  },
+  {
+    "chapter": 1,
+    "context": "Reflects the early Christian synthesis of Jewish Messianic expectation with the Greek philosophical concept of the Logos, uniquely interpreted in an LDS context.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "context": "Illustrates Jewish wedding customs and the significance of the temple system in 1st-century Jerusalem.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "context": "Nicodemus represents the educated, ruling Jewish class (Sanhedrin) secretly curious about Jesus' claims.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "context": "Highlights the deep-seated ethnic and religious animosity between Jews and Samaritans during the Second Temple period.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "context": "The Pool of Bethesda was a known site for healing seekers, and healing on the Sabbath was a central point of legalistic contention.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "context": "Feeding the multitude mirrors the providing of manna in the wilderness, contextualizing Jesus' discourse for a Jewish audience.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "context": "The Feast of Tabernacles (Sukkot) included ceremonies of water pouring and light, providing the backdrop for Jesus' declarations.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "context": "The incident of the woman taken in adultery challenges the judicial practices and hypocrisies of the religious leaders.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "context": "Expulsion from the synagogue was a severe social and religious penalty for recognizing Jesus as the Messiah.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "context": "Jesus refers to His other sheep, which the Book of Mormon clarifies refers to the Nephites in the Americas.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "context": "Raising Lazarus was the final sign that triggered the official decision by the Sanhedrin to have Jesus executed.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "context": "The anointing at Bethany and the entry into Jerusalem set the stage for the final week of the Savior's life.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "context": "The foot-washing ceremony subverted the social hierarchy of the time, where only the lowest servants performed such tasks.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "context": "The many mansions discourse offered comfort during a time of extreme political and religious unrest for the disciples.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "context": "The metaphor of the vine was highly relevant in an agrarian society and drew on Old Testament imagery of Israel as God's vineyard.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "context": "Anticipates the scattering of the apostles and the coming persecution of the early Church.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 17,
+    "context": "This prayer took place in the vicinity of Gethsemane, marking the beginning of the Savior's climactic suffering for sin.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "context": "The dual trials (religious and Roman) reflect the complex jurisdictional environment of Roman-occupied Judea.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 19,
+    "context": "Crucifixion was the most shameful and painful form of Roman execution, reserved for rebels and the lowest classes.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 20,
+    "context": "The specific details of the burial and empty tomb provided legal and visual evidence for the physical resurrection.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 21,
+    "context": "The Sea of Galilee (Tiberias) was the familiar home and workplace of the apostles, providing a grounded setting for their restoration.",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "context": "Written by Jude, the brother of James and Jesus, to early Christians facing internal corruption. It draws heavily on traditional Jewish literature and accounts (like the dispute over the body of Moses) to illustrate the consequences of apostasy.",
+    "bookName": "Jude",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
   }
 ]

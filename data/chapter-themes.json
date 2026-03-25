@@ -6823,5 +6823,271 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 59
+  },
+  {
+    "chapter": 1,
+    "themes": [
+      "Pre-mortal Life",
+      "Light of Christ",
+      "Testimony",
+      "Logos"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "themes": [
+      "Miracles",
+      "Authority",
+      "Temple",
+      "Sacred Space"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "themes": [
+      "Rebirth",
+      "Baptism",
+      "God's Love",
+      "Condemnation"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "themes": [
+      "Living Water",
+      "Worship",
+      "Universalism",
+      "Faith"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "themes": [
+      "Sabbath",
+      "Witness",
+      "Relationship with God",
+      "Healing"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "themes": [
+      "Bread of Life",
+      "Sacrament",
+      "Discipleship",
+      "Walking on Water"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "themes": [
+      "Doctrine",
+      "Opposition",
+      "Holy Spirit",
+      "Judgment"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "themes": [
+      "Mercy",
+      "Truth",
+      "Freedom",
+      "I AM"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "themes": [
+      "Blindness",
+      "Light",
+      "Trial",
+      "Worship"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "themes": [
+      "Good Shepherd",
+      "Other Sheep",
+      "Unity",
+      "Atonement"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "themes": [
+      "Resurrection",
+      "Faith",
+      "Compassion",
+      "Death"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "themes": [
+      "Sacrifice",
+      "Service",
+      "Kingdom of God",
+      "Glorification"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "themes": [
+      "Humility",
+      "Love",
+      "Betrayal",
+      "Example"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "themes": [
+      "Comfort",
+      "Holy Ghost",
+      "Peace",
+      "Obedience"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "themes": [
+      "Abiding",
+      "Love",
+      "Persecution",
+      "Friendship"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "themes": [
+      "Tribulation",
+      "Joy",
+      "Intercession",
+      "Overcoming"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 17,
+    "themes": [
+      "Unity",
+      "Prayer",
+      "Sanctification",
+      "Glory"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "themes": [
+      "Trials",
+      "Kingship",
+      "Betrayal",
+      "Submission"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 19,
+    "themes": [
+      "Crucifixion",
+      "Atonement",
+      "Prophecy",
+      "Burial"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 20,
+    "themes": [
+      "Resurrection",
+      "Apostleship",
+      "Witness",
+      "Belief"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 21,
+    "themes": [
+      "Pastoral Care",
+      "Restoration",
+      "Love",
+      "Dedication"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "themes": [
+      "Apostasy",
+      "Judgment",
+      "Faith",
+      "Rebellion",
+      "Priesthood Authority",
+      "Second Coming"
+    ],
+    "bookName": "Jude",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
   }
 ]

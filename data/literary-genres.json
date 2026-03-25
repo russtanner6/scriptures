@@ -4827,5 +4827,159 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 59
+  },
+  {
+    "chapter": 1,
+    "genre": "Gospel / Prologue",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "genre": "Gospel / Narrative",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "genre": "Gospel / Discourse",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "genre": "Gospel / Narrative",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "genre": "Gospel / Discourse",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "genre": "Gospel / Discourse",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "genre": "Gospel / Discourse",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "genre": "Gospel / Discourse",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "genre": "Gospel / Narrative",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "genre": "Gospel / Parable-Discourse",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "genre": "Gospel / Narrative",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "genre": "Gospel / Narrative",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "genre": "Gospel / Narrative",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "genre": "Gospel / Discourse",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "genre": "Gospel / Discourse",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "genre": "Gospel / Discourse",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 17,
+    "genre": "Gospel / Prayer",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "genre": "Gospel / Narrative",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 19,
+    "genre": "Gospel / Narrative",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 20,
+    "genre": "Gospel / Narrative",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 21,
+    "genre": "Gospel / Epilogue",
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "genre": "Epistle",
+    "bookName": "Jude",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
   }
 ]

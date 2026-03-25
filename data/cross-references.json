@@ -2847,5 +2847,101 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 59
+  },
+  {
+    "chapter": 1,
+    "references": [
+      {
+        "book": "Joseph Smith Translation, John",
+        "chapter": 1,
+        "verse": "1-19",
+        "justification": "The JST provides critical restoration context to the prologue, clarifying the roles of the Son and John the Baptist."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "references": [
+      {
+        "book": "Moses",
+        "chapter": 6,
+        "verse": "59",
+        "justification": "The doctrine of being born again of water and Spirit was taught to Adam, paralleling Jesus' words to Nicodemus."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "references": [
+      {
+        "book": "3 Nephi",
+        "chapter": 15,
+        "verse": "17",
+        "justification": "Jesus explicitly identifies the Nephites in the Americas as the other sheep He mentioned in Jerusalem."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "references": [
+      {
+        "book": "Mosiah",
+        "chapter": 13,
+        "verse": "14",
+        "justification": "Abinadi quotes the commandment to keep the Sabbath and not make images, but the focus on love fulfills the intent of the law."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 21,
+    "references": [
+      {
+        "book": "Doctrine and Covenants",
+        "chapter": 7,
+        "verse": "1-8",
+        "justification": "Modern revelation confirms the account in John 21 that the apostle John was translated and allowed to tarry on earth."
+      }
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "references": [
+      {
+        "book": "Abraham",
+        "chapter": 3,
+        "verse": "26",
+        "justification": "Jude's mention of the first estate is a direct link to the LDS doctrine of pre-mortal life and the war in heaven."
+      },
+      {
+        "book": "Moses",
+        "chapter": 7,
+        "verse": "63-65",
+        "justification": "Enoch's prophecy of the Lord coming with ten thousands of his saints is elaborated upon in the Book of Moses."
+      },
+      {
+        "book": "2 Peter",
+        "chapter": 2,
+        "verse": "1-22",
+        "justification": "The themes of false teachers, the fall of angels, and the judgment of the ungodly are nearly identical in these two epistles."
+      }
+    ],
+    "bookName": "Jude",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
   }
 ]

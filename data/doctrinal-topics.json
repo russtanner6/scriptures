@@ -6495,5 +6495,249 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 59
+  },
+  {
+    "chapter": 1,
+    "topics": [
+      "Godhead",
+      "Pre-mortal Existence",
+      "Light of Christ"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 2,
+    "topics": [
+      "Authority",
+      "Miracles",
+      "Temple Ordinances"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 3,
+    "topics": [
+      "Baptism",
+      "Holy Ghost",
+      "Plan of Salvation"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 4,
+    "topics": [
+      "Revelation",
+      "Spiritual Rebirth",
+      "Universal Gospel"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 5,
+    "topics": [
+      "Resurrection",
+      "Judgment",
+      "Divine Sonship"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 6,
+    "topics": [
+      "Sacrament",
+      "Atonement",
+      "Spiritual Nourishment"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 7,
+    "topics": [
+      "Prophetic Call",
+      "Gifts of the Spirit",
+      "Integrity"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 8,
+    "topics": [
+      "Agency",
+      "Truth",
+      "Mercy"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 9,
+    "topics": [
+      "Healing",
+      "Witness",
+      "Judgment"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 10,
+    "topics": [
+      "Scattering and Gathering of Israel",
+      "Other Sheep",
+      "Divine Mission"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 11,
+    "topics": [
+      "Victory over Death",
+      "Faith",
+      "Resurrection"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 12,
+    "topics": [
+      "Atonement",
+      "Commitment",
+      "Light vs. Darkness"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 13,
+    "topics": [
+      "Service",
+      "Charity",
+      "Discipleship"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 14,
+    "topics": [
+      "Holy Ghost",
+      "Peace",
+      "Celestial Kingdom"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 15,
+    "topics": [
+      "Obedience",
+      "Love",
+      "Endurance"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 16,
+    "topics": [
+      "Personal Revelation",
+      "Gift of the Holy Ghost",
+      "Overcoming the World"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 17,
+    "topics": [
+      "Unity",
+      "Exaltation",
+      "Mediation"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 18,
+    "topics": [
+      "Accountability",
+      "Priesthood Power",
+      "Submission"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 19,
+    "topics": [
+      "Infinite Atonement",
+      "Prophecy Fulfillment",
+      "Sacrifice"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 20,
+    "topics": [
+      "Resurrected Bodies",
+      "Apostleship",
+      "Witness"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 21,
+    "topics": [
+      "Priesthood Responsibility",
+      "Love for God",
+      "Missionary Work"
+    ],
+    "bookName": "John",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
+  },
+  {
+    "chapter": 1,
+    "topics": [
+      "First Estate",
+      "Apostasy",
+      "Judgment",
+      "Priesthood Authority",
+      "The Godhead"
+    ],
+    "bookName": "Jude",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament"
   }
 ]
