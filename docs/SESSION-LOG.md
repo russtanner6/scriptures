@@ -62,12 +62,37 @@
 - Add Apocrypha toggle in Settings page with D&C 91 reference
 - Add Apocrypha non-canonical banner in scripture reader
 - Use definitive se-logo.svg (user-provided), delete old logos
+- Rename logo to se-logo.svg to bust browser/CDN cache
 - Fix heading hierarchy in Settings page (h3 → h2)
 - Export NUGGET-GUIDE.md + context-nuggets.json to Desktop for Gemini
+- Export SPEAKERS-GUIDE.md + speakers.json to Desktop for Gemini audit
 - Add Pharaoh + Joseph Smith portraits
+- Fix generic speaker LABELS (not just pills) — removed speakerType bypass, all speakers must match character DB
+- Remove "Holy City" alias from Jerusalem (too generic)
+- Fix verse scroll-to from ?verse=N URL param (useEffect instead of fragile setTimeout)
+- Hide Speakers and Context toggles — always on (code preserved)
+- Convert reading mode help popup to slide-out panel
+- Fix slide-out text alignment (left-justified)
+- Add logo to scripture reader bottom bar (links to home)
+- Add funny stories data (21 original synopses in data/funny-stories.json)
+- Word Explorer: new unified page (/word-explorer) replacing Word Search + Narrative Arc + Heatmap
+  - 3-level drill-down: Volumes → Books → Chapters
+  - Multi-term comparison (up to 6 terms)
+  - Term-colored bars, volume drill-down pills above chart
+  - Deep linking, preset buttons, verse references at drill levels
+- Updated CLAUDE.md: removed theology mode refs, added Apocrypha, fixed stale docs
 
-### Pending
+### Pending (for next session)
+- Word Explorer: redirects from old routes + nav/footer/home updates
+- Word Explorer: further polish and testing
+- Global styling standardization (centered titles, consistent spacing)
+- Real scripture search engine (AJAX, results page, people/places integration)
+- Sentiment analysis revamp (Gemini suggestions: vector embeddings, 4-category model)
+- Funny stories page UI + in-reader pills (data done)
+- Chiasmus data audit (verify BoM claims)
+- Speaker data audit (Gemini processing — waiting for corrected speakers.json)
 - Apocrypha characters not yet added to characters.json
+- Convert remaining modals to slide-outs (MethodologyModal, ExportModal)
 - Verse select Phase 2 (notes/tags on selections)
 - Character Relationship Visualizer
 

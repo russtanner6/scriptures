@@ -196,9 +196,10 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 
 ## Pages
 1. **Home** (`/`) — Landing page with gradient hero, 6 core tool cards + 4 discovery tool cards, random verse, recent searches. Site-wide Footer component.
-2. **Word Search** (`/search`) — Single-word frequency search with bar charts, narrative arc section, data table, stat cards. Two-column search panel with FilterDropdowns.
-3. **Narrative Arc** (`/narrative-arc`) — Multi-term comparison (up to 6). All 5 volumes. Two-column search panel with FilterDropdowns. Deep linking (`?terms=faith,grace`).
-4. **Theme Heatmap** (`/heatmap`) — Single-word heatmap across all volumes. Two-column search panel with FilterDropdowns. Heatmap/arc view toggle. Deep linking (`?word=faith`).
+2. **Word Explorer** (`/word-explorer`) — Unified word frequency tool (replaces old Word Search, Narrative Arc, and Heatmap). 3-level drill-down: Volumes → Books → Chapters. Multi-term comparison (up to 6). Term-colored bars. Deep linking (`?word=faith` or `?terms=faith,grace`). Verse references at book/chapter levels. Old routes (/search, /narrative-arc, /heatmap) will redirect here.
+3. **Word Search** (`/search`) — LEGACY, being replaced by Word Explorer. Redirects pending.
+4. **Narrative Arc** (`/narrative-arc`) — LEGACY, being replaced by Word Explorer. Redirects pending.
+5. **Theme Heatmap** (`/heatmap`) — LEGACY, being replaced by Word Explorer. Redirects pending.
 5. **Word Cloud** (`/wordcloud`) — Interactive tag cloud. Single-column flow layout (no search bar). Volume → Book → Chapter. Deep linking.
 6. **Sentiment Arc** (`/sentiment`) — Emotional tone across books. Two-column search panel with FilterDropdowns. 7 categories.
 7. **Parallel Passages** (`/parallel`) — Side-by-side comparison of parallel texts. Word-level diff highlighting. ⚠️ NOT yet updated with new search panel pattern.

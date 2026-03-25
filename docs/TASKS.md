@@ -11,30 +11,38 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 
 ### NEXT SESSION — START HERE
 
-- [ ] **Global styling standardization** — ALL tool pages need consistent centered h1 titles, centered white subtitles, consistent font sizes, spacing, and border-radius. Full audit done in Session 18 — all pages use left-aligned titles but should be centered like the home page. Affects: WordFrequency, NarrativeArc, Heatmap, WordCloud, Sentiment, Chiasmus, TopicMap, CharacterDirectory, LocationDirectory, BookmarksList. *(Requested: Session 18)*
+- [ ] **Sentiment Analysis Revamp** — Complete redesign using Gemini's spec: 4 theological categories (Exaltation/Glory, Covenant Peace, Admonition/Justice, Trial/Contrition), valence-aware lexicon with LDS overrides, 5-verse SMA smoothing, drill-down area chart (Volume → Book → Chapter), gradient fill (gold positive, purple negative). Replaces current 7-category keyword-counting approach. See Gemini spec for full details. *(Requested: Session 18)*
 
-- [ ] **Chiasmus data audit** — Verify the 40 chiasmus entries, especially BoM ones. User suspects most BoM chiasms are NOT verified/accepted by mainstream scholars. Research online and re-categorize accurately (Verified vs Probable vs Possible). May need to downgrade many BoM entries. *(Requested: Session 18)*
+- [~] **Word Explorer** — Core page built at `/word-explorer` with 3-level drill-down (Volumes → Books → Chapters), multi-term comparison, term-colored bars, verse references. Still needed:
+  - Redirects from old routes (/search, /narrative-arc, /heatmap)
+  - Nav menu, footer, and home page updates to replace old tool links
+  - Further polish and testing
+  *(Requested: Session 18, core done)*
 
-- [~] **Funny Stories tool** — Data file created with 21 original synopses (`data/funny-stories.json`). Still needed: page at `/funny-stories`, API route, in-reader laughing icon pills on funny story verses, nav menu entry, home page card. User wants volume-categorized list. Never duplicate stories. Synopses must be original. *(Requested: Session 18)*
+- [ ] **Real Scripture Search Engine** — Replace the current search icon behavior. Real-time AJAX results in dropdown, search results page with filters, people/places integration (searching "Adam" surfaces character profile). Completely separate from Word Explorer. *(Requested: Session 18)*
 
-- [ ] **Convert remaining modals to slide-outs** — MethodologyModal (used on all search tools) and ExportChartModal/ExportHtmlModal should be slide-in panels, not centered popups. All info panels site-wide should use the slide-out pattern. *(Requested: Session 18)*
+- [ ] **Global styling standardization** — All tool pages need consistent centered h1 titles, consistent font sizes, spacing, and border-radius. *(Requested: Session 18)*
 
-- [x] **Nugget accuracy audit** — 50 checked, 6 fixed. NUGGET-GUIDE.md + context-nuggets.json exported to Desktop for Gemini. Remaining ~1089 need Gemini verification. *(Session 18)*
+- [ ] **Speaker data audit** — Gemini processing the full speakers.json. Waiting for corrected file. Key fixes: prophetic book misattributions (God → prophet name), remove generic/anonymous entries. SPEAKERS-GUIDE.md exported to Desktop. *(Session 18)*
 
-- [ ] **Firebase integration** — Set up Firebase for real user accounts. Auth (email/password + Google SSO), Firestore for user data (bookmarks, reading progress, annotations, preferences). *(Requested: Session 17)*
+- [ ] **Chiasmus data audit** — Verify the 40 entries, especially BoM ones. Research online. *(Requested: Session 18)*
 
-- [~] **Apocrypha follow-up** — Volume added (14 books, 5717 verses), Settings toggle done, non-canonical badge done. Still needed:
-  - Add Apocrypha characters to `data/characters.json`
-  - Add Apocrypha intro/landing page
-  *(Requested: Session 15, mostly done Session 18)*
+- [~] **Funny Stories tool** — Data file created (21 synopses). Need page, in-reader pills, nav entry. *(Requested: Session 18)*
 
-- [ ] **Verse selection Phase 2** — Phase 1 done (Session 18). Phase 2: Attach notes, tags, files to selections. *(Requested: Session 14)*
+- [ ] **Convert remaining modals to slide-outs** — MethodologyModal, ExportChartModal. *(Requested: Session 18)*
+
+- [x] **Nugget accuracy audit** — 50 checked, 6 fixed. Exported for Gemini. *(Session 18)*
+
+- [ ] **Firebase integration** — Auth + Firestore. *(Requested: Session 17)*
+
+- [~] **Apocrypha follow-up** — Mostly done. Need: characters, intro page. *(Session 18)*
+
+- [ ] **Verse selection Phase 2** — Notes/tags on selections. *(Requested: Session 14)*
 
 ### OTHER PENDING
 
-- [ ] **Character Relationship Visualizer** — Full-screen force-directed graph from Characters page. `RelationshipWeb.tsx` exists with basic graph. *(Requested: Session 12)*
-- [~] **"Found in X verses" link** — Inline expand works. Original spec was slide-out panel. *(Session 14)*
-- [ ] **More Context Nuggets** — 1,096 → ~1,500. Gaps: Psalms, Isaiah, Jeremiah. *(Session 12)*
+- [ ] **Character Relationship Visualizer** — Force-directed graph. *(Requested: Session 12)*
+- [ ] **More Context Nuggets** — 1,139 → ~1,500. Gaps: Psalms, Isaiah, Jeremiah. *(Session 12)*
 
 ### LOW PRIORITY / FUTURE
 
