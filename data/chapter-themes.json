@@ -5964,5 +5964,47 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 61
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "themes": [
+      "persecution",
+      "patience",
+      "righteous judgment",
+      "Second Coming",
+      "faith"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 53
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "themes": [
+      "Great Apostasy",
+      "man of sin",
+      "deception",
+      "truth",
+      "steadfastness"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 53
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 3,
+    "themes": [
+      "work",
+      "industriousness",
+      "self-reliance",
+      "church discipline",
+      "prayer"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 53
   }
 ]

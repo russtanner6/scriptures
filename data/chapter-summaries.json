@@ -3854,5 +3854,29 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 61
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "summary": "Paul praises the Thessalonians for their growing faith and patience during trials, reassuring them that God will bring justice to their persecutors and rest to the faithful at the Second Coming.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 53
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "summary": "Paul clarifies that the day of Christ's return will not come until after a great falling away (apostasy) and the revealing of the man of sin, urging the Saints to stand firm in the truth.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 53
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 3,
+    "summary": "Paul requests prayers for the missionary work and commands the Saints to avoid idleness, emphasizing that everyone should work for their own bread and not be weary in doing good.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 53
   }
 ]

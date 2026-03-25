@@ -4818,5 +4818,35 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 61
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "era": "Apostolic",
+    "approxDate": "c. AD 51-52",
+    "setting": "Written by Paul from Corinth shortly after his first letter to address ongoing persecutions and doctrinal confusion.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 53
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "era": "Apostolic",
+    "approxDate": "c. AD 51-52",
+    "setting": "Addressing a specific misunderstanding among the Saints that the day of Christ had already arrived or was immediately imminent.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 53
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 3,
+    "era": "Apostolic",
+    "approxDate": "c. AD 51-52",
+    "setting": "Paul provides final behavioral corrections to a community where some members had stopped working in anticipation of the Second Coming.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 53
   }
 ]

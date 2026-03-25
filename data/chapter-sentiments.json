@@ -6264,5 +6264,44 @@
     "contrition": 4,
     "dominant": "peace",
     "rationale": "Peter offers comfort regarding the Lord's longsuffering and the promise of a new heaven and earth, while urging vigilance against scoffers."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "2 Thessalonians",
+    "bookId": 53,
+    "chapter": 1,
+    "exaltation": 7,
+    "peace": 8,
+    "admonition": 5,
+    "contrition": 4,
+    "dominant": "peace",
+    "rationale": "Paul comforts the Saints enduring persecution by emphasizing God's righteous judgment and the eventual rest promised to the faithful."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "2 Thessalonians",
+    "bookId": 53,
+    "chapter": 2,
+    "exaltation": 3,
+    "peace": 5,
+    "admonition": 9,
+    "contrition": 2,
+    "dominant": "admonition",
+    "rationale": "The chapter is a strong prophetic warning regarding the Great Apostasy and the man of sin that must appear before Christ's return."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "2 Thessalonians",
+    "bookId": 53,
+    "chapter": 3,
+    "exaltation": 2,
+    "peace": 5,
+    "admonition": 8,
+    "contrition": 3,
+    "dominant": "admonition",
+    "rationale": "Paul delivers practical and firm instructions concerning industriousness, rebuking idleness and disorderly conduct within the church."
   }
 ]

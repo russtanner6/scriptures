@@ -2495,5 +2495,38 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 61
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "verse": 8,
+    "crossReference": "D&C 133:41",
+    "type": "parallel",
+    "note": "Both passages describe the Lord's presence and the fire that attends His coming to judge the world.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 53
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verse": 3,
+    "crossReference": "Amos 8:11-12",
+    "type": "parallel",
+    "note": "Paul's prophecy of the falling away aligns with the Old Testament prophecy of a famine of hearing the words of the Lord.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 53
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 3,
+    "verse": 10,
+    "crossReference": "D&C 42:42",
+    "type": "parallel",
+    "note": "The Lord's command in the Restoration that the idler shall not eat the bread of the laborer mirrors Paul's instruction.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 53
   }
 ]

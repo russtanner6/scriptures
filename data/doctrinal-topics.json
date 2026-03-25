@@ -5648,5 +5648,44 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 61
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "topics": [
+      "Second Coming",
+      "judgment",
+      "grace",
+      "endurance"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 53
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "topics": [
+      "Great Apostasy",
+      "signs of the times",
+      "revelation",
+      "agency"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 53
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 3,
+    "topics": [
+      "work",
+      "self-reliance",
+      "church leadership",
+      "discipline"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 53
   }
 ]
