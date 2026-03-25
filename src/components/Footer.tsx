@@ -59,7 +59,7 @@ export default function Footer() {
             }}
           >
             <img
-              src="/logo.svg"
+              src="/se-logo.svg"
               alt=""
               style={{
                 height: "28px",

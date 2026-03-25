@@ -1237,7 +1237,7 @@ export default function ScriptureReader() {
       <div style={{ position: "absolute", left: "50%", transform: "translateX(-50%)", display: "flex", alignItems: "center" }}>
         {centerContent || (
           <a href="/" title="Home" style={{ display: "flex", alignItems: "center" }}>
-            <img src="/logo.svg" alt="Scripture Explorer" style={{ height: "28px", width: "auto" }} />
+            <img src="/se-logo.svg" alt="Scripture Explorer" style={{ height: "28px", width: "auto" }} />
           </a>
         )}
       </div>
@@ -2487,7 +2487,7 @@ export default function ScriptureReader() {
 
             {/* Center logo — links to home */}
             <a href="/" title="Home" style={{ flex: 1, display: "flex", justifyContent: "center", alignItems: "center" }}>
-              <img src="/logo.svg" alt="Home" style={{ height: "20px", width: "auto", opacity: 0.4 }} />
+              <img src="/se-logo.svg" alt="Home" style={{ height: "20px", width: "auto", opacity: 0.4 }} />
             </a>
 
             {/* Next */}
