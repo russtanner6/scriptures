@@ -1593,5 +1593,60 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 92
+  },
+  {
+    "book": "Baruch",
+    "chapter": 1,
+    "verse": 15,
+    "crossReference": "Daniel 9:7",
+    "type": "parallel",
+    "note": "Both texts use near-identical language to confess that righteousness belongs to God while shame belongs to Israel.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 2,
+    "verse": 2,
+    "crossReference": "Deuteronomy 28:53",
+    "type": "fulfillment",
+    "note": "The horrors mentioned here are the fulfillment of the curses of the law for breaking the covenant.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 3,
+    "verse": 37,
+    "crossReference": "John 1:14",
+    "type": "allusion",
+    "note": "Christian tradition often links the wisdom conversing with men to the incarnation of Jesus Christ.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 4,
+    "verse": 36,
+    "crossReference": "1 Nephi 22:25",
+    "type": "parallel",
+    "note": "Both describe the gathering of the children of Israel from the four quarters of the earth.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 6,
+    "verse": 1,
+    "crossReference": "Jeremiah 29:1",
+    "type": "parallel",
+    "note": "Both passages describe Jeremiah sending a letter to the captives in Babylon.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
   }
 ]

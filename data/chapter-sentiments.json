@@ -4132,5 +4132,83 @@
     "contrition": 1,
     "dominant": "peace",
     "rationale": "The king issues a second decree promoting religious freedom and protecting the Jews, recognizing God's hand in their survival."
+  },
+  {
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookName": "Baruch",
+    "bookId": 95,
+    "chapter": 1,
+    "exaltation": 2,
+    "peace": 3,
+    "admonition": 6,
+    "contrition": 9,
+    "dominant": "contrition",
+    "rationale": "The chapter focuses on a collective confession of sin and a plea for forgiveness from the exiles in Babylon."
+  },
+  {
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookName": "Baruch",
+    "bookId": 95,
+    "chapter": 2,
+    "exaltation": 1,
+    "peace": 4,
+    "admonition": 7,
+    "contrition": 10,
+    "dominant": "contrition",
+    "rationale": "A humble prayer acknowledging that the calamities of Israel were the just result of disobeying the words of the prophets and Moses."
+  },
+  {
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookName": "Baruch",
+    "bookId": 95,
+    "chapter": 3,
+    "exaltation": 7,
+    "peace": 6,
+    "admonition": 5,
+    "contrition": 4,
+    "dominant": "exaltation",
+    "rationale": "Transitions from a plea for mercy to a poetic celebration of divine wisdom, which is the source of light and life."
+  },
+  {
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookName": "Baruch",
+    "bookId": 95,
+    "chapter": 4,
+    "exaltation": 3,
+    "peace": 8,
+    "admonition": 4,
+    "contrition": 7,
+    "dominant": "peace",
+    "rationale": "Provides encouragement and hope to the captive people, promising that their sorrow will be turned into everlasting joy."
+  },
+  {
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookName": "Baruch",
+    "bookId": 95,
+    "chapter": 5,
+    "exaltation": 9,
+    "peace": 10,
+    "admonition": 0,
+    "contrition": 2,
+    "dominant": "peace",
+    "rationale": "A beautiful prophecy of the restoration of Jerusalem and the gathering of her children from all corners of the earth."
+  },
+  {
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookName": "Baruch",
+    "bookId": 95,
+    "chapter": 6,
+    "exaltation": 1,
+    "peace": 2,
+    "admonition": 10,
+    "contrition": 3,
+    "dominant": "admonition",
+    "rationale": "A satirical and sharp warning against the vanity of idols, emphasizing their helplessness compared to the living God."
   }
 ]

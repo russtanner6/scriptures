@@ -3906,5 +3906,83 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 92
+  },
+  {
+    "book": "Baruch",
+    "chapter": 1,
+    "themes": [
+      "confession",
+      "exile",
+      "repentance",
+      "prayer"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 2,
+    "themes": [
+      "justice",
+      "covenant",
+      "mercy",
+      "supplication"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 3,
+    "themes": [
+      "wisdom",
+      "commandments",
+      "creation",
+      "atonement"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 4,
+    "themes": [
+      "hope",
+      "gathering of israel",
+      "comfort",
+      "mourning"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 5,
+    "themes": [
+      "zion",
+      "restoration",
+      "glory",
+      "gathering"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 6,
+    "themes": [
+      "idolatry",
+      "warning",
+      "truth",
+      "sovereignty"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
   }
 ]

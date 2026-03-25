@@ -4698,5 +4698,15 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 92
+  },
+  {
+    "book": "Baruch",
+    "chapter": 6,
+    "startVerse": 2,
+    "endVerse": 73,
+    "speaker": "Jeremiah",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
   }
 ]

@@ -3688,5 +3688,78 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 92
+  },
+  {
+    "book": "Baruch",
+    "chapter": 1,
+    "topics": [
+      "repentance",
+      "prayer",
+      "commandments"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 2,
+    "topics": [
+      "covenant",
+      "mercy",
+      "justice",
+      "prophecy"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 3,
+    "topics": [
+      "wisdom",
+      "jesus christ",
+      "law of moses"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 4,
+    "topics": [
+      "gathering of israel",
+      "hope",
+      "trust in god"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 5,
+    "topics": [
+      "zion",
+      "restoration",
+      "gathering of israel"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 6,
+    "topics": [
+      "worship",
+      "truth",
+      "commandments"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
   }
 ]

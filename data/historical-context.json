@@ -3178,5 +3178,65 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 92
+  },
+  {
+    "book": "Baruch",
+    "chapter": 1,
+    "era": "Exile",
+    "approxDate": "c. 582 B.C.",
+    "setting": "Babylon",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 2,
+    "era": "Exile",
+    "approxDate": "c. 582 B.C.",
+    "setting": "Babylon",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 3,
+    "era": "Exile",
+    "approxDate": "c. 582 B.C.",
+    "setting": "Babylon",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 4,
+    "era": "Exile",
+    "approxDate": "c. 582 B.C.",
+    "setting": "Babylon / Jerusalem",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 5,
+    "era": "Exile",
+    "approxDate": "c. 582 B.C.",
+    "setting": "Vision of Jerusalem",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 6,
+    "era": "Exile",
+    "approxDate": "c. 586 B.C.",
+    "setting": "Babylon",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
   }
 ]

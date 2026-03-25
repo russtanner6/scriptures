@@ -2722,5 +2722,59 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 92
+  },
+  {
+    "book": "Baruch",
+    "chapter": 1,
+    "genre": "historical record",
+    "subgenre": "preface",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 2,
+    "genre": "prayer",
+    "subgenre": "confession",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 3,
+    "genre": "poetry",
+    "subgenre": "wisdom hymn",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 4,
+    "genre": "poetry",
+    "subgenre": "lamentation and comfort",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 5,
+    "genre": "prophecy",
+    "subgenre": "restoration vision",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 6,
+    "genre": "epistle",
+    "subgenre": "prophetic warning",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
   }
 ]

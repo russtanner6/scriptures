@@ -3523,5 +3523,77 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 92
+  },
+  {
+    "book": "Baruch",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 15,
+        "text": "And ye shall say, To the Lord our God belongeth righteousness, but unto us the confusion of faces, as it is come to pass this day, unto them of Juda, and to the inhabitants of Jerusalem.",
+        "reason": "A foundational verse for the book's theme of confession and divine justice."
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 2,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 37,
+        "text": "Afterward did he shew himself upon earth, and conversed with men.",
+        "reason": "Commonly cited as an early prophecy of the incarnation of Jesus Christ."
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 23,
+        "text": "For I sent you out with mourning and weeping: but God will give you to me again with joy and gladness for ever.",
+        "reason": "Captures the central promise of restoration for the exiled saints."
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 5,
+        "text": "Arise, O Jerusalem, and stand on high, and look about toward the east, and behold thy children gathered from the west unto the east by the word of the Holy One, rejoicing in the remembrance of God.",
+        "reason": "A quintessential description of the gathering of Israel."
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 6,
+    "verses": [],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
   }
 ]

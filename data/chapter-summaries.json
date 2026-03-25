@@ -2542,5 +2542,53 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 92
+  },
+  {
+    "book": "Baruch",
+    "chapter": 1,
+    "summary": "Baruch reads a book of confession to the exiles in Babylon, who then send money and the record to Jerusalem with a request for prayer and a plea for divine mercy.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 2,
+    "summary": "The exiles acknowledge that their suffering is the fulfillment of prophetic warnings and plead for God to remember His covenant and deliver them for His name's sake.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 3,
+    "summary": "Israel is exhorted to seek wisdom, which is described as the hidden source of all creation and life that has been revealed through the law of God.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 4,
+    "summary": "Jerusalem, personified as a mourning mother, encourages her children in exile to remain faithful and look forward to the day when God will restore them to their home.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 5,
+    "summary": "Jerusalem is told to put off her garments of mourning and put on the glory of God, as her children are gathered back from the east and west.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
+  },
+  {
+    "book": "Baruch",
+    "chapter": 6,
+    "summary": "Jeremiah writes a letter to the captives in Babylon, warning them that the man-made idols of the heathen are powerless and unworthy of fear or worship.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 95
   }
 ]
