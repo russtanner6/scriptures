@@ -8578,5 +8578,599 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 10
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 1,
+    "genre": "prophecy",
+    "subgenre": "covenant lawsuit",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 2,
+    "genre": "prophecy",
+    "subgenre": "eschatological vision",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 3,
+    "genre": "prophecy",
+    "subgenre": "judgment oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 4,
+    "genre": "prophecy",
+    "subgenre": "messianic promise",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 5,
+    "genre": "prophecy",
+    "subgenre": "parable and woe oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 6,
+    "genre": "prophecy",
+    "subgenre": "call narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 7,
+    "genre": "prophecy",
+    "subgenre": "sign narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 8,
+    "genre": "prophecy",
+    "subgenre": "sign and warning",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 9,
+    "genre": "prophecy",
+    "subgenre": "messianic oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 10,
+    "genre": "prophecy",
+    "subgenre": "woe and judgment oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 11,
+    "genre": "prophecy",
+    "subgenre": "messianic oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 12,
+    "genre": "poetry",
+    "subgenre": "psalm of thanksgiving",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 13,
+    "genre": "prophecy",
+    "subgenre": "burden oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 14,
+    "genre": "prophecy",
+    "subgenre": "taunt song",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 15,
+    "genre": "prophecy",
+    "subgenre": "lament",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 16,
+    "genre": "prophecy",
+    "subgenre": "lament",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 17,
+    "genre": "prophecy",
+    "subgenre": "burden oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 18,
+    "genre": "prophecy",
+    "subgenre": "oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 19,
+    "genre": "prophecy",
+    "subgenre": "burden oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 20,
+    "genre": "narrative",
+    "subgenre": "prophetic sign act",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 21,
+    "genre": "prophecy",
+    "subgenre": "burden oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 22,
+    "genre": "prophecy",
+    "subgenre": "burden oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 23,
+    "genre": "prophecy",
+    "subgenre": "burden oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 24,
+    "genre": "prophecy",
+    "subgenre": "apocalyptic",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 25,
+    "genre": "poetry",
+    "subgenre": "praise hymn",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 26,
+    "genre": "poetry",
+    "subgenre": "trust song",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 27,
+    "genre": "prophecy",
+    "subgenre": "eschatological oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 28,
+    "genre": "prophecy",
+    "subgenre": "woe oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 29,
+    "genre": "prophecy",
+    "subgenre": "woe oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 30,
+    "genre": "prophecy",
+    "subgenre": "woe oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 31,
+    "genre": "prophecy",
+    "subgenre": "woe oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 32,
+    "genre": "prophecy",
+    "subgenre": "messianic oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 33,
+    "genre": "prophecy",
+    "subgenre": "woe and praise",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 34,
+    "genre": "prophecy",
+    "subgenre": "judgment oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 35,
+    "genre": "prophecy",
+    "subgenre": "salvation oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 36,
+    "genre": "narrative",
+    "subgenre": "historical",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 37,
+    "genre": "narrative",
+    "subgenre": "historical",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 38,
+    "genre": "narrative",
+    "subgenre": "psalm",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 39,
+    "genre": "narrative",
+    "subgenre": "historical",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 40,
+    "genre": "prophecy",
+    "subgenre": "comfort oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 41,
+    "genre": "prophecy",
+    "subgenre": "trial speech",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 42,
+    "genre": "prophecy",
+    "subgenre": "servant song",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 43,
+    "genre": "prophecy",
+    "subgenre": "salvation oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 44,
+    "genre": "prophecy",
+    "subgenre": "satire",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 45,
+    "genre": "prophecy",
+    "subgenre": "salvation oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 46,
+    "genre": "prophecy",
+    "subgenre": "taunt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 47,
+    "genre": "prophecy",
+    "subgenre": "taunt song",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 48,
+    "genre": "prophecy",
+    "subgenre": "rebuke",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 49,
+    "genre": "prophecy",
+    "subgenre": "servant song",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 50,
+    "genre": "prophecy",
+    "subgenre": "servant song",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 51,
+    "genre": "prophecy",
+    "subgenre": "comfort oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 52,
+    "genre": "prophecy",
+    "subgenre": "salvation oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "genre": "prophecy",
+    "subgenre": "servant song",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 54,
+    "genre": "prophecy",
+    "subgenre": "salvation oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 55,
+    "genre": "prophecy",
+    "subgenre": "invitation",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 56,
+    "genre": "prophecy",
+    "subgenre": "exhortation",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 57,
+    "genre": "prophecy",
+    "subgenre": "judgment oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 58,
+    "genre": "prophecy",
+    "subgenre": "exhortation",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 59,
+    "genre": "prophecy",
+    "subgenre": "lament",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 60,
+    "genre": "prophecy",
+    "subgenre": "salvation oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 61,
+    "genre": "prophecy",
+    "subgenre": "commission",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 62,
+    "genre": "prophecy",
+    "subgenre": "salvation oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 63,
+    "genre": "prophecy",
+    "subgenre": "judgment oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 64,
+    "genre": "prophecy",
+    "subgenre": "communal lament",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 65,
+    "genre": "prophecy",
+    "subgenre": "eschatological",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 66,
+    "genre": "prophecy",
+    "subgenre": "eschatological",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
   }
 ]

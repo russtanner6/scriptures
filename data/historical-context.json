@@ -9742,5 +9742,665 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 10
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 1,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 740-700 BC",
+    "setting": "Kingdom of Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 2,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 740-700 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 3,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 740-700 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 4,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 740-700 BC",
+    "setting": "Jerusalem / Zion",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 5,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 740-700 BC",
+    "setting": "Kingdom of Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 6,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 740 BC",
+    "setting": "Jerusalem temple",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 7,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 735 BC",
+    "setting": "Jerusalem, Syro-Ephraimite War",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 8,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 734 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 9,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 734 BC",
+    "setting": "Galilee / Northern Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 10,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 722-701 BC",
+    "setting": "Judah, Assyrian campaigns",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 11,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 740-700 BC",
+    "setting": "Prophetic / Messianic",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 12,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 740-700 BC",
+    "setting": "Prophetic / Messianic",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 13,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 740-700 BC",
+    "setting": "Oracle concerning Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 14,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 740-700 BC",
+    "setting": "Oracle concerning Babylon and Philistia",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 15,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 715 BC",
+    "setting": "Oracle concerning Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 16,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 715 BC",
+    "setting": "Oracle concerning Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 17,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 735 BC",
+    "setting": "Oracle concerning Damascus and Ephraim",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 18,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 715 BC",
+    "setting": "Oracle concerning Ethiopia (Cush)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 19,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 715 BC",
+    "setting": "Oracle concerning Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 20,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 711 BC",
+    "setting": "Ashdod, prophetic sign act",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 21,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 715-700 BC",
+    "setting": "Oracle concerning Babylon, Dumah, Arabia",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 22,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 701 BC",
+    "setting": "Jerusalem, Sennacherib's invasion",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 23,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 715-700 BC",
+    "setting": "Oracle concerning Tyre",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 24,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 740-700 BC",
+    "setting": "Apocalyptic / Universal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 25,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 740-700 BC",
+    "setting": "Apocalyptic / Universal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 26,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 740-700 BC",
+    "setting": "Apocalyptic / Universal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 27,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 740-700 BC",
+    "setting": "Apocalyptic / Universal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 28,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 725-720 BC",
+    "setting": "Samaria and Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 29,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 705-701 BC",
+    "setting": "Jerusalem (Ariel)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 30,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 705-701 BC",
+    "setting": "Judah, alliance with Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 31,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 705-701 BC",
+    "setting": "Judah, alliance with Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 32,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 705-701 BC",
+    "setting": "Kingdom of Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 33,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 701 BC",
+    "setting": "Jerusalem, Assyrian siege",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 34,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic oracle — cosmic scope, Edom as archetype",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 35,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic vision of future restoration",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 36,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 701 BC",
+    "setting": "Jerusalem, during Sennacherib's invasion of Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 37,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 701 BC",
+    "setting": "Jerusalem, the temple and Hezekiah's court",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 38,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 701 BC",
+    "setting": "Jerusalem, Hezekiah's palace",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 39,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 701-700 BC",
+    "setting": "Jerusalem, Hezekiah's treasure house",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 40,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic address to future exiles",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 41,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic courtroom scene among the nations",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 42,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic vision of the Servant's mission",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 43,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic address to exiled Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 44,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic oracle — Israel, Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 45,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic oracle naming Cyrus of Persia",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 46,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic oracle against Babylon's gods",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 47,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic taunt against Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 48,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic rebuke and promise to Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 49,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic Servant song — universal scope",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 50,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic Servant song",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 51,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic comfort to the faithful remnant",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 52,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic vision of Zion's restoration and the Servant",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic Suffering Servant song",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 54,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic promise of covenant restoration",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 55,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic invitation — universal scope",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 56,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic address on Sabbath and inclusiveness",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 57,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic rebuke of idolatry in Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 58,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic instruction on true worship",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 59,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic lament over Israel's sins",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 60,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic vision of Zion's millennial glory",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 61,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic Servant's commission",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 62,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic vision of Zion's vindication",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 63,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic judgment and intercessory prayer",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 64,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic communal lament",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 65,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic vision of new heavens and new earth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 66,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 700 BC",
+    "setting": "Prophetic eschatological conclusion",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
   }
 ]

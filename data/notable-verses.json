@@ -13762,5 +13762,908 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 10
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 18,
+        "reason": "'Come now, and let us reason together'—the iconic invitation to repentance and cleansing from sin."
+      },
+      {
+        "verse": 19,
+        "reason": "Promise that the willing and obedient shall eat the good of the land."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "The mountain of the Lord's house established in the top of the mountains in the last days."
+      },
+      {
+        "verse": 4,
+        "reason": "Swords beaten into plowshares, nations learning war no more."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "The righteous are promised it shall be well with them, for they shall eat the fruit of their doings."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "The Lord creates a cloud by day and fire by night over every dwelling in Zion."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 20,
+        "reason": "'Woe unto them that call evil good, and good evil'—a classic warning against moral inversion."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "The seraphim's cry: 'Holy, holy, holy, is the LORD of hosts: the whole earth is full of his glory.'"
+      },
+      {
+        "verse": 8,
+        "reason": "'Here am I; send me'—Isaiah's response to God's call, widely quoted on willingness to serve."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "'A virgin shall conceive, and bear a son, and shall call his name Immanuel'—foundational messianic prophecy."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 20,
+        "reason": "'To the law and to the testimony: if they speak not according to this word, it is because there is no light in them.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "'For unto us a child is born... Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 10,
+    "verses": [
+      {
+        "verse": 21,
+        "reason": "'The remnant shall return, even the remnant of Jacob, unto the mighty God.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 11,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "'A rod out of the stem of Jesse'—messianic prophecy of Christ's lineage."
+      },
+      {
+        "verse": 6,
+        "reason": "'The wolf also shall dwell with the lamb'—iconic millennial peace imagery."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "'The LORD JEHOVAH is my strength and my song; he also is become my salvation.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "Cosmic signs—sun, moon, and stars darkened—foreshadowing the day of the Lord."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "'How art thou fallen from heaven, O Lucifer, son of the morning!'—the iconic fall of Satan."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 15,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "A throne established in mercy with a judge seeking justice—a messianic echo within the Moab oracle."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 17,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 18,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 19,
+    "verses": [
+      {
+        "verse": 25,
+        "reason": "'Blessed be Egypt my people, and Assyria the work of my hands, and Israel mine inheritance'—a remarkable vision of universal blessing."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 20,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 21,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "'Babylon is fallen, is fallen'—echoed in Revelation 18:2."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 22,
+    "verses": [
+      {
+        "verse": 22,
+        "reason": "'The key of the house of David will I lay upon his shoulder'—echoed in Revelation 3:7 regarding Christ's authority."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 23,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 24,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "'The earth also is defiled under the inhabitants thereof; because they have transgressed the laws, changed the ordinance, broken the everlasting covenant.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 25,
+    "verses": [
+      {
+        "verse": 8,
+        "reason": "'He will swallow up death in victory; and the Lord GOD will wipe away tears from off all faces.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 26,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "'Thou wilt keep him in perfect peace, whose mind is stayed on thee: because he trusteth in thee.'"
+      },
+      {
+        "verse": 19,
+        "reason": "'Thy dead men shall live, together with my dead body shall they arise'—a resurrection promise."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 27,
+    "verses": [
+      {
+        "verse": 13,
+        "reason": "'The great trumpet shall be blown, and they shall come which were ready to perish'—the gathering of Israel."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 28,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "'Precept upon precept; line upon line'—the pattern of progressive revelation."
+      },
+      {
+        "verse": 16,
+        "reason": "'I lay in Zion for a foundation a stone, a tried stone, a precious corner stone, a sure foundation.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 29,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "A voice speaking out of the ground—interpreted as the Book of Mormon coming forth from the earth."
+      },
+      {
+        "verse": 14,
+        "reason": "'I will proceed to do a marvellous work among this people, even a marvellous work and a wonder.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 30,
+    "verses": [
+      {
+        "verse": 21,
+        "reason": "'Thine ears shall hear a word behind thee, saying, This is the way, walk ye in it.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 31,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "'As birds flying, so will the LORD of hosts defend Jerusalem; defending also he will deliver it.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 32,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "'The work of righteousness shall be peace; and the effect of righteousness quietness and assurance for ever.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 33,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "'Thine eyes shall see the king in his beauty: they shall behold the land that is very far off.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 34,
+    "verses": [
+      {
+        "verse": 8,
+        "reason": "Declares the day of the Lord's vengeance and the year of recompenses for the controversy of Zion."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 35,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "The wilderness and the solitary place shall be glad; the desert shall rejoice and blossom as the rose."
+      },
+      {
+        "verse": 10,
+        "reason": "The ransomed of the Lord shall return to Zion with singing and everlasting joy upon their heads."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 36,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 37,
+    "verses": [
+      {
+        "verse": 36,
+        "reason": "The angel of the Lord smites 185,000 Assyrians in one night — one of the most dramatic divine interventions in the OT."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 38,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "God hears Hezekiah's prayer and adds fifteen years to his life."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 39,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "Isaiah prophesies that all Hezekiah's treasures will be carried to Babylon — foreshadowing the exile."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 40,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "The voice of him that crieth in the wilderness — a prophecy of John the Baptist preparing the Lord's way."
+      },
+      {
+        "verse": 31,
+        "reason": "They that wait upon the Lord shall renew their strength; they shall mount up with wings as eagles."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 41,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "Fear thou not; for I am with thee — one of the most reassuring and memorized verses in all scripture."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 42,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "Behold my servant whom I uphold — the first formal introduction of the Servant figure."
+      },
+      {
+        "verse": 3,
+        "reason": "A bruised reed shall he not break — describing the Servant's gentle mission."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 43,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "When thou passest through the waters, I will be with thee — a promise of divine companionship through trials."
+      },
+      {
+        "verse": 25,
+        "reason": "I, even I, am he that blotteth out thy transgressions for mine own sake."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 44,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "I will pour my spirit upon thy seed — a promise of the Spirit being poured out on Israel's posterity."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 45,
+    "verses": [
+      {
+        "verse": 23,
+        "reason": "Every knee shall bow, every tongue shall swear — a declaration of universal acknowledgment of God."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 46,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "Declaring the end from the beginning — God's omniscience and sovereign plan."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 47,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 48,
+    "verses": [
+      {
+        "verse": 18,
+        "reason": "O that thou hadst hearkened; then had thy peace been as a river — a lament over disobedience."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 49,
+    "verses": [
+      {
+        "verse": 15,
+        "reason": "Can a woman forget her sucking child? Yet will I not forget thee — God's unfailing love for Zion."
+      },
+      {
+        "verse": 16,
+        "reason": "I have graven thee upon the palms of my hands — an atonement foreshadowing."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 50,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "I have set my face like a flint — the Servant's unwavering resolve to fulfill His mission."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 51,
+    "verses": [
+      {
+        "verse": 11,
+        "reason": "The redeemed of the Lord shall return and come with singing unto Zion; everlasting joy shall be upon their head."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 52,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "How beautiful upon the mountains are the feet of him that bringeth good tidings, that publisheth peace."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "He is despised and rejected of men; a man of sorrows, and acquainted with grief."
+      },
+      {
+        "verse": 5,
+        "reason": "He was wounded for our transgressions, he was bruised for our iniquities; with his stripes we are healed."
+      },
+      {
+        "verse": 6,
+        "reason": "All we like sheep have gone astray; and the Lord hath laid on him the iniquity of us all."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 54,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "The mountains shall depart, but my kindness shall not depart from thee — God's everlasting covenant of peace."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 55,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "Ho, every one that thirsteth, come ye to the waters — a universal invitation of grace."
+      },
+      {
+        "verse": 8,
+        "reason": "My thoughts are not your thoughts, neither are your ways my ways — divine transcendence."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 56,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "Mine house shall be called an house of prayer for all people — quoted by Jesus when cleansing the temple."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 57,
+    "verses": [
+      {
+        "verse": 15,
+        "reason": "I dwell in the high and holy place, with him also that is of a contrite and humble spirit."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 58,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "To loose the bands of wickedness, to let the oppressed go free — the true fast that God has chosen."
+      },
+      {
+        "verse": 11,
+        "reason": "The Lord shall guide thee continually and make thy bones fat — blessings of true fasting."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 59,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "Your iniquities have separated between you and your God — the foundational statement on sin's effect."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 60,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "Arise, shine; for thy light is come, and the glory of the Lord is risen upon thee."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 61,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "The Spirit of the Lord God is upon me — the passage Jesus read in the Nazareth synagogue."
+      },
+      {
+        "verse": 3,
+        "reason": "To give the oil of joy for mourning, the garment of praise for the spirit of heaviness."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 62,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "Thou shalt no more be termed Forsaken; but Hephzi-bah and Beulah — new names of honor for Zion."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 63,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "In all their affliction he was afflicted, and the angel of his presence saved them."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 64,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "Eye hath not seen, nor ear heard, what God hath prepared for him that waiteth — quoted by Paul."
+      },
+      {
+        "verse": 8,
+        "reason": "But now, O Lord, thou art our father; we are the clay, and thou our potter."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 65,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "Behold, I create new heavens and a new earth — the vision of millennial renewal."
+      },
+      {
+        "verse": 25,
+        "reason": "The wolf and the lamb shall feed together — a vision of paradisiacal peace."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 66,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "The heaven is my throne, and the earth is my footstool — God's transcendence over any earthly temple."
+      },
+      {
+        "verse": 2,
+        "reason": "To this man will I look, even to him that is poor and of a contrite spirit."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
   }
 ]

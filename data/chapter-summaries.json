@@ -7880,5 +7880,533 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 10
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 1,
+    "summary": "God calls heaven and earth to witness Israel's rebellion, rebukes empty rituals, and invites the nation to repentance with the promise that sins can become white as snow.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 2,
+    "summary": "A vision of the latter-day temple exalted above the hills with nations flowing to it, followed by warnings against pride and idolatry in the day of the Lord.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 3,
+    "summary": "The Lord removes Judah's leaders and provisions as judgment, the people oppress one another, and the haughty daughters of Zion are stripped of their finery.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 4,
+    "summary": "In that day the Branch of the Lord shall be beautiful, Zion's remnant shall be called holy, and God will create a cloud and fire over every dwelling for protection.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 5,
+    "summary": "The parable of the Lord's vineyard that yielded wild grapes, followed by six woes against greed, drunkenness, moral confusion, and pride.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 6,
+    "summary": "Isaiah sees the Lord upon His throne, his lips are cleansed by a seraph's coal, and he receives his prophetic commission to preach to a people who will not understand.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 7,
+    "summary": "During the Syro-Ephraimite crisis, Isaiah reassures King Ahaz, delivers the Immanuel sign, and prophesies Assyria's devastating invasion of Judah.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 8,
+    "summary": "Isaiah names his son Maher-shalal-hash-baz as a sign of Assyria's swift conquest, warns against trusting conspiracies, and urges the people to seek God's law and testimony.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 9,
+    "summary": "Light shines on those in darkness with the birth of a child called Wonderful Counselor, Prince of Peace, yet God's anger continues against an unrepentant Israel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 10,
+    "summary": "Woe to unjust lawmakers; Assyria is God's rod of anger but will itself be judged for arrogance, and a remnant of Israel shall return to the mighty God.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 11,
+    "summary": "A rod from Jesse's stem brings righteous judgment, the wolf lies with the lamb in millennial peace, and the Lord gathers scattered Israel a second time.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 12,
+    "summary": "A brief hymn of thanksgiving praising God for His salvation, declaring His doings among the people, and rejoicing because the Holy One of Israel is great.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 13,
+    "summary": "The burden of Babylon — the Lord musters armies for the day of His wrath, cosmic signs attend the destruction, and Babylon is left utterly desolate.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 14,
+    "summary": "Israel is restored and takes up a taunt against the fallen king of Babylon; Lucifer's fall from heaven is described, and burdens are pronounced upon Philistia.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 15,
+    "summary": "A lament over the swift destruction of Moab's cities, with refugees fleeing and weeping across the devastated land.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 16,
+    "summary": "Moab is urged to send tribute and seek shelter; its pride is condemned, and Isaiah weeps over the desolation of Moab's vineyards and joy.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 17,
+    "summary": "The burden of Damascus and Ephraim — both are destined for ruin, though a remnant shall regard the Holy One of Israel in that day.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 18,
+    "summary": "An oracle to the land beyond Ethiopia's rivers; God watches quietly as events unfold, and eventually a people shall bring offerings to Mount Zion.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 19,
+    "summary": "The burden of Egypt — internal strife, drought, and a foolish counsel, yet in that day Egypt, Assyria, and Israel shall worship together as God's blessed people.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 20,
+    "summary": "Isaiah walks naked and barefoot for three years as a sign that Assyria will lead Egypt and Ethiopia away captive.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 21,
+    "summary": "Visions of Babylon's fall at the hands of Media and Elam, a brief oracle concerning Dumah, and a burden upon Arabia's caravans.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 22,
+    "summary": "The valley of vision — Jerusalem revels instead of repenting during siege; Shebna the steward is removed and Eliakim is set in his place with authority.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 23,
+    "summary": "The burden of Tyre — the great merchant city is destroyed, lies forgotten for seventy years, then returns to commerce with its profits consecrated to the Lord.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 24,
+    "summary": "An apocalyptic vision of the earth made empty and desolate for breaking the everlasting covenant; the Lord reigns in glory on Mount Zion before His ancients.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 25,
+    "summary": "A song of praise for God's marvelous works, the feast of fat things on this mountain, the swallowing up of death, and the wiping away of tears from all faces.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 26,
+    "summary": "A song of trust in the Lord as an everlasting rock, a vision of perfect peace for the steadfast mind, and the promise of resurrection for the dead.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 27,
+    "summary": "The Lord punishes leviathan, tenderly guards His vineyard Israel, and in that day a great trumpet gathers the outcasts to worship in Jerusalem.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 28,
+    "summary": "Woe to Ephraim's drunkards and Jerusalem's scornful rulers; God lays a precious cornerstone in Zion, and His work proceeds line upon line, precept upon precept.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 29,
+    "summary": "Woe to Ariel — Jerusalem shall be besieged, the vision becomes a sealed book, yet the deaf shall hear and the meek shall increase their joy in the Holy One.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 30,
+    "summary": "Woe to rebellious children who trust in Egypt's shadow; God waits to be gracious, promises to guide His people, and will destroy Assyria with His voice.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 31,
+    "summary": "Woe to those relying on Egypt's horses; the Lord will come down to fight for Mount Zion and defend Jerusalem as birds flying overhead.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 32,
+    "summary": "A righteous king shall reign in justice, complacent women are warned of desolation, and the Spirit poured from on high transforms the wilderness into fruitful peace.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 33,
+    "summary": "Woe to the spoiler who has not been spoiled; the Lord rises in majesty, fills Zion with justice and righteousness, and the redeemed behold the King in His beauty.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 34,
+    "summary": "A proclamation of the Lord's indignation against all nations, with Edom singled out for devastating judgment as the land becomes perpetual desolation.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 35,
+    "summary": "A vision of millennial restoration where the desert blossoms, the blind see, the deaf hear, and the ransomed of the Lord return to Zion with everlasting joy.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 36,
+    "summary": "Sennacherib's field commander Rabshakeh besieges Jerusalem and delivers a threatening speech, attempting to undermine Judah's trust in the Lord.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 37,
+    "summary": "Hezekiah prays in the temple, Isaiah delivers God's answer promising Sennacherib's defeat, and an angel destroys 185,000 Assyrian soldiers in one night.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 38,
+    "summary": "Hezekiah falls mortally ill, prays for healing, and is granted fifteen additional years; he writes a psalm of thanksgiving for his deliverance from death.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 39,
+    "summary": "Hezekiah shows all his treasures to Babylonian envoys; Isaiah prophesies that Babylon will one day carry away everything and take his descendants captive.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 40,
+    "summary": "God comforts His people, declaring His incomparable power over nations and idols; those who wait upon the Lord shall renew their strength and mount up with wings as eagles.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 41,
+    "summary": "God summons the nations to judgment, reassures Israel as His chosen servant, and challenges the idols to declare future events, which they cannot do.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 42,
+    "summary": "The Lord's Servant is introduced — gentle, just, a light to the Gentiles — followed by a new song of praise and a lament over blind and deaf Israel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 43,
+    "summary": "God promises to redeem and protect Israel through fire and flood, declaring He blots out their transgressions and calls them to witness that He alone is God.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 44,
+    "summary": "God promises to pour out His Spirit on Israel's offspring; a satirical passage mocks idol-makers; the Lord names Cyrus as the one who will rebuild Jerusalem.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 45,
+    "summary": "Cyrus is called God's anointed shepherd; God declares there is no other God, and every knee shall bow and every tongue swear allegiance to the Lord.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 46,
+    "summary": "Babylon's idols Bel and Nebo are carried on beasts, while the Lord carries Israel from birth; God declares the end from the beginning.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 47,
+    "summary": "A taunt against Babylon — once a queen, now humbled in the dust; her sorceries and enchantments will not save her from sudden destruction.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 48,
+    "summary": "God rebukes Israel for stubbornness and idolatry, reveals new things, and laments that their peace could have been like a river had they obeyed.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 49,
+    "summary": "The Servant of the Lord is called from the womb to restore Israel and be a light to the Gentiles; Zion's children are engraved on the palms of God's hands.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 50,
+    "summary": "The Servant sets his face like a flint, trusting in the Lord despite being smitten and spat upon; those who walk in self-made light will lie down in sorrow.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 51,
+    "summary": "God calls the righteous to look to Abraham and Sarah, promises comfort to Zion, and declares that the redeemed shall return with singing and everlasting joy.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 52,
+    "summary": "Zion is commanded to awake and put on beautiful garments; how beautiful upon the mountains are the feet of him who publishes peace; the Servant is introduced as marred beyond recognition.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "summary": "The Suffering Servant is despised and rejected, bearing griefs and carrying sorrows; He is wounded for our transgressions and bruised for our iniquities, making His soul an offering for sin.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 54,
+    "summary": "The barren woman is told to sing and enlarge her tent; God promises to gather Israel with great mercies, establishing an everlasting covenant of peace.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 55,
+    "summary": "An invitation to come to the waters freely without money; God's thoughts and ways are higher than man's; His word shall accomplish its purpose and not return void.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 56,
+    "summary": "The Lord promises blessings to foreigners and eunuchs who keep the Sabbath; His house shall be called a house of prayer for all people; blind watchmen are condemned.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 57,
+    "summary": "The righteous perish while the wicked practice idolatry and spiritual adultery; yet God dwells with the contrite spirit and creates peace for those who mourn.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 58,
+    "summary": "True fasting is defined as loosing the bonds of wickedness, feeding the hungry, and clothing the naked; then light will break forth and God will guide continually.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 59,
+    "summary": "Israel's iniquities have separated them from God; justice and truth have fallen; the Redeemer shall come to those in Zion who turn from transgression.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 60,
+    "summary": "Zion's future glory — arise, shine, for thy light is come; nations and kings come to her brightness; the Lord will be an everlasting light.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 61,
+    "summary": "The Spirit of the Lord anoints the Servant to preach good tidings to the meek, proclaim liberty to captives, and announce the acceptable year of the Lord.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 62,
+    "summary": "God will not rest until Zion's righteousness shines as brightness; she receives a new name, and watchmen are set on Jerusalem's walls who never hold their peace.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 63,
+    "summary": "The Lord comes from Edom with garments dipped in the blood of judgment; a prayer recalls God's past lovingkindness and pleads for Him to return and redeem.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 64,
+    "summary": "A petition for God to rend the heavens and come down; the people confess they are the clay and God is the potter; their holy city lies waste.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 65,
+    "summary": "God contrasts rebellious Israel with His faithful servants; He creates new heavens and a new earth where weeping ceases and the wolf and lamb feed together.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 66,
+    "summary": "The Lord declares heaven is His throne; He looks to the poor and contrite in spirit; Zion brings forth a nation in a day; all flesh shall worship before Him.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
   }
 ]
