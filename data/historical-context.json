@@ -4438,5 +4438,55 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 46
+  },
+  {
+    "book": "1 John",
+    "chapter": 1,
+    "era": "Apostolic",
+    "approxDate": "c. AD 90-100",
+    "setting": "John writes from Ephesus to combat Docetic Gnosticism, which denied Christ's physical body.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 2,
+    "era": "Apostolic",
+    "approxDate": "c. AD 90-100",
+    "setting": "The church was facing internal apostasy from those who had left and were now teaching false doctrines.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "era": "Apostolic",
+    "approxDate": "c. AD 90-100",
+    "setting": "John encourages Saints to maintain their identity as children of God despite growing worldly pressure.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 4,
+    "era": "Apostolic",
+    "approxDate": "c. AD 90-100",
+    "setting": "Discernment was critical as various teachers claimed spiritual authority to lead the Saints astray.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 5,
+    "era": "Apostolic",
+    "approxDate": "c. AD 90-100",
+    "setting": "John uses legal terminology regarding witnesses to establish the absolute truth of the Christian record.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
   }
 ]

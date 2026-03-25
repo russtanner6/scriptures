@@ -5770,5 +5770,70 @@
     "contrition": 2,
     "dominant": "peace",
     "rationale": ""
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 John",
+    "bookId": 62,
+    "chapter": 1,
+    "exaltation": 5,
+    "peace": 9,
+    "admonition": 4,
+    "contrition": 6,
+    "dominant": "peace",
+    "rationale": "Focuses on the joy of fellowship with God and the comforting assurance that the blood of Jesus Christ cleanses from all sin."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 John",
+    "bookId": 62,
+    "chapter": 2,
+    "exaltation": 6,
+    "peace": 8,
+    "admonition": 7,
+    "contrition": 4,
+    "dominant": "peace",
+    "rationale": "Provides peace through Christ's role as Advocate while warning against the spiritual dangers of worldliness and apostasy."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 John",
+    "bookId": 62,
+    "chapter": 3,
+    "exaltation": 10,
+    "peace": 8,
+    "admonition": 6,
+    "contrition": 3,
+    "dominant": "exaltation",
+    "rationale": "Centered on the profound LDS doctrine of the divine nature and the promise that the faithful shall become like Christ."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 John",
+    "bookId": 62,
+    "chapter": 4,
+    "exaltation": 7,
+    "peace": 10,
+    "admonition": 5,
+    "contrition": 2,
+    "dominant": "peace",
+    "rationale": "A beautiful discourse on the nature of God as love, emphasizing that perfect love eliminates fear and brings spiritual rest."
+  },
+  {
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookName": "1 John",
+    "bookId": 62,
+    "chapter": 5,
+    "exaltation": 8,
+    "peace": 9,
+    "admonition": 4,
+    "contrition": 3,
+    "dominant": "peace",
+    "rationale": "Emphasizes the power of faith to overcome the world and the absolute certainty provided by the witnesses of the Godhead."
   }
 ]

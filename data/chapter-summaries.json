@@ -3550,5 +3550,45 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 46
+  },
+  {
+    "book": "1 John",
+    "chapter": 1,
+    "summary": "John testifies of the physical reality of Jesus Christ and teaches that walking in the light and confessing sins allows His blood to cleanse us.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 2,
+    "summary": "John identifies Christ as our Advocate with the Father, commands the Saints to love one another, and warns against the antichrists who deny Christ.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "summary": "John teaches that the faithful are the sons of God who will be like Christ when He appears, defining sin as the transgression of the law.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 4,
+    "summary": "John exhorts the Saints to try the spirits to discern truth from error and declares that God is love, manifested through the Atonement of His Son.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 5,
+    "summary": "John testifies that faith in Jesus Christ provides victory over the world and explains the record of the three witnesses in heaven and on earth.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
   }
 ]

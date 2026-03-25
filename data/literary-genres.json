@@ -3856,5 +3856,50 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 46
+  },
+  {
+    "book": "1 John",
+    "chapter": 1,
+    "genre": "epistle",
+    "subgenre": "pastoral letter",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 2,
+    "genre": "epistle",
+    "subgenre": "exhortation",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "genre": "epistle",
+    "subgenre": "theological discourse",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 4,
+    "genre": "epistle",
+    "subgenre": "instructional",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 5,
+    "genre": "epistle",
+    "subgenre": "testimony",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
   }
 ]

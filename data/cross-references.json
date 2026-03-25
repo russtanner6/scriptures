@@ -2110,5 +2110,60 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 46
+  },
+  {
+    "book": "1 John",
+    "chapter": 1,
+    "verse": 7,
+    "crossReference": "3 Nephi 18:32",
+    "type": "parallel",
+    "note": "Both texts emphasize the power of the Atonement to cleanse those who return to the Lord.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 2,
+    "verse": 1,
+    "crossReference": "D&C 45:3-5",
+    "type": "parallel",
+    "note": "LDS scripture provides a direct parallel to Christ's role as our Advocate with the Father.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "verse": 2,
+    "crossReference": "Moroni 7:48",
+    "type": "parallel",
+    "note": "Mormon echoes John's teaching that we must have pure love to be like Christ when He appears.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 4,
+    "verse": 12,
+    "crossReference": "JST John 1:18",
+    "type": "clarification",
+    "note": "The Joseph Smith Translation clarifies that God is seen by those who have faith and the Spirit.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 5,
+    "verse": 7,
+    "crossReference": "D&C 20:28",
+    "type": "parallel",
+    "note": "Confirms the unity of the Father, Son, and Holy Ghost as one Godhead.",
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
   }
 ]

@@ -5177,5 +5177,65 @@
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 46
+  },
+  {
+    "book": "1 John",
+    "chapter": 1,
+    "topics": [
+      "Jesus Christ",
+      "Forgiveness",
+      "Godhead"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 2,
+    "topics": [
+      "Advocate",
+      "Apostasy",
+      "Commandments"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "topics": [
+      "Exaltation",
+      "Divine Nature",
+      "Law of Moses"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 4,
+    "topics": [
+      "Discernment",
+      "Love",
+      "Atonement"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
+  },
+  {
+    "book": "1 John",
+    "chapter": 5,
+    "topics": [
+      "Faith",
+      "Testimony",
+      "Eternal Life"
+    ],
+    "volumeAbbrev": "NT",
+    "volumeName": "New Testament",
+    "bookId": 62
   }
 ]
