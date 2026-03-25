@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import Header from "@/components/Header";
 import WordExplorerTool from "@/components/WordExplorerTool";
 
@@ -12,7 +13,9 @@ export default function WordExplorerPage() {
     <>
       <Header />
       <div className="page-container">
-        <WordExplorerTool />
+        <Suspense fallback={<div style={{ textAlign: "center", padding: "60px", color: "var(--text-muted)" }}>Loading...</div>}>
+          <WordExplorerTool />
+        </Suspense>
       </div>
     </>
   );
