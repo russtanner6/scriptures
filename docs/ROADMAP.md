@@ -131,6 +131,28 @@ User wants this as a progressive web app. Add manifest, service worker, offline 
 
 ## Tier 4 — Advanced / Premium Features
 
+### Kid Mode
+A child-friendly scripture reading experience for kids (ages 4-10) or parents reading with young children. The goal: make scripture accessible to children without parents needing to simplify on the fly.
+
+**Core concept:**
+- **Simplified narrative text** — Every chapter rewritten in simple, age-appropriate language (narrative/story format, not verse-by-verse). Short sentences, common vocabulary, concrete descriptions.
+- **Illustrations** — Pictures for key scenes in each chapter. Could be AI-generated or commissioned artwork. Style should be warm, engaging, and reverent (not cartoonish).
+- **Toggle in reader** — Parent or child can switch Kid Mode on/off per session or in Settings. When on, replaces the standard KJV text with the simplified version and shows illustrations inline.
+- **Two use cases:** (1) Kids reading independently on a tablet, (2) Parents using it as a bedtime scripture story guide
+
+**Data requirements:**
+- Simplified text for every chapter (similar to `text_modern` column but for kids — shorter, story-format)
+- Image assets per chapter (or per key scene)
+- Probably a `text_kids` column in the verses table, or a separate `chapter_kids_narrative` JSON
+
+**Design considerations:**
+- Larger font, more whitespace, warmer colors
+- Possibly audio narration (read-aloud) in the future
+- Age-appropriate content filtering (some OT content is not suitable for young children — battles, violence, etc. could be softened or summarized)
+- Progress tracking could tie into a kid-friendly reward system (stickers, badges)
+
+**Priority:** Future feature — requires significant content generation. Could start with a pilot on a single book (e.g., 1 Nephi or Genesis stories) to validate the approach.
+
 ### Chapter Summaries
 - AI-generated one-paragraph summary per chapter
 - Generated once and cached

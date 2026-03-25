@@ -15998,5 +15998,596 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 3
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "The opening plea for the kisses of his mouth—sets the tone for the entire poem."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "'I am the rose of Sharon, and the lily of the valleys'—one of the most quoted verses in the book."
+      },
+      {
+        "verse": 4,
+        "reason": "'His banner over me was love'—a widely memorized declaration of divine affection."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "Finding the beloved and refusing to let go—an image of devoted seeking and holding fast."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "'Thou art all fair, my love; there is no spot in thee'—a declaration of complete beauty and acceptance."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 16,
+        "reason": "'He is altogether lovely'—a comprehensive declaration of the beloved's perfection."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "'I am my beloved's, and my beloved is mine'—the quintessential statement of mutual belonging."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 7,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "'Love is strong as death … many waters cannot quench love'—the most theologically significant verse in the book."
+      },
+      {
+        "verse": 7,
+        "reason": "'If a man would give all the substance of his house for love, it would utterly be contemned'—love cannot be purchased."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 21,
+        "reason": "Moses urges Israel not to fear or be discouraged as they face the promised land."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 2,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 22,
+        "reason": "Moses tells Joshua not to fear, for the Lord shall fight for him."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 29,
+        "reason": "Promise that those who seek the Lord with all their heart and soul shall find him."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 29,
+        "reason": "God's wish that Israel would always have a heart to fear him and keep his commandments."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "The great commandment: love the Lord thy God with all thine heart, soul, and might."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "Affirms God as faithful, keeping covenant and mercy to a thousand generations."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "Man doth not live by bread only, but by every word of the Lord—quoted by Jesus."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "Warning not to assume righteousness earned God's favor; he acts for his own purposes."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 10,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "What doth the Lord require but to fear him, walk in his ways, love and serve him."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 11,
+    "verses": [
+      {
+        "verse": 26,
+        "reason": "Moses sets before Israel a blessing and a curse—obedience or disobedience."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 32,
+        "reason": "Command not to add to or diminish from what the Lord has commanded."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "False signs test whether you love the Lord with all your heart and soul."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 14,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 15,
+    "verses": [
+      {
+        "verse": 11,
+        "reason": "The poor shall never cease out of the land; therefore open thine hand wide."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 20,
+        "reason": "That which is altogether just shalt thou follow, that thou mayest live."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 17,
+    "verses": [
+      {
+        "verse": 19,
+        "reason": "The future king must read the law all the days of his life, to keep his heart humble."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 18,
+    "verses": [
+      {
+        "verse": 15,
+        "reason": "Messianic prophecy: God will raise up a Prophet like Moses from among the brethren."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 19,
+    "verses": [
+      {
+        "verse": 15,
+        "reason": "Establishes the principle that testimony requires two or three witnesses."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 20,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "The Lord your God goeth with you, to fight for you against your enemies."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 21,
+    "verses": [
+      {
+        "verse": 23,
+        "reason": "He that is hanged is accursed of God—applied by Paul to Christ's atonement."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 22,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 23,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 24,
+    "verses": [
+      {
+        "verse": 16,
+        "reason": "Fathers shall not be put to death for the children nor children for the fathers—individual accountability."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 25,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 26,
+    "verses": [
+      {
+        "verse": 18,
+        "reason": "The Lord has avouched thee this day to be his peculiar people—mutual covenant affirmation."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 27,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 28,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "If thou shalt hearken unto the voice of the Lord, all these blessings shall come upon thee."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 29,
+    "verses": [
+      {
+        "verse": 29,
+        "reason": "The secret things belong unto the Lord; revealed things belong unto us and our children."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 30,
+    "verses": [
+      {
+        "verse": 19,
+        "reason": "I have set before you life and death, blessing and cursing: therefore choose life."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 31,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "Be strong and of a good courage, fear not: for the Lord thy God doth go with thee."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 32,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "He is the Rock, his work is perfect: for all his ways are judgment."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 33,
+    "verses": [
+      {
+        "verse": 27,
+        "reason": "The eternal God is thy refuge, and underneath are the everlasting arms."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 34,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "There arose not a prophet since in Israel like unto Moses, whom the Lord knew face to face."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Malachi",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "God's declaration 'I have loved you' and the distinction between Jacob and Esau."
+      },
+      {
+        "verse": 11,
+        "reason": "'My name shall be great among the Gentiles'—a universalist prophecy of God's worldwide worship."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 39
+  },
+  {
+    "book": "Malachi",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "'Have we not all one father?'—a call to covenant unity and faithfulness."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 39
+  },
+  {
+    "book": "Malachi",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "The prophecy of the messenger who will prepare the way before the Lord comes to his temple."
+      },
+      {
+        "verse": 10,
+        "reason": "The tithing promise: 'Bring ye all the tithes into the storehouse... and prove me now herewith.'"
+      },
+      {
+        "verse": 17,
+        "reason": "'They shall be mine, saith the LORD of hosts, in that day when I make up my jewels.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 39
+  },
+  {
+    "book": "Malachi",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "'The Sun of righteousness arise with healing in his wings'—a beloved Messianic image."
+      },
+      {
+        "verse": 5,
+        "reason": "The promise to send Elijah the prophet before the great and dreadful day of the Lord."
+      },
+      {
+        "verse": 6,
+        "reason": "Elijah will turn the hearts of the fathers to the children—foundational to LDS temple and family history work."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 39
   }
 ]

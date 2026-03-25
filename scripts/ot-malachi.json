@@ -1,0 +1,61 @@
+{
+  "bookName": "Malachi",
+  "bookId": 39,
+  "sentiment": [
+    {"book":"Malachi","chapter":1,"exaltation":3,"peace":2,"admonition":8,"contrition":3,"dominant":"admonition","rationale":"God declares his love for Israel but sharply rebukes the priests for offering polluted sacrifices and despising his name."},
+    {"book":"Malachi","chapter":2,"exaltation":1,"peace":2,"admonition":9,"contrition":4,"dominant":"admonition","rationale":"A strong rebuke of the priests for corrupting the covenant of Levi and of the people for faithlessness in marriage and wearying God with words."},
+    {"book":"Malachi","chapter":3,"exaltation":5,"peace":5,"admonition":6,"contrition":3,"dominant":"admonition","rationale":"Foretells the coming messenger who will purify; rebukes Israel for robbing God in tithes but promises abundant blessings for faithfulness."},
+    {"book":"Malachi","chapter":4,"exaltation":7,"peace":4,"admonition":5,"contrition":2,"dominant":"exaltation","rationale":"Prophesies the great and dreadful day of the Lord, the healing Sun of Righteousness, and the return of Elijah before that day."}
+  ],
+  "speakers": [
+    {"book":"Malachi","chapter":1,"startVerse":2,"endVerse":5,"speaker":"Malachi"},
+    {"book":"Malachi","chapter":1,"startVerse":6,"endVerse":14,"speaker":"Malachi"},
+    {"book":"Malachi","chapter":2,"startVerse":1,"endVerse":17,"speaker":"Malachi"},
+    {"book":"Malachi","chapter":3,"startVerse":1,"endVerse":18,"speaker":"Malachi"},
+    {"book":"Malachi","chapter":4,"startVerse":1,"endVerse":6,"speaker":"Malachi"}
+  ],
+  "missingCharacters": [],
+  "summaries": [
+    {"book":"Malachi","chapter":1,"summary":"God affirms his love for Israel over Esau, then rebukes the priests for offering blind, lame, and sick animals as sacrifices while his name is great among the nations."},
+    {"book":"Malachi","chapter":2,"summary":"God warns the priests that he will curse their blessings for failing the covenant of Levi, and condemns Judah for treacherous dealing and profaning marriage covenants."},
+    {"book":"Malachi","chapter":3,"summary":"The Lord promises to send a messenger to prepare the way, calls Israel to return by paying honest tithes and offerings, and distinguishes between those who serve God and those who do not."},
+    {"book":"Malachi","chapter":4,"summary":"Prophesies the burning day of the Lord that will consume the wicked, the rising of the Sun of Righteousness with healing, and the sending of Elijah before the great and dreadful day."}
+  ],
+  "themes": [
+    {"book":"Malachi","chapter":1,"themes":["divine love","priesthood corruption","sacrifice","reverence"]},
+    {"book":"Malachi","chapter":2,"themes":["covenant faithfulness","priesthood accountability","marriage","treachery"]},
+    {"book":"Malachi","chapter":3,"themes":["tithing","repentance","purification","divine justice"]},
+    {"book":"Malachi","chapter":4,"themes":["day of the lord","healing","elijah","restoration"]}
+  ],
+  "crossReferences": [
+    {"book":"Malachi","chapter":1,"verse":2,"crossReference":"Romans 9:13","type":"parallel","note":"Paul quotes 'Jacob have I loved, but Esau have I hated' to illustrate divine election."},
+    {"book":"Malachi","chapter":3,"verse":1,"crossReference":"Mark 1:2","type":"fulfillment","note":"Applied to John the Baptist as the messenger sent to prepare the way before the Lord."},
+    {"book":"Malachi","chapter":3,"verse":10,"crossReference":"Luke 6:38","type":"parallel","note":"The principle of generous giving and receiving abundant blessings in return."},
+    {"book":"Malachi","chapter":4,"verse":5,"crossReference":"Matthew 17:10-13","type":"fulfillment","note":"Jesus identifies John the Baptist as the Elijah who was to come before the great day."},
+    {"book":"Malachi","chapter":4,"verse":6,"crossReference":"D&C 110:13-16","type":"fulfillment","note":"Elijah's return fulfilled in the Kirtland Temple when he committed the sealing keys to Joseph Smith."}
+  ],
+  "doctrinalTopics": [
+    {"book":"Malachi","chapter":1,"topics":["sacrifice","priesthood","reverence","divine love"]},
+    {"book":"Malachi","chapter":2,"topics":["covenant","priesthood","marriage","accountability"]},
+    {"book":"Malachi","chapter":3,"topics":["tithing","repentance","purification","second coming"]},
+    {"book":"Malachi","chapter":4,"topics":["second coming","elijah","sealing power","restoration"]}
+  ],
+  "historicalContext": [
+    {"book":"Malachi","chapter":1,"era":"Post-exile","approxDate":"c. 430 BC","setting":"Jerusalem, post-Second Temple reconstruction"},
+    {"book":"Malachi","chapter":2,"era":"Post-exile","approxDate":"c. 430 BC","setting":"Jerusalem"},
+    {"book":"Malachi","chapter":3,"era":"Post-exile","approxDate":"c. 430 BC","setting":"Jerusalem"},
+    {"book":"Malachi","chapter":4,"era":"Post-exile","approxDate":"c. 430 BC","setting":"Jerusalem"}
+  ],
+  "literaryGenres": [
+    {"book":"Malachi","chapter":1,"genre":"prophecy","subgenre":"disputation oracle"},
+    {"book":"Malachi","chapter":2,"genre":"prophecy","subgenre":"disputation oracle"},
+    {"book":"Malachi","chapter":3,"genre":"prophecy","subgenre":"disputation oracle"},
+    {"book":"Malachi","chapter":4,"genre":"prophecy","subgenre":"eschatological oracle"}
+  ],
+  "notableVerses": [
+    {"book":"Malachi","chapter":1,"verses":[{"verse":2,"reason":"God's declaration 'I have loved you' and the distinction between Jacob and Esau."},{"verse":11,"reason":"'My name shall be great among the Gentiles'—a universalist prophecy of God's worldwide worship."}]},
+    {"book":"Malachi","chapter":2,"verses":[{"verse":10,"reason":"'Have we not all one father?'—a call to covenant unity and faithfulness."}]},
+    {"book":"Malachi","chapter":3,"verses":[{"verse":1,"reason":"The prophecy of the messenger who will prepare the way before the Lord comes to his temple."},{"verse":10,"reason":"The tithing promise: 'Bring ye all the tithes into the storehouse... and prove me now herewith.'"},{"verse":17,"reason":"'They shall be mine, saith the LORD of hosts, in that day when I make up my jewels.'"}]},
+    {"book":"Malachi","chapter":4,"verses":[{"verse":2,"reason":"'The Sun of righteousness arise with healing in his wings'—a beloved Messianic image."},{"verse":5,"reason":"The promise to send Elijah the prophet before the great and dreadful day of the Lord."},{"verse":6,"reason":"Elijah will turn the hearts of the fathers to the children—foundational to LDS temple and family history work."}]}
+  ]
+}

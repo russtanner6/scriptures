@@ -9344,5 +9344,373 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 3
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 1,
+    "summary": "The beloved and her lover express mutual admiration; she describes herself as dark but comely and asks where he feeds his flock.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 2,
+    "summary": "The beloved is compared to a lily among thorns and the lover to an apple tree; he calls her to come away as winter has passed and spring has come.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 3,
+    "summary": "The beloved searches for her lover by night through the city streets, finds him, and a description of Solomon's royal procession and wedding day follows.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 4,
+    "summary": "The lover praises every feature of the beloved's beauty in extended metaphor, calling her a garden enclosed and a fountain sealed.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 5,
+    "summary": "The beloved delays opening to her lover and he departs; she searches the city and is mistreated by the watchmen, then describes his appearance to the daughters of Jerusalem.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 6,
+    "summary": "The daughters of Jerusalem ask where the beloved's lover has gone; he is found in his garden, and he praises her as beautiful, terrible as an army with banners.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 7,
+    "summary": "The lover describes the beloved's beauty from feet to head, expressing desire; she invites him to go forth into the fields and villages together.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 8,
+    "summary": "The beloved wishes for open affection, declares that love is as strong as death and many waters cannot quench it, and the poem concludes with a final exchange.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 1,
+    "summary": "Moses recounts God's command to leave Horeb, the appointment of judges, the sending of spies, and Israel's fearful rebellion at Kadesh-barnea.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 2,
+    "summary": "Moses reviews the journey through the wilderness, passing Edom, Moab, and Ammon, and the defeat of King Sihon of Heshbon.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 3,
+    "summary": "Moses recounts the defeat of King Og of Bashan, the division of the trans-Jordan land, and God's refusal to let Moses cross the Jordan.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 4,
+    "summary": "Moses exhorts Israel to obey God's statutes, warns against idolatry, designates cities of refuge, and testifies of God's uniqueness.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 5,
+    "summary": "Moses restates the Ten Commandments given at Horeb and recounts the people's fear at hearing God's voice from the fire.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 6,
+    "summary": "Moses delivers the Shema—the command to love God with all heart, soul, and might—and instructs parents to teach God's words diligently.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 7,
+    "summary": "God commands Israel to destroy the Canaanite nations and their idols, affirming Israel's election as a treasured people.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 8,
+    "summary": "Moses warns Israel not to forget God in prosperity, reminding them of the manna and wilderness discipline.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 9,
+    "summary": "Moses recounts Israel's repeated rebellions, including the golden calf, to show that God's favor is not due to their righteousness.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 10,
+    "summary": "God renews the stone tablets, sets apart the Levites, and calls Israel to circumcise their hearts and love the stranger.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 11,
+    "summary": "Moses sets before Israel blessings for obedience and curses for disobedience, commanding them to teach their children.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 12,
+    "summary": "Instructions to worship only at the place God chooses, destroying all Canaanite worship sites and altars.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 13,
+    "summary": "Warnings against false prophets and any who entice to idolatry, with strict penalties to purge evil from Israel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 14,
+    "summary": "Laws distinguishing clean and unclean animals, and instructions for tithing produce and livestock.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 15,
+    "summary": "Laws for the release of debts every seventh year, generosity toward the poor, and the release of Hebrew servants.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 16,
+    "summary": "Instructions for observing Passover, the Feast of Weeks, and the Feast of Tabernacles, and the appointment of judges.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 17,
+    "summary": "Laws for judicial cases, the punishment of idolaters, and regulations for a future king who must study the law.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 18,
+    "summary": "Provisions for the Levitical priests, prohibition of occult practices, and the prophecy of a great Prophet like Moses.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 19,
+    "summary": "Laws establishing cities of refuge for the innocent manslayer, boundary protection, and the requirement of multiple witnesses.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 20,
+    "summary": "Laws of warfare, including exemptions from battle, terms of peace, and the treatment of besieged cities.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 21,
+    "summary": "Laws for unsolved murders, captive women, firstborn inheritance rights, and the punishment of a rebellious son.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 22,
+    "summary": "Laws on lost property, gender distinction in clothing, building safety, and various regulations on sexual morality.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 23,
+    "summary": "Laws about exclusion from the assembly, camp purity, escaped slaves, prohibition of cult prostitution, vows, and gleaning.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 24,
+    "summary": "Laws on divorce, pledges, kidnapping, leprosy, just wages for laborers, and gleaning for the poor.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 25,
+    "summary": "Laws on judicial punishment limits, levirate marriage, honest weights and measures, and the command to remember Amalek.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 26,
+    "summary": "The firstfruits offering ceremony and tithing declaration, culminating in God's affirmation of Israel as his treasured people.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 27,
+    "summary": "Moses commands the writing of the law on stones at Ebal, building an altar, and the pronouncement of twelve curses.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 28,
+    "summary": "Extensive blessings promised for obedience and devastating curses threatened for disobedience, including exile and suffering.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 29,
+    "summary": "Moses renews the covenant in Moab, warning that secret things belong to God but revealed things demand obedience.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 30,
+    "summary": "Promise of restoration after repentance and the climactic call to choose life, love God, and cleave unto him.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 31,
+    "summary": "Moses commissions Joshua, writes the law, commands its periodic reading, and foretells Israel's future apostasy.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 32,
+    "summary": "The Song of Moses: a prophetic poem contrasting God's faithfulness and perfection with Israel's corruption and ingratitude.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 33,
+    "summary": "Moses pronounces individual blessings upon each tribe of Israel, praising God as Israel's eternal refuge and protector.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 34,
+    "summary": "Moses views the promised land from Nebo, dies, and is buried by God; Joshua assumes leadership, and Moses is eulogized.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Malachi",
+    "chapter": 1,
+    "summary": "God affirms his love for Israel over Esau, then rebukes the priests for offering blind, lame, and sick animals as sacrifices while his name is great among the nations.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 39
+  },
+  {
+    "book": "Malachi",
+    "chapter": 2,
+    "summary": "God warns the priests that he will curse their blessings for failing the covenant of Levi, and condemns Judah for treacherous dealing and profaning marriage covenants.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 39
+  },
+  {
+    "book": "Malachi",
+    "chapter": 3,
+    "summary": "The Lord promises to send a messenger to prepare the way, calls Israel to return by paying honest tithes and offerings, and distinguishes between those who serve God and those who do not.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 39
+  },
+  {
+    "book": "Malachi",
+    "chapter": 4,
+    "summary": "Prophesies the burning day of the Lord that will consume the wicked, the rising of the Sun of Righteousness with healing, and the sending of Elijah before the great and dreadful day.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 39
   }
 ]

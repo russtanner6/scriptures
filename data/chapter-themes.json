@@ -14849,5 +14849,603 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 3
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 1,
+    "themes": [
+      "love",
+      "beauty",
+      "longing",
+      "devotion"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 2,
+    "themes": [
+      "love",
+      "springtime",
+      "joy",
+      "companionship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 3,
+    "themes": [
+      "seeking",
+      "love",
+      "anxiety",
+      "royal splendor"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 4,
+    "themes": [
+      "beauty",
+      "purity",
+      "admiration",
+      "intimacy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 5,
+    "themes": [
+      "separation",
+      "longing",
+      "devotion",
+      "suffering"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 6,
+    "themes": [
+      "beauty",
+      "uniqueness",
+      "royalty",
+      "reunion"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 7,
+    "themes": [
+      "admiration",
+      "desire",
+      "love",
+      "mutuality"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 8,
+    "themes": [
+      "love",
+      "commitment",
+      "permanence",
+      "devotion"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 1,
+    "themes": [
+      "remembrance",
+      "rebellion",
+      "leadership",
+      "divine judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 2,
+    "themes": [
+      "divine guidance",
+      "provision",
+      "obedience",
+      "journey"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 3,
+    "themes": [
+      "victory",
+      "divine power",
+      "inheritance",
+      "transition"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 4,
+    "themes": [
+      "obedience",
+      "idolatry",
+      "divine uniqueness",
+      "remembrance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 5,
+    "themes": [
+      "covenant",
+      "commandments",
+      "divine voice",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 6,
+    "themes": [
+      "love of god",
+      "devotion",
+      "teaching",
+      "remembrance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 7,
+    "themes": [
+      "election",
+      "holiness",
+      "separation",
+      "divine faithfulness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 8,
+    "themes": [
+      "humility",
+      "provision",
+      "remembrance",
+      "warning"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 9,
+    "themes": [
+      "rebellion",
+      "golden calf",
+      "intercession",
+      "unworthiness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 10,
+    "themes": [
+      "renewal",
+      "circumcision of heart",
+      "love",
+      "mercy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 11,
+    "themes": [
+      "blessings and curses",
+      "obedience",
+      "teaching",
+      "land"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 12,
+    "themes": [
+      "centralized worship",
+      "separation",
+      "holiness",
+      "offerings"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 13,
+    "themes": [
+      "false prophets",
+      "idolatry",
+      "loyalty",
+      "purging evil"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 14,
+    "themes": [
+      "holiness",
+      "dietary laws",
+      "tithing",
+      "separation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 15,
+    "themes": [
+      "generosity",
+      "release",
+      "compassion",
+      "servitude"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 16,
+    "themes": [
+      "feasts",
+      "justice",
+      "worship",
+      "pilgrimage"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 17,
+    "themes": [
+      "justice",
+      "kingship",
+      "humility",
+      "torah study"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 18,
+    "themes": [
+      "priesthood",
+      "prophecy",
+      "occult prohibition",
+      "messianic hope"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 19,
+    "themes": [
+      "refuge",
+      "justice",
+      "witnesses",
+      "boundaries"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 20,
+    "themes": [
+      "warfare",
+      "faith",
+      "exemptions",
+      "divine protection"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 21,
+    "themes": [
+      "justice",
+      "inheritance",
+      "authority",
+      "atonement"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 22,
+    "themes": [
+      "moral law",
+      "sexual purity",
+      "responsibility",
+      "distinction"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 23,
+    "themes": [
+      "holiness",
+      "camp purity",
+      "vows",
+      "community"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 24,
+    "themes": [
+      "compassion",
+      "justice",
+      "protection of vulnerable",
+      "gleaning"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 25,
+    "themes": [
+      "justice",
+      "levirate marriage",
+      "honesty",
+      "remembrance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 26,
+    "themes": [
+      "firstfruits",
+      "gratitude",
+      "covenant affirmation",
+      "worship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 27,
+    "themes": [
+      "covenant ceremony",
+      "curses",
+      "obedience",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 28,
+    "themes": [
+      "blessings",
+      "curses",
+      "obedience",
+      "consequences"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 29,
+    "themes": [
+      "covenant renewal",
+      "warning",
+      "hidden things",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 30,
+    "themes": [
+      "restoration",
+      "repentance",
+      "agency",
+      "choose life"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 31,
+    "themes": [
+      "transition",
+      "courage",
+      "apostasy foretold",
+      "law"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 32,
+    "themes": [
+      "song of moses",
+      "divine faithfulness",
+      "judgment",
+      "ingratitude"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 33,
+    "themes": [
+      "blessing",
+      "tribal destiny",
+      "divine refuge",
+      "protection"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 34,
+    "themes": [
+      "death of moses",
+      "succession",
+      "mourning",
+      "legacy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Malachi",
+    "chapter": 1,
+    "themes": [
+      "divine love",
+      "priesthood corruption",
+      "sacrifice",
+      "reverence"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 39
+  },
+  {
+    "book": "Malachi",
+    "chapter": 2,
+    "themes": [
+      "covenant faithfulness",
+      "priesthood accountability",
+      "marriage",
+      "treachery"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 39
+  },
+  {
+    "book": "Malachi",
+    "chapter": 3,
+    "themes": [
+      "tithing",
+      "repentance",
+      "purification",
+      "divine justice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 39
+  },
+  {
+    "book": "Malachi",
+    "chapter": 4,
+    "themes": [
+      "day of the lord",
+      "healing",
+      "elijah",
+      "restoration"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 39
   }
 ]

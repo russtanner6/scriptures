@@ -1,0 +1,93 @@
+{
+  "bookName": "Song of Solomon",
+  "bookId": 22,
+  "sentiment": [
+    {"book":"Song of Solomon","chapter":1,"exaltation":3,"peace":8,"admonition":0,"contrition":0,"dominant":"peace","rationale":"An intimate opening of mutual admiration and longing between the beloved and her lover, evoking tender devotion and beauty."},
+    {"book":"Song of Solomon","chapter":2,"exaltation":5,"peace":9,"admonition":0,"contrition":0,"dominant":"peace","rationale":"Celebrates the joy of love with vivid imagery of springtime, the beloved's beauty, and the delight of companionship."},
+    {"book":"Song of Solomon","chapter":3,"exaltation":4,"peace":6,"admonition":0,"contrition":2,"dominant":"peace","rationale":"The beloved searches anxiously for her lover at night, finding him and refusing to let go, culminating in Solomon's royal procession."},
+    {"book":"Song of Solomon","chapter":4,"exaltation":7,"peace":8,"admonition":0,"contrition":0,"dominant":"peace","rationale":"An extended praise of the beloved's beauty, likened to a garden enclosed and a fountain sealed—imagery of purity and devotion."},
+    {"book":"Song of Solomon","chapter":5,"exaltation":5,"peace":5,"admonition":0,"contrition":3,"dominant":"peace","rationale":"The beloved misses her lover's knock and searches the city for him, suffering mistreatment, yet passionately describes his beauty."},
+    {"book":"Song of Solomon","chapter":6,"exaltation":7,"peace":7,"admonition":0,"contrition":0,"dominant":"peace","rationale":"The lover is found and praised with royal imagery; the beloved is described as uniquely beautiful and awe-inspiring."},
+    {"book":"Song of Solomon","chapter":7,"exaltation":6,"peace":8,"admonition":0,"contrition":0,"dominant":"peace","rationale":"Continued admiration of the beloved's form and beauty, with expressions of mutual desire and the sweetness of love."},
+    {"book":"Song of Solomon","chapter":8,"exaltation":5,"peace":7,"admonition":1,"contrition":0,"dominant":"peace","rationale":"Concludes with declarations that love is as strong as death, many waters cannot quench it, and a final invitation to the beloved."}
+  ],
+  "speakers": [
+    {"book":"Song of Solomon","chapter":1,"startVerse":5,"endVerse":7,"speaker":"Solomon"},
+    {"book":"Song of Solomon","chapter":2,"startVerse":1,"endVerse":3,"speaker":"Solomon"},
+    {"book":"Song of Solomon","chapter":2,"startVerse":10,"endVerse":14,"speaker":"Solomon"},
+    {"book":"Song of Solomon","chapter":3,"startVerse":6,"endVerse":11,"speaker":"Solomon"},
+    {"book":"Song of Solomon","chapter":4,"startVerse":1,"endVerse":16,"speaker":"Solomon"},
+    {"book":"Song of Solomon","chapter":5,"startVerse":1,"endVerse":1,"speaker":"Solomon"},
+    {"book":"Song of Solomon","chapter":6,"startVerse":4,"endVerse":10,"speaker":"Solomon"},
+    {"book":"Song of Solomon","chapter":7,"startVerse":1,"endVerse":9,"speaker":"Solomon"},
+    {"book":"Song of Solomon","chapter":8,"startVerse":13,"endVerse":13,"speaker":"Solomon"}
+  ],
+  "missingCharacters": [],
+  "summaries": [
+    {"book":"Song of Solomon","chapter":1,"summary":"The beloved and her lover express mutual admiration; she describes herself as dark but comely and asks where he feeds his flock."},
+    {"book":"Song of Solomon","chapter":2,"summary":"The beloved is compared to a lily among thorns and the lover to an apple tree; he calls her to come away as winter has passed and spring has come."},
+    {"book":"Song of Solomon","chapter":3,"summary":"The beloved searches for her lover by night through the city streets, finds him, and a description of Solomon's royal procession and wedding day follows."},
+    {"book":"Song of Solomon","chapter":4,"summary":"The lover praises every feature of the beloved's beauty in extended metaphor, calling her a garden enclosed and a fountain sealed."},
+    {"book":"Song of Solomon","chapter":5,"summary":"The beloved delays opening to her lover and he departs; she searches the city and is mistreated by the watchmen, then describes his appearance to the daughters of Jerusalem."},
+    {"book":"Song of Solomon","chapter":6,"summary":"The daughters of Jerusalem ask where the beloved's lover has gone; he is found in his garden, and he praises her as beautiful, terrible as an army with banners."},
+    {"book":"Song of Solomon","chapter":7,"summary":"The lover describes the beloved's beauty from feet to head, expressing desire; she invites him to go forth into the fields and villages together."},
+    {"book":"Song of Solomon","chapter":8,"summary":"The beloved wishes for open affection, declares that love is as strong as death and many waters cannot quench it, and the poem concludes with a final exchange."}
+  ],
+  "themes": [
+    {"book":"Song of Solomon","chapter":1,"themes":["love","beauty","longing","devotion"]},
+    {"book":"Song of Solomon","chapter":2,"themes":["love","springtime","joy","companionship"]},
+    {"book":"Song of Solomon","chapter":3,"themes":["seeking","love","anxiety","royal splendor"]},
+    {"book":"Song of Solomon","chapter":4,"themes":["beauty","purity","admiration","intimacy"]},
+    {"book":"Song of Solomon","chapter":5,"themes":["separation","longing","devotion","suffering"]},
+    {"book":"Song of Solomon","chapter":6,"themes":["beauty","uniqueness","royalty","reunion"]},
+    {"book":"Song of Solomon","chapter":7,"themes":["admiration","desire","love","mutuality"]},
+    {"book":"Song of Solomon","chapter":8,"themes":["love","commitment","permanence","devotion"]}
+  ],
+  "crossReferences": [
+    {"book":"Song of Solomon","chapter":2,"verse":1,"crossReference":"Isaiah 35:1","type":"parallel","note":"The image of the rose and the lily echoes Isaiah's vision of the desert blossoming."},
+    {"book":"Song of Solomon","chapter":2,"verse":4,"crossReference":"Ephesians 5:25","type":"parallel","note":"The banner of love over the beloved parallels Christ's love for the church."},
+    {"book":"Song of Solomon","chapter":4,"verse":12,"crossReference":"Proverbs 5:15-18","type":"parallel","note":"The garden enclosed and fountain sealed parallel the imagery of marital fidelity in Proverbs."},
+    {"book":"Song of Solomon","chapter":8,"verse":6,"crossReference":"1 Corinthians 13:7-8","type":"parallel","note":"Love as strong as death and unquenchable by many waters parallels the enduring nature of charity."},
+    {"book":"Song of Solomon","chapter":8,"verse":7,"crossReference":"Romans 8:35-39","type":"parallel","note":"Nothing can overcome love, echoing Paul's declaration that nothing can separate us from the love of God."}
+  ],
+  "doctrinalTopics": [
+    {"book":"Song of Solomon","chapter":1,"topics":["love","devotion","beauty"]},
+    {"book":"Song of Solomon","chapter":2,"topics":["love","joy","covenant"]},
+    {"book":"Song of Solomon","chapter":3,"topics":["seeking","faithfulness","covenant"]},
+    {"book":"Song of Solomon","chapter":4,"topics":["purity","holiness","devotion"]},
+    {"book":"Song of Solomon","chapter":5,"topics":["perseverance","faithfulness","love"]},
+    {"book":"Song of Solomon","chapter":6,"topics":["beauty","glory","devotion"]},
+    {"book":"Song of Solomon","chapter":7,"topics":["love","unity","covenant"]},
+    {"book":"Song of Solomon","chapter":8,"topics":["love","commitment","eternal nature of love"]}
+  ],
+  "historicalContext": [
+    {"book":"Song of Solomon","chapter":1,"era":"United Monarchy","approxDate":"c. 950 BC","setting":"Jerusalem / Royal Court"},
+    {"book":"Song of Solomon","chapter":2,"era":"United Monarchy","approxDate":"c. 950 BC","setting":"Jerusalem / Countryside"},
+    {"book":"Song of Solomon","chapter":3,"era":"United Monarchy","approxDate":"c. 950 BC","setting":"Jerusalem"},
+    {"book":"Song of Solomon","chapter":4,"era":"United Monarchy","approxDate":"c. 950 BC","setting":"Jerusalem / Lebanon"},
+    {"book":"Song of Solomon","chapter":5,"era":"United Monarchy","approxDate":"c. 950 BC","setting":"Jerusalem"},
+    {"book":"Song of Solomon","chapter":6,"era":"United Monarchy","approxDate":"c. 950 BC","setting":"Jerusalem / Gardens"},
+    {"book":"Song of Solomon","chapter":7,"era":"United Monarchy","approxDate":"c. 950 BC","setting":"Jerusalem / Countryside"},
+    {"book":"Song of Solomon","chapter":8,"era":"United Monarchy","approxDate":"c. 950 BC","setting":"Jerusalem / Countryside"}
+  ],
+  "literaryGenres": [
+    {"book":"Song of Solomon","chapter":1,"genre":"poetry","subgenre":"love poetry"},
+    {"book":"Song of Solomon","chapter":2,"genre":"poetry","subgenre":"love poetry"},
+    {"book":"Song of Solomon","chapter":3,"genre":"poetry","subgenre":"love poetry"},
+    {"book":"Song of Solomon","chapter":4,"genre":"poetry","subgenre":"love poetry"},
+    {"book":"Song of Solomon","chapter":5,"genre":"poetry","subgenre":"love poetry"},
+    {"book":"Song of Solomon","chapter":6,"genre":"poetry","subgenre":"love poetry"},
+    {"book":"Song of Solomon","chapter":7,"genre":"poetry","subgenre":"love poetry"},
+    {"book":"Song of Solomon","chapter":8,"genre":"poetry","subgenre":"love poetry"}
+  ],
+  "notableVerses": [
+    {"book":"Song of Solomon","chapter":1,"verses":[{"verse":2,"reason":"The opening plea for the kisses of his mouth—sets the tone for the entire poem."}]},
+    {"book":"Song of Solomon","chapter":2,"verses":[{"verse":1,"reason":"'I am the rose of Sharon, and the lily of the valleys'—one of the most quoted verses in the book."},{"verse":4,"reason":"'His banner over me was love'—a widely memorized declaration of divine affection."}]},
+    {"book":"Song of Solomon","chapter":3,"verses":[{"verse":4,"reason":"Finding the beloved and refusing to let go—an image of devoted seeking and holding fast."}]},
+    {"book":"Song of Solomon","chapter":4,"verses":[{"verse":7,"reason":"'Thou art all fair, my love; there is no spot in thee'—a declaration of complete beauty and acceptance."}]},
+    {"book":"Song of Solomon","chapter":5,"verses":[{"verse":16,"reason":"'He is altogether lovely'—a comprehensive declaration of the beloved's perfection."}]},
+    {"book":"Song of Solomon","chapter":6,"verses":[{"verse":3,"reason":"'I am my beloved's, and my beloved is mine'—the quintessential statement of mutual belonging."}]},
+    {"book":"Song of Solomon","chapter":7,"verses":[]},
+    {"book":"Song of Solomon","chapter":8,"verses":[{"verse":6,"reason":"'Love is strong as death … many waters cannot quench love'—the most theologically significant verse in the book."},{"verse":7,"reason":"'If a man would give all the substance of his house for love, it would utterly be contemned'—love cannot be purchased."}]}
+  ]
+}

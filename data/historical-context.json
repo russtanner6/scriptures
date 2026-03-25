@@ -11572,5 +11572,465 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 3
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 1,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem / Royal Court",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 2,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem / Countryside",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 3,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 4,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem / Lebanon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 5,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 6,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem / Gardens",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 7,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem / Countryside",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 8,
+    "era": "United Monarchy",
+    "approxDate": "c. 950 BC",
+    "setting": "Jerusalem / Countryside",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 22
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 1,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 2,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 3,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 4,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 5,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 6,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 7,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 8,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 9,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 10,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 11,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 12,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 13,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 14,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 15,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 16,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 17,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 18,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 19,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 20,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 21,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 22,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 23,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 24,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 25,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 26,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 27,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 28,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 29,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 30,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 31,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 32,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 33,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Plains of Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 34,
+    "era": "Exodus / Wilderness",
+    "approxDate": "c. 1406 BC",
+    "setting": "Mount Nebo, Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 5
+  },
+  {
+    "book": "Malachi",
+    "chapter": 1,
+    "era": "Post-exile",
+    "approxDate": "c. 430 BC",
+    "setting": "Jerusalem, post-Second Temple reconstruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 39
+  },
+  {
+    "book": "Malachi",
+    "chapter": 2,
+    "era": "Post-exile",
+    "approxDate": "c. 430 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 39
+  },
+  {
+    "book": "Malachi",
+    "chapter": 3,
+    "era": "Post-exile",
+    "approxDate": "c. 430 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 39
+  },
+  {
+    "book": "Malachi",
+    "chapter": 4,
+    "era": "Post-exile",
+    "approxDate": "c. 430 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 39
   }
 ]
