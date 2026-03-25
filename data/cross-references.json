@@ -5333,5 +5333,137 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 23
+  },
+  {
+    "book": "Exodus",
+    "chapter": 3,
+    "verse": 6,
+    "crossReference": "Matthew 22:32",
+    "type": "quotation",
+    "note": "Jesus quotes this verse to prove the resurrection, identifying God as the God of the living.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 3,
+    "verse": 14,
+    "crossReference": "John 8:58",
+    "type": "allusion",
+    "note": "Jesus echoes the divine I AM when He declares 'Before Abraham was, I am.'",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 12,
+    "verse": 46,
+    "crossReference": "John 19:36",
+    "type": "fulfillment",
+    "note": "The Passover lamb's unbroken bones foreshadow that none of Christ's bones were broken at the crucifixion.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 16,
+    "verse": 4,
+    "crossReference": "John 6:31-35",
+    "type": "parallel",
+    "note": "Jesus identifies Himself as the true bread from heaven, fulfilling the type of manna.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 17,
+    "verse": 6,
+    "crossReference": "1 Corinthians 10:4",
+    "type": "parallel",
+    "note": "Paul identifies the rock that gave water as Christ: 'that Rock was Christ.'",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 19,
+    "verse": 6,
+    "crossReference": "1 Peter 2:9",
+    "type": "parallel",
+    "note": "Peter applies the 'kingdom of priests and holy nation' language to the church.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 20,
+    "verse": 12,
+    "crossReference": "Ephesians 6:2-3",
+    "type": "quotation",
+    "note": "Paul quotes the fifth commandment as the first commandment with a promise.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 24,
+    "verse": 8,
+    "crossReference": "Hebrews 9:19-20",
+    "type": "parallel",
+    "note": "The blood of the covenant at Sinai is a type of the blood of the new covenant in Christ.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 25,
+    "verse": 40,
+    "crossReference": "Hebrews 8:5",
+    "type": "quotation",
+    "note": "The author of Hebrews quotes the command to make all things according to the heavenly pattern.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 32,
+    "verse": 32,
+    "crossReference": "Romans 9:3",
+    "type": "allusion",
+    "note": "Paul echoes Moses' willingness to be blotted out for the sake of his people.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 33,
+    "verse": 20,
+    "crossReference": "John 1:18",
+    "type": "parallel",
+    "note": "John affirms that no man has seen God but that the Son has revealed Him.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 34,
+    "verse": 6,
+    "crossReference": "Psalm 103:8",
+    "type": "parallel",
+    "note": "The psalmist echoes God's self-proclaimed character: merciful, gracious, and slow to anger.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
   }
 ]

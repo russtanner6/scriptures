@@ -20745,5 +20745,23 @@
       "OT"
     ],
     "tier": 4
+  },
+  {
+    "id": "shiphrah",
+    "name": "Shiphrah",
+    "description": "A Hebrew midwife who feared God and defied Pharaoh's order to kill Hebrew newborn sons.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
+  },
+  {
+    "id": "puah",
+    "name": "Puah",
+    "description": "A Hebrew midwife who feared God and refused Pharaoh's command to kill Hebrew male infants.",
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
   }
 ]

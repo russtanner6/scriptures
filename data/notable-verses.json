@@ -14665,5 +14665,496 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 23
+  },
+  {
+    "book": "Exodus",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "The midwives feared God and did not obey Pharaoh's command to kill the male children."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 24,
+        "reason": "God heard their groaning and remembered His covenant with Abraham, Isaac, and Jacob."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "'Put off thy shoes from off thy feet, for the place whereon thou standest is holy ground.'"
+      },
+      {
+        "verse": 14,
+        "reason": "God reveals His name: 'I AM THAT I AM.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "God promises to be with Moses' mouth and teach him what to say."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 5,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "God declares He appeared to Abraham, Isaac, and Jacob as God Almighty but by His name JEHOVAH was not known to them."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 7,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 8,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 16,
+        "reason": "God declares He raised up Pharaoh to show His power and declare His name in all the earth."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 10,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 11,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 13,
+        "reason": "'When I see the blood, I will pass over you'—the foundational Passover promise."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 21,
+        "reason": "The Lord went before them in a pillar of cloud by day and a pillar of fire by night."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 13,
+        "reason": "'Fear ye not, stand still, and see the salvation of the LORD.'"
+      },
+      {
+        "verse": 14,
+        "reason": "'The LORD shall fight for you, and ye shall hold your peace.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 15,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "'The LORD is my strength and song, and he is become my salvation.'"
+      },
+      {
+        "verse": 11,
+        "reason": "'Who is like unto thee, O LORD, among the gods?'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "God promises to rain bread from heaven to prove the people."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 17,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "God commands Moses to strike the rock and water comes forth for the people."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 18,
+    "verses": [
+      {
+        "verse": 21,
+        "reason": "Jethro's counsel to select able men who fear God for rulers."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 19,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "'If ye will obey my voice indeed, and keep my covenant, then ye shall be a peculiar treasure unto me.'"
+      },
+      {
+        "verse": 6,
+        "reason": "'Ye shall be unto me a kingdom of priests, and an holy nation.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 20,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "'Thou shalt have no other gods before me.'"
+      },
+      {
+        "verse": 12,
+        "reason": "'Honour thy father and thy mother.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 21,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 22,
+    "verses": [
+      {
+        "verse": 21,
+        "reason": "A command not to vex or oppress a stranger, for Israel were strangers in Egypt."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 23,
+    "verses": [
+      {
+        "verse": 20,
+        "reason": "God promises to send an angel before Israel to keep them in the way."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 24,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "The elders of Israel beheld God, and under His feet was a pavement of sapphire."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 25,
+    "verses": [
+      {
+        "verse": 8,
+        "reason": "'Let them make me a sanctuary; that I may dwell among them.'"
+      },
+      {
+        "verse": 22,
+        "reason": "God promises to commune with Moses from above the mercy seat."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 26,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 27,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 28,
+    "verses": [
+      {
+        "verse": 36,
+        "reason": "A golden plate engraved HOLINESS TO THE LORD is placed on Aaron's forehead."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 29,
+    "verses": [
+      {
+        "verse": 45,
+        "reason": "'I will dwell among the children of Israel, and will be their God.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 30,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 31,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "Bezaleel is filled with the spirit of God in wisdom, understanding, and knowledge."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 32,
+    "verses": [
+      {
+        "verse": 32,
+        "reason": "Moses offers to be blotted out of God's book if Israel is not forgiven."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 33,
+    "verses": [
+      {
+        "verse": 11,
+        "reason": "'The LORD spake unto Moses face to face, as a man speaketh unto his friend.'"
+      },
+      {
+        "verse": 14,
+        "reason": "'My presence shall go with thee, and I will give thee rest.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 34,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "God proclaims Himself merciful and gracious, longsuffering, and abundant in goodness and truth."
+      },
+      {
+        "verse": 7,
+        "reason": "Keeping mercy for thousands, forgiving iniquity and transgression and sin."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 35,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 36,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 37,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 38,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 39,
+    "verses": [
+      {
+        "verse": 43,
+        "reason": "Moses blessed the people after seeing all the work done as the Lord commanded."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 40,
+    "verses": [
+      {
+        "verse": 34,
+        "reason": "The glory of the LORD filled the tabernacle."
+      },
+      {
+        "verse": 38,
+        "reason": "The cloud of the LORD was upon the tabernacle by day and fire by night throughout all their journeys."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
   }
 ]

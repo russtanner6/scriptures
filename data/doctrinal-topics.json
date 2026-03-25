@@ -12743,5 +12743,492 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 23
+  },
+  {
+    "book": "Exodus",
+    "chapter": 1,
+    "topics": [
+      "providence",
+      "faith",
+      "courage"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 2,
+    "topics": [
+      "providence",
+      "deliverance",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 3,
+    "topics": [
+      "revelation",
+      "divine calling",
+      "holiness",
+      "godhead"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 4,
+    "topics": [
+      "faith",
+      "obedience",
+      "priesthood",
+      "signs"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 5,
+    "topics": [
+      "opposition",
+      "faith",
+      "agency"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 6,
+    "topics": [
+      "covenant",
+      "divine name",
+      "redemption"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 7,
+    "topics": [
+      "judgment",
+      "sovereignty",
+      "agency"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 8,
+    "topics": [
+      "judgment",
+      "repentance",
+      "agency"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 9,
+    "topics": [
+      "judgment",
+      "mercy",
+      "sovereignty"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 10,
+    "topics": [
+      "judgment",
+      "agency",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 11,
+    "topics": [
+      "judgment",
+      "justice",
+      "mercy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 12,
+    "topics": [
+      "passover",
+      "atonement",
+      "deliverance",
+      "ordinance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 13,
+    "topics": [
+      "consecration",
+      "remembrance",
+      "guidance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 14,
+    "topics": [
+      "deliverance",
+      "faith",
+      "miracles"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 15,
+    "topics": [
+      "praise",
+      "worship",
+      "healing"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 16,
+    "topics": [
+      "provision",
+      "obedience",
+      "sabbath"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 17,
+    "topics": [
+      "faith",
+      "provision",
+      "priesthood"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 18,
+    "topics": [
+      "wisdom",
+      "stewardship",
+      "delegation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 19,
+    "topics": [
+      "covenant",
+      "priesthood",
+      "holiness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 20,
+    "topics": [
+      "commandments",
+      "worship",
+      "obedience",
+      "reverence"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 21,
+    "topics": [
+      "justice",
+      "law",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 22,
+    "topics": [
+      "restitution",
+      "charity",
+      "moral law"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 23,
+    "topics": [
+      "justice",
+      "sabbath",
+      "feasts",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 24,
+    "topics": [
+      "covenant",
+      "atonement",
+      "theophany"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 25,
+    "topics": [
+      "temple",
+      "offering",
+      "presence of God"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 26,
+    "topics": [
+      "temple",
+      "holiness",
+      "sacred space"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 27,
+    "topics": [
+      "sacrifice",
+      "light",
+      "temple"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 28,
+    "topics": [
+      "priesthood",
+      "holiness",
+      "intercession"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 29,
+    "topics": [
+      "consecration",
+      "atonement",
+      "priesthood"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 30,
+    "topics": [
+      "atonement",
+      "anointing",
+      "prayer"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 31,
+    "topics": [
+      "spiritual gifts",
+      "sabbath",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 32,
+    "topics": [
+      "apostasy",
+      "repentance",
+      "intercession",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 33,
+    "topics": [
+      "grace",
+      "divine presence",
+      "revelation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 34,
+    "topics": [
+      "mercy",
+      "covenant",
+      "commandments",
+      "glory"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 35,
+    "topics": [
+      "willing offering",
+      "sabbath",
+      "service"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 36,
+    "topics": [
+      "generosity",
+      "service",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 37,
+    "topics": [
+      "temple",
+      "sacred objects",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 38,
+    "topics": [
+      "sacrifice",
+      "accountability",
+      "stewardship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 39,
+    "topics": [
+      "priesthood",
+      "obedience",
+      "completion"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 40,
+    "topics": [
+      "temple",
+      "divine presence",
+      "consecration"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
   }
 ]

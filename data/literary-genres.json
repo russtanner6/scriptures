@@ -9172,5 +9172,347 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 23
+  },
+  {
+    "book": "Exodus",
+    "chapter": 1,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 2,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 3,
+    "genre": "narrative",
+    "subgenre": "theophany",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 4,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 5,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 6,
+    "genre": "narrative",
+    "subgenre": "genealogy",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 7,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 8,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 9,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 10,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 11,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 12,
+    "genre": "narrative",
+    "subgenre": "liturgical instruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 13,
+    "genre": "narrative",
+    "subgenre": "liturgical instruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 14,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 15,
+    "genre": "poetry",
+    "subgenre": "victory hymn",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 16,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 17,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 18,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 19,
+    "genre": "narrative",
+    "subgenre": "theophany",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 20,
+    "genre": "law",
+    "subgenre": "apodictic law",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 21,
+    "genre": "law",
+    "subgenre": "casuistic law",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 22,
+    "genre": "law",
+    "subgenre": "casuistic law",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 23,
+    "genre": "law",
+    "subgenre": "mixed",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 24,
+    "genre": "narrative",
+    "subgenre": "covenant ceremony",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 25,
+    "genre": "law",
+    "subgenre": "ritual instruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 26,
+    "genre": "law",
+    "subgenre": "ritual instruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 27,
+    "genre": "law",
+    "subgenre": "ritual instruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 28,
+    "genre": "law",
+    "subgenre": "ritual instruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 29,
+    "genre": "law",
+    "subgenre": "ritual instruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 30,
+    "genre": "law",
+    "subgenre": "ritual instruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 31,
+    "genre": "narrative",
+    "subgenre": "divine instruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 32,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 33,
+    "genre": "narrative",
+    "subgenre": "theophany",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 34,
+    "genre": "narrative",
+    "subgenre": "covenant renewal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 35,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 36,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 37,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 38,
+    "genre": "narrative",
+    "subgenre": "inventory",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 39,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 40,
+    "genre": "narrative",
+    "subgenre": "theophany",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
   }
 ]

@@ -10402,5 +10402,405 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 23
+  },
+  {
+    "book": "Exodus",
+    "chapter": 1,
+    "era": "Egyptian Bondage",
+    "approxDate": "c. 1500-1446 BC",
+    "setting": "Egypt, land of Goshen",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 2,
+    "era": "Egyptian Bondage",
+    "approxDate": "c. 1526-1486 BC",
+    "setting": "Egypt and Midian",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 3,
+    "era": "Egyptian Bondage",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Horeb (Sinai), Midian",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 4,
+    "era": "Egyptian Bondage",
+    "approxDate": "c. 1446 BC",
+    "setting": "Midian to Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 5,
+    "era": "Egyptian Bondage",
+    "approxDate": "c. 1446 BC",
+    "setting": "Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 6,
+    "era": "Egyptian Bondage",
+    "approxDate": "c. 1446 BC",
+    "setting": "Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 7,
+    "era": "Egyptian Bondage",
+    "approxDate": "c. 1446 BC",
+    "setting": "Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 8,
+    "era": "Egyptian Bondage",
+    "approxDate": "c. 1446 BC",
+    "setting": "Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 9,
+    "era": "Egyptian Bondage",
+    "approxDate": "c. 1446 BC",
+    "setting": "Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 10,
+    "era": "Egyptian Bondage",
+    "approxDate": "c. 1446 BC",
+    "setting": "Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 11,
+    "era": "Egyptian Bondage",
+    "approxDate": "c. 1446 BC",
+    "setting": "Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 12,
+    "era": "The Exodus",
+    "approxDate": "c. 1446 BC",
+    "setting": "Egypt to Succoth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 13,
+    "era": "The Exodus",
+    "approxDate": "c. 1446 BC",
+    "setting": "Succoth to Etham",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 14,
+    "era": "The Exodus",
+    "approxDate": "c. 1446 BC",
+    "setting": "Red Sea",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 15,
+    "era": "Wilderness Wanderings",
+    "approxDate": "c. 1446 BC",
+    "setting": "Red Sea shore to Marah and Elim",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 16,
+    "era": "Wilderness Wanderings",
+    "approxDate": "c. 1446 BC",
+    "setting": "Wilderness of Sin",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 17,
+    "era": "Wilderness Wanderings",
+    "approxDate": "c. 1446 BC",
+    "setting": "Rephidim",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 18,
+    "era": "Wilderness Wanderings",
+    "approxDate": "c. 1446 BC",
+    "setting": "Wilderness near Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 19,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 20,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 21,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 22,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 23,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 24,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 25,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 26,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 27,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 28,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 29,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 30,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 31,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 32,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai and camp below",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 33,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai, tent of meeting",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 34,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1446 BC",
+    "setting": "Mount Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 35,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1445 BC",
+    "setting": "Camp at Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 36,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1445 BC",
+    "setting": "Camp at Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 37,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1445 BC",
+    "setting": "Camp at Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 38,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1445 BC",
+    "setting": "Camp at Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 39,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1445 BC",
+    "setting": "Camp at Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 40,
+    "era": "Sinai Covenant",
+    "approxDate": "c. 1445 BC",
+    "setting": "Camp at Sinai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
   }
 ]

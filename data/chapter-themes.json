@@ -13328,5 +13328,525 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 23
+  },
+  {
+    "book": "Exodus",
+    "chapter": 1,
+    "themes": [
+      "oppression",
+      "faith",
+      "providence",
+      "courage"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 2,
+    "themes": [
+      "providence",
+      "identity",
+      "exile",
+      "divine compassion"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 3,
+    "themes": [
+      "divine calling",
+      "revelation",
+      "holiness",
+      "deliverance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 4,
+    "themes": [
+      "reluctance",
+      "divine power",
+      "signs",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 5,
+    "themes": [
+      "oppression",
+      "discouragement",
+      "opposition",
+      "faith tested"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 6,
+    "themes": [
+      "covenant",
+      "divine name",
+      "identity",
+      "recommission"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 7,
+    "themes": [
+      "judgment",
+      "hardened hearts",
+      "divine power",
+      "confrontation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 8,
+    "themes": [
+      "plagues",
+      "bargaining",
+      "hardness of heart",
+      "separation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 9,
+    "themes": [
+      "judgment",
+      "mercy",
+      "divine protection",
+      "sovereignty"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 10,
+    "themes": [
+      "plagues",
+      "stubbornness",
+      "darkness",
+      "warning"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 11,
+    "themes": [
+      "final warning",
+      "death",
+      "favor",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 12,
+    "themes": [
+      "passover",
+      "deliverance",
+      "blood",
+      "remembrance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 13,
+    "themes": [
+      "consecration",
+      "remembrance",
+      "divine guidance",
+      "firstborn"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 14,
+    "themes": [
+      "deliverance",
+      "faith",
+      "divine power",
+      "destruction of enemies"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 15,
+    "themes": [
+      "praise",
+      "triumph",
+      "worship",
+      "testing"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 16,
+    "themes": [
+      "provision",
+      "murmuring",
+      "obedience",
+      "sabbath"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 17,
+    "themes": [
+      "provision",
+      "warfare",
+      "intercession",
+      "faith"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 18,
+    "themes": [
+      "counsel",
+      "delegation",
+      "wisdom",
+      "governance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 19,
+    "themes": [
+      "covenant",
+      "holiness",
+      "theophany",
+      "priesthood"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 20,
+    "themes": [
+      "commandments",
+      "law",
+      "reverence",
+      "worship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 21,
+    "themes": [
+      "justice",
+      "law",
+      "servitude",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 22,
+    "themes": [
+      "restitution",
+      "protection",
+      "moral law",
+      "compassion"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 23,
+    "themes": [
+      "justice",
+      "sabbath",
+      "feasts",
+      "divine guidance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 24,
+    "themes": [
+      "covenant ratification",
+      "theophany",
+      "blood",
+      "glory"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 25,
+    "themes": [
+      "tabernacle",
+      "offering",
+      "presence of God",
+      "sacred design"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 26,
+    "themes": [
+      "tabernacle",
+      "holiness",
+      "sacred space",
+      "craftsmanship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 27,
+    "themes": [
+      "altar",
+      "sacrifice",
+      "light",
+      "tabernacle"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 28,
+    "themes": [
+      "priesthood",
+      "garments",
+      "holiness",
+      "intercession"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 29,
+    "themes": [
+      "consecration",
+      "sacrifice",
+      "atonement",
+      "divine presence"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 30,
+    "themes": [
+      "incense",
+      "atonement",
+      "anointing",
+      "holiness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 31,
+    "themes": [
+      "spiritual gifts",
+      "craftsmanship",
+      "sabbath",
+      "covenant sign"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 32,
+    "themes": [
+      "apostasy",
+      "idolatry",
+      "intercession",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 33,
+    "themes": [
+      "divine presence",
+      "grace",
+      "intercession",
+      "glory"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 34,
+    "themes": [
+      "covenant renewal",
+      "mercy",
+      "divine character",
+      "glory"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 35,
+    "themes": [
+      "willing offering",
+      "sabbath",
+      "community",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 36,
+    "themes": [
+      "generosity",
+      "craftsmanship",
+      "abundance",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 37,
+    "themes": [
+      "sacred objects",
+      "craftsmanship",
+      "obedience",
+      "tabernacle"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 38,
+    "themes": [
+      "altar",
+      "accountability",
+      "offering",
+      "tabernacle"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 39,
+    "themes": [
+      "obedience",
+      "completion",
+      "priestly garments",
+      "blessing"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 40,
+    "themes": [
+      "dedication",
+      "glory of God",
+      "divine presence",
+      "fulfillment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
   }
 ]

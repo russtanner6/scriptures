@@ -8408,5 +8408,325 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 23
+  },
+  {
+    "book": "Exodus",
+    "chapter": 1,
+    "summary": "The children of Israel multiply greatly in Egypt. A new Pharaoh enslaves them with harsh labor. Hebrew midwives Shiphrah and Puah defy his order to kill male babies.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 2,
+    "summary": "Moses is born, hidden in a basket, and raised in Pharaoh's court. He kills an Egyptian, flees to Midian, marries Zipporah, and God hears Israel's groaning.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 3,
+    "summary": "God appears to Moses in a burning bush on Horeb, reveals His name I AM THAT I AM, and commissions him to deliver Israel from Egypt.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 4,
+    "summary": "God gives Moses three signs, appoints Aaron as his spokesman, and sends them to Egypt. Zipporah circumcises their son on the journey.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 5,
+    "summary": "Moses and Aaron ask Pharaoh to let Israel go, but Pharaoh increases the workload by requiring them to gather their own straw for bricks.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 6,
+    "summary": "God reaffirms His covenant with Israel, declaring His name Jehovah, and recommissions Moses and Aaron. The genealogies of Reuben, Simeon, and Levi are given.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 7,
+    "summary": "Moses and Aaron confront Pharaoh. Aaron's rod becomes a serpent. The first plague turns the waters of Egypt to blood.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 8,
+    "summary": "The plagues of frogs, lice, and flies strike Egypt. Pharaoh bargains with Moses but repeatedly hardens his heart.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 9,
+    "summary": "The plagues of murrain on livestock, boils, and devastating hail fall on Egypt, while the land of Goshen is spared.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 10,
+    "summary": "Plagues of locusts and thick darkness come upon Egypt. Pharaoh threatens Moses and refuses to let all of Israel depart.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 11,
+    "summary": "Moses announces the final plague: at midnight the firstborn of Egypt will die. Israel is given favor in the sight of the Egyptians.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 12,
+    "summary": "God institutes the Passover. The destroyer kills Egypt's firstborn. Israel is thrust out of Egypt after 430 years with great substance.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 13,
+    "summary": "God commands the sanctification of the firstborn and the feast of unleavened bread. He leads Israel by a pillar of cloud by day and fire by night.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 14,
+    "summary": "Pharaoh pursues Israel to the Red Sea. Moses parts the waters, Israel crosses on dry ground, and the Egyptian army is destroyed.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 15,
+    "summary": "Moses and Israel sing a triumphant song celebrating their deliverance. Miriam leads the women. At Marah, bitter waters are made sweet.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 16,
+    "summary": "Israel murmurs in the wilderness of Sin. God sends quail and manna, establishing the Sabbath rest and testing their obedience.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 17,
+    "summary": "Water comes from the rock at Horeb when Moses strikes it. Israel defeats Amalek in battle while Aaron and Hur support Moses' hands.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 18,
+    "summary": "Jethro visits Moses, praises God, and counsels Moses to appoint judges to share the burden of governing the people.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 19,
+    "summary": "Israel camps at Sinai. God offers them a covenant as a kingdom of priests. He descends on the mount with thunder, lightning, and a thick cloud.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 20,
+    "summary": "God speaks the Ten Commandments from Sinai. The people tremble and stand afar off. Moses draws near to the thick darkness where God is.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 21,
+    "summary": "Laws are given concerning Hebrew servants, personal injuries, violence, and the principle of proportional justice.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 22,
+    "summary": "Laws of restitution for theft and property damage, protections for the vulnerable, and commands regarding moral and religious obligations.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 23,
+    "summary": "Laws of justice and mercy, the sabbatical year and Sabbath, three annual feasts, and the promise of an angel to lead Israel to Canaan.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 24,
+    "summary": "The covenant is ratified with sacrificial blood. Moses, Aaron, Nadab, Abihu, and seventy elders behold God. Moses enters the cloud for forty days.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 25,
+    "summary": "God commands an offering for the tabernacle and gives patterns for the Ark of the Covenant, the table of shewbread, and the golden candlestick.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 26,
+    "summary": "Instructions are given for the tabernacle's curtains, boards, bars, and the veil separating the Holy Place from the Most Holy Place.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 27,
+    "summary": "God gives instructions for the brazen altar, the court of the tabernacle, and the continual burning of the lamp with pure olive oil.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 28,
+    "summary": "Holy garments are designed for Aaron and his sons, including the ephod, breastplate of judgment, robe, and golden plate inscribed HOLINESS TO THE LORD.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 29,
+    "summary": "The consecration ceremony for Aaron and his sons as priests is prescribed, along with the daily burnt offerings and God's promise to dwell among Israel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 30,
+    "summary": "Instructions for the altar of incense, the atonement money, the brasen laver, the holy anointing oil, and the sacred incense.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 31,
+    "summary": "Bezaleel and Aholiab are called and filled with the Spirit for tabernacle craftsmanship. The Sabbath is established as a sign between God and Israel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 32,
+    "summary": "While Moses is on Sinai, Israel makes a golden calf. Moses intercedes, breaks the tablets, confronts Aaron, and the Levites execute judgment.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 33,
+    "summary": "God threatens to withdraw His presence. Moses pleads and is told he has found grace. God speaks to Moses face to face and shows His glory.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 34,
+    "summary": "Moses receives new tablets. God proclaims His name: merciful, gracious, longsuffering. The covenant is renewed. Moses' face shines from the encounter.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 35,
+    "summary": "Moses instructs Israel regarding the Sabbath and calls for willing offerings and skilled workers for the tabernacle construction.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 36,
+    "summary": "The people bring more than enough offerings. Bezaleel and the craftsmen begin constructing the tabernacle's curtains, boards, and veil.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 37,
+    "summary": "Bezaleel constructs the Ark of the Covenant, the table of shewbread, the golden candlestick, and the altar of incense.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 38,
+    "summary": "The altar of burnt offering and the brasen laver are made. An inventory of gold, silver, and brass used in the tabernacle is recorded.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 39,
+    "summary": "The priestly garments are completed exactly as the Lord commanded. Moses inspects all the finished work and blesses the workers.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
+  },
+  {
+    "book": "Exodus",
+    "chapter": 40,
+    "summary": "The tabernacle is erected and anointed on the first day of the first month. The glory of the Lord fills the tabernacle with a cloud.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 2
   }
 ]
