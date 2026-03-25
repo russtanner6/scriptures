@@ -4444,5 +4444,18 @@
     "contrition": 8,
     "dominant": "exaltation",
     "rationale": "The chapter begins with deep contrition and confession of national sin but concludes with a massive, rhythmic hymn of exaltation and praise for all of God's creations."
+  },
+  {
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookName": "Prayer of Manasses",
+    "bookId": 99,
+    "chapter": 1,
+    "exaltation": 3,
+    "peace": 4,
+    "admonition": 2,
+    "contrition": 10,
+    "dominant": "contrition",
+    "rationale": "The entire prayer is a profound and humble plea for forgiveness, representing the pinnacle of penitential literature."
   }
 ]

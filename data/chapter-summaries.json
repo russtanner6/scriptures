@@ -2734,5 +2734,13 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 96
+  },
+  {
+    "book": "Prayer of Manasses",
+    "chapter": 1,
+    "summary": "King Manasseh of Judah offers a deeply contrite prayer from his captivity in Babylon, confessing his many sins and pleading for God's infinite mercy and forgiveness.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 99
   }
 ]

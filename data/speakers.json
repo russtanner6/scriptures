@@ -5048,5 +5048,15 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 96
+  },
+  {
+    "book": "Prayer of Manasses",
+    "chapter": 1,
+    "startVerse": 1,
+    "endVerse": 15,
+    "speaker": "Manasseh",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 99
   }
 ]

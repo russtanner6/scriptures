@@ -4220,5 +4220,19 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 96
+  },
+  {
+    "book": "Prayer of Manasses",
+    "chapter": 1,
+    "themes": [
+      "repentance",
+      "mercy",
+      "forgiveness",
+      "humility",
+      "divine justice"
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 99
   }
 ]

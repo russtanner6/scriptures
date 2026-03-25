@@ -3784,5 +3784,29 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 96
+  },
+  {
+    "book": "Prayer of Manasses",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 7,
+        "text": "Thou, O Lord, according to thy great goodness hast promised repentance and forgiveness to them that have sinned against thee: and of thine infinite mercies hast appointed repentance unto sinners, that they may be saved.",
+        "reason": "A powerful declaration of the doctrine that repentance is a gift from a merciful God."
+      },
+      {
+        "verse": 11,
+        "text": "And now I bow the knee of mine heart, beseeching thee of grace.",
+        "reason": "A beautiful and frequently quoted image of internal humility and submission to God's will."
+      },
+      {
+        "verse": 13,
+        "text": "I humbly beseech thee, forgive me, O Lord, forgive me, and destroy me not with mine iniquities.",
+        "reason": "The core petition of the prayer, reflecting the universal human need for divine pardon."
+      }
+    ],
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 99
   }
 ]

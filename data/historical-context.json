@@ -3418,5 +3418,15 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 96
+  },
+  {
+    "book": "Prayer of Manasses",
+    "chapter": 1,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 650 B.C.",
+    "setting": "A prison in Babylon during the Jewish captivity",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 99
   }
 ]

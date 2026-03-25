@@ -1769,5 +1769,38 @@
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 96
+  },
+  {
+    "book": "Prayer of Manasses",
+    "chapter": 1,
+    "verse": 1,
+    "crossReference": "2 Chronicles 33:12-13",
+    "type": "parallel",
+    "note": "This prayer is the traditional text of the prayer mentioned in the historical account of Manasseh's repentance while in Babylonian captivity.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 99
+  },
+  {
+    "book": "Prayer of Manasses",
+    "chapter": 1,
+    "verse": 7,
+    "crossReference": "D&C 61:2",
+    "type": "allusion",
+    "note": "Both passages emphasize the Lord's willingness to forgive those who confess their sins with a humble heart.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 99
+  },
+  {
+    "book": "Prayer of Manasses",
+    "chapter": 1,
+    "verse": 11,
+    "crossReference": "Alma 36:18-19",
+    "type": "parallel",
+    "note": "Manasseh's 'bowing the knee of the heart' parallels Alma the Younger's internal cry for mercy during his intense repentance.",
+    "volumeAbbrev": "Apoc",
+    "volumeName": "Apocrypha",
+    "bookId": 99
   }
 ]
