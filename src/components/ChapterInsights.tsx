@@ -432,8 +432,8 @@ export default function ChapterInsights({
             flexDirection: "column",
             gap: "20px",
             animation: "fadeIn 0.3s ease",
-            background: "rgba(255,255,255,0.025)",
-            border: "1px solid rgba(255,255,255,0.06)",
+            background: "rgba(0,0,0,0.15)",
+            border: "1px solid rgba(0,0,0,0.25)",
             borderTop: "none",
           }}
         >
