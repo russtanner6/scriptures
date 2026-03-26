@@ -1,0 +1,73 @@
+{
+  "bookName": "Jonah",
+  "bookId": 32,
+  "sentiment": [
+    {"book":"Jonah","chapter":1,"exaltation":1,"peace":1,"admonition":6,"contrition":5,"dominant":"admonition","rationale":"Jonah flees from the Lord's command; a great storm threatens the ship; the sailors cast Jonah overboard after his confession."},
+    {"book":"Jonah","chapter":2,"exaltation":5,"peace":4,"admonition":0,"contrition":7,"dominant":"contrition","rationale":"Jonah's prayer from the belly of the fish is a deeply penitential psalm of distress, remembrance of the Lord, and thanksgiving for deliverance."},
+    {"book":"Jonah","chapter":3,"exaltation":2,"peace":4,"admonition":6,"contrition":5,"dominant":"admonition","rationale":"Jonah preaches destruction to Nineveh; the entire city repents in sackcloth and ashes, and God relents from the threatened judgment."},
+    {"book":"Jonah","chapter":4,"exaltation":1,"peace":1,"admonition":5,"contrition":4,"dominant":"admonition","rationale":"Jonah is angry that God spared Nineveh; the Lord teaches him compassion through the gourd, worm, and east wind."}
+  ],
+  "speakers": [
+    {"book":"Jonah","chapter":1,"startVerse":2,"endVerse":2,"speaker":"Jonah"},
+    {"book":"Jonah","chapter":1,"startVerse":6,"endVerse":6,"speaker":"Shipmaster"},
+    {"book":"Jonah","chapter":1,"startVerse":8,"endVerse":8,"speaker":"Mariners"},
+    {"book":"Jonah","chapter":1,"startVerse":9,"endVerse":9,"speaker":"Jonah"},
+    {"book":"Jonah","chapter":1,"startVerse":10,"endVerse":10,"speaker":"Mariners"},
+    {"book":"Jonah","chapter":1,"startVerse":11,"endVerse":11,"speaker":"Mariners"},
+    {"book":"Jonah","chapter":1,"startVerse":12,"endVerse":12,"speaker":"Jonah"},
+    {"book":"Jonah","chapter":1,"startVerse":14,"endVerse":14,"speaker":"Mariners"},
+    {"book":"Jonah","chapter":2,"startVerse":2,"endVerse":9,"speaker":"Jonah"},
+    {"book":"Jonah","chapter":3,"startVerse":2,"endVerse":2,"speaker":"Jonah"},
+    {"book":"Jonah","chapter":3,"startVerse":4,"endVerse":4,"speaker":"Jonah"},
+    {"book":"Jonah","chapter":3,"startVerse":7,"endVerse":9,"speaker":"King of Nineveh"},
+    {"book":"Jonah","chapter":4,"startVerse":2,"endVerse":3,"speaker":"Jonah"},
+    {"book":"Jonah","chapter":4,"startVerse":8,"endVerse":8,"speaker":"Jonah"},
+    {"book":"Jonah","chapter":4,"startVerse":9,"endVerse":9,"speaker":"Jonah"},
+    {"book":"Jonah","chapter":4,"startVerse":10,"endVerse":11,"speaker":"Jonah"}
+  ],
+  "missingCharacters": [
+    {"name":"King of Nineveh","book":"Jonah","description":"The unnamed king of Nineveh who led his people in repentance when Jonah prophesied the city's destruction.","volumes":["OT"]}
+  ],
+  "summaries": [
+    {"book":"Jonah","chapter":1,"summary":"The Lord calls Jonah to cry against Nineveh; Jonah flees by ship to Tarshish, a great storm arises, and the sailors reluctantly cast him into the sea."},
+    {"book":"Jonah","chapter":2,"summary":"From inside the great fish, Jonah offers a psalm of desperate prayer and thanksgiving, vowing to pay what he has promised; the fish vomits him onto dry land."},
+    {"book":"Jonah","chapter":3,"summary":"Jonah preaches to Nineveh that it will be overthrown in forty days; the entire city from king to cattle repents in sackcloth, and God spares them."},
+    {"book":"Jonah","chapter":4,"summary":"Jonah is displeased that Nineveh is spared; God uses a gourd, a worm, and a scorching wind to teach Jonah about divine compassion for all people."}
+  ],
+  "themes": [
+    {"book":"Jonah","chapter":1,"themes":["disobedience","divine sovereignty","storm","fear of god"]},
+    {"book":"Jonah","chapter":2,"themes":["prayer","deliverance","repentance","gratitude"]},
+    {"book":"Jonah","chapter":3,"themes":["repentance","preaching","mercy","obedience"]},
+    {"book":"Jonah","chapter":4,"themes":["compassion","mercy","anger","god's love for all"]}
+  ],
+  "crossReferences": [
+    {"book":"Jonah","chapter":1,"verse":17,"crossReference":"Matthew 12:40","type":"typology","note":"Jesus cites Jonah's three days and nights in the whale as a sign of His own burial and resurrection."},
+    {"book":"Jonah","chapter":2,"verse":2,"crossReference":"Psalm 18:6","type":"allusion","note":"Jonah's cry from the depths echoes the psalmist calling upon the Lord in distress."},
+    {"book":"Jonah","chapter":3,"verse":5,"crossReference":"Luke 11:32","type":"fulfillment","note":"Jesus declares Nineveh repented at the preaching of Jonah, and a greater than Jonah is present."},
+    {"book":"Jonah","chapter":4,"verse":2,"crossReference":"Exodus 34:6","type":"quotation","note":"Jonah quotes God's self-declaration as gracious, merciful, slow to anger, and of great kindness."}
+  ],
+  "doctrinalTopics": [
+    {"book":"Jonah","chapter":1,"topics":["obedience","agency","divine power"]},
+    {"book":"Jonah","chapter":2,"topics":["prayer","deliverance","repentance"]},
+    {"book":"Jonah","chapter":3,"topics":["repentance","missionary work","mercy"]},
+    {"book":"Jonah","chapter":4,"topics":["compassion","charity","god's love"]}
+  ],
+  "historicalContext": [
+    {"book":"Jonah","chapter":1,"era":"Divided Kingdom","approxDate":"c. 780 BC","setting":"Joppa / Mediterranean Sea"},
+    {"book":"Jonah","chapter":2,"era":"Divided Kingdom","approxDate":"c. 780 BC","setting":"Inside the great fish"},
+    {"book":"Jonah","chapter":3,"era":"Divided Kingdom","approxDate":"c. 780 BC","setting":"Nineveh, Assyrian Empire"},
+    {"book":"Jonah","chapter":4,"era":"Divided Kingdom","approxDate":"c. 780 BC","setting":"East of Nineveh"}
+  ],
+  "literaryGenres": [
+    {"book":"Jonah","chapter":1,"genre":"narrative"},
+    {"book":"Jonah","chapter":2,"genre":"narrative","subgenre":"psalm"},
+    {"book":"Jonah","chapter":3,"genre":"narrative"},
+    {"book":"Jonah","chapter":4,"genre":"narrative"}
+  ],
+  "notableVerses": [
+    {"book":"Jonah","chapter":1,"verses":[{"verse":17,"reason":"The Lord prepares a great fish to swallow Jonah — a type and shadow of Christ's three days in the tomb."}]},
+    {"book":"Jonah","chapter":2,"verses":[{"verse":2,"reason":"'Out of the belly of hell cried I, and thou heardest my voice' — Jonah's prayer from the depths of despair."},{"verse":9,"reason":"'Salvation is of the Lord' — the central theological statement of the book."}]},
+    {"book":"Jonah","chapter":3,"verses":[{"verse":5,"reason":"Nineveh's wholesale repentance — one of the greatest mass conversions in scripture."}]},
+    {"book":"Jonah","chapter":4,"verses":[{"verse":11,"reason":"God's rhetorical question about caring for 120,000 people who cannot discern right from left — a powerful statement of divine compassion."}]}
+  ]
+}

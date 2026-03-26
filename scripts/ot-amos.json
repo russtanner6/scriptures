@@ -1,0 +1,116 @@
+{
+  "bookName": "Amos",
+  "bookId": 30,
+  "sentiment": [
+    {"book":"Amos","chapter":1,"exaltation":2,"peace":0,"admonition":9,"contrition":3,"dominant":"admonition","rationale":"Amos opens with a roaring declaration of judgment upon the nations surrounding Israel for their cruelties and transgressions."},
+    {"book":"Amos","chapter":2,"exaltation":1,"peace":0,"admonition":9,"contrition":4,"dominant":"admonition","rationale":"Judgment extends to Moab, Judah, and especially Israel, cataloguing their sins of oppression and ingratitude despite divine deliverance."},
+    {"book":"Amos","chapter":3,"exaltation":2,"peace":0,"admonition":8,"contrition":3,"dominant":"admonition","rationale":"A prophetic warning emphasizing that God reveals His secrets to prophets before bringing judgment upon a chosen but disobedient people."},
+    {"book":"Amos","chapter":4,"exaltation":1,"peace":0,"admonition":8,"contrition":5,"dominant":"admonition","rationale":"Repeatedly declares Israel did not return to the Lord despite escalating punishments—famine, drought, pestilence, and overthrow."},
+    {"book":"Amos","chapter":5,"exaltation":2,"peace":2,"admonition":8,"contrition":6,"dominant":"admonition","rationale":"A lamentation over Israel with urgent calls to seek the Lord and live; condemns hollow worship and social injustice."},
+    {"book":"Amos","chapter":6,"exaltation":0,"peace":0,"admonition":9,"contrition":4,"dominant":"admonition","rationale":"Pronounces woe upon the complacent in Zion who live in luxury while ignoring the affliction of God's people."},
+    {"book":"Amos","chapter":7,"exaltation":2,"peace":1,"admonition":7,"contrition":3,"dominant":"admonition","rationale":"Three visions of judgment (locusts, fire, plumbline) with Amos interceding; his confrontation with Amaziah the priest."},
+    {"book":"Amos","chapter":8,"exaltation":0,"peace":0,"admonition":9,"contrition":5,"dominant":"admonition","rationale":"The vision of summer fruit symbolizes Israel's end; a famine of hearing the word of the Lord is prophesied."},
+    {"book":"Amos","chapter":9,"exaltation":6,"peace":5,"admonition":5,"contrition":2,"dominant":"exaltation","rationale":"Opens with unavoidable judgment but concludes with the glorious restoration of the tabernacle of David and abundant blessings."}
+  ],
+  "speakers": [
+    {"book":"Amos","chapter":1,"startVerse":2,"endVerse":2,"speaker":"Amos"},
+    {"book":"Amos","chapter":1,"startVerse":3,"endVerse":5,"speaker":"Amos"},
+    {"book":"Amos","chapter":1,"startVerse":6,"endVerse":8,"speaker":"Amos"},
+    {"book":"Amos","chapter":1,"startVerse":9,"endVerse":10,"speaker":"Amos"},
+    {"book":"Amos","chapter":1,"startVerse":11,"endVerse":12,"speaker":"Amos"},
+    {"book":"Amos","chapter":1,"startVerse":13,"endVerse":15,"speaker":"Amos"},
+    {"book":"Amos","chapter":2,"startVerse":1,"endVerse":3,"speaker":"Amos"},
+    {"book":"Amos","chapter":2,"startVerse":4,"endVerse":5,"speaker":"Amos"},
+    {"book":"Amos","chapter":2,"startVerse":6,"endVerse":16,"speaker":"Amos"},
+    {"book":"Amos","chapter":3,"startVerse":1,"endVerse":8,"speaker":"Amos"},
+    {"book":"Amos","chapter":3,"startVerse":9,"endVerse":15,"speaker":"Amos"},
+    {"book":"Amos","chapter":4,"startVerse":1,"endVerse":3,"speaker":"Amos"},
+    {"book":"Amos","chapter":4,"startVerse":4,"endVerse":13,"speaker":"Amos"},
+    {"book":"Amos","chapter":5,"startVerse":1,"endVerse":27,"speaker":"Amos"},
+    {"book":"Amos","chapter":6,"startVerse":1,"endVerse":14,"speaker":"Amos"},
+    {"book":"Amos","chapter":7,"startVerse":1,"endVerse":6,"speaker":"Amos"},
+    {"book":"Amos","chapter":7,"startVerse":8,"endVerse":9,"speaker":"Amos"},
+    {"book":"Amos","chapter":7,"startVerse":10,"endVerse":11,"speaker":"Amaziah"},
+    {"book":"Amos","chapter":7,"startVerse":12,"endVerse":13,"speaker":"Amaziah"},
+    {"book":"Amos","chapter":7,"startVerse":14,"endVerse":17,"speaker":"Amos"},
+    {"book":"Amos","chapter":8,"startVerse":1,"endVerse":3,"speaker":"Amos"},
+    {"book":"Amos","chapter":8,"startVerse":4,"endVerse":14,"speaker":"Amos"},
+    {"book":"Amos","chapter":9,"startVerse":1,"endVerse":10,"speaker":"Amos"},
+    {"book":"Amos","chapter":9,"startVerse":11,"endVerse":15,"speaker":"Amos"}
+  ],
+  "missingCharacters": [
+    {"name":"Amaziah","book":"Amos","description":"Priest of Bethel who opposed Amos and told him to flee to Judah and prophesy there instead.","volumes":["OT"]}
+  ],
+  "summaries": [
+    {"book":"Amos","chapter":1,"summary":"Amos declares God's judgment upon Damascus, Gaza, Tyre, Edom, and Ammon for their violent transgressions against neighboring peoples."},
+    {"book":"Amos","chapter":2,"summary":"Judgment extends to Moab, Judah, and Israel; Israel is condemned for oppressing the poor, profaning holy things, and rejecting God's prophets."},
+    {"book":"Amos","chapter":3,"summary":"God declares that He does nothing without revealing His secret to the prophets; Israel's privilege brings greater accountability and coming punishment."},
+    {"book":"Amos","chapter":4,"summary":"Israel is rebuked for oppression and empty worship; despite repeated divine chastisements they have not returned to the Lord."},
+    {"book":"Amos","chapter":5,"summary":"A lamentation over fallen Israel with urgent calls to seek the Lord and practice justice; God rejects their hypocritical feasts and offerings."},
+    {"book":"Amos","chapter":6,"summary":"Woe is pronounced upon those at ease in Zion, living in self-indulgent luxury while ignoring the ruin of the nation."},
+    {"book":"Amos","chapter":7,"summary":"Three visions of judgment (locusts, fire, plumbline) are shown to Amos; Amaziah the priest confronts Amos and is told of his own doom."},
+    {"book":"Amos","chapter":8,"summary":"The vision of summer fruit signals Israel's end; a coming famine of hearing God's word is foretold along with national mourning."},
+    {"book":"Amos","chapter":9,"summary":"Though no sinner can escape God's judgment, the chapter closes with the promised restoration of the tabernacle of David and agricultural abundance."}
+  ],
+  "themes": [
+    {"book":"Amos","chapter":1,"themes":["divine judgment","accountability","cruelty","nations"]},
+    {"book":"Amos","chapter":2,"themes":["social injustice","ingratitude","prophetic rejection","judgment"]},
+    {"book":"Amos","chapter":3,"themes":["prophetic calling","revelation","accountability","divine counsel"]},
+    {"book":"Amos","chapter":4,"themes":["stubbornness","chastisement","empty worship","repentance"]},
+    {"book":"Amos","chapter":5,"themes":["justice","seeking god","lamentation","hypocrisy"]},
+    {"book":"Amos","chapter":6,"themes":["complacency","pride","luxury","woe"]},
+    {"book":"Amos","chapter":7,"themes":["prophetic visions","intercession","opposition","calling"]},
+    {"book":"Amos","chapter":8,"themes":["end times","famine of the word","exploitation","mourning"]},
+    {"book":"Amos","chapter":9,"themes":["restoration","judgment","davidic covenant","abundance"]}
+  ],
+  "crossReferences": [
+    {"book":"Amos","chapter":3,"verse":7,"crossReference":"D&C 1:38","type":"allusion","note":"The Lord does nothing without revealing His secret to His servants the prophets — foundational LDS doctrine of continuing revelation."},
+    {"book":"Amos","chapter":5,"verse":24,"crossReference":"Isaiah 1:17","type":"parallel","note":"Let judgment run down as waters and righteousness as a mighty stream."},
+    {"book":"Amos","chapter":8,"verse":11,"crossReference":"1 Nephi 13:26-29","type":"allusion","note":"A famine of hearing the words of the Lord — parallels the Book of Mormon's description of plain and precious things being taken from the Bible."},
+    {"book":"Amos","chapter":9,"verse":11,"crossReference":"Acts 15:16-17","type":"quotation","note":"James quotes Amos at the Jerusalem Council regarding the restoration of the tabernacle of David."}
+  ],
+  "doctrinalTopics": [
+    {"book":"Amos","chapter":1,"topics":["judgment","accountability","justice"]},
+    {"book":"Amos","chapter":2,"topics":["justice","prophets","ingratitude"]},
+    {"book":"Amos","chapter":3,"topics":["revelation","prophets","accountability"]},
+    {"book":"Amos","chapter":4,"topics":["repentance","chastening","worship"]},
+    {"book":"Amos","chapter":5,"topics":["justice","repentance","worship"]},
+    {"book":"Amos","chapter":6,"topics":["pride","judgment","complacency"]},
+    {"book":"Amos","chapter":7,"topics":["visions","prophets","opposition"]},
+    {"book":"Amos","chapter":8,"topics":["apostasy","famine of the word","judgment"]},
+    {"book":"Amos","chapter":9,"topics":["restoration","gathering of israel","covenant"]}
+  ],
+  "historicalContext": [
+    {"book":"Amos","chapter":1,"era":"Divided Kingdom","approxDate":"c. 760 BC","setting":"Tekoa, Judah / Bethel, Israel"},
+    {"book":"Amos","chapter":2,"era":"Divided Kingdom","approxDate":"c. 760 BC","setting":"Northern Kingdom of Israel"},
+    {"book":"Amos","chapter":3,"era":"Divided Kingdom","approxDate":"c. 760 BC","setting":"Samaria, Israel"},
+    {"book":"Amos","chapter":4,"era":"Divided Kingdom","approxDate":"c. 760 BC","setting":"Bethel and Gilgal, Israel"},
+    {"book":"Amos","chapter":5,"era":"Divided Kingdom","approxDate":"c. 760 BC","setting":"Northern Kingdom of Israel"},
+    {"book":"Amos","chapter":6,"era":"Divided Kingdom","approxDate":"c. 760 BC","setting":"Samaria and Zion"},
+    {"book":"Amos","chapter":7,"era":"Divided Kingdom","approxDate":"c. 760 BC","setting":"Bethel, Israel"},
+    {"book":"Amos","chapter":8,"era":"Divided Kingdom","approxDate":"c. 760 BC","setting":"Northern Kingdom of Israel"},
+    {"book":"Amos","chapter":9,"era":"Divided Kingdom","approxDate":"c. 760 BC","setting":"Northern Kingdom of Israel"}
+  ],
+  "literaryGenres": [
+    {"book":"Amos","chapter":1,"genre":"prophecy","subgenre":"oracle against nations"},
+    {"book":"Amos","chapter":2,"genre":"prophecy","subgenre":"oracle against nations"},
+    {"book":"Amos","chapter":3,"genre":"prophecy","subgenre":"warning"},
+    {"book":"Amos","chapter":4,"genre":"prophecy","subgenre":"indictment"},
+    {"book":"Amos","chapter":5,"genre":"prophecy","subgenre":"lamentation"},
+    {"book":"Amos","chapter":6,"genre":"prophecy","subgenre":"woe oracle"},
+    {"book":"Amos","chapter":7,"genre":"prophecy","subgenre":"vision"},
+    {"book":"Amos","chapter":8,"genre":"prophecy","subgenre":"vision"},
+    {"book":"Amos","chapter":9,"genre":"prophecy","subgenre":"restoration oracle"}
+  ],
+  "notableVerses": [
+    {"book":"Amos","chapter":1,"verses":[]},
+    {"book":"Amos","chapter":2,"verses":[]},
+    {"book":"Amos","chapter":3,"verses":[{"verse":7,"reason":"'Surely the Lord God will do nothing, but he revealeth his secret unto his servants the prophets' — cornerstone of LDS doctrine on continuing revelation."}]},
+    {"book":"Amos","chapter":4,"verses":[{"verse":12,"reason":"'Prepare to meet thy God, O Israel' — a solemn and frequently quoted call to readiness."}]},
+    {"book":"Amos","chapter":5,"verses":[{"verse":24,"reason":"'Let judgment run down as waters, and righteousness as a mighty stream' — a classic call for social justice."}]},
+    {"book":"Amos","chapter":6,"verses":[]},
+    {"book":"Amos","chapter":7,"verses":[{"verse":14,"reason":"Amos declares he was not a prophet's son but a herdman and gatherer of sycamore fruit — illustrating God's calling of the humble."}]},
+    {"book":"Amos","chapter":8,"verses":[{"verse":11,"reason":"'A famine in the land, not a famine of bread... but of hearing the words of the Lord' — a prophecy of apostasy."}]},
+    {"book":"Amos","chapter":9,"verses":[{"verse":11,"reason":"Promise to raise up the tabernacle of David — quoted by James in Acts 15 as fulfilled through the gospel going to the Gentiles."}]}
+  ]
+}

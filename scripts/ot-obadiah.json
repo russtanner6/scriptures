@@ -1,0 +1,35 @@
+{
+  "bookName": "Obadiah",
+  "bookId": 31,
+  "sentiment": [
+    {"book":"Obadiah","chapter":1,"exaltation":4,"peace":2,"admonition":8,"contrition":3,"dominant":"admonition","rationale":"Pronounces total judgment upon Edom for pride and violence against Judah, but closes with the promise of deliverance on mount Zion and saviors who shall judge Esau."}
+  ],
+  "speakers": [
+    {"book":"Obadiah","chapter":1,"startVerse":1,"endVerse":21,"speaker":"Obadiah"}
+  ],
+  "missingCharacters": [
+    {"name":"Obadiah (prophet)","book":"Obadiah","description":"Old Testament prophet who delivered a vision of judgment against Edom and deliverance for Israel.","volumes":["OT"]}
+  ],
+  "summaries": [
+    {"book":"Obadiah","chapter":1,"summary":"A vision against Edom for its pride and betrayal of Judah during Jerusalem's destruction; Edom will be brought low while saviors shall come up on mount Zion."}
+  ],
+  "themes": [
+    {"book":"Obadiah","chapter":1,"themes":["divine judgment","pride","betrayal","restoration","saviors on mount zion"]}
+  ],
+  "crossReferences": [
+    {"book":"Obadiah","chapter":1,"verse":4,"crossReference":"Jeremiah 49:16","type":"parallel","note":"Both prophets use nearly identical language about Edom's pride in dwelling among the cliffs."},
+    {"book":"Obadiah","chapter":1,"verse":21,"crossReference":"D&C 128:15-18","type":"allusion","note":"Saviors on mount Zion — a key LDS passage on vicarious temple work for the dead."}
+  ],
+  "doctrinalTopics": [
+    {"book":"Obadiah","chapter":1,"topics":["judgment","pride","temple work","saviors on mount zion","gathering of israel"]}
+  ],
+  "historicalContext": [
+    {"book":"Obadiah","chapter":1,"era":"Babylonian Exile","approxDate":"c. 586 BC","setting":"Judah / Edom"}
+  ],
+  "literaryGenres": [
+    {"book":"Obadiah","chapter":1,"genre":"prophecy","subgenre":"oracle against nations"}
+  ],
+  "notableVerses": [
+    {"book":"Obadiah","chapter":1,"verses":[{"verse":4,"reason":"'Though thou exalt thyself as the eagle... thence will I bring thee down' — a vivid image of God humbling the proud."},{"verse":21,"reason":"'Saviours shall come up on mount Zion to judge the mount of Esau' — foundational LDS verse on proxy temple ordinances."}]}
+  ]
+}

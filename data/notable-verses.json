@@ -21112,5 +21112,808 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 29
+  },
+  {
+    "book": "Judges",
+    "chapter": 1,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "A generation arose which knew not the Lord—the foundational statement of Israel's spiritual decline."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 3,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "Deborah's command to Barak to arise, for this is the day the Lord has delivered Sisera."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 31,
+        "reason": "Closing prayer that God's enemies perish and those who love him shine as the rising sun."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "The angel greets Gideon as a mighty man of valor despite his self-perceived weakness."
+      },
+      {
+        "verse": 14,
+        "reason": "The Lord commissions Gideon to go in his own might to save Israel."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "God declares Israel's army too large lest they boast that their own hand saved them."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 15,
+        "reason": "The bramble's offer to be king in Jotham's parable—illustrating the danger of unworthy leadership."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 10,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "verses": [
+      {
+        "verse": 35,
+        "reason": "Jephthah's anguished cry upon seeing his daughter, illustrating the tragic cost of a rash vow."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 12,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 18,
+        "reason": "The angel reveals his name is Wonderful, echoing the Messianic title in Isaiah 9:6."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 14,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 15,
+    "verses": [
+      {
+        "verse": 18,
+        "reason": "Samson's prayer of desperation after his great victory—showing dependence on God."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 28,
+        "reason": "Samson's final prayer for strength, offering his life in a last act of faith and sacrifice."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 17,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "Every man did what was right in his own eyes—the refrain summarizing the moral chaos of the era."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 18,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 20,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 21,
+    "verses": [
+      {
+        "verse": 25,
+        "reason": "The closing verse: there was no king in Israel and every man did what was right in his own eyes."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Amos",
+    "chapter": 1,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 2,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "'Surely the Lord God will do nothing, but he revealeth his secret unto his servants the prophets' — cornerstone of LDS doctrine on continuing revelation."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "'Prepare to meet thy God, O Israel' — a solemn and frequently quoted call to readiness."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 24,
+        "reason": "'Let judgment run down as waters, and righteousness as a mighty stream' — a classic call for social justice."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 6,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "Amos declares he was not a prophet's son but a herdman and gatherer of sycamore fruit — illustrating God's calling of the humble."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 11,
+        "reason": "'A famine in the land, not a famine of bread... but of hearing the words of the Lord' — a prophecy of apostasy."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 11,
+        "reason": "Promise to raise up the tabernacle of David — quoted by James in Acts 15 as fulfilled through the gospel going to the Gentiles."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Obadiah",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "'Though thou exalt thyself as the eagle... thence will I bring thee down' — a vivid image of God humbling the proud."
+      },
+      {
+        "verse": 21,
+        "reason": "'Saviours shall come up on mount Zion to judge the mount of Esau' — foundational LDS verse on proxy temple ordinances."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 31
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "The Lord prepares a great fish to swallow Jonah — a type and shadow of Christ's three days in the tomb."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "'Out of the belly of hell cried I, and thou heardest my voice' — Jonah's prayer from the depths of despair."
+      },
+      {
+        "verse": 9,
+        "reason": "'Salvation is of the Lord' — the central theological statement of the book."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "Nineveh's wholesale repentance — one of the greatest mass conversions in scripture."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 11,
+        "reason": "God's rhetorical question about caring for 120,000 people who cannot discern right from left — a powerful statement of divine compassion."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Micah",
+    "chapter": 1,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 2,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "Prophesies Jerusalem shall become heaps — quoted by the elders in Jeremiah 26:18 to save Jeremiah's life."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "'Come, and let us go up to the mountain of the Lord' — the temple gathering prophecy shared with Isaiah."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 2,
+        "reason": "'But thou, Beth-lehem Ephratah... out of thee shall he come forth unto me that is to be ruler in Israel' — the Messianic birthplace prophecy."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 8,
+        "reason": "'What doth the Lord require of thee, but to do justly, and to love mercy, and to walk humbly with thy God?' — one of the most quoted verses in the Bible."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 19,
+        "reason": "'He will turn again, he will have compassion... thou wilt cast all their sins into the depths of the sea' — a beloved image of divine forgiveness."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Ruth",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 16,
+        "reason": "Ruth's iconic pledge of loyalty: whither thou goest I will go—one of the most quoted verses in scripture."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "Boaz's blessing that Ruth be fully rewarded by the God of Israel under whose wings she has come to trust."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "Ruth asks Boaz to spread his skirt over her—a request for covenantal protection and redemption."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "The women bless the Lord for giving Naomi a kinsman-redeemer who will restore her life and nourish her old age."
+      },
+      {
+        "verse": 17,
+        "reason": "The naming of Obed, whose lineage connects Ruth the Moabitess to King David."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Esther",
+    "chapter": 1,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "The king loves Esther above all women and sets the royal crown upon her head."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 3,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "Mordecai's challenge: who knoweth whether thou art come to the kingdom for such a time as this—one of the OT's most quoted verses."
+      },
+      {
+        "verse": 16,
+        "reason": "Esther's courageous resolve: if I perish, I perish—a model of sacrificial faith."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 5,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "The dramatic irony as Haman assumes the king wishes to honor him, setting up his own humiliation."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "Esther pleads for her life and the life of her people before the king at the fateful banquet."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 16,
+        "reason": "The Jews experience light, gladness, joy, and honor—a powerful statement of providential reversal."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 22,
+        "reason": "Purim established: days of feasting, gladness, sending portions, and gifts to the poor."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 10,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "'The Lord is good, a strong hold in the day of trouble; and he knoweth them that trust in him' — a reassuring statement amid judgment oracles."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Nahum",
+    "chapter": 2,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Nahum",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 19,
+        "reason": "'There is no healing of thy bruise' — a declaration that Nineveh's fall is final and irreversible."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 1,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "'The just shall live by his faith' — quoted three times in the New Testament and central to Reformation theology."
+      },
+      {
+        "verse": 14,
+        "reason": "'The earth shall be filled with the knowledge of the glory of the Lord, as the waters cover the sea.'"
+      },
+      {
+        "verse": 20,
+        "reason": "'The Lord is in his holy temple: let all the earth keep silence before him' — a widely used call to worship."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "'Although the fig tree shall not blossom... yet I will rejoice in the Lord' — one of the Bible's most powerful declarations of faith in adversity."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 14,
+        "reason": "'The great day of the Lord is near' — one of the most vivid day-of-the-Lord passages in scripture."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "'Seek ye the Lord, all ye meek of the earth... seek righteousness, seek meekness' — a call to humble repentance."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "'The Lord thy God in the midst of thee is mighty; he will save, he will rejoice over thee with joy; he will rest in his love, he will joy over thee with singing.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "'Is it time for you, O ye, to dwell in your cieled houses, and this house lie waste?' — a pointed rebuke on priorities."
+      },
+      {
+        "verse": 7,
+        "reason": "'Thus saith the Lord of hosts; Consider your ways' — a repeated call to self-examination."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 37
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "'The glory of this latter house shall be greater than of the former... and in this place will I give peace' — a grand promise of future temple glory."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 37
   }
 ]

@@ -1,0 +1,92 @@
+{
+  "bookName": "Ruth",
+  "bookId": 8,
+  "sentiment": [
+    {"book":"Ruth","chapter":1,"exaltation":1,"peace":3,"admonition":2,"contrition":7,"dominant":"contrition","rationale":"Naomi loses her husband and sons in Moab, expresses deep bitterness, but Ruth's loyal devotion offers a glimmer of hope."},
+    {"book":"Ruth","chapter":2,"exaltation":3,"peace":7,"admonition":0,"contrition":1,"dominant":"peace","rationale":"Ruth gleans in Boaz's field and receives his kindness and protection, an atmosphere of covenant generosity and grace."},
+    {"book":"Ruth","chapter":3,"exaltation":3,"peace":7,"admonition":0,"contrition":0,"dominant":"peace","rationale":"Ruth approaches Boaz at the threshing floor; he agrees to act as kinsman-redeemer in a scene of trust and honor."},
+    {"book":"Ruth","chapter":4,"exaltation":8,"peace":8,"admonition":0,"contrition":0,"dominant":"exaltation","rationale":"Boaz redeems Ruth, they marry, and a son Obed is born—ancestor of David—celebrated by the women as a blessing from God."}
+  ],
+  "speakers": [
+    {"book":"Ruth","chapter":1,"startVerse":8,"endVerse":9,"speaker":"Naomi"},
+    {"book":"Ruth","chapter":1,"startVerse":10,"endVerse":10,"speaker":"Ruth"},
+    {"book":"Ruth","chapter":1,"startVerse":11,"endVerse":13,"speaker":"Naomi"},
+    {"book":"Ruth","chapter":1,"startVerse":15,"endVerse":15,"speaker":"Naomi"},
+    {"book":"Ruth","chapter":1,"startVerse":16,"endVerse":17,"speaker":"Ruth"},
+    {"book":"Ruth","chapter":1,"startVerse":19,"endVerse":19,"speaker":"Bethlehem Women"},
+    {"book":"Ruth","chapter":1,"startVerse":20,"endVerse":21,"speaker":"Naomi"},
+    {"book":"Ruth","chapter":2,"startVerse":2,"endVerse":2,"speaker":"Ruth"},
+    {"book":"Ruth","chapter":2,"startVerse":4,"endVerse":4,"speaker":"Boaz"},
+    {"book":"Ruth","chapter":2,"startVerse":5,"endVerse":5,"speaker":"Boaz"},
+    {"book":"Ruth","chapter":2,"startVerse":6,"endVerse":7,"speaker":"Boaz's Servant"},
+    {"book":"Ruth","chapter":2,"startVerse":8,"endVerse":9,"speaker":"Boaz"},
+    {"book":"Ruth","chapter":2,"startVerse":10,"endVerse":10,"speaker":"Ruth"},
+    {"book":"Ruth","chapter":2,"startVerse":11,"endVerse":12,"speaker":"Boaz"},
+    {"book":"Ruth","chapter":2,"startVerse":13,"endVerse":13,"speaker":"Ruth"},
+    {"book":"Ruth","chapter":2,"startVerse":14,"endVerse":14,"speaker":"Boaz"},
+    {"book":"Ruth","chapter":2,"startVerse":15,"endVerse":16,"speaker":"Boaz"},
+    {"book":"Ruth","chapter":2,"startVerse":19,"endVerse":19,"speaker":"Naomi"},
+    {"book":"Ruth","chapter":2,"startVerse":20,"endVerse":20,"speaker":"Naomi"},
+    {"book":"Ruth","chapter":2,"startVerse":21,"endVerse":21,"speaker":"Ruth"},
+    {"book":"Ruth","chapter":2,"startVerse":22,"endVerse":22,"speaker":"Naomi"},
+    {"book":"Ruth","chapter":3,"startVerse":1,"endVerse":4,"speaker":"Naomi"},
+    {"book":"Ruth","chapter":3,"startVerse":5,"endVerse":5,"speaker":"Ruth"},
+    {"book":"Ruth","chapter":3,"startVerse":9,"endVerse":9,"speaker":"Ruth"},
+    {"book":"Ruth","chapter":3,"startVerse":10,"endVerse":13,"speaker":"Boaz"},
+    {"book":"Ruth","chapter":3,"startVerse":16,"endVerse":16,"speaker":"Naomi"},
+    {"book":"Ruth","chapter":3,"startVerse":17,"endVerse":17,"speaker":"Ruth"},
+    {"book":"Ruth","chapter":3,"startVerse":18,"endVerse":18,"speaker":"Naomi"},
+    {"book":"Ruth","chapter":4,"startVerse":1,"endVerse":2,"speaker":"Boaz"},
+    {"book":"Ruth","chapter":4,"startVerse":3,"endVerse":4,"speaker":"Boaz"},
+    {"book":"Ruth","chapter":4,"startVerse":4,"endVerse":4,"speaker":"Kinsman"},
+    {"book":"Ruth","chapter":4,"startVerse":5,"endVerse":5,"speaker":"Boaz"},
+    {"book":"Ruth","chapter":4,"startVerse":6,"endVerse":6,"speaker":"Kinsman"},
+    {"book":"Ruth","chapter":4,"startVerse":9,"endVerse":10,"speaker":"Boaz"},
+    {"book":"Ruth","chapter":4,"startVerse":11,"endVerse":12,"speaker":"Bethlehem Elders"},
+    {"book":"Ruth","chapter":4,"startVerse":14,"endVerse":15,"speaker":"Bethlehem Women"},
+    {"book":"Ruth","chapter":4,"startVerse":17,"endVerse":17,"speaker":"Bethlehem Women"}
+  ],
+  "missingCharacters": [],
+  "summaries": [
+    {"book":"Ruth","chapter":1,"summary":"Naomi, widowed and bereaved of her sons in Moab, returns to Bethlehem; Ruth pledges her undying loyalty and accompanies her, while Orpah turns back."},
+    {"book":"Ruth","chapter":2,"summary":"Ruth gleans in the field of Boaz, a kinsman of Naomi's husband; Boaz shows her extraordinary kindness and protection, and Naomi recognizes God's providence."},
+    {"book":"Ruth","chapter":3,"summary":"Following Naomi's instructions, Ruth approaches Boaz at the threshing floor and asks him to act as her kinsman-redeemer; he agrees, pending a nearer kinsman's decision."},
+    {"book":"Ruth","chapter":4,"summary":"Boaz secures the right of redemption at the city gate, marries Ruth, and their son Obed becomes the grandfather of King David."}
+  ],
+  "themes": [
+    {"book":"Ruth","chapter":1,"themes":["loyalty","loss","bitterness","devotion"]},
+    {"book":"Ruth","chapter":2,"themes":["grace","kindness","providence","gleaning"]},
+    {"book":"Ruth","chapter":3,"themes":["trust","redemption","kinsman-redeemer","honor"]},
+    {"book":"Ruth","chapter":4,"themes":["redemption","lineage","covenant","blessing"]}
+  ],
+  "crossReferences": [
+    {"book":"Ruth","chapter":1,"verse":16,"crossReference":"Genesis 12:1","type":"typology","note":"Ruth's willingness to leave her homeland and people echoes Abraham's call to leave his country."},
+    {"book":"Ruth","chapter":2,"verse":12,"crossReference":"Psalm 91:4","type":"allusion","note":"Boaz blesses Ruth for taking refuge under the wings of the God of Israel."},
+    {"book":"Ruth","chapter":4,"verse":14,"crossReference":"Matthew 1:5","type":"fulfillment","note":"Obed's lineage through Ruth and Boaz leads directly to David and ultimately to Jesus Christ."},
+    {"book":"Ruth","chapter":4,"verse":17,"crossReference":"1 Samuel 16:1","type":"fulfillment","note":"Obed is the grandfather of David, whom God later chooses as king over Israel."}
+  ],
+  "doctrinalTopics": [
+    {"book":"Ruth","chapter":1,"topics":["loyalty","faith","covenant","adversity"]},
+    {"book":"Ruth","chapter":2,"topics":["charity","grace","providence","law of Moses"]},
+    {"book":"Ruth","chapter":3,"topics":["redemption","kinsman-redeemer","trust","virtue"]},
+    {"book":"Ruth","chapter":4,"topics":["redemption","lineage","covenant","gathering of israel"]}
+  ],
+  "historicalContext": [
+    {"book":"Ruth","chapter":1,"era":"Judges","approxDate":"c. 1100 BC","setting":"Moab and Bethlehem"},
+    {"book":"Ruth","chapter":2,"era":"Judges","approxDate":"c. 1100 BC","setting":"Bethlehem, fields of Boaz"},
+    {"book":"Ruth","chapter":3,"era":"Judges","approxDate":"c. 1100 BC","setting":"Bethlehem, threshing floor"},
+    {"book":"Ruth","chapter":4,"era":"Judges","approxDate":"c. 1100 BC","setting":"Bethlehem, city gate"}
+  ],
+  "literaryGenres": [
+    {"book":"Ruth","chapter":1,"genre":"narrative"},
+    {"book":"Ruth","chapter":2,"genre":"narrative"},
+    {"book":"Ruth","chapter":3,"genre":"narrative"},
+    {"book":"Ruth","chapter":4,"genre":"narrative","subgenre":"genealogy"}
+  ],
+  "notableVerses": [
+    {"book":"Ruth","chapter":1,"verses":[{"verse":16,"reason":"Ruth's iconic pledge of loyalty: whither thou goest I will go—one of the most quoted verses in scripture."}]},
+    {"book":"Ruth","chapter":2,"verses":[{"verse":12,"reason":"Boaz's blessing that Ruth be fully rewarded by the God of Israel under whose wings she has come to trust."}]},
+    {"book":"Ruth","chapter":3,"verses":[{"verse":9,"reason":"Ruth asks Boaz to spread his skirt over her—a request for covenantal protection and redemption."}]},
+    {"book":"Ruth","chapter":4,"verses":[{"verse":14,"reason":"The women bless the Lord for giving Naomi a kinsman-redeemer who will restore her life and nourish her old age."},{"verse":17,"reason":"The naming of Obed, whose lineage connects Ruth the Moabitess to King David."}]}
+  ]
+}

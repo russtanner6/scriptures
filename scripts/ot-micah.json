@@ -1,0 +1,89 @@
+{
+  "bookName": "Micah",
+  "bookId": 33,
+  "sentiment": [
+    {"book":"Micah","chapter":1,"exaltation":2,"peace":0,"admonition":8,"contrition":5,"dominant":"admonition","rationale":"God comes down in judgment upon Samaria and Judah for their transgressions, with a lament over the cities being destroyed."},
+    {"book":"Micah","chapter":2,"exaltation":2,"peace":1,"admonition":8,"contrition":3,"dominant":"admonition","rationale":"Woe upon those who devise iniquity and steal fields; false prophets are condemned, yet a brief promise of future gathering."},
+    {"book":"Micah","chapter":3,"exaltation":1,"peace":0,"admonition":9,"contrition":2,"dominant":"admonition","rationale":"Harsh rebuke of corrupt leaders, false prophets, and judges who build Zion with blood; Jerusalem will become heaps."},
+    {"book":"Micah","chapter":4,"exaltation":8,"peace":7,"admonition":2,"contrition":1,"dominant":"exaltation","rationale":"A glorious vision of the mountain of the Lord's house established, nations flowing to it, and swords beaten into plowshares."},
+    {"book":"Micah","chapter":5,"exaltation":7,"peace":5,"admonition":4,"contrition":1,"dominant":"exaltation","rationale":"Prophesies the Messiah's birth in Bethlehem and His rule from everlasting; the remnant of Jacob shall be among the nations."},
+    {"book":"Micah","chapter":6,"exaltation":2,"peace":2,"admonition":7,"contrition":4,"dominant":"admonition","rationale":"God's controversy with His people recounting His mercies; the requirements of justice, mercy, and humility; judgment for dishonesty."},
+    {"book":"Micah","chapter":7,"exaltation":5,"peace":5,"admonition":4,"contrition":5,"dominant":"peace","rationale":"Begins with lamentation over wickedness but ends with confidence in God's faithfulness, pardoning iniquity, and casting sins into the sea."}
+  ],
+  "speakers": [
+    {"book":"Micah","chapter":1,"startVerse":2,"endVerse":7,"speaker":"Micah"},
+    {"book":"Micah","chapter":1,"startVerse":8,"endVerse":16,"speaker":"Micah"},
+    {"book":"Micah","chapter":2,"startVerse":1,"endVerse":5,"speaker":"Micah"},
+    {"book":"Micah","chapter":2,"startVerse":6,"endVerse":11,"speaker":"Micah"},
+    {"book":"Micah","chapter":2,"startVerse":12,"endVerse":13,"speaker":"Micah"},
+    {"book":"Micah","chapter":3,"startVerse":1,"endVerse":12,"speaker":"Micah"},
+    {"book":"Micah","chapter":4,"startVerse":1,"endVerse":13,"speaker":"Micah"},
+    {"book":"Micah","chapter":5,"startVerse":1,"endVerse":15,"speaker":"Micah"},
+    {"book":"Micah","chapter":6,"startVerse":1,"endVerse":5,"speaker":"Micah"},
+    {"book":"Micah","chapter":6,"startVerse":6,"endVerse":8,"speaker":"Micah"},
+    {"book":"Micah","chapter":6,"startVerse":9,"endVerse":16,"speaker":"Micah"},
+    {"book":"Micah","chapter":7,"startVerse":1,"endVerse":10,"speaker":"Micah"},
+    {"book":"Micah","chapter":7,"startVerse":11,"endVerse":20,"speaker":"Micah"}
+  ],
+  "missingCharacters": [],
+  "summaries": [
+    {"book":"Micah","chapter":1,"summary":"God descends in judgment upon Samaria and Judah for idolatry; Micah laments with wordplay over the cities that will be devastated."},
+    {"book":"Micah","chapter":2,"summary":"Woe to those who plot evil and seize others' property; false prophets speak comforting lies, yet God promises to gather a remnant like sheep."},
+    {"book":"Micah","chapter":3,"summary":"Micah condemns the rulers who devour the people, the prophets who mislead for profit, and declares that Jerusalem shall become heaps."},
+    {"book":"Micah","chapter":4,"summary":"In the last days the mountain of the Lord's house shall be established, nations will learn war no more, and the lame will become a strong nation."},
+    {"book":"Micah","chapter":5,"summary":"Out of Bethlehem shall come a ruler whose goings forth have been from everlasting; the remnant of Jacob shall be as dew from the Lord."},
+    {"book":"Micah","chapter":6,"summary":"God sets forth His case against Israel, reminding them of His mercies; He requires justice, mercy, and humility rather than rivers of oil."},
+    {"book":"Micah","chapter":7,"summary":"Micah mourns the scarcity of righteous men but closes with trust in God's forgiveness, compassion, and faithfulness to Abraham."}
+  ],
+  "themes": [
+    {"book":"Micah","chapter":1,"themes":["judgment","idolatry","lamentation","divine coming"]},
+    {"book":"Micah","chapter":2,"themes":["oppression","false prophets","gathering","woe"]},
+    {"book":"Micah","chapter":3,"themes":["corrupt leadership","false prophecy","judgment","accountability"]},
+    {"book":"Micah","chapter":4,"themes":["temple","peace","millennial reign","gathering"]},
+    {"book":"Micah","chapter":5,"themes":["messiah","bethlehem","remnant","divine ruler"]},
+    {"book":"Micah","chapter":6,"themes":["justice","mercy","humility","covenant lawsuit"]},
+    {"book":"Micah","chapter":7,"themes":["lament","trust in god","forgiveness","faithfulness"]}
+  ],
+  "crossReferences": [
+    {"book":"Micah","chapter":4,"verse":1,"crossReference":"Isaiah 2:2-3","type":"parallel","note":"Nearly identical prophecy of the mountain of the Lord's house being established in the top of the mountains in the last days."},
+    {"book":"Micah","chapter":4,"verse":3,"crossReference":"Isaiah 2:4","type":"parallel","note":"Swords into plowshares and spears into pruninghooks — shared word-for-word with Isaiah."},
+    {"book":"Micah","chapter":5,"verse":2,"crossReference":"Matthew 2:6","type":"fulfillment","note":"Quoted by the chief priests when Herod inquired where the Christ should be born."},
+    {"book":"Micah","chapter":6,"verse":8,"crossReference":"Matthew 23:23","type":"allusion","note":"Jesus rebukes the Pharisees for neglecting judgment, mercy, and faith — echoing Micah's triad."}
+  ],
+  "doctrinalTopics": [
+    {"book":"Micah","chapter":1,"topics":["judgment","idolatry","repentance"]},
+    {"book":"Micah","chapter":2,"topics":["justice","false prophets","gathering of israel"]},
+    {"book":"Micah","chapter":3,"topics":["accountability","priesthood","judgment"]},
+    {"book":"Micah","chapter":4,"topics":["temple","millennium","peace","gathering of israel"]},
+    {"book":"Micah","chapter":5,"topics":["messiah","prophecy","remnant"]},
+    {"book":"Micah","chapter":6,"topics":["justice","mercy","humility","covenant"]},
+    {"book":"Micah","chapter":7,"topics":["forgiveness","faithfulness","trust in god"]}
+  ],
+  "historicalContext": [
+    {"book":"Micah","chapter":1,"era":"Divided Kingdom","approxDate":"c. 735 BC","setting":"Judah / Samaria"},
+    {"book":"Micah","chapter":2,"era":"Divided Kingdom","approxDate":"c. 735 BC","setting":"Judah"},
+    {"book":"Micah","chapter":3,"era":"Divided Kingdom","approxDate":"c. 735 BC","setting":"Jerusalem"},
+    {"book":"Micah","chapter":4,"era":"Divided Kingdom","approxDate":"c. 735 BC","setting":"Jerusalem / prophetic future"},
+    {"book":"Micah","chapter":5,"era":"Divided Kingdom","approxDate":"c. 735 BC","setting":"Bethlehem / prophetic future"},
+    {"book":"Micah","chapter":6,"era":"Divided Kingdom","approxDate":"c. 735 BC","setting":"Judah"},
+    {"book":"Micah","chapter":7,"era":"Divided Kingdom","approxDate":"c. 735 BC","setting":"Judah"}
+  ],
+  "literaryGenres": [
+    {"book":"Micah","chapter":1,"genre":"prophecy","subgenre":"judgment oracle"},
+    {"book":"Micah","chapter":2,"genre":"prophecy","subgenre":"woe oracle"},
+    {"book":"Micah","chapter":3,"genre":"prophecy","subgenre":"indictment"},
+    {"book":"Micah","chapter":4,"genre":"prophecy","subgenre":"restoration oracle"},
+    {"book":"Micah","chapter":5,"genre":"prophecy","subgenre":"messianic oracle"},
+    {"book":"Micah","chapter":6,"genre":"prophecy","subgenre":"covenant lawsuit"},
+    {"book":"Micah","chapter":7,"genre":"prophecy","subgenre":"lament and hope"}
+  ],
+  "notableVerses": [
+    {"book":"Micah","chapter":1,"verses":[]},
+    {"book":"Micah","chapter":2,"verses":[]},
+    {"book":"Micah","chapter":3,"verses":[{"verse":12,"reason":"Prophesies Jerusalem shall become heaps — quoted by the elders in Jeremiah 26:18 to save Jeremiah's life."}]},
+    {"book":"Micah","chapter":4,"verses":[{"verse":2,"reason":"'Come, and let us go up to the mountain of the Lord' — the temple gathering prophecy shared with Isaiah."}]},
+    {"book":"Micah","chapter":5,"verses":[{"verse":2,"reason":"'But thou, Beth-lehem Ephratah... out of thee shall he come forth unto me that is to be ruler in Israel' — the Messianic birthplace prophecy."}]},
+    {"book":"Micah","chapter":6,"verses":[{"verse":8,"reason":"'What doth the Lord require of thee, but to do justly, and to love mercy, and to walk humbly with thy God?' — one of the most quoted verses in the Bible."}]},
+    {"book":"Micah","chapter":7,"verses":[{"verse":19,"reason":"'He will turn again, he will have compassion... thou wilt cast all their sins into the depths of the sea' — a beloved image of divine forgiveness."}]}
+  ]
+}

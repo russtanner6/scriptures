@@ -15982,5 +15982,675 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 29
+  },
+  {
+    "book": "Judges",
+    "chapter": 1,
+    "era": "Judges",
+    "approxDate": "c. 1380 BC",
+    "setting": "Canaan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 2,
+    "era": "Judges",
+    "approxDate": "c. 1380-1050 BC",
+    "setting": "Canaan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 3,
+    "era": "Judges",
+    "approxDate": "c. 1370-1230 BC",
+    "setting": "Canaan and Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 4,
+    "era": "Judges",
+    "approxDate": "c. 1230 BC",
+    "setting": "Northern Canaan, Mount Tabor",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 5,
+    "era": "Judges",
+    "approxDate": "c. 1230 BC",
+    "setting": "Northern Canaan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "era": "Judges",
+    "approxDate": "c. 1190 BC",
+    "setting": "Ophrah, Manasseh territory",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 7,
+    "era": "Judges",
+    "approxDate": "c. 1190 BC",
+    "setting": "Spring of Harod, Valley of Jezreel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "era": "Judges",
+    "approxDate": "c. 1190 BC",
+    "setting": "Jordan valley, Succoth, Penuel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 9,
+    "era": "Judges",
+    "approxDate": "c. 1150 BC",
+    "setting": "Shechem and Thebez",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 10,
+    "era": "Judges",
+    "approxDate": "c. 1120 BC",
+    "setting": "Gilead and trans-Jordan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "era": "Judges",
+    "approxDate": "c. 1100 BC",
+    "setting": "Gilead and Ammon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 12,
+    "era": "Judges",
+    "approxDate": "c. 1100 BC",
+    "setting": "Jordan fords, Gilead",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "era": "Judges",
+    "approxDate": "c. 1100 BC",
+    "setting": "Zorah, Dan territory",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 14,
+    "era": "Judges",
+    "approxDate": "c. 1080 BC",
+    "setting": "Timnath, Philistia",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 15,
+    "era": "Judges",
+    "approxDate": "c. 1080 BC",
+    "setting": "Philistia, Lehi",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "era": "Judges",
+    "approxDate": "c. 1060 BC",
+    "setting": "Gaza, valley of Sorek",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 17,
+    "era": "Judges",
+    "approxDate": "c. 1100 BC",
+    "setting": "Hill country of Ephraim",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 18,
+    "era": "Judges",
+    "approxDate": "c. 1100 BC",
+    "setting": "Dan (formerly Laish)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "era": "Judges",
+    "approxDate": "c. 1100 BC",
+    "setting": "Gibeah of Benjamin",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 20,
+    "era": "Judges",
+    "approxDate": "c. 1100 BC",
+    "setting": "Gibeah and Mizpeh",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 21,
+    "era": "Judges",
+    "approxDate": "c. 1100 BC",
+    "setting": "Shiloh and Jabesh-gilead",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Amos",
+    "chapter": 1,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 760 BC",
+    "setting": "Tekoa, Judah / Bethel, Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 2,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 760 BC",
+    "setting": "Northern Kingdom of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 3,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 760 BC",
+    "setting": "Samaria, Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 4,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 760 BC",
+    "setting": "Bethel and Gilgal, Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 5,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 760 BC",
+    "setting": "Northern Kingdom of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 6,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 760 BC",
+    "setting": "Samaria and Zion",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 7,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 760 BC",
+    "setting": "Bethel, Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 8,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 760 BC",
+    "setting": "Northern Kingdom of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 9,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 760 BC",
+    "setting": "Northern Kingdom of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Obadiah",
+    "chapter": 1,
+    "era": "Babylonian Exile",
+    "approxDate": "c. 586 BC",
+    "setting": "Judah / Edom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 31
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 780 BC",
+    "setting": "Joppa / Mediterranean Sea",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 2,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 780 BC",
+    "setting": "Inside the great fish",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 3,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 780 BC",
+    "setting": "Nineveh, Assyrian Empire",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 4,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 780 BC",
+    "setting": "East of Nineveh",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Micah",
+    "chapter": 1,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 735 BC",
+    "setting": "Judah / Samaria",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 2,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 735 BC",
+    "setting": "Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 3,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 735 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 4,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 735 BC",
+    "setting": "Jerusalem / prophetic future",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 5,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 735 BC",
+    "setting": "Bethlehem / prophetic future",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 6,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 735 BC",
+    "setting": "Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 7,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 735 BC",
+    "setting": "Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Ruth",
+    "chapter": 1,
+    "era": "Judges",
+    "approxDate": "c. 1100 BC",
+    "setting": "Moab and Bethlehem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "era": "Judges",
+    "approxDate": "c. 1100 BC",
+    "setting": "Bethlehem, fields of Boaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 3,
+    "era": "Judges",
+    "approxDate": "c. 1100 BC",
+    "setting": "Bethlehem, threshing floor",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "era": "Judges",
+    "approxDate": "c. 1100 BC",
+    "setting": "Bethlehem, city gate",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Esther",
+    "chapter": 1,
+    "era": "Persian Empire",
+    "approxDate": "c. 483 BC",
+    "setting": "Shushan (Susa), Persia",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 2,
+    "era": "Persian Empire",
+    "approxDate": "c. 479 BC",
+    "setting": "Shushan (Susa), Persia",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 3,
+    "era": "Persian Empire",
+    "approxDate": "c. 474 BC",
+    "setting": "Shushan (Susa), Persia",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 4,
+    "era": "Persian Empire",
+    "approxDate": "c. 474 BC",
+    "setting": "Shushan (Susa), Persia",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 5,
+    "era": "Persian Empire",
+    "approxDate": "c. 474 BC",
+    "setting": "Shushan (Susa), royal palace",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 6,
+    "era": "Persian Empire",
+    "approxDate": "c. 474 BC",
+    "setting": "Shushan (Susa), royal palace",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 7,
+    "era": "Persian Empire",
+    "approxDate": "c. 474 BC",
+    "setting": "Shushan (Susa), Esther's banquet",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 8,
+    "era": "Persian Empire",
+    "approxDate": "c. 474 BC",
+    "setting": "Shushan (Susa), Persia",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 9,
+    "era": "Persian Empire",
+    "approxDate": "c. 473 BC",
+    "setting": "Persian provinces, Shushan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 10,
+    "era": "Persian Empire",
+    "approxDate": "c. 473 BC",
+    "setting": "Shushan (Susa), Persia",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "era": "Late Divided Kingdom",
+    "approxDate": "c. 650 BC",
+    "setting": "Judah / prophecy against Nineveh",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Nahum",
+    "chapter": 2,
+    "era": "Late Divided Kingdom",
+    "approxDate": "c. 650 BC",
+    "setting": "Nineveh, Assyria",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Nahum",
+    "chapter": 3,
+    "era": "Late Divided Kingdom",
+    "approxDate": "c. 650 BC",
+    "setting": "Nineveh, Assyria",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 1,
+    "era": "Late Divided Kingdom",
+    "approxDate": "c. 607 BC",
+    "setting": "Judah, shortly before Babylonian invasion",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 2,
+    "era": "Late Divided Kingdom",
+    "approxDate": "c. 607 BC",
+    "setting": "Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 3,
+    "era": "Late Divided Kingdom",
+    "approxDate": "c. 607 BC",
+    "setting": "Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 1,
+    "era": "Late Divided Kingdom",
+    "approxDate": "c. 630 BC",
+    "setting": "Judah, during reign of Josiah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 2,
+    "era": "Late Divided Kingdom",
+    "approxDate": "c. 630 BC",
+    "setting": "Judah / surrounding nations",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 3,
+    "era": "Late Divided Kingdom",
+    "approxDate": "c. 630 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "era": "Post-exile / Persian Period",
+    "approxDate": "c. 520 BC",
+    "setting": "Jerusalem, early Second Temple period",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 37
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "era": "Post-exile / Persian Period",
+    "approxDate": "c. 520 BC",
+    "setting": "Jerusalem, during temple reconstruction",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 37
   }
 ]

@@ -1,0 +1,56 @@
+{
+  "bookName": "Habakkuk",
+  "bookId": 35,
+  "sentiment": [
+    {"book":"Habakkuk","chapter":1,"exaltation":1,"peace":0,"admonition":7,"contrition":6,"dominant":"admonition","rationale":"Habakkuk cries out about unanswered violence and injustice; God answers that He is raising up the Chaldeans as an instrument of judgment."},
+    {"book":"Habakkuk","chapter":2,"exaltation":3,"peace":2,"admonition":8,"contrition":2,"dominant":"admonition","rationale":"Five woes against the Chaldean oppressor, punctuated by the declaration that the just shall live by faith and the earth shall be filled with God's glory."},
+    {"book":"Habakkuk","chapter":3,"exaltation":8,"peace":4,"admonition":2,"contrition":3,"dominant":"exaltation","rationale":"A majestic prayer recounting God's power at Sinai and in history, closing with triumphant faith despite total material loss."}
+  ],
+  "speakers": [
+    {"book":"Habakkuk","chapter":1,"startVerse":2,"endVerse":4,"speaker":"Habakkuk"},
+    {"book":"Habakkuk","chapter":1,"startVerse":5,"endVerse":11,"speaker":"Habakkuk"},
+    {"book":"Habakkuk","chapter":1,"startVerse":12,"endVerse":17,"speaker":"Habakkuk"},
+    {"book":"Habakkuk","chapter":2,"startVerse":1,"endVerse":1,"speaker":"Habakkuk"},
+    {"book":"Habakkuk","chapter":2,"startVerse":2,"endVerse":20,"speaker":"Habakkuk"},
+    {"book":"Habakkuk","chapter":3,"startVerse":1,"endVerse":19,"speaker":"Habakkuk"}
+  ],
+  "missingCharacters": [
+    {"name":"Habakkuk","book":"Habakkuk","description":"A Judahite prophet who wrestled with the problem of evil and received a vision of God's ultimate justice.","volumes":["OT"]}
+  ],
+  "summaries": [
+    {"book":"Habakkuk","chapter":1,"summary":"Habakkuk cries to God about violence and injustice in Judah; God reveals He is raising up the Chaldeans as His instrument of judgment, provoking a second complaint."},
+    {"book":"Habakkuk","chapter":2,"summary":"God tells Habakkuk to write the vision: the just shall live by faith; five woes are pronounced upon the arrogant Chaldean oppressor."},
+    {"book":"Habakkuk","chapter":3,"summary":"Habakkuk's prayer-psalm recounts God's awesome power in nature and history, culminating in a declaration of rejoicing in the Lord despite complete loss."}
+  ],
+  "themes": [
+    {"book":"Habakkuk","chapter":1,"themes":["theodicy","justice","complaint","sovereignty"]},
+    {"book":"Habakkuk","chapter":2,"themes":["faith","woe","divine patience","glory of god"]},
+    {"book":"Habakkuk","chapter":3,"themes":["praise","trust","theophany","joy in adversity"]}
+  ],
+  "crossReferences": [
+    {"book":"Habakkuk","chapter":2,"verse":4,"crossReference":"Romans 1:17","type":"quotation","note":"Paul quotes 'the just shall live by his faith' as the foundation of the gospel of grace."},
+    {"book":"Habakkuk","chapter":2,"verse":4,"crossReference":"Galatians 3:11","type":"quotation","note":"Paul again cites this verse to prove that justification comes by faith, not by the law."},
+    {"book":"Habakkuk","chapter":2,"verse":14,"crossReference":"Isaiah 11:9","type":"parallel","note":"'The earth shall be filled with the knowledge of the glory of the Lord, as the waters cover the sea.'"},
+    {"book":"Habakkuk","chapter":2,"verse":20,"crossReference":"Psalm 46:10","type":"allusion","note":"'The Lord is in his holy temple: let all the earth keep silence before him.'"}
+  ],
+  "doctrinalTopics": [
+    {"book":"Habakkuk","chapter":1,"topics":["justice","faith","sovereignty"]},
+    {"book":"Habakkuk","chapter":2,"topics":["faith","patience","judgment","idolatry"]},
+    {"book":"Habakkuk","chapter":3,"topics":["trust in god","praise","endurance","joy"]}
+  ],
+  "historicalContext": [
+    {"book":"Habakkuk","chapter":1,"era":"Late Divided Kingdom","approxDate":"c. 607 BC","setting":"Judah, shortly before Babylonian invasion"},
+    {"book":"Habakkuk","chapter":2,"era":"Late Divided Kingdom","approxDate":"c. 607 BC","setting":"Judah"},
+    {"book":"Habakkuk","chapter":3,"era":"Late Divided Kingdom","approxDate":"c. 607 BC","setting":"Judah"}
+  ],
+  "literaryGenres": [
+    {"book":"Habakkuk","chapter":1,"genre":"prophecy","subgenre":"dialogue / complaint"},
+    {"book":"Habakkuk","chapter":2,"genre":"prophecy","subgenre":"woe oracle"},
+    {"book":"Habakkuk","chapter":3,"genre":"prophecy","subgenre":"prayer-psalm / theophany"}
+  ],
+  "notableVerses": [
+    {"book":"Habakkuk","chapter":1,"verses":[]},
+    {"book":"Habakkuk","chapter":2,"verses":[{"verse":4,"reason":"'The just shall live by his faith' — quoted three times in the New Testament and central to Reformation theology."},{"verse":14,"reason":"'The earth shall be filled with the knowledge of the glory of the Lord, as the waters cover the sea.'"},{"verse":20,"reason":"'The Lord is in his holy temple: let all the earth keep silence before him' — a widely used call to worship."}]},
+    {"book":"Habakkuk","chapter":3,"verses":[{"verse":17,"reason":"'Although the fig tree shall not blossom... yet I will rejoice in the Lord' — one of the Bible's most powerful declarations of faith in adversity."}]}
+  ]
+}

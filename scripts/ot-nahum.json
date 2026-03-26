@@ -1,0 +1,52 @@
+{
+  "bookName": "Nahum",
+  "bookId": 34,
+  "sentiment": [
+    {"book":"Nahum","chapter":1,"exaltation":3,"peace":2,"admonition":8,"contrition":2,"dominant":"admonition","rationale":"Declares the Lord's jealous vengeance against His enemies while affirming He is a stronghold for those who trust in Him."},
+    {"book":"Nahum","chapter":2,"exaltation":1,"peace":0,"admonition":9,"contrition":3,"dominant":"admonition","rationale":"A vivid depiction of Nineveh's fall — chariots, flashing swords, and the emptying of the lion's den."},
+    {"book":"Nahum","chapter":3,"exaltation":0,"peace":0,"admonition":10,"contrition":3,"dominant":"admonition","rationale":"Woe to the bloody city filled with lies and violence; Nineveh's destruction is complete and none shall mourn for her."}
+  ],
+  "speakers": [
+    {"book":"Nahum","chapter":1,"startVerse":2,"endVerse":14,"speaker":"Nahum"},
+    {"book":"Nahum","chapter":1,"startVerse":15,"endVerse":15,"speaker":"Nahum"},
+    {"book":"Nahum","chapter":2,"startVerse":1,"endVerse":13,"speaker":"Nahum"},
+    {"book":"Nahum","chapter":3,"startVerse":1,"endVerse":19,"speaker":"Nahum"}
+  ],
+  "missingCharacters": [
+    {"name":"Nahum","book":"Nahum","description":"The Elkoshite prophet who delivered a vision of God's judgment against Nineveh and the fall of Assyria.","volumes":["OT"]}
+  ],
+  "summaries": [
+    {"book":"Nahum","chapter":1,"summary":"An acrostic psalm of the Lord's power and jealousy is followed by a declaration that Nineveh's destruction is certain while Judah's deliverance is near."},
+    {"book":"Nahum","chapter":2,"summary":"Nineveh's siege is vividly depicted — chariots rage, gates are opened by flood, the palace dissolves, and the lion's den is emptied forever."},
+    {"book":"Nahum","chapter":3,"summary":"Woe to Nineveh the bloody city; her sins are exposed, she is compared to fallen No-amon (Thebes), and her wound is incurable."}
+  ],
+  "themes": [
+    {"book":"Nahum","chapter":1,"themes":["divine vengeance","sovereignty","refuge","jealousy of god"]},
+    {"book":"Nahum","chapter":2,"themes":["siege","destruction","judgment","divine power"]},
+    {"book":"Nahum","chapter":3,"themes":["woe","bloodshed","shame","irreversible judgment"]}
+  ],
+  "crossReferences": [
+    {"book":"Nahum","chapter":1,"verse":7,"crossReference":"Psalm 46:1","type":"allusion","note":"The Lord is good, a stronghold in the day of trouble — echoing the psalmist's declaration of God as a refuge."},
+    {"book":"Nahum","chapter":1,"verse":15,"crossReference":"Isaiah 52:7","type":"parallel","note":"'Behold upon the mountains the feet of him that bringeth good tidings' — parallels Isaiah's messenger of peace."}
+  ],
+  "doctrinalTopics": [
+    {"book":"Nahum","chapter":1,"topics":["justice","sovereignty","trust in god"]},
+    {"book":"Nahum","chapter":2,"topics":["judgment","divine power"]},
+    {"book":"Nahum","chapter":3,"topics":["judgment","accountability","consequences of sin"]}
+  ],
+  "historicalContext": [
+    {"book":"Nahum","chapter":1,"era":"Late Divided Kingdom","approxDate":"c. 650 BC","setting":"Judah / prophecy against Nineveh"},
+    {"book":"Nahum","chapter":2,"era":"Late Divided Kingdom","approxDate":"c. 650 BC","setting":"Nineveh, Assyria"},
+    {"book":"Nahum","chapter":3,"era":"Late Divided Kingdom","approxDate":"c. 650 BC","setting":"Nineveh, Assyria"}
+  ],
+  "literaryGenres": [
+    {"book":"Nahum","chapter":1,"genre":"prophecy","subgenre":"acrostic hymn / oracle"},
+    {"book":"Nahum","chapter":2,"genre":"prophecy","subgenre":"siege narrative"},
+    {"book":"Nahum","chapter":3,"genre":"prophecy","subgenre":"woe oracle"}
+  ],
+  "notableVerses": [
+    {"book":"Nahum","chapter":1,"verses":[{"verse":7,"reason":"'The Lord is good, a strong hold in the day of trouble; and he knoweth them that trust in him' — a reassuring statement amid judgment oracles."}]},
+    {"book":"Nahum","chapter":2,"verses":[]},
+    {"book":"Nahum","chapter":3,"verses":[{"verse":19,"reason":"'There is no healing of thy bruise' — a declaration that Nineveh's fall is final and irreversible."}]}
+  ]
+}

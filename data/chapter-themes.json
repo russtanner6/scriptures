@@ -20573,5 +20573,877 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 29
+  },
+  {
+    "book": "Judges",
+    "chapter": 1,
+    "themes": [
+      "partial obedience",
+      "compromise",
+      "conquest",
+      "failure"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 2,
+    "themes": [
+      "apostasy",
+      "pride cycle",
+      "divine rebuke",
+      "generational faithlessness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 3,
+    "themes": [
+      "deliverance",
+      "apostasy",
+      "divine intervention",
+      "courage"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 4,
+    "themes": [
+      "deliverance",
+      "female leadership",
+      "divine intervention",
+      "courage"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 5,
+    "themes": [
+      "praise",
+      "victory",
+      "divine power",
+      "gratitude"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "themes": [
+      "calling",
+      "doubt",
+      "divine patience",
+      "apostasy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 7,
+    "themes": [
+      "divine power",
+      "faith",
+      "humility",
+      "deliverance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "themes": [
+      "pride",
+      "idolatry",
+      "leadership",
+      "compromise"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 9,
+    "themes": [
+      "ambition",
+      "violence",
+      "judgment",
+      "parable"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 10,
+    "themes": [
+      "repentance",
+      "apostasy",
+      "mercy",
+      "divine rebuke"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "themes": [
+      "rash vows",
+      "deliverance",
+      "sacrifice",
+      "tragedy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 12,
+    "themes": [
+      "pride",
+      "civil war",
+      "tribal conflict",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "themes": [
+      "divine announcement",
+      "consecration",
+      "nazirite",
+      "faith"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 14,
+    "themes": [
+      "passion",
+      "recklessness",
+      "strength",
+      "deception"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 15,
+    "themes": [
+      "vengeance",
+      "strength",
+      "divine provision",
+      "conflict"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "themes": [
+      "temptation",
+      "betrayal",
+      "downfall",
+      "redemption"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 17,
+    "themes": [
+      "idolatry",
+      "spiritual chaos",
+      "false worship",
+      "apostasy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 18,
+    "themes": [
+      "idolatry",
+      "theft",
+      "tribal migration",
+      "false worship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "themes": [
+      "moral depravity",
+      "violence",
+      "lawlessness",
+      "injustice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 20,
+    "themes": [
+      "civil war",
+      "justice",
+      "divine guidance",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 21,
+    "themes": [
+      "moral anarchy",
+      "grief",
+      "compromise",
+      "restoration"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Amos",
+    "chapter": 1,
+    "themes": [
+      "divine judgment",
+      "accountability",
+      "cruelty",
+      "nations"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 2,
+    "themes": [
+      "social injustice",
+      "ingratitude",
+      "prophetic rejection",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 3,
+    "themes": [
+      "prophetic calling",
+      "revelation",
+      "accountability",
+      "divine counsel"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 4,
+    "themes": [
+      "stubbornness",
+      "chastisement",
+      "empty worship",
+      "repentance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 5,
+    "themes": [
+      "justice",
+      "seeking god",
+      "lamentation",
+      "hypocrisy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 6,
+    "themes": [
+      "complacency",
+      "pride",
+      "luxury",
+      "woe"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 7,
+    "themes": [
+      "prophetic visions",
+      "intercession",
+      "opposition",
+      "calling"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 8,
+    "themes": [
+      "end times",
+      "famine of the word",
+      "exploitation",
+      "mourning"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 9,
+    "themes": [
+      "restoration",
+      "judgment",
+      "davidic covenant",
+      "abundance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Obadiah",
+    "chapter": 1,
+    "themes": [
+      "divine judgment",
+      "pride",
+      "betrayal",
+      "restoration",
+      "saviors on mount zion"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 31
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "themes": [
+      "disobedience",
+      "divine sovereignty",
+      "storm",
+      "fear of god"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 2,
+    "themes": [
+      "prayer",
+      "deliverance",
+      "repentance",
+      "gratitude"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 3,
+    "themes": [
+      "repentance",
+      "preaching",
+      "mercy",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 4,
+    "themes": [
+      "compassion",
+      "mercy",
+      "anger",
+      "god's love for all"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Micah",
+    "chapter": 1,
+    "themes": [
+      "judgment",
+      "idolatry",
+      "lamentation",
+      "divine coming"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 2,
+    "themes": [
+      "oppression",
+      "false prophets",
+      "gathering",
+      "woe"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 3,
+    "themes": [
+      "corrupt leadership",
+      "false prophecy",
+      "judgment",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 4,
+    "themes": [
+      "temple",
+      "peace",
+      "millennial reign",
+      "gathering"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 5,
+    "themes": [
+      "messiah",
+      "bethlehem",
+      "remnant",
+      "divine ruler"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 6,
+    "themes": [
+      "justice",
+      "mercy",
+      "humility",
+      "covenant lawsuit"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 7,
+    "themes": [
+      "lament",
+      "trust in god",
+      "forgiveness",
+      "faithfulness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Ruth",
+    "chapter": 1,
+    "themes": [
+      "loyalty",
+      "loss",
+      "bitterness",
+      "devotion"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "themes": [
+      "grace",
+      "kindness",
+      "providence",
+      "gleaning"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 3,
+    "themes": [
+      "trust",
+      "redemption",
+      "kinsman-redeemer",
+      "honor"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "themes": [
+      "redemption",
+      "lineage",
+      "covenant",
+      "blessing"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Esther",
+    "chapter": 1,
+    "themes": [
+      "pride",
+      "authority",
+      "consequences",
+      "royal power"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 2,
+    "themes": [
+      "providence",
+      "identity",
+      "courage",
+      "preparation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 3,
+    "themes": [
+      "hatred",
+      "genocide",
+      "pride",
+      "evil counsel"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 4,
+    "themes": [
+      "courage",
+      "providence",
+      "fasting",
+      "sacrifice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 5,
+    "themes": [
+      "courage",
+      "patience",
+      "strategy",
+      "pride"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 6,
+    "themes": [
+      "providence",
+      "reversal",
+      "irony",
+      "justice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 7,
+    "themes": [
+      "justice",
+      "deliverance",
+      "courage",
+      "retribution"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 8,
+    "themes": [
+      "deliverance",
+      "joy",
+      "reversal",
+      "royal authority"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 9,
+    "themes": [
+      "deliverance",
+      "remembrance",
+      "celebration",
+      "victory"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 10,
+    "themes": [
+      "leadership",
+      "service",
+      "peace",
+      "legacy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "themes": [
+      "divine vengeance",
+      "sovereignty",
+      "refuge",
+      "jealousy of god"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Nahum",
+    "chapter": 2,
+    "themes": [
+      "siege",
+      "destruction",
+      "judgment",
+      "divine power"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Nahum",
+    "chapter": 3,
+    "themes": [
+      "woe",
+      "bloodshed",
+      "shame",
+      "irreversible judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 1,
+    "themes": [
+      "theodicy",
+      "justice",
+      "complaint",
+      "sovereignty"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 2,
+    "themes": [
+      "faith",
+      "woe",
+      "divine patience",
+      "glory of god"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 3,
+    "themes": [
+      "praise",
+      "trust",
+      "theophany",
+      "joy in adversity"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 1,
+    "themes": [
+      "day of the lord",
+      "judgment",
+      "idolatry",
+      "complacency"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 2,
+    "themes": [
+      "repentance",
+      "meekness",
+      "judgment on nations",
+      "seeking god"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 3,
+    "themes": [
+      "corrupt leadership",
+      "purification",
+      "restoration",
+      "divine joy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "themes": [
+      "priorities",
+      "temple building",
+      "obedience",
+      "consider your ways"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 37
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "themes": [
+      "glory of the temple",
+      "encouragement",
+      "divine shaking",
+      "chosen servant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 37
   }
 ]

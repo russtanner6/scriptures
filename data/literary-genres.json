@@ -14007,5 +14007,584 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 29
+  },
+  {
+    "book": "Judges",
+    "chapter": 1,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 2,
+    "genre": "narrative",
+    "subgenre": "theological prologue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 3,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 4,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 5,
+    "genre": "poetry",
+    "subgenre": "victory hymn",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "genre": "narrative",
+    "subgenre": "call narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 7,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 9,
+    "genre": "narrative",
+    "subgenre": "parable",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 10,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 12,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "genre": "narrative",
+    "subgenre": "birth announcement",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 14,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 15,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 17,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 18,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 20,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 21,
+    "genre": "narrative",
+    "subgenre": "epilogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Amos",
+    "chapter": 1,
+    "genre": "prophecy",
+    "subgenre": "oracle against nations",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 2,
+    "genre": "prophecy",
+    "subgenre": "oracle against nations",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 3,
+    "genre": "prophecy",
+    "subgenre": "warning",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 4,
+    "genre": "prophecy",
+    "subgenre": "indictment",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 5,
+    "genre": "prophecy",
+    "subgenre": "lamentation",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 6,
+    "genre": "prophecy",
+    "subgenre": "woe oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 7,
+    "genre": "prophecy",
+    "subgenre": "vision",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 8,
+    "genre": "prophecy",
+    "subgenre": "vision",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 9,
+    "genre": "prophecy",
+    "subgenre": "restoration oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Obadiah",
+    "chapter": 1,
+    "genre": "prophecy",
+    "subgenre": "oracle against nations",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 31
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 2,
+    "genre": "narrative",
+    "subgenre": "psalm",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 3,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 4,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Micah",
+    "chapter": 1,
+    "genre": "prophecy",
+    "subgenre": "judgment oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 2,
+    "genre": "prophecy",
+    "subgenre": "woe oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 3,
+    "genre": "prophecy",
+    "subgenre": "indictment",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 4,
+    "genre": "prophecy",
+    "subgenre": "restoration oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 5,
+    "genre": "prophecy",
+    "subgenre": "messianic oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 6,
+    "genre": "prophecy",
+    "subgenre": "covenant lawsuit",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 7,
+    "genre": "prophecy",
+    "subgenre": "lament and hope",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Ruth",
+    "chapter": 1,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 3,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "genre": "narrative",
+    "subgenre": "genealogy",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Esther",
+    "chapter": 1,
+    "genre": "narrative",
+    "subgenre": "court tale",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 2,
+    "genre": "narrative",
+    "subgenre": "court tale",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 3,
+    "genre": "narrative",
+    "subgenre": "court tale",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 4,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 5,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 6,
+    "genre": "narrative",
+    "subgenre": "ironic reversal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 7,
+    "genre": "narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 8,
+    "genre": "narrative",
+    "subgenre": "decree",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 9,
+    "genre": "narrative",
+    "subgenre": "etiological",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 10,
+    "genre": "narrative",
+    "subgenre": "epilogue",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "genre": "prophecy",
+    "subgenre": "acrostic hymn / oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Nahum",
+    "chapter": 2,
+    "genre": "prophecy",
+    "subgenre": "siege narrative",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Nahum",
+    "chapter": 3,
+    "genre": "prophecy",
+    "subgenre": "woe oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 1,
+    "genre": "prophecy",
+    "subgenre": "dialogue / complaint",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 2,
+    "genre": "prophecy",
+    "subgenre": "woe oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 3,
+    "genre": "prophecy",
+    "subgenre": "prayer-psalm / theophany",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 1,
+    "genre": "prophecy",
+    "subgenre": "judgment oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 2,
+    "genre": "prophecy",
+    "subgenre": "oracle against nations",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 3,
+    "genre": "prophecy",
+    "subgenre": "woe oracle / restoration oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "genre": "prophecy",
+    "subgenre": "exhortation",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 37
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "genre": "prophecy",
+    "subgenre": "encouragement / eschatological oracle",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 37
   }
 ]

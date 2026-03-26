@@ -12872,5 +12872,541 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 29
+  },
+  {
+    "book": "Judges",
+    "chapter": 1,
+    "summary": "After Joshua's death, Judah and Simeon lead attacks against the Canaanites, but several tribes fail to fully drive out the inhabitants of their allotted lands.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 2,
+    "summary": "An angel rebukes Israel for making covenants with the Canaanites; a new generation arises that forsakes the Lord, and the cyclical pattern of apostasy, oppression, and deliverance is established.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 3,
+    "summary": "Israel intermarries with Canaanites and worships their gods; God raises up Othniel, Ehud, and Shamgar as judges to deliver the people from foreign oppressors.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 4,
+    "summary": "The prophetess Deborah commissions Barak to fight Sisera's army; God grants Israel victory, and Jael kills Sisera by driving a tent peg through his head.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 5,
+    "summary": "Deborah and Barak sing a triumphant victory hymn recounting God's power, the courage of the tribes, and the defeat of Sisera and the Canaanites.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "summary": "Israel is oppressed by Midian; the angel of the Lord appears to Gideon and calls him to deliver Israel, and Gideon confirms the call through the fleece signs.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 7,
+    "summary": "God reduces Gideon's army from 32,000 to 300 men, who defeat the Midianite host with trumpets, torches, and pitchers in a divinely orchestrated rout.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "summary": "Gideon pursues and captures the kings of Midian, refuses an offer of kingship, but makes a golden ephod that becomes a snare to Israel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 9,
+    "summary": "Abimelech murders his seventy brothers and seizes power in Shechem; Jotham delivers the parable of the trees, and Abimelech is ultimately killed in battle.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 10,
+    "summary": "After the judges Tola and Jair, Israel again turns to idolatry and is oppressed by the Philistines and Ammonites; they cry to God who rebukes then relents.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "summary": "The outcast Jephthah is called to lead Gilead against Ammon, delivers Israel, but tragically fulfills a rash vow concerning his daughter.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 12,
+    "summary": "The Ephraimites quarrel with Jephthah, leading to civil war and the death of 42,000 at the Jordan fords; three minor judges follow.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "summary": "The angel of the Lord appears to Manoah's wife, announcing the birth of Samson as a Nazirite who will begin to deliver Israel from the Philistines.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 14,
+    "summary": "Samson seeks a Philistine wife, kills a lion, and poses a riddle at his wedding feast that leads to conflict when his wife reveals the answer.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 15,
+    "summary": "Samson takes revenge on the Philistines with burning foxes, slays a thousand men with a jawbone, and God miraculously provides water from the ground.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "summary": "Samson is betrayed by Delilah, captured and blinded by the Philistines, and in a final act of strength pulls down the temple of Dagon upon himself and his enemies.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 17,
+    "summary": "An Ephraimite named Micah establishes an idolatrous household shrine with a graven image and hires a wandering Levite as his personal priest.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 18,
+    "summary": "Danite spies discover Micah's shrine, and the tribe of Dan steals his idols and Levite priest, establishing an unauthorized worship center at the conquered city of Laish.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "summary": "A Levite's concubine is horrifically abused and killed by men of Gibeah in Benjamin; the Levite dismembers her body and sends it throughout Israel as a call to action.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 20,
+    "summary": "All Israel unites against Benjamin for the crime at Gibeah; after two initial defeats, Israel prevails and nearly annihilates the entire tribe of Benjamin.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 21,
+    "summary": "Israel mourns the near-extinction of Benjamin and devises ways to provide wives for the surviving 600 men, closing with the refrain that every man did what was right in his own eyes.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Amos",
+    "chapter": 1,
+    "summary": "Amos declares God's judgment upon Damascus, Gaza, Tyre, Edom, and Ammon for their violent transgressions against neighboring peoples.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 2,
+    "summary": "Judgment extends to Moab, Judah, and Israel; Israel is condemned for oppressing the poor, profaning holy things, and rejecting God's prophets.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 3,
+    "summary": "God declares that He does nothing without revealing His secret to the prophets; Israel's privilege brings greater accountability and coming punishment.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 4,
+    "summary": "Israel is rebuked for oppression and empty worship; despite repeated divine chastisements they have not returned to the Lord.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 5,
+    "summary": "A lamentation over fallen Israel with urgent calls to seek the Lord and practice justice; God rejects their hypocritical feasts and offerings.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 6,
+    "summary": "Woe is pronounced upon those at ease in Zion, living in self-indulgent luxury while ignoring the ruin of the nation.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 7,
+    "summary": "Three visions of judgment (locusts, fire, plumbline) are shown to Amos; Amaziah the priest confronts Amos and is told of his own doom.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 8,
+    "summary": "The vision of summer fruit signals Israel's end; a coming famine of hearing God's word is foretold along with national mourning.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 9,
+    "summary": "Though no sinner can escape God's judgment, the chapter closes with the promised restoration of the tabernacle of David and agricultural abundance.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Obadiah",
+    "chapter": 1,
+    "summary": "A vision against Edom for its pride and betrayal of Judah during Jerusalem's destruction; Edom will be brought low while saviors shall come up on mount Zion.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 31
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "summary": "The Lord calls Jonah to cry against Nineveh; Jonah flees by ship to Tarshish, a great storm arises, and the sailors reluctantly cast him into the sea.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 2,
+    "summary": "From inside the great fish, Jonah offers a psalm of desperate prayer and thanksgiving, vowing to pay what he has promised; the fish vomits him onto dry land.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 3,
+    "summary": "Jonah preaches to Nineveh that it will be overthrown in forty days; the entire city from king to cattle repents in sackcloth, and God spares them.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 4,
+    "summary": "Jonah is displeased that Nineveh is spared; God uses a gourd, a worm, and a scorching wind to teach Jonah about divine compassion for all people.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Micah",
+    "chapter": 1,
+    "summary": "God descends in judgment upon Samaria and Judah for idolatry; Micah laments with wordplay over the cities that will be devastated.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 2,
+    "summary": "Woe to those who plot evil and seize others' property; false prophets speak comforting lies, yet God promises to gather a remnant like sheep.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 3,
+    "summary": "Micah condemns the rulers who devour the people, the prophets who mislead for profit, and declares that Jerusalem shall become heaps.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 4,
+    "summary": "In the last days the mountain of the Lord's house shall be established, nations will learn war no more, and the lame will become a strong nation.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 5,
+    "summary": "Out of Bethlehem shall come a ruler whose goings forth have been from everlasting; the remnant of Jacob shall be as dew from the Lord.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 6,
+    "summary": "God sets forth His case against Israel, reminding them of His mercies; He requires justice, mercy, and humility rather than rivers of oil.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 7,
+    "summary": "Micah mourns the scarcity of righteous men but closes with trust in God's forgiveness, compassion, and faithfulness to Abraham.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Ruth",
+    "chapter": 1,
+    "summary": "Naomi, widowed and bereaved of her sons in Moab, returns to Bethlehem; Ruth pledges her undying loyalty and accompanies her, while Orpah turns back.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "summary": "Ruth gleans in the field of Boaz, a kinsman of Naomi's husband; Boaz shows her extraordinary kindness and protection, and Naomi recognizes God's providence.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 3,
+    "summary": "Following Naomi's instructions, Ruth approaches Boaz at the threshing floor and asks him to act as her kinsman-redeemer; he agrees, pending a nearer kinsman's decision.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "summary": "Boaz secures the right of redemption at the city gate, marries Ruth, and their son Obed becomes the grandfather of King David.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Esther",
+    "chapter": 1,
+    "summary": "King Ahasuerus holds a great feast in Shushan; Queen Vashti refuses to appear before the court and is deposed by royal decree.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 2,
+    "summary": "Esther, a young Jewish woman raised by Mordecai, is chosen queen; Mordecai discovers and reports a plot against the king's life.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 3,
+    "summary": "Haman, angered by Mordecai's refusal to bow, persuades the king to issue a decree for the destruction of all Jews in the empire.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 4,
+    "summary": "Mordecai mourns and urges Esther to intercede with the king, declaring she may have come to the kingdom for such a time as this; Esther resolves to go before the king.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 5,
+    "summary": "Esther approaches the king, finds favor, and invites him and Haman to a banquet; Haman meanwhile prepares gallows to hang Mordecai.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 6,
+    "summary": "The king discovers Mordecai was never rewarded for saving his life and commands Haman to publicly honor Mordecai, humiliating him.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 7,
+    "summary": "At Esther's second banquet, she reveals Haman's plot to destroy her people; the king orders Haman hanged on his own gallows.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 8,
+    "summary": "Esther and Mordecai receive Haman's estate; the king issues a new decree allowing the Jews to defend themselves, bringing great joy.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 9,
+    "summary": "The Jews defend themselves and defeat their enemies throughout the provinces; the feast of Purim is established to commemorate the deliverance.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 10,
+    "summary": "Mordecai is elevated to second in command under King Ahasuerus, using his position to promote the welfare and peace of his people.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "summary": "An acrostic psalm of the Lord's power and jealousy is followed by a declaration that Nineveh's destruction is certain while Judah's deliverance is near.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Nahum",
+    "chapter": 2,
+    "summary": "Nineveh's siege is vividly depicted — chariots rage, gates are opened by flood, the palace dissolves, and the lion's den is emptied forever.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Nahum",
+    "chapter": 3,
+    "summary": "Woe to Nineveh the bloody city; her sins are exposed, she is compared to fallen No-amon (Thebes), and her wound is incurable.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 1,
+    "summary": "Habakkuk cries to God about violence and injustice in Judah; God reveals He is raising up the Chaldeans as His instrument of judgment, provoking a second complaint.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 2,
+    "summary": "God tells Habakkuk to write the vision: the just shall live by faith; five woes are pronounced upon the arrogant Chaldean oppressor.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 3,
+    "summary": "Habakkuk's prayer-psalm recounts God's awesome power in nature and history, culminating in a declaration of rejoicing in the Lord despite complete loss.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 1,
+    "summary": "God declares He will utterly consume everything from the land; judgment falls upon Judah for Baal worship, complacency, and those who say God will do neither good nor evil.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 2,
+    "summary": "Zephaniah calls the meek to seek the Lord before the day of anger; judgment is pronounced upon Philistia, Moab, Ammon, Ethiopia, and proud Assyria.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 3,
+    "summary": "Woe upon polluted Jerusalem whose leaders are corrupt; but God will purify the nations, gather the afflicted remnant, and rejoice over them with singing.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "summary": "Haggai rebukes the returned exiles for neglecting the temple while building their own houses; the people obey, and the Lord stirs their spirit to begin rebuilding.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 37
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "summary": "God encourages the builders that the latter temple's glory will exceed Solomon's; a lesson on holiness and defilement is given, and Zerubbabel is chosen as God's signet.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 37
   }
 ]

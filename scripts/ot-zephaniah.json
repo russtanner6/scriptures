@@ -1,0 +1,53 @@
+{
+  "bookName": "Zephaniah",
+  "bookId": 36,
+  "sentiment": [
+    {"book":"Zephaniah","chapter":1,"exaltation":1,"peace":0,"admonition":10,"contrition":5,"dominant":"admonition","rationale":"A sweeping pronouncement of cosmic judgment — God will consume everything from the face of the land, targeting Judah's idolaters and complacent."},
+    {"book":"Zephaniah","chapter":2,"exaltation":1,"peace":1,"admonition":8,"contrition":3,"dominant":"admonition","rationale":"Calls for repentance before the day of wrath; judgment upon Philistia, Moab, Ammon, Ethiopia, and Assyria."},
+    {"book":"Zephaniah","chapter":3,"exaltation":7,"peace":6,"admonition":5,"contrition":3,"dominant":"exaltation","rationale":"Opens with woe against Jerusalem's rebellious leaders but transforms into joyous restoration — God will rejoice over His people with singing."}
+  ],
+  "speakers": [
+    {"book":"Zephaniah","chapter":1,"startVerse":2,"endVerse":18,"speaker":"Zephaniah"},
+    {"book":"Zephaniah","chapter":2,"startVerse":1,"endVerse":15,"speaker":"Zephaniah"},
+    {"book":"Zephaniah","chapter":3,"startVerse":1,"endVerse":8,"speaker":"Zephaniah"},
+    {"book":"Zephaniah","chapter":3,"startVerse":9,"endVerse":20,"speaker":"Zephaniah"}
+  ],
+  "missingCharacters": [
+    {"name":"Zephaniah","book":"Zephaniah","description":"A prophet of royal lineage who prophesied during the reign of Josiah against Judah's idolatry and foretold the great day of the Lord.","volumes":["OT"]}
+  ],
+  "summaries": [
+    {"book":"Zephaniah","chapter":1,"summary":"God declares He will utterly consume everything from the land; judgment falls upon Judah for Baal worship, complacency, and those who say God will do neither good nor evil."},
+    {"book":"Zephaniah","chapter":2,"summary":"Zephaniah calls the meek to seek the Lord before the day of anger; judgment is pronounced upon Philistia, Moab, Ammon, Ethiopia, and proud Assyria."},
+    {"book":"Zephaniah","chapter":3,"summary":"Woe upon polluted Jerusalem whose leaders are corrupt; but God will purify the nations, gather the afflicted remnant, and rejoice over them with singing."}
+  ],
+  "themes": [
+    {"book":"Zephaniah","chapter":1,"themes":["day of the lord","judgment","idolatry","complacency"]},
+    {"book":"Zephaniah","chapter":2,"themes":["repentance","meekness","judgment on nations","seeking god"]},
+    {"book":"Zephaniah","chapter":3,"themes":["corrupt leadership","purification","restoration","divine joy"]}
+  ],
+  "crossReferences": [
+    {"book":"Zephaniah","chapter":1,"verse":7,"crossReference":"Joel 2:1","type":"parallel","note":"'The day of the Lord is at hand' — shared imagery of the approaching day of the Lord."},
+    {"book":"Zephaniah","chapter":2,"verse":3,"crossReference":"Amos 5:6","type":"allusion","note":"Seek the Lord and ye may be hid in the day of the Lord's anger — echoes Amos's call to seek and live."},
+    {"book":"Zephaniah","chapter":3,"verse":17,"crossReference":"Isaiah 62:5","type":"allusion","note":"God rejoicing over His people parallels Isaiah's imagery of the bridegroom rejoicing over the bride."}
+  ],
+  "doctrinalTopics": [
+    {"book":"Zephaniah","chapter":1,"topics":["judgment","day of the lord","idolatry"]},
+    {"book":"Zephaniah","chapter":2,"topics":["repentance","humility","judgment"]},
+    {"book":"Zephaniah","chapter":3,"topics":["restoration","gathering of israel","joy","purification"]}
+  ],
+  "historicalContext": [
+    {"book":"Zephaniah","chapter":1,"era":"Late Divided Kingdom","approxDate":"c. 630 BC","setting":"Judah, during reign of Josiah"},
+    {"book":"Zephaniah","chapter":2,"era":"Late Divided Kingdom","approxDate":"c. 630 BC","setting":"Judah / surrounding nations"},
+    {"book":"Zephaniah","chapter":3,"era":"Late Divided Kingdom","approxDate":"c. 630 BC","setting":"Jerusalem"}
+  ],
+  "literaryGenres": [
+    {"book":"Zephaniah","chapter":1,"genre":"prophecy","subgenre":"judgment oracle"},
+    {"book":"Zephaniah","chapter":2,"genre":"prophecy","subgenre":"oracle against nations"},
+    {"book":"Zephaniah","chapter":3,"genre":"prophecy","subgenre":"woe oracle / restoration oracle"}
+  ],
+  "notableVerses": [
+    {"book":"Zephaniah","chapter":1,"verses":[{"verse":14,"reason":"'The great day of the Lord is near' — one of the most vivid day-of-the-Lord passages in scripture."}]},
+    {"book":"Zephaniah","chapter":2,"verses":[{"verse":3,"reason":"'Seek ye the Lord, all ye meek of the earth... seek righteousness, seek meekness' — a call to humble repentance."}]},
+    {"book":"Zephaniah","chapter":3,"verses":[{"verse":17,"reason":"'The Lord thy God in the midst of thee is mighty; he will save, he will rejoice over thee with joy; he will rest in his love, he will joy over thee with singing.'"}]}
+  ]
+}

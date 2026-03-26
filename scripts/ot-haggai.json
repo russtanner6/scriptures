@@ -1,0 +1,48 @@
+{
+  "bookName": "Haggai",
+  "bookId": 37,
+  "sentiment": [
+    {"book":"Haggai","chapter":1,"exaltation":3,"peace":2,"admonition":7,"contrition":3,"dominant":"admonition","rationale":"Haggai rebukes the people for living in paneled houses while the Lord's house lies waste; God calls them to consider their ways and build the temple."},
+    {"book":"Haggai","chapter":2,"exaltation":7,"peace":5,"admonition":4,"contrition":2,"dominant":"exaltation","rationale":"God promises the glory of the latter house shall exceed the former; He will shake the heavens and earth, and Zerubbabel is chosen as a signet."}
+  ],
+  "speakers": [
+    {"book":"Haggai","chapter":1,"startVerse":2,"endVerse":11,"speaker":"Haggai"},
+    {"book":"Haggai","chapter":1,"startVerse":13,"endVerse":13,"speaker":"Haggai"},
+    {"book":"Haggai","chapter":2,"startVerse":2,"endVerse":9,"speaker":"Haggai"},
+    {"book":"Haggai","chapter":2,"startVerse":11,"endVerse":14,"speaker":"Haggai"},
+    {"book":"Haggai","chapter":2,"startVerse":15,"endVerse":19,"speaker":"Haggai"},
+    {"book":"Haggai","chapter":2,"startVerse":21,"endVerse":23,"speaker":"Haggai"}
+  ],
+  "missingCharacters": [
+    {"name":"Haggai","book":"Haggai","description":"A post-exilic prophet who urged Zerubbabel and Joshua to rebuild the temple and promised that its future glory would exceed the former.","volumes":["OT"]}
+  ],
+  "summaries": [
+    {"book":"Haggai","chapter":1,"summary":"Haggai rebukes the returned exiles for neglecting the temple while building their own houses; the people obey, and the Lord stirs their spirit to begin rebuilding."},
+    {"book":"Haggai","chapter":2,"summary":"God encourages the builders that the latter temple's glory will exceed Solomon's; a lesson on holiness and defilement is given, and Zerubbabel is chosen as God's signet."}
+  ],
+  "themes": [
+    {"book":"Haggai","chapter":1,"themes":["priorities","temple building","obedience","consider your ways"]},
+    {"book":"Haggai","chapter":2,"themes":["glory of the temple","encouragement","divine shaking","chosen servant"]}
+  ],
+  "crossReferences": [
+    {"book":"Haggai","chapter":2,"verse":6,"crossReference":"Hebrews 12:26","type":"quotation","note":"The author of Hebrews quotes God's promise to shake the heavens and the earth once more."},
+    {"book":"Haggai","chapter":2,"verse":9,"crossReference":"D&C 84:5","type":"allusion","note":"The glory of the latter house — LDS understanding connects this to latter-day temple building."},
+    {"book":"Haggai","chapter":2,"verse":23,"crossReference":"Zechariah 4:6-9","type":"parallel","note":"Zerubbabel chosen as a signet ring — Zechariah also affirms Zerubbabel's role in completing the temple."}
+  ],
+  "doctrinalTopics": [
+    {"book":"Haggai","chapter":1,"topics":["temple","obedience","priorities","stewardship"]},
+    {"book":"Haggai","chapter":2,"topics":["temple","glory","covenant","chosen servants"]}
+  ],
+  "historicalContext": [
+    {"book":"Haggai","chapter":1,"era":"Post-exile / Persian Period","approxDate":"c. 520 BC","setting":"Jerusalem, early Second Temple period"},
+    {"book":"Haggai","chapter":2,"era":"Post-exile / Persian Period","approxDate":"c. 520 BC","setting":"Jerusalem, during temple reconstruction"}
+  ],
+  "literaryGenres": [
+    {"book":"Haggai","chapter":1,"genre":"prophecy","subgenre":"exhortation"},
+    {"book":"Haggai","chapter":2,"genre":"prophecy","subgenre":"encouragement / eschatological oracle"}
+  ],
+  "notableVerses": [
+    {"book":"Haggai","chapter":1,"verses":[{"verse":4,"reason":"'Is it time for you, O ye, to dwell in your cieled houses, and this house lie waste?' — a pointed rebuke on priorities."},{"verse":7,"reason":"'Thus saith the Lord of hosts; Consider your ways' — a repeated call to self-examination."}]},
+    {"book":"Haggai","chapter":2,"verses":[{"verse":9,"reason":"'The glory of this latter house shall be greater than of the former... and in this place will I give peace' — a grand promise of future temple glory."}]}
+  ]
+}

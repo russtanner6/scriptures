@@ -33615,5 +33615,2865 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 29
+  },
+  {
+    "book": "Judges",
+    "chapter": 1,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 1,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 2,
+    "startVerse": 1,
+    "endVerse": 3,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 2,
+    "startVerse": 20,
+    "endVerse": 21,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 4,
+    "startVerse": 6,
+    "endVerse": 7,
+    "speaker": "Deborah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 4,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Barak",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 4,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Deborah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 4,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Deborah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 4,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Jael",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 4,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "Sisera",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 4,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "Jael",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 5,
+    "startVerse": 1,
+    "endVerse": 31,
+    "speaker": "Deborah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "startVerse": 8,
+    "endVerse": 10,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Gideon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Gideon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "startVerse": 17,
+    "endVerse": 18,
+    "speaker": "Gideon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "startVerse": 25,
+    "endVerse": 26,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "startVerse": 36,
+    "endVerse": 37,
+    "speaker": "Gideon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "startVerse": 39,
+    "endVerse": 39,
+    "speaker": "Gideon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 7,
+    "startVerse": 2,
+    "endVerse": 3,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 7,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 7,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 7,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 7,
+    "startVerse": 9,
+    "endVerse": 11,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 7,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Gideon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 7,
+    "startVerse": 17,
+    "endVerse": 18,
+    "speaker": "Gideon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Ephraim",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "startVerse": 2,
+    "endVerse": 3,
+    "speaker": "Gideon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Gideon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Zebah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "Gideon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Gideon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Gideon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Gideon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "Gideon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "Gideon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "Zebah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "Gideon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 9,
+    "startVerse": 2,
+    "endVerse": 3,
+    "speaker": "Abimelech",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 9,
+    "startVerse": 7,
+    "endVerse": 20,
+    "speaker": "Jotham",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 9,
+    "startVerse": 28,
+    "endVerse": 29,
+    "speaker": "Gaal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 9,
+    "startVerse": 36,
+    "endVerse": 36,
+    "speaker": "Gaal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 9,
+    "startVerse": 38,
+    "endVerse": 38,
+    "speaker": "Zebul",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 9,
+    "startVerse": 54,
+    "endVerse": 54,
+    "speaker": "Abimelech",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 10,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 10,
+    "startVerse": 11,
+    "endVerse": 14,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 10,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Gilead",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Gilead",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "Jephthah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Gilead",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "startVerse": 9,
+    "endVerse": 10,
+    "speaker": "Jephthah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "Jephthah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Ammon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "startVerse": 15,
+    "endVerse": 27,
+    "speaker": "Jephthah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "startVerse": 30,
+    "endVerse": 31,
+    "speaker": "Jephthah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "startVerse": 35,
+    "endVerse": 35,
+    "speaker": "Jephthah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "startVerse": 36,
+    "endVerse": 36,
+    "speaker": "Jephthah's Daughter",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "startVerse": 37,
+    "endVerse": 37,
+    "speaker": "Jephthah's Daughter",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 12,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Ephraim",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 12,
+    "startVerse": 2,
+    "endVerse": 3,
+    "speaker": "Jephthah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "startVerse": 3,
+    "endVerse": 5,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "startVerse": 6,
+    "endVerse": 7,
+    "speaker": "Manoah's Wife",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Manoah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Manoah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "Manoah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "startVerse": 13,
+    "endVerse": 14,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Manoah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Manoah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "Manoah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "Manoah's Wife",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 14,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Samson",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 14,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Samson",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 14,
+    "startVerse": 12,
+    "endVerse": 14,
+    "speaker": "Samson",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 14,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Philistines",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 14,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "Samson's Wife",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 14,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Samson",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 15,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Samson",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 15,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Samson's Father-in-Law",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 15,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Samson",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 15,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "Samson",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 15,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 15,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Samson",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 15,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 15,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 15,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "Samson",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 15,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Samson",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Delilah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "Samson",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Delilah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Delilah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Samson",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "Delilah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Delilah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Delilah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Delilah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Samson",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Delilah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "Delilah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "startVerse": 25,
+    "endVerse": 25,
+    "speaker": "Philistines",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "startVerse": 26,
+    "endVerse": 26,
+    "speaker": "Samson",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "Samson",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 17,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Micah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 17,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Micah's Mother",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 17,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Micah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 17,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Micah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 18,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Dan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 18,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Dan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 18,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Micah's Levite",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 18,
+    "startVerse": 9,
+    "endVerse": 10,
+    "speaker": "Dan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 18,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "Dan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 18,
+    "startVerse": 24,
+    "endVerse": 24,
+    "speaker": "Micah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Levite's Father-in-Law",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Levite's Father-in-Law",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Levite's Servant",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "startVerse": 12,
+    "endVerse": 13,
+    "speaker": "Levite",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Old Man",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "startVerse": 18,
+    "endVerse": 19,
+    "speaker": "Levite",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "Old Man",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "startVerse": 23,
+    "endVerse": 24,
+    "speaker": "Old Man",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "Levite",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "startVerse": 29,
+    "endVerse": 30,
+    "speaker": "Levite",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 20,
+    "startVerse": 4,
+    "endVerse": 7,
+    "speaker": "Levite",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 20,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 20,
+    "startVerse": 23,
+    "endVerse": 23,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 20,
+    "startVerse": 28,
+    "endVerse": 28,
+    "speaker": "Jesus Christ",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 21,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 21,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Judges",
+    "chapter": 21,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 7
+  },
+  {
+    "book": "Amos",
+    "chapter": 1,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 1,
+    "startVerse": 3,
+    "endVerse": 5,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 1,
+    "startVerse": 6,
+    "endVerse": 8,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 1,
+    "startVerse": 9,
+    "endVerse": 10,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 1,
+    "startVerse": 11,
+    "endVerse": 12,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 1,
+    "startVerse": 13,
+    "endVerse": 15,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 2,
+    "startVerse": 1,
+    "endVerse": 3,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 2,
+    "startVerse": 4,
+    "endVerse": 5,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 2,
+    "startVerse": 6,
+    "endVerse": 16,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 3,
+    "startVerse": 1,
+    "endVerse": 8,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 3,
+    "startVerse": 9,
+    "endVerse": 15,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 4,
+    "startVerse": 1,
+    "endVerse": 3,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 4,
+    "startVerse": 4,
+    "endVerse": 13,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 5,
+    "startVerse": 1,
+    "endVerse": 27,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 6,
+    "startVerse": 1,
+    "endVerse": 14,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 7,
+    "startVerse": 1,
+    "endVerse": 6,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 7,
+    "startVerse": 8,
+    "endVerse": 9,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 7,
+    "startVerse": 10,
+    "endVerse": 11,
+    "speaker": "Amaziah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 7,
+    "startVerse": 12,
+    "endVerse": 13,
+    "speaker": "Amaziah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 7,
+    "startVerse": 14,
+    "endVerse": 17,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 8,
+    "startVerse": 1,
+    "endVerse": 3,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 8,
+    "startVerse": 4,
+    "endVerse": 14,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 9,
+    "startVerse": 1,
+    "endVerse": 10,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Amos",
+    "chapter": 9,
+    "startVerse": 11,
+    "endVerse": 15,
+    "speaker": "Amos",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 30
+  },
+  {
+    "book": "Obadiah",
+    "chapter": 1,
+    "startVerse": 1,
+    "endVerse": 21,
+    "speaker": "Obadiah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 31
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Jonah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Shipmaster",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Mariners",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Jonah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Mariners",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Mariners",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "startVerse": 12,
+    "endVerse": 12,
+    "speaker": "Jonah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Mariners",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 2,
+    "startVerse": 2,
+    "endVerse": 9,
+    "speaker": "Jonah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 3,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Jonah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 3,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Jonah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 3,
+    "startVerse": 7,
+    "endVerse": 9,
+    "speaker": "King of Nineveh",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 4,
+    "startVerse": 2,
+    "endVerse": 3,
+    "speaker": "Jonah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 4,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Jonah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 4,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Jonah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Jonah",
+    "chapter": 4,
+    "startVerse": 10,
+    "endVerse": 11,
+    "speaker": "Jonah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 32
+  },
+  {
+    "book": "Micah",
+    "chapter": 1,
+    "startVerse": 2,
+    "endVerse": 7,
+    "speaker": "Micah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 1,
+    "startVerse": 8,
+    "endVerse": 16,
+    "speaker": "Micah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 2,
+    "startVerse": 1,
+    "endVerse": 5,
+    "speaker": "Micah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 2,
+    "startVerse": 6,
+    "endVerse": 11,
+    "speaker": "Micah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 2,
+    "startVerse": 12,
+    "endVerse": 13,
+    "speaker": "Micah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 3,
+    "startVerse": 1,
+    "endVerse": 12,
+    "speaker": "Micah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 4,
+    "startVerse": 1,
+    "endVerse": 13,
+    "speaker": "Micah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 5,
+    "startVerse": 1,
+    "endVerse": 15,
+    "speaker": "Micah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 6,
+    "startVerse": 1,
+    "endVerse": 5,
+    "speaker": "Micah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 6,
+    "startVerse": 6,
+    "endVerse": 8,
+    "speaker": "Micah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 6,
+    "startVerse": 9,
+    "endVerse": 16,
+    "speaker": "Micah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 7,
+    "startVerse": 1,
+    "endVerse": 10,
+    "speaker": "Micah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Micah",
+    "chapter": 7,
+    "startVerse": 11,
+    "endVerse": 20,
+    "speaker": "Micah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 33
+  },
+  {
+    "book": "Ruth",
+    "chapter": 1,
+    "startVerse": 8,
+    "endVerse": 9,
+    "speaker": "Naomi",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 1,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Ruth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 1,
+    "startVerse": 11,
+    "endVerse": 13,
+    "speaker": "Naomi",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 1,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Naomi",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 1,
+    "startVerse": 16,
+    "endVerse": 17,
+    "speaker": "Ruth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 1,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "Bethlehem Women",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 1,
+    "startVerse": 20,
+    "endVerse": 21,
+    "speaker": "Naomi",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Ruth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Boaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Boaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "startVerse": 6,
+    "endVerse": 7,
+    "speaker": "Boaz's Servant",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "startVerse": 8,
+    "endVerse": 9,
+    "speaker": "Boaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Ruth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "startVerse": 11,
+    "endVerse": 12,
+    "speaker": "Boaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Ruth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Boaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "startVerse": 15,
+    "endVerse": 16,
+    "speaker": "Boaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "startVerse": 19,
+    "endVerse": 19,
+    "speaker": "Naomi",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "startVerse": 20,
+    "endVerse": 20,
+    "speaker": "Naomi",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "startVerse": 21,
+    "endVerse": 21,
+    "speaker": "Ruth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "Naomi",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 3,
+    "startVerse": 1,
+    "endVerse": 4,
+    "speaker": "Naomi",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 3,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Ruth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 3,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Ruth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 3,
+    "startVerse": 10,
+    "endVerse": 13,
+    "speaker": "Boaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 3,
+    "startVerse": 16,
+    "endVerse": 16,
+    "speaker": "Naomi",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 3,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Ruth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 3,
+    "startVerse": 18,
+    "endVerse": 18,
+    "speaker": "Naomi",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "startVerse": 1,
+    "endVerse": 2,
+    "speaker": "Boaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "startVerse": 3,
+    "endVerse": 4,
+    "speaker": "Boaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Kinsman",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Boaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Kinsman",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "startVerse": 9,
+    "endVerse": 10,
+    "speaker": "Boaz",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "startVerse": 11,
+    "endVerse": 12,
+    "speaker": "Bethlehem Elders",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "startVerse": 14,
+    "endVerse": 15,
+    "speaker": "Bethlehem Women",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "startVerse": 17,
+    "endVerse": 17,
+    "speaker": "Bethlehem Women",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 8
+  },
+  {
+    "book": "Esther",
+    "chapter": 1,
+    "startVerse": 10,
+    "endVerse": 11,
+    "speaker": "Ahasuerus",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 1,
+    "startVerse": 16,
+    "endVerse": 20,
+    "speaker": "Memucan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 2,
+    "startVerse": 7,
+    "endVerse": 7,
+    "speaker": "Mordecai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 2,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Mordecai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 2,
+    "startVerse": 22,
+    "endVerse": 22,
+    "speaker": "Mordecai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 3,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Ahasuerus",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 3,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "King's Servants",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 3,
+    "startVerse": 8,
+    "endVerse": 9,
+    "speaker": "Haman",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 3,
+    "startVerse": 11,
+    "endVerse": 11,
+    "speaker": "Ahasuerus",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 4,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Esther",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 4,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Mordecai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 4,
+    "startVerse": 10,
+    "endVerse": 12,
+    "speaker": "Esther",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 4,
+    "startVerse": 13,
+    "endVerse": 14,
+    "speaker": "Mordecai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 4,
+    "startVerse": 15,
+    "endVerse": 16,
+    "speaker": "Esther",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 5,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Ahasuerus",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 5,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "Esther",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 5,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Ahasuerus",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 5,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Ahasuerus",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 5,
+    "startVerse": 7,
+    "endVerse": 8,
+    "speaker": "Esther",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 5,
+    "startVerse": 12,
+    "endVerse": 13,
+    "speaker": "Haman",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 5,
+    "startVerse": 14,
+    "endVerse": 14,
+    "speaker": "Zeresh",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 6,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Ahasuerus",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 6,
+    "startVerse": 3,
+    "endVerse": 3,
+    "speaker": "Ahasuerus",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 6,
+    "startVerse": 4,
+    "endVerse": 4,
+    "speaker": "King's Servants",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 6,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "King's Servants",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 6,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Ahasuerus",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 6,
+    "startVerse": 7,
+    "endVerse": 9,
+    "speaker": "Haman",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 6,
+    "startVerse": 10,
+    "endVerse": 10,
+    "speaker": "Ahasuerus",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 6,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Zeresh",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 7,
+    "startVerse": 2,
+    "endVerse": 2,
+    "speaker": "Ahasuerus",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 7,
+    "startVerse": 3,
+    "endVerse": 4,
+    "speaker": "Esther",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 7,
+    "startVerse": 5,
+    "endVerse": 5,
+    "speaker": "Ahasuerus",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 7,
+    "startVerse": 6,
+    "endVerse": 6,
+    "speaker": "Esther",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 7,
+    "startVerse": 8,
+    "endVerse": 8,
+    "speaker": "Ahasuerus",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 7,
+    "startVerse": 9,
+    "endVerse": 9,
+    "speaker": "Harbonah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 8,
+    "startVerse": 1,
+    "endVerse": 2,
+    "speaker": "Ahasuerus",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 8,
+    "startVerse": 5,
+    "endVerse": 6,
+    "speaker": "Esther",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Esther",
+    "chapter": 8,
+    "startVerse": 7,
+    "endVerse": 8,
+    "speaker": "Ahasuerus",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 17
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "startVerse": 2,
+    "endVerse": 14,
+    "speaker": "Nahum",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "startVerse": 15,
+    "endVerse": 15,
+    "speaker": "Nahum",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Nahum",
+    "chapter": 2,
+    "startVerse": 1,
+    "endVerse": 13,
+    "speaker": "Nahum",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Nahum",
+    "chapter": 3,
+    "startVerse": 1,
+    "endVerse": 19,
+    "speaker": "Nahum",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 34
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 1,
+    "startVerse": 2,
+    "endVerse": 4,
+    "speaker": "Habakkuk",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 1,
+    "startVerse": 5,
+    "endVerse": 11,
+    "speaker": "Habakkuk",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 1,
+    "startVerse": 12,
+    "endVerse": 17,
+    "speaker": "Habakkuk",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 2,
+    "startVerse": 1,
+    "endVerse": 1,
+    "speaker": "Habakkuk",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 2,
+    "startVerse": 2,
+    "endVerse": 20,
+    "speaker": "Habakkuk",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 3,
+    "startVerse": 1,
+    "endVerse": 19,
+    "speaker": "Habakkuk",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 35
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 1,
+    "startVerse": 2,
+    "endVerse": 18,
+    "speaker": "Zephaniah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 2,
+    "startVerse": 1,
+    "endVerse": 15,
+    "speaker": "Zephaniah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 3,
+    "startVerse": 1,
+    "endVerse": 8,
+    "speaker": "Zephaniah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 3,
+    "startVerse": 9,
+    "endVerse": 20,
+    "speaker": "Zephaniah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 36
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "startVerse": 2,
+    "endVerse": 11,
+    "speaker": "Haggai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 37
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "startVerse": 13,
+    "endVerse": 13,
+    "speaker": "Haggai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 37
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "startVerse": 2,
+    "endVerse": 9,
+    "speaker": "Haggai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 37
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "startVerse": 11,
+    "endVerse": 14,
+    "speaker": "Haggai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 37
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "startVerse": 15,
+    "endVerse": 19,
+    "speaker": "Haggai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 37
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "startVerse": 21,
+    "endVerse": 23,
+    "speaker": "Haggai",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 37
   }
 ]
