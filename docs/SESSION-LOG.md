@@ -1,6 +1,87 @@
 # Scripture Explorer — Session Log
 
-## 2026-03-25 — Session 22: D&C Complete (Claude Code) + OT Books Begin (Gemini)
+## 2026-03-25 — Session 22: ENTIRE PIPELINE COMPLETE — All Scriptures Scored
+
+### What was done
+
+**MILESTONE: Every scripture chapter in every volume now has 10 data types scored.**
+
+**D&C 138/138 sections — ALL COMPLETE (Claude Code generated):**
+- All 10 pipeline outputs for every section
+
+**Old Testament 39/39 books — ALL COMPLETE:**
+- 21 books from Gemini (cleaned/merged by Claude Code)
+- 18 books generated entirely by Claude Code (when Gemini usage expired)
+- Total: 929 OT chapters scored
+
+**Final data totals across ALL volumes:**
+- `chapter-sentiments.json`: 1,755 entries (every chapter in every volume)
+- `speakers.json`: 3,862 entries (audited — group speakers removed, IDs→names fixed)
+- `chapter-summaries.json`: 1,755 entries
+- `chapter-themes.json`: 1,755 entries
+- `cross-references.json`: 711 entries
+- `doctrinal-topics.json`: 1,755 entries
+- `historical-context.json`: 1,755 entries
+- `literary-genres.json`: 1,755 entries
+- `notable-verses.json`: 1,756 entries
+- `characters.json`: 863 people
+
+**Speaker audit completed:**
+- 693 entries fixed (NT IDs like "jesus-christ" → "Jesus Christ")
+- 51 group/unnamed speakers removed across all volumes
+- 315 unique named speakers remain
+
+**Sentiment Explorer wired to LLM data:**
+- `/api/sentiment` now uses `chapter-sentiments.json` for volume/book/chapter levels
+- Falls back to keyword lexicon for verse-level detail
+- Returns `source: "llm"` or `source: "lexicon"` for transparency
+
+**5 new API routes created:**
+- `/api/chapter-summary` — one-sentence summary per chapter
+- `/api/chapter-themes` — 3-5 themes per chapter
+- `/api/notable-verses` — memorable verses with reasons
+- `/api/historical-context` — era, date, setting per chapter
+- `/api/cross-references` — inter-scripture connections
+
+**Characters added this session:** Jabez, Amasai, Benaiah, Micaiah, Naboth, Hadad, Shimei, Agag, Eliab, Kish, Abishai, Abner, Nahash, Huram, Shemaiah, Jahaziel, Oded, Sennacherib, Huldah, Queen of Sheba, Gehazi, Hilkiah, Gedaliah, Jehonadab, Athaliah, Eliakim, Ish-bosheth, Mephibosheth, Amnon, Jonadab, Ahimaaz, Cushi, Shiphrah, Puah, Agur, Balaam's Donkey, Phinehas, Eleazar, Arioch, Belshazzar, Abed-nego → 863 total
+
+**Gemini Scoring Guide rewritten** (`~/Desktop/GEMINI-SCORING-GUIDE.md`):
+- Added "COMMON MISTAKES TO AVOID" table
+- Explicit format enforcement for all 10 outputs
+
+### User decisions logged this session
+
+1. **Speaker display names:** Data files keep "Jesus Christ" internally, but UI must show "Jehovah" for OT divine speech, "Jesus Christ" for NT/BoM/D&C. Added to CLAUDE.md.
+
+2. **Group speaker audit:** All speaker data across ALL volumes audited. Only individual named speakers remain (+ Legion exception).
+
+3. **Mom Mode (Kid-Friendly Scriptures):** Feature idea added to roadmap (Tier 4). Simplified narrative text + illustrations for ages 4-10. Originally "Kid Mode", renamed to "Mom Mode" per user.
+
+### Pipeline completion:
+- Book of Mormon: 15/15 COMPLETE
+- Pearl of Great Price: 5/5 COMPLETE
+- Apocrypha: 14/14 COMPLETE
+- New Testament: 27/27 COMPLETE
+- D&C: 138/138 COMPLETE
+- Old Testament: 39/39 COMPLETE
+
+### PICKUP INSTRUCTIONS FOR NEXT SESSION
+
+**The Gemini 10-Output Pipeline is COMPLETE.** Every chapter in every volume has been scored.
+
+**Remaining work to do:**
+1. **Implement `displaySpeakerName()` volume-based mapping** — show "Jehovah" for OT, "Jesus Christ" for NT/BoM/D&C
+2. **Wire chapter summaries/themes/notable verses into ScriptureReader UI** — the API routes exist, need frontend integration
+3. **Wire cross-references into reader** — show linked passages
+4. **Wire historical context into reader** — show era/date/setting
+5. **Build API routes for doctrinal-topics and literary-genres** if needed
+6. **Verify sentiment explorer** works correctly with LLM data on the live site
+7. **Consider building "Mood Match" feature** using the now-complete sentiment data
+8. **Start Mom Mode** — pilot with Genesis stories
+
+---
+
+## 2026-03-25 — Session 22 (earlier): D&C Complete (Claude Code) + OT Books Begin (Gemini)
 
 ### What was done
 

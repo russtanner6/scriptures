@@ -56,7 +56,7 @@ src/
 │   ├── settings/      # User preferences (volume visibility, Apocrypha toggle)
 │   ├── read/          # Scripture reader (volume → book → chapter)
 │   ├── bookmarks/     # Saved verse bookmarks
-│   ├── people/        # Character directory page (757 people)
+│   ├── people/        # Character directory page (863 people)
 │   ├── locations/     # Location directory page (333 places)
 │   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats, word-cloud, chapter-stats, random-verse, sentiment, chiasmus, topic-similarity, chapter-characters, characters, character-mentions, character-sentiment, character-verses, locations, location-mentions, resources, speakers, random-nugget, context-nuggets)
 ├── components/
@@ -85,7 +85,7 @@ src/
 │   ├── StatCard.tsx           # Stat pills
 │   ├── ScripturePanel.tsx     # Right-side slider panel for verse viewing
 │   ├── ScriptureReader.tsx    # Full scripture reader (~2100 lines) with insights, search, progress, annotations, resources, Word Explorer, modern language toggle, per-speaker unique colors, tone overlay
-│   ├── CharacterDirectory.tsx # Character directory page with 757 people, filters, search
+│   ├── CharacterDirectory.tsx # Character directory page with 863 people, filters, search
 │   ├── CharacterDetailPanel.tsx # Slide-in character detail with bio, aliases, mentions, family tree, tone radar chart
 │   ├── VolumeTooltip.tsx      # Styled hover tooltip for volume abbreviations (OT → "Old Testament")
 │   ├── ResourceMarker.tsx     # Inline pill markers for resources (video/article/PDF) + overflow badge
@@ -256,7 +256,12 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - `/api/chapter-stats` — Chapter-level stats: word count, verse count, unique words, top words, key themes (TF-IDF), verse density
 - `/api/random-verse` — Single random verse with book/volume context (for landing page)
 - `/api/book-stats` — Word/verse counts per book
-- `/api/sentiment` — Sentiment scores with 4 drill-down levels: volumes, books, chapters, verses. Uses sentiment-lexicon.ts (4 theological categories, weighted valence). Will switch to LLM-scored data once `data/chapter-sentiments.json` gaps are filled.
+- `/api/sentiment` — Sentiment scores with 4 drill-down levels: volumes, books, chapters, verses. Uses LLM-scored `chapter-sentiments.json` for volume/book/chapter levels (1,755 chapters). Falls back to keyword lexicon for verse-level.
+- `/api/chapter-summary` — One-sentence summary per chapter (1,755 entries)
+- `/api/chapter-themes` — 3-5 themes per chapter (1,755 entries)
+- `/api/notable-verses` — Memorable verses with reasons per chapter
+- `/api/historical-context` — Era, approximate date, and setting per chapter
+- `/api/cross-references` — Inter-scripture connections (711 entries)
 - `/api/chiasmus` — Detect chiastic patterns in a chapter (uses chiasmus-detector.ts)
 - `/api/topic-similarity` — Find thematically similar chapters via cosine similarity
 - `/api/resources` — Fetch linked resources (videos, articles, PDFs) for a book+chapter
@@ -278,15 +283,15 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - Single-book volume detection: `vol.books.length === 1` triggers chapter-level plotting
 - **Speaker data:** Being rebuilt from scratch via Gemini pipeline (old Bible/LDS speaker data wiped). Only individual named speakers from characters.json — no groups/crowds. Old backups in `data/backups/`. Speakers and Context Nuggets are always on (toggles hidden from user).
 - **Gemini 10-Output Pipeline:** All chapter-level data is being rebuilt from scratch via Gemini. Guide at `~/Desktop/GEMINI-SCORING-GUIDE.md`. Process: user feeds book text to Gemini → Gemini returns 10 JSON arrays → user pastes to Claude Code → Claude Code enriches and appends.
-  **MANDATORY after EVERY book:**
-  1. Run completeness audit (count entries per output vs expected chapter count)
-  2. Verify all speaker names exist in characters.json (name or alias)
-  3. Add any truly missing characters to characters.json
-  4. **Git add, commit, and push immediately** — do NOT batch multiple books before committing
-  5. Verify the push succeeded before moving to the next book
-  6. Never commit unless the audit passes and you are 100% confident the data is correct
-  Progress tracked in SESSION-LOG.md. **Completed: BOOK OF MORMON (15/15) + PEARL OF GREAT PRICE (5/5) + APOCRYPHA (14/14, 173ch) + NEW TESTAMENT (27/27, 260ch).** Remaining: OT (39 books) + D&C (138 sections).
-- **Character data:** `data/characters.json` — 818 named individuals with bios, aliases, family relationships, portraits (~40 of 71 prominent), volumes, tiers (1-4). Count grows as Gemini pipeline identifies missing people. Tiers 1-2 are "prominent" (71 people). `/api/chapter-characters` finds characters per chapter via speaker matching + whole-word text scanning with volume-aware deduplication.
+  **PIPELINE IS COMPLETE.** All volumes, all books, all chapters scored.
+  - Book of Mormon: 15/15 (239 chapters)
+  - Pearl of Great Price: 5/5 (16 chapters)
+  - Apocrypha: 14/14 (173 chapters)
+  - New Testament: 27/27 (260 chapters)
+  - D&C: 138/138 sections (Claude Code generated)
+  - Old Testament: 39/39 (929 chapters — mix of Gemini + Claude Code)
+  - **Total: 1,755 chapters with 10 data types each**
+- **Character data:** `data/characters.json` — 863 named individuals with bios, aliases, family relationships, portraits (~40 of 71 prominent), volumes, tiers (1-4). Tiers 1-2 are "prominent" (71 people). `/api/chapter-characters` finds characters per chapter via speaker matching + whole-word text scanning with volume-aware deduplication.
 - **Location data:** `data/locations.json` — 333 named scripture locations with descriptions, coordinates (183 known), aliases, region, type, era, significance, tiers. BoM locations have `knownLocation: false`. D&C/PoGP real-world sites have GPS coordinates. `/api/locations` serves all, `/api/location-mentions` reuses character mention search for text scanning.
 - **Entity linking:** ScriptureReader auto-links first mentions of people and places in each chapter. Builds regex from all character/location names+aliases (longest first), tracks first occurrence per entity per chapter. Blue underline (2px, #2563EB) with inline icons: circular portrait for people (40 have photos, others get person silhouette in blue circle), map pin in blue circle for locations. Clicking opens CharacterDetailPanel or LocationDetailPanel.
 - **Context Nuggets system:** `data/context-nuggets.json` → `/api/context-nuggets` → ScriptureReader. ~930+ scholarly insights with 5 categories (Linguistic, Historical, Cultural, Literary, Restoration). Domain isolation: Restoration-category nuggets hidden when LDS volumes toggled off. NuggetMarker pills (4px borderRadius, amber/gold) display below verse text alongside ResourceMarker pills. NuggetPopover shows parchment/slate card with title, insight, source citation. Keywords get subtle glint animation (7s stagger per nugget). "Context" toggle in reader layers section.
@@ -302,6 +307,6 @@ Two layout patterns exist depending on whether the tool has a search bar:
   - **D&C:** Show "Jesus Christ" (standard D&C revelatory voice)
   - **PoGP:** Show "Jehovah" for Moses/Abraham contexts, "Jesus Christ" for JSH
   - The `displaySpeakerName()` function in PreferencesProvider should handle this volume-based mapping
-- **Sentiment system:** 4 theological categories: Exaltation & Glory, Covenant Peace, Admonition & Justice, Trial & Contrition. Old Claude API scores wiped — being rebuilt via Gemini pipeline with higher quality. Keyword lexicon still in `sentiment-lexicon.ts` as fallback. `data/chapter-sentiments.json` enriched with volumeAbbrev/volumeName/bookId per entry. Not yet wired into Sentiment Explorer UI — still using keyword lexicon until enough books are scored via Gemini.
+- **Sentiment system:** 4 theological categories: Exaltation & Glory, Covenant Peace, Admonition & Justice, Trial & Contrition. **COMPLETE — all 1,755 chapters scored.** `/api/sentiment` now uses `data/chapter-sentiments.json` for volume/book/chapter levels (LLM-scored). Falls back to keyword lexicon (`sentiment-lexicon.ts`) for verse-level detail only. Response includes `source: "llm"` or `source: "lexicon"` field.
 - **Heading standardization:** All tool page h1 headings: centered, 1.8rem desktop / 1.4rem mobile, fontWeight 800, letterSpacing 0.02em. Applied to: WordCloud, Chiasmus, TopicMap, CharacterDirectory, LocationDirectory, BookmarksList, SettingsPanel. 24px top padding on `.page-container` globally.
 - **Modern language:** `text_modern` column in verses table. OT+NT populated with World English Bible (WEB, public domain) via `add-modern-text.ts`. 31,095/31,102 verses matched (99.98%). BoM/D&C/PoGP not yet available. Toggle shows in Layers section only when modern text exists for the chapter.
