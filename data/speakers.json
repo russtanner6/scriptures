@@ -42469,5 +42469,49 @@
     "speakerType": "prophet",
     "verseStart": 1,
     "verseEnd": 21
+  },
+  {
+    "book": "Genesis",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 1,
+    "speaker": "Satan",
+    "speakerType": "other",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Genesis",
+    "chapter": 3,
+    "verseStart": 4,
+    "verseEnd": 5,
+    "speaker": "Satan",
+    "speakerType": "other",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 1
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 14,
+    "verseStart": 13,
+    "verseEnd": 14,
+    "speaker": "Satan",
+    "speakerType": "other",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 23
+  },
+  {
+    "book": "Moses",
+    "chapter": 5,
+    "verseStart": 29,
+    "verseEnd": 30,
+    "speaker": "Satan",
+    "speakerType": "other",
+    "volumeAbbrev": "PoGP",
+    "volumeName": "Pearl of Great Price",
+    "bookId": 80
   }
 ]
