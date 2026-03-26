@@ -354,7 +354,7 @@ export default function ChapterInsights({
           fontFamily: "inherit",
           gap: "12px",
           position: "sticky" as const,
-          top: isMobile ? "44px" : "48px",
+          top: 0,
           zIndex: 10,
         }}
       >
