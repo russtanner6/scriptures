@@ -99,8 +99,12 @@ export default function SentimentArcTool() {
   const selectedBook = selectedBookIdx >= 0 ? bookData[selectedBookIdx] : null;
   const selectedChapter = selectedChapterIdx >= 0 ? chapterData[selectedChapterIdx] : null;
 
+  // Single-book volume detection (e.g., D&C has 1 book with 138 sections)
+  const isSingleBookVolume = bookData.length === 1;
+
   // What level of chart are we showing?
-  const chartLevel = selectedChapterIdx >= 0 ? "verses" : selectedBookIdx >= 0 ? "chapters" : "books";
+  // For single-book volumes, skip the "books" level — go straight to "chapters" (sections)
+  const chartLevel = selectedChapterIdx >= 0 ? "verses" : (selectedBookIdx >= 0 || isSingleBookVolume) ? "chapters" : "books";
 
   // Load volumes on mount, then auto-load first volume's books
   useEffect(() => {
@@ -120,7 +124,7 @@ export default function SentimentArcTool() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isVolumeVisible]);
 
-  // Load books for a volume
+  // Load books for a volume (auto-drills into single-book volumes like D&C)
   const loadBooks = useCallback(async (volumeId: number) => {
     setIsLoading(true);
     setBookData([]);
@@ -131,7 +135,15 @@ export default function SentimentArcTool() {
     try {
       const res = await fetch(`/api/sentiment?level=books&volumeId=${volumeId}`);
       const data = await res.json();
-      setBookData(data.books || []);
+      const books: BookSentiment[] = data.books || [];
+      setBookData(books);
+      // Single-book volume: auto-select the only book and load its chapters/sections
+      if (books.length === 1) {
+        setSelectedBookIdx(0);
+        const chRes = await fetch(`/api/sentiment?level=chapters&bookId=${books[0].bookId}`);
+        const chData = await chRes.json();
+        setChapterData(chData.chapters || []);
+      }
     } catch { setBookData([]); }
     setIsLoading(false);
   }, []);
@@ -350,8 +362,8 @@ export default function SentimentArcTool() {
             ))}
           </select>
 
-          {/* Book dropdown */}
-          {bookData.length > 0 && (
+          {/* Book dropdown (hidden for single-book volumes like D&C) */}
+          {bookData.length > 1 && (
             <select
               value={selectedBookIdx}
               onChange={(e) => handleBookChange(Number(e.target.value))}
@@ -364,8 +376,8 @@ export default function SentimentArcTool() {
             </select>
           )}
 
-          {/* Chapter dropdown (only when book selected) */}
-          {selectedBookIdx >= 0 && chapterData.length > 0 && (
+          {/* Chapter/Section dropdown (shown when book selected, or immediately for single-book volumes) */}
+          {(selectedBookIdx >= 0 || isSingleBookVolume) && chapterData.length > 0 && (
             <select
               value={selectedChapterIdx}
               onChange={(e) => handleChapterChange(Number(e.target.value))}
@@ -474,7 +486,7 @@ export default function SentimentArcTool() {
       {!isLoading && chartLevel === "verses" && verseData.length > 0 && (
         <div style={{ maxWidth: "700px", margin: "0 auto", marginBottom: "32px" }}>
           <div style={{ textAlign: "center", marginBottom: "16px", fontSize: "0.82rem", color: "var(--text-muted)" }}>
-            {verseData.length} verses in {selectedBook?.bookName} {selectedChapter?.chapter}
+            {verseData.length} verses in {isSingleBookVolume ? selectedVolume?.volumeAbbrev : selectedBook?.bookName} {selectedVolume?.volumeAbbrev === "D&C" ? "Section" : "Chapter"} {selectedChapter?.chapter}
           </div>
           {verseData.map((v) => {
             const dominant = (() => {

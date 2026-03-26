@@ -4833,434 +4833,496 @@
     "genre": "Gospel / Prologue",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 2,
     "genre": "Gospel / Narrative",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 3,
     "genre": "Gospel / Discourse",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 4,
     "genre": "Gospel / Narrative",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 5,
     "genre": "Gospel / Discourse",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 6,
     "genre": "Gospel / Discourse",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 7,
     "genre": "Gospel / Discourse",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 8,
     "genre": "Gospel / Discourse",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 9,
     "genre": "Gospel / Narrative",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 10,
     "genre": "Gospel / Parable-Discourse",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 11,
     "genre": "Gospel / Narrative",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 12,
     "genre": "Gospel / Narrative",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 13,
     "genre": "Gospel / Narrative",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 14,
     "genre": "Gospel / Discourse",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 15,
     "genre": "Gospel / Discourse",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 16,
     "genre": "Gospel / Discourse",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 17,
     "genre": "Gospel / Prayer",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 18,
     "genre": "Gospel / Narrative",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 19,
     "genre": "Gospel / Narrative",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 20,
     "genre": "Gospel / Narrative",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 21,
     "genre": "Gospel / Epilogue",
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 1,
     "genre": "Epistle",
     "bookName": "Jude",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 65
   },
   {
     "chapter": 1,
     "genre": "Gospel / Narrative",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 2,
     "genre": "Gospel / Narrative",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 3,
     "genre": "Gospel / Narrative",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 4,
     "genre": "Gospel / Narrative",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 5,
     "genre": "Gospel / Narrative",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 6,
     "genre": "Gospel / Discourse",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 7,
     "genre": "Gospel / Narrative",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 8,
     "genre": "Gospel / Narrative",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 9,
     "genre": "Gospel / Narrative",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 10,
     "genre": "Gospel / Narrative",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 11,
     "genre": "Gospel / Discourse",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 12,
     "genre": "Gospel / Discourse",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 13,
     "genre": "Gospel / Narrative",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 14,
     "genre": "Gospel / Narrative",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 15,
     "genre": "Gospel / Discourse",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 16,
     "genre": "Gospel / Discourse",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 17,
     "genre": "Gospel / Narrative",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 18,
     "genre": "Gospel / Narrative",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 19,
     "genre": "Gospel / Narrative",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 20,
     "genre": "Gospel / Discourse",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 21,
     "genre": "Gospel / Discourse",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 22,
     "genre": "Gospel / Narrative",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 23,
     "genre": "Gospel / Narrative",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 24,
     "genre": "Gospel / Narrative",
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 1,
     "genre": "Gospel / Narrative",
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 2,
     "genre": "Gospel / Narrative",
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 3,
     "genre": "Gospel / Narrative",
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 4,
     "genre": "Gospel / Parable",
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 5,
     "genre": "Gospel / Narrative",
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 6,
     "genre": "Gospel / Narrative",
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 7,
     "genre": "Gospel / Narrative",
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 8,
     "genre": "Gospel / Narrative",
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 9,
     "genre": "Gospel / Narrative",
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 10,
     "genre": "Gospel / Narrative",
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 11,
     "genre": "Gospel / Narrative",
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 12,
     "genre": "Gospel / Discourse",
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 13,
     "genre": "Gospel / Prophecy",
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 14,
     "genre": "Gospel / Narrative",
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 15,
     "genre": "Gospel / Narrative",
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 16,
     "genre": "Gospel / Narrative",
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "book": "Matthew",
@@ -5268,7 +5330,7 @@
     "genre": "genealogy",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -5276,7 +5338,7 @@
     "genre": "narrative",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -5284,7 +5346,7 @@
     "genre": "narrative",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -5292,7 +5354,7 @@
     "genre": "narrative",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -5300,7 +5362,7 @@
     "genre": "discourse",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null,
+    "bookId": 40,
     "subgenre": "sermon"
   },
   {
@@ -5309,7 +5371,7 @@
     "genre": "discourse",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null,
+    "bookId": 40,
     "subgenre": "sermon"
   },
   {
@@ -5318,7 +5380,7 @@
     "genre": "discourse",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null,
+    "bookId": 40,
     "subgenre": "sermon"
   },
   {
@@ -5327,7 +5389,7 @@
     "genre": "narrative",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null,
+    "bookId": 40,
     "subgenre": "miracle"
   },
   {
@@ -5336,7 +5398,7 @@
     "genre": "narrative",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null,
+    "bookId": 40,
     "subgenre": "miracle"
   },
   {
@@ -5345,7 +5407,7 @@
     "genre": "discourse",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null,
+    "bookId": 40,
     "subgenre": "commission"
   },
   {
@@ -5354,7 +5416,7 @@
     "genre": "discourse",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -5362,7 +5424,7 @@
     "genre": "discourse",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null,
+    "bookId": 40,
     "subgenre": "controversy"
   },
   {
@@ -5371,7 +5433,7 @@
     "genre": "parable",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -5379,7 +5441,7 @@
     "genre": "narrative",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null,
+    "bookId": 40,
     "subgenre": "miracle"
   },
   {
@@ -5388,7 +5450,7 @@
     "genre": "discourse",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null,
+    "bookId": 40,
     "subgenre": "controversy"
   },
   {
@@ -5397,7 +5459,7 @@
     "genre": "narrative",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -5405,7 +5467,7 @@
     "genre": "narrative",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null,
+    "bookId": 40,
     "subgenre": "theophany"
   },
   {
@@ -5414,7 +5476,7 @@
     "genre": "discourse",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null,
+    "bookId": 40,
     "subgenre": "parable"
   },
   {
@@ -5423,7 +5485,7 @@
     "genre": "discourse",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -5431,7 +5493,7 @@
     "genre": "parable",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -5439,7 +5501,7 @@
     "genre": "narrative",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -5447,7 +5509,7 @@
     "genre": "discourse",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null,
+    "bookId": 40,
     "subgenre": "controversy"
   },
   {
@@ -5456,7 +5518,7 @@
     "genre": "discourse",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null,
+    "bookId": 40,
     "subgenre": "prophetic woe"
   },
   {
@@ -5465,7 +5527,7 @@
     "genre": "prophecy",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null,
+    "bookId": 40,
     "subgenre": "apocalyptic"
   },
   {
@@ -5474,7 +5536,7 @@
     "genre": "parable",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -5482,7 +5544,7 @@
     "genre": "narrative",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null,
+    "bookId": 40,
     "subgenre": "passion"
   },
   {
@@ -5491,7 +5553,7 @@
     "genre": "narrative",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null,
+    "bookId": 40,
     "subgenre": "passion"
   },
   {
@@ -5500,7 +5562,7 @@
     "genre": "narrative",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null,
+    "bookId": 40,
     "subgenre": "resurrection"
   },
   {
@@ -5509,7 +5571,7 @@
     "genre": "epistle",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 57
   },
   {
     "book": "Philippians",
@@ -5517,7 +5579,7 @@
     "genre": "epistle",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 50
   },
   {
     "book": "Philippians",
@@ -5525,7 +5587,7 @@
     "genre": "epistle",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 50
   },
   {
     "book": "Philippians",
@@ -5533,7 +5595,7 @@
     "genre": "epistle",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 50
   },
   {
     "book": "Philippians",
@@ -5541,7 +5603,7 @@
     "genre": "epistle",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 50
   },
   {
     "book": "Revelation",
@@ -5550,7 +5612,7 @@
     "subgenre": "Epistle",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5559,7 +5621,7 @@
     "subgenre": "Epistle",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5568,7 +5630,7 @@
     "subgenre": "Epistle",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5577,7 +5639,7 @@
     "subgenre": "Vision",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5586,7 +5648,7 @@
     "subgenre": "Vision",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5595,7 +5657,7 @@
     "subgenre": "Vision",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5604,7 +5666,7 @@
     "subgenre": "Vision",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5613,7 +5675,7 @@
     "subgenre": "Vision",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5622,7 +5684,7 @@
     "subgenre": "Vision",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5631,7 +5693,7 @@
     "subgenre": "Vision",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5640,7 +5702,7 @@
     "subgenre": "Prophecy",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5649,7 +5711,7 @@
     "subgenre": "Mythic-Narrative",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5658,7 +5720,7 @@
     "subgenre": "Vision",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5667,7 +5729,7 @@
     "subgenre": "Vision",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5676,7 +5738,7 @@
     "subgenre": "Vision",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5685,7 +5747,7 @@
     "subgenre": "Vision",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5694,7 +5756,7 @@
     "subgenre": "Vision",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5703,7 +5765,7 @@
     "subgenre": "Lament",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5712,7 +5774,7 @@
     "subgenre": "Narrative",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5721,7 +5783,7 @@
     "subgenre": "Narrative",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5730,7 +5792,7 @@
     "subgenre": "Description",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -5739,7 +5801,7 @@
     "subgenre": "Epilogue",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Romans",
@@ -5748,7 +5810,7 @@
     "subgenre": "Theological Treatise",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -5757,7 +5819,7 @@
     "subgenre": "Theological Argument",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -5766,7 +5828,7 @@
     "subgenre": "Theological Argument",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -5775,7 +5837,7 @@
     "subgenre": "Midrash",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -5784,7 +5846,7 @@
     "subgenre": "Theological Treatise",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -5793,7 +5855,7 @@
     "subgenre": "Ethical Exhortation",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -5802,7 +5864,7 @@
     "subgenre": "Autobiographical Reflection",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -5811,7 +5873,7 @@
     "subgenre": "Theological Climax",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -5820,7 +5882,7 @@
     "subgenre": "Theological Lament",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -5829,7 +5891,7 @@
     "subgenre": "Exhortation",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -5838,7 +5900,7 @@
     "subgenre": "Allegory",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -5847,7 +5909,7 @@
     "subgenre": "Paraenesis",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -5856,7 +5918,7 @@
     "subgenre": "Paraenesis",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -5865,7 +5927,7 @@
     "subgenre": "Pastoral Counsel",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -5874,7 +5936,7 @@
     "subgenre": "Travelogue",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -5883,7 +5945,7 @@
     "subgenre": "Personal Greetings",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Titus",
@@ -5892,7 +5954,7 @@
     "subgenre": "Pastoral Instruction",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 56
   },
   {
     "book": "Titus",
@@ -5901,7 +5963,7 @@
     "subgenre": "Paraenesis",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 56
   },
   {
     "book": "Titus",
@@ -5910,7 +5972,7 @@
     "subgenre": "Theological Summary",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 56
   },
   {
     "book": "Doctrine and Covenants",

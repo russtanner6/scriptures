@@ -2860,7 +2860,8 @@
     ],
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 3,
@@ -2874,7 +2875,8 @@
     ],
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 10,
@@ -2888,7 +2890,8 @@
     ],
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 13,
@@ -2902,7 +2905,8 @@
     ],
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 21,
@@ -2916,7 +2920,8 @@
     ],
     "bookName": "John",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 43
   },
   {
     "chapter": 1,
@@ -2942,7 +2947,8 @@
     ],
     "bookName": "Jude",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 65
   },
   {
     "chapter": 1,
@@ -2956,7 +2962,8 @@
     ],
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 2,
@@ -2970,7 +2977,8 @@
     ],
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 3,
@@ -2984,7 +2992,8 @@
     ],
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 4,
@@ -2998,7 +3007,8 @@
     ],
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 6,
@@ -3012,7 +3022,8 @@
     ],
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 7,
@@ -3026,7 +3037,8 @@
     ],
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 9,
@@ -3040,7 +3052,8 @@
     ],
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 10,
@@ -3054,7 +3067,8 @@
     ],
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 13,
@@ -3068,7 +3082,8 @@
     ],
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 15,
@@ -3082,7 +3097,8 @@
     ],
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 18,
@@ -3096,7 +3112,8 @@
     ],
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 20,
@@ -3110,7 +3127,8 @@
     ],
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 21,
@@ -3124,7 +3142,8 @@
     ],
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 22,
@@ -3138,7 +3157,8 @@
     ],
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 23,
@@ -3152,7 +3172,8 @@
     ],
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 24,
@@ -3166,7 +3187,8 @@
     ],
     "bookName": "Luke",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 42
   },
   {
     "chapter": 1,
@@ -3180,7 +3202,8 @@
     ],
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 6,
@@ -3194,7 +3217,8 @@
     ],
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 9,
@@ -3208,7 +3232,8 @@
     ],
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 10,
@@ -3222,7 +3247,8 @@
     ],
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 13,
@@ -3236,7 +3262,8 @@
     ],
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 14,
@@ -3250,7 +3277,8 @@
     ],
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "chapter": 16,
@@ -3264,7 +3292,8 @@
     ],
     "bookName": "Mark",
     "volumeAbbrev": "NT",
-    "volumeName": "New Testament"
+    "volumeName": "New Testament",
+    "bookId": 41
   },
   {
     "book": "Matthew",
@@ -3275,7 +3304,7 @@
     "note": "The birth of Jesus to a virgin fulfills Isaiah's prophecy of Immanuel.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -3286,7 +3315,7 @@
     "note": "Bethlehem identified as the birthplace of the Messiah per Micah's prophecy.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -3297,7 +3326,7 @@
     "note": "Jesus quotes Deuteronomy in resisting Satan's first temptation.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -3308,7 +3337,7 @@
     "note": "The Sermon on the Mount is repeated to the Nephites with the added phrase 'even as I, or your Father who is in heaven is perfect.'",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -3319,7 +3348,7 @@
     "note": "The principle of losing one's life to find it is echoed in modern revelation.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -3330,7 +3359,7 @@
     "note": "The mustard seed parable parallels Alma's teaching of the word as a seed that grows into a mighty tree.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -3341,7 +3370,7 @@
     "note": "The keys of the kingdom given to Peter are referenced in the context of sealing authority.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -3352,7 +3381,7 @@
     "note": "Moses and Elias (Elijah) appeared on the Mount of Transfiguration and later in the Kirtland Temple.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -3363,7 +3392,7 @@
     "note": "The rejected cornerstone prophecy is explored in depth by the prophet Jacob.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -3374,7 +3403,7 @@
     "note": "Joseph Smith's inspired revision of the Olivet discourse clarifies the signs of the Second Coming.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -3385,7 +3414,7 @@
     "note": "The atoning blood shed for the remission of sins is a central theme shared by King Benjamin.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Matthew",
@@ -3396,7 +3425,7 @@
     "note": "Jesus quotes David's messianic psalm from the cross.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 40
   },
   {
     "book": "Philemon",
@@ -3407,7 +3436,7 @@
     "note": "Onesimus is mentioned alongside Tychicus as a faithful brother being sent to the Colossians.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 57
   },
   {
     "book": "Philemon",
@@ -3418,7 +3447,7 @@
     "note": "In Christ there is neither bond nor free — the theological basis for Paul's appeal.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 57
   },
   {
     "book": "Philemon",
@@ -3429,7 +3458,7 @@
     "note": "The command to esteem every man as yourself echoes Paul's request to receive Onesimus as himself.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 57
   },
   {
     "book": "Philippians",
@@ -3440,7 +3469,7 @@
     "note": "Christ's condescension and self-emptying is shown in Nephi's vision of the Son of God descending to minister among men.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 50
   },
   {
     "book": "Philippians",
@@ -3451,7 +3480,7 @@
     "note": "The thirteenth Article of Faith directly echoes Paul's admonition to seek after virtuous, lovely, and praiseworthy things.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 50
   },
   {
     "book": "Revelation",
@@ -3462,7 +3491,7 @@
     "note": "Both passages describe the glorified, resurrected Christ appearing to prophets.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -3473,7 +3502,7 @@
     "note": "D&C 77 provides direct, revealed answers to John's questions about the symbols in Revelation 4.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -3484,7 +3513,7 @@
     "note": "The sealed book is identified as containing God's will and the history of the earth in its seven thousand years.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -3495,7 +3524,7 @@
     "note": "The 144,000 are identified as high priests ordained to administer the everlasting gospel.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -3506,7 +3535,7 @@
     "note": "The little book John ate is identified as a mission to gather Israel in the last days.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -3517,7 +3546,7 @@
     "note": "Moses provides the pre-mortal context for Satan's rebellion and the War in Heaven.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -3528,7 +3557,7 @@
     "note": "Both passages describe the angel flying through the midst of heaven with the everlasting gospel.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -3539,7 +3568,7 @@
     "note": "The marriage of the Lamb is illuminated by the doctrine of celestial/eternal marriage.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -3550,7 +3579,7 @@
     "note": "Both describe conditions during the Millennium, including peace and the binding of Satan.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Revelation",
@@ -3561,7 +3590,7 @@
     "note": "Ether's vision of the New Jerusalem parallels John's, identifying it as a holy city for the righteous.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 66
   },
   {
     "book": "Romans",
@@ -3572,7 +3601,7 @@
     "note": "Paul quotes Habakkuk's declaration that the just shall live by faith as the thesis of his epistle.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -3583,7 +3612,7 @@
     "note": "Both passages teach the universal fallen state of mankind and the necessity of divine grace.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -3594,7 +3623,7 @@
     "note": "Both passages explain the Fall of Adam and its effects upon all humanity, with redemption through Christ.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -3605,7 +3634,7 @@
     "note": "Joint-heirs with Christ inherit the celestial kingdom, receiving all that the Father hath.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -3616,7 +3645,7 @@
     "note": "Both passages develop the relationship between faith, hearing the word, and spiritual growth.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -3627,7 +3656,7 @@
     "note": "The Allegory of the Olive Tree in Jacob is the most extensive parallel to Paul's olive tree metaphor.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Romans",
@@ -3638,7 +3667,7 @@
     "note": "Both passages call believers to consecrate themselves wholly to God through Christ's grace.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 45
   },
   {
     "book": "Titus",
@@ -3649,7 +3678,7 @@
     "note": "Both passages describe the character qualifications and righteous conduct required of priesthood leaders.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 56
   },
   {
     "book": "Titus",
@@ -3660,7 +3689,7 @@
     "note": "Both teach that salvation comes through grace, with the expectation of faithful effort on the believer's part.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 56
   },
   {
     "book": "Titus",
@@ -3671,7 +3700,7 @@
     "note": "Both passages describe the spiritual rebirth and transformation that comes through God's mercy, not man's merit.",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
-    "bookId": null
+    "bookId": 56
   },
   {
     "book": "Doctrine and Covenants",

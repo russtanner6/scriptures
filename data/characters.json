@@ -20459,7 +20459,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "amasai",
@@ -20468,7 +20469,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "benaiah",
@@ -20477,7 +20479,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 3
+    "tier": 3,
+    "aliases": []
   },
   {
     "id": "micaiah",
@@ -20486,7 +20489,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "naboth",
@@ -20495,7 +20499,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "hadad-edomite",
@@ -20504,7 +20509,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "shimei-benjamite",
@@ -20513,7 +20519,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "agag",
@@ -20522,7 +20529,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "eliab",
@@ -20531,7 +20539,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "kish",
@@ -20540,7 +20549,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "abishai",
@@ -20549,7 +20559,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "abner",
@@ -20558,7 +20569,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 3
+    "tier": 3,
+    "aliases": []
   },
   {
     "id": "nahash",
@@ -20567,7 +20579,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "huram-king-of-tyre",
@@ -20588,7 +20601,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "jahaziel",
@@ -20597,7 +20611,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "oded",
@@ -20606,7 +20621,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "sennacherib",
@@ -20615,7 +20631,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 3
+    "tier": 3,
+    "aliases": []
   },
   {
     "id": "huldah",
@@ -20624,7 +20641,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "queen-of-sheba",
@@ -20633,7 +20651,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 3
+    "tier": 3,
+    "aliases": []
   },
   {
     "id": "gehazi",
@@ -20642,7 +20661,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "hilkiah",
@@ -20651,7 +20671,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "gedaliah",
@@ -20660,7 +20681,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "jehonadab",
@@ -20669,7 +20691,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "athaliah",
@@ -20678,7 +20701,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 3
+    "tier": 3,
+    "aliases": []
   },
   {
     "id": "ish-bosheth",
@@ -20699,7 +20723,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "amnon",
@@ -20708,7 +20733,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "jonadab",
@@ -20717,7 +20743,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "ahimaaz",
@@ -20726,7 +20753,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "cushi",
@@ -20735,7 +20763,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "eliakim-steward",
@@ -20744,7 +20773,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "shiphrah",
@@ -20753,7 +20783,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "puah",
@@ -20762,7 +20793,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "agur",
@@ -20771,7 +20803,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "balaams-donkey",
@@ -20780,7 +20813,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "phinehas-son-of-eleazar",
@@ -20789,7 +20823,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 3
+    "tier": 3,
+    "aliases": []
   },
   {
     "id": "eleazar-priest",
@@ -20798,7 +20833,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 3
+    "tier": 3,
+    "aliases": []
   },
   {
     "id": "arioch",
@@ -20807,7 +20843,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "aliases": []
   },
   {
     "id": "belshazzar",
@@ -20816,7 +20853,8 @@
     "volumes": [
       "OT"
     ],
-    "tier": 3
+    "tier": 3,
+    "aliases": []
   },
   {
     "id": "abed-nego",
