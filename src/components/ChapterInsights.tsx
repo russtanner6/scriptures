@@ -197,15 +197,17 @@ export default function ChapterInsights({
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "12px" : "20px", flexWrap: "wrap" }}>
-          {/* Verse count */}
-          <div style={{ display: "flex", alignItems: "baseline", gap: "4px" }}>
-            <span style={{ fontSize: isMobile ? "0.82rem" : "0.88rem", fontWeight: 700, color: theme.text }}>
-              {stats.verseCount}
-            </span>
-            <span style={{ fontSize: "0.65rem", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.06em", color: theme.textMuted }}>
-              Verses
-            </span>
-          </div>
+          {/* Verse count — hidden on mobile */}
+          {!isMobile && (
+            <div style={{ display: "flex", alignItems: "baseline", gap: "4px" }}>
+              <span style={{ fontSize: "0.88rem", fontWeight: 700, color: theme.text }}>
+                {stats.verseCount}
+              </span>
+              <span style={{ fontSize: "0.65rem", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.06em", color: theme.textMuted }}>
+                Verses
+              </span>
+            </div>
+          )}
 
           {/* People count with stacked portraits */}
           {chapterChars.length > 0 && (
