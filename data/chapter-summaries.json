@@ -11976,5 +11976,901 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 21
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 1,
+    "summary": "Ezekiel sees a vision of four living creatures with four faces and four wings, wheels within wheels, and the likeness of the glory of the Lord above a throne of sapphire.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 2,
+    "summary": "God commissions Ezekiel to speak to the rebellious house of Israel, commanding him not to fear, and gives him a scroll written with lamentations and mourning.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 3,
+    "summary": "Ezekiel eats the scroll, is sent to the house of Israel, and is appointed as a watchman responsible for warning the wicked and the righteous.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 4,
+    "summary": "Ezekiel performs symbolic acts portraying the siege of Jerusalem, lying on his left side 390 days for Israel and 40 days on his right for Judah, eating rationed food.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 5,
+    "summary": "Ezekiel shaves his head and divides the hair into thirds to symbolize Jerusalem's fate: a third burned, a third struck by the sword, and a third scattered.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 6,
+    "summary": "God pronounces judgment against the mountains of Israel for their high-place idolatry; the slain will fall among their idols, though a remnant will be spared to remember.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 7,
+    "summary": "The end has come upon the four corners of the land; God's wrath brings violence, pestilence, and economic collapse; silver and gold cannot deliver in the day of wrath.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 8,
+    "summary": "In vision, Ezekiel is taken to the temple in Jerusalem where he witnesses escalating abominations: the image of jealousy, secret idolatry, Tammuz worship, and sun worship.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 9,
+    "summary": "Six executioners and a man with an inkhorn are sent through Jerusalem; those who sigh over abominations are marked for preservation; the rest are slain.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 10,
+    "summary": "The cherubim and wheel-throne vision is repeated; coals of fire are scattered over Jerusalem; the glory of the Lord departs from the temple threshold to the cherubim.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 11,
+    "summary": "Twenty-five wicked princes are condemned; Pelatiah dies; God promises the exiles a new heart and spirit, pledging to gather them and be their sanctuary.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 12,
+    "summary": "Ezekiel digs through a wall and carries his belongings out by night as a sign of exile; the prince in Jerusalem will be captured; every vision will be fulfilled soon.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 13,
+    "summary": "Condemnation of false prophets who see vanity and divine lies, and of prophetesses who sew pillows and make kerchiefs to hunt souls; their walls of whitewash will fall.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 14,
+    "summary": "Elders with idols in their hearts are rebuked; even if Noah, Daniel, and Job were in the land, they could only save themselves; four sore judgments on Jerusalem.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 15,
+    "summary": "Jerusalem is compared to a vine branch that is useless for any work—good only for fuel—because the inhabitants have trespassed grievously.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 16,
+    "summary": "An extended allegory of Jerusalem as an abandoned infant whom God rescued, clothed, and married, but who became a harlot worse than Sodom and Samaria; yet God will remember His covenant.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 17,
+    "summary": "A riddle of two eagles and a vine: Babylon carried away the king, Egypt could not help, and Zedekiah's broken oath will bring judgment; God will plant a noble cedar on a high mountain.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 18,
+    "summary": "God declares each soul is accountable for its own sin; children do not bear their father's iniquity; the wicked who repent shall live; God has no pleasure in the death of the wicked.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 19,
+    "summary": "A lamentation for the princes of Israel: two young lions taken captive (Jehoahaz and Zedekiah), and a vine (the nation) plucked up, withered, and burned.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 20,
+    "summary": "God recounts Israel's history of rebellion from Egypt to the wilderness to Canaan; despite their idolatry He will gather them, purge the rebels, and bring them to His holy mountain.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 21,
+    "summary": "The sword of the Lord is drawn and polished for slaughter; Babylon stands at the crossroads and chooses Jerusalem; the crown is overturned until He comes whose right it is.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 22,
+    "summary": "A catalog of Jerusalem's sins: bloodshed, idolatry, oppression of strangers, profaning the sabbath, dishonesty, and immorality; no one is found to stand in the gap.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 23,
+    "summary": "The allegory of two sisters, Oholah (Samaria) and Oholibah (Jerusalem), who played the harlot with Assyria and Babylon; both will drink the cup of desolation.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 24,
+    "summary": "The parable of the boiling pot symbolizing Jerusalem's siege; Ezekiel's wife dies and he is forbidden to mourn, signifying Jerusalem's coming grief beyond mourning.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 25,
+    "summary": "Oracles against four neighboring nations: Ammon, Moab, Edom, and Philistia—all condemned for their hostility toward Judah during its destruction.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 26,
+    "summary": "Prophecy against Tyre: because she rejoiced over Jerusalem's fall, many nations will rise against her; Nebuchadnezzar will besiege her and she will become a bare rock.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 27,
+    "summary": "A lamentation over Tyre depicted as a magnificent merchant ship built of the finest materials from many nations, which sinks in the heart of the seas.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 28,
+    "summary": "The prince of Tyre is condemned for claiming to be a god; a lament over the king of Tyre recalls a figure in Eden; God also pronounces judgment on Sidon and promises to restore Israel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 29,
+    "summary": "Pharaoh is compared to a great dragon in the Nile; Egypt will be desolate forty years and then restored as a lowly kingdom; Babylon is given Egypt as wages.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 30,
+    "summary": "A further oracle against Egypt: the day of the Lord brings sword upon Egypt and its allies; the arms of Pharaoh are broken and Babylon is strengthened.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 31,
+    "summary": "Pharaoh is warned through the example of Assyria, likened to a great cedar of Lebanon that was brought down in its pride to Sheol.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 32,
+    "summary": "A lamentation over Pharaoh as a sea monster caught in a net; Egypt descends to the pit and lies among the uncircumcised fallen nations.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 33,
+    "summary": "Ezekiel is reappointed watchman; individual responsibility is restated; news arrives that Jerusalem has fallen; the survivors in the land are warned against presumption.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 34,
+    "summary": "God condemns Israel's false shepherds who feed themselves instead of the flock; He will search for His sheep Himself, set up one shepherd David, and make a covenant of peace.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 35,
+    "summary": "Prophecy against Mount Seir (Edom) for its perpetual hatred and bloodshed against Israel and its claim over the lands of Israel and Judah.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 36,
+    "summary": "God promises to restore the mountains of Israel for His name's sake, cleanse the people, give them a new heart and a new spirit, and make the desolate land like the garden of Eden.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 37,
+    "summary": "Ezekiel sees dry bones come to life as a great army symbolizing Israel's restoration; two sticks for Judah and Joseph are joined, signifying reunification under one shepherd with an everlasting covenant.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 38,
+    "summary": "Prophecy against Gog of the land of Magog, who will invade Israel in the latter days with a great army, but God will intervene with pestilence, blood, fire, and brimstone.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 39,
+    "summary": "Gog's armies are destroyed on the mountains of Israel; it takes seven months to bury the dead and seven years to burn the weapons; God pours out His spirit on Israel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 40,
+    "summary": "In the twenty-fifth year of exile, Ezekiel is taken in vision to a high mountain and shown a future temple; a man with a measuring reed measures the gates and outer court.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 41,
+    "summary": "The inner temple is measured: the nave, the most holy place, the side chambers, the decorations of cherubim and palm trees, and the wooden altar.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 42,
+    "summary": "The priests' chambers north and south of the temple are measured; they are designated as holy space where priests eat the most holy offerings and change garments.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 43,
+    "summary": "The glory of the Lord returns to the temple from the east, filling the house with His presence; God commands the altar dimensions and the seven-day consecration ritual.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 44,
+    "summary": "The outer east gate is shut because the Lord entered by it; regulations distinguish the faithful sons of Zadok from unfaithful Levites; priestly conduct is prescribed.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 45,
+    "summary": "A holy portion of the land is set apart for the sanctuary, priests, Levites, and the prince; just weights and measures are required; feasts and offerings are specified.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 46,
+    "summary": "Regulations for the prince's sabbath and new moon worship at the inner gate; instructions for daily offerings, inheritance, and the boiling kitchens for sacrifices.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 47,
+    "summary": "Waters issue from under the temple threshold flowing eastward, deepening into a river that heals the Dead Sea and gives life; trees grow on its banks; the land boundaries are described.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 48,
+    "summary": "The land is divided among the twelve tribes in parallel strips; the holy district with the temple is in the center; the city has twelve gates and is named The LORD Is There.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Joshua",
+    "chapter": 1,
+    "summary": "After the death of Moses, the Lord commissions Joshua to lead Israel into the promised land, commanding courage and obedience to the law.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 2,
+    "summary": "Joshua sends two spies to Jericho; Rahab hides them and professes faith in the God of Israel, securing a promise of protection.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 3,
+    "summary": "Israel crosses the Jordan River on dry ground as the priests bearing the Ark stand in the riverbed and the waters are cut off.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 4,
+    "summary": "Twelve stones are taken from the Jordan as a memorial; Israel camps at Gilgal and the crossing magnifies Joshua before the people.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 5,
+    "summary": "Israel is circumcised at Gilgal, keeps the Passover, the manna ceases, and Joshua meets the captain of the Lord's host near Jericho.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 6,
+    "summary": "Israel marches around Jericho for seven days; on the seventh day the walls fall, the city is destroyed, and Rahab's family is saved.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 7,
+    "summary": "Israel is defeated at Ai because of Achan's sin in taking forbidden spoils from Jericho; Achan is discovered and executed.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 8,
+    "summary": "With God's direction, Israel ambushes and destroys Ai; Joshua builds an altar on Mount Ebal and reads the law to all Israel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 9,
+    "summary": "The Gibeonites deceive Israel into making a peace treaty by pretending to be distant travelers; they are made servants when discovered.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 10,
+    "summary": "Five Amorite kings attack Gibeon; Joshua defeats them as the Lord sends hailstones and the sun and moon stand still over the battlefield.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 11,
+    "summary": "Joshua defeats a coalition of northern kings led by Jabin of Hazor, completing the major military campaigns of the conquest.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 12,
+    "summary": "A summary of thirty-one kings defeated by Moses east of the Jordan and Joshua west of the Jordan during the conquest of Canaan.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 13,
+    "summary": "God tells Joshua that much land remains unconquered and describes the territorial allotments for Reuben, Gad, and half-Manasseh east of Jordan.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 14,
+    "summary": "The land distribution at Gilgal begins; Caleb claims Hebron, testifying he wholly followed the Lord for forty-five years since Kadesh-barnea.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 15,
+    "summary": "The boundaries and cities of Judah's inheritance are described in detail, including Caleb's conquest of Hebron and Debir.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 16,
+    "summary": "The allotment for Ephraim is described; the Ephraimites fail to drive out the Canaanites dwelling in Gezer.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 17,
+    "summary": "The half-tribe of Manasseh receives its western allotment; Zelophehad's daughters claim their inheritance, and the tribe seeks more territory.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 18,
+    "summary": "The tabernacle is set up at Shiloh; the remaining seven tribes have their land surveyed and allotted by lot.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 19,
+    "summary": "The final tribal allotments are distributed to Simeon, Zebulun, Issachar, Asher, Naphtali, and Dan; Joshua receives Timnath-serah.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 20,
+    "summary": "Six cities of refuge are designated (three on each side of Jordan) to protect those who kill a person unintentionally.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 21,
+    "summary": "Forty-eight cities with pasture lands are given to the Levites from among the other tribes; God fulfills all His promises to Israel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 22,
+    "summary": "The eastern tribes are dismissed; they build a memorial altar that nearly causes civil war until its peaceful purpose is explained.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 23,
+    "summary": "Joshua, old and near death, exhorts the leaders of Israel to be faithful to the Lord and warns against mixing with the nations.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 24,
+    "summary": "Joshua recounts God's mighty acts from Abraham to the conquest, challenges Israel to choose whom they will serve, and renews the covenant at Shechem.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Ezra",
+    "chapter": 1,
+    "summary": "King Cyrus of Persia issues a decree permitting the Jews to return to Jerusalem and rebuild the temple, and the people respond with generous offerings of gold, silver, and goods.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 2,
+    "summary": "A detailed census of the families, priests, Levites, singers, gatekeepers, and temple servants who return from Babylonian captivity to Jerusalem.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 3,
+    "summary": "The returned exiles rebuild the altar, reinstitute sacrifices and feast days, and lay the foundation of the temple amid mixed reactions of shouting and weeping.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 4,
+    "summary": "Local adversaries attempt to join and then sabotage the rebuilding effort, eventually persuading the Persian court to halt construction of the temple.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 5,
+    "summary": "Encouraged by the prophets Haggai and Zechariah, Zerubbabel and Jeshua resume building; governor Tattenai investigates and writes to Darius for confirmation.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 6,
+    "summary": "Darius finds Cyrus's original decree, orders the temple work to continue with royal support, and the Jews complete and dedicate the temple with joyful celebration and Passover.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 7,
+    "summary": "Ezra the scribe and priest is introduced with his lineage; King Artaxerxes commissions him with a letter granting authority and resources to go up to Jerusalem.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 8,
+    "summary": "Ezra assembles the returning exiles by family, proclaims a fast for divine protection on the journey, and they arrive safely in Jerusalem with the temple treasures.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 9,
+    "summary": "Ezra is horrified to learn that the people, priests, and Levites have intermarried with surrounding nations, and he offers a heartfelt prayer of confession and shame before God.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 10,
+    "summary": "The people confess their sin of intermarriage, covenant to put away foreign wives, and a formal process is established to investigate and resolve each case.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 1,
+    "summary": "Nehemiah receives word that Jerusalem's walls are broken down and its gates burned; he weeps, fasts, and prays a confession for Israel's sins.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 2,
+    "summary": "King Artaxerxes grants Nehemiah permission, letters, and resources to go to Jerusalem; Nehemiah inspects the ruined walls by night and rallies the people to rebuild.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 3,
+    "summary": "A section-by-section account of the families, priests, rulers, and craftsmen who rebuild specific gates and portions of the Jerusalem wall.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 4,
+    "summary": "Sanballat and Tobiah mock and then conspire to attack; Nehemiah arms the builders, posts guards, and exhorts the people to fight for their families.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 5,
+    "summary": "Nehemiah confronts the nobles and rulers for charging usury on their own people, and he sets a personal example by refusing the governor's food allowance.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 6,
+    "summary": "Sanballat and Tobiah attempt to lure Nehemiah away and use a false prophet to frighten him, but the wall is completed in fifty-two days.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 7,
+    "summary": "Nehemiah appoints gatekeepers, singers, and Levites for the city, and records the genealogical register of those who first returned from exile.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 8,
+    "summary": "Ezra reads the Book of the Law before the assembly; the Levites explain its meaning, and the people are told to rejoice rather than weep, then keep the Feast of Tabernacles.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 9,
+    "summary": "The Israelites fast, confess their sins, and the Levites lead a long prayer recounting God's faithfulness from creation through the patriarchs, exodus, and exile.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 10,
+    "summary": "The leaders, Levites, and priests seal a written covenant to follow the Law, including promises regarding intermarriage, Sabbath, tithes, and temple support.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 11,
+    "summary": "Lots are cast to select one in ten to dwell in Jerusalem; lists of residents, priests, Levites, and officials who settle in the city and surrounding towns.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 12,
+    "summary": "Records the priestly and Levitical families; the wall of Jerusalem is dedicated with two great processional choirs, sacrifices, and great rejoicing.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 13,
+    "summary": "Nehemiah returns from Persia to find abuses: Tobiah lodging in the temple, neglected Levites, Sabbath-breaking, and intermarriage, and he forcefully corrects each problem.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Hosea",
+    "chapter": 1,
+    "summary": "God commands Hosea to marry Gomer, a woman of harlotry, and their three children are given symbolic names representing God's judgment on Israel.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 2,
+    "summary": "God brings charges against Israel for spiritual adultery, threatening judgment, but promises future restoration and a new covenant of betrothal.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 3,
+    "summary": "Hosea buys back his unfaithful wife, symbolizing God's willingness to redeem Israel after a period of discipline and separation.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 4,
+    "summary": "God's controversy with Israel: no truth, mercy, or knowledge of God in the land; priests and people alike are condemned for idolatry and ignorance.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 5,
+    "summary": "Judgment falls on priests, people, and kings of both Israel and Judah for pride and unfaithfulness; God will withdraw until they seek His face.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 6,
+    "summary": "A call to return to the Lord who wounds and heals; God desires mercy and not sacrifice, and knowledge of God more than burnt offerings.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 7,
+    "summary": "Israel is compared to a hot oven of conspiracy, a cake not turned, and a silly dove, mixing with heathen nations and forgetting God.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 8,
+    "summary": "Israel has broken the covenant and transgressed the law; they have sown the wind and shall reap the whirlwind through foreign invasion.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 9,
+    "summary": "Exile and barrenness are announced as punishment; Israel's corruption at Baal-peor is recalled, and Ephraim's glory shall fly away.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 10,
+    "summary": "Israel is an empty vine bringing forth fruit for itself; the people are called to sow righteousness and reap mercy before destruction comes.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 11,
+    "summary": "God recalls tenderly calling Israel as a child out of Egypt and expresses anguished love, refusing to completely destroy them despite their rebellion.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 12,
+    "summary": "Ephraim's deceit is contrasted with Jacob's wrestling with God; the people are called to return to God and keep mercy and judgment.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 13,
+    "summary": "Severe judgment for idolatry and ingratitude; yet God promises to ransom from death and redeem from the grave, declaring victory over death.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 14,
+    "summary": "A final invitation to return with words of repentance; God promises to heal their backsliding and love them freely, making them flourish.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Joel",
+    "chapter": 1,
+    "summary": "A catastrophic locust plague devastates the land; Joel calls for national mourning, fasting, and repentance as the day of the Lord approaches.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 29
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "summary": "The day of the Lord is described as a great and terrible army; the people are called to rend their hearts, and God promises to pour out His Spirit on all flesh.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 29
+  },
+  {
+    "book": "Joel",
+    "chapter": 3,
+    "summary": "God gathers the nations to the valley of Jehoshaphat for judgment, delivers His people, and establishes Zion as a place of eternal refuge.",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 29
   }
 ]

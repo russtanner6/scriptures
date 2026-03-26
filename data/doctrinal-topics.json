@@ -18185,5 +18185,1376 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 21
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 1,
+    "topics": [
+      "glory of God",
+      "revelation",
+      "vision"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 2,
+    "topics": [
+      "prophetic calling",
+      "obedience",
+      "courage"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 3,
+    "topics": [
+      "watchman",
+      "accountability",
+      "revelation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 4,
+    "topics": [
+      "judgment",
+      "prophetic signs",
+      "suffering"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 5,
+    "topics": [
+      "judgment",
+      "covenant",
+      "justice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 6,
+    "topics": [
+      "idolatry",
+      "judgment",
+      "remnant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 7,
+    "topics": [
+      "judgment",
+      "last days",
+      "wrath"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 8,
+    "topics": [
+      "idolatry",
+      "temple",
+      "apostasy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 9,
+    "topics": [
+      "judgment",
+      "protection of the faithful",
+      "justice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 10,
+    "topics": [
+      "glory of God",
+      "departure",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 11,
+    "topics": [
+      "judgment",
+      "new heart",
+      "gathering of israel"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 12,
+    "topics": [
+      "exile",
+      "prophetic fulfillment",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 13,
+    "topics": [
+      "false prophets",
+      "truth",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 14,
+    "topics": [
+      "idolatry",
+      "individual righteousness",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 15,
+    "topics": [
+      "judgment",
+      "covenant",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 16,
+    "topics": [
+      "covenant",
+      "mercy",
+      "repentance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 17,
+    "topics": [
+      "covenant",
+      "judgment",
+      "messianic prophecy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 18,
+    "topics": [
+      "agency",
+      "repentance",
+      "justice",
+      "mercy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 19,
+    "topics": [
+      "lamentation",
+      "judgment",
+      "kingship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 20,
+    "topics": [
+      "sabbath",
+      "idolatry",
+      "gathering of israel",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 21,
+    "topics": [
+      "judgment",
+      "messianic prophecy",
+      "sword"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 22,
+    "topics": [
+      "justice",
+      "corruption",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 23,
+    "topics": [
+      "idolatry",
+      "judgment",
+      "covenant breaking"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 24,
+    "topics": [
+      "judgment",
+      "mourning",
+      "prophetic signs"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 25,
+    "topics": [
+      "judgment",
+      "justice",
+      "nations"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 26,
+    "topics": [
+      "pride",
+      "judgment",
+      "prophecy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 27,
+    "topics": [
+      "pride",
+      "judgment",
+      "temporal wealth"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 28,
+    "topics": [
+      "pride",
+      "fall",
+      "restoration"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 29,
+    "topics": [
+      "judgment",
+      "sovereignty",
+      "Egypt"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 30,
+    "topics": [
+      "judgment",
+      "day of the Lord",
+      "sovereignty"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 31,
+    "topics": [
+      "pride",
+      "judgment",
+      "warning"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 32,
+    "topics": [
+      "judgment",
+      "death",
+      "nations"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 33,
+    "topics": [
+      "watchman",
+      "repentance",
+      "agency",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 34,
+    "topics": [
+      "shepherds",
+      "gathering of israel",
+      "covenant",
+      "atonement"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 35,
+    "topics": [
+      "judgment",
+      "justice",
+      "Edom"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 36,
+    "topics": [
+      "new heart",
+      "gathering of israel",
+      "sanctification",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 37,
+    "topics": [
+      "resurrection",
+      "gathering of israel",
+      "covenant",
+      "restoration"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 38,
+    "topics": [
+      "last days",
+      "war",
+      "divine protection"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 39,
+    "topics": [
+      "last days",
+      "victory",
+      "Holy Ghost"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 40,
+    "topics": [
+      "temple",
+      "revelation",
+      "sacred space"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 41,
+    "topics": [
+      "temple",
+      "holiness",
+      "sacred architecture"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 42,
+    "topics": [
+      "temple",
+      "holiness",
+      "priesthood"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 43,
+    "topics": [
+      "glory of God",
+      "temple",
+      "sacrifice",
+      "consecration"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 44,
+    "topics": [
+      "priesthood",
+      "temple",
+      "obedience",
+      "holiness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 45,
+    "topics": [
+      "temple",
+      "offerings",
+      "justice",
+      "stewardship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 46,
+    "topics": [
+      "sabbath",
+      "worship",
+      "offerings",
+      "inheritance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 47,
+    "topics": [
+      "living water",
+      "healing",
+      "temple",
+      "land inheritance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 48,
+    "topics": [
+      "inheritance",
+      "temple",
+      "gathering of israel",
+      "God's presence"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Joshua",
+    "chapter": 1,
+    "topics": [
+      "obedience",
+      "courage",
+      "revelation",
+      "promised land"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 2,
+    "topics": [
+      "faith",
+      "salvation",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 3,
+    "topics": [
+      "miracles",
+      "priesthood",
+      "faith"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 4,
+    "topics": [
+      "remembrance",
+      "testimony",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 5,
+    "topics": [
+      "covenant",
+      "consecration",
+      "passover"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 6,
+    "topics": [
+      "obedience",
+      "faith",
+      "divine power"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 7,
+    "topics": [
+      "sin",
+      "repentance",
+      "judgment",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 8,
+    "topics": [
+      "obedience",
+      "law",
+      "sacrifice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 9,
+    "topics": [
+      "discernment",
+      "revelation",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 10,
+    "topics": [
+      "faith",
+      "miracles",
+      "divine intervention"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 11,
+    "topics": [
+      "obedience",
+      "fulfillment",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 12,
+    "topics": [
+      "fulfillment",
+      "sovereignty"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 13,
+    "topics": [
+      "inheritance",
+      "stewardship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 14,
+    "topics": [
+      "faith",
+      "perseverance",
+      "inheritance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 15,
+    "topics": [
+      "inheritance",
+      "promised land"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 16,
+    "topics": [
+      "obedience",
+      "inheritance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 17,
+    "topics": [
+      "faith",
+      "inheritance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 18,
+    "topics": [
+      "temple",
+      "priesthood",
+      "inheritance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 19,
+    "topics": [
+      "fulfillment",
+      "inheritance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 20,
+    "topics": [
+      "mercy",
+      "justice",
+      "atonement"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 21,
+    "topics": [
+      "priesthood",
+      "fulfillment",
+      "promise"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 22,
+    "topics": [
+      "unity",
+      "worship",
+      "faithfulness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 23,
+    "topics": [
+      "obedience",
+      "covenant",
+      "faithfulness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 24,
+    "topics": [
+      "agency",
+      "covenant",
+      "service",
+      "testimony"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Ezra",
+    "chapter": 1,
+    "topics": [
+      "gathering of israel",
+      "restoration",
+      "prophecy",
+      "providence"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 2,
+    "topics": [
+      "identity",
+      "gathering of israel",
+      "heritage"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 3,
+    "topics": [
+      "temple",
+      "worship",
+      "sacrifice",
+      "restoration"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 4,
+    "topics": [
+      "opposition",
+      "perseverance",
+      "spiritual warfare"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 5,
+    "topics": [
+      "prophecy",
+      "courage",
+      "faith"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 6,
+    "topics": [
+      "temple",
+      "joy",
+      "passover",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 7,
+    "topics": [
+      "priesthood",
+      "authority",
+      "stewardship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 8,
+    "topics": [
+      "faith",
+      "fasting",
+      "prayer",
+      "providence"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 9,
+    "topics": [
+      "repentance",
+      "covenant",
+      "holiness",
+      "confession"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 10,
+    "topics": [
+      "repentance",
+      "covenant",
+      "accountability",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 1,
+    "topics": [
+      "prayer",
+      "repentance",
+      "covenant",
+      "intercession"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 2,
+    "topics": [
+      "faith",
+      "leadership",
+      "providence"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 3,
+    "topics": [
+      "service",
+      "unity",
+      "stewardship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 4,
+    "topics": [
+      "faith",
+      "courage",
+      "spiritual warfare"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 5,
+    "topics": [
+      "justice",
+      "charity",
+      "leadership",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 6,
+    "topics": [
+      "discernment",
+      "perseverance",
+      "faith"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 7,
+    "topics": [
+      "identity",
+      "gathering of israel",
+      "stewardship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 8,
+    "topics": [
+      "scripture study",
+      "joy",
+      "obedience",
+      "worship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 9,
+    "topics": [
+      "repentance",
+      "mercy",
+      "covenant",
+      "faithfulness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 10,
+    "topics": [
+      "covenant",
+      "obedience",
+      "tithing",
+      "sabbath"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 11,
+    "topics": [
+      "sacrifice",
+      "community",
+      "stewardship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 12,
+    "topics": [
+      "worship",
+      "praise",
+      "dedication",
+      "joy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 13,
+    "topics": [
+      "obedience",
+      "reform",
+      "sabbath",
+      "holiness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Hosea",
+    "chapter": 1,
+    "topics": [
+      "covenant",
+      "judgment",
+      "symbolic prophecy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 2,
+    "topics": [
+      "repentance",
+      "restoration",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 3,
+    "topics": [
+      "redemption",
+      "atonement",
+      "patience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 4,
+    "topics": [
+      "knowledge of god",
+      "priesthood",
+      "idolatry"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 5,
+    "topics": [
+      "pride",
+      "judgment",
+      "humility"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 6,
+    "topics": [
+      "mercy",
+      "sacrifice",
+      "repentance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 7,
+    "topics": [
+      "hypocrisy",
+      "trust in god",
+      "spiritual apathy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 8,
+    "topics": [
+      "obedience",
+      "idolatry",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 9,
+    "topics": [
+      "exile",
+      "judgment",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 10,
+    "topics": [
+      "righteousness",
+      "mercy",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 11,
+    "topics": [
+      "divine love",
+      "compassion",
+      "mercy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 12,
+    "topics": [
+      "honesty",
+      "remembrance",
+      "faithfulness"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 13,
+    "topics": [
+      "resurrection",
+      "death",
+      "redemption",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 14,
+    "topics": [
+      "repentance",
+      "healing",
+      "grace",
+      "restoration"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Joel",
+    "chapter": 1,
+    "topics": [
+      "repentance",
+      "judgment",
+      "fasting",
+      "prayer"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 29
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "topics": [
+      "holy ghost",
+      "restoration",
+      "repentance",
+      "last days"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 29
+  },
+  {
+    "book": "Joel",
+    "chapter": 3,
+    "topics": [
+      "judgment",
+      "zion",
+      "gathering of israel",
+      "millennium"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 29
   }
 ]

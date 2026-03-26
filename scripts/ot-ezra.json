@@ -1,0 +1,114 @@
+{
+  "bookName": "Ezra",
+  "bookId": 15,
+  "sentiment": [
+    {"book":"Ezra","chapter":1,"exaltation":7,"peace":6,"admonition":0,"contrition":0,"dominant":"exaltation","rationale":"Cyrus proclaims the decree to rebuild the temple, attributing the charge to the LORD, and the people rise with generous offerings."},
+    {"book":"Ezra","chapter":2,"exaltation":2,"peace":6,"admonition":0,"contrition":0,"dominant":"peace","rationale":"A census of those returning from exile, recording families, priests, Levites, and servants in orderly restoration."},
+    {"book":"Ezra","chapter":3,"exaltation":8,"peace":5,"admonition":0,"contrition":4,"dominant":"exaltation","rationale":"The altar is rebuilt, sacrifices resume, and the temple foundation is laid amid shouts of praise and tears of the elders."},
+    {"book":"Ezra","chapter":4,"exaltation":0,"peace":2,"admonition":7,"contrition":3,"dominant":"admonition","rationale":"Adversaries oppose the rebuilding through letters to the Persian king, and the work is forcibly halted."},
+    {"book":"Ezra","chapter":5,"exaltation":3,"peace":5,"admonition":2,"contrition":0,"dominant":"peace","rationale":"The prophets Haggai and Zechariah encourage rebuilding; the governor investigates but allows work to continue pending royal review."},
+    {"book":"Ezra","chapter":6,"exaltation":9,"peace":7,"admonition":0,"contrition":0,"dominant":"exaltation","rationale":"Darius confirms Cyrus's decree, the temple is completed, and the people celebrate the dedication and Passover with great joy."},
+    {"book":"Ezra","chapter":7,"exaltation":6,"peace":7,"admonition":0,"contrition":0,"dominant":"peace","rationale":"Ezra the scribe is introduced with his priestly lineage; Artaxerxes grants him authority and resources to beautify the temple."},
+    {"book":"Ezra","chapter":8,"exaltation":4,"peace":7,"admonition":0,"contrition":2,"dominant":"peace","rationale":"Ezra assembles returnees, fasts and prays for safe travel rather than requesting a military escort, and they arrive safely in Jerusalem."},
+    {"book":"Ezra","chapter":9,"exaltation":0,"peace":0,"admonition":5,"contrition":9,"dominant":"contrition","rationale":"Ezra learns of intermarriage with foreign peoples, tears his garment, and offers a deeply sorrowful confession before God."},
+    {"book":"Ezra","chapter":10,"exaltation":0,"peace":3,"admonition":6,"contrition":7,"dominant":"contrition","rationale":"The people weep and covenant to put away foreign wives; a systematic process of repentance and separation is carried out."}
+  ],
+  "speakers": [
+    {"book":"Ezra","chapter":1,"startVerse":2,"endVerse":4,"speaker":"Cyrus"},
+    {"book":"Ezra","chapter":3,"startVerse":11,"endVerse":11,"speaker":"Jesus Christ"},
+    {"book":"Ezra","chapter":5,"startVerse":3,"endVerse":3,"speaker":"Tattenai"},
+    {"book":"Ezra","chapter":5,"startVerse":11,"endVerse":15,"speaker":"Zerubbabel"},
+    {"book":"Ezra","chapter":6,"startVerse":3,"endVerse":5,"speaker":"Cyrus"},
+    {"book":"Ezra","chapter":6,"startVerse":6,"endVerse":12,"speaker":"Darius"},
+    {"book":"Ezra","chapter":7,"startVerse":13,"endVerse":26,"speaker":"Artaxerxes"},
+    {"book":"Ezra","chapter":7,"startVerse":27,"endVerse":28,"speaker":"Ezra"},
+    {"book":"Ezra","chapter":8,"startVerse":17,"endVerse":17,"speaker":"Ezra"},
+    {"book":"Ezra","chapter":9,"startVerse":6,"endVerse":15,"speaker":"Ezra"},
+    {"book":"Ezra","chapter":10,"startVerse":2,"endVerse":3,"speaker":"Shecaniah"},
+    {"book":"Ezra","chapter":10,"startVerse":4,"endVerse":4,"speaker":"Shecaniah"},
+    {"book":"Ezra","chapter":10,"startVerse":11,"endVerse":11,"speaker":"Ezra"}
+  ],
+  "missingCharacters": [
+    {"name":"Shecaniah","book":"Ezra","description":"Son of Jehiel, who urged Ezra to put away the foreign wives, expressing hope for Israel's repentance.","volumes":["OT"]},
+    {"name":"Tattenai","book":"Ezra","description":"Persian governor of the province beyond the river who inquired about the authority to rebuild the Jerusalem temple.","volumes":["OT"]}
+  ],
+  "summaries": [
+    {"book":"Ezra","chapter":1,"summary":"King Cyrus of Persia issues a decree permitting the Jews to return to Jerusalem and rebuild the temple, and the people respond with generous offerings of gold, silver, and goods."},
+    {"book":"Ezra","chapter":2,"summary":"A detailed census of the families, priests, Levites, singers, gatekeepers, and temple servants who return from Babylonian captivity to Jerusalem."},
+    {"book":"Ezra","chapter":3,"summary":"The returned exiles rebuild the altar, reinstitute sacrifices and feast days, and lay the foundation of the temple amid mixed reactions of shouting and weeping."},
+    {"book":"Ezra","chapter":4,"summary":"Local adversaries attempt to join and then sabotage the rebuilding effort, eventually persuading the Persian court to halt construction of the temple."},
+    {"book":"Ezra","chapter":5,"summary":"Encouraged by the prophets Haggai and Zechariah, Zerubbabel and Jeshua resume building; governor Tattenai investigates and writes to Darius for confirmation."},
+    {"book":"Ezra","chapter":6,"summary":"Darius finds Cyrus's original decree, orders the temple work to continue with royal support, and the Jews complete and dedicate the temple with joyful celebration and Passover."},
+    {"book":"Ezra","chapter":7,"summary":"Ezra the scribe and priest is introduced with his lineage; King Artaxerxes commissions him with a letter granting authority and resources to go up to Jerusalem."},
+    {"book":"Ezra","chapter":8,"summary":"Ezra assembles the returning exiles by family, proclaims a fast for divine protection on the journey, and they arrive safely in Jerusalem with the temple treasures."},
+    {"book":"Ezra","chapter":9,"summary":"Ezra is horrified to learn that the people, priests, and Levites have intermarried with surrounding nations, and he offers a heartfelt prayer of confession and shame before God."},
+    {"book":"Ezra","chapter":10,"summary":"The people confess their sin of intermarriage, covenant to put away foreign wives, and a formal process is established to investigate and resolve each case."}
+  ],
+  "themes": [
+    {"book":"Ezra","chapter":1,"themes":["restoration","divine decree","generosity","return"]},
+    {"book":"Ezra","chapter":2,"themes":["genealogy","identity","gathering","heritage"]},
+    {"book":"Ezra","chapter":3,"themes":["temple","worship","foundation","mixed emotions"]},
+    {"book":"Ezra","chapter":4,"themes":["opposition","deception","persecution","setback"]},
+    {"book":"Ezra","chapter":5,"themes":["prophetic encouragement","persistence","divine oversight","inquiry"]},
+    {"book":"Ezra","chapter":6,"themes":["temple dedication","joy","passover","divine vindication"]},
+    {"book":"Ezra","chapter":7,"themes":["priesthood","authority","divine favor","preparation"]},
+    {"book":"Ezra","chapter":8,"themes":["faith","fasting","trust in god","safe passage"]},
+    {"book":"Ezra","chapter":9,"themes":["repentance","grief","intermarriage","confession"]},
+    {"book":"Ezra","chapter":10,"themes":["covenant renewal","separation","accountability","corporate repentance"]}
+  ],
+  "crossReferences": [
+    {"book":"Ezra","chapter":1,"verse":1,"crossReference":"Jeremiah 29:10","type":"fulfillment","note":"Cyrus's decree fulfills Jeremiah's prophecy that after seventy years God would cause the return to Jerusalem."},
+    {"book":"Ezra","chapter":1,"verse":2,"crossReference":"Isaiah 44:28","type":"fulfillment","note":"Cyrus named by Isaiah as the shepherd who would decree the rebuilding of the temple."},
+    {"book":"Ezra","chapter":3,"verse":11,"crossReference":"Psalm 136:1","type":"parallel","note":"The people sing praises echoing the refrain that the mercy of the LORD endures forever."},
+    {"book":"Ezra","chapter":6,"verse":22,"crossReference":"2 Chronicles 30:21","type":"parallel","note":"Parallels the joyful celebration of Passover with the great assembly in Hezekiah's time."},
+    {"book":"Ezra","chapter":9,"verse":9,"crossReference":"Nehemiah 1:3","type":"parallel","note":"References the wall and restoration of Jerusalem, connecting to Nehemiah's later rebuilding effort."}
+  ],
+  "doctrinalTopics": [
+    {"book":"Ezra","chapter":1,"topics":["gathering of israel","restoration","prophecy","providence"]},
+    {"book":"Ezra","chapter":2,"topics":["identity","gathering of israel","heritage"]},
+    {"book":"Ezra","chapter":3,"topics":["temple","worship","sacrifice","restoration"]},
+    {"book":"Ezra","chapter":4,"topics":["opposition","perseverance","spiritual warfare"]},
+    {"book":"Ezra","chapter":5,"topics":["prophecy","courage","faith"]},
+    {"book":"Ezra","chapter":6,"topics":["temple","joy","passover","obedience"]},
+    {"book":"Ezra","chapter":7,"topics":["priesthood","authority","stewardship"]},
+    {"book":"Ezra","chapter":8,"topics":["faith","fasting","prayer","providence"]},
+    {"book":"Ezra","chapter":9,"topics":["repentance","covenant","holiness","confession"]},
+    {"book":"Ezra","chapter":10,"topics":["repentance","covenant","accountability","obedience"]}
+  ],
+  "historicalContext": [
+    {"book":"Ezra","chapter":1,"era":"Post-exile","approxDate":"c. 538 BC","setting":"Babylon / Jerusalem"},
+    {"book":"Ezra","chapter":2,"era":"Post-exile","approxDate":"c. 538 BC","setting":"Babylon to Jerusalem"},
+    {"book":"Ezra","chapter":3,"era":"Post-exile","approxDate":"c. 536 BC","setting":"Jerusalem, temple site"},
+    {"book":"Ezra","chapter":4,"era":"Post-exile","approxDate":"c. 536-520 BC","setting":"Jerusalem and Persian court"},
+    {"book":"Ezra","chapter":5,"era":"Post-exile","approxDate":"c. 520 BC","setting":"Jerusalem"},
+    {"book":"Ezra","chapter":6,"era":"Post-exile","approxDate":"c. 516 BC","setting":"Jerusalem, temple"},
+    {"book":"Ezra","chapter":7,"era":"Post-exile","approxDate":"c. 458 BC","setting":"Babylon to Jerusalem"},
+    {"book":"Ezra","chapter":8,"era":"Post-exile","approxDate":"c. 458 BC","setting":"Babylon to Jerusalem"},
+    {"book":"Ezra","chapter":9,"era":"Post-exile","approxDate":"c. 457 BC","setting":"Jerusalem"},
+    {"book":"Ezra","chapter":10,"era":"Post-exile","approxDate":"c. 457 BC","setting":"Jerusalem"}
+  ],
+  "literaryGenres": [
+    {"book":"Ezra","chapter":1,"genre":"historical record","subgenre":"royal decree"},
+    {"book":"Ezra","chapter":2,"genre":"historical record","subgenre":"census"},
+    {"book":"Ezra","chapter":3,"genre":"narrative"},
+    {"book":"Ezra","chapter":4,"genre":"narrative","subgenre":"correspondence"},
+    {"book":"Ezra","chapter":5,"genre":"narrative","subgenre":"correspondence"},
+    {"book":"Ezra","chapter":6,"genre":"narrative","subgenre":"royal decree"},
+    {"book":"Ezra","chapter":7,"genre":"narrative","subgenre":"royal decree"},
+    {"book":"Ezra","chapter":8,"genre":"narrative","subgenre":"travel account"},
+    {"book":"Ezra","chapter":9,"genre":"narrative","subgenre":"prayer"},
+    {"book":"Ezra","chapter":10,"genre":"narrative"}
+  ],
+  "notableVerses": [
+    {"book":"Ezra","chapter":1,"verses":[{"verse":3,"reason":"Cyrus's proclamation inviting the Jews to return and rebuild the house of the LORD in Jerusalem."}]},
+    {"book":"Ezra","chapter":2,"verses":[]},
+    {"book":"Ezra","chapter":3,"verses":[{"verse":11,"reason":"The people praised the LORD with a great shout when the temple foundation was laid."},{"verse":12,"reason":"The elders who remembered Solomon's temple wept aloud, while others shouted for joy."}]},
+    {"book":"Ezra","chapter":4,"verses":[]},
+    {"book":"Ezra","chapter":5,"verses":[]},
+    {"book":"Ezra","chapter":6,"verses":[{"verse":22,"reason":"The LORD made them joyful and turned the heart of the king of Assyria unto them."}]},
+    {"book":"Ezra","chapter":7,"verses":[{"verse":10,"reason":"Ezra had prepared his heart to seek the law of the LORD, and to do it, and to teach statutes and judgments."}]},
+    {"book":"Ezra","chapter":8,"verses":[{"verse":22,"reason":"Ezra was ashamed to ask the king for soldiers because he had told the king God's hand is upon all who seek him."}]},
+    {"book":"Ezra","chapter":9,"verses":[{"verse":6,"reason":"Ezra's confession: our iniquities are increased over our head and our trespass is grown up unto the heavens."}]},
+    {"book":"Ezra","chapter":10,"verses":[{"verse":1,"reason":"Ezra praying and weeping before the house of God while a great congregation gathers weeping."}]}
+  ]
+}

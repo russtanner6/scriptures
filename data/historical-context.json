@@ -14862,5 +14862,1125 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 21
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 1,
+    "era": "Exile",
+    "approxDate": "c. 593 BC",
+    "setting": "Babylon, by the river Chebar",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 2,
+    "era": "Exile",
+    "approxDate": "c. 593 BC",
+    "setting": "Babylon, by the river Chebar",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 3,
+    "era": "Exile",
+    "approxDate": "c. 593 BC",
+    "setting": "Babylon, by the river Chebar",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 4,
+    "era": "Exile",
+    "approxDate": "c. 593 BC",
+    "setting": "Babylon, by the river Chebar",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 5,
+    "era": "Exile",
+    "approxDate": "c. 593 BC",
+    "setting": "Babylon, by the river Chebar",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 6,
+    "era": "Exile",
+    "approxDate": "c. 593 BC",
+    "setting": "Babylon (prophecy directed at Israel's mountains)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 7,
+    "era": "Exile",
+    "approxDate": "c. 593 BC",
+    "setting": "Babylon (prophecy directed at the land of Israel)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 8,
+    "era": "Exile",
+    "approxDate": "c. 592 BC",
+    "setting": "Jerusalem (in vision), temple courts",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 9,
+    "era": "Exile",
+    "approxDate": "c. 592 BC",
+    "setting": "Jerusalem (in vision), temple",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 10,
+    "era": "Exile",
+    "approxDate": "c. 592 BC",
+    "setting": "Jerusalem (in vision), temple",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 11,
+    "era": "Exile",
+    "approxDate": "c. 592 BC",
+    "setting": "Jerusalem (in vision), east gate of the temple",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 12,
+    "era": "Exile",
+    "approxDate": "c. 592 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 13,
+    "era": "Exile",
+    "approxDate": "c. 592 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 14,
+    "era": "Exile",
+    "approxDate": "c. 592 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 15,
+    "era": "Exile",
+    "approxDate": "c. 591 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 16,
+    "era": "Exile",
+    "approxDate": "c. 591 BC",
+    "setting": "Babylon (allegory of Jerusalem)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 17,
+    "era": "Exile",
+    "approxDate": "c. 591 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 18,
+    "era": "Exile",
+    "approxDate": "c. 591 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 19,
+    "era": "Exile",
+    "approxDate": "c. 591 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 20,
+    "era": "Exile",
+    "approxDate": "c. 591 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 21,
+    "era": "Exile",
+    "approxDate": "c. 590 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 22,
+    "era": "Exile",
+    "approxDate": "c. 590 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 23,
+    "era": "Exile",
+    "approxDate": "c. 590 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 24,
+    "era": "Exile",
+    "approxDate": "c. 588 BC",
+    "setting": "Babylon (day Jerusalem's siege began)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 25,
+    "era": "Exile",
+    "approxDate": "c. 587 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 26,
+    "era": "Exile",
+    "approxDate": "c. 587 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 27,
+    "era": "Exile",
+    "approxDate": "c. 587 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 28,
+    "era": "Exile",
+    "approxDate": "c. 587 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 29,
+    "era": "Exile",
+    "approxDate": "c. 587 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 30,
+    "era": "Exile",
+    "approxDate": "c. 587 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 31,
+    "era": "Exile",
+    "approxDate": "c. 587 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 32,
+    "era": "Exile",
+    "approxDate": "c. 585 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 33,
+    "era": "Exile",
+    "approxDate": "c. 585 BC",
+    "setting": "Babylon (news of Jerusalem's fall arrives)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 34,
+    "era": "Exile",
+    "approxDate": "c. 585 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 35,
+    "era": "Exile",
+    "approxDate": "c. 585 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 36,
+    "era": "Exile",
+    "approxDate": "c. 585 BC",
+    "setting": "Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 37,
+    "era": "Exile",
+    "approxDate": "c. 585 BC",
+    "setting": "Babylon (valley of dry bones in vision)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 38,
+    "era": "Exile",
+    "approxDate": "c. 585 BC",
+    "setting": "Babylon (eschatological prophecy)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 39,
+    "era": "Exile",
+    "approxDate": "c. 585 BC",
+    "setting": "Babylon (eschatological prophecy)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 40,
+    "era": "Exile",
+    "approxDate": "c. 573 BC",
+    "setting": "High mountain in Israel (in vision)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 41,
+    "era": "Exile",
+    "approxDate": "c. 573 BC",
+    "setting": "Future temple (in vision)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 42,
+    "era": "Exile",
+    "approxDate": "c. 573 BC",
+    "setting": "Future temple (in vision)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 43,
+    "era": "Exile",
+    "approxDate": "c. 573 BC",
+    "setting": "Future temple (in vision)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 44,
+    "era": "Exile",
+    "approxDate": "c. 573 BC",
+    "setting": "Future temple (in vision)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 45,
+    "era": "Exile",
+    "approxDate": "c. 573 BC",
+    "setting": "Future temple (in vision)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 46,
+    "era": "Exile",
+    "approxDate": "c. 573 BC",
+    "setting": "Future temple (in vision)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 47,
+    "era": "Exile",
+    "approxDate": "c. 573 BC",
+    "setting": "Future temple (in vision)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 48,
+    "era": "Exile",
+    "approxDate": "c. 573 BC",
+    "setting": "Future temple and land (in vision)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 26
+  },
+  {
+    "book": "Joshua",
+    "chapter": 1,
+    "era": "Conquest",
+    "approxDate": "c. 1406 BC",
+    "setting": "East of the Jordan River",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 2,
+    "era": "Conquest",
+    "approxDate": "c. 1406 BC",
+    "setting": "Jericho",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 3,
+    "era": "Conquest",
+    "approxDate": "c. 1406 BC",
+    "setting": "Jordan River",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 4,
+    "era": "Conquest",
+    "approxDate": "c. 1406 BC",
+    "setting": "Gilgal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 5,
+    "era": "Conquest",
+    "approxDate": "c. 1406 BC",
+    "setting": "Gilgal, near Jericho",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 6,
+    "era": "Conquest",
+    "approxDate": "c. 1406 BC",
+    "setting": "Jericho",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 7,
+    "era": "Conquest",
+    "approxDate": "c. 1406 BC",
+    "setting": "Ai, Valley of Achor",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 8,
+    "era": "Conquest",
+    "approxDate": "c. 1406 BC",
+    "setting": "Ai, Mount Ebal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 9,
+    "era": "Conquest",
+    "approxDate": "c. 1405 BC",
+    "setting": "Gilgal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 10,
+    "era": "Conquest",
+    "approxDate": "c. 1405 BC",
+    "setting": "Gibeon, southern Canaan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 11,
+    "era": "Conquest",
+    "approxDate": "c. 1405-1400 BC",
+    "setting": "Northern Canaan, Hazor",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 12,
+    "era": "Conquest",
+    "approxDate": "c. 1406-1400 BC",
+    "setting": "Canaan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 13,
+    "era": "Conquest",
+    "approxDate": "c. 1399 BC",
+    "setting": "Canaan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 14,
+    "era": "Conquest",
+    "approxDate": "c. 1399 BC",
+    "setting": "Gilgal",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 15,
+    "era": "Conquest",
+    "approxDate": "c. 1399 BC",
+    "setting": "Judah's territory",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 16,
+    "era": "Conquest",
+    "approxDate": "c. 1399 BC",
+    "setting": "Ephraim's territory",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 17,
+    "era": "Conquest",
+    "approxDate": "c. 1399 BC",
+    "setting": "Manasseh's territory",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 18,
+    "era": "Conquest",
+    "approxDate": "c. 1399 BC",
+    "setting": "Shiloh",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 19,
+    "era": "Conquest",
+    "approxDate": "c. 1399 BC",
+    "setting": "Shiloh, Canaan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 20,
+    "era": "Conquest",
+    "approxDate": "c. 1399 BC",
+    "setting": "Canaan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 21,
+    "era": "Conquest",
+    "approxDate": "c. 1399 BC",
+    "setting": "Canaan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 22,
+    "era": "Conquest",
+    "approxDate": "c. 1398 BC",
+    "setting": "Shiloh, Jordan River",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 23,
+    "era": "Conquest",
+    "approxDate": "c. 1380 BC",
+    "setting": "Canaan",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Joshua",
+    "chapter": 24,
+    "era": "Conquest",
+    "approxDate": "c. 1380 BC",
+    "setting": "Shechem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 6
+  },
+  {
+    "book": "Ezra",
+    "chapter": 1,
+    "era": "Post-exile",
+    "approxDate": "c. 538 BC",
+    "setting": "Babylon / Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 2,
+    "era": "Post-exile",
+    "approxDate": "c. 538 BC",
+    "setting": "Babylon to Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 3,
+    "era": "Post-exile",
+    "approxDate": "c. 536 BC",
+    "setting": "Jerusalem, temple site",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 4,
+    "era": "Post-exile",
+    "approxDate": "c. 536-520 BC",
+    "setting": "Jerusalem and Persian court",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 5,
+    "era": "Post-exile",
+    "approxDate": "c. 520 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 6,
+    "era": "Post-exile",
+    "approxDate": "c. 516 BC",
+    "setting": "Jerusalem, temple",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 7,
+    "era": "Post-exile",
+    "approxDate": "c. 458 BC",
+    "setting": "Babylon to Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 8,
+    "era": "Post-exile",
+    "approxDate": "c. 458 BC",
+    "setting": "Babylon to Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 9,
+    "era": "Post-exile",
+    "approxDate": "c. 457 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Ezra",
+    "chapter": 10,
+    "era": "Post-exile",
+    "approxDate": "c. 457 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 15
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 1,
+    "era": "Post-exile",
+    "approxDate": "c. 446 BC",
+    "setting": "Susa (Shushan), Persia",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 2,
+    "era": "Post-exile",
+    "approxDate": "c. 445 BC",
+    "setting": "Susa to Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 3,
+    "era": "Post-exile",
+    "approxDate": "c. 445 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 4,
+    "era": "Post-exile",
+    "approxDate": "c. 445 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 5,
+    "era": "Post-exile",
+    "approxDate": "c. 445 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 6,
+    "era": "Post-exile",
+    "approxDate": "c. 445 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 7,
+    "era": "Post-exile",
+    "approxDate": "c. 445 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 8,
+    "era": "Post-exile",
+    "approxDate": "c. 444 BC",
+    "setting": "Jerusalem, Water Gate plaza",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 9,
+    "era": "Post-exile",
+    "approxDate": "c. 444 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 10,
+    "era": "Post-exile",
+    "approxDate": "c. 444 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 11,
+    "era": "Post-exile",
+    "approxDate": "c. 444 BC",
+    "setting": "Jerusalem and Judean towns",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 12,
+    "era": "Post-exile",
+    "approxDate": "c. 444 BC",
+    "setting": "Jerusalem, city walls",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 13,
+    "era": "Post-exile",
+    "approxDate": "c. 432 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 16
+  },
+  {
+    "book": "Hosea",
+    "chapter": 1,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 750-720 BC",
+    "setting": "Northern Kingdom of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 2,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 750-720 BC",
+    "setting": "Northern Kingdom of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 3,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 750-720 BC",
+    "setting": "Northern Kingdom of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 4,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 750-720 BC",
+    "setting": "Northern Kingdom of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 5,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 750-720 BC",
+    "setting": "Israel and Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 6,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 750-720 BC",
+    "setting": "Northern Kingdom of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 7,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 750-720 BC",
+    "setting": "Northern Kingdom of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 8,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 750-720 BC",
+    "setting": "Northern Kingdom of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 9,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 750-720 BC",
+    "setting": "Northern Kingdom of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 10,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 750-720 BC",
+    "setting": "Northern Kingdom of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 11,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 750-720 BC",
+    "setting": "Northern Kingdom of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 12,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 750-720 BC",
+    "setting": "Northern Kingdom of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 13,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 750-720 BC",
+    "setting": "Northern Kingdom of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Hosea",
+    "chapter": 14,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 750-720 BC",
+    "setting": "Northern Kingdom of Israel",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 28
+  },
+  {
+    "book": "Joel",
+    "chapter": 1,
+    "era": "Divided Kingdom (uncertain date)",
+    "approxDate": "c. 835-800 BC",
+    "setting": "Judah / Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 29
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "era": "Divided Kingdom (uncertain date)",
+    "approxDate": "c. 835-800 BC",
+    "setting": "Judah / Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 29
+  },
+  {
+    "book": "Joel",
+    "chapter": 3,
+    "era": "Divided Kingdom (uncertain date)",
+    "approxDate": "c. 835-800 BC",
+    "setting": "Judah / Valley of Jehoshaphat",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 29
   }
 ]

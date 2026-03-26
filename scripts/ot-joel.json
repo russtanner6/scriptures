@@ -1,0 +1,54 @@
+{
+  "bookName": "Joel",
+  "bookId": 29,
+  "sentiment": [
+    {"book":"Joel","chapter":1,"exaltation":0,"peace":0,"admonition":7,"contrition":9,"dominant":"contrition","rationale":"A devastating locust plague strips the land bare; the prophet calls priests and people to weep, fast, and mourn before the Lord."},
+    {"book":"Joel","chapter":2,"exaltation":6,"peace":5,"admonition":7,"contrition":6,"dominant":"admonition","rationale":"The day of the Lord comes as an invading army, but God promises restoration if the people rend their hearts; culminates in the outpouring of the Spirit."},
+    {"book":"Joel","chapter":3,"exaltation":7,"peace":6,"admonition":7,"contrition":2,"dominant":"exaltation","rationale":"God judges the nations in the valley of decision, vindicates His people, and establishes Zion as a place of refuge and abundance."}
+  ],
+  "speakers": [
+    {"book":"Joel","chapter":1,"startVerse":2,"endVerse":20,"speaker":"Joel"},
+    {"book":"Joel","chapter":2,"startVerse":1,"endVerse":11,"speaker":"Joel"},
+    {"book":"Joel","chapter":2,"startVerse":12,"endVerse":14,"speaker":"Joel"},
+    {"book":"Joel","chapter":2,"startVerse":15,"endVerse":17,"speaker":"Joel"},
+    {"book":"Joel","chapter":2,"startVerse":19,"endVerse":27,"speaker":"Joel"},
+    {"book":"Joel","chapter":2,"startVerse":28,"endVerse":32,"speaker":"Joel"},
+    {"book":"Joel","chapter":3,"startVerse":1,"endVerse":21,"speaker":"Joel"}
+  ],
+  "missingCharacters": [],
+  "summaries": [
+    {"book":"Joel","chapter":1,"summary":"A catastrophic locust plague devastates the land; Joel calls for national mourning, fasting, and repentance as the day of the Lord approaches."},
+    {"book":"Joel","chapter":2,"summary":"The day of the Lord is described as a great and terrible army; the people are called to rend their hearts, and God promises to pour out His Spirit on all flesh."},
+    {"book":"Joel","chapter":3,"summary":"God gathers the nations to the valley of Jehoshaphat for judgment, delivers His people, and establishes Zion as a place of eternal refuge."}
+  ],
+  "themes": [
+    {"book":"Joel","chapter":1,"themes":["locust plague","mourning","fasting","day of the lord"]},
+    {"book":"Joel","chapter":2,"themes":["repentance","outpouring of the spirit","restoration","day of the lord"]},
+    {"book":"Joel","chapter":3,"themes":["judgment of nations","deliverance","zion","divine justice"]}
+  ],
+  "crossReferences": [
+    {"book":"Joel","chapter":2,"verse":28,"crossReference":"Acts 2:17-21","type":"quotation","note":"Peter quotes this prophecy at Pentecost, declaring the outpouring of the Spirit as fulfillment."},
+    {"book":"Joel","chapter":2,"verse":32,"crossReference":"Romans 10:13","type":"quotation","note":"Paul quotes Joel's promise that whosoever shall call upon the name of the Lord shall be delivered."},
+    {"book":"Joel","chapter":3,"verse":14,"crossReference":"Revelation 14:15-20","type":"allusion","note":"The harvest and winepress imagery parallels the final judgment in Revelation."}
+  ],
+  "doctrinalTopics": [
+    {"book":"Joel","chapter":1,"topics":["repentance","judgment","fasting","prayer"]},
+    {"book":"Joel","chapter":2,"topics":["holy ghost","restoration","repentance","last days"]},
+    {"book":"Joel","chapter":3,"topics":["judgment","zion","gathering of israel","millennium"]}
+  ],
+  "historicalContext": [
+    {"book":"Joel","chapter":1,"era":"Divided Kingdom (uncertain date)","approxDate":"c. 835-800 BC","setting":"Judah / Jerusalem"},
+    {"book":"Joel","chapter":2,"era":"Divided Kingdom (uncertain date)","approxDate":"c. 835-800 BC","setting":"Judah / Jerusalem"},
+    {"book":"Joel","chapter":3,"era":"Divided Kingdom (uncertain date)","approxDate":"c. 835-800 BC","setting":"Judah / Valley of Jehoshaphat"}
+  ],
+  "literaryGenres": [
+    {"book":"Joel","chapter":1,"genre":"prophecy","subgenre":"lament"},
+    {"book":"Joel","chapter":2,"genre":"prophecy","subgenre":"apocalyptic"},
+    {"book":"Joel","chapter":3,"genre":"prophecy","subgenre":"judgment oracle"}
+  ],
+  "notableVerses": [
+    {"book":"Joel","chapter":1,"verses":[{"verse":14,"reason":"A call for a solemn assembly with fasting and crying unto the Lord."}]},
+    {"book":"Joel","chapter":2,"verses":[{"verse":13,"reason":"'Rend your heart, and not your garments'—a call for inward repentance."},{"verse":28,"reason":"'I will pour out my spirit upon all flesh'—the foundational prophecy of Pentecost and latter-day gifts."}]},
+    {"book":"Joel","chapter":3,"verses":[{"verse":14,"reason":"'Multitudes, multitudes in the valley of decision'—the great final judgment of nations."}]}
+  ]
+}
