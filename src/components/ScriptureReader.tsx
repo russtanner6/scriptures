@@ -1682,24 +1682,28 @@ export default function ScriptureReader() {
                     />
                   )}
                   {/* Ambilight glow — projects edge colors behind image */}
+                  {/* Desktop: glow on left, right, and bottom. Mobile: bottom only (image is edge-to-edge) */}
                   {ambilightColors && (
                     <div
                       style={{
                         position: "absolute",
-                        top: "-20px",
-                        bottom: "-20px",
+                        top: isMobile ? "50%" : "-20px",
+                        bottom: "-30px",
                         left: "50%",
                         transform: "translateX(-50%)",
-                        width: isMobile ? "calc(100% + 40px)" : "100vw",
+                        width: isMobile ? "100%" : "100vw",
                         zIndex: 0,
                         pointerEvents: "none",
-                        background: `
-                          radial-gradient(ellipse at 0% 0%, rgba(${ambilightColors.tl}, 0.25) 0%, transparent 50%),
-                          radial-gradient(ellipse at 100% 0%, rgba(${ambilightColors.tr}, 0.25) 0%, transparent 50%),
-                          radial-gradient(ellipse at 0% 100%, rgba(${ambilightColors.bl}, 0.25) 0%, transparent 50%),
-                          radial-gradient(ellipse at 100% 100%, rgba(${ambilightColors.br}, 0.25) 0%, transparent 50%)
-                        `,
-                        filter: "blur(30px)",
+                        background: isMobile
+                          ? `radial-gradient(ellipse at 50% 100%, rgba(${ambilightColors.bl}, 0.4) 0%, transparent 70%)`
+                          : `
+                            radial-gradient(ellipse at 0% 40%, rgba(${ambilightColors.tl}, 0.35) 0%, transparent 55%),
+                            radial-gradient(ellipse at 100% 40%, rgba(${ambilightColors.tr}, 0.35) 0%, transparent 55%),
+                            radial-gradient(ellipse at 0% 100%, rgba(${ambilightColors.bl}, 0.4) 0%, transparent 55%),
+                            radial-gradient(ellipse at 100% 100%, rgba(${ambilightColors.br}, 0.4) 0%, transparent 55%),
+                            radial-gradient(ellipse at 50% 100%, rgba(${ambilightColors.bl}, 0.3) 0%, transparent 65%)
+                          `,
+                        filter: "blur(40px)",
                         animation: "fadeIn 2s ease-out 1.5s both",
                       }}
                     />
