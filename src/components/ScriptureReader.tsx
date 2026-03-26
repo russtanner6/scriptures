@@ -1621,30 +1621,95 @@ export default function ScriptureReader() {
             padding: isMobile ? "24px 20px 100px" : "40px 32px 120px",
           }}
         >
-          {/* Chapter Insights Panel */}
-          {!isLoading && verses.length > 0 && (
-            <ChapterInsights
-              bookId={selectedBookId}
-              chapter={selectedChapter}
-              bookName={selectedBookName || ""}
-              volumeAbbrev={selectedVolume}
-              volColor={volColor}
-              lightMode={lightMode}
-              isMobile={isMobile}
-              onScrollToVerse={(verse) => {
-                const el = document.getElementById(`verse-${verse}`);
-                if (el) {
-                  el.scrollIntoView({ behavior: "smooth", block: "center" });
-                  el.style.transition = "background 0.3s";
-                  el.style.background = "rgba(59, 130, 246, 0.15)";
-                  setTimeout(() => { el.style.background = ""; }, 2000);
-                }
-              }}
-              onExploreWord={(word) => { analytics.insightsThemeClick(word, selectedBookName || "", selectedChapter || 0); setExploredWord(word); }}
-              onSelectCharacter={openCharacterById}
-              speakers={chapterSpeakers}
-            />
-          )}
+          {/* Landscape Book Image + Chapter Insights Panel */}
+          {!isLoading && verses.length > 0 && (() => {
+            // Book landscape images: chapter-specific override first, then book-level, then null
+            // Gradient placeholders use CSS gradients; real images use url strings
+            const BOOK_LANDSCAPE_IMAGES: Record<string, string | { gradient: string }> = {
+              "Genesis": { gradient: "linear-gradient(135deg, #1a3a2a 0%, #2d5a3e 25%, #4a7c5c 50%, #8fbc6a 75%, #d4e89c 100%)" },
+            };
+            const CHAPTER_LANDSCAPE_IMAGES: Record<string, Record<number, string | { gradient: string }>> = {
+              // Example: "Genesis": { 1: "url-or-gradient-for-creation" }
+            };
+            const bookKey = selectedBookName || "";
+            const chapterNum = selectedChapter || 0;
+            const chapterOverride = CHAPTER_LANDSCAPE_IMAGES[bookKey]?.[chapterNum];
+            const bookImage = BOOK_LANDSCAPE_IMAGES[bookKey];
+            const landscapeImage = chapterOverride || bookImage || null;
+
+            const hasImage = !!landscapeImage;
+
+            return (
+              <>
+                {hasImage && (
+                  <div
+                    style={{
+                      width: "100%",
+                      aspectRatio: "4 / 1",
+                      borderRadius: "8px 8px 0 0",
+                      overflow: "hidden",
+                      position: "relative",
+                      border: `1px solid ${theme.border}`,
+                      borderBottom: "none",
+                      ...(typeof landscapeImage === "object" && "gradient" in landscapeImage
+                        ? { background: landscapeImage.gradient }
+                        : {}),
+                    }}
+                  >
+                    {typeof landscapeImage === "string" && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={landscapeImage}
+                        alt={`${bookKey} landscape`}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                          display: "block",
+                        }}
+                      />
+                    )}
+                    {/* Bottom gradient overlay to blend into insights bar */}
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 0,
+                        left: 0,
+                        right: 0,
+                        height: "40%",
+                        background: lightMode
+                          ? "linear-gradient(to top, rgba(0,0,0,0.06) 0%, transparent 100%)"
+                          : "linear-gradient(to top, rgba(0,0,0,0.35) 0%, transparent 100%)",
+                        pointerEvents: "none",
+                      }}
+                    />
+                  </div>
+                )}
+                <ChapterInsights
+                  bookId={selectedBookId}
+                  chapter={selectedChapter}
+                  bookName={selectedBookName || ""}
+                  volumeAbbrev={selectedVolume}
+                  volColor={volColor}
+                  lightMode={lightMode}
+                  isMobile={isMobile}
+                  flatTopCorners={hasImage}
+                  onScrollToVerse={(verse) => {
+                    const el = document.getElementById(`verse-${verse}`);
+                    if (el) {
+                      el.scrollIntoView({ behavior: "smooth", block: "center" });
+                      el.style.transition = "background 0.3s";
+                      el.style.background = "rgba(59, 130, 246, 0.15)";
+                      setTimeout(() => { el.style.background = ""; }, 2000);
+                    }
+                  }}
+                  onExploreWord={(word) => { analytics.insightsThemeClick(word, selectedBookName || "", selectedChapter || 0); setExploredWord(word); }}
+                  onSelectCharacter={openCharacterById}
+                  speakers={chapterSpeakers}
+                />
+              </>
+            );
+          })()}
 
           {isLoading && (
             <div style={{ textAlign: "center", padding: "60px", color: theme.textMuted }}>

@@ -36,6 +36,7 @@ interface ChapterInsightsProps {
   onExploreWord?: (word: string) => void;
   onSelectCharacter?: (characterId: string) => void;
   speakers?: SpeakerAttribution[];
+  flatTopCorners?: boolean;
 }
 
 const SPEAKER_TYPE_COLORS_LIGHT: Record<SpeakerType, string> = {
@@ -69,6 +70,7 @@ export default function ChapterInsights({
   onExploreWord,
   onSelectCharacter,
   speakers = [],
+  flatTopCorners = false,
 }: ChapterInsightsProps) {
   const { displaySpeakerName } = usePreferencesContext();
   const [stats, setStats] = useState<ChapterStats | null>(null);
@@ -171,8 +173,9 @@ export default function ChapterInsights({
     <div
       style={{
         marginBottom: "24px",
-        borderRadius: "8px",
+        borderRadius: flatTopCorners ? "0 0 8px 8px" : "8px",
         border: `1px solid ${theme.border}`,
+        borderTop: flatTopCorners ? "none" : `1px solid ${theme.border}`,
         overflow: "hidden",
         transition: "all 0.3s ease",
       }}
