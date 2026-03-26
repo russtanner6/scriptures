@@ -17,7 +17,7 @@ Built to house the **full LDS canon** (OT, NT, Book of Mormon, D&C, Pearl of Gre
 - **Narrative Arc Explorer** (`/narrative-arc`) — multi-term comparison (up to 6), all 5 volumes, deep linking
 - **Theme Heatmap** (`/heatmap`) — single-word heatmap across all volumes with heatmap/arc toggle per module
 - **Word Cloud** (`/wordcloud`) — interactive tag cloud per book/chapter/volume
-- **Sentiment Explorer** (`/sentiment`) — theological sentiment analysis with 4 categories (Exaltation/Glory, Covenant Peace, Admonition/Justice, Trial/Contrition), cascading drill-down, weighted valence scoring, LLM-scored chapter data (in progress)
+- **Sentiment Explorer** (`/sentiment`) — theological sentiment analysis with 4 categories (Exaltation/Glory, Covenant Peace, Admonition/Justice, Trial/Contrition), cascading drill-down, weighted valence scoring, LLM-scored chapter data (1,755 chapters, complete)
 - **Chiasmus Detector** (`/chiasmus`) — ABBA pattern detection with visual display
 - **Topic Map** (`/topics`) — chapter similarity finder via cosine similarity
 
@@ -34,7 +34,7 @@ Built to house the **full LDS canon** (OT, NT, Book of Mormon, D&C, Pearl of Gre
 - **UI Polish** — cream light theme, lighter dark theme, gradient progress bar, centered tree logo, always-dark bars, sliding reading mode toggle, shared modal system
 
 ### People & Places
-- **Character Directory** (`/characters`) — 757 named individuals with bios, family trees, portraits (~40 with portraits)
+- **Character Directory** (`/people`) — 863 named individuals with bios, family trees, portraits (~40 with portraits)
 - **CharacterDetailPanel** — slide-in panel with bio, aliases, scripture mention heatmap, first/last mention links, volume pills with tooltips, tone radar chart
 - **"People in this Chapter"** — Chapter Insights shows characters found via speaker matching + text scanning, wired to detail panel
 - **Location Directory** (`/locations`) — 333 named places with descriptions, coordinates (183 known), search, filters
@@ -51,12 +51,13 @@ Built to house the **full LDS canon** (OT, NT, Book of Mormon, D&C, Pearl of Gre
 - **VolumeTooltip** — reusable component showing full volume name on hover for abbreviations
 
 ### Data
-- **Speaker Attribution Data** — 7,631 entries across 82 books (Bible + BoM/D&C/PoGP)
+- **Speaker Attribution Data** — 3,862 entries across 83 books (audited, groups removed)
 - **Modern Translations** — 37,699 verses (OT/NT via WEB, BoM via Claude-generated)
-- **Character Database** — 757 characters with bios, aliases, family relationships, portraits
+- **Character Database** — 863 characters with bios, aliases, family relationships, portraits
 - **Location Database** — 333 scripture locations with descriptions, coordinates, aliases
-- **Context Eggs** — ~930+ scholarly insights across all volumes (5 categories)
-- **LLM Chapter Sentiments** — `data/chapter-sentiments.json` (~1,460 of 1,764 scored via Claude Sonnet 4.5, gaps being filled via Gemini)
+- **Context Nuggets** — ~930+ scholarly insights across all volumes (5 categories)
+- **LLM Chapter Sentiments** — `data/chapter-sentiments.json` (1,755 of 1,755 scored — complete)
+- **Chapter Summaries** — `data/chapter-summaries.json` (1,755 entries) with `/api/chapter-summary` route
 - **Resource Seed Data** — `data/resources.json`
 - **Chiasmus Catalog** — 40 documented chiastic structures with scholar attribution
 
@@ -64,17 +65,14 @@ Built to house the **full LDS canon** (OT, NT, Book of Mormon, D&C, Pearl of Gre
 
 ## Up Next — Immediate Priorities
 
-### 1. Wire Sentiment Explorer to LLM Data
-`data/chapter-sentiments.json` has ~1,460 of 1,764 chapters scored by Claude Sonnet 4.5. User filling ~264 gaps via Gemini. Once complete, switch Sentiment Explorer from keyword lexicon to LLM-scored data for much higher quality results.
-
-### 2. Mood Match Feature
+### 1. Mood Match Feature
 Use LLM sentiment data to recommend chapters matching user's emotional state. "I'm feeling anxious" → chapters scored high on Covenant Peace. Could integrate with reading streaks to suggest counterbalance chapters.
 
-### 3. Word Explorer Completion
+### 2. Word Explorer Completion
 Cascading dropdowns (same drill-down pattern as Sentiment Explorer), redirects from old routes (/search, /narrative-arc, /heatmap), nav/footer/home page updates.
 
-### 4. Speaker Data QA
-Gemini processing the full speakers.json. Waiting for corrected file. Key fixes: prophetic book misattributions (God → prophet name), remove generic/anonymous entries.
+### 3. Funny Stories Tool
+Page UI + in-reader pills (data done).
 
 ---
 
@@ -88,7 +86,7 @@ Gemini processing the full speakers.json. Waiting for corrected file. Key fixes:
 - **Chart horizontal scroll** — Draggable slider when zoomed in
 
 ### More Character Portraits
-Only ~40 of 302 characters have portraits. Need to source/generate more.
+Only ~40 of 863 characters have portraits. Need to source/generate more.
 
 ### PWA Conversion
 User wants this as a progressive web app. Add manifest, service worker, offline support.
@@ -131,8 +129,8 @@ User wants this as a progressive web app. Add manifest, service worker, offline 
 
 ## Tier 4 — Advanced / Premium Features
 
-### Mom Mode (Kid-Friendly Scriptures)
-A child-friendly scripture reading experience for kids (ages 4-10) or parents reading with young children. Called "Mom Mode" — a fun, relatable name that captures the use case of a parent making scripture time easy. The goal: make scripture accessible to children without parents needing to simplify on the fly.
+### Kid Mode (Child-Friendly Scriptures)
+A child-friendly scripture reading experience for kids (ages 4-10) or parents reading with young children. The goal: make scripture accessible to children without parents needing to simplify on the fly.
 
 **Core concept:**
 - **Simplified narrative text** — Every chapter rewritten in simple, age-appropriate language (narrative/story format, not verse-by-verse). Short sentences, common vocabulary, concrete descriptions.
@@ -152,10 +150,6 @@ A child-friendly scripture reading experience for kids (ages 4-10) or parents re
 - Progress tracking could tie into a kid-friendly reward system (stickers, badges)
 
 **Priority:** Future feature — requires significant content generation. Could start with a pilot on a single book (e.g., 1 Nephi or Genesis stories) to validate the approach.
-
-### Chapter Summaries
-- AI-generated one-paragraph summary per chapter
-- Generated once and cached
 
 ### Speaker Frequency Chart
 - "Who's speaking" visualization across volumes/timelines
@@ -193,11 +187,11 @@ A child-friendly scripture reading experience for kids (ages 4-10) or parents re
 ---
 
 ## Priority Order
-1. **Wire Sentiment Explorer to LLM data** — switch from keyword lexicon to chapter-sentiments.json
+1. ~~**Wire Sentiment Explorer to LLM data**~~ — DONE (1,755 chapters, all volumes)
 2. **Mood Match feature** — chapter recommendations by emotional state
 3. **Word Explorer completion** — cascading dropdowns, old route redirects, nav updates
-4. **Speaker Data QA** — verify BoM/D&C/PoGP accuracy (Gemini audit in progress)
-5. **People database audit** — remove generic/anonymous entries
+4. ~~**Speaker Data QA**~~ — DONE (3,862 entries audited, groups removed, 315 unique speakers)
+5. ~~**People database audit**~~ — DONE (863 characters, aliases fixed, generic entries removed)
 6. **Funny Stories tool** — page UI + in-reader pills (data done)
 7. **Reader UI polish** — narrations, resource pills, bottom bar, mobile panels
 8. **More character portraits**
@@ -205,4 +199,3 @@ A child-friendly scripture reading experience for kids (ages 4-10) or parents re
 10. **Firebase Auth + Saved Searches**
 11. **Reading Plans**
 12. **Cross-Reference Explorer**
-13. **Chapter Summaries**
