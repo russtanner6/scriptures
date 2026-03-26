@@ -47,7 +47,7 @@ export default function ScriptureReader() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [_lightMode, setLightMode] = useState(false);
   const [fontSize, setFontSize] = useState(1); // 0=small, 1=medium, 2=large
-  const [ambilightColors, setAmbilightColors] = useState<{ tl: string; tr: string; bl: string; br: string } | null>(null);
+  const [imageLoaded, setImageLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [exploredWord, setExploredWord] = useState<string | null>(null);
 
@@ -1611,51 +1611,6 @@ export default function ScriptureReader() {
 
             const hasImage = !!landscapeImage;
 
-            // Extract dominant colors from image edges for ambilight effect
-            const extractAmbilightColors = (imgSrc: string) => {
-              try {
-                // Create a separate image for canvas sampling (avoids CORS issues with displayed img)
-                const img = new Image();
-                img.onload = () => {
-                const canvas = document.createElement("canvas");
-                const size = 60; // sample area size
-                canvas.width = img.naturalWidth;
-                canvas.height = img.naturalHeight;
-                const ctx = canvas.getContext("2d");
-                if (!ctx) return;
-                ctx.drawImage(img, 0, 0);
-                const sample = (x: number, y: number, sw: number, sh: number) => {
-                  const data = ctx.getImageData(x, y, sw, sh).data;
-                  let r = 0, g = 0, b = 0, count = 0;
-                  for (let i = 0; i < data.length; i += 4) {
-                    r += data[i]; g += data[i + 1]; b += data[i + 2]; count++;
-                  }
-                  // Boost brightness: lift dark colors so they produce a visible glow
-                  let ar = r / count, ag = g / count, ab = b / count;
-                  const brightness = (ar + ag + ab) / 3;
-                  if (brightness < 120) {
-                    const boost = 120 / Math.max(brightness, 1);
-                    ar = Math.min(255, ar * boost);
-                    ag = Math.min(255, ag * boost);
-                    ab = Math.min(255, ab * boost);
-                  }
-                  return `${Math.round(ar)}, ${Math.round(ag)}, ${Math.round(ab)}`;
-                };
-                const w = img.naturalWidth, h = img.naturalHeight;
-                // Sample slightly inward (10%) to avoid pure black edges
-                const inset = Math.round(w * 0.1);
-                const insetY = Math.round(h * 0.15);
-                setAmbilightColors({
-                  tl: sample(inset, insetY, size, size),
-                  tr: sample(w - inset - size, insetY, size, size),
-                  bl: sample(inset, h - insetY - size, size, size),
-                  br: sample(w - inset - size, h - insetY - size, size, size),
-                });
-                };
-                img.src = imgSrc;
-              } catch { /* CORS or other error — silently skip */ }
-            };
-
             return (
               <>
                 {hasImage && (
@@ -1698,32 +1653,36 @@ export default function ScriptureReader() {
                       }}
                     />
                   )}
-                  {/* Ambilight glow — projects edge colors behind image */}
-                  {/* Desktop: glow on left, right, and bottom. Mobile: bottom only (image is edge-to-edge) */}
-                  {ambilightColors && (
+                  {/* Ambilight glow — CSS-only: blurred clone of the image projected behind */}
+                  {typeof landscapeImage === "string" && imageLoaded && (
                     <div
                       style={{
                         position: "absolute",
-                        top: isMobile ? "40%" : "-30px",
-                        bottom: "-40px",
+                        top: isMobile ? "20%" : "-40px",
+                        bottom: "-50px",
                         left: "50%",
                         transform: "translateX(-50%)",
-                        width: isMobile ? "100%" : "100vw",
+                        width: isMobile ? "110%" : "calc(100% + 120px)",
                         zIndex: 0,
                         pointerEvents: "none",
-                        background: isMobile
-                          ? `radial-gradient(ellipse at 50% 100%, rgba(${ambilightColors.bl}, 0.5) 0%, transparent 70%)`
-                          : `
-                            radial-gradient(ellipse at 0% 40%, rgba(${ambilightColors.tl}, 0.5) 0%, transparent 60%),
-                            radial-gradient(ellipse at 100% 40%, rgba(${ambilightColors.tr}, 0.5) 0%, transparent 60%),
-                            radial-gradient(ellipse at 0% 100%, rgba(${ambilightColors.bl}, 0.55) 0%, transparent 60%),
-                            radial-gradient(ellipse at 100% 100%, rgba(${ambilightColors.br}, 0.55) 0%, transparent 60%),
-                            radial-gradient(ellipse at 50% 100%, rgba(${ambilightColors.bl}, 0.4) 0%, transparent 70%)
-                          `,
-                        filter: "blur(45px)",
-                        animation: "fadeIn 2.5s ease-out 1s both",
+                        overflow: "visible",
+                        animation: "fadeIn 2s ease-out 0.5s both",
                       }}
-                    />
+                    >
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={landscapeImage}
+                        alt=""
+                        aria-hidden="true"
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                          filter: "blur(50px) saturate(1.8) brightness(0.8)",
+                          opacity: 0.65,
+                        }}
+                      />
+                    </div>
                   )}
                   <div
                     style={{
@@ -1744,7 +1703,7 @@ export default function ScriptureReader() {
                       <img
                         src={landscapeImage}
                         alt={`${bookKey} landscape`}
-                        onLoad={() => extractAmbilightColors(landscapeImage as string)}
+                        onLoad={() => setImageLoaded(true)}
                         style={{
                           width: "100%",
                           height: "100%",
@@ -1792,7 +1751,7 @@ export default function ScriptureReader() {
                   lightMode={lightMode}
                   isMobile={isMobile}
                   flatTopCorners={hasImage}
-                  glowColor={ambilightColors ? `rgba(${ambilightColors.tr}, 0.6)` : undefined}
+                  glowColor={undefined}
                   onScrollToVerse={(verse) => {
                     const el = document.getElementById(`verse-${verse}`);
                     if (el) {

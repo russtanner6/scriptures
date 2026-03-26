@@ -436,7 +436,6 @@ export default function ChapterInsights({
             letterSpacing: "0.08em",
             color: lightMode ? "#333" : "rgba(255,255,255,0.85)",
             animation: "insightsGlow 2s ease-in-out 1.5s 1",
-            // @ts-expect-error CSS custom property
             "--glow-color": glowColor || "rgba(200,220,255,0.6)",
           } as React.CSSProperties}>Insights</span>}
           <span
