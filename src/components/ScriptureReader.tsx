@@ -1658,11 +1658,11 @@ export default function ScriptureReader() {
                     <div
                       style={{
                         position: "absolute",
-                        top: isMobile ? "20%" : "-40px",
-                        bottom: "-50px",
+                        top: isMobile ? "15%" : "-25px",
+                        bottom: "-35px",
                         left: "50%",
                         transform: "translateX(-50%)",
-                        width: isMobile ? "110%" : "calc(100% + 120px)",
+                        width: isMobile ? "105%" : "calc(100% + 80px)",
                         zIndex: 0,
                         pointerEvents: "none",
                         overflow: "visible",
@@ -1678,8 +1678,8 @@ export default function ScriptureReader() {
                           width: "100%",
                           height: "100%",
                           objectFit: "cover",
-                          filter: "blur(50px) saturate(1.8) brightness(0.8)",
-                          opacity: 0.65,
+                          filter: "blur(40px) saturate(2) brightness(1.1)",
+                          opacity: 0.55,
                         }}
                       />
                     </div>
