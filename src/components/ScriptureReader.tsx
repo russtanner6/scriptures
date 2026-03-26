@@ -1231,7 +1231,6 @@ export default function ScriptureReader() {
         background: "rgba(17, 17, 22, 0.95)",
         backdropFilter: "blur(12px)",
         WebkitBackdropFilter: "blur(12px)",
-        borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
         padding: isMobile ? "10px 16px" : "12px 24px",
         display: "flex",
         alignItems: "center",
@@ -1325,7 +1324,6 @@ export default function ScriptureReader() {
             background: "rgba(17, 17, 22, 0.95)",
             backdropFilter: "blur(12px)",
             WebkitBackdropFilter: "blur(12px)",
-            borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
             padding: isMobile ? "10px 16px" : "12px 24px",
             display: "flex",
             alignItems: "center",
@@ -1640,14 +1638,14 @@ export default function ScriptureReader() {
                           45deg,
                           transparent,
                           transparent 3px,
-                          rgba(255,255,255,0.03) 3px,
-                          rgba(255,255,255,0.03) 4px
+                          rgba(255,255,255,0.02) 3px,
+                          rgba(255,255,255,0.02) 4px
                         ), repeating-linear-gradient(
                           -45deg,
                           transparent,
                           transparent 3px,
-                          rgba(255,255,255,0.03) 3px,
-                          rgba(255,255,255,0.03) 4px
+                          rgba(255,255,255,0.02) 3px,
+                          rgba(255,255,255,0.02) 4px
                         )`,
                         zIndex: 0,
                         pointerEvents: "none",
@@ -2518,7 +2516,7 @@ export default function ScriptureReader() {
                     }}
                     style={{
                       flex: 1,
-                      background: hasMatch ? volColor : (lightMode ? "rgba(0,0,0,0.03)" : "rgba(255,255,255,0.03)"),
+                      background: hasMatch ? volColor : (lightMode ? "rgba(0,0,0,0.03)" : "rgba(255,255,255,0.02)"),
                       opacity: hasMatch ? intensity : 1,
                       cursor: "pointer",
                       transition: "all 0.25s ease",
@@ -3103,7 +3101,7 @@ export default function ScriptureReader() {
                 }
               }}
               style={{
-                background: `linear-gradient(180deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.03) 100%)`,
+                background: `linear-gradient(180deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.02) 100%)`,
                 border: "1px solid rgba(255, 255, 255, 0.12)",
                 borderTop: `3px solid ${color}`,
                 borderRadius: "0 0 12px 12px",
