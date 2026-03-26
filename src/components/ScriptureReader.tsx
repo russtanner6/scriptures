@@ -1621,10 +1621,26 @@ export default function ScriptureReader() {
                       marginTop: isMobile ? "-24px" : "-40px",
                       marginLeft: isMobile ? "-20px" : "-32px",
                       marginRight: isMobile ? "-20px" : "-32px",
-                      background: lightMode ? "rgba(0,0,0,0.06)" : "rgba(0,0,0,0.3)",
+                      position: "relative",
                       paddingBottom: "0",
                     }}
                   >
+                  {/* Full-viewport-width dark band behind image on desktop */}
+                  {!isMobile && (
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        bottom: 0,
+                        left: "50%",
+                        transform: "translateX(-50%)",
+                        width: "100vw",
+                        background: "rgba(0,0,0,0.25)",
+                        zIndex: 0,
+                        pointerEvents: "none",
+                      }}
+                    />
+                  )}
                   <div
                     style={{
                       width: "100%",
@@ -1632,6 +1648,7 @@ export default function ScriptureReader() {
                       borderRadius: "0",
                       overflow: "hidden",
                       position: "relative",
+                      zIndex: 1,
                       border: "none",
                       ...(typeof landscapeImage === "object" && "gradient" in landscapeImage
                         ? { background: landscapeImage.gradient }
@@ -2245,9 +2262,10 @@ export default function ScriptureReader() {
                       height: "24px",
                       minWidth: "24px",
                       borderRadius: "4px",
-                      fontSize: "0.72rem",
+                      fontSize: "0.7rem",
                       fontWeight: 700,
                       lineHeight: 1,
+                      paddingTop: "1px",
                       background: selectedVerses.has(v.verse)
                         ? volColor
                         : lightMode ? "#222" : "rgba(255,255,255,0.88)",
