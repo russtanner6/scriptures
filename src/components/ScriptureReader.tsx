@@ -1615,26 +1615,38 @@ export default function ScriptureReader() {
             const extractAmbilightColors = (img: HTMLImageElement) => {
               try {
                 const canvas = document.createElement("canvas");
-                const size = 40; // sample area size
+                const size = 60; // sample area size
                 canvas.width = img.naturalWidth;
                 canvas.height = img.naturalHeight;
                 const ctx = canvas.getContext("2d");
                 if (!ctx) return;
                 ctx.drawImage(img, 0, 0);
-                const sample = (x: number, y: number, w: number, h: number) => {
-                  const data = ctx.getImageData(x, y, w, h).data;
+                const sample = (x: number, y: number, sw: number, sh: number) => {
+                  const data = ctx.getImageData(x, y, sw, sh).data;
                   let r = 0, g = 0, b = 0, count = 0;
                   for (let i = 0; i < data.length; i += 4) {
                     r += data[i]; g += data[i + 1]; b += data[i + 2]; count++;
                   }
-                  return `${Math.round(r / count)}, ${Math.round(g / count)}, ${Math.round(b / count)}`;
+                  // Boost brightness: lift dark colors so they produce a visible glow
+                  let ar = r / count, ag = g / count, ab = b / count;
+                  const brightness = (ar + ag + ab) / 3;
+                  if (brightness < 120) {
+                    const boost = 120 / Math.max(brightness, 1);
+                    ar = Math.min(255, ar * boost);
+                    ag = Math.min(255, ag * boost);
+                    ab = Math.min(255, ab * boost);
+                  }
+                  return `${Math.round(ar)}, ${Math.round(ag)}, ${Math.round(ab)}`;
                 };
                 const w = img.naturalWidth, h = img.naturalHeight;
+                // Sample slightly inward (10%) to avoid pure black edges
+                const inset = Math.round(w * 0.1);
+                const insetY = Math.round(h * 0.15);
                 setAmbilightColors({
-                  tl: sample(0, 0, size, size),
-                  tr: sample(w - size, 0, size, size),
-                  bl: sample(0, h - size, size, size),
-                  br: sample(w - size, h - size, size, size),
+                  tl: sample(inset, insetY, size, size),
+                  tr: sample(w - inset - size, insetY, size, size),
+                  bl: sample(inset, h - insetY - size, size, size),
+                  br: sample(w - inset - size, h - insetY - size, size, size),
                 });
               } catch { /* CORS or other error — silently skip */ }
             };
