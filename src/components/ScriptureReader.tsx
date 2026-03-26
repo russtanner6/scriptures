@@ -1658,17 +1658,18 @@ export default function ScriptureReader() {
                     <div
                       style={{
                         position: "absolute",
-                        top: isMobile ? "15%" : "-25px",
-                        bottom: "-35px",
+                        top: isMobile ? "10%" : "-30px",
+                        bottom: "-40px",
                         left: "50%",
                         transform: "translateX(-50%)",
-                        width: isMobile ? "105%" : "calc(100% + 80px)",
+                        width: isMobile ? "108%" : "calc(100% + 90px)",
                         zIndex: 0,
                         pointerEvents: "none",
                         overflow: "visible",
                         animation: "fadeIn 2s ease-out 0.5s both",
                       }}
                     >
+                      {/* Blurred image clone — projects actual image colors */}
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={landscapeImage}
@@ -1678,8 +1679,19 @@ export default function ScriptureReader() {
                           width: "100%",
                           height: "100%",
                           objectFit: "cover",
-                          filter: "blur(40px) saturate(2) brightness(1.1)",
-                          opacity: 0.55,
+                          filter: "blur(35px) saturate(2.5) brightness(1.5)",
+                          opacity: 0.5,
+                        }}
+                      />
+                      {/* Uniform warm base glow so dark edges still show something */}
+                      <div
+                        style={{
+                          position: "absolute",
+                          inset: "5%",
+                          borderRadius: "50%",
+                          background: "radial-gradient(ellipse at center, rgba(180, 160, 120, 0.3) 0%, transparent 70%)",
+                          filter: "blur(30px)",
+                          pointerEvents: "none",
                         }}
                       />
                     </div>
