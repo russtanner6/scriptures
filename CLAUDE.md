@@ -56,7 +56,7 @@ src/
 │   ├── settings/      # User preferences (volume visibility, Apocrypha toggle)
 │   ├── scriptures/    # Scripture reader catch-all route (volume → book → chapter)
 │   ├── bookmarks/     # Saved verse bookmarks
-│   ├── people/        # Character directory page (863 people)
+│   ├── people/        # Character directory page (857 people)
 │   ├── locations/     # Location directory page (333 places)
 │   └── api/          # API routes (books, word-frequency, word-frequency-by-chapter, heatmap, verses, chapter, book-stats, word-cloud, chapter-stats, random-verse, sentiment, chiasmus, topic-similarity, chapter-characters, characters, character-mentions, character-sentiment, character-verses, locations, location-mentions, resources, speakers, random-nugget, context-nuggets)
 ├── components/
@@ -73,7 +73,7 @@ src/
 │   ├── Footer.tsx             # Site-wide footer (copyright, nav links, resources)
 │   ├── VolumeCheckboxes.tsx   # Shared: VolumeCheckboxes, CategoryPills, SectionLabel components
 │   ├── MethodologyModal.tsx   # Shared: MethodologyModal, MethodSection, MethodNote, MethodLink
-│   ├── ChapterInsights.tsx    # Collapsible chapter insights: People pills, Speaker Timeline, Key Themes
+│   ├── ChapterInsights.tsx    # Collapsible chapter insights: 5 sections (At a Glance, People, Speaker Timeline, Key Themes, Notable Verses)
 │   ├── VersePopover.tsx       # Verse tap popover (copy, bookmark, key words, notes)
 │   ├── LocationDirectory.tsx   # Location directory page with filters, search, detail panel
 │   ├── LocationDetailPanel.tsx # Slide-in location detail with map, mentions, volume heatmap
@@ -85,7 +85,7 @@ src/
 │   ├── StatCard.tsx           # Stat pills
 │   ├── ScripturePanel.tsx     # Right-side slider panel for verse viewing
 │   ├── ScriptureReader.tsx    # Full scripture reader (~3000 lines) with insights, search, progress, annotations, resources, Word Explorer, modern language toggle, per-speaker unique colors, tone overlay
-│   ├── CharacterDirectory.tsx # Character directory page with 863 people, filters, search
+│   ├── CharacterDirectory.tsx # Character directory page with 857 people, filters, search
 │   ├── CharacterDetailPanel.tsx # Slide-in character detail with bio, aliases, mentions, family tree, tone radar chart
 │   ├── VolumeTooltip.tsx      # Styled hover tooltip for volume abbreviations (OT → "Old Testament")
 │   ├── ResourceMarker.tsx     # Inline pill markers for resources (video/article/PDF) + overflow badge
@@ -120,7 +120,7 @@ src/
 │   └── ...
 data/                          # scriptures.db + sql-wasm.wasm + resources.json + characters.json + locations.json + context-nuggets.json + chiasmus-catalog.json + funny-stories.json
 │   ├── chapter-sentiments.json  # Gemini-scored: 4 categories per chapter (complete — 1,755 chapters)
-│   ├── speakers.json            # Gemini-scored: verse-level speaker attribution (complete — 3,862 entries)
+│   ├── speakers.json            # Gemini-scored: verse-level speaker attribution (complete — 3,851 entries, speakerType field added)
 │   ├── chapter-summaries.json   # Gemini-scored: one-sentence summary per chapter (complete)
 │   ├── chapter-themes.json      # Gemini-scored: 3-5 themes per chapter (complete)
 │   ├── cross-references.json    # Gemini-scored: inter-scripture connections (complete)
@@ -213,16 +213,16 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 8. **Chiasmus Detector** (`/chiasmus`) — Find ABBA mirror patterns. Single-column flow layout (picker-style). Scan entire volume.
 9. **Topic Map** (`/topics`) — Chapter similarity finder. Single-column flow layout (picker-style). Cosine similarity.
 10. **Timeline** (`/timeline`) — SHELVED. Code preserved but removed from nav/footer/home page.
-11. **Scripture Reader** (`/scriptures`) — Full reading experience with light/dark mode, font size, keyboard nav, reading progress, Chapter Insights, verse popover, annotations, Word Explorer panel, modern language toggle (OT/NT only). Reading streaks. Cream light theme (#f8f6f1), lighter dark theme (#1a1a21), gradient progress bar, centered tree logo. Catch-all route (`/scriptures/[...path]`).
+11. **Scripture Reader** (`/scriptures`) — Full reading experience with light/dark mode, font size, keyboard nav, reading progress, Chapter Insights (5 sections), verse popover, annotations, Word Explorer panel, modern language toggle (OT/NT only). Reading streaks. Cream light theme (#f8f6f1), lighter dark theme (#1a1a21), gradient progress bar, centered tree logo. Book landscape pictures (4:1 ratio, edge-to-edge on mobile). Verse number squares (fixed 24px, themed volume colors). Catch-all route (`/scriptures/[...path]`).
 12. **Bookmarks** (`/bookmarks`) — Saved verses grouped by volume.
-13. **People** (`/people`) — Character directory: 863 named individuals. Search, filter by volume/tier. Character cards with portraits, bios, volume pills. Clicking opens CharacterDetailPanel.
+13. **People** (`/people`) — Character directory: 857 named individuals. Search, filter by volume/tier. Character cards with portraits, bios, volume pills. Clicking opens CharacterDetailPanel.
 14. **Locations** (`/locations`) — Location directory: 333 named places across all volumes. Search, filter by volume/type/region. Location cards with type emoji, volume pills, significance. Clicking opens LocationDetailPanel with OpenStreetMap embed (for known locations), mention stats, volume heatmap, top books, Google Maps link.
 15. **Settings** (`/settings`) — User preferences: volume visibility toggles (color-coded, 5 canonical + Apocrypha section with D&C 91 reference). Changes save immediately to localStorage. Accessible from nav menu. No theology mode toggle — site is always LDS-centric.
 
 ## Key Components
 - **WordExplorerTool** — Unified word frequency tool (replaces old Word Search, Narrative Arc, Heatmap). 3-level drill-down: Volumes → Books → Chapters. Multi-term comparison (up to 6). Shaded curve charts. Deep linking. Verse references at book/chapter levels.
 - **ScripturePanel** — Right-side slider panel showing matching verses when clicking chart data points.
-- **ChapterInsights** — Collapsible panel in reader: collapsed bar (verse count + 3 stacked portraits + people count + "INSIGHTS"), expanded (People pills with speaker-colored borders + verse count, Speaker Timeline color-coded bar with trough styling, Key Themes in neutral colors). Click timeline to jump to verse. Key themes trigger WordExplorerPanel.
+- **ChapterInsights** — Collapsible panel in reader with 5 sections: (1) At a Glance (verse count, word count, summary), (2) People pills with speaker-colored borders + verse count, (3) Speaker Timeline color-coded bar with trough styling, (4) Key Themes in neutral colors, (5) Notable Verses with citations. Collapsed bar shows verse count + 3 stacked portraits + people count + "INSIGHTS". Darker background, full width, smooth slide-in animation. Click timeline to jump to verse. Key themes trigger WordExplorerPanel.
 - **WordExplorerPanel** — Slide-up panel for in-context word frequency exploration. Three scopes (book/volume/all), horizontal bar chart, current chapter highlighted, "go deeper" links. Triggered from ChapterInsights.
 - **VersePopover** — Tap verse → popover with reference, word count, key words, copy, bookmark, and personal notes.
 - **SentimentArcTool** — Sentiment Explorer with 4 theological categories and cascading dropdown navigation (Volume → Book → Chapter). Shaded area charts. No verse-level chart (too noisy for keyword matching).
@@ -283,7 +283,7 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - Results clear when volume selection changes
 - Deep linking: URL params updated on search, read on mount
 - Single-book volume detection: `vol.books.length === 1` triggers chapter-level plotting
-- **Speaker data:** Complete — 3,862 entries across 83 books, 315 unique named speakers. All group/unnamed speakers removed. Only individual named speakers from characters.json — no groups/crowds. Old backups in `data/backups/`. Speakers and Context Nuggets are always on (toggles hidden from user).
+- **Speaker data:** Complete — 3,851 entries across 83 books, 313 unique named speakers. All group/unnamed speakers removed. Only individual named speakers from characters.json — no groups/crowds. Each entry has `speakerType` field (prophet, deity, king, etc.). Field names: `verseStart`/`verseEnd`. Old backups in `data/backups/`. Speakers and Context Nuggets are always on (toggles hidden from user).
 - **Gemini 10-Output Pipeline:** All chapter-level data was rebuilt from scratch via Gemini. Guide at `~/Desktop/GEMINI-SCORING-GUIDE.md`. Process: user feeds book text to Gemini → Gemini returns 10 JSON arrays → user pastes to Claude Code → Claude Code enriches and appends.
   **PIPELINE IS COMPLETE.** All volumes, all books, all chapters scored.
   - Book of Mormon: 15/15 (239 chapters)
@@ -293,7 +293,7 @@ Two layout patterns exist depending on whether the tool has a search bar:
   - D&C: 138/138 sections (Claude Code generated)
   - Old Testament: 39/39 (929 chapters — mix of Gemini + Claude Code)
   - **Total: 1,755 chapters with 10 data types each**
-- **Character data:** `data/characters.json` — 863 named individuals with bios, aliases, family relationships, portraits (46 of 77 prominent), volumes, tiers (1-4). Tiers 1-2 are "prominent" (77 people). `/api/chapter-characters` finds characters per chapter via speaker matching + whole-word text scanning with volume-aware deduplication.
+- **Character data:** `data/characters.json` — 857 named individuals with bios, aliases, family relationships, portraits (46 of 77 prominent), volumes, tiers (1-4). Tiers 1-2 are "prominent" (77 people). 8 duplicate pairs merged (Adam/Michael, Sarah/Sarai, Jacob/Israel, etc.). `/api/chapter-characters` finds characters per chapter via speaker matching + whole-word text scanning with volume-aware deduplication.
 - **Location data:** `data/locations.json` — 333 named scripture locations with descriptions, coordinates (207 known), aliases, region, type, era, significance, tiers. BoM locations have `knownLocation: false`. D&C/PoGP real-world sites have GPS coordinates. `/api/locations` serves all, `/api/location-mentions` reuses character mention search for text scanning.
 - **Entity linking:** ScriptureReader auto-links first mentions of people and places in each chapter. Builds regex from all character/location names+aliases (longest first), tracks first occurrence per entity per chapter. Blue underline (2px, #2563EB) with inline icons: circular portrait for people (40 have photos, others get person silhouette in blue circle), map pin in blue circle for locations. Clicking opens CharacterDetailPanel or LocationDetailPanel.
 - **Context Nuggets system:** `data/context-nuggets.json` → `/api/context-nuggets` → ScriptureReader. 1,139 scholarly insights with 5 categories (Linguistic, Historical, Cultural, Literary, Restoration). Domain isolation: Restoration-category nuggets hidden when LDS volumes toggled off. NuggetMarker pills (4px borderRadius, amber/gold) display below verse text alongside ResourceMarker pills. NuggetPopover shows parchment/slate card with title, insight, source citation. Keywords get subtle glint animation (7s stagger per nugget). "Context" toggle in reader layers section.

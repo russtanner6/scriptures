@@ -1,5 +1,58 @@
 # Scripture Explorer — Session Log
 
+## 2026-03-26 — Session 24: Speaker/Character Fixes + ChapterInsights Redesign + Reader Polish
+
+### What was done
+
+**Critical bug fixes:**
+- Fixed crash: 38 characters with `aliases: null` (wrapped in `|| []` fallback)
+- Fixed `speakerType` missing from all 3,862 entries — added type classification to every speaker record
+- Fixed field name mismatch: `startVerse`/`endVerse` → `verseStart`/`verseEnd` across speaker data and components
+- Fixed OT divine speaker display: now shows "The LORD" instead of "Jesus Christ" via `displaySpeakerName()` volume-aware mapping
+- Fixed People page crash: 119 characters missing `roles`/`gender`/`era` fields — backfilled all
+
+**Speaker audit:**
+- 14 entries removed (duplicates, unnamed groups)
+- 11 entries corrected (wrong speaker attribution)
+- 3 verse ranges fixed (off-by-one errors)
+- Added Satan speaker tags (Genesis 3, Isaiah 14, Moses 5)
+- Final count: 3,851 entries, 313 unique named speakers
+
+**Character merges and cleanup:**
+- Merged 8 duplicate characters (Adam/Michael, Sarah/Sarai, Jacob/Israel, Abram/Abraham, etc.)
+- Final count: 857 named individuals (down from 863 after merges)
+
+**ChapterInsights redesign:**
+- Redesigned panel with 5 sections: At a Glance, People, Speaker Timeline, Key Themes, Notable Verses
+- Insights bar polish: darker background, full width, smooth slide-in animation
+
+**Scripture Reader visual polish:**
+- Added book landscape picture feature (4:1 ratio, edge-to-edge on mobile)
+- Added verse number squares (fixed 24px, themed volume colors)
+
+**D&C Sentiment Explorer fix:**
+- Fixed to show 2 dropdowns (Volume → Section) instead of 3 — D&C has no "books"
+- Fixed 62 wrong-schema sentiment entries + 136 null bookIds across pipeline data files
+
+### Current state
+- **Pipeline:** 100% complete — 1,755 chapters across all 6 volumes scored with 10 data types
+- **Characters:** 857 named individuals (after 8 merges)
+- **Speakers:** 3,851 entries, 313 unique named speakers (audited, speakerType added)
+- **Sentiment Explorer:** Wired to LLM data for volume/book/chapter levels; keyword lexicon fallback for verse-level
+- **ChapterInsights:** 5-section layout (At a Glance, People, Speaker Timeline, Key Themes, Notable Verses)
+- **Reader:** Book landscape images, verse number squares, entity linking, context nuggets
+
+### Remaining work
+1. Wire chapter summaries/themes/notable verses more deeply into ScriptureReader UI
+2. Wire cross-references into reader — show linked passages
+3. Wire historical context into reader — show era/date/setting
+4. Build Mood Match feature using complete sentiment data
+5. Start Mom Mode pilot (Genesis stories)
+6. Build Funny Stories tool
+7. Complete Word Explorer (cascading dropdowns, old route redirects)
+
+---
+
 ## 2026-03-26 — Session 23: Documentation Cleanup + Pipeline Verification
 
 ### What was done
