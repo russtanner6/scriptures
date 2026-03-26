@@ -1212,7 +1212,7 @@ export default function ScriptureReader() {
         verseText: "#333333",
       }
     : {
-        bg: "#2f2f3a",
+        bg: "#29292b",
         text: "#f0f0f0",
         textSecondary: "#b0b0b0",
         textMuted: "#666666",
@@ -1886,7 +1886,7 @@ export default function ScriptureReader() {
                       bottom: 0,
                       width: isMobile ? "85vw" : "420px",
                       maxWidth: "90vw",
-                      background: lightMode ? "#faf9f5" : "#2f2f3a",
+                      background: lightMode ? "#faf9f5" : "#29292b",
                       zIndex: 201,
                       overflowY: "auto",
                       boxShadow: "-4px 0 24px rgba(0,0,0,0.3)",
@@ -2271,7 +2271,7 @@ export default function ScriptureReader() {
                         : lightMode ? "#222" : "rgba(255,255,255,0.88)",
                       color: selectedVerses.has(v.verse)
                         ? "#fff"
-                        : lightMode ? "#f8f6f1" : "#2f2f3a",
+                        : lightMode ? "#f8f6f1" : "#29292b",
                       flexShrink: 0,
                       transition: "all 0.15s",
                       verticalAlign: "top",
