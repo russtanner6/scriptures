@@ -1712,7 +1712,7 @@
     "volumeName": "Book of Mormon",
     "bookId": 80,
     "speakerType": "angel",
-    "verseStart": 1,
+    "verseStart": 4,
     "verseEnd": 6
   },
   {
@@ -3478,11 +3478,11 @@
   {
     "book": "Moses",
     "chapter": 5,
-    "speaker": "Adam",
+    "speaker": "Gabriel",
     "volumeAbbrev": "PoGP",
     "volumeName": "Pearl of Great Price",
     "bookId": 83,
-    "speakerType": "other",
+    "speakerType": "prophet",
     "verseStart": 7,
     "verseEnd": 7
   },
@@ -3566,11 +3566,11 @@
   {
     "book": "Moses",
     "chapter": 5,
-    "speaker": "Cain",
+    "speaker": "Jesus Christ",
     "volumeAbbrev": "PoGP",
     "volumeName": "Pearl of Great Price",
     "bookId": 83,
-    "speakerType": "other",
+    "speakerType": "divine",
     "verseStart": 35,
     "verseEnd": 35
   },
@@ -4215,11 +4215,11 @@
   {
     "book": "2 Esdras",
     "chapter": 2,
-    "speaker": "Ezra",
+    "speaker": "Gabriel",
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 89,
-    "speakerType": "other",
+    "speakerType": "prophet",
     "verseStart": 48,
     "verseEnd": 48
   },
@@ -4552,83 +4552,6 @@
     "speakerType": "other",
     "verseStart": 70,
     "verseEnd": 74
-  },
-  {
-    "book": "2 Esdras",
-    "chapter": 7,
-    "speaker": "Ezra",
-    "volumeAbbrev": "Apoc",
-    "volumeName": "Apocrypha",
-    "bookId": 89,
-    "speakerType": "other",
-    "verseStart": 75,
-    "verseEnd": 75
-  },
-  {
-    "book": "2 Esdras",
-    "chapter": 7,
-    "speaker": "Uriel",
-    "volumeAbbrev": "Apoc",
-    "volumeName": "Apocrypha",
-    "bookId": 89,
-    "speakerType": "other",
-    "verseStart": 76,
-    "verseEnd": 101
-  },
-  {
-    "book": "2 Esdras",
-    "chapter": 7,
-    "speaker": "Ezra",
-    "volumeAbbrev": "Apoc",
-    "volumeName": "Apocrypha",
-    "bookId": 89,
-    "speakerType": "other",
-    "verseStart": 102,
-    "verseEnd": 103
-  },
-  {
-    "book": "2 Esdras",
-    "chapter": 7,
-    "speaker": "Uriel",
-    "volumeAbbrev": "Apoc",
-    "volumeName": "Apocrypha",
-    "bookId": 89,
-    "speakerType": "other",
-    "verseStart": 104,
-    "verseEnd": 115
-  },
-  {
-    "book": "2 Esdras",
-    "chapter": 7,
-    "speaker": "Ezra",
-    "volumeAbbrev": "Apoc",
-    "volumeName": "Apocrypha",
-    "bookId": 89,
-    "speakerType": "other",
-    "verseStart": 116,
-    "verseEnd": 126
-  },
-  {
-    "book": "2 Esdras",
-    "chapter": 7,
-    "speaker": "Uriel",
-    "volumeAbbrev": "Apoc",
-    "volumeName": "Apocrypha",
-    "bookId": 89,
-    "speakerType": "other",
-    "verseStart": 127,
-    "verseEnd": 131
-  },
-  {
-    "book": "2 Esdras",
-    "chapter": 7,
-    "speaker": "Ezra",
-    "volumeAbbrev": "Apoc",
-    "volumeName": "Apocrypha",
-    "bookId": 89,
-    "speakerType": "other",
-    "verseStart": 132,
-    "verseEnd": 140
   },
   {
     "book": "2 Esdras",
@@ -5821,11 +5744,11 @@
   {
     "book": "Tobit",
     "chapter": 5,
-    "speaker": "Angel Raphael",
+    "speaker": "Tobit",
     "volumeAbbrev": "Apoc",
     "volumeName": "Apocrypha",
     "bookId": 90,
-    "speakerType": "other",
+    "speakerType": "prophet",
     "verseStart": 10,
     "verseEnd": 10
   },
@@ -16946,7 +16869,7 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 13,
-    "speakerType": "other",
+    "speakerType": "prophet",
     "verseStart": 23,
     "verseEnd": 23
   },
@@ -17585,7 +17508,7 @@
     "volumeName": "Old Testament",
     "bookId": 11,
     "speakerType": "other",
-    "verseStart": 5,
+    "verseStart": 6,
     "verseEnd": 16
   },
   {
@@ -20055,17 +19978,6 @@
   {
     "book": "1 Samuel",
     "chapter": 22,
-    "speaker": "Ahimelech",
-    "volumeAbbrev": "OT",
-    "volumeName": "Old Testament",
-    "bookId": 9,
-    "speakerType": "other",
-    "verseStart": 12,
-    "verseEnd": 12
-  },
-  {
-    "book": "1 Samuel",
-    "chapter": 22,
     "speaker": "Saul",
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
@@ -20499,7 +20411,7 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 9,
-    "speakerType": "other",
+    "speakerType": "prophet",
     "verseStart": 1,
     "verseEnd": 1
   },
@@ -22431,17 +22343,6 @@
   {
     "book": "2 Kings",
     "chapter": 14,
-    "speaker": "Amaziah",
-    "volumeAbbrev": "OT",
-    "volumeName": "Old Testament",
-    "bookId": 12,
-    "speakerType": "other",
-    "verseStart": 6,
-    "verseEnd": 6
-  },
-  {
-    "book": "2 Kings",
-    "chapter": 14,
     "speaker": "Jehoash",
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
@@ -22866,17 +22767,6 @@
     "bookId": 10,
     "speakerType": "other",
     "verseStart": 20,
-    "verseEnd": 21
-  },
-  {
-    "book": "2 Samuel",
-    "chapter": 2,
-    "speaker": "Asahel",
-    "volumeAbbrev": "OT",
-    "volumeName": "Old Testament",
-    "bookId": 10,
-    "speakerType": "other",
-    "verseStart": 21,
     "verseEnd": 21
   },
   {
@@ -23377,11 +23267,11 @@
   {
     "book": "2 Samuel",
     "chapter": 11,
-    "speaker": "Uriah",
+    "speaker": "David",
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 10,
-    "speakerType": "other",
+    "speakerType": "prophet",
     "verseStart": 10,
     "verseEnd": 10
   },
@@ -25430,17 +25320,6 @@
     "speakerType": "divine",
     "verseStart": 19,
     "verseEnd": 19
-  },
-  {
-    "book": "Exodus",
-    "chapter": 7,
-    "speaker": "Pharaoh",
-    "volumeAbbrev": "OT",
-    "volumeName": "Old Testament",
-    "bookId": 2,
-    "speakerType": "other",
-    "verseStart": 26,
-    "verseEnd": 26
   },
   {
     "book": "Exodus",
@@ -28453,7 +28332,7 @@
     "volumeName": "Old Testament",
     "bookId": 1,
     "speakerType": "other",
-    "verseStart": 5,
+    "verseStart": 6,
     "verseEnd": 10
   },
   {
@@ -30263,7 +30142,7 @@
   {
     "book": "Genesis",
     "chapter": 47,
-    "speaker": "Jacob",
+    "speaker": "Judah",
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 1,
@@ -33188,17 +33067,6 @@
   },
   {
     "book": "Numbers",
-    "chapter": 17,
-    "speaker": "Moses",
-    "volumeAbbrev": "OT",
-    "volumeName": "Old Testament",
-    "bookId": 4,
-    "speakerType": "prophet",
-    "verseStart": 12,
-    "verseEnd": 13
-  },
-  {
-    "book": "Numbers",
     "chapter": 18,
     "speaker": "Jesus Christ",
     "volumeAbbrev": "OT",
@@ -33651,11 +33519,11 @@
   {
     "book": "Numbers",
     "chapter": 23,
-    "speaker": "Balaam",
+    "speaker": "Balak",
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 4,
-    "speakerType": "other",
+    "speakerType": "prophet",
     "verseStart": 11,
     "verseEnd": 11
   },
@@ -33673,11 +33541,11 @@
   {
     "book": "Numbers",
     "chapter": 23,
-    "speaker": "Balaam",
+    "speaker": "Balak",
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 4,
-    "speakerType": "other",
+    "speakerType": "prophet",
     "verseStart": 13,
     "verseEnd": 13
   },
@@ -33706,11 +33574,11 @@
   {
     "book": "Numbers",
     "chapter": 23,
-    "speaker": "Balaam",
+    "speaker": "Balak",
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 4,
-    "speakerType": "other",
+    "speakerType": "prophet",
     "verseStart": 25,
     "verseEnd": 25
   },
@@ -33728,11 +33596,11 @@
   {
     "book": "Numbers",
     "chapter": 23,
-    "speaker": "Balaam",
+    "speaker": "Balak",
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 4,
-    "speakerType": "other",
+    "speakerType": "prophet",
     "verseStart": 27,
     "verseEnd": 27
   },
@@ -33761,11 +33629,11 @@
   {
     "book": "Numbers",
     "chapter": 24,
-    "speaker": "Balaam",
+    "speaker": "Balak",
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 4,
-    "speakerType": "other",
+    "speakerType": "prophet",
     "verseStart": 10,
     "verseEnd": 10
   },
@@ -34036,7 +33904,7 @@
   {
     "book": "Numbers",
     "chapter": 32,
-    "speaker": "Moses",
+    "speaker": "Reuben",
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 4,
@@ -36675,17 +36543,6 @@
   },
   {
     "book": "Joshua",
-    "chapter": 9,
-    "speaker": "Joshua",
-    "volumeAbbrev": "OT",
-    "volumeName": "Old Testament",
-    "bookId": 6,
-    "speakerType": "other",
-    "verseStart": 24,
-    "verseEnd": 25
-  },
-  {
-    "book": "Joshua",
     "chapter": 10,
     "speaker": "Joshua",
     "volumeAbbrev": "OT",
@@ -36797,22 +36654,11 @@
   {
     "book": "Joshua",
     "chapter": 17,
-    "speaker": "Joshua",
+    "speaker": "Joseph",
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 6,
-    "speakerType": "other",
-    "verseStart": 4,
-    "verseEnd": 4
-  },
-  {
-    "book": "Joshua",
-    "chapter": 17,
-    "speaker": "Joshua",
-    "volumeAbbrev": "OT",
-    "volumeName": "Old Testament",
-    "bookId": 6,
-    "speakerType": "other",
+    "speakerType": "prophet",
     "verseStart": 14,
     "verseEnd": 14
   },
@@ -42512,6 +42358,6 @@
     "speakerType": "other",
     "volumeAbbrev": "PoGP",
     "volumeName": "Pearl of Great Price",
-    "bookId": 80
+    "bookId": 83
   }
 ]

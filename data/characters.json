@@ -3740,7 +3740,9 @@
     "bio": "One of Job's three friends who argued that God is just and Job's suffering proved some hidden sin. He suggested Job's children died for their own transgressions. God rebuked him along with the other friends.",
     "era": "Patriarchal",
     "timePeriod": "Unknown",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -4281,7 +4283,9 @@
     "bio": "A young man who spoke after Job's three friends, angry that they could not answer Job. He argued that suffering can be disciplinary and that God speaks through pain and dreams. Unlike the three friends, God did not rebuke Elihu.",
     "era": "Patriarchal",
     "timePeriod": "Unknown",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -4304,7 +4308,9 @@
     "bio": "The eldest and most prominent of Job's three friends who came to comfort him. He argued that suffering is always punishment for sin and urged Job to repent. God rebuked him for not speaking rightly.",
     "era": "Patriarchal",
     "timePeriod": "Unknown",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -4714,7 +4720,9 @@
     "bio": "Daughter of Diblaim whom God commanded Hosea to marry as a living parable of Israel's unfaithfulness. She was unfaithful to Hosea, who later bought her back, symbolizing God's redemptive love for wayward Israel.",
     "era": "Divided Kingdom",
     "timePeriod": "c. 750 BC",
-    "roles": [],
+    "roles": [
+      "Woman of Faith"
+    ],
     "gender": "female",
     "volumes": [
       "OT"
@@ -7437,7 +7445,9 @@
     "bio": "A wealthy woman of Shunem who built a room for Elisha. He promised her a son, who later died. She sought Elisha, who raised the boy from the dead. Elisha later warned her of a famine.",
     "era": "Divided Kingdom",
     "timePeriod": "c. 850 BC",
-    "roles": [],
+    "roles": [
+      "Woman of Faith"
+    ],
     "gender": "female",
     "volumes": [
       "OT"
@@ -7728,7 +7738,9 @@
     "bio": "A Sidonian widow preparing a final meal during a famine when Elijah asked for food first, promising her flour and oil would not run out. Her son died and Elijah raised him back to life.",
     "era": "Divided Kingdom",
     "timePeriod": "c. 870 BC",
-    "roles": [],
+    "roles": [
+      "Woman of Faith"
+    ],
     "gender": "female",
     "volumes": [
       "OT"
@@ -8046,7 +8058,9 @@
     "bio": "One of Job's three friends, the bluntest in his accusations. He insisted Job deserved even worse punishment and that God was actually being lenient. God rebuked him along with the other friends.",
     "era": "Patriarchal",
     "timePeriod": "Unknown",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -8236,7 +8250,9 @@
     "bio": "A beautiful young Shunammite woman who cared for the aging King David. After David's death, Adonijah asked Bathsheba to request her as his wife, which Solomon interpreted as a bid for the throne.",
     "era": "United Monarchy",
     "timePeriod": "c. 970 BC",
-    "roles": [],
+    "roles": [
+      "Woman of Faith"
+    ],
     "gender": "female",
     "volumes": [
       "OT"
@@ -9259,7 +9275,9 @@
     "bio": "A Jebusite who owned the threshing floor on Mount Moriah where David built an altar to stop a plague. He offered it freely, but David insisted on paying. Solomon later built the temple on this site.",
     "era": "United Monarchy",
     "timePeriod": "c. 1000 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -9606,7 +9624,9 @@
     "bio": "A wealthy and aged Gileadite who provided food and supplies to David during his flight from Absalom. David offered him a place at court in Jerusalem, but Barzillai declined because of his age.",
     "era": "United Monarchy",
     "timePeriod": "c. 1000 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -9925,7 +9945,9 @@
     "bio": "Son of Elimelech and Naomi who married Orpah the Moabitess. He died in Moab along with his brother Mahlon.",
     "era": "Judges",
     "timePeriod": "c. 1100 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -10818,7 +10840,9 @@
     "bio": "Husband of Naomi from Bethlehem who took his family to Moab during a famine. He died there, leaving Naomi with their two sons Mahlon and Chilion, who also later died.",
     "era": "Judges",
     "timePeriod": "c. 1110 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -10841,7 +10865,9 @@
     "bio": "Not directly named in D&C text. Skipping.",
     "era": "skip",
     "timePeriod": "skip",
-    "roles": [],
+    "roles": [
+      "Woman of Faith"
+    ],
     "gender": "female",
     "volumes": [
       "D&C"
@@ -11104,7 +11130,9 @@
     "bio": "Firstborn son of Judah. He married Tamar but was wicked in the sight of the LORD, who put him to death.",
     "era": "Patriarchal",
     "timePeriod": "c. 1900 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -11561,7 +11589,9 @@
     "bio": "Firstborn son of Moses and Zipporah. Moses named him Gershom, saying 'I have been a sojourner in a foreign land,' reflecting his exile from Egypt in Midian.",
     "era": "Exodus",
     "timePeriod": "c. 1480 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -11589,7 +11619,9 @@
     "bio": "An Arab leader who allied with Sanballat and Tobiah against Nehemiah. He accused Nehemiah of plotting rebellion against Persia to prevent the wall's completion.",
     "era": "Post-Exile",
     "timePeriod": "c. 445 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -11885,7 +11917,9 @@
     "bio": "Brother of Nehemiah who came from Judah to Susa and reported the broken walls and distress of Jerusalem's remnant. His report moved Nehemiah to weep, fast, and petition the king.",
     "era": "Post-Exile",
     "timePeriod": "c. 445 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -11931,7 +11965,9 @@
     "bio": "Son of Terah and brother of Abraham. He was the father of Lot. He died in Ur of the Chaldeans before his father Terah.",
     "era": "Patriarchal",
     "timePeriod": "c. 2100 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -12532,7 +12568,9 @@
     "bio": "Son of Phinehas (son of Eli), born on the day the ark was captured. His mother named him Ichabod, meaning 'The glory has departed from Israel,' and died in childbirth.",
     "era": "Judges",
     "timePeriod": "c. 1100 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -12685,7 +12723,9 @@
     "bio": "A member of the royal family who assassinated Gedaliah, the governor appointed by Babylon over Judah's remnant, along with Jews and Babylonian soldiers. He fled to the Ammonites.",
     "era": "Exile",
     "timePeriod": "c. 586 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -13659,7 +13699,9 @@
     "bio": "Youngest son of Gideon who escaped Abimelech's massacre. He told the parable of the trees choosing a king from atop Mount Gerizim, warning Shechem of judgment for crowning Abimelech, then fled.",
     "era": "Judges",
     "timePeriod": "c. 1150 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -14045,7 +14087,9 @@
     "bio": "A descendant of Cain who took two wives, Adah and Zillah. He boasted to his wives about killing a man who wounded him, claiming seventy-sevenfold vengeance.",
     "era": "Antediluvian",
     "timePeriod": "Unknown",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -14486,7 +14530,9 @@
     "bio": "Son of Isaiah whose prophetic name means 'Quick to the plunder, swift to the spoil.' His birth was a sign that before he could speak, Assyria would plunder Damascus and Samaria.",
     "era": "Divided Kingdom",
     "timePeriod": "c. 734 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -14528,7 +14574,9 @@
     "bio": "Son of Elimelech and Naomi who married Ruth the Moabitess. He died in Moab, and Ruth later married Boaz as kinsman-redeemer.",
     "era": "Judges",
     "timePeriod": "c. 1100 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -14968,7 +15016,9 @@
     "bio": "An Ephraimite who set up a shrine with a carved image and hired a Levite as his personal priest. The tribe of Dan stole his idols and priest while migrating north to conquer Laish.",
     "era": "Judges",
     "timePeriod": "c. 1100 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -15217,7 +15267,9 @@
     "bio": "Daughter of Lamech (descendant of Cain) and Zillah, and sister of Tubal-cain. One of the few antediluvian women named in Genesis.",
     "era": "Antediluvian",
     "timePeriod": "Unknown",
-    "roles": [],
+    "roles": [
+      "Woman of Faith"
+    ],
     "gender": "female",
     "volumes": [
       "OT"
@@ -15290,7 +15342,9 @@
     "bio": "A wealthy but foolish man of Carmel married to Abigail. He refused to give provisions to David's men despite their protection of his flocks. He died of apparent stroke ten days after learning of Abigail's intervention.",
     "era": "United Monarchy",
     "timePeriod": "c. 1012 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -15877,7 +15931,9 @@
     "bio": "Second son of Judah. After his brother Er's death, he was told to perform the duty of a brother-in-law to Tamar but refused, and God put him to death.",
     "era": "Patriarchal",
     "timePeriod": "c. 1900 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -15944,7 +16000,9 @@
     "bio": "Moabite daughter-in-law of Naomi, wife of Chilion. When Naomi urged her daughters-in-law to return to Moab, Orpah kissed her goodbye and went back, while Ruth chose to stay.",
     "era": "Judges",
     "timePeriod": "c. 1100 BC",
-    "roles": [],
+    "roles": [
+      "Woman of Faith"
+    ],
     "gender": "female",
     "volumes": [
       "OT"
@@ -16078,7 +16136,9 @@
     "bio": "Son of Laish to whom Saul gave Michal, David's wife, after David fled. When David demanded Michal back, Abner took her from Paltiel, who followed weeping until sent home.",
     "era": "United Monarchy",
     "timePeriod": "c. 1015–1005 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -16188,7 +16248,9 @@
     "bio": "Second wife of Elkanah who had children. She provoked and taunted Hannah for her barrenness, driving Hannah to tearful prayer that led to Samuel's birth.",
     "era": "Judges",
     "timePeriod": "c. 1100 BC",
-    "roles": [],
+    "roles": [
+      "Woman of Faith"
+    ],
     "gender": "female",
     "volumes": [
       "OT"
@@ -16683,7 +16745,9 @@
     "bio": "Concubine of King Saul. After David gave her two sons to the Gibeonites to be hanged, she guarded their exposed bodies for months, keeping birds and beasts away. Her devotion moved David to properly bury Saul's descendants.",
     "era": "United Monarchy",
     "timePeriod": "c. 1010 BC",
-    "roles": [],
+    "roles": [
+      "Woman of Faith"
+    ],
     "gender": "female",
     "volumes": [
       "OT"
@@ -17238,7 +17302,9 @@
     "bio": "Son of Isaiah whose prophetic name means 'A remnant shall return.' Isaiah brought him to meet King Ahaz during the Syro-Ephraimite crisis as a living sign of God's promise.",
     "era": "Divided Kingdom",
     "timePeriod": "c. 735 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -17328,7 +17394,9 @@
     "bio": "Third son of Judah and his Canaanite wife. Judah withheld him from marrying Tamar after the deaths of his brothers Er and Onan, fearing Shelah too would die.",
     "era": "Patriarchal",
     "timePeriod": "c. 1900 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -18896,7 +18964,9 @@
     "bio": "A man of the tribe of Manasseh who died in the wilderness with no sons. His five daughters petitioned Moses for an inheritance, establishing the legal precedent that daughters could inherit when there were no sons.",
     "era": "Exodus",
     "timePeriod": "c. 1400 BC",
-    "roles": [],
+    "roles": [
+      "Other"
+    ],
     "gender": "male",
     "volumes": [
       "OT"
@@ -19073,7 +19143,9 @@
     "bio": "Wife of Haman who advised him to build a 75-foot gallows for Mordecai. After Haman was forced to honor Mordecai, she warned that if Mordecai was Jewish, Haman would surely fall.",
     "era": "Post-Exile",
     "timePeriod": "c. 473 BC",
-    "roles": [],
+    "roles": [
+      "Woman of Faith"
+    ],
     "gender": "female",
     "volumes": [
       "OT"
@@ -19783,7 +19855,12 @@
     ],
     "tier": 3,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "heliodorus",
@@ -19795,7 +19872,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "onias-high-priest",
@@ -19807,7 +19889,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "eleazar-martyr",
@@ -19819,7 +19906,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "lysias-seleucid",
@@ -19831,7 +19923,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "mother-seven-brothers",
@@ -19843,7 +19940,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Woman of Faith"
+    ],
+    "gender": "female",
+    "era": "Old Testament"
   },
   {
     "id": "razis",
@@ -19855,7 +19957,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "judith",
@@ -19867,7 +19974,12 @@
     ],
     "tier": 3,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Woman of Faith"
+    ],
+    "gender": "female",
+    "era": "Old Testament"
   },
   {
     "id": "holofernes",
@@ -19879,7 +19991,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "achior",
@@ -19891,7 +20008,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "ozias",
@@ -19903,7 +20025,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "arphaxad-mede",
@@ -19915,7 +20042,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "bagoas",
@@ -19927,7 +20059,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "jesus-son-of-sirach",
@@ -19942,7 +20079,12 @@
     ],
     "tier": 3,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "simon-high-priest-ii",
@@ -19957,7 +20099,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "susanna",
@@ -19969,7 +20116,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Woman of Faith"
+    ],
+    "gender": "female",
+    "era": "Old Testament"
   },
   {
     "id": "joacim-susanna",
@@ -19981,7 +20133,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "chelcias",
@@ -19993,7 +20150,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "tobit",
@@ -20005,7 +20167,12 @@
     ],
     "tier": 3,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "anna-tobit",
@@ -20017,7 +20184,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Woman of Faith"
+    ],
+    "gender": "female",
+    "era": "Old Testament"
   },
   {
     "id": "tobias",
@@ -20029,7 +20201,12 @@
     ],
     "tier": 3,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "sarah-raguel",
@@ -20041,7 +20218,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Woman of Faith"
+    ],
+    "gender": "female",
+    "era": "Old Testament"
   },
   {
     "id": "raguel",
@@ -20053,7 +20235,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "asmodeus",
@@ -20065,7 +20252,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "angel-raphael",
@@ -20080,7 +20272,12 @@
     ],
     "tier": 3,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Angel"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "edna",
@@ -20092,7 +20289,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Woman of Faith"
+    ],
+    "gender": "female",
+    "era": "Old Testament"
   },
   {
     "id": "alexander-blasphemer",
@@ -20104,7 +20306,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "New Testament"
   },
   {
     "id": "jannes",
@@ -20116,7 +20323,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "New Testament"
   },
   {
     "id": "jambres",
@@ -20128,7 +20340,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "New Testament"
   },
   {
     "id": "gamaliel",
@@ -20140,7 +20357,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "New Testament"
   },
   {
     "id": "ananias-of-damascus",
@@ -20154,7 +20376,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "New Testament"
   },
   {
     "id": "felix",
@@ -20168,7 +20395,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "New Testament"
   },
   {
     "id": "festus",
@@ -20182,7 +20414,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "New Testament"
   },
   {
     "id": "herod-agrippa-ii",
@@ -20197,7 +20434,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "New Testament"
   },
   {
     "id": "simon-the-tanner",
@@ -20209,7 +20451,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "New Testament"
   },
   {
     "id": "rhoda",
@@ -20221,7 +20468,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Woman of Faith"
+    ],
+    "gender": "female",
+    "era": "New Testament"
   },
   {
     "id": "eutychus",
@@ -20233,7 +20485,12 @@
     ],
     "tier": 4,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "New Testament"
   },
   {
     "id": "korah",
@@ -20250,7 +20507,12 @@
     "family": {
       "father": "izhar"
     },
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "legion",
@@ -20262,7 +20524,12 @@
     ],
     "tier": 3,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "New Testament"
   },
   {
     "id": "onesimus",
@@ -20274,7 +20541,12 @@
     ],
     "tier": 3,
     "family": {},
-    "portrait": null
+    "portrait": null,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "New Testament"
   },
   {
     "id": "jabez",
@@ -20284,7 +20556,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "amasai",
@@ -20294,7 +20571,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "benaiah",
@@ -20304,7 +20586,12 @@
       "OT"
     ],
     "tier": 3,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "micaiah",
@@ -20314,7 +20601,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "naboth",
@@ -20324,7 +20616,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "hadad-edomite",
@@ -20334,7 +20631,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "shimei-benjamite",
@@ -20344,7 +20646,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "agag",
@@ -20354,7 +20661,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "eliab",
@@ -20364,7 +20676,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "kish",
@@ -20374,7 +20691,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "abishai",
@@ -20384,7 +20706,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "abner",
@@ -20394,7 +20721,12 @@
       "OT"
     ],
     "tier": 3,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "nahash",
@@ -20404,7 +20736,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "huram-king-of-tyre",
@@ -20416,7 +20753,12 @@
     "tier": 4,
     "aliases": [
       "Hiram"
-    ]
+    ],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "shemaiah-prophet",
@@ -20426,7 +20768,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "jahaziel",
@@ -20436,7 +20783,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "oded",
@@ -20446,7 +20798,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "sennacherib",
@@ -20456,7 +20813,12 @@
       "OT"
     ],
     "tier": 3,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "huldah",
@@ -20466,7 +20828,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Woman of Faith"
+    ],
+    "gender": "female",
+    "era": "Old Testament"
   },
   {
     "id": "queen-of-sheba",
@@ -20476,7 +20843,12 @@
       "OT"
     ],
     "tier": 3,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Woman of Faith"
+    ],
+    "gender": "female",
+    "era": "Old Testament"
   },
   {
     "id": "gehazi",
@@ -20486,7 +20858,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "hilkiah",
@@ -20496,7 +20873,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "gedaliah",
@@ -20506,7 +20888,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "jehonadab",
@@ -20516,7 +20903,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "athaliah",
@@ -20526,7 +20918,12 @@
       "OT"
     ],
     "tier": 3,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Woman of Faith"
+    ],
+    "gender": "female",
+    "era": "Old Testament"
   },
   {
     "id": "ish-bosheth",
@@ -20538,7 +20935,12 @@
     "tier": 4,
     "aliases": [
       "Ishbosheth"
-    ]
+    ],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "mephibosheth",
@@ -20548,7 +20950,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "amnon",
@@ -20558,7 +20965,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "jonadab",
@@ -20568,7 +20980,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "ahimaaz",
@@ -20578,7 +20995,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "cushi",
@@ -20588,7 +21010,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "eliakim-steward",
@@ -20598,7 +21025,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "shiphrah",
@@ -20608,7 +21040,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Woman of Faith"
+    ],
+    "gender": "female",
+    "era": "Old Testament"
   },
   {
     "id": "puah",
@@ -20618,7 +21055,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Woman of Faith"
+    ],
+    "gender": "female",
+    "era": "Old Testament"
   },
   {
     "id": "agur",
@@ -20628,7 +21070,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "balaams-donkey",
@@ -20638,7 +21085,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Woman of Faith"
+    ],
+    "gender": "female",
+    "era": "Old Testament"
   },
   {
     "id": "phinehas-son-of-eleazar",
@@ -20648,7 +21100,12 @@
       "OT"
     ],
     "tier": 3,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "eleazar-priest",
@@ -20658,7 +21115,12 @@
       "OT"
     ],
     "tier": 3,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "arioch",
@@ -20668,7 +21130,12 @@
       "OT"
     ],
     "tier": 4,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "belshazzar",
@@ -20678,7 +21145,12 @@
       "OT"
     ],
     "tier": 3,
-    "aliases": []
+    "aliases": [],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "abed-nego",
@@ -20691,7 +21163,12 @@
     "aliases": [
       "Abednego",
       "Azariah"
-    ]
+    ],
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   },
   {
     "id": "zipporah",
@@ -20703,7 +21180,12 @@
     "volumes": [
       "OT"
     ],
-    "tier": 3
+    "tier": 3,
+    "roles": [
+      "Woman of Faith"
+    ],
+    "gender": "female",
+    "era": "Old Testament"
   },
   {
     "id": "achan",
@@ -20715,6 +21197,11 @@
     "volumes": [
       "OT"
     ],
-    "tier": 4
+    "tier": 4,
+    "roles": [
+      "Other"
+    ],
+    "gender": "male",
+    "era": "Old Testament"
   }
 ]
