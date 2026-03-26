@@ -1695,6 +1695,18 @@ export default function ScriptureReader() {
                         pointerEvents: "none",
                       }}
                     />
+                    {/* Subtle centered top shadow — gentle vignette */}
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: "20%",
+                        right: "20%",
+                        height: "50%",
+                        background: "radial-gradient(ellipse at center top, rgba(0,0,0,0.18) 0%, transparent 70%)",
+                        pointerEvents: "none",
+                      }}
+                    />
                   </div>
                   </div>
                 )}
