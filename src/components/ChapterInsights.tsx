@@ -289,17 +289,29 @@ export default function ChapterInsights({
   const chapterOrSection = volumeAbbrev === "D&C" ? "Section" : "Chapter";
 
   return (
+    <>
+      <style>{`
+        @keyframes insightsSlideIn {
+          from { opacity: 0; transform: translateY(-8px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
     <div
       style={{
         marginBottom: "24px",
         borderRadius: flatTopCorners ? "0" : "8px",
-        border: `1px solid ${theme.border}`,
-        borderTop: flatTopCorners ? "none" : `1px solid ${theme.border}`,
+        border: flatTopCorners ? "none" : `1px solid ${theme.border}`,
         overflow: "hidden",
-        transition: "all 0.3s ease",
+        animation: "insightsSlideIn 0.4s ease-out",
+        // Full width on mobile (escape parent padding), match image width on desktop
+        ...(flatTopCorners ? {
+          marginLeft: isMobile ? "-20px" : "-32px",
+          marginRight: isMobile ? "-20px" : "-32px",
+          width: isMobile ? "calc(100% + 40px)" : "calc(100% + 64px)",
+        } : {}),
       }}
     >
-      {/* Collapsed bar — always visible */}
+      {/* Collapsed bar — always visible, darker bg */}
       <button
         onClick={() => { setIsExpanded((prev) => { if (!prev) analytics.insightsOpen(bookName, chapter || 0); return !prev; }); }}
         style={{
@@ -307,8 +319,8 @@ export default function ChapterInsights({
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          padding: isMobile ? "10px 14px" : "10px 16px",
-          background: theme.pillBg,
+          padding: isMobile ? "14px 14px" : "14px 16px",
+          background: lightMode ? "rgba(0, 0, 0, 0.12)" : "rgba(0, 0, 0, 0.55)",
           border: "none",
           cursor: "pointer",
           fontFamily: "inherit",
@@ -319,10 +331,10 @@ export default function ChapterInsights({
           {/* Verse count — hidden on mobile */}
           {!isMobile && (
             <div style={{ display: "flex", alignItems: "baseline", gap: "4px" }}>
-              <span style={{ fontSize: "0.88rem", fontWeight: 700, color: theme.text }}>
+              <span style={{ fontSize: "0.88rem", fontWeight: 700, color: lightMode ? "#222" : "#fff" }}>
                 {stats.verseCount}
               </span>
-              <span style={{ fontSize: "0.65rem", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.06em", color: theme.textMuted }}>
+              <span style={{ fontSize: "0.65rem", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.06em", color: lightMode ? "#555" : "rgba(255,255,255,0.7)" }}>
                 Verses
               </span>
             </div>
@@ -342,7 +354,7 @@ export default function ChapterInsights({
                       height: "22px",
                       borderRadius: "50%",
                       overflow: "hidden",
-                      border: `2px solid ${lightMode ? "#f0efe8" : "#1a1a21"}`,
+                      border: `2px solid ${lightMode ? "rgba(0,0,0,0.15)" : "rgba(0,0,0,0.4)"}`,
                       zIndex: 3 - i,
                       background: c.portraitUrl ? undefined : `${volColor}30`,
                       display: "flex",
@@ -365,10 +377,10 @@ export default function ChapterInsights({
                 ))}
               </div>
               <div style={{ display: "flex", alignItems: "baseline", gap: "4px" }}>
-                <span style={{ fontSize: isMobile ? "0.82rem" : "0.88rem", fontWeight: 700, color: theme.text }}>
+                <span style={{ fontSize: isMobile ? "0.82rem" : "0.88rem", fontWeight: 700, color: lightMode ? "#222" : "#fff" }}>
                   {chapterChars.length}
                 </span>
-                <span style={{ fontSize: "0.65rem", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.06em", color: theme.textMuted }}>
+                <span style={{ fontSize: "0.65rem", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.06em", color: lightMode ? "#555" : "rgba(255,255,255,0.7)" }}>
                   People
                 </span>
               </div>
@@ -382,18 +394,19 @@ export default function ChapterInsights({
             display: "flex",
             alignItems: "center",
             gap: "6px",
-            color: theme.textMuted,
+            color: lightMode ? "#444" : "rgba(255,255,255,0.8)",
             fontSize: "0.72rem",
             fontWeight: 500,
             whiteSpace: "nowrap",
           }}
         >
-          {!isExpanded && <span style={{ textTransform: "uppercase", letterSpacing: "0.08em", color: theme.textSecondary }}>Insights</span>}
+          {!isExpanded && <span style={{ textTransform: "uppercase", letterSpacing: "0.08em", color: lightMode ? "#333" : "rgba(255,255,255,0.85)" }}>Insights</span>}
           <span
             style={{
               transform: isExpanded ? "rotate(180deg)" : "rotate(0)",
               transition: "transform 0.2s ease",
               fontSize: "0.6rem",
+              color: lightMode ? "#333" : "#fff",
             }}
           >
             ▼
@@ -744,5 +757,6 @@ export default function ChapterInsights({
         </div>
       )}
     </div>
+    </>
   );
 }

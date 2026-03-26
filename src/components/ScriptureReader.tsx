@@ -1645,11 +1645,18 @@ export default function ScriptureReader() {
                   <div
                     style={{
                       width: isMobile ? "calc(100% + 40px)" : "calc(100% + 64px)",
-                      aspectRatio: "4 / 1",
-                      borderRadius: "0",
                       marginTop: isMobile ? "-24px" : "-40px",
                       marginLeft: isMobile ? "-20px" : "-32px",
                       marginRight: isMobile ? "-20px" : "-32px",
+                      background: lightMode ? "rgba(0,0,0,0.06)" : "rgba(0,0,0,0.3)",
+                      paddingBottom: "0",
+                    }}
+                  >
+                  <div
+                    style={{
+                      width: "100%",
+                      aspectRatio: "4 / 1",
+                      borderRadius: "0",
                       overflow: "hidden",
                       position: "relative",
                       border: "none",
@@ -1685,6 +1692,7 @@ export default function ScriptureReader() {
                         pointerEvents: "none",
                       }}
                     />
+                  </div>
                   </div>
                 )}
                 <ChapterInsights
@@ -2250,16 +2258,30 @@ export default function ScriptureReader() {
                       }
                     }}
                     style={{
-                      fontSize: "0.82rem",
-                      fontWeight: 700,
-                      color: selectedVerses.has(v.verse) ? volColor : theme.verseNum,
-                      marginRight: "6px",
+                      marginRight: "8px",
                       cursor: "pointer",
                       userSelect: "none",
                       WebkitUserSelect: "none",
                       display: "inline-flex",
                       alignItems: "center",
-                      gap: "3px",
+                      justifyContent: "center",
+                      width: "24px",
+                      height: "24px",
+                      minWidth: "24px",
+                      borderRadius: "4px",
+                      fontSize: "0.72rem",
+                      fontWeight: 700,
+                      lineHeight: 1,
+                      background: selectedVerses.has(v.verse)
+                        ? volColor
+                        : lightMode ? "#222" : "rgba(255,255,255,0.88)",
+                      color: selectedVerses.has(v.verse)
+                        ? "#fff"
+                        : lightMode ? "#f8f6f1" : "#1a1a21",
+                      flexShrink: 0,
+                      transition: "all 0.15s",
+                      verticalAlign: "top",
+                      marginTop: "2px",
                     }}
                     title={selectionMode ? "Click to select/deselect" : "Click to select verse"}
                   >
@@ -2271,14 +2293,14 @@ export default function ScriptureReader() {
                         width: "14px",
                         height: "14px",
                         borderRadius: "3px",
-                        border: selectedVerses.has(v.verse) ? `2px solid ${volColor}` : `2px solid ${lightMode ? "rgba(0,0,0,0.25)" : "rgba(255,255,255,0.25)"}`,
-                        background: selectedVerses.has(v.verse) ? volColor : "transparent",
+                        border: selectedVerses.has(v.verse) ? `2px solid #fff` : `2px solid ${lightMode ? "rgba(0,0,0,0.25)" : "rgba(255,255,255,0.25)"}`,
+                        background: selectedVerses.has(v.verse) ? "#fff" : "transparent",
                         flexShrink: 0,
                         transition: "all 0.15s",
                       }}>
                         {selectedVerses.has(v.verse) && (
                           <svg width="8" height="8" viewBox="0 0 10 10" fill="none">
-                            <path d="M2 5L4 7L8 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M2 5L4 7L8 3" stroke={volColor} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
                         )}
                       </span>
