@@ -24,6 +24,17 @@ interface ChapterCharacter {
   aliases: string[];
 }
 
+interface HistoricalContext {
+  era: string;
+  approxDate: string;
+  setting: string;
+}
+
+interface NotableVerse {
+  verse: number;
+  reason: string;
+}
+
 interface ChapterInsightsProps {
   bookId: number;
   chapter: number;
@@ -48,7 +59,6 @@ const SPEAKER_TYPE_COLORS_DARK: Record<SpeakerType, string> = {
   angel: "#C4B5FD", narrator: "#22D3EE", other: "",
 };
 
-// Distinct palette for individual "other" speakers so each gets a unique color
 const OTHER_PALETTE_LIGHT = [
   "#9333EA", "#C2410C", "#0369A1", "#15803D", "#A21CAF",
   "#B45309", "#1D4ED8", "#047857", "#7E22CE", "#BE123C",
@@ -57,6 +67,26 @@ const OTHER_PALETTE_DARK = [
   "#A78BFA", "#FB923C", "#38BDF8", "#4ADE80", "#E879F9",
   "#FCD34D", "#818CF8", "#2DD4BF", "#C084FC", "#FB7185",
 ];
+
+// Tone display name mapping
+const TONE_LABELS: Record<string, string> = {
+  exaltation: "Exaltation & Glory",
+  peace: "Covenant Peace",
+  admonition: "Admonition & Justice",
+  contrition: "Trial & Contrition",
+};
+const TONE_SHORT: Record<string, string> = {
+  exaltation: "Exaltation",
+  peace: "Peace",
+  admonition: "Admonition",
+  contrition: "Contrition",
+};
+const TONE_COLORS: Record<string, string> = {
+  exaltation: "#FFD700",
+  peace: "#20B2AA",
+  admonition: "#DC143C",
+  contrition: "#4B0082",
+};
 
 export default function ChapterInsights({
   bookId,
@@ -77,11 +107,19 @@ export default function ChapterInsights({
   const [isExpanded, setIsExpanded] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [chapterChars, setChapterChars] = useState<ChapterCharacter[]>([]);
+  const [summary, setSummary] = useState<string | null>(null);
+  const [historicalCtx, setHistoricalCtx] = useState<HistoricalContext | null>(null);
+  const [dominantTone, setDominantTone] = useState<string | null>(null);
+  const [notableVerses, setNotableVerses] = useState<NotableVerse[]>([]);
 
   // Fetch stats when chapter changes
   useEffect(() => {
     setIsLoading(true);
     setIsExpanded(false);
+    setSummary(null);
+    setHistoricalCtx(null);
+    setDominantTone(null);
+    setNotableVerses([]);
     fetch(`/api/chapter-stats?bookId=${bookId}&chapter=${chapter}`)
       .then((r) => r.json())
       .then((data) => {
@@ -99,6 +137,42 @@ export default function ChapterInsights({
       .then((data) => setChapterChars(data.characters || []))
       .catch(() => {});
   }, [bookId, chapter]);
+
+  // Fetch enrichment data when expanded
+  useEffect(() => {
+    if (!isExpanded) return;
+
+    // Chapter summary
+    fetch(`/api/chapter-summary?bookId=${bookId}&chapter=${chapter}`)
+      .then((r) => r.json())
+      .then((data) => { if (data.summary) setSummary(data.summary); })
+      .catch(() => {});
+
+    // Historical context
+    fetch(`/api/historical-context?bookId=${bookId}&chapter=${chapter}`)
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.era) setHistoricalCtx({ era: data.era, approxDate: data.approxDate, setting: data.setting });
+      })
+      .catch(() => {});
+
+    // Dominant tone from sentiment API
+    fetch(`/api/sentiment?level=chapters&bookId=${bookId}`)
+      .then((r) => r.json())
+      .then((data) => {
+        const ch = (data.chapters || []).find(
+          (c: { chapter: number; bookId: number }) => c.chapter === chapter && c.bookId === bookId
+        );
+        if (ch?.dominant) setDominantTone(ch.dominant);
+      })
+      .catch(() => {});
+
+    // Notable verses
+    fetch(`/api/notable-verses?bookId=${bookId}&chapter=${chapter}`)
+      .then((r) => r.json())
+      .then((data) => { if (data.verses?.length) setNotableVerses(data.verses); })
+      .catch(() => {});
+  }, [isExpanded, bookId, chapter]);
 
   const theme = lightMode
     ? {
@@ -120,8 +194,7 @@ export default function ChapterInsights({
 
   if (isLoading || !stats) return null;
 
-  // Build speaker info map: speaker name → { color, verseCount, speakerType }
-  // Each "other" speaker gets a unique color from a palette
+  // Build speaker info map
   const typeColors = lightMode ? SPEAKER_TYPE_COLORS_LIGHT : SPEAKER_TYPE_COLORS_DARK;
   const otherPalette = lightMode ? OTHER_PALETTE_LIGHT : OTHER_PALETTE_DARK;
   let otherIndex = 0;
@@ -129,7 +202,6 @@ export default function ChapterInsights({
   speakers.forEach((s) => {
     const name = displaySpeakerName(s.speaker, s.speakerType, volumeAbbrev);
     const existing = speakerMap.get(name);
-    // Cap verseEnd to actual chapter size (sentinels in data use 200)
     const cappedEnd = stats ? Math.min(s.verseEnd, stats.verseCount) : s.verseEnd;
     const count = cappedEnd - s.verseStart + 1;
     if (existing) {
@@ -138,22 +210,15 @@ export default function ChapterInsights({
       const color = s.speakerType === "other"
         ? otherPalette[otherIndex++ % otherPalette.length]
         : typeColors[s.speakerType];
-      speakerMap.set(name, {
-        color,
-        verseCount: count,
-        speakerType: s.speakerType,
-      });
+      speakerMap.set(name, { color, verseCount: count, speakerType: s.speakerType });
     }
   });
 
-  // Match characters to speakers (by name or aliases, case-insensitive)
   function getSpeakerInfo(charName: string, charAliases: string[]) {
-    // Check character name and all aliases against speaker names
     const namesToCheck = [charName, ...charAliases];
     for (const n of namesToCheck) {
       const direct = speakerMap.get(n);
       if (direct) return direct;
-      // Case-insensitive fallback
       for (const [speakerName, info] of speakerMap) {
         if (speakerName.toLowerCase() === n.toLowerCase()) return info;
       }
@@ -161,13 +226,67 @@ export default function ChapterInsights({
     return null;
   }
 
-  // Portrait circles for collapsed bar — always show 3, use real portraits where available
+  // Portrait circles for collapsed bar
   const portraitChars = chapterChars.slice(0, 3);
-  // Fill to 3 with placeholders if fewer characters
   while (portraitChars.length < 3 && chapterChars.length > 0) {
     portraitChars.push({ id: `placeholder-${portraitChars.length}`, name: "?", portraitUrl: null, roles: [], tier: 9, aliases: [] });
   }
 
+  // Section divider component
+  const Divider = () => (
+    <div style={{ height: "1px", background: theme.border, margin: "0" }} />
+  );
+
+  // Section label component
+  const SectionLabel = ({ children }: { children: React.ReactNode }) => (
+    <div style={{
+      fontSize: "0.65rem",
+      fontWeight: 600,
+      textTransform: "uppercase" as const,
+      letterSpacing: "0.1em",
+      color: theme.textMuted,
+      marginBottom: "10px",
+    }}>
+      {children}
+    </div>
+  );
+
+  // Stat pill component
+  const StatPill = ({ label, value }: { label: string; value: string | number }) => (
+    <div style={{
+      display: "flex",
+      flexDirection: "column" as const,
+      gap: "2px",
+      padding: isMobile ? "8px 10px" : "8px 14px",
+      background: theme.pillBg,
+      borderRadius: "8px",
+      border: `1px solid ${theme.border}`,
+      minWidth: 0,
+    }}>
+      <span style={{
+        fontSize: "0.6rem",
+        fontWeight: 600,
+        textTransform: "uppercase" as const,
+        letterSpacing: "0.08em",
+        color: theme.textMuted,
+        whiteSpace: "nowrap" as const,
+      }}>
+        {label}
+      </span>
+      <span style={{
+        fontSize: "0.82rem",
+        fontWeight: 700,
+        color: theme.text,
+        overflow: "hidden",
+        textOverflow: "ellipsis" as const,
+        whiteSpace: "nowrap" as const,
+      }}>
+        {value}
+      </span>
+    </div>
+  );
+
+  const chapterOrSection = volumeAbbrev === "D&C" ? "Section" : "Chapter";
 
   return (
     <div
@@ -212,7 +331,6 @@ export default function ChapterInsights({
           {/* People count with stacked portraits */}
           {chapterChars.length > 0 && (
             <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-              {/* Stacked portrait circles */}
               <div style={{ display: "flex", position: "relative", width: `${18 + (Math.min(portraitChars.length, 3) - 1) * 12}px`, height: "22px" }}>
                 {portraitChars.slice(0, 3).map((c, i) => (
                   <div
@@ -287,142 +405,154 @@ export default function ChapterInsights({
       {isExpanded && (
         <div
           style={{
-            padding: isMobile ? "18px 14px" : "24px 16px",
+            padding: isMobile ? "16px 14px" : "20px 16px",
             display: "flex",
             flexDirection: "column",
-            gap: "28px",
+            gap: "20px",
             animation: "fadeIn 0.3s ease",
           }}
         >
-          {/* People in this Chapter — only show named characters from the database */}
-          {chapterChars.length > 0 && (() => {
-            return (
-            <div>
-              <div
-                style={{
-                  fontSize: "0.78rem",
-                  fontWeight: 700,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.1em",
-                  color: theme.text,
-                  marginBottom: "8px",
-                }}
-              >
-                People in this {volumeAbbrev === "D&C" ? "Section" : "Chapter"}
-              </div>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                {chapterChars.map((c) => {
-                  const spk = getSpeakerInfo(c.name, c.aliases || []);
-                  const isSpeaker = !!spk;
-                  // Find first verse this character speaks in (for scroll-to)
-                  const firstSpeakingVerse = isSpeaker ? (() => {
-                    const namesToCheck = [c.name, ...(c.aliases || [])].map(n => n.toLowerCase());
-                    const match = speakers.find(s =>
-                      namesToCheck.some(n => s.speaker.toLowerCase() === n || s.speaker.toLowerCase().startsWith(n + ","))
-                    );
-                    return match?.verseStart || null;
-                  })() : null;
-                  return (
-                    <button
-                      key={c.id}
-                      onClick={() => {
-                        analytics.insightsPersonClick(c.name, bookName, chapter || 0);
-                        if (firstSpeakingVerse && onScrollToVerse) {
-                          onScrollToVerse(firstSpeakingVerse);
-                        } else {
-                          onSelectCharacter?.(c.id);
-                        }
-                      }}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "7px",
-                        padding: "4px 10px 4px 4px",
-                        borderRadius: "20px",
-                        background: theme.pillBg,
-                        border: isSpeaker
-                          ? `2.5px solid ${spk!.color}`
-                          : `1px solid ${theme.border}`,
-                        cursor: onSelectCharacter ? "pointer" : "default",
-                        fontFamily: "inherit",
-                        transition: "all 0.15s",
-                      }}
-                      title={isSpeaker ? `${c.name} — speaks in ${spk!.verseCount} verse${spk!.verseCount !== 1 ? "s" : ""}` : c.roles.join(", ")}
-                    >
-                      {c.portraitUrl ? (
-                        <img
-                          src={c.portraitUrl}
-                          alt=""
-                          loading="lazy"
-                          style={{
-                            width: "26px",
-                            height: "26px",
-                            borderRadius: "50%",
-                            objectFit: "cover",
-                            objectPosition: "center 20%",
-                          }}
-                        />
-                      ) : (
-                        <div
-                          style={{
-                            width: "26px",
-                            height: "26px",
-                            borderRadius: "50%",
-                            background: `${volColor}25`,
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            fontSize: "0.62rem",
-                            fontWeight: 700,
-                            color: volColor,
-                          }}
-                        >
-                          {c.name.charAt(0)}
-                        </div>
-                      )}
-                      <span
-                        style={{
-                          fontSize: "0.74rem",
-                          fontWeight: 600,
-                          color: isSpeaker ? spk!.color : theme.textSecondary,
-                        }}
-                      >
-                        {c.name}
-                      </span>
-                      {isSpeaker && (
-                        <span
-                          style={{
-                            fontSize: "0.68rem",
-                            fontWeight: 700,
-                            color: spk!.color,
-                            opacity: 0.8,
-                          }}
-                        >
-                          {spk!.verseCount}
-                        </span>
-                      )}
-                    </button>
-                  );
-                })}
-              </div>
-              {/* Speaker legend hint */}
-              {speakers.length > 0 && (
-                <div style={{
-                  fontSize: "0.74rem",
-                  color: theme.textSecondary,
-                  marginTop: "14px",
-                  lineHeight: 1.6,
-                }}>
-                  Color borders indicate speakers. The number next to their name is how many verses they speak. Colors match the verse margins below.
-                </div>
+          {/* ── Section 1: At a Glance ── */}
+          <div>
+            <SectionLabel>At a Glance</SectionLabel>
+            <div style={{
+              display: "grid",
+              gridTemplateColumns: isMobile ? "1fr 1fr" : "repeat(auto-fit, minmax(120px, 1fr))",
+              gap: "8px",
+            }}>
+              <StatPill label="Verses" value={stats.verseCount} />
+              <StatPill label="Words" value={stats.wordCount.toLocaleString()} />
+              {historicalCtx?.approxDate && (
+                <StatPill label="Era" value={historicalCtx.approxDate} />
+              )}
+              {dominantTone && (
+                <StatPill
+                  label="Tone"
+                  value={TONE_SHORT[dominantTone] || dominantTone}
+                />
               )}
             </div>
+            {summary && (
+              <p style={{
+                margin: "12px 0 0 0",
+                fontSize: "0.82rem",
+                fontStyle: "italic",
+                color: theme.textSecondary,
+                lineHeight: 1.6,
+              }}>
+                {summary}
+              </p>
+            )}
+          </div>
+
+          {/* ── Section 2: People ── */}
+          {chapterChars.length > 0 && (() => {
+            return (
+              <>
+                <Divider />
+                <div>
+                  <SectionLabel>People in this {chapterOrSection}</SectionLabel>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+                    {chapterChars.map((c) => {
+                      const spk = getSpeakerInfo(c.name, c.aliases || []);
+                      const isSpeaker = !!spk;
+                      const firstSpeakingVerse = isSpeaker ? (() => {
+                        const namesToCheck = [c.name, ...(c.aliases || [])].map(n => n.toLowerCase());
+                        const match = speakers.find(s =>
+                          namesToCheck.some(n => s.speaker.toLowerCase() === n || s.speaker.toLowerCase().startsWith(n + ","))
+                        );
+                        return match?.verseStart || null;
+                      })() : null;
+                      return (
+                        <button
+                          key={c.id}
+                          onClick={() => {
+                            analytics.insightsPersonClick(c.name, bookName, chapter || 0);
+                            if (firstSpeakingVerse && onScrollToVerse) {
+                              onScrollToVerse(firstSpeakingVerse);
+                            } else {
+                              onSelectCharacter?.(c.id);
+                            }
+                          }}
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "7px",
+                            padding: "4px 10px 4px 4px",
+                            borderRadius: "20px",
+                            background: theme.pillBg,
+                            border: isSpeaker
+                              ? `2.5px solid ${spk!.color}`
+                              : `1px solid ${theme.border}`,
+                            cursor: onSelectCharacter ? "pointer" : "default",
+                            fontFamily: "inherit",
+                            transition: "all 0.15s",
+                          }}
+                          title={isSpeaker ? `${c.name} — speaks in ${spk!.verseCount} verse${spk!.verseCount !== 1 ? "s" : ""}` : c.roles.join(", ")}
+                        >
+                          {c.portraitUrl ? (
+                            <img
+                              src={c.portraitUrl}
+                              alt=""
+                              loading="lazy"
+                              style={{
+                                width: "26px",
+                                height: "26px",
+                                borderRadius: "50%",
+                                objectFit: "cover",
+                                objectPosition: "center 20%",
+                              }}
+                            />
+                          ) : (
+                            <div
+                              style={{
+                                width: "26px",
+                                height: "26px",
+                                borderRadius: "50%",
+                                background: `${volColor}25`,
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                fontSize: "0.62rem",
+                                fontWeight: 700,
+                                color: volColor,
+                              }}
+                            >
+                              {c.name.charAt(0)}
+                            </div>
+                          )}
+                          <span
+                            style={{
+                              fontSize: "0.74rem",
+                              fontWeight: 600,
+                              color: isSpeaker ? spk!.color : theme.textSecondary,
+                            }}
+                          >
+                            {c.name}
+                          </span>
+                          {isSpeaker && (
+                            <span
+                              style={{
+                                fontSize: "0.68rem",
+                                fontWeight: 700,
+                                color: spk!.color,
+                                opacity: 0.8,
+                              }}
+                            >
+                              {spk!.verseCount}
+                            </span>
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              </>
             );
           })()}
 
-          {/* Speaker Timeline — color-coded heatmap of who speaks where */}
+          {/* ── Section 3: Speaker Timeline ── */}
           {speakers.length > 0 && stats.verseCount > 0 && (() => {
-            // Build per-verse speaker color map
             const verseColors: (string | null)[] = new Array(stats.verseCount).fill(null);
             const verseSpeakerNames: (string | null)[] = new Array(stats.verseCount).fill(null);
             for (const s of speakers) {
@@ -435,7 +565,6 @@ export default function ChapterInsights({
               }
             }
 
-            // Group consecutive verses with same color into segments
             const segments: { start: number; end: number; color: string | null; speaker: string | null }[] = [];
             let segStart = 0;
             for (let i = 1; i <= verseColors.length; i++) {
@@ -453,145 +582,163 @@ export default function ChapterInsights({
             const neutralColor = lightMode ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.06)";
 
             return (
-              <div>
-                <div
-                  style={{
-                    fontSize: "0.65rem",
-                    fontWeight: 600,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.1em",
-                    color: theme.textMuted,
-                    marginBottom: "10px",
-                  }}
-                >
-                  Speaker Timeline
-                </div>
-                <div
-                  style={{
-                    background: lightMode ? "rgba(0,0,0,0.12)" : "rgba(0,0,0,0.35)",
-                    borderRadius: "10px",
-                    padding: "4px",
-                    boxShadow: lightMode
-                      ? "inset 0 2px 4px rgba(0,0,0,0.08)"
-                      : "inset 0 2px 4px rgba(0,0,0,0.3)",
-                  }}
-                >
-                <div
-                  style={{
+              <>
+                <Divider />
+                <div>
+                  <SectionLabel>Speaker Timeline</SectionLabel>
+                  <div
+                    style={{
+                      background: lightMode ? "rgba(0,0,0,0.12)" : "rgba(0,0,0,0.35)",
+                      borderRadius: "10px",
+                      padding: "4px",
+                      boxShadow: lightMode
+                        ? "inset 0 2px 4px rgba(0,0,0,0.08)"
+                        : "inset 0 2px 4px rgba(0,0,0,0.3)",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        height: "24px",
+                        borderRadius: "6px",
+                        overflow: "hidden",
+                        cursor: "pointer",
+                      }}
+                    >
+                      {segments.map((seg, i) => {
+                        const width = ((seg.end - seg.start + 1) / stats.verseCount) * 100;
+                        const verseNum = seg.start + 1;
+                        const verseLabel = seg.start === seg.end
+                          ? `Verse ${verseNum}`
+                          : `Verses ${verseNum}–${seg.end + 1}`;
+                        const title = seg.speaker
+                          ? `${seg.speaker} — ${verseLabel}`
+                          : verseLabel;
+                        return (
+                          <div
+                            key={i}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              analytics.speakerTimelineClick(seg.speaker || "narrator", verseNum);
+                              onScrollToVerse?.(verseNum);
+                            }}
+                            title={title}
+                            style={{
+                              width: `${width}%`,
+                              minWidth: "2px",
+                              background: seg.color || neutralColor,
+                              opacity: seg.color ? 0.7 : 1,
+                              transition: "opacity 0.15s",
+                              borderRight: i < segments.length - 1
+                                ? `1px solid ${lightMode ? "rgba(255,255,255,0.5)" : "rgba(0,0,0,0.3)"}`
+                                : "none",
+                            }}
+                            onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
+                            onMouseLeave={(e) => { e.currentTarget.style.opacity = seg.color ? "0.7" : "1"; }}
+                          />
+                        );
+                      })}
+                    </div>
+                  </div>
+                  {/* Verse scale markers */}
+                  <div style={{
                     display: "flex",
-                    height: "24px",
-                    borderRadius: "6px",
-                    overflow: "hidden",
-                    cursor: "pointer",
-                  }}
-                >
-                  {segments.map((seg, i) => {
-                    const width = ((seg.end - seg.start + 1) / stats.verseCount) * 100;
-                    const verseNum = seg.start + 1;
-                    const verseLabel = seg.start === seg.end
-                      ? `Verse ${verseNum}`
-                      : `Verses ${verseNum}–${seg.end + 1}`;
-                    const title = seg.speaker
-                      ? `${seg.speaker} — ${verseLabel}`
-                      : verseLabel;
-                    return (
-                      <div
-                        key={i}
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          analytics.speakerTimelineClick(seg.speaker || "narrator", verseNum);
-                          onScrollToVerse?.(verseNum);
-                        }}
-                        title={title}
-                        style={{
-                          width: `${width}%`,
-                          minWidth: "2px",
-                          background: seg.color || neutralColor,
-                          opacity: seg.color ? 0.7 : 1,
-                          transition: "opacity 0.15s",
-                          borderRight: i < segments.length - 1
-                            ? `1px solid ${lightMode ? "rgba(255,255,255,0.5)" : "rgba(0,0,0,0.3)"}`
-                            : "none",
-                        }}
-                        onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
-                        onMouseLeave={(e) => { e.currentTarget.style.opacity = seg.color ? "0.7" : "1"; }}
-                      />
-                    );
-                  })}
+                    justifyContent: "space-between",
+                    marginTop: "4px",
+                    fontSize: "0.58rem",
+                    color: theme.textMuted,
+                    fontWeight: 500,
+                  }}>
+                    <span>1</span>
+                    {stats.verseCount > 10 && <span>{Math.round(stats.verseCount / 2)}</span>}
+                    <span>{stats.verseCount}</span>
+                  </div>
                 </div>
-                </div>
-                {/* Verse scale markers */}
-                <div style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  marginTop: "4px",
-                  fontSize: "0.58rem",
-                  color: theme.textMuted,
-                  fontWeight: 500,
-                }}>
-                  <span>1</span>
-                  {stats.verseCount > 10 && <span>{Math.round(stats.verseCount / 2)}</span>}
-                  <span>{stats.verseCount}</span>
-                </div>
-                <div style={{
-                  fontSize: "0.74rem",
-                  color: theme.textSecondary,
-                  marginTop: "10px",
-                  lineHeight: 1.6,
-                }}>
-                  Each color represents a speaker — tap any segment to jump to that verse
-                </div>
-              </div>
+              </>
             );
           })()}
 
-          {/* Key Themes */}
+          {/* ── Section 4: Key Themes ── */}
           {stats.keyThemes.length > 0 && (
-            <div>
-              <div
-                style={{
-                  fontSize: "0.78rem",
-                  fontWeight: 700,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.1em",
-                  color: theme.text,
-                  marginBottom: "10px",
-                }}
-              >
-                Key Themes
+            <>
+              <Divider />
+              <div>
+                <SectionLabel>Key Themes</SectionLabel>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
+                  {stats.keyThemes.map((t) => (
+                    <button
+                      key={t.word}
+                      onClick={() => onExploreWord ? onExploreWord(t.word) : undefined}
+                      style={{
+                        display: "inline-block",
+                        padding: "5px 14px",
+                        borderRadius: "6px",
+                        background: theme.pillBg,
+                        border: `1px solid ${theme.border}`,
+                        color: theme.text,
+                        fontSize: "0.78rem",
+                        fontWeight: 600,
+                        cursor: onExploreWord ? "pointer" : "default",
+                        fontFamily: "inherit",
+                        transition: "all 0.15s",
+                      }}
+                    >
+                      {t.word}
+                    </button>
+                  ))}
+                </div>
               </div>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
-                {stats.keyThemes.map((t) => (
-                  <button
-                    key={t.word}
-                    onClick={() => onExploreWord ? onExploreWord(t.word) : undefined}
-                    style={{
-                      display: "inline-block",
-                      padding: "5px 14px",
-                      borderRadius: "6px",
-                      background: theme.pillBg,
-                      border: `1px solid ${theme.border}`,
-                      color: theme.text,
-                      fontSize: "0.78rem",
-                      fontWeight: 600,
-                      cursor: onExploreWord ? "pointer" : "default",
-                      fontFamily: "inherit",
-                      transition: "all 0.15s",
-                    }}
-                  >
-                    {t.word}
-                  </button>
-                ))}
+            </>
+          )}
+
+          {/* ── Section 5: Notable Verses ── */}
+          {notableVerses.length > 0 && (
+            <>
+              <Divider />
+              <div>
+                <SectionLabel>Notable Verses</SectionLabel>
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                  {notableVerses.map((nv) => (
+                    <button
+                      key={nv.verse}
+                      onClick={() => onScrollToVerse?.(nv.verse)}
+                      style={{
+                        display: "flex",
+                        alignItems: "flex-start",
+                        gap: "10px",
+                        padding: "10px 12px",
+                        borderRadius: "8px",
+                        background: theme.pillBg,
+                        border: `1px solid ${theme.border}`,
+                        borderLeft: `3px solid ${volColor}`,
+                        cursor: "pointer",
+                        fontFamily: "inherit",
+                        textAlign: "left" as const,
+                        transition: "all 0.15s",
+                        width: "100%",
+                      }}
+                    >
+                      <span style={{
+                        fontSize: "0.72rem",
+                        fontWeight: 700,
+                        color: volColor,
+                        whiteSpace: "nowrap" as const,
+                        marginTop: "1px",
+                      }}>
+                        v. {nv.verse}
+                      </span>
+                      <span style={{
+                        fontSize: "0.78rem",
+                        color: theme.textSecondary,
+                        lineHeight: 1.5,
+                      }}>
+                        {nv.reason}
+                      </span>
+                    </button>
+                  ))}
+                </div>
               </div>
-              <div style={{
-                fontSize: "0.74rem",
-                color: theme.textSecondary,
-                marginTop: "12px",
-                lineHeight: 1.6,
-              }}>
-                Tap any theme to see how often it appears across all scripture
-              </div>
-            </div>
+            </>
           )}
 
         </div>
