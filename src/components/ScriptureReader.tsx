@@ -1679,8 +1679,8 @@ export default function ScriptureReader() {
                           width: "100%",
                           height: "100%",
                           objectFit: "cover",
-                          filter: "blur(35px) saturate(2.5) brightness(1.5)",
-                          opacity: 0.5,
+                          filter: "blur(40px) saturate(1.4) brightness(1.0)",
+                          opacity: 0.3,
                         }}
                       />
                       {/* Uniform warm base glow so dark edges still show something */}
@@ -1689,7 +1689,7 @@ export default function ScriptureReader() {
                           position: "absolute",
                           inset: "5%",
                           borderRadius: "50%",
-                          background: "radial-gradient(ellipse at center, rgba(180, 160, 120, 0.3) 0%, transparent 70%)",
+                          background: "radial-gradient(ellipse at center, rgba(180, 160, 120, 0.12) 0%, transparent 70%)",
                           filter: "blur(30px)",
                           pointerEvents: "none",
                         }}
