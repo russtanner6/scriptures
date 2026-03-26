@@ -327,6 +327,7 @@ export default function ChapterInsights({
           padding: isMobile ? "14px 14px" : "14px 16px",
           background: lightMode ? "rgba(0, 0, 0, 0.12)" : "rgba(0, 0, 0, 0.55)",
           border: "none",
+          borderRadius: 0,
           cursor: "pointer",
           fontFamily: "inherit",
           gap: "12px",
@@ -431,6 +432,9 @@ export default function ChapterInsights({
             flexDirection: "column",
             gap: "20px",
             animation: "fadeIn 0.3s ease",
+            background: "rgba(255,255,255,0.025)",
+            border: "1px solid rgba(255,255,255,0.06)",
+            borderTop: "none",
           }}
         >
           {/* ── Section 1: At a Glance ── */}
@@ -744,7 +748,7 @@ export default function ChapterInsights({
                         borderRadius: "8px",
                         background: theme.pillBg,
                         border: `1px solid ${theme.border}`,
-                        borderLeft: `3px solid ${volColor}`,
+                        borderLeft: `3px solid rgba(255,255,255,0.25)`,
                         cursor: "pointer",
                         fontFamily: "inherit",
                         textAlign: "left" as const,
@@ -755,7 +759,7 @@ export default function ChapterInsights({
                       <span style={{
                         fontSize: "0.72rem",
                         fontWeight: 700,
-                        color: volColor,
+                        color: "rgba(255,255,255,0.6)",
                         whiteSpace: "nowrap" as const,
                         marginTop: "1px",
                       }}>

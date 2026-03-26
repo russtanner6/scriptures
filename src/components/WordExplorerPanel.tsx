@@ -72,7 +72,7 @@ export default function WordExplorerPanel({
         barBg: "rgba(0,0,0,0.04)",
       }
     : {
-        bg: "#32323d",
+        bg: "#2f2f3a",
         surface: "rgba(255,255,255,0.04)",
         text: "#f0f0f0",
         textSecondary: "#b0b0b0",

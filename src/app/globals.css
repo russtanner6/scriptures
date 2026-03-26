@@ -2,8 +2,8 @@
 
 :root {
   /* ===== DARK GREY PALETTE ===== */
-  --bg: #32323d;
-  --bg-gradient: linear-gradient(145deg, #32323d 0%, #36363f 40%, #32323d 100%);
+  --bg: #2f2f3a;
+  --bg-gradient: linear-gradient(145deg, #2f2f3a 0%, #36363f 40%, #2f2f3a 100%);
   --surface: #2a2a34;
   --surface-hover: #3a3a44;
   --border: rgba(255, 255, 255, 0.06);
@@ -59,6 +59,11 @@ html {
   overflow-x: hidden;
   overflow-y: scroll; /* Always show scrollbar to prevent layout shift */
   overscroll-behavior-y: contain; /* Prevent pull-to-refresh without blocking normal scroll */
+}
+
+/* When ScriptureReader (position:fixed) is active, hide html scrollbar to prevent double scrollbar */
+html.reader-active {
+  overflow: hidden;
 }
 
 body {

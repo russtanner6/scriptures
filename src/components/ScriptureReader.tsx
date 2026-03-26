@@ -96,6 +96,12 @@ export default function ScriptureReader() {
   const longPressTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Clear selection when chapter changes
+  // Hide html scrollbar when reader is active (prevents double scrollbar on desktop)
+  useEffect(() => {
+    document.documentElement.classList.add("reader-active");
+    return () => document.documentElement.classList.remove("reader-active");
+  }, []);
+
   useEffect(() => {
     setSelectedVerses(new Set());
     setSelectionMode(false);
@@ -1206,7 +1212,7 @@ export default function ScriptureReader() {
         verseText: "#333333",
       }
     : {
-        bg: "#32323d",
+        bg: "#2f2f3a",
         text: "#f0f0f0",
         textSecondary: "#b0b0b0",
         textMuted: "#666666",
@@ -1698,8 +1704,11 @@ export default function ScriptureReader() {
           {!isLoading && (chapterSpeakers.length > 0 || chapterResources.length > 0 || hasModernText || hasNarration || verses.length > 0) && (() => {
             const toggleAccent = lightMode ? "#4A7FD4" : "#5B8DEF";
             return (
-            <div style={{ marginBottom: "36px", textAlign: "center" }}>
-              <div style={{ display: "flex", alignItems: "stretch", gap: "8px", flexWrap: "wrap", justifyContent: "center" }}>
+            <div style={{ marginBottom: "20px", marginTop: "4px", textAlign: "center", opacity: 0.65, transition: "opacity 0.2s" }}
+              onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
+              onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.65")}
+            >
+              <div style={{ display: "flex", alignItems: "stretch", gap: "6px", flexWrap: "wrap", justifyContent: "center" }}>
                 {/* Speakers toggle hidden — always on. Preserved for future re-enable. */}
                 {chapterResources.length > 0 && (
                   <button
@@ -1860,7 +1869,7 @@ export default function ScriptureReader() {
                       bottom: 0,
                       width: isMobile ? "85vw" : "420px",
                       maxWidth: "90vw",
-                      background: lightMode ? "#faf9f5" : "#32323d",
+                      background: lightMode ? "#faf9f5" : "#2f2f3a",
                       zIndex: 201,
                       overflowY: "auto",
                       boxShadow: "-4px 0 24px rgba(0,0,0,0.3)",
@@ -2244,7 +2253,7 @@ export default function ScriptureReader() {
                         : lightMode ? "#222" : "rgba(255,255,255,0.88)",
                       color: selectedVerses.has(v.verse)
                         ? "#fff"
-                        : lightMode ? "#f8f6f1" : "#32323d",
+                        : lightMode ? "#f8f6f1" : "#2f2f3a",
                       flexShrink: 0,
                       transition: "all 0.15s",
                       verticalAlign: "top",
