@@ -105,6 +105,7 @@ export default function ChapterInsights({
   const { displaySpeakerName } = usePreferencesContext();
   const [stats, setStats] = useState<ChapterStats | null>(null);
   const [isExpanded, setIsExpanded] = useState(false);
+  const [showContent, setShowContent] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [chapterChars, setChapterChars] = useState<ChapterCharacter[]>([]);
   const [summary, setSummary] = useState<string | null>(null);
@@ -235,7 +236,7 @@ export default function ChapterInsights({
   // Auto-close panel then perform action (with small delay for smooth UX)
   const closeAndDo = (fn: () => void) => {
     setIsExpanded(false);
-    setTimeout(fn, 150);
+    setTimeout(() => { setShowContent(false); fn(); }, 250);
   };
 
   // Section label component
@@ -298,7 +299,11 @@ export default function ChapterInsights({
         }
         @keyframes expandDown {
           from { max-height: 0; opacity: 0; }
-          to { max-height: 800px; opacity: 1; }
+          to { max-height: 1200px; opacity: 1; }
+        }
+        @keyframes collapseUp {
+          from { max-height: 1200px; opacity: 1; }
+          to { max-height: 0; opacity: 0; }
         }
       `}</style>
     <div
@@ -317,7 +322,18 @@ export default function ChapterInsights({
     >
       {/* Collapsed bar — sticky to top below header */}
       <button
-        onClick={() => { setIsExpanded((prev) => { if (!prev) analytics.insightsOpen(bookName, chapter || 0); return !prev; }); }}
+        onClick={() => {
+          if (!isExpanded) {
+            // Opening
+            analytics.insightsOpen(bookName, chapter || 0);
+            setShowContent(true);
+            setIsExpanded(true);
+          } else {
+            // Closing — animate out first
+            setIsExpanded(false);
+            setTimeout(() => setShowContent(false), 250);
+          }
+        }}
         style={{
           width: "100%",
           display: "flex",
@@ -423,20 +439,22 @@ export default function ChapterInsights({
       </button>
 
       {/* Expanded content */}
-      {isExpanded && (
+      {showContent && (
         <div
           style={{
             padding: isMobile ? "16px 14px" : "20px 16px",
             display: "flex",
             flexDirection: "column",
             gap: "20px",
-            animation: "expandDown 0.3s ease-out forwards",
+            animation: isExpanded
+              ? "expandDown 0.3s ease-out forwards"
+              : "collapseUp 0.25s ease-in forwards",
             overflow: "hidden",
             background: "rgba(0,0,0,0.15)",
             borderTop: "none",
             borderLeft: "none",
             borderRight: "none",
-            borderBottom: "2px solid rgba(0,0,0,0.25)",
+            borderBottom: isExpanded ? "2px solid rgba(0,0,0,0.25)" : "none",
           }}
         >
           {/* ── Section 1: At a Glance ── */}

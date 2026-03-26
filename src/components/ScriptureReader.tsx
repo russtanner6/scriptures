@@ -1676,6 +1676,7 @@ export default function ScriptureReader() {
                           height: "100%",
                           objectFit: "cover",
                           display: "block",
+                          animation: "fadeIn 0.4s ease-out",
                         }}
                       />
                     )}
