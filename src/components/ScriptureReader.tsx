@@ -1626,7 +1626,7 @@ export default function ScriptureReader() {
             // Book landscape images: chapter-specific override first, then book-level, then null
             // Gradient placeholders use CSS gradients; real images use url strings
             const BOOK_LANDSCAPE_IMAGES: Record<string, string | { gradient: string }> = {
-              "Genesis": { gradient: "linear-gradient(135deg, #1a3a2a 0%, #2d5a3e 25%, #4a7c5c 50%, #8fbc6a 75%, #d4e89c 100%)" },
+              "Genesis": "/book-images/genesis.jpg",
             };
             const CHAPTER_LANDSCAPE_IMAGES: Record<string, Record<number, string | { gradient: string }>> = {
               // Example: "Genesis": { 1: "url-or-gradient-for-creation" }
@@ -1644,13 +1644,15 @@ export default function ScriptureReader() {
                 {hasImage && (
                   <div
                     style={{
-                      width: "100%",
+                      width: isMobile ? "calc(100% + 40px)" : "calc(100% + 64px)",
                       aspectRatio: "4 / 1",
-                      borderRadius: "8px 8px 0 0",
+                      borderRadius: "0",
+                      marginTop: isMobile ? "-24px" : "-40px",
+                      marginLeft: isMobile ? "-20px" : "-32px",
+                      marginRight: isMobile ? "-20px" : "-32px",
                       overflow: "hidden",
                       position: "relative",
-                      border: `1px solid ${theme.border}`,
-                      borderBottom: "none",
+                      border: "none",
                       ...(typeof landscapeImage === "object" && "gradient" in landscapeImage
                         ? { background: landscapeImage.gradient }
                         : {}),

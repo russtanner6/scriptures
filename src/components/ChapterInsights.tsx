@@ -173,7 +173,7 @@ export default function ChapterInsights({
     <div
       style={{
         marginBottom: "24px",
-        borderRadius: flatTopCorners ? "0 0 8px 8px" : "8px",
+        borderRadius: flatTopCorners ? "0" : "8px",
         border: `1px solid ${theme.border}`,
         borderTop: flatTopCorners ? "none" : `1px solid ${theme.border}`,
         overflow: "hidden",
