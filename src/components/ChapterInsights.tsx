@@ -48,6 +48,7 @@ interface ChapterInsightsProps {
   onSelectCharacter?: (characterId: string) => void;
   speakers?: SpeakerAttribution[];
   flatTopCorners?: boolean;
+  glowColor?: string;
 }
 
 const SPEAKER_TYPE_COLORS_LIGHT: Record<SpeakerType, string> = {
@@ -101,6 +102,7 @@ export default function ChapterInsights({
   onSelectCharacter,
   speakers = [],
   flatTopCorners = false,
+  glowColor,
 }: ChapterInsightsProps) {
   const { displaySpeakerName } = usePreferencesContext();
   const [stats, setStats] = useState<ChapterStats | null>(null);
@@ -297,17 +299,18 @@ export default function ChapterInsights({
           from { opacity: 0; transform: translateY(-8px); }
           to { opacity: 1; transform: translateY(0); }
         }
-        @keyframes insightsShimmer {
-          0% { background-position: -200% center; }
-          100% { background-position: 200% center; }
+        @keyframes insightsGlow {
+          0% { text-shadow: none; }
+          40% { text-shadow: 0 0 8px var(--glow-color, rgba(200,220,255,0.6)), 0 0 18px var(--glow-color, rgba(200,220,255,0.3)); }
+          100% { text-shadow: none; }
         }
         @keyframes expandDown {
-          from { max-height: 0; opacity: 0; }
-          to { max-height: 1200px; opacity: 1; }
+          from { transform: translateY(-20px); opacity: 0; max-height: 0; }
+          to { transform: translateY(0); opacity: 1; max-height: 1200px; }
         }
         @keyframes collapseUp {
-          from { max-height: 1200px; opacity: 1; }
-          to { max-height: 0; opacity: 0; }
+          from { transform: translateY(0); opacity: 1; max-height: 1200px; }
+          to { transform: translateY(-20px); opacity: 0; max-height: 0; }
         }
       `}</style>
     <div
@@ -431,14 +434,11 @@ export default function ChapterInsights({
           {!isExpanded && <span style={{
             textTransform: "uppercase",
             letterSpacing: "0.08em",
-            background: "linear-gradient(105deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.85) 35%, rgba(255,255,255,1) 48%, rgba(200,220,255,1) 50%, rgba(255,255,255,1) 52%, rgba(255,255,255,0.85) 65%, rgba(255,255,255,0.85) 100%)",
-            backgroundSize: "200% 100%",
-            backgroundClip: "text",
-            WebkitBackgroundClip: "text",
-            color: "transparent",
-            animation: "insightsShimmer 1.2s ease-in-out 1.5s 1",
-            backgroundPosition: "-200% center",
-          }}>Insights</span>}
+            color: lightMode ? "#333" : "rgba(255,255,255,0.85)",
+            animation: "insightsGlow 2s ease-in-out 1.5s 1",
+            // @ts-expect-error CSS custom property
+            "--glow-color": glowColor || "rgba(200,220,255,0.6)",
+          } as React.CSSProperties}>Insights</span>}
           <span
             style={{
               transform: isExpanded ? "rotate(180deg)" : "rotate(0)",
