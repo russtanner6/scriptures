@@ -1801,7 +1801,8 @@
     ],
     "gender": "female",
     "volumes": [
-      "D&C"
+      "D&C",
+      "PoGP"
     ],
     "family": {
       "husband": "Joseph Smith",
@@ -2396,34 +2397,6 @@
       "Psalms",
       "Hebrews",
       "Alma",
-      "Doctrine and Covenants"
-    ]
-  },
-  {
-    "id": "michael",
-    "name": "Michael",
-    "aliases": [
-      "Adam"
-    ],
-    "bio": "An archangel mentioned in both the Old and New Testaments. He contended with the devil over the body of Moses and leads the heavenly hosts in the war in heaven described in Revelation. In LDS theology, Michael is identified as Adam in his pre-mortal and post-mortal roles.",
-    "era": "Eternal",
-    "timePeriod": "Eternal",
-    "roles": [
-      "angel"
-    ],
-    "gender": "male",
-    "volumes": [
-      "OT",
-      "NT",
-      "D&C"
-    ],
-    "family": {},
-    "speakerType": "angel",
-    "tier": 2,
-    "books": [
-      "Daniel",
-      "Jude",
-      "Revelation",
       "Doctrine and Covenants"
     ]
   },
@@ -4298,29 +4271,6 @@
     ]
   },
   {
-    "id": "elias",
-    "name": "Elias",
-    "aliases": [],
-    "bio": "In LDS theology, a distinct figure from Elijah who appeared in the Kirtland Temple to commit the dispensation of the gospel of Abraham (D&C 110:12). The name 'Elias' is also used as a title meaning 'forerunner' and as the Greek form of Elijah, creating some complexity in scriptural usage.",
-    "era": "Patriarchal",
-    "timePeriod": "Ancient / 1836 (Kirtland appearance)",
-    "roles": [
-      "prophet"
-    ],
-    "gender": "male",
-    "volumes": [
-      "NT",
-      "D&C"
-    ],
-    "family": {},
-    "speakerType": "prophet",
-    "tier": 3,
-    "books": [
-      "Doctrine and Covenants",
-      "Joseph Smith—History"
-    ]
-  },
-  {
     "id": "elihu",
     "name": "Elihu",
     "aliases": [
@@ -4391,32 +4341,6 @@
     "tier": 3,
     "books": [
       "Luke"
-    ]
-  },
-  {
-    "id": "emma-hale",
-    "name": "Emma Hale",
-    "aliases": [
-      "Emma Smith"
-    ],
-    "bio": "Mentioned in Joseph Smith--History 1:57 as the daughter of Isaac Hale whom Joseph married in January 1827. She is the same person as Emma Smith in D&C.",
-    "era": "Restoration",
-    "timePeriod": "1804–1879",
-    "roles": [
-      "wife"
-    ],
-    "gender": "female",
-    "volumes": [
-      "PoGP"
-    ],
-    "family": {
-      "husband": "joseph-smith",
-      "father": "isaac-hale"
-    },
-    "speakerType": "other",
-    "tier": 3,
-    "books": [
-      "Joseph Smith—History"
     ]
   },
   {
@@ -4834,7 +4758,9 @@
   {
     "id": "haman",
     "name": "Haman",
-    "aliases": [],
+    "aliases": [
+      "Aman"
+    ],
     "bio": "A high official in the Persian court of King Ahasuerus who plotted to destroy all the Jews because Mordecai refused to bow to him. His plot was exposed by Queen Esther, and he was hanged on the gallows he had prepared for Mordecai.",
     "era": "Exile & Return",
     "timePeriod": "c. 480 BC",
@@ -4843,7 +4769,8 @@
     ],
     "gender": "male",
     "volumes": [
-      "OT"
+      "OT",
+      "Apocrypha"
     ],
     "family": {},
     "speakerType": "other",
@@ -7383,28 +7310,6 @@
     ]
   },
   {
-    "id": "sam-smith",
-    "name": "Samuel Harrison Smith",
-    "aliases": [
-      "Samuel H. Smith"
-    ],
-    "bio": "Already in database as samuel-smith. Removing duplicate.",
-    "era": "skip",
-    "timePeriod": "skip",
-    "roles": [],
-    "gender": "male",
-    "volumes": [
-      "D&C"
-    ],
-    "family": {},
-    "speakerType": "other",
-    "tier": 3,
-    "books": [
-      "Doctrine and Covenants",
-      "Joseph Smith—History"
-    ]
-  },
-  {
     "id": "sanballat",
     "name": "Sanballat",
     "aliases": [
@@ -7448,32 +7353,6 @@
     "tier": 3,
     "books": [
       "Acts"
-    ]
-  },
-  {
-    "id": "sarai",
-    "name": "Sarai",
-    "aliases": [
-      "Sarah"
-    ],
-    "bio": "Wife of Abraham, named Sarai in Abraham 2:2. She traveled with Abraham from Ur to Canaan and later to Egypt.",
-    "era": "Patriarchal",
-    "timePeriod": "c. 2050 BC",
-    "roles": [
-      "matriarch"
-    ],
-    "gender": "female",
-    "volumes": [
-      "PoGP"
-    ],
-    "family": {
-      "husband": "abraham"
-    },
-    "speakerType": "other",
-    "tier": 3,
-    "books": [
-      "Genesis",
-      "Abraham"
     ]
   },
   {
@@ -8240,36 +8119,6 @@
     "tier": 4,
     "books": [
       "Doctrine and Covenants"
-    ]
-  },
-  {
-    "id": "abednego",
-    "name": "Abednego",
-    "aliases": [
-      "Azariah"
-    ],
-    "bio": "One of Daniel's three companions who survived the fiery furnace when thrown in for refusing to worship Nebuchadnezzar's golden image. His Hebrew name was Azariah.",
-    "era": "Exile & Return",
-    "timePeriod": "c. 600 BC",
-    "roles": [
-      "other"
-    ],
-    "gender": "male",
-    "volumes": [
-      "OT"
-    ],
-    "family": {},
-    "speakerType": "other",
-    "tier": 4,
-    "books": [
-      "1 Kings",
-      "2 Kings",
-      "1 Chronicles",
-      "2 Chronicles",
-      "Ezra",
-      "Nehemiah",
-      "Jeremiah",
-      "Daniel"
     ]
   },
   {
@@ -16997,7 +16846,8 @@
     "id": "samuel-smith",
     "name": "Samuel Smith",
     "aliases": [
-      "Samuel Harrison Smith"
+      "Samuel Harrison Smith",
+      "Samuel H. Smith"
     ],
     "bio": "Younger brother of Joseph Smith and one of the Eight Witnesses of the Book of Mormon. He served one of the first missions for the Church, distributing copies of the Book of Mormon. He died shortly after the martyrdom of Joseph and Hyrum.",
     "era": "Restoration",
@@ -17019,7 +16869,7 @@
       "mother": "Lucy Mack Smith"
     },
     "speakerType": "other",
-    "tier": 4,
+    "tier": 3,
     "books": [
       "Doctrine and Covenants"
     ]
@@ -20006,20 +19856,6 @@
     "portrait": null
   },
   {
-    "id": "aman-haman",
-    "name": "Aman",
-    "bio": "The king's chief minister (Haman) who plotted to destroy the Jewish people.",
-    "aliases": [
-      "Haman"
-    ],
-    "volumes": [
-      "Apocrypha"
-    ],
-    "tier": 4,
-    "family": {},
-    "portrait": null
-  },
-  {
     "id": "judith",
     "name": "Judith",
     "bio": "A pious widow of Bethulia who delivered Israel by beheading Holofernes.",
@@ -20439,20 +20275,6 @@
     "portrait": null
   },
   {
-    "id": "sosipater",
-    "name": "Sosipater",
-    "aliases": [
-      "Sopater"
-    ],
-    "bio": "A kinsman of Paul mentioned in the closing greetings of the Epistle to the Romans (16:21). Possibly the same as Sopater of Berea who accompanied Paul on his journey to Jerusalem (Acts 20:4).",
-    "volumes": [
-      "NT"
-    ],
-    "tier": 4,
-    "family": {},
-    "portrait": null
-  },
-  {
     "id": "jabez",
     "name": "Jabez",
     "description": "A man of Judah who prayed for God to enlarge his territory and keep him from evil.",
@@ -20865,7 +20687,32 @@
     ],
     "tier": 3,
     "aliases": [
-      "Abednego"
+      "Abednego",
+      "Azariah"
     ]
+  },
+  {
+    "id": "zipporah",
+    "name": "Zipporah",
+    "bio": "Wife of Moses and daughter of Jethro (Reuel), priest of Midian. She saved Moses' life by circumcising their son during the journey to Egypt.",
+    "aliases": [
+      "Sephora"
+    ],
+    "volumes": [
+      "OT"
+    ],
+    "tier": 3
+  },
+  {
+    "id": "achan",
+    "name": "Achan",
+    "bio": "An Israelite of the tribe of Judah who took forbidden spoils from Jericho, bringing defeat upon Israel at Ai.",
+    "aliases": [
+      "Achar"
+    ],
+    "volumes": [
+      "OT"
+    ],
+    "tier": 4
   }
 ]

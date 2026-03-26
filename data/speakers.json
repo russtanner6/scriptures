@@ -9088,7 +9088,7 @@
   {
     "book": "Jude",
     "chapter": 1,
-    "speaker": "Michael",
+    "speaker": "Adam",
     "volumeAbbrev": "NT",
     "volumeName": "New Testament",
     "bookId": 65,
@@ -16315,7 +16315,7 @@
   {
     "book": "Doctrine and Covenants",
     "chapter": 110,
-    "speaker": "Elias",
+    "speaker": "Elijah",
     "volumeAbbrev": "D&C",
     "volumeName": "Doctrine and Covenants",
     "bookId": 82,
@@ -22343,7 +22343,7 @@
   {
     "book": "2 Kings",
     "chapter": 12,
-    "speaker": "Joash",
+    "speaker": "Jehoash (king of Israel)",
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 12,
@@ -22354,7 +22354,7 @@
   {
     "book": "2 Kings",
     "chapter": 12,
-    "speaker": "Joash",
+    "speaker": "Jehoash (king of Israel)",
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 12,
@@ -22365,7 +22365,7 @@
   {
     "book": "2 Kings",
     "chapter": 13,
-    "speaker": "Joash",
+    "speaker": "Jehoash (king of Israel)",
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 12,
