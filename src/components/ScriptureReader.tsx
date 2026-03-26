@@ -42,7 +42,10 @@ export default function ScriptureReader() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const [volumes, setVolumes] = useState<Volume[]>([]);
-  const [lightMode, setLightMode] = useState(false);
+  // Dark theme always — light mode hidden but code preserved
+  const lightMode = false;
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [_lightMode, setLightMode] = useState(false);
   const [fontSize, setFontSize] = useState(1); // 0=small, 1=medium, 2=large
   const [menuOpen, setMenuOpen] = useState(false);
   const [exploredWord, setExploredWord] = useState<string | null>(null);
@@ -1203,7 +1206,7 @@ export default function ScriptureReader() {
         verseText: "#333333",
       }
     : {
-        bg: "#1a1a21",
+        bg: "#32323d",
         text: "#f0f0f0",
         textSecondary: "#b0b0b0",
         textMuted: "#666666",
@@ -1245,13 +1248,7 @@ export default function ScriptureReader() {
         <a href="/search" title="Search scriptures" style={{ color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", width: "36px", height: "36px", textDecoration: "none" }}>
           <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
         </a>
-        <button onClick={toggleLightMode} title={lightMode ? "Dark mode" : "Light mode"} style={{ background: "none", border: "none", width: "36px", height: "36px", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", color: "#fff" }}>
-          {lightMode ? (
-            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
-          ) : (
-            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5" /><line x1="12" y1="1" x2="12" y2="3" /><line x1="12" y1="21" x2="12" y2="23" /><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" /><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" /><line x1="1" y1="12" x2="3" y2="12" /><line x1="21" y1="12" x2="23" y2="12" /><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" /><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" /></svg>
-          )}
-        </button>
+        {/* Light mode toggle hidden — dark theme always */}
         <button onClick={() => setMenuOpen(true)} title="Menu" style={{ background: "none", border: "none", width: "36px", height: "36px", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", color: "#fff", padding: 0 }}>
           <HamburgerIcon />
         </button>
@@ -1482,41 +1479,7 @@ export default function ScriptureReader() {
             >
               {fontSizes[fontSize].label}
             </button>
-            {/* Light/dark toggle */}
-            <button
-              onClick={toggleLightMode}
-              title={lightMode ? "Switch to dark mode" : "Switch to light mode"}
-              style={{
-                background: "none",
-                border: "none",
-                width: "36px",
-                height: "36px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                cursor: "pointer",
-                transition: "all 0.15s",
-                color: "#fff",
-              }}
-            >
-              {lightMode ? (
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-                </svg>
-              ) : (
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="5" />
-                  <line x1="12" y1="1" x2="12" y2="3" />
-                  <line x1="12" y1="21" x2="12" y2="23" />
-                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-                  <line x1="1" y1="12" x2="3" y2="12" />
-                  <line x1="21" y1="12" x2="23" y2="12" />
-                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-                </svg>
-              )}
-            </button>
+            {/* Light/dark toggle hidden — dark theme always */}
             {/* Hamburger menu */}
             <button
               onClick={() => setMenuOpen(true)}
@@ -1625,17 +1588,21 @@ export default function ScriptureReader() {
           {!isLoading && verses.length > 0 && (() => {
             // Book landscape images: chapter-specific override first, then book-level, then null
             // Gradient placeholders use CSS gradients; real images use url strings
+            // Book-specific images — will be replaced over time with custom art
             const BOOK_LANDSCAPE_IMAGES: Record<string, string | { gradient: string }> = {
               "Genesis": "/book-images/genesis.jpg",
+              // Add custom book images here as they're created
             };
             const CHAPTER_LANDSCAPE_IMAGES: Record<string, Record<number, string | { gradient: string }>> = {
-              // Example: "Genesis": { 1: "url-or-gradient-for-creation" }
+              // Add custom chapter-specific images here
             };
+            // Default image for all books that don't have a custom one yet
+            const DEFAULT_IMAGE = "/book-images/genesis.jpg";
             const bookKey = selectedBookName || "";
             const chapterNum = selectedChapter || 0;
             const chapterOverride = CHAPTER_LANDSCAPE_IMAGES[bookKey]?.[chapterNum];
             const bookImage = BOOK_LANDSCAPE_IMAGES[bookKey];
-            const landscapeImage = chapterOverride || bookImage || null;
+            const landscapeImage = chapterOverride || bookImage || DEFAULT_IMAGE;
 
             const hasImage = !!landscapeImage;
 
@@ -1893,7 +1860,7 @@ export default function ScriptureReader() {
                       bottom: 0,
                       width: isMobile ? "85vw" : "420px",
                       maxWidth: "90vw",
-                      background: lightMode ? "#faf9f5" : "#1a1a21",
+                      background: lightMode ? "#faf9f5" : "#32323d",
                       zIndex: 201,
                       overflowY: "auto",
                       boxShadow: "-4px 0 24px rgba(0,0,0,0.3)",
@@ -2277,7 +2244,7 @@ export default function ScriptureReader() {
                         : lightMode ? "#222" : "rgba(255,255,255,0.88)",
                       color: selectedVerses.has(v.verse)
                         ? "#fff"
-                        : lightMode ? "#f8f6f1" : "#1a1a21",
+                        : lightMode ? "#f8f6f1" : "#32323d",
                       flexShrink: 0,
                       transition: "all 0.15s",
                       verticalAlign: "top",

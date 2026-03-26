@@ -185,8 +185,8 @@ export default function ChapterInsights({
       }
     : {
         text: "var(--text)",
-        textSecondary: "var(--text-secondary)",
-        textMuted: "var(--text-muted)",
+        textSecondary: "rgba(255, 255, 255, 0.7)",
+        textMuted: "rgba(255, 255, 255, 0.5)",
         surface: "var(--surface)",
         border: "var(--border)",
         pillBg: "rgba(255, 255, 255, 0.06)",
@@ -443,8 +443,20 @@ export default function ChapterInsights({
             }}>
               <StatPill label="Verses" value={stats.verseCount} />
               <StatPill label="Words" value={stats.wordCount.toLocaleString()} />
-              {historicalCtx?.approxDate && (
-                <StatPill label="Era" value={historicalCtx.approxDate} />
+              {historicalCtx && (
+                <StatPill label="Era" value={(() => {
+                  const d = historicalCtx.approxDate;
+                  if (!d || d === "n/a" || d === "N/A" || d === "Unknown") {
+                    // Humorous fallbacks based on era or book context
+                    const era = historicalCtx.era?.toLowerCase() || "";
+                    if (era.includes("creation") || era.includes("antediluvian")) return "Before calendars existed";
+                    if (era.includes("patriarchal")) return "A really long time ago";
+                    if (era.includes("exodus")) return "Sandals-and-manna era";
+                    if (era.includes("millennial") || era.includes("last days")) return "Hasn't happened yet";
+                    return "A long time ago";
+                  }
+                  return d;
+                })()} />
               )}
               {dominantTone && (
                 <StatPill
@@ -457,8 +469,7 @@ export default function ChapterInsights({
               <p style={{
                 margin: "12px 0 0 0",
                 fontSize: "0.82rem",
-                fontStyle: "italic",
-                color: theme.textSecondary,
+                color: "rgba(255, 255, 255, 0.85)",
                 lineHeight: 1.6,
               }}>
                 {summary}
@@ -612,8 +623,8 @@ export default function ChapterInsights({
                   <div
                     style={{
                       background: lightMode ? "rgba(0,0,0,0.12)" : "rgba(0,0,0,0.35)",
-                      borderRadius: "10px",
-                      padding: "4px",
+                      borderRadius: "2px",
+                      padding: "3px",
                       boxShadow: lightMode
                         ? "inset 0 2px 4px rgba(0,0,0,0.08)"
                         : "inset 0 2px 4px rgba(0,0,0,0.3)",
@@ -623,7 +634,7 @@ export default function ChapterInsights({
                       style={{
                         display: "flex",
                         height: "24px",
-                        borderRadius: "6px",
+                        borderRadius: "1px",
                         overflow: "hidden",
                         cursor: "pointer",
                       }}
