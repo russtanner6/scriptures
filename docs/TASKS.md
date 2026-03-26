@@ -11,7 +11,15 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 
 ### NEXT SESSION — START HERE
 
-- [~] **LLM Chapter Scoring (Sentiment + Speakers)** — User is scoring ALL 1,764 chapters through Gemini using a combined guide that produces both sentiment scores AND speaker tags per chapter. Clean scaffold exists at `data/chapter-sentiments.json` (1,764 entries). 358 chapters already scored (Genesis, Exodus, Leviticus 1-5+16, D&C 1-138, 1 Samuel 1, Job 1-2, Psalms 1, plus all Apocrypha scored so far: 1 Esdras, 2 Esdras, 1 Maccabees, 2 Maccabees, Tobit, Wisdom, Sirach, Judith, Baruch, Additions to Esther, Prayer of Azariah). Remaining: all OT beyond Gen/Ex/Lev, all NT, all BoM, Susanna, Bel and the Dragon, Prayer of Manasses. Use `scripts/merge-sentiments.py` to merge incoming data. Once complete, wire Sentiment Explorer to read from JSON instead of keyword lexicon. A new combined SCORING-AND-SPEAKERS-GUIDE.md needs to be created on the Desktop. *(Session 19)*
+- [ ] **Famous Stories tool** — New tool on home page + nav. Curated list of famous scripture stories by volume that people (especially parents with kids) can click to jump directly to that location in the reader. Card-based UI. *(Requested: Session 25)*
+
+- [ ] **Share icon in header** — Add share button next to hamburger menu on scripture pages. Standard share options: copy link, email, native share API on mobile. *(Requested: Session 25)*
+
+- [ ] **App-like animations site-wide** — Apply polished animations (fade-ins, slide transitions, smooth loading) across ALL pages, not just the scripture reader. Tools, nav menu, slide-outs, home page. Make the whole site feel like a native app. *(Requested: Session 25)*
+
+- [ ] **Speaker data audit — false positives** — Some verses are tagged as speech when they're narration about a person (e.g., Genesis 3:20 "And Adam called his wife's name Eve" is not Adam speaking). Scan speaker data for entries where tagged verses lack dialogue markers ("said", "spake", "answered"). *(Flagged: Session 25)*
+
+- [x] **LLM Chapter Scoring (Sentiment + Speakers)** — COMPLETE. All 1,755 chapters scored. *(Completed: Session 22)*
 
 - [ ] **Mood Match feature** — Use sentiment data to recommend chapters matching user's emotional state. "I'm feeling anxious" → chapters scored high on Covenant Peace. *(Requested: Session 19)*
 

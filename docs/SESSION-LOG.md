@@ -1,5 +1,48 @@
 # Scripture Explorer — Session Log
 
+## 2026-03-26 — Session 25: Visual Polish, Animations, Dark Theme Lock
+
+### What was done
+
+**Visual polish (Scripture Reader):**
+- Background color updated: #0f0f12 → #32323d → #2f2f3a → #29292b (user-tuned)
+- Dark theme locked: light mode toggle hidden (always dark, code preserved)
+- Removed header bottom border on all scripture pages (kept on tool pages)
+- Crosshatch pattern behind book image on desktop (full-viewport-width, subtle 45° lines)
+- Subtle centered top shadow (vignette) on book landscape image
+- Chapter dropdown arrow: bigger (12→16px) and brighter (0.7 opacity)
+
+**Insights panel polish:**
+- Removed horizontal dividers between sections
+- Section headings bigger (0.65→0.72rem) and brighter (0.55 opacity white)
+- Expanded area: darker background (rgba black 0.15) + dark border
+- Removed left/right borders, thicker bottom border (2px)
+- Notable verses: neutral border/text instead of volume-specific color
+- Smooth expand/collapse animations (expandDown 0.3s / collapseUp 0.25s)
+- Panel slides down pushing verses, slides up pulling them back
+- Insights bar: borderRadius 0 on button (straight corners)
+
+**Other fixes:**
+- Fixed double scrollbar on desktop (html.reader-active hides body scroll)
+- Modern/Original toggle: reduced prominence (opacity 0.65, hover to full)
+- Verse number squares: better centering (paddingTop 1px, fontSize 0.7rem)
+- Book landscape image: fade-in animation (0.4s)
+- Default image (genesis.jpg) applied to ALL books until custom images added
+
+### Current state
+- All visual changes pushed and live on Vercel
+- App-like animation philosophy noted for site-wide application in future sessions
+- Midjourney prompts file exists but not rewritten this session (user deferred)
+
+### Remaining work
+1. Apply app-like animations and polish site-wide (tools, nav, slide-outs)
+2. Build Famous Stories tool (curated scripture stories by volume)
+3. Generate Midjourney prompts for all books (Yongsung Kim style)
+4. Audit speaker data for false positives (narration tagged as speech)
+5. Wire pipeline data deeper into reader (cross-references, historical context)
+
+---
+
 ## 2026-03-26 — Session 24: Speaker/Character Fixes + ChapterInsights Redesign + Reader Polish
 
 ### What was done
