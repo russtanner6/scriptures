@@ -1658,11 +1658,10 @@ export default function ScriptureReader() {
                     <div
                       style={{
                         position: "absolute",
-                        top: isMobile ? "10%" : "-30px",
-                        bottom: "-40px",
-                        left: "50%",
-                        transform: "translateX(-50%)",
-                        width: isMobile ? "108%" : "calc(100% + 90px)",
+                        top: "-25px",
+                        bottom: "-30px",
+                        left: "-40px",
+                        right: "-40px",
                         zIndex: 0,
                         pointerEvents: "none",
                         overflow: "visible",
