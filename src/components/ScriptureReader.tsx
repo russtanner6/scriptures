@@ -1635,7 +1635,20 @@ export default function ScriptureReader() {
                         left: "50%",
                         transform: "translateX(-50%)",
                         width: "100vw",
-                        background: "rgba(0,0,0,0.25)",
+                        backgroundColor: "rgba(0,0,0,0.2)",
+                        backgroundImage: `repeating-linear-gradient(
+                          45deg,
+                          transparent,
+                          transparent 3px,
+                          rgba(255,255,255,0.03) 3px,
+                          rgba(255,255,255,0.03) 4px
+                        ), repeating-linear-gradient(
+                          -45deg,
+                          transparent,
+                          transparent 3px,
+                          rgba(255,255,255,0.03) 3px,
+                          rgba(255,255,255,0.03) 4px
+                        )`,
                         zIndex: 0,
                         pointerEvents: "none",
                       }}
