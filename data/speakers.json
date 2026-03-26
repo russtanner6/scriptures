@@ -26880,17 +26880,6 @@
     "volumeName": "Old Testament",
     "bookId": 1,
     "speakerType": "other",
-    "verseStart": 1,
-    "verseEnd": 1
-  },
-  {
-    "book": "Genesis",
-    "chapter": 3,
-    "speaker": "Eve",
-    "volumeAbbrev": "OT",
-    "volumeName": "Old Testament",
-    "bookId": 1,
-    "speakerType": "other",
     "verseStart": 2,
     "verseEnd": 3
   },

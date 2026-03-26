@@ -61,17 +61,15 @@ export function getDisplaySpeakerName(
   speakerType: string,
   volumeAbbrev: string
 ): string {
-  if (speakerType === "divine") {
-    // OT: God/LORD/Jesus → Jesus Christ (Jehovah)
-    if (volumeAbbrev === "OT") {
-      if (speaker === "God" || speaker === "LORD" || speaker === "The LORD" || speaker === "Jesus") {
-        return "Jesus Christ (Jehovah)";
-      }
-    }
-    // D&C: "God" in divine speech is also Jesus Christ
-    if (volumeAbbrev === "D&C" && speaker === "God") {
-      return "Jesus Christ";
-    }
+  if (speakerType === "divine" && speaker === "Jesus Christ") {
+    // OT divine speech: display contextually — "the LORD" is most common KJV rendering of YHWH
+    if (volumeAbbrev === "OT") return "The LORD";
+    // PoGP Moses/Abraham: also pre-mortal Jehovah context
+    if (volumeAbbrev === "PoGP") return "The Lord";
+  }
+  // D&C: "God" in divine speech is also Jesus Christ
+  if (speakerType === "divine" && volumeAbbrev === "D&C" && speaker === "God") {
+    return "Jesus Christ";
   }
   return speaker;
 }
