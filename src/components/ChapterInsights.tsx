@@ -297,10 +297,9 @@ export default function ChapterInsights({
           from { opacity: 0; transform: translateY(-8px); }
           to { opacity: 1; transform: translateY(0); }
         }
-        @keyframes insightsGlow {
-          0% { text-shadow: none; color: rgba(255,255,255,0.85); }
-          30% { text-shadow: 0 0 8px rgba(200,220,255,0.6), 0 0 16px rgba(200,220,255,0.3); color: #fff; }
-          100% { text-shadow: none; color: rgba(255,255,255,0.85); }
+        @keyframes insightsShimmer {
+          0% { background-position: -200% center; }
+          100% { background-position: 200% center; }
         }
         @keyframes expandDown {
           from { max-height: 0; opacity: 0; }
@@ -429,7 +428,17 @@ export default function ChapterInsights({
             whiteSpace: "nowrap",
           }}
         >
-          {!isExpanded && <span style={{ textTransform: "uppercase", letterSpacing: "0.08em", color: lightMode ? "#333" : "rgba(255,255,255,0.85)", animation: "insightsGlow 2s ease-in-out 1.5s 1" }}>Insights</span>}
+          {!isExpanded && <span style={{
+            textTransform: "uppercase",
+            letterSpacing: "0.08em",
+            background: "linear-gradient(105deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.85) 35%, rgba(255,255,255,1) 48%, rgba(200,220,255,1) 50%, rgba(255,255,255,1) 52%, rgba(255,255,255,0.85) 65%, rgba(255,255,255,0.85) 100%)",
+            backgroundSize: "200% 100%",
+            backgroundClip: "text",
+            WebkitBackgroundClip: "text",
+            color: "transparent",
+            animation: "insightsShimmer 1.2s ease-in-out 1.5s 1",
+            backgroundPosition: "-200% center",
+          }}>Insights</span>}
           <span
             style={{
               transform: isExpanded ? "rotate(180deg)" : "rotate(0)",
