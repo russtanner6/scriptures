@@ -1699,24 +1699,24 @@ export default function ScriptureReader() {
                     <div
                       style={{
                         position: "absolute",
-                        top: isMobile ? "50%" : "-20px",
-                        bottom: "-30px",
+                        top: isMobile ? "40%" : "-30px",
+                        bottom: "-40px",
                         left: "50%",
                         transform: "translateX(-50%)",
                         width: isMobile ? "100%" : "100vw",
                         zIndex: 0,
                         pointerEvents: "none",
                         background: isMobile
-                          ? `radial-gradient(ellipse at 50% 100%, rgba(${ambilightColors.bl}, 0.4) 0%, transparent 70%)`
+                          ? `radial-gradient(ellipse at 50% 100%, rgba(${ambilightColors.bl}, 0.5) 0%, transparent 70%)`
                           : `
-                            radial-gradient(ellipse at 0% 40%, rgba(${ambilightColors.tl}, 0.35) 0%, transparent 55%),
-                            radial-gradient(ellipse at 100% 40%, rgba(${ambilightColors.tr}, 0.35) 0%, transparent 55%),
-                            radial-gradient(ellipse at 0% 100%, rgba(${ambilightColors.bl}, 0.4) 0%, transparent 55%),
-                            radial-gradient(ellipse at 100% 100%, rgba(${ambilightColors.br}, 0.4) 0%, transparent 55%),
-                            radial-gradient(ellipse at 50% 100%, rgba(${ambilightColors.bl}, 0.3) 0%, transparent 65%)
+                            radial-gradient(ellipse at 0% 40%, rgba(${ambilightColors.tl}, 0.5) 0%, transparent 60%),
+                            radial-gradient(ellipse at 100% 40%, rgba(${ambilightColors.tr}, 0.5) 0%, transparent 60%),
+                            radial-gradient(ellipse at 0% 100%, rgba(${ambilightColors.bl}, 0.55) 0%, transparent 60%),
+                            radial-gradient(ellipse at 100% 100%, rgba(${ambilightColors.br}, 0.55) 0%, transparent 60%),
+                            radial-gradient(ellipse at 50% 100%, rgba(${ambilightColors.bl}, 0.4) 0%, transparent 70%)
                           `,
-                        filter: "blur(40px)",
-                        animation: "fadeIn 2s ease-out 1.5s both",
+                        filter: "blur(45px)",
+                        animation: "fadeIn 2.5s ease-out 1s both",
                       }}
                     />
                   )}
