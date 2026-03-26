@@ -296,6 +296,10 @@ export default function ChapterInsights({
           from { opacity: 0; transform: translateY(-8px); }
           to { opacity: 1; transform: translateY(0); }
         }
+        @keyframes expandDown {
+          from { max-height: 0; opacity: 0; }
+          to { max-height: 800px; opacity: 1; }
+        }
       `}</style>
     <div
       style={{
@@ -426,7 +430,8 @@ export default function ChapterInsights({
             display: "flex",
             flexDirection: "column",
             gap: "20px",
-            animation: "fadeIn 0.3s ease",
+            animation: "expandDown 0.3s ease-out forwards",
+            overflow: "hidden",
             background: "rgba(0,0,0,0.15)",
             borderTop: "none",
             borderLeft: "none",
