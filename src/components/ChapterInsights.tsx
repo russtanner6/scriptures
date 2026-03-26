@@ -428,8 +428,10 @@ export default function ChapterInsights({
             gap: "20px",
             animation: "fadeIn 0.3s ease",
             background: "rgba(0,0,0,0.15)",
-            border: "1px solid rgba(0,0,0,0.25)",
             borderTop: "none",
+            borderLeft: "none",
+            borderRight: "none",
+            borderBottom: "2px solid rgba(0,0,0,0.25)",
           }}
         >
           {/* ── Section 1: At a Glance ── */}
