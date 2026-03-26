@@ -238,19 +238,14 @@ export default function ChapterInsights({
     setTimeout(fn, 150);
   };
 
-  // Section divider component
-  const Divider = () => (
-    <div style={{ height: "1px", background: theme.border, margin: "0" }} />
-  );
-
   // Section label component
   const SectionLabel = ({ children }: { children: React.ReactNode }) => (
     <div style={{
-      fontSize: "0.65rem",
-      fontWeight: 600,
+      fontSize: "0.72rem",
+      fontWeight: 700,
       textTransform: "uppercase" as const,
       letterSpacing: "0.1em",
-      color: theme.textMuted,
+      color: "rgba(255,255,255,0.55)",
       marginBottom: "10px",
     }}>
       {children}
@@ -485,7 +480,6 @@ export default function ChapterInsights({
           {chapterChars.length > 0 && (() => {
             return (
               <>
-                <Divider />
                 <div>
                   <SectionLabel>People in this {chapterOrSection}</SectionLabel>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
@@ -621,7 +615,6 @@ export default function ChapterInsights({
 
             return (
               <>
-                <Divider />
                 <div>
                   <SectionLabel>Speaker Timeline</SectionLabel>
                   <div
@@ -699,7 +692,6 @@ export default function ChapterInsights({
           {/* ── Section 4: Key Themes ── */}
           {stats.keyThemes.length > 0 && (
             <>
-              <Divider />
               <div>
                 <SectionLabel>Key Themes</SectionLabel>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
@@ -732,7 +724,6 @@ export default function ChapterInsights({
           {/* ── Section 5: Notable Verses ── */}
           {notableVerses.length > 0 && (
             <>
-              <Divider />
               <div>
                 <SectionLabel>Notable Verses</SectionLabel>
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
