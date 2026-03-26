@@ -232,6 +232,12 @@ export default function ChapterInsights({
     portraitChars.push({ id: `placeholder-${portraitChars.length}`, name: "?", portraitUrl: null, roles: [], tier: 9, aliases: [] });
   }
 
+  // Auto-close panel then perform action (with small delay for smooth UX)
+  const closeAndDo = (fn: () => void) => {
+    setIsExpanded(false);
+    setTimeout(fn, 150);
+  };
+
   // Section divider component
   const Divider = () => (
     <div style={{ height: "1px", background: theme.border, margin: "0" }} />
@@ -301,7 +307,6 @@ export default function ChapterInsights({
         marginBottom: "24px",
         borderRadius: flatTopCorners ? "0" : "8px",
         border: flatTopCorners ? "none" : `1px solid ${theme.border}`,
-        overflow: "hidden",
         animation: "insightsSlideIn 0.4s ease-out",
         // Full width on mobile (escape parent padding), match image width on desktop
         ...(flatTopCorners ? {
@@ -311,7 +316,7 @@ export default function ChapterInsights({
         } : {}),
       }}
     >
-      {/* Collapsed bar — always visible, darker bg */}
+      {/* Collapsed bar — sticky to top below header */}
       <button
         onClick={() => { setIsExpanded((prev) => { if (!prev) analytics.insightsOpen(bookName, chapter || 0); return !prev; }); }}
         style={{
@@ -325,6 +330,9 @@ export default function ChapterInsights({
           cursor: "pointer",
           fontFamily: "inherit",
           gap: "12px",
+          position: "sticky" as const,
+          top: isMobile ? "44px" : "48px",
+          zIndex: 10,
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: isMobile ? "12px" : "20px", flexWrap: "wrap" }}>
@@ -481,11 +489,13 @@ export default function ChapterInsights({
                           key={c.id}
                           onClick={() => {
                             analytics.insightsPersonClick(c.name, bookName, chapter || 0);
-                            if (firstSpeakingVerse && onScrollToVerse) {
-                              onScrollToVerse(firstSpeakingVerse);
-                            } else {
-                              onSelectCharacter?.(c.id);
-                            }
+                            closeAndDo(() => {
+                              if (firstSpeakingVerse && onScrollToVerse) {
+                                onScrollToVerse(firstSpeakingVerse);
+                              } else {
+                                onSelectCharacter?.(c.id);
+                              }
+                            });
                           }}
                           style={{
                             display: "flex",
@@ -633,7 +643,7 @@ export default function ChapterInsights({
                             onClick={(e) => {
                               e.stopPropagation();
                               analytics.speakerTimelineClick(seg.speaker || "narrator", verseNum);
-                              onScrollToVerse?.(verseNum);
+                              closeAndDo(() => onScrollToVerse?.(verseNum));
                             }}
                             title={title}
                             style={{
@@ -681,7 +691,7 @@ export default function ChapterInsights({
                   {stats.keyThemes.map((t) => (
                     <button
                       key={t.word}
-                      onClick={() => onExploreWord ? onExploreWord(t.word) : undefined}
+                      onClick={() => onExploreWord ? closeAndDo(() => onExploreWord(t.word)) : undefined}
                       style={{
                         display: "inline-block",
                         padding: "5px 14px",
@@ -714,7 +724,7 @@ export default function ChapterInsights({
                   {notableVerses.map((nv) => (
                     <button
                       key={nv.verse}
-                      onClick={() => onScrollToVerse?.(nv.verse)}
+                      onClick={() => closeAndDo(() => onScrollToVerse?.(nv.verse))}
                       style={{
                         display: "flex",
                         alignItems: "flex-start",

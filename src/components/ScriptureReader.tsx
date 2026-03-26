@@ -2281,7 +2281,7 @@ export default function ScriptureReader() {
                       flexShrink: 0,
                       transition: "all 0.15s",
                       verticalAlign: "top",
-                      marginTop: "2px",
+                      marginTop: "4px",
                     }}
                     title={selectionMode ? "Click to select/deselect" : "Click to select verse"}
                   >
@@ -2544,7 +2544,9 @@ export default function ScriptureReader() {
             style={{
               height: "3px",
               width: `${scrollProgress * 100}%`,
-              background: "linear-gradient(90deg, #DC2F4B 0%, #E8532C 25%, #F57B20 50%, #F5A623 75%, #F5C829 100%)",
+              background: lightMode
+                ? "linear-gradient(90deg, #2A4F8A 0%, #4A7FD4 100%)"
+                : "linear-gradient(90deg, #2E4A7A 0%, #5B8DEF 100%)",
               transition: "width 0.1s linear",
             }}
           />
