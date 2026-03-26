@@ -1678,8 +1678,8 @@ export default function ScriptureReader() {
                           width: "100%",
                           height: "100%",
                           objectFit: "cover",
-                          filter: "blur(40px) saturate(1.4) brightness(1.0)",
-                          opacity: 0.3,
+                          filter: "blur(40px) saturate(1.8) brightness(1.2)",
+                          opacity: 0.45,
                         }}
                       />
                       {/* Uniform warm base glow so dark edges still show something */}
