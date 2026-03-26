@@ -1612,8 +1612,11 @@ export default function ScriptureReader() {
             const hasImage = !!landscapeImage;
 
             // Extract dominant colors from image edges for ambilight effect
-            const extractAmbilightColors = (img: HTMLImageElement) => {
+            const extractAmbilightColors = (imgSrc: string) => {
               try {
+                // Create a separate image for canvas sampling (avoids CORS issues with displayed img)
+                const img = new Image();
+                img.onload = () => {
                 const canvas = document.createElement("canvas");
                 const size = 60; // sample area size
                 canvas.width = img.naturalWidth;
@@ -1648,6 +1651,8 @@ export default function ScriptureReader() {
                   bl: sample(inset, h - insetY - size, size, size),
                   br: sample(w - inset - size, h - insetY - size, size, size),
                 });
+                };
+                img.src = imgSrc;
               } catch { /* CORS or other error — silently skip */ }
             };
 
@@ -1739,8 +1744,7 @@ export default function ScriptureReader() {
                       <img
                         src={landscapeImage}
                         alt={`${bookKey} landscape`}
-                        onLoad={(e) => extractAmbilightColors(e.currentTarget)}
-                        crossOrigin="anonymous"
+                        onLoad={() => extractAmbilightColors(landscapeImage as string)}
                         style={{
                           width: "100%",
                           height: "100%",
