@@ -21915,5 +21915,826 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 37
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "Before I formed thee in the belly I knew thee — foundational scripture on foreordination and the sanctity of life."
+      },
+      {
+        "verse": 19,
+        "reason": "God's promise that enemies will not prevail against Jeremiah, for He is with him to deliver."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 13,
+        "reason": "My people have forsaken the fountain of living waters and hewn broken cisterns — powerful metaphor for apostasy."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 15,
+        "reason": "God promises pastors after His own heart who will feed with knowledge and understanding."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 19,
+        "reason": "Jeremiah's anguished cry as he hears the trumpet of war and sees destruction upon destruction."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 21,
+        "reason": "A people with eyes that see not and ears that hear not — echoed by Christ in the New Testament."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 6,
+    "verses": [
+      {
+        "verse": 16,
+        "reason": "Stand ye in the ways and ask for the old paths, where is the good way, and walk therein."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 11,
+        "reason": "Is this house become a den of robbers? — quoted by Jesus when cleansing the temple."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 22,
+        "reason": "Is there no balm in Gilead? Is there no physician there? — a timeless expression of desperate hope."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 23,
+        "reason": "Let not the wise man glory in his wisdom, nor the mighty in his might, nor the rich in his riches."
+      },
+      {
+        "verse": 24,
+        "reason": "But let him that glorieth glory in this: that he understandeth and knoweth me, that I am the LORD."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 10,
+    "verses": [
+      {
+        "verse": 23,
+        "reason": "O LORD, I know that the way of man is not in himself; it is not in man that walketh to direct his steps."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 11,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "If thou hast run with the footmen and they have wearied thee, then how canst thou contend with horses?"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 13,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 14,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 15,
+    "verses": [
+      {
+        "verse": 16,
+        "reason": "Thy words were found and I did eat them; thy word was unto me the joy and rejoicing of mine heart."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 16,
+    "verses": [
+      {
+        "verse": 16,
+        "reason": "God will send fishers and hunters to find His people — a gathering of Israel prophecy."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 17,
+    "verses": [
+      {
+        "verse": 7,
+        "reason": "Blessed is the man that trusteth in the LORD, and whose hope the LORD is."
+      },
+      {
+        "verse": 9,
+        "reason": "The heart is deceitful above all things and desperately wicked — one of the most quoted verses on human nature."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 18,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "As the clay is in the potter's hand, so are ye in mine hand, O house of Israel."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 19,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 20,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "His word was in mine heart as a burning fire shut up in my bones — the irrepressible call to prophesy."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 21,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 22,
+    "verses": [
+      {
+        "verse": 29,
+        "reason": "O earth, earth, earth, hear the word of the LORD — a dramatic triple invocation."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 23,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "I will raise unto David a righteous Branch — a messianic prophecy of Christ."
+      },
+      {
+        "verse": 6,
+        "reason": "He shall be called THE LORD OUR RIGHTEOUSNESS — a divine title of the Messiah."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 24,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 25,
+    "verses": [
+      {
+        "verse": 11,
+        "reason": "These nations shall serve the king of Babylon seventy years — the pivotal prophecy of the captivity's duration."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 26,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 27,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 28,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 29,
+    "verses": [
+      {
+        "verse": 11,
+        "reason": "For I know the thoughts that I think toward you, thoughts of peace and not of evil, to give you an expected end."
+      },
+      {
+        "verse": 13,
+        "reason": "Ye shall seek me, and find me, when ye shall search for me with all your heart."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 30,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "For I will restore health unto thee and I will heal thee of thy wounds, saith the LORD."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 31,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "I have loved thee with an everlasting love; therefore with lovingkindness have I drawn thee."
+      },
+      {
+        "verse": 31,
+        "reason": "I will make a new covenant with the house of Israel — the foundational new covenant prophecy."
+      },
+      {
+        "verse": 33,
+        "reason": "I will put my law in their inward parts and write it in their hearts — the internalization of God's law."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 32,
+    "verses": [
+      {
+        "verse": 17,
+        "reason": "There is nothing too hard for thee — Jeremiah's confession of God's omnipotence during the siege."
+      },
+      {
+        "verse": 27,
+        "reason": "I am the LORD, the God of all flesh: is there any thing too hard for me?"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 33,
+    "verses": [
+      {
+        "verse": 3,
+        "reason": "Call unto me, and I will answer thee, and shew thee great and mighty things which thou knowest not."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 34,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 35,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 36,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 37,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 38,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 39,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 40,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 41,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 42,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 43,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 44,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 45,
+    "verses": [
+      {
+        "verse": 5,
+        "reason": "Seekest thou great things for thyself? Seek them not — a sobering reminder of perspective amid crisis."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 46,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 47,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 48,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 49,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 50,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "Israel and Judah shall come together, going and weeping, and shall seek the LORD their God."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 51,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 52,
+    "verses": [
+      {
+        "verse": 31,
+        "reason": "Evil-merodach lifts up the head of Jehoiachin — a faint glimmer of hope at the book's end."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 1,
+    "verses": [
+      {
+        "verse": 1,
+        "reason": "The iconic opening: How doth the city sit solitary, that was full of people—one of the most poignant openings in scripture."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 25
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 19,
+        "reason": "A call to pour out the heart like water before the face of the Lord—a powerful image of desperate prayer."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 25
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 22,
+        "reason": "It is of the Lord's mercies that we are not consumed, because his compassions fail not—a cornerstone of hope."
+      },
+      {
+        "verse": 23,
+        "reason": "They are new every morning: great is thy faithfulness—one of the most beloved declarations of divine reliability."
+      },
+      {
+        "verse": 26,
+        "reason": "It is good that a man should both hope and quietly wait for the salvation of the Lord."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 25
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 4,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 25
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 5,
+    "verses": [
+      {
+        "verse": 21,
+        "reason": "Turn thou us unto thee, O Lord, and we shall be turned; renew our days as of old—a closing plea for divine restoration."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 25
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 1,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 2,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "'Sing and rejoice, O daughter of Zion: for, lo, I come, and I will dwell in the midst of thee.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 3,
+    "verses": [
+      {
+        "verse": 8,
+        "reason": "Introduction of 'my servant the BRANCH' — a key Messianic title pointing to Christ."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 4,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "'Not by might, nor by power, but by my spirit, saith the Lord of hosts' — one of the most quoted verses in all of scripture."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 5,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 6,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 7,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "'Execute true judgment, and shew mercy and compassions every man to his brother' — the essence of covenant living."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 8,
+    "verses": [
+      {
+        "verse": 23,
+        "reason": "'Ten men... shall take hold of the skirt of him that is a Jew' — a prophecy of the nations seeking Israel's God."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 9,
+    "verses": [
+      {
+        "verse": 9,
+        "reason": "'Thy King cometh unto thee... lowly, and riding upon an ass' — fulfilled at Jesus' triumphal entry into Jerusalem."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 10,
+    "verses": [],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 11,
+    "verses": [
+      {
+        "verse": 12,
+        "reason": "'They weighed for my price thirty pieces of silver' — the price of a slave, fulfilled in Judas's betrayal of Christ."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 12,
+    "verses": [
+      {
+        "verse": 10,
+        "reason": "'They shall look upon me whom they have pierced, and they shall mourn' — a powerful prophecy of Christ's crucifixion and future recognition."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 13,
+    "verses": [
+      {
+        "verse": 6,
+        "reason": "'What are these wounds in thine hands?' — LDS doctrine connects this to Christ's appearance at the Second Coming."
+      },
+      {
+        "verse": 7,
+        "reason": "'Smite the shepherd, and the sheep shall be scattered' — quoted by Jesus before Gethsemane."
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 14,
+    "verses": [
+      {
+        "verse": 4,
+        "reason": "'His feet shall stand in that day upon the mount of Olives, and the mount of Olives shall cleave in the midst' — a key Second Coming prophecy."
+      },
+      {
+        "verse": 9,
+        "reason": "'The Lord shall be king over all the earth: in that day shall there be one Lord, and his name one.'"
+      }
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
   }
 ]

@@ -1,0 +1,69 @@
+{
+  "bookName": "Lamentations",
+  "bookId": 25,
+  "sentiment": [
+    {"book":"Lamentations","chapter":1,"exaltation":0,"peace":0,"admonition":6,"contrition":9,"dominant":"contrition","rationale":"Jerusalem sits desolate like a widow; the poet mourns her fallen state, her sins, and the departure of all comfort."},
+    {"book":"Lamentations","chapter":2,"exaltation":0,"peace":0,"admonition":8,"contrition":8,"dominant":"admonition","rationale":"God's fierce anger has destroyed Zion's strongholds; the prophet weeps at the devastation and calls Jerusalem to cry out."},
+    {"book":"Lamentations","chapter":3,"exaltation":4,"peace":5,"admonition":5,"contrition":7,"dominant":"contrition","rationale":"The poet descends into the depths of affliction but finds hope in God's mercies which are new every morning."},
+    {"book":"Lamentations","chapter":4,"exaltation":0,"peace":0,"admonition":7,"contrition":9,"dominant":"contrition","rationale":"A graphic description of the horrors of the siege—starvation, suffering of children, and the punishment of Zion's iniquity."},
+    {"book":"Lamentations","chapter":5,"exaltation":1,"peace":1,"admonition":4,"contrition":8,"dominant":"contrition","rationale":"A communal prayer of lament recounting the people's suffering under foreign oppression, closing with a plea for restoration."}
+  ],
+  "speakers": [
+    {"book":"Lamentations","chapter":1,"startVerse":1,"endVerse":11,"speaker":"Jeremiah"},
+    {"book":"Lamentations","chapter":1,"startVerse":12,"endVerse":22,"speaker":"Jeremiah"},
+    {"book":"Lamentations","chapter":2,"startVerse":1,"endVerse":22,"speaker":"Jeremiah"},
+    {"book":"Lamentations","chapter":3,"startVerse":1,"endVerse":66,"speaker":"Jeremiah"},
+    {"book":"Lamentations","chapter":4,"startVerse":1,"endVerse":22,"speaker":"Jeremiah"},
+    {"book":"Lamentations","chapter":5,"startVerse":1,"endVerse":22,"speaker":"Jeremiah"}
+  ],
+  "missingCharacters": [],
+  "summaries": [
+    {"book":"Lamentations","chapter":1,"summary":"Jerusalem sits desolate and weeping, mourning like a widow; her former glory is gone, her enemies prosper, and she acknowledges that the Lord has afflicted her for her many transgressions."},
+    {"book":"Lamentations","chapter":2,"summary":"The Lord in his anger has destroyed the strongholds of Judah and cast down her beauty; the prophet weeps at the ruin of the daughter of Zion and calls her to pour out her heart before God."},
+    {"book":"Lamentations","chapter":3,"summary":"The poet descends into deep affliction and despair but finds renewed hope in God's compassions which are new every morning, and calls for self-examination and repentance."},
+    {"book":"Lamentations","chapter":4,"summary":"A vivid account of the horrors of Jerusalem's siege—the starving children, the cruelty, the punishment of her sin—contrasting her former beauty with present ruin."},
+    {"book":"Lamentations","chapter":5,"summary":"A communal prayer rehearsing the people's suffering, shame, and subjugation, closing with a plea that God would remember and restore them to their former state."}
+  ],
+  "themes": [
+    {"book":"Lamentations","chapter":1,"themes":["grief","desolation","sin","divine judgment"]},
+    {"book":"Lamentations","chapter":2,"themes":["divine wrath","destruction","mourning","judgment"]},
+    {"book":"Lamentations","chapter":3,"themes":["hope in suffering","mercy","faithfulness","repentance"]},
+    {"book":"Lamentations","chapter":4,"themes":["suffering","famine","consequences of sin","judgment"]},
+    {"book":"Lamentations","chapter":5,"themes":["prayer","suffering","restoration","remembrance"]}
+  ],
+  "crossReferences": [
+    {"book":"Lamentations","chapter":1,"verse":1,"crossReference":"Isaiah 1:21","type":"parallel","note":"Both passages lament Jerusalem's fall from faithfulness, comparing her to a once-great city now desolate."},
+    {"book":"Lamentations","chapter":3,"verse":22,"crossReference":"Psalm 136:1","type":"parallel","note":"The declaration of God's unfailing mercies echoes the psalm's refrain that his mercy endures forever."},
+    {"book":"Lamentations","chapter":3,"verse":23,"crossReference":"Malachi 3:6","type":"allusion","note":"God's faithfulness being new every morning connects to his unchanging nature declared by Malachi."},
+    {"book":"Lamentations","chapter":3,"verse":26,"crossReference":"Psalm 27:14","type":"parallel","note":"Both passages affirm the value of quietly waiting and hoping in the Lord."},
+    {"book":"Lamentations","chapter":3,"verse":40,"crossReference":"2 Corinthians 13:5","type":"allusion","note":"The call to examine and search our ways parallels Paul's exhortation to examine yourselves."}
+  ],
+  "doctrinalTopics": [
+    {"book":"Lamentations","chapter":1,"topics":["judgment","sin","accountability","suffering"]},
+    {"book":"Lamentations","chapter":2,"topics":["justice","wrath","mourning","consequences"]},
+    {"book":"Lamentations","chapter":3,"topics":["mercy","hope","faithfulness","repentance","patience"]},
+    {"book":"Lamentations","chapter":4,"topics":["judgment","consequences","suffering","accountability"]},
+    {"book":"Lamentations","chapter":5,"topics":["prayer","restoration","remembrance","repentance"]}
+  ],
+  "historicalContext": [
+    {"book":"Lamentations","chapter":1,"era":"Babylonian Exile","approxDate":"c. 586 BC","setting":"Jerusalem, after the fall"},
+    {"book":"Lamentations","chapter":2,"era":"Babylonian Exile","approxDate":"c. 586 BC","setting":"Jerusalem, ruins of the city"},
+    {"book":"Lamentations","chapter":3,"era":"Babylonian Exile","approxDate":"c. 586 BC","setting":"Jerusalem / Judah"},
+    {"book":"Lamentations","chapter":4,"era":"Babylonian Exile","approxDate":"c. 586 BC","setting":"Jerusalem, during and after the siege"},
+    {"book":"Lamentations","chapter":5,"era":"Babylonian Exile","approxDate":"c. 586 BC","setting":"Judah, under Babylonian rule"}
+  ],
+  "literaryGenres": [
+    {"book":"Lamentations","chapter":1,"genre":"poetry","subgenre":"lament"},
+    {"book":"Lamentations","chapter":2,"genre":"poetry","subgenre":"lament"},
+    {"book":"Lamentations","chapter":3,"genre":"poetry","subgenre":"individual lament"},
+    {"book":"Lamentations","chapter":4,"genre":"poetry","subgenre":"lament"},
+    {"book":"Lamentations","chapter":5,"genre":"poetry","subgenre":"communal prayer"}
+  ],
+  "notableVerses": [
+    {"book":"Lamentations","chapter":1,"verses":[{"verse":1,"reason":"The iconic opening: How doth the city sit solitary, that was full of people—one of the most poignant openings in scripture."}]},
+    {"book":"Lamentations","chapter":2,"verses":[{"verse":19,"reason":"A call to pour out the heart like water before the face of the Lord—a powerful image of desperate prayer."}]},
+    {"book":"Lamentations","chapter":3,"verses":[{"verse":22,"reason":"It is of the Lord's mercies that we are not consumed, because his compassions fail not—a cornerstone of hope."},{"verse":23,"reason":"They are new every morning: great is thy faithfulness—one of the most beloved declarations of divine reliability."},{"verse":26,"reason":"It is good that a man should both hope and quietly wait for the salvation of the Lord."}]},
+    {"book":"Lamentations","chapter":4,"verses":[]},
+    {"book":"Lamentations","chapter":5,"verses":[{"verse":21,"reason":"Turn thou us unto thee, O Lord, and we shall be turned; renew our days as of old—a closing plea for divine restoration."}]}
+  ]
+}

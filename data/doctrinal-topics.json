@@ -20376,5 +20376,911 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 37
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 1,
+    "topics": [
+      "foreordination",
+      "prophetic calling",
+      "courage",
+      "divine protection"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 2,
+    "topics": [
+      "apostasy",
+      "idolatry",
+      "covenant",
+      "living water"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 3,
+    "topics": [
+      "repentance",
+      "mercy",
+      "spiritual unfaithfulness",
+      "restoration"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 4,
+    "topics": [
+      "repentance",
+      "judgment",
+      "circumcision of the heart"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 5,
+    "topics": [
+      "justice",
+      "moral decay",
+      "accountability",
+      "warning"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 6,
+    "topics": [
+      "refining",
+      "obedience",
+      "ancient paths",
+      "watchmen"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 7,
+    "topics": [
+      "temple worship",
+      "obedience",
+      "hypocrisy",
+      "idolatry"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 8,
+    "topics": [
+      "backsliding",
+      "grief",
+      "healing",
+      "spiritual death"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 9,
+    "topics": [
+      "mourning",
+      "deceit",
+      "knowledge of god",
+      "scattering"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 10,
+    "topics": [
+      "sovereignty of god",
+      "idolatry",
+      "creation",
+      "prayer"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 11,
+    "topics": [
+      "covenant",
+      "obedience",
+      "persecution",
+      "justice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 12,
+    "topics": [
+      "theodicy",
+      "patience",
+      "judgment",
+      "mercy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 13,
+    "topics": [
+      "pride",
+      "uselessness of sin",
+      "judgment",
+      "exile"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 14,
+    "topics": [
+      "intercession",
+      "drought",
+      "false prophecy",
+      "divine will"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 15,
+    "topics": [
+      "judgment",
+      "prophetic burden",
+      "endurance",
+      "divine reassurance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 16,
+    "topics": [
+      "gathering of israel",
+      "judgment",
+      "idolatry",
+      "future hope"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 17,
+    "topics": [
+      "trust in god",
+      "agency",
+      "sabbath",
+      "heart"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 18,
+    "topics": [
+      "agency",
+      "sovereignty",
+      "repentance",
+      "potter and clay"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 19,
+    "topics": [
+      "judgment",
+      "irreversibility",
+      "idolatry",
+      "child sacrifice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 20,
+    "topics": [
+      "persecution",
+      "faith",
+      "prophetic burden",
+      "honesty with god"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 21,
+    "topics": [
+      "agency",
+      "judgment",
+      "surrender",
+      "divine opposition"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 22,
+    "topics": [
+      "justice",
+      "accountability",
+      "kingship",
+      "exile"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 23,
+    "topics": [
+      "messianic prophecy",
+      "false prophecy",
+      "righteous branch",
+      "shepherds"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 24,
+    "topics": [
+      "remnant",
+      "exile",
+      "restoration",
+      "divine discernment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 25,
+    "topics": [
+      "prophecy",
+      "judgment",
+      "seventy years",
+      "cup of wrath"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 26,
+    "topics": [
+      "prophetic courage",
+      "repentance",
+      "agency",
+      "justice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 27,
+    "topics": [
+      "submission to god",
+      "sovereignty",
+      "false prophecy",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 28,
+    "topics": [
+      "true and false prophecy",
+      "discernment",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 29,
+    "topics": [
+      "hope",
+      "prayer",
+      "gathering of israel",
+      "plans of god"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 30,
+    "topics": [
+      "restoration",
+      "healing",
+      "deliverance",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 31,
+    "topics": [
+      "new covenant",
+      "everlasting love",
+      "gathering of israel",
+      "atonement"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 32,
+    "topics": [
+      "faith",
+      "restoration",
+      "prayer",
+      "omnipotence of god"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 33,
+    "topics": [
+      "messianic prophecy",
+      "perpetual covenant",
+      "restoration",
+      "praise"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 34,
+    "topics": [
+      "covenant",
+      "freedom",
+      "hypocrisy",
+      "judgment"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 35,
+    "topics": [
+      "obedience",
+      "faithfulness",
+      "family tradition",
+      "contrast"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 36,
+    "topics": [
+      "scripture",
+      "word of god",
+      "defiance",
+      "preservation"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 37,
+    "topics": [
+      "faithfulness",
+      "imprisonment",
+      "prophecy",
+      "political pressure"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 38,
+    "topics": [
+      "courage",
+      "compassion",
+      "cowardice",
+      "trust in god"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 39,
+    "topics": [
+      "fulfillment of prophecy",
+      "exile",
+      "divine faithfulness",
+      "deliverance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 40,
+    "topics": [
+      "remnant",
+      "stewardship",
+      "governance",
+      "warning"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 41,
+    "topics": [
+      "treachery",
+      "violence",
+      "consequences",
+      "mourning"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 42,
+    "topics": [
+      "revelation",
+      "obedience",
+      "fear",
+      "conditional blessings"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 43,
+    "topics": [
+      "disobedience",
+      "pride",
+      "rejection of prophets",
+      "consequences"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 44,
+    "topics": [
+      "idolatry",
+      "defiance",
+      "judgment",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 45,
+    "topics": [
+      "humility",
+      "divine perspective",
+      "grief",
+      "stewardship"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 46,
+    "topics": [
+      "judgment of nations",
+      "sovereignty",
+      "restoration of israel"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 47,
+    "topics": [
+      "judgment",
+      "sovereignty",
+      "divine warrior"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 48,
+    "topics": [
+      "pride",
+      "judgment",
+      "complacency",
+      "consequence"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 49,
+    "topics": [
+      "judgment of nations",
+      "sovereignty",
+      "divine justice"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 50,
+    "topics": [
+      "fall of babylon",
+      "gathering of israel",
+      "divine vengeance",
+      "redemption"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 51,
+    "topics": [
+      "babylon's fall",
+      "divine justice",
+      "redemption",
+      "sovereignty"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 52,
+    "topics": [
+      "fulfillment of prophecy",
+      "exile",
+      "temple",
+      "mercy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 1,
+    "topics": [
+      "judgment",
+      "sin",
+      "accountability",
+      "suffering"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 25
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 2,
+    "topics": [
+      "justice",
+      "wrath",
+      "mourning",
+      "consequences"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 25
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 3,
+    "topics": [
+      "mercy",
+      "hope",
+      "faithfulness",
+      "repentance",
+      "patience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 25
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 4,
+    "topics": [
+      "judgment",
+      "consequences",
+      "suffering",
+      "accountability"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 25
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 5,
+    "topics": [
+      "prayer",
+      "restoration",
+      "remembrance",
+      "repentance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 25
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 1,
+    "topics": [
+      "repentance",
+      "restoration",
+      "compassion"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 2,
+    "topics": [
+      "gathering of israel",
+      "divine protection",
+      "zion"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 3,
+    "topics": [
+      "atonement",
+      "priesthood",
+      "messiah"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 4,
+    "topics": [
+      "holy ghost",
+      "temple",
+      "faith"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 5,
+    "topics": [
+      "judgment",
+      "purification"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 6,
+    "topics": [
+      "messiah",
+      "priesthood",
+      "temple"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 7,
+    "topics": [
+      "justice",
+      "mercy",
+      "obedience"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 8,
+    "topics": [
+      "zion",
+      "restoration",
+      "truth",
+      "gathering of israel"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 9,
+    "topics": [
+      "messiah",
+      "salvation",
+      "hope"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 10,
+    "topics": [
+      "gathering of israel",
+      "divine strength",
+      "covenant"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 11,
+    "topics": [
+      "rejection of christ",
+      "betrayal",
+      "apostasy"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 12,
+    "topics": [
+      "second coming",
+      "grace",
+      "repentance"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 13,
+    "topics": [
+      "atonement",
+      "purification",
+      "second coming"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 14,
+    "topics": [
+      "second coming",
+      "millennium",
+      "living water",
+      "kingship of christ"
+    ],
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
   }
 ]

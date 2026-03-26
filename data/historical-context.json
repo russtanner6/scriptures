@@ -16652,5 +16652,715 @@
     "volumeAbbrev": "OT",
     "volumeName": "Old Testament",
     "bookId": 37
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 1,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 627 BC",
+    "setting": "Anathoth / Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 2,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 627-622 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 3,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 627-622 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 4,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 627-622 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 5,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 627-622 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 6,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 627-622 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 7,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 609-608 BC",
+    "setting": "Jerusalem, the Temple",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 8,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 609-605 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 9,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 609-605 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 10,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 609-605 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 11,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 622-609 BC",
+    "setting": "Jerusalem / Anathoth",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 12,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 622-609 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 13,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 609-605 BC",
+    "setting": "Jerusalem / Euphrates",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 14,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 609-605 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 15,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 609-605 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 16,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 609-605 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 17,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 609-605 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 18,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 609-605 BC",
+    "setting": "Jerusalem, potter's house",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 19,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 609-605 BC",
+    "setting": "Jerusalem, valley of Hinnom",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 20,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 605 BC",
+    "setting": "Jerusalem, the Temple",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 21,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 589-588 BC",
+    "setting": "Jerusalem, under siege",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 22,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 609-597 BC",
+    "setting": "Jerusalem, royal palace",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 23,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 597-586 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 24,
+    "era": "Exile",
+    "approxDate": "c. 597 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 25,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 605 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 26,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 609 BC",
+    "setting": "Jerusalem, the Temple",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 27,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 594-593 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 28,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 594-593 BC",
+    "setting": "Jerusalem, the Temple",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 29,
+    "era": "Exile",
+    "approxDate": "c. 594-593 BC",
+    "setting": "Jerusalem to Babylon (letter)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 30,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 594-588 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 31,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 594-588 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 32,
+    "era": "Exile",
+    "approxDate": "c. 588 BC",
+    "setting": "Jerusalem, court of the guard",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 33,
+    "era": "Exile",
+    "approxDate": "c. 588 BC",
+    "setting": "Jerusalem, court of the guard",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 34,
+    "era": "Exile",
+    "approxDate": "c. 589-588 BC",
+    "setting": "Jerusalem, under siege",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 35,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 599-597 BC",
+    "setting": "Jerusalem, the Temple",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 36,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 605-604 BC",
+    "setting": "Jerusalem, the Temple / royal palace",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 37,
+    "era": "Exile",
+    "approxDate": "c. 588-587 BC",
+    "setting": "Jerusalem, under siege",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 38,
+    "era": "Exile",
+    "approxDate": "c. 588-587 BC",
+    "setting": "Jerusalem, cistern / court of the guard",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 39,
+    "era": "Exile",
+    "approxDate": "c. 586 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 40,
+    "era": "Exile",
+    "approxDate": "c. 586 BC",
+    "setting": "Mizpah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 41,
+    "era": "Exile",
+    "approxDate": "c. 586 BC",
+    "setting": "Mizpah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 42,
+    "era": "Exile",
+    "approxDate": "c. 586 BC",
+    "setting": "Mizpah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 43,
+    "era": "Exile",
+    "approxDate": "c. 586-585 BC",
+    "setting": "Tahpanhes, Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 44,
+    "era": "Exile",
+    "approxDate": "c. 585-580 BC",
+    "setting": "Pathros, Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 45,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 605 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 46,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 605 BC",
+    "setting": "Carchemish / Egypt",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 47,
+    "era": "Divided Kingdom",
+    "approxDate": "c. 609-605 BC",
+    "setting": "Philistia",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 48,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 605-586 BC",
+    "setting": "Moab",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 49,
+    "era": "Divided Kingdom / Exile",
+    "approxDate": "c. 605-586 BC",
+    "setting": "Ammon, Edom, Damascus, Arabia, Elam",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 50,
+    "era": "Exile",
+    "approxDate": "c. 594-593 BC",
+    "setting": "Babylon (prophetic)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 51,
+    "era": "Exile",
+    "approxDate": "c. 594-593 BC",
+    "setting": "Babylon (prophetic)",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 52,
+    "era": "Exile",
+    "approxDate": "c. 586-561 BC",
+    "setting": "Jerusalem / Babylon",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 24
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 1,
+    "era": "Babylonian Exile",
+    "approxDate": "c. 586 BC",
+    "setting": "Jerusalem, after the fall",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 25
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 2,
+    "era": "Babylonian Exile",
+    "approxDate": "c. 586 BC",
+    "setting": "Jerusalem, ruins of the city",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 25
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 3,
+    "era": "Babylonian Exile",
+    "approxDate": "c. 586 BC",
+    "setting": "Jerusalem / Judah",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 25
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 4,
+    "era": "Babylonian Exile",
+    "approxDate": "c. 586 BC",
+    "setting": "Jerusalem, during and after the siege",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 25
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 5,
+    "era": "Babylonian Exile",
+    "approxDate": "c. 586 BC",
+    "setting": "Judah, under Babylonian rule",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 25
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 1,
+    "era": "Post-exile / Persian Period",
+    "approxDate": "c. 520 BC",
+    "setting": "Jerusalem, during temple rebuilding",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 2,
+    "era": "Post-exile / Persian Period",
+    "approxDate": "c. 520 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 3,
+    "era": "Post-exile / Persian Period",
+    "approxDate": "c. 520 BC",
+    "setting": "Jerusalem, heavenly court",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 4,
+    "era": "Post-exile / Persian Period",
+    "approxDate": "c. 520 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 5,
+    "era": "Post-exile / Persian Period",
+    "approxDate": "c. 520 BC",
+    "setting": "Jerusalem / visionary",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 6,
+    "era": "Post-exile / Persian Period",
+    "approxDate": "c. 520 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 7,
+    "era": "Post-exile / Persian Period",
+    "approxDate": "c. 518 BC",
+    "setting": "Bethel / Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 8,
+    "era": "Post-exile / Persian Period",
+    "approxDate": "c. 518 BC",
+    "setting": "Jerusalem",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 9,
+    "era": "Post-exile / Persian Period",
+    "approxDate": "c. 520-480 BC",
+    "setting": "Syria, Philistia, Zion",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 10,
+    "era": "Post-exile / Persian Period",
+    "approxDate": "c. 520-480 BC",
+    "setting": "Judah and the diaspora",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 11,
+    "era": "Post-exile / Persian Period",
+    "approxDate": "c. 520-480 BC",
+    "setting": "Judah / prophetic allegory",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 12,
+    "era": "Post-exile / Persian Period",
+    "approxDate": "c. 520-480 BC",
+    "setting": "Jerusalem / eschatological",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 13,
+    "era": "Post-exile / Persian Period",
+    "approxDate": "c. 520-480 BC",
+    "setting": "Jerusalem / eschatological",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 14,
+    "era": "Post-exile / Persian Period",
+    "approxDate": "c. 520-480 BC",
+    "setting": "Jerusalem / Mount of Olives / eschatological",
+    "volumeAbbrev": "OT",
+    "volumeName": "Old Testament",
+    "bookId": 38
   }
 ]
