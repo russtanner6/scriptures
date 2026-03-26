@@ -297,6 +297,11 @@ export default function ChapterInsights({
           from { opacity: 0; transform: translateY(-8px); }
           to { opacity: 1; transform: translateY(0); }
         }
+        @keyframes insightsGlow {
+          0% { text-shadow: none; color: rgba(255,255,255,0.85); }
+          30% { text-shadow: 0 0 8px rgba(200,220,255,0.6), 0 0 16px rgba(200,220,255,0.3); color: #fff; }
+          100% { text-shadow: none; color: rgba(255,255,255,0.85); }
+        }
         @keyframes expandDown {
           from { max-height: 0; opacity: 0; }
           to { max-height: 1200px; opacity: 1; }
@@ -424,7 +429,7 @@ export default function ChapterInsights({
             whiteSpace: "nowrap",
           }}
         >
-          {!isExpanded && <span style={{ textTransform: "uppercase", letterSpacing: "0.08em", color: lightMode ? "#333" : "rgba(255,255,255,0.85)" }}>Insights</span>}
+          {!isExpanded && <span style={{ textTransform: "uppercase", letterSpacing: "0.08em", color: lightMode ? "#333" : "rgba(255,255,255,0.85)", animation: "insightsGlow 2s ease-in-out 1.5s 1" }}>Insights</span>}
           <span
             style={{
               transform: isExpanded ? "rotate(180deg)" : "rotate(0)",
