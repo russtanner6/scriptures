@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { getContrastText } from "@/lib/constants";
 
 export interface BarItem {
@@ -14,13 +15,22 @@ export default function HorizontalBarList({
   color = "var(--accent)",
   gradientEnd,
   onBarClick,
+  staggerDelay = 60,
 }: {
   items: BarItem[];
   color?: string;
   gradientEnd?: string;
   onBarClick?: (item: BarItem) => void;
+  staggerDelay?: number;
 }) {
   const max = Math.max(...items.map((b) => b.value), 1);
+
+  // Staggered entrance — bars animate in one by one
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    const t = setTimeout(() => setMounted(true), 50);
+    return () => clearTimeout(t);
+  }, [items]);
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
@@ -41,6 +51,9 @@ export default function HorizontalBarList({
               alignItems: "center",
               gap: "10px",
               fontSize: "0.85rem",
+              opacity: mounted ? 1 : 0,
+              transform: mounted ? "translateX(0)" : "translateX(-12px)",
+              transition: `opacity 0.4s ease ${i * staggerDelay}ms, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1) ${i * staggerDelay}ms`,
             }}
             className="bar-list-row-v2"
           >
@@ -62,47 +75,52 @@ export default function HorizontalBarList({
             {/* Bar track with fill and number inside */}
             <div
               style={{
-                height: "30px",
+                height: "28px",
                 background: "rgba(0, 0, 0, 0.25)",
-                borderRadius: "8px",
+                borderRadius: "6px",
                 position: "relative",
                 display: "flex",
                 alignItems: "center",
+                cursor: isClickable ? "pointer" : "default",
               }}
+              onClick={() => isClickable && onBarClick && onBarClick(item)}
+              onMouseEnter={(e) => { if (isClickable) e.currentTarget.style.filter = "brightness(1.15)"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.filter = ""; }}
             >
-              {/* Colored fill — inset inside the trough */}
+              {/* Colored fill */}
               <div
                 style={{
                   position: "absolute",
-                  top: "4px",
-                  left: "4px",
-                  height: "calc(100% - 8px)",
-                  width: `calc(${pct}% - 8px)`,
-                  minWidth: pct > 0 ? "14px" : "0",
+                  top: "0",
+                  left: "0",
+                  height: "100%",
+                  width: mounted ? `${pct}%` : "0%",
+                  minWidth: mounted && pct > 0 ? "14px" : "0",
                   background: gradient,
-                  borderRadius: "5px",
-                  transition: "width 0.6s cubic-bezier(0.22, 1, 0.36, 1)",
+                  borderRadius: "6px",
+                  transition: `width 1s cubic-bezier(0.22, 1, 0.36, 1) ${i * staggerDelay + 100}ms`,
                 }}
               />
 
-              {/* Number — outside bar unless bar is nearly full (>95%) */}
+              {/* Value label */}
               {item.value > 0 && (
                 <span
                   style={{
                     position: "absolute",
-                    left: pct > 95
-                      ? `calc(${pct}% - 14px)`
-                      : `calc(${Math.max(pct, 6)}% + 12px)`,
-                    transform: pct > 95 ? "translateX(-100%)" : undefined,
+                    right: pct > 85 ? "8px" : undefined,
+                    left: pct > 85 ? undefined : `calc(${Math.max(pct, 4)}% + 8px)`,
                     fontWeight: 700,
-                    fontSize: "0.78rem",
+                    fontSize: "0.72rem",
                     fontVariantNumeric: "tabular-nums",
-                    color: pct > 95 ? getContrastText(barColor) : "#fafafa",
-                    textShadow: pct > 95 && getContrastText(barColor) === "#fff" ? "0 1px 3px rgba(0,0,0,0.4)" : "none",
-                    lineHeight: "30px",
+                    color: pct > 85 ? getContrastText(barColor) : "rgba(255,255,255,0.7)",
+                    textShadow: pct > 85 ? "0 1px 2px rgba(0,0,0,0.3)" : "none",
+                    lineHeight: "28px",
+                    letterSpacing: "0.3px",
+                    opacity: mounted ? 1 : 0,
+                    transition: `opacity 0.3s ease ${i * staggerDelay + 600}ms`,
                   }}
                 >
-                  {item.value}
+                  {item.value.toLocaleString()}
                 </span>
               )}
             </div>
