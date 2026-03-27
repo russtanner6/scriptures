@@ -14,6 +14,7 @@ import ResourceMarker, { getResourceTypeColor } from "./ResourceMarker";
 import ResourcePanel from "./ResourcePanel";
 import WordExplorerPanel from "./WordExplorerPanel";
 import LoadingBar from "./LoadingBar";
+import SegmentedToggle from "./SegmentedToggle";
 import NavMenu from "./NavMenu";
 import HamburgerIcon from "./HamburgerIcon";
 import { markChapterRead, isChapterRead, getReadChaptersForBook, getVolumeProgress } from "@/lib/reading-progress";
@@ -1794,75 +1795,17 @@ export default function ScriptureReader() {
                 )}
                 {/* Context Nuggets toggle hidden — always on. Preserved for future re-enable. */}
                 {/* Tone overlay toggle — removed (not useful enough to show) */}
-                {/* Three-way reading mode sliding toggle — always shows all 3 modes */}
-                {(() => {
-                  const modes: ReadingMode[] = ["original", "modern", "narration"];
-                  const labels: Record<ReadingMode, string> = { original: "Original", modern: "Modern", narration: "Mommy Mode" };
-                  const activeIndex = modes.indexOf(readingMode);
-                  const effectiveIndex = activeIndex >= 0 ? activeIndex : 0;
-                  const pillWidthPercent = 100 / modes.length;
-                  const activeBlue = "#3B82F6";
-                  return (
-                    <div style={{
-                      display: "inline-flex",
-                      position: "relative",
-                      borderRadius: "10px",
-                      border: "none",
-                      background: "#121217",
-                      padding: "4px",
-                    }}>
-                      {/* Sliding indicator */}
-                      <div style={{
-                        position: "absolute",
-                        top: "4px",
-                        bottom: "4px",
-                        left: `calc(${effectiveIndex * pillWidthPercent}% + 4px)`,
-                        width: `calc(${pillWidthPercent}% - 8px)`,
-                        borderRadius: "7px",
-                        background: activeBlue,
-                        transition: "left 0.35s cubic-bezier(0.22, 1, 0.36, 1), width 0.35s cubic-bezier(0.22, 1, 0.36, 1)",
-                        zIndex: 0,
-                      }} />
-                      {modes.map((mode) => {
-                        const isActive = readingMode === mode;
-                        return (
-                          <button
-                            key={mode}
-                            onClick={() => {
-                              setReadingMode(mode);
-                              localStorage.setItem("reader-reading-mode", mode);
-                              analytics.readingModeToggle(mode);
-                            }}
-                            style={{
-                              position: "relative",
-                              zIndex: 1,
-                              display: "inline-flex",
-                              alignItems: "center",
-                              justifyContent: "center",
-                              padding: "7px 14px",
-                              borderRadius: "7px",
-                              border: "none",
-                              background: "transparent",
-                              color: isActive ? "#fff" : "rgba(255,255,255,0.35)",
-                              fontSize: "0.65rem",
-                              fontWeight: 600,
-                              cursor: "pointer",
-                              fontFamily: "inherit",
-                              transition: "color 0.3s",
-                              whiteSpace: "nowrap",
-                              letterSpacing: "0.3px",
-                              lineHeight: "1",
-                            }}
-                          >
-                            {labels[mode]}
-                          </button>
-                        );
-                      })}
-                    </div>
-                  );
-                })()}
-                {/* Help icon — explains reading modes */}
-                {/* Help ? button removed — toggle is self-explanatory */}
+                {/* Three-way reading mode segmented control — always shows all 3 modes */}
+                <SegmentedToggle
+                  modes={["original", "modern", "narration"] as ReadingMode[]}
+                  labels={{ original: "Original", modern: "Modern", narration: "Mommy Mode" }}
+                  active={readingMode}
+                  onChange={(mode) => {
+                    setReadingMode(mode);
+                    localStorage.setItem("reader-reading-mode", mode);
+                    analytics.readingModeToggle(mode);
+                  }}
+                />
               </div>
 
               {/* Reading mode help — slide-in panel */}
