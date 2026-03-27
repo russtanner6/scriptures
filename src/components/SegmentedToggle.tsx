@@ -79,6 +79,8 @@ export default function SegmentedToggle<T extends string>({
             key={mode}
             data-seg-btn
             onClick={() => onChange(mode)}
+            onMouseEnter={(e) => { if (!isActive) e.currentTarget.style.color = "rgba(255,255,255,0.95)"; }}
+            onMouseLeave={(e) => { if (!isActive) e.currentTarget.style.color = "rgba(255,255,255,0.55)"; }}
             style={{
               position: "relative",
               zIndex: 1,
@@ -89,12 +91,12 @@ export default function SegmentedToggle<T extends string>({
               borderRadius: "7px",
               border: "none",
               background: "transparent",
-              color: isActive ? "#fff" : "rgba(255,255,255,0.35)",
+              color: isActive ? "#fff" : "rgba(255,255,255,0.55)",
               fontSize: "0.65rem",
               fontWeight: 600,
               cursor: "pointer",
               fontFamily: "inherit",
-              transition: "color 0.3s",
+              transition: "color 0.2s",
               whiteSpace: "nowrap",
               letterSpacing: "0.3px",
               lineHeight: "1",

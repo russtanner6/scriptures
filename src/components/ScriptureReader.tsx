@@ -1750,9 +1750,7 @@ export default function ScriptureReader() {
           {!isLoading && (chapterSpeakers.length > 0 || chapterResources.length > 0 || hasModernText || hasNarration || verses.length > 0) && (() => {
             const toggleAccent = lightMode ? "#4A7FD4" : "#5B8DEF";
             return (
-            <div style={{ marginBottom: "24px", marginTop: "20px", textAlign: "center", opacity: 0.65, transition: "opacity 0.2s" }}
-              onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
-              onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.65")}
+            <div style={{ marginBottom: "24px", marginTop: "20px", textAlign: "center", opacity: 1, transition: "opacity 0.2s" }}
             >
               <div style={{ display: "flex", alignItems: "stretch", gap: "6px", flexWrap: "wrap", justifyContent: "center" }}>
                 {/* Speakers toggle hidden — always on. Preserved for future re-enable. */}
