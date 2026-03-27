@@ -323,15 +323,13 @@ export default function ChapterInsights({
           to { transform: translateY(-20px); opacity: 0; max-height: 0; }
         }
       `}</style>
+    {/* Sticky collapsed bar */}
     <div
       style={{
-        marginBottom: "24px",
-        borderRadius: flatTopCorners ? "0" : "8px",
-        border: flatTopCorners ? "none" : `1px solid ${theme.border}`,
-        animation: "insightsSlideIn 0.4s ease-out",
         position: "sticky" as const,
         top: 0,
         zIndex: 20,
+        animation: "insightsSlideIn 0.4s ease-out",
         // Full width on mobile (escape parent padding), match image width on desktop
         ...(flatTopCorners ? {
           marginLeft: isMobile ? "-20px" : "-32px",
@@ -340,7 +338,6 @@ export default function ChapterInsights({
         } : {}),
       }}
     >
-      {/* Collapsed bar — sticky to top below header */}
       <button
         onClick={() => {
           if (!isExpanded) {
@@ -360,7 +357,7 @@ export default function ChapterInsights({
           alignItems: "center",
           justifyContent: "space-between",
           padding: isMobile ? "14px 14px" : "14px 16px",
-          background: lightMode ? "rgba(0, 0, 0, 0.12)" : "rgba(0, 0, 0, 0.55)",
+          background: lightMode ? "#e8e8e8" : "#222230",
           border: "none",
           borderRadius: 0,
           cursor: "pointer",
@@ -461,8 +458,9 @@ export default function ChapterInsights({
           </span>
         </div>
       </button>
+    </div>
 
-      {/* Expanded content */}
+      {/* Expanded content — NOT sticky, pushes verses down in normal flow */}
       {showContent && (
         <div
           style={{
@@ -474,11 +472,18 @@ export default function ChapterInsights({
               ? "expandDown 0.3s ease-out forwards"
               : "collapseUp 0.25s ease-in forwards",
             overflow: "hidden",
-            background: "rgba(0,0,0,0.15)",
+            background: "#272733",
             borderTop: "none",
             borderLeft: "none",
             borderRight: "none",
             borderBottom: isExpanded ? "2px solid rgba(0,0,0,0.25)" : "none",
+            marginBottom: "24px",
+            // Full width on mobile
+            ...(flatTopCorners ? {
+              marginLeft: isMobile ? "-20px" : "-32px",
+              marginRight: isMobile ? "-20px" : "-32px",
+              width: isMobile ? "calc(100% + 40px)" : "calc(100% + 64px)",
+            } : {}),
           }}
         >
           {/* ── Section 1: At a Glance ── */}
@@ -821,7 +826,6 @@ export default function ChapterInsights({
 
         </div>
       )}
-    </div>
     </>
   );
 }

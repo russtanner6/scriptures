@@ -1682,16 +1682,7 @@ export default function ScriptureReader() {
                         }}
                       />
                       {/* Uniform warm base glow so dark edges still show something */}
-                      <div
-                        style={{
-                          position: "absolute",
-                          inset: "5%",
-                          borderRadius: "50%",
-                          background: "radial-gradient(ellipse at center, rgba(180, 160, 120, 0.12) 0%, transparent 70%)",
-                          filter: "blur(30px)",
-                          pointerEvents: "none",
-                        }}
-                      />
+                      {/* Base glow removed — blurred image clone is sufficient */}
                     </div>
                   )}
                   <div
