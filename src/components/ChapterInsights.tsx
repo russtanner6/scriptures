@@ -201,7 +201,7 @@ export default function ChapterInsights({
   const typeColors = lightMode ? SPEAKER_TYPE_COLORS_LIGHT : SPEAKER_TYPE_COLORS_DARK;
   const otherPalette = lightMode ? OTHER_PALETTE_LIGHT : OTHER_PALETTE_DARK;
   let otherIndex = 0;
-  const speakerMap = new Map<string, { color: string; verseCount: number; speakerType: SpeakerType }>();
+  const speakerMap = new Map<string, { color: string; verseCount: number; speakerType: SpeakerType; originalNames: Set<string> }>();
   speakers.forEach((s) => {
     const name = displaySpeakerName(s.speaker, s.speakerType, volumeAbbrev);
     const existing = speakerMap.get(name);
@@ -209,21 +209,31 @@ export default function ChapterInsights({
     const count = cappedEnd - s.verseStart + 1;
     if (existing) {
       existing.verseCount += count;
+      existing.originalNames.add(s.speaker);
     } else {
       const color = s.speakerType === "other"
         ? otherPalette[otherIndex++ % otherPalette.length]
         : typeColors[s.speakerType];
-      speakerMap.set(name, { color, verseCount: count, speakerType: s.speakerType });
+      speakerMap.set(name, { color, verseCount: count, speakerType: s.speakerType, originalNames: new Set([s.speaker]) });
     }
   });
 
   function getSpeakerInfo(charName: string, charAliases: string[]) {
     const namesToCheck = [charName, ...charAliases];
     for (const n of namesToCheck) {
+      // Direct match on display name
       const direct = speakerMap.get(n);
       if (direct) return direct;
+      // Case-insensitive match on display name
       for (const [speakerName, info] of speakerMap) {
         if (speakerName.toLowerCase() === n.toLowerCase()) return info;
+      }
+      // Match against original speaker names (e.g. "Jesus Christ" before display transform)
+      for (const [, info] of speakerMap) {
+        if (info.originalNames.has(n)) return info;
+        for (const orig of info.originalNames) {
+          if (orig.toLowerCase() === n.toLowerCase()) return info;
+        }
       }
     }
     return null;
@@ -319,6 +329,9 @@ export default function ChapterInsights({
         borderRadius: flatTopCorners ? "0" : "8px",
         border: flatTopCorners ? "none" : `1px solid ${theme.border}`,
         animation: "insightsSlideIn 0.4s ease-out",
+        position: "sticky" as const,
+        top: 0,
+        zIndex: 20,
         // Full width on mobile (escape parent padding), match image width on desktop
         ...(flatTopCorners ? {
           marginLeft: isMobile ? "-20px" : "-32px",
@@ -353,8 +366,6 @@ export default function ChapterInsights({
           cursor: "pointer",
           fontFamily: "inherit",
           gap: "12px",
-          position: "sticky" as const,
-          top: 0,
           zIndex: 10,
         }}
       >
@@ -649,7 +660,7 @@ export default function ChapterInsights({
               }
             }
 
-            const neutralColor = lightMode ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.06)";
+            const neutralColor = lightMode ? "rgba(0,0,0,0.12)" : "rgba(255,255,255,0.15)";
 
             return (
               <>
@@ -657,7 +668,7 @@ export default function ChapterInsights({
                   <SectionLabel>Speaker Timeline</SectionLabel>
                   <div
                     style={{
-                      background: lightMode ? "rgba(0,0,0,0.12)" : "rgba(0,0,0,0.35)",
+                      background: lightMode ? "rgba(0,0,0,0.12)" : "rgba(0,0,0,0.5)",
                       borderRadius: "2px",
                       padding: "3px",
                       boxShadow: lightMode

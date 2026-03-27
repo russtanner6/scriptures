@@ -1319,8 +1319,7 @@ export default function ScriptureReader() {
         {/* Top bar */}
         <div
           style={{
-            position: "sticky",
-            top: 0,
+            position: "relative",
             zIndex: 50,
             background: "rgba(17, 17, 22, 0.95)",
             backdropFilter: "blur(12px)",
