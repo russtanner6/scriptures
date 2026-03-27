@@ -1801,25 +1801,24 @@ export default function ScriptureReader() {
                   const activeIndex = modes.indexOf(readingMode);
                   const effectiveIndex = activeIndex >= 0 ? activeIndex : 0;
                   const pillWidthPercent = 100 / modes.length;
-                  const activeBlue = lightMode ? "#5B8DEF" : "#7BA8FF";
+                  const activeBlue = "#3B82F6";
                   return (
                     <div style={{
                       display: "inline-flex",
                       position: "relative",
-                      borderRadius: "8px",
+                      borderRadius: "10px",
                       border: "none",
                       background: "#121217",
-                      padding: "2px",
-                      overflow: "hidden",
+                      padding: "4px",
                     }}>
                       {/* Sliding indicator */}
                       <div style={{
                         position: "absolute",
-                        top: "2px",
-                        bottom: "2px",
-                        left: `calc(${effectiveIndex * pillWidthPercent}% + 2px)`,
-                        width: `calc(${pillWidthPercent}% - 4px)`,
-                        borderRadius: "6px",
+                        top: "4px",
+                        bottom: "4px",
+                        left: `calc(${effectiveIndex * pillWidthPercent}% + 4px)`,
+                        width: `calc(${pillWidthPercent}% - 8px)`,
+                        borderRadius: "7px",
                         background: activeBlue,
                         transition: "left 0.35s cubic-bezier(0.22, 1, 0.36, 1), width 0.35s cubic-bezier(0.22, 1, 0.36, 1)",
                         zIndex: 0,
@@ -1840,18 +1839,19 @@ export default function ScriptureReader() {
                               display: "inline-flex",
                               alignItems: "center",
                               justifyContent: "center",
-                              padding: "4px 10px",
-                              borderRadius: "6px",
+                              padding: "7px 14px",
+                              borderRadius: "7px",
                               border: "none",
                               background: "transparent",
                               color: isActive ? "#fff" : "rgba(255,255,255,0.35)",
-                              fontSize: "0.62rem",
+                              fontSize: "0.65rem",
                               fontWeight: 600,
                               cursor: "pointer",
                               fontFamily: "inherit",
                               transition: "color 0.3s",
                               whiteSpace: "nowrap",
                               letterSpacing: "0.3px",
+                              lineHeight: "1",
                             }}
                           >
                             {labels[mode]}
@@ -1862,32 +1862,7 @@ export default function ScriptureReader() {
                   );
                 })()}
                 {/* Help icon — explains reading modes */}
-                {(hasModernText || hasNarration) && (
-                  <button
-                    onClick={() => setShowReadingModeHelp(true)}
-                    title="About reading modes"
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      alignSelf: "center",
-                      width: "22px",
-                      height: "22px",
-                      borderRadius: "50%",
-                      border: "none",
-                      background: lightMode ? "#c0c0c0" : "rgba(255,255,255,0.18)",
-                      color: lightMode ? "#ffffff" : "#1a1a1a",
-                      fontSize: "0.65rem",
-                      fontWeight: 700,
-                      cursor: "pointer",
-                      fontFamily: "inherit",
-                      transition: "all 0.15s",
-                      flexShrink: 0,
-                    }}
-                  >
-                    ?
-                  </button>
-                )}
+                {/* Help ? button removed — toggle is self-explanatory */}
               </div>
 
               {/* Reading mode help — slide-in panel */}
