@@ -26,11 +26,19 @@ export default function LoadingBar({
       <div
         style={{
           width: "100%",
+          maxWidth: "20%",
           height: `${height}px`,
           overflow: "hidden",
+          margin: "0 auto",
           ...style,
         }}
+        className="loading-bar-track"
       >
+        <style>{`
+          @media (max-width: 768px) {
+            .loading-bar-track { max-width: 50% !important; }
+          }
+        `}</style>
         <div
           style={{
             height: "100%",
