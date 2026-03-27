@@ -30,6 +30,7 @@ import { chartScrollbarPlugin } from "@/lib/chart-scrollbar-plugin";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { useIsMobile } from "@/lib/useIsMobile";
 import { analytics } from "@/lib/analytics";
+import LoadingBar from "./LoadingBar";
 
 ChartJS.register(
   CategoryScale,
@@ -1047,6 +1048,13 @@ export default function WordFrequencyTool() {
             )}
           </div>
         </>
+      )}
+
+      {/* Loading bar */}
+      {isLoading && (
+        <div style={{ padding: "60px 20px" }}>
+          <LoadingBar />
+        </div>
       )}
 
       {/* Empty state with preset buttons */}

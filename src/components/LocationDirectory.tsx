@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
 import { useSearchParams } from "next/navigation";
 import type { ScriptureLocation, LocationType } from "@/lib/types";
+import LoadingBar from "./LoadingBar";
 import { VOLUME_COLORS } from "@/lib/constants";
 import VolumeTooltip from "./VolumeTooltip";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
@@ -179,8 +180,8 @@ export default function LocationDirectory() {
 
   if (isLoading) {
     return (
-      <div style={{ padding: "60px", textAlign: "center", color: "var(--text-muted)" }}>
-        Loading locations...
+      <div style={{ padding: "60px 20px" }}>
+        <LoadingBar />
       </div>
     );
   }

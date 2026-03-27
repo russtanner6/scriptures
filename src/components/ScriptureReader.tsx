@@ -13,6 +13,7 @@ import VersePopover from "./VersePopover";
 import ResourceMarker, { getResourceTypeColor } from "./ResourceMarker";
 import ResourcePanel from "./ResourcePanel";
 import WordExplorerPanel from "./WordExplorerPanel";
+import LoadingBar from "./LoadingBar";
 import NavMenu from "./NavMenu";
 import HamburgerIcon from "./HamburgerIcon";
 import { markChapterRead, isChapterRead, getReadChaptersForBook, getVolumeProgress } from "@/lib/reading-progress";
@@ -1739,8 +1740,8 @@ export default function ScriptureReader() {
           })()}
 
           {isLoading && (
-            <div style={{ textAlign: "center", padding: "60px", color: theme.textMuted }}>
-              Loading...
+            <div style={{ padding: "80px 20px" }}>
+              <LoadingBar />
             </div>
           )}
 

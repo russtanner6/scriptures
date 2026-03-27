@@ -5,6 +5,7 @@ import { usePreferencesContext } from "@/components/PreferencesProvider";
 import { useIsMobile } from "@/lib/useIsMobile";
 import { VOLUME_COLORS } from "@/lib/constants";
 import { SENTIMENT_CATEGORIES } from "@/lib/sentiment-lexicon";
+import LoadingBar from "./LoadingBar";
 import { VOLUME_ABBREV_TO_SLUG, bookNameToSlug } from "@/lib/scripture-slugs";
 import {
   Chart as ChartJS,
@@ -396,8 +397,8 @@ export default function SentimentArcTool() {
 
       {/* Loading */}
       {isLoading && (
-        <div style={{ textAlign: "center", padding: "40px", color: "var(--text-muted)" }}>
-          Analyzing...
+        <div style={{ padding: "40px 20px" }}>
+          <LoadingBar />
         </div>
       )}
 

@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import type { ScriptureCharacter } from "@/lib/types";
+import LoadingBar from "./LoadingBar";
 import { VOLUME_COLORS } from "@/lib/constants";
 import VolumeTooltip from "./VolumeTooltip";
 import CharacterDetailPanel from "./CharacterDetailPanel";
@@ -173,8 +174,8 @@ export default function CharacterDirectory() {
 
   if (isLoading) {
     return (
-      <div style={{ padding: "60px", textAlign: "center", color: "var(--text-muted)" }}>
-        Loading characters...
+      <div style={{ padding: "60px 20px" }}>
+        <LoadingBar />
       </div>
     );
   }

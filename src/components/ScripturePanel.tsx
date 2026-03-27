@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { getVerseUrl } from "@/lib/scripture-urls";
 import { useBackToClose } from "@/lib/useBackToClose";
+import LoadingBar from "./LoadingBar";
 import { useIsMobile } from "@/lib/useIsMobile";
 import type { Verse, ScripturePanelState } from "@/lib/types";
 
@@ -315,14 +316,8 @@ export default function ScripturePanel({
           }}
         >
           {isLoading && (
-            <div
-              style={{
-                textAlign: "center",
-                padding: "40px",
-                color: "#999",
-              }}
-            >
-              Loading...
+            <div style={{ padding: "40px 20px" }}>
+              <LoadingBar />
             </div>
           )}
 
