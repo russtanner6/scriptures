@@ -2172,9 +2172,9 @@ export default function ScriptureReader() {
                           ? `3px solid ${verseTone.color}30`
                           : "3px solid transparent",
                       paddingLeft: "10px",
-                      paddingTop: speakerColor || verseTone ? "4px" : undefined,
-                      paddingBottom: speakerColor || verseTone ? "4px" : undefined,
-                      paddingRight: speakerColor || verseTone ? "8px" : undefined,
+                      paddingTop: speakerColor || verseTone ? "8px" : undefined,
+                      paddingBottom: speakerColor || verseTone ? "10px" : undefined,
+                      paddingRight: speakerColor || verseTone ? "10px" : undefined,
                       background: speakerColor
                         ? `${speakerColor}08`
                         : verseTone
