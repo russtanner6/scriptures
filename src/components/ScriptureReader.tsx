@@ -47,7 +47,7 @@ export default function ScriptureReader() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [_lightMode, setLightMode] = useState(false);
   const [fontSize, setFontSize] = useState(1); // 0=small, 1=medium, 2=large
-  const [imageLoaded, setImageLoaded] = useState(false);
+  // imageLoaded state removed — ambilight disabled
   const [menuOpen, setMenuOpen] = useState(false);
   const [exploredWord, setExploredWord] = useState<string | null>(null);
 
@@ -1652,39 +1652,7 @@ export default function ScriptureReader() {
                       }}
                     />
                   )}
-                  {/* Ambilight glow — CSS-only: blurred clone of the image projected behind */}
-                  {typeof landscapeImage === "string" && imageLoaded && (
-                    <div
-                      style={{
-                        position: "absolute",
-                        top: "-25px",
-                        bottom: "0",
-                        left: "-25px",
-                        right: "-25px",
-                        zIndex: 0,
-                        pointerEvents: "none",
-                        overflow: "visible",
-                        animation: "fadeIn 2s ease-out 0.5s both",
-                      }}
-                    >
-                      {/* Blurred image clone — projects actual image colors */}
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={landscapeImage}
-                        alt=""
-                        aria-hidden="true"
-                        style={{
-                          width: "100%",
-                          height: "100%",
-                          objectFit: "cover",
-                          filter: "blur(40px) saturate(2.0) brightness(1.4)",
-                          opacity: 0.6,
-                        }}
-                      />
-                      {/* Uniform warm base glow so dark edges still show something */}
-                      {/* Base glow removed — blurred image clone is sufficient */}
-                    </div>
-                  )}
+                  {/* Ambilight glow removed — kept code commented for future revival if needed */}
                   <div
                     style={{
                       width: "100%",
@@ -1704,7 +1672,7 @@ export default function ScriptureReader() {
                       <img
                         src={landscapeImage}
                         alt={`${bookKey} landscape`}
-                        onLoad={() => setImageLoaded(true)}
+                        onLoad={() => {}}
                         style={{
                           width: "100%",
                           height: "100%",
