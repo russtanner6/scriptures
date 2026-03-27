@@ -2224,7 +2224,7 @@ export default function ScriptureReader() {
                       paddingTop: "1px",
                       background: selectedVerses.has(v.verse)
                         ? volColor
-                        : "rgba(255,255,255,0.10)",
+                        : "rgba(255,255,255,0.05)",
                       color: "#fff",
                       flexShrink: 0,
                       transition: "all 0.15s",
