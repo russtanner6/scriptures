@@ -2229,7 +2229,7 @@ export default function ScriptureReader() {
                       flexShrink: 0,
                       transition: "all 0.15s",
                       verticalAlign: "top",
-                      marginTop: "4px",
+                      marginTop: `calc((${fontSizes[fontSize].body} * 1.9 - 24px) / 2)`,
                     }}
                     title={selectionMode ? "Click to select/deselect" : "Click to select verse"}
                   >
