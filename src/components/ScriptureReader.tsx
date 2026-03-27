@@ -1801,7 +1801,7 @@ export default function ScriptureReader() {
                     if (mode === "narration") return hasNarration;
                     return true;
                   }) as ReadingMode[];
-                  const labels: Record<ReadingMode, string> = { original: "Original", modern: "Modern", narration: "Narration" };
+                  const labels: Record<ReadingMode, string> = { original: "Original", modern: "Modern", narration: "Mommy Mode" };
                   const activeIndex = modes.indexOf(readingMode);
                   const effectiveIndex = activeIndex >= 0 ? activeIndex : 0;
                   const pillWidthPercent = 100 / modes.length;
@@ -1809,9 +1809,9 @@ export default function ScriptureReader() {
                     <div style={{
                       display: "inline-flex",
                       position: "relative",
-                      borderRadius: "8px",
-                      border: "1px solid rgba(0,0,0,0.4)",
-                      background: lightMode ? "rgba(0,0,0,0.03)" : "rgba(0,0,0,0.55)",
+                      borderRadius: "10px",
+                      border: "1px solid rgba(255,255,255,0.06)",
+                      background: lightMode ? "rgba(0,0,0,0.05)" : "rgba(0,0,0,0.45)",
                       padding: "3px",
                       overflow: "hidden",
                     }}>
@@ -1822,10 +1822,11 @@ export default function ScriptureReader() {
                         bottom: "3px",
                         left: `calc(${effectiveIndex * pillWidthPercent}% + 3px)`,
                         width: `calc(${pillWidthPercent}% - 6px)`,
-                        borderRadius: "6px",
+                        borderRadius: "8px",
                         background: toggleAccent,
-                        transition: "left 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
+                        transition: "left 0.35s cubic-bezier(0.22, 1, 0.36, 1), width 0.35s cubic-bezier(0.22, 1, 0.36, 1)",
                         zIndex: 0,
+                        boxShadow: "0 1px 6px rgba(0,0,0,0.25)",
                       }} />
                       {modes.map((mode, i) => {
                         const isActive = readingMode === mode;
@@ -1843,17 +1844,18 @@ export default function ScriptureReader() {
                               display: "inline-flex",
                               alignItems: "center",
                               justifyContent: "center",
-                              padding: "4px 12px",
-                              borderRadius: "6px",
+                              padding: "6px 16px",
+                              borderRadius: "8px",
                               border: "none",
                               background: "transparent",
-                              color: isActive ? "#ffffff" : theme.textMuted,
-                              fontSize: "0.68rem",
+                              color: isActive ? "#fff" : theme.textMuted,
+                              fontSize: "0.72rem",
                               fontWeight: 600,
                               cursor: "pointer",
                               fontFamily: "inherit",
-                              transition: "color 0.2s",
+                              transition: "color 0.3s",
                               whiteSpace: "nowrap",
+                              letterSpacing: "0.3px",
                             }}
                           >
                             {labels[mode]}
