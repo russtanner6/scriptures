@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import Header from "@/components/Header";
 import WordExplorerTool from "@/components/WordExplorerTool";
+import LoadingBar from "@/components/LoadingBar";
 
 export const metadata: Metadata = {
   title: "Word Explorer — Scripture Explorer",
@@ -13,7 +14,7 @@ export default function WordExplorerPage() {
     <>
       <Header />
       <div className="page-container">
-        <Suspense fallback={<div style={{ textAlign: "center", padding: "60px", color: "var(--text-muted)" }}>Loading...</div>}>
+        <Suspense fallback={<div style={{ padding: "80px 20px" }}><LoadingBar /></div>}>
           <WordExplorerTool />
         </Suspense>
       </div>

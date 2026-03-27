@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import Header from "@/components/Header";
 import WordCloudTool from "@/components/WordCloudTool";
+import LoadingBar from "@/components/LoadingBar";
 
 export const metadata: Metadata = {
   title: "Word Cloud — Scripture Explorer",
@@ -14,7 +15,7 @@ export default function WordCloudPage() {
     <>
       <Header />
       <div className="page-container">
-        <Suspense fallback={<div style={{ padding: "40px", textAlign: "center", color: "var(--text-muted)" }}>Loading...</div>}>
+        <Suspense fallback={<div style={{ padding: "80px 20px" }}><LoadingBar /></div>}>
           <WordCloudTool />
         </Suspense>
       </div>

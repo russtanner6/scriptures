@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import ScriptureReader from "@/components/ScriptureReader";
+import LoadingBar from "@/components/LoadingBar";
 import { VOLUME_SLUG_TO_ABBREV, slugToBookSearch, bookNameToSlug } from "@/lib/scripture-slugs";
 import { getDb } from "@/lib/db";
 import { execToObjects } from "@/lib/queries";
@@ -126,7 +127,7 @@ export default async function ReadPage({ params }: PageProps) {
   return (
     <>
       <ServerVerseText path={path} />
-      <Suspense fallback={<div style={{ padding: "40px", textAlign: "center", color: "var(--text-muted)" }}>Loading...</div>}>
+      <Suspense fallback={<div style={{ padding: "80px 20px" }}><LoadingBar /></div>}>
         <ScriptureReader />
       </Suspense>
     </>

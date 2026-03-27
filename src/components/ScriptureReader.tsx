@@ -2224,10 +2224,8 @@ export default function ScriptureReader() {
                       paddingTop: "1px",
                       background: selectedVerses.has(v.verse)
                         ? volColor
-                        : lightMode ? "#222" : "rgba(255,255,255,0.88)",
-                      color: selectedVerses.has(v.verse)
-                        ? "#fff"
-                        : lightMode ? "#f8f6f1" : "#212121",
+                        : "#121217",
+                      color: "#fff",
                       flexShrink: 0,
                       transition: "all 0.15s",
                       verticalAlign: "top",
