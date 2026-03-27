@@ -8,7 +8,7 @@ export default function ChiasmusPage() {
   return (
     <>
       <Header />
-      <div className="page-container">
+      <div className="page-container page-darker">
         <Suspense>
           <ChiasmusTool />
         </Suspense>

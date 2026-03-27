@@ -5,7 +5,7 @@ export default function NarrativeArcPage() {
   return (
     <>
       <Header />
-      <div className="page-container">
+      <div className="page-container page-darker">
         <NarrativeArcTool />
         <div
           style={{

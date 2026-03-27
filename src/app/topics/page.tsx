@@ -8,7 +8,7 @@ export default function TopicsPage() {
   return (
     <>
       <Header />
-      <div className="page-container">
+      <div className="page-container page-darker">
         <Suspense>
           <TopicMapTool />
         </Suspense>

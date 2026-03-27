@@ -1483,7 +1483,8 @@ export default function ScriptureReader() {
                 transition: "all 0.15s",
               }}
             >
-              {fontSizes[fontSize].label}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/text-size.svg" alt="Text size" style={{ width: "18px", height: "18px", filter: "invert(1) brightness(0.8)", transition: "transform 0.15s", transform: fontSize === 2 ? "scale(1.15)" : fontSize === 0 ? "scale(0.85)" : "scale(1)" }} />
             </button>
             {/* Light/dark toggle hidden — dark theme always */}
             {/* Hamburger menu */}
@@ -2490,11 +2491,9 @@ export default function ScriptureReader() {
           {/* Reading progress bar — volume color gradient */}
           <div
             style={{
-              height: "3px",
+              height: "2px",
               width: `${scrollProgress * 100}%`,
-              background: lightMode
-                ? "linear-gradient(90deg, #2A4F8A 0%, #4A7FD4 100%)"
-                : "linear-gradient(90deg, #2E4A7A 0%, #5B8DEF 100%)",
+              background: "#3B82F6",
               transition: "width 0.1s linear",
             }}
           />

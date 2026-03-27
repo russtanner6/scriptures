@@ -11,7 +11,7 @@ export default function SettingsPage() {
   return (
     <>
       <Header />
-      <div className="page-container">
+      <div className="page-container page-darker">
         <SettingsPanel />
       </div>
     </>

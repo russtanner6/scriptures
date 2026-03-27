@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function LocationsPage() {
   return (
-    <main className="page-shell">
+    <main className="page-shell page-darker">
       <Header />
       <div className="page-content" style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 16px 60px" }}>
         <Suspense fallback={<div style={{ padding: "80px 20px" }}><LoadingBar /></div>}>

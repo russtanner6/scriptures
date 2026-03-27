@@ -14,7 +14,7 @@ export default function WordCloudPage() {
   return (
     <>
       <Header />
-      <div className="page-container">
+      <div className="page-container page-darker">
         <Suspense fallback={<div style={{ padding: "80px 20px" }}><LoadingBar /></div>}>
           <WordCloudTool />
         </Suspense>

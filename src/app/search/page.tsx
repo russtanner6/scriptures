@@ -12,7 +12,7 @@ export default function SearchPage() {
   return (
     <>
       <Header />
-      <div className="page-container">
+      <div className="page-container page-darker">
         <WordFrequencyTool />
         <div
           style={{

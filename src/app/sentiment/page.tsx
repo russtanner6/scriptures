@@ -7,7 +7,7 @@ export default function SentimentPage() {
   return (
     <>
       <Header />
-      <div className="page-container">
+      <div className="page-container page-darker">
         <SentimentArcTool />
         <div
           style={{

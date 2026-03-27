@@ -5,7 +5,7 @@ export default function HeatmapPage() {
   return (
     <>
       <Header />
-      <div className="page-container">
+      <div className="page-container page-darker">
         <HeatmapTool />
         <div
           style={{
