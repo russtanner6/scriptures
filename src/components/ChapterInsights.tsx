@@ -472,11 +472,12 @@ export default function ChapterInsights({
               ? "expandDown 0.3s ease-out forwards"
               : "collapseUp 0.25s ease-in forwards",
             overflow: "hidden",
-            background: "#3f3f3f",
+            background: "#292929",
             borderTop: "none",
             borderLeft: "none",
             borderRight: "none",
             borderBottom: isExpanded ? "2px solid rgba(0,0,0,0.25)" : "none",
+            borderRadius: isMobile ? "0" : "0 0 6px 6px",
             marginBottom: "24px",
             // Full width on mobile
             ...(flatTopCorners ? {
