@@ -1749,7 +1749,7 @@ export default function ScriptureReader() {
           {!isLoading && (chapterSpeakers.length > 0 || chapterResources.length > 0 || hasModernText || hasNarration || verses.length > 0) && (() => {
             const toggleAccent = lightMode ? "#4A7FD4" : "#5B8DEF";
             return (
-            <div style={{ marginBottom: "20px", marginTop: "4px", textAlign: "center", opacity: 0.65, transition: "opacity 0.2s" }}
+            <div style={{ marginBottom: "24px", marginTop: "20px", textAlign: "center", opacity: 0.65, transition: "opacity 0.2s" }}
               onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
               onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.65")}
             >
@@ -1794,41 +1794,37 @@ export default function ScriptureReader() {
                 )}
                 {/* Context Nuggets toggle hidden — always on. Preserved for future re-enable. */}
                 {/* Tone overlay toggle — removed (not useful enough to show) */}
-                {/* Three-way reading mode sliding toggle */}
-                {(hasModernText || hasNarration) && (() => {
-                  const modes: ReadingMode[] = ["original", "modern", "narration"].filter((mode) => {
-                    if (mode === "modern") return hasModernText;
-                    if (mode === "narration") return hasNarration;
-                    return true;
-                  }) as ReadingMode[];
+                {/* Three-way reading mode sliding toggle — always shows all 3 modes */}
+                {(() => {
+                  const modes: ReadingMode[] = ["original", "modern", "narration"];
                   const labels: Record<ReadingMode, string> = { original: "Original", modern: "Modern", narration: "Mommy Mode" };
                   const activeIndex = modes.indexOf(readingMode);
                   const effectiveIndex = activeIndex >= 0 ? activeIndex : 0;
                   const pillWidthPercent = 100 / modes.length;
+                  const activeBlue = lightMode ? "#5B8DEF" : "#7BA8FF";
                   return (
                     <div style={{
                       display: "inline-flex",
                       position: "relative",
-                      borderRadius: "10px",
-                      border: "1px solid rgba(255,255,255,0.06)",
-                      background: lightMode ? "rgba(0,0,0,0.05)" : "rgba(0,0,0,0.45)",
-                      padding: "3px",
+                      borderRadius: "8px",
+                      border: "none",
+                      background: "#121217",
+                      padding: "2px",
                       overflow: "hidden",
                     }}>
                       {/* Sliding indicator */}
                       <div style={{
                         position: "absolute",
-                        top: "3px",
-                        bottom: "3px",
-                        left: `calc(${effectiveIndex * pillWidthPercent}% + 3px)`,
-                        width: `calc(${pillWidthPercent}% - 6px)`,
-                        borderRadius: "8px",
-                        background: toggleAccent,
+                        top: "2px",
+                        bottom: "2px",
+                        left: `calc(${effectiveIndex * pillWidthPercent}% + 2px)`,
+                        width: `calc(${pillWidthPercent}% - 4px)`,
+                        borderRadius: "6px",
+                        background: activeBlue,
                         transition: "left 0.35s cubic-bezier(0.22, 1, 0.36, 1), width 0.35s cubic-bezier(0.22, 1, 0.36, 1)",
                         zIndex: 0,
-                        boxShadow: "0 1px 6px rgba(0,0,0,0.25)",
                       }} />
-                      {modes.map((mode, i) => {
+                      {modes.map((mode) => {
                         const isActive = readingMode === mode;
                         return (
                           <button
@@ -1844,12 +1840,12 @@ export default function ScriptureReader() {
                               display: "inline-flex",
                               alignItems: "center",
                               justifyContent: "center",
-                              padding: "6px 16px",
-                              borderRadius: "8px",
+                              padding: "4px 10px",
+                              borderRadius: "6px",
                               border: "none",
                               background: "transparent",
-                              color: isActive ? "#fff" : theme.textMuted,
-                              fontSize: "0.72rem",
+                              color: isActive ? "#fff" : "rgba(255,255,255,0.35)",
+                              fontSize: "0.62rem",
                               fontWeight: 600,
                               cursor: "pointer",
                               fontFamily: "inherit",
@@ -1986,6 +1982,20 @@ export default function ScriptureReader() {
           })()}
 
           {/* Narration mode — chapter prose */}
+          {/* Coming soon messages for unavailable modes */}
+          {!isLoading && readingMode === "modern" && !hasModernText && (
+            <div style={{ textAlign: "center", padding: "60px 20px", color: "rgba(255,255,255,0.3)", fontSize: "0.9rem" }}>
+              <div style={{ fontSize: "1.6rem", marginBottom: "8px" }}>📖</div>
+              Modern language for this book is coming soon.
+            </div>
+          )}
+          {!isLoading && readingMode === "narration" && !chapterNarration && (
+            <div style={{ textAlign: "center", padding: "60px 20px", color: "rgba(255,255,255,0.3)", fontSize: "0.9rem" }}>
+              <div style={{ fontSize: "1.6rem", marginBottom: "8px" }}>👩‍👧‍👦</div>
+              Mommy Mode for this chapter is coming soon.
+            </div>
+          )}
+
           {!isLoading && readingMode === "narration" && chapterNarration && (
             <div
               style={{

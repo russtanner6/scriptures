@@ -202,7 +202,7 @@ export default function CharacterDetailPanel({
           right: 0,
           bottom: 0,
           width: panelWidth,
-          background: "var(--bg, #111116)",
+          background: "var(--bg, #212121)",
           borderLeft: "1px solid var(--border)",
           zIndex: 201,
           display: "flex",
@@ -287,7 +287,7 @@ export default function CharacterDetailPanel({
               left: 0,
               right: 0,
               height: "50%",
-              background: "linear-gradient(transparent, var(--bg, #111116))",
+              background: "linear-gradient(transparent, var(--bg, #212121))",
               pointerEvents: "none",
             }} />
             {/* Name overlay on portrait */}
