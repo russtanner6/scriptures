@@ -1657,10 +1657,10 @@ export default function ScriptureReader() {
                     <div
                       style={{
                         position: "absolute",
-                        top: "-20px",
-                        bottom: "-25px",
-                        left: 0,
-                        right: 0,
+                        top: "-25px",
+                        bottom: "0",
+                        left: "-25px",
+                        right: "-25px",
                         zIndex: 0,
                         pointerEvents: "none",
                         overflow: "visible",
@@ -1677,8 +1677,8 @@ export default function ScriptureReader() {
                           width: "100%",
                           height: "100%",
                           objectFit: "cover",
-                          filter: "blur(40px) saturate(1.8) brightness(1.2)",
-                          opacity: 0.45,
+                          filter: "blur(40px) saturate(2.0) brightness(1.4)",
+                          opacity: 0.6,
                         }}
                       />
                       {/* Uniform warm base glow so dark edges still show something */}
@@ -1850,8 +1850,8 @@ export default function ScriptureReader() {
                       display: "inline-flex",
                       position: "relative",
                       borderRadius: "8px",
-                      border: `1px solid ${theme.border}`,
-                      background: lightMode ? "rgba(0,0,0,0.03)" : "rgba(255,255,255,0.04)",
+                      border: "1px solid rgba(0,0,0,0.4)",
+                      background: lightMode ? "rgba(0,0,0,0.03)" : "rgba(0,0,0,0.55)",
                       padding: "3px",
                       overflow: "hidden",
                     }}>
