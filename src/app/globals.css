@@ -2,8 +2,8 @@
 
 :root {
   /* ===== DARK GREY PALETTE ===== */
-  --bg: #29292b;
-  --bg-gradient: linear-gradient(145deg, #29292b 0%, #2e2e30 40%, #29292b 100%);
+  --bg: #212121;
+  --bg-gradient: linear-gradient(145deg, #212121 0%, #262626 40%, #212121 100%);
   --surface: #2a2a34;
   --surface-hover: #3a3a44;
   --border: rgba(255, 255, 255, 0.06);
