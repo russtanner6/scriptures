@@ -20,6 +20,7 @@ import {
 } from "chart.js";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Bar, Line } from "react-chartjs-2";
+import HorizontalBarList from "./HorizontalBarList";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, LineElement, PointElement, Filler, Tooltip, Legend, ChartDataLabels);
 ChartJS.defaults.color = "#9ca3af";
@@ -565,80 +566,115 @@ export default function WordExplorerTool() {
       {/* ── LEVEL 2: Book Chart ── */}
       {hasResults && drillLevel === "books" && selectedVolume && (
         <div style={{ maxWidth: "900px", margin: "0 auto", marginBottom: "32px" }}>
-          <div style={{ height: isMobile ? "300px" : "400px", marginBottom: "24px" }}>
-            <Line
-              data={{
-                labels: booksInSelectedVolume.map((b) => b.bookName),
-                datasets: termData.map((td) => {
-                  const books = td.results
-                    .filter((r) => r.volumeAbbrev === selectedVolume)
-                    .sort((a, b) => a.displayOrder - b.displayOrder);
-                  return {
-                    label: td.term,
-                    data: booksInSelectedVolume.map((b) => {
-                      const match = books.find((bb) => bb.bookId === b.bookId);
-                      return match?.count || 0;
-                    }),
-                    borderColor: td.color,
-                    backgroundColor: `${td.color}20`,
-                    fill: termData.length === 1,
-                    tension: 0.3,
-                    pointRadius: 3,
-                    pointHoverRadius: 5,
-                  };
-                }),
-              }}
-              options={{
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                  legend: { display: termData.length > 1 },
-                  datalabels: { display: false },
-                },
-                scales: {
-                  y: { beginAtZero: true, grid: { color: "rgba(255,255,255,0.06)" } },
-                  x: {
-                    grid: { display: false },
-                    ticks: {
-                      maxRotation: 90,
-                      minRotation: 45,
-                      font: { size: isMobile ? 9 : 11 },
-                    },
-                  },
-                },
-              }}
-            />
-          </div>
-
-          {/* Book pills — click to drill deeper */}
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", justifyContent: "center", marginBottom: "24px" }}>
-            {booksInSelectedVolume.filter((b) => b.count > 0).map((book) => (
-              <button
-                key={book.bookId}
-                onClick={() => drillToBook(book.bookId, book.bookName)}
-                style={{
-                  padding: "5px 10px",
-                  borderRadius: "6px",
-                  border: `1px solid ${VOLUME_COLORS[selectedVolume]}30`,
-                  background: "transparent",
-                  color: "var(--text-secondary)",
-                  fontSize: "0.75rem",
-                  cursor: "pointer",
-                  fontFamily: "inherit",
-                  transition: "all 0.15s",
+          {/* Single term → horizontal bars; multi-term → line chart for comparison */}
+          {termData.length === 1 ? (
+            <div style={{ marginBottom: "24px" }}>
+              <HorizontalBarList
+                items={booksInSelectedVolume.filter((b) => b.count > 0).map((b) => ({
+                  label: b.bookName,
+                  value: b.count,
+                  color: VOLUME_COLORS[selectedVolume],
+                  id: b.bookId,
+                }))}
+                onBarClick={(item) => {
+                  if (item.id) drillToBook(item.id, item.label);
                 }}
-              >
-                {book.bookName} ({book.count})
-              </button>
-            ))}
-          </div>
+              />
+            </div>
+          ) : (
+            <>
+              <div style={{ height: isMobile ? "300px" : "400px", marginBottom: "24px" }}>
+                <Line
+                  data={{
+                    labels: booksInSelectedVolume.map((b) => b.bookName),
+                    datasets: termData.map((td) => {
+                      const books = td.results
+                        .filter((r) => r.volumeAbbrev === selectedVolume)
+                        .sort((a, b) => a.displayOrder - b.displayOrder);
+                      return {
+                        label: td.term,
+                        data: booksInSelectedVolume.map((b) => {
+                          const match = books.find((bb) => bb.bookId === b.bookId);
+                          return match?.count || 0;
+                        }),
+                        borderColor: td.color,
+                        backgroundColor: `${td.color}20`,
+                        fill: false,
+                        tension: 0.3,
+                        pointRadius: 3,
+                        pointHoverRadius: 5,
+                      };
+                    }),
+                  }}
+                  options={{
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                      legend: { display: true },
+                      datalabels: { display: false },
+                    },
+                    scales: {
+                      y: { beginAtZero: true, grid: { color: "rgba(255,255,255,0.06)" } },
+                      x: {
+                        grid: { display: false },
+                        ticks: {
+                          maxRotation: 90,
+                          minRotation: 45,
+                          font: { size: isMobile ? 9 : 11 },
+                        },
+                      },
+                    },
+                  }}
+                />
+              </div>
+
+              {/* Book pills — click to drill deeper (multi-term only) */}
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", justifyContent: "center", marginBottom: "24px" }}>
+                {booksInSelectedVolume.filter((b) => b.count > 0).map((book) => (
+                  <button
+                    key={book.bookId}
+                    onClick={() => drillToBook(book.bookId, book.bookName)}
+                    style={{
+                      padding: "5px 10px",
+                      borderRadius: "6px",
+                      border: `1px solid ${VOLUME_COLORS[selectedVolume]}30`,
+                      background: "transparent",
+                      color: "var(--text-secondary)",
+                      fontSize: "0.75rem",
+                      cursor: "pointer",
+                      fontFamily: "inherit",
+                      transition: "all 0.15s",
+                    }}
+                  >
+                    {book.bookName} ({book.count})
+                  </button>
+                ))}
+              </div>
+            </>
+          )}
         </div>
       )}
 
       {/* ── LEVEL 3: Chapter Chart ── */}
       {hasResults && drillLevel === "chapters" && selectedBookId && (
         <div style={{ maxWidth: "900px", margin: "0 auto", marginBottom: "32px" }}>
-          {chapterData.size > 0 && (
+          {chapterData.size > 0 && termData.length === 1 ? (() => {
+            const chapters = chapterData.get(termData[0].term) || [];
+            const chapterLabel = selectedVolume === "D&C" ? "Section" : "Ch.";
+            const nonZero = chapters.filter((c) => c.count > 0);
+            return (
+              <div style={{ marginBottom: "24px" }}>
+                <HorizontalBarList
+                  items={nonZero.map((c) => ({
+                    label: `${chapterLabel} ${c.chapter}`,
+                    value: c.count,
+                    color: selectedVolume ? VOLUME_COLORS[selectedVolume] : "var(--accent)",
+                  }))}
+                  staggerDelay={30}
+                />
+              </div>
+            );
+          })() : chapterData.size > 0 && (
             <div style={{ height: isMobile ? "260px" : "340px", marginBottom: "24px" }}>
               <Line
                 data={{
@@ -654,7 +690,7 @@ export default function WordExplorerTool() {
                       data: chapters.map((c) => c.count),
                       borderColor: td.color,
                       backgroundColor: `${td.color}20`,
-                      fill: termData.length === 1,
+                      fill: false,
                       tension: 0.3,
                       pointRadius: 2,
                       pointHoverRadius: 4,
@@ -665,7 +701,7 @@ export default function WordExplorerTool() {
                   responsive: true,
                   maintainAspectRatio: false,
                   plugins: {
-                    legend: { display: termData.length > 1 },
+                    legend: { display: true },
                     datalabels: { display: false },
                   },
                   scales: {
