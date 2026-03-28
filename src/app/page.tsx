@@ -471,31 +471,135 @@ export default function HomePage() {
           </div>
         </ParticleHero>
 
-        {/* ═══ 2. VOLUME SHELF ═══ */}
-        <div style={{ marginTop: "16px", marginBottom: "48px" }}>
-          <div style={{
-            fontSize: "0.55rem",
-            fontWeight: 700,
-            textTransform: "uppercase",
-            letterSpacing: "0.16em",
-            color: "rgba(255,255,255,0.3)",
-            marginBottom: "14px",
-            paddingLeft: "4px",
-          }}>
-            Volumes
+        {/* ═══ 2. TWO-COLUMN: Volumes + Featured ═══ */}
+        <div style={{
+          display: "grid",
+          gridTemplateColumns: isMobile ? "1fr" : "1fr 340px",
+          gap: isMobile ? "32px" : "28px",
+          marginTop: "16px",
+          marginBottom: "48px",
+          alignItems: "start",
+        }}>
+          {/* Left: Volume rows */}
+          <div>
+            <div style={{
+              fontSize: "0.55rem",
+              fontWeight: 700,
+              textTransform: "uppercase",
+              letterSpacing: "0.16em",
+              color: "rgba(255,255,255,0.3)",
+              marginBottom: "14px",
+              paddingLeft: "4px",
+            }}>
+              Start Reading
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+              {volumeShelfData.map((v, i) => (
+                <VolumeRow
+                  key={v.abbrev}
+                  abbrev={v.abbrev}
+                  name={v.name}
+                  bookCount={v.bookCount}
+                  chapterCount={v.chapterCount}
+                  wordCount={v.wordCount}
+                  index={i}
+                />
+              ))}
+            </div>
           </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
-            {volumeShelfData.map((v, i) => (
-              <VolumeRow
-                key={v.abbrev}
-                abbrev={v.abbrev}
-                name={v.name}
-                bookCount={v.bookCount}
-                chapterCount={v.chapterCount}
-                wordCount={v.wordCount}
-                index={i}
-              />
-            ))}
+
+          {/* Right: Featured Person + Nugget */}
+          <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+            {/* Featured Person */}
+            {spotlightChar && (
+              <Link href={`/people?person=${spotlightChar.id}`} onClick={() => analytics.homeSpotlightClick(spotlightChar.id)} style={{
+                display: "block",
+                textDecoration: "none",
+                background: "rgba(255,255,255,0.02)",
+                border: "1px solid rgba(255,255,255,0.06)",
+                borderRadius: "14px",
+                overflow: "hidden",
+                transition: "all 0.3s ease",
+              }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = `${getCharColor(spotlightChar)}40`;
+                  e.currentTarget.style.boxShadow = `0 8px 30px rgba(0,0,0,0.3)`;
+                  e.currentTarget.style.transform = "translateY(-2px)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = "rgba(255,255,255,0.06)";
+                  e.currentTarget.style.boxShadow = "none";
+                  e.currentTarget.style.transform = "translateY(0)";
+                }}
+              >
+                {/* Large portrait */}
+                <div style={{ width: "100%", aspectRatio: "16/10", overflow: "hidden", position: "relative" }}>
+                  <img src={spotlightChar.portraitUrl} alt={spotlightChar.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%" }} />
+                  <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%)" }} />
+                  <div style={{ position: "absolute", bottom: "12px", left: "16px", right: "16px" }}>
+                    <div style={{ fontSize: "0.5rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: getCharColor(spotlightChar), marginBottom: "3px" }}>Spotlight</div>
+                    <div style={{ fontSize: "1.05rem", fontWeight: 700, color: "#fff" }}>{spotlightChar.name}</div>
+                    <div style={{ fontSize: "0.68rem", color: "rgba(255,255,255,0.6)" }}>{spotlightChar.roles.slice(0, 3).join(" · ")}</div>
+                  </div>
+                </div>
+                {/* Portrait row */}
+                <div style={{ padding: "12px 16px", display: "flex", gap: "6px", alignItems: "center", flexWrap: "wrap" }}>
+                  {featuredChars.slice(0, 10).map((c) => (
+                    <div key={c.id} style={{ width: "30px", height: "30px", borderRadius: "50%", overflow: "hidden", border: `2px solid ${getCharColor(c)}30`, transition: "transform 0.2s" }}>
+                      <img src={c.portraitUrl} alt={c.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%" }} loading="lazy" />
+                    </div>
+                  ))}
+                  <div style={{ fontSize: "0.6rem", fontWeight: 600, color: "var(--text-muted)", marginLeft: "4px" }}>
+                    +{(genderCounts.male + genderCounts.female) - 10} more
+                  </div>
+                </div>
+              </Link>
+            )}
+
+            {/* Context Nugget */}
+            {nugget && (
+              <Link href={nuggetLink || "#"} style={{
+                display: "block",
+                textDecoration: "none",
+                background: "rgba(245,166,35,0.04)",
+                border: "1px solid rgba(245,166,35,0.15)",
+                borderRadius: "14px",
+                padding: "16px",
+                transition: "all 0.3s ease",
+              }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = "rgba(245,166,35,0.35)";
+                  e.currentTarget.style.transform = "translateY(-2px)";
+                  e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.2)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = "rgba(245,166,35,0.15)";
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow = "none";
+                }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
+                  <span style={{ fontSize: "0.5rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: CATEGORY_COLORS[nugget.category] || "#F59E0B", background: `${CATEGORY_COLORS[nugget.category] || "#F59E0B"}18`, padding: "2px 8px", borderRadius: "4px" }}>
+                    {nugget.category}
+                  </span>
+                  <span style={{ fontSize: "0.5rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "rgba(255,255,255,0.3)" }}>Did you know?</span>
+                </div>
+                <div style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--text)", marginBottom: "6px", lineHeight: 1.4 }}>{nugget.title}</div>
+                <div style={{
+                  fontSize: "0.75rem",
+                  color: "var(--text-secondary)",
+                  lineHeight: 1.6,
+                  display: "-webkit-box",
+                  WebkitLineClamp: 3,
+                  WebkitBoxOrient: "vertical" as const,
+                  overflow: "hidden",
+                  marginBottom: "8px",
+                }}>{nugget.insight}</div>
+                <div style={{ fontSize: "0.62rem", color: "var(--text-muted)" }}>
+                  {nugget.book} {nugget.chapter}:{nugget.verse} · <span style={{ color: "var(--accent)" }}>Read in context →</span>
+                </div>
+              </Link>
+            )}
           </div>
         </div>
 
@@ -619,221 +723,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* ═══ 4. PEOPLE SHOWCASE ═══ */}
-        {spotlightChar && (
-          <div
-            ref={peopleReveal.ref}
-            style={{
-              marginBottom: "48px",
-              padding: isMobile ? "24px 18px" : "32px 28px",
-              background: "rgba(255,255,255,0.02)",
-              border: "1px solid rgba(255,255,255,0.05)",
-              borderRadius: "16px",
-              opacity: peopleReveal.isVisible ? 1 : 0,
-              transform: peopleReveal.isVisible ? "translateY(0)" : "translateY(20px)",
-              transition: "opacity 0.6s ease, transform 0.6s ease",
-            }}
-          >
-            <div style={{
-              fontSize: "0.55rem",
-              fontWeight: 700,
-              textTransform: "uppercase",
-              letterSpacing: "0.16em",
-              color: "rgba(255,255,255,0.3)",
-              marginBottom: "20px",
-            }}>
-              Scripture People
-            </div>
-
-            <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", alignItems: isMobile ? "center" : "flex-start", gap: isMobile ? "20px" : "28px" }}>
-              {/* Spotlight portrait */}
-              <Link href={`/people?person=${spotlightChar.id}`} onClick={() => analytics.homeSpotlightClick(spotlightChar.id)} style={{ textDecoration: "none", flexShrink: 0 }}>
-                <div style={{
-                  width: isMobile ? "140px" : "160px",
-                  height: isMobile ? "140px" : "160px",
-                  borderRadius: "50%",
-                  overflow: "hidden",
-                  border: `3px solid ${getCharColor(spotlightChar)}50`,
-                  boxShadow: `0 0 40px ${getCharColor(spotlightChar)}15`,
-                  transition: "transform 0.3s, box-shadow 0.3s",
-                }}
-                  onMouseEnter={(e) => { e.currentTarget.style.transform = "scale(1.05)"; e.currentTarget.style.boxShadow = `0 0 50px ${getCharColor(spotlightChar)}25`; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.transform = "scale(1)"; e.currentTarget.style.boxShadow = `0 0 40px ${getCharColor(spotlightChar)}15`; }}
-                >
-                  <img src={spotlightChar.portraitUrl} alt={spotlightChar.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%" }} />
-                </div>
-              </Link>
-
-              {/* Info */}
-              <div style={{ flex: 1, textAlign: isMobile ? "center" : "left" }}>
-                <div style={{
-                  fontSize: "0.55rem",
-                  fontWeight: 600,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.14em",
-                  color: getCharColor(spotlightChar),
-                  marginBottom: "4px",
-                }}>Featured</div>
-                <Link href={`/people?person=${spotlightChar.id}`} style={{ textDecoration: "none" }}>
-                  <div style={{ fontSize: "1.2rem", fontWeight: 700, color: "var(--text)", marginBottom: "4px" }}>{spotlightChar.name}</div>
-                </Link>
-                <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", marginBottom: "6px" }}>
-                  {spotlightChar.roles.slice(0, 3).join(" · ")}
-                </div>
-                {spotlightChar.bio && (
-                  <p style={{
-                    fontSize: "0.78rem",
-                    color: "var(--text-secondary)",
-                    lineHeight: 1.55,
-                    margin: "0 0 14px",
-                    display: "-webkit-box",
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: "vertical",
-                    overflow: "hidden",
-                  }}>
-                    {spotlightChar.bio}
-                  </p>
-                )}
-
-                {/* Portrait grid */}
-                <div style={{
-                  display: "flex",
-                  flexWrap: "wrap",
-                  gap: "6px",
-                  justifyContent: isMobile ? "center" : "flex-start",
-                  marginBottom: "12px",
-                }}>
-                  {featuredChars.slice(0, isMobile ? 12 : 16).map((c) => (
-                    <Link key={c.id} href={`/people?person=${c.id}`} style={{ textDecoration: "none" }}>
-                      <div style={{
-                        width: "40px",
-                        height: "40px",
-                        borderRadius: "50%",
-                        overflow: "hidden",
-                        border: `2px solid ${getCharColor(c)}30`,
-                        transition: "all 0.25s ease",
-                      }}
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.transform = "scale(1.18)";
-                          e.currentTarget.style.borderColor = `${getCharColor(c)}80`;
-                          e.currentTarget.style.boxShadow = `0 0 16px ${getCharColor(c)}25`;
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.transform = "scale(1)";
-                          e.currentTarget.style.borderColor = `${getCharColor(c)}30`;
-                          e.currentTarget.style.boxShadow = "none";
-                        }}
-                      >
-                        <img src={c.portraitUrl} alt={c.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%" }} loading="lazy" />
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-
-                <Link
-                  href="/people"
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "6px",
-                    fontSize: "0.78rem",
-                    fontWeight: 600,
-                    color: "#A78BFA",
-                    textDecoration: "none",
-                    transition: "color 0.2s",
-                  }}
-                  onMouseEnter={(e) => { e.currentTarget.style.color = "#c4b5fd"; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.color = "#A78BFA"; }}
-                >
-                  Explore {genderCounts.male + genderCounts.female} people &rarr;
-                </Link>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* ═══ 5. CONTEXT NUGGET ═══ */}
-        {nugget && nuggetLink && (
-          <div
-            ref={nuggetReveal.ref}
-            style={{
-              marginBottom: "48px",
-              opacity: nuggetReveal.isVisible ? 1 : 0,
-              transform: nuggetReveal.isVisible ? "translateY(0)" : "translateY(20px)",
-              transition: "opacity 0.6s ease, transform 0.6s ease",
-            }}
-          >
-            <Link href={nuggetLink} style={{ textDecoration: "none", display: "block" }}>
-              <div
-                style={{
-                  padding: isMobile ? "20px 18px" : "24px 28px",
-                  borderRadius: "14px",
-                  background: "rgba(245,166,35,0.04)",
-                  border: "1px solid rgba(245,166,35,0.12)",
-                  transition: "all 0.3s ease",
-                  position: "relative",
-                  overflow: "hidden",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = "rgba(245,166,35,0.07)";
-                  e.currentTarget.style.borderColor = "rgba(245,166,35,0.2)";
-                  e.currentTarget.style.transform = "translateY(-2px)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "rgba(245,166,35,0.04)";
-                  e.currentTarget.style.borderColor = "rgba(245,166,35,0.12)";
-                  e.currentTarget.style.transform = "translateY(0)";
-                }}
-              >
-                {/* Amber accent line */}
-                <div style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  height: "2px",
-                  background: "linear-gradient(90deg, transparent, #F5A623, transparent)",
-                  opacity: 0.5,
-                }} />
-
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
-                  <span style={{
-                    fontSize: "0.55rem",
-                    fontWeight: 700,
-                    padding: "3px 10px",
-                    borderRadius: "4px",
-                    background: `${CATEGORY_COLORS[nugget.category] || "#F5A623"}18`,
-                    color: CATEGORY_COLORS[nugget.category] || "#F5A623",
-                    textTransform: "uppercase",
-                    letterSpacing: "0.08em",
-                  }}>
-                    {nugget.category}
-                  </span>
-                  <span style={{ fontSize: "0.6rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "#F5A623" }}>
-                    Did you know?
-                  </span>
-                </div>
-                <div style={{ fontSize: "0.9rem", fontWeight: 700, color: "var(--text)", marginBottom: "8px" }}>{nugget.title}</div>
-                <p style={{
-                  fontSize: "0.8rem",
-                  color: "var(--text-secondary)",
-                  lineHeight: 1.6,
-                  margin: "0 0 12px",
-                  display: "-webkit-box",
-                  WebkitLineClamp: 3,
-                  WebkitBoxOrient: "vertical",
-                  overflow: "hidden",
-                }}>
-                  {nugget.insight}
-                </p>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ fontSize: "0.68rem", color: "var(--text-muted)" }}>{nugget.book} {nugget.chapter}:{nugget.verse}</span>
-                  <span style={{ fontSize: "0.75rem", fontWeight: 600, color: "#F5A623" }}>Read in context &rarr;</span>
-                </div>
-              </div>
-            </Link>
-          </div>
-        )}
+        {/* People and Nugget are now in the right column above */}
 
         {/* ═══ 6. SCRIPTURE STATS ═══ */}
         {bookStats.totalVerses > 0 && (
