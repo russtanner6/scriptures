@@ -1,5 +1,59 @@
 # Scripture Explorer — Session Log
 
+## 2026-03-27 — Session 26: Home Page Redesign, Reader Polish, Darker Backgrounds
+
+### What was done
+
+**Home page complete redesign (5 iterations):**
+- Replaced old layout (hero + tool cards + random verse + recent searches) with new design
+- New layout: ParticleHero (animated canvas) → gradient title "LDS SCRIPTURE EXPLORER" → colored counter stats (verses/chapters/books/people/locations) → 2-column section (VolumeRow bars left, featured person + context nugget right) → primary tool cards → secondary tool cards → stats with GaugeDial canvas gauges
+- New components created: ParticleHero.tsx (canvas particle animation), GaugeDial.tsx (canvas half-arc gauge), VolumeRow.tsx (horizontal volume bars), SectionDivider.tsx
+- Removed: RingChart SVG component, RandomVerse section, separate mobile/desktop layout branches
+- Added useScrollReveal hook (IntersectionObserver-based scroll-triggered fade-in animations)
+- Fixed double footer bug (Footer removed from page.tsx, layout.tsx handles it globally)
+
+**Background color overhaul:**
+- Added `.page-darker` CSS class (#141414) for home + all tool pages
+- Applied `.page-darker` to ALL tool page layouts: search, narrative-arc, heatmap, wordcloud, sentiment, chiasmus, topics, settings, bookmarks, word-explorer, people, locations
+- Scripture reader stays at #212121 (lighter than tool pages)
+
+**Scripture Reader changes:**
+- Removed ambilight/bias lighting effect (user decided against it after CORS issues)
+- Insights panel: split into sticky collapsed bar + non-sticky expanded content (pushes verses down in normal flow instead of overlapping)
+- Insights panel: opaque backgrounds (#292929), rounded bottom corners on collapsed bar
+- Progress bar: simplified to 2px solid #3B82F6 (was gradient)
+- Text size icon: replaced "A" label with text-size.svg icon
+- Loading state: new LoadingBar component with animated progress bar
+- Original/Modern/Mommy Mode: segmented toggle with sliding indicator (replaces old simple toggle)
+- Verse number squares: 3% transparent white background, softer text color (55% opacity)
+
+**CSS/global changes:**
+- Added scroll-reveal, skeleton-shimmer CSS animation utilities to globals.css
+- globals.css cleanup
+
+### Bugs fixed
+- Double footer on home page (Footer was in both page.tsx and layout.tsx)
+- Insights panel overlapping verses (split into sticky bar + non-sticky content)
+- Ambilight CORS issue with canvas image sampling (feature removed entirely)
+
+### Current state
+- Home page redesign complete and deployed
+- All tool pages using darker #141414 background
+- Scripture reader using #212121 with polished insights panel
+- Mommy Mode toggle visible but content not yet generated
+
+### Remaining work
+1. THE LORD → Jesus Christ speaker matching in insights (Genesis 2 issue)
+2. Insights bar sticky to top when scrolling
+3. Famous Stories tool (curated scripture stories by volume)
+4. Midjourney prompts for all book images
+5. Home page further refinement based on user feedback
+6. Command palette (Cmd+K) — decision pending on approach
+7. Horizontal bar charts for Word Explorer
+8. Mood Match feature
+
+---
+
 ## 2026-03-26 — Session 25: Visual Polish, Animations, Dark Theme Lock
 
 ### What was done

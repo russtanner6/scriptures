@@ -43,7 +43,7 @@ npm run build-db     # Rebuild scripture database
 ```
 src/
 ├── app/              # Next.js App Router pages
-│   ├── page.tsx      # Landing page (hero, tool cards, random verse, recent searches)
+│   ├── page.tsx      # Landing page (ParticleHero, counter stats, volume rows, featured person/nugget, tool cards, gauge dials)
 │   ├── layout.tsx    # Root layout
 │   ├── search/        # Word frequency search (moved from /)
 │   ├── narrative-arc/ # Multi-term narrative arc comparison
@@ -97,6 +97,11 @@ src/
 │   ├── NuggetMarker.tsx         # Inline amber/gold pill for Context Nuggets (follows ResourceMarker pattern)
 │   ├── NuggetPopover.tsx        # Parchment/slate popover for scholarly insights (bottom sheet on mobile)
 │   ├── RelationshipWeb.tsx     # Full-screen force-directed character relationship graph
+│   ├── ParticleHero.tsx       # Canvas particle animation for home page hero
+│   ├── GaugeDial.tsx          # Canvas half-arc gauge dials for home page stats
+│   ├── VolumeRow.tsx          # Horizontal volume bars for home page
+│   ├── SectionDivider.tsx     # Visual section divider for home page
+│   ├── LoadingBar.tsx         # Animated progress bar for scripture reader loading state
 │   ├── Header.tsx             # Dark nav bar: tree logo centered (links to home) + hamburger right. Consistent across all pages.
 │   └── NavMenu.tsx            # Slide-in nav with sections (Analyze/Discover/Read)
 ├── lib/
@@ -114,6 +119,7 @@ src/
 │   ├── useIsMobile.ts         # Shared debounced responsive hook (replaces 15 inline duplicates)
 │   ├── relationship-graph.ts   # Build relationship graphs from character family data (nodes, links, subgraph BFS)
 │   ├── useBackToClose.ts      # Hook: mobile back-button closes panels instead of navigating away
+│   ├── useScrollReveal.ts     # Hook: scroll-triggered fade-in animations (IntersectionObserver)
 │   └── modal-styles.ts        # Shared popup/modal styling tokens
 │   ├── HamburgerIcon.tsx        # Shared hamburger menu icon (single source of truth for all pages)
 │   ├── LinkedScriptureText.tsx  # Auto-links scripture references in text (used in nuggets, bios, locations)
@@ -197,13 +203,14 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 - Chart legend: `legendMarginPlugin` adds 28px below legend (prevents overlap with data labels).
 
 ### Dark Theme
-- Background: dark grey palette (not pure black)
+- Background: `#212121` base for scripture reader, `#141414` (`.page-darker`) for home + all tool pages
 - Text: white hierarchy (--text, --text-secondary, --text-muted)
 - Surfaces: glass-blur effect with subtle borders
 - Accent: purple (#8b5cf6) for interactive elements
+- `.page-darker` CSS class applied to: home, search, narrative-arc, heatmap, wordcloud, sentiment, chiasmus, topics, settings, bookmarks, word-explorer, people, locations
 
 ## Pages
-1. **Home** (`/`) — Landing page with gradient hero, 6 core tool cards + 4 discovery tool cards, random verse, recent searches. Site-wide Footer component.
+1. **Home** (`/`) — Landing page: ParticleHero (animated canvas) with gradient title "LDS SCRIPTURE EXPLORER", colored counter stats (verses/chapters/books/people/locations), 2-column layout (VolumeRow bars left, featured person + context nugget right), primary tool cards, secondary tool cards, stats section with GaugeDial canvas gauges. Scroll-reveal animations. Uses `.page-darker` (#141414) background. Footer handled by layout.tsx (not in page.tsx).
 2. **Word Explorer** (`/word-explorer`) — Unified word frequency tool (replaces old Word Search, Narrative Arc, and Heatmap). 3-level drill-down: Volumes → Books → Chapters. Multi-term comparison (up to 6). Volume-level uses shaded curve (Line chart with fill); book/chapter levels also use curves. Deep linking (`?word=faith` or `?terms=faith,grace`). Verse references at book/chapter levels. Old routes (/search, /narrative-arc, /heatmap) will redirect here.
 3. **Word Search** (`/search`) — LEGACY, being replaced by Word Explorer. Redirects pending.
 4. **Narrative Arc** (`/narrative-arc`) — LEGACY, being replaced by Word Explorer. Redirects pending.
@@ -213,7 +220,7 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 8. **Chiasmus Detector** (`/chiasmus`) — Find ABBA mirror patterns. Single-column flow layout (picker-style). Scan entire volume.
 9. **Topic Map** (`/topics`) — Chapter similarity finder. Single-column flow layout (picker-style). Cosine similarity.
 10. **Timeline** (`/timeline`) — SHELVED. Code preserved but removed from nav/footer/home page.
-11. **Scripture Reader** (`/scriptures`) — Full reading experience with light/dark mode, font size, keyboard nav, reading progress, Chapter Insights (5 sections), verse popover, annotations, Word Explorer panel, modern language toggle (OT/NT only). Reading streaks. Cream light theme (#f8f6f1), lighter dark theme (#1a1a21), gradient progress bar, centered tree logo. Book landscape pictures (4:1 ratio, edge-to-edge on mobile). Verse number squares (fixed 24px, themed volume colors). Catch-all route (`/scriptures/[...path]`).
+11. **Scripture Reader** (`/scriptures`) — Full reading experience with dark mode (light mode hidden, code preserved), font size, keyboard nav, reading progress, Chapter Insights (5 sections with sticky collapsed bar + non-sticky expanded content), verse popover, annotations, Word Explorer panel, Original/Modern/Mommy Mode segmented toggle with sliding indicator. Reading streaks. Background #212121. Progress bar: 2px solid #3B82F6. Book landscape pictures (4:1 ratio, edge-to-edge on mobile). Verse number squares (fixed 24px, themed volume colors, 3% transparent white bg, softer text). LoadingBar component for loading state. Insights panel: opaque backgrounds (#292929), rounded bottom corners on collapsed bar. Catch-all route (`/scriptures/[...path]`).
 12. **Bookmarks** (`/bookmarks`) — Saved verses grouped by volume.
 13. **People** (`/people`) — Character directory: 857 named individuals. Search, filter by volume/tier. Character cards with portraits, bios, volume pills. Clicking opens CharacterDetailPanel.
 14. **Locations** (`/locations`) — Location directory: 333 named places across all volumes. Search, filter by volume/type/region. Location cards with type emoji, volume pills, significance. Clicking opens LocationDetailPanel with OpenStreetMap embed (for known locations), mention stats, volume heatmap, top books, Google Maps link.
@@ -222,7 +229,7 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 ## Key Components
 - **WordExplorerTool** — Unified word frequency tool (replaces old Word Search, Narrative Arc, Heatmap). 3-level drill-down: Volumes → Books → Chapters. Multi-term comparison (up to 6). Shaded curve charts. Deep linking. Verse references at book/chapter levels.
 - **ScripturePanel** — Right-side slider panel showing matching verses when clicking chart data points.
-- **ChapterInsights** — Collapsible panel in reader with 5 sections: (1) At a Glance (verse count, word count, summary), (2) People pills with speaker-colored borders + verse count, (3) Speaker Timeline color-coded bar with trough styling, (4) Key Themes in neutral colors, (5) Notable Verses with citations. Collapsed bar shows verse count + 3 stacked portraits + people count + "INSIGHTS". Darker background, full width, smooth slide-in animation. Click timeline to jump to verse. Key themes trigger WordExplorerPanel.
+- **ChapterInsights** — Collapsible panel in reader with 5 sections: (1) At a Glance (verse count, word count, summary), (2) People pills with speaker-colored borders + verse count, (3) Speaker Timeline color-coded bar with trough styling, (4) Key Themes in neutral colors, (5) Notable Verses with citations. Collapsed bar (sticky) shows verse count + 3 stacked portraits + people count + "INSIGHTS". Expanded content (non-sticky) pushes verses down in normal flow. Opaque background (#292929), rounded bottom corners on collapsed bar. Smooth expand/collapse animations (expandDown 0.3s / collapseUp 0.25s). Click timeline to jump to verse. Key themes trigger WordExplorerPanel.
 - **WordExplorerPanel** — Slide-up panel for in-context word frequency exploration. Three scopes (book/volume/all), horizontal bar chart, current chapter highlighted, "go deeper" links. Triggered from ChapterInsights.
 - **VersePopover** — Tap verse → popover with reference, word count, key words, copy, bookmark, and personal notes.
 - **SentimentArcTool** — Sentiment Explorer with 4 theological categories and cascading dropdown navigation (Volume → Book → Chapter). Shaded area charts. No verse-level chart (too noisy for keyword matching).
@@ -314,4 +321,6 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - **Modern language:** `text_modern` column in verses table. OT+NT populated with World English Bible (WEB, public domain) via `add-modern-text.ts`. 31,095/31,102 verses matched (99.98%). BoM/D&C/PoGP not yet available. Toggle shows in Layers section only when modern text exists for the chapter.
 
 ## Future Feature Ideas
-- **Kid Mode:** Simplify scripture text into narrative format with more pictures, designed for children or parents explaining scriptures to young kids. Would provide age-appropriate retellings of scripture stories with illustrations.
+- **Mommy Mode:** Simplify scripture text into narrative format with more pictures, designed for children or parents explaining scriptures to young kids. Would provide age-appropriate retellings of scripture stories with illustrations. Toggle already present in reader UI (Original/Modern/Mommy Mode segmented control) but content not yet generated.
+- **Famous Stories tool:** Curated list of famous scripture stories by volume, accessible from home page and nav.
+- **Mood Match:** Chapter recommendations based on emotional state.
