@@ -36,11 +36,11 @@ const PRIMARY_TOOLS = [
 ];
 
 const SECONDARY_TOOLS = [
-  { href: "/wordcloud", name: "Word Cloud", icon: "/word-cloud.svg" },
-  { href: "/sentiment", name: "Sentiment", icon: "/narrative-arc.svg" },
-  { href: "/chiasmus", name: "Chiasmus", icon: "/heatmap.svg" },
-  { href: "/topics", name: "Topics", icon: "/search.svg" },
-  { href: "/bookmarks", name: "Bookmarks", icon: "/favorite.svg" },
+  { href: "/wordcloud", name: "Word Cloud", icon: "/word-cloud.svg", dot: "#DC2F4B" },
+  { href: "/sentiment", name: "Sentiment", icon: "/narrative-arc.svg", dot: "#E8532C" },
+  { href: "/chiasmus", name: "Chiasmus", icon: "/heatmap.svg", dot: "#F57B20" },
+  { href: "/topics", name: "Topics", icon: "/search.svg", dot: "#F5A623" },
+  { href: "/bookmarks", name: "Bookmarks", icon: "/favorite.svg", dot: "#F5C829" },
 ];
 
 // --- Animated counter hook ---
@@ -78,14 +78,14 @@ function GaugeDial({ value, max, label, color, size = 120 }: { value: number; ma
     ctx.beginPath();
     ctx.arc(cx, cy, R, Math.PI, 2 * Math.PI);
     ctx.strokeStyle = "rgba(255,255,255,0.06)";
-    ctx.lineWidth = size * 0.07;
+    ctx.lineWidth = size * 0.09;
     ctx.lineCap = "round";
     ctx.stroke();
     const pct = max > 0 ? Math.min(animatedVal / max, 1) : 0;
     ctx.beginPath();
     ctx.arc(cx, cy, R, Math.PI, Math.PI + Math.PI * pct);
     ctx.strokeStyle = color;
-    ctx.lineWidth = size * 0.07;
+    ctx.lineWidth = size * 0.09;
     ctx.lineCap = "round";
     ctx.stroke();
   }, [animatedVal, max, color, size]);
@@ -113,8 +113,8 @@ function StatBar({ label, value, max, color }: { label: string; value: number; m
         <span style={{ fontSize: "0.7rem", color: "var(--text-secondary)", fontWeight: 500 }}>{label}</span>
         <span style={{ fontSize: "0.7rem", color: "var(--text)", fontWeight: 700 }}>{animatedVal.toLocaleString()}</span>
       </div>
-      <div style={{ height: "6px", borderRadius: "3px", background: "rgba(255,255,255,0.06)", overflow: "hidden" }}>
-        <div style={{ height: "100%", borderRadius: "3px", background: `linear-gradient(90deg, ${color}, ${color}cc)`, width: `${Math.min(pct, 100)}%`, transition: "width 1.5s cubic-bezier(0.16, 1, 0.3, 1)" }} />
+      <div style={{ height: "8px", borderRadius: "4px", background: "rgba(255,255,255,0.06)", overflow: "hidden" }}>
+        <div style={{ height: "100%", borderRadius: "4px", background: `linear-gradient(90deg, ${color}, ${color}cc)`, width: `${Math.min(pct, 100)}%`, transition: "width 1.5s cubic-bezier(0.16, 1, 0.3, 1)" }} />
       </div>
     </div>
   );
@@ -188,6 +188,8 @@ function ParticleHero({ children }: { children: React.ReactNode }) {
   return (
     <div style={{ position: "relative", overflow: "hidden" }}>
       <canvas ref={canvasRef} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", pointerEvents: "none" }} />
+      {/* Warm radial gradient glow behind hero */}
+      <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at center top, rgba(220,47,75,0.08) 0%, rgba(245,200,41,0.04) 30%, transparent 60%)", pointerEvents: "none" }} />
       <div style={{ position: "relative", zIndex: 1 }}>{children}</div>
     </div>
   );
@@ -217,23 +219,25 @@ function VolumeRow({ abbrev, name, bookCount, chapterCount, wordCount, index }: 
         textDecoration: "none",
         padding: "14px 18px",
         borderRadius: "10px",
-        background: hovered ? "rgba(255,255,255,0.04)" : "rgba(255,255,255,0.015)",
-        borderLeft: `4px solid ${color}`,
+        background: hovered
+          ? `linear-gradient(90deg, ${color}12, transparent 70%)`
+          : `linear-gradient(90deg, ${color}08, transparent 50%)`,
+        borderLeft: `5px solid ${color}`,
         transition: "all 0.35s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.5s ease",
         opacity: mounted ? 1 : 0,
         transform: mounted ? (hovered ? "translateX(4px)" : "translateX(0)") : "translateX(-20px)",
-        boxShadow: hovered ? `inset 0 0 30px ${color}08, 0 2px 12px rgba(0,0,0,0.15)` : "none",
+        boxShadow: hovered ? `inset 0 0 30px ${color}10, 0 2px 12px rgba(0,0,0,0.15)` : "none",
       }}
     >
       {/* Glow dot */}
       <div style={{
-        width: "8px",
-        height: "8px",
+        width: "10px",
+        height: "10px",
         borderRadius: "50%",
         background: color,
         marginRight: "14px",
         flexShrink: 0,
-        boxShadow: hovered ? `0 0 12px ${color}80` : `0 0 4px ${color}40`,
+        boxShadow: hovered ? `0 0 14px ${color}90, 0 0 4px ${color}` : `0 0 8px ${color}60, 0 0 2px ${color}80`,
         transition: "box-shadow 0.35s ease",
       }} />
       {/* Name */}
@@ -392,7 +396,7 @@ export default function HomePage() {
               fontWeight: 600,
               textTransform: "uppercase",
               letterSpacing: "0.2em",
-              color: "rgba(255,255,255,0.35)",
+              color: "rgba(255,255,255,0.4)",
               marginBottom: "12px",
             }}>
               Explore the Standard Works
@@ -430,11 +434,11 @@ export default function HomePage() {
               margin: "0 auto",
             }}>
               {[
-                { value: animatedVerses, label: "Verses", fallback: "41,995" },
-                { value: animatedTotalWords, label: "Words", fallback: "820,000" },
-                { value: animatedBooks, label: "Books", fallback: "87" },
-                { value: animatedPeople, label: "People", fallback: "857" },
-                { value: animatedLocations, label: "Places", fallback: "333" },
+                { value: animatedVerses, label: "Verses", fallback: "41,995", accent: "#3B82F6" },
+                { value: animatedTotalWords, label: "Words", fallback: "820,000", accent: "#10B981" },
+                { value: animatedBooks, label: "Books", fallback: "87", accent: "#A78BFA" },
+                { value: animatedPeople, label: "People", fallback: "857", accent: "#F59E0B" },
+                { value: animatedLocations, label: "Places", fallback: "333", accent: "#06B6D4" },
               ].map((item, i, arr) => (
                 <div key={item.label} style={{
                   display: "flex",
@@ -445,7 +449,7 @@ export default function HomePage() {
                     <div style={{
                       fontSize: isMobile ? "1.5rem" : "2rem",
                       fontWeight: 800,
-                      color: "var(--text)",
+                      color: item.accent,
                       letterSpacing: "-0.02em",
                       lineHeight: 1.1,
                     }}>
@@ -487,7 +491,7 @@ export default function HomePage() {
               fontWeight: 700,
               textTransform: "uppercase",
               letterSpacing: "0.16em",
-              color: "rgba(255,255,255,0.3)",
+              color: "rgba(220,47,75,0.5)",
               marginBottom: "14px",
               paddingLeft: "4px",
             }}>
@@ -516,10 +520,11 @@ export default function HomePage() {
                 display: "block",
                 textDecoration: "none",
                 background: "rgba(255,255,255,0.02)",
-                border: "1px solid rgba(255,255,255,0.06)",
+                border: `1px solid ${getCharColor(spotlightChar)}25`,
                 borderRadius: "14px",
                 overflow: "hidden",
                 transition: "all 0.3s ease",
+                boxShadow: `0 0 0 1px ${getCharColor(spotlightChar)}10`,
               }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.borderColor = `${getCharColor(spotlightChar)}40`;
@@ -536,8 +541,10 @@ export default function HomePage() {
                 <div style={{ width: "100%", aspectRatio: "16/10", overflow: "hidden", position: "relative" }}>
                   <img src={spotlightChar.portraitUrl} alt={spotlightChar.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%" }} />
                   <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%)" }} />
+                  {/* Glow line at bottom of portrait */}
+                  <div style={{ position: "absolute", bottom: 0, left: "16px", right: "16px", height: "2px", background: getCharColor(spotlightChar), boxShadow: `0 0 12px ${getCharColor(spotlightChar)}80, 0 0 4px ${getCharColor(spotlightChar)}`, borderRadius: "1px" }} />
                   <div style={{ position: "absolute", bottom: "12px", left: "16px", right: "16px" }}>
-                    <div style={{ fontSize: "0.5rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: getCharColor(spotlightChar), marginBottom: "3px" }}>Spotlight</div>
+                    <div style={{ fontSize: "0.5rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: getCharColor(spotlightChar), marginBottom: "3px", textShadow: `0 0 12px ${getCharColor(spotlightChar)}60` }}>Spotlight</div>
                     <div style={{ fontSize: "1.05rem", fontWeight: 700, color: "#fff" }}>{spotlightChar.name}</div>
                     <div style={{ fontSize: "0.68rem", color: "rgba(255,255,255,0.6)" }}>{spotlightChar.roles.slice(0, 3).join(" · ")}</div>
                   </div>
@@ -561,11 +568,12 @@ export default function HomePage() {
               <Link href={nuggetLink || "#"} style={{
                 display: "block",
                 textDecoration: "none",
-                background: "rgba(245,166,35,0.04)",
-                border: "1px solid rgba(245,166,35,0.15)",
+                background: "rgba(245,166,35,0.05)",
+                border: "1px solid rgba(245,166,35,0.25)",
                 borderRadius: "14px",
                 padding: "16px",
                 transition: "all 0.3s ease",
+                boxShadow: "0 0 40px rgba(245,166,35,0.06)",
               }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.borderColor = "rgba(245,166,35,0.35)";
@@ -582,7 +590,7 @@ export default function HomePage() {
                   <span style={{ fontSize: "0.5rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: CATEGORY_COLORS[nugget.category] || "#F59E0B", background: `${CATEGORY_COLORS[nugget.category] || "#F59E0B"}18`, padding: "2px 8px", borderRadius: "4px" }}>
                     {nugget.category}
                   </span>
-                  <span style={{ fontSize: "0.5rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "rgba(255,255,255,0.3)" }}>Did you know?</span>
+                  <span style={{ fontSize: "0.5rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "rgba(245,166,35,0.7)" }}>Did you know?</span>
                 </div>
                 <div style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--text)", marginBottom: "6px", lineHeight: 1.4 }}>{nugget.title}</div>
                 <div style={{
@@ -618,7 +626,7 @@ export default function HomePage() {
             fontWeight: 700,
             textTransform: "uppercase",
             letterSpacing: "0.16em",
-            color: "rgba(255,255,255,0.3)",
+            color: "rgba(59,130,246,0.55)",
             marginBottom: "14px",
             paddingLeft: "4px",
           }}>
@@ -640,6 +648,7 @@ export default function HomePage() {
                   textDecoration: "none",
                   background: "rgba(255,255,255,0.02)",
                   border: "1px solid rgba(255,255,255,0.06)",
+                  borderLeft: `3px solid ${tool.accent}50`,
                   borderRadius: "12px",
                   padding: isMobile ? "18px" : "22px",
                   transition: "all 0.3s ease",
@@ -649,12 +658,14 @@ export default function HomePage() {
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = "rgba(255,255,255,0.05)";
                   e.currentTarget.style.borderColor = `${tool.accent}40`;
+                  e.currentTarget.style.borderLeftColor = tool.accent;
                   e.currentTarget.style.transform = "translateY(-3px)";
-                  e.currentTarget.style.boxShadow = `0 8px 30px rgba(0,0,0,0.3), inset 0 0 40px ${tool.accent}06`;
+                  e.currentTarget.style.boxShadow = `0 8px 30px rgba(0,0,0,0.3), 0 0 20px ${tool.accent}12`;
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.background = "rgba(255,255,255,0.02)";
                   e.currentTarget.style.borderColor = "rgba(255,255,255,0.06)";
+                  e.currentTarget.style.borderLeftColor = `${tool.accent}50`;
                   e.currentTarget.style.transform = "translateY(0)";
                   e.currentTarget.style.boxShadow = "none";
                 }}
@@ -664,7 +675,7 @@ export default function HomePage() {
                     width: "36px",
                     height: "36px",
                     borderRadius: "10px",
-                    background: `${tool.accent}18`,
+                    background: `${tool.accent}25`,
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -716,6 +727,7 @@ export default function HomePage() {
                   e.currentTarget.style.borderColor = "rgba(255,255,255,0.05)";
                 }}
               >
+                <span style={{ width: "4px", height: "4px", borderRadius: "50%", background: tool.dot, flexShrink: 0, boxShadow: `0 0 6px ${tool.dot}50` }} />
                 <img src={tool.icon} alt="" style={{ width: "12px", height: "12px", filter: "invert(1) brightness(0.5)" }} />
                 {tool.name}
               </Link>
@@ -732,9 +744,6 @@ export default function HomePage() {
             style={{
               marginBottom: "56px",
               padding: isMobile ? "24px 18px" : "32px 28px",
-              background: "rgba(255,255,255,0.015)",
-              border: "1px solid rgba(255,255,255,0.04)",
-              borderRadius: "16px",
               opacity: statsReveal.isVisible ? 1 : 0,
               transform: statsReveal.isVisible ? "translateY(0)" : "translateY(20px)",
               transition: "opacity 0.6s ease, transform 0.6s ease",
@@ -745,7 +754,7 @@ export default function HomePage() {
               fontWeight: 700,
               textTransform: "uppercase",
               letterSpacing: "0.16em",
-              color: "rgba(255,255,255,0.3)",
+              color: "rgba(167,139,250,0.55)",
               marginBottom: "24px",
             }}>
               By the Numbers
