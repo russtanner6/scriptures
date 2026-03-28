@@ -361,6 +361,50 @@ export default function HomePage() {
           ))}
         </div>
 
+        {/* ═══ PEOPLE SPOTLIGHT ═══ */}
+        {spotlightChar && (
+          <div style={{ marginBottom: "40px", display: "flex", flexDirection: isMobile ? "column" : "row", alignItems: "center", gap: isMobile ? "16px" : "24px" }}>
+            {/* Large portrait */}
+            <Link href={`/people?person=${spotlightChar.id}`} onClick={() => analytics.homeSpotlightClick(spotlightChar.id)} style={{ textDecoration: "none", flexShrink: 0 }}>
+              <div style={{ width: isMobile ? "100px" : "120px", height: isMobile ? "100px" : "120px", borderRadius: "50%", overflow: "hidden", border: `3px solid ${getCharColor(spotlightChar)}50`, transition: "transform 0.3s, box-shadow 0.3s" }}
+                onMouseEnter={(e) => { e.currentTarget.style.transform = "scale(1.05)"; e.currentTarget.style.boxShadow = `0 0 30px ${getCharColor(spotlightChar)}30`; }}
+                onMouseLeave={(e) => { e.currentTarget.style.transform = "scale(1)"; e.currentTarget.style.boxShadow = "none"; }}
+              >
+                <img src={spotlightChar.portraitUrl} alt={spotlightChar.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%" }} />
+              </div>
+            </Link>
+            {/* Info + carousel */}
+            <div style={{ flex: 1, textAlign: isMobile ? "center" : "left" }}>
+              <div style={{ fontSize: "0.55rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.14em", color: getCharColor(spotlightChar), marginBottom: "2px" }}>Spotlight</div>
+              <Link href={`/people?person=${spotlightChar.id}`} style={{ textDecoration: "none" }}>
+                <div style={{ fontSize: "1.1rem", fontWeight: 700, color: "var(--text)", marginBottom: "2px" }}>{spotlightChar.name}</div>
+              </Link>
+              <div style={{ fontSize: "0.72rem", color: "var(--text-muted)", marginBottom: "10px" }}>{spotlightChar.roles.slice(0, 3).join(" · ")}</div>
+              {/* Mini carousel */}
+              {featuredChars.length > 0 && (
+                <div style={{ display: "flex", gap: "8px", justifyContent: isMobile ? "center" : "flex-start", flexWrap: "wrap" }}>
+                  {featuredChars.slice(0, 8).map((c) => (
+                    <Link key={c.id} href={`/people?person=${c.id}`} style={{ textDecoration: "none" }}>
+                      <div style={{ width: "36px", height: "36px", borderRadius: "50%", overflow: "hidden", border: `2px solid ${getCharColor(c)}30`, transition: "transform 0.2s, border-color 0.2s" }}
+                        onMouseEnter={(e) => { e.currentTarget.style.transform = "scale(1.15)"; e.currentTarget.style.borderColor = `${getCharColor(c)}80`; }}
+                        onMouseLeave={(e) => { e.currentTarget.style.transform = "scale(1)"; e.currentTarget.style.borderColor = `${getCharColor(c)}30`; }}
+                      >
+                        <img src={c.portraitUrl} alt={c.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%" }} loading="lazy" />
+                      </div>
+                    </Link>
+                  ))}
+                  <Link href="/people" style={{ width: "36px", height: "36px", borderRadius: "50%", background: "rgba(255,255,255,0.06)", display: "flex", alignItems: "center", justifyContent: "center", textDecoration: "none", fontSize: "0.6rem", fontWeight: 700, color: "var(--text-muted)", transition: "all 0.2s" }}
+                    onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.12)"; e.currentTarget.style.color = "var(--text)"; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.06)"; e.currentTarget.style.color = "var(--text-muted)"; }}
+                  >
+                    +{(genderCounts.male + genderCounts.female) - 8}
+                  </Link>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
         {/* ═══ 4. DISCOVERY TOOLS ═══ */}
         <div
           ref={toolsReveal.ref}
@@ -466,9 +510,7 @@ export default function HomePage() {
           {/* Random Verse */}
           {randomVerse && (
             <div style={{
-              background: "rgba(255,255,255,0.02)",
-              borderRadius: "14px",
-              padding: "18px",
+              padding: "0",
               borderLeft: `3px solid ${volColor}`,
             }}>
               <div style={{ fontSize: "0.55rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)", marginBottom: "10px" }}>
@@ -537,12 +579,12 @@ export default function HomePage() {
         >
           <div style={{
             display: "grid",
-            gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr 1fr",
+            gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
             gap: "16px",
           }}>
             {/* Stats card */}
             {bookStats.totalVerses > 0 && (
-              <div style={{ background: "rgba(255,255,255,0.02)", borderRadius: "14px", padding: "18px", textAlign: "center" }}>
+              <div style={{ padding: "0", textAlign: "center" }}>
                 <div style={{ fontSize: "1.4rem", fontWeight: 800, color: "var(--text)", letterSpacing: "-0.02em", marginBottom: "2px" }}>
                   {animatedTotalWords.toLocaleString()}
                 </div>
@@ -557,7 +599,7 @@ export default function HomePage() {
 
             {/* Volume bars + fun facts */}
             {bookStats.totalVerses > 0 && (
-              <div style={{ background: "rgba(255,255,255,0.02)", borderRadius: "14px", padding: "18px" }}>
+              <div style={{ padding: "0" }}>
                 <div style={{ fontSize: "0.6rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "10px" }}>
                   Words by Volume
                 </div>
@@ -565,11 +607,11 @@ export default function HomePage() {
                   <StatBar key={v} label={v} value={bookStats.volumeWords[v] || 0} max={Math.max(...Object.values(bookStats.volumeWords))} color={VOLUME_COLORS[v] || "#888"} />
                 ))}
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px", marginTop: "12px" }}>
-                  <div style={{ background: "rgba(255,255,255,0.03)", borderRadius: "8px", padding: "8px", textAlign: "center" }}>
+                  <div style={{ padding: "8px", textAlign: "center" }}>
                     <div style={{ fontSize: "0.8rem", fontWeight: 800, color: "#10B981" }}>{bookStats.longestBook}</div>
                     <div style={{ fontSize: "0.5rem", color: "var(--text-muted)" }}>Longest Book</div>
                   </div>
-                  <div style={{ background: "rgba(255,255,255,0.03)", borderRadius: "8px", padding: "8px", textAlign: "center" }}>
+                  <div style={{ padding: "8px", textAlign: "center" }}>
                     <div style={{ fontSize: "0.8rem", fontWeight: 800, color: "#F59E0B" }}>{bookStats.shortestBook}</div>
                     <div style={{ fontSize: "0.5rem", color: "var(--text-muted)" }}>Shortest Book</div>
                   </div>
@@ -577,66 +619,7 @@ export default function HomePage() {
               </div>
             )}
 
-            {/* People spotlight + carousel */}
-            <div style={{ background: "rgba(255,255,255,0.02)", borderRadius: "14px", padding: "18px" }}>
-              {spotlightChar && (
-                <Link href={`/people?person=${spotlightChar.id}`} onClick={() => analytics.homeSpotlightClick(spotlightChar.id)} style={{ display: "block", textDecoration: "none", marginBottom: "12px" }}>
-                  <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
-                    <div style={{ width: "52px", height: "52px", borderRadius: "50%", overflow: "hidden", flexShrink: 0, border: `2px solid ${getCharColor(spotlightChar)}40` }}>
-                      <img src={spotlightChar.portraitUrl} alt={spotlightChar.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%" }} />
-                    </div>
-                    <div>
-                      <div style={{ fontSize: "0.5rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.14em", color: getCharColor(spotlightChar), marginBottom: "2px" }}>Spotlight</div>
-                      <div style={{ fontSize: "0.85rem", fontWeight: 700, color: "var(--text)" }}>{spotlightChar.name}</div>
-                      <div style={{ fontSize: "0.62rem", color: "var(--text-muted)" }}>{spotlightChar.roles.slice(0, 2).join(" · ")}</div>
-                    </div>
-                  </div>
-                </Link>
-              )}
-
-              {/* People + places count */}
-              <div style={{ display: "flex", gap: "12px", marginBottom: "12px" }}>
-                <RingChart value={genderCounts.male + genderCounts.female} max={1000} label="People" color="#F59E0B" size={52} strokeWidth={4} fontSize="0.62rem" />
-                <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center" }}>
-                  <div style={{ fontSize: "0.62rem", color: "var(--text-muted)", lineHeight: 1.5 }}>
-                    {genderCounts.male} men &middot; {genderCounts.female} women
-                  </div>
-                  <div style={{ fontSize: "0.62rem", color: "var(--text-muted)" }}>
-                    {locationCount} named locations
-                  </div>
-                </div>
-              </div>
-
-              {/* People carousel */}
-              {featuredChars.length > 0 && (
-                <div style={{ overflow: "hidden", borderRadius: "8px" }}>
-                  <div style={{
-                    display: "flex",
-                    gap: "6px",
-                    transition: "transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)",
-                    transform: `translateX(-${carouselIdx * (100 / 3 + 2)}%)`,
-                  }}>
-                    {featuredChars.map((c) => (
-                      <Link key={c.id} href={`/people?person=${c.id}`} style={{ textDecoration: "none", textAlign: "center", flex: "0 0 calc(33.33% - 4px)", transition: "transform 0.2s" }}
-                        onMouseEnter={(e) => { e.currentTarget.style.transform = "scale(1.05)"; }}
-                        onMouseLeave={(e) => { e.currentTarget.style.transform = "scale(1)"; }}
-                      >
-                        <div style={{ width: "100%", aspectRatio: "1", borderRadius: "8px", overflow: "hidden", marginBottom: "3px" }}>
-                          <img src={c.portraitUrl} alt={c.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%" }} loading="lazy" />
-                        </div>
-                        <div style={{ fontSize: "0.55rem", fontWeight: 600, color: "var(--text-secondary)", lineHeight: 1.2 }}>{c.name}</div>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              <div style={{ textAlign: "center", marginTop: "10px" }}>
-                <Link href="/people" style={{ fontSize: "0.68rem", fontWeight: 500, color: "var(--accent)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
-                  Explore all 857 people &rarr;
-                </Link>
-              </div>
-            </div>
+            {/* People section moved up — see PEOPLE SPOTLIGHT above */}
           </div>
         </div>
       </div>
