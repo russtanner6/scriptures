@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { VOLUME_COLORS } from "@/lib/constants";
 import VolumeTooltip from "@/components/VolumeTooltip";
 import { usePreferencesContext } from "@/components/PreferencesProvider";
@@ -12,15 +11,6 @@ import { bookNameToSlug, VOLUME_ABBREV_TO_SLUG } from "@/lib/scripture-slugs";
 import { useScrollReveal } from "@/lib/useScrollReveal";
 import type { ScriptureCharacter, ContextNugget, BookStat, Volume } from "@/lib/types";
 import { analytics } from "@/lib/analytics";
-
-interface RandomVerse {
-  verse: number;
-  chapter: number;
-  text: string;
-  bookId: number;
-  bookName: string;
-  volumeAbbrev: string;
-}
 
 const VOLUME_ORDER = ["OT", "NT", "BoM", "D&C", "PoGP"];
 
@@ -74,27 +64,44 @@ function useCounter(target: number, duration = 1500, active = true) {
   return value;
 }
 
-// --- SVG Ring Chart ---
-function RingChart({ value, max, label, color, size = 72, strokeWidth = 6, fontSize: fs }: { value: number; max: number; label: string; color: string; size?: number; strokeWidth?: number; fontSize?: string }) {
+// --- Canvas Gauge Dial ---
+function GaugeDial({ value, max, label, color, size = 100 }: { value: number; max: number; label: string; color: string; size?: number }) {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
   const animatedVal = useCounter(value);
-  const radius = (size - strokeWidth) / 2;
-  const circumference = 2 * Math.PI * radius;
-  const progress = max > 0 ? animatedVal / max : 0;
-  const dashOffset = circumference * (1 - progress);
+
+  useEffect(() => {
+    const cv = canvasRef.current;
+    if (!cv) return;
+    const ctx = cv.getContext("2d");
+    if (!ctx) return;
+    ctx.clearRect(0, 0, size, size * 0.7);
+    const cx = size / 2, cy = size * 0.6, R = size * 0.4;
+    // Background arc
+    ctx.beginPath();
+    ctx.arc(cx, cy, R, Math.PI, 2 * Math.PI);
+    ctx.strokeStyle = "rgba(255,255,255,0.06)";
+    ctx.lineWidth = size * 0.07;
+    ctx.lineCap = "round";
+    ctx.stroke();
+    // Filled arc
+    const pct = max > 0 ? Math.min(animatedVal / max, 1) : 0;
+    ctx.beginPath();
+    ctx.arc(cx, cy, R, Math.PI, Math.PI + Math.PI * pct);
+    ctx.strokeStyle = color;
+    ctx.lineWidth = size * 0.07;
+    ctx.lineCap = "round";
+    ctx.stroke();
+  }, [animatedVal, max, color, size]);
+
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
-      <div style={{ position: "relative", width: size, height: size }}>
-        <svg width={size} height={size} style={{ transform: "rotate(-90deg)", display: "block" }}>
-          <circle cx={size / 2} cy={size / 2} r={radius} fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth={strokeWidth} />
-          <circle cx={size / 2} cy={size / 2} r={radius} fill="none" stroke={color} strokeWidth={strokeWidth}
-            strokeDasharray={circumference} strokeDashoffset={dashOffset} strokeLinecap="round"
-            style={{ transition: "stroke-dashoffset 1.5s cubic-bezier(0.16, 1, 0.3, 1)" }} />
-        </svg>
-        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", fontSize: fs || "0.82rem", fontWeight: 700, color: "var(--text)" }}>
+    <div style={{ textAlign: "center" }}>
+      <div style={{ position: "relative", width: size, height: size * 0.55 }}>
+        <canvas ref={canvasRef} width={size} height={size * 0.7} style={{ width: size, height: size * 0.7 }} />
+        <div style={{ position: "absolute", bottom: "2px", left: "50%", transform: "translateX(-50%)", fontSize: size * 0.16, fontWeight: 700, color: "var(--text)" }}>
           {animatedVal.toLocaleString()}
         </div>
       </div>
-      <div style={{ fontSize: "0.58rem", color: "var(--text-muted)", fontWeight: 500, textAlign: "center" }}>{label}</div>
+      <div style={{ fontSize: "0.6rem", color: "var(--text-muted)", fontWeight: 500, marginTop: "-4px" }}>{label}</div>
     </div>
   );
 }
@@ -118,69 +125,88 @@ function StatBar({ label, value, max, color }: { label: string; value: number; m
 
 // --- Volume Shelf Card ---
 function VolumeCard({ abbrev, name, bookCount, chapterCount, index }: { abbrev: string; name: string; bookCount: number; chapterCount: number; index: number }) {
-  const cardRef = useRef<HTMLAnchorElement>(null);
   const [mounted, setMounted] = useState(false);
+  const [hovered, setHovered] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setMounted(true), 100 + index * 100);
+    const timer = setTimeout(() => setMounted(true), 100 + index * 120);
     return () => clearTimeout(timer);
   }, [index]);
-
-  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    e.currentTarget.style.setProperty("--mx", `${e.clientX - rect.left}px`);
-    e.currentTarget.style.setProperty("--my", `${e.clientY - rect.top}px`);
-  }, []);
 
   const color = VOLUME_COLORS[abbrev] || "#888";
   const slug = VOLUME_ABBREV_TO_SLUG[abbrev];
 
   return (
     <Link
-      ref={cardRef}
       href={`/scriptures/${slug}`}
-      onMouseMove={handleMouseMove}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
       style={{
-        display: "block",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
         textDecoration: "none",
-        background: "rgba(255,255,255,0.03)",
-        borderLeft: `3px solid ${color}`,
-        borderRadius: "10px",
-        padding: "20px 18px",
-        transition: "all 0.3s ease, opacity 0.5s ease, transform 0.5s ease",
+        padding: "24px 8px 18px",
+        transition: "all 0.4s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.6s ease",
         opacity: mounted ? 1 : 0,
-        transform: mounted ? "translateY(0)" : "translateY(12px)",
+        transform: mounted ? (hovered ? "translateY(-4px)" : "translateY(0)") : "translateY(16px)",
         position: "relative",
-        overflow: "hidden",
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.transform = "translateY(-3px)";
-        e.currentTarget.style.boxShadow = `0 8px 32px ${color}25`;
-        e.currentTarget.style.background = `radial-gradient(300px circle at var(--mx, 50%) var(--my, 50%), ${color}12, rgba(255,255,255,0.03) 70%)`;
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.transform = "translateY(0)";
-        e.currentTarget.style.boxShadow = "none";
-        e.currentTarget.style.background = "rgba(255,255,255,0.03)";
+        textAlign: "center",
       }}
     >
-      <div style={{ fontSize: "1rem", fontWeight: 700, color: "var(--text)", marginBottom: "6px" }}>
+      {/* Volume color accent dot */}
+      <div style={{
+        width: hovered ? "40px" : "6px",
+        height: "6px",
+        borderRadius: "3px",
+        background: color,
+        marginBottom: "14px",
+        transition: "width 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease",
+        boxShadow: hovered ? `0 0 20px ${color}60` : "none",
+      }} />
+      <div style={{
+        fontSize: "0.95rem",
+        fontWeight: 700,
+        color: hovered ? "var(--text)" : "rgba(255,255,255,0.8)",
+        marginBottom: "5px",
+        transition: "color 0.3s ease",
+        letterSpacing: "0.01em",
+      }}>
         {name}
       </div>
-      <div style={{ fontSize: "0.7rem", color: "var(--text-muted)", marginBottom: "14px" }}>
-        {bookCount} {bookCount === 1 ? "book" : "books"} &middot; {chapterCount} {chapterCount === 1 ? "chapter" : "chapters"}
+      <div style={{
+        fontSize: "0.62rem",
+        color: "var(--text-muted)",
+        marginBottom: "12px",
+        letterSpacing: "0.04em",
+      }}>
+        {bookCount} {bookCount === 1 ? "book" : "books"} · {chapterCount} chapters
       </div>
-      <div style={{ fontSize: "0.72rem", fontWeight: 600, color }}>
-        Start Reading &rarr;
+      <div style={{
+        fontSize: "0.65rem",
+        fontWeight: 600,
+        color,
+        opacity: hovered ? 1 : 0.5,
+        transition: "opacity 0.3s ease, letter-spacing 0.3s ease",
+        letterSpacing: hovered ? "0.08em" : "0.04em",
+        textTransform: "uppercase",
+      }}>
+        Read →
       </div>
     </Link>
+  );
+}
+
+// --- Section Divider ---
+function SectionDivider() {
+  return (
+    <div style={{ height: "1px", background: "rgba(255,255,255,0.04)", margin: "0 auto", maxWidth: "100%" }} />
   );
 }
 
 export default function HomePage() {
   const isMobile = useIsMobile();
   const { isVolumeVisible } = usePreferencesContext();
-  const [randomVerse, setRandomVerse] = useState<RandomVerse | null>(null);
   const [featuredChars, setFeaturedChars] = useState<ScriptureCharacter[]>([]);
   const [spotlightChar, setSpotlightChar] = useState<ScriptureCharacter | null>(null);
   const [nugget, setNugget] = useState<ContextNugget | null>(null);
@@ -211,11 +237,6 @@ export default function HomePage() {
 
   // Fetch all data on mount
   useEffect(() => {
-    fetch("/api/random-verse")
-      .then((r) => r.json())
-      .then((data) => { if (data?.text) setRandomVerse(data); })
-      .catch(() => {});
-
     fetch("/api/characters")
       .then((r) => r.json())
       .then((data) => {
@@ -266,12 +287,6 @@ export default function HomePage() {
       .catch(() => {});
   }, []);
 
-  const volColor = randomVerse ? VOLUME_COLORS[randomVerse.volumeAbbrev] || "#3B82F6" : "#3B82F6";
-  const isDC = randomVerse?.volumeAbbrev === "D&C";
-  const verseRef = randomVerse
-    ? isDC ? `D&C ${randomVerse.chapter}:${randomVerse.verse}` : `${randomVerse.bookName} ${randomVerse.chapter}:${randomVerse.verse}`
-    : "";
-
   const getCharColor = (c: ScriptureCharacter) => {
     for (const v of VOLUME_ORDER) {
       if (c.volumes.includes(v)) return VOLUME_COLORS[v] || "#8b5cf6";
@@ -310,18 +325,18 @@ export default function HomePage() {
       <Header />
       <div className="page-container page-darker">
         {/* ═══ 1. HERO ═══ */}
-        <div style={{ textAlign: "center", marginTop: isMobile ? "24px" : "48px", marginBottom: "20px" }}>
+        <div style={{ textAlign: "center", marginTop: isMobile ? "28px" : "56px", marginBottom: "24px" }}>
           <h1 style={{
-            fontSize: isMobile ? "1.2rem" : "1.6rem",
+            fontSize: isMobile ? "1.3rem" : "1.8rem",
             fontWeight: 800,
-            letterSpacing: "0.06em",
-            marginBottom: "8px",
+            letterSpacing: "0.08em",
+            marginBottom: "10px",
             textTransform: "uppercase",
-            background: "linear-gradient(135deg, #e0e0e0 0%, #ffffff 40%, #c8b8ff 100%)",
+            background: "linear-gradient(90deg, #DC2F4B, #E8532C, #F57B20, #F5A623, #F5C829)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
           }}>
-            Scripture Explorer
+            LDS Scripture Explorer
           </h1>
           <p style={{ fontSize: isMobile ? "0.85rem" : "0.95rem", color: "var(--text-secondary)", margin: "0 auto", lineHeight: 1.6 }}>
             Search, analyze, and read {bookStats.totalVerses ? bookStats.totalVerses.toLocaleString() : "41,995"} verses across all five volumes.
@@ -330,40 +345,52 @@ export default function HomePage() {
 
         {/* ═══ 2. ANIMATED COUNTERS ═══ */}
         <div style={{
-          display: "grid",
-          gridTemplateColumns: isMobile ? "1fr 1fr" : "repeat(4, 1fr)",
-          gap: isMobile ? "16px" : "24px",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignItems: "baseline",
+          gap: isMobile ? "4px 0" : "0",
           maxWidth: "600px",
-          margin: "0 auto 36px",
+          margin: "0 auto 40px",
           textAlign: "center",
         }}>
-          {counterItems.map((item) => (
-            <div key={item.label}>
-              <div style={{ fontSize: isMobile ? "1.6rem" : "2rem", fontWeight: 800, color: "var(--text)", letterSpacing: "-0.02em" }}>
-                {item.value > 0 ? item.value.toLocaleString() : item.fallback}
+          {counterItems.map((item, i) => (
+            <div key={item.label} style={{ display: "flex", alignItems: "baseline", ...(isMobile && i % 2 === 0 && i < counterItems.length - 1 ? { width: "50%", justifyContent: "center" } : isMobile ? { width: "50%", justifyContent: "center" } : {}) }}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                <div style={{ fontSize: isMobile ? "1.6rem" : "2rem", fontWeight: 800, color: "var(--text)", letterSpacing: "-0.02em" }}>
+                  {item.value > 0 ? item.value.toLocaleString() : item.fallback}
+                </div>
+                <div style={{ fontSize: "0.65rem", color: "var(--text-muted)", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.1em", marginTop: "2px" }}>
+                  {item.label}
+                </div>
               </div>
-              <div style={{ fontSize: "0.65rem", color: "var(--text-muted)", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.1em", marginTop: "2px" }}>
-                {item.label}
-              </div>
+              {!isMobile && i < counterItems.length - 1 && (
+                <span style={{ fontSize: "1.2rem", color: "rgba(255,255,255,0.15)", margin: "0 20px", fontWeight: 300, alignSelf: "center" }}>&middot;</span>
+              )}
             </div>
           ))}
         </div>
+
+        <SectionDivider />
 
         {/* ═══ 3. VOLUME SHELF ═══ */}
         <div style={{
           display: "grid",
           gridTemplateColumns: isMobile ? "1fr" : `repeat(${volumeShelfData.length}, 1fr)`,
           gap: isMobile ? "10px" : "14px",
-          marginBottom: "48px",
+          marginTop: "56px",
+          marginBottom: "56px",
         }}>
           {volumeShelfData.map((v, i) => (
             <VolumeCard key={v.abbrev} abbrev={v.abbrev} name={v.name} bookCount={v.bookCount} chapterCount={v.chapterCount} index={i} />
           ))}
         </div>
 
+        <SectionDivider />
+
         {/* ═══ PEOPLE SPOTLIGHT ═══ */}
         {spotlightChar && (
-          <div style={{ marginBottom: "40px", display: "flex", flexDirection: isMobile ? "column" : "row", alignItems: "center", gap: isMobile ? "16px" : "24px" }}>
+          <div style={{ marginTop: "56px", marginBottom: "48px", display: "flex", flexDirection: isMobile ? "column" : "row", alignItems: "center", gap: isMobile ? "16px" : "24px" }}>
             {/* Large portrait */}
             <Link href={`/people?person=${spotlightChar.id}`} onClick={() => analytics.homeSpotlightClick(spotlightChar.id)} style={{ textDecoration: "none", flexShrink: 0 }}>
               <div style={{ width: isMobile ? "100px" : "120px", height: isMobile ? "100px" : "120px", borderRadius: "50%", overflow: "hidden", border: `3px solid ${getCharColor(spotlightChar)}50`, transition: "transform 0.3s, box-shadow 0.3s" }}
@@ -405,11 +432,14 @@ export default function HomePage() {
           </div>
         )}
 
+        <SectionDivider />
+
         {/* ═══ 4. DISCOVERY TOOLS ═══ */}
         <div
           ref={toolsReveal.ref}
           style={{
-            marginBottom: "48px",
+            marginTop: "56px",
+            marginBottom: "56px",
             opacity: toolsReveal.isVisible ? 1 : 0,
             transform: toolsReveal.isVisible ? "translateY(0)" : "translateY(20px)",
             transition: "opacity 0.6s ease, transform 0.6s ease",
@@ -420,7 +450,7 @@ export default function HomePage() {
             display: "grid",
             gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)",
             gap: "14px",
-            marginBottom: "14px",
+            marginBottom: "18px",
           }}>
             {PRIMARY_TOOLS.map((tool) => (
               <Link
@@ -430,38 +460,41 @@ export default function HomePage() {
                 style={{
                   display: "block",
                   textDecoration: "none",
-                  background: "rgba(255,255,255,0.03)",
-                  borderRadius: "12px",
+                  background: "transparent",
                   padding: isMobile ? "16px" : "20px",
                   transition: "all 0.25s ease",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = "rgba(255,255,255,0.06)";
                   e.currentTarget.style.transform = "translateY(-2px)";
-                  e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.25)";
+                  const nameEl = e.currentTarget.querySelector("[data-tool-name]") as HTMLElement;
+                  if (nameEl) nameEl.style.color = "#ffffff";
+                  const descEl = e.currentTarget.querySelector("[data-tool-desc]") as HTMLElement;
+                  if (descEl) descEl.style.color = "var(--text-secondary)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "rgba(255,255,255,0.03)";
                   e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow = "none";
+                  const nameEl = e.currentTarget.querySelector("[data-tool-name]") as HTMLElement;
+                  if (nameEl) nameEl.style.color = "var(--text)";
+                  const descEl = e.currentTarget.querySelector("[data-tool-desc]") as HTMLElement;
+                  if (descEl) descEl.style.color = "var(--text-muted)";
                 }}
               >
                 <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
                   <div style={{ width: "30px", height: "30px", borderRadius: "8px", background: "rgba(255,255,255,0.06)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                     <img src={tool.svgIcon} alt="" style={{ width: "15px", height: "15px", filter: "invert(1) brightness(0.8)" }} />
                   </div>
-                  <div style={{ fontSize: "0.9rem", fontWeight: 700, color: "var(--text)" }}>{tool.name}</div>
+                  <div data-tool-name style={{ fontSize: "0.9rem", fontWeight: 700, color: "var(--text)", transition: "color 0.25s" }}>{tool.name}</div>
                 </div>
-                <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", lineHeight: 1.5 }}>{tool.description}</div>
+                <div data-tool-desc style={{ fontSize: "0.75rem", color: "var(--text-muted)", lineHeight: 1.5, transition: "color 0.25s" }}>{tool.description}</div>
               </Link>
             ))}
           </div>
 
-          {/* Secondary row - compact pills */}
+          {/* Secondary row - inline text links */}
           <div style={{
             display: "flex",
             flexWrap: "wrap",
-            gap: "8px",
+            gap: "6px 20px",
             justifyContent: "center",
           }}>
             {SECONDARY_TOOLS.map((tool) => (
@@ -471,21 +504,17 @@ export default function HomePage() {
                 onClick={() => analytics.homeToolCardClick(tool.name)}
                 style={{
                   textDecoration: "none",
-                  fontSize: "0.72rem",
+                  fontSize: "0.75rem",
                   fontWeight: 600,
-                  color: "var(--text-secondary)",
-                  background: "rgba(255,255,255,0.04)",
-                  padding: "6px 16px",
-                  borderRadius: "20px",
-                  transition: "all 0.2s ease",
+                  color: "var(--text-muted)",
+                  padding: "4px 0",
+                  transition: "color 0.2s ease",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = "rgba(255,255,255,0.1)";
                   e.currentTarget.style.color = "var(--text)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "rgba(255,255,255,0.04)";
-                  e.currentTarget.style.color = "var(--text-secondary)";
+                  e.currentTarget.style.color = "var(--text-muted)";
                 }}
               >
                 {tool.name}
@@ -494,57 +523,31 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* ═══ 5. DAILY DISCOVERY ═══ */}
-        <div
-          ref={discoveryReveal.ref}
-          style={{
-            display: "grid",
-            gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
-            gap: "16px",
-            marginBottom: "48px",
-            opacity: discoveryReveal.isVisible ? 1 : 0,
-            transform: discoveryReveal.isVisible ? "translateY(0)" : "translateY(20px)",
-            transition: "opacity 0.6s ease, transform 0.6s ease",
-          }}
-        >
-          {/* Random Verse */}
-          {randomVerse && (
-            <div style={{
-              padding: "0",
-              borderLeft: `3px solid ${volColor}`,
-            }}>
-              <div style={{ fontSize: "0.55rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)", marginBottom: "10px" }}>
-                Discover a Verse
-              </div>
-              <div style={{ fontSize: "0.85rem", color: "var(--text-secondary)", lineHeight: 1.7, fontStyle: "italic", marginBottom: "12px" }}>
-                &ldquo;{randomVerse.text.length > 200 ? randomVerse.text.substring(0, 200) + "..." : randomVerse.text}&rdquo;
-              </div>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <span style={{ fontSize: "0.72rem", fontWeight: 600, color: volColor }}>&mdash; {verseRef}</span>
-                <a
-                  href={`/scriptures?bookId=${randomVerse.bookId}&chapter=${randomVerse.chapter}&verse=${randomVerse.verse}`}
-                  onClick={() => analytics.randomVerseClick(randomVerse.bookName, randomVerse.chapter, randomVerse.verse)}
-                  style={{ fontSize: "0.7rem", color: "var(--accent)", textDecoration: "underline", textUnderlineOffset: "3px" }}
-                >
-                  Read &rarr;
-                </a>
-              </div>
-            </div>
-          )}
+        <SectionDivider />
 
-          {/* Context Nugget */}
-          {nugget && nuggetLink && (
+        {/* ═══ 5. CONTEXT NUGGET ═══ */}
+        {nugget && nuggetLink && (
+          <div
+            ref={discoveryReveal.ref}
+            style={{
+              marginTop: "56px",
+              marginBottom: "56px",
+              maxWidth: "640px",
+              marginLeft: "auto",
+              marginRight: "auto",
+              opacity: discoveryReveal.isVisible ? 1 : 0,
+              transform: discoveryReveal.isVisible ? "translateY(0)" : "translateY(20px)",
+              transition: "opacity 0.6s ease, transform 0.6s ease",
+            }}
+          >
             <Link href={nuggetLink} style={{ textDecoration: "none", display: "block" }}>
               <div
                 style={{
-                  background: "rgba(255,255,255,0.02)",
-                  borderRadius: "14px",
                   padding: "18px",
                   transition: "all 0.2s",
-                  height: "100%",
                 }}
-                onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.04)"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.02)"; }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.03)"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; }}
               >
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
                   <span style={{ fontSize: "0.55rem", fontWeight: 700, padding: "2px 8px", borderRadius: "4px", background: `${CATEGORY_COLORS[nugget.category] || "#F5A623"}20`, color: CATEGORY_COLORS[nugget.category] || "#F5A623", textTransform: "uppercase", letterSpacing: "0.08em" }}>
@@ -564,14 +567,17 @@ export default function HomePage() {
                 </div>
               </div>
             </Link>
-          )}
-        </div>
+          </div>
+        )}
 
-        {/* ═══ 6. SCRIPTURE STATS + PEOPLE ═══ */}
+        <SectionDivider />
+
+        {/* ═══ 6. SCRIPTURE STATS ═══ */}
         <div
           ref={statsReveal.ref}
           style={{
-            marginBottom: "48px",
+            marginTop: "56px",
+            marginBottom: "56px",
             opacity: statsReveal.isVisible ? 1 : 0,
             transform: statsReveal.isVisible ? "translateY(0)" : "translateY(20px)",
             transition: "opacity 0.6s ease, transform 0.6s ease",
@@ -580,50 +586,47 @@ export default function HomePage() {
           <div style={{
             display: "grid",
             gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
-            gap: "16px",
+            gap: "32px",
           }}>
-            {/* Stats card */}
+            {/* Stats gauges */}
             {bookStats.totalVerses > 0 && (
-              <div style={{ padding: "0", textAlign: "center" }}>
+              <div style={{ textAlign: "center" }}>
                 <div style={{ fontSize: "1.4rem", fontWeight: 800, color: "var(--text)", letterSpacing: "-0.02em", marginBottom: "2px" }}>
                   {animatedTotalWords.toLocaleString()}
                 </div>
-                <div style={{ fontSize: "0.6rem", color: "var(--text-muted)", marginBottom: "16px" }}>total words across 5 volumes</div>
+                <div style={{ fontSize: "0.6rem", color: "var(--text-muted)", marginBottom: "20px" }}>total words across 5 volumes</div>
                 <div style={{ display: "flex", justifyContent: "space-around" }}>
-                  <RingChart value={bookStats.totalVerses} max={50000} label="Verses" color="#3B82F6" size={64} strokeWidth={5} fontSize="0.7rem" />
-                  <RingChart value={bookStats.totalChapters} max={2000} label="Chapters" color="#10B981" size={64} strokeWidth={5} fontSize="0.7rem" />
-                  <RingChart value={bookStats.totalBooks} max={100} label="Books" color="#A78BFA" size={64} strokeWidth={5} fontSize="0.7rem" />
+                  <GaugeDial value={bookStats.totalVerses} max={50000} label="Verses" color="#3B82F6" size={isMobile ? 80 : 100} />
+                  <GaugeDial value={bookStats.totalChapters} max={2000} label="Chapters" color="#10B981" size={isMobile ? 80 : 100} />
+                  <GaugeDial value={bookStats.totalBooks} max={100} label="Books" color="#A78BFA" size={isMobile ? 80 : 100} />
                 </div>
               </div>
             )}
 
             {/* Volume bars + fun facts */}
             {bookStats.totalVerses > 0 && (
-              <div style={{ padding: "0" }}>
+              <div>
                 <div style={{ fontSize: "0.6rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--text-muted)", marginBottom: "10px" }}>
                   Words by Volume
                 </div>
                 {VOLUME_ORDER.filter(v => bookStats.volumeWords[v]).map((v) => (
                   <StatBar key={v} label={v} value={bookStats.volumeWords[v] || 0} max={Math.max(...Object.values(bookStats.volumeWords))} color={VOLUME_COLORS[v] || "#888"} />
                 ))}
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px", marginTop: "12px" }}>
-                  <div style={{ padding: "8px", textAlign: "center" }}>
+                <div style={{ display: "flex", justifyContent: "space-around", marginTop: "16px" }}>
+                  <div style={{ textAlign: "center" }}>
                     <div style={{ fontSize: "0.8rem", fontWeight: 800, color: "#10B981" }}>{bookStats.longestBook}</div>
                     <div style={{ fontSize: "0.5rem", color: "var(--text-muted)" }}>Longest Book</div>
                   </div>
-                  <div style={{ padding: "8px", textAlign: "center" }}>
+                  <div style={{ textAlign: "center" }}>
                     <div style={{ fontSize: "0.8rem", fontWeight: 800, color: "#F59E0B" }}>{bookStats.shortestBook}</div>
                     <div style={{ fontSize: "0.5rem", color: "var(--text-muted)" }}>Shortest Book</div>
                   </div>
                 </div>
               </div>
             )}
-
-            {/* People section moved up — see PEOPLE SPOTLIGHT above */}
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

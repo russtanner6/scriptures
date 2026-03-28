@@ -103,8 +103,8 @@ body::before {
 
 /* Darker background for home + tool pages (scripture reader stays at #212121) */
 .page-darker {
-  --bg: #181818;
-  --bg-gradient: linear-gradient(145deg, #181818 0%, #1c1c1e 40%, #181818 100%);
+  --bg: #141414;
+  --bg-gradient: linear-gradient(145deg, #141414 0%, #1a1a1c 40%, #141414 100%);
 }
 
 /* Scroll-reveal utility */
