@@ -416,7 +416,7 @@ export default function HomePage() {
             </h1>
             <p style={{
               fontSize: isMobile ? "0.85rem" : "0.95rem",
-              color: "var(--text-secondary)",
+              color: "rgba(255,255,255,0.7)",
               margin: "0 auto 32px",
               lineHeight: 1.6,
               maxWidth: "460px",
@@ -487,11 +487,11 @@ export default function HomePage() {
           {/* Left: Volume rows */}
           <div>
             <div style={{
-              fontSize: "0.55rem",
+              fontSize: "0.65rem",
               fontWeight: 700,
               textTransform: "uppercase",
               letterSpacing: "0.16em",
-              color: "rgba(220,47,75,0.5)",
+              color: "rgba(220,47,75,0.6)",
               marginBottom: "14px",
               paddingLeft: "4px",
             }}>
