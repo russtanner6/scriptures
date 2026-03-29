@@ -498,51 +498,6 @@ export default function HomePage() {
               </Link>
             )}
 
-            {/* Context Nugget */}
-            {nugget && (
-              <Link href={nuggetLink || "#"} style={{
-                display: "block",
-                textDecoration: "none",
-                background: "rgba(245,166,35,0.05)",
-                border: "1px solid rgba(245,166,35,0.25)",
-                borderRadius: "14px",
-                padding: "16px",
-                transition: "all 0.3s ease",
-                boxShadow: "0 0 40px rgba(245,166,35,0.06)",
-              }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = "rgba(245,166,35,0.35)";
-                  e.currentTarget.style.transform = "translateY(-2px)";
-                  e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.2)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = "rgba(245,166,35,0.15)";
-                  e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow = "none";
-                }}
-              >
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
-                  <span style={{ fontSize: "0.5rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: CATEGORY_COLORS[nugget.category] || "#F59E0B", background: `${CATEGORY_COLORS[nugget.category] || "#F59E0B"}18`, padding: "2px 8px", borderRadius: "4px" }}>
-                    {nugget.category}
-                  </span>
-                  <span style={{ fontSize: "0.5rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "rgba(245,166,35,0.7)" }}>Did you know?</span>
-                </div>
-                <div style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--text)", marginBottom: "6px", lineHeight: 1.4 }}>{nugget.title}</div>
-                <div style={{
-                  fontSize: "0.75rem",
-                  color: "var(--text-secondary)",
-                  lineHeight: 1.6,
-                  display: "-webkit-box",
-                  WebkitLineClamp: 3,
-                  WebkitBoxOrient: "vertical" as const,
-                  overflow: "hidden",
-                  marginBottom: "8px",
-                }}>{nugget.insight}</div>
-                <div style={{ fontSize: "0.62rem", color: "var(--text-muted)" }}>
-                  {nugget.book} {nugget.chapter}:{nugget.verse} · <span style={{ color: "var(--accent)" }}>Read in context →</span>
-                </div>
-              </Link>
-            )}
           </div>
         </div>
 
