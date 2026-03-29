@@ -1,5 +1,67 @@
 # Scripture Explorer — Session Log
 
+## 2026-03-28 — Session 27: H1 Spacing, Home Page Overhaul, Parent Mode
+
+### What was done
+
+**Header-to-H1 spacing standardization:**
+- Audited all pages with H1 headings — found inconsistent gaps (0px to 32px)
+- Standardized to 32px desktop / 24px mobile across all pages
+- Fixed `.page-container` CSS (24px→32px desktop, 0→24px mobile)
+- Fixed People and Locations pages (had 0px top padding)
+- Added `paddingTop: 0` override for home page (ParticleHero goes edge-to-edge)
+- Documented standard in CLAUDE.md and memory files
+
+**Home page overhaul:**
+- Removed "Words" counter from hero stats
+- Made all counter numbers + labels clickable links with chevrons (Verses/Books→/scriptures, People→/people, Places→/locations)
+- Bigger + brighter "START READING" label and subtitle text
+- Unified tool grid: merged 3 primary cards + 5 secondary pills into one 4x2 grid
+- Removed "By the Numbers" stats section (gauge dials, stat bars — redundant with hero counters)
+- Removed scroll-reveal animations (caused blank dead zones when scrolling)
+- Removed "Did you know?" context nugget block
+- Spotlight person: reduced portrait row from 10 to 3 clickable people + "+N more ›" link
+- Tightened spacing throughout (margins, gaps, row padding)
+- Counter wobble fix: `fontVariantNumeric: "tabular-nums"` + `minWidth` containers
+- Removed unused GaugeDial, StatBar components
+
+**Scripture Reader:**
+- Renamed "Mommy Mode" → "Parent Mode" everywhere
+- Darker non-speaker timeline bars in insights panel (0.15→0.07 opacity)
+- People pills in insights: `borderRadius: 20px` → `8px` to match At a Glance pills
+
+**Parent Mode narration system (NEW):**
+- Created `docs/PARENT-MODE-GUIDE.md` — complete writing guide with style prompt, parameters, audit checklist
+- Writing style: C.S. Lewis reverence + Rick Riordan pacing, natural storytelling voice
+- Created `data/parent-mode.json` with narrations for 1 Nephi chapters 1-2
+- Entity tag system: `{{person:id:name}}` and `{{place:id:name}}` for clickable inline links
+- Midjourney prompt format: exact `/imagine` prompts with `--ar 16:9 --v 6.1 --style raw --s 200`
+- Art style: epic painterly realism, Arnold Friberg-inspired but contemporary
+- Wired into ScriptureReader: loads from JSON via chapter API, renders structured blocks
+- Image placeholders show full visual descriptions (not character names)
+- Entity clicks open CharacterDetailPanel / LocationDetailPanel
+- Removed paragraph indentation from narration renderer
+
+### Bugs fixed
+- Double scrollbar / blank dead zones from scroll-reveal on home page
+- Inconsistent header-to-H1 spacing across all pages
+- Counter number wobble during animation
+
+### Current state
+- Home page fully redesigned — cleaner, tighter, more cohesive
+- Parent Mode working on 1 Nephi 1-2 (narration + image placeholders + entity links)
+- All changes pushed and deployed to Vercel
+
+### Remaining work
+1. Continue Parent Mode narrations (1 Nephi 3-22, then rest of BoM)
+2. Generate actual Midjourney images from prompts
+3. THE LORD → Jesus Christ speaker matching in insights
+4. Famous Stories tool
+5. Share icon in header
+6. App-like animations site-wide
+
+---
+
 ## 2026-03-27 — Session 26: Home Page Redesign, Reader Polish, Darker Backgrounds
 
 ### What was done

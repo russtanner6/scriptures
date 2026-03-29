@@ -11,6 +11,10 @@ Legend: `[ ]` = not started, `[~]` = in progress / partially done, `[x]` = compl
 
 ### NEXT SESSION — START HERE
 
+- [~] **Parent Mode narrations** — Continue writing narrations for 1 Nephi 3-22, then rest of Book of Mormon. Style guide at `docs/PARENT-MODE-GUIDE.md`. Data at `data/parent-mode.json`. 1 Nephi 1-2 complete. Each chapter needs: natural storytelling narration, entity tags, 2+ exact Midjourney `/imagine` prompts, post-narration audit. *(Started: Session 27)*
+
+- [ ] **Parent Mode images** — Generate actual images from Midjourney prompts in `data/parent-mode.json`. Wire image display into reader (currently shows placeholder cards). Images should rotate on each page load. *(Requested: Session 27)*
+
 - [ ] **Famous Stories tool** — New tool on home page + nav. Curated list of famous scripture stories by volume that people (especially parents with kids) can click to jump directly to that location in the reader. Card-based UI. *(Requested: Session 25)*
 
 - [ ] **Share icon in header** — Add share button next to hamburger menu on scripture pages. Standard share options: copy link, email, native share API on mobile. *(Requested: Session 25)*

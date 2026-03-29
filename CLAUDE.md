@@ -323,6 +323,6 @@ Two layout patterns exist depending on whether the tool has a search bar:
 - **Modern language:** `text_modern` column in verses table. OT+NT populated with World English Bible (WEB, public domain) via `add-modern-text.ts`. 31,095/31,102 verses matched (99.98%). BoM/D&C/PoGP not yet available. Toggle shows in Layers section only when modern text exists for the chapter.
 
 ## Future Feature Ideas
-- **Parent Mode:** Simplify scripture text into narrative format with more pictures, designed for children or parents explaining scriptures to young kids. Would provide age-appropriate retellings of scripture stories with illustrations. Toggle already present in reader UI (Original/Modern/Parent Mode segmented control) but content not yet generated.
+- **Parent Mode:** ACTIVE — narrated retellings of scripture chapters for parents reading to kids (ages 8-12). Style: C.S. Lewis reverence + Rick Riordan pacing. Data in `data/parent-mode.json`, writing guide in `docs/PARENT-MODE-GUIDE.md`. 1 Nephi 1-2 complete. Entity tags `{{person:id:name}}` / `{{place:id:name}}` for clickable inline links. Each chapter has 2+ Midjourney `/imagine` prompts (epic painterly realism, Friberg-inspired). Images not yet generated — currently showing placeholder cards. Toggle in reader UI (Original/Modern/Parent Mode).
 - **Famous Stories tool:** Curated list of famous scripture stories by volume, accessible from home page and nav.
 - **Mood Match:** Chapter recommendations based on emotional state.
