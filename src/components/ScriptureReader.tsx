@@ -1988,7 +1988,7 @@ export default function ScriptureReader() {
                   parts.push(content.slice(lastIdx));
                 }
                 return (
-                  <p key={i} style={{ marginBottom: "1.2em", textIndent: i > 0 && chapterNarration[i - 1]?.type === "text" ? "1.5em" : "0" }}>
+                  <p key={i} style={{ marginBottom: "1.2em" }}>
                     {parts}
                   </p>
                 );
