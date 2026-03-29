@@ -1797,7 +1797,7 @@ export default function ScriptureReader() {
                 {/* Three-way reading mode segmented control — always shows all 3 modes */}
                 <SegmentedToggle
                   modes={["original", "modern", "narration"] as ReadingMode[]}
-                  labels={{ original: "Original", modern: "Modern", narration: "Mommy Mode" }}
+                  labels={{ original: "Original", modern: "Modern", narration: "Parent Mode" }}
                   active={readingMode}
                   onChange={(mode) => {
                     setReadingMode(mode);
@@ -1909,7 +1909,7 @@ export default function ScriptureReader() {
           {!isLoading && readingMode === "narration" && !chapterNarration && (
             <div style={{ textAlign: "center", padding: "60px 20px", color: "rgba(255,255,255,0.3)", fontSize: "0.9rem" }}>
               <div style={{ fontSize: "1.6rem", marginBottom: "8px" }}>👩‍👧‍👦</div>
-              Mommy Mode for this chapter is coming soon.
+              Parent Mode for this chapter is coming soon.
             </div>
           )}
 
