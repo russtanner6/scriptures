@@ -327,11 +327,11 @@ export default function HomePage() {
         <ParticleHero>
           <div style={{ textAlign: "center", padding: isMobile ? "36px 0 32px" : "64px 0 48px" }}>
             <div style={{
-              fontSize: "0.6rem",
+              fontSize: "0.7rem",
               fontWeight: 600,
               textTransform: "uppercase",
               letterSpacing: "0.2em",
-              color: "rgba(255,255,255,0.4)",
+              color: "rgba(255,255,255,0.45)",
               marginBottom: "12px",
             }}>
               Explore the Standard Works
@@ -384,10 +384,10 @@ export default function HomePage() {
                     padding: isMobile ? "0 4px" : "0 16px",
                     minWidth: isMobile ? "80px" : "110px",
                     textDecoration: "none",
-                    transition: "opacity 0.2s",
+                    transition: "filter 0.2s",
                   }}
-                    onMouseEnter={(e) => { e.currentTarget.style.opacity = "0.8"; }}
-                    onMouseLeave={(e) => { e.currentTarget.style.opacity = "1"; }}
+                    onMouseEnter={(e) => { e.currentTarget.style.filter = "brightness(1.3)"; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.filter = "brightness(1)"; }}
                   >
                     <div style={{
                       fontSize: isMobile ? "1.5rem" : "2rem",
