@@ -217,7 +217,7 @@ function VolumeRow({ abbrev, name, bookCount, chapterCount, wordCount, index }: 
         display: "flex",
         alignItems: "center",
         textDecoration: "none",
-        padding: "14px 18px",
+        padding: "10px 16px",
         borderRadius: "10px",
         background: hovered
           ? `linear-gradient(90deg, ${color}12, transparent 70%)`
@@ -386,7 +386,7 @@ export default function HomePage() {
   return (
     <>
       <Header />
-      <div className="page-container page-darker">
+      <div className="page-container page-darker" style={{ paddingTop: 0 }}>
 
         {/* ═══ 1. HERO with Particle Canvas ═══ */}
         <ParticleHero>
@@ -445,13 +445,14 @@ export default function HomePage() {
                   alignItems: "center",
                   ...(isMobile ? { width: i < 3 ? "33.33%" : "50%", justifyContent: "center", marginBottom: "8px" } : {}),
                 }}>
-                  <div style={{ textAlign: "center", padding: isMobile ? "0 4px" : "0 16px" }}>
+                  <div style={{ textAlign: "center", padding: isMobile ? "0 4px" : "0 16px", minWidth: isMobile ? "80px" : "110px" }}>
                     <div style={{
                       fontSize: isMobile ? "1.5rem" : "2rem",
                       fontWeight: 800,
                       color: item.accent,
                       letterSpacing: "-0.02em",
                       lineHeight: 1.1,
+                      fontVariantNumeric: "tabular-nums",
                     }}>
                       {item.value > 0 ? item.value.toLocaleString() : item.fallback}
                     </div>
@@ -479,9 +480,9 @@ export default function HomePage() {
         <div style={{
           display: "grid",
           gridTemplateColumns: isMobile ? "1fr" : "1fr 340px",
-          gap: isMobile ? "32px" : "28px",
-          marginTop: "16px",
-          marginBottom: "48px",
+          gap: isMobile ? "24px" : "24px",
+          marginTop: "12px",
+          marginBottom: "40px",
           alignItems: "start",
         }}>
           {/* Left: Volume rows */}
@@ -497,7 +498,7 @@ export default function HomePage() {
             }}>
               Start Reading
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
               {volumeShelfData.map((v, i) => (
                 <VolumeRow
                   key={v.abbrev}

@@ -147,7 +147,7 @@ body::before {
   max-width: 1360px;
   width: 100%;
   margin: 0 auto;
-  padding: 24px 32px 0;
+  padding: 32px 32px 0;
   flex: 1;
 }
 
@@ -377,7 +377,7 @@ footer a:hover {
 /* ===== MOBILE (≤ 768px) ===== */
 @media (max-width: 768px) {
   .page-container {
-    padding: 0 16px;
+    padding: 24px 16px 0;
   }
 
   .header-wrapper {

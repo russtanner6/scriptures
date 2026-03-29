@@ -193,6 +193,8 @@ Use `<img src="/icon.svg" style={{ filter: "invert(1) brightness(X)" }} />` with
 - **Nav menu:** Slides in from the RIGHT side of the screen.
 - **DashboardCard:** Supports `headerExtra` prop for inline links/actions next to the description.
 - **Data table headings:** 0.85rem, bold (700), bright (`var(--text)`). Body text: 75% white opacity.
+- **Header-to-H1 spacing:** Must be exactly **32px** on desktop, **24px** on mobile across ALL pages with an H1 heading below the header bar. This is enforced by `.page-container` padding-top (32px desktop, 24px mobile). Scripture reader nav views use `scripturePageWrapper` with matching inline padding. The home page overrides to `paddingTop: 0` since ParticleHero goes edge-to-edge. **Any new page with an H1 must follow this standard.**
+- **Animated counters:** Use `fontVariantNumeric: "tabular-nums"` and fixed `minWidth` containers to prevent number wobble during count-up animations.
 
 ### Mobile Responsiveness
 - **ALL changes must work on mobile.** Test at 375px width minimum.
