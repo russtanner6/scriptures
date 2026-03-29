@@ -400,8 +400,8 @@ export default function HomePage() {
                       {item.value > 0 ? item.value.toLocaleString() : item.fallback}
                     </div>
                     <div style={{
-                      fontSize: "0.55rem",
-                      color: "var(--text-muted)",
+                      fontSize: "0.62rem",
+                      color: "rgba(255,255,255,0.5)",
                       fontWeight: 600,
                       textTransform: "uppercase",
                       letterSpacing: "0.12em",
@@ -498,18 +498,35 @@ export default function HomePage() {
                     <div style={{ fontSize: "0.68rem", color: "rgba(255,255,255,0.6)" }}>{spotlightChar.roles.slice(0, 3).join(" · ")}</div>
                   </div>
                 </div>
-                {/* Portrait row */}
-                <div style={{ padding: "12px 16px", display: "flex", gap: "6px", alignItems: "center", flexWrap: "wrap" }}>
-                  {featuredChars.slice(0, 10).map((c) => (
-                    <div key={c.id} style={{ width: "30px", height: "30px", borderRadius: "50%", overflow: "hidden", border: `2px solid ${getCharColor(c)}30`, transition: "transform 0.2s" }}>
-                      <img src={c.portraitUrl} alt={c.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%" }} loading="lazy" />
-                    </div>
-                  ))}
-                  <div style={{ fontSize: "0.6rem", fontWeight: 600, color: "var(--text-muted)", marginLeft: "4px" }}>
-                    +{(genderCounts.male + genderCounts.female) - 10} more
-                  </div>
-                </div>
               </Link>
+            )}
+            {/* Additional people row — separate from the spotlight link */}
+            {featuredChars.length > 1 && (
+              <div style={{ padding: "10px 16px", display: "flex", gap: "8px", alignItems: "center" }}>
+                {featuredChars.filter(c => c.id !== spotlightChar?.id).slice(0, 3).map((c) => (
+                  <Link key={c.id} href={`/people?person=${c.id}`} style={{
+                    width: "36px", height: "36px", borderRadius: "50%", overflow: "hidden",
+                    border: `2px solid ${getCharColor(c)}40`, transition: "transform 0.2s, border-color 0.2s",
+                    flexShrink: 0,
+                  }}
+                    onMouseEnter={(e) => { e.currentTarget.style.transform = "scale(1.1)"; e.currentTarget.style.borderColor = getCharColor(c); }}
+                    onMouseLeave={(e) => { e.currentTarget.style.transform = "scale(1)"; e.currentTarget.style.borderColor = `${getCharColor(c)}40`; }}
+                  >
+                    <img src={c.portraitUrl} alt={c.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%" }} loading="lazy" />
+                  </Link>
+                ))}
+                <Link href="/people" style={{
+                  fontSize: "0.62rem", fontWeight: 600, color: "rgba(255,255,255,0.55)",
+                  textDecoration: "none", marginLeft: "4px", display: "flex", alignItems: "center", gap: "3px",
+                  transition: "color 0.2s",
+                }}
+                  onMouseEnter={(e) => { e.currentTarget.style.color = "rgba(255,255,255,0.85)"; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.color = "rgba(255,255,255,0.55)"; }}
+                >
+                  +{(genderCounts.male + genderCounts.female) - 4} more
+                  <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
+                </Link>
+              </div>
             )}
 
           </div>
