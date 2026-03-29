@@ -566,7 +566,7 @@ export default function ChapterInsights({
                             alignItems: "center",
                             gap: "7px",
                             padding: "4px 10px 4px 4px",
-                            borderRadius: "20px",
+                            borderRadius: "8px",
                             background: theme.pillBg,
                             border: isSpeaker
                               ? `2.5px solid ${spk!.color}`
@@ -666,7 +666,7 @@ export default function ChapterInsights({
               }
             }
 
-            const neutralColor = lightMode ? "rgba(0,0,0,0.12)" : "rgba(255,255,255,0.15)";
+            const neutralColor = lightMode ? "rgba(0,0,0,0.12)" : "rgba(255,255,255,0.07)";
 
             return (
               <>
