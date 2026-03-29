@@ -204,7 +204,7 @@ export default function ScriptureReader() {
   // Reading mode: original (default), modern (verse-by-verse modern language), narration (chapter prose)
   type ReadingMode = "original" | "modern" | "narration";
   const [readingMode, setReadingMode] = useState<ReadingMode>("original");
-  const [chapterNarration, setChapterNarration] = useState<string | null>(null);
+  const [chapterNarration, setChapterNarration] = useState<{ type: string; content?: string; alt?: string; prompts?: string[] }[] | null>(null);
   // Whether the current chapter has modern text or narration available
   const hasModernText = verses.some((v) => v.text_modern);
   const hasNarration = !!chapterNarration;
@@ -1920,15 +1920,79 @@ export default function ScriptureReader() {
                 color: theme.verseText,
                 lineHeight: 1.9,
                 padding: isMobile ? "0 8px" : "0",
-                whiteSpace: "pre-wrap",
                 transition: "font-size 0.2s ease",
               }}
             >
-              {chapterNarration.split("\n\n").map((paragraph, i) => (
-                <p key={i} style={{ marginBottom: "1.2em", textIndent: i > 0 ? "1.5em" : "0" }}>
-                  {paragraph}
-                </p>
-              ))}
+              {chapterNarration.map((block, i) => {
+                if (block.type === "image") {
+                  return (
+                    <div key={i} style={{
+                      margin: "28px 0",
+                      padding: "20px",
+                      background: "rgba(255,255,255,0.03)",
+                      borderRadius: "12px",
+                      border: "1px solid rgba(255,255,255,0.06)",
+                      textAlign: "center",
+                      color: "rgba(255,255,255,0.3)",
+                      fontSize: "0.8rem",
+                      fontStyle: "italic",
+                    }}>
+                      <div style={{ fontSize: "1.4rem", marginBottom: "6px" }}>🎨</div>
+                      {block.alt || "Illustration coming soon"}
+                    </div>
+                  );
+                }
+                // Text block — parse entity tags {{person:id:name}} and {{place:id:name}}
+                const content = block.content || "";
+                const parts: React.ReactNode[] = [];
+                const tagRegex = /\{\{(person|place):([^:}]+):([^}]+)\}\}/g;
+                let lastIdx = 0;
+                let match;
+                while ((match = tagRegex.exec(content)) !== null) {
+                  if (match.index > lastIdx) {
+                    parts.push(content.slice(lastIdx, match.index));
+                  }
+                  const [, entityType, entityId, displayName] = match;
+                  const entityStyle = {
+                    background: "none",
+                    border: "none",
+                    color: "#2CC1E8",
+                    cursor: "pointer",
+                    fontFamily: "inherit",
+                    fontSize: "inherit",
+                    fontWeight: "inherit",
+                    padding: 0,
+                    textDecoration: "underline" as const,
+                    textDecorationColor: "rgba(44,193,232,0.3)",
+                    textUnderlineOffset: "2px",
+                  };
+                  if (entityType === "person") {
+                    parts.push(
+                      <button key={`${i}-${match.index}`} onClick={() => openCharacterById(entityId)} style={entityStyle}>
+                        {displayName}
+                      </button>
+                    );
+                  } else {
+                    parts.push(
+                      <button key={`${i}-${match.index}`} onClick={() => {
+                        const loc = allLocations.find(l => l.id === entityId);
+                        if (loc) setSelectedLocation(loc);
+                      }} style={entityStyle}>
+                        {displayName}
+                      </button>
+                    );
+                  }
+                  lastIdx = match.index + match[0].length;
+                }
+                if (lastIdx < content.length) {
+                  parts.push(content.slice(lastIdx));
+                }
+                return (
+                  <p key={i} style={{ marginBottom: "1.2em", textIndent: i > 0 && chapterNarration[i - 1]?.type === "text" ? "1.5em" : "0" }}>
+                    {parts}
+                  </p>
+                );
+              })}
             </div>
           )}
 

@@ -372,7 +372,7 @@ export interface VerseMatch {
 export async function getChapterVerses(
   bookId: number,
   chapter: number
-): Promise<{ bookName: string; volumeAbbrev: string; chapterCount: number; verses: VerseMatch[]; narration?: string | null }> {
+): Promise<{ bookName: string; volumeAbbrev: string; chapterCount: number; verses: VerseMatch[]; narration?: { type: string; content?: string; alt?: string; prompts?: string[] }[] | null }> {
   const db = await getDb();
 
   const bookRows = execToObjects<{ name: string; volume_id: number; chapter_count: number }>(
@@ -397,17 +397,23 @@ export async function getChapterVerses(
     [bookId, chapter]
   );
 
-  // Get narration if available
-  let narration: string | null = null;
+  // Get structured narration from parent-mode.json if available
+  let narration: { type: string; content?: string; alt?: string; prompts?: string[] }[] | null = null;
   try {
-    const narRows = execToObjects<{ narration: string }>(
-      db,
-      `SELECT narration FROM narrations WHERE book_id = ? AND chapter = ?`,
-      [bookId, chapter]
-    );
-    narration = narRows[0]?.narration || null;
+    const fs = await import("fs");
+    const path = await import("path");
+    const pmPath = path.join(process.cwd(), "data", "parent-mode.json");
+    if (fs.existsSync(pmPath)) {
+      const pmData = JSON.parse(fs.readFileSync(pmPath, "utf-8"));
+      const match = pmData.find((entry: { book: string; chapter: number }) =>
+        entry.book === bookName && entry.chapter === chapter
+      );
+      if (match) {
+        narration = match.narration;
+      }
+    }
   } catch {
-    // narrations table may not exist yet — that's fine
+    // parent-mode.json may not exist — that's fine
   }
 
   return { bookName, volumeAbbrev, chapterCount, verses, narration };
