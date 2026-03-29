@@ -369,17 +369,26 @@ export default function HomePage() {
               margin: "0 auto",
             }}>
               {[
-                { value: animatedVerses, label: "Verses", fallback: "41,995", accent: "#3B82F6" },
-                { value: animatedBooks, label: "Books", fallback: "87", accent: "#A78BFA" },
-                { value: animatedPeople, label: "People", fallback: "857", accent: "#F59E0B" },
-                { value: animatedLocations, label: "Places", fallback: "333", accent: "#06B6D4" },
+                { value: animatedVerses, label: "Verses", fallback: "41,995", accent: "#3B82F6", href: "/scriptures" },
+                { value: animatedBooks, label: "Books", fallback: "87", accent: "#A78BFA", href: "/scriptures" },
+                { value: animatedPeople, label: "People", fallback: "857", accent: "#F59E0B", href: "/people" },
+                { value: animatedLocations, label: "Places", fallback: "333", accent: "#06B6D4", href: "/locations" },
               ].map((item, i, arr) => (
                 <div key={item.label} style={{
                   display: "flex",
                   alignItems: "center",
-                  ...(isMobile ? { width: i < 3 ? "33.33%" : "50%", justifyContent: "center", marginBottom: "8px" } : {}),
+                  ...(isMobile ? { width: i < 2 ? "50%" : "50%", justifyContent: "center", marginBottom: "8px" } : {}),
                 }}>
-                  <div style={{ textAlign: "center", padding: isMobile ? "0 4px" : "0 16px", minWidth: isMobile ? "80px" : "110px" }}>
+                  <Link href={item.href} style={{
+                    textAlign: "center",
+                    padding: isMobile ? "0 4px" : "0 16px",
+                    minWidth: isMobile ? "80px" : "110px",
+                    textDecoration: "none",
+                    transition: "opacity 0.2s",
+                  }}
+                    onMouseEnter={(e) => { e.currentTarget.style.opacity = "0.8"; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.opacity = "1"; }}
+                  >
                     <div style={{
                       fontSize: isMobile ? "1.5rem" : "2rem",
                       fontWeight: 800,
@@ -397,10 +406,15 @@ export default function HomePage() {
                       textTransform: "uppercase",
                       letterSpacing: "0.12em",
                       marginTop: "4px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: "3px",
                     }}>
                       {item.label}
+                      <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
                     </div>
-                  </div>
+                  </Link>
                   {!isMobile && i < arr.length - 1 && (
                     <span style={{ fontSize: "1.2rem", color: "rgba(255,255,255,0.1)", fontWeight: 300 }}>&middot;</span>
                   )}
