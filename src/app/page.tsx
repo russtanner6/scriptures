@@ -435,7 +435,6 @@ export default function HomePage() {
             }}>
               {[
                 { value: animatedVerses, label: "Verses", fallback: "41,995", accent: "#3B82F6" },
-                { value: animatedTotalWords, label: "Words", fallback: "820,000", accent: "#10B981" },
                 { value: animatedBooks, label: "Books", fallback: "87", accent: "#A78BFA" },
                 { value: animatedPeople, label: "People", fallback: "857", accent: "#F59E0B" },
                 { value: animatedLocations, label: "Places", fallback: "333", accent: "#06B6D4" },
