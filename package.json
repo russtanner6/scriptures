@@ -34,7 +34,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/sql.js": "^1.4.9",
-    "better-sqlite3": "^12.8.0",
+    "better-sqlite3": "^13.0.3",
     "eslint": "^9",
     "eslint-config-next": "16.4.1",
     "tailwindcss": "^4",
